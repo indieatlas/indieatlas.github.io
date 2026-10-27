@@ -26,7 +26,8 @@
     "format": "prettier --write .",
     "media:articles": "tsx scripts/run/fetch-article-images.ts",
     "igdb:sync": "tsx scripts/run/igdb-sync.ts",
-    "media:palettes": "tsx scripts/run/compute-palettes.ts"
+    "media:palettes": "tsx scripts/run/compute-palettes.ts",
+    "media:events": "tsx scripts/run/fetch-event-images.ts"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

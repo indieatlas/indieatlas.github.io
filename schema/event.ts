@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { ArticleImage } from './article.ts';
 import { Evidence } from './claim.ts';
 import { Actor, GameId, HttpUrl, IsoDate, IsoDateTime, PartialDate, RunId } from './common.ts';
 
@@ -40,6 +41,7 @@ export const IndieEvent = z.object({
     .optional(),
   url: HttpUrl, // 催しの案内のページ（公式のページ。なければ告知を伝える記事）
   summary: z.string().min(20).max(160), // 当サイトが書く短い説明
+  image: ArticleImage.optional(), // 案内のページの OGP 画像（public/media/events/）
   games: z.array(GameId).max(60), // 出展、発表される収録作品
   evidence: z.array(Evidence).min(1).max(10),
   recheckAfter: IsoDate.optional(), // 日程が変わっていないかを確かめ直す日

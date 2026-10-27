@@ -12,9 +12,9 @@ import {
   SourceId,
 } from './common.ts';
 
-/** 記事の OGP 画像。WebP に変換して public/media/articles/ に保存する（11 の決定ログ 2026-10-28） */
+/** 記事と催しの OGP 画像。WebP に変換して public/media/ に保存する（11 の決定ログ 2026-10-28） */
 export const ArticleImage = z.object({
-  path: z.string().regex(/^media\/articles\/a_[0-9a-f]{16}\.webp$/), // public/ からの相対パス
+  path: z.string().regex(/^media\/(articles\/a|events\/ev)_[0-9a-f]{16}\.webp$/), // public/ からの相対パス
   width: z.number().int().positive(),
   height: z.number().int().positive(),
   sourceUrl: HttpUrl, // og:image の元の URL

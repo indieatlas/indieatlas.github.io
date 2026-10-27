@@ -31,16 +31,17 @@ export function articleImagePath(articleId: string): string {
 }
 
 /**
- * 記事のページから OGP 画像を取得し、WebP に変換して publicDir/media/articles/ に保存する。
+ * ページから OGP 画像を取得し、WebP に変換して publicDir/{rel} に保存する。
  * 画像の情報を返す。画像がなければ undefined。
  */
-export async function fetchArticleImage(
+export async function fetchOgImageTo(
   http: HttpClient,
-  article: Article,
+  pageUrl: string,
+  rel: string,
   publicDir: string,
 ): Promise<ArticleImage | undefined> {
-  const page = await http.get(article.canonicalUrl);
-  if (page.status !== 200) throw new Error(`HTTP ${page.status}: ${article.canonicalUrl}`);
+  const page = await http.get(pageUrl);
+  if (page.status !== 200) throw new Error(`HTTP ${page.status}: ${pageUrl}`);
   if (/\bnoai\b|\bnoimageai\b/i.test(page.text.match(/<meta[^>]+name=["']robots["'][^>]*>/i)?.[0] ?? ''))
     return undefined;
   const src = findOgImage(page.text, page.url);
@@ -48,7 +49,6 @@ export async function fetchArticleImage(
   const img = await http.get(src);
   if (img.status !== 200) throw new Error(`HTTP ${img.status}: ${src}`);
   const webp = await toWebp(img.bytes);
-  const rel = articleImagePath(article.id);
   const file = path.join(publicDir, rel);
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, webp.data);
@@ -60,4 +60,17 @@ export async function fetchArticleImage(
     retrievedAt: toIsoDateTime(img.retrievedAt),
     hash: sha256Tagged(webp.data),
   };
+}
+
+/** 記事の OGP 画像を public/media/articles/ に保存する */
+export function fetchArticleImage(
+  http: HttpClient,
+  article: Article,
+  publicDir: string,
+): Promise<ArticleImage | undefined> {
+  return fetchOgImageTo(http, article.canonicalUrl, articleImagePath(article.id), publicDir);
+}
+
+export function eventImagePath(eventId: string): string {
+  return `media/events/${eventId}.webp`;
 }

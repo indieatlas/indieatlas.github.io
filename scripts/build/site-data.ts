@@ -353,6 +353,7 @@ export function buildSiteData(repo: RepoData, today = todayJst()): SiteDataSet {
         ...(e.location ? { location: e.location } : {}),
         url: e.url,
         summary: e.summary,
+        ...(e.image ? { image: { path: e.image.path, width: e.image.width, height: e.image.height } } : {}),
         tentative: e.status === 'tentative',
         phase: phaseOf(startOf(e.start), endOf(e.end ?? e.start), today),
         games: e.games.filter((id) => publishedIds.has(id)),

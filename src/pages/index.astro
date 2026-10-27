@@ -1,7 +1,7 @@
 ---
 import ArticleList from '../components/ArticleList.astro';
 import CollectionCard from '../components/CollectionCard.astro';
-import EventItem from '../components/EventItem.astro';
+import EventCard from '../components/EventCard.astro';
 import GameGrid from '../components/GameGrid.astro';
 import HeroCarousel from '../components/HeroCarousel.astro';
 import SectionHeading from '../components/SectionHeading.astro';
@@ -53,11 +53,13 @@ const idx = () => String(++n).padStart(2, '0');
           linkPath={paths.events()}
           linkLabel="カレンダー"
         />
-        <div class="event-grid">
+        <ul class="event-row">
           {events.map((e) => (
-            <EventItem event={e} compact />
+            <li>
+              <EventCard event={e} />
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
     )}
 
@@ -117,10 +119,32 @@ const idx = () => String(++n).padStart(2, '0');
 </BaseLayout>
 
 <style>
-  .event-grid {
+  /* これからのイベントは1行だけ。入りきらない分は横にスクロールする */
+  .event-row {
+    position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
-    column-gap: var(--space-7);
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - 3 * var(--space-5)) / 4);
+    gap: var(--space-5);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    list-style: none;
+    margin: 0;
+    padding: 4px 2px;
+  }
+  .event-row li {
+    scroll-snap-align: start;
+  }
+  @media (max-width: 1023px) {
+    .event-row {
+      grid-auto-columns: 42%;
+    }
+  }
+  @media (max-width: 640px) {
+    .event-row {
+      grid-auto-columns: 72%;
+    }
   }
   .collection-grid {
     display: grid;

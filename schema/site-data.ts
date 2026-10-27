@@ -126,6 +126,7 @@ export interface SiteEvent {
   location?: { venue: string; city?: string; country?: string };
   url: string;
   summary: string;
+  image?: { path: string; width: number; height: number }; // public/ からの相対パス
   tentative: boolean;
   phase: 'upcoming' | 'ongoing' | 'past'; // ビルドした日（日本時間）での状態。終わると公開内容ハッシュが変わり、公開し直す
   games: string[];

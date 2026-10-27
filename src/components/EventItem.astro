@@ -69,7 +69,7 @@ const games = e.games.map((id) => getGame(id)).filter((g) => g !== undefined);
 <style>
   .event {
     display: grid;
-    grid-template-columns: 5.5rem minmax(0, 1fr);
+    grid-template-columns: 5.5rem minmax(0, 1fr) 14rem;
     gap: var(--space-5);
     padding: var(--space-4) 0;
     border-bottom: 1px solid var(--color-border);
@@ -150,6 +150,34 @@ const games = e.games.map((id) => getGame(id)).filter((g) => g !== undefined);
     color: var(--color-text-muted);
     max-width: var(--measure);
   }
+  .thumb {
+    align-self: start;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--color-surface);
+    box-shadow: inset 0 0 0 1px var(--color-border);
+  }
+  .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .poster {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    padding: var(--space-3);
+    background:
+      radial-gradient(120% 90% at 0% 0%, color-mix(in srgb, var(--color-signal) 35%, transparent), transparent 60%),
+      var(--color-bg-deep);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-text);
+  }
   .phase-past {
     opacity: 0.7;
   }
@@ -159,6 +187,14 @@ const games = e.games.map((id) => getGame(id)).filter((g) => g !== undefined);
   }
   .compact .day {
     font-size: 1.625rem;
+  }
+  @media (max-width: 760px) {
+    .thumb {
+      display: none;
+    }
+    .event {
+      grid-template-columns: 5.5rem minmax(0, 1fr);
+    }
   }
   @media (max-width: 560px) {
     .event {
