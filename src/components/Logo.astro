@@ -1,0 +1,47 @@
+---
+// ロゴ。斜めの帯と星で「A」をかたどった印と、文字のロゴ
+interface Props {
+  size?: number;
+}
+const { size = 34 } = Astro.props;
+---
+
+<span class="logo">
+  <svg class="mark" viewBox="0 0 64 64" width={size} height={size} aria-hidden="true">
+    <rect width="64" height="64" rx="12" fill="#0b0b11"></rect>
+    <path d="M6 50 L26 10 L44 10 L24 50 Z" fill="#e8173f"></path>
+    <path d="M30 50 L40 30 L46 30 L36 50 Z" fill="#ffd84d"></path>
+    <path d="M44 14 L47.2 24.8 L58 28 L47.2 31.2 L44 42 L40.8 31.2 L30 28 L40.8 24.8 Z" fill="#ffffff"></path>
+  </svg>
+  <span class="word">
+    <span class="indie">Indie</span> <span class="atlas">Atlas</span>
+  </span>
+</span>
+
+<style>
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .mark {
+    flex: none;
+    filter: drop-shadow(3px 3px 0 var(--color-signal));
+  }
+  .word {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.28em;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transform: skewX(var(--skew));
+  }
+  .atlas {
+    color: var(--color-on-signal);
+    background: var(--color-signal);
+    padding: 0 0.3em;
+  }
+</style>
