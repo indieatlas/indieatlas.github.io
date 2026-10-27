@@ -1,0 +1,19 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "target": "ES2023",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "verbatimModuleSyntax": false,
+    "noUncheckedIndexedAccess": true,
+    "types": ["node"],
+    "paths": {
+      "@schema/*": ["./schema/*"],
+      "@scripts/*": ["./scripts/*"]
+    }
+  },
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist", ".generated", "out", "node_modules", "docs"]
+}

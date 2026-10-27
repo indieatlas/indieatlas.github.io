@@ -1,0 +1,46 @@
+{
+  "name": "indieatlas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Indie Atlas: インディーゲームのライブラリ兼ショーケース",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "npm run prepare-site && astro dev",
+    "prepare-site": "tsx scripts/run/prepare-site.ts",
+    "build": "npm run prepare-site && astro build && pagefind --site dist && tsx scripts/run/finalize-dist.ts",
+    "preview": "tsx scripts/dev/serve-dist.ts",
+    "check:types": "astro check && tsc --noEmit",
+    "check:data": "tsx scripts/run/check-data.ts",
+    "check:dist": "tsx scripts/run/check-dist.ts",
+    "check:publish": "tsx scripts/run/check-publish.ts",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "research": "tsx scripts/run/research.ts",
+    "adopt": "tsx scripts/run/adopt.ts",
+    "ia": "tsx scripts/run/ia.ts",
+    "seed:steam": "tsx scripts/run/seed-steam.ts",
+    "report:trial": "tsx scripts/run/report-trial.ts",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.4.2",
+    "pagefind": "^1.5.2",
+    "umap-js": "^1.4.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^24.19.2",
+    "prettier": "^3.9.10",
+    "prettier-plugin-astro": "^1.1.2",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.5"
+  }
+}
