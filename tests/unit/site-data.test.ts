@@ -2,7 +2,6 @@ import path from 'node:path';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { prepareSite } from '../../scripts/build/prepare-site.ts';
 import { buildSiteData } from '../../scripts/build/site-data.ts';
-import { seededRandom } from '../../scripts/lib/random.ts';
 import { loadRepo, type RepoData } from '../../scripts/lib/repo-io.ts';
 
 const CODE = {
@@ -129,11 +128,5 @@ describe('ジャンルのカテゴリ色', () => {
     expect(d.genres.length).toBeGreaterThan(0);
     expect(d.genres.length).toBeLessThanOrEqual(8);
     expect(d.genres).toContainEqual({ id: 'roguelike', label: 'ローグライク' });
-  });
-
-  it('乱数はシードで決まる', () => {
-    const r1 = seededRandom(7);
-    const r2 = seededRandom(7);
-    expect([r1(), r1(), r1()]).toEqual([r2(), r2(), r2()]);
   });
 });

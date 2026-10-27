@@ -8,8 +8,6 @@ import TagChip from '../components/TagChip.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getArticles, getCollections, getStats, getTags, gamesByAdded } from '../lib/data.ts';
 import { paths, url } from '../lib/urls.ts';
-import { shortHash } from '../../scripts/lib/hash.ts';
-import { seededRandom } from '../../scripts/lib/random.ts';
 
 const stats = getStats();
 const byAdded = gamesByAdded();
@@ -33,15 +31,6 @@ const all = getCollections();
 const featured = all.filter((c) => c.featured);
 const rest = all.filter((c) => !c.featured).sort((a, b) => (a.updatedAt < b.updatedAt ? 1 : -1));
 const collections = [...featured, ...rest].slice(0, 6);
-
-// まだあまり知られていない作品: 関連記事が1件以下の作品から、日付をシードにした決定的な乱数で6件
-const rand = seededRandom(parseInt(shortHash(stats.lastUpdated || 'indieatlas', 8), 16));
-const quiet = byAdded
-  .filter((g) => g.coverage.articleCount <= 1)
-  .map((g) => ({ g, k: rand() }))
-  .sort((a, b) => a.k - b.k)
-  .slice(0, 6)
-  .map((x) => x.g);
 
 // よく使われるタグ（検索の入口）
 const popularTags = [...getTags()].sort((a, b) => b.gameCount - a.gameCount).slice(0, 10);
@@ -129,13 +118,6 @@ const idx = () => String(++n).padStart(2, '0');
       </section>
     )}
 
-    {quiet.length > 0 && (
-      <section class="section" aria-labelledby="quiet-h">
-        <SectionHeading id="quiet-h" index={idx()} en="Hidden gems" title="まだあまり知られていない作品" />
-        <p class="muted">紹介記事がまだ少ない作品から選んでいます。</p>
-        <GameGrid games={quiet} />
-      </section>
-    )}
   </div>
 </BaseLayout>
 
