@@ -1,0 +1,368 @@
+---
+import type { SiteArticle, SiteGame } from '../../schema/site-data.ts';
+import { getGame } from '../lib/data.ts';
+import { ARTICLE_KIND_LABELS, formatDate, isoDate } from '../lib/format.ts';
+import { paths, url } from '../lib/urls.ts';
+import ExternalLink from './ExternalLink.astro';
+
+// ホームの最新情報のカルーセル（02 §2.3.2）。新しい記事を、記事の OGP 画像とともに大きく見せる。
+// JS がなければ横にスクロールして読める一覧になる
+interface Props {
+  articles: SiteArticle[];
+}
+const { articles } = Astro.props;
+const slides = articles.map((a) => {
+  const games = a.games.map((g) => getGame(g.gameId)).filter((g): g is SiteGame => !!g);
+  const main = games[0]!;
+  const image = a.image
+    ? { src: url(a.image.path), width: a.image.width, height: a.image.height }
+    : main.image
+      ? { src: main.image.url, width: main.image.width ?? 460, height: main.image.height ?? 215 }
+      : undefined;
+  return { a, games, main, image };
+});
+const total = String(slides.length).padStart(2, '0');
+---
+
+<section class="hero-carousel" aria-roledescription="carousel" aria-label="最新情報" data-carousel>
+  <div class="track" data-track tabindex="0">
+    {slides.map((s, i) => (
+      <article
+        class="slide"
+        aria-roledescription="slide"
+        aria-label={`${i + 1} / ${slides.length}`}
+        data-slide
+        id={`slide-${i + 1}`}
+      >
+        <div class="media" aria-hidden="true">
+          {s.image ? (
+            <img
+              src={s.image.src}
+              alt=""
+              width={s.image.width}
+              height={s.image.height}
+              loading={i === 0 ? 'eager' : 'lazy'}
+              fetchpriority={i === 0 ? 'high' : undefined}
+              decoding="async"
+              data-fallback
+            />
+          ) : (
+            <div class="media-empty" />
+          )}
+        </div>
+        <div class="panel">
+          <p class="meta">
+            <span class="kind">{ARTICLE_KIND_LABELS[s.a.kind]}</span>
+            <span class="outlet">{s.a.outlet.name}</span>
+            {s.a.publishedAt && <time datetime={isoDate(s.a.publishedAt)}>{formatDate(s.a.publishedAt)}</time>}
+          </p>
+          <h2 class="title" lang={s.a.lang}>
+            {s.a.title ?? `${s.a.outlet.name} の記事`}
+          </h2>
+          <p class="games">
+            {s.games.slice(0, 3).map((g, j) => (
+              <>
+                {j > 0 && <span aria-hidden="true"> / </span>}
+                <a href={url(paths.game(g.id))}>{g.title.display}</a>
+              </>
+            ))}
+          </p>
+          <div class="cta">
+            <a class="button button-primary" href={url(paths.game(s.main.id))}>
+              作品を見る
+            </a>
+            <ExternalLink href={s.a.url} class="button">
+              記事を読む
+            </ExternalLink>
+          </div>
+        </div>
+        <p class="number" aria-hidden="true">
+          {String(i + 1).padStart(2, '0')}
+          <span>/ {total}</span>
+        </p>
+      </article>
+    ))}
+  </div>
+
+  <div class="controls" data-controls hidden>
+    <button type="button" class="nav prev" data-prev aria-label="前の情報">
+      <span aria-hidden="true">◀</span>
+    </button>
+    <ol class="dots">
+      {slides.map((_, i) => (
+        <li>
+          <button type="button" data-goto={i} aria-label={`${i + 1}件目の情報`} aria-controls={`slide-${i + 1}`}>
+            <span class="bar" />
+          </button>
+        </li>
+      ))}
+    </ol>
+    <button type="button" class="nav next" data-next aria-label="次の情報">
+      <span aria-hidden="true">▶</span>
+    </button>
+    <button type="button" class="pause" data-pause aria-pressed="false">
+      自動再生を止める
+    </button>
+  </div>
+</section>
+
+<script>
+  import { defineCarousel } from '../scripts/carousel.ts';
+  defineCarousel();
+</script>
+
+<style>
+  .hero-carousel {
+    position: relative;
+    margin-bottom: var(--space-4);
+  }
+  .track {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+  .track::-webkit-scrollbar {
+    display: none;
+  }
+  .track:focus-visible {
+    outline: 3px solid var(--color-accent-warm);
+    outline-offset: -3px;
+  }
+  .slide {
+    position: relative;
+    scroll-snap-align: start;
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    min-height: clamp(20rem, 38vw, 30rem);
+    overflow: hidden;
+  }
+  .media {
+    grid-column: 2;
+    grid-row: 1;
+    position: relative;
+    clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%);
+    background: var(--color-bg-deep);
+  }
+  .media img,
+  .media-empty {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .media::after {
+    /* 網点と、信号色の斜めの帯 */
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(
+        115deg,
+        transparent 0 78%,
+        color-mix(in srgb, var(--color-signal) 70%, transparent) 78% 82%,
+        transparent 82%
+      ),
+      radial-gradient(circle, rgb(0 0 0 / 0.35) 1px, transparent 1.4px) 0 0 / 6px 6px;
+    mix-blend-mode: normal;
+  }
+  .slide[data-active] .media img {
+    animation: kenburns 9s var(--ease-out) both;
+  }
+  @keyframes kenburns {
+    from {
+      transform: scale(1.08) translateX(2%);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  .panel {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    z-index: 1;
+    align-self: center;
+    margin-right: -18%;
+    padding: var(--space-7) var(--space-7) var(--space-7) clamp(var(--space-5), 4vw, var(--space-9));
+    background: var(--color-surface);
+    clip-path: polygon(0 0, 100% 0, calc(100% - 36px) 100%, 0 100%);
+    box-shadow: inset 4px 0 0 var(--color-signal);
+  }
+  .slide[data-active] .panel {
+    animation: panel-in var(--dur-slow) var(--ease-snap) both;
+  }
+  @keyframes panel-in {
+    from {
+      transform: translateX(-24px);
+      opacity: 0;
+    }
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2) var(--space-3);
+    margin: 0 0 var(--space-3);
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
+  }
+  .kind {
+    padding: 2px 12px;
+    background: var(--color-signal);
+    color: var(--color-on-signal);
+    font-weight: 700;
+    clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%);
+  }
+  .outlet {
+    font-weight: 700;
+    color: var(--color-text);
+  }
+  .title {
+    font-family: var(--font-body);
+    font-size: clamp(1.125rem, 0.95rem + 0.9vw, 1.625rem);
+    line-height: 1.5;
+    margin: 0 0 var(--space-3);
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .games {
+    margin: 0 0 var(--space-5);
+    font-weight: 700;
+    font-size: var(--text-small);
+  }
+  .games a {
+    color: var(--color-accent-warm);
+  }
+  .cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  .number {
+    position: absolute;
+    right: var(--space-5);
+    bottom: var(--space-3);
+    z-index: 1;
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 2rem + 3vw, 4.5rem);
+    line-height: 1;
+    color: transparent;
+    -webkit-text-stroke: 2px #ffffff;
+    text-shadow: 3px 3px 0 var(--color-signal);
+    transform: skewX(var(--skew));
+  }
+  .number span {
+    font-size: 0.35em;
+    -webkit-text-stroke: 0;
+    color: #ffffff;
+    text-shadow: none;
+  }
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) clamp(var(--space-4), 4vw, var(--space-8)) 0;
+  }
+  .controls[hidden] {
+    display: none;
+  }
+  .nav,
+  .pause {
+    min-width: 48px;
+    min-height: 44px;
+    border: 0;
+    background: var(--color-surface-raised);
+    color: var(--color-text);
+    font-weight: 700;
+    clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
+  }
+  .nav:hover,
+  .pause:hover {
+    background: var(--color-accent-warm);
+    color: var(--color-on-warm);
+  }
+  .pause {
+    margin-left: auto;
+    padding: 0 var(--space-4);
+    font-size: var(--text-xsmall);
+  }
+  .dots {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    max-width: 24rem;
+  }
+  .dots li {
+    flex: 1;
+  }
+  .dots button {
+    width: 100%;
+    min-height: 44px;
+    border: 0;
+    background: transparent;
+    padding: 0;
+  }
+  .bar {
+    display: block;
+    height: 6px;
+    background: var(--color-border-strong);
+    transform: skewX(var(--skew));
+    overflow: hidden;
+    position: relative;
+  }
+  .bar::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--color-signal);
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  [aria-current='true'] .bar::after {
+    transform: scaleX(1);
+  }
+  :global(.carousel-playing) [aria-current='true'] .bar::after {
+    animation: progress var(--carousel-interval, 7s) linear both;
+  }
+  @keyframes progress {
+    from {
+      transform: scaleX(0);
+    }
+  }
+  @media (max-width: 760px) {
+    .slide {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+    }
+    .media {
+      grid-column: 1;
+      aspect-ratio: 16 / 9;
+      clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+    }
+    .panel {
+      grid-row: 2;
+      margin: -24px 0 0;
+      clip-path: none;
+      padding: var(--space-5) var(--space-4);
+    }
+    .number {
+      top: var(--space-3);
+      bottom: auto;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .slide[data-active] .media img,
+    .slide[data-active] .panel {
+      animation: none;
+    }
+  }
+</style>

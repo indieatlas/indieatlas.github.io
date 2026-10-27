@@ -6,6 +6,7 @@ import type {
   SiteArticle,
   SiteCollection,
   SiteGame,
+  SiteGenre,
   SiteReleaseEntry,
   SiteStats,
   SiteTag,
@@ -22,6 +23,7 @@ import { releaseEntryLabel, releaseLabel, STORE_LABELS } from './labels.ts';
 
 export interface SiteDataSet {
   games: SiteGame[];
+  genres: SiteGenre[];
   redirects: { from: string; to: string }[];
   articles: SiteArticle[];
   collections: SiteCollection[];
@@ -298,9 +300,18 @@ export function buildSiteData(repo: RepoData): SiteDataSet {
     .map((g) => ({ from: g.id, to: g.mergedInto! }))
     .sort(by((r) => r.from));
 
+  // 主なジャンルの上位8件（カテゴリ色の割り当てに使う）
+  const genreCount = new Map<string, number>();
+  for (const g of games) if (g.primaryGenre) genreCount.set(g.primaryGenre, (genreCount.get(g.primaryGenre) ?? 0) + 1);
+  const genres: SiteGenre[] = [...genreCount.entries()]
+    .sort((a, b) => b[1] - a[1] || cmp(a[0], b[0]))
+    .slice(0, 8)
+    .map(([id]) => ({ id, label: tagById.get(id)?.label.ja ?? id }));
+
   const lastUpdated = games.reduce((m, g) => (g.updatedAt > m ? g.updatedAt : m), '');
   return {
     games: games.sort(by((g) => g.id)),
+    genres,
     redirects,
     articles: siteArticles,
     collections,

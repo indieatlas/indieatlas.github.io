@@ -67,7 +67,6 @@ export const RuntimeConfig = z.object({
     autoMergeGames: z.boolean(),
   }),
   evidence: z.object({ storeQuotes: z.boolean(), maxQuoteChars: z.number().int().min(8).max(200) }),
-  atlas: z.object({ seed: z.number().int() }),
   retention: z.object({ seenUrlDays: z.number().int().min(1), doneTaskDays: z.number().int().min(1) }),
 });
 export type RuntimeConfig = z.infer<typeof RuntimeConfig>;

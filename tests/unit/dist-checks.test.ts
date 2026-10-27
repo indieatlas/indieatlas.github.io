@@ -37,7 +37,6 @@ beforeEach(() => {
     page('', `<meta http-equiv="refresh" content="0; url=${SITE}${BASE}games/g_000001/">`),
   );
   write('404.html', page(''));
-  write('atlas.json', JSON.stringify({ v: 1, points: [] }));
   write('pagefind/pagefind.js', 'export {}');
   write('sitemap-index.xml', `<sitemapindex><sitemap><loc>${SITE}${BASE}sitemap-0.xml</loc></sitemap></sitemapindex>`);
   write('robots.txt', 'User-agent: *');

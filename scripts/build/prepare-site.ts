@@ -2,7 +2,6 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { toIsoDateTime, now } from '../lib/clock.ts';
 import { PROJECT_ROOT, type RepoData } from '../lib/repo-io.ts';
-import { buildAtlas } from './atlas-layout.ts';
 import { codeHashes, contentHash, siteDataHash, type HashInputs } from './content-hash.ts';
 import { buildSiteData } from './site-data.ts';
 
@@ -21,14 +20,13 @@ export function siteEnv(): { SITE_URL: string; BASE_PATH: string } {
 /** data/ から .generated/site-data/ の内容を作る（03 §3.7） */
 export function prepareSite(repo: RepoData, code: Record<string, string> = codeHashes()): PreparedSite {
   const data = buildSiteData(repo);
-  const atlas = buildAtlas(data.games, data.tags, repo.runtime.atlas.seed);
   const files: Record<string, unknown> = {
     games: data.games,
     redirects: data.redirects,
     articles: data.articles,
     collections: data.collections,
     tags: data.tags,
-    atlas,
+    genres: data.genres,
     stats: data.stats,
   };
   const hashInputs: HashInputs = { siteData: siteDataHash(files), code, env: siteEnv() };

@@ -5,7 +5,7 @@ test('ホームから作品詳細へ移る', async ({ page }) => {
   await page.goto('./');
   await expect(page.locator('h1')).toContainText('インディーゲーム');
   await expect(page.getByRole('heading', { name: '最近収録した作品' })).toBeVisible();
-  await page.locator('a.game-card').first().click();
+  await page.locator('section[aria-labelledby="recent-h"] a.game-card').first().click();
   await expect(page).toHaveURL(/\/games\/g_\d{6}\/$/);
   await expect(page.getByRole('heading', { name: '基本情報' })).toBeVisible();
 });
@@ -66,7 +66,7 @@ test('運営説明', async ({ page }) => {
 test('404 ページ', async ({ page }) => {
   const res = await page.goto('no-such-page/');
   expect(res?.status()).toBe(404);
-  await expect(page.locator('h1')).toContainText('星図にありません');
+  await expect(page.locator('h1')).toContainText('ページが見つかりません');
 });
 
 test('統合済みの作品の転送ページ', async ({ page, baseURL }) => {
@@ -75,9 +75,7 @@ test('統合済みの作品の転送ページ', async ({ page, baseURL }) => {
   await expect(page).toHaveURL((u) => u.pathname === `${new URL(baseURL!).pathname}games/g_000004/`);
 });
 
-test('build-manifest.json と atlas.json を配信する', async ({ request }) => {
+test('build-manifest.json を配信する', async ({ request }) => {
   const m = await (await request.get('build-manifest.json')).json();
   expect(m.contentHash).toMatch(/^sha256:/);
-  const a = await (await request.get('atlas.json')).json();
-  expect(a.points.length).toBe(6);
 });

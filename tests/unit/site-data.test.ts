@@ -1,8 +1,8 @@
 import path from 'node:path';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
-import { buildAtlas, seededRandom } from '../../scripts/build/atlas-layout.ts';
 import { prepareSite } from '../../scripts/build/prepare-site.ts';
 import { buildSiteData } from '../../scripts/build/site-data.ts';
+import { seededRandom } from '../../scripts/lib/random.ts';
 import { loadRepo, type RepoData } from '../../scripts/lib/repo-io.ts';
 
 const CODE = {
@@ -123,29 +123,12 @@ describe('サイト用データ（03 §3.7）', () => {
   });
 });
 
-describe('アトラス（02 §2.7.4）', () => {
-  it('10件未満は円周上に並べ、座標は [-1, 1] で小数第3位まで', () => {
+describe('ジャンルのカテゴリ色', () => {
+  it('主なジャンルを作品の多い順に最大8件並べる', () => {
     const d = buildSiteData(repo());
-    const atlas = buildAtlas(d.games, d.tags, 1);
-    expect(atlas.points).toHaveLength(6);
-    for (const p of atlas.points) {
-      expect(Math.abs(p.x)).toBeLessThanOrEqual(1);
-      expect(Math.abs(p.y)).toBeLessThanOrEqual(1);
-      expect(Math.round(p.x * 1000) / 1000).toBe(p.x);
-    }
-  });
-
-  it('10件以上は UMAP で決定的に配置する', () => {
-    const d = buildSiteData(repo());
-    const many = Array.from({ length: 24 }, (_, i) => ({
-      ...d.games[i % d.games.length]!,
-      id: `g_${String(i + 1).padStart(6, '0')}`,
-    }));
-    const a = buildAtlas(many, d.tags, 42);
-    const b = buildAtlas(many, d.tags, 42);
-    expect(a).toEqual(b);
-    expect(Math.max(...a.points.map((p) => p.x))).toBe(1);
-    expect(Math.min(...a.points.map((p) => p.y))).toBe(-1);
+    expect(d.genres.length).toBeGreaterThan(0);
+    expect(d.genres.length).toBeLessThanOrEqual(8);
+    expect(d.genres).toContainEqual({ id: 'roguelike', label: 'ローグライク' });
   });
 
   it('乱数はシードで決まる', () => {

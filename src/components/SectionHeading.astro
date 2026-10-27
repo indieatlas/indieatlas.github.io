@@ -1,0 +1,83 @@
+---
+import { url } from '../lib/urls.ts';
+
+// セクションの見出し。番号と英字のラベル、日本語の見出し、一覧へのリンク
+interface Props {
+  id: string; // 見出しの id（aria-labelledby に使う）
+  index?: string; // 例: "01"
+  en: string; // 例: "New arrivals"
+  title: string;
+  linkPath?: string; // ベースパスを含まないパス
+  linkLabel?: string;
+}
+const { id, index, en, title, linkPath, linkLabel = 'すべて見る' } = Astro.props;
+---
+
+<div class="section-heading">
+  <div>
+    <p class="eyebrow">
+      {index && <span class="index">{index}</span>}
+      {en}
+    </p>
+    <h2 id={id}>{title}</h2>
+  </div>
+  {linkPath && (
+    <a class="more" href={url(linkPath)}>
+      {linkLabel}
+      <span aria-hidden="true" class="arrow">
+        ▶
+      </span>
+    </a>
+  )}
+</div>
+
+<style>
+  .section-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+    margin-bottom: var(--space-6);
+    padding-bottom: var(--space-3);
+    border-bottom: 1px solid var(--color-border);
+    position: relative;
+  }
+  .section-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 96px;
+    height: 3px;
+    background: var(--color-signal);
+  }
+  h2 {
+    margin: 0;
+  }
+  .index {
+    color: var(--color-text);
+    margin-right: 2px;
+  }
+  .more {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-height: 44px;
+    font-weight: 700;
+    font-size: var(--text-small);
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  .more:hover {
+    color: var(--color-accent);
+  }
+  .arrow {
+    font-size: 0.625rem;
+    color: var(--color-signal);
+    transition: transform var(--dur-fast) var(--ease-out);
+  }
+  .more:hover .arrow {
+    transform: translateX(4px);
+  }
+</style>

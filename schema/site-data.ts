@@ -108,23 +108,10 @@ export interface SiteTag {
   gameCount: number;
 }
 
-export interface AtlasPoint {
+/** ジャンルのカテゴリ色に使う、主なジャンルの上位8件（02 §2.6.1） */
+export interface SiteGenre {
   id: string;
-  x: number;
-  y: number;
-  c: number; // palette の番号。-1 は中立色
-  s: number; // 大きさ（1〜3）
-  t: string; // 表示名
-  i?: string; // 画像
-  tags: string[]; // 主なタグ3件のラベル
-  r: string; // 発売状況のラベル
-}
-
-export interface AtlasData {
-  v: 1;
-  palette: string[]; // 例: "genre:roguelike"
-  legend: { id: string; label: string }[];
-  points: AtlasPoint[];
+  label: string;
 }
 
 export interface SiteStats {

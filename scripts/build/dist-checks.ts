@@ -22,7 +22,6 @@ const REQUIRED = [
   'games/index.html',
   '404.html',
   'build-manifest.json',
-  'atlas.json',
   'pagefind/pagefind.js',
   'sitemap-index.xml',
   'robots.txt',

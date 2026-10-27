@@ -1,10 +1,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import type {
-  AtlasData,
   SiteArticle,
   SiteCollection,
   SiteGame,
+  SiteGenre,
   SiteMeta,
   SiteStats,
   SiteTag,
@@ -30,7 +30,7 @@ export const getGames = () => load<SiteGame[]>('games');
 export const getArticles = () => load<SiteArticle[]>('articles');
 export const getCollections = () => load<SiteCollection[]>('collections');
 export const getTags = () => load<SiteTag[]>('tags');
-export const getAtlas = () => load<AtlasData>('atlas');
+export const getGenres = () => load<SiteGenre[]>('genres');
 export const getStats = () => load<SiteStats>('stats');
 export const getMeta = () => load<SiteMeta & { hashInputs: unknown }>('meta');
 export const getRedirects = () => load<{ from: string; to: string }[]>('redirects');
@@ -58,13 +58,19 @@ export function gamesByAdded(): SiteGame[] {
   );
 }
 
-/** ジャンルのカテゴリ色の番号（アトラスの palette と同じ。範囲外は -1） */
+/** ジャンルのカテゴリ色の番号（範囲外は -1） */
 export function genreColorIndex(genreId: string | undefined): number {
   if (!genreId) return -1;
-  return getAtlas().legend.findIndex((l) => l.id === genreId);
+  return getGenres().findIndex((l) => l.id === genreId);
 }
 
 export function genreColorVar(genreId: string | undefined): string {
   const i = genreColorIndex(genreId);
-  return i < 0 ? 'var(--atlas-neutral)' : `var(--atlas-c${i})`;
+  return i < 0 ? 'var(--genre-neutral)' : `var(--genre-c${i})`;
+}
+
+/** 背景の WebGL に混ぜる色の CSS 変数名 */
+export function genreColorName(genreId: string | undefined): string {
+  const i = genreColorIndex(genreId);
+  return i < 0 ? '--genre-neutral' : `--genre-c${i}`;
 }

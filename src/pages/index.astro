@@ -1,15 +1,24 @@
 ---
-import AtlasHero from '../components/AtlasHero.astro';
+import ArticleList from '../components/ArticleList.astro';
 import CollectionCard from '../components/CollectionCard.astro';
 import GameGrid from '../components/GameGrid.astro';
+import HeroCarousel from '../components/HeroCarousel.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import TagChip from '../components/TagChip.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getCollections, getStats, gamesByAdded } from '../lib/data.ts';
+import { getArticles, getCollections, getStats, getTags, gamesByAdded } from '../lib/data.ts';
 import { paths, url } from '../lib/urls.ts';
-import { seededRandom } from '../../scripts/build/atlas-layout.ts';
 import { shortHash } from '../../scripts/lib/hash.ts';
+import { seededRandom } from '../../scripts/lib/random.ts';
 
 const stats = getStats();
 const byAdded = gamesByAdded();
+
+// 最新情報: 掲載日の新しい記事を6件（articles.json は新しい順）
+const articles = getArticles();
+const news = articles.slice(0, 6);
+const latest = articles.slice(6, 12);
+
 const recent = byAdded.slice(0, 12);
 const recentIds = new Set(recent.map((g) => g.id));
 
@@ -33,44 +42,69 @@ const quiet = byAdded
   .sort((a, b) => a.k - b.k)
   .slice(0, 6)
   .map((x) => x.g);
+
+// よく使われるタグ（検索の入口）
+const popularTags = [...getTags()].sort((a, b) => b.gameCount - a.gameCount).slice(0, 10);
+let n = 0;
+const idx = () => String(++n).padStart(2, '0');
 ---
 
 <BaseLayout path={paths.home()}>
-  <AtlasHero featured={recent} />
+  <h1 class="visually-hidden">Indie Atlas — まだ知らないインディーゲームに出会う</h1>
+  {news.length > 0 && <HeroCarousel articles={news} />}
 
   <div class="container">
+    <section class="quick" aria-label="作品を探す">
+      <form class="quick-search" action={url(paths.games())} method="get" role="search">
+        <label for="home-q" class="label">
+          <span class="en" aria-hidden="true">
+            Search
+          </span>
+          <span>{stats.games}作品から探す</span>
+        </label>
+        <input id="home-q" name="q" type="search" placeholder="タイトル、タグ、開発者で検索" autocomplete="off" />
+        <button type="submit" class="button button-primary">
+          検索
+        </button>
+      </form>
+      <ul class="chip-row" aria-label="よく使われるタグ">
+        {popularTags.map((t) => (
+          <li>
+            <TagChip id={t.id} label={t.label} />
+          </li>
+        ))}
+      </ul>
+    </section>
+
     <section class="section" aria-labelledby="recent-h">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">New in the atlas</p>
-          <h2 id="recent-h">最近収録した作品</h2>
-        </div>
-        <a href={url(paths.games())}>すべての作品</a>
-      </div>
-      <GameGrid games={recent} />
+      <SectionHeading
+        id="recent-h"
+        index={idx()}
+        en="New arrivals"
+        title="最近収録した作品"
+        linkPath={paths.games()}
+        linkLabel="すべての作品"
+      />
+      <GameGrid games={recent} eagerCount={0} />
     </section>
 
     {enriched.length > 0 && (
       <section class="section" aria-labelledby="enriched-h">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Updated</p>
-            <h2 id="enriched-h">最近情報が充実した作品</h2>
-          </div>
-        </div>
+        <SectionHeading id="enriched-h" index={idx()} en="Updated" title="最近情報が充実した作品" />
         <GameGrid games={enriched} notes={Object.fromEntries(enriched.map((g) => [g.id, g.enrichedNote ?? '']))} />
       </section>
     )}
 
     {collections.length > 0 && (
       <section class="section" aria-labelledby="collections-h">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Constellations</p>
-            <h2 id="collections-h">コレクション</h2>
-          </div>
-          <a href={url(paths.collections())}>すべてのコレクション</a>
-        </div>
+        <SectionHeading
+          id="collections-h"
+          index={idx()}
+          en="Collections"
+          title="コレクション"
+          linkPath={paths.collections()}
+          linkLabel="すべてのコレクション"
+        />
         <ul class="collection-grid">
           {collections.map((c) => (
             <li>
@@ -81,14 +115,23 @@ const quiet = byAdded
       </section>
     )}
 
+    {latest.length > 0 && (
+      <section class="section" aria-labelledby="news-h">
+        <SectionHeading
+          id="news-h"
+          index={idx()}
+          en="Latest news"
+          title="新着の記事"
+          linkPath={paths.articles()}
+          linkLabel="すべての記事"
+        />
+        <ArticleList articles={latest} />
+      </section>
+    )}
+
     {quiet.length > 0 && (
       <section class="section" aria-labelledby="quiet-h">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">Hidden stars</p>
-            <h2 id="quiet-h">まだあまり知られていない作品</h2>
-          </div>
-        </div>
+        <SectionHeading id="quiet-h" index={idx()} en="Hidden gems" title="まだあまり知られていない作品" />
         <p class="muted">紹介記事がまだ少ない作品から選んでいます。</p>
         <GameGrid games={quiet} />
       </section>
@@ -97,10 +140,51 @@ const quiet = byAdded
 </BaseLayout>
 
 <style>
+  .quick {
+    display: grid;
+    gap: var(--space-4);
+    margin-top: var(--space-6);
+    padding: var(--space-5);
+    background: var(--color-surface);
+    box-shadow: inset 0 0 0 1px var(--color-border);
+    clip-path: polygon(0 0, calc(100% - var(--cut-m)) 0, 100% var(--cut-m), 100% 100%, 0 100%);
+  }
+  .quick-search {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3);
+  }
+  .label {
+    display: grid;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  .en {
+    font-family: var(--font-display);
+    font-size: 0.6875rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-accent-warm);
+  }
+  .quick-search input {
+    flex: 1 1 16rem;
+    min-width: 0;
+    min-height: 48px;
+    padding: 0 var(--space-4);
+    border: 0;
+    border-bottom: 2px solid var(--color-signal);
+    background: var(--color-bg);
+  }
+  .quick-search input:focus-visible {
+    outline: 2px solid var(--color-accent-warm);
+    outline-offset: 0;
+    border-radius: 0;
+  }
   .collection-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-    gap: var(--space-5);
+    gap: var(--space-6) var(--space-5);
     list-style: none;
     margin: 0;
     padding: 0;
