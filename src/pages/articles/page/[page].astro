@@ -14,7 +14,7 @@ const page = Number(Astro.params.page);
 
 <BaseLayout title={`記事（${page}ページ目）`} path={paths.articles(page)} current="articles">
   <div class="container section">
-    <h1>記事</h1>
+    <h1 class="page-title">記事</h1>
     <ArticleIndex page={page} />
   </div>
 </BaseLayout>

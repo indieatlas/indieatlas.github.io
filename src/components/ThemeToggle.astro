@@ -48,15 +48,16 @@
   .theme-toggle {
     display: inline-grid;
     place-items: center;
-    width: 44px;
+    width: 52px;
     height: 44px;
-    border-radius: 999px;
-    border: 1px solid var(--color-border);
-    background: transparent;
+    border: 0;
+    background: var(--color-surface-raised);
     color: var(--color-text);
+    clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
   }
   .theme-toggle:hover {
-    border-color: var(--color-accent);
+    background: var(--color-accent-warm);
+    color: var(--color-on-warm);
   }
   .icon {
     width: 20px;

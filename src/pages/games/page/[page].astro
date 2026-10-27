@@ -14,7 +14,7 @@ const page = Number(Astro.params.page);
 
 <BaseLayout title={`作品一覧（${page}ページ目）`} path={paths.games(page)} current="games">
   <div class="container section">
-    <h1>作品</h1>
+    <h1 class="page-title">作品</h1>
     <GameListing page={page} />
   </div>
 </BaseLayout>

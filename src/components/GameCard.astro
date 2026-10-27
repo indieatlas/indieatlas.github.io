@@ -1,5 +1,6 @@
 ---
 import type { SiteGame } from '../../schema/site-data.ts';
+import { genreColorVar } from '../lib/data.ts';
 import { formatCardDate, isoDate } from '../lib/format.ts';
 import { paths, url } from '../lib/urls.ts';
 import GameImage from './GameImage.astro';
@@ -21,7 +22,12 @@ const devText = dev ? (game.developers.length > 1 ? `${dev.name} ほか` : dev.n
 const showOriginal = game.title.original !== game.title.display;
 ---
 
-<a class="game-card" href={url(paths.game(game.id))} data-game-id={game.id}>
+<a
+  class="game-card"
+  href={url(paths.game(game.id))}
+  data-game-id={game.id}
+  style={`--genre-color: ${genreColorVar(game.primaryGenre)}`}
+>
   <GameImage game={game} eager={eager} />
   <div class="game-card__body">
     <Heading class="game-card__title">{game.title.display}</Heading>

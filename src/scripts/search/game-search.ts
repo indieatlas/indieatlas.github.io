@@ -7,6 +7,7 @@ interface SearchConfig {
   pagefind: string;
   gamesPath: string;
   placeholder: string;
+  genres: string[];
   labels: Record<string, Record<string, string>>;
 }
 
@@ -141,7 +142,9 @@ export function renderCard(d: PagefindResultData, cfg: SearchConfig): string {
   const img = m.image
     ? `<img src="${esc(m.image)}" alt="${esc(m.title ?? '')} の画像" width="460" height="215" loading="lazy" decoding="async" data-fallback style="view-transition-name: game-${esc(id)}">`
     : `<img src="${esc(cfg.placeholder)}" alt="" width="460" height="215" loading="lazy" decoding="async">`;
-  return `<li><a class="game-card" href="${esc(d.url)}" data-game-id="${esc(id)}">
+  const gi = cfg.genres.indexOf(m.genre ?? '');
+  const genreColor = gi < 0 ? 'var(--genre-neutral)' : `var(--genre-c${gi})`;
+  return `<li class="card-slot"><a class="game-card" href="${esc(d.url)}" data-game-id="${esc(id)}" style="--genre-color: ${genreColor}">
 <div class="game-image">${img}</div>
 <div class="game-card__body">
 <h2 class="game-card__title">${esc(m.title ?? '')}</h2>

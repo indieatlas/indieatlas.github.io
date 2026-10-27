@@ -11,6 +11,7 @@ const { id, label, link = true } = Astro.props;
 
 {link ? (
   <a class="tag-chip" href={`${url(paths.games())}?tag=${encodeURIComponent(id)}`}>
+    <span aria-hidden="true">#</span>
     {label}
   </a>
 ) : (
@@ -21,21 +22,33 @@ const { id, label, link = true } = Astro.props;
   .tag-chip {
     display: inline-flex;
     align-items: center;
+    gap: 2px;
     min-height: 32px;
-    padding: 2px 14px;
-    border-radius: 999px;
-    border: 1px solid var(--color-border);
-    background: var(--color-surface);
+    padding: 2px 16px;
+    background: var(--color-surface-raised);
     color: var(--color-text);
     font-size: var(--text-xsmall);
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
+    clip-path: polygon(7px 0, 100% 0, calc(100% - 7px) 100%, 0 100%);
+    transition:
+      background var(--dur-fast) var(--ease-out),
+      color var(--dur-fast) var(--ease-out);
   }
   a.tag-chip {
     min-height: 44px;
   }
-  a.tag-chip:hover {
-    border-color: var(--color-accent);
+  .tag-chip span {
     color: var(--color-accent);
+  }
+  a.tag-chip:hover,
+  a.tag-chip:focus-visible {
+    background: var(--color-signal);
+    color: var(--color-on-signal);
+    outline: none;
+  }
+  a.tag-chip:hover span,
+  a.tag-chip:focus-visible span {
+    color: inherit;
   }
 </style>

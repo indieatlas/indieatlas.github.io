@@ -13,7 +13,7 @@ const { games, eagerCount = 0, notes = {}, headingLevel = 3 } = Astro.props;
 
 <ul class="game-grid">
   {games.map((g, i) => (
-    <li>
+    <li class="card-slot">
       <GameCard game={g} eager={i < eagerCount} note={notes[g.id]} headingLevel={headingLevel} />
     </li>
   ))}

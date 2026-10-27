@@ -61,22 +61,21 @@ const tabs = [
     display: inline-flex;
     align-items: center;
     min-height: 44px;
-    padding: 0 var(--space-4);
-    border-radius: 999px;
-    border: 1px solid var(--color-border);
+    padding: 0 var(--space-5);
+    background: var(--color-surface-raised);
     color: var(--color-text-muted);
     text-decoration: none;
     white-space: nowrap;
     font-size: var(--text-small);
-    font-weight: 600;
+    font-weight: 700;
+    clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
   }
   .tabs a:hover {
-    border-color: var(--color-accent);
-    color: var(--color-text);
+    background: var(--color-accent-warm);
+    color: var(--color-on-warm);
   }
   .tabs a[aria-current='page'] {
-    background: var(--color-accent);
-    border-color: var(--color-accent);
-    color: var(--color-accent-contrast);
+    background: var(--color-signal);
+    color: var(--color-on-signal);
   }
 </style>

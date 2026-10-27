@@ -1,38 +1,40 @@
 /*
  * デザイントークン（02 §2.6）。値はここを正とする。
+ * 「ゲームの UI」を軸に、墨色の地に信号色の赤と、強調の黄色を差す。
  * ダークテーマを基本にし、[data-theme] と prefers-color-scheme でライトテーマに切り替える。
  */
 :root {
   color-scheme: dark;
-  --color-bg: #0b1020;
-  --color-bg-deep: #070b17;
-  --color-surface: #121a2e;
-  --color-surface-raised: #1a2440;
-  --color-border: #2a3556;
-  --color-border-strong: #3d4a73;
-  --color-text: #e8ecf5;
-  --color-text-muted: #a3adc2;
-  --color-accent: #7cc4ff;
-  --color-accent-contrast: #06213a;
-  --color-accent-warm: #ffb86b;
-  --color-positive: #7ee2a8;
+  --color-bg: #0b0b11;
+  --color-bg-deep: #060609;
+  --color-surface: #15151e;
+  --color-surface-raised: #1f1f2b;
+  --color-border: #2e2e3d;
+  --color-border-strong: #4a4a60;
+  --color-text: #f3f3f6;
+  --color-text-muted: #aeaebd;
+  --color-accent: #ff6f88; /* リンクなど、文字として使う赤 */
+  --color-signal: #e8173f; /* 面として使う赤（ボタン、選択中のタブ） */
+  --color-on-signal: #ffffff;
+  --color-accent-warm: #ffd84d; /* 強調の黄色 */
+  --color-on-warm: #16120a;
+  --color-positive: #6ff0a6;
   --color-negative: #ff9a9a;
-  --color-unknown: #8a93a8;
-  --color-overlay: rgb(11 16 32 / 0.86);
-  --glow-accent: 0 0 0 1px rgb(124 196 255 / 0.35), 0 8px 32px -8px rgb(124 196 255 / 0.35);
-  --glow-warm: 0 0 24px -4px rgb(255 184 107 / 0.45);
+  --color-unknown: #8f8fa1;
+  --color-overlay: rgb(11 11 17 / 0.9);
+  --color-panel: rgb(11 11 17 / 0.93); /* 動く背景の上に置く面（不透明度80%以上） */
   --shadow-card: none;
 
-  /* アトラスとジャンルのカテゴリ色（色だけで区別しない。凡例と文字でも示す） */
-  --atlas-c0: #7cc4ff;
-  --atlas-c1: #ffb86b;
-  --atlas-c2: #b69cff;
-  --atlas-c3: #7ee2a8;
-  --atlas-c4: #ff8fb8;
-  --atlas-c5: #f4e06d;
-  --atlas-c6: #6fe0e0;
-  --atlas-c7: #ff9a6b;
-  --atlas-neutral: #c9d1e3;
+  /* ジャンルのカテゴリ色（色だけで区別しない。文字でも示す） */
+  --genre-c0: #ff6f88;
+  --genre-c1: #ffd84d;
+  --genre-c2: #5ee0ff;
+  --genre-c3: #b39bff;
+  --genre-c4: #6ff0a6;
+  --genre-c5: #ffa45e;
+  --genre-c6: #ff8fe1;
+  --genre-c7: #c2f266;
+  --genre-neutral: #c9c9d6;
 
   /* 文字 */
   --font-body:
@@ -41,11 +43,11 @@
   --text-body: clamp(1rem, 0.95rem + 0.25vw, 1.0625rem);
   --text-small: 0.875rem;
   --text-xsmall: 0.8125rem;
-  --text-h1: clamp(1.75rem, 1.2rem + 2.5vw, 3rem);
-  --text-h2: clamp(1.375rem, 1.1rem + 1.2vw, 1.875rem);
+  --text-h1: clamp(2rem, 1.3rem + 3vw, 3.5rem);
+  --text-h2: clamp(1.5rem, 1.15rem + 1.4vw, 2.125rem);
   --text-h3: 1.125rem;
   --leading-body: 1.8;
-  --leading-heading: 1.3;
+  --leading-heading: 1.25;
   --tracking-body: 0.02em;
   --measure: 40rem;
 
@@ -63,82 +65,90 @@
   --space-11: 5rem;
   --space-12: 6rem;
 
-  --radius-s: 6px;
-  --radius-m: 12px;
-  --radius-l: 20px;
+  /* 角は丸めず、斜めに切り落とす */
+  --radius-s: 2px;
+  --radius-m: 4px;
+  --radius-l: 6px;
+  --cut-s: 8px;
+  --cut-m: 16px;
+  --cut-l: 28px;
+  --skew: -10deg;
 
   --dur-fast: 150ms;
   --dur-base: 250ms;
-  --dur-slow: 400ms;
+  --dur-slow: 450ms;
   --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-snap: cubic-bezier(0.7, 0, 0.2, 1);
 
   --page-max: 80rem;
-  --header-height: 4rem;
+  --header-height: 4.25rem;
 }
 
 /* ライトテーマ */
 :root[data-theme='light'] {
   color-scheme: light;
-  --color-bg: #f6f7fb;
-  --color-bg-deep: #e9edf6;
+  --color-bg: #f2f0ea;
+  --color-bg-deep: #e5e2d8;
   --color-surface: #ffffff;
-  --color-surface-raised: #eef1f8;
-  --color-border: #d5dbe8;
-  --color-border-strong: #b5bfd4;
-  --color-text: #141a2a;
-  --color-text-muted: #4a5470;
-  --color-accent: #0b63b6;
-  --color-accent-contrast: #ffffff;
-  --color-accent-warm: #a65300;
-  --color-positive: #1d7a46;
+  --color-surface-raised: #f7f5ef;
+  --color-border: #d6d2c6;
+  --color-border-strong: #a9a493;
+  --color-text: #111117;
+  --color-text-muted: #4b4b58;
+  --color-accent: #c00f2e;
+  --color-signal: #d6143a;
+  --color-on-signal: #ffffff;
+  --color-accent-warm: #8a6200;
+  --color-on-warm: #ffffff;
+  --color-positive: #157a42;
   --color-negative: #b3261e;
-  --color-unknown: #636c80;
-  --color-overlay: rgb(246 247 251 / 0.9);
-  --glow-accent: 0 0 0 1px rgb(11 99 182 / 0.25), 0 8px 24px -12px rgb(20 26 42 / 0.25);
-  --glow-warm: 0 0 16px -6px rgb(166 83 0 / 0.35);
-  --shadow-card: 0 1px 2px rgb(20 26 42 / 0.06), 0 4px 16px -8px rgb(20 26 42 / 0.12);
+  --color-unknown: #63636f;
+  --color-overlay: rgb(242 240 234 / 0.92);
+  --color-panel: rgb(242 240 234 / 0.94);
+  --shadow-card: none;
 
-  --atlas-c0: #0b63b6;
-  --atlas-c1: #a65300;
-  --atlas-c2: #6a44c9;
-  --atlas-c3: #1d7a46;
-  --atlas-c4: #b8336a;
-  --atlas-c5: #7a6500;
-  --atlas-c6: #08757a;
-  --atlas-c7: #b5461b;
-  --atlas-neutral: #4a5470;
+  --genre-c0: #c00f2e;
+  --genre-c1: #8a6200;
+  --genre-c2: #00728f;
+  --genre-c3: #5b3fc4;
+  --genre-c4: #157a42;
+  --genre-c5: #b04a00;
+  --genre-c6: #a8237f;
+  --genre-c7: #4f7400;
+  --genre-neutral: #4b4b58;
 }
 
 @media (prefers-color-scheme: light) {
   :root:not([data-theme]) {
     color-scheme: light;
-    --color-bg: #f6f7fb;
-    --color-bg-deep: #e9edf6;
+    --color-bg: #f2f0ea;
+    --color-bg-deep: #e5e2d8;
     --color-surface: #ffffff;
-    --color-surface-raised: #eef1f8;
-    --color-border: #d5dbe8;
-    --color-border-strong: #b5bfd4;
-    --color-text: #141a2a;
-    --color-text-muted: #4a5470;
-    --color-accent: #0b63b6;
-    --color-accent-contrast: #ffffff;
-    --color-accent-warm: #a65300;
-    --color-positive: #1d7a46;
+    --color-surface-raised: #f7f5ef;
+    --color-border: #d6d2c6;
+    --color-border-strong: #a9a493;
+    --color-text: #111117;
+    --color-text-muted: #4b4b58;
+    --color-accent: #c00f2e;
+    --color-signal: #d6143a;
+    --color-on-signal: #ffffff;
+    --color-accent-warm: #8a6200;
+    --color-on-warm: #ffffff;
+    --color-positive: #157a42;
     --color-negative: #b3261e;
-    --color-unknown: #636c80;
-    --color-overlay: rgb(246 247 251 / 0.9);
-    --glow-accent: 0 0 0 1px rgb(11 99 182 / 0.25), 0 8px 24px -12px rgb(20 26 42 / 0.25);
-    --glow-warm: 0 0 16px -6px rgb(166 83 0 / 0.35);
-    --shadow-card: 0 1px 2px rgb(20 26 42 / 0.06), 0 4px 16px -8px rgb(20 26 42 / 0.12);
+    --color-unknown: #63636f;
+    --color-overlay: rgb(242 240 234 / 0.92);
+    --color-panel: rgb(242 240 234 / 0.94);
+    --shadow-card: none;
 
-    --atlas-c0: #0b63b6;
-    --atlas-c1: #a65300;
-    --atlas-c2: #6a44c9;
-    --atlas-c3: #1d7a46;
-    --atlas-c4: #b8336a;
-    --atlas-c5: #7a6500;
-    --atlas-c6: #08757a;
-    --atlas-c7: #b5461b;
-    --atlas-neutral: #4a5470;
+    --genre-c0: #c00f2e;
+    --genre-c1: #8a6200;
+    --genre-c2: #00728f;
+    --genre-c3: #5b3fc4;
+    --genre-c4: #157a42;
+    --genre-c5: #b04a00;
+    --genre-c6: #a8237f;
+    --genre-c7: #4f7400;
+    --genre-neutral: #4b4b58;
   }
 }

@@ -44,7 +44,27 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: var(--color-bg);
+  /* WebGL の背景（src/scripts/gl/stage.ts）を描けない環境での、静的な背景 */
+  background-color: var(--color-bg);
+  background-image:
+    linear-gradient(
+      115deg,
+      transparent 0 62%,
+      color-mix(in srgb, var(--color-signal) 14%, transparent) 62% 70%,
+      transparent 70%
+    ),
+    linear-gradient(
+      115deg,
+      transparent 0 74%,
+      color-mix(in srgb, var(--color-accent-warm) 10%, transparent) 74% 75%,
+      transparent 75%
+    ),
+    radial-gradient(circle, color-mix(in srgb, var(--color-text) 9%, transparent) 1.2px, transparent 1.6px);
+  background-size:
+    100% 100%,
+    100% 100%,
+    14px 14px;
+  background-attachment: fixed;
   color: var(--color-text);
   font-family: var(--font-body);
   font-size: var(--text-body);
@@ -55,6 +75,41 @@ body {
 
 main {
   flex: 1;
+  position: relative;
+  width: min(100% - 2 * clamp(0px, 2.5vw, 40px), 86rem);
+  margin: var(--space-6) auto 0;
+  padding-bottom: var(--space-9);
+  /* 動く背景の上に文字を置かないよう、本文は不透明度93%の面に載せる（02 §2.5.2） */
+  background: var(--color-panel);
+  border: 1px solid var(--color-border);
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--cut-l)) 0,
+    100% var(--cut-l),
+    100% 100%,
+    var(--cut-l) 100%,
+    0 calc(100% - var(--cut-l))
+  );
+}
+
+main::before {
+  /* 面の左上の、信号色の切り欠き */
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120px;
+  height: 4px;
+  background: var(--color-signal);
+}
+
+@media (max-width: 640px) {
+  main {
+    width: 100%;
+    margin-top: 0;
+    border-inline: 0;
+    clip-path: none;
+  }
 }
 
 h1,
@@ -71,6 +126,7 @@ h4 {
 h1 {
   font-size: var(--text-h1);
   font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 h2 {
@@ -133,4 +189,21 @@ select {
 
 button {
   cursor: pointer;
+}
+
+/* 背景の WebGL のキャンバス（src/scripts/gl/stage.ts） */
+canvas.stage {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  animation: stage-in 600ms var(--ease-out) both;
+}
+
+@keyframes stage-in {
+  from {
+    opacity: 0;
+  }
 }

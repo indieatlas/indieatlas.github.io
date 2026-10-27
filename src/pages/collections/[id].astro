@@ -31,7 +31,7 @@ const notes = Object.fromEntries(collection.items.map((i) => [i.gameId, i.reason
       ]}
     />
     <p class="eyebrow">Collection · {games.length}作品</p>
-    <h1>{collection.title}</h1>
+    <h1 class="page-title">{collection.title}</h1>
     <p class="lede">{collection.lede}</p>
     <div class="prose description" set:html={renderMarkdown(collection.description)} />
     <aside class="criteria">

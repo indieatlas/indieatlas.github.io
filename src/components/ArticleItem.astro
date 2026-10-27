@@ -19,69 +19,134 @@ const rest = others.length - shown.length;
 ---
 
 <article class="article-item">
-  <p class="meta">
-    <span class="kind">{ARTICLE_KIND_LABELS[article.kind]}</span>
-    <span class="outlet">{article.outlet.name}</span>
-    {article.publishedAt && <time datetime={isoDate(article.publishedAt)}>{formatDate(article.publishedAt)}</time>}
-    <span class="lang">{langLabel(article.lang)}</span>
-    {role && <span class="role">{ARTICLE_ROLE_LABELS[role]}</span>}
-  </p>
-  <h3 class="title">
-    <ExternalLink href={article.url} lang={article.lang}>
-      {article.title ?? `${article.outlet.name} の記事`}
-    </ExternalLink>
-  </h3>
-  {article.summaryJa && <p class="summary">{article.summaryJa}</p>}
-  {shown.length > 0 && (
-    <p class="games">
-      {forGame ? 'ほかに扱う作品' : '関連作品'}:{' '}
-      {shown.map((g, i) => {
-        const game = getGame(g.gameId);
-        return (
-          <>
-            {i > 0 && '、'}
-            {game ? <a href={url(paths.game(game.id))}>{game.title.display}</a> : g.gameId}
-          </>
-        );
-      })}
-      {rest > 0 && <span> ほか{rest}件</span>}
+  <div class="thumb" aria-hidden="true">
+    {article.image ? (
+      <img
+        src={url(article.image.path)}
+        alt=""
+        width={article.image.width}
+        height={article.image.height}
+        loading="lazy"
+        decoding="async"
+        data-fallback
+      />
+    ) : (
+      <span class="thumb-empty">{article.outlet.name}</span>
+    )}
+  </div>
+  <div class="body">
+    <p class="meta">
+      <span class="kind">{ARTICLE_KIND_LABELS[article.kind]}</span>
+      <span class="outlet">{article.outlet.name}</span>
+      {article.publishedAt && <time datetime={isoDate(article.publishedAt)}>{formatDate(article.publishedAt)}</time>}
+      <span class="lang">{langLabel(article.lang)}</span>
+      {role && <span class="role">{ARTICLE_ROLE_LABELS[role]}</span>}
     </p>
-  )}
+    <h3 class="title">
+      <ExternalLink href={article.url} lang={article.lang}>
+        {article.title ?? `${article.outlet.name} の記事`}
+      </ExternalLink>
+    </h3>
+    {article.summaryJa && <p class="summary">{article.summaryJa}</p>}
+    {shown.length > 0 && (
+      <p class="games">
+        {forGame ? 'ほかに扱う作品' : '関連作品'}:{' '}
+        {shown.map((g, i) => {
+          const game = getGame(g.gameId);
+          return (
+            <>
+              {i > 0 && '、'}
+              {game ? <a href={url(paths.game(game.id))}>{game.title.display}</a> : g.gameId}
+            </>
+          );
+        })}
+        {rest > 0 && <span> ほか{rest}件</span>}
+      </p>
+    )}
+  </div>
 </article>
 
 <style>
   .article-item {
+    display: grid;
+    grid-template-columns: 11rem minmax(0, 1fr);
+    gap: var(--space-4);
+    align-items: start;
     padding: var(--space-4) 0;
     border-bottom: 1px solid var(--color-border);
+  }
+  .thumb {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--color-surface-raised);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+    box-shadow: inset 0 -3px 0 var(--color-signal);
+  }
+  .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .thumb-empty {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    padding: var(--space-2);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
+    text-align: center;
   }
   .meta {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: var(--space-1) var(--space-3);
     margin: 0 0 var(--space-1);
     font-size: var(--text-xsmall);
     color: var(--color-text-muted);
   }
   .kind {
-    color: var(--color-accent-warm);
+    padding: 0 10px;
+    background: var(--color-signal);
+    color: var(--color-on-signal);
     font-weight: 700;
+    clip-path: polygon(5px 0, 100% 0, calc(100% - 5px) 100%, 0 100%);
+  }
+  .outlet {
+    font-weight: 700;
+    color: var(--color-text);
   }
   .role {
     padding: 0 6px;
-    border: 1px solid var(--color-border);
-    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px var(--color-border-strong);
   }
   .title {
     font-family: var(--font-body);
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1.6;
     margin: 0;
+  }
+  .title :global(a) {
+    color: var(--color-text);
+    text-decoration-color: var(--color-signal);
+  }
+  .title :global(a:hover) {
+    color: var(--color-accent);
   }
   .summary,
   .games {
     margin: var(--space-1) 0 0;
     font-size: var(--text-small);
     color: var(--color-text-muted);
+  }
+  @media (max-width: 560px) {
+    .article-item {
+      grid-template-columns: 6.5rem minmax(0, 1fr);
+      gap: var(--space-3);
+    }
   }
 </style>

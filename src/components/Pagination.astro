@@ -51,7 +51,7 @@ const pages = Array.from({ length: total }, (_, i) => i + 1).filter(
   }
   ol {
     display: flex;
-    gap: var(--space-1);
+    gap: 4px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -60,23 +60,25 @@ const pages = Array.from({ length: total }, (_, i) => i + 1).filter(
   span {
     display: inline-grid;
     place-items: center;
-    min-width: 44px;
+    min-width: 48px;
     min-height: 44px;
     padding: 0 var(--space-3);
-    border-radius: 999px;
+    font-family: var(--font-display);
+    font-weight: 700;
     text-decoration: none;
+    clip-path: polygon(7px 0, 100% 0, calc(100% - 7px) 100%, 0 100%);
   }
   a {
-    border: 1px solid var(--color-border);
+    background: var(--color-surface-raised);
     color: var(--color-text);
   }
   a:hover {
-    border-color: var(--color-accent);
+    background: var(--color-accent-warm);
+    color: var(--color-on-warm);
   }
   [aria-current='page'] {
-    background: var(--color-accent);
-    color: var(--color-accent-contrast);
-    font-weight: 700;
+    background: var(--color-signal);
+    color: var(--color-on-signal);
   }
   .disabled,
   .gap {

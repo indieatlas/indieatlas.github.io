@@ -19,6 +19,7 @@ interface Props {
   jsonLd?: Record<string, unknown>;
   current?: 'games' | 'articles' | 'collections' | 'about';
   canonical?: string; // 絶対 URL で上書きする場合（転送ページ）
+  stageTint?: string; // 背景の WebGL に混ぜる色（#rrggbb か CSS の変数名）
 }
 const {
   title,
@@ -30,6 +31,7 @@ const {
   jsonLd,
   current,
   canonical,
+  stageTint,
 } = Astro.props;
 const fullTitle = title ? `${title} | ${site.name}` : `${site.name} — ${site.tagline}`;
 const canonicalUrl = canonical ?? absoluteUrl(path);
@@ -54,9 +56,12 @@ const placeholder = url('placeholder.svg');
     <meta property="og:image" content={image} />
     <meta property="og:locale" content="ja_JP" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)" />
-    <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b0b11" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f2f0ea" media="(prefers-color-scheme: light)" />
     <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
+    <link rel="icon" href={url('icon-192.png')} type="image/png" sizes="192x192" />
+    <link rel="apple-touch-icon" href={url('apple-touch-icon.png')} />
+    <link rel="manifest" href={url('site.webmanifest')} />
     <link rel="sitemap" href={url('sitemap-index.xml')} />
     <script is:inline>
       // 表示テーマを描画の前に反映する
@@ -85,12 +90,16 @@ const placeholder = url('placeholder.svg');
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
     <slot name="head" />
   </head>
-  <body>
+  <body data-stage-tint={stageTint}>
     <SkipLink />
     <SiteHeader current={current} />
     <main id="main" tabindex="-1">
       <slot />
     </main>
     <SiteFooter />
+    <script>
+      import { startStageWhenIdle } from '../scripts/gl/stage.ts';
+      startStageWhenIdle();
+    </script>
   </body>
 </html>

@@ -34,13 +34,15 @@ const pairs: [string, string, number][] = [
   ['color-text-muted', 'color-surface', 4.5],
   ['color-accent', 'color-bg', 4.5],
   ['color-accent', 'color-surface', 4.5],
-  ['color-accent-contrast', 'color-accent', 4.5],
+  ['color-on-signal', 'color-signal', 4.5],
+  ['color-on-warm', 'color-accent-warm', 4.5],
   ['color-unknown', 'color-bg', 4.5],
   ['color-unknown', 'color-surface', 4.5],
   ['color-positive', 'color-surface', 4.5],
   ['color-accent-warm', 'color-bg', 4.5],
   ['color-accent-warm', 'color-surface', 4.5],
   ['color-border-strong', 'color-surface', 1.5],
+  ['color-text', 'color-surface-raised', 4.5],
 ];
 
 describe('文字色のコントラスト比', () => {
@@ -52,9 +54,9 @@ describe('文字色のコントラスト比', () => {
     });
   }
 
-  it('アトラスのカテゴリ色は背景に対して 3:1 以上', () => {
+  it('ジャンルのカテゴリ色は背景に対して 3:1 以上', () => {
     for (const vars of Object.values(themes)) {
-      for (let i = 0; i < 8; i++) expect(contrast(vars[`atlas-c${i}`]!, vars['color-bg']!)).toBeGreaterThanOrEqual(3);
+      for (let i = 0; i < 8; i++) expect(contrast(vars[`genre-c${i}`]!, vars['color-bg']!)).toBeGreaterThanOrEqual(3);
     }
   });
 

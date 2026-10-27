@@ -14,7 +14,7 @@ import TagChip from '../../components/TagChip.astro';
 import UnknownValue from '../../components/UnknownValue.astro';
 import { site } from '../../config/site.ts';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getArticle, getCollection, getGame, getGames, getRedirects } from '../../lib/data.ts';
+import { genreColorName, getArticle, getCollection, getGame, getGames, getRedirects } from '../../lib/data.ts';
 import {
   ARTICLE_KIND_LABELS,
   formatDate,
@@ -433,12 +433,17 @@ const description =
     align-items: center;
   }
   .keyart :global(.game-image) {
-    border-radius: var(--radius-l);
-    border: 1px solid var(--color-border);
-    box-shadow: 0 24px 64px -24px rgb(0 0 0 / 0.6);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--cut-l)), calc(100% - var(--cut-l)) 100%, 0 100%);
+  }
+  .keyart::before {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--cut-l)), calc(100% - var(--cut-l)) 100%, 0 100%);
+    transform: translate(10px, 10px);
   }
   .headline h1 {
-    margin-bottom: var(--space-1);
+    margin-bottom: var(--space-2);
+    font-size: clamp(2rem, 1.2rem + 3.4vw, 3.75rem);
+    line-height: 1.1;
+    text-shadow: 4px 4px 0 color-mix(in srgb, var(--color-signal) 55%, transparent);
   }
   .original {
     font-family: var(--font-display);
@@ -450,8 +455,13 @@ const description =
     margin: 0 0 var(--space-2);
   }
   .byline {
-    margin: 0;
-    font-weight: 600;
+    display: inline-block;
+    margin: 0 0 var(--space-2);
+    padding: 2px 14px;
+    background: var(--color-text);
+    color: var(--color-bg);
+    font-weight: 700;
+    clip-path: polygon(7px 0, 100% 0, calc(100% - 7px) 100%, 0 100%);
   }
   .status {
     margin: 0 0 var(--space-3);
@@ -477,6 +487,23 @@ const description =
   .block {
     margin-bottom: var(--space-8);
   }
+  .block > h2,
+  .block .history summary h2 {
+    position: relative;
+    padding-left: var(--space-4);
+    font-size: var(--text-h3);
+    font-size: 1.375rem;
+  }
+  .block > h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.15em;
+    bottom: 0.15em;
+    width: 6px;
+    background: var(--color-signal);
+    transform: skewX(var(--skew));
+  }
   .summary {
     font-size: 1.0625rem;
     max-width: var(--measure);
@@ -488,8 +515,22 @@ const description =
     max-width: var(--measure);
     padding-left: 1.25em;
   }
-  .features li::marker {
+  .features {
+    list-style: none;
+    padding: 0;
+  }
+  .features li {
+    position: relative;
+    padding: var(--space-2) 0 var(--space-2) var(--space-6);
+    border-bottom: 1px dashed var(--color-border);
+  }
+  .features li::before {
+    content: '◆';
+    position: absolute;
+    left: 0;
     color: var(--color-accent-warm);
+    font-size: 0.75rem;
+    top: 0.85em;
   }
   .group-title {
     font-size: var(--text-small);
@@ -523,37 +564,88 @@ const description =
     transform: rotate(45deg);
   }
   .history ol {
-    padding-left: 1.25em;
+    list-style: none;
+    padding: 0;
+    border-left: 3px solid var(--color-border-strong);
+    margin-left: var(--space-2);
+  }
+  .history li {
+    position: relative;
+    padding: var(--space-2) 0 var(--space-2) var(--space-5);
+  }
+  .history li::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 1.05em;
+    width: 13px;
+    height: 13px;
+    background: var(--color-border-strong);
+    transform: rotate(45deg);
   }
   .history .current {
     color: var(--color-accent-warm);
+    font-weight: 700;
+  }
+  .history .current::before {
+    background: var(--color-signal);
   }
   .side-col {
     position: sticky;
     top: calc(var(--header-height) + var(--space-4));
   }
   .info-card {
-    border: 1px solid var(--color-border);
     background: var(--color-surface);
-    border-radius: var(--radius-l);
-    padding: var(--space-5);
-    box-shadow: var(--shadow-card);
+    padding: 0 var(--space-5) var(--space-4);
+    box-shadow: inset 0 0 0 1px var(--color-border);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--cut-m)), calc(100% - var(--cut-m)) 100%, 0 100%);
   }
   .info-card h2 {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-3);
+    margin: 0 calc(-1 * var(--space-5)) var(--space-2);
+    padding: var(--space-3) var(--space-5);
+    background: repeating-linear-gradient(
+      115deg,
+      var(--color-signal) 0 18px,
+      color-mix(in srgb, var(--color-signal) 82%, black) 18px 26px
+    );
+    color: var(--color-on-signal);
     font-size: var(--text-h3);
+  }
+  .info-card h2 .en {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.85;
   }
   .info {
     margin: 0;
   }
   .info > div {
     padding: var(--space-3) 0;
-    border-top: 1px solid var(--color-border);
+    border-bottom: 1px dashed var(--color-border);
+  }
+  .info > div:last-child {
+    border-bottom: 0;
   }
   dt {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
     font-size: var(--text-xsmall);
     font-weight: 700;
-    color: var(--color-text-muted);
+    color: var(--color-accent-warm);
     margin-bottom: var(--space-1);
+  }
+  dt::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: currentColor;
+    transform: skewX(var(--skew));
   }
   dd {
     margin: 0;

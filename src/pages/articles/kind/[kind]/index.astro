@@ -13,7 +13,7 @@ const kind = Astro.params.kind as ArticleKind;
 
 <BaseLayout title={`記事: ${ARTICLE_KIND_LABELS[kind]}`} path={paths.articleKind(kind)} current="articles">
   <div class="container section">
-    <h1>記事: {ARTICLE_KIND_LABELS[kind]}</h1>
+    <h1 class="page-title">記事: {ARTICLE_KIND_LABELS[kind]}</h1>
     <ArticleIndex kind={kind} page={1} />
   </div>
 </BaseLayout>
