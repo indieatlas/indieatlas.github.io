@@ -26,7 +26,8 @@ await runMain(async () => {
     if (values.id && !values.id.includes(a.id)) continue;
     if (a.image && !values.force) continue;
     const r = a.sourceId ? rights.get(a.sourceId) : undefined;
-    if (r && (!r.allowFetch || !r.displayImages)) {
+    // 画像を表示してよいと確かめた情報源の記事だけ。登録していない媒体の記事は使わない
+    if (!r || !r.allowFetch || !r.displayImages) {
       console.log(`skip ${a.id}: 情報源の権利条件で画像を使えない`);
       continue;
     }
