@@ -2,7 +2,7 @@
 import GameListing from '../../components/GameListing.astro';
 import GameSearch from '../../components/GameSearch.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { paths } from '../../lib/urls.ts';
+import { paths, url } from '../../lib/urls.ts';
 ---
 
 <BaseLayout
@@ -12,12 +12,26 @@ import { paths } from '../../lib/urls.ts';
   current="games"
 >
   <div class="container section">
-    <p class="eyebrow">Games</p>
-    <h1 id="search" class="page-title">
-      作品
-    </h1>
+    <div class="page-head">
+      <h1 id="search" class="page-title">作品</h1>
+      <a class="sub-link" href={url(paths.developers())}>開発元・パブリッシャーから探す</a>
+    </div>
     <GameSearch>
       <GameListing page={1} />
     </GameSearch>
   </div>
 </BaseLayout>
+
+<style>
+  .page-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-2) var(--space-4);
+  }
+  .sub-link {
+    font-size: var(--text-small);
+    font-weight: 700;
+  }
+</style>

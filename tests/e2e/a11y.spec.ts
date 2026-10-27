@@ -9,6 +9,9 @@ for (const [name, path] of [
   ['記事一覧', 'articles/'],
   ['コレクション', 'collections/col_0001/'],
   ['運営説明', 'about/'],
+  ['イベント', 'events/'],
+  ['開発元の一覧', 'developers/'],
+  ['開発元', 'developers/dev_000001/'],
 ] as const) {
   for (const scheme of ['dark', 'light'] as const) {
     test(`${name}（${scheme}）`, async ({ page }) => {

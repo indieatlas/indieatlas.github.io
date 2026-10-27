@@ -28,5 +28,7 @@ export const paths = {
   collections: () => 'collections/',
   collection: (id: string) => `collections/${id}/`,
   events: () => 'events/',
+  developers: () => 'developers/',
+  developer: (id: string) => `developers/${id}/`,
   about: () => 'about/',
 };

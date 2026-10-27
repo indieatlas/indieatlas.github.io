@@ -22,6 +22,7 @@ export function prepareSite(repo: RepoData, code: Record<string, string> = codeH
   const data = buildSiteData(repo);
   const files: Record<string, unknown> = {
     games: data.games,
+    developers: data.developers,
     redirects: data.redirects,
     articles: data.articles,
     collections: data.collections,

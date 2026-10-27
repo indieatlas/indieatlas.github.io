@@ -5,6 +5,7 @@ import type { Game } from '../../schema/game.ts';
 import type {
   SiteArticle,
   SiteCollection,
+  SiteDeveloper,
   SiteEvent,
   SiteGame,
   SiteGenre,
@@ -26,6 +27,7 @@ import { releaseEntryLabel, releaseLabel, STORE_LABELS } from './labels.ts';
 
 export interface SiteDataSet {
   games: SiteGame[];
+  developers: SiteDeveloper[];
   events: SiteEvent[];
   genres: SiteGenre[];
   redirects: { from: string; to: string }[];
@@ -350,8 +352,26 @@ export function buildSiteData(repo: RepoData, today = todayJst()): SiteDataSet {
     .map(([id]) => ({ id, label: tagById.get(id)?.label.ja ?? id }));
 
   const lastUpdated = games.reduce((m, g) => (g.updatedAt > m ? g.updatedAt : m), '');
+  // 収録作品のある開発元とパブリッシャー
+  const byActivity = [...games].sort((a, b) => cmp(b.activityAt, a.activityAt) || cmp(b.id, a.id));
+  const developers: SiteDeveloper[] = repo.developers
+    .map((d) => ({
+      id: d.id,
+      name: d.name.display,
+      ...(d.name.original !== d.name.display ? { original: d.name.original } : {}),
+      roles: [...d.roles],
+      ...(d.officialUrl ? { officialUrl: d.officialUrl } : {}),
+      links: d.links.map((l) => ({ kind: l.kind, url: l.url })),
+      independence: d.independence.status,
+      developed: byActivity.filter((g) => g.developers.some((x) => x.id === d.id)).map((g) => g.id),
+      published: byActivity.filter((g) => g.publishers.some((x) => x.id === d.id)).map((g) => g.id),
+    }))
+    .filter((d) => d.developed.length + d.published.length > 0)
+    .sort(by((d) => d.id));
+
   return {
     games: games.sort(by((g) => g.id)),
+    developers,
     events: repo.events
       .filter((e) => e.status !== 'hidden' && e.status !== 'cancelled')
       .map((e) => ({

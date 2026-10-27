@@ -96,6 +96,19 @@ export interface SiteArticle {
   games: { gameId: string; role: ArticleRole }[];
 }
 
+/** 開発元とパブリッシャー（/developers/{id}/） */
+export interface SiteDeveloper {
+  id: string;
+  name: string;
+  original?: string; // 表示名と違うときの正式な表記
+  roles: ('developer' | 'publisher')[];
+  officialUrl?: string;
+  links: { kind: string; url: string }[];
+  independence: 'independent' | 'affiliated' | 'major' | 'unknown';
+  developed: string[]; // 開発した収録作品の ID（更新の新しい順）
+  published: string[]; // 販売した収録作品の ID
+}
+
 export interface SiteCollection {
   id: string;
   path: string;
