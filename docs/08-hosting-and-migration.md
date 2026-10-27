@@ -74,7 +74,7 @@ export const paths = {
 | 対象 | 対応 |
 | - | - |
 | Pagefind | `import(url('pagefind/pagefind.js'))` で読み込み、`await pagefind.options({ baseUrl: BASE_PATH })` を指定する。結果の URL がベースパスを含むことを E2E で確かめる |
-| アトラスのデータ | `fetch(url('atlas.json'))` |
+| 記事の OGP 画像 | `url(article.image.path)` |
 | sitemap | `@astrojs/sitemap` が `site` と `base` から作る |
 | robots.txt | `src/pages/robots.txt.ts` で生成し、`Sitemap: {absoluteUrl('sitemap-index.xml')}` を書く |
 | canonical と OGP | `absoluteUrl()` で作る。OGP の画像は作品の画像（外部の URL）か、`public/og-default.png` |

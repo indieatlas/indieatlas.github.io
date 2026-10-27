@@ -15,8 +15,7 @@
 | フィード・HTML の解析 | `fast-xml-parser`（RSS、Atom、サイトマップ）、`linkedom`（HTML の DOM）、`@mozilla/readability`（本文の抽出） | |
 | robots.txt の解釈 | `robots-parser` | |
 | 並列数の制御 | `p-limit` | |
-| アトラスの配置 | `umap-js` | §2.7.4 |
-| 画像の色の抽出 | `sharp`（ビルド時のみ。任意） | 作品詳細の背景色に使う。失敗した場合はタグの色で代替する |
+| 画像の変換 | `sharp`（手元とスクリプトだけで使う） | 記事の OGP 画像を WebP に変換して保存する（`npm run media:articles`） |
 | LLM | OpenCode Go の DeepSeek V4.1 Flash（`deepseek-v4.1-flash`）。npm の `openai` パッケージで、OpenAI 互換のエンドポイントに接続する | [06](06-update-pipeline.md) §6.9 |
 | 単体テスト | Vitest | |
 | E2E テスト | Playwright と `@axe-core/playwright` | |
@@ -110,7 +109,6 @@ indieatlas/
 │   │   └── publish-rules.ts    # 公開条件の判定（05 §5.5）
 │   ├── build/
 │   │   ├── site-data.ts        # data/ → .generated/site-data/
-│   │   ├── atlas-layout.ts     # アトラスの座標
 │   │   ├── palette.ts          # 画像からの色の抽出
 │   │   ├── content-hash.ts     # 公開内容ハッシュ
 │   │   ├── manifest.ts         # dist/build-manifest.json
@@ -141,7 +139,7 @@ indieatlas/
 │   ├── content/about.md
 │   ├── scripts/                # ブラウザで動く TypeScript
 │   │   ├── search/             # 検索 UI（Custom Elements）
-│   │   ├── gl/                 # WebGL の描画層とアトラス
+│   │   ├── gl/                 # 背景の WebGL（stage.ts）
 │   │   └── theme.ts
 │   └── styles/                 # tokens.css、base.css、utilities.css
 ├── public/                     # favicon、プレースホルダー画像、フォント
@@ -189,7 +187,7 @@ schema/  ←─ scripts/lib/  ←─ scripts/{fetch,sources,llm,search}/  ←─
 | コマンド | 内容 |
 | - | - |
 | `npm run dev` | `prepare-site` を実行してから `astro dev` を起動する |
-| `npm run prepare-site` | `data/` から `.generated/site-data/` を作る。アトラスの座標と公開内容ハッシュも計算する |
+| `npm run prepare-site` | `data/` から `.generated/site-data/` を作る。公開内容ハッシュも計算する |
 | `npm run build` | `prepare-site` → `astro build` → `pagefind --site dist` → `finalize-dist`（`dist/build-manifest.json` を書く） |
 | `npm run check:types` | `astro check && tsc --noEmit` |
 | `npm run check:data` | `data/`、`state/`、`config/` 全体のスキーマ、参照、並び順を検証する（04 §4.10） |
@@ -297,7 +295,6 @@ schema/  ←─ scripts/lib/  ←─ scripts/{fetch,sources,llm,search}/  ←─
     "storeQuotes": true,
     "maxQuoteChars": 200
   },
-  "atlas": { "seed": 20261027 },
   "retention": {
     "seenUrlDays": 180,
     "doneTaskDays": 30
@@ -360,7 +357,7 @@ schema/  ←─ scripts/lib/  ←─ scripts/{fetch,sources,llm,search}/  ←─
 | `articles.json` | 公開中の作品に関連づいた記事（`SiteArticle[]`） |
 | `collections.json` | 公開中のコレクション（`SiteCollection[]`） |
 | `tags.json` | 表示するタグ（core と、`candidateTagMinGames` 件以上の作品に付いた candidate） |
-| `atlas.json` | アトラスのデータ（§2.7.4） |
+| `genres.json` | 主ジャンルの上位8件（カテゴリ色の割り当て） |
 | `stats.json` | 作品数、記事数、最終更新日など |
 | `meta.json` | 公開内容ハッシュ（`contentHash`）とその入力の内訳 |
 
@@ -424,7 +421,7 @@ export interface SiteGame {
 | 根拠の短い抜粋（200字以内） | 入れる（`evidence.storeQuotes` で無効にできる） | 公開サイトには出さない。リポジトリを公開する場合は誰でも読めることを前提にする |
 | 記事の本文、取得した HTML | 入れない | 調査ジョブの成果物（artifact）に一時的に置き、3日で消える設定にする |
 | 検索索引、ビルド結果、`.generated/` | 入れない | 生成物 |
-| 画像と動画 | 入れない | 外部の URL を参照する（[05](05-sources-and-editorial-policy.md) §5.4）。プレースホルダー画像とフォントだけを `public/` に置く |
+| 画像と動画 | 記事の OGP 画像だけを入れる | 記事の OGP 画像は幅720px の WebP に縮小し、`public/media/articles/` に置く（1件30KB程度）。作品の画像は外部の URL を参照する（[05](05-sources-and-editorial-policy.md) §5.4）。その他はプレースホルダー画像、アイコン、フォントだけ |
 | LLM のやり取りの全文ログ | 入れない | 成果物に一時的に置く。Git には実行の要約（`state/runs/`）だけを残す |
 | Secrets | 入れない | GitHub Actions の Secrets だけで扱う |
 

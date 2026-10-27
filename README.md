@@ -19,6 +19,7 @@ npm run check:dist     # 公開前の検証（07 §7.5）
 npm test               # 単体テスト（外部と通信しない）
 npm run test:e2e       # ビルド済みの dist/ に対する E2E テスト
 npm run seed:steam -- --app 413150   # Steam の作品情報から候補の作品と Claim を作る
+npm run media:articles               # 記事の OGP 画像を WebP で public/media/articles/ に保存する
 ```
 
 E2E テストと CI は、架空の作品だけのフィクスチャ（`tests/fixtures/repo/`）でビルドしたサイトを使います。
@@ -38,7 +39,7 @@ npm run test:e2e
 | `schema/` | Zod スキーマ（データ、状態、設定、サイト用データ、manifest） |
 | `data/`、`state/`、`config/` | 正規化した JSON のデータ、運用の状態、人が管理する設定 |
 | `scripts/lib/` | 読み書き、ID、ハッシュ、正規化などの共通処理 |
-| `scripts/build/` | サイト用データ、アトラスの配置、公開内容ハッシュ、公開前の検証 |
+| `scripts/build/` | サイト用データ、公開内容ハッシュ、公開前の検証 |
 | `scripts/pipeline/` | データの検証、公開条件、Steam からの取り込み |
 | `src/` | Astro のサイト（`.generated/site-data/` だけを読む） |
 

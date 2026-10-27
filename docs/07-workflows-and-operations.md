@@ -307,7 +307,7 @@ contentHash = "sha256:" + sha256(canonicalJson({
 
 | 番号 | 内容 |
 | - | - |
-| B-01 | 必要なファイルがある: `index.html`、`games/index.html`、`404.html`、`build-manifest.json`、`atlas.json`、`pagefind/pagefind.js`、`sitemap-index.xml`、`robots.txt` |
+| B-01 | 必要なファイルがある: `index.html`、`games/index.html`、`404.html`、`build-manifest.json`、`pagefind/pagefind.js`、`sitemap-index.xml`、`robots.txt` |
 | B-02 | 公開中のすべての作品に詳細ページがあり、統合済みの作品 ID には転送ページがある |
 | B-03 | すべての HTML の内部リンク（`href`、`src`、`srcset`）が、`BASE_PATH` で始まり、`dist/` 内のファイルに解決できる。`BASE_PATH` が `/` 以外のとき、`BASE_PATH` を含まない `/` 始まりのリンクがあれば失敗にする |
 | B-04 | canonical、OGP の URL、sitemap の URL が `SITE_URL` と `BASE_PATH` で始まる |

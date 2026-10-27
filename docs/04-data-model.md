@@ -489,6 +489,13 @@ export const Article = z.object({
   publishedAt: IsoDateTime.optional(),
   retrievedAt: IsoDateTime,
   summaryJa: z.string().max(120).optional(),  // 当サイトが書く短い説明。情報源の権利条件が許す場合だけ
+  image: z.object({                    // 記事の OGP 画像（2026-10-28 に追加）
+    path: z.string(),                  // public/ からの相対パス（media/articles/{id}.webp）
+    width: z.number().int(), height: z.number().int(),
+    sourceUrl: HttpUrl,                // og:image の元の URL
+    retrievedAt: IsoDateTime,
+    hash: Sha256,                      // 保存したファイルのハッシュ
+  }).optional(),
   derivedFrom: z.object({
     kind: z.literal('press-release'),
     key: z.string().min(3).max(200),   // 同じプレスリリースを識別するキー。元の URL があれば正規化した URL
