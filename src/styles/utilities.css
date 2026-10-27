@@ -120,6 +120,29 @@
     box-shadow var(--dur-fast) var(--ease-out);
 }
 
+.button::after {
+  /* 切り落とした角の斜めの線（枠線とつなげる） */
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(
+    to top left,
+    transparent calc(50% - 0.8px),
+    var(--color-border-strong) calc(50% - 0.8px),
+    var(--color-border-strong) calc(50% + 0.8px),
+    transparent calc(50% + 0.8px)
+  );
+  pointer-events: none;
+}
+.button-primary::after,
+.button:hover::after,
+.button:focus-visible::after {
+  display: none;
+}
+
 .button:hover,
 .button:focus-visible {
   --button-bg: var(--color-accent-warm);
