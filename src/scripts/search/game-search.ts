@@ -29,7 +29,7 @@ export const FILTER_KEYS = ['tag', 'platform', 'release', 'ja', 'mode'] as const
 type FilterKey = (typeof FILTER_KEYS)[number];
 export interface SearchState {
   q: string;
-  sort: '' | 'updated' | 'added' | 'released';
+  sort: '' | 'updated' | 'added' | 'released' | 'popular';
   filters: Record<FilterKey, string[]>;
 }
 
@@ -44,7 +44,7 @@ export function stateFromParams(params: URLSearchParams): SearchState {
   const sort = params.get('sort');
   return {
     q: params.get('q') ?? '',
-    sort: sort === 'updated' || sort === 'added' || sort === 'released' ? sort : '',
+    sort: sort === 'updated' || sort === 'added' || sort === 'released' || sort === 'popular' ? sort : '',
     filters,
   };
 }
@@ -148,8 +148,10 @@ export function renderCard(d: PagefindResultData, cfg: SearchConfig): string {
     : `<img src="${esc(cfg.placeholder)}" alt="" width="460" height="215" loading="lazy" decoding="async">`;
   const gi = cfg.genres.indexOf(m.genre ?? '');
   const genreColor = gi < 0 ? 'var(--genre-neutral)' : `var(--genre-c${gi})`;
-  return `<li class="card-slot"><a class="game-card" href="${esc(d.url)}" data-game-id="${esc(id)}" style="--genre-color: ${genreColor}">
-<div class="game-image">${img}</div>
+  const prominence = m.prominence === 'landmark' || m.prominence === 'notable' ? m.prominence : '';
+  const badge = prominence === 'landmark' ? '定番' : prominence === 'notable' ? '人気' : '';
+  return `<li class="card-slot"><a class="game-card${prominence ? ` is-${prominence}` : ''}" href="${esc(d.url)}" data-game-id="${esc(id)}" style="--genre-color: ${genreColor}">
+<div class="game-card__media"><div class="game-image">${img}</div>${badge ? `<span class="game-card__badge">${badge}</span>` : ''}</div>
 <div class="game-card__body">
 <h2 class="game-card__title">${esc(m.title ?? '')}</h2>
 ${m.original && m.original !== m.title ? `<p class="game-card__original">${esc(m.original)}</p>` : ''}

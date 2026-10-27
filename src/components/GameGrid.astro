@@ -7,7 +7,7 @@ interface Props {
   eagerCount?: number;
   notes?: Record<string, string>;
   headingLevel?: 2 | 3;
-  dateMode?: 'added' | 'updated';
+  dateMode?: 'added' | 'updated' | 'none';
 }
 const { games, eagerCount = 0, notes = {}, headingLevel = 3, dateMode = 'added' } = Astro.props;
 ---
@@ -15,7 +15,13 @@ const { games, eagerCount = 0, notes = {}, headingLevel = 3, dateMode = 'added' 
 <ul class="game-grid">
   {games.map((g, i) => (
     <li class="card-slot">
-      <GameCard game={g} eager={i < eagerCount} note={notes[g.id]} headingLevel={headingLevel} dateMode={dateMode} />
+      <GameCard
+        game={g}
+        eager={i < eagerCount}
+        note={notes[g.id]}
+        headingLevel={headingLevel}
+        dateMode={dateMode}
+      />
     </li>
   ))}
 </ul>

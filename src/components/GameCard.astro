@@ -14,9 +14,10 @@ interface Props {
   eager?: boolean;
   note?: string;
   headingLevel?: 2 | 3;
-  dateMode?: 'added' | 'updated';
+  dateMode?: 'added' | 'updated' | 'none';
 }
 const { game, eager = false, note, headingLevel = 3, dateMode = 'added' } = Astro.props;
+const badge = game.prominence === 'landmark' ? '定番' : game.prominence === 'notable' ? '人気' : undefined;
 const dateValue = dateMode === 'updated' ? game.activityAt : game.addedAt;
 const Heading = `h${headingLevel}` as 'h2' | 'h3';
 const dev = game.developers[0];
@@ -25,12 +26,15 @@ const showOriginal = game.title.original !== game.title.display;
 ---
 
 <a
-  class="game-card"
+  class:list={['game-card', { [`is-${game.prominence}`]: game.prominence !== 'standard' }]}
   href={url(paths.game(game.id))}
   data-game-id={game.id}
   style={`--genre-color: ${genreColorVar(game.primaryGenre)}`}
 >
-  <GameImage game={game} eager={eager} />
+  <div class="game-card__media">
+    <GameImage game={game} eager={eager} />
+    {badge && <span class="game-card__badge">{badge}</span>}
+  </div>
   <div class="game-card__body">
     <Heading class="game-card__title">{game.title.display}</Heading>
     {showOriginal && (
@@ -47,8 +51,11 @@ const showOriginal = game.title.original !== game.title.display;
       <JapaneseSupportBadge support={game.japaneseSupport} />
     </div>
     {note && <p class="game-card__note">{note}</p>}
-    <p class="game-card__added">
-      {dateMode === 'updated' ? '更新' : '収録'} <time datetime={isoDate(dateValue)}>{formatCardDate(dateValue)}</time>
-    </p>
+    {dateMode !== 'none' && (
+      <p class="game-card__added">
+        {dateMode === 'updated' ? '更新' : '収録'}{' '}
+        <time datetime={isoDate(dateValue)}>{formatCardDate(dateValue)}</time>
+      </p>
+    )}
   </div>
 </a>
