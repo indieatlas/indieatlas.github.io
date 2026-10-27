@@ -1,0 +1,72 @@
+---
+// 表示テーマの切り替え（ライト、ダーク、システム設定に従う）
+---
+
+<theme-toggle>
+  <button type="button" class="theme-toggle" aria-label="表示テーマ: システム設定に従う" title="表示テーマ">
+    <svg
+      class="icon icon-system"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.8"
+    >
+      <rect x="3" y="4" width="18" height="12" rx="2"></rect>
+      <path d="M8 20h8M12 16v4"></path>
+    </svg>
+    <svg
+      class="icon icon-light"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.8"
+    >
+      <circle cx="12" cy="12" r="4"></circle>
+      <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+    </svg>
+    <svg
+      class="icon icon-dark"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.8"
+    >
+      <path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"></path>
+    </svg>
+  </button>
+</theme-toggle>
+
+<script>
+  import { initThemeToggle } from '../scripts/theme.ts';
+  initThemeToggle();
+</script>
+
+<style>
+  .theme-toggle {
+    display: inline-grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    border: 1px solid var(--color-border);
+    background: transparent;
+    color: var(--color-text);
+  }
+  .theme-toggle:hover {
+    border-color: var(--color-accent);
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+    display: none;
+  }
+  :global(html[data-theme-choice='system']) .icon-system,
+  :global(html:not([data-theme-choice])) .icon-system,
+  :global(html[data-theme-choice='light']) .icon-light,
+  :global(html[data-theme-choice='dark']) .icon-dark {
+    display: block;
+  }
+</style>

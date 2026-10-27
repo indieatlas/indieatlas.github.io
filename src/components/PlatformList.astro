@@ -1,0 +1,82 @@
+---
+import type { Platform } from '../../schema/common.ts';
+import { PLATFORM_LABELS } from '../lib/format.ts';
+
+interface Props {
+  platforms: Platform[];
+  max?: number;
+  variant?: 'chips' | 'text';
+}
+const { platforms, max = 99, variant = 'chips' } = Astro.props;
+const SHORT: Record<Platform, string> = {
+  pc: 'Win',
+  mac: 'Mac',
+  linux: 'Linux',
+  switch: 'Switch',
+  switch2: 'Switch 2',
+  ps5: 'PS5',
+  ps4: 'PS4',
+  'xbox-series': 'XSX|S',
+  'xbox-one': 'XB1',
+  ios: 'iOS',
+  android: 'Android',
+  browser: 'Web',
+  'meta-quest': 'Quest',
+  other: '他',
+};
+const shown = platforms.slice(0, max);
+const rest = platforms.length - shown.length;
+---
+
+{variant === 'text' ? (
+  <span>{platforms.map((p) => PLATFORM_LABELS[p]).join('、')}</span>
+) : (
+  <ul class="platforms" aria-label="機種">
+    {shown.map((p) => (
+      <li title={PLATFORM_LABELS[p]}>
+        <span aria-hidden="true">{SHORT[p]}</span>
+        <span class="visually-hidden">{PLATFORM_LABELS[p]}</span>
+      </li>
+    ))}
+    {rest > 0 && (
+      <li
+        class="more"
+        title={platforms
+          .slice(max)
+          .map((p) => PLATFORM_LABELS[p])
+          .join('、')}
+      >
+        +{rest}
+        <span class="visually-hidden">
+          （
+          {platforms
+            .slice(max)
+            .map((p) => PLATFORM_LABELS[p])
+            .join('、')}
+          ）
+        </span>
+      </li>
+    )}
+  </ul>
+)}
+
+<style>
+  .platforms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .platforms li {
+    font-family: var(--font-display);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 4px 6px;
+    border-radius: 4px;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+  }
+</style>

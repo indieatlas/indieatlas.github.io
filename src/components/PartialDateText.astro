@@ -1,0 +1,20 @@
+---
+import type { PartialDate } from '../../schema/common.ts';
+import { formatPartialDate } from '../lib/format.ts';
+import { startOf } from '../../scripts/lib/partial-date.ts';
+
+interface Props {
+  date: PartialDate;
+  rawText?: string;
+}
+const { date, rawText } = Astro.props;
+const machine = date.precision === 'day' ? startOf(date) : undefined;
+---
+
+{machine ? (
+  <time datetime={machine} title={rawText}>
+    {formatPartialDate(date)}
+  </time>
+) : (
+  <span title={rawText ? `出典の表記: ${rawText}` : undefined}>{formatPartialDate(date)}</span>
+)}

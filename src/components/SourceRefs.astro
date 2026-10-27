@@ -1,0 +1,61 @@
+---
+import type { SourceRef } from '../../schema/site-data.ts';
+import { formatDate, isoDate } from '../lib/format.ts';
+import ExternalLink from './ExternalLink.astro';
+
+// 出典の列挙（媒体名、リンク、確認日）
+interface Props {
+  sources: SourceRef[];
+  label?: string;
+  inline?: boolean;
+}
+const { sources, label = '出典', inline = false } = Astro.props;
+const checkedAt = sources.reduce((m, s) => (s.checkedAt > m ? s.checkedAt : m), '');
+---
+
+{sources.length > 0 && (
+  <div class:list={['source-refs', { inline }]}>
+    <span class="label">{label}:</span>
+    <ul>
+      {sources.map((s) => (
+        <li>
+          <ExternalLink href={s.url}>{s.label}</ExternalLink>
+        </li>
+      ))}
+    </ul>
+    {checkedAt && (
+      <span class="checked">
+        （確認日 <time datetime={isoDate(checkedAt)}>{formatDate(checkedAt)}</time>）
+      </span>
+    )}
+  </div>
+)}
+
+<style>
+  .source-refs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0 var(--space-2);
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
+    line-height: 1.6;
+  }
+  ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0 var(--space-2);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li + li::before {
+    content: '・';
+    color: var(--color-text-muted);
+    margin-right: var(--space-1);
+  }
+  a {
+    display: inline-block;
+    padding-block: 2px;
+  }
+</style>

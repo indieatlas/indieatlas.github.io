@@ -1,0 +1,87 @@
+---
+import type { SiteArticle } from '../../schema/site-data.ts';
+import { getGame } from '../lib/data.ts';
+import { ARTICLE_KIND_LABELS, ARTICLE_ROLE_LABELS, formatDate, isoDate, langLabel } from '../lib/format.ts';
+import { paths, url } from '../lib/urls.ts';
+import ExternalLink from './ExternalLink.astro';
+
+// 記事の1件。作品詳細では forGame を渡し、その作品の扱い（主題、言及など）を出す
+interface Props {
+  article: SiteArticle;
+  forGame?: string;
+  maxGames?: number;
+}
+const { article, forGame, maxGames = 3 } = Astro.props;
+const role = forGame ? article.games.find((g) => g.gameId === forGame)?.role : undefined;
+const others = article.games.filter((g) => g.gameId !== forGame);
+const shown = others.slice(0, maxGames);
+const rest = others.length - shown.length;
+---
+
+<article class="article-item">
+  <p class="meta">
+    <span class="kind">{ARTICLE_KIND_LABELS[article.kind]}</span>
+    <span class="outlet">{article.outlet.name}</span>
+    {article.publishedAt && <time datetime={isoDate(article.publishedAt)}>{formatDate(article.publishedAt)}</time>}
+    <span class="lang">{langLabel(article.lang)}</span>
+    {role && <span class="role">{ARTICLE_ROLE_LABELS[role]}</span>}
+  </p>
+  <h3 class="title">
+    <ExternalLink href={article.url} lang={article.lang}>
+      {article.title ?? `${article.outlet.name} の記事`}
+    </ExternalLink>
+  </h3>
+  {article.summaryJa && <p class="summary">{article.summaryJa}</p>}
+  {shown.length > 0 && (
+    <p class="games">
+      {forGame ? 'ほかに扱う作品' : '関連作品'}:{' '}
+      {shown.map((g, i) => {
+        const game = getGame(g.gameId);
+        return (
+          <>
+            {i > 0 && '、'}
+            {game ? <a href={url(paths.game(game.id))}>{game.title.display}</a> : g.gameId}
+          </>
+        );
+      })}
+      {rest > 0 && <span> ほか{rest}件</span>}
+    </p>
+  )}
+</article>
+
+<style>
+  .article-item {
+    padding: var(--space-4) 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-3);
+    margin: 0 0 var(--space-1);
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
+  }
+  .kind {
+    color: var(--color-accent-warm);
+    font-weight: 700;
+  }
+  .role {
+    padding: 0 6px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+  }
+  .title {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.6;
+    margin: 0;
+  }
+  .summary,
+  .games {
+    margin: var(--space-1) 0 0;
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+  }
+</style>

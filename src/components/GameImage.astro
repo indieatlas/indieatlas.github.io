@@ -1,0 +1,74 @@
+---
+import type { SiteGame } from '../../schema/site-data.ts';
+import { genreColorVar } from '../lib/data.ts';
+
+// 作品の画像。読み込みに失敗したら、レイアウトのスクリプトがプレースホルダーに置き換える（05 §5.4.2）
+interface Props {
+  game: SiteGame;
+  eager?: boolean;
+  transition?: boolean;
+  class?: string;
+}
+const { game, eager = false, transition = true, class: className } = Astro.props;
+const color = genreColorVar(game.primaryGenre);
+const vt = transition ? `view-transition-name: game-${game.id}` : undefined;
+---
+
+<div class:list={['game-image', className]} style={`--genre-color: ${color}`}>
+  {game.image ? (
+    <img
+      src={game.image.url}
+      alt={game.image.alt}
+      width={game.image.width ?? 460}
+      height={game.image.height ?? 215}
+      loading={eager ? 'eager' : 'lazy'}
+      decoding="async"
+      fetchpriority={eager ? 'high' : undefined}
+      data-fallback
+      style={vt}
+    />
+  ) : (
+    <svg
+      class="placeholder"
+      viewBox="0 0 460 215"
+      role="img"
+      aria-label={`${game.title.display}（画像なし）`}
+      style={vt}
+    >
+      <defs>
+        <radialGradient id={`ph-${game.id}`} cx="30%" cy="35%" r="80%">
+          <stop offset="0%" stop-color="var(--genre-color)" stop-opacity="0.55" />
+          <stop offset="100%" stop-color="var(--color-bg-deep)" stop-opacity="1" />
+        </radialGradient>
+      </defs>
+      <rect width="460" height="215" fill={`url(#ph-${game.id})`} />
+      <g fill="var(--genre-color)" opacity="0.8">
+        <circle cx="120" cy="80" r="3" />
+        <circle cx="210" cy="140" r="2" />
+        <circle cx="330" cy="70" r="2.5" />
+        <circle cx="390" cy="160" r="1.5" />
+      </g>
+      <path d="M120 80 L210 140 L330 70 L390 160" stroke="var(--genre-color)" stroke-opacity="0.4" fill="none" />
+    </svg>
+  )}
+</div>
+
+<style>
+  .game-image {
+    position: relative;
+    aspect-ratio: 460 / 215;
+    overflow: hidden;
+    background: radial-gradient(
+      circle at 30% 35%,
+      color-mix(in srgb, var(--genre-color) 35%, transparent),
+      var(--color-bg-deep)
+    );
+  }
+  .game-image img,
+  .game-image svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+</style>

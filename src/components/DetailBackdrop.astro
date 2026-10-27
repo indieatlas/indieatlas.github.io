@@ -1,0 +1,61 @@
+---
+import type { SiteGame } from '../../schema/site-data.ts';
+import { genreColorVar } from '../lib/data.ts';
+
+// 作品詳細のヘッダー背景。第1段階は CSS のグラデーション（02 §2.7.1）。WebGL 版は第4段階
+interface Props {
+  game: SiteGame;
+}
+const { game } = Astro.props;
+const [c1, c2, c3] = game.palette ?? [
+  genreColorVar(game.primaryGenre),
+  'var(--color-accent)',
+  'var(--color-accent-warm)',
+];
+---
+
+<div class="detail-backdrop" aria-hidden="true" style={`--c1: ${c1}; --c2: ${c2}; --c3: ${c3}`}>
+  {game.image && (
+    <img src={game.image.url} alt="" width="460" height="215" loading="eager" decoding="async" data-fallback />
+  )}
+</div>
+
+<style>
+  .detail-backdrop {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1;
+    background:
+      radial-gradient(60% 80% at 15% 20%, color-mix(in srgb, var(--c1) 45%, transparent), transparent 70%),
+      radial-gradient(50% 70% at 85% 10%, color-mix(in srgb, var(--c2) 25%, transparent), transparent 70%),
+      radial-gradient(70% 60% at 60% 100%, color-mix(in srgb, var(--c3) 18%, transparent), transparent 70%),
+      var(--color-bg);
+    background-size: 140% 140%;
+    animation: drift 40s ease-in-out infinite alternate;
+  }
+  .detail-backdrop img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(48px) saturate(1.2);
+    opacity: 0.32;
+    transform: scale(1.2);
+  }
+  .detail-backdrop::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 30%, var(--color-bg) 100%);
+  }
+  @keyframes drift {
+    from {
+      background-position: 0% 0%;
+    }
+    to {
+      background-position: 100% 60%;
+    }
+  }
+</style>

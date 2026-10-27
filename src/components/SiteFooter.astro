@@ -1,0 +1,59 @@
+---
+import { site } from '../config/site.ts';
+import { getStats } from '../lib/data.ts';
+import { formatDate } from '../lib/format.ts';
+import { paths, url } from '../lib/urls.ts';
+import ExternalLink from './ExternalLink.astro';
+
+const stats = getStats();
+---
+
+<footer class="site-footer">
+  <div class="container inner">
+    <div class="brand">
+      <p class="name">Indie Atlas</p>
+      <p class="muted small">{site.tagline}</p>
+    </div>
+    <div class="notes small muted">
+      <p>
+        掲載している情報は、ストア、公式サイト、媒体の記事などの出典に基づいています。記事は見出しと原文へのリンクだけを掲載し、本文は転載しません。画像はストアや公式のプレスキットが配信しているものを参照しています。
+      </p>
+      <p>
+        <a href={url(paths.about())}>運営説明</a> ・{' '}
+        <ExternalLink href={site.correctionUrl}>情報の訂正を依頼する</ExternalLink>
+      </p>
+      {stats.lastUpdated && (
+        <p>
+          最終更新: <time datetime={stats.lastUpdated}>{formatDate(stats.lastUpdated)}</time>
+        </p>
+      )}
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: var(--space-10);
+    border-top: 1px solid var(--color-border);
+    background: var(--color-bg-deep);
+    padding-block: var(--space-8);
+  }
+  .inner {
+    display: grid;
+    gap: var(--space-6);
+    grid-template-columns: minmax(12rem, 1fr) 3fr;
+  }
+  .name {
+    font-family: var(--font-display);
+    font-weight: 700;
+    margin: 0;
+  }
+  .notes p {
+    max-width: var(--measure);
+  }
+  @media (max-width: 640px) {
+    .inner {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

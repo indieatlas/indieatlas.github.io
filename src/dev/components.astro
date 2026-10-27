@@ -1,0 +1,124 @@
+---
+// 部品を並べた確認用のページ（/dev/components/）。npm run dev のときだけ生成する（09 P1-06）
+import ArticleList from '../components/ArticleList.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import CollectionCard from '../components/CollectionCard.astro';
+import EmptyState from '../components/EmptyState.astro';
+import GameGrid from '../components/GameGrid.astro';
+import JapaneseSupportBadge from '../components/JapaneseSupportBadge.astro';
+import Pagination from '../components/Pagination.astro';
+import PlatformList from '../components/PlatformList.astro';
+import PlayerModes from '../components/PlayerModes.astro';
+import ReleaseLabel from '../components/ReleaseLabel.astro';
+import SourceRefs from '../components/SourceRefs.astro';
+import TagChip from '../components/TagChip.astro';
+import UnknownValue from '../components/UnknownValue.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getArticles, getCollections, getGames, getTags } from '../lib/data.ts';
+import { paths } from '../lib/urls.ts';
+
+const games = getGames();
+const sample = games.slice(0, 4);
+const first = games[0]!;
+---
+
+<BaseLayout title="部品の一覧" path="dev/components/" noindex>
+  <div class="container section stack">
+    <h1>部品の一覧</h1>
+    <p class="muted">ヘッダーの切り替えボタンで、ライトとダークの両方を確認する。</p>
+
+    <h2>文字と色</h2>
+    <p>
+      本文の文字。<a href="#">リンク</a>。<span class="muted">補足の文字</span>。<UnknownValue />。
+      <UnknownValue kind="checking" />。
+    </p>
+    <p>
+      <span class="eyebrow">Eyebrow</span>
+    </p>
+    <p>
+      <a class="button button-primary" href="#">
+        主要な操作
+      </a>
+      <a class="button" href="#">
+        通常の操作
+      </a>
+    </p>
+    <div class="swatches">
+      {Array.from({ length: 8 }, (_, i) => (
+        <span style={`background: var(--atlas-c${i})`}>c{i}</span>
+      ))}
+    </div>
+
+    <h2>バッジと表示</h2>
+    <p>
+      <JapaneseSupportBadge support={{ interface: 'yes', subtitles: 'yes', audio: 'no', sources: [] }} />
+      <JapaneseSupportBadge support={{ interface: 'no', subtitles: 'yes', audio: 'no', sources: [] }} />
+      <JapaneseSupportBadge support={{ interface: 'planned', subtitles: 'unknown', audio: 'unknown', sources: [] }} />
+      <JapaneseSupportBadge support={{ interface: 'no', subtitles: 'no', audio: 'no', sources: [] }} />
+      <JapaneseSupportBadge support={null} />
+    </p>
+    <PlatformList platforms={['pc', 'mac', 'linux', 'switch', 'ps5', 'xbox-series']} max={4} />
+    <p>
+      <ReleaseLabel release={first.release} /> / <PlayerModes modes={first.playerModes} />
+    </p>
+    <SourceRefs sources={first.summary?.sources ?? []} />
+    <ul class="chip-row">
+      {getTags()
+        .slice(0, 6)
+        .map((t) => (
+          <li>
+            <TagChip id={t.id} label={t.label} />
+          </li>
+        ))}
+    </ul>
+
+    <h2>作品カード</h2>
+    <GameGrid games={sample} />
+
+    <h2>コレクションカード</h2>
+    <div class="grid">
+      {getCollections()
+        .slice(0, 2)
+        .map((c) => (
+          <CollectionCard collection={c} />
+        ))}
+    </div>
+
+    <h2>記事</h2>
+    <ArticleList articles={getArticles().slice(0, 3)} />
+
+    <h2>補助</h2>
+    <Breadcrumbs
+      items={[
+        { label: 'ホーム', path: paths.home() },
+        { label: '作品', path: paths.games() },
+        { label: first.title.display },
+      ]}
+    />
+    <Pagination current={3} total={8} pathFor={(p) => paths.games(p)} />
+    <EmptyState title="条件に合う作品が見つかりませんでした">
+      <p>条件を減らしてください。</p>
+    </EmptyState>
+  </div>
+</BaseLayout>
+
+<style>
+  .swatches {
+    display: flex;
+    gap: var(--space-2);
+  }
+  .swatches span {
+    width: 56px;
+    height: 32px;
+    border-radius: var(--radius-s);
+    display: grid;
+    place-items: center;
+    color: #000;
+    font-size: 0.75rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: var(--space-5);
+  }
+</style>

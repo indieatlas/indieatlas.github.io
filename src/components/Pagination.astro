@@ -1,0 +1,85 @@
+---
+import { url } from '../lib/urls.ts';
+
+interface Props {
+  current: number;
+  total: number;
+  pathFor: (page: number) => string; // ベースパスを含まないパス
+  label?: string;
+}
+const { current, total, pathFor, label = 'ページ送り' } = Astro.props;
+const pages = Array.from({ length: total }, (_, i) => i + 1).filter(
+  (p) => p === 1 || p === total || Math.abs(p - current) <= 2,
+);
+---
+
+{total > 1 && (
+  <nav class="pagination" aria-label={label}>
+    {current > 1 ? (
+      <a href={url(pathFor(current - 1))} rel="prev">
+        前へ
+      </a>
+    ) : (
+      <span class="disabled">前へ</span>
+    )}
+    <ol>
+      {pages.map((p, i) => (
+        <>
+          {i > 0 && p - pages[i - 1]! > 1 && <li class="gap">…</li>}
+          <li>{p === current ? <span aria-current="page">{p}</span> : <a href={url(pathFor(p))}>{p}</a>}</li>
+        </>
+      ))}
+    </ol>
+    {current < total ? (
+      <a href={url(pathFor(current + 1))} rel="next">
+        次へ
+      </a>
+    ) : (
+      <span class="disabled">次へ</span>
+    )}
+  </nav>
+)}
+
+<style>
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    margin-top: var(--space-8);
+    flex-wrap: wrap;
+  }
+  ol {
+    display: flex;
+    gap: var(--space-1);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  a,
+  span {
+    display: inline-grid;
+    place-items: center;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0 var(--space-3);
+    border-radius: 999px;
+    text-decoration: none;
+  }
+  a {
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+  }
+  a:hover {
+    border-color: var(--color-accent);
+  }
+  [aria-current='page'] {
+    background: var(--color-accent);
+    color: var(--color-accent-contrast);
+    font-weight: 700;
+  }
+  .disabled,
+  .gap {
+    color: var(--color-unknown);
+  }
+</style>

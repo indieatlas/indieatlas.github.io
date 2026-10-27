@@ -1,0 +1,27 @@
+---
+import type { SiteArticle } from '../../schema/site-data.ts';
+import ArticleItem from './ArticleItem.astro';
+
+interface Props {
+  articles: SiteArticle[];
+  forGame?: string;
+}
+const { articles, forGame } = Astro.props;
+---
+
+<ul class="article-list">
+  {articles.map((a) => (
+    <li>
+      <ArticleItem article={a} forGame={forGame} />
+    </li>
+  ))}
+</ul>
+
+<style>
+  .article-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--color-border);
+  }
+</style>

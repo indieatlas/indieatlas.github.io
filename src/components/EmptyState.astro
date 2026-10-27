@@ -1,0 +1,40 @@
+---
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<div class="empty-state" role="status">
+  <svg viewBox="0 0 64 64" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
+    <circle cx="32" cy="32" r="22" stroke-dasharray="3 5"></circle>
+    <circle cx="24" cy="28" r="2" fill="currentColor"></circle>
+    <circle cx="40" cy="24" r="1.5" fill="currentColor"></circle>
+    <circle cx="36" cy="40" r="2.5" fill="currentColor"></circle>
+  </svg>
+  <p class="title">{title}</p>
+  <slot />
+</div>
+
+<style>
+  .empty-state {
+    display: grid;
+    justify-items: center;
+    gap: var(--space-2);
+    padding: var(--space-9) var(--space-4);
+    border: 1px dashed var(--color-border);
+    border-radius: var(--radius-l);
+    text-align: center;
+    color: var(--color-text-muted);
+  }
+  svg {
+    width: 56px;
+    height: 56px;
+    color: var(--color-accent);
+  }
+  .title {
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0;
+  }
+</style>

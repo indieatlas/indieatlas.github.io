@@ -1,0 +1,196 @@
+---
+import { site } from '../config/site.ts';
+import { paths, url } from '../lib/urls.ts';
+import ThemeToggle from './ThemeToggle.astro';
+
+interface Props {
+  current?: 'games' | 'articles' | 'collections' | 'about';
+}
+const { current } = Astro.props;
+const nav = [
+  { key: 'games', label: '作品', href: url(paths.games()) },
+  { key: 'articles', label: '記事', href: url(paths.articles()) },
+  { key: 'collections', label: 'コレクション', href: url(paths.collections()) },
+  { key: 'about', label: '運営説明', href: url(paths.about()) },
+] as const;
+---
+
+<header class="site-header">
+  <div class="container inner">
+    <a class="logo" href={url(paths.home())} aria-label={`${site.name} ホーム`}>
+      <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="14.5" fill="none" stroke="currentColor" stroke-opacity="0.35"></circle>
+        <path d="M7 21 L13 10 L20 17 L25 8" fill="none" stroke="var(--color-accent)" stroke-width="1.4"></path>
+        <circle cx="7" cy="21" r="2" fill="var(--color-accent-warm)"></circle>
+        <circle cx="13" cy="10" r="2.4" fill="var(--color-accent)"></circle>
+        <circle cx="20" cy="17" r="1.8" fill="var(--color-accent)"></circle>
+        <circle cx="25" cy="8" r="1.6" fill="var(--color-accent-warm)"></circle>
+      </svg>
+      <span class="logo-text">
+        Indie <span>Atlas</span>
+      </span>
+    </a>
+    <nav aria-label="主要なナビゲーション">
+      <ul>
+        {nav.map((n) => (
+          <li>
+            <a href={n.href} aria-current={current === n.key ? 'page' : undefined}>
+              {n.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+    <div class="actions">
+      <a
+        class="search-link"
+        href={url(paths.games()) + '#search'}
+        aria-label="作品を検索（/ キー）"
+        data-search-shortcut
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="11" cy="11" r="6.5"></circle>
+          <path d="M16 16l5 5"></path>
+        </svg>
+        <span class="search-label">検索</span>
+        <kbd aria-hidden="true">/</kbd>
+      </a>
+      <ThemeToggle />
+    </div>
+  </div>
+</header>
+
+<script>
+  // "/" キーで検索ページの入力欄へ移る（02 §2.3.1）
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey) return;
+    const t = e.target as HTMLElement | null;
+    if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
+    e.preventDefault();
+    const input = document.querySelector<HTMLInputElement>('#search-input');
+    if (input) {
+      input.focus();
+      return;
+    }
+    const link = document.querySelector<HTMLAnchorElement>('[data-search-shortcut]');
+    if (link) location.href = link.href;
+  });
+</script>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: color-mix(in srgb, var(--color-bg) 82%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .inner {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    min-height: var(--header-height);
+  }
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--color-text);
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.125rem;
+    min-height: 44px;
+  }
+  .logo-mark {
+    width: 30px;
+    height: 30px;
+  }
+  .logo-text span {
+    color: var(--color-accent);
+  }
+  nav {
+    margin-left: auto;
+  }
+  nav ul {
+    display: flex;
+    gap: var(--space-1);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 var(--space-3);
+    color: var(--color-text-muted);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: var(--text-small);
+    border-radius: 999px;
+  }
+  nav a:hover,
+  nav a[aria-current='page'] {
+    color: var(--color-text);
+    background: var(--color-surface);
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+  .search-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-height: 44px;
+    padding: 0 var(--space-3);
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    font-size: var(--text-small);
+  }
+  .search-link:hover {
+    border-color: var(--color-accent);
+    color: var(--color-text);
+  }
+  .search-link svg {
+    width: 18px;
+    height: 18px;
+  }
+  kbd {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    padding: 0 6px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+  }
+  @media (max-width: 860px) {
+    .inner {
+      flex-wrap: wrap;
+      row-gap: 0;
+    }
+    nav {
+      order: 3;
+      width: 100%;
+      margin-left: 0;
+      overflow-x: auto;
+    }
+    .actions {
+      margin-left: auto;
+    }
+    .search-label,
+    kbd {
+      display: none;
+    }
+    .search-link {
+      width: 44px;
+      justify-content: center;
+      padding: 0;
+    }
+  }
+</style>

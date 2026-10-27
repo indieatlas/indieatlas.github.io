@@ -1,0 +1,36 @@
+---
+import type { SiteGame } from '../../schema/site-data.ts';
+import GameCard from './GameCard.astro';
+
+interface Props {
+  games: SiteGame[];
+  eagerCount?: number;
+  notes?: Record<string, string>;
+  headingLevel?: 2 | 3;
+}
+const { games, eagerCount = 0, notes = {}, headingLevel = 3 } = Astro.props;
+---
+
+<ul class="game-grid">
+  {games.map((g, i) => (
+    <li>
+      <GameCard game={g} eager={i < eagerCount} note={notes[g.id]} headingLevel={headingLevel} />
+    </li>
+  ))}
+</ul>
+
+<style>
+  .game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    gap: var(--space-5);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  @media (max-width: 400px) {
+    .game-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

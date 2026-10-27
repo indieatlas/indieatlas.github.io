@@ -1,0 +1,94 @@
+---
+import '../styles/tokens.css';
+import '../styles/base.css';
+import '../styles/utilities.css';
+import SiteFooter from '../components/SiteFooter.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SkipLink from '../components/SkipLink.astro';
+import { site } from '../config/site.ts';
+import { absoluteUrl, BASE_PATH, url } from '../lib/urls.ts';
+
+interface Props {
+  title?: string; // 未指定ならサイト名だけ
+  description?: string;
+  path: string; // ベースパスを含まないパス（canonical に使う）
+  ogImage?: string; // 外部の画像 URL
+  ogType?: 'website' | 'article';
+  noindex?: boolean;
+  jsonLd?: Record<string, unknown>;
+  current?: 'games' | 'articles' | 'collections' | 'about';
+  canonical?: string; // 絶対 URL で上書きする場合（転送ページ）
+}
+const {
+  title,
+  description = site.description,
+  path,
+  ogImage,
+  ogType = 'website',
+  noindex = false,
+  jsonLd,
+  current,
+  canonical,
+} = Astro.props;
+const fullTitle = title ? `${title} | ${site.name}` : `${site.name} — ${site.tagline}`;
+const canonicalUrl = canonical ?? absoluteUrl(path);
+const image = ogImage ?? absoluteUrl('og-default.png');
+const placeholder = url('placeholder.svg');
+---
+
+<!doctype html>
+<html lang="ja" data-base={BASE_PATH}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={title ?? site.name} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={image} />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
+    <link rel="sitemap" href={url('sitemap-index.xml')} />
+    <script is:inline>
+      // 表示テーマを描画の前に反映する
+      try {
+        var c = localStorage.getItem('indieatlas-theme');
+        if (c === 'light' || c === 'dark') document.documentElement.dataset.theme = c;
+        document.documentElement.dataset.themeChoice = c || 'system';
+      } catch (e) {}
+    </script>
+    <script is:inline define:vars={{ placeholder }}>
+      // 外部の画像の読み込みに失敗したら、共通のプレースホルダーに置き換える（05 §5.4.2）
+      window.addEventListener(
+        'error',
+        function (e) {
+          var t = e.target;
+          if (t && t.tagName === 'IMG' && t.hasAttribute('data-fallback') && !t.dataset.failed) {
+            t.dataset.failed = '1';
+            t.removeAttribute('srcset');
+            t.src = placeholder;
+          }
+        },
+        true,
+      );
+    </script>
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+    <slot name="head" />
+  </head>
+  <body>
+    <SkipLink />
+    <SiteHeader current={current} />
+    <main id="main" tabindex="-1">
+      <slot />
+    </main>
+    <SiteFooter />
+  </body>
+</html>

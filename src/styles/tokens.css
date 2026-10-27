@@ -1,0 +1,144 @@
+/*
+ * デザイントークン（02 §2.6）。値はここを正とする。
+ * ダークテーマを基本にし、[data-theme] と prefers-color-scheme でライトテーマに切り替える。
+ */
+:root {
+  color-scheme: dark;
+  --color-bg: #0b1020;
+  --color-bg-deep: #070b17;
+  --color-surface: #121a2e;
+  --color-surface-raised: #1a2440;
+  --color-border: #2a3556;
+  --color-border-strong: #3d4a73;
+  --color-text: #e8ecf5;
+  --color-text-muted: #a3adc2;
+  --color-accent: #7cc4ff;
+  --color-accent-contrast: #06213a;
+  --color-accent-warm: #ffb86b;
+  --color-positive: #7ee2a8;
+  --color-negative: #ff9a9a;
+  --color-unknown: #8a93a8;
+  --color-overlay: rgb(11 16 32 / 0.86);
+  --glow-accent: 0 0 0 1px rgb(124 196 255 / 0.35), 0 8px 32px -8px rgb(124 196 255 / 0.35);
+  --glow-warm: 0 0 24px -4px rgb(255 184 107 / 0.45);
+  --shadow-card: none;
+
+  /* アトラスとジャンルのカテゴリ色（色だけで区別しない。凡例と文字でも示す） */
+  --atlas-c0: #7cc4ff;
+  --atlas-c1: #ffb86b;
+  --atlas-c2: #b69cff;
+  --atlas-c3: #7ee2a8;
+  --atlas-c4: #ff8fb8;
+  --atlas-c5: #f4e06d;
+  --atlas-c6: #6fe0e0;
+  --atlas-c7: #ff9a6b;
+  --atlas-neutral: #c9d1e3;
+
+  /* 文字 */
+  --font-body:
+    'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Yu Gothic UI', Meiryo, system-ui, sans-serif;
+  --font-display: 'Space Grotesk', var(--font-body);
+  --text-body: clamp(1rem, 0.95rem + 0.25vw, 1.0625rem);
+  --text-small: 0.875rem;
+  --text-xsmall: 0.8125rem;
+  --text-h1: clamp(1.75rem, 1.2rem + 2.5vw, 3rem);
+  --text-h2: clamp(1.375rem, 1.1rem + 1.2vw, 1.875rem);
+  --text-h3: 1.125rem;
+  --leading-body: 1.8;
+  --leading-heading: 1.3;
+  --tracking-body: 0.02em;
+  --measure: 40rem;
+
+  /* 余白（4px 単位） */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 2rem;
+  --space-8: 2.5rem;
+  --space-9: 3rem;
+  --space-10: 4rem;
+  --space-11: 5rem;
+  --space-12: 6rem;
+
+  --radius-s: 6px;
+  --radius-m: 12px;
+  --radius-l: 20px;
+
+  --dur-fast: 150ms;
+  --dur-base: 250ms;
+  --dur-slow: 400ms;
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  --page-max: 80rem;
+  --header-height: 4rem;
+}
+
+/* ライトテーマ */
+:root[data-theme='light'] {
+  color-scheme: light;
+  --color-bg: #f6f7fb;
+  --color-bg-deep: #e9edf6;
+  --color-surface: #ffffff;
+  --color-surface-raised: #eef1f8;
+  --color-border: #d5dbe8;
+  --color-border-strong: #b5bfd4;
+  --color-text: #141a2a;
+  --color-text-muted: #4a5470;
+  --color-accent: #0b63b6;
+  --color-accent-contrast: #ffffff;
+  --color-accent-warm: #a65300;
+  --color-positive: #1d7a46;
+  --color-negative: #b3261e;
+  --color-unknown: #636c80;
+  --color-overlay: rgb(246 247 251 / 0.9);
+  --glow-accent: 0 0 0 1px rgb(11 99 182 / 0.25), 0 8px 24px -12px rgb(20 26 42 / 0.25);
+  --glow-warm: 0 0 16px -6px rgb(166 83 0 / 0.35);
+  --shadow-card: 0 1px 2px rgb(20 26 42 / 0.06), 0 4px 16px -8px rgb(20 26 42 / 0.12);
+
+  --atlas-c0: #0b63b6;
+  --atlas-c1: #a65300;
+  --atlas-c2: #6a44c9;
+  --atlas-c3: #1d7a46;
+  --atlas-c4: #b8336a;
+  --atlas-c5: #7a6500;
+  --atlas-c6: #08757a;
+  --atlas-c7: #b5461b;
+  --atlas-neutral: #4a5470;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    color-scheme: light;
+    --color-bg: #f6f7fb;
+    --color-bg-deep: #e9edf6;
+    --color-surface: #ffffff;
+    --color-surface-raised: #eef1f8;
+    --color-border: #d5dbe8;
+    --color-border-strong: #b5bfd4;
+    --color-text: #141a2a;
+    --color-text-muted: #4a5470;
+    --color-accent: #0b63b6;
+    --color-accent-contrast: #ffffff;
+    --color-accent-warm: #a65300;
+    --color-positive: #1d7a46;
+    --color-negative: #b3261e;
+    --color-unknown: #636c80;
+    --color-overlay: rgb(246 247 251 / 0.9);
+    --glow-accent: 0 0 0 1px rgb(11 99 182 / 0.25), 0 8px 24px -12px rgb(20 26 42 / 0.25);
+    --glow-warm: 0 0 16px -6px rgb(166 83 0 / 0.35);
+    --shadow-card: 0 1px 2px rgb(20 26 42 / 0.06), 0 4px 16px -8px rgb(20 26 42 / 0.12);
+
+    --atlas-c0: #0b63b6;
+    --atlas-c1: #a65300;
+    --atlas-c2: #6a44c9;
+    --atlas-c3: #1d7a46;
+    --atlas-c4: #b8336a;
+    --atlas-c5: #7a6500;
+    --atlas-c6: #08757a;
+    --atlas-c7: #b5461b;
+    --atlas-neutral: #4a5470;
+  }
+}

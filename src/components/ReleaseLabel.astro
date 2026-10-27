@@ -1,0 +1,37 @@
+---
+import type { SiteGame } from '../../schema/site-data.ts';
+import UnknownValue from './UnknownValue.astro';
+
+interface Props {
+  release: SiteGame['release'];
+  compact?: boolean;
+}
+const { release, compact = false } = Astro.props;
+const label = release?.overall.label;
+const short =
+  compact && label
+    ? label.replace(/^発売中（(.+) 発売）$/, '$1 発売').replace(/^発売予定（(.+)）$/, '$1 発売予定')
+    : label;
+---
+
+{release && !release.conflicted ? (
+  <span class:list={['release-label', `status-${release.overall.status}`]}>{short}</span>
+) : release?.conflicted ? (
+  <UnknownValue kind="checking" />
+) : (
+  <UnknownValue label="発売時期不明" />
+)}
+
+<style>
+  .release-label {
+    font-variant-numeric: tabular-nums;
+  }
+  .status-upcoming,
+  .status-early-access {
+    color: var(--color-accent-warm);
+  }
+  .status-cancelled,
+  .status-delisted {
+    color: var(--color-unknown);
+  }
+</style>

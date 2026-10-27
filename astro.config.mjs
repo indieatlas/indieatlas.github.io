@@ -13,5 +13,16 @@ export default defineConfig({
   output: 'static',
   trailingSlash: 'always',
   build: { format: 'directory', assets: '_assets' },
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({ filter: (page) => !page.includes('/dev/') }),
+    {
+      // 部品の確認用のページは、手元の開発サーバーでだけ生成する（09 P1-06）
+      name: 'indieatlas-dev-pages',
+      hooks: {
+        'astro:config:setup': ({ command, injectRoute }) => {
+          if (command === 'dev') injectRoute({ pattern: '/dev/components', entrypoint: './src/dev/components.astro' });
+        },
+      },
+    },
+  ],
 });

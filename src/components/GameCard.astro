@@ -1,0 +1,122 @@
+---
+import type { SiteGame } from '../../schema/site-data.ts';
+import { formatCardDate, isoDate } from '../lib/format.ts';
+import { paths, url } from '../lib/urls.ts';
+import GameImage from './GameImage.astro';
+import JapaneseSupportBadge from './JapaneseSupportBadge.astro';
+import PlatformList from './PlatformList.astro';
+import ReleaseLabel from './ReleaseLabel.astro';
+
+// 作品カード（02 §2.3.3）。カード全体を作品詳細へのリンクにし、中にリンクを入れ子にしない
+interface Props {
+  game: SiteGame;
+  eager?: boolean;
+  note?: string;
+  headingLevel?: 2 | 3;
+}
+const { game, eager = false, note, headingLevel = 3 } = Astro.props;
+const Heading = `h${headingLevel}` as 'h2' | 'h3';
+const dev = game.developers[0];
+const devText = dev ? (game.developers.length > 1 ? `${dev.name} ほか` : dev.name) : '開発者不明';
+const showOriginal = game.title.original !== game.title.display;
+---
+
+<a class="game-card" href={url(paths.game(game.id))} data-game-id={game.id}>
+  <GameImage game={game} eager={eager} />
+  <div class="body">
+    <Heading class="title">{game.title.display}</Heading>
+    {showOriginal && (
+      <p class="original" lang={game.title.originalLang}>
+        {game.title.original}
+      </p>
+    )}
+    <p class:list={['developer', { unknown: !dev }]}>{devText}</p>
+    <p class="release">
+      <ReleaseLabel release={game.release} compact />
+    </p>
+    <div class="meta">
+      <PlatformList platforms={game.platforms} max={4} />
+      <JapaneseSupportBadge support={game.japaneseSupport} />
+    </div>
+    {note && <p class="note">{note}</p>}
+    <p class="added">
+      収録 <time datetime={isoDate(game.addedAt)}>{formatCardDate(game.addedAt)}</time>
+    </p>
+  </div>
+</a>
+
+<style>
+  .game-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: var(--radius-m);
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+    color: var(--color-text);
+    text-decoration: none;
+    transition:
+      transform var(--dur-base) var(--ease-out),
+      border-color var(--dur-base) var(--ease-out),
+      box-shadow var(--dur-base) var(--ease-out);
+  }
+  .game-card:hover {
+    transform: translateY(-3px);
+    border-color: color-mix(in srgb, var(--color-accent) 70%, transparent);
+    box-shadow: var(--glow-accent);
+  }
+  .game-card:hover :global(img) {
+    transform: scale(1.03);
+  }
+  .game-card :global(img) {
+    transition: transform var(--dur-slow) var(--ease-out);
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: var(--space-3) var(--space-4) var(--space-4);
+    flex: 1;
+  }
+  .title {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.45;
+  }
+  .original {
+    margin: 0;
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
+    font-family: var(--font-display);
+  }
+  .developer,
+  .release {
+    margin: 0;
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
+  }
+  .developer.unknown {
+    color: var(--color-unknown);
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-2);
+  }
+  .note {
+    margin: var(--space-2) 0 0;
+    font-size: var(--text-xsmall);
+    color: var(--color-accent-warm);
+    font-weight: 600;
+  }
+  .added {
+    margin: auto 0 0;
+    padding-top: var(--space-2);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+  }
+</style>

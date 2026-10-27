@@ -1,0 +1,21 @@
+---
+import type { SiteGame } from '../../schema/site-data.ts';
+import { PLAYER_MODE_LABELS } from '../lib/format.ts';
+import UnknownValue from './UnknownValue.astro';
+
+interface Props {
+  modes: SiteGame['playerModes'];
+}
+const { modes } = Astro.props;
+const players =
+  modes?.minPlayers || modes?.maxPlayers ? `${modes.minPlayers ?? 1}〜${modes.maxPlayers ?? '?'}人` : undefined;
+---
+
+{modes ? (
+  <span>
+    {modes.modes.map((m) => PLAYER_MODE_LABELS[m]).join('、')}
+    {players && <span class="muted">（{players}）</span>}
+  </span>
+) : (
+  <UnknownValue />
+)}

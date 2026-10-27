@@ -1,0 +1,27 @@
+---
+// 「不明」「確認中」の表示（02 §2.4.3）。推測で埋めず、灰色の文字で示す
+interface Props {
+  kind?: 'unknown' | 'checking';
+  label?: string;
+}
+const { kind = 'unknown', label } = Astro.props;
+const text = label ?? (kind === 'checking' ? '確認中' : '不明');
+---
+
+<span class:list={['unknown-value', kind]}>{text}</span>
+
+<style>
+  .unknown-value {
+    color: var(--color-unknown);
+  }
+  .checking::before {
+    content: '';
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    margin-right: 0.35em;
+    border-radius: 50%;
+    background: var(--color-accent-warm);
+    vertical-align: 0.1em;
+  }
+</style>

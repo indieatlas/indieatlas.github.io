@@ -1,0 +1,40 @@
+---
+import type { SiteGame } from '../../schema/site-data.ts';
+import { JAPANESE_BADGE_LABELS, japaneseBadge } from '../lib/format.ts';
+
+interface Props {
+  support: SiteGame['japaneseSupport'];
+}
+const { support } = Astro.props;
+const badge = japaneseBadge(support);
+---
+
+<span class:list={['ja-badge', `ja-${badge}`]}>日本語: {JAPANESE_BADGE_LABELS[badge]}</span>
+
+<style>
+  .ja-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 4px 8px;
+    border-radius: 999px;
+    border: 1px solid var(--color-border);
+    color: var(--color-unknown);
+    white-space: nowrap;
+  }
+  .ja-full {
+    color: var(--color-positive);
+    border-color: color-mix(in srgb, var(--color-positive) 50%, transparent);
+  }
+  .ja-partial,
+  .ja-planned {
+    color: var(--color-accent-warm);
+    border-color: color-mix(in srgb, var(--color-accent-warm) 45%, transparent);
+  }
+  .ja-none {
+    color: var(--color-text-muted);
+  }
+</style>
