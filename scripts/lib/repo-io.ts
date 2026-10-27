@@ -8,6 +8,7 @@ import { Collection } from '../../schema/collection.ts';
 import { RuntimeConfig, SourcesFile } from '../../schema/config.ts';
 import { Developer } from '../../schema/developer.ts';
 import { Game } from '../../schema/game.ts';
+import { ImagePalettes } from '../../schema/media.ts';
 import { GameRelationsFile } from '../../schema/relation.ts';
 import { ReviewQueue, RunsFile, SeenUrls, SourceState, TasksFile, UsageLedger } from '../../schema/state.ts';
 import { TagsFile } from '../../schema/taxonomy.ts';
@@ -19,6 +20,7 @@ import {
   sortRelations,
   sortReviewQueue,
   sortRuns,
+  sortPalettes,
   sortSeenUrls,
   sortTags,
   sortTasks,
@@ -106,6 +108,7 @@ export const FILE_KINDS: FileKind[] = [
     sort: sortRelations,
   }),
   defineKind({ name: 'tags', file: 'data/taxonomy/tags.json', schema: TagsFile, sort: sortTags }),
+  defineKind({ name: 'palettes', file: 'data/media/palettes.json', schema: ImagePalettes, sort: sortPalettes }),
   defineKind({
     name: 'source-state',
     dir: 'state/sources',
@@ -142,6 +145,7 @@ export interface RepoData {
   collections: Collection[];
   relations: GameRelationsFile;
   tags: TagsFile;
+  palettes: ImagePalettes;
   tasks: TasksFile;
   reviewQueue: ReviewQueue;
   seenUrls: SeenUrls;
@@ -168,6 +172,10 @@ export function loadRepo(): RepoData {
       relations: [],
     },
     tags: readJsonIfExists(TagsFile, repoPath('data/taxonomy/tags.json')) ?? { schemaVersion: 1, tags: [] },
+    palettes: readJsonIfExists(ImagePalettes, repoPath('data/media/palettes.json')) ?? {
+      schemaVersion: 1,
+      entries: {},
+    },
     tasks: readJsonIfExists(TasksFile, repoPath('state/tasks.json')) ?? { schemaVersion: 1, tasks: [] },
     reviewQueue: readJsonIfExists(ReviewQueue, repoPath('state/review-queue.json')) ?? { schemaVersion: 1, items: [] },
     seenUrls: readJsonIfExists(SeenUrls, repoPath('state/seen-urls.json')) ?? { schemaVersion: 1, entries: {} },

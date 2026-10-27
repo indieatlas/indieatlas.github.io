@@ -19,6 +19,7 @@ import { compare, startOf } from '../lib/partial-date.ts';
 import type { RepoData } from '../lib/repo-io.ts';
 import { by, cmp } from '../lib/sort.ts';
 import { kanaVariants } from '../lib/text-normalize.ts';
+import { gameTheme } from './game-theme.ts';
 import { releaseEntryLabel, releaseLabel, STORE_LABELS } from './labels.ts';
 
 export interface SiteDataSet {
@@ -81,6 +82,7 @@ export function buildSiteData(repo: RepoData): SiteDataSet {
       const s = sourceById.get(e.sourceId);
       if (s) return s.name;
     }
+    if (registrableDomain(e.url) === 'igdb.com') return 'IGDB';
     const store = storeOf(e.url);
     if (store && store in STORE_LABELS) return STORE_LABELS[store as keyof typeof STORE_LABELS];
     return registrableDomain(e.url);
@@ -172,6 +174,17 @@ export function buildSiteData(repo: RepoData): SiteDataSet {
         sources: refs([c]),
       }));
     const image = pickImage(adoptedOf(claims, 'image'), g);
+    const screenshots = adoptedOf(claims, 'image')
+      .filter((c) => c.value.role === 'screenshot')
+      .map((c) => ({
+        url: c.value.url,
+        // IGDB の画像は、URL の大きさの指定を変えると大きな版になる
+        large: c.value.url.replace('/t_screenshot_big/', '/t_1080p/'),
+        ...(c.value.width ? { width: c.value.width } : {}),
+        ...(c.value.height ? { height: c.value.height } : {}),
+        alt: c.value.alt ?? `${g.title.display} のスクリーンショット`,
+        ...(c.value.usage.credit ? { credit: c.value.usage.credit } : {}),
+      }));
     const articles = articlesByGame.get(g.id) ?? [];
     const enriched = enrichment(g, claims, articles, articleById);
     const filledFields = [
@@ -213,6 +226,8 @@ export function buildSiteData(repo: RepoData): SiteDataSet {
       stores,
       ...(g.officialUrl ? { officialUrl: g.officialUrl } : {}),
       ...(image ? { image } : {}),
+      screenshots,
+      ...paletteOf(g, image?.url, repo),
       ...(primaryGenre(tags, tagUse) ? { primaryGenre: primaryGenre(tags, tagUse) } : {}),
       articles,
       related: [],
@@ -485,4 +500,12 @@ function enrichment(
     if (art) consider(dateOnly(art.createdAt), ENRICH_NOTES.article!);
   }
   return best ? { enrichedAt: best.date, enrichedNote: best.note } : {};
+}
+
+/** 画像から抽出した色と、それから作るページの色。画像が変わっていれば使わない */
+function paletteOf(g: Game, imageUrl: string | undefined, repo: RepoData): Pick<SiteGame, 'palette' | 'theme'> {
+  const p = repo.palettes.entries[g.id];
+  if (!p || !imageUrl || p.imageUrl !== imageUrl) return {};
+  const theme = gameTheme(p.colors);
+  return { palette: p.colors, ...(theme ? { theme } : {}) };
 }

@@ -104,6 +104,7 @@ export function checkFiles(): { issues: CheckIssue[]; data: RepoData | undefined
     collections: (parsed.get('collection') ?? []) as RepoData['collections'],
     relations: one('relations', { schemaVersion: 1, relations: [] }),
     tags: one('tags', { schemaVersion: 1, tags: [] }),
+    palettes: one('palettes', { schemaVersion: 1, entries: {} }),
     tasks: one('tasks', { schemaVersion: 1, tasks: [] }),
     reviewQueue: one('review-queue', { schemaVersion: 1, items: [] }),
     seenUrls: one('seen-urls', { schemaVersion: 1, entries: {} }),

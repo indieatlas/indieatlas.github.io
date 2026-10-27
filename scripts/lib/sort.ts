@@ -3,6 +3,7 @@ import type { ClaimsFile } from '../../schema/claim.ts';
 import { ClaimField, scopeKey } from '../../schema/claim.ts';
 import type { Collection } from '../../schema/collection.ts';
 import type { Game } from '../../schema/game.ts';
+import type { ImagePalettes } from '../../schema/media.ts';
 import type { GameRelationsFile } from '../../schema/relation.ts';
 import type { ReviewQueue, RunsFile, SeenUrls, TasksFile } from '../../schema/state.ts';
 import type { TagsFile } from '../../schema/taxonomy.ts';
@@ -135,6 +136,12 @@ export function sortRuns(f: RunsFile): RunsFile {
       ),
     ),
   };
+}
+
+export function sortPalettes(f: ImagePalettes): ImagePalettes {
+  const entries: ImagePalettes['entries'] = {};
+  for (const k of Object.keys(f.entries).sort()) entries[k] = f.entries[k]!;
+  return { ...f, entries };
 }
 
 export function sortSeenUrls(f: SeenUrls): SeenUrls {

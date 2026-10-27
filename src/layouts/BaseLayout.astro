@@ -20,6 +20,7 @@ interface Props {
   current?: 'games' | 'articles' | 'collections' | 'about';
   canonical?: string; // 絶対 URL で上書きする場合（転送ページ）
   stageTint?: string; // 背景の WebGL に混ぜる色（#rrggbb か CSS の変数名）
+  theme?: { dark: Record<string, string>; light: Record<string, string> }; // ページの色を上書きする
 }
 const {
   title,
@@ -32,7 +33,15 @@ const {
   current,
   canonical,
   stageTint,
+  theme,
 } = Astro.props;
+const vars = (m: Record<string, string>) =>
+  Object.entries(m)
+    .map(([k, v]) => `${k}:${v}`)
+    .join(';');
+const themeCss = theme
+  ? `:root:root{${vars(theme.dark)}}:root:root[data-theme='light']{${vars(theme.light)}}@media (prefers-color-scheme: light){:root:root:not([data-theme]){${vars(theme.light)}}}`
+  : undefined;
 const fullTitle = title ? `${title} | ${site.name}` : `${site.name} — ${site.tagline}`;
 const canonicalUrl = canonical ?? absoluteUrl(path);
 const image = ogImage ?? absoluteUrl('og-default.png');
@@ -87,6 +96,7 @@ const placeholder = url('placeholder.svg');
         true,
       );
     </script>
+    {themeCss && <style set:html={themeCss} />}
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
     <slot name="head" />
   </head>

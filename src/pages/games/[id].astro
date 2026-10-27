@@ -9,6 +9,7 @@ import JapaneseSupportBadge from '../../components/JapaneseSupportBadge.astro';
 import PlatformList from '../../components/PlatformList.astro';
 import PlayerModes from '../../components/PlayerModes.astro';
 import ReleaseLabel from '../../components/ReleaseLabel.astro';
+import Screenshots from '../../components/Screenshots.astro';
 import SourceRefs from '../../components/SourceRefs.astro';
 import TagChip from '../../components/TagChip.astro';
 import UnknownValue from '../../components/UnknownValue.astro';
@@ -104,6 +105,8 @@ const description =
     ogType="article"
     jsonLd={jsonLd}
     current="games"
+    stageTint={game.theme ? '--color-signal' : genreColorName(game.primaryGenre)}
+    theme={game.theme}
   >
     <article data-pagefind-body>
       <header class="detail-header">

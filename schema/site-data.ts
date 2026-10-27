@@ -66,7 +66,9 @@ export interface SiteGame {
   stores: { store: Store; url: string; platform?: Platform; sources: SourceRef[] }[];
   officialUrl?: string;
   image?: { url: string; width?: number; height?: number; alt: string; credit?: string };
-  palette?: string[]; // #rrggbb を3色
+  screenshots: { url: string; large: string; width?: number; height?: number; alt: string; credit?: string }[];
+  palette?: string[]; // #rrggbb を3色（画像から抽出した主な色）
+  theme?: { dark: Record<string, string>; light: Record<string, string> }; // 作品詳細のページの色（CSS 変数）
   primaryGenre?: string; // 主なジャンル系タグの ID
   articles: { id: string; role: ArticleRole }[]; // 詳細は articles.json から引く
   related: { gameId: string; kind: RelationKind | 'same-developer'; reason: string }[];

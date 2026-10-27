@@ -26,6 +26,9 @@ const [c1, c2, c3] = game.palette ?? [
     inset: 0;
     overflow: hidden;
     z-index: -1;
+    /* 下に向かって透けさせ、ページの背景につなげる */
+    -webkit-mask-image: linear-gradient(to bottom, #000 35%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 35%, transparent 100%);
     background:
       radial-gradient(60% 80% at 15% 20%, color-mix(in srgb, var(--c1) 45%, transparent), transparent 70%),
       radial-gradient(50% 70% at 85% 10%, color-mix(in srgb, var(--c2) 25%, transparent), transparent 70%),
@@ -41,11 +44,5 @@ const [c1, c2, c3] = game.palette ?? [
     filter: blur(48px) saturate(1.2);
     opacity: 0.32;
     transform: scale(1.2);
-  }
-  .detail-backdrop::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to bottom, transparent 30%, var(--color-bg) 100%);
   }
 </style>
