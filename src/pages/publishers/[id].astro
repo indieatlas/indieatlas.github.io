@@ -1,0 +1,24 @@
+---
+import StudioPage from '../../components/StudioPage.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getDeveloper, getDevelopers, getGame } from '../../lib/data.ts';
+import { paths } from '../../lib/urls.ts';
+
+export function getStaticPaths() {
+  return getDevelopers()
+    .filter((d) => d.published.length > 0)
+    .map((d) => ({ params: { id: d.id } }));
+}
+const studio = getDeveloper(Astro.params.id!)!;
+const first = getGame(studio.published[0]!);
+---
+
+<BaseLayout
+  title={studio.name}
+  description={`${studio.name} がパブリッシャーとして手がけた収録作品（${studio.published.length}作品）。`}
+  path={paths.publisher(studio.id)}
+  ogImage={first?.image?.url}
+  current="games"
+>
+  <StudioPage studio={studio} role="publisher" />
+</BaseLayout>

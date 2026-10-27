@@ -1,106 +1,24 @@
 ---
-import Breadcrumbs from '../../components/Breadcrumbs.astro';
-import ExternalLink from '../../components/ExternalLink.astro';
-import GameGrid from '../../components/GameGrid.astro';
+import StudioPage from '../../components/StudioPage.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getDeveloper, getDevelopers, getGame } from '../../lib/data.ts';
 import { paths } from '../../lib/urls.ts';
-import type { SiteGame } from '../../../schema/site-data.ts';
 
 export function getStaticPaths() {
-  return getDevelopers().map((d) => ({ params: { id: d.id } }));
+  return getDevelopers()
+    .filter((d) => d.developed.length > 0)
+    .map((d) => ({ params: { id: d.id } }));
 }
-const dev = getDeveloper(Astro.params.id!)!;
-const games = (ids: string[]) => ids.map((id) => getGame(id)).filter((g): g is SiteGame => g !== undefined);
-const developed = games(dev.developed);
-// 自社で開発した作品は「開発」にだけ出す
-const published = games(dev.published.filter((id) => !dev.developed.includes(id)));
-const LINK_LABELS: Record<string, string> = {
-  website: '公式サイト',
-  x: 'X',
-  bluesky: 'Bluesky',
-  youtube: 'YouTube',
-  'steam-developer': 'Steam',
-  'steam-publisher': 'Steam',
-  itch: 'itch.io',
-  'press-kit': 'プレスキット',
-  other: 'リンク',
-};
-const links = [
-  ...(dev.officialUrl ? [{ kind: 'website', url: dev.officialUrl }] : []),
-  ...dev.links.filter((l) => l.url !== dev.officialUrl),
-];
-const total = new Set([...dev.developed, ...dev.published]).size;
-const ROLE = { developer: '開発', publisher: 'パブリッシャー' } as const;
+const studio = getDeveloper(Astro.params.id!)!;
+const first = getGame(studio.developed[0]!);
 ---
 
 <BaseLayout
-  title={dev.name}
-  description={`${dev.name} が手がけた収録作品（${total}作品）。`}
-  path={paths.developer(dev.id)}
-  ogImage={developed[0]?.image?.url ?? published[0]?.image?.url}
+  title={studio.name}
+  description={`${studio.name} が開発元として手がけた収録作品（${studio.developed.length}作品）。`}
+  path={paths.developer(studio.id)}
+  ogImage={first?.image?.url}
   current="games"
 >
-  <div class="container section">
-    <Breadcrumbs
-      items={[
-        { label: 'ホーム', path: paths.home() },
-        { label: '開発元・パブリッシャー', path: paths.developers() },
-        { label: dev.name },
-      ]}
-    />
-    <h1 class="page-title">{dev.name}</h1>
-    <p class="meta muted">
-      {dev.original && <span lang="en">{dev.original}</span>}
-      <span>{dev.roles.map((r) => ROLE[r]).join('・')}</span>
-      <span>{total}作品</span>
-    </p>
-    {links.length > 0 && (
-      <ul class="links">
-        {links.map((l) => (
-          <li>
-            <ExternalLink href={l.url} class="button">
-              {LINK_LABELS[l.kind] ?? 'リンク'}
-            </ExternalLink>
-          </li>
-        ))}
-      </ul>
-    )}
-    {developed.length > 0 && (
-      <section class="block" aria-labelledby="developed-h">
-        <h2 id="developed-h">開発した作品</h2>
-        <GameGrid games={developed} eagerCount={4} />
-      </section>
-    )}
-    {published.length > 0 && (
-      <section class="block" aria-labelledby="published-h">
-        <h2 id="published-h">販売した作品</h2>
-        <GameGrid games={published} />
-      </section>
-    )}
-  </div>
+  <StudioPage studio={studio} role="developer" />
 </BaseLayout>
-
-<style>
-  .meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-1) var(--space-4);
-    margin: 0 0 var(--space-4);
-  }
-  .links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-2);
-    list-style: none;
-    margin: 0 0 var(--space-6);
-    padding: 0;
-  }
-  .block {
-    margin-top: var(--space-6);
-  }
-  .block h2 {
-    font-size: 1.25rem;
-    margin: 0 0 var(--space-4);
-  }
-</style>

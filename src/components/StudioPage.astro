@@ -1,0 +1,92 @@
+---
+import type { SiteDeveloper, SiteGame } from '../../schema/site-data.ts';
+import { getGame } from '../lib/data.ts';
+import { paths, url } from '../lib/urls.ts';
+import Breadcrumbs from './Breadcrumbs.astro';
+import ExternalLink from './ExternalLink.astro';
+import GameGrid from './GameGrid.astro';
+
+// 開発元、またはパブリッシャーのページ。その立場で手がけた作品だけを並べる
+interface Props {
+  studio: SiteDeveloper;
+  role: 'developer' | 'publisher';
+}
+const { studio, role } = Astro.props;
+const games = (role === 'developer' ? studio.developed : studio.published)
+  .map((id) => getGame(id))
+  .filter((g): g is SiteGame => g !== undefined);
+const LINK_LABELS: Record<string, string> = {
+  website: '公式サイト',
+  x: 'X',
+  bluesky: 'Bluesky',
+  youtube: 'YouTube',
+  'steam-developer': 'Steam',
+  'steam-publisher': 'Steam',
+  itch: 'itch.io',
+  'press-kit': 'プレスキット',
+  other: 'リンク',
+};
+const links = [
+  ...(studio.officialUrl ? [{ kind: 'website', url: studio.officialUrl }] : []),
+  ...studio.links.filter((l) => l.url !== studio.officialUrl),
+];
+// もう一方の立場でも作品があれば、そのページへのリンクを出す
+const other =
+  role === 'developer'
+    ? studio.published.length > 0 && { label: 'パブリッシャーとして販売した作品', path: paths.publisher(studio.id) }
+    : studio.developed.length > 0 && { label: '開発元として開発した作品', path: paths.developer(studio.id) };
+---
+
+<div class="container section">
+  <Breadcrumbs
+    items={[
+      { label: 'ホーム', path: paths.home() },
+      role === 'developer'
+        ? { label: '開発元', path: paths.developers() }
+        : { label: 'パブリッシャー', path: paths.publishers() },
+      { label: studio.name },
+    ]}
+  />
+  <h1 class="page-title">{studio.name}</h1>
+  <p class="meta muted">
+    {studio.original && <span lang="en">{studio.original}</span>}
+    <span>{role === 'developer' ? '開発元' : 'パブリッシャー'}</span>
+    <span>{games.length}作品</span>
+  </p>
+  {(links.length > 0 || other) && (
+    <ul class="links">
+      {links.map((l) => (
+        <li>
+          <ExternalLink href={l.url} class="button">
+            {LINK_LABELS[l.kind] ?? 'リンク'}
+          </ExternalLink>
+        </li>
+      ))}
+      {other && (
+        <li>
+          <a class="button" href={url(other.path)}>
+            {other.label}
+          </a>
+        </li>
+      )}
+    </ul>
+  )}
+  <GameGrid games={games} eagerCount={4} />
+</div>
+
+<style>
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-4);
+    margin: 0 0 var(--space-4);
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    list-style: none;
+    margin: 0 0 var(--space-6);
+    padding: 0;
+  }
+</style>

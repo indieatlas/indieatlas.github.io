@@ -11,6 +11,7 @@ for (const [name, path] of [
   ['運営説明', 'about/'],
   ['イベント', 'events/'],
   ['開発元の一覧', 'developers/'],
+  ['パブリッシャーの一覧', 'publishers/'],
   ['開発元', 'developers/dev_000001/'],
 ] as const) {
   for (const scheme of ['dark', 'light'] as const) {

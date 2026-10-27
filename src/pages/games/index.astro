@@ -14,7 +14,10 @@ import { paths, url } from '../../lib/urls.ts';
   <div class="container section">
     <div class="page-head">
       <h1 id="search" class="page-title">作品</h1>
-      <a class="sub-link" href={url(paths.developers())}>開発元・パブリッシャーから探す</a>
+      <p class="sub-links">
+        <a href={url(paths.developers())}>開発元から探す</a>
+        <a href={url(paths.publishers())}>パブリッシャーから探す</a>
+      </p>
     </div>
     <GameSearch>
       <GameListing page={1} />
@@ -30,7 +33,10 @@ import { paths, url } from '../../lib/urls.ts';
     justify-content: space-between;
     gap: var(--space-2) var(--space-4);
   }
-  .sub-link {
+  .sub-links {
+    display: flex;
+    gap: var(--space-4);
+    margin: 0;
     font-size: var(--text-small);
     font-weight: 700;
   }

@@ -1,0 +1,17 @@
+---
+import StudioIndex from '../../components/StudioIndex.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { paths } from '../../lib/urls.ts';
+---
+
+<BaseLayout
+  title="パブリッシャー"
+  description="収録作品のパブリッシャーの一覧。パブリッシャーごとに作品をたどれます。"
+  path={paths.publishers()}
+  current="games"
+>
+  <div class="container section">
+    <h1 class="page-title">パブリッシャー</h1>
+    <StudioIndex role="publisher" />
+  </div>
+</BaseLayout>

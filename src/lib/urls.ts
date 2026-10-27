@@ -30,5 +30,7 @@ export const paths = {
   events: () => 'events/',
   developers: () => 'developers/',
   developer: (id: string) => `developers/${id}/`,
+  publishers: () => 'publishers/',
+  publisher: (id: string) => `publishers/${id}/`,
   about: () => 'about/',
 };
