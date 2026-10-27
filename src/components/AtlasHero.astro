@@ -84,7 +84,67 @@ const slots = [
   )}
 </section>
 
+<script>
+  import { defineAtlasElement } from '../scripts/gl/atlas-element.ts';
+  defineAtlasElement();
+</script>
+
 <style>
+  atlas-canvas {
+    position: absolute;
+    inset: 0;
+    display: block;
+    touch-action: pan-y;
+  }
+  atlas-canvas :global(canvas) {
+    position: absolute;
+    inset: 0;
+    touch-action: pan-y;
+    opacity: 0;
+    animation: atlas-in var(--dur-slow) var(--ease-out) forwards;
+  }
+  @keyframes atlas-in {
+    to {
+      opacity: 1;
+    }
+  }
+  atlas-canvas :global(.atlas-tooltip) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    width: 15rem;
+    padding: var(--space-2);
+    border-radius: var(--radius-m);
+    border: 1px solid var(--color-border-strong);
+    background: var(--color-surface);
+    box-shadow: 0 12px 32px -12px rgb(0 0 0 / 0.5);
+    pointer-events: none;
+    font-size: var(--text-xsmall);
+    line-height: 1.5;
+  }
+  atlas-canvas :global(.atlas-tooltip img) {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 460 / 215;
+    object-fit: cover;
+    border-radius: var(--radius-s);
+    margin-bottom: var(--space-2);
+  }
+  atlas-canvas :global(.atlas-tooltip p) {
+    margin: 0;
+  }
+  atlas-canvas :global(.atlas-tooltip__title) {
+    font-weight: 700;
+    font-size: var(--text-small);
+  }
+  atlas-canvas :global(.atlas-tooltip__tags),
+  atlas-canvas :global(.atlas-tooltip__hint) {
+    color: var(--color-text-muted);
+  }
+  atlas-canvas :global(.atlas-tooltip__release) {
+    color: var(--color-accent-warm);
+  }
   .atlas-hero {
     position: relative;
     isolation: isolate;
