@@ -4,9 +4,19 @@ import { toIsoDateTime, now } from '../lib/clock.ts';
 import { PROJECT_ROOT, type RepoData } from '../lib/repo-io.ts';
 import { codeHashes, contentHash, siteDataHash, type HashInputs } from './content-hash.ts';
 import { buildSiteData } from './site-data.ts';
+import { AmazonRanking } from '../../schema/amazon.ts';
+import { isFresh } from '../sources/amazon.ts';
 
 export const SITE_DATA_DIR = path.join(PROJECT_ROOT, '.generated/site-data');
 export const HOSTING_DIR = path.join(PROJECT_ROOT, '.generated/hosting');
+export const AMAZON_RANKING_FILE = path.join(PROJECT_ROOT, '.generated/amazon/ranking.json');
+
+/** 取得から24時間以内の売れ筋だけを読む。なければ undefined */
+export function readFreshAmazonRanking(file = AMAZON_RANKING_FILE, at = now()): AmazonRanking | undefined {
+  if (!fs.existsSync(file)) return undefined;
+  const r = AmazonRanking.safeParse(JSON.parse(fs.readFileSync(file, 'utf8')));
+  return r.success && isFresh(r.data, at) ? r.data : undefined;
+}
 
 export interface PreparedSite {
   files: Record<string, unknown>; // ファイル名（拡張子なし）→ 内容
@@ -18,7 +28,11 @@ export function siteEnv(): { SITE_URL: string; BASE_PATH: string } {
 }
 
 /** data/ から .generated/site-data/ の内容を作る（03 §3.7） */
-export function prepareSite(repo: RepoData, code: Record<string, string> = codeHashes()): PreparedSite {
+export function prepareSite(
+  repo: RepoData,
+  code: Record<string, string> = codeHashes(),
+  amazon?: AmazonRanking,
+): PreparedSite {
   const data = buildSiteData(repo);
   const files: Record<string, unknown> = {
     games: data.games,
@@ -30,6 +44,8 @@ export function prepareSite(repo: RepoData, code: Record<string, string> = codeH
     genres: data.genres,
     events: data.events,
     stats: data.stats,
+    // Amazon の売れ筋（取得から24時間以内のものだけ。なければ空）
+    'amazon-ranking': amazon ? { fetchedAt: amazon.fetchedAt, items: amazon.items } : { items: [] },
   };
   const hashInputs: HashInputs = { siteData: siteDataHash(files), code, env: siteEnv() };
   return { files, meta: { contentHash: contentHash(hashInputs), hashInputs, generatedAt: toIsoDateTime(now()) } };
