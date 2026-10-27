@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "g_000070",
-  "status": "candidate",
+  "status": "published",
   "title": {
     "display": "Touhou Luna Nights",
     "original": "Touhou Luna Nights",
@@ -35,9 +35,24 @@
     "dev_000063"
   ],
   "indie": {
-    "assessment": "unknown",
-    "reasons": [],
-    "assessedAt": "2026-10-27T18:05:50Z"
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "small-team",
+        "note": "10人以下の小規模開発の国産インディーとして、日本のインディースタジオTeam Ladybug作と紹介",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://automaton-media.com/en/news/japanese-dev-showcases-japans-top-small-scale-indie-games-that-have-sold-over-500k-units/",
+            "publishedAt": "2024-06-11",
+            "retrievedAt": "2026-10-27T19:07:14Z",
+            "quote": "The critically acclaimed 2D metroidvania was developed by Japanese indie studio Team Ladybug in 2019",
+            "originKey": "media:automaton-media.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T19:07:14Z"
   },
   "identityEvidence": [
     {
@@ -117,6 +132,7 @@
     }
   ],
   "createdAt": "2026-10-27T18:05:50Z",
-  "updatedAt": "2026-10-27T18:18:00Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T19:07:15Z",
   "createdByRun": "local-seed"
 }

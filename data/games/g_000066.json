@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "g_000066",
-  "status": "candidate",
+  "status": "published",
   "title": {
     "display": "魔法少女ノ魔女裁判",
     "original": "魔法少女ノ魔女裁判",
@@ -45,9 +45,23 @@
     "dev_000072"
   ],
   "indie": {
-    "assessment": "unknown",
-    "reasons": [],
-    "assessedAt": "2026-10-27T18:05:14Z"
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-showcase",
+        "note": "Steamストアの受賞リストに電撃インディー大賞2026総合部門1位（展示会出展ではなくアワード）",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/3101040/?l=japanese",
+            "retrievedAt": "2026-10-27T19:07:14Z",
+            "quote": "電撃インディー大賞2026 総合部門/アドベンチャー部門 - 1位",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T19:07:14Z"
   },
   "identityEvidence": [
     {
@@ -127,6 +141,7 @@
     }
   ],
   "createdAt": "2026-10-27T18:05:14Z",
-  "updatedAt": "2026-10-27T18:18:00Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T19:07:15Z",
   "createdByRun": "local-seed"
 }
