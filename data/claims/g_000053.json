@@ -3,6 +3,82 @@
   "gameId": "g_000053",
   "claims": [
     {
+      "id": "c_df6a29b879908f3b",
+      "gameId": "g_000053",
+      "scope": {
+        "platform": "android",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/mini-metro",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2016,
+          "month": 10,
+          "day": 17
+        },
+        "rawText": "Oct 17, 2016"
+      }
+    },
+    {
+      "id": "c_7c65a5622ad1720a",
+      "gameId": "g_000053",
+      "scope": {
+        "platform": "ios",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/mini-metro",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2015,
+          "month": 12,
+          "day": 25
+        },
+        "rawText": "Dec 25, 2015"
+      }
+    },
+    {
       "id": "c_0fa2aafcb9c71589",
       "gameId": "g_000053",
       "scope": {
@@ -117,6 +193,82 @@
           "day": 6
         },
         "rawText": "6 Nov, 2015"
+      }
+    },
+    {
+      "id": "c_09419f4b5a11ec40",
+      "gameId": "g_000053",
+      "scope": {
+        "platform": "ps4",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/mini-metro",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2019,
+          "month": 9,
+          "day": 10
+        },
+        "rawText": "Sep 10, 2019"
+      }
+    },
+    {
+      "id": "c_ab5cbe15246d99ce",
+      "gameId": "g_000053",
+      "scope": {
+        "platform": "switch",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/mini-metro",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2018,
+          "month": 8,
+          "day": 10
+        },
+        "rawText": "Aug 10, 2018"
       }
     },
     {
@@ -419,6 +571,191 @@
         "usage": {
           "basis": "store-asset",
           "credit": "Dinosaur Polo Club"
+        }
+      }
+    },
+    {
+      "id": "c_175924f3dde89bf7",
+      "gameId": "g_000053",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/mini-metro",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/aacvmvss7ssxs3d3m8ap.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Mini Metro のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_492af96dc26446d2",
+      "gameId": "g_000053",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/mini-metro",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/qs6avqzt2alxiiathdeq.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Mini Metro のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_d1871046966d4fca",
+      "gameId": "g_000053",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/mini-metro",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/zy4isii30pcvoasy5o1n.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Mini Metro のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_de008ce23c8e5c5c",
+      "gameId": "g_000053",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/mini-metro",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/mohmreqn27qwrpsmiaca.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Mini Metro のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_fdabfbcbf5bad778",
+      "gameId": "g_000053",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/mini-metro",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/u0rmlwatc1whsebc9sfv.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Mini Metro のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
         }
       }
     }

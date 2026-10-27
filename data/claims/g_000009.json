@@ -3,6 +3,82 @@
   "gameId": "g_000009",
   "claims": [
     {
+      "id": "c_55c13bc125d12d70",
+      "gameId": "g_000009",
+      "scope": {
+        "platform": "android",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/slay-the-spire",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2021,
+          "month": 1,
+          "day": 22
+        },
+        "rawText": "Jan 22, 2021"
+      }
+    },
+    {
+      "id": "c_ca00afcdc806c928",
+      "gameId": "g_000009",
+      "scope": {
+        "platform": "ios",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/slay-the-spire",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2020,
+          "month": 6,
+          "day": 13
+        },
+        "rawText": "Jun 13, 2020"
+      }
+    },
+    {
       "id": "c_c0a32499fee1adbb",
       "gameId": "g_000009",
       "scope": {
@@ -117,6 +193,120 @@
           "day": 23
         },
         "rawText": "23 Jan, 2019"
+      }
+    },
+    {
+      "id": "c_13b7f0e3a194275e",
+      "gameId": "g_000009",
+      "scope": {
+        "platform": "ps4",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/slay-the-spire",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2019,
+          "month": 5,
+          "day": 21
+        },
+        "rawText": "May 21, 2019"
+      }
+    },
+    {
+      "id": "c_f2f569e689d74a12",
+      "gameId": "g_000009",
+      "scope": {
+        "platform": "switch",
+        "region": "na"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/slay-the-spire",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2019,
+          "month": 6,
+          "day": 6
+        },
+        "rawText": "Jun 06, 2019"
+      }
+    },
+    {
+      "id": "c_f7b15248f37d72d4",
+      "gameId": "g_000009",
+      "scope": {
+        "platform": "xbox-one",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/slay-the-spire",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2019,
+          "month": 8,
+          "day": 14
+        },
+        "rawText": "Aug 14, 2019"
       }
     },
     {
@@ -447,6 +637,302 @@
         "usage": {
           "basis": "store-asset",
           "credit": "Mega Crit"
+        }
+      }
+    },
+    {
+      "id": "c_199e864cedb9930a",
+      "gameId": "g_000009",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/slay-the-spire",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scyflm.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Slay the Spire のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_1e320cb9af8a446f",
+      "gameId": "g_000009",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/slay-the-spire",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/cvybtfz6kkvrt6vnyutq.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Slay the Spire のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_35e7cba08684e551",
+      "gameId": "g_000009",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/slay-the-spire",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sxcn4siijskumtcdr44e.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Slay the Spire のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_3f927bda02e2d97c",
+      "gameId": "g_000009",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/slay-the-spire",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scyfll.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Slay the Spire のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_b07ccbbc8ca2af75",
+      "gameId": "g_000009",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/slay-the-spire",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/fhuu3ruia2l43ideld0t.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Slay the Spire のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_c50f11ed33c6dace",
+      "gameId": "g_000009",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/slay-the-spire",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/g9gcvlppj2qwuqsgprjd.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Slay the Spire のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_c562d83865320a4f",
+      "gameId": "g_000009",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/slay-the-spire",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scyfln.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Slay the Spire のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_cef00df752ff73cb",
+      "gameId": "g_000009",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/slay-the-spire",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/wiix88zrz8o1mguwi47n.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Slay the Spire のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
         }
       }
     }

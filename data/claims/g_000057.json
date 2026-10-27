@@ -3,6 +3,82 @@
   "gameId": "g_000057",
   "claims": [
     {
+      "id": "c_30b9ddaf41095066",
+      "gameId": "g_000057",
+      "scope": {
+        "platform": "android",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/rusty-lake-hotel",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2015,
+          "month": 12,
+          "day": 14
+        },
+        "rawText": "Dec 14, 2015"
+      }
+    },
+    {
+      "id": "c_0b73f43e46a2c474",
+      "gameId": "g_000057",
+      "scope": {
+        "platform": "ios",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/rusty-lake-hotel",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2015,
+          "month": 12,
+          "day": 14
+        },
+        "rawText": "Dec 14, 2015"
+      }
+    },
+    {
       "id": "c_c42ba205f803c910",
       "gameId": "g_000057",
       "scope": {
@@ -380,6 +456,302 @@
         "usage": {
           "basis": "store-asset",
           "credit": "Rusty Lake"
+        }
+      }
+    },
+    {
+      "id": "c_00876c168d4ff3de",
+      "gameId": "g_000057",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/rusty-lake-hotel",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/wmfgqqxdwxbqqpi2okoc.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Rusty Lake Hotel のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_34dc6119a218a8c2",
+      "gameId": "g_000057",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/rusty-lake-hotel",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/dn5gw2dlsjnluhvdgjjy.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Rusty Lake Hotel のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_4439e5631516c7b7",
+      "gameId": "g_000057",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/rusty-lake-hotel",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ighokdgzrqenkjj8y8uf.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Rusty Lake Hotel のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_bc25ddde95b99464",
+      "gameId": "g_000057",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/rusty-lake-hotel",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/aknfks8knw4fdlr0b0ob.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Rusty Lake Hotel のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_e65acf1de4007fd0",
+      "gameId": "g_000057",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/rusty-lake-hotel",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/yxrs05s95yvrhgmv6zx2.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Rusty Lake Hotel のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_e9e7a42af8db0acb",
+      "gameId": "g_000057",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/rusty-lake-hotel",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/qgajm5rqhgp0u8ovxvys.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Rusty Lake Hotel のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_ee2f0bc8700add59",
+      "gameId": "g_000057",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/rusty-lake-hotel",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/lgbt59qiz2oerjwlkuru.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Rusty Lake Hotel のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_f18a7fb47bcdd41c",
+      "gameId": "g_000057",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/rusty-lake-hotel",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/r7uikpgfh3chbezmrj4j.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Rusty Lake Hotel のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
         }
       }
     }

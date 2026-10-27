@@ -42,6 +42,44 @@
       }
     },
     {
+      "id": "c_9629765d5ec9da5c",
+      "gameId": "g_000018",
+      "scope": {
+        "platform": "switch",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/pizza-tower",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2024,
+          "month": 8,
+          "day": 27
+        },
+        "rawText": "Aug 27, 2024"
+      }
+    },
+    {
       "id": "c_3dd62897c175e172",
       "gameId": "g_000018",
       "scope": {},
@@ -370,6 +408,265 @@
         "usage": {
           "basis": "store-asset",
           "credit": "Tour De Pizza"
+        }
+      }
+    },
+    {
+      "id": "c_0128d9edb7d5f5bd",
+      "gameId": "g_000018",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/pizza-tower",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sck9l7.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Pizza Tower のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_5164629fcc86e5d7",
+      "gameId": "g_000018",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/pizza-tower",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sck9l3.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Pizza Tower のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_6c01cb65376afca3",
+      "gameId": "g_000018",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/pizza-tower",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sctaih.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Pizza Tower のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_9bf4f6097154831e",
+      "gameId": "g_000018",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/pizza-tower",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sctaii.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Pizza Tower のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_a2d2e386c56c64f2",
+      "gameId": "g_000018",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/pizza-tower",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sck9l6.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Pizza Tower のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_a6567a001666ab15",
+      "gameId": "g_000018",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/pizza-tower",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sck9l4.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Pizza Tower のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_bb14d380b1a8f74a",
+      "gameId": "g_000018",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/pizza-tower",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sck9l5.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Pizza Tower のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
         }
       }
     }

@@ -3,6 +3,82 @@
   "gameId": "g_000034",
   "claims": [
     {
+      "id": "c_e8701e762e96faea",
+      "gameId": "g_000034",
+      "scope": {
+        "platform": "ios",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/inside",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2017,
+          "month": 12,
+          "day": 14
+        },
+        "rawText": "Dec 14, 2017"
+      }
+    },
+    {
+      "id": "c_0206f04d8fedd650",
+      "gameId": "g_000034",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/inside",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2020,
+          "month": 6,
+          "day": 26
+        },
+        "rawText": "Jun 26, 2020"
+      }
+    },
+    {
       "id": "c_a37d13b64991a0fc",
       "gameId": "g_000034",
       "scope": {
@@ -39,6 +115,120 @@
           "day": 7
         },
         "rawText": "7 Jul, 2016"
+      }
+    },
+    {
+      "id": "c_1bf0b41e3d57dd09",
+      "gameId": "g_000034",
+      "scope": {
+        "platform": "ps4",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/inside",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2016,
+          "month": 8,
+          "day": 23
+        },
+        "rawText": "Aug 23, 2016"
+      }
+    },
+    {
+      "id": "c_86ca0868b8c123ab",
+      "gameId": "g_000034",
+      "scope": {
+        "platform": "switch",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/inside",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2018,
+          "month": 6,
+          "day": 28
+        },
+        "rawText": "Jun 28, 2018"
+      }
+    },
+    {
+      "id": "c_dda4f524299861f1",
+      "gameId": "g_000034",
+      "scope": {
+        "platform": "xbox-one",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/inside",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2016,
+          "month": 6,
+          "day": 29
+        },
+        "rawText": "Jun 29, 2016"
       }
     },
     {
@@ -308,6 +498,302 @@
         "usage": {
           "basis": "store-asset",
           "credit": "Playdead"
+        }
+      }
+    },
+    {
+      "id": "c_2a75b592ce7b694c",
+      "gameId": "g_000034",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/inside",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/z4fkserflyby1nv5ispe.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "INSIDE のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_54769f37bed2325e",
+      "gameId": "g_000034",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/inside",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/wbmd7havifhasigwrfli.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "INSIDE のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_5ab291788bd456c4",
+      "gameId": "g_000034",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/inside",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/kvxijejg9ueks3fowhv3.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "INSIDE のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_73fd0e0a7817757e",
+      "gameId": "g_000034",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/inside",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sz0lscqqkhsi7ceao6og.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "INSIDE のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_8df968a70aa413d4",
+      "gameId": "g_000034",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/inside",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/juqasfaxktobte35l2hj.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "INSIDE のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_9008b16cc94a641b",
+      "gameId": "g_000034",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/inside",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/guhljbryvlqg2kn25z7r.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "INSIDE のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_c85e9223db645091",
+      "gameId": "g_000034",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/inside",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/d5989qwb1b9l3ag8n448.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "INSIDE のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_e1f89c5ed2e5f48f",
+      "gameId": "g_000034",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/inside",
+          "retrievedAt": "2026-10-27T16:30:31Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T16:30:31Z",
+      "createdAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ldbfqsvfeptbvguzaqdy.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "INSIDE のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
         }
       }
     }

@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 983970
+    "steamAppId": 983970,
+    "igdbId": 115427
   },
   "associatedApps": [
     {
@@ -83,6 +84,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/haven",
+        "retrievedAt": "2026-10-27T16:30:31Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "store",
@@ -119,6 +130,6 @@
   "disambiguation": "The Game Bakers の恋人2人のアクションRPG。Sun Haven、Space Haven とは別作品",
   "createdAt": "2026-10-27T14:25:13Z",
   "addedAt": "2026-10-27",
-  "updatedAt": "2026-10-27T14:47:35Z",
+  "updatedAt": "2026-10-27T16:30:31Z",
   "createdByRun": "local-seed"
 }

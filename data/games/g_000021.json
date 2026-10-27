@@ -15,7 +15,8 @@
     }
   ],
   "externalIds": {
-    "steamAppId": 108600
+    "steamAppId": 108600,
+    "igdbId": 3189
   },
   "associatedApps": [],
   "officialUrl": "https://www.projectzomboid.com",
@@ -78,6 +79,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/project-zomboid",
+        "retrievedAt": "2026-10-27T16:30:31Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "store",
@@ -113,6 +124,6 @@
   ],
   "createdAt": "2026-10-27T14:23:34Z",
   "addedAt": "2026-10-27",
-  "updatedAt": "2026-10-27T14:47:35Z",
+  "updatedAt": "2026-10-27T16:30:31Z",
   "createdByRun": "local-seed"
 }

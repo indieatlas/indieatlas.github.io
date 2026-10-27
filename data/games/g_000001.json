@@ -20,7 +20,8 @@
     }
   ],
   "externalIds": {
-    "steamAppId": 413150
+    "steamAppId": 413150,
+    "igdbId": 17000
   },
   "associatedApps": [
     {
@@ -89,6 +90,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/stardew-valley",
+        "retrievedAt": "2026-10-27T16:30:31Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "store",
@@ -124,6 +135,6 @@
   ],
   "createdAt": "2026-10-27T14:20:34Z",
   "addedAt": "2026-10-27",
-  "updatedAt": "2026-10-27T14:47:35Z",
+  "updatedAt": "2026-10-27T16:30:31Z",
   "createdByRun": "local-seed"
 }

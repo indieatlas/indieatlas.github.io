@@ -15,7 +15,8 @@
     }
   ],
   "externalIds": {
-    "steamAppId": 304430
+    "steamAppId": 304430,
+    "igdbId": 7342
   },
   "associatedApps": [
     {
@@ -83,6 +84,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/inside",
+        "retrievedAt": "2026-10-27T16:30:31Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -107,6 +118,6 @@
   ],
   "createdAt": "2026-10-27T14:25:31Z",
   "addedAt": "2026-10-27",
-  "updatedAt": "2026-10-27T14:47:35Z",
+  "updatedAt": "2026-10-27T16:30:31Z",
   "createdByRun": "local-seed"
 }

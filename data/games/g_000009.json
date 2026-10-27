@@ -20,7 +20,8 @@
     }
   ],
   "externalIds": {
-    "steamAppId": 646570
+    "steamAppId": 646570,
+    "igdbId": 40477
   },
   "associatedApps": [
     {
@@ -88,6 +89,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/slay-the-spire",
+        "retrievedAt": "2026-10-27T16:30:31Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -112,6 +123,6 @@
   ],
   "createdAt": "2026-10-27T14:21:46Z",
   "addedAt": "2026-10-27",
-  "updatedAt": "2026-10-27T14:47:35Z",
+  "updatedAt": "2026-10-27T16:30:31Z",
   "createdByRun": "local-seed"
 }

@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 1302530
+    "steamAppId": 1302530,
+    "igdbId": 163941
   },
   "associatedApps": [],
   "officialUrl": "https://www.cairngame.com/",
@@ -62,6 +63,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/cairn-mathairs-curse",
+        "retrievedAt": "2026-10-27T16:30:31Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "store",
@@ -98,6 +109,6 @@
   "disambiguation": "Ross McRitchie のスコットランドを舞台にした RPG。The Game Bakers の登山ゲーム『Cairn』とは別作品",
   "createdAt": "2026-10-27T14:26:16Z",
   "addedAt": "2026-10-27",
-  "updatedAt": "2026-10-27T14:47:35Z",
+  "updatedAt": "2026-10-27T16:30:31Z",
   "createdByRun": "local-seed"
 }

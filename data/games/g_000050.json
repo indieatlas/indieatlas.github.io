@@ -15,7 +15,8 @@
     }
   ],
   "externalIds": {
-    "steamAppId": 914800
+    "steamAppId": 914800,
+    "igdbId": 106847
   },
   "associatedApps": [
     {
@@ -94,6 +95,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/coffee-talk",
+        "retrievedAt": "2026-10-27T16:30:31Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "store",
@@ -129,6 +140,6 @@
   ],
   "createdAt": "2026-10-27T14:27:55Z",
   "addedAt": "2026-10-27",
-  "updatedAt": "2026-10-27T14:47:35Z",
+  "updatedAt": "2026-10-27T16:30:31Z",
   "createdByRun": "local-seed"
 }

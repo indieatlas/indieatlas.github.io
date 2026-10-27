@@ -15,7 +15,8 @@
     }
   ],
   "externalIds": {
-    "steamAppId": 1584090
+    "steamAppId": 1584090,
+    "igdbId": 153963
   },
   "associatedApps": [
     {
@@ -135,6 +136,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/touhou-mystias-izakaya",
+        "retrievedAt": "2026-10-27T16:30:31Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -159,6 +170,6 @@
   ],
   "createdAt": "2026-10-27T14:27:28Z",
   "addedAt": "2026-10-27",
-  "updatedAt": "2026-10-27T14:47:35Z",
+  "updatedAt": "2026-10-27T16:30:31Z",
   "createdByRun": "local-seed"
 }

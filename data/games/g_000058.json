@@ -15,7 +15,8 @@
     }
   ],
   "externalIds": {
-    "steamAppId": 1432860
+    "steamAppId": 1432860,
+    "igdbId": 144098
   },
   "associatedApps": [
     {
@@ -213,6 +214,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/sun-haven",
+        "retrievedAt": "2026-10-27T16:30:31Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -238,6 +249,6 @@
   "disambiguation": "Pixel Sprout Studios のファンタジー農業 RPG。Haven、Space Haven とは別作品",
   "createdAt": "2026-10-27T14:29:07Z",
   "addedAt": "2026-10-27",
-  "updatedAt": "2026-10-27T14:47:35Z",
+  "updatedAt": "2026-10-27T16:30:31Z",
   "createdByRun": "local-seed"
 }

@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 3164500
+    "steamAppId": 3164500,
+    "igdbId": 328373
   },
   "associatedApps": [
     {
@@ -68,6 +69,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/schedule-i",
+        "retrievedAt": "2026-10-27T16:30:31Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "store",
@@ -102,6 +113,6 @@
     }
   ],
   "createdAt": "2026-10-27T14:27:37Z",
-  "updatedAt": "2026-10-27T14:27:37Z",
+  "updatedAt": "2026-10-27T16:30:31Z",
   "createdByRun": "local-seed"
 }

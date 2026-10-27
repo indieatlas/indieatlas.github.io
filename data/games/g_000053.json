@@ -15,7 +15,8 @@
     }
   ],
   "externalIds": {
-    "steamAppId": 287980
+    "steamAppId": 287980,
+    "igdbId": 7767
   },
   "associatedApps": [],
   "officialUrl": "https://dinopoloclub.com/minimetro",
@@ -78,6 +79,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/mini-metro",
+        "retrievedAt": "2026-10-27T16:30:31Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "store",
@@ -113,6 +124,6 @@
   ],
   "createdAt": "2026-10-27T14:28:22Z",
   "addedAt": "2026-10-27",
-  "updatedAt": "2026-10-27T14:47:35Z",
+  "updatedAt": "2026-10-27T16:30:31Z",
   "createdByRun": "local-seed"
 }

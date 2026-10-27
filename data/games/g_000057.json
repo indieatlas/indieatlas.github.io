@@ -15,7 +15,8 @@
     }
   ],
   "externalIds": {
-    "steamAppId": 435120
+    "steamAppId": 435120,
+    "igdbId": 18011
   },
   "associatedApps": [],
   "officialUrl": "http://www.rustylake.com",
@@ -78,6 +79,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/rusty-lake-hotel",
+        "retrievedAt": "2026-10-27T16:30:31Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "store",
@@ -113,6 +124,6 @@
   ],
   "createdAt": "2026-10-27T14:28:58Z",
   "addedAt": "2026-10-27",
-  "updatedAt": "2026-10-27T14:47:35Z",
+  "updatedAt": "2026-10-27T16:30:31Z",
   "createdByRun": "local-seed"
 }

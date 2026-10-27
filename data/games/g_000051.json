@@ -20,7 +20,8 @@
     }
   ],
   "externalIds": {
-    "steamAppId": 1663220
+    "steamAppId": 1663220,
+    "igdbId": 186528
   },
   "associatedApps": [
     {
@@ -98,6 +99,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/coffee-talk-episode-2-hibiscus-and-butterfly",
+        "retrievedAt": "2026-10-27T16:30:31Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -122,6 +133,6 @@
   ],
   "createdAt": "2026-10-27T14:28:04Z",
   "addedAt": "2026-10-27",
-  "updatedAt": "2026-10-27T14:47:35Z",
+  "updatedAt": "2026-10-27T16:30:31Z",
   "createdByRun": "local-seed"
 }
