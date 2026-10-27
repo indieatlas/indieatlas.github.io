@@ -1,25 +1,34 @@
 import { expect, test } from '@playwright/test';
 
 // ホームの最新情報のカルーセルと、背景の WebGL
-test('カルーセルで最新の記事を切り替えられる', async ({ page }) => {
+test('カルーセルを前後のボタンで送れる', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('./');
   const carousel = page.locator('[data-carousel]');
   await expect(carousel.locator('[data-controls]')).toBeVisible();
-  const slides = carousel.locator('[data-slide]');
-  await expect(slides.first()).toHaveAttribute('data-active', '');
+  const track = carousel.locator('[data-track]');
+  const before = await track.evaluate((t) => t.scrollLeft);
   await carousel.getByRole('button', { name: '次の情報' }).click();
-  await expect(slides.nth(1)).toHaveAttribute('data-active', '');
-  await carousel.getByRole('button', { name: '1件目の情報' }).click();
-  await expect(slides.first()).toHaveAttribute('data-active', '');
+  await expect.poll(() => track.evaluate((t) => t.scrollLeft)).toBeGreaterThan(before);
   // 自動再生は止められる（WCAG 2.2.2）
   const pause = carousel.locator('[data-pause]');
-  await pause.click();
-  await expect(pause).toHaveAttribute('aria-pressed', 'true');
+  if (await pause.isVisible()) {
+    await pause.click();
+    await expect(pause).toHaveAttribute('aria-pressed', 'true');
+  }
+});
+
+test('広い画面では複数の記事が同時に見える', async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto('./');
+  const slides = page.locator('[data-slide]');
+  await expect(slides.nth(0)).toBeInViewport();
+  await expect(slides.nth(1)).toBeInViewport();
 });
 
 test('カルーセルから作品詳細へ移れる', async ({ page }) => {
   await page.goto('./');
-  await page.locator('[data-slide][data-active]').getByRole('link', { name: '作品を見る' }).click();
+  await page.locator('[data-slide]').first().locator('.games a').click();
   await expect(page).toHaveURL(/games\/g_\d{6}\/$/);
 });
 

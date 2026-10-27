@@ -40,9 +40,9 @@ const idx = () => String(++n).padStart(2, '0');
 
 <BaseLayout path={paths.home()}>
   <h1 class="visually-hidden">Indie Atlas — まだ知らないインディーゲームに出会う</h1>
-  {news.length > 0 && <HeroCarousel articles={news} />}
-
   <div class="container">
+    {news.length > 0 && <HeroCarousel articles={news} />}
+
     <section class="quick" aria-label="作品を探す">
       <form class="quick-search" action={url(paths.games())} method="get" role="search">
         <label for="home-q" class="label">
@@ -117,7 +117,6 @@ const idx = () => String(++n).padStart(2, '0');
         <ArticleList articles={latest} />
       </section>
     )}
-
   </div>
 </BaseLayout>
 
@@ -125,11 +124,10 @@ const idx = () => String(++n).padStart(2, '0');
   .quick {
     display: grid;
     gap: var(--space-4);
-    margin-top: var(--space-6);
+    margin-top: var(--space-8);
     padding: var(--space-5);
     background: var(--color-surface);
     box-shadow: inset 0 0 0 1px var(--color-border);
-    clip-path: polygon(0 0, calc(100% - var(--cut-m)) 0, 100% var(--cut-m), 100% 100%, 0 100%);
   }
   .quick-search {
     display: flex;
@@ -143,11 +141,11 @@ const idx = () => String(++n).padStart(2, '0');
     line-height: 1.3;
   }
   .en {
-    font-family: var(--font-display);
+    font-family: var(--font-mono);
     font-size: 0.6875rem;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--color-accent-warm);
+    color: var(--color-text-muted);
   }
   .quick-search input {
     flex: 1 1 16rem;
