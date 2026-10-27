@@ -24,7 +24,9 @@
     "seed:steam": "tsx scripts/run/seed-steam.ts",
     "report:trial": "tsx scripts/run/report-trial.ts",
     "format": "prettier --write .",
-    "media:articles": "tsx scripts/run/fetch-article-images.ts"
+    "media:articles": "tsx scripts/run/fetch-article-images.ts",
+    "igdb:sync": "tsx scripts/run/igdb-sync.ts",
+    "media:palettes": "tsx scripts/run/compute-palettes.ts"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

@@ -17,6 +17,7 @@ export interface FetchResult {
 
 export interface HttpClient {
   get(url: string, init?: { headers?: Record<string, string> }): Promise<FetchResult>;
+  post?(url: string, body: string, init?: { headers?: Record<string, string> }): Promise<FetchResult>;
 }
 
 export interface SimpleHttpOptions {
@@ -28,31 +29,35 @@ export interface SimpleHttpOptions {
 
 export function createSimpleHttp(opts: SimpleHttpOptions): HttpClient {
   const lastByHost = new Map<string, number>();
+  const request = async (method: 'GET' | 'POST', url: string, body?: string, headers?: Record<string, string>) => {
+    const u = new URL(url);
+    if (u.protocol !== 'https:' && u.protocol !== 'http:') throw new Error(`unsupported protocol: ${url}`);
+    const last = lastByHost.get(u.host) ?? 0;
+    const wait = last + opts.minIntervalMs - Date.now();
+    if (wait > 0) await new Promise((r) => setTimeout(r, wait));
+    lastByHost.set(u.host, Date.now());
+    const res = await fetch(url, {
+      method,
+      headers: { 'user-agent': opts.userAgent, ...headers },
+      ...(body !== undefined ? { body } : {}),
+      redirect: 'follow',
+      signal: AbortSignal.timeout(opts.timeoutMs),
+    });
+    const buf = new Uint8Array(await res.arrayBuffer());
+    if (buf.byteLength > opts.maxBytes) throw new Error(`response too large: ${url}`);
+    const text = new TextDecoder().decode(buf);
+    return {
+      url: res.url || url,
+      status: res.status,
+      contentType: res.headers.get('content-type') ?? '',
+      text,
+      bytes: buf,
+      fetchHash: sha256Tagged(buf),
+      retrievedAt: now(),
+    };
+  };
   return {
-    async get(url, init) {
-      const u = new URL(url);
-      if (u.protocol !== 'https:' && u.protocol !== 'http:') throw new Error(`unsupported protocol: ${url}`);
-      const last = lastByHost.get(u.host) ?? 0;
-      const wait = last + opts.minIntervalMs - Date.now();
-      if (wait > 0) await new Promise((r) => setTimeout(r, wait));
-      lastByHost.set(u.host, Date.now());
-      const res = await fetch(url, {
-        headers: { 'user-agent': opts.userAgent, ...init?.headers },
-        redirect: 'follow',
-        signal: AbortSignal.timeout(opts.timeoutMs),
-      });
-      const buf = new Uint8Array(await res.arrayBuffer());
-      if (buf.byteLength > opts.maxBytes) throw new Error(`response too large: ${url}`);
-      const text = new TextDecoder().decode(buf);
-      return {
-        url: res.url || url,
-        status: res.status,
-        contentType: res.headers.get('content-type') ?? '',
-        text,
-        bytes: buf,
-        fetchHash: sha256Tagged(buf),
-        retrievedAt: now(),
-      };
-    },
+    get: (url, init) => request('GET', url, undefined, init?.headers),
+    post: (url, body, init) => request('POST', url, body, init?.headers),
   };
 }
