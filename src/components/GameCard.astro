@@ -14,8 +14,10 @@ interface Props {
   eager?: boolean;
   note?: string;
   headingLevel?: 2 | 3;
+  dateMode?: 'added' | 'updated';
 }
-const { game, eager = false, note, headingLevel = 3 } = Astro.props;
+const { game, eager = false, note, headingLevel = 3, dateMode = 'added' } = Astro.props;
+const dateValue = dateMode === 'updated' ? game.activityAt : game.addedAt;
 const Heading = `h${headingLevel}` as 'h2' | 'h3';
 const dev = game.developers[0];
 const devText = dev ? (game.developers.length > 1 ? `${dev.name} ほか` : dev.name) : '開発者不明';
@@ -46,7 +48,7 @@ const showOriginal = game.title.original !== game.title.display;
     </div>
     {note && <p class="game-card__note">{note}</p>}
     <p class="game-card__added">
-      収録 <time datetime={isoDate(game.addedAt)}>{formatCardDate(game.addedAt)}</time>
+      {dateMode === 'updated' ? '更新' : '収録'} <time datetime={isoDate(dateValue)}>{formatCardDate(dateValue)}</time>
     </p>
   </div>
 </a>

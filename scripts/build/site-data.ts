@@ -199,6 +199,13 @@ export function buildSiteData(repo: RepoData, today = todayJst()): SiteDataSet {
       image,
     ].filter(Boolean).length;
     const updatedAt = [g.updatedAt, ...claims.map((c) => c.updatedAt)].reduce((m, x) => (x > m ? x : m));
+    const activityAt = [
+      updatedAt,
+      ...articles.map((a) => {
+        const art = articleById.get(a.id);
+        return art?.publishedAt ?? art?.createdAt ?? '';
+      }),
+    ].reduce((m, x) => (x > m ? x : m));
     return {
       id: g.id,
       path: `/games/${g.id}/`,
@@ -208,6 +215,7 @@ export function buildSiteData(repo: RepoData, today = todayJst()): SiteDataSet {
       publishers: g.publisherIds.map((id) => ({ id, name: devById.get(id)?.name.display ?? id })),
       addedAt: g.addedAt!,
       updatedAt: dateOnly(updatedAt),
+      activityAt,
       ...enriched,
       release,
       platforms: [...view.platforms].sort((a, b) => PLATFORM_ORDER.indexOf(a) - PLATFORM_ORDER.indexOf(b)),

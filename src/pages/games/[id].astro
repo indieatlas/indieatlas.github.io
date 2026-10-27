@@ -415,6 +415,8 @@ const description =
       <span hidden data-pagefind-meta={`genre:${game.primaryGenre ?? ''}`}></span>
       <span hidden data-pagefind-meta={`added:${game.addedAt}`}></span>
       <span hidden data-pagefind-sort={`added:${game.addedAt}`}></span>
+      <span hidden data-pagefind-sort={`updated:${game.activityAt}`}></span>
+      <span hidden data-pagefind-meta={`updated:${game.activityAt.slice(0, 10)}`}></span>
       <span hidden data-pagefind-sort={`released:${releasedSortKey(game) || '0000-00-00'}`}></span>
       {Object.entries(filters).flatMap(([k, values]) =>
         values.map((v) => <span hidden data-pagefind-filter={`${k}:${v}`}></span>),

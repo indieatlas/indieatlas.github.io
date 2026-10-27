@@ -42,6 +42,7 @@ export interface SiteGame {
   publishers: { id: string; name: string }[];
   addedAt: string; // YYYY-MM-DD（収録日）
   updatedAt: string; // YYYY-MM-DD（ページの最終更新日）
+  activityAt: string; // ISO 8601。情報か関連記事が最後に増えた日時（作品一覧の並び順に使う）
   enrichedAt?: string; // YYYY-MM-DD（04 §4.9）
   enrichedNote?: string; // 例: 「発売日が更新」
   release: {

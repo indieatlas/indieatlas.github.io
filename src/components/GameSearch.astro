@@ -57,7 +57,8 @@ const radio = (name: string, values: string[]) => values.map((v) => ({ v, label:
       <label class="sort">
         <span class="visually-hidden">並び順</span>
         <select name="sort" data-sort>
-          <option value="">関連度・収録日</option>
+          <option value="">関連度・更新順</option>
+          <option value="updated">更新の新しい順</option>
           <option value="added">収録日の新しい順</option>
           <option value="released">発売日の新しい順</option>
         </select>

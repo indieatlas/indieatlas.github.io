@@ -53,6 +53,13 @@ export function getCollection(id: string): SiteCollection | undefined {
   return getCollections().find((c) => c.id === id);
 }
 
+/** 更新の新しい順（情報か関連記事が最後に増えた日時。同じなら ID の新しい順） */
+export function gamesByActivity(): SiteGame[] {
+  return [...getGames()].sort((a, b) =>
+    a.activityAt === b.activityAt ? (a.id < b.id ? 1 : -1) : a.activityAt < b.activityAt ? 1 : -1,
+  );
+}
+
 /** 収録日の新しい順（同じ日は ID の新しい順） */
 export function gamesByAdded(): SiteGame[] {
   return [...getGames()].sort((a, b) =>

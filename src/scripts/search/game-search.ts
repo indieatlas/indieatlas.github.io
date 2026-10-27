@@ -29,7 +29,7 @@ export const FILTER_KEYS = ['tag', 'platform', 'release', 'ja', 'mode'] as const
 type FilterKey = (typeof FILTER_KEYS)[number];
 export interface SearchState {
   q: string;
-  sort: '' | 'added' | 'released';
+  sort: '' | 'updated' | 'added' | 'released';
   filters: Record<FilterKey, string[]>;
 }
 
@@ -42,7 +42,11 @@ export function stateFromParams(params: URLSearchParams): SearchState {
     FILTER_KEYS.map((k) => [k, params.getAll(k).filter(Boolean)]),
   ) as SearchState['filters'];
   const sort = params.get('sort');
-  return { q: params.get('q') ?? '', sort: sort === 'added' || sort === 'released' ? sort : '', filters };
+  return {
+    q: params.get('q') ?? '',
+    sort: sort === 'updated' || sort === 'added' || sort === 'released' ? sort : '',
+    filters,
+  };
 }
 
 /** 状態を URL のクエリにする（空の項目は書かない） */
@@ -138,7 +142,7 @@ export function renderCard(d: PagefindResultData, cfg: SearchConfig): string {
   const release = (m.release ?? '発売時期不明')
     .replace(/^発売中（(.+) 発売）$/, '$1 発売')
     .replace(/^発売予定（(.+)）$/, '$1 発売予定');
-  const added = (m.added ?? '').replace(/-/g, '/');
+  const added = (m.updated ?? m.added ?? '').replace(/-/g, '/');
   const img = m.image
     ? `<img src="${esc(m.image)}" alt="${esc(m.title ?? '')} の画像" width="460" height="215" loading="lazy" decoding="async" data-fallback style="view-transition-name: game-${esc(id)}">`
     : `<img src="${esc(cfg.placeholder)}" alt="" width="460" height="215" loading="lazy" decoding="async">`;
@@ -155,7 +159,7 @@ ${m.original && m.original !== m.title ? `<p class="game-card__original">${esc(m
 <ul class="platform-list" aria-label="機種">${shown.map((p) => `<li title="${esc(cfg.labels.platform?.[p] ?? p)}"><span aria-hidden="true">${esc(PLATFORM_SHORT[p] ?? p)}</span><span class="visually-hidden">${esc(cfg.labels.platform?.[p] ?? p)}</span></li>`).join('')}${platforms.length > 4 ? `<li class="more">+${platforms.length - 4}</li>` : ''}</ul>
 <span class="ja-badge ja-${jaClass}">日本語: ${jaLabel}</span>
 </div>
-${added ? `<p class="game-card__added">収録 <time datetime="${esc(m.added!)}">${esc(added)}</time></p>` : ''}
+${added ? `<p class="game-card__added">${m.updated ? '更新' : '収録'} <time datetime="${esc(m.updated ?? m.added!)}">${esc(added)}</time></p>` : ''}
 </div></a></li>`;
 }
 
@@ -255,7 +259,7 @@ export function defineGameSearch(): void {
         status.textContent = '検索しています…';
         try {
           const pf = await this.loadPagefind();
-          const sort = state.sort || (q ? '' : 'added');
+          const sort = state.sort || (q ? '' : 'updated');
           // 入力も絞り込みもない並び替えだけの場合は、全作品に当てはまる条件で一覧を出す
           const filters = hasFilters(state) || q ? pagefindFilters(state.filters) : { release: { any: ALL_RELEASE } };
           const search = await pf.search(q || null, {
