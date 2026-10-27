@@ -8,3 +8,8 @@ playwright-report/
 .DS_Store
 *.log
 .vitest/
+
+# ローカルの秘密情報（IGDB のキーなど）。コミットしない
+.env
+.env.*
+!.env.example
