@@ -1,5 +1,6 @@
-import type { PartialDate, Platform, Region, ReleaseStatus } from '../../schema/common.ts';
+import type { PartialDate, Platform, Region, ReleaseStatus, Store } from '../../schema/common.ts';
 import type { HttpClient } from '../fetch/http.ts';
+import { storeOf } from '../lib/domains.ts';
 import { hasPassed, startOf } from '../lib/partial-date.ts';
 
 /**
@@ -30,6 +31,8 @@ export interface IgdbGame {
   platforms?: { id: number; name: string; slug: string }[];
   release_dates?: IgdbReleaseDate[];
   screenshots?: { image_id: string; width?: number; height?: number }[];
+  websites?: { url: string }[];
+  external_games?: { url?: string }[];
 }
 
 export const IGDB_GAME_FIELDS = [
@@ -46,6 +49,8 @@ export const IGDB_GAME_FIELDS = [
   'screenshots.image_id',
   'screenshots.width',
   'screenshots.height',
+  'websites.url',
+  'external_games.url',
 ].join(',');
 
 export interface IgdbClient {
@@ -208,4 +213,53 @@ export function igdbScreenshotUrl(imageId: string, size: 't_screenshot_big' | 't
 
 export function igdbPageUrl(g: IgdbGame): string {
   return g.url ?? `https://www.igdb.com/games/${g.slug}`;
+}
+
+/** ストアの URL を日本向けの表示にそろえる。扱わない形なら undefined */
+function normalizeStoreUrl(raw: string): { store: Store; url: string } | undefined {
+  let u: URL;
+  try {
+    u = new URL(raw.replace(/^http:/, 'https:'));
+  } catch {
+    return undefined;
+  }
+  if (u.hostname === 'itunes.apple.com') u.hostname = 'apps.apple.com';
+  if (u.hostname === 'www.epicgames.com' && u.pathname.startsWith('/store/')) {
+    u.hostname = 'store.epicgames.com';
+    u.pathname = u.pathname.slice('/store'.length);
+  }
+  const store = storeOf(u.toString()) as Store | undefined;
+  if (!store || store === 'steam') return undefined; // Steam はストアの情報から別に作る
+  switch (store) {
+    case 'playstation-store':
+      u.pathname = u.pathname.replace(/^\/[a-z]{2}-[a-z]{2}\//i, '/ja-jp/');
+      break;
+    case 'microsoft-store':
+      if (!/\/games\/store\//.test(u.pathname)) return undefined;
+      u.pathname = u.pathname.replace(/^\/[a-z]{2}-[a-z]{2}\//i, '/ja-JP/');
+      break;
+    case 'epic':
+      u.pathname = u.pathname.replace(/^\/[a-z]{2}(-[a-z]{2})?\//i, '/ja/');
+      break;
+    case 'gog':
+      u.pathname = u.pathname.replace(/^\/[a-z]{2}\/game\//, '/game/');
+      break;
+    case 'app-store':
+      u.pathname = u.pathname.replace(/^\/[a-z]{2}\/app\//, '/jp/app/');
+      break;
+  }
+  u.search = store === 'google-play' ? u.search : '';
+  u.hash = '';
+  return { store, url: u.toString() };
+}
+
+/** IGDB の Web サイトと外部 ID から、Steam 以外のストアへのリンクを1ストア1件ずつ選ぶ */
+export function igdbStoreLinks(g: IgdbGame): { store: Store; url: string }[] {
+  const out = new Map<Store, string>();
+  const urls = [...(g.websites ?? []).map((w) => w.url), ...(g.external_games ?? []).flatMap((e) => (e.url ? [e.url] : []))];
+  for (const raw of urls) {
+    const link = normalizeStoreUrl(raw);
+    if (link && !out.has(link.store)) out.set(link.store, link.url);
+  }
+  return [...out].map(([store, url]) => ({ store, url }));
 }

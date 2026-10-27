@@ -3,13 +3,14 @@ import type { Actor } from '../../schema/common.ts';
 import type { Game } from '../../schema/game.ts';
 import { makeClaim, upsertClaim } from '../lib/claim-builder.ts';
 import { scopeKey } from '../../schema/claim.ts';
-import { igdbPageUrl, igdbReleases, igdbScreenshotUrl, type IgdbGame } from '../sources/igdb.ts';
+import { igdbPageUrl, igdbReleases, igdbScreenshotUrl, igdbStoreLinks, type IgdbGame } from '../sources/igdb.ts';
 
 /**
  * IGDB の情報で作品を補う（データベースの根拠。信頼の順位は最も低い。06 §6.8）。
  * - externalIds.igdbId を設定する
  * - Steam 以外の機種の発売情報を加える。同じ機種と地域に採用済みの Claim があれば加えない
  * - スクリーンショットの画像の Claim を加える（最大 MAX_SCREENSHOTS 枚）
+ * - Steam 以外のストアへのリンクを加える。同じストアに採用済みのリンクがあれば加えない
  */
 export const MAX_SCREENSHOTS = 8;
 
@@ -23,7 +24,7 @@ export interface IgdbSyncOptions {
 export interface IgdbSyncResult {
   game: Game;
   claims: ClaimsFile;
-  added: { releases: string[]; screenshots: number };
+  added: { releases: string[]; screenshots: number; stores: string[] };
 }
 
 function evidence(g: IgdbGame, at: string, locator: string): Evidence {
@@ -89,6 +90,20 @@ export function applyIgdb(game: Game, file: ClaimsFile | undefined, ig: IgdbGame
     });
     if (upsertClaim(claims, claim)) screenshots++;
   }
-  if (releases.length || screenshots) next.updatedAt = o.at;
-  return { game: next, claims, added: { releases, screenshots } };
+  const linked = new Set(
+    claims.claims.filter((c) => c.field === 'storeLink' && c.status === 'adopted').map((c) => c.value.store),
+  );
+  const stores: string[] = [];
+  for (const l of igdbStoreLinks(ig)) {
+    if (linked.has(l.store)) continue;
+    const claim = makeClaim({
+      ...base,
+      field: 'storeLink',
+      value: l,
+      evidence: [evidence(ig, o.at, 'igdb:games.websites')],
+    });
+    if (upsertClaim(claims, claim)) stores.push(l.store);
+  }
+  if (releases.length || screenshots || stores.length) next.updatedAt = o.at;
+  return { game: next, claims, added: { releases, screenshots, stores } };
 }

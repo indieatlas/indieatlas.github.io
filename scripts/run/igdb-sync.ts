@@ -10,7 +10,7 @@ import { fileKind, loadRepo, PROJECT_ROOT, repoPath, writeKind } from '../lib/re
 import { applyIgdb } from '../pipeline/igdb-sync.ts';
 import { createIgdbClient, igdbGames, igdbIdsForSteam } from '../sources/igdb.ts';
 
-// IGDB から、Steam 以外の機種の発売情報とスクリーンショットを取り込む
+// IGDB から、Steam 以外の機種の発売情報、スクリーンショット、ストアへのリンクを取り込む
 //   npm run igdb:sync [-- --game g_000001] [-- --by human|agent]
 // キーは環境変数 IGDB_CLIENT_ID と IGDB_CLIENT_SECRET（ローカルでは .env）から読む
 await runMain(async () => {
@@ -59,12 +59,12 @@ await runMain(async () => {
     const r = applyIgdb(g, repo.claims.get(g.id), ig, { at, today, createdBy: values.by, runId: values.run! });
     if (JSON.stringify(r.game) !== JSON.stringify(g))
       writeKind(fileKind('game'), repoPath(`data/games/${g.id}.json`), Game.parse(r.game));
-    if (r.added.releases.length || r.added.screenshots) {
+    if (r.added.releases.length || r.added.screenshots || r.added.stores.length) {
       writeKind(fileKind('claims'), repoPath(`data/claims/${g.id}.json`), ClaimsFile.parse(r.claims));
       changed++;
     }
     console.log(
-      `ok   ${g.id} ${g.title.display} → igdb:${ig.id} releases+[${r.added.releases.join(', ')}] screenshots+${r.added.screenshots}`,
+      `ok   ${g.id} ${g.title.display} → igdb:${ig.id} releases+[${r.added.releases.join(', ')}] screenshots+${r.added.screenshots} stores+[${r.added.stores.join(', ')}]`,
     );
   }
   console.log(`igdb:sync: ${changed} game(s) updated`);
