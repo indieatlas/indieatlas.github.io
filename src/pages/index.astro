@@ -16,7 +16,7 @@ const articles = getArticles();
 const news = articles.slice(0, 6);
 const latest = articles.slice(6, 12);
 
-const recent = byAdded.slice(0, 12);
+const recent = byAdded.slice(0, 10);
 const events = getEvents()
   .filter((e) => e.phase !== 'past')
   .slice(0, 4);
@@ -26,13 +26,13 @@ const recentIds = new Set(recent.map((g) => g.id));
 const enriched = byAdded
   .filter((g) => g.enrichedAt && !recentIds.has(g.id))
   .sort((a, b) => (a.enrichedAt! < b.enrichedAt! ? 1 : a.enrichedAt! > b.enrichedAt! ? -1 : 0))
-  .slice(0, 8);
+  .slice(0, 5);
 
 // コレクション: featured を最大6件。足りなければ更新の新しい順で補う
 const all = getCollections();
 const featured = all.filter((c) => c.featured);
 const rest = all.filter((c) => !c.featured).sort((a, b) => (a.updatedAt < b.updatedAt ? 1 : -1));
-const collections = [...featured, ...rest].slice(0, 6);
+const collections = [...featured, ...rest].slice(0, 4);
 
 let n = 0;
 const idx = () => String(++n).padStart(2, '0');
@@ -40,7 +40,7 @@ const idx = () => String(++n).padStart(2, '0');
 
 <BaseLayout path={paths.home()}>
   <h1 class="visually-hidden">Indie Atlas — まだ知らないインディーゲームに出会う</h1>
-  <div class="container">
+  <div class="container home">
     {news.length > 0 && <HeroCarousel articles={news} />}
 
     {events.length > 0 && (
@@ -119,13 +119,51 @@ const idx = () => String(++n).padStart(2, '0');
 </BaseLayout>
 
 <style>
+  /* ホームは情報を詰めて並べる。区画どうしの間をつめ、見出しを小さくする */
+  .home :global(.section) {
+    padding-block: var(--space-5) var(--space-3);
+  }
+  .home :global(.section-heading) {
+    margin-bottom: var(--space-4);
+    padding-bottom: var(--space-2);
+  }
+  .home :global(.section-heading h2) {
+    font-size: 1.25rem;
+  }
+  .home :global(.game-grid) {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: var(--space-4);
+  }
+  .home :global(.article-list) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--space-6);
+  }
+  .home :global(.article-item) {
+    grid-template-columns: 8rem minmax(0, 1fr);
+    gap: var(--space-3);
+    padding: var(--space-3) 0;
+  }
+  @media (max-width: 1100px) {
+    .home :global(.game-grid) {
+      grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+    }
+  }
+  @media (max-width: 900px) {
+    .home :global(.article-list) {
+      grid-template-columns: 1fr;
+    }
+  }
+  .home :global(.game-card__body) {
+    padding: var(--space-2) var(--space-3) var(--space-3);
+  }
   /* これからのイベントは1行だけ。入りきらない分は横にスクロールする */
   .event-row {
     position: relative;
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% - 3 * var(--space-5)) / 4);
-    gap: var(--space-5);
+    grid-auto-columns: calc((100% - 3 * var(--space-4)) / 4);
+    gap: var(--space-4);
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
@@ -148,8 +186,8 @@ const idx = () => String(++n).padStart(2, '0');
   }
   .collection-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-    gap: var(--space-6) var(--space-5);
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: var(--space-4);
     list-style: none;
     margin: 0;
     padding: 0;
