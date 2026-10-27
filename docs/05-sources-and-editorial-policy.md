@@ -28,7 +28,7 @@ export const SourceConfig = z.object({
   enabled: z.boolean(),
   fetch: z.object({
     method: z.enum(['rss', 'atom', 'sitemap', 'json-api', 'html-list', 'steam', 'manual']),
-    url: HttpUrl.optional(),           // manual 以外では必須
+    url: HttpUrl.optional(),           // manual と steam 以外では必須
     frequency: z.enum(['every-run', 'daily', 'weekly']),
     maxItemsPerRun: z.number().int().min(1).max(100),
     minIntervalMs: z.number().int().min(1000).optional(),  // 既定は runtime.json の fetch.perDomainMinIntervalMs

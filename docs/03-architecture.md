@@ -6,7 +6,7 @@
 | - | - | - |
 | 実行環境 | Node.js 24 LTS（`.nvmrc` に `24` と書き、`package.json` の `engines` を `>=24` にする） | GitHub Actions と手元の環境をそろえる |
 | パッケージ管理 | npm（`package-lock.json` をコミットする） | 追加の準備が要らない |
-| 言語 | TypeScript（`strict: true`、ESM のみ） | |
+| 言語 | TypeScript（`strict: true`、ESM のみ）。`@astrojs/check` が対応する 6 系 | 11 の決定ログ（2026-10-27） |
 | スクリプトの実行 | `tsx` | `scripts/` の TypeScript をビルドせずに実行する |
 | サイト生成 | Astro（実装時点の最新の安定版。メジャーバージョンを固定する）。`output: 'static'`、`trailingSlash: 'always'`、`build.format: 'directory'` | 静的な成果物を作り、公開先を変えやすくする |
 | スキーマ | Zod | データの型と形式を検証する。LLM の構造化出力のスキーマにも同じものを使う |
