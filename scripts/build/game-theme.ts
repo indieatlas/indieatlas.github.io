@@ -38,14 +38,16 @@ export function gameTheme(colors: string[]): GameTheme | undefined {
     '--color-panel': `color-mix(in srgb, ${dBg} 82%, transparent)`,
   };
   const lBg = hslToHex(h, clamp(sRaw * 0.4, 14, 40), 95);
+  // 文字は、いちばん暗い背景（フッターなどの bg-deep）でも読めるようにする
+  const lBgDeep = hslToHex(h, clamp(sRaw * 0.35, 12, 34), 90);
   const light = {
     '--color-bg': lBg,
-    '--color-bg-deep': hslToHex(h, clamp(sRaw * 0.35, 12, 34), 90),
+    '--color-bg-deep': lBgDeep,
     '--color-surface-raised': hslToHex(h, clamp(sRaw * 0.3, 10, 30), 97),
     '--color-border': hslToHex(h, 18, 85),
     '--color-border-strong': hslToHex(h, 14, 70),
-    '--color-text-muted': withContrast(h, 14, 34, lBg, 4.5, -2),
-    '--color-accent': withContrast(h, s, 42, lBg, 4.5, -2),
+    '--color-text-muted': withContrast(h, 14, 34, lBgDeep, 4.5, -2),
+    '--color-accent': withContrast(h, s, 42, lBgDeep, 4.5, -2),
     '--color-signal': withContrast(h, s, 42, white, 4.5, -2),
     '--color-panel': `color-mix(in srgb, ${lBg} 86%, transparent)`,
   };
