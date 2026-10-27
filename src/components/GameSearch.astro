@@ -191,7 +191,7 @@ const radio = (name: string, values: string[]) => values.map((v) => ({ v, label:
     min-height: 52px;
     padding: 0 var(--space-4);
     border: 0;
-    border-bottom: 3px solid var(--color-signal);
+    border-bottom: 2px solid var(--color-signal);
     background: var(--color-surface);
     font-size: 1.0625rem;
   }
@@ -275,13 +275,12 @@ const radio = (name: string, values: string[]) => values.map((v) => ({ v, label:
     gap: 6px;
     min-height: 44px;
     padding: 0 16px;
-    background: var(--color-surface-raised);
+    box-shadow: inset 0 0 0 1px var(--color-border-strong);
     font-size: var(--text-xsmall);
-    font-weight: 700;
-    clip-path: polygon(7px 0, 100% 0, calc(100% - 7px) 100%, 0 100%);
+    font-weight: 600;
   }
   .option:hover span {
-    background: var(--color-border);
+    background: var(--color-surface-raised);
   }
   .option input:checked + span {
     background: var(--color-signal);

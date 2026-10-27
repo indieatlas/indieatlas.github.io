@@ -76,19 +76,10 @@ const nav = [
     position: sticky;
     top: 0;
     z-index: 50;
-    background: var(--color-bg-deep);
-    border-bottom: 3px solid var(--color-signal);
-  }
-  .site-header::after {
-    /* 赤い線の下の、黄色の短い線 */
-    content: '';
-    position: absolute;
-    right: 8%;
-    bottom: -6px;
-    width: 64px;
-    height: 3px;
-    background: var(--color-accent-warm);
-    transform: skewX(var(--skew));
+    background: color-mix(in srgb, var(--color-bg-deep) 82%, transparent);
+    backdrop-filter: blur(14px) saturate(1.3);
+    -webkit-backdrop-filter: blur(14px) saturate(1.3);
+    border-bottom: 1px solid var(--color-border);
   }
   .inner {
     display: flex;
@@ -122,34 +113,41 @@ const nav = [
     padding: 0 var(--space-4);
     color: var(--color-text-muted);
     text-decoration: none;
-    line-height: 1.2;
-    isolation: isolate;
+    line-height: 1.25;
+    transition: color var(--dur-fast) var(--ease-out);
   }
-  nav a::before {
+  nav a::after {
+    /* 選択中の項目の下の青い線 */
     content: '';
     position: absolute;
-    inset: 4px 0;
-    z-index: -1;
+    left: var(--space-4);
+    right: var(--space-4);
+    bottom: 2px;
+    height: 2px;
     background: var(--color-signal);
-    transform: skewX(var(--skew)) scaleX(0);
+    transform: scaleX(0);
     transform-origin: left;
     transition: transform var(--dur-base) var(--ease-snap);
   }
-  nav a:hover::before,
-  nav a[aria-current='page']::before {
-    transform: skewX(var(--skew)) scaleX(1);
+  nav a:hover {
+    color: var(--color-text);
   }
-  nav a:hover,
+  nav a:hover::after {
+    transform: scaleX(0.4);
+  }
   nav a[aria-current='page'] {
-    color: var(--color-on-signal);
+    color: var(--color-text);
+  }
+  nav a[aria-current='page']::after {
+    transform: scaleX(1);
   }
   .en {
-    font-family: var(--font-display);
-    font-size: 0.625rem;
-    font-weight: 700;
-    letter-spacing: 0.16em;
+    font-family: var(--font-mono);
+    font-size: 0.5625rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
-    opacity: 0.75;
+    color: var(--color-text-muted);
   }
   .ja {
     font-weight: 700;
@@ -166,12 +164,11 @@ const nav = [
     gap: var(--space-2);
     min-height: 44px;
     padding: 0 var(--space-4);
-    background: var(--color-surface-raised);
-    color: var(--color-text);
+    box-shadow: inset 0 0 0 1px var(--color-border-strong);
+    color: var(--color-text-muted);
     text-decoration: none;
     font-size: var(--text-small);
     font-weight: 700;
-    clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%);
   }
   .search-link:hover {
     background: var(--color-accent-warm);

@@ -1,45 +1,46 @@
 /*
  * デザイントークン（02 §2.6）。値はここを正とする。
- * 「ゲームの UI」を軸に、墨色の地に信号色の赤と、強調の黄色を差す。
+ * 「ゲームの UI」を軸に、墨色の地に、青をひとつだけ差し色として使う。選択やホバーは白（ライトテーマは墨）で反転させる。
  * ダークテーマを基本にし、[data-theme] と prefers-color-scheme でライトテーマに切り替える。
  */
 :root {
   color-scheme: dark;
-  --color-bg: #0b0b11;
-  --color-bg-deep: #060609;
-  --color-surface: #15151e;
-  --color-surface-raised: #1f1f2b;
-  --color-border: #2e2e3d;
-  --color-border-strong: #4a4a60;
-  --color-text: #f3f3f6;
-  --color-text-muted: #aeaebd;
-  --color-accent: #ff6f88; /* リンクなど、文字として使う赤 */
-  --color-signal: #e8173f; /* 面として使う赤（ボタン、選択中のタブ） */
+  --color-bg: #08090c;
+  --color-bg-deep: #050608;
+  --color-surface: #101217;
+  --color-surface-raised: #171a21;
+  --color-border: #23262e;
+  --color-border-strong: #363b47;
+  --color-text: #eceef2;
+  --color-text-muted: #9ba1ad;
+  --color-accent: #7aa7ff; /* リンクなど、文字として使う青 */
+  --color-signal: #2a60ea; /* 面として使う青（ボタン、選択中のタブ） */
   --color-on-signal: #ffffff;
-  --color-accent-warm: #ffd84d; /* 強調の黄色 */
-  --color-on-warm: #16120a;
-  --color-positive: #6ff0a6;
+  --color-accent-warm: #eceef2; /* 選択とホバーの反転色 */
+  --color-on-warm: #08090c;
+  --color-positive: #6fdfa0;
   --color-negative: #ff9a9a;
-  --color-unknown: #8f8fa1;
-  --color-overlay: rgb(11 11 17 / 0.9);
-  --color-panel: rgb(11 11 17 / 0.93); /* 動く背景の上に置く面（不透明度80%以上） */
+  --color-unknown: #868c99;
+  --color-overlay: rgb(8 9 12 / 0.9);
+  --color-panel: rgb(8 9 12 / 0.82); /* 動く背景の上に置く面（不透明度80%以上。背景がうっすら透ける） */
   --shadow-card: none;
 
   /* ジャンルのカテゴリ色（色だけで区別しない。文字でも示す） */
-  --genre-c0: #ff6f88;
-  --genre-c1: #ffd84d;
-  --genre-c2: #5ee0ff;
-  --genre-c3: #b39bff;
-  --genre-c4: #6ff0a6;
-  --genre-c5: #ffa45e;
-  --genre-c6: #ff8fe1;
-  --genre-c7: #c2f266;
-  --genre-neutral: #c9c9d6;
+  --genre-c0: #7aa7ff;
+  --genre-c1: #5fd4e8;
+  --genre-c2: #a99bff;
+  --genre-c3: #6fdfa0;
+  --genre-c4: #e8c35f;
+  --genre-c5: #f08bab;
+  --genre-c6: #f0a06a;
+  --genre-c7: #b5dc6a;
+  --genre-neutral: #b8bdc8;
 
   /* 文字 */
   --font-body:
     'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Yu Gothic UI', Meiryo, system-ui, sans-serif;
   --font-display: 'Space Grotesk', var(--font-body);
+  --font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
   --text-body: clamp(1rem, 0.95rem + 0.25vw, 1.0625rem);
   --text-small: 0.875rem;
   --text-xsmall: 0.8125rem;
@@ -87,68 +88,68 @@
 /* ライトテーマ */
 :root[data-theme='light'] {
   color-scheme: light;
-  --color-bg: #f2f0ea;
-  --color-bg-deep: #e5e2d8;
+  --color-bg: #f3f4f6;
+  --color-bg-deep: #e8eaee;
   --color-surface: #ffffff;
-  --color-surface-raised: #f7f5ef;
-  --color-border: #d6d2c6;
-  --color-border-strong: #a9a493;
-  --color-text: #111117;
-  --color-text-muted: #4b4b58;
-  --color-accent: #c00f2e;
-  --color-signal: #d6143a;
+  --color-surface-raised: #eef0f3;
+  --color-border: #dcdfe5;
+  --color-border-strong: #b3b9c5;
+  --color-text: #0d1016;
+  --color-text-muted: #4a505c;
+  --color-accent: #1d55d4;
+  --color-signal: #1d55d4;
   --color-on-signal: #ffffff;
-  --color-accent-warm: #8a6200;
+  --color-accent-warm: #0d1016;
   --color-on-warm: #ffffff;
   --color-positive: #157a42;
   --color-negative: #b3261e;
-  --color-unknown: #63636f;
-  --color-overlay: rgb(242 240 234 / 0.92);
-  --color-panel: rgb(242 240 234 / 0.94);
+  --color-unknown: #5d6370;
+  --color-overlay: rgb(243 244 246 / 0.92);
+  --color-panel: rgb(243 244 246 / 0.86);
   --shadow-card: none;
 
-  --genre-c0: #c00f2e;
-  --genre-c1: #8a6200;
-  --genre-c2: #00728f;
-  --genre-c3: #5b3fc4;
-  --genre-c4: #157a42;
-  --genre-c5: #b04a00;
-  --genre-c6: #a8237f;
+  --genre-c0: #1d55d4;
+  --genre-c1: #00718a;
+  --genre-c2: #5b3fc4;
+  --genre-c3: #157a42;
+  --genre-c4: #7d5f00;
+  --genre-c5: #b0306a;
+  --genre-c6: #a84800;
   --genre-c7: #4f7400;
-  --genre-neutral: #4b4b58;
+  --genre-neutral: #4a505c;
 }
 
 @media (prefers-color-scheme: light) {
   :root:not([data-theme]) {
     color-scheme: light;
-    --color-bg: #f2f0ea;
-    --color-bg-deep: #e5e2d8;
+    --color-bg: #f3f4f6;
+    --color-bg-deep: #e8eaee;
     --color-surface: #ffffff;
-    --color-surface-raised: #f7f5ef;
-    --color-border: #d6d2c6;
-    --color-border-strong: #a9a493;
-    --color-text: #111117;
-    --color-text-muted: #4b4b58;
-    --color-accent: #c00f2e;
-    --color-signal: #d6143a;
+    --color-surface-raised: #eef0f3;
+    --color-border: #dcdfe5;
+    --color-border-strong: #b3b9c5;
+    --color-text: #0d1016;
+    --color-text-muted: #4a505c;
+    --color-accent: #1d55d4;
+    --color-signal: #1d55d4;
     --color-on-signal: #ffffff;
-    --color-accent-warm: #8a6200;
+    --color-accent-warm: #0d1016;
     --color-on-warm: #ffffff;
     --color-positive: #157a42;
     --color-negative: #b3261e;
-    --color-unknown: #63636f;
-    --color-overlay: rgb(242 240 234 / 0.92);
-    --color-panel: rgb(242 240 234 / 0.94);
+    --color-unknown: #5d6370;
+    --color-overlay: rgb(243 244 246 / 0.92);
+    --color-panel: rgb(243 244 246 / 0.86);
     --shadow-card: none;
 
-    --genre-c0: #c00f2e;
-    --genre-c1: #8a6200;
-    --genre-c2: #00728f;
-    --genre-c3: #5b3fc4;
-    --genre-c4: #157a42;
-    --genre-c5: #b04a00;
-    --genre-c6: #a8237f;
+    --genre-c0: #1d55d4;
+    --genre-c1: #00718a;
+    --genre-c2: #5b3fc4;
+    --genre-c3: #157a42;
+    --genre-c4: #7d5f00;
+    --genre-c5: #b0306a;
+    --genre-c6: #a84800;
     --genre-c7: #4f7400;
-    --genre-neutral: #4b4b58;
+    --genre-neutral: #4a505c;
   }
 }
