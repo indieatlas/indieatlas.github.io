@@ -9,11 +9,11 @@ interface Props {
 }
 const { current } = Astro.props;
 const nav = [
-  { key: 'games', label: '作品', en: 'Games', href: url(paths.games()) },
-  { key: 'articles', label: '記事', en: 'News', href: url(paths.articles()) },
-  { key: 'collections', label: 'コレクション', en: 'Collections', href: url(paths.collections()) },
-  { key: 'events', label: 'イベント', en: 'Events', href: url(paths.events()) },
-  { key: 'about', label: '運営説明', en: 'About', href: url(paths.about()) },
+  { key: 'games', label: '作品', href: url(paths.games()) },
+  { key: 'articles', label: '記事', href: url(paths.articles()) },
+  { key: 'collections', label: 'コレクション', href: url(paths.collections()) },
+  { key: 'events', label: 'イベント', href: url(paths.events()) },
+  { key: 'about', label: '運営説明', href: url(paths.about()) },
 ] as const;
 ---
 
@@ -28,10 +28,7 @@ const nav = [
         {nav.map((n) => (
           <li>
             <a href={n.href} aria-current={current === n.key ? 'page' : undefined}>
-              <span class="en" aria-hidden="true">
-                {n.en}
-              </span>
-              <span class="ja">{n.label}</span>
+              {n.label}
             </a>
           </li>
         ))}
@@ -100,6 +97,8 @@ const nav = [
     padding: 0 var(--space-4);
     color: var(--color-text-muted);
     text-decoration: none;
+    font-size: var(--text-small);
+    font-weight: 700;
     line-height: 1.25;
     transition: color var(--dur-fast) var(--ease-out);
   }
@@ -127,18 +126,6 @@ const nav = [
   }
   nav a[aria-current='page']::after {
     transform: scaleX(1);
-  }
-  .en {
-    font-family: var(--font-mono);
-    font-size: 0.5625rem;
-    font-weight: 600;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--color-text-muted);
-  }
-  .ja {
-    font-weight: 700;
-    font-size: var(--text-small);
   }
   .actions {
     display: flex;

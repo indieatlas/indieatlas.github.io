@@ -1,26 +1,18 @@
 ---
 import { url } from '../lib/urls.ts';
 
-// セクションの見出し。番号と英字のラベル、日本語の見出し、一覧へのリンク
+// セクションの見出しと、一覧へのリンク
 interface Props {
   id: string; // 見出しの id（aria-labelledby に使う）
-  index?: string; // 例: "01"
-  en: string; // 例: "New arrivals"
   title: string;
   linkPath?: string; // ベースパスを含まないパス
   linkLabel?: string;
 }
-const { id, index, en, title, linkPath, linkLabel = 'すべて見る' } = Astro.props;
+const { id, title, linkPath, linkLabel = 'もっと見る' } = Astro.props;
 ---
 
 <div class="section-heading">
-  <div>
-    <p class="eyebrow">
-      {index && <span class="index">{index} /</span>}
-      {en}
-    </p>
-    <h2 id={id}>{title}</h2>
-  </div>
+  <h2 id={id}>{title}</h2>
   {linkPath && (
     <a class="more" href={url(linkPath)}>
       {linkLabel}
@@ -56,18 +48,13 @@ const { id, index, en, title, linkPath, linkLabel = 'すべて見る' } = Astro.
     margin: 0;
     font-size: clamp(1.375rem, 1.1rem + 1vw, 1.75rem);
   }
-  .index {
-    color: var(--color-accent);
-    margin-right: 6px;
-  }
   .more {
     display: inline-flex;
     align-items: center;
     gap: var(--space-2);
     min-height: 44px;
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    letter-spacing: 0.08em;
+    font-size: var(--text-small);
+    font-weight: 700;
     color: var(--color-text-muted);
     text-decoration: none;
   }
