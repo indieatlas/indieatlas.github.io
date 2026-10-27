@@ -1,0 +1,56 @@
+import { now } from '../lib/clock.ts';
+import { sha256Tagged } from '../lib/hash.ts';
+
+/**
+ * 最小限の HTTP 取得。ホストごとの間隔、User-Agent、大きさの上限、http(s) だけの許可を守る。
+ * robots.txt、SSRF の防止、本文の抽出などを備えた Fetcher は P2-01 で実装し、置き換える。
+ */
+export interface FetchResult {
+  url: string; // リダイレクト後の URL
+  status: number;
+  contentType: string;
+  text: string;
+  fetchHash: string;
+  retrievedAt: Date;
+}
+
+export interface HttpClient {
+  get(url: string, init?: { headers?: Record<string, string> }): Promise<FetchResult>;
+}
+
+export interface SimpleHttpOptions {
+  userAgent: string;
+  minIntervalMs: number;
+  timeoutMs: number;
+  maxBytes: number;
+}
+
+export function createSimpleHttp(opts: SimpleHttpOptions): HttpClient {
+  const lastByHost = new Map<string, number>();
+  return {
+    async get(url, init) {
+      const u = new URL(url);
+      if (u.protocol !== 'https:' && u.protocol !== 'http:') throw new Error(`unsupported protocol: ${url}`);
+      const last = lastByHost.get(u.host) ?? 0;
+      const wait = last + opts.minIntervalMs - Date.now();
+      if (wait > 0) await new Promise((r) => setTimeout(r, wait));
+      lastByHost.set(u.host, Date.now());
+      const res = await fetch(url, {
+        headers: { 'user-agent': opts.userAgent, ...init?.headers },
+        redirect: 'follow',
+        signal: AbortSignal.timeout(opts.timeoutMs),
+      });
+      const buf = new Uint8Array(await res.arrayBuffer());
+      if (buf.byteLength > opts.maxBytes) throw new Error(`response too large: ${url}`);
+      const text = new TextDecoder().decode(buf);
+      return {
+        url: res.url || url,
+        status: res.status,
+        contentType: res.headers.get('content-type') ?? '',
+        text,
+        fetchHash: sha256Tagged(buf),
+        retrievedAt: now(),
+      };
+    },
+  };
+}
