@@ -1,0 +1,415 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000024",
+  "claims": [
+    {
+      "id": "c_744840590b829faa",
+      "gameId": "g_000024",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1809540/",
+          "retrievedAt": "2026-10-27T14:24:01Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7fbe0f8e69f1d8372b1353aa1792f3f1e183cda1f5f33bdcf83deb44b30c1613"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:24:01Z",
+      "createdAt": "2026-10-27T14:24:01Z",
+      "updatedAt": "2026-10-27T14:24:01Z",
+      "lastCheckedAt": "2026-10-27T14:24:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2024,
+          "month": 5,
+          "day": 28
+        },
+        "rawText": "28 May, 2024"
+      }
+    },
+    {
+      "id": "c_2cec9e96baf61f5a",
+      "gameId": "g_000024",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1809540/",
+          "retrievedAt": "2026-10-27T14:24:01Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7fbe0f8e69f1d8372b1353aa1792f3f1e183cda1f5f33bdcf83deb44b30c1613"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:24:01Z",
+      "createdAt": "2026-10-27T14:24:01Z",
+      "updatedAt": "2026-10-27T14:24:01Z",
+      "lastCheckedAt": "2026-10-27T14:24:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2024,
+          "month": 5,
+          "day": 28
+        },
+        "rawText": "28 May, 2024"
+      }
+    },
+    {
+      "id": "c_ca533e3a99af5230",
+      "gameId": "g_000024",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1809540/",
+          "retrievedAt": "2026-10-27T14:24:07Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:106be831a9d6022e63eb5243cb9cae8e20a3a866e55b0c4c2f8bd15dbff69762"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:24:01Z",
+      "createdAt": "2026-10-27T14:24:01Z",
+      "updatedAt": "2026-10-27T14:24:01Z",
+      "lastCheckedAt": "2026-10-27T14:24:07Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_3e39501a5d2ec406",
+      "gameId": "g_000024",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1809540/",
+          "retrievedAt": "2026-10-27T14:24:01Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7fbe0f8e69f1d8372b1353aa1792f3f1e183cda1f5f33bdcf83deb44b30c1613"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:24:01Z",
+      "createdAt": "2026-10-27T14:24:01Z",
+      "updatedAt": "2026-10-27T14:24:01Z",
+      "lastCheckedAt": "2026-10-27T14:24:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_da1703fa40b9af1d",
+      "gameId": "g_000024",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1809540/",
+          "retrievedAt": "2026-10-27T13:49:21Z",
+          "quote": "古代中国神話を融合させた2Dプラットフォーム型アクションアドベンチャーゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:21Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "道教をもとにしたSFファンタジーに古代中国神話を融合させた2Dアクションアドベンチャー。英雄イーとなり、敵の攻撃を弾くパリー中心の戦闘で新崑崙を治める九人の太陽に挑む。"
+      }
+    },
+    {
+      "id": "c_1ae683af820aeafc",
+      "gameId": "g_000024",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1809540/",
+          "retrievedAt": "2026-10-27T13:49:21Z",
+          "quote": "古代中国神話を融合させた2Dプラットフォーム型アクションアドベンチャーゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:21Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "攻撃とパリーが激しく切り替わる戦闘",
+          "空中ダッシュ、二段ジャンプ、壁登りを使う2Dアクション",
+          "道教をもとにした独自の世界観"
+        ]
+      }
+    },
+    {
+      "id": "c_0519778d526fbf31",
+      "gameId": "g_000024",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1809540/",
+          "retrievedAt": "2026-10-27T13:49:21Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:21Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "sci-fi"
+      }
+    },
+    {
+      "id": "c_087df19080987f38",
+      "gameId": "g_000024",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1809540/",
+          "retrievedAt": "2026-10-27T13:49:21Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:21Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_09acdfed2d6f4e0f",
+      "gameId": "g_000024",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1809540/",
+          "retrievedAt": "2026-10-27T13:49:21Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:21Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "metroidvania"
+      }
+    },
+    {
+      "id": "c_94c43b160999c229",
+      "gameId": "g_000024",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1809540/",
+          "retrievedAt": "2026-10-27T13:49:21Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:21Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_ddff5ba293c5425b",
+      "gameId": "g_000024",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1809540/",
+          "retrievedAt": "2026-10-27T13:49:21Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:21Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "difficult"
+      }
+    },
+    {
+      "id": "c_02a11dd57c8011ee",
+      "gameId": "g_000024",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1809540/",
+          "retrievedAt": "2026-10-27T14:24:01Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7fbe0f8e69f1d8372b1353aa1792f3f1e183cda1f5f33bdcf83deb44b30c1613"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:24:01Z",
+      "createdAt": "2026-10-27T14:24:01Z",
+      "updatedAt": "2026-10-27T14:24:01Z",
+      "lastCheckedAt": "2026-10-27T14:24:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1809540/"
+      }
+    },
+    {
+      "id": "c_4173d661d3b048e1",
+      "gameId": "g_000024",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1809540/",
+          "retrievedAt": "2026-10-27T14:24:01Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7fbe0f8e69f1d8372b1353aa1792f3f1e183cda1f5f33bdcf83deb44b30c1613"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:24:01Z",
+      "createdAt": "2026-10-27T14:24:01Z",
+      "updatedAt": "2026-10-27T14:24:01Z",
+      "lastCheckedAt": "2026-10-27T14:24:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1809540/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "九日ナインソール のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "RedCandleGames"
+        }
+      }
+    }
+  ]
+}

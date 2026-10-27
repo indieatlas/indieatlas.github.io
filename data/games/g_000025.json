@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000025",
+  "status": "published",
+  "title": {
+    "display": "OMORI",
+    "original": "OMORI",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1150690
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1508300",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "http://omori-game.com/",
+  "developerIds": [
+    "dev_000022"
+  ],
+  "publisherIds": [
+    "dev_000022"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1150690/",
+            "retrievedAt": "2026-10-27T14:24:10Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:70fc25d46d35be2f0c4e29a8410c1de7578196359a2c1cf53011003a8c6ae2b5"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:24:10Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1150690/",
+        "retrievedAt": "2026-10-27T14:24:10Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:70fc25d46d35be2f0c4e29a8410c1de7578196359a2c1cf53011003a8c6ae2b5"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1150690/",
+        "retrievedAt": "2026-10-27T14:24:10Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:70fc25d46d35be2f0c4e29a8410c1de7578196359a2c1cf53011003a8c6ae2b5"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1150690/",
+        "retrievedAt": "2026-10-27T14:24:10Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:70fc25d46d35be2f0c4e29a8410c1de7578196359a2c1cf53011003a8c6ae2b5"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1150690/",
+        "retrievedAt": "2026-10-27T14:24:10Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:70fc25d46d35be2f0c4e29a8410c1de7578196359a2c1cf53011003a8c6ae2b5"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1150690/",
+        "retrievedAt": "2026-10-27T14:24:10Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:70fc25d46d35be2f0c4e29a8410c1de7578196359a2c1cf53011003a8c6ae2b5"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:24:10Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

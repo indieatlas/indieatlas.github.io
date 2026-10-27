@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000019",
+  "claims": [
+    {
+      "id": "c_3ca3dfbfcebb60e8",
+      "gameId": "g_000019",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1966720/",
+          "retrievedAt": "2026-10-27T14:23:16Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:30bd4ae59b67405e4423ddeeabfff91d9755132f14cd4a896213e68b161a8381"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:16Z",
+      "createdAt": "2026-10-27T14:23:16Z",
+      "updatedAt": "2026-10-27T14:23:16Z",
+      "lastCheckedAt": "2026-10-27T14:23:16Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2023,
+          "month": 10,
+          "day": 23
+        },
+        "rawText": "23 Oct, 2023"
+      }
+    },
+    {
+      "id": "c_5428fd1a598dbfbc",
+      "gameId": "g_000019",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1966720/",
+          "retrievedAt": "2026-10-27T14:23:22Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9a2d3db1ec4fdd1d6e1ac418fad0d33f7e152082a4d7d42d7b8f67fad2186501"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:16Z",
+      "createdAt": "2026-10-27T14:23:16Z",
+      "updatedAt": "2026-10-27T14:23:16Z",
+      "lastCheckedAt": "2026-10-27T14:23:22Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "no",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_0e13c226e20cb96c",
+      "gameId": "g_000019",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1966720/",
+          "retrievedAt": "2026-10-27T14:23:16Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:30bd4ae59b67405e4423ddeeabfff91d9755132f14cd4a896213e68b161a8381"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:16Z",
+      "createdAt": "2026-10-27T14:23:16Z",
+      "updatedAt": "2026-10-27T14:23:16Z",
+      "lastCheckedAt": "2026-10-27T14:23:16Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_23292114cdb165a1",
+      "gameId": "g_000019",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1966720/",
+          "retrievedAt": "2026-10-27T13:49:01Z",
+          "quote": "A co-op horror about scavenging at abandoned moons to sell scrap to the Company.",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "会社と契約した作業員となり、廃墟となった衛星でスクラップを回収して利益のノルマを達成する協力ホラー。施設の内部には危険な存在が潜み、仲間との連携が生き残る鍵になる。"
+      }
+    },
+    {
+      "id": "c_2c90263fadd49953",
+      "gameId": "g_000019",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1966720/",
+          "retrievedAt": "2026-10-27T13:49:01Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_2ea013d34c701b57",
+      "gameId": "g_000019",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1966720/",
+          "retrievedAt": "2026-10-27T13:49:01Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "horror"
+      }
+    },
+    {
+      "id": "c_59c123ae4605626b",
+      "gameId": "g_000019",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1966720/",
+          "retrievedAt": "2026-10-27T13:49:01Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_606f33a2a5f57f1c",
+      "gameId": "g_000019",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1966720/",
+          "retrievedAt": "2026-10-27T13:49:01Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "sci-fi"
+      }
+    },
+    {
+      "id": "c_e9fd625f63afe025",
+      "gameId": "g_000019",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1966720/",
+          "retrievedAt": "2026-10-27T13:49:01Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "tense"
+      }
+    },
+    {
+      "id": "c_7ac6019cad26951b",
+      "gameId": "g_000019",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1966720/",
+          "retrievedAt": "2026-10-27T14:23:16Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:30bd4ae59b67405e4423ddeeabfff91d9755132f14cd4a896213e68b161a8381"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:16Z",
+      "createdAt": "2026-10-27T14:23:16Z",
+      "updatedAt": "2026-10-27T14:23:16Z",
+      "lastCheckedAt": "2026-10-27T14:23:16Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1966720/"
+      }
+    },
+    {
+      "id": "c_8d512e126db8a676",
+      "gameId": "g_000019",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1966720/",
+          "retrievedAt": "2026-10-27T14:23:16Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:30bd4ae59b67405e4423ddeeabfff91d9755132f14cd4a896213e68b161a8381"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:16Z",
+      "createdAt": "2026-10-27T14:23:16Z",
+      "updatedAt": "2026-10-27T14:23:16Z",
+      "lastCheckedAt": "2026-10-27T14:23:16Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Lethal Company のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Zeekerss"
+        }
+      }
+    }
+  ]
+}

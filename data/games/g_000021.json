@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000021",
+  "status": "published",
+  "title": {
+    "display": "Project Zomboid",
+    "original": "Project Zomboid",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "プロジェクトゾンボイド",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 108600
+  },
+  "associatedApps": [],
+  "officialUrl": "https://www.projectzomboid.com",
+  "developerIds": [
+    "dev_000018"
+  ],
+  "publisherIds": [
+    "dev_000018"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/108600/",
+            "retrievedAt": "2026-10-27T14:23:34Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:da9bb521fdbea890fcb6a2bcc7d953f36f1c9acc823267bf1195be013e8ad87a"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:23:34Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/108600/",
+        "retrievedAt": "2026-10-27T13:49:11Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/108600/",
+        "retrievedAt": "2026-10-27T14:23:34Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:da9bb521fdbea890fcb6a2bcc7d953f36f1c9acc823267bf1195be013e8ad87a"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/108600/",
+        "retrievedAt": "2026-10-27T14:23:34Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:da9bb521fdbea890fcb6a2bcc7d953f36f1c9acc823267bf1195be013e8ad87a"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/108600/",
+        "retrievedAt": "2026-10-27T14:23:34Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:da9bb521fdbea890fcb6a2bcc7d953f36f1c9acc823267bf1195be013e8ad87a"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/108600/",
+        "retrievedAt": "2026-10-27T14:23:34Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:da9bb521fdbea890fcb6a2bcc7d953f36f1c9acc823267bf1195be013e8ad87a"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/108600/",
+        "retrievedAt": "2026-10-27T14:23:34Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:da9bb521fdbea890fcb6a2bcc7d953f36f1c9acc823267bf1195be013e8ad87a"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:23:34Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

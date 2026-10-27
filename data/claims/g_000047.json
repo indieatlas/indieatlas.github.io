@@ -1,0 +1,387 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000047",
+  "claims": [
+    {
+      "id": "c_a606baec1d1f2363",
+      "gameId": "g_000047",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1584090/",
+          "retrievedAt": "2026-10-27T14:27:28Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3d997b3e792ad68e0abffcc9f4d58657d9059749b5e12ec2a02a5e6a82edd7b5"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:28Z",
+      "createdAt": "2026-10-27T14:27:28Z",
+      "updatedAt": "2026-10-27T14:27:28Z",
+      "lastCheckedAt": "2026-10-27T14:27:28Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2021,
+          "month": 10,
+          "day": 1
+        },
+        "rawText": "1 Oct, 2021"
+      }
+    },
+    {
+      "id": "c_72c3ab57795bfa79",
+      "gameId": "g_000047",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1584090/",
+          "retrievedAt": "2026-10-27T14:27:28Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3d997b3e792ad68e0abffcc9f4d58657d9059749b5e12ec2a02a5e6a82edd7b5"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:28Z",
+      "createdAt": "2026-10-27T14:27:28Z",
+      "updatedAt": "2026-10-27T14:27:28Z",
+      "lastCheckedAt": "2026-10-27T14:27:28Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2021,
+          "month": 10,
+          "day": 1
+        },
+        "rawText": "1 Oct, 2021"
+      }
+    },
+    {
+      "id": "c_e98771098407fe51",
+      "gameId": "g_000047",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1584090/",
+          "retrievedAt": "2026-10-27T14:27:34Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8e3334214b8115e8e34bb18adbc55677e1a692b8e2e32da43f8cc919e7b0271d"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:28Z",
+      "createdAt": "2026-10-27T14:27:28Z",
+      "updatedAt": "2026-10-27T14:27:28Z",
+      "lastCheckedAt": "2026-10-27T14:27:34Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_dc2a5df836c04811",
+      "gameId": "g_000047",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1584090/",
+          "retrievedAt": "2026-10-27T14:27:28Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3d997b3e792ad68e0abffcc9f4d58657d9059749b5e12ec2a02a5e6a82edd7b5"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:28Z",
+      "createdAt": "2026-10-27T14:27:28Z",
+      "updatedAt": "2026-10-27T14:27:28Z",
+      "lastCheckedAt": "2026-10-27T14:27:28Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_5e7ad5ce6377b866",
+      "gameId": "g_000047",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1584090/",
+          "retrievedAt": "2026-10-27T13:55:09Z",
+          "quote": "新感覚居酒屋経営シミュレーションゲーム",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:55:09Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "夜雀の妖怪ミスティアとなり、幻想郷で移動式の焼串屋台を切り盛りする居酒屋経営シミュレーション。昼は食材を集めて料理を研究し、夜は客の好みに合わせた料理と音楽でもてなす。"
+      }
+    },
+    {
+      "id": "c_690b7cd168a7e0c5",
+      "gameId": "g_000047",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1584090/",
+          "retrievedAt": "2026-10-27T13:55:09Z",
+          "quote": "新感覚居酒屋経営シミュレーションゲーム",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:55:09Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "昼に食材を集め、夜に屋台で客をもてなす",
+          "客ごとに異なる味の好みや予算に合わせて料理を出す",
+          "会話から常連客の食べたいものを探り当てる"
+        ]
+      }
+    },
+    {
+      "id": "c_264a5e4a3f036cae",
+      "gameId": "g_000047",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1584090/",
+          "retrievedAt": "2026-10-27T13:55:09Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:55:09Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "food"
+      }
+    },
+    {
+      "id": "c_687a5fc231de0ffb",
+      "gameId": "g_000047",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1584090/",
+          "retrievedAt": "2026-10-27T13:55:09Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:55:09Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_e553414acf9c3163",
+      "gameId": "g_000047",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1584090/",
+          "retrievedAt": "2026-10-27T13:55:09Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:55:09Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_f3d60f022c6765f8",
+      "gameId": "g_000047",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1584090/",
+          "retrievedAt": "2026-10-27T13:55:09Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:55:09Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_c62365ab11172441",
+      "gameId": "g_000047",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1584090/",
+          "retrievedAt": "2026-10-27T14:27:28Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3d997b3e792ad68e0abffcc9f4d58657d9059749b5e12ec2a02a5e6a82edd7b5"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:28Z",
+      "createdAt": "2026-10-27T14:27:28Z",
+      "updatedAt": "2026-10-27T14:27:28Z",
+      "lastCheckedAt": "2026-10-27T14:27:28Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1584090/"
+      }
+    },
+    {
+      "id": "c_8bff6428bf852db6",
+      "gameId": "g_000047",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1584090/",
+          "retrievedAt": "2026-10-27T14:27:28Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3d997b3e792ad68e0abffcc9f4d58657d9059749b5e12ec2a02a5e6a82edd7b5"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:28Z",
+      "createdAt": "2026-10-27T14:27:28Z",
+      "updatedAt": "2026-10-27T14:27:28Z",
+      "lastCheckedAt": "2026-10-27T14:27:28Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1584090/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "東方夜雀食堂 - Touhou Mystia's Izakaya のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "二色幽紫蝶"
+        }
+      }
+    }
+  ]
+}

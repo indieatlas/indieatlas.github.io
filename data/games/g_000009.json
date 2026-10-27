@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000009",
+  "status": "published",
+  "title": {
+    "display": "Slay the Spire",
+    "original": "Slay the Spire",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "StS",
+      "lang": "en",
+      "kind": "abbreviation"
+    },
+    {
+      "value": "スレイ・ザ・スパイア",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 646570
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "877620",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000008"
+  ],
+  "publisherIds": [
+    "dev_000008"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/646570/",
+            "retrievedAt": "2026-10-27T14:21:46Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:359a5d07cdeef80e34d766b0110b6c7ad7781e9ee7c4de90b62565a41fb1e673"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:21:46Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/646570/",
+        "retrievedAt": "2026-10-27T13:48:24Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/646570/",
+        "retrievedAt": "2026-10-27T14:21:46Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:359a5d07cdeef80e34d766b0110b6c7ad7781e9ee7c4de90b62565a41fb1e673"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/646570/",
+        "retrievedAt": "2026-10-27T14:21:46Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:359a5d07cdeef80e34d766b0110b6c7ad7781e9ee7c4de90b62565a41fb1e673"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/646570/",
+        "retrievedAt": "2026-10-27T14:21:46Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:359a5d07cdeef80e34d766b0110b6c7ad7781e9ee7c4de90b62565a41fb1e673"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/646570/",
+        "retrievedAt": "2026-10-27T14:21:46Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:359a5d07cdeef80e34d766b0110b6c7ad7781e9ee7c4de90b62565a41fb1e673"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:21:46Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

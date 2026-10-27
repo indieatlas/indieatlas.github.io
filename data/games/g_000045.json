@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000045",
+  "status": "published",
+  "title": {
+    "display": "Tiny Rogues",
+    "original": "Tiny Rogues",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 2088570
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000041"
+  ],
+  "publisherIds": [
+    "dev_000041"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/2088570/",
+            "retrievedAt": "2026-10-27T14:27:10Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:461bc0cd13d138b1bf646f0de348ff38644c52e0803098ab96d19dfeb6438fa3"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:27:10Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2088570/",
+        "retrievedAt": "2026-10-27T14:27:10Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:461bc0cd13d138b1bf646f0de348ff38644c52e0803098ab96d19dfeb6438fa3"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2088570/",
+        "retrievedAt": "2026-10-27T14:27:10Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:461bc0cd13d138b1bf646f0de348ff38644c52e0803098ab96d19dfeb6438fa3"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2088570/",
+        "retrievedAt": "2026-10-27T14:27:10Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:461bc0cd13d138b1bf646f0de348ff38644c52e0803098ab96d19dfeb6438fa3"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2088570/",
+        "retrievedAt": "2026-10-27T14:27:10Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:461bc0cd13d138b1bf646f0de348ff38644c52e0803098ab96d19dfeb6438fa3"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:27:10Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

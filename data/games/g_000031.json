@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000031",
+  "status": "published",
+  "title": {
+    "display": "Cuphead",
+    "original": "Cuphead",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "カップヘッド",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 268910
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1117850",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2072990",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "704710",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "http://www.cupheadgame.com",
+  "developerIds": [
+    "dev_000027"
+  ],
+  "publisherIds": [
+    "dev_000027"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/268910/",
+            "retrievedAt": "2026-10-27T14:25:04Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:0ebeff7e6e9bb1dc92c06ad577c5dc6b4ae3e7dc3659e2b7633a5dfc97be5ce5"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:25:04Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/268910/",
+        "retrievedAt": "2026-10-27T13:49:54Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/268910/",
+        "retrievedAt": "2026-10-27T14:25:04Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0ebeff7e6e9bb1dc92c06ad577c5dc6b4ae3e7dc3659e2b7633a5dfc97be5ce5"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/268910/",
+        "retrievedAt": "2026-10-27T14:25:04Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0ebeff7e6e9bb1dc92c06ad577c5dc6b4ae3e7dc3659e2b7633a5dfc97be5ce5"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/268910/",
+        "retrievedAt": "2026-10-27T14:25:04Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0ebeff7e6e9bb1dc92c06ad577c5dc6b4ae3e7dc3659e2b7633a5dfc97be5ce5"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/268910/",
+        "retrievedAt": "2026-10-27T14:25:04Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0ebeff7e6e9bb1dc92c06ad577c5dc6b4ae3e7dc3659e2b7633a5dfc97be5ce5"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/268910/",
+        "retrievedAt": "2026-10-27T14:25:04Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0ebeff7e6e9bb1dc92c06ad577c5dc6b4ae3e7dc3659e2b7633a5dfc97be5ce5"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:25:04Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

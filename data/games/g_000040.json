@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000040",
+  "status": "published",
+  "title": {
+    "display": "Tiny Glade",
+    "original": "Tiny Glade",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 2198150
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "2932580",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "3226080",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://pouncelight.games/tiny-glade/",
+  "developerIds": [
+    "dev_000036"
+  ],
+  "publisherIds": [
+    "dev_000036"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/2198150/",
+            "retrievedAt": "2026-10-27T14:26:25Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:186ca80c85a3c59060a4f46af27faf4bbb171ddc24847df803489df80416805b"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:26:25Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2198150/",
+        "retrievedAt": "2026-10-27T14:26:25Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:186ca80c85a3c59060a4f46af27faf4bbb171ddc24847df803489df80416805b"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2198150/",
+        "retrievedAt": "2026-10-27T14:26:25Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:186ca80c85a3c59060a4f46af27faf4bbb171ddc24847df803489df80416805b"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2198150/",
+        "retrievedAt": "2026-10-27T14:26:25Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:186ca80c85a3c59060a4f46af27faf4bbb171ddc24847df803489df80416805b"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2198150/",
+        "retrievedAt": "2026-10-27T14:26:25Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:186ca80c85a3c59060a4f46af27faf4bbb171ddc24847df803489df80416805b"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2198150/",
+        "retrievedAt": "2026-10-27T14:26:25Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:186ca80c85a3c59060a4f46af27faf4bbb171ddc24847df803489df80416805b"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:26:25Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

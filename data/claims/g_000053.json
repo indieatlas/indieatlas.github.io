@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000053",
+  "claims": [
+    {
+      "id": "c_0fa2aafcb9c71589",
+      "gameId": "g_000053",
+      "scope": {
+        "platform": "linux",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/287980/",
+          "retrievedAt": "2026-10-27T14:28:22Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7c264f2f6b809125740a4262f842f47cbd0bd6b0e35a08cfc7321251788e6315"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:22Z",
+      "createdAt": "2026-10-27T14:28:22Z",
+      "updatedAt": "2026-10-27T14:28:22Z",
+      "lastCheckedAt": "2026-10-27T14:28:22Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2015,
+          "month": 11,
+          "day": 6
+        },
+        "rawText": "6 Nov, 2015"
+      }
+    },
+    {
+      "id": "c_52d73ae54be27ae0",
+      "gameId": "g_000053",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/287980/",
+          "retrievedAt": "2026-10-27T14:28:22Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7c264f2f6b809125740a4262f842f47cbd0bd6b0e35a08cfc7321251788e6315"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:22Z",
+      "createdAt": "2026-10-27T14:28:22Z",
+      "updatedAt": "2026-10-27T14:28:22Z",
+      "lastCheckedAt": "2026-10-27T14:28:22Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2015,
+          "month": 11,
+          "day": 6
+        },
+        "rawText": "6 Nov, 2015"
+      }
+    },
+    {
+      "id": "c_32596e169193dda0",
+      "gameId": "g_000053",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/287980/",
+          "retrievedAt": "2026-10-27T14:28:22Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7c264f2f6b809125740a4262f842f47cbd0bd6b0e35a08cfc7321251788e6315"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:22Z",
+      "createdAt": "2026-10-27T14:28:22Z",
+      "updatedAt": "2026-10-27T14:28:22Z",
+      "lastCheckedAt": "2026-10-27T14:28:22Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2015,
+          "month": 11,
+          "day": 6
+        },
+        "rawText": "6 Nov, 2015"
+      }
+    },
+    {
+      "id": "c_13cc37c5f0456698",
+      "gameId": "g_000053",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/287980/",
+          "retrievedAt": "2026-10-27T14:28:28Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b263db694852fac6f9dd37db4f78243d930e046555ec7f26f3c248411322efc7"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:22Z",
+      "createdAt": "2026-10-27T14:28:22Z",
+      "updatedAt": "2026-10-27T14:28:22Z",
+      "lastCheckedAt": "2026-10-27T14:28:28Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_cdb0d158b18b0e33",
+      "gameId": "g_000053",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/287980/",
+          "retrievedAt": "2026-10-27T14:28:22Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7c264f2f6b809125740a4262f842f47cbd0bd6b0e35a08cfc7321251788e6315"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:22Z",
+      "createdAt": "2026-10-27T14:28:22Z",
+      "updatedAt": "2026-10-27T14:28:22Z",
+      "lastCheckedAt": "2026-10-27T14:28:22Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_28a7910ad3efeb14",
+      "gameId": "g_000053",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/287980/",
+          "retrievedAt": "2026-10-27T13:56:40Z",
+          "quote": "Mini Metroは人口が急増する都市に地下鉄網を敷設するストラテジーゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:40Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "人口が急増する都市に地下鉄網を敷くストラテジーゲーム。駅の間に線を引いて路線を作り、限られた車両や線路、橋を工夫して使いながら、混雑で駅があふれるまで運営を続ける。"
+      }
+    },
+    {
+      "id": "c_f5cd88aed3e3d929",
+      "gameId": "g_000053",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/287980/",
+          "retrievedAt": "2026-10-27T13:56:40Z",
+          "quote": "Mini Metroは人口が急増する都市に地下鉄網を敷設するストラテジーゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:40Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "ロンドンや大阪など実在する20以上の都市が舞台",
+          "ノーマル、エンドレス、エクストリームのモード",
+          "思い描いた通りに路線を作れるクリエイティブモード"
+        ]
+      }
+    },
+    {
+      "id": "c_9fa115cd8ab8acc1",
+      "gameId": "g_000053",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/287980/",
+          "retrievedAt": "2026-10-27T13:56:40Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:40Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "short-session"
+      }
+    },
+    {
+      "id": "c_a25be181a26818a2",
+      "gameId": "g_000053",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/287980/",
+          "retrievedAt": "2026-10-27T13:56:40Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:40Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_e24a79ed9e2afed8",
+      "gameId": "g_000053",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/287980/",
+          "retrievedAt": "2026-10-27T13:56:40Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:40Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "strategy"
+      }
+    },
+    {
+      "id": "c_ec866510baf13eee",
+      "gameId": "g_000053",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/287980/",
+          "retrievedAt": "2026-10-27T13:56:40Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:40Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "city-builder"
+      }
+    },
+    {
+      "id": "c_99563b13e4e5e72c",
+      "gameId": "g_000053",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/287980/",
+          "retrievedAt": "2026-10-27T14:28:22Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7c264f2f6b809125740a4262f842f47cbd0bd6b0e35a08cfc7321251788e6315"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:22Z",
+      "createdAt": "2026-10-27T14:28:22Z",
+      "updatedAt": "2026-10-27T14:28:22Z",
+      "lastCheckedAt": "2026-10-27T14:28:22Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/287980/"
+      }
+    },
+    {
+      "id": "c_37cda73670a995eb",
+      "gameId": "g_000053",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/287980/",
+          "retrievedAt": "2026-10-27T14:28:22Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7c264f2f6b809125740a4262f842f47cbd0bd6b0e35a08cfc7321251788e6315"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:22Z",
+      "createdAt": "2026-10-27T14:28:22Z",
+      "updatedAt": "2026-10-27T14:28:22Z",
+      "lastCheckedAt": "2026-10-27T14:28:22Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/287980/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Mini Metro のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Dinosaur Polo Club"
+        }
+      }
+    }
+  ]
+}

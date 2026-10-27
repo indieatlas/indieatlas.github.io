@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000036",
+  "status": "published",
+  "title": {
+    "display": "Mina the Hollower",
+    "original": "Mina the Hollower",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1875580
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4743810",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://www.yachtclubgames.com/games/mina-the-hollower",
+  "developerIds": [
+    "dev_000033"
+  ],
+  "publisherIds": [
+    "dev_000033"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1875580/",
+            "retrievedAt": "2026-10-27T14:25:49Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:573f06bb3ed7e2b19f42d8cb3b55bbcb90050a8227af8114c0cd5dcf1b99c6df"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:25:49Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1875580/",
+        "retrievedAt": "2026-10-27T14:25:49Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:573f06bb3ed7e2b19f42d8cb3b55bbcb90050a8227af8114c0cd5dcf1b99c6df"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1875580/",
+        "retrievedAt": "2026-10-27T14:25:49Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:573f06bb3ed7e2b19f42d8cb3b55bbcb90050a8227af8114c0cd5dcf1b99c6df"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1875580/",
+        "retrievedAt": "2026-10-27T14:25:49Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:573f06bb3ed7e2b19f42d8cb3b55bbcb90050a8227af8114c0cd5dcf1b99c6df"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1875580/",
+        "retrievedAt": "2026-10-27T14:25:49Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:573f06bb3ed7e2b19f42d8cb3b55bbcb90050a8227af8114c0cd5dcf1b99c6df"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1875580/",
+        "retrievedAt": "2026-10-27T14:25:49Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:573f06bb3ed7e2b19f42d8cb3b55bbcb90050a8227af8114c0cd5dcf1b99c6df"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:25:49Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000007",
+  "status": "published",
+  "title": {
+    "display": "Undertale",
+    "original": "Undertale",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "アンダーテール",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 391540
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "391570",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "http://undertale.com",
+  "developerIds": [
+    "dev_000007"
+  ],
+  "publisherIds": [
+    "dev_000007"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/391540/",
+            "retrievedAt": "2026-10-27T14:21:28Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:637ac48b8e1ed9cb9f7f395a12c9403f3bc09972eea6b79f075ca25be04138c6"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:21:28Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/391540/",
+        "retrievedAt": "2026-10-27T13:48:17Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/391540/",
+        "retrievedAt": "2026-10-27T14:21:28Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:637ac48b8e1ed9cb9f7f395a12c9403f3bc09972eea6b79f075ca25be04138c6"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/391540/",
+        "retrievedAt": "2026-10-27T14:21:28Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:637ac48b8e1ed9cb9f7f395a12c9403f3bc09972eea6b79f075ca25be04138c6"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/391540/",
+        "retrievedAt": "2026-10-27T14:21:28Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:637ac48b8e1ed9cb9f7f395a12c9403f3bc09972eea6b79f075ca25be04138c6"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/391540/",
+        "retrievedAt": "2026-10-27T14:21:28Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:637ac48b8e1ed9cb9f7f395a12c9403f3bc09972eea6b79f075ca25be04138c6"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/391540/",
+        "retrievedAt": "2026-10-27T14:21:28Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:637ac48b8e1ed9cb9f7f395a12c9403f3bc09972eea6b79f075ca25be04138c6"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:21:28Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

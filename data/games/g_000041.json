@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000041",
+  "status": "published",
+  "title": {
+    "display": "Fields of Mistria",
+    "original": "Fields of Mistria",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 2142790
+  },
+  "associatedApps": [],
+  "officialUrl": "https://fieldsofmistria.com",
+  "developerIds": [
+    "dev_000037"
+  ],
+  "publisherIds": [
+    "dev_000037"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/2142790/",
+            "retrievedAt": "2026-10-27T14:26:34Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:68be8798f0b83d0422adb46ca80afcd129bb0c663f75df7be1c97c25beb93b92"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:26:34Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2142790/",
+        "retrievedAt": "2026-10-27T14:26:34Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:68be8798f0b83d0422adb46ca80afcd129bb0c663f75df7be1c97c25beb93b92"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2142790/",
+        "retrievedAt": "2026-10-27T14:26:34Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:68be8798f0b83d0422adb46ca80afcd129bb0c663f75df7be1c97c25beb93b92"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2142790/",
+        "retrievedAt": "2026-10-27T14:26:34Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:68be8798f0b83d0422adb46ca80afcd129bb0c663f75df7be1c97c25beb93b92"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2142790/",
+        "retrievedAt": "2026-10-27T14:26:34Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:68be8798f0b83d0422adb46ca80afcd129bb0c663f75df7be1c97c25beb93b92"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2142790/",
+        "retrievedAt": "2026-10-27T14:26:34Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:68be8798f0b83d0422adb46ca80afcd129bb0c663f75df7be1c97c25beb93b92"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:26:34Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000035",
+  "status": "published",
+  "title": {
+    "display": "Witchbrook",
+    "original": "Witchbrook",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "Witchbrook (ウィッチブルック)",
+      "lang": "ja",
+      "kind": "localized"
+    },
+    {
+      "value": "ウィッチブルック",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1846700
+  },
+  "associatedApps": [],
+  "officialUrl": "https://witchbrook.com",
+  "developerIds": [
+    "dev_000031",
+    "dev_000032"
+  ],
+  "publisherIds": [
+    "dev_000031"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1846700/",
+            "retrievedAt": "2026-10-27T14:25:40Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:227bcca37fc5eb68e3ac8e255ef1b2f8fd94293bef3e5d8bae0d33812425e4d0"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:25:40Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1846700/",
+        "retrievedAt": "2026-10-27T13:53:13Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1846700/",
+        "retrievedAt": "2026-10-27T14:25:40Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:227bcca37fc5eb68e3ac8e255ef1b2f8fd94293bef3e5d8bae0d33812425e4d0"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1846700/",
+        "retrievedAt": "2026-10-27T14:25:40Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:227bcca37fc5eb68e3ac8e255ef1b2f8fd94293bef3e5d8bae0d33812425e4d0"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1846700/",
+        "retrievedAt": "2026-10-27T14:25:40Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:227bcca37fc5eb68e3ac8e255ef1b2f8fd94293bef3e5d8bae0d33812425e4d0"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1846700/",
+        "retrievedAt": "2026-10-27T14:25:40Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:227bcca37fc5eb68e3ac8e255ef1b2f8fd94293bef3e5d8bae0d33812425e4d0"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1846700/",
+        "retrievedAt": "2026-10-27T14:25:40Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:227bcca37fc5eb68e3ac8e255ef1b2f8fd94293bef3e5d8bae0d33812425e4d0"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:25:40Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

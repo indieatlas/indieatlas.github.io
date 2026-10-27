@@ -1,0 +1,387 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000057",
+  "claims": [
+    {
+      "id": "c_c42ba205f803c910",
+      "gameId": "g_000057",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/435120/",
+          "retrievedAt": "2026-10-27T14:28:58Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d60178beb2660cad7b177de47a0683d8ba79c29055db6b1cc8a345a62d35e112"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:58Z",
+      "createdAt": "2026-10-27T14:28:58Z",
+      "updatedAt": "2026-10-27T14:28:58Z",
+      "lastCheckedAt": "2026-10-27T14:28:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2016,
+          "month": 1,
+          "day": 29
+        },
+        "rawText": "29 Jan, 2016"
+      }
+    },
+    {
+      "id": "c_003d225638125f3a",
+      "gameId": "g_000057",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/435120/",
+          "retrievedAt": "2026-10-27T14:28:58Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d60178beb2660cad7b177de47a0683d8ba79c29055db6b1cc8a345a62d35e112"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:58Z",
+      "createdAt": "2026-10-27T14:28:58Z",
+      "updatedAt": "2026-10-27T14:28:58Z",
+      "lastCheckedAt": "2026-10-27T14:28:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2016,
+          "month": 1,
+          "day": 29
+        },
+        "rawText": "29 Jan, 2016"
+      }
+    },
+    {
+      "id": "c_d9a3d717cd9eaab0",
+      "gameId": "g_000057",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/435120/",
+          "retrievedAt": "2026-10-27T14:29:04Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:5073ef37124b9f4fc6d5e148d018f2bd7e02e94d25b85a6e25a2de8b5c322922"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:58Z",
+      "createdAt": "2026-10-27T14:28:58Z",
+      "updatedAt": "2026-10-27T14:28:58Z",
+      "lastCheckedAt": "2026-10-27T14:29:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_00b79d76b4b73c61",
+      "gameId": "g_000057",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/435120/",
+          "retrievedAt": "2026-10-27T14:28:58Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d60178beb2660cad7b177de47a0683d8ba79c29055db6b1cc8a345a62d35e112"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:58Z",
+      "createdAt": "2026-10-27T14:28:58Z",
+      "updatedAt": "2026-10-27T14:28:58Z",
+      "lastCheckedAt": "2026-10-27T14:28:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_74cf6c5f32a4110e",
+      "gameId": "g_000057",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/435120/",
+          "retrievedAt": "2026-10-27T13:56:50Z",
+          "quote": "ラスティレイクとキューブエスケープシリーズのクリエイターによる、不可思議なポイント＆クリックアドベンチャーです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:50Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "奇妙な宿泊客が集まるホテルで、5日間のディナーを用意するポイント＆クリックの謎解きアドベンチャー。6つの部屋に仕掛けられたパズルを解き、不穏な雰囲気のなかで物語の真相に近づく。"
+      }
+    },
+    {
+      "id": "c_ef10b763c9fa71cc",
+      "gameId": "g_000057",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/435120/",
+          "retrievedAt": "2026-10-27T13:56:50Z",
+          "quote": "ラスティレイクとキューブエスケープシリーズのクリエイターによる、不可思議なポイント＆クリックアドベンチャーです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:50Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "謎解きが待つ6つの部屋",
+          "5種類のディナーと癖のある宿泊客",
+          "部屋ごとに作られた音楽"
+        ]
+      }
+    },
+    {
+      "id": "c_3c9cb9fcc9c34548",
+      "gameId": "g_000057",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/435120/",
+          "retrievedAt": "2026-10-27T13:56:50Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:50Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "dark"
+      }
+    },
+    {
+      "id": "c_6ff203f1cc237ca9",
+      "gameId": "g_000057",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/435120/",
+          "retrievedAt": "2026-10-27T13:56:50Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:50Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_7bd8f5e0764463bd",
+      "gameId": "g_000057",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/435120/",
+          "retrievedAt": "2026-10-27T13:56:50Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:50Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_d44ecc4ba3de9781",
+      "gameId": "g_000057",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/435120/",
+          "retrievedAt": "2026-10-27T13:56:50Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:50Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_9b3dc79c5a72aa5d",
+      "gameId": "g_000057",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/435120/",
+          "retrievedAt": "2026-10-27T14:28:58Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d60178beb2660cad7b177de47a0683d8ba79c29055db6b1cc8a345a62d35e112"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:58Z",
+      "createdAt": "2026-10-27T14:28:58Z",
+      "updatedAt": "2026-10-27T14:28:58Z",
+      "lastCheckedAt": "2026-10-27T14:28:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/435120/"
+      }
+    },
+    {
+      "id": "c_5d8fdd19d86e2b0e",
+      "gameId": "g_000057",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/435120/",
+          "retrievedAt": "2026-10-27T14:28:58Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d60178beb2660cad7b177de47a0683d8ba79c29055db6b1cc8a345a62d35e112"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:58Z",
+      "createdAt": "2026-10-27T14:28:58Z",
+      "updatedAt": "2026-10-27T14:28:58Z",
+      "lastCheckedAt": "2026-10-27T14:28:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/435120/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Rusty Lake Hotel のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Rusty Lake"
+        }
+      }
+    }
+  ]
+}

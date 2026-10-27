@@ -1,0 +1,415 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000017",
+  "claims": [
+    {
+      "id": "c_033742935699fc22",
+      "gameId": "g_000017",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1145350/",
+          "retrievedAt": "2026-10-27T14:22:58Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:18360535eaab2d0449a424a3e2c7b2d6b613a9ccdc372fa09fab419a51fdf68d"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:58Z",
+      "createdAt": "2026-10-27T14:22:58Z",
+      "updatedAt": "2026-10-27T14:22:58Z",
+      "lastCheckedAt": "2026-10-27T14:22:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 9,
+          "day": 25
+        },
+        "rawText": "25 Sep, 2025"
+      }
+    },
+    {
+      "id": "c_5a109915d04f1ab2",
+      "gameId": "g_000017",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1145350/",
+          "retrievedAt": "2026-10-27T14:22:58Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:18360535eaab2d0449a424a3e2c7b2d6b613a9ccdc372fa09fab419a51fdf68d"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:58Z",
+      "createdAt": "2026-10-27T14:22:58Z",
+      "updatedAt": "2026-10-27T14:22:58Z",
+      "lastCheckedAt": "2026-10-27T14:22:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 9,
+          "day": 25
+        },
+        "rawText": "25 Sep, 2025"
+      }
+    },
+    {
+      "id": "c_38488049f2455950",
+      "gameId": "g_000017",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1145350/",
+          "retrievedAt": "2026-10-27T14:23:04Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:61da248bbbbb60cf2027f6ea872c81caad2105b4137985322890dc9a522e4d2d"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:58Z",
+      "createdAt": "2026-10-27T14:22:58Z",
+      "updatedAt": "2026-10-27T14:22:58Z",
+      "lastCheckedAt": "2026-10-27T14:23:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_bb34284640c8d263",
+      "gameId": "g_000017",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1145350/",
+          "retrievedAt": "2026-10-27T14:22:58Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:18360535eaab2d0449a424a3e2c7b2d6b613a9ccdc372fa09fab419a51fdf68d"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:58Z",
+      "createdAt": "2026-10-27T14:22:58Z",
+      "updatedAt": "2026-10-27T14:22:58Z",
+      "lastCheckedAt": "2026-10-27T14:22:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_1a491ca4c3d2bd55",
+      "gameId": "g_000017",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1145350/",
+          "retrievedAt": "2026-10-27T13:48:54Z",
+          "quote": "黒魔術を駆使して冥界を脱し、時の巨神クロノス打倒を目指す新たな挑戦を体験せよ",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:54Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "ローグライクのダンジョンアクション『Hades』の続編。冥界の王女となり、黒魔術と神々の力を使って時の巨神クロノスの打倒を目指す。挑戦のたびにエリアや試練が変わる。"
+      }
+    },
+    {
+      "id": "c_a794223411c42d9f",
+      "gameId": "g_000017",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1145350/",
+          "retrievedAt": "2026-10-27T13:48:54Z",
+          "quote": "黒魔術を駆使して冥界を脱し、時の巨神クロノス打倒を目指す新たな挑戦を体験せよ",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:54Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "十二柱以上のオリュンポスの神々から功徳を授かる",
+          "伝説の武具を古の魔術で強化できる",
+          "英語フルボイスで登場する数十名のキャラクター"
+        ]
+      }
+    },
+    {
+      "id": "c_61cfd29bd7babe5a",
+      "gameId": "g_000017",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1145350/",
+          "retrievedAt": "2026-10-27T13:48:54Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:54Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_ce72208e9df1313a",
+      "gameId": "g_000017",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1145350/",
+          "retrievedAt": "2026-10-27T13:48:54Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:54Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_d25da12dd7cfc901",
+      "gameId": "g_000017",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1145350/",
+          "retrievedAt": "2026-10-27T13:48:54Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:54Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "magic"
+      }
+    },
+    {
+      "id": "c_d7f17f1e2d1d6c8b",
+      "gameId": "g_000017",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1145350/",
+          "retrievedAt": "2026-10-27T13:48:54Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:54Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_e5ef1233de5d878c",
+      "gameId": "g_000017",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1145350/",
+          "retrievedAt": "2026-10-27T13:48:54Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:54Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_3d2645727292bcb1",
+      "gameId": "g_000017",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1145350/",
+          "retrievedAt": "2026-10-27T14:22:58Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:18360535eaab2d0449a424a3e2c7b2d6b613a9ccdc372fa09fab419a51fdf68d"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:58Z",
+      "createdAt": "2026-10-27T14:22:58Z",
+      "updatedAt": "2026-10-27T14:22:58Z",
+      "lastCheckedAt": "2026-10-27T14:22:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1145350/"
+      }
+    },
+    {
+      "id": "c_9be46a5c0334afe0",
+      "gameId": "g_000017",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1145350/",
+          "retrievedAt": "2026-10-27T14:22:58Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:18360535eaab2d0449a424a3e2c7b2d6b613a9ccdc372fa09fab419a51fdf68d"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:58Z",
+      "createdAt": "2026-10-27T14:22:58Z",
+      "updatedAt": "2026-10-27T14:22:58Z",
+      "lastCheckedAt": "2026-10-27T14:22:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/91ac334a2c137d08968ccc0bc474a02579602100/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Hades II のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Supergiant Games"
+        }
+      }
+    }
+  ]
+}

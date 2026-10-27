@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000047",
+  "status": "published",
+  "title": {
+    "display": "東方夜雀食堂",
+    "original": "Touhou Mystia's Izakaya",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "東方夜雀食堂 - Touhou Mystia's Izakaya",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1584090
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1663680",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "1663690",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "1838750",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "1927110",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "1982490",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2122050",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2191950",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2194750",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2399330",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2399331",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2797450",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000043",
+    "dev_000044"
+  ],
+  "publisherIds": [
+    "dev_000043",
+    "dev_000044"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1584090/",
+            "retrievedAt": "2026-10-27T14:27:28Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:3d997b3e792ad68e0abffcc9f4d58657d9059749b5e12ec2a02a5e6a82edd7b5"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:27:28Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1584090/",
+        "retrievedAt": "2026-10-27T13:55:09Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1584090/",
+        "retrievedAt": "2026-10-27T14:27:28Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3d997b3e792ad68e0abffcc9f4d58657d9059749b5e12ec2a02a5e6a82edd7b5"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1584090/",
+        "retrievedAt": "2026-10-27T14:27:28Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3d997b3e792ad68e0abffcc9f4d58657d9059749b5e12ec2a02a5e6a82edd7b5"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1584090/",
+        "retrievedAt": "2026-10-27T14:27:28Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3d997b3e792ad68e0abffcc9f4d58657d9059749b5e12ec2a02a5e6a82edd7b5"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1584090/",
+        "retrievedAt": "2026-10-27T14:27:28Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3d997b3e792ad68e0abffcc9f4d58657d9059749b5e12ec2a02a5e6a82edd7b5"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:27:28Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

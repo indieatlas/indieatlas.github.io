@@ -1,0 +1,508 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000021",
+  "claims": [
+    {
+      "id": "c_67a002f8eaf1b425",
+      "gameId": "g_000021",
+      "scope": {
+        "platform": "linux",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/108600/",
+          "retrievedAt": "2026-10-27T14:23:34Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:da9bb521fdbea890fcb6a2bcc7d953f36f1c9acc823267bf1195be013e8ad87a"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:34Z",
+      "createdAt": "2026-10-27T14:23:34Z",
+      "updatedAt": "2026-10-27T14:23:34Z",
+      "lastCheckedAt": "2026-10-27T14:23:34Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2013,
+          "month": 11,
+          "day": 8
+        },
+        "rawText": "8 Nov, 2013"
+      }
+    },
+    {
+      "id": "c_4266facf4384073a",
+      "gameId": "g_000021",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/108600/",
+          "retrievedAt": "2026-10-27T14:23:34Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:da9bb521fdbea890fcb6a2bcc7d953f36f1c9acc823267bf1195be013e8ad87a"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:34Z",
+      "createdAt": "2026-10-27T14:23:34Z",
+      "updatedAt": "2026-10-27T14:23:34Z",
+      "lastCheckedAt": "2026-10-27T14:23:34Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2013,
+          "month": 11,
+          "day": 8
+        },
+        "rawText": "8 Nov, 2013"
+      }
+    },
+    {
+      "id": "c_158bde217dc2fedd",
+      "gameId": "g_000021",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/108600/",
+          "retrievedAt": "2026-10-27T14:23:34Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:da9bb521fdbea890fcb6a2bcc7d953f36f1c9acc823267bf1195be013e8ad87a"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:34Z",
+      "createdAt": "2026-10-27T14:23:34Z",
+      "updatedAt": "2026-10-27T14:23:34Z",
+      "lastCheckedAt": "2026-10-27T14:23:34Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2013,
+          "month": 11,
+          "day": 8
+        },
+        "rawText": "8 Nov, 2013"
+      }
+    },
+    {
+      "id": "c_fac6ae74671a0964",
+      "gameId": "g_000021",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/108600/",
+          "retrievedAt": "2026-10-27T14:23:40Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:429dc34fb54cc4702b7e5d08f290eb92320e11959a8cf0b8354926bfabdc228a"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:34Z",
+      "createdAt": "2026-10-27T14:23:34Z",
+      "updatedAt": "2026-10-27T14:23:34Z",
+      "lastCheckedAt": "2026-10-27T14:23:40Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_6d0150bcba5cb922",
+      "gameId": "g_000021",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/108600/",
+          "retrievedAt": "2026-10-27T14:23:34Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:da9bb521fdbea890fcb6a2bcc7d953f36f1c9acc823267bf1195be013e8ad87a"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:34Z",
+      "createdAt": "2026-10-27T14:23:34Z",
+      "updatedAt": "2026-10-27T14:23:34Z",
+      "lastCheckedAt": "2026-10-27T14:23:34Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "local-coop",
+          "online-coop",
+          "online-pvp"
+        ]
+      }
+    },
+    {
+      "id": "c_9ccb5e35ddff9b72",
+      "gameId": "g_000021",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/108600/",
+          "retrievedAt": "2026-10-27T13:49:11Z",
+          "quote": "Alone or in MP: you loot, build, craft, fight, farm and fish in a struggle to survive.",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:11Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "ゾンビがあふれる町で、物資を集め、拠点を築き、農業や釣りをしながら少しでも長く生き延びるサバイバル。1人でもオンラインのマルチプレイでも遊べ、細かく設定できるサンドボックスを備える。"
+      }
+    },
+    {
+      "id": "c_00aa38536e6535b3",
+      "gameId": "g_000021",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/108600/",
+          "retrievedAt": "2026-10-27T13:49:11Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:11Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "base-building"
+      }
+    },
+    {
+      "id": "c_1e20cc4e7883e15d",
+      "gameId": "g_000021",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/108600/",
+          "retrievedAt": "2026-10-27T13:49:11Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:11Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "tense"
+      }
+    },
+    {
+      "id": "c_58acc3e6ff1b2d24",
+      "gameId": "g_000021",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/108600/",
+          "retrievedAt": "2026-10-27T13:49:11Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:11Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_89aca2d2c60de241",
+      "gameId": "g_000021",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/108600/",
+          "retrievedAt": "2026-10-27T13:49:11Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:11Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "survival"
+      }
+    },
+    {
+      "id": "c_89d9c654dc12ef16",
+      "gameId": "g_000021",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/108600/",
+          "retrievedAt": "2026-10-27T13:49:11Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:11Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "crafting"
+      }
+    },
+    {
+      "id": "c_a52dd2cb2d951270",
+      "gameId": "g_000021",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/108600/",
+          "retrievedAt": "2026-10-27T13:49:11Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:11Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "zombies"
+      }
+    },
+    {
+      "id": "c_caa2632d43ec0820",
+      "gameId": "g_000021",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/108600/",
+          "retrievedAt": "2026-10-27T13:49:11Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:11Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "post-apocalyptic"
+      }
+    },
+    {
+      "id": "c_e83978f390c72be1",
+      "gameId": "g_000021",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/108600/",
+          "retrievedAt": "2026-10-27T13:49:11Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:11Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "sandbox"
+      }
+    },
+    {
+      "id": "c_75f96c34eaca8697",
+      "gameId": "g_000021",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/108600/",
+          "retrievedAt": "2026-10-27T14:23:34Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:da9bb521fdbea890fcb6a2bcc7d953f36f1c9acc823267bf1195be013e8ad87a"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:34Z",
+      "createdAt": "2026-10-27T14:23:34Z",
+      "updatedAt": "2026-10-27T14:23:34Z",
+      "lastCheckedAt": "2026-10-27T14:23:34Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/108600/"
+      }
+    },
+    {
+      "id": "c_68acb8845d63b8dc",
+      "gameId": "g_000021",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/108600/",
+          "retrievedAt": "2026-10-27T14:23:34Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:da9bb521fdbea890fcb6a2bcc7d953f36f1c9acc823267bf1195be013e8ad87a"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:34Z",
+      "createdAt": "2026-10-27T14:23:34Z",
+      "updatedAt": "2026-10-27T14:23:34Z",
+      "lastCheckedAt": "2026-10-27T14:23:34Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/108600/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Project Zomboid のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "The Indie Stone"
+        }
+      }
+    }
+  ]
+}

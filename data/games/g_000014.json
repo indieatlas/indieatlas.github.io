@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000014",
+  "status": "published",
+  "title": {
+    "display": "RimWorld",
+    "original": "RimWorld",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 294100
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1149640",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "1244270",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "1392840",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "1826140",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2380740",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2914900",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "3022790",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "367680",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "3689230",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "990430",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://ludeon.com",
+  "developerIds": [
+    "dev_000012"
+  ],
+  "publisherIds": [
+    "dev_000012"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/294100/",
+            "retrievedAt": "2026-10-27T14:22:31Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:b7ad05597942c76e6fc91718e0bc8efc03bc202f3095f98a4ddd201b7845a31a"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:22:31Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/294100/",
+        "retrievedAt": "2026-10-27T14:22:31Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b7ad05597942c76e6fc91718e0bc8efc03bc202f3095f98a4ddd201b7845a31a"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/294100/",
+        "retrievedAt": "2026-10-27T14:22:31Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b7ad05597942c76e6fc91718e0bc8efc03bc202f3095f98a4ddd201b7845a31a"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/294100/",
+        "retrievedAt": "2026-10-27T14:22:31Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b7ad05597942c76e6fc91718e0bc8efc03bc202f3095f98a4ddd201b7845a31a"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/294100/",
+        "retrievedAt": "2026-10-27T14:22:31Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b7ad05597942c76e6fc91718e0bc8efc03bc202f3095f98a4ddd201b7845a31a"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/294100/",
+        "retrievedAt": "2026-10-27T14:22:31Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b7ad05597942c76e6fc91718e0bc8efc03bc202f3095f98a4ddd201b7845a31a"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:22:31Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

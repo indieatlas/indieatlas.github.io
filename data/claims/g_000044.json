@@ -1,0 +1,343 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000044",
+  "claims": [
+    {
+      "id": "c_f95fe866904d94c3",
+      "gameId": "g_000044",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2365810/",
+          "retrievedAt": "2026-10-27T14:27:01Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:471c9f94a5eaaeb51fee71fb9ff0adfd62eddae60755a508fe6eeb39bf7941ce"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:01Z",
+      "createdAt": "2026-10-27T14:27:01Z",
+      "updatedAt": "2026-10-27T14:27:01Z",
+      "lastCheckedAt": "2026-10-27T14:27:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2023,
+          "month": 7,
+          "day": 28
+        },
+        "rawText": "28 Jul, 2023"
+      }
+    },
+    {
+      "id": "c_9a9233050dd1d420",
+      "gameId": "g_000044",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2365810/",
+          "retrievedAt": "2026-10-27T14:27:07Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e7ac227bbad2881b5fbef75ee1f2e34a5494c244d06324fa1537c7ac8ad57d98"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:01Z",
+      "createdAt": "2026-10-27T14:27:01Z",
+      "updatedAt": "2026-10-27T14:27:01Z",
+      "lastCheckedAt": "2026-10-27T14:27:07Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "no",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_a1edb7e30f134429",
+      "gameId": "g_000044",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2365810/",
+          "retrievedAt": "2026-10-27T14:27:01Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:471c9f94a5eaaeb51fee71fb9ff0adfd62eddae60755a508fe6eeb39bf7941ce"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:01Z",
+      "createdAt": "2026-10-27T14:27:01Z",
+      "updatedAt": "2026-10-27T14:27:01Z",
+      "lastCheckedAt": "2026-10-27T14:27:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_c8a462700e9ffa7f",
+      "gameId": "g_000044",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2365810/",
+          "retrievedAt": "2026-10-27T13:54:25Z",
+          "quote": "Classic metroidvania action in 3D!",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:25Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "眠りの世界の奥深くでゆがんだ城に引き寄せられたシビルを操作する、3Dのメトロイドヴァニア。新しい能力を得て移動の幅を広げ、城の秘密を見つけながら囚われた魂を解放する。"
+      }
+    },
+    {
+      "id": "c_17466758f393ed7b",
+      "gameId": "g_000044",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2365810/",
+          "retrievedAt": "2026-10-27T13:54:25Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:25Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_62d7f3e1b291451b",
+      "gameId": "g_000044",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2365810/",
+          "retrievedAt": "2026-10-27T13:54:25Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:25Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "platformer"
+      }
+    },
+    {
+      "id": "c_65e73bf873bc6164",
+      "gameId": "g_000044",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2365810/",
+          "retrievedAt": "2026-10-27T13:54:25Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:25Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "metroidvania"
+      }
+    },
+    {
+      "id": "c_7334eb75554e2d7b",
+      "gameId": "g_000044",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2365810/",
+          "retrievedAt": "2026-10-27T13:54:25Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:25Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_c765d01d6b1ec5cf",
+      "gameId": "g_000044",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2365810/",
+          "retrievedAt": "2026-10-27T13:54:25Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:25Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "retro"
+      }
+    },
+    {
+      "id": "c_558d040b8deb6cb4",
+      "gameId": "g_000044",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2365810/",
+          "retrievedAt": "2026-10-27T14:27:01Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:471c9f94a5eaaeb51fee71fb9ff0adfd62eddae60755a508fe6eeb39bf7941ce"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:01Z",
+      "createdAt": "2026-10-27T14:27:01Z",
+      "updatedAt": "2026-10-27T14:27:01Z",
+      "lastCheckedAt": "2026-10-27T14:27:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2365810/"
+      }
+    },
+    {
+      "id": "c_09150888d57d9b52",
+      "gameId": "g_000044",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2365810/",
+          "retrievedAt": "2026-10-27T14:27:01Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:471c9f94a5eaaeb51fee71fb9ff0adfd62eddae60755a508fe6eeb39bf7941ce"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:01Z",
+      "createdAt": "2026-10-27T14:27:01Z",
+      "updatedAt": "2026-10-27T14:27:01Z",
+      "lastCheckedAt": "2026-10-27T14:27:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2365810/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Pseudoregalia のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "rittzler"
+        }
+      }
+    }
+  ]
+}

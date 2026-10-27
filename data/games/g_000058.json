@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000058",
+  "status": "published",
+  "title": {
+    "display": "Sun Haven",
+    "original": "Sun Haven",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "サンヘイヴン",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1432860
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "2305660",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2375000",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2375130",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2375140",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2401500",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2401501",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2659990",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2660000",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2660010",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2660020",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2660030",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2660040",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2743900",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2743910",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2743920",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2743930",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2743940",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2743950",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2952640",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2952650",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2952660",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2952670",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "3139200",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "3139210",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "3139220",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "3139230",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "3139240",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000054"
+  ],
+  "publisherIds": [
+    "dev_000054"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1432860/",
+            "retrievedAt": "2026-10-27T14:29:07Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:c1563efc26094a486d8c75968608bb6283ab28cb548652ae9dfba2e45c0af8ae"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:29:07Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1432860/",
+        "retrievedAt": "2026-10-27T13:56:23Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1432860/",
+        "retrievedAt": "2026-10-27T14:29:07Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c1563efc26094a486d8c75968608bb6283ab28cb548652ae9dfba2e45c0af8ae"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1432860/",
+        "retrievedAt": "2026-10-27T14:29:07Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c1563efc26094a486d8c75968608bb6283ab28cb548652ae9dfba2e45c0af8ae"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1432860/",
+        "retrievedAt": "2026-10-27T14:29:07Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c1563efc26094a486d8c75968608bb6283ab28cb548652ae9dfba2e45c0af8ae"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1432860/",
+        "retrievedAt": "2026-10-27T14:29:07Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c1563efc26094a486d8c75968608bb6283ab28cb548652ae9dfba2e45c0af8ae"
+      }
+    }
+  ],
+  "disambiguation": "Pixel Sprout Studios のファンタジー農業 RPG。Haven、Space Haven とは別作品",
+  "createdAt": "2026-10-27T14:29:07Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

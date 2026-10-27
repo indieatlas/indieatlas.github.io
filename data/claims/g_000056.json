@@ -1,0 +1,429 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000056",
+  "claims": [
+    {
+      "id": "c_ef9d709d176ac7ca",
+      "gameId": "g_000056",
+      "scope": {
+        "platform": "linux",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/386940/",
+          "retrievedAt": "2026-10-27T14:28:49Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:07a7174d32fe5fa2fcf254e961142829974d45c68782d20b5ee014c0ef209eac"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:49Z",
+      "createdAt": "2026-10-27T14:28:49Z",
+      "updatedAt": "2026-10-27T14:28:49Z",
+      "lastCheckedAt": "2026-10-27T14:28:49Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2016,
+          "month": 3,
+          "day": 4
+        },
+        "rawText": "4 Mar, 2016"
+      }
+    },
+    {
+      "id": "c_a67a77d85c59b70e",
+      "gameId": "g_000056",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/386940/",
+          "retrievedAt": "2026-10-27T14:28:49Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:07a7174d32fe5fa2fcf254e961142829974d45c68782d20b5ee014c0ef209eac"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:49Z",
+      "createdAt": "2026-10-27T14:28:49Z",
+      "updatedAt": "2026-10-27T14:28:49Z",
+      "lastCheckedAt": "2026-10-27T14:28:49Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2016,
+          "month": 3,
+          "day": 4
+        },
+        "rawText": "4 Mar, 2016"
+      }
+    },
+    {
+      "id": "c_8cd79e66ff05da2b",
+      "gameId": "g_000056",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/386940/",
+          "retrievedAt": "2026-10-27T14:28:49Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:07a7174d32fe5fa2fcf254e961142829974d45c68782d20b5ee014c0ef209eac"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:49Z",
+      "createdAt": "2026-10-27T14:28:49Z",
+      "updatedAt": "2026-10-27T14:28:49Z",
+      "lastCheckedAt": "2026-10-27T14:28:49Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2016,
+          "month": 3,
+          "day": 4
+        },
+        "rawText": "4 Mar, 2016"
+      }
+    },
+    {
+      "id": "c_3b7b8ca5d4912060",
+      "gameId": "g_000056",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/386940/",
+          "retrievedAt": "2026-10-27T14:28:55Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9e7bef3810baffb8456da0691eda26cc1df9d2e0d39270081fa38800887bf0b5"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:49Z",
+      "createdAt": "2026-10-27T14:28:49Z",
+      "updatedAt": "2026-10-27T14:28:49Z",
+      "lastCheckedAt": "2026-10-27T14:28:55Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_492bbbeb98551727",
+      "gameId": "g_000056",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/386940/",
+          "retrievedAt": "2026-10-27T14:28:49Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:07a7174d32fe5fa2fcf254e961142829974d45c68782d20b5ee014c0ef209eac"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:49Z",
+      "createdAt": "2026-10-27T14:28:49Z",
+      "updatedAt": "2026-10-27T14:28:49Z",
+      "lastCheckedAt": "2026-10-27T14:28:49Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "local-coop",
+          "online-coop",
+          "local-pvp",
+          "online-pvp"
+        ]
+      }
+    },
+    {
+      "id": "c_b37ed6a51c48f8b4",
+      "gameId": "g_000056",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/386940/",
+          "retrievedAt": "2026-10-27T13:56:47Z",
+          "quote": "パーティープラットフォーマーゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:47Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "プレイしながらステージを作っていくパーティー向けのプラットフォーマー。罠や足場を置いて友達を妨害しつつ、自分はゴールにたどり着けば得点になる。オンラインとローカルで最大4人まで遊べる。"
+      }
+    },
+    {
+      "id": "c_505202c56a0eb1e4",
+      "gameId": "g_000056",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/386940/",
+          "retrievedAt": "2026-10-27T13:56:47Z",
+          "quote": "パーティープラットフォーマーゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:47Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "ブロックを配置してステージを作りながら遊ぶ",
+          "カスタムステージの作成と共有",
+          "1つのコントローラーを共有するマルチプレイ"
+        ]
+      }
+    },
+    {
+      "id": "c_1a9ecbd198e0a5f0",
+      "gameId": "g_000056",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/386940/",
+          "retrievedAt": "2026-10-27T13:56:47Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:47Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "animals"
+      }
+    },
+    {
+      "id": "c_89597545bc4a9602",
+      "gameId": "g_000056",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/386940/",
+          "retrievedAt": "2026-10-27T13:56:47Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:47Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_a48880033e23e1a7",
+      "gameId": "g_000056",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/386940/",
+          "retrievedAt": "2026-10-27T13:56:47Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:47Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "platformer"
+      }
+    },
+    {
+      "id": "c_ae3e768066311406",
+      "gameId": "g_000056",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/386940/",
+          "retrievedAt": "2026-10-27T13:56:47Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:47Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_636750fefc38e050",
+      "gameId": "g_000056",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/386940/",
+          "retrievedAt": "2026-10-27T14:28:49Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:07a7174d32fe5fa2fcf254e961142829974d45c68782d20b5ee014c0ef209eac"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:49Z",
+      "createdAt": "2026-10-27T14:28:49Z",
+      "updatedAt": "2026-10-27T14:28:49Z",
+      "lastCheckedAt": "2026-10-27T14:28:49Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/386940/"
+      }
+    },
+    {
+      "id": "c_4b8e5696df28c9e6",
+      "gameId": "g_000056",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/386940/",
+          "retrievedAt": "2026-10-27T14:28:49Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:07a7174d32fe5fa2fcf254e961142829974d45c68782d20b5ee014c0ef209eac"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:49Z",
+      "createdAt": "2026-10-27T14:28:49Z",
+      "updatedAt": "2026-10-27T14:28:49Z",
+      "lastCheckedAt": "2026-10-27T14:28:49Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/386940/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Ultimate Chicken Horse のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Clever Endeavour Games"
+        }
+      }
+    }
+  ]
+}

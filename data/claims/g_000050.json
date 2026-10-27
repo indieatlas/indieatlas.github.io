@@ -1,0 +1,471 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000050",
+  "claims": [
+    {
+      "id": "c_a72ea84f010472bd",
+      "gameId": "g_000050",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/914800/",
+          "retrievedAt": "2026-10-27T14:27:55Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1e140e96e110a7b6793d3e5dfdfbafd4c698621e0fc1191afbb0f4d2e3e75210"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:55Z",
+      "createdAt": "2026-10-27T14:27:55Z",
+      "updatedAt": "2026-10-27T14:27:55Z",
+      "lastCheckedAt": "2026-10-27T14:27:55Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2020,
+          "month": 1,
+          "day": 29
+        },
+        "rawText": "29 Jan, 2020"
+      }
+    },
+    {
+      "id": "c_d453693f595f0479",
+      "gameId": "g_000050",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/914800/",
+          "retrievedAt": "2026-10-27T14:27:55Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1e140e96e110a7b6793d3e5dfdfbafd4c698621e0fc1191afbb0f4d2e3e75210"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:55Z",
+      "createdAt": "2026-10-27T14:27:55Z",
+      "updatedAt": "2026-10-27T14:27:55Z",
+      "lastCheckedAt": "2026-10-27T14:27:55Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2020,
+          "month": 1,
+          "day": 29
+        },
+        "rawText": "29 Jan, 2020"
+      }
+    },
+    {
+      "id": "c_a47e850e5bf80316",
+      "gameId": "g_000050",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/914800/",
+          "retrievedAt": "2026-10-27T14:28:01Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a7d41d9a56752bf898c3f0b120a8c93cd43730fe30ecf991453c155752580c98"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:55Z",
+      "createdAt": "2026-10-27T14:27:55Z",
+      "updatedAt": "2026-10-27T14:27:55Z",
+      "lastCheckedAt": "2026-10-27T14:28:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_af71a8ca79fcf4bc",
+      "gameId": "g_000050",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/914800/",
+          "retrievedAt": "2026-10-27T14:27:55Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1e140e96e110a7b6793d3e5dfdfbafd4c698621e0fc1191afbb0f4d2e3e75210"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:55Z",
+      "createdAt": "2026-10-27T14:27:55Z",
+      "updatedAt": "2026-10-27T14:27:55Z",
+      "lastCheckedAt": "2026-10-27T14:27:55Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_558449bc54aa0810",
+      "gameId": "g_000050",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/914800/",
+          "retrievedAt": "2026-10-27T13:56:27Z",
+          "quote": "CoffeeTalkは、コーヒーと共にお客と心のこもった会話をするシミュレーターゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:27Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "深夜だけ開くコーヒーショップのマスターとなり、客の悩みを聞きながら温かい飲み物を出すゲーム。エルフやオークが人間と暮らす別世界のシアトルで、出す飲み物によって物語が分岐する。"
+      }
+    },
+    {
+      "id": "c_2cf7be8554efaf21",
+      "gameId": "g_000050",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/914800/",
+          "retrievedAt": "2026-10-27T13:56:27Z",
+          "quote": "CoffeeTalkは、コーヒーと共にお客と心のこもった会話をするシミュレーターゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:27Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "セリフの選択ではなく、提供する飲み物で物語が分岐する",
+          "90年代のアニメに影響を受けたドット絵",
+          "ジャズとローファイの音楽"
+        ]
+      }
+    },
+    {
+      "id": "c_5cb73dfef65ee26a",
+      "gameId": "g_000050",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/914800/",
+          "retrievedAt": "2026-10-27T13:56:27Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:27Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_6396ce77f54e79ea",
+      "gameId": "g_000050",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/914800/",
+          "retrievedAt": "2026-10-27T13:56:27Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:27Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_9552916931552b71",
+      "gameId": "g_000050",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/914800/",
+          "retrievedAt": "2026-10-27T13:56:27Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:27Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "food"
+      }
+    },
+    {
+      "id": "c_9634a1418adf2005",
+      "gameId": "g_000050",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/914800/",
+          "retrievedAt": "2026-10-27T13:56:27Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:27Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "pixel-art"
+      }
+    },
+    {
+      "id": "c_96c0c12d2e08c292",
+      "gameId": "g_000050",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/914800/",
+          "retrievedAt": "2026-10-27T13:56:27Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:27Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_a9589e9c7f0fa0f1",
+      "gameId": "g_000050",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/914800/",
+          "retrievedAt": "2026-10-27T13:56:27Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:27Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "emotional"
+      }
+    },
+    {
+      "id": "c_ecb357e54bfca243",
+      "gameId": "g_000050",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/914800/",
+          "retrievedAt": "2026-10-27T13:56:27Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:27Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_6c05dd41783e674f",
+      "gameId": "g_000050",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/914800/",
+          "retrievedAt": "2026-10-27T14:27:55Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1e140e96e110a7b6793d3e5dfdfbafd4c698621e0fc1191afbb0f4d2e3e75210"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:55Z",
+      "createdAt": "2026-10-27T14:27:55Z",
+      "updatedAt": "2026-10-27T14:27:55Z",
+      "lastCheckedAt": "2026-10-27T14:27:55Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/914800/"
+      }
+    },
+    {
+      "id": "c_35fc35b902fedff7",
+      "gameId": "g_000050",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/914800/",
+          "retrievedAt": "2026-10-27T14:27:55Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1e140e96e110a7b6793d3e5dfdfbafd4c698621e0fc1191afbb0f4d2e3e75210"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:55Z",
+      "createdAt": "2026-10-27T14:27:55Z",
+      "updatedAt": "2026-10-27T14:27:55Z",
+      "lastCheckedAt": "2026-10-27T14:27:55Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/914800/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Coffee Talk のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Toge Productions"
+        }
+      }
+    }
+  ]
+}

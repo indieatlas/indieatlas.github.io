@@ -1,0 +1,482 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000012",
+  "claims": [
+    {
+      "id": "c_2c96ad6150ceb16a",
+      "gameId": "g_000012",
+      "scope": {
+        "platform": "linux",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1055540/",
+          "retrievedAt": "2026-10-27T14:22:13Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3dd3d7413f5116a4f410f2db7381402ad7182ca680072372b197b05bc189b844"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:13Z",
+      "createdAt": "2026-10-27T14:22:13Z",
+      "updatedAt": "2026-10-27T14:22:13Z",
+      "lastCheckedAt": "2026-10-27T14:22:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2019,
+          "month": 7,
+          "day": 30
+        },
+        "rawText": "30 Jul, 2019"
+      }
+    },
+    {
+      "id": "c_be710fb53f5f271e",
+      "gameId": "g_000012",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1055540/",
+          "retrievedAt": "2026-10-27T14:22:13Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3dd3d7413f5116a4f410f2db7381402ad7182ca680072372b197b05bc189b844"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:13Z",
+      "createdAt": "2026-10-27T14:22:13Z",
+      "updatedAt": "2026-10-27T14:22:13Z",
+      "lastCheckedAt": "2026-10-27T14:22:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2019,
+          "month": 7,
+          "day": 30
+        },
+        "rawText": "30 Jul, 2019"
+      }
+    },
+    {
+      "id": "c_c187dbf5cf3176ab",
+      "gameId": "g_000012",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1055540/",
+          "retrievedAt": "2026-10-27T14:22:13Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3dd3d7413f5116a4f410f2db7381402ad7182ca680072372b197b05bc189b844"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:13Z",
+      "createdAt": "2026-10-27T14:22:13Z",
+      "updatedAt": "2026-10-27T14:22:13Z",
+      "lastCheckedAt": "2026-10-27T14:22:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2019,
+          "month": 7,
+          "day": 30
+        },
+        "rawText": "30 Jul, 2019"
+      }
+    },
+    {
+      "id": "c_77ef4fc84e349b20",
+      "gameId": "g_000012",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1055540/",
+          "retrievedAt": "2026-10-27T14:22:19Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bac801ebf164e92924ac2009f20b882fb70cab7bec02cd74051e1e48bb80b8d9"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:13Z",
+      "createdAt": "2026-10-27T14:22:13Z",
+      "updatedAt": "2026-10-27T14:22:13Z",
+      "lastCheckedAt": "2026-10-27T14:22:19Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_6e3d4ed57c85d799",
+      "gameId": "g_000012",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1055540/",
+          "retrievedAt": "2026-10-27T14:22:13Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3dd3d7413f5116a4f410f2db7381402ad7182ca680072372b197b05bc189b844"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:13Z",
+      "createdAt": "2026-10-27T14:22:13Z",
+      "updatedAt": "2026-10-27T14:22:13Z",
+      "lastCheckedAt": "2026-10-27T14:22:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_2bbb6fcd6ab6d1d9",
+      "gameId": "g_000012",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1055540/",
+          "retrievedAt": "2026-10-27T13:48:38Z",
+          "quote": "穏やかな山腹の風景が広がる、ホークピーク州立公園",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:38Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "鳥の少女クレアとなり、ホークピーク州立公園の山頂を目指す短い冒険のアドベンチャー。ハイキングや滑空で島を自由に巡り、出会った動物たちと話したり、釣りを教わったりする。"
+      }
+    },
+    {
+      "id": "c_cd838de04bbccc07",
+      "gameId": "g_000012",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1055540/",
+          "retrievedAt": "2026-10-27T13:48:38Z",
+          "quote": "穏やかな山腹の風景が広がる、ホークピーク州立公園",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:38Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "羽を広げて滑空しながら島を自由に探索できる",
+          "黄金の羽を集めると行ける場所が広がる",
+          "島の動物たちと話し、釣りなどに挑戦できる"
+        ]
+      }
+    },
+    {
+      "id": "c_2eff8e1b2632b1fb",
+      "gameId": "g_000012",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1055540/",
+          "retrievedAt": "2026-10-27T13:48:38Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:38Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_47fa2b566a59fbf0",
+      "gameId": "g_000012",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1055540/",
+          "retrievedAt": "2026-10-27T13:48:38Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:38Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "climbing"
+      }
+    },
+    {
+      "id": "c_c75b317d0b44d2bd",
+      "gameId": "g_000012",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1055540/",
+          "retrievedAt": "2026-10-27T13:48:38Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:38Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "nature"
+      }
+    },
+    {
+      "id": "c_cde085715894d641",
+      "gameId": "g_000012",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1055540/",
+          "retrievedAt": "2026-10-27T13:48:38Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:38Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "fishing"
+      }
+    },
+    {
+      "id": "c_f6ceaa4505bc8cda",
+      "gameId": "g_000012",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1055540/",
+          "retrievedAt": "2026-10-27T13:48:38Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:38Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_fa28368a00aa5fe2",
+      "gameId": "g_000012",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1055540/",
+          "retrievedAt": "2026-10-27T13:48:38Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:38Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_a79a035e2c6f0f9a",
+      "gameId": "g_000012",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1055540/",
+          "retrievedAt": "2026-10-27T14:22:13Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3dd3d7413f5116a4f410f2db7381402ad7182ca680072372b197b05bc189b844"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:13Z",
+      "createdAt": "2026-10-27T14:22:13Z",
+      "updatedAt": "2026-10-27T14:22:13Z",
+      "lastCheckedAt": "2026-10-27T14:22:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1055540/"
+      }
+    },
+    {
+      "id": "c_c747ce30c95c04c0",
+      "gameId": "g_000012",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1055540/",
+          "retrievedAt": "2026-10-27T14:22:13Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3dd3d7413f5116a4f410f2db7381402ad7182ca680072372b197b05bc189b844"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:13Z",
+      "createdAt": "2026-10-27T14:22:13Z",
+      "updatedAt": "2026-10-27T14:22:13Z",
+      "lastCheckedAt": "2026-10-27T14:22:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1055540/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "A Short Hike のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "adamgryu"
+        }
+      }
+    }
+  ]
+}

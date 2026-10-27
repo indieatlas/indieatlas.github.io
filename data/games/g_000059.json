@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000059",
+  "status": "published",
+  "title": {
+    "display": "Space Haven",
+    "original": "Space Haven",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "スペースヘイヴン",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 979110
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1325700",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "http://bugbyte.fi/spacehaven/",
+  "developerIds": [
+    "dev_000055"
+  ],
+  "publisherIds": [
+    "dev_000055"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/979110/",
+            "retrievedAt": "2026-10-27T14:29:16Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:f1740be3bdf5f1161f1dd990f2efbe0c09b4383a3c834bbd28608405180ac849"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:29:16Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/979110/",
+        "retrievedAt": "2026-10-27T13:56:20Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/979110/",
+        "retrievedAt": "2026-10-27T14:29:16Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f1740be3bdf5f1161f1dd990f2efbe0c09b4383a3c834bbd28608405180ac849"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/979110/",
+        "retrievedAt": "2026-10-27T14:29:16Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f1740be3bdf5f1161f1dd990f2efbe0c09b4383a3c834bbd28608405180ac849"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/979110/",
+        "retrievedAt": "2026-10-27T14:29:16Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f1740be3bdf5f1161f1dd990f2efbe0c09b4383a3c834bbd28608405180ac849"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/979110/",
+        "retrievedAt": "2026-10-27T14:29:16Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f1740be3bdf5f1161f1dd990f2efbe0c09b4383a3c834bbd28608405180ac849"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/979110/",
+        "retrievedAt": "2026-10-27T14:29:16Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f1740be3bdf5f1161f1dd990f2efbe0c09b4383a3c834bbd28608405180ac849"
+      }
+    }
+  ],
+  "disambiguation": "Bugbyte の宇宙船コロニーシム。Haven、Sun Haven とは別作品",
+  "createdAt": "2026-10-27T14:29:16Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000056",
+  "status": "published",
+  "title": {
+    "display": "Ultimate Chicken Horse",
+    "original": "Ultimate Chicken Horse",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "アルティメイトチキンホース",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 386940
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "493070",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "http://www.ultimatechickenhorse.com",
+  "developerIds": [
+    "dev_000052"
+  ],
+  "publisherIds": [
+    "dev_000052"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/386940/",
+            "retrievedAt": "2026-10-27T14:28:49Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:07a7174d32fe5fa2fcf254e961142829974d45c68782d20b5ee014c0ef209eac"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:28:49Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/386940/",
+        "retrievedAt": "2026-10-27T13:56:47Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/386940/",
+        "retrievedAt": "2026-10-27T14:28:49Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:07a7174d32fe5fa2fcf254e961142829974d45c68782d20b5ee014c0ef209eac"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/386940/",
+        "retrievedAt": "2026-10-27T14:28:49Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:07a7174d32fe5fa2fcf254e961142829974d45c68782d20b5ee014c0ef209eac"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/386940/",
+        "retrievedAt": "2026-10-27T14:28:49Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:07a7174d32fe5fa2fcf254e961142829974d45c68782d20b5ee014c0ef209eac"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/386940/",
+        "retrievedAt": "2026-10-27T14:28:49Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:07a7174d32fe5fa2fcf254e961142829974d45c68782d20b5ee014c0ef209eac"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/386940/",
+        "retrievedAt": "2026-10-27T14:28:49Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:07a7174d32fe5fa2fcf254e961142829974d45c68782d20b5ee014c0ef209eac"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:28:49Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

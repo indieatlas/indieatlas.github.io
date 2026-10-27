@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000029",
+  "claims": [
+    {
+      "id": "c_96d02e47438343a9",
+      "gameId": "g_000029",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353230/",
+          "retrievedAt": "2026-10-27T14:24:46Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:662defa34d617afc23ad1bcc54232d740c2c2bfcdccc446c456adf03e5165194"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:24:46Z",
+      "createdAt": "2026-10-27T14:24:46Z",
+      "updatedAt": "2026-10-27T14:24:46Z",
+      "lastCheckedAt": "2026-10-27T14:24:46Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2023,
+          "month": 8,
+          "day": 18
+        },
+        "rawText": "18 Aug, 2023"
+      }
+    },
+    {
+      "id": "c_97a3a792e94a3842",
+      "gameId": "g_000029",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353230/",
+          "retrievedAt": "2026-10-27T14:24:52Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:408adcd91d2d111d11ff95b3d445fa3732d1723d20d657dec8e8628e8b6c6a70"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:24:46Z",
+      "createdAt": "2026-10-27T14:24:46Z",
+      "updatedAt": "2026-10-27T14:24:46Z",
+      "lastCheckedAt": "2026-10-27T14:24:52Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_3c73727b43472f85",
+      "gameId": "g_000029",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353230/",
+          "retrievedAt": "2026-10-27T14:24:46Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:662defa34d617afc23ad1bcc54232d740c2c2bfcdccc446c456adf03e5165194"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:24:46Z",
+      "createdAt": "2026-10-27T14:24:46Z",
+      "updatedAt": "2026-10-27T14:24:46Z",
+      "lastCheckedAt": "2026-10-27T14:24:46Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_83bd87b291cdf6f0",
+      "gameId": "g_000029",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353230/",
+          "retrievedAt": "2026-10-27T13:49:44Z",
+          "quote": "ライバルのクルーと戦い、軍事化した警察を倒して、ニューアムステルダムの5つの区を制覇しましょう",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:44Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "未来の大都市ニューアムステルダムを舞台に、グラフィティクルーとして街の覇権を争うアクション。スケートボードやインラインスケートでトリックを決め、落書きで縄張りを広げる。"
+      }
+    },
+    {
+      "id": "c_748eb6b084285daa",
+      "gameId": "g_000029",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353230/",
+          "retrievedAt": "2026-10-27T13:49:44Z",
+          "quote": "ライバルのクルーと戦い、軍事化した警察を倒して、ニューアムステルダムの5つの区を制覇しましょう",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:44Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "スケートボード、インラインスケート、BMXでトリックを決める",
+          "街の5つの主要区画を探索してグラフィティを描く",
+          "クルーに新しいメンバーを迎えられる"
+        ]
+      }
+    },
+    {
+      "id": "c_613db37956cc8c48",
+      "gameId": "g_000029",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353230/",
+          "retrievedAt": "2026-10-27T13:49:44Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:44Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_8634c24d73a20f46",
+      "gameId": "g_000029",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353230/",
+          "retrievedAt": "2026-10-27T13:49:44Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:44Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_9516561c66a0daa5",
+      "gameId": "g_000029",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353230/",
+          "retrievedAt": "2026-10-27T13:49:44Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:44Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "sci-fi"
+      }
+    },
+    {
+      "id": "c_b6ed5401de6ec1fa",
+      "gameId": "g_000029",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353230/",
+          "retrievedAt": "2026-10-27T13:49:44Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:44Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_03689d83683d351a",
+      "gameId": "g_000029",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353230/",
+          "retrievedAt": "2026-10-27T14:24:46Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:662defa34d617afc23ad1bcc54232d740c2c2bfcdccc446c456adf03e5165194"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:24:46Z",
+      "createdAt": "2026-10-27T14:24:46Z",
+      "updatedAt": "2026-10-27T14:24:46Z",
+      "lastCheckedAt": "2026-10-27T14:24:46Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1353230/"
+      }
+    },
+    {
+      "id": "c_8d5a2a53edf87757",
+      "gameId": "g_000029",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353230/",
+          "retrievedAt": "2026-10-27T14:24:46Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:662defa34d617afc23ad1bcc54232d740c2c2bfcdccc446c456adf03e5165194"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:24:46Z",
+      "createdAt": "2026-10-27T14:24:46Z",
+      "updatedAt": "2026-10-27T14:24:46Z",
+      "lastCheckedAt": "2026-10-27T14:24:46Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1353230/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Bomb Rush Cyberfunk のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Team Reptile"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000004",
+  "status": "published",
+  "title": {
+    "display": "Hollow Knight: Silksong",
+    "original": "Hollow Knight: Silksong",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "シルクソング",
+      "lang": "ja",
+      "kind": "abbreviation"
+    },
+    {
+      "value": "ホロウナイト: シルクソング",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1030300
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3928720",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "http://hollowknightsilksong.com/",
+  "developerIds": [
+    "dev_000004"
+  ],
+  "publisherIds": [
+    "dev_000004"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1030300/",
+            "retrievedAt": "2026-10-27T14:21:01Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:ccf7a89ebc2a4f36e5cc9640215cca8d33a2447e3f8694c20979ba626849d313"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:21:01Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1030300/",
+        "retrievedAt": "2026-10-27T13:48:07Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1030300/",
+        "retrievedAt": "2026-10-27T14:21:01Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ccf7a89ebc2a4f36e5cc9640215cca8d33a2447e3f8694c20979ba626849d313"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1030300/",
+        "retrievedAt": "2026-10-27T14:21:01Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ccf7a89ebc2a4f36e5cc9640215cca8d33a2447e3f8694c20979ba626849d313"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1030300/",
+        "retrievedAt": "2026-10-27T14:21:01Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ccf7a89ebc2a4f36e5cc9640215cca8d33a2447e3f8694c20979ba626849d313"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1030300/",
+        "retrievedAt": "2026-10-27T14:21:01Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ccf7a89ebc2a4f36e5cc9640215cca8d33a2447e3f8694c20979ba626849d313"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1030300/",
+        "retrievedAt": "2026-10-27T14:21:01Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ccf7a89ebc2a4f36e5cc9640215cca8d33a2447e3f8694c20979ba626849d313"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:21:01Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

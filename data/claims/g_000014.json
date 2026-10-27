@@ -1,0 +1,482 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000014",
+  "claims": [
+    {
+      "id": "c_9e7c8259450d48ae",
+      "gameId": "g_000014",
+      "scope": {
+        "platform": "linux",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/294100/",
+          "retrievedAt": "2026-10-27T14:22:31Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7ad05597942c76e6fc91718e0bc8efc03bc202f3095f98a4ddd201b7845a31a"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:31Z",
+      "createdAt": "2026-10-27T14:22:31Z",
+      "updatedAt": "2026-10-27T14:22:31Z",
+      "lastCheckedAt": "2026-10-27T14:22:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2018,
+          "month": 10,
+          "day": 17
+        },
+        "rawText": "17 Oct, 2018"
+      }
+    },
+    {
+      "id": "c_9c4e455bbf9e1165",
+      "gameId": "g_000014",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/294100/",
+          "retrievedAt": "2026-10-27T14:22:31Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7ad05597942c76e6fc91718e0bc8efc03bc202f3095f98a4ddd201b7845a31a"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:31Z",
+      "createdAt": "2026-10-27T14:22:31Z",
+      "updatedAt": "2026-10-27T14:22:31Z",
+      "lastCheckedAt": "2026-10-27T14:22:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2018,
+          "month": 10,
+          "day": 17
+        },
+        "rawText": "17 Oct, 2018"
+      }
+    },
+    {
+      "id": "c_88c6377c0da57824",
+      "gameId": "g_000014",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/294100/",
+          "retrievedAt": "2026-10-27T14:22:31Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7ad05597942c76e6fc91718e0bc8efc03bc202f3095f98a4ddd201b7845a31a"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:31Z",
+      "createdAt": "2026-10-27T14:22:31Z",
+      "updatedAt": "2026-10-27T14:22:31Z",
+      "lastCheckedAt": "2026-10-27T14:22:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2018,
+          "month": 10,
+          "day": 17
+        },
+        "rawText": "17 Oct, 2018"
+      }
+    },
+    {
+      "id": "c_9615518ff8d639bc",
+      "gameId": "g_000014",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/294100/",
+          "retrievedAt": "2026-10-27T14:22:37Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f16536cef8fca4c51906b7234e09d20fd53f326450accd4bdf907870bed2a9db"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:31Z",
+      "createdAt": "2026-10-27T14:22:31Z",
+      "updatedAt": "2026-10-27T14:22:31Z",
+      "lastCheckedAt": "2026-10-27T14:22:37Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_9946595c23d68990",
+      "gameId": "g_000014",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/294100/",
+          "retrievedAt": "2026-10-27T14:22:31Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7ad05597942c76e6fc91718e0bc8efc03bc202f3095f98a4ddd201b7845a31a"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:31Z",
+      "createdAt": "2026-10-27T14:22:31Z",
+      "updatedAt": "2026-10-27T14:22:31Z",
+      "lastCheckedAt": "2026-10-27T14:22:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_3158771e3d4779a9",
+      "gameId": "g_000014",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/294100/",
+          "retrievedAt": "2026-10-27T13:48:44Z",
+          "quote": "知性のあるAIストーリーテラーによって織りなされるSFコロニーシミュレーションゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:44Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "遠い惑星に難破した入植者たちのコロニーを運営するSFシミュレーション。AIストーリーテラーが出来事を起こし、入植者の心情、怪我、人間関係、戦闘、交易などから物語が生まれる。"
+      }
+    },
+    {
+      "id": "c_faa241aeae0683fa",
+      "gameId": "g_000014",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/294100/",
+          "retrievedAt": "2026-10-27T13:48:44Z",
+          "quote": "知性のあるAIストーリーテラーによって織りなされるSFコロニーシミュレーションゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:44Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "入植者の心情、欲求、怪我、病気を管理する",
+          "家族や恋人などの関係が入植者の間に生まれる",
+          "プレイするたびに新しく生成される世界"
+        ]
+      }
+    },
+    {
+      "id": "c_32bcea9a26509eda",
+      "gameId": "g_000014",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/294100/",
+          "retrievedAt": "2026-10-27T13:48:44Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:44Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "base-building"
+      }
+    },
+    {
+      "id": "c_807aa07514256524",
+      "gameId": "g_000014",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/294100/",
+          "retrievedAt": "2026-10-27T13:48:44Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:44Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "colony-sim"
+      }
+    },
+    {
+      "id": "c_928d9c614c0278e1",
+      "gameId": "g_000014",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/294100/",
+          "retrievedAt": "2026-10-27T13:48:44Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:44Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "strategy"
+      }
+    },
+    {
+      "id": "c_b19cb5795021265d",
+      "gameId": "g_000014",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/294100/",
+          "retrievedAt": "2026-10-27T13:48:44Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:44Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "sci-fi"
+      }
+    },
+    {
+      "id": "c_b950bdf93e2f260e",
+      "gameId": "g_000014",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/294100/",
+          "retrievedAt": "2026-10-27T13:48:44Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:44Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_c48c65c993c79581",
+      "gameId": "g_000014",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/294100/",
+          "retrievedAt": "2026-10-27T13:48:44Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:44Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "procedural-generation"
+      }
+    },
+    {
+      "id": "c_3567f907dee55504",
+      "gameId": "g_000014",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/294100/",
+          "retrievedAt": "2026-10-27T14:22:31Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7ad05597942c76e6fc91718e0bc8efc03bc202f3095f98a4ddd201b7845a31a"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:31Z",
+      "createdAt": "2026-10-27T14:22:31Z",
+      "updatedAt": "2026-10-27T14:22:31Z",
+      "lastCheckedAt": "2026-10-27T14:22:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/294100/"
+      }
+    },
+    {
+      "id": "c_7c9fe68deeb2a059",
+      "gameId": "g_000014",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/294100/",
+          "retrievedAt": "2026-10-27T14:22:31Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7ad05597942c76e6fc91718e0bc8efc03bc202f3095f98a4ddd201b7845a31a"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:31Z",
+      "createdAt": "2026-10-27T14:22:31Z",
+      "updatedAt": "2026-10-27T14:22:31Z",
+      "lastCheckedAt": "2026-10-27T14:22:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/76e0613b8197327299d5dbabb0a7fd7828a689a2/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "RimWorld のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Ludeon Studios"
+        }
+      }
+    }
+  ]
+}

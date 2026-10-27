@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000051",
+  "status": "published",
+  "title": {
+    "display": "Coffee Talk Episode 2: Hibiscus & Butterfly",
+    "original": "Coffee Talk Episode 2: Hibiscus & Butterfly",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "Coffee Talk Episode 2",
+      "lang": "en",
+      "kind": "abbreviation"
+    },
+    {
+      "value": "コーヒートーク エピソード2：ハイビスカス＆バタフライ",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1663220
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1866930",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "2184520",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2184540",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000048"
+  ],
+  "publisherIds": [
+    "dev_000048"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1663220/",
+            "retrievedAt": "2026-10-27T14:28:04Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:32fda51066efaee9699c4efd18db090881af2528831eb8674b2e6164c2930ba0"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:28:04Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1663220/",
+        "retrievedAt": "2026-10-27T13:56:30Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1663220/",
+        "retrievedAt": "2026-10-27T14:28:04Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:32fda51066efaee9699c4efd18db090881af2528831eb8674b2e6164c2930ba0"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1663220/",
+        "retrievedAt": "2026-10-27T14:28:04Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:32fda51066efaee9699c4efd18db090881af2528831eb8674b2e6164c2930ba0"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1663220/",
+        "retrievedAt": "2026-10-27T14:28:04Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:32fda51066efaee9699c4efd18db090881af2528831eb8674b2e6164c2930ba0"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1663220/",
+        "retrievedAt": "2026-10-27T14:28:04Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:32fda51066efaee9699c4efd18db090881af2528831eb8674b2e6164c2930ba0"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:28:04Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

@@ -1,0 +1,432 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000015",
+  "claims": [
+    {
+      "id": "c_5f2b270d5d6c80a4",
+      "gameId": "g_000015",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/881100/",
+          "retrievedAt": "2026-10-27T14:22:40Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:5bb3a86bc9145108641fbce5854381cba1bcd5eb28760ee9d7b82f338d937c3a"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:40Z",
+      "createdAt": "2026-10-27T14:22:40Z",
+      "updatedAt": "2026-10-27T14:22:40Z",
+      "lastCheckedAt": "2026-10-27T14:22:40Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2020,
+          "month": 10,
+          "day": 15
+        },
+        "rawText": "15 Oct, 2020"
+      }
+    },
+    {
+      "id": "c_f5eeb0be5cdc0569",
+      "gameId": "g_000015",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/881100/",
+          "retrievedAt": "2026-10-27T14:22:46Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f5146a4642fe4b8a0fc3a3a756ac334092883f81aa54e045b8537f8f674f4e09"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:40Z",
+      "createdAt": "2026-10-27T14:22:40Z",
+      "updatedAt": "2026-10-27T14:22:40Z",
+      "lastCheckedAt": "2026-10-27T14:22:46Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_a2841de8cf79e26f",
+      "gameId": "g_000015",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/881100/",
+          "retrievedAt": "2026-10-27T14:22:40Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:5bb3a86bc9145108641fbce5854381cba1bcd5eb28760ee9d7b82f338d937c3a"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:40Z",
+      "createdAt": "2026-10-27T14:22:40Z",
+      "updatedAt": "2026-10-27T14:22:40Z",
+      "lastCheckedAt": "2026-10-27T14:22:40Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_df94068adeb34dc2",
+      "gameId": "g_000015",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/881100/",
+          "retrievedAt": "2026-10-27T13:48:48Z",
+          "quote": "全てのピクセルが物理的にシミュレートされた世界を舞台にした、魔法アクションローグライトのゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:48Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "すべてのピクセルが物理的にシミュレートされた世界を進む、魔法アクションのローグライト。自作の呪文で地形を燃やしたり溶かしたりしながら、生成される洞窟の奥深くを目指す。"
+      }
+    },
+    {
+      "id": "c_d3fc927bd2517390",
+      "gameId": "g_000015",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/881100/",
+          "retrievedAt": "2026-10-27T13:48:48Z",
+          "quote": "全てのピクセルが物理的にシミュレートされた世界を舞台にした、魔法アクションローグライトのゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:48Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "あらゆるものが燃え、溶け、爆発するピクセル単位の物理",
+          "呪文を組み合わせて自分だけの魔法を作れる",
+          "死ぬと最初からやり直すローグライト"
+        ]
+      }
+    },
+    {
+      "id": "c_06b13ae331e2b16d",
+      "gameId": "g_000015",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/881100/",
+          "retrievedAt": "2026-10-27T13:48:48Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:48Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_b2009daba0a301a8",
+      "gameId": "g_000015",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/881100/",
+          "retrievedAt": "2026-10-27T13:48:48Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:48Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "magic"
+      }
+    },
+    {
+      "id": "c_b76b9345487fd80c",
+      "gameId": "g_000015",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/881100/",
+          "retrievedAt": "2026-10-27T13:48:48Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:48Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "difficult"
+      }
+    },
+    {
+      "id": "c_cf167be641a0bfd9",
+      "gameId": "g_000015",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/881100/",
+          "retrievedAt": "2026-10-27T13:48:48Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:48Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "pixel-art"
+      }
+    },
+    {
+      "id": "c_ed0e9798306d1887",
+      "gameId": "g_000015",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/881100/",
+          "retrievedAt": "2026-10-27T13:48:48Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:48Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "procedural-generation"
+      }
+    },
+    {
+      "id": "c_f6f344d5cd8f7d63",
+      "gameId": "g_000015",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/881100/",
+          "retrievedAt": "2026-10-27T13:48:48Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:48Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "physics"
+      }
+    },
+    {
+      "id": "c_fcd2376416e33204",
+      "gameId": "g_000015",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/881100/",
+          "retrievedAt": "2026-10-27T13:48:48Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:48Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_8675eb9c127d54be",
+      "gameId": "g_000015",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/881100/",
+          "retrievedAt": "2026-10-27T14:22:40Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:5bb3a86bc9145108641fbce5854381cba1bcd5eb28760ee9d7b82f338d937c3a"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:40Z",
+      "createdAt": "2026-10-27T14:22:40Z",
+      "updatedAt": "2026-10-27T14:22:40Z",
+      "lastCheckedAt": "2026-10-27T14:22:40Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/881100/"
+      }
+    },
+    {
+      "id": "c_59ac8ec077e80c3a",
+      "gameId": "g_000015",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/881100/",
+          "retrievedAt": "2026-10-27T14:22:40Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:5bb3a86bc9145108641fbce5854381cba1bcd5eb28760ee9d7b82f338d937c3a"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:40Z",
+      "createdAt": "2026-10-27T14:22:40Z",
+      "updatedAt": "2026-10-27T14:22:40Z",
+      "lastCheckedAt": "2026-10-27T14:22:40Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/881100/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Noita のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Nolla Games"
+        }
+      }
+    }
+  ]
+}

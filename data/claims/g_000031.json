@@ -1,0 +1,444 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000031",
+  "claims": [
+    {
+      "id": "c_c5dbb997f3a0569d",
+      "gameId": "g_000031",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/268910/",
+          "retrievedAt": "2026-10-27T14:25:04Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0ebeff7e6e9bb1dc92c06ad577c5dc6b4ae3e7dc3659e2b7633a5dfc97be5ce5"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:04Z",
+      "createdAt": "2026-10-27T14:25:04Z",
+      "updatedAt": "2026-10-27T14:25:04Z",
+      "lastCheckedAt": "2026-10-27T14:25:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2017,
+          "month": 9,
+          "day": 29
+        },
+        "rawText": "29 Sep, 2017"
+      }
+    },
+    {
+      "id": "c_721efca19b41ce58",
+      "gameId": "g_000031",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/268910/",
+          "retrievedAt": "2026-10-27T14:25:04Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0ebeff7e6e9bb1dc92c06ad577c5dc6b4ae3e7dc3659e2b7633a5dfc97be5ce5"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:04Z",
+      "createdAt": "2026-10-27T14:25:04Z",
+      "updatedAt": "2026-10-27T14:25:04Z",
+      "lastCheckedAt": "2026-10-27T14:25:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2017,
+          "month": 9,
+          "day": 29
+        },
+        "rawText": "29 Sep, 2017"
+      }
+    },
+    {
+      "id": "c_2065308daa5441b6",
+      "gameId": "g_000031",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/268910/",
+          "retrievedAt": "2026-10-27T14:25:10Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:57c2c24b4aa47b29f27df7260ffa1fb2135b3cf8e64e14dc40b63a4a552a60b2"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:04Z",
+      "createdAt": "2026-10-27T14:25:04Z",
+      "updatedAt": "2026-10-27T14:25:04Z",
+      "lastCheckedAt": "2026-10-27T14:25:10Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_884b85e7c306ce49",
+      "gameId": "g_000031",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/268910/",
+          "retrievedAt": "2026-10-27T14:25:04Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0ebeff7e6e9bb1dc92c06ad577c5dc6b4ae3e7dc3659e2b7633a5dfc97be5ce5"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:04Z",
+      "createdAt": "2026-10-27T14:25:04Z",
+      "updatedAt": "2026-10-27T14:25:04Z",
+      "lastCheckedAt": "2026-10-27T14:25:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "local-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_7b44c0b1b2ab64e3",
+      "gameId": "g_000031",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/268910/",
+          "retrievedAt": "2026-10-27T13:49:54Z",
+          "quote": "1930年代のカートゥーンにインスピレーションを得た本作のビジュアルと音楽は",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:54Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "悪魔との賭けに負けたカップヘッドとマグマンが、命をかけてボスと戦う2Dシューティングアクション。1930年代のカートゥーンを手本に、セル画の手描きと水彩の背景、ジャズの音楽で作られている。"
+      }
+    },
+    {
+      "id": "c_aaa64de88693b34e",
+      "gameId": "g_000031",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/268910/",
+          "retrievedAt": "2026-10-27T13:49:54Z",
+          "quote": "1930年代のカートゥーンにインスピレーションを得た本作のビジュアルと音楽は",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:54Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "ボスバトルを中心にしたシューティングアクション",
+          "セル画の手描きアニメーションと水彩画の背景",
+          "ローカルの協力プレイに対応する"
+        ]
+      }
+    },
+    {
+      "id": "c_47d87876259258cc",
+      "gameId": "g_000031",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/268910/",
+          "retrievedAt": "2026-10-27T13:49:54Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:54Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "platformer"
+      }
+    },
+    {
+      "id": "c_57b8fd47b4badbd8",
+      "gameId": "g_000031",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/268910/",
+          "retrievedAt": "2026-10-27T13:49:54Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:54Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_6c229ec4b3db9b19",
+      "gameId": "g_000031",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/268910/",
+          "retrievedAt": "2026-10-27T13:49:54Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:54Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "difficult"
+      }
+    },
+    {
+      "id": "c_b12edddc01d1a3f3",
+      "gameId": "g_000031",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/268910/",
+          "retrievedAt": "2026-10-27T13:49:54Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:54Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_da5a0b97bc19295d",
+      "gameId": "g_000031",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/268910/",
+          "retrievedAt": "2026-10-27T13:49:54Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:54Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "hand-drawn"
+      }
+    },
+    {
+      "id": "c_ea60b14456310880",
+      "gameId": "g_000031",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/268910/",
+          "retrievedAt": "2026-10-27T13:49:54Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:54Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "retro"
+      }
+    },
+    {
+      "id": "c_e238b9d37427db51",
+      "gameId": "g_000031",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/268910/",
+          "retrievedAt": "2026-10-27T14:25:04Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0ebeff7e6e9bb1dc92c06ad577c5dc6b4ae3e7dc3659e2b7633a5dfc97be5ce5"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:04Z",
+      "createdAt": "2026-10-27T14:25:04Z",
+      "updatedAt": "2026-10-27T14:25:04Z",
+      "lastCheckedAt": "2026-10-27T14:25:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/268910/"
+      }
+    },
+    {
+      "id": "c_bb4c34354ea2f25f",
+      "gameId": "g_000031",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/268910/",
+          "retrievedAt": "2026-10-27T14:25:04Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0ebeff7e6e9bb1dc92c06ad577c5dc6b4ae3e7dc3659e2b7633a5dfc97be5ce5"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:04Z",
+      "createdAt": "2026-10-27T14:25:04Z",
+      "updatedAt": "2026-10-27T14:25:04Z",
+      "lastCheckedAt": "2026-10-27T14:25:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Cuphead のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Studio MDHR Entertainment Inc."
+        }
+      }
+    }
+  ]
+}

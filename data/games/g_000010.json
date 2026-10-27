@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000010",
+  "status": "published",
+  "title": {
+    "display": "Slay the Spire 2",
+    "original": "Slay the Spire 2",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "StS2",
+      "lang": "en",
+      "kind": "abbreviation"
+    },
+    {
+      "value": "スレイ・ザ・スパイア2",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 2868840
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000008"
+  ],
+  "publisherIds": [
+    "dev_000008"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/2868840/",
+            "retrievedAt": "2026-10-27T14:21:55Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:16e00f487d32c8b27da76144e4ef27212e276d5c2df8c4a7dc4a991145a9eb44"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:21:55Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2868840/",
+        "retrievedAt": "2026-10-27T13:48:27Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2868840/",
+        "retrievedAt": "2026-10-27T14:21:55Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:16e00f487d32c8b27da76144e4ef27212e276d5c2df8c4a7dc4a991145a9eb44"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2868840/",
+        "retrievedAt": "2026-10-27T14:21:55Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:16e00f487d32c8b27da76144e4ef27212e276d5c2df8c4a7dc4a991145a9eb44"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2868840/",
+        "retrievedAt": "2026-10-27T14:21:55Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:16e00f487d32c8b27da76144e4ef27212e276d5c2df8c4a7dc4a991145a9eb44"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2868840/",
+        "retrievedAt": "2026-10-27T14:21:55Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:16e00f487d32c8b27da76144e4ef27212e276d5c2df8c4a7dc4a991145a9eb44"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:21:55Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

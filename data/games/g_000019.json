@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000019",
+  "status": "published",
+  "title": {
+    "display": "Lethal Company",
+    "original": "Lethal Company",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1966720
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000016"
+  ],
+  "publisherIds": [
+    "dev_000016"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1966720/",
+            "retrievedAt": "2026-10-27T14:23:16Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:30bd4ae59b67405e4423ddeeabfff91d9755132f14cd4a896213e68b161a8381"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:23:16Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1966720/",
+        "retrievedAt": "2026-10-27T14:23:16Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:30bd4ae59b67405e4423ddeeabfff91d9755132f14cd4a896213e68b161a8381"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1966720/",
+        "retrievedAt": "2026-10-27T14:23:16Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:30bd4ae59b67405e4423ddeeabfff91d9755132f14cd4a896213e68b161a8381"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1966720/",
+        "retrievedAt": "2026-10-27T14:23:16Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:30bd4ae59b67405e4423ddeeabfff91d9755132f14cd4a896213e68b161a8381"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1966720/",
+        "retrievedAt": "2026-10-27T14:23:16Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:30bd4ae59b67405e4423ddeeabfff91d9755132f14cd4a896213e68b161a8381"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:23:16Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

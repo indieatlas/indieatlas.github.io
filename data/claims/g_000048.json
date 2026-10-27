@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000048",
+  "claims": [
+    {
+      "id": "c_d1d5ca9915a28299",
+      "gameId": "g_000048",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3164500/",
+          "retrievedAt": "2026-10-27T14:27:37Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:90ead4d1abff6e3dedf4420f329ac74f169db2bfbb860bba9f3da01ad2d9e885"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:37Z",
+      "createdAt": "2026-10-27T14:27:37Z",
+      "updatedAt": "2026-10-27T14:27:37Z",
+      "lastCheckedAt": "2026-10-27T14:27:37Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 3,
+          "day": 24
+        },
+        "rawText": "24 Mar, 2025"
+      }
+    },
+    {
+      "id": "c_e2fe10fb4c401ffb",
+      "gameId": "g_000048",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3164500/",
+          "retrievedAt": "2026-10-27T14:27:43Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:067043b3560215d192e6812828553c66f9bcf789de5174297fec60a0c9d2507a"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:37Z",
+      "createdAt": "2026-10-27T14:27:37Z",
+      "updatedAt": "2026-10-27T14:27:37Z",
+      "lastCheckedAt": "2026-10-27T14:27:43Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "no",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_190c97296150ad23",
+      "gameId": "g_000048",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3164500/",
+          "retrievedAt": "2026-10-27T14:27:37Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:90ead4d1abff6e3dedf4420f329ac74f169db2bfbb860bba9f3da01ad2d9e885"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:37Z",
+      "createdAt": "2026-10-27T14:27:37Z",
+      "updatedAt": "2026-10-27T14:27:37Z",
+      "lastCheckedAt": "2026-10-27T14:27:37Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_4ae568f5ed0353da",
+      "gameId": "g_000048",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3164500/",
+          "retrievedAt": "2026-10-27T14:27:37Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:90ead4d1abff6e3dedf4420f329ac74f169db2bfbb860bba9f3da01ad2d9e885"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:37Z",
+      "createdAt": "2026-10-27T14:27:37Z",
+      "updatedAt": "2026-10-27T14:27:37Z",
+      "lastCheckedAt": "2026-10-27T14:27:37Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3164500/"
+      }
+    },
+    {
+      "id": "c_ae652eb8c7334ca7",
+      "gameId": "g_000048",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3164500/",
+          "retrievedAt": "2026-10-27T14:27:37Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:90ead4d1abff6e3dedf4420f329ac74f169db2bfbb860bba9f3da01ad2d9e885"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:37Z",
+      "createdAt": "2026-10-27T14:27:37Z",
+      "updatedAt": "2026-10-27T14:27:37Z",
+      "lastCheckedAt": "2026-10-27T14:27:37Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3164500/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Schedule I のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "TVGS"
+        }
+      }
+    }
+  ]
+}

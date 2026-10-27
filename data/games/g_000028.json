@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000028",
+  "status": "published",
+  "title": {
+    "display": "Slime Rancher 2",
+    "original": "Slime Rancher 2",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "スライムランチャー2",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1657630
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "2117970",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "3922910",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000024"
+  ],
+  "publisherIds": [
+    "dev_000024"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1657630/",
+            "retrievedAt": "2026-10-27T14:24:37Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:340661070beaae926e625a247d74fe4140214e4672084a4a1c98509fd2e9422e"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:24:37Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1657630/",
+        "retrievedAt": "2026-10-27T13:49:38Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1657630/",
+        "retrievedAt": "2026-10-27T14:24:37Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:340661070beaae926e625a247d74fe4140214e4672084a4a1c98509fd2e9422e"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1657630/",
+        "retrievedAt": "2026-10-27T14:24:37Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:340661070beaae926e625a247d74fe4140214e4672084a4a1c98509fd2e9422e"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1657630/",
+        "retrievedAt": "2026-10-27T14:24:37Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:340661070beaae926e625a247d74fe4140214e4672084a4a1c98509fd2e9422e"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1657630/",
+        "retrievedAt": "2026-10-27T14:24:37Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:340661070beaae926e625a247d74fe4140214e4672084a4a1c98509fd2e9422e"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:24:37Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

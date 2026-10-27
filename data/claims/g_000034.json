@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000034",
+  "claims": [
+    {
+      "id": "c_a37d13b64991a0fc",
+      "gameId": "g_000034",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/304430/",
+          "retrievedAt": "2026-10-27T14:25:31Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e0e149f625cf091fc1089dd76cecf4c76585c4d8ea54d4fc1e0b46ff15772634"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:31Z",
+      "createdAt": "2026-10-27T14:25:31Z",
+      "updatedAt": "2026-10-27T14:25:31Z",
+      "lastCheckedAt": "2026-10-27T14:25:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2016,
+          "month": 7,
+          "day": 7
+        },
+        "rawText": "7 Jul, 2016"
+      }
+    },
+    {
+      "id": "c_d384173f146c3b95",
+      "gameId": "g_000034",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/304430/",
+          "retrievedAt": "2026-10-27T14:25:37Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d455fe8da8d7670618a06552e94dcd413f7a20a20ccda6f6e618eace76750ad2"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:31Z",
+      "createdAt": "2026-10-27T14:25:31Z",
+      "updatedAt": "2026-10-27T14:25:31Z",
+      "lastCheckedAt": "2026-10-27T14:25:37Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_0fe6fce38601f524",
+      "gameId": "g_000034",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/304430/",
+          "retrievedAt": "2026-10-27T14:25:31Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e0e149f625cf091fc1089dd76cecf4c76585c4d8ea54d4fc1e0b46ff15772634"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:31Z",
+      "createdAt": "2026-10-27T14:25:31Z",
+      "updatedAt": "2026-10-27T14:25:31Z",
+      "lastCheckedAt": "2026-10-27T14:25:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_807dcf48770a5927",
+      "gameId": "g_000034",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/304430/",
+          "retrievedAt": "2026-10-27T13:50:08Z",
+          "quote": "追われに追われて一人きり、少年はいつのまにか闇のプロジェクトの中枢に引きずり込まれていた",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:50:08Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "追われて一人きりになった少年が、いつのまにか闇のプロジェクトの中枢へと引きずり込まれていく横スクロールのアドベンチャー。言葉を使わずに進む暗い世界で、仕掛けを解きながら先へ進む。"
+      }
+    },
+    {
+      "id": "c_185915da38b0a35e",
+      "gameId": "g_000034",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/304430/",
+          "retrievedAt": "2026-10-27T13:50:08Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:50:08Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "tense"
+      }
+    },
+    {
+      "id": "c_6cef90bc36b32c68",
+      "gameId": "g_000034",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/304430/",
+          "retrievedAt": "2026-10-27T13:50:08Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:50:08Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_8364b47416cfda34",
+      "gameId": "g_000034",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/304430/",
+          "retrievedAt": "2026-10-27T13:50:08Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:50:08Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_c639ed63435582bb",
+      "gameId": "g_000034",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/304430/",
+          "retrievedAt": "2026-10-27T13:50:08Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:50:08Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "dark"
+      }
+    },
+    {
+      "id": "c_6e3a627577eabb9f",
+      "gameId": "g_000034",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/304430/",
+          "retrievedAt": "2026-10-27T14:25:31Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e0e149f625cf091fc1089dd76cecf4c76585c4d8ea54d4fc1e0b46ff15772634"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:31Z",
+      "createdAt": "2026-10-27T14:25:31Z",
+      "updatedAt": "2026-10-27T14:25:31Z",
+      "lastCheckedAt": "2026-10-27T14:25:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/304430/"
+      }
+    },
+    {
+      "id": "c_81f18bfa77bc2455",
+      "gameId": "g_000034",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/304430/",
+          "retrievedAt": "2026-10-27T14:25:31Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e0e149f625cf091fc1089dd76cecf4c76585c4d8ea54d4fc1e0b46ff15772634"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:31Z",
+      "createdAt": "2026-10-27T14:25:31Z",
+      "updatedAt": "2026-10-27T14:25:31Z",
+      "lastCheckedAt": "2026-10-27T14:25:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304430/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "INSIDE のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Playdead"
+        }
+      }
+    }
+  ]
+}

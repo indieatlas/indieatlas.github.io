@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000006",
+  "status": "published",
+  "title": {
+    "display": "Vampire Survivors",
+    "original": "Vampire Survivors",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "ヴァンサバ",
+      "lang": "ja",
+      "kind": "abbreviation"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1794680
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "2169090",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2230760",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2313550",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2690330",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2887680",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "3210350",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "3451100",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "3929770",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4781330",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000006"
+  ],
+  "publisherIds": [
+    "dev_000006"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1794680/",
+            "retrievedAt": "2026-10-27T14:21:19Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:d2d26b5832befb48707710111f248541dcda4478213887e33b9e7ee1d81f0a9e"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:21:19Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1794680/",
+        "retrievedAt": "2026-10-27T13:48:14Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1794680/",
+        "retrievedAt": "2026-10-27T14:21:19Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d2d26b5832befb48707710111f248541dcda4478213887e33b9e7ee1d81f0a9e"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1794680/",
+        "retrievedAt": "2026-10-27T14:21:19Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d2d26b5832befb48707710111f248541dcda4478213887e33b9e7ee1d81f0a9e"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1794680/",
+        "retrievedAt": "2026-10-27T14:21:19Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d2d26b5832befb48707710111f248541dcda4478213887e33b9e7ee1d81f0a9e"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1794680/",
+        "retrievedAt": "2026-10-27T14:21:19Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d2d26b5832befb48707710111f248541dcda4478213887e33b9e7ee1d81f0a9e"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:21:19Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

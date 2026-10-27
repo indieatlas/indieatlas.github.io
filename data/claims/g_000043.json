@@ -1,0 +1,404 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000043",
+  "claims": [
+    {
+      "id": "c_64e64083f1669c00",
+      "gameId": "g_000043",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2414630/",
+          "retrievedAt": "2026-10-27T14:26:52Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ab2437e081f809550b2bcd083a806eb112389febf92fe75eb36e3a8265fcc384"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:26:52Z",
+      "createdAt": "2026-10-27T14:26:52Z",
+      "updatedAt": "2026-10-27T14:26:52Z",
+      "lastCheckedAt": "2026-10-27T14:26:52Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2023,
+          "month": 12,
+          "day": 6
+        },
+        "rawText": "6 Dec, 2023"
+      }
+    },
+    {
+      "id": "c_e57506e672e204f9",
+      "gameId": "g_000043",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2414630/",
+          "retrievedAt": "2026-10-27T14:26:58Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7a46c1008e407372cd1bf1ff5a2e406414f4a42cfc9209c6501ef7e2dc5a8259"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:26:52Z",
+      "createdAt": "2026-10-27T14:26:52Z",
+      "updatedAt": "2026-10-27T14:26:52Z",
+      "lastCheckedAt": "2026-10-27T14:26:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_e5580932e9485a41",
+      "gameId": "g_000043",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2414630/",
+          "retrievedAt": "2026-10-27T14:26:52Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ab2437e081f809550b2bcd083a806eb112389febf92fe75eb36e3a8265fcc384"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:26:52Z",
+      "createdAt": "2026-10-27T14:26:52Z",
+      "updatedAt": "2026-10-27T14:26:52Z",
+      "lastCheckedAt": "2026-10-27T14:26:52Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_14ad4b860a293eaa",
+      "gameId": "g_000043",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2414630/",
+          "retrievedAt": "2026-10-27T13:54:18Z",
+          "quote": "ウツロマユは1980年代の日本を舞台にした一人称視点のホラーアドベンチャーゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:18Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "1980年代の日本の山深い村を舞台にした一人称視点のホラーアドベンチャー。祖母危篤の報を受けて母の故郷を訪れた大学生となり、化物から身を隠しながら探索と謎解きで隠された真実に迫る。"
+      }
+    },
+    {
+      "id": "c_bfa9b6bc23c9ef51",
+      "gameId": "g_000043",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2414630/",
+          "retrievedAt": "2026-10-27T13:54:18Z",
+          "quote": "ウツロマユは1980年代の日本を舞台にした一人称視点のホラーアドベンチャーゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:18Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "プレイヤーの選択と行動で分岐する4種類のエンディング",
+          "3段階から選べる難易度",
+          "リアルに再現された80年代の日本の風景"
+        ]
+      }
+    },
+    {
+      "id": "c_31349ded8729f468",
+      "gameId": "g_000043",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2414630/",
+          "retrievedAt": "2026-10-27T13:54:18Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:18Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "japan"
+      }
+    },
+    {
+      "id": "c_53332d5b8f1f45ca",
+      "gameId": "g_000043",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2414630/",
+          "retrievedAt": "2026-10-27T13:54:18Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:18Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_88375975075dba49",
+      "gameId": "g_000043",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2414630/",
+          "retrievedAt": "2026-10-27T13:54:18Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:18Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "tense"
+      }
+    },
+    {
+      "id": "c_d17294b0eeed9d8a",
+      "gameId": "g_000043",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2414630/",
+          "retrievedAt": "2026-10-27T13:54:18Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:18Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "horror"
+      }
+    },
+    {
+      "id": "c_e496949d924d6e43",
+      "gameId": "g_000043",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2414630/",
+          "retrievedAt": "2026-10-27T13:54:18Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:18Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_f61874efad83bdc4",
+      "gameId": "g_000043",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2414630/",
+          "retrievedAt": "2026-10-27T13:54:18Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:18Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "dark"
+      }
+    },
+    {
+      "id": "c_20a8a6a7b072570c",
+      "gameId": "g_000043",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2414630/",
+          "retrievedAt": "2026-10-27T14:26:52Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ab2437e081f809550b2bcd083a806eb112389febf92fe75eb36e3a8265fcc384"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:26:52Z",
+      "createdAt": "2026-10-27T14:26:52Z",
+      "updatedAt": "2026-10-27T14:26:52Z",
+      "lastCheckedAt": "2026-10-27T14:26:52Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2414630/"
+      }
+    },
+    {
+      "id": "c_50b7f442307fdd3d",
+      "gameId": "g_000043",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2414630/",
+          "retrievedAt": "2026-10-27T14:26:52Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ab2437e081f809550b2bcd083a806eb112389febf92fe75eb36e3a8265fcc384"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:26:52Z",
+      "createdAt": "2026-10-27T14:26:52Z",
+      "updatedAt": "2026-10-27T14:26:52Z",
+      "lastCheckedAt": "2026-10-27T14:26:52Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2414630/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "ウツロマユ - Hollow Cocoon - のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "NAYUTA STUDIO"
+        }
+      }
+    }
+  ]
+}

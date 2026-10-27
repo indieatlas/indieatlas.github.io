@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000011",
+  "status": "published",
+  "title": {
+    "display": "Baba Is You",
+    "original": "Baba Is You",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "ババイズユー",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 736260
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "955710",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://www.hempuli.com/Baba/",
+  "developerIds": [
+    "dev_000009"
+  ],
+  "publisherIds": [
+    "dev_000009"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/736260/",
+            "retrievedAt": "2026-10-27T14:22:04Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:7b53bb529b8b704caa0cb630cd337eed7894df32bda713b7ffed1b915d043c11"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:22:04Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/736260/",
+        "retrievedAt": "2026-10-27T13:48:31Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/736260/",
+        "retrievedAt": "2026-10-27T14:22:04Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7b53bb529b8b704caa0cb630cd337eed7894df32bda713b7ffed1b915d043c11"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/736260/",
+        "retrievedAt": "2026-10-27T14:22:04Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7b53bb529b8b704caa0cb630cd337eed7894df32bda713b7ffed1b915d043c11"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/736260/",
+        "retrievedAt": "2026-10-27T14:22:04Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7b53bb529b8b704caa0cb630cd337eed7894df32bda713b7ffed1b915d043c11"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/736260/",
+        "retrievedAt": "2026-10-27T14:22:04Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7b53bb529b8b704caa0cb630cd337eed7894df32bda713b7ffed1b915d043c11"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/736260/",
+        "retrievedAt": "2026-10-27T14:22:04Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7b53bb529b8b704caa0cb630cd337eed7894df32bda713b7ffed1b915d043c11"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:22:04Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000020",
+  "status": "published",
+  "title": {
+    "display": "Brotato",
+    "original": "Brotato",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "ブロテイト",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1942280
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "2868390",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "3281080",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4498220",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://blobfishgames.com/press/brotato/",
+  "developerIds": [
+    "dev_000017"
+  ],
+  "publisherIds": [
+    "dev_000017"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1942280/",
+            "retrievedAt": "2026-10-27T14:23:25Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:fa0a968b5371ae729e4a90d0c50c3e975f8bec54e64272110a9d4beaa8b0ba07"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:23:25Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1942280/",
+        "retrievedAt": "2026-10-27T13:49:08Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1942280/",
+        "retrievedAt": "2026-10-27T14:23:25Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:fa0a968b5371ae729e4a90d0c50c3e975f8bec54e64272110a9d4beaa8b0ba07"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1942280/",
+        "retrievedAt": "2026-10-27T14:23:25Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:fa0a968b5371ae729e4a90d0c50c3e975f8bec54e64272110a9d4beaa8b0ba07"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1942280/",
+        "retrievedAt": "2026-10-27T14:23:25Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:fa0a968b5371ae729e4a90d0c50c3e975f8bec54e64272110a9d4beaa8b0ba07"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1942280/",
+        "retrievedAt": "2026-10-27T14:23:25Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:fa0a968b5371ae729e4a90d0c50c3e975f8bec54e64272110a9d4beaa8b0ba07"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1942280/",
+        "retrievedAt": "2026-10-27T14:23:25Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:fa0a968b5371ae729e4a90d0c50c3e975f8bec54e64272110a9d4beaa8b0ba07"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:23:25Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

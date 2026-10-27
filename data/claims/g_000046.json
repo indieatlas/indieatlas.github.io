@@ -1,0 +1,415 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000046",
+  "claims": [
+    {
+      "id": "c_06a05119c8c70fb8",
+      "gameId": "g_000046",
+      "scope": {
+        "platform": "linux",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3405340/",
+          "retrievedAt": "2026-10-27T14:27:19Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ecd0fd9dc5da15d15b3fdc1eceadaf9b9c90cc0bcbe3c6c1559a08bee0d39387"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:19Z",
+      "createdAt": "2026-10-27T14:27:19Z",
+      "updatedAt": "2026-10-27T14:27:19Z",
+      "lastCheckedAt": "2026-10-27T14:27:19Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 9,
+          "day": 18
+        },
+        "rawText": "18 Sep, 2025"
+      }
+    },
+    {
+      "id": "c_acb863ff134edfe1",
+      "gameId": "g_000046",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3405340/",
+          "retrievedAt": "2026-10-27T14:27:19Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ecd0fd9dc5da15d15b3fdc1eceadaf9b9c90cc0bcbe3c6c1559a08bee0d39387"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:19Z",
+      "createdAt": "2026-10-27T14:27:19Z",
+      "updatedAt": "2026-10-27T14:27:19Z",
+      "lastCheckedAt": "2026-10-27T14:27:19Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 9,
+          "day": 18
+        },
+        "rawText": "18 Sep, 2025"
+      }
+    },
+    {
+      "id": "c_e89d621937f0ee6d",
+      "gameId": "g_000046",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3405340/",
+          "retrievedAt": "2026-10-27T14:27:25Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:af8f2bc1d750e6828b5e85de82c04e132eee9e4c9ba7930b9043e2ad828c8807"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:19Z",
+      "createdAt": "2026-10-27T14:27:19Z",
+      "updatedAt": "2026-10-27T14:27:19Z",
+      "lastCheckedAt": "2026-10-27T14:27:25Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_2d8c687e157c289b",
+      "gameId": "g_000046",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3405340/",
+          "retrievedAt": "2026-10-27T14:27:19Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ecd0fd9dc5da15d15b3fdc1eceadaf9b9c90cc0bcbe3c6c1559a08bee0d39387"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:19Z",
+      "createdAt": "2026-10-27T14:27:19Z",
+      "updatedAt": "2026-10-27T14:27:19Z",
+      "lastCheckedAt": "2026-10-27T14:27:19Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_02e5efdc24c3fafd",
+      "gameId": "g_000046",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3405340/",
+          "retrievedAt": "2026-10-27T13:55:02Z",
+          "quote": "Megabonk はローグライク系のサバイバルゲーム",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:55:02Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "大量の敵やボスを倒しながらランダム生成のマップを進む、3Dのローグライク・サバイバル。経験値で強化を重ね、キャラクター、武器、アイテムの組み合わせでどこまで生き残れるかに挑む。"
+      }
+    },
+    {
+      "id": "c_a2e6e89f8fb4dca3",
+      "gameId": "g_000046",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3405340/",
+          "retrievedAt": "2026-10-27T13:55:02Z",
+          "quote": "Megabonk はローグライク系のサバイバルゲーム",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:55:02Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "20人のキャラクターにそれぞれ固有の能力がある",
+          "70種類以上のアイテムの組み合わせ",
+          "240個のゲーム内クエスト"
+        ]
+      }
+    },
+    {
+      "id": "c_0574c244843f2021",
+      "gameId": "g_000046",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3405340/",
+          "retrievedAt": "2026-10-27T13:55:02Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:55:02Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_30ef58f141730d20",
+      "gameId": "g_000046",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3405340/",
+          "retrievedAt": "2026-10-27T13:55:02Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:55:02Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "auto-battle"
+      }
+    },
+    {
+      "id": "c_5f7bef69cf8d6574",
+      "gameId": "g_000046",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3405340/",
+          "retrievedAt": "2026-10-27T13:55:02Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:55:02Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_74e801b0fe7ee5e3",
+      "gameId": "g_000046",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3405340/",
+          "retrievedAt": "2026-10-27T13:55:02Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:55:02Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_c3ed70647bbc31da",
+      "gameId": "g_000046",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3405340/",
+          "retrievedAt": "2026-10-27T13:55:02Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:55:02Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "short-session"
+      }
+    },
+    {
+      "id": "c_cc983a5e4293c8fb",
+      "gameId": "g_000046",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3405340/",
+          "retrievedAt": "2026-10-27T14:27:19Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ecd0fd9dc5da15d15b3fdc1eceadaf9b9c90cc0bcbe3c6c1559a08bee0d39387"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:19Z",
+      "createdAt": "2026-10-27T14:27:19Z",
+      "updatedAt": "2026-10-27T14:27:19Z",
+      "lastCheckedAt": "2026-10-27T14:27:19Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3405340/"
+      }
+    },
+    {
+      "id": "c_252b5721fc2653bd",
+      "gameId": "g_000046",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3405340/",
+          "retrievedAt": "2026-10-27T14:27:19Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ecd0fd9dc5da15d15b3fdc1eceadaf9b9c90cc0bcbe3c6c1559a08bee0d39387"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:19Z",
+      "createdAt": "2026-10-27T14:27:19Z",
+      "updatedAt": "2026-10-27T14:27:19Z",
+      "lastCheckedAt": "2026-10-27T14:27:19Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3405340/d06cb39a82a703e42541085fc61b42d80904b3f8/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Megabonk のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "vedinad"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,549 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000035",
+  "claims": [
+    {
+      "id": "c_aba6301915974214",
+      "gameId": "g_000035",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1846700/",
+          "retrievedAt": "2026-10-27T14:25:40Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:227bcca37fc5eb68e3ac8e255ef1b2f8fd94293bef3e5d8bae0d33812425e4d0"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/news/app/1846700/view/1813674388904687",
+          "publishedAt": "2025-10-15",
+          "retrievedAt": "2026-10-27T14:47:08Z",
+          "quote": "we’ve made the difficult decision to shift the release into next year",
+          "locator": "steam:news.contents",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_b66f0eccbeed90be"
+      ],
+      "adoptedAt": "2026-10-27T14:25:40Z",
+      "createdAt": "2026-10-27T14:25:40Z",
+      "updatedAt": "2026-10-27T14:47:35Z",
+      "lastCheckedAt": "2026-10-27T14:25:40Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "year",
+          "year": 2026
+        },
+        "rawText": "2026"
+      }
+    },
+    {
+      "id": "c_b66f0eccbeed90be",
+      "gameId": "g_000035",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/news/app/1846700/view/1813674388904687",
+          "publishedAt": "2025-10-15",
+          "retrievedAt": "2026-10-27T14:47:08Z",
+          "quote": "Originally we had planned to launch Winter 2025",
+          "locator": "steam:news.contents",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2025-10-15",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersededBy": "c_aba6301915974214",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:35Z",
+      "lastCheckedAt": "2026-10-27T14:47:35Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "season",
+          "year": 2025,
+          "season": "winter"
+        },
+        "rawText": "Winter 2025"
+      }
+    },
+    {
+      "id": "c_791f759177290041",
+      "gameId": "g_000035",
+      "scope": {
+        "platform": "switch2",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://www.witchbrook.com/",
+          "retrievedAt": "2026-10-27T14:47:08Z",
+          "quote": "Nintendo Switch, Nintendo Switch 2, and Xbox",
+          "originKey": "official:witchbrook.com"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T14:47:35Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "upcoming"
+      }
+    },
+    {
+      "id": "c_e84d93d60739fc57",
+      "gameId": "g_000035",
+      "scope": {
+        "platform": "switch",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://www.witchbrook.com/",
+          "retrievedAt": "2026-10-27T14:47:08Z",
+          "quote": "Witchbrook will be coming to PC, Nintendo Switch, and Xbox in 2026",
+          "originKey": "official:witchbrook.com"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T14:47:35Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "year",
+          "year": 2026
+        },
+        "rawText": "2026"
+      }
+    },
+    {
+      "id": "c_c209584adb9ae93b",
+      "gameId": "g_000035",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1846700/",
+          "retrievedAt": "2026-10-27T14:25:46Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3765e2d63aca7465bfff66e830712d399145aa3f75d3a5cdcb923ac80bec493f"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:40Z",
+      "createdAt": "2026-10-27T14:25:40Z",
+      "updatedAt": "2026-10-27T14:25:40Z",
+      "lastCheckedAt": "2026-10-27T14:25:46Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_c91bf10082432b38",
+      "gameId": "g_000035",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1846700/",
+          "retrievedAt": "2026-10-27T14:25:40Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:227bcca37fc5eb68e3ac8e255ef1b2f8fd94293bef3e5d8bae0d33812425e4d0"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:40Z",
+      "createdAt": "2026-10-27T14:25:40Z",
+      "updatedAt": "2026-10-27T14:25:40Z",
+      "lastCheckedAt": "2026-10-27T14:25:40Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_036be9b35699ee5d",
+      "gameId": "g_000035",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1846700/",
+          "retrievedAt": "2026-10-27T13:53:13Z",
+          "quote": "最大4人で遊べる、フシギな魅力でいっぱいの魔法学校ライフシム",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "港町モスポートで新米の魔法使いとして暮らす魔法学校ライフシム。大学の授業に出て試験を受け、友達を作り恋をしながら、季節とともに移り変わる街の生活を送る。最大4人で遊べる。"
+      }
+    },
+    {
+      "id": "c_f289697ae9fbb7c3",
+      "gameId": "g_000035",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1846700/",
+          "retrievedAt": "2026-10-27T13:53:13Z",
+          "quote": "最大4人で遊べる、フシギな魅力でいっぱいの魔法学校ライフシム",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "ウィッチブルック大学の授業に出席して試験に挑む",
+          "住民それぞれに日々の生活があり、季節ごとに街が変わる",
+          "ポーションの醸造や占星術など多彩な魔法"
+        ]
+      }
+    },
+    {
+      "id": "c_0ae598aa310d1a63",
+      "gameId": "g_000035",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1846700/",
+          "retrievedAt": "2026-10-27T13:53:13Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_1b277dae32830182",
+      "gameId": "g_000035",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1846700/",
+          "retrievedAt": "2026-10-27T13:53:13Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "magic"
+      }
+    },
+    {
+      "id": "c_2bcc3c89a7be97fd",
+      "gameId": "g_000035",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1846700/",
+          "retrievedAt": "2026-10-27T13:53:13Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "school"
+      }
+    },
+    {
+      "id": "c_82689a0efd8d63e6",
+      "gameId": "g_000035",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1846700/",
+          "retrievedAt": "2026-10-27T13:53:13Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "rpg"
+      }
+    },
+    {
+      "id": "c_876e6bac078b1855",
+      "gameId": "g_000035",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1846700/",
+          "retrievedAt": "2026-10-27T13:53:13Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "farming-sim"
+      }
+    },
+    {
+      "id": "c_e4d3c9177605a0b1",
+      "gameId": "g_000035",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1846700/",
+          "retrievedAt": "2026-10-27T13:53:13Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_f9703bb2a908172b",
+      "gameId": "g_000035",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1846700/",
+          "retrievedAt": "2026-10-27T13:53:13Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "romance"
+      }
+    },
+    {
+      "id": "c_1b616e323df5991b",
+      "gameId": "g_000035",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1846700/",
+          "retrievedAt": "2026-10-27T14:25:40Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:227bcca37fc5eb68e3ac8e255ef1b2f8fd94293bef3e5d8bae0d33812425e4d0"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:40Z",
+      "createdAt": "2026-10-27T14:25:40Z",
+      "updatedAt": "2026-10-27T14:25:40Z",
+      "lastCheckedAt": "2026-10-27T14:25:40Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1846700/"
+      }
+    },
+    {
+      "id": "c_b0514d1141a9e543",
+      "gameId": "g_000035",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1846700/",
+          "retrievedAt": "2026-10-27T14:25:40Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:227bcca37fc5eb68e3ac8e255ef1b2f8fd94293bef3e5d8bae0d33812425e4d0"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:40Z",
+      "createdAt": "2026-10-27T14:25:40Z",
+      "updatedAt": "2026-10-27T14:25:40Z",
+      "lastCheckedAt": "2026-10-27T14:25:40Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1846700/51ffec115f4052d63621745305336a4b1ee14ad3/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Witchbrook (ウィッチブルック) のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Chucklefish"
+        }
+      }
+    }
+  ]
+}

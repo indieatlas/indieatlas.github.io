@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000016",
+  "status": "published",
+  "title": {
+    "display": "Hades",
+    "original": "Hades",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "ハデス",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1145360
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1206340",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000014"
+  ],
+  "publisherIds": [
+    "dev_000014"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1145360/",
+            "retrievedAt": "2026-10-27T14:22:49Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:abd65c2d21cf745d3d28d67169d782fc1c7ddfd6fa7a135a9728d40755a2e040"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:22:49Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1145360/",
+        "retrievedAt": "2026-10-27T13:48:51Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1145360/",
+        "retrievedAt": "2026-10-27T14:22:49Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:abd65c2d21cf745d3d28d67169d782fc1c7ddfd6fa7a135a9728d40755a2e040"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1145360/",
+        "retrievedAt": "2026-10-27T14:22:49Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:abd65c2d21cf745d3d28d67169d782fc1c7ddfd6fa7a135a9728d40755a2e040"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1145360/",
+        "retrievedAt": "2026-10-27T14:22:49Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:abd65c2d21cf745d3d28d67169d782fc1c7ddfd6fa7a135a9728d40755a2e040"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1145360/",
+        "retrievedAt": "2026-10-27T14:22:49Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:abd65c2d21cf745d3d28d67169d782fc1c7ddfd6fa7a135a9728d40755a2e040"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:22:49Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

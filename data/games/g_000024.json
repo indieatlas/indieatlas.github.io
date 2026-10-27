@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000024",
+  "status": "published",
+  "title": {
+    "display": "九日ナインソール",
+    "original": "Nine Sols",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "九日",
+      "lang": "zh",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1809540
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1913930",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "3362590",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://redcandlegames.com/",
+  "developerIds": [
+    "dev_000021"
+  ],
+  "publisherIds": [
+    "dev_000021"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1809540/",
+            "retrievedAt": "2026-10-27T14:24:01Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:7fbe0f8e69f1d8372b1353aa1792f3f1e183cda1f5f33bdcf83deb44b30c1613"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:24:01Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1809540/",
+        "retrievedAt": "2026-10-27T13:49:21Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1809540/",
+        "retrievedAt": "2026-10-27T14:24:01Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7fbe0f8e69f1d8372b1353aa1792f3f1e183cda1f5f33bdcf83deb44b30c1613"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1809540/",
+        "retrievedAt": "2026-10-27T14:24:01Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7fbe0f8e69f1d8372b1353aa1792f3f1e183cda1f5f33bdcf83deb44b30c1613"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1809540/",
+        "retrievedAt": "2026-10-27T14:24:01Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7fbe0f8e69f1d8372b1353aa1792f3f1e183cda1f5f33bdcf83deb44b30c1613"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1809540/",
+        "retrievedAt": "2026-10-27T14:24:01Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7fbe0f8e69f1d8372b1353aa1792f3f1e183cda1f5f33bdcf83deb44b30c1613"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1809540/",
+        "retrievedAt": "2026-10-27T14:24:01Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7fbe0f8e69f1d8372b1353aa1792f3f1e183cda1f5f33bdcf83deb44b30c1613"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:24:01Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

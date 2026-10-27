@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000023",
+  "status": "published",
+  "title": {
+    "display": "UFO 50",
+    "original": "UFO 50",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1147860
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3145310",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://50games.fun/",
+  "developerIds": [
+    "dev_000019"
+  ],
+  "publisherIds": [
+    "dev_000019"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1147860/",
+            "retrievedAt": "2026-10-27T14:23:52Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:0363c612f222df319dd515b236e6e42bbef495e7e632c781cdd2d424162b0b1e"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:23:52Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1147860/",
+        "retrievedAt": "2026-10-27T14:23:52Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0363c612f222df319dd515b236e6e42bbef495e7e632c781cdd2d424162b0b1e"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1147860/",
+        "retrievedAt": "2026-10-27T14:23:52Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0363c612f222df319dd515b236e6e42bbef495e7e632c781cdd2d424162b0b1e"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1147860/",
+        "retrievedAt": "2026-10-27T14:23:52Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0363c612f222df319dd515b236e6e42bbef495e7e632c781cdd2d424162b0b1e"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1147860/",
+        "retrievedAt": "2026-10-27T14:23:52Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0363c612f222df319dd515b236e6e42bbef495e7e632c781cdd2d424162b0b1e"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1147860/",
+        "retrievedAt": "2026-10-27T14:23:52Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0363c612f222df319dd515b236e6e42bbef495e7e632c781cdd2d424162b0b1e"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:23:52Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

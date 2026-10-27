@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000053",
+  "status": "published",
+  "title": {
+    "display": "Mini Metro",
+    "original": "Mini Metro",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "ミニメトロ",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 287980
+  },
+  "associatedApps": [],
+  "officialUrl": "https://dinopoloclub.com/minimetro",
+  "developerIds": [
+    "dev_000050"
+  ],
+  "publisherIds": [
+    "dev_000050"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/287980/",
+            "retrievedAt": "2026-10-27T14:28:22Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:7c264f2f6b809125740a4262f842f47cbd0bd6b0e35a08cfc7321251788e6315"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:28:22Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/287980/",
+        "retrievedAt": "2026-10-27T13:56:40Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/287980/",
+        "retrievedAt": "2026-10-27T14:28:22Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7c264f2f6b809125740a4262f842f47cbd0bd6b0e35a08cfc7321251788e6315"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/287980/",
+        "retrievedAt": "2026-10-27T14:28:22Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7c264f2f6b809125740a4262f842f47cbd0bd6b0e35a08cfc7321251788e6315"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/287980/",
+        "retrievedAt": "2026-10-27T14:28:22Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7c264f2f6b809125740a4262f842f47cbd0bd6b0e35a08cfc7321251788e6315"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/287980/",
+        "retrievedAt": "2026-10-27T14:28:22Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7c264f2f6b809125740a4262f842f47cbd0bd6b0e35a08cfc7321251788e6315"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/287980/",
+        "retrievedAt": "2026-10-27T14:28:22Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7c264f2f6b809125740a4262f842f47cbd0bd6b0e35a08cfc7321251788e6315"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:28:22Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

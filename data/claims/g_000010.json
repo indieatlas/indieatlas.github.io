@@ -1,0 +1,566 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000010",
+  "claims": [
+    {
+      "id": "c_0d54f63dd0a4c970",
+      "gameId": "g_000010",
+      "scope": {
+        "platform": "linux",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2868840/",
+          "retrievedAt": "2026-10-27T14:21:55Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:16e00f487d32c8b27da76144e4ef27212e276d5c2df8c4a7dc4a991145a9eb44"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:55Z",
+      "createdAt": "2026-10-27T14:21:55Z",
+      "updatedAt": "2026-10-27T14:21:55Z",
+      "lastCheckedAt": "2026-10-27T14:21:55Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 3,
+          "day": 5
+        },
+        "rawText": "5 Mar, 2026"
+      }
+    },
+    {
+      "id": "c_f795e59fbf2d5c73",
+      "gameId": "g_000010",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2868840/",
+          "retrievedAt": "2026-10-27T14:21:55Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:16e00f487d32c8b27da76144e4ef27212e276d5c2df8c4a7dc4a991145a9eb44"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:55Z",
+      "createdAt": "2026-10-27T14:21:55Z",
+      "updatedAt": "2026-10-27T14:21:55Z",
+      "lastCheckedAt": "2026-10-27T14:21:55Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 3,
+          "day": 5
+        },
+        "rawText": "5 Mar, 2026"
+      }
+    },
+    {
+      "id": "c_fdb3697ab0490b6d",
+      "gameId": "g_000010",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2868840/",
+          "retrievedAt": "2026-10-27T14:21:55Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:16e00f487d32c8b27da76144e4ef27212e276d5c2df8c4a7dc4a991145a9eb44"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_ae27ad0be24bab8f"
+      ],
+      "adoptedAt": "2026-10-27T14:21:55Z",
+      "createdAt": "2026-10-27T14:21:55Z",
+      "updatedAt": "2026-10-27T14:47:35Z",
+      "lastCheckedAt": "2026-10-27T14:21:55Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 3,
+          "day": 5
+        },
+        "rawText": "5 Mar, 2026"
+      }
+    },
+    {
+      "id": "c_1197a7da1382fc0f",
+      "gameId": "g_000010",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/news/app/2868840/view/1810503566429222",
+          "publishedAt": "2025-09-11",
+          "retrievedAt": "2026-10-27T14:47:08Z",
+          "quote": "Originally, we were shooting for late 2025, but turns out we were wrong.",
+          "locator": "steam:news.contents",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2025-09-11",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersededBy": "c_ae27ad0be24bab8f",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:35Z",
+      "lastCheckedAt": "2026-10-27T14:47:35Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "year",
+          "year": 2025
+        },
+        "rawText": "late 2025"
+      }
+    },
+    {
+      "id": "c_ae27ad0be24bab8f",
+      "gameId": "g_000010",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/news/app/2868840/view/1810503566429222",
+          "publishedAt": "2025-09-11",
+          "retrievedAt": "2026-10-27T14:47:08Z",
+          "quote": "move Slay the Spire 2's Early Access launch to a secret Thursday in March 2026",
+          "locator": "steam:news.contents",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2025-09-11",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_1197a7da1382fc0f"
+      ],
+      "supersededBy": "c_fdb3697ab0490b6d",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:35Z",
+      "lastCheckedAt": "2026-10-27T14:47:35Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "month",
+          "year": 2026,
+          "month": 3
+        },
+        "rawText": "March 2026"
+      }
+    },
+    {
+      "id": "c_a1bb711fe4ce0738",
+      "gameId": "g_000010",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2868840/",
+          "retrievedAt": "2026-10-27T14:22:01Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6faed860127d9653009d6ee02fcb24098c98e2585a11fa0ce56718f6868ea647"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:55Z",
+      "createdAt": "2026-10-27T14:21:55Z",
+      "updatedAt": "2026-10-27T14:21:55Z",
+      "lastCheckedAt": "2026-10-27T14:22:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_3d3d2f93cbc7caca",
+      "gameId": "g_000010",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2868840/",
+          "retrievedAt": "2026-10-27T14:21:55Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:16e00f487d32c8b27da76144e4ef27212e276d5c2df8c4a7dc4a991145a9eb44"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:55Z",
+      "createdAt": "2026-10-27T14:21:55Z",
+      "updatedAt": "2026-10-27T14:21:55Z",
+      "lastCheckedAt": "2026-10-27T14:21:55Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_e2d426db76170cf6",
+      "gameId": "g_000010",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2868840/",
+          "retrievedAt": "2026-10-27T13:48:27Z",
+          "quote": "新登場の協力モードでは最大4人のプレイヤーでチームを組み",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:27Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "デッキ構築型ローグライク『Slay the Spire』の続編。1000年の眠りから目覚めた塔に挑み、新しいカード、レリック、ポーションでデッキを組む。最大4人の協力モードも加わった。"
+      }
+    },
+    {
+      "id": "c_5ea6a846adc2a82b",
+      "gameId": "g_000010",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2868840/",
+          "retrievedAt": "2026-10-27T13:48:27Z",
+          "quote": "新登場の協力モードでは最大4人のプレイヤーでチームを組み",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:27Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "完全新規のカード、レリック、ポーションが登場する",
+          "最大4人で挑める協力モードと、マルチプレイ専用カード",
+          "足を踏み入れるたびに姿を変える塔"
+        ]
+      }
+    },
+    {
+      "id": "c_395848c677ff2a0b",
+      "gameId": "g_000010",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2868840/",
+          "retrievedAt": "2026-10-27T13:48:27Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:27Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "turn-based"
+      }
+    },
+    {
+      "id": "c_9e8b5942939fc3e4",
+      "gameId": "g_000010",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2868840/",
+          "retrievedAt": "2026-10-27T13:48:27Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:27Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "difficult"
+      }
+    },
+    {
+      "id": "c_9ffda33ada1f02a6",
+      "gameId": "g_000010",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2868840/",
+          "retrievedAt": "2026-10-27T13:48:27Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:27Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "strategy"
+      }
+    },
+    {
+      "id": "c_aceb5d8be3ee4730",
+      "gameId": "g_000010",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2868840/",
+          "retrievedAt": "2026-10-27T13:48:27Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:27Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "deck-building"
+      }
+    },
+    {
+      "id": "c_f865eff2a1ccf98f",
+      "gameId": "g_000010",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2868840/",
+          "retrievedAt": "2026-10-27T13:48:27Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:27Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_fc3cc7f6fe345374",
+      "gameId": "g_000010",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2868840/",
+          "retrievedAt": "2026-10-27T13:48:27Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:27Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_a49419ab898b7d6e",
+      "gameId": "g_000010",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2868840/",
+          "retrievedAt": "2026-10-27T14:21:55Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:16e00f487d32c8b27da76144e4ef27212e276d5c2df8c4a7dc4a991145a9eb44"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:55Z",
+      "createdAt": "2026-10-27T14:21:55Z",
+      "updatedAt": "2026-10-27T14:21:55Z",
+      "lastCheckedAt": "2026-10-27T14:21:55Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2868840/"
+      }
+    },
+    {
+      "id": "c_d24ecd50247d4740",
+      "gameId": "g_000010",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2868840/",
+          "retrievedAt": "2026-10-27T14:21:55Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:16e00f487d32c8b27da76144e4ef27212e276d5c2df8c4a7dc4a991145a9eb44"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:55Z",
+      "createdAt": "2026-10-27T14:21:55Z",
+      "updatedAt": "2026-10-27T14:21:55Z",
+      "lastCheckedAt": "2026-10-27T14:21:55Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/b0958d387dc366211e0f353443710cfcf9fdb020/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Slay the Spire 2 のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Mega Crit"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000033",
+  "status": "published",
+  "title": {
+    "display": "Spiritfarer",
+    "original": "Spiritfarer",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "Spiritfarer: Farewell Edition",
+      "lang": "en",
+      "kind": "localized"
+    },
+    {
+      "value": "Spiritfarer®: Farewellエディション",
+      "lang": "ja",
+      "kind": "localized"
+    },
+    {
+      "value": "スピリットフェアラー",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 972660
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1202910",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "1395720",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "1398770",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://thunderlotusgames.com/spiritfarer",
+  "developerIds": [
+    "dev_000029"
+  ],
+  "publisherIds": [
+    "dev_000029"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/972660/",
+            "retrievedAt": "2026-10-27T14:25:22Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:68c3a52ff98fdf81a64f23228f6467eddef779069b9eb46d5d114bb318c6317e"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:25:22Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/972660/",
+        "retrievedAt": "2026-10-27T13:50:04Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/972660/",
+        "retrievedAt": "2026-10-27T14:25:22Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:68c3a52ff98fdf81a64f23228f6467eddef779069b9eb46d5d114bb318c6317e"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/972660/",
+        "retrievedAt": "2026-10-27T14:25:22Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:68c3a52ff98fdf81a64f23228f6467eddef779069b9eb46d5d114bb318c6317e"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/972660/",
+        "retrievedAt": "2026-10-27T14:25:22Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:68c3a52ff98fdf81a64f23228f6467eddef779069b9eb46d5d114bb318c6317e"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/972660/",
+        "retrievedAt": "2026-10-27T14:25:22Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:68c3a52ff98fdf81a64f23228f6467eddef779069b9eb46d5d114bb318c6317e"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/972660/",
+        "retrievedAt": "2026-10-27T14:25:22Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:68c3a52ff98fdf81a64f23228f6467eddef779069b9eb46d5d114bb318c6317e"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:25:22Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

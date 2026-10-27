@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000048",
+  "status": "candidate",
+  "title": {
+    "display": "Schedule I",
+    "original": "Schedule I",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 3164500
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3205720",
+      "kind": "demo"
+    }
+  ],
+  "officialUrl": "https://www.scheduleonegame.com/",
+  "developerIds": [
+    "dev_000045"
+  ],
+  "publisherIds": [
+    "dev_000045"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/3164500/",
+            "retrievedAt": "2026-10-27T14:27:37Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:90ead4d1abff6e3dedf4420f329ac74f169db2bfbb860bba9f3da01ad2d9e885"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:27:37Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3164500/",
+        "retrievedAt": "2026-10-27T14:27:37Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:90ead4d1abff6e3dedf4420f329ac74f169db2bfbb860bba9f3da01ad2d9e885"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3164500/",
+        "retrievedAt": "2026-10-27T14:27:37Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:90ead4d1abff6e3dedf4420f329ac74f169db2bfbb860bba9f3da01ad2d9e885"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3164500/",
+        "retrievedAt": "2026-10-27T14:27:37Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:90ead4d1abff6e3dedf4420f329ac74f169db2bfbb860bba9f3da01ad2d9e885"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3164500/",
+        "retrievedAt": "2026-10-27T14:27:37Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:90ead4d1abff6e3dedf4420f329ac74f169db2bfbb860bba9f3da01ad2d9e885"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3164500/",
+        "retrievedAt": "2026-10-27T14:27:37Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:90ead4d1abff6e3dedf4420f329ac74f169db2bfbb860bba9f3da01ad2d9e885"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:27:37Z",
+  "updatedAt": "2026-10-27T14:27:37Z",
+  "createdByRun": "local-seed"
+}

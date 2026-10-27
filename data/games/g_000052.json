@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000052",
+  "status": "published",
+  "title": {
+    "display": "Dorfromantik",
+    "original": "Dorfromantik",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "ドーフロマンティック",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1455840
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1585900",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "1981960",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4511560",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://toukana.com/dorfromantik/",
+  "developerIds": [
+    "dev_000049"
+  ],
+  "publisherIds": [
+    "dev_000049"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1455840/",
+            "retrievedAt": "2026-10-27T14:28:13Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:2026bd3ed5fd9dd6d54d05dd24c1cf72bc7c8b9a56d9fa640b3849899fd00d3e"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:28:13Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1455840/",
+        "retrievedAt": "2026-10-27T13:56:33Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1455840/",
+        "retrievedAt": "2026-10-27T14:28:13Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2026bd3ed5fd9dd6d54d05dd24c1cf72bc7c8b9a56d9fa640b3849899fd00d3e"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1455840/",
+        "retrievedAt": "2026-10-27T14:28:13Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2026bd3ed5fd9dd6d54d05dd24c1cf72bc7c8b9a56d9fa640b3849899fd00d3e"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1455840/",
+        "retrievedAt": "2026-10-27T14:28:13Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2026bd3ed5fd9dd6d54d05dd24c1cf72bc7c8b9a56d9fa640b3849899fd00d3e"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1455840/",
+        "retrievedAt": "2026-10-27T14:28:13Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2026bd3ed5fd9dd6d54d05dd24c1cf72bc7c8b9a56d9fa640b3849899fd00d3e"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1455840/",
+        "retrievedAt": "2026-10-27T14:28:13Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2026bd3ed5fd9dd6d54d05dd24c1cf72bc7c8b9a56d9fa640b3849899fd00d3e"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:28:13Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

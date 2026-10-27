@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000043",
+  "status": "published",
+  "title": {
+    "display": "ウツロマユ - Hollow Cocoon -",
+    "original": "ウツロマユ - Hollow Cocoon -",
+    "originalLang": "ja"
+  },
+  "aliases": [
+    {
+      "value": "ウツロマユ",
+      "lang": "ja",
+      "kind": "abbreviation"
+    },
+    {
+      "value": "Hollow Cocoon",
+      "lang": "en",
+      "kind": "localized"
+    },
+    {
+      "value": "ウツロマユ(仮題)",
+      "lang": "ja",
+      "kind": "working-title"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 2414630
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "2593160",
+      "kind": "demo"
+    }
+  ],
+  "developerIds": [
+    "dev_000039"
+  ],
+  "publisherIds": [
+    "dev_000039"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/2414630/",
+            "retrievedAt": "2026-10-27T14:26:52Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:ab2437e081f809550b2bcd083a806eb112389febf92fe75eb36e3a8265fcc384"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:26:52Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2414630/",
+        "retrievedAt": "2026-10-27T13:54:18Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2414630/",
+        "retrievedAt": "2026-10-27T14:26:52Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ab2437e081f809550b2bcd083a806eb112389febf92fe75eb36e3a8265fcc384"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2414630/",
+        "retrievedAt": "2026-10-27T14:26:52Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ab2437e081f809550b2bcd083a806eb112389febf92fe75eb36e3a8265fcc384"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2414630/",
+        "retrievedAt": "2026-10-27T14:26:52Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ab2437e081f809550b2bcd083a806eb112389febf92fe75eb36e3a8265fcc384"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2414630/",
+        "retrievedAt": "2026-10-27T14:26:52Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ab2437e081f809550b2bcd083a806eb112389febf92fe75eb36e3a8265fcc384"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:26:52Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

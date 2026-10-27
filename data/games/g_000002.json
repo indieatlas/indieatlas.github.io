@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000002",
+  "status": "published",
+  "title": {
+    "display": "Celeste",
+    "original": "Celeste",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "セレステ",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 504230
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1092840",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "http://www.celestegame.com",
+  "developerIds": [
+    "dev_000002",
+    "dev_000003"
+  ],
+  "publisherIds": [
+    "dev_000002"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/504230/",
+            "retrievedAt": "2026-10-27T14:20:43Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:ee248f7478af21fd6d79d1b515c8a80679c8f00c6c350824f367559508b897fd"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:20:43Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/504230/",
+        "retrievedAt": "2026-10-27T13:48:00Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/504230/",
+        "retrievedAt": "2026-10-27T14:20:43Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ee248f7478af21fd6d79d1b515c8a80679c8f00c6c350824f367559508b897fd"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/504230/",
+        "retrievedAt": "2026-10-27T14:20:43Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ee248f7478af21fd6d79d1b515c8a80679c8f00c6c350824f367559508b897fd"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/504230/",
+        "retrievedAt": "2026-10-27T14:20:43Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ee248f7478af21fd6d79d1b515c8a80679c8f00c6c350824f367559508b897fd"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/504230/",
+        "retrievedAt": "2026-10-27T14:20:43Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ee248f7478af21fd6d79d1b515c8a80679c8f00c6c350824f367559508b897fd"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/504230/",
+        "retrievedAt": "2026-10-27T14:20:43Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ee248f7478af21fd6d79d1b515c8a80679c8f00c6c350824f367559508b897fd"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:20:43Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

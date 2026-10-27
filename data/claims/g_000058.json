@@ -1,0 +1,444 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000058",
+  "claims": [
+    {
+      "id": "c_f02c7c9bc1660b20",
+      "gameId": "g_000058",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1432860/",
+          "retrievedAt": "2026-10-27T14:29:07Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c1563efc26094a486d8c75968608bb6283ab28cb548652ae9dfba2e45c0af8ae"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:29:07Z",
+      "createdAt": "2026-10-27T14:29:07Z",
+      "updatedAt": "2026-10-27T14:29:07Z",
+      "lastCheckedAt": "2026-10-27T14:29:07Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2023,
+          "month": 3,
+          "day": 10
+        },
+        "rawText": "10 Mar, 2023"
+      }
+    },
+    {
+      "id": "c_39fb50f974ff6807",
+      "gameId": "g_000058",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1432860/",
+          "retrievedAt": "2026-10-27T14:29:07Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c1563efc26094a486d8c75968608bb6283ab28cb548652ae9dfba2e45c0af8ae"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:29:07Z",
+      "createdAt": "2026-10-27T14:29:07Z",
+      "updatedAt": "2026-10-27T14:29:07Z",
+      "lastCheckedAt": "2026-10-27T14:29:07Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2023,
+          "month": 3,
+          "day": 10
+        },
+        "rawText": "10 Mar, 2023"
+      }
+    },
+    {
+      "id": "c_5961ed35982d10e7",
+      "gameId": "g_000058",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1432860/",
+          "retrievedAt": "2026-10-27T14:29:13Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8eea1aff1252a6d31e4a7c64a0583d2fd87cf42bdb3b5a8baff3ca8b27924991"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:29:07Z",
+      "createdAt": "2026-10-27T14:29:07Z",
+      "updatedAt": "2026-10-27T14:29:07Z",
+      "lastCheckedAt": "2026-10-27T14:29:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_2e6a0a3c40386baf",
+      "gameId": "g_000058",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1432860/",
+          "retrievedAt": "2026-10-27T14:29:07Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c1563efc26094a486d8c75968608bb6283ab28cb548652ae9dfba2e45c0af8ae"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:29:07Z",
+      "createdAt": "2026-10-27T14:29:07Z",
+      "updatedAt": "2026-10-27T14:29:07Z",
+      "lastCheckedAt": "2026-10-27T14:29:07Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_489d8b8e7ac84783",
+      "gameId": "g_000058",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1432860/",
+          "retrievedAt": "2026-10-27T13:56:23Z",
+          "quote": "今までに体験したことのないRPG要素を持つファンタジー農業シミュレーター",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:23Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "RPG要素を持つファンタジーの農業シミュレーション。荒れた土地を農場に変え、町の人々と交流し、魔法やドラゴンの冒険も楽しむ。最大8人のマルチプレイにも対応する。"
+      }
+    },
+    {
+      "id": "c_61b2ca66ee8e4613",
+      "gameId": "g_000058",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1432860/",
+          "retrievedAt": "2026-10-27T13:56:23Z",
+          "quote": "今までに体験したことのないRPG要素を持つファンタジー農業シミュレーター",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:23Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "スタミナの制限がない農業",
+          "23人のキャラクターとの恋愛",
+          "日の長さや害虫の有無などを細かく設定できる"
+        ]
+      }
+    },
+    {
+      "id": "c_03b0d8987c96baac",
+      "gameId": "g_000058",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1432860/",
+          "retrievedAt": "2026-10-27T13:56:23Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:23Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "farming-sim"
+      }
+    },
+    {
+      "id": "c_10dde6ee4e2f476e",
+      "gameId": "g_000058",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1432860/",
+          "retrievedAt": "2026-10-27T13:56:23Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:23Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_415d6231a10371fa",
+      "gameId": "g_000058",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1432860/",
+          "retrievedAt": "2026-10-27T13:56:23Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:23Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "magic"
+      }
+    },
+    {
+      "id": "c_bed824446bc16d2a",
+      "gameId": "g_000058",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1432860/",
+          "retrievedAt": "2026-10-27T13:56:23Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:23Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "romance"
+      }
+    },
+    {
+      "id": "c_c5b1d348e487e1ee",
+      "gameId": "g_000058",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1432860/",
+          "retrievedAt": "2026-10-27T13:56:23Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:23Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_e5e35f29c1bee5c8",
+      "gameId": "g_000058",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1432860/",
+          "retrievedAt": "2026-10-27T13:56:23Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:23Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "rpg"
+      }
+    },
+    {
+      "id": "c_f7b3ab844aa8687f",
+      "gameId": "g_000058",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1432860/",
+          "retrievedAt": "2026-10-27T14:29:07Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c1563efc26094a486d8c75968608bb6283ab28cb548652ae9dfba2e45c0af8ae"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:29:07Z",
+      "createdAt": "2026-10-27T14:29:07Z",
+      "updatedAt": "2026-10-27T14:29:07Z",
+      "lastCheckedAt": "2026-10-27T14:29:07Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1432860/"
+      }
+    },
+    {
+      "id": "c_08b72e321a3b8a4c",
+      "gameId": "g_000058",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1432860/",
+          "retrievedAt": "2026-10-27T14:29:07Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c1563efc26094a486d8c75968608bb6283ab28cb548652ae9dfba2e45c0af8ae"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:29:07Z",
+      "createdAt": "2026-10-27T14:29:07Z",
+      "updatedAt": "2026-10-27T14:29:07Z",
+      "lastCheckedAt": "2026-10-27T14:29:07Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1432860/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Sun Haven のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Pixel Sprout Studios"
+        }
+      }
+    }
+  ]
+}

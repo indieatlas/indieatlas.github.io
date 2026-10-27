@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000008",
+  "status": "published",
+  "title": {
+    "display": "DELTARUNE",
+    "original": "DELTARUNE",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "デルタルーン",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1671210
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1690940",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "3752270",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "http://deltarune.com",
+  "developerIds": [
+    "dev_000007"
+  ],
+  "publisherIds": [
+    "dev_000007"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1671210/",
+            "retrievedAt": "2026-10-27T14:21:37Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:14441f8678fdc88c20a52c02544d34d04f9c451e15f410180453f638b79c9041"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:21:37Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1671210/",
+        "retrievedAt": "2026-10-27T13:48:21Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1671210/",
+        "retrievedAt": "2026-10-27T14:21:37Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:14441f8678fdc88c20a52c02544d34d04f9c451e15f410180453f638b79c9041"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1671210/",
+        "retrievedAt": "2026-10-27T14:21:37Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:14441f8678fdc88c20a52c02544d34d04f9c451e15f410180453f638b79c9041"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1671210/",
+        "retrievedAt": "2026-10-27T14:21:37Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:14441f8678fdc88c20a52c02544d34d04f9c451e15f410180453f638b79c9041"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1671210/",
+        "retrievedAt": "2026-10-27T14:21:37Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:14441f8678fdc88c20a52c02544d34d04f9c451e15f410180453f638b79c9041"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1671210/",
+        "retrievedAt": "2026-10-27T14:21:37Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:14441f8678fdc88c20a52c02544d34d04f9c451e15f410180453f638b79c9041"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:21:37Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

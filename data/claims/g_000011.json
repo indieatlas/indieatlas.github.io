@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000011",
+  "claims": [
+    {
+      "id": "c_dab143f1147ed0ff",
+      "gameId": "g_000011",
+      "scope": {
+        "platform": "linux",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/736260/",
+          "retrievedAt": "2026-10-27T14:22:04Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7b53bb529b8b704caa0cb630cd337eed7894df32bda713b7ffed1b915d043c11"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:04Z",
+      "createdAt": "2026-10-27T14:22:04Z",
+      "updatedAt": "2026-10-27T14:22:04Z",
+      "lastCheckedAt": "2026-10-27T14:22:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2019,
+          "month": 3,
+          "day": 13
+        },
+        "rawText": "13 Mar, 2019"
+      }
+    },
+    {
+      "id": "c_a4120c88b2589ba6",
+      "gameId": "g_000011",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/736260/",
+          "retrievedAt": "2026-10-27T14:22:04Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7b53bb529b8b704caa0cb630cd337eed7894df32bda713b7ffed1b915d043c11"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:04Z",
+      "createdAt": "2026-10-27T14:22:04Z",
+      "updatedAt": "2026-10-27T14:22:04Z",
+      "lastCheckedAt": "2026-10-27T14:22:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2019,
+          "month": 3,
+          "day": 13
+        },
+        "rawText": "13 Mar, 2019"
+      }
+    },
+    {
+      "id": "c_68ca5c1097a65769",
+      "gameId": "g_000011",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/736260/",
+          "retrievedAt": "2026-10-27T14:22:04Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7b53bb529b8b704caa0cb630cd337eed7894df32bda713b7ffed1b915d043c11"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:04Z",
+      "createdAt": "2026-10-27T14:22:04Z",
+      "updatedAt": "2026-10-27T14:22:04Z",
+      "lastCheckedAt": "2026-10-27T14:22:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2019,
+          "month": 3,
+          "day": 13
+        },
+        "rawText": "13 Mar, 2019"
+      }
+    },
+    {
+      "id": "c_a35e39ff91493b0d",
+      "gameId": "g_000011",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/736260/",
+          "retrievedAt": "2026-10-27T14:22:10Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3053800d71b5d8704f93c4ff1a07318ea6602d59b3e98e81563f6f9c22041aa6"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:04Z",
+      "createdAt": "2026-10-27T14:22:04Z",
+      "updatedAt": "2026-10-27T14:22:04Z",
+      "lastCheckedAt": "2026-10-27T14:22:10Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_7c5527ee7f47d17e",
+      "gameId": "g_000011",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/736260/",
+          "retrievedAt": "2026-10-27T14:22:04Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7b53bb529b8b704caa0cb630cd337eed7894df32bda713b7ffed1b915d043c11"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:04Z",
+      "createdAt": "2026-10-27T14:22:04Z",
+      "updatedAt": "2026-10-27T14:22:04Z",
+      "lastCheckedAt": "2026-10-27T14:22:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_43397929274ff025",
+      "gameId": "g_000011",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/736260/",
+          "retrievedAt": "2026-10-27T13:48:31Z",
+          "quote": "ルール自体が接触可能なブロックとして配置されています",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "ステージ内に置かれた言葉のブロックを動かし、ゲームのルールそのものを書き換えて解くパズルゲーム。自分を岩に変えたり、目標を別のものにしたりしながら200以上のステージに挑む。"
+      }
+    },
+    {
+      "id": "c_2969aacb9b4d26da",
+      "gameId": "g_000011",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/736260/",
+          "retrievedAt": "2026-10-27T13:48:31Z",
+          "quote": "ルール自体が接触可能なブロックとして配置されています",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "ブロックを押してルールの文を組み替える",
+          "自分の姿や勝利条件まで変えられる",
+          "200以上のステージを収録"
+        ]
+      }
+    },
+    {
+      "id": "c_b81c802f8c3ad8d0",
+      "gameId": "g_000011",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/736260/",
+          "retrievedAt": "2026-10-27T13:48:31Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_bbcf6a04d701e7ad",
+      "gameId": "g_000011",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/736260/",
+          "retrievedAt": "2026-10-27T14:22:04Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7b53bb529b8b704caa0cb630cd337eed7894df32bda713b7ffed1b915d043c11"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:04Z",
+      "createdAt": "2026-10-27T14:22:04Z",
+      "updatedAt": "2026-10-27T14:22:04Z",
+      "lastCheckedAt": "2026-10-27T14:22:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/736260/"
+      }
+    },
+    {
+      "id": "c_48489b161b818270",
+      "gameId": "g_000011",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/736260/",
+          "retrievedAt": "2026-10-27T14:22:04Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7b53bb529b8b704caa0cb630cd337eed7894df32bda713b7ffed1b915d043c11"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:22:04Z",
+      "createdAt": "2026-10-27T14:22:04Z",
+      "updatedAt": "2026-10-27T14:22:04Z",
+      "lastCheckedAt": "2026-10-27T14:22:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/736260/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Baba Is You のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Hempuli Oy"
+        }
+      }
+    }
+  ]
+}

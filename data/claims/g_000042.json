@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000042",
+  "claims": [
+    {
+      "id": "c_be1b141459846678",
+      "gameId": "g_000042",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3146520/",
+          "retrievedAt": "2026-10-27T14:26:43Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:883ca04e6b335bacc5838be3d836af8cbf60e9a77c4f194d57f881a633f1d9a2"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:26:43Z",
+      "createdAt": "2026-10-27T14:26:43Z",
+      "updatedAt": "2026-10-27T14:26:43Z",
+      "lastCheckedAt": "2026-10-27T14:26:43Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2024,
+          "month": 10,
+          "day": 11
+        },
+        "rawText": "11 Oct, 2024"
+      }
+    },
+    {
+      "id": "c_144cbcf5cd8049a7",
+      "gameId": "g_000042",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3146520/",
+          "retrievedAt": "2026-10-27T14:26:49Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:42804ed26c2fda7dae5754cfa7bab24dc428264cd20da7946b4c4804feac2291"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:26:43Z",
+      "createdAt": "2026-10-27T14:26:43Z",
+      "updatedAt": "2026-10-27T14:26:43Z",
+      "lastCheckedAt": "2026-10-27T14:26:49Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "no",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_dcebbc4f9a4b299a",
+      "gameId": "g_000042",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3146520/",
+          "retrievedAt": "2026-10-27T14:26:43Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:883ca04e6b335bacc5838be3d836af8cbf60e9a77c4f194d57f881a633f1d9a2"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:26:43Z",
+      "createdAt": "2026-10-27T14:26:43Z",
+      "updatedAt": "2026-10-27T14:26:43Z",
+      "lastCheckedAt": "2026-10-27T14:26:43Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_c5a302ce606c6074",
+      "gameId": "g_000042",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3146520/",
+          "retrievedAt": "2026-10-27T13:54:01Z",
+          "quote": "WEBFISHING a multiplayer chatroom-focused fishing game!",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "友達や見知らぬ人とキャンプ場に集まり、のんびり釣りをするオンラインのカジュアルゲーム。100種類近い生き物を釣って図鑑を埋め、釣り道具の強化や見た目の着せ替えを楽しむ。"
+      }
+    },
+    {
+      "id": "c_3657b32510bb325c",
+      "gameId": "g_000042",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3146520/",
+          "retrievedAt": "2026-10-27T13:54:01Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_4d9324a09e45df6e",
+      "gameId": "g_000042",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3146520/",
+          "retrievedAt": "2026-10-27T13:54:01Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_6c5e0a59e69d080a",
+      "gameId": "g_000042",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3146520/",
+          "retrievedAt": "2026-10-27T13:54:01Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_79f0cd6541738d94",
+      "gameId": "g_000042",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3146520/",
+          "retrievedAt": "2026-10-27T13:54:01Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_ca2b01239f2a12e2",
+      "gameId": "g_000042",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3146520/",
+          "retrievedAt": "2026-10-27T13:54:01Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "fishing"
+      }
+    },
+    {
+      "id": "c_d17ab5f86aab3978",
+      "gameId": "g_000042",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3146520/",
+          "retrievedAt": "2026-10-27T13:54:01Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "animals"
+      }
+    },
+    {
+      "id": "c_224c54c54a48cd4d",
+      "gameId": "g_000042",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3146520/",
+          "retrievedAt": "2026-10-27T14:26:43Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:883ca04e6b335bacc5838be3d836af8cbf60e9a77c4f194d57f881a633f1d9a2"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:26:43Z",
+      "createdAt": "2026-10-27T14:26:43Z",
+      "updatedAt": "2026-10-27T14:26:43Z",
+      "lastCheckedAt": "2026-10-27T14:26:43Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3146520/"
+      }
+    },
+    {
+      "id": "c_e7afd729f7dac99c",
+      "gameId": "g_000042",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3146520/",
+          "retrievedAt": "2026-10-27T14:26:43Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:883ca04e6b335bacc5838be3d836af8cbf60e9a77c4f194d57f881a633f1d9a2"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:26:43Z",
+      "createdAt": "2026-10-27T14:26:43Z",
+      "updatedAt": "2026-10-27T14:26:43Z",
+      "lastCheckedAt": "2026-10-27T14:26:43Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3146520/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "WEBFISHING のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "lamedeveloper"
+        }
+      }
+    }
+  ]
+}

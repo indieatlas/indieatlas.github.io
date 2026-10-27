@@ -1,0 +1,539 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000033",
+  "claims": [
+    {
+      "id": "c_677d4cc0d52c61aa",
+      "gameId": "g_000033",
+      "scope": {
+        "platform": "linux",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/972660/",
+          "retrievedAt": "2026-10-27T14:25:22Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:68c3a52ff98fdf81a64f23228f6467eddef779069b9eb46d5d114bb318c6317e"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:22Z",
+      "createdAt": "2026-10-27T14:25:22Z",
+      "updatedAt": "2026-10-27T14:25:22Z",
+      "lastCheckedAt": "2026-10-27T14:25:22Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2020,
+          "month": 8,
+          "day": 18
+        },
+        "rawText": "18 Aug, 2020"
+      }
+    },
+    {
+      "id": "c_4287032f21e27936",
+      "gameId": "g_000033",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/972660/",
+          "retrievedAt": "2026-10-27T14:25:22Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:68c3a52ff98fdf81a64f23228f6467eddef779069b9eb46d5d114bb318c6317e"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:22Z",
+      "createdAt": "2026-10-27T14:25:22Z",
+      "updatedAt": "2026-10-27T14:25:22Z",
+      "lastCheckedAt": "2026-10-27T14:25:22Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2020,
+          "month": 8,
+          "day": 18
+        },
+        "rawText": "18 Aug, 2020"
+      }
+    },
+    {
+      "id": "c_f85f6d0634ae3bb3",
+      "gameId": "g_000033",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/972660/",
+          "retrievedAt": "2026-10-27T14:25:22Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:68c3a52ff98fdf81a64f23228f6467eddef779069b9eb46d5d114bb318c6317e"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:22Z",
+      "createdAt": "2026-10-27T14:25:22Z",
+      "updatedAt": "2026-10-27T14:25:22Z",
+      "lastCheckedAt": "2026-10-27T14:25:22Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2020,
+          "month": 8,
+          "day": 18
+        },
+        "rawText": "18 Aug, 2020"
+      }
+    },
+    {
+      "id": "c_864c11ad36ae51ea",
+      "gameId": "g_000033",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/972660/",
+          "retrievedAt": "2026-10-27T14:25:28Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7c0a9793c85a14e6e3e848be793f4f29d7d78819fb707fdfece9624116a97964"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:22Z",
+      "createdAt": "2026-10-27T14:25:22Z",
+      "updatedAt": "2026-10-27T14:25:22Z",
+      "lastCheckedAt": "2026-10-27T14:25:28Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_7f2b3e4856dd5bc9",
+      "gameId": "g_000033",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/972660/",
+          "retrievedAt": "2026-10-27T14:25:22Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:68c3a52ff98fdf81a64f23228f6467eddef779069b9eb46d5d114bb318c6317e"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:22Z",
+      "createdAt": "2026-10-27T14:25:22Z",
+      "updatedAt": "2026-10-27T14:25:22Z",
+      "lastCheckedAt": "2026-10-27T14:25:22Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "local-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_51cb16ed35f2696b",
+      "gameId": "g_000033",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/972660/",
+          "retrievedAt": "2026-10-27T13:50:04Z",
+          "quote": "Spiritfarer® は死にゆくものをテーマにした、心温かいマネジメントゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:50:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "死者の魂を運ぶ船頭ステラとなり、霊魂たちの世話をして死後の世界へ送り出すマネジメントゲーム。舟を造って海を巡り、作物を育て、料理し、別れを迎えるまでの時間を共に過ごす。"
+      }
+    },
+    {
+      "id": "c_34c4e6a4a1afed5e",
+      "gameId": "g_000033",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/972660/",
+          "retrievedAt": "2026-10-27T13:50:04Z",
+          "quote": "Spiritfarer® は死にゆくものをテーマにした、心温かいマネジメントゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:50:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "舟を造り、管理し、改良していく",
+          "作物の栽培、採掘、釣り、料理、クラフトなど多くの作業",
+          "2人での協力プレイでは猫のダフォディルとして参加できる"
+        ]
+      }
+    },
+    {
+      "id": "c_4faf9cca4b37b9d2",
+      "gameId": "g_000033",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/972660/",
+          "retrievedAt": "2026-10-27T13:50:04Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:50:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "death"
+      }
+    },
+    {
+      "id": "c_51da4121bb3f1a33",
+      "gameId": "g_000033",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/972660/",
+          "retrievedAt": "2026-10-27T13:50:04Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:50:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "ocean"
+      }
+    },
+    {
+      "id": "c_80f6648b68e57fb1",
+      "gameId": "g_000033",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/972660/",
+          "retrievedAt": "2026-10-27T13:50:04Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:50:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_d480a76f9a3b2743",
+      "gameId": "g_000033",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/972660/",
+          "retrievedAt": "2026-10-27T13:50:04Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:50:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_d5f160d082b35f2f",
+      "gameId": "g_000033",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/972660/",
+          "retrievedAt": "2026-10-27T13:50:04Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:50:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "crafting"
+      }
+    },
+    {
+      "id": "c_e9fefd850e5a2559",
+      "gameId": "g_000033",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/972660/",
+          "retrievedAt": "2026-10-27T13:50:04Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:50:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "emotional"
+      }
+    },
+    {
+      "id": "c_f1fbaf2c3b467ecb",
+      "gameId": "g_000033",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/972660/",
+          "retrievedAt": "2026-10-27T13:50:04Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:50:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_f540edc748251a3f",
+      "gameId": "g_000033",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/972660/",
+          "retrievedAt": "2026-10-27T13:50:04Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:50:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "hand-drawn"
+      }
+    },
+    {
+      "id": "c_0e2ff952eef2a524",
+      "gameId": "g_000033",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/972660/",
+          "retrievedAt": "2026-10-27T14:25:22Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:68c3a52ff98fdf81a64f23228f6467eddef779069b9eb46d5d114bb318c6317e"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:22Z",
+      "createdAt": "2026-10-27T14:25:22Z",
+      "updatedAt": "2026-10-27T14:25:22Z",
+      "lastCheckedAt": "2026-10-27T14:25:22Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/972660/"
+      }
+    },
+    {
+      "id": "c_de47452ccff57d97",
+      "gameId": "g_000033",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/972660/",
+          "retrievedAt": "2026-10-27T14:25:22Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:68c3a52ff98fdf81a64f23228f6467eddef779069b9eb46d5d114bb318c6317e"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:22Z",
+      "createdAt": "2026-10-27T14:25:22Z",
+      "updatedAt": "2026-10-27T14:25:22Z",
+      "lastCheckedAt": "2026-10-27T14:25:22Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/972660/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Spiritfarer®: Farewellエディション のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Thunder Lotus"
+        }
+      }
+    }
+  ]
+}

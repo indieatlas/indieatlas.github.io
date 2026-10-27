@@ -1,0 +1,443 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000051",
+  "claims": [
+    {
+      "id": "c_d41bb9e629bd5a1c",
+      "gameId": "g_000051",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1663220/",
+          "retrievedAt": "2026-10-27T14:28:04Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:32fda51066efaee9699c4efd18db090881af2528831eb8674b2e6164c2930ba0"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:04Z",
+      "createdAt": "2026-10-27T14:28:04Z",
+      "updatedAt": "2026-10-27T14:28:04Z",
+      "lastCheckedAt": "2026-10-27T14:28:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2023,
+          "month": 4,
+          "day": 20
+        },
+        "rawText": "20 Apr, 2023"
+      }
+    },
+    {
+      "id": "c_2cd35c401688d3d5",
+      "gameId": "g_000051",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1663220/",
+          "retrievedAt": "2026-10-27T14:28:04Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:32fda51066efaee9699c4efd18db090881af2528831eb8674b2e6164c2930ba0"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:04Z",
+      "createdAt": "2026-10-27T14:28:04Z",
+      "updatedAt": "2026-10-27T14:28:04Z",
+      "lastCheckedAt": "2026-10-27T14:28:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2023,
+          "month": 4,
+          "day": 20
+        },
+        "rawText": "20 Apr, 2023"
+      }
+    },
+    {
+      "id": "c_d90bb5606f3ede77",
+      "gameId": "g_000051",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1663220/",
+          "retrievedAt": "2026-10-27T14:28:10Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:656ce33a3be2a0343db67d3841dcca61f2b5ca0cfe6d22f29d04b4588297ddf0"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:04Z",
+      "createdAt": "2026-10-27T14:28:04Z",
+      "updatedAt": "2026-10-27T14:28:04Z",
+      "lastCheckedAt": "2026-10-27T14:28:10Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_856b005c1c2940bc",
+      "gameId": "g_000051",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1663220/",
+          "retrievedAt": "2026-10-27T14:28:04Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:32fda51066efaee9699c4efd18db090881af2528831eb8674b2e6164c2930ba0"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:04Z",
+      "createdAt": "2026-10-27T14:28:04Z",
+      "updatedAt": "2026-10-27T14:28:04Z",
+      "lastCheckedAt": "2026-10-27T14:28:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_e104d89769787297",
+      "gameId": "g_000051",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1663220/",
+          "retrievedAt": "2026-10-27T13:56:30Z",
+          "quote": "一杯のコーヒーと共に語られる、様々な種族の人生ドラマが新章へ",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:30Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "『Coffee Talk』の続編。別次元の現代シアトルで深夜のコーヒーショップを再び開き、人間やオーク、エルフの客に合わせた一杯を淹れながら、彼らの人生の悩みに耳を傾ける。"
+      }
+    },
+    {
+      "id": "c_47fb5c0202f9eb10",
+      "gameId": "g_000051",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1663220/",
+          "retrievedAt": "2026-10-27T13:56:30Z",
+          "quote": "一杯のコーヒーと共に語られる、様々な種族の人生ドラマが新章へ",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:30Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "材料の組み合わせで秘密のレシピを見つける",
+          "飲み物を彩るラテアートを描ける",
+          "ローファイなチルホップが流れる店内"
+        ]
+      }
+    },
+    {
+      "id": "c_2a2cff8ce1925758",
+      "gameId": "g_000051",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1663220/",
+          "retrievedAt": "2026-10-27T13:56:30Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:30Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "emotional"
+      }
+    },
+    {
+      "id": "c_7d5c0b17025b52af",
+      "gameId": "g_000051",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1663220/",
+          "retrievedAt": "2026-10-27T13:56:30Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:30Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_b4628df123fd820b",
+      "gameId": "g_000051",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1663220/",
+          "retrievedAt": "2026-10-27T13:56:30Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:30Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_d64cc424b41c76e1",
+      "gameId": "g_000051",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1663220/",
+          "retrievedAt": "2026-10-27T13:56:30Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:30Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_eec3c8d1efebe963",
+      "gameId": "g_000051",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1663220/",
+          "retrievedAt": "2026-10-27T13:56:30Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:30Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "food"
+      }
+    },
+    {
+      "id": "c_fa4bc98bf4e3b1e5",
+      "gameId": "g_000051",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1663220/",
+          "retrievedAt": "2026-10-27T13:56:30Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:30Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_b8a4d6ed600c3ecb",
+      "gameId": "g_000051",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1663220/",
+          "retrievedAt": "2026-10-27T14:28:04Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:32fda51066efaee9699c4efd18db090881af2528831eb8674b2e6164c2930ba0"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:04Z",
+      "createdAt": "2026-10-27T14:28:04Z",
+      "updatedAt": "2026-10-27T14:28:04Z",
+      "lastCheckedAt": "2026-10-27T14:28:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1663220/"
+      }
+    },
+    {
+      "id": "c_c379229db929b2db",
+      "gameId": "g_000051",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1663220/",
+          "retrievedAt": "2026-10-27T14:28:04Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:32fda51066efaee9699c4efd18db090881af2528831eb8674b2e6164c2930ba0"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:04Z",
+      "createdAt": "2026-10-27T14:28:04Z",
+      "updatedAt": "2026-10-27T14:28:04Z",
+      "lastCheckedAt": "2026-10-27T14:28:04Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1663220/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Coffee Talk Episode 2: Hibiscus & Butterfly のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Toge Productions"
+        }
+      }
+    }
+  ]
+}

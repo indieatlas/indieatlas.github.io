@@ -1,0 +1,387 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000008",
+  "claims": [
+    {
+      "id": "c_71d62213fe4ecd71",
+      "gameId": "g_000008",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1671210/",
+          "retrievedAt": "2026-10-27T14:21:37Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:14441f8678fdc88c20a52c02544d34d04f9c451e15f410180453f638b79c9041"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:37Z",
+      "createdAt": "2026-10-27T14:21:37Z",
+      "updatedAt": "2026-10-27T14:21:37Z",
+      "lastCheckedAt": "2026-10-27T14:21:37Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 6,
+          "day": 4
+        },
+        "rawText": "4 Jun, 2025"
+      }
+    },
+    {
+      "id": "c_c8521b1de9cdac37",
+      "gameId": "g_000008",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1671210/",
+          "retrievedAt": "2026-10-27T14:21:37Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:14441f8678fdc88c20a52c02544d34d04f9c451e15f410180453f638b79c9041"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:37Z",
+      "createdAt": "2026-10-27T14:21:37Z",
+      "updatedAt": "2026-10-27T14:21:37Z",
+      "lastCheckedAt": "2026-10-27T14:21:37Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 6,
+          "day": 4
+        },
+        "rawText": "4 Jun, 2025"
+      }
+    },
+    {
+      "id": "c_eeeb2ffbeb6562ce",
+      "gameId": "g_000008",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1671210/",
+          "retrievedAt": "2026-10-27T14:21:43Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:676dc3d570c0e7c345b006ccaafd44919750c8d13c04654194588dfd23c0efc5"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:37Z",
+      "createdAt": "2026-10-27T14:21:37Z",
+      "updatedAt": "2026-10-27T14:21:37Z",
+      "lastCheckedAt": "2026-10-27T14:21:43Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_04b0b7e381856828",
+      "gameId": "g_000008",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1671210/",
+          "retrievedAt": "2026-10-27T14:21:37Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:14441f8678fdc88c20a52c02544d34d04f9c451e15f410180453f638b79c9041"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:37Z",
+      "createdAt": "2026-10-27T14:21:37Z",
+      "updatedAt": "2026-10-27T14:21:37Z",
+      "lastCheckedAt": "2026-10-27T14:21:37Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_2fb833813f3741cb",
+      "gameId": "g_000008",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1671210/",
+          "retrievedAt": "2026-10-27T13:48:21Z",
+          "quote": "『UNDERTALE』のパラレルストーリー、『DELTARUNE』",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:21Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "『UNDERTALE』のパラレルストーリーとして描かれる、チャプター形式のRPG。弾幕をよけるバトルでは戦うことも敵を逃がすこともでき、新旧のキャラクターと謎の世界を旅する。"
+      }
+    },
+    {
+      "id": "c_793ae975a5d3e2a7",
+      "gameId": "g_000008",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1671210/",
+          "retrievedAt": "2026-10-27T13:48:21Z",
+          "quote": "『UNDERTALE』のパラレルストーリー、『DELTARUNE』",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:21Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "チャプター形式で、どの章からでも始められる",
+          "弾幕を回避しながら戦うか逃がすかを選ぶバトル",
+          "Chapter 1と2は無料で遊べる"
+        ]
+      }
+    },
+    {
+      "id": "c_0af528a3d105482a",
+      "gameId": "g_000008",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1671210/",
+          "retrievedAt": "2026-10-27T13:48:21Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:21Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "rpg"
+      }
+    },
+    {
+      "id": "c_586bc7a27fc4b321",
+      "gameId": "g_000008",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1671210/",
+          "retrievedAt": "2026-10-27T13:48:21Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:21Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "pixel-art"
+      }
+    },
+    {
+      "id": "c_7bc8e02d7ea7283e",
+      "gameId": "g_000008",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1671210/",
+          "retrievedAt": "2026-10-27T13:48:21Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:21Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_b85a1fe8f06b91a4",
+      "gameId": "g_000008",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1671210/",
+          "retrievedAt": "2026-10-27T13:48:21Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:21Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_5d146f53ebb426e4",
+      "gameId": "g_000008",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1671210/",
+          "retrievedAt": "2026-10-27T14:21:37Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:14441f8678fdc88c20a52c02544d34d04f9c451e15f410180453f638b79c9041"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:37Z",
+      "createdAt": "2026-10-27T14:21:37Z",
+      "updatedAt": "2026-10-27T14:21:37Z",
+      "lastCheckedAt": "2026-10-27T14:21:37Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1671210/"
+      }
+    },
+    {
+      "id": "c_61562c5d3ffa0bcf",
+      "gameId": "g_000008",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1671210/",
+          "retrievedAt": "2026-10-27T14:21:37Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:14441f8678fdc88c20a52c02544d34d04f9c451e15f410180453f638b79c9041"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:37Z",
+      "createdAt": "2026-10-27T14:21:37Z",
+      "updatedAt": "2026-10-27T14:21:37Z",
+      "lastCheckedAt": "2026-10-27T14:21:37Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1671210/7ccda5b1631d2e60cc756a3271e845dbb9168821/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "DELTARUNE のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "tobyfox"
+        }
+      }
+    }
+  ]
+}

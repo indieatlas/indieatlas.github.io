@@ -1,0 +1,377 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000018",
+  "claims": [
+    {
+      "id": "c_edd205edb79963f1",
+      "gameId": "g_000018",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231450/",
+          "retrievedAt": "2026-10-27T14:23:07Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7f99872c3784ca74fa6977e662d43adbd5b71832567638d7b4dbbb109fac376b"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:07Z",
+      "createdAt": "2026-10-27T14:23:07Z",
+      "updatedAt": "2026-10-27T14:23:07Z",
+      "lastCheckedAt": "2026-10-27T14:23:07Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2023,
+          "month": 1,
+          "day": 26
+        },
+        "rawText": "26 Jan, 2023"
+      }
+    },
+    {
+      "id": "c_3dd62897c175e172",
+      "gameId": "g_000018",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231450/",
+          "retrievedAt": "2026-10-27T14:23:13Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:647ef8e803e12e9d33152715ffc099ef218803a386c306383b424d83d9c638d1"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:07Z",
+      "createdAt": "2026-10-27T14:23:07Z",
+      "updatedAt": "2026-10-27T14:23:07Z",
+      "lastCheckedAt": "2026-10-27T14:23:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_6c5b1f1d175f4524",
+      "gameId": "g_000018",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231450/",
+          "retrievedAt": "2026-10-27T14:23:07Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7f99872c3784ca74fa6977e662d43adbd5b71832567638d7b4dbbb109fac376b"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:07Z",
+      "createdAt": "2026-10-27T14:23:07Z",
+      "updatedAt": "2026-10-27T14:23:07Z",
+      "lastCheckedAt": "2026-10-27T14:23:07Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "local-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_93888f2d624f380e",
+      "gameId": "g_000018",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231450/",
+          "retrievedAt": "2026-10-27T13:48:58Z",
+          "quote": "移動、探索、そしてスコアアタックに重点を置いた、スピーディな2Dプラットフォーマーゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "店を救うために塔へ乗り込むイタリア人料理人ペッピーノを操作する、スピード重視の2Dプラットフォーマー。90年代のアニメに影響を受けたドット絵で、移動、探索、スコアアタックを楽しむ。"
+      }
+    },
+    {
+      "id": "c_6c73abc5756ec88c",
+      "gameId": "g_000018",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231450/",
+          "retrievedAt": "2026-10-27T13:48:58Z",
+          "quote": "移動、探索、そしてスコアアタックに重点を置いた、スピーディな2Dプラットフォーマーゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "勢いよく駆け抜ける高速な2Dアクション",
+          "5つのフロアにつながる多くのレベルを探索する",
+          "90年代のアニメから着想したドット絵"
+        ]
+      }
+    },
+    {
+      "id": "c_2ad3a08587a93570",
+      "gameId": "g_000018",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231450/",
+          "retrievedAt": "2026-10-27T13:48:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_2ceec3e331cece3d",
+      "gameId": "g_000018",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231450/",
+          "retrievedAt": "2026-10-27T13:48:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "platformer"
+      }
+    },
+    {
+      "id": "c_467e94f3f331e631",
+      "gameId": "g_000018",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231450/",
+          "retrievedAt": "2026-10-27T13:48:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_d281c38f8335aeba",
+      "gameId": "g_000018",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231450/",
+          "retrievedAt": "2026-10-27T13:48:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "pixel-art"
+      }
+    },
+    {
+      "id": "c_db5e94485c59f955",
+      "gameId": "g_000018",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231450/",
+          "retrievedAt": "2026-10-27T13:48:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "retro"
+      }
+    },
+    {
+      "id": "c_7b09952e3babb511",
+      "gameId": "g_000018",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231450/",
+          "retrievedAt": "2026-10-27T14:23:07Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7f99872c3784ca74fa6977e662d43adbd5b71832567638d7b4dbbb109fac376b"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:07Z",
+      "createdAt": "2026-10-27T14:23:07Z",
+      "updatedAt": "2026-10-27T14:23:07Z",
+      "lastCheckedAt": "2026-10-27T14:23:07Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2231450/"
+      }
+    },
+    {
+      "id": "c_43974472e553b9c8",
+      "gameId": "g_000018",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231450/",
+          "retrievedAt": "2026-10-27T14:23:07Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7f99872c3784ca74fa6977e662d43adbd5b71832567638d7b4dbbb109fac376b"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:07Z",
+      "createdAt": "2026-10-27T14:23:07Z",
+      "updatedAt": "2026-10-27T14:23:07Z",
+      "lastCheckedAt": "2026-10-27T14:23:07Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2231450/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Pizza Tower のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Tour De Pizza"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000026",
+  "claims": [
+    {
+      "id": "c_85ae28703e1a6b4f",
+      "gameId": "g_000026",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3241660/",
+          "retrievedAt": "2026-10-27T14:24:19Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2c6ae55ad1d44aa5213ea2c9dc2400dfa7ca80e6d62c1e8142e002039ea1ccda"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:24:19Z",
+      "createdAt": "2026-10-27T14:24:19Z",
+      "updatedAt": "2026-10-27T14:24:19Z",
+      "lastCheckedAt": "2026-10-27T14:24:19Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 2,
+          "day": 26
+        },
+        "rawText": "26 Feb, 2025"
+      }
+    },
+    {
+      "id": "c_bd5187c5e1e7a87d",
+      "gameId": "g_000026",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3241660/",
+          "retrievedAt": "2026-10-27T14:24:25Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a203dbf56205d3c4637bbb40782066450114b5f865a25f4d21b86144c8709825"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:24:19Z",
+      "createdAt": "2026-10-27T14:24:19Z",
+      "updatedAt": "2026-10-27T14:24:19Z",
+      "lastCheckedAt": "2026-10-27T14:24:25Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "no",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_a861859a655c667d",
+      "gameId": "g_000026",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3241660/",
+          "retrievedAt": "2026-10-27T14:24:19Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2c6ae55ad1d44aa5213ea2c9dc2400dfa7ca80e6d62c1e8142e002039ea1ccda"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:24:19Z",
+      "createdAt": "2026-10-27T14:24:19Z",
+      "updatedAt": "2026-10-27T14:24:19Z",
+      "lastCheckedAt": "2026-10-27T14:24:19Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_8630fca4f4103bd1",
+      "gameId": "g_000026",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3241660/",
+          "retrievedAt": "2026-10-27T13:49:31Z",
+          "quote": "An online co-op horror game with up to 6 players.",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "最大6人で遊ぶオンライン協力ホラー。物理演算で動く貴重品を専用の道具でつかみ、壊さないように運び出す。ボイスチャットは近くの仲間にだけ届き、怪物にも音で気づかれる。"
+      }
+    },
+    {
+      "id": "c_5c62f3a43013761b",
+      "gameId": "g_000026",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3241660/",
+          "retrievedAt": "2026-10-27T13:49:31Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "physics"
+      }
+    },
+    {
+      "id": "c_82253e27dd5bdfca",
+      "gameId": "g_000026",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3241660/",
+          "retrievedAt": "2026-10-27T13:49:31Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "horror"
+      }
+    },
+    {
+      "id": "c_b7b6d33df316c12b",
+      "gameId": "g_000026",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3241660/",
+          "retrievedAt": "2026-10-27T13:49:31Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_d0db017904fc7eae",
+      "gameId": "g_000026",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3241660/",
+          "retrievedAt": "2026-10-27T13:49:31Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "tense"
+      }
+    },
+    {
+      "id": "c_dfd1bf0bff0b8c3d",
+      "gameId": "g_000026",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3241660/",
+          "retrievedAt": "2026-10-27T13:49:31Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:31Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_7de3f5a3c8a2dcf8",
+      "gameId": "g_000026",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3241660/",
+          "retrievedAt": "2026-10-27T14:24:19Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2c6ae55ad1d44aa5213ea2c9dc2400dfa7ca80e6d62c1e8142e002039ea1ccda"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:24:19Z",
+      "createdAt": "2026-10-27T14:24:19Z",
+      "updatedAt": "2026-10-27T14:24:19Z",
+      "lastCheckedAt": "2026-10-27T14:24:19Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3241660/"
+      }
+    },
+    {
+      "id": "c_938c8a85c1f199f4",
+      "gameId": "g_000026",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3241660/",
+          "retrievedAt": "2026-10-27T14:24:19Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2c6ae55ad1d44aa5213ea2c9dc2400dfa7ca80e6d62c1e8142e002039ea1ccda"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:24:19Z",
+      "createdAt": "2026-10-27T14:24:19Z",
+      "updatedAt": "2026-10-27T14:24:19Z",
+      "lastCheckedAt": "2026-10-27T14:24:19Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3241660/1ea445e044a2d5b09cfa8291350b63ebed6e5741/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "R.E.P.O. のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "semiwork"
+        }
+      }
+    }
+  ]
+}

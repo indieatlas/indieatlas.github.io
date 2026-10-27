@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000055",
+  "status": "published",
+  "title": {
+    "display": "Stacklands",
+    "original": "Stacklands",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "スタックランド",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1948280
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "2446110",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2867570",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000051"
+  ],
+  "publisherIds": [
+    "dev_000051"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1948280/",
+            "retrievedAt": "2026-10-27T14:28:40Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:2193d404423ceb39043790e56f6c14722c9441485711667909c6c9e286c2978d"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:28:40Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1948280/",
+        "retrievedAt": "2026-10-27T13:56:43Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1948280/",
+        "retrievedAt": "2026-10-27T14:28:40Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2193d404423ceb39043790e56f6c14722c9441485711667909c6c9e286c2978d"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1948280/",
+        "retrievedAt": "2026-10-27T14:28:40Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2193d404423ceb39043790e56f6c14722c9441485711667909c6c9e286c2978d"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1948280/",
+        "retrievedAt": "2026-10-27T14:28:40Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2193d404423ceb39043790e56f6c14722c9441485711667909c6c9e286c2978d"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1948280/",
+        "retrievedAt": "2026-10-27T14:28:40Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2193d404423ceb39043790e56f6c14722c9441485711667909c6c9e286c2978d"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:28:40Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

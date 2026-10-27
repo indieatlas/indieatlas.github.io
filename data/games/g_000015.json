@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000015",
+  "status": "published",
+  "title": {
+    "display": "Noita",
+    "original": "Noita",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 881100
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1161410",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "http://noitagame.com",
+  "developerIds": [
+    "dev_000013"
+  ],
+  "publisherIds": [
+    "dev_000013"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/881100/",
+            "retrievedAt": "2026-10-27T14:22:40Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:5bb3a86bc9145108641fbce5854381cba1bcd5eb28760ee9d7b82f338d937c3a"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:22:40Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/881100/",
+        "retrievedAt": "2026-10-27T14:22:40Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5bb3a86bc9145108641fbce5854381cba1bcd5eb28760ee9d7b82f338d937c3a"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/881100/",
+        "retrievedAt": "2026-10-27T14:22:40Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5bb3a86bc9145108641fbce5854381cba1bcd5eb28760ee9d7b82f338d937c3a"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/881100/",
+        "retrievedAt": "2026-10-27T14:22:40Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5bb3a86bc9145108641fbce5854381cba1bcd5eb28760ee9d7b82f338d937c3a"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/881100/",
+        "retrievedAt": "2026-10-27T14:22:40Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5bb3a86bc9145108641fbce5854381cba1bcd5eb28760ee9d7b82f338d937c3a"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/881100/",
+        "retrievedAt": "2026-10-27T14:22:40Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5bb3a86bc9145108641fbce5854381cba1bcd5eb28760ee9d7b82f338d937c3a"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:22:40Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

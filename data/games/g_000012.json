@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000012",
+  "status": "published",
+  "title": {
+    "display": "A Short Hike",
+    "original": "A Short Hike",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1055540
+  },
+  "associatedApps": [],
+  "officialUrl": "http://www.ashorthike.com",
+  "developerIds": [
+    "dev_000010"
+  ],
+  "publisherIds": [
+    "dev_000010"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1055540/",
+            "retrievedAt": "2026-10-27T14:22:13Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:3dd3d7413f5116a4f410f2db7381402ad7182ca680072372b197b05bc189b844"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:22:13Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1055540/",
+        "retrievedAt": "2026-10-27T14:22:13Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3dd3d7413f5116a4f410f2db7381402ad7182ca680072372b197b05bc189b844"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1055540/",
+        "retrievedAt": "2026-10-27T14:22:13Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3dd3d7413f5116a4f410f2db7381402ad7182ca680072372b197b05bc189b844"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1055540/",
+        "retrievedAt": "2026-10-27T14:22:13Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3dd3d7413f5116a4f410f2db7381402ad7182ca680072372b197b05bc189b844"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1055540/",
+        "retrievedAt": "2026-10-27T14:22:13Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3dd3d7413f5116a4f410f2db7381402ad7182ca680072372b197b05bc189b844"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1055540/",
+        "retrievedAt": "2026-10-27T14:22:13Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3dd3d7413f5116a4f410f2db7381402ad7182ca680072372b197b05bc189b844"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:22:13Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

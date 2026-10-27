@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000029",
+  "status": "published",
+  "title": {
+    "display": "Bomb Rush Cyberfunk",
+    "original": "Bomb Rush Cyberfunk",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1353230
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "2518220",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2537200",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000025"
+  ],
+  "publisherIds": [
+    "dev_000025"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1353230/",
+            "retrievedAt": "2026-10-27T14:24:46Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:662defa34d617afc23ad1bcc54232d740c2c2bfcdccc446c456adf03e5165194"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:24:46Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1353230/",
+        "retrievedAt": "2026-10-27T14:24:46Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:662defa34d617afc23ad1bcc54232d740c2c2bfcdccc446c456adf03e5165194"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1353230/",
+        "retrievedAt": "2026-10-27T14:24:46Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:662defa34d617afc23ad1bcc54232d740c2c2bfcdccc446c456adf03e5165194"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1353230/",
+        "retrievedAt": "2026-10-27T14:24:46Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:662defa34d617afc23ad1bcc54232d740c2c2bfcdccc446c456adf03e5165194"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1353230/",
+        "retrievedAt": "2026-10-27T14:24:46Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:662defa34d617afc23ad1bcc54232d740c2c2bfcdccc446c456adf03e5165194"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:24:46Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

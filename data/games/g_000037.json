@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000037",
+  "status": "published",
+  "title": {
+    "display": "Light No Fire",
+    "original": "Light No Fire",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 2719590
+  },
+  "associatedApps": [],
+  "officialUrl": "http://lightnofire.com/",
+  "developerIds": [
+    "dev_000034"
+  ],
+  "publisherIds": [
+    "dev_000034"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/2719590/",
+            "retrievedAt": "2026-10-27T14:25:58Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:c8e37ee7bfccc1eae591944920b67edfa960b35042e71d50b55eb888695a02dc"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:25:58Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2719590/",
+        "retrievedAt": "2026-10-27T14:25:58Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c8e37ee7bfccc1eae591944920b67edfa960b35042e71d50b55eb888695a02dc"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2719590/",
+        "retrievedAt": "2026-10-27T14:25:58Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c8e37ee7bfccc1eae591944920b67edfa960b35042e71d50b55eb888695a02dc"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2719590/",
+        "retrievedAt": "2026-10-27T14:25:58Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c8e37ee7bfccc1eae591944920b67edfa960b35042e71d50b55eb888695a02dc"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2719590/",
+        "retrievedAt": "2026-10-27T14:25:58Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c8e37ee7bfccc1eae591944920b67edfa960b35042e71d50b55eb888695a02dc"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2719590/",
+        "retrievedAt": "2026-10-27T14:25:58Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c8e37ee7bfccc1eae591944920b67edfa960b35042e71d50b55eb888695a02dc"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:25:58Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

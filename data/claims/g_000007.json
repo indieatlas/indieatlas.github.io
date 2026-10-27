@@ -1,0 +1,454 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000007",
+  "claims": [
+    {
+      "id": "c_683fbe3cea869b75",
+      "gameId": "g_000007",
+      "scope": {
+        "platform": "linux",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/391540/",
+          "retrievedAt": "2026-10-27T14:21:28Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:637ac48b8e1ed9cb9f7f395a12c9403f3bc09972eea6b79f075ca25be04138c6"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:28Z",
+      "createdAt": "2026-10-27T14:21:28Z",
+      "updatedAt": "2026-10-27T14:21:28Z",
+      "lastCheckedAt": "2026-10-27T14:21:28Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2015,
+          "month": 9,
+          "day": 15
+        },
+        "rawText": "15 Sep, 2015"
+      }
+    },
+    {
+      "id": "c_4bb623198a5f6a06",
+      "gameId": "g_000007",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/391540/",
+          "retrievedAt": "2026-10-27T14:21:28Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:637ac48b8e1ed9cb9f7f395a12c9403f3bc09972eea6b79f075ca25be04138c6"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:28Z",
+      "createdAt": "2026-10-27T14:21:28Z",
+      "updatedAt": "2026-10-27T14:21:28Z",
+      "lastCheckedAt": "2026-10-27T14:21:28Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2015,
+          "month": 9,
+          "day": 15
+        },
+        "rawText": "15 Sep, 2015"
+      }
+    },
+    {
+      "id": "c_1a29346562d88aa0",
+      "gameId": "g_000007",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/391540/",
+          "retrievedAt": "2026-10-27T14:21:28Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:637ac48b8e1ed9cb9f7f395a12c9403f3bc09972eea6b79f075ca25be04138c6"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:28Z",
+      "createdAt": "2026-10-27T14:21:28Z",
+      "updatedAt": "2026-10-27T14:21:28Z",
+      "lastCheckedAt": "2026-10-27T14:21:28Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2015,
+          "month": 9,
+          "day": 15
+        },
+        "rawText": "15 Sep, 2015"
+      }
+    },
+    {
+      "id": "c_1f76be6a75997434",
+      "gameId": "g_000007",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/391540/",
+          "retrievedAt": "2026-10-27T14:21:34Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ba25bc51b293fafa8f0906e75b870883224e4e22970d8e665929f59041ef3ce0"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:28Z",
+      "createdAt": "2026-10-27T14:21:28Z",
+      "updatedAt": "2026-10-27T14:21:28Z",
+      "lastCheckedAt": "2026-10-27T14:21:34Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_f40d6ef5892db96b",
+      "gameId": "g_000007",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/391540/",
+          "retrievedAt": "2026-10-27T14:21:28Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:637ac48b8e1ed9cb9f7f395a12c9403f3bc09972eea6b79f075ca25be04138c6"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:28Z",
+      "createdAt": "2026-10-27T14:21:28Z",
+      "updatedAt": "2026-10-27T14:21:28Z",
+      "lastCheckedAt": "2026-10-27T14:21:28Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_75a9d4a788200901",
+      "gameId": "g_000007",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/391540/",
+          "retrievedAt": "2026-10-27T13:48:17Z",
+          "quote": "敵を倒さなくてもOK",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "モンスターたちが暮らす地底の世界に落ちた人間の子どもが、地上を目指すRPG。戦闘では敵を倒さずに見逃すこともでき、選んだ行動によって物語が変わっていく。"
+      }
+    },
+    {
+      "id": "c_69c0286d48d29672",
+      "gameId": "g_000007",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/391540/",
+          "retrievedAt": "2026-10-27T13:48:17Z",
+          "quote": "敵を倒さなくてもOK",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "敵を倒さず、心をつかんで見逃すこともできる戦闘",
+          "敵の攻撃を見下ろし型シューティングの要領でよける",
+          "ほぼ1人で開発された作品"
+        ]
+      }
+    },
+    {
+      "id": "c_367f383b55800ee6",
+      "gameId": "g_000007",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/391540/",
+          "retrievedAt": "2026-10-27T13:48:17Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "rpg"
+      }
+    },
+    {
+      "id": "c_4daa3e585d3fc326",
+      "gameId": "g_000007",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/391540/",
+          "retrievedAt": "2026-10-27T13:48:17Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_abd1c7e9be19f50f",
+      "gameId": "g_000007",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/391540/",
+          "retrievedAt": "2026-10-27T13:48:17Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "underground"
+      }
+    },
+    {
+      "id": "c_acb036f9da900ae1",
+      "gameId": "g_000007",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/391540/",
+          "retrievedAt": "2026-10-27T13:48:17Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_b71f54ebd0b46344",
+      "gameId": "g_000007",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/391540/",
+          "retrievedAt": "2026-10-27T13:48:17Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "emotional"
+      }
+    },
+    {
+      "id": "c_99e4824a5a1e6953",
+      "gameId": "g_000007",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/391540/",
+          "retrievedAt": "2026-10-27T14:21:28Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:637ac48b8e1ed9cb9f7f395a12c9403f3bc09972eea6b79f075ca25be04138c6"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:28Z",
+      "createdAt": "2026-10-27T14:21:28Z",
+      "updatedAt": "2026-10-27T14:21:28Z",
+      "lastCheckedAt": "2026-10-27T14:21:28Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/391540/"
+      }
+    },
+    {
+      "id": "c_b9bf0e6be6c619d8",
+      "gameId": "g_000007",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/391540/",
+          "retrievedAt": "2026-10-27T14:21:28Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:637ac48b8e1ed9cb9f7f395a12c9403f3bc09972eea6b79f075ca25be04138c6"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:28Z",
+      "createdAt": "2026-10-27T14:21:28Z",
+      "updatedAt": "2026-10-27T14:21:28Z",
+      "lastCheckedAt": "2026-10-27T14:21:28Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391540/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Undertale のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "tobyfox"
+        }
+      }
+    }
+  ]
+}

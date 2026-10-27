@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000032",
+  "status": "published",
+  "title": {
+    "display": "Haven",
+    "original": "Haven",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 983970
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1208100",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "1294690",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "1468310",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "3320740",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "http://www.thegamebakers.com/haven/",
+  "developerIds": [
+    "dev_000028"
+  ],
+  "publisherIds": [
+    "dev_000028"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/983970/",
+            "retrievedAt": "2026-10-27T14:25:13Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:7ece9cf4862899db9da4efe800631e0545ce6b134b75b0a7503c7e629dc715eb"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:25:13Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/983970/",
+        "retrievedAt": "2026-10-27T14:25:13Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7ece9cf4862899db9da4efe800631e0545ce6b134b75b0a7503c7e629dc715eb"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/983970/",
+        "retrievedAt": "2026-10-27T14:25:13Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7ece9cf4862899db9da4efe800631e0545ce6b134b75b0a7503c7e629dc715eb"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/983970/",
+        "retrievedAt": "2026-10-27T14:25:13Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7ece9cf4862899db9da4efe800631e0545ce6b134b75b0a7503c7e629dc715eb"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/983970/",
+        "retrievedAt": "2026-10-27T14:25:13Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7ece9cf4862899db9da4efe800631e0545ce6b134b75b0a7503c7e629dc715eb"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/983970/",
+        "retrievedAt": "2026-10-27T14:25:13Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7ece9cf4862899db9da4efe800631e0545ce6b134b75b0a7503c7e629dc715eb"
+      }
+    }
+  ],
+  "disambiguation": "The Game Bakers の恋人2人のアクションRPG。Sun Haven、Space Haven とは別作品",
+  "createdAt": "2026-10-27T14:25:13Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

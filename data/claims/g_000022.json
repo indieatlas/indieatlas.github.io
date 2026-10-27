@@ -1,0 +1,408 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000022",
+  "claims": [
+    {
+      "id": "c_660d5997cad785e4",
+      "gameId": "g_000022",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/418530/",
+          "retrievedAt": "2026-10-27T14:23:43Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:48dfcfcf9fc5765b477a0ed62562c2605bb88e9311e05bf11bfee23ac25f54f1"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:43Z",
+      "createdAt": "2026-10-27T14:23:43Z",
+      "updatedAt": "2026-10-27T14:23:43Z",
+      "lastCheckedAt": "2026-10-27T14:23:43Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2020,
+          "month": 9,
+          "day": 29
+        },
+        "rawText": "29 Sep, 2020"
+      }
+    },
+    {
+      "id": "c_a9dbfb32bdc84da9",
+      "gameId": "g_000022",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/418530/",
+          "retrievedAt": "2026-10-27T14:23:49Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ffb67ec69bf4e1abd6cf7ae17e782fb426bdfa49c02ead202f77a7d54d784d0f"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:43Z",
+      "createdAt": "2026-10-27T14:23:43Z",
+      "updatedAt": "2026-10-27T14:23:43Z",
+      "lastCheckedAt": "2026-10-27T14:23:49Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_1eecf586bc742416",
+      "gameId": "g_000022",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/418530/",
+          "retrievedAt": "2026-10-27T14:23:43Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:48dfcfcf9fc5765b477a0ed62562c2605bb88e9311e05bf11bfee23ac25f54f1"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:43Z",
+      "createdAt": "2026-10-27T14:23:43Z",
+      "updatedAt": "2026-10-27T14:23:43Z",
+      "lastCheckedAt": "2026-10-27T14:23:43Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "local-coop",
+          "online-coop",
+          "local-pvp",
+          "online-pvp"
+        ]
+      }
+    },
+    {
+      "id": "c_2c34fc096d510214",
+      "gameId": "g_000022",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/418530/",
+          "retrievedAt": "2026-10-27T13:49:18Z",
+          "quote": "今度の冒険の舞台は「月」",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:18Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "ランダムに生成される洞窟を探検するローグライクアクション『Spelunky』の続編。舞台は月で、宝と行方不明の家族を探し、罠や敵が待つ多層のステージを進む。"
+      }
+    },
+    {
+      "id": "c_7e04d84e21d21b46",
+      "gameId": "g_000022",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/418530/",
+          "retrievedAt": "2026-10-27T13:49:18Z",
+          "quote": "今度の冒険の舞台は「月」",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:18Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "遊ぶたびに変わるランダム生成のステージ",
+          "動物を手なずけて背中に乗れる",
+          "ローカルとオンラインの協力・対戦プレイ"
+        ]
+      }
+    },
+    {
+      "id": "c_3de266a315d4d3a7",
+      "gameId": "g_000022",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/418530/",
+          "retrievedAt": "2026-10-27T13:49:18Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:18Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_9fc2e548c73435ba",
+      "gameId": "g_000022",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/418530/",
+          "retrievedAt": "2026-10-27T13:49:18Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:18Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "procedural-generation"
+      }
+    },
+    {
+      "id": "c_ab275c7e6f169f17",
+      "gameId": "g_000022",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/418530/",
+          "retrievedAt": "2026-10-27T13:49:18Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:18Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_b5ca959ec58f4f93",
+      "gameId": "g_000022",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/418530/",
+          "retrievedAt": "2026-10-27T13:49:18Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:18Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "platformer"
+      }
+    },
+    {
+      "id": "c_cfbe11bcab1d3a67",
+      "gameId": "g_000022",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/418530/",
+          "retrievedAt": "2026-10-27T13:49:18Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:18Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "underground"
+      }
+    },
+    {
+      "id": "c_fba4d9a2e390038b",
+      "gameId": "g_000022",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/418530/",
+          "retrievedAt": "2026-10-27T13:49:18Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:49:18Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "difficult"
+      }
+    },
+    {
+      "id": "c_d7c3f7835bfb0cce",
+      "gameId": "g_000022",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/418530/",
+          "retrievedAt": "2026-10-27T14:23:43Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:48dfcfcf9fc5765b477a0ed62562c2605bb88e9311e05bf11bfee23ac25f54f1"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:43Z",
+      "createdAt": "2026-10-27T14:23:43Z",
+      "updatedAt": "2026-10-27T14:23:43Z",
+      "lastCheckedAt": "2026-10-27T14:23:43Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/418530/"
+      }
+    },
+    {
+      "id": "c_61aa0e8f139be0d9",
+      "gameId": "g_000022",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/418530/",
+          "retrievedAt": "2026-10-27T14:23:43Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:48dfcfcf9fc5765b477a0ed62562c2605bb88e9311e05bf11bfee23ac25f54f1"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:23:43Z",
+      "createdAt": "2026-10-27T14:23:43Z",
+      "updatedAt": "2026-10-27T14:23:43Z",
+      "lastCheckedAt": "2026-10-27T14:23:43Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/418530/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Spelunky 2 のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Mossmouth"
+        }
+      }
+    }
+  ]
+}

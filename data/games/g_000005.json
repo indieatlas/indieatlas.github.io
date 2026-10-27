@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000005",
+  "status": "published",
+  "title": {
+    "display": "Terraria",
+    "original": "Terraria",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "テラリア",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 105600
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1323320",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "409210",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "http://www.terraria.org/",
+  "developerIds": [
+    "dev_000005"
+  ],
+  "publisherIds": [
+    "dev_000005"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/105600/",
+            "retrievedAt": "2026-10-27T14:21:10Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:5ac72651428f12f1dd43e7c9cb6c630715528a24afa085bc45f0e14648ac7599"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:21:10Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/105600/",
+        "retrievedAt": "2026-10-27T13:48:11Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/105600/",
+        "retrievedAt": "2026-10-27T14:21:10Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5ac72651428f12f1dd43e7c9cb6c630715528a24afa085bc45f0e14648ac7599"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/105600/",
+        "retrievedAt": "2026-10-27T14:21:10Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5ac72651428f12f1dd43e7c9cb6c630715528a24afa085bc45f0e14648ac7599"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/105600/",
+        "retrievedAt": "2026-10-27T14:21:10Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5ac72651428f12f1dd43e7c9cb6c630715528a24afa085bc45f0e14648ac7599"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/105600/",
+        "retrievedAt": "2026-10-27T14:21:10Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5ac72651428f12f1dd43e7c9cb6c630715528a24afa085bc45f0e14648ac7599"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/105600/",
+        "retrievedAt": "2026-10-27T14:21:10Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5ac72651428f12f1dd43e7c9cb6c630715528a24afa085bc45f0e14648ac7599"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:21:10Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

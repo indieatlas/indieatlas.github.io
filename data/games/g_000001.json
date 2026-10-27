@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000001",
+  "status": "published",
+  "title": {
+    "display": "Stardew Valley",
+    "original": "Stardew Valley",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "スタバレ",
+      "lang": "ja",
+      "kind": "abbreviation"
+    },
+    {
+      "value": "スターデュー バレー",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 413150
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "440820",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "http://www.stardewvalley.net",
+  "developerIds": [
+    "dev_000001"
+  ],
+  "publisherIds": [
+    "dev_000001"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/413150/",
+            "retrievedAt": "2026-10-27T14:20:34Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:f25b134cc395b121c14be2bfd4218468394e45e563f32fe446cf5c89b0db7ba2"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:20:34Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/413150/",
+        "retrievedAt": "2026-10-27T13:47:57Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/413150/",
+        "retrievedAt": "2026-10-27T14:20:34Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f25b134cc395b121c14be2bfd4218468394e45e563f32fe446cf5c89b0db7ba2"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/413150/",
+        "retrievedAt": "2026-10-27T14:20:34Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f25b134cc395b121c14be2bfd4218468394e45e563f32fe446cf5c89b0db7ba2"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/413150/",
+        "retrievedAt": "2026-10-27T14:20:34Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f25b134cc395b121c14be2bfd4218468394e45e563f32fe446cf5c89b0db7ba2"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/413150/",
+        "retrievedAt": "2026-10-27T14:20:34Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f25b134cc395b121c14be2bfd4218468394e45e563f32fe446cf5c89b0db7ba2"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/413150/",
+        "retrievedAt": "2026-10-27T14:20:34Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f25b134cc395b121c14be2bfd4218468394e45e563f32fe446cf5c89b0db7ba2"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:20:34Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

@@ -1,0 +1,416 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000006",
+  "claims": [
+    {
+      "id": "c_f160c9da382022d4",
+      "gameId": "g_000006",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1794680/",
+          "retrievedAt": "2026-10-27T14:21:19Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d2d26b5832befb48707710111f248541dcda4478213887e33b9e7ee1d81f0a9e"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:19Z",
+      "createdAt": "2026-10-27T14:21:19Z",
+      "updatedAt": "2026-10-27T14:21:19Z",
+      "lastCheckedAt": "2026-10-27T14:21:19Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2022,
+          "month": 10,
+          "day": 20
+        },
+        "rawText": "20 Oct, 2022"
+      }
+    },
+    {
+      "id": "c_cd9db6bdbe43d6ae",
+      "gameId": "g_000006",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1794680/",
+          "retrievedAt": "2026-10-27T14:21:19Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d2d26b5832befb48707710111f248541dcda4478213887e33b9e7ee1d81f0a9e"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:19Z",
+      "createdAt": "2026-10-27T14:21:19Z",
+      "updatedAt": "2026-10-27T14:21:19Z",
+      "lastCheckedAt": "2026-10-27T14:21:19Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2022,
+          "month": 10,
+          "day": 20
+        },
+        "rawText": "20 Oct, 2022"
+      }
+    },
+    {
+      "id": "c_a12e85d74c91a7f1",
+      "gameId": "g_000006",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1794680/",
+          "retrievedAt": "2026-10-27T14:21:25Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6fb218d65e1939fc6b72ea0b128982d0181c81d1dff8da1a52ff16f458cf3f8f"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:19Z",
+      "createdAt": "2026-10-27T14:21:19Z",
+      "updatedAt": "2026-10-27T14:21:19Z",
+      "lastCheckedAt": "2026-10-27T14:21:25Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_244b97552eb7dd1e",
+      "gameId": "g_000006",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1794680/",
+          "retrievedAt": "2026-10-27T14:21:19Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d2d26b5832befb48707710111f248541dcda4478213887e33b9e7ee1d81f0a9e"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:19Z",
+      "createdAt": "2026-10-27T14:21:19Z",
+      "updatedAt": "2026-10-27T14:21:19Z",
+      "lastCheckedAt": "2026-10-27T14:21:19Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_7f8187e1df77219c",
+      "gameId": "g_000006",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1794680/",
+          "retrievedAt": "2026-10-27T13:48:14Z",
+          "quote": "『Vampire Survivors』は、シンプルなゲームプレイとローグライトの要素を持つタイムサバイバルゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:14Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "夜明けまで生き延びることを目指す、ローグライト要素のあるゴシックホラーのアクション。攻撃は自動で行われ、移動と強化の選択で数百のモンスターの群れに立ち向かう。"
+      }
+    },
+    {
+      "id": "c_7c18597c6e3674b2",
+      "gameId": "g_000006",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1794680/",
+          "retrievedAt": "2026-10-27T13:48:14Z",
+          "quote": "『Vampire Survivors』は、シンプルなゲームプレイとローグライトの要素を持つタイムサバイバルゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:14Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "移動に集中し、武器は自動で攻撃する",
+          "各回で集めた金貨で次の挑戦を強化できる",
+          "マウス、キーボード、コントローラー、タッチパネルに対応"
+        ]
+      }
+    },
+    {
+      "id": "c_7c58526c0bec6256",
+      "gameId": "g_000006",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1794680/",
+          "retrievedAt": "2026-10-27T13:48:14Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:14Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "short-session"
+      }
+    },
+    {
+      "id": "c_8c351cb9202b52c5",
+      "gameId": "g_000006",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1794680/",
+          "retrievedAt": "2026-10-27T13:48:14Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:14Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "dark"
+      }
+    },
+    {
+      "id": "c_957328cd8e041a0a",
+      "gameId": "g_000006",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1794680/",
+          "retrievedAt": "2026-10-27T13:48:14Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:14Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "auto-battle"
+      }
+    },
+    {
+      "id": "c_ad273130c6aedfe4",
+      "gameId": "g_000006",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1794680/",
+          "retrievedAt": "2026-10-27T13:48:14Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:14Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_badc46038dab6063",
+      "gameId": "g_000006",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1794680/",
+          "retrievedAt": "2026-10-27T13:48:14Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:48:14Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_4f37d3af0cd15ac5",
+      "gameId": "g_000006",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1794680/",
+          "retrievedAt": "2026-10-27T14:21:19Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d2d26b5832befb48707710111f248541dcda4478213887e33b9e7ee1d81f0a9e"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:19Z",
+      "createdAt": "2026-10-27T14:21:19Z",
+      "updatedAt": "2026-10-27T14:21:19Z",
+      "lastCheckedAt": "2026-10-27T14:21:19Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1794680/"
+      }
+    },
+    {
+      "id": "c_a74abfd86e83be50",
+      "gameId": "g_000006",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1794680/",
+          "retrievedAt": "2026-10-27T14:21:19Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d2d26b5832befb48707710111f248541dcda4478213887e33b9e7ee1d81f0a9e"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:21:19Z",
+      "createdAt": "2026-10-27T14:21:19Z",
+      "updatedAt": "2026-10-27T14:21:19Z",
+      "lastCheckedAt": "2026-10-27T14:21:19Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1794680/2ca07b690dde645771125ed9d9206c4c5fde4dd4/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Vampire Survivors のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "poncle"
+        }
+      }
+    }
+  ]
+}

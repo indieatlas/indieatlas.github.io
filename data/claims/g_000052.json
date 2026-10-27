@@ -1,0 +1,443 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000052",
+  "claims": [
+    {
+      "id": "c_71051de93e4dc97e",
+      "gameId": "g_000052",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1455840/",
+          "retrievedAt": "2026-10-27T14:28:13Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2026bd3ed5fd9dd6d54d05dd24c1cf72bc7c8b9a56d9fa640b3849899fd00d3e"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:13Z",
+      "createdAt": "2026-10-27T14:28:13Z",
+      "updatedAt": "2026-10-27T14:28:13Z",
+      "lastCheckedAt": "2026-10-27T14:28:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2022,
+          "month": 4,
+          "day": 28
+        },
+        "rawText": "28 Apr, 2022"
+      }
+    },
+    {
+      "id": "c_3a85779e466604d9",
+      "gameId": "g_000052",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1455840/",
+          "retrievedAt": "2026-10-27T14:28:13Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2026bd3ed5fd9dd6d54d05dd24c1cf72bc7c8b9a56d9fa640b3849899fd00d3e"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:13Z",
+      "createdAt": "2026-10-27T14:28:13Z",
+      "updatedAt": "2026-10-27T14:28:13Z",
+      "lastCheckedAt": "2026-10-27T14:28:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2022,
+          "month": 4,
+          "day": 28
+        },
+        "rawText": "28 Apr, 2022"
+      }
+    },
+    {
+      "id": "c_ef8594c9df9225a3",
+      "gameId": "g_000052",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1455840/",
+          "retrievedAt": "2026-10-27T14:28:19Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:863afd0937933fee2133755c75ef1a6f6ba69a2c3420912bc48596384e8575a3"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:13Z",
+      "createdAt": "2026-10-27T14:28:13Z",
+      "updatedAt": "2026-10-27T14:28:13Z",
+      "lastCheckedAt": "2026-10-27T14:28:19Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_7f769e65bf29768b",
+      "gameId": "g_000052",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1455840/",
+          "retrievedAt": "2026-10-27T14:28:13Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2026bd3ed5fd9dd6d54d05dd24c1cf72bc7c8b9a56d9fa640b3849899fd00d3e"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:13Z",
+      "createdAt": "2026-10-27T14:28:13Z",
+      "updatedAt": "2026-10-27T14:28:13Z",
+      "lastCheckedAt": "2026-10-27T14:28:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_352a16d456aed48d",
+      "gameId": "g_000052",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1455840/",
+          "retrievedAt": "2026-10-27T13:56:33Z",
+          "quote": "「Dorfromantik」は、タイルを配置して村を美しく成長させる、パズルゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:33Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "タイルを並べて、牧歌的な村の風景を広げていくパズルゲーム。森や畑、水辺をうまくつなげて得点を伸ばし、クエストを達成して新しいタイルを手に入れながら景色を育てる。"
+      }
+    },
+    {
+      "id": "c_9220c306e29fb4e4",
+      "gameId": "g_000052",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1455840/",
+          "retrievedAt": "2026-10-27T13:56:33Z",
+          "quote": "「Dorfromantik」は、タイルを配置して村を美しく成長させる、パズルゲームです",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:33Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "タイルを回転させて森、村、水辺の風景をつなげる",
+          "クエストを達成するとタイルが増える",
+          "静かに景色を作ることも、ハイスコアを狙うこともできる"
+        ]
+      }
+    },
+    {
+      "id": "c_145f7692c0bf4948",
+      "gameId": "g_000052",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1455840/",
+          "retrievedAt": "2026-10-27T13:56:33Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:33Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_345f796d2c0952c6",
+      "gameId": "g_000052",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1455840/",
+          "retrievedAt": "2026-10-27T13:56:33Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:33Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "tile-placement"
+      }
+    },
+    {
+      "id": "c_6d8e6359b7f50db9",
+      "gameId": "g_000052",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1455840/",
+          "retrievedAt": "2026-10-27T13:56:33Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:33Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "strategy"
+      }
+    },
+    {
+      "id": "c_f0a0eafae82f6de2",
+      "gameId": "g_000052",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1455840/",
+          "retrievedAt": "2026-10-27T13:56:33Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:33Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "city-builder"
+      }
+    },
+    {
+      "id": "c_f83ffc8774e9c56b",
+      "gameId": "g_000052",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1455840/",
+          "retrievedAt": "2026-10-27T13:56:33Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:33Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_ff1a3f984b50cc1f",
+      "gameId": "g_000052",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1455840/",
+          "retrievedAt": "2026-10-27T13:56:33Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:56:33Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "nature"
+      }
+    },
+    {
+      "id": "c_6944410c7dbfc097",
+      "gameId": "g_000052",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1455840/",
+          "retrievedAt": "2026-10-27T14:28:13Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2026bd3ed5fd9dd6d54d05dd24c1cf72bc7c8b9a56d9fa640b3849899fd00d3e"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:13Z",
+      "createdAt": "2026-10-27T14:28:13Z",
+      "updatedAt": "2026-10-27T14:28:13Z",
+      "lastCheckedAt": "2026-10-27T14:28:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1455840/"
+      }
+    },
+    {
+      "id": "c_dc11fcf5b8302d8c",
+      "gameId": "g_000052",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1455840/",
+          "retrievedAt": "2026-10-27T14:28:13Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2026bd3ed5fd9dd6d54d05dd24c1cf72bc7c8b9a56d9fa640b3849899fd00d3e"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:28:13Z",
+      "createdAt": "2026-10-27T14:28:13Z",
+      "updatedAt": "2026-10-27T14:28:13Z",
+      "lastCheckedAt": "2026-10-27T14:28:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1455840/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Dorfromantik のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Toukana Interactive"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000044",
+  "status": "published",
+  "title": {
+    "display": "Pseudoregalia",
+    "original": "Pseudoregalia",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 2365810
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "2528500",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000040"
+  ],
+  "publisherIds": [
+    "dev_000040"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/2365810/",
+            "retrievedAt": "2026-10-27T14:27:01Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:471c9f94a5eaaeb51fee71fb9ff0adfd62eddae60755a508fe6eeb39bf7941ce"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:27:01Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2365810/",
+        "retrievedAt": "2026-10-27T14:27:01Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:471c9f94a5eaaeb51fee71fb9ff0adfd62eddae60755a508fe6eeb39bf7941ce"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2365810/",
+        "retrievedAt": "2026-10-27T14:27:01Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:471c9f94a5eaaeb51fee71fb9ff0adfd62eddae60755a508fe6eeb39bf7941ce"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2365810/",
+        "retrievedAt": "2026-10-27T14:27:01Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:471c9f94a5eaaeb51fee71fb9ff0adfd62eddae60755a508fe6eeb39bf7941ce"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2365810/",
+        "retrievedAt": "2026-10-27T14:27:01Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:471c9f94a5eaaeb51fee71fb9ff0adfd62eddae60755a508fe6eeb39bf7941ce"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:27:01Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

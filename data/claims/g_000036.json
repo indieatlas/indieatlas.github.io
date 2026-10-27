@@ -1,0 +1,596 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000036",
+  "claims": [
+    {
+      "id": "c_a19ae89af0d8e7c4",
+      "gameId": "g_000036",
+      "scope": {
+        "platform": "linux",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1875580/",
+          "retrievedAt": "2026-10-27T14:25:49Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:573f06bb3ed7e2b19f42d8cb3b55bbcb90050a8227af8114c0cd5dcf1b99c6df"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:49Z",
+      "createdAt": "2026-10-27T14:25:49Z",
+      "updatedAt": "2026-10-27T14:25:49Z",
+      "lastCheckedAt": "2026-10-27T14:25:49Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 5,
+          "day": 28
+        },
+        "rawText": "28 May, 2026"
+      }
+    },
+    {
+      "id": "c_cfa16f0159fc7b26",
+      "gameId": "g_000036",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1875580/",
+          "retrievedAt": "2026-10-27T14:25:49Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:573f06bb3ed7e2b19f42d8cb3b55bbcb90050a8227af8114c0cd5dcf1b99c6df"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:49Z",
+      "createdAt": "2026-10-27T14:25:49Z",
+      "updatedAt": "2026-10-27T14:25:49Z",
+      "lastCheckedAt": "2026-10-27T14:25:49Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 5,
+          "day": 28
+        },
+        "rawText": "28 May, 2026"
+      }
+    },
+    {
+      "id": "c_224feec8582fa967",
+      "gameId": "g_000036",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1875580/",
+          "retrievedAt": "2026-10-27T14:25:49Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:573f06bb3ed7e2b19f42d8cb3b55bbcb90050a8227af8114c0cd5dcf1b99c6df"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_6ccc6baee64f121b"
+      ],
+      "adoptedAt": "2026-10-27T14:25:49Z",
+      "createdAt": "2026-10-27T14:25:49Z",
+      "updatedAt": "2026-10-27T14:47:35Z",
+      "lastCheckedAt": "2026-10-27T14:25:49Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 5,
+          "day": 28
+        },
+        "rawText": "28 May, 2026"
+      }
+    },
+    {
+      "id": "c_6ccc6baee64f121b",
+      "gameId": "g_000036",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/news/app/1875580/view/1832065502813175",
+          "publishedAt": "2026-05-07",
+          "retrievedAt": "2026-10-27T14:47:08Z",
+          "quote": "Mina the Hollower has a true release date! The game launches May 29th!",
+          "locator": "steam:news.contents",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-05-07",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_d1f03755d7cb4f2a"
+      ],
+      "supersededBy": "c_224feec8582fa967",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:35Z",
+      "lastCheckedAt": "2026-10-27T14:47:35Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 5,
+          "day": 29
+        },
+        "rawText": "May 29th"
+      }
+    },
+    {
+      "id": "c_d1f03755d7cb4f2a",
+      "gameId": "g_000036",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/news/app/1875580/view/1801617199438211",
+          "publishedAt": "2025-06-06",
+          "retrievedAt": "2026-10-27T14:47:08Z",
+          "quote": "the top-down action adventure game is set to launch on October 31st",
+          "locator": "steam:news.contents",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2025-06-06",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersededBy": "c_6ccc6baee64f121b",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:35Z",
+      "lastCheckedAt": "2026-10-27T14:47:35Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 10,
+          "day": 31
+        },
+        "rawText": "October 31st"
+      }
+    },
+    {
+      "id": "c_55cadc0c994786f4",
+      "gameId": "g_000036",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1875580/",
+          "retrievedAt": "2026-10-27T14:25:55Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3edd6a61d411d7e65e9adce3a70b9e3f1e04730c2da70deaa9087cf6f81c8900"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:49Z",
+      "createdAt": "2026-10-27T14:25:49Z",
+      "updatedAt": "2026-10-27T14:25:49Z",
+      "lastCheckedAt": "2026-10-27T14:25:55Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_0ff73212e7c89b63",
+      "gameId": "g_000036",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1875580/",
+          "retrievedAt": "2026-10-27T14:25:49Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:573f06bb3ed7e2b19f42d8cb3b55bbcb90050a8227af8114c0cd5dcf1b99c6df"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:49Z",
+      "createdAt": "2026-10-27T14:25:49Z",
+      "updatedAt": "2026-10-27T14:25:49Z",
+      "lastCheckedAt": "2026-10-27T14:25:49Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_3da35a075a539b48",
+      "gameId": "g_000036",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1875580/",
+          "retrievedAt": "2026-10-27T13:53:16Z",
+          "quote": "敏腕ホロワーのミナを操作し、島の呪いを解くため決死のミッションに向かいましょう",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:16Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "『ショベルナイト』の開発元による、ゲームボーイカラー風の見た目のアクションアドベンチャー。ホロワーのミナとなり、ムチで敵を倒し、地面に潜って進みながら島の呪いを解く。"
+      }
+    },
+    {
+      "id": "c_a732df3d6e71fa31",
+      "gameId": "g_000036",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1875580/",
+          "retrievedAt": "2026-10-27T13:53:16Z",
+          "quote": "敏腕ホロワーのミナを操作し、島の呪いを解くため決死のミッションに向かいましょう",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:16Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "地面に潜って移動し、敵の攻撃をかわす",
+          "ムチ「ナイトスター」やサイドアームを使い分ける",
+          "アクセサリーでミナを好みのスタイルにできる"
+        ]
+      }
+    },
+    {
+      "id": "c_0a340648b7d1b500",
+      "gameId": "g_000036",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1875580/",
+          "retrievedAt": "2026-10-27T13:53:16Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:16Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_aa5d6c593a3d0895",
+      "gameId": "g_000036",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1875580/",
+          "retrievedAt": "2026-10-27T13:53:16Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:16Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "dark"
+      }
+    },
+    {
+      "id": "c_acbeca231691fc2d",
+      "gameId": "g_000036",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1875580/",
+          "retrievedAt": "2026-10-27T13:53:16Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:16Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "pixel-art"
+      }
+    },
+    {
+      "id": "c_c736069ba3e5609a",
+      "gameId": "g_000036",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1875580/",
+          "retrievedAt": "2026-10-27T13:53:16Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:16Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_cc9bcecd0dec254d",
+      "gameId": "g_000036",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1875580/",
+          "retrievedAt": "2026-10-27T13:53:16Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:16Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "retro"
+      }
+    },
+    {
+      "id": "c_cd02aa342fd24e1d",
+      "gameId": "g_000036",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1875580/",
+          "retrievedAt": "2026-10-27T13:53:16Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:16Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_e76564f4c2601a4f",
+      "gameId": "g_000036",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1875580/",
+          "retrievedAt": "2026-10-27T13:53:16Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:16Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "difficult"
+      }
+    },
+    {
+      "id": "c_87ab3871439267f0",
+      "gameId": "g_000036",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1875580/",
+          "retrievedAt": "2026-10-27T14:25:49Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:573f06bb3ed7e2b19f42d8cb3b55bbcb90050a8227af8114c0cd5dcf1b99c6df"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:49Z",
+      "createdAt": "2026-10-27T14:25:49Z",
+      "updatedAt": "2026-10-27T14:25:49Z",
+      "lastCheckedAt": "2026-10-27T14:25:49Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1875580/"
+      }
+    },
+    {
+      "id": "c_ed6d8f6a0ddf1f74",
+      "gameId": "g_000036",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1875580/",
+          "retrievedAt": "2026-10-27T14:25:49Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:573f06bb3ed7e2b19f42d8cb3b55bbcb90050a8227af8114c0cd5dcf1b99c6df"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:25:49Z",
+      "createdAt": "2026-10-27T14:25:49Z",
+      "updatedAt": "2026-10-27T14:25:49Z",
+      "lastCheckedAt": "2026-10-27T14:25:49Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1875580/368fcff2cd8f5ef01c5a89060a49f9a333076a87/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Mina the Hollower のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Yacht Club Games"
+        }
+      }
+    }
+  ]
+}

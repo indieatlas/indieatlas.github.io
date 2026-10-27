@@ -1,0 +1,432 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000038",
+  "claims": [
+    {
+      "id": "c_b2514dc3210d9e02",
+      "gameId": "g_000038",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1588550/",
+          "retrievedAt": "2026-10-27T14:26:07Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:029dfcb0a5acf2a408cff004ddfd4ed1e34d954a9a2d3e20baa8db416c0ea622"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:26:07Z",
+      "createdAt": "2026-10-27T14:26:07Z",
+      "updatedAt": "2026-10-27T14:26:07Z",
+      "lastCheckedAt": "2026-10-27T14:26:07Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 1,
+          "day": 29
+        },
+        "rawText": "29 Jan, 2026"
+      }
+    },
+    {
+      "id": "c_99e92a765f9045fb",
+      "gameId": "g_000038",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1588550/",
+          "retrievedAt": "2026-10-27T14:26:13Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:73df8b0abe866ee553fa196352c81d22bad751e81aae61a1f5b4a1e8511c7adb"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:26:07Z",
+      "createdAt": "2026-10-27T14:26:07Z",
+      "updatedAt": "2026-10-27T14:26:07Z",
+      "lastCheckedAt": "2026-10-27T14:26:13Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_fc7b729b58a46769",
+      "gameId": "g_000038",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1588550/",
+          "retrievedAt": "2026-10-27T14:26:07Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:029dfcb0a5acf2a408cff004ddfd4ed1e34d954a9a2d3e20baa8db416c0ea622"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:26:07Z",
+      "createdAt": "2026-10-27T14:26:07Z",
+      "updatedAt": "2026-10-27T14:26:07Z",
+      "lastCheckedAt": "2026-10-27T14:26:07Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_d38887827b0a52f9",
+      "gameId": "g_000038",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1588550/",
+          "retrievedAt": "2026-10-27T13:53:23Z",
+          "quote": "サバイバルクライミング",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:23Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "前人未踏の山マウント・カミの登頂に挑むプロクライマーのアーヴァを操作する、サバイバルクライミング。ホールドに手足を置いてルートを自由に計画し、限られた装備と物資をやりくりして頂を目指す。"
+      }
+    },
+    {
+      "id": "c_902549ec6d8bb18b",
+      "gameId": "g_000038",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1588550/",
+          "retrievedAt": "2026-10-27T13:53:23Z",
+          "quote": "サバイバルクライミング",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:23Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "手足のホールドを選んで登る直感的なクライミング操作",
+          "山肌のどこを登るかは自由に選べる",
+          "ビバークしながら装備や物資をやりくりする"
+        ]
+      }
+    },
+    {
+      "id": "c_26713a56786bd596",
+      "gameId": "g_000038",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1588550/",
+          "retrievedAt": "2026-10-27T13:53:23Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:23Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "tense"
+      }
+    },
+    {
+      "id": "c_37201181beea857f",
+      "gameId": "g_000038",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1588550/",
+          "retrievedAt": "2026-10-27T13:53:23Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:23Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "nature"
+      }
+    },
+    {
+      "id": "c_392f9242ee2c3974",
+      "gameId": "g_000038",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1588550/",
+          "retrievedAt": "2026-10-27T13:53:23Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:23Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "survival"
+      }
+    },
+    {
+      "id": "c_8d59fe3b9043d900",
+      "gameId": "g_000038",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1588550/",
+          "retrievedAt": "2026-10-27T13:53:23Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:23Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "climbing"
+      }
+    },
+    {
+      "id": "c_b7d9003431620e71",
+      "gameId": "g_000038",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1588550/",
+          "retrievedAt": "2026-10-27T13:53:23Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:23Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_d3274ad7340ce193",
+      "gameId": "g_000038",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1588550/",
+          "retrievedAt": "2026-10-27T13:53:23Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:23Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_dc45bca4a6a3e378",
+      "gameId": "g_000038",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1588550/",
+          "retrievedAt": "2026-10-27T13:53:23Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:53:23Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "difficult"
+      }
+    },
+    {
+      "id": "c_71f9fa4fee261030",
+      "gameId": "g_000038",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1588550/",
+          "retrievedAt": "2026-10-27T14:26:07Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:029dfcb0a5acf2a408cff004ddfd4ed1e34d954a9a2d3e20baa8db416c0ea622"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:26:07Z",
+      "createdAt": "2026-10-27T14:26:07Z",
+      "updatedAt": "2026-10-27T14:26:07Z",
+      "lastCheckedAt": "2026-10-27T14:26:07Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1588550/"
+      }
+    },
+    {
+      "id": "c_21f816ba78442cb8",
+      "gameId": "g_000038",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1588550/",
+          "retrievedAt": "2026-10-27T14:26:07Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:029dfcb0a5acf2a408cff004ddfd4ed1e34d954a9a2d3e20baa8db416c0ea622"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:26:07Z",
+      "createdAt": "2026-10-27T14:26:07Z",
+      "updatedAt": "2026-10-27T14:26:07Z",
+      "lastCheckedAt": "2026-10-27T14:26:07Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1588550/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Cairn のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "The Game Bakers"
+        }
+      }
+    }
+  ]
+}

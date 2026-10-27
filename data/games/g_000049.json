@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000049",
+  "status": "published",
+  "title": {
+    "display": "Thronefall",
+    "original": "Thronefall",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 2239150
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4822240",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000046",
+    "dev_000047"
+  ],
+  "publisherIds": [
+    "dev_000047"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/2239150/",
+            "retrievedAt": "2026-10-27T14:27:46Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:c2b773e28dbe6cef05b8b1e82ff447dac56edf2b625cb631cfa7c711304f9f32"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T14:27:46Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2239150/",
+        "retrievedAt": "2026-10-27T14:27:46Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c2b773e28dbe6cef05b8b1e82ff447dac56edf2b625cb631cfa7c711304f9f32"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2239150/",
+        "retrievedAt": "2026-10-27T14:27:46Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c2b773e28dbe6cef05b8b1e82ff447dac56edf2b625cb631cfa7c711304f9f32"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2239150/",
+        "retrievedAt": "2026-10-27T14:27:46Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c2b773e28dbe6cef05b8b1e82ff447dac56edf2b625cb631cfa7c711304f9f32"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2239150/",
+        "retrievedAt": "2026-10-27T14:27:46Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c2b773e28dbe6cef05b8b1e82ff447dac56edf2b625cb631cfa7c711304f9f32"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T14:27:46Z",
+  "addedAt": "2026-10-27",
+  "updatedAt": "2026-10-27T14:47:35Z",
+  "createdByRun": "local-seed"
+}

@@ -1,0 +1,343 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000045",
+  "claims": [
+    {
+      "id": "c_d771c63baacf0794",
+      "gameId": "g_000045",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2088570/",
+          "retrievedAt": "2026-10-27T14:27:10Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:461bc0cd13d138b1bf646f0de348ff38644c52e0803098ab96d19dfeb6438fa3"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:10Z",
+      "createdAt": "2026-10-27T14:27:10Z",
+      "updatedAt": "2026-10-27T14:27:10Z",
+      "lastCheckedAt": "2026-10-27T14:27:10Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2022,
+          "month": 9,
+          "day": 23
+        },
+        "rawText": "23 Sep, 2022"
+      }
+    },
+    {
+      "id": "c_c74619b16229f1bc",
+      "gameId": "g_000045",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2088570/",
+          "retrievedAt": "2026-10-27T14:27:16Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fe12d41b68c712ddfa6623ca8c4002ae520d6d9b0d7d07e1d5107d76272d7889"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:10Z",
+      "createdAt": "2026-10-27T14:27:10Z",
+      "updatedAt": "2026-10-27T14:27:10Z",
+      "lastCheckedAt": "2026-10-27T14:27:16Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "no",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_1427e737862f0fb1",
+      "gameId": "g_000045",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2088570/",
+          "retrievedAt": "2026-10-27T14:27:10Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:461bc0cd13d138b1bf646f0de348ff38644c52e0803098ab96d19dfeb6438fa3"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:10Z",
+      "createdAt": "2026-10-27T14:27:10Z",
+      "updatedAt": "2026-10-27T14:27:10Z",
+      "lastCheckedAt": "2026-10-27T14:27:10Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_8154b34e8c9f7833",
+      "gameId": "g_000045",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2088570/",
+          "retrievedAt": "2026-10-27T13:54:38Z",
+          "quote": "Build a new unique character each run and fight one monster-infested room after another!",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:38Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "RPG要素と弾幕を取り入れたファンタジーのローグライト・ダンジョンクローラー。挑戦のたびに新しいキャラクターを作り、部屋ごとに敵を倒して次の報酬を選びながら20以上のフロアを進む。"
+      }
+    },
+    {
+      "id": "c_0d2c0ac010a4a4e4",
+      "gameId": "g_000045",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2088570/",
+          "retrievedAt": "2026-10-27T13:54:38Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:38Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "difficult"
+      }
+    },
+    {
+      "id": "c_491bb2f3e4e160fc",
+      "gameId": "g_000045",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2088570/",
+          "retrievedAt": "2026-10-27T13:54:38Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:38Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_84db2f8f04553025",
+      "gameId": "g_000045",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2088570/",
+          "retrievedAt": "2026-10-27T13:54:38Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:38Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_84fc3e2964647482",
+      "gameId": "g_000045",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2088570/",
+          "retrievedAt": "2026-10-27T13:54:38Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:38Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "underground"
+      }
+    },
+    {
+      "id": "c_dc208c5b08119899",
+      "gameId": "g_000045",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2088570/",
+          "retrievedAt": "2026-10-27T13:54:38Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:47:08Z",
+      "createdAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-10-27T14:47:08Z",
+      "lastCheckedAt": "2026-10-27T13:54:38Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "action-rpg"
+      }
+    },
+    {
+      "id": "c_67b8d56e7ca0ccda",
+      "gameId": "g_000045",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2088570/",
+          "retrievedAt": "2026-10-27T14:27:10Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:461bc0cd13d138b1bf646f0de348ff38644c52e0803098ab96d19dfeb6438fa3"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:10Z",
+      "createdAt": "2026-10-27T14:27:10Z",
+      "updatedAt": "2026-10-27T14:27:10Z",
+      "lastCheckedAt": "2026-10-27T14:27:10Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2088570/"
+      }
+    },
+    {
+      "id": "c_db27be061feb46a4",
+      "gameId": "g_000045",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2088570/",
+          "retrievedAt": "2026-10-27T14:27:10Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:461bc0cd13d138b1bf646f0de348ff38644c52e0803098ab96d19dfeb6438fa3"
+        }
+      ],
+      "asOf": "2026-10-27",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T14:27:10Z",
+      "createdAt": "2026-10-27T14:27:10Z",
+      "updatedAt": "2026-10-27T14:27:10Z",
+      "lastCheckedAt": "2026-10-27T14:27:10Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2088570/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Tiny Rogues のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "RubyDev"
+        }
+      }
+    }
+  ]
+}
