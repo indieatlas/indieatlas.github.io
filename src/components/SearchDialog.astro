@@ -1,0 +1,162 @@
+---
+import { getStats, getTags } from '../lib/data.ts';
+import { paths, url } from '../lib/urls.ts';
+import TagChip from './TagChip.astro';
+
+// ヘッダーの検索ボタンで開く検索パネル。入力して送ると作品一覧の検索に移る
+const tags = [...getTags()].sort((a, b) => b.gameCount - a.gameCount).slice(0, 12);
+const stats = getStats();
+---
+
+<dialog class="search-dialog" id="search-dialog" aria-labelledby="search-dialog-title">
+  <div class="inner">
+    <div class="head">
+      <p class="eyebrow" id="search-dialog-title">
+        Search · {stats.games}作品
+      </p>
+      <button type="button" class="close" data-close aria-label="検索を閉じる">
+        ESC
+      </button>
+    </div>
+    <form action={url(paths.games())} method="get" role="search">
+      <label for="search-dialog-q" class="visually-hidden">
+        作品を検索
+      </label>
+      <input
+        id="search-dialog-q"
+        name="q"
+        type="search"
+        placeholder="タイトル、別名、開発者、タグで検索"
+        autocomplete="off"
+      />
+      <button type="submit" class="button button-primary">
+        検索
+      </button>
+    </form>
+    <p class="label">よく使われるタグ</p>
+    <ul class="chip-row">
+      {tags.map((t) => (
+        <li>
+          <TagChip id={t.id} label={t.label} />
+        </li>
+      ))}
+    </ul>
+    <p class="more">
+      <a href={url(paths.games()) + '#search'}>機種や日本語対応で絞り込む ▶</a>
+    </p>
+  </div>
+</dialog>
+
+<script>
+  const dialog = document.querySelector<HTMLDialogElement>('#search-dialog');
+  if (dialog) {
+    const input = dialog.querySelector<HTMLInputElement>('input')!;
+    const open = () => {
+      // 作品一覧のページでは、ページの中の検索欄に移る
+      const inPage = document.querySelector<HTMLInputElement>('#search-input');
+      if (inPage) {
+        inPage.focus();
+        inPage.scrollIntoView({ block: 'center' });
+        return;
+      }
+      dialog.showModal();
+      input.focus();
+    };
+    for (const a of document.querySelectorAll<HTMLAnchorElement>('[data-search-shortcut]')) {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        open();
+      });
+    }
+    document.addEventListener('keydown', (e) => {
+      if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey || dialog.open) return;
+      const t = e.target as HTMLElement | null;
+      if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
+      e.preventDefault();
+      open();
+    });
+    dialog.querySelector('[data-close]')!.addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', (e) => {
+      if (e.target === dialog) dialog.close();
+    });
+  }
+</script>
+
+<style>
+  .search-dialog {
+    width: min(92vw, 44rem);
+    margin: 12vh auto auto;
+    padding: 0;
+    border: 0;
+    background: var(--color-surface);
+    color: var(--color-text);
+    box-shadow:
+      0 0 0 1px var(--color-border-strong),
+      0 40px 80px -20px rgb(0 0 0 / 0.7);
+  }
+  .search-dialog[open] {
+    animation: drop var(--dur-base) var(--ease-out);
+  }
+  @keyframes drop {
+    from {
+      opacity: 0;
+      transform: translateY(-12px);
+    }
+  }
+  .search-dialog::backdrop {
+    background: rgb(0 0 0 / 0.6);
+    backdrop-filter: blur(4px);
+  }
+  .inner {
+    padding: var(--space-5);
+    border-top: 2px solid var(--color-signal);
+  }
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .close {
+    min-height: 32px;
+    padding: 0 var(--space-3);
+    border: 0;
+    background: transparent;
+    box-shadow: inset 0 0 0 1px var(--color-border-strong);
+    color: var(--color-text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+  }
+  .close:hover {
+    background: var(--color-accent-warm);
+    color: var(--color-on-warm);
+  }
+  form {
+    display: flex;
+    gap: var(--space-2);
+    margin: var(--space-3) 0 var(--space-5);
+  }
+  input {
+    flex: 1;
+    min-width: 0;
+    min-height: 52px;
+    padding: 0 var(--space-4);
+    border: 0;
+    border-bottom: 2px solid var(--color-signal);
+    background: var(--color-bg);
+    font-size: 1.0625rem;
+  }
+  input:focus-visible {
+    outline: 2px solid var(--color-accent-warm);
+    outline-offset: 0;
+    border-radius: 0;
+  }
+  .label {
+    margin: 0 0 var(--space-2);
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
+  }
+  .more {
+    margin: var(--space-4) 0 0;
+    font-size: var(--text-small);
+  }
+</style>

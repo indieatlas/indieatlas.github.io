@@ -1,6 +1,7 @@
 ---
 import { paths, url } from '../lib/urls.ts';
 import Logo from './Logo.astro';
+import SearchDialog from './SearchDialog.astro';
 import ThemeToggle from './ThemeToggle.astro';
 
 interface Props {
@@ -54,22 +55,7 @@ const nav = [
   </div>
 </header>
 
-<script>
-  // "/" キーで検索ページの入力欄へ移る（02 §2.3.1）
-  document.addEventListener('keydown', (e) => {
-    if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey) return;
-    const t = e.target as HTMLElement | null;
-    if (t && (t.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName))) return;
-    e.preventDefault();
-    const input = document.querySelector<HTMLInputElement>('#search-input');
-    if (input) {
-      input.focus();
-      return;
-    }
-    const link = document.querySelector<HTMLAnchorElement>('[data-search-shortcut]');
-    if (link) location.href = link.href;
-  });
-</script>
+<SearchDialog />
 
 <style>
   .site-header {

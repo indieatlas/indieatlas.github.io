@@ -61,33 +61,27 @@ body {
 main {
   flex: 1;
   position: relative;
-  width: min(100% - 2 * clamp(0px, 2.5vw, 40px), 86rem);
-  margin: var(--space-6) auto 0;
+  width: 100%;
   padding-bottom: var(--space-9);
-  /* 動く背景の上に文字を直接置かないよう、本文は不透明度80%以上の面に載せる（02 §2.5.2） */
-  background: var(--color-panel);
-  border: 1px solid var(--color-border);
-  clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%);
 }
 
-main::before {
-  /* 面の左上の、青い短い線 */
+/* 動く背景の上に文字を直接置かないよう、本文の幅の部分だけを不透明度86%の地の色で覆う（02 §2.5.2）。
+   左右の外側に向かってグラデーションで透けさせ、背景の波が見えるようにする */
+body::before {
   content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 64px;
-  height: 2px;
-  background: var(--color-signal);
-}
-
-@media (max-width: 640px) {
-  main {
-    width: 100%;
-    margin-top: 0;
-    border-inline: 0;
-    clip-path: none;
-  }
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--color-bg) 10%, transparent) 0%,
+    color-mix(in srgb, var(--color-bg) 62%, transparent) calc(50% - 50rem),
+    color-mix(in srgb, var(--color-bg) 86%, transparent) calc(50% - 40rem),
+    color-mix(in srgb, var(--color-bg) 86%, transparent) calc(50% + 40rem),
+    color-mix(in srgb, var(--color-bg) 62%, transparent) calc(50% + 50rem),
+    color-mix(in srgb, var(--color-bg) 10%, transparent) 100%
+  );
 }
 
 h1,
@@ -175,7 +169,7 @@ canvas.stage {
   inset: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
+  z-index: -2;
   pointer-events: none;
   animation: stage-in 600ms var(--ease-out) both;
 }
