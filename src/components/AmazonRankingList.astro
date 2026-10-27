@@ -8,6 +8,9 @@ interface Props {
   layout?: 'row' | 'grid';
 }
 const { items, layout = 'grid' } = Astro.props;
+// 機種は別に出すので、商品名の末尾の「- Switch」などは省く
+const shortTitle = (t: string) =>
+  t.replace(/\s*[-－–]\s*(Nintendo\s*)?(Switch\s*2|Switch|PS5|PS4|Xbox[^-－–]*)\s*$/i, '');
 ---
 
 <ol class:list={['amazon-ranking', `is-${layout}`]}>
@@ -21,7 +24,7 @@ const { items, layout = 'grid' } = Astro.props;
           )}
         </span>
         {it.platform && <span class="platform">{it.platform}</span>}
-        <span class="title">{it.title}</span>
+        <span class="title">{shortTitle(it.title)}</span>
       </ExternalLink>
     </li>
   ))}

@@ -43,6 +43,7 @@ jobs:
       - run: npm ci
       - run: npx playwright install --with-deps chromium webkit
       - run: npm run check:data
+      - run: npx tsx scripts/dev/fake-amazon-ranking.ts # 架空の売れ筋で表示を確かめる
       - run: npm run build
       - run: npm run check:dist
       - run: npm run test:e2e
