@@ -19,7 +19,7 @@ const latest = articles.slice(6, 12);
 const recent = byAdded.slice(0, 10);
 const events = getEvents()
   .filter((e) => e.phase !== 'past')
-  .slice(0, 4);
+  .slice(0, 5);
 const recentIds = new Set(recent.map((g) => g.id));
 
 // 最近情報が充実した作品: enrichedAt の新しい順に8件。最近収録した作品は除く
@@ -112,7 +112,7 @@ const idx = () => String(++n).padStart(2, '0');
           linkPath={paths.articles()}
           linkLabel="すべての記事"
         />
-        <ArticleList articles={latest} />
+        <ArticleList articles={latest} columns={2} />
       </section>
     )}
   </div>
@@ -134,11 +134,6 @@ const idx = () => String(++n).padStart(2, '0');
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: var(--space-4);
   }
-  .home :global(.article-list) {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: var(--space-6);
-  }
   .home :global(.article-item) {
     grid-template-columns: 8rem minmax(0, 1fr);
     gap: var(--space-3);
@@ -149,11 +144,6 @@ const idx = () => String(++n).padStart(2, '0');
       grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
     }
   }
-  @media (max-width: 900px) {
-    .home :global(.article-list) {
-      grid-template-columns: 1fr;
-    }
-  }
   .home :global(.game-card__body) {
     padding: var(--space-2) var(--space-3) var(--space-3);
   }
@@ -162,14 +152,14 @@ const idx = () => String(++n).padStart(2, '0');
     position: relative;
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% - 3 * var(--space-4)) / 4);
+    grid-auto-columns: calc((100% - 4 * var(--space-4)) / 5);
     gap: var(--space-4);
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
     list-style: none;
     margin: 0;
-    padding: 4px 2px;
+    padding: 4px 0;
   }
   .event-row li {
     scroll-snap-align: start;

@@ -92,7 +92,6 @@
 .game-card__title {
   display: flex;
   align-items: baseline;
-  gap: 6px;
   font-size: 1rem;
   margin: 0;
   line-height: 1.45;
@@ -109,7 +108,7 @@
 }
 .game-card:hover .game-card__title::before,
 .game-card:focus-visible .game-card__title::before {
-  width: 0.9em;
+  width: 1.6em;
 }
 .game-card__original {
   margin: 0;

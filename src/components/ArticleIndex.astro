@@ -41,7 +41,7 @@ const tabs = [
     </p>
   </EmptyState>
 ) : (
-  <ArticleList articles={list} />
+  <ArticleList articles={list} columns={2} />
 )}
 <Pagination current={page} total={total} pathFor={(p) => (kind ? paths.articleKind(kind, p) : paths.articles(p))} />
 
