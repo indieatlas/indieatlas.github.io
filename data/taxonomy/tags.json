@@ -1,0 +1,894 @@
+{
+  "schemaVersion": 1,
+  "tags": [
+    {
+      "id": "action",
+      "label": {
+        "ja": "アクション",
+        "en": "Action"
+      },
+      "aliases": [],
+      "group": "genre",
+      "definition": "操作の正確さや反射神経を中心に遊ぶ作品。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "action-rpg",
+      "label": {
+        "ja": "アクションRPG",
+        "en": "Action RPG"
+      },
+      "aliases": [
+        "ARPG"
+      ],
+      "group": "genre",
+      "definition": "戦闘をリアルタイムの操作で行い、成長要素を持つ作品。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "adventure",
+      "label": {
+        "ja": "アドベンチャー",
+        "en": "Adventure"
+      },
+      "aliases": [
+        "ADV"
+      ],
+      "group": "genre",
+      "definition": "物語や世界の探索、謎解きを中心に進める作品。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "animals",
+      "label": {
+        "ja": "動物",
+        "en": "Animals"
+      },
+      "aliases": [
+        "生き物"
+      ],
+      "group": "theme",
+      "definition": "動物や不思議な生き物とのかかわりを題材にしている。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "auto-battle",
+      "label": {
+        "ja": "オートバトル",
+        "en": "Auto Battle"
+      },
+      "aliases": [
+        "自動攻撃",
+        "ヴァンサバ系",
+        "bullet heaven"
+      ],
+      "group": "mechanic",
+      "definition": "攻撃が自動で行われ、移動や強化の選択で戦う仕組み。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "automation",
+      "label": {
+        "ja": "自動化",
+        "en": "Automation"
+      },
+      "aliases": [
+        "工場",
+        "factory"
+      ],
+      "group": "mechanic",
+      "definition": "生産ラインや装置を組んで、作業を自動で回す仕組み。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "base-building",
+      "label": {
+        "ja": "拠点づくり",
+        "en": "Base Building"
+      },
+      "aliases": [
+        "拠点建設"
+      ],
+      "group": "mechanic",
+      "definition": "自分の拠点や住まいを建て、拡張していく仕組み。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "city-builder",
+      "label": {
+        "ja": "街づくり",
+        "en": "City Builder"
+      },
+      "aliases": [
+        "都市建設"
+      ],
+      "group": "genre",
+      "definition": "建物や道を配置して、街や集落を発展させる作品。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "climbing",
+      "label": {
+        "ja": "登山",
+        "en": "Climbing"
+      },
+      "aliases": [
+        "クライミング",
+        "山登り"
+      ],
+      "group": "theme",
+      "definition": "山や塔を登ることを題材にしている。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "co-op-focused",
+      "label": {
+        "ja": "協力プレイ向け",
+        "en": "Co-op Focused"
+      },
+      "aliases": [
+        "協力"
+      ],
+      "group": "play-style",
+      "definition": "仲間と一緒に遊ぶことを主な楽しみ方として想定した作品。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "colony-sim",
+      "label": {
+        "ja": "コロニー運営",
+        "en": "Colony Sim"
+      },
+      "aliases": [
+        "コロニーシム"
+      ],
+      "group": "genre",
+      "definition": "複数の住人や入植者を管理し、拠点を維持して発展させる作品。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "cozy",
+      "label": {
+        "ja": "まったり",
+        "en": "Cozy"
+      },
+      "aliases": [
+        "癒し",
+        "のんびり"
+      ],
+      "group": "mood",
+      "definition": "穏やかで落ち着いた気持ちで遊べる雰囲気。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "crafting",
+      "label": {
+        "ja": "クラフト",
+        "en": "Crafting"
+      },
+      "aliases": [
+        "作成"
+      ],
+      "group": "mechanic",
+      "definition": "集めた素材から道具や設備を作る仕組み。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "dark",
+      "label": {
+        "ja": "ダーク",
+        "en": "Dark"
+      },
+      "aliases": [
+        "重厚"
+      ],
+      "group": "mood",
+      "definition": "暗く重い雰囲気や題材を持つ。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "death",
+      "label": {
+        "ja": "死と別れ",
+        "en": "Death"
+      },
+      "aliases": [
+        "死後の世界",
+        "afterlife"
+      ],
+      "group": "theme",
+      "definition": "死や別れ、死後の世界を主題として扱う。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "deck-building",
+      "label": {
+        "ja": "デッキ構築",
+        "en": "Deck Building"
+      },
+      "aliases": [
+        "デッキビルド",
+        "deckbuilder"
+      ],
+      "group": "mechanic",
+      "definition": "カードを集めて自分の山札を組み立てながら進む仕組み。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "difficult",
+      "label": {
+        "ja": "高難易度",
+        "en": "Difficult"
+      },
+      "aliases": [
+        "死にゲー",
+        "hardcore"
+      ],
+      "group": "play-style",
+      "definition": "失敗を繰り返しながら上達することを前提とした難しさの作品。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "emotional",
+      "label": {
+        "ja": "心に残る",
+        "en": "Emotional"
+      },
+      "aliases": [
+        "感動",
+        "エモい"
+      ],
+      "group": "mood",
+      "definition": "登場人物や物語を通して、感情に強く訴える。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "exploration",
+      "label": {
+        "ja": "探索",
+        "en": "Exploration"
+      },
+      "aliases": [],
+      "group": "play-style",
+      "definition": "世界を歩き回り、場所や秘密を見つけることが楽しみの中心にある遊び方。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "fantasy",
+      "label": {
+        "ja": "ファンタジー",
+        "en": "Fantasy"
+      },
+      "aliases": [],
+      "group": "setting",
+      "definition": "魔法や架空の種族がいる、現実とは異なる世界が舞台。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "farming-sim",
+      "label": {
+        "ja": "スローライフ・農業",
+        "en": "Farming Sim"
+      },
+      "aliases": [
+        "牧場",
+        "農業シム",
+        "life sim"
+      ],
+      "group": "genre",
+      "definition": "畑仕事や牧場、町の人との交流など、日々の暮らしを営む作品。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "fishing",
+      "label": {
+        "ja": "釣り",
+        "en": "Fishing"
+      },
+      "aliases": [],
+      "group": "mechanic",
+      "definition": "魚釣りが遊びの中心、または主要な要素になっている作品。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "food",
+      "label": {
+        "ja": "食べ物",
+        "en": "Food"
+      },
+      "aliases": [
+        "料理",
+        "飲み物"
+      ],
+      "group": "theme",
+      "definition": "料理や飲み物、食事を題材にしている。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "hand-drawn",
+      "label": {
+        "ja": "手描き",
+        "en": "Hand-Drawn"
+      },
+      "aliases": [
+        "手描きアニメ"
+      ],
+      "group": "art-style",
+      "definition": "手描きの絵やアニメーションで描かれている。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "horror",
+      "label": {
+        "ja": "ホラー",
+        "en": "Horror"
+      },
+      "aliases": [],
+      "group": "genre",
+      "definition": "恐怖や不安を体験の中心にする作品。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "humorous",
+      "label": {
+        "ja": "コミカル",
+        "en": "Humorous"
+      },
+      "aliases": [
+        "ユーモア",
+        "ギャグ"
+      ],
+      "group": "mood",
+      "definition": "笑いやとぼけた表現が多い雰囲気。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "japan",
+      "label": {
+        "ja": "日本",
+        "en": "Japan"
+      },
+      "aliases": [
+        "和風"
+      ],
+      "group": "setting",
+      "definition": "日本、または日本をもとにした場所が舞台。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "low-poly",
+      "label": {
+        "ja": "ローポリ",
+        "en": "Low Poly"
+      },
+      "aliases": [],
+      "group": "art-style",
+      "definition": "少ないポリゴン数による簡素な3Dの見た目。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "magic",
+      "label": {
+        "ja": "魔法",
+        "en": "Magic"
+      },
+      "aliases": [
+        "魔術"
+      ],
+      "group": "theme",
+      "definition": "魔法や魔術が世界観や遊びの中心にある。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "metroidvania",
+      "label": {
+        "ja": "メトロイドヴァニア",
+        "en": "Metroidvania"
+      },
+      "aliases": [
+        "探索型アクション"
+      ],
+      "group": "genre",
+      "definition": "つながった広いマップを、新しい能力を得ながら少しずつ探索するアクション。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "minimalist",
+      "label": {
+        "ja": "ミニマル",
+        "en": "Minimalist"
+      },
+      "aliases": [
+        "シンプル"
+      ],
+      "group": "art-style",
+      "definition": "要素をそぎ落とした簡素な見た目。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "mysterious",
+      "label": {
+        "ja": "謎めいた",
+        "en": "Mysterious"
+      },
+      "aliases": [
+        "不思議"
+      ],
+      "group": "mood",
+      "definition": "世界や出来事に謎が多く、読み解きたくなる雰囲気。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "nature",
+      "label": {
+        "ja": "自然",
+        "en": "Nature"
+      },
+      "aliases": [],
+      "group": "theme",
+      "definition": "森や山、動植物など自然とのかかわりを題材にしている。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "ocean",
+      "label": {
+        "ja": "海",
+        "en": "Ocean"
+      },
+      "aliases": [
+        "海洋"
+      ],
+      "group": "theme",
+      "definition": "海や島、船旅を題材にしている。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "open-world",
+      "label": {
+        "ja": "オープンワールド",
+        "en": "Open World"
+      },
+      "aliases": [],
+      "group": "play-style",
+      "definition": "広い世界をほぼ制限なく自由に移動できる作品。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "physics",
+      "label": {
+        "ja": "物理演算",
+        "en": "Physics"
+      },
+      "aliases": [],
+      "group": "mechanic",
+      "definition": "物体の動きや崩れ方を物理法則で計算し、それを遊びに生かす仕組み。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "pixel-art",
+      "label": {
+        "ja": "ドット絵",
+        "en": "Pixel Art"
+      },
+      "aliases": [
+        "ピクセルアート"
+      ],
+      "group": "art-style",
+      "definition": "粗い画素を生かしたドット絵で描かれている。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "platformer",
+      "label": {
+        "ja": "プラットフォーマー",
+        "en": "Platformer"
+      },
+      "aliases": [
+        "横スクロールアクション",
+        "2Dアクション"
+      ],
+      "group": "genre",
+      "definition": "足場から足場へ跳び移りながら進むアクション。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "post-apocalyptic",
+      "label": {
+        "ja": "終末世界",
+        "en": "Post-Apocalyptic"
+      },
+      "aliases": [
+        "ポストアポカリプス"
+      ],
+      "group": "setting",
+      "definition": "文明が崩壊した後の世界が舞台。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "procedural-generation",
+      "label": {
+        "ja": "自動生成",
+        "en": "Procedural Generation"
+      },
+      "aliases": [
+        "ランダム生成"
+      ],
+      "group": "mechanic",
+      "definition": "マップや配置が遊ぶたびにプログラムで作られる仕組み。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "puzzle",
+      "label": {
+        "ja": "パズル",
+        "en": "Puzzle"
+      },
+      "aliases": [],
+      "group": "genre",
+      "definition": "規則を読み解き、正しい手順や配置を見つけることが主な遊びの作品。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "retro",
+      "label": {
+        "ja": "レトロ",
+        "en": "Retro"
+      },
+      "aliases": [
+        "懐かしい"
+      ],
+      "group": "art-style",
+      "definition": "昔のゲーム機やアニメの表現を意図して取り入れている。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "roguelike",
+      "label": {
+        "ja": "ローグライク",
+        "en": "Roguelike"
+      },
+      "aliases": [
+        "ローグライト",
+        "roguelite"
+      ],
+      "group": "genre",
+      "definition": "挑戦ごとに構成が変わり、失敗すると最初からやり直す作品。周回で強化が残るローグライトを含む。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "romance",
+      "label": {
+        "ja": "恋愛",
+        "en": "Romance"
+      },
+      "aliases": [
+        "結婚"
+      ],
+      "group": "mechanic",
+      "definition": "登場人物との関係を深め、恋愛や結婚に進める要素。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "rpg",
+      "label": {
+        "ja": "RPG",
+        "en": "RPG"
+      },
+      "aliases": [
+        "ロールプレイング",
+        "role-playing"
+      ],
+      "group": "genre",
+      "definition": "キャラクターの成長や物語の選択を中心に進めるロールプレイングゲーム。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "sandbox",
+      "label": {
+        "ja": "サンドボックス",
+        "en": "Sandbox"
+      },
+      "aliases": [],
+      "group": "genre",
+      "definition": "決まった目標が少なく、世界を自由に作り変えて遊べる作品。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "school",
+      "label": {
+        "ja": "学校",
+        "en": "School"
+      },
+      "aliases": [
+        "学園"
+      ],
+      "group": "theme",
+      "definition": "学校での生活を題材にしている。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "sci-fi",
+      "label": {
+        "ja": "SF",
+        "en": "Sci-Fi"
+      },
+      "aliases": [
+        "サイエンスフィクション"
+      ],
+      "group": "setting",
+      "definition": "科学技術が発達した未来や、宇宙などを舞台にしている。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "shooter",
+      "label": {
+        "ja": "シューティング",
+        "en": "Shooter"
+      },
+      "aliases": [
+        "シューター",
+        "STG"
+      ],
+      "group": "genre",
+      "definition": "弾を撃って敵を倒すことが主な遊びの作品。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "short-session",
+      "label": {
+        "ja": "短時間で遊べる",
+        "en": "Short Sessions"
+      },
+      "aliases": [
+        "さくっと"
+      ],
+      "group": "play-style",
+      "definition": "1回の挑戦や1日分の区切りが短く、少しの時間でも遊べる作品。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "simulation",
+      "label": {
+        "ja": "シミュレーション",
+        "en": "Simulation"
+      },
+      "aliases": [
+        "シム",
+        "sim"
+      ],
+      "group": "genre",
+      "definition": "仕組みや生活、経営などを模した遊びを中心にする作品。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "space",
+      "label": {
+        "ja": "宇宙",
+        "en": "Space"
+      },
+      "aliases": [],
+      "group": "theme",
+      "definition": "宇宙や宇宙船、ほかの惑星を舞台や題材にしている。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "story-rich",
+      "label": {
+        "ja": "物語重視",
+        "en": "Story Rich"
+      },
+      "aliases": [
+        "ストーリー重視"
+      ],
+      "group": "play-style",
+      "definition": "物語や登場人物の描写が体験の中心になっている作品。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "strategy",
+      "label": {
+        "ja": "ストラテジー",
+        "en": "Strategy"
+      },
+      "aliases": [
+        "戦略"
+      ],
+      "group": "genre",
+      "definition": "計画と判断の積み重ねで目標を達成する作品。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "survival",
+      "label": {
+        "ja": "サバイバル",
+        "en": "Survival"
+      },
+      "aliases": [],
+      "group": "genre",
+      "definition": "食料や体力などの資源を管理しながら、厳しい環境を生き延びる作品。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "tense",
+      "label": {
+        "ja": "緊張感",
+        "en": "Tense"
+      },
+      "aliases": [
+        "スリル"
+      ],
+      "group": "mood",
+      "definition": "危険や時間の制約による緊張が続く雰囲気。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "tile-placement",
+      "label": {
+        "ja": "タイル配置",
+        "en": "Tile Placement"
+      },
+      "aliases": [],
+      "group": "mechanic",
+      "definition": "タイルや区画を盤面に並べて得点や景色を作る仕組み。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "turn-based",
+      "label": {
+        "ja": "ターン制",
+        "en": "Turn-Based"
+      },
+      "aliases": [
+        "ターンベース"
+      ],
+      "group": "mechanic",
+      "definition": "行動を順番に一手ずつ決めて進める仕組み。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "underground",
+      "label": {
+        "ja": "地下・洞窟",
+        "en": "Underground"
+      },
+      "aliases": [
+        "ダンジョン",
+        "洞窟"
+      ],
+      "group": "setting",
+      "definition": "地下世界や洞窟、ダンジョンが主な舞台。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "id": "zombies",
+      "label": {
+        "ja": "ゾンビ",
+        "en": "Zombies"
+      },
+      "aliases": [],
+      "group": "theme",
+      "definition": "ゾンビの登場や流行を題材にしている。",
+      "status": "core",
+      "createdBy": "agent",
+      "createdAt": "2026-10-27T00:00:00Z"
+    }
+  ]
+}
