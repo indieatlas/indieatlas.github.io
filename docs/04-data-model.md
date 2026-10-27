@@ -297,6 +297,20 @@ export const Developer = z.object({
 
 `unknown` の作品は candidate のまま保持し、公開しない（[05](05-sources-and-editorial-policy.md) §5.5）。
 
+### 4.4.4 拠点の国と知名度
+
+- `Developer.country` は開発元の拠点の国（ISO 3166-1 alpha-2）と、それを示す根拠（1〜5件）。根拠がなければ設定しない。開発元のいずれかが `JP` の作品には、サイトで「国産」の印を付ける（`SiteGame.madeInJapan`）。
+- `data/metrics/popularity.json`（`schema/media.ts` の `PopularityMetrics`）は、作品ごとの Steam のレビュー数（appdetails の `recommendations.total`）と IGDB の評価を持つ。`npm run metrics:popularity` が更新する。
+- 知名度の区分（`SiteGame.prominence`）は Steam のレビュー数で決める（`scripts/build/site-data.ts` の `PROMINENCE_THRESHOLDS`）。
+
+  | 区分 | 条件 | サイトでの表示 | 2026-10-28 時点の件数 |
+  | - | - | - | - |
+  | `landmark` | 15万件以上 | 「殿堂入り」の金の札と枠。詳しい紹介（Claim の `overview`）を書く | 79作品中16 |
+  | `notable` | 3万件以上 | 「人気」の札 | 23 |
+  | `standard` | それ以外 | 印なし | 40 |
+
+  境目は、誰もが名前を知る作品（Terraria、Slay the Spire など）が `landmark` に、ジャンルの中で広く知られた作品（Celeste、Baba Is You より上の層）が `notable` に入るように置いた。収録作品が増えて上位の割合が大きく変わったら見直す。
+
 ## 4.5 Claim と Evidence
 
 ### 4.5.1 Evidence（`schema/claim.ts`）
