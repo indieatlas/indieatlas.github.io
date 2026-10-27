@@ -66,6 +66,37 @@ export function prominenceOf(steamReviews: number | undefined): Prominence {
   return 'standard';
 }
 
+/**
+ * 日本の利用者向けのストアの URL。ニンテンドーeショップは国ごとに別のストアなので、
+ * 日本のストアでない URL は、日本のマイニンテンドーストアでの検索にする
+ */
+export function localStoreUrl(store: string, url: string, title: string): string {
+  if (store !== 'nintendo-eshop') return url;
+  const u = new URL(url);
+  if (u.hostname === 'store-jp.nintendo.com' || u.hostname === 'www.nintendo.co.jp' || u.pathname.startsWith('/jp/'))
+    return url;
+  return `https://store-jp.nintendo.com/search/?q=${encodeURIComponent(title)}`;
+}
+
+// 評価の件数がこれより少なければ出さない
+const MIN_RATING_COUNT = 5;
+
+function ratingsOf(g: Game, repo: RepoData): { ratings?: SiteGame['ratings'] } {
+  const r = repo.popularity.entries[g.id]?.igdb;
+  const url = g.identityEvidence.find((e) => e.evidence.originKey === 'database:igdb.com')?.evidence.url;
+  if (!r || !url) return {};
+  const total = r.total !== undefined && (r.totalCount ?? 0) >= MIN_RATING_COUNT;
+  const critic = r.critic !== undefined && (r.criticCount ?? 0) >= 3;
+  if (!total && !critic) return {};
+  return {
+    ratings: {
+      ...(total ? { total: Math.round(r.total!), totalCount: r.totalCount } : {}),
+      ...(critic ? { critic: Math.round(r.critic!), criticCount: r.criticCount } : {}),
+      url,
+    },
+  };
+}
+
 const dateOnly = (iso: string) => toJstDate(new Date(iso));
 
 /** data/ から、公開してよい項目だけを表示用の形にする（03 §3.7） */
@@ -186,7 +217,7 @@ export function buildSiteData(repo: RepoData, today = todayJst()): SiteDataSet {
       )
       .map((c) => ({
         store: c.value.store,
-        url: c.value.url,
+        url: localStoreUrl(c.value.store, c.value.url, g.title.display),
         ...(c.scope.platform ? { platform: c.scope.platform } : {}),
         sources: refs([c]),
       }));
@@ -256,6 +287,7 @@ export function buildSiteData(repo: RepoData, today = todayJst()): SiteDataSet {
       ...paletteOf(g, image?.url, repo),
       prominence: prominenceOf(repo.popularity.entries[g.id]?.steamReviews),
       ...(repo.popularity.entries[g.id] ? { steamReviews: repo.popularity.entries[g.id]!.steamReviews } : {}),
+      ...ratingsOf(g, repo),
       ...(primaryGenre(tags, tagUse) ? { primaryGenre: primaryGenre(tags, tagUse) } : {}),
       articles,
       related: [],

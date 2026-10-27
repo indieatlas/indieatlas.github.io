@@ -78,6 +78,8 @@ export interface SiteGame {
   coverage: { articleCount: number; filledFields: number };
   prominence: Prominence;
   steamReviews?: number; // Steam のレビュー数（知名度の目安）
+  // IGDB の評価（0〜100 の整数に丸める）。件数が少ないものは出さない
+  ratings?: { total?: number; totalCount?: number; critic?: number; criticCount?: number; url: string };
 }
 
 /** 見せ方の強弱。landmark は誰もが知る定番、notable は話題になった作品 */

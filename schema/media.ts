@@ -27,6 +27,15 @@ export const PopularityMetrics = z.object({
     GameId,
     z.object({
       steamReviews: z.number().int().min(0),
+      // IGDB の評価（0〜100）。total は利用者と批評の総合、critic は批評サイトの平均
+      igdb: z
+        .object({
+          total: z.number().min(0).max(100).optional(),
+          totalCount: z.number().int().min(0).optional(),
+          critic: z.number().min(0).max(100).optional(),
+          criticCount: z.number().int().min(0).optional(),
+        })
+        .optional(),
       retrievedAt: IsoDateTime,
     }),
   ),

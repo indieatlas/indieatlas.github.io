@@ -263,3 +263,26 @@ export function igdbStoreLinks(g: IgdbGame): { store: Store; url: string }[] {
   }
   return [...out].map(([store, url]) => ({ store, url }));
 }
+
+export interface IgdbRating {
+  id: number;
+  total_rating?: number;
+  total_rating_count?: number;
+  aggregated_rating?: number;
+  aggregated_rating_count?: number;
+}
+
+/** 作品の評価（利用者と批評の総合、批評の平均）を引く */
+export async function igdbRatings(client: IgdbClient, ids: number[]): Promise<IgdbRating[]> {
+  const out: IgdbRating[] = [];
+  for (let i = 0; i < ids.length; i += 100) {
+    const chunk = ids.slice(i, i + 100);
+    out.push(
+      ...(await client.query<IgdbRating[]>(
+        'games',
+        `fields total_rating,total_rating_count,aggregated_rating,aggregated_rating_count; where id = (${chunk.join(',')}); limit 500;`,
+      )),
+    );
+  }
+  return out;
+}

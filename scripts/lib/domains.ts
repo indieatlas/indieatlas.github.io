@@ -45,6 +45,7 @@ const STORE_HOSTS: [RegExp, string][] = [
   [/^www\.gog\.com$/, 'gog'],
   [/^www\.nintendo\.com$/, 'nintendo-eshop'],
   [/^store-jp\.nintendo\.com$/, 'nintendo-eshop'],
+  [/^www\.nintendo\.co\.jp$/, 'nintendo-eshop'],
   [/^store\.playstation\.com$/, 'playstation-store'],
   [/^www\.xbox\.com$/, 'microsoft-store'],
   [/^apps\.apple\.com$/, 'app-store'],
