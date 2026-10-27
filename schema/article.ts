@@ -12,6 +12,17 @@ import {
   SourceId,
 } from './common.ts';
 
+/** 記事の OGP 画像。WebP に変換して public/media/articles/ に保存する（11 の決定ログ 2026-10-28） */
+export const ArticleImage = z.object({
+  path: z.string().regex(/^media\/articles\/a_[0-9a-f]{16}\.webp$/), // public/ からの相対パス
+  width: z.number().int().positive(),
+  height: z.number().int().positive(),
+  sourceUrl: HttpUrl, // og:image の元の URL
+  retrievedAt: IsoDateTime,
+  hash: Sha256, // 保存したファイルのハッシュ
+});
+export type ArticleImage = z.infer<typeof ArticleImage>;
+
 export const Article = z.object({
   schemaVersion: z.literal(1),
   id: ArticleId,
@@ -26,6 +37,7 @@ export const Article = z.object({
   publishedAt: IsoDateTime.optional(),
   retrievedAt: IsoDateTime,
   summaryJa: z.string().max(120).optional(), // 当サイトが書く短い説明。情報源の権利条件が許す場合だけ
+  image: ArticleImage.optional(), // 記事の OGP 画像を縮小して保存したもの（public/ の下）
   derivedFrom: z
     .object({
       kind: z.literal('press-release'),

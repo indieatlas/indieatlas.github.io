@@ -4,7 +4,15 @@ import { SINGLE_VALUE_FIELDS, scopeKey, type Claim } from '../../schema/claim.ts
 import { MIN_PUBLISHED_COLLECTION_ITEMS } from '../../schema/collection.ts';
 import { claimsView, matchesRules } from '../lib/claims-view.ts';
 import { articleId, claimId, relationId } from '../lib/ids.ts';
-import { FILE_KINDS, formatJson, listJsonFiles, repoPath, repoRoot, type RepoData } from '../lib/repo-io.ts';
+import {
+  FILE_KINDS,
+  formatJson,
+  listJsonFiles,
+  PROJECT_ROOT,
+  repoPath,
+  repoRoot,
+  type RepoData,
+} from '../lib/repo-io.ts';
 import { associatedAppKeys, strongKeys } from '../lib/strong-keys.ts';
 import { SECRET_PATTERN } from '../lib/secrets.ts';
 import { normalizeTitle } from '../lib/text-normalize.ts';
@@ -144,6 +152,9 @@ export function checkConsistency(data: RepoData): CheckIssue[] {
   for (const a of data.articles) {
     for (const g of a.games) {
       if (!gameById.has(g.gameId)) add('D-03', `data/articles/${a.id}.json`, `game ${g.gameId} does not exist`);
+    }
+    if (a.image && !fs.existsSync(path.join(PROJECT_ROOT, 'public', a.image.path))) {
+      add('D-03', `data/articles/${a.id}.json`, `image public/${a.image.path} does not exist`);
     }
   }
   for (const col of data.collections) {

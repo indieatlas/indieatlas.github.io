@@ -10,6 +10,7 @@ export interface FetchResult {
   status: number;
   contentType: string;
   text: string;
+  bytes: Uint8Array;
   fetchHash: string;
   retrievedAt: Date;
 }
@@ -48,6 +49,7 @@ export function createSimpleHttp(opts: SimpleHttpOptions): HttpClient {
         status: res.status,
         contentType: res.headers.get('content-type') ?? '',
         text,
+        bytes: buf,
         fetchHash: sha256Tagged(buf),
         retrievedAt: now(),
       };

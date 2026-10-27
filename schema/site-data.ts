@@ -83,6 +83,7 @@ export interface SiteArticle {
   outlet: { name: string; domain: string };
   publishedAt?: string;
   summaryJa?: string;
+  image?: { path: string; width: number; height: number }; // public/ からの相対パス
   games: { gameId: string; role: ArticleRole }[];
 }
 

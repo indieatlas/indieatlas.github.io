@@ -23,7 +23,8 @@
     "ia": "tsx scripts/run/ia.ts",
     "seed:steam": "tsx scripts/run/seed-steam.ts",
     "report:trial": "tsx scripts/run/report-trial.ts",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "media:articles": "tsx scripts/run/fetch-article-images.ts"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
@@ -39,6 +40,7 @@
     "@types/node": "^24.19.2",
     "prettier": "^3.9.10",
     "prettier-plugin-astro": "^1.1.2",
+    "sharp": "^0.35.5",
     "tsx": "^4.23.15",
     "typescript": "^6.0.3",
     "vitest": "^5.0.5"

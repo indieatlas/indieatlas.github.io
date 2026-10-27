@@ -16,8 +16,9 @@ export function fakeHttp(routes: Record<string, string>): HttpClient & { request
       requested.push(url);
       const file = routes[url];
       if (!file) throw new Error(`fake http: no fixture for ${url}`);
-      const text = fs.readFileSync(path.resolve('tests/fixtures/web', file), 'utf8');
-      return { url, status: 200, contentType: '', text, fetchHash: sha256Tagged(text), retrievedAt: now() };
+      const bytes = new Uint8Array(fs.readFileSync(path.resolve('tests/fixtures/web', file)));
+      const text = new TextDecoder().decode(bytes);
+      return { url, status: 200, contentType: '', text, bytes, fetchHash: sha256Tagged(bytes), retrievedAt: now() };
     },
   };
 }

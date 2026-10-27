@@ -348,6 +348,9 @@ function toSiteArticle(
     outlet: { ...a.outlet },
     ...(a.publishedAt ? { publishedAt: a.publishedAt } : {}),
     ...(showSummary && a.summaryJa ? { summaryJa: a.summaryJa } : {}),
+    ...(a.image && (rights ? rights.displayImages : false)
+      ? { image: { path: a.image.path, width: a.image.width, height: a.image.height } }
+      : {}),
     games: a.games.filter((g) => publishedIds.has(g.gameId)).map((g) => ({ gameId: g.gameId, role: g.role })),
   };
 }
