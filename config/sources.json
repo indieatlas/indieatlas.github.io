@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "steam-store",
+      "name": "Steam ストア",
+      "homepage": "https://store.steampowered.com/",
+      "lang": "en",
+      "role": "resolve",
+      "kind": "store",
+      "evidenceKind": "store",
+      "enabled": false,
+      "fetch": {
+        "method": "steam",
+        "frequency": "every-run",
+        "maxItemsPerRun": 30
+      },
+      "rights": {
+        "allowFetch": true,
+        "displayTitle": true,
+        "displaySummary": false,
+        "displayImages": true,
+        "storeQuotes": true,
+        "notes": "作品詳細の JSON（appdetails）とストアのページの言語の表を使う。初期データの作成（seed:steam）で使用した。定期実行での取得方法と利用条件は P2-02 で確認する。"
+      }
+    },
+    {
+      "id": "automaton",
+      "name": "AUTOMATON",
+      "homepage": "https://automaton-media.com/",
+      "lang": "ja",
+      "role": "understand",
+      "kind": "media",
+      "evidenceKind": "media",
+      "enabled": false,
+      "fetch": {
+        "method": "rss",
+        "url": "https://automaton-media.com/feed/",
+        "frequency": "every-run",
+        "maxItemsPerRun": 30
+      },
+      "rights": {
+        "allowFetch": true,
+        "displayTitle": true,
+        "displaySummary": false,
+        "displayImages": false,
+        "storeQuotes": true,
+        "notes": "インディーゲームの記事が多い日本語の媒体（S6）。利用条件は P2-02 で確認する。"
+      }
+    },
+    {
+      "id": "gamespark",
+      "name": "Game*Spark",
+      "homepage": "https://www.gamespark.jp/",
+      "lang": "ja",
+      "role": "understand",
+      "kind": "media",
+      "evidenceKind": "media",
+      "enabled": false,
+      "fetch": {
+        "method": "rss",
+        "url": "https://www.gamespark.jp/rss/index.rdf",
+        "frequency": "every-run",
+        "maxItemsPerRun": 30
+      },
+      "rights": {
+        "allowFetch": true,
+        "displayTitle": true,
+        "displaySummary": false,
+        "displayImages": false,
+        "storeQuotes": true,
+        "notes": "日本語の媒体（S7）。利用条件は P2-02 で確認する。"
+      }
+    },
+    {
+      "id": "4gamer",
+      "name": "4Gamer.net",
+      "homepage": "https://www.4gamer.net/",
+      "lang": "ja",
+      "role": "understand",
+      "kind": "media",
+      "evidenceKind": "media",
+      "enabled": false,
+      "fetch": {
+        "method": "rss",
+        "url": "https://www.4gamer.net/rss/index.xml",
+        "frequency": "every-run",
+        "maxItemsPerRun": 30
+      },
+      "rights": {
+        "allowFetch": true,
+        "displayTitle": true,
+        "displaySummary": false,
+        "displayImages": false,
+        "storeQuotes": true,
+        "notes": "日本語の媒体（S8）。利用条件は P2-02 で確認する。"
+      }
+    },
+    {
+      "id": "denfaminicogamer",
+      "name": "電ファミニコゲーマー",
+      "homepage": "https://news.denfaminicogamer.jp/",
+      "lang": "ja",
+      "role": "understand",
+      "kind": "media",
+      "evidenceKind": "media",
+      "enabled": false,
+      "fetch": {
+        "method": "rss",
+        "url": "https://news.denfaminicogamer.jp/feed",
+        "frequency": "every-run",
+        "maxItemsPerRun": 30
+      },
+      "rights": {
+        "allowFetch": true,
+        "displayTitle": true,
+        "displaySummary": false,
+        "displayImages": false,
+        "storeQuotes": true,
+        "notes": "日本語の媒体（S9）。利用条件は P2-02 で確認する。"
+      }
+    },
+    {
+      "id": "rock-paper-shotgun",
+      "name": "Rock Paper Shotgun",
+      "homepage": "https://www.rockpapershotgun.com/",
+      "lang": "en",
+      "role": "understand",
+      "kind": "media",
+      "evidenceKind": "media",
+      "enabled": false,
+      "fetch": {
+        "method": "rss",
+        "url": "https://www.rockpapershotgun.com/feed",
+        "frequency": "every-run",
+        "maxItemsPerRun": 30
+      },
+      "rights": {
+        "allowFetch": true,
+        "displayTitle": true,
+        "displaySummary": false,
+        "displayImages": false,
+        "storeQuotes": true,
+        "notes": "英語の媒体（S10）。フィードの URL と利用条件は P2-02 で確認する。"
+      }
+    },
+    {
+      "id": "gamingonlinux",
+      "name": "GamingOnLinux",
+      "homepage": "https://www.gamingonlinux.com/",
+      "lang": "en",
+      "role": "understand",
+      "kind": "media",
+      "evidenceKind": "media",
+      "enabled": false,
+      "fetch": {
+        "method": "rss",
+        "url": "https://www.gamingonlinux.com/article_rss.php",
+        "frequency": "every-run",
+        "maxItemsPerRun": 30
+      },
+      "rights": {
+        "allowFetch": true,
+        "displayTitle": true,
+        "displaySummary": false,
+        "displayImages": false,
+        "storeQuotes": true,
+        "notes": "英語の媒体。インディーの記事が多い。フィードの URL と利用条件は P2-02 で確認する。"
+      }
+    }
+  ]
+}

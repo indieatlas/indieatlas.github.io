@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "run": {
+    "softDeadlineMinutes": 16,
+    "hardDeadlineMinutes": 20,
+    "maxTasks": 12,
+    "maxTasksPerGame": 2,
+    "executeConcurrency": 1
+  },
+  "limits": {
+    "maxNewArticles": 30,
+    "maxNewGames": 5,
+    "maxNewlyPublishedGames": 5,
+    "maxFetchesPerTask": 8,
+    "maxOperationsPerTask": 60,
+    "maxFollowUpTasksPerTask": 5
+  },
+  "exploration": {
+    "minTaskShare": 0.2,
+    "lowCoverageArticleThreshold": 1
+  },
+  "budget": {
+    "currency": "USD",
+    "monthlyLimit": 20,
+    "perRunLimit": 1,
+    "perTaskLimit": 0.15
+  },
+  "llm": {
+    "provider": "opencode-go",
+    "baseUrl": "https://opencode.ai/inference/go/openai/v1",
+    "apiKeyEnv": "OPENCODE_API_KEY",
+    "sessionHeader": "x-opencode-session",
+    "modelsUrl": "https://opencode.ai/inference/go/v1/models",
+    "roles": {
+      "triage": {
+        "model": "deepseek-v4.1-flash",
+        "thinking": "disabled",
+        "reasoningEffort": null,
+        "maxOutputTokens": 8000
+      },
+      "plan": {
+        "model": "deepseek-v4.1-flash",
+        "thinking": "enabled",
+        "reasoningEffort": null,
+        "maxOutputTokens": 16000
+      },
+      "execute": {
+        "model": "deepseek-v4.1-flash",
+        "thinking": "enabled",
+        "reasoningEffort": null,
+        "maxOutputTokens": 32000
+      },
+      "resolve": {
+        "model": "deepseek-v4.1-flash",
+        "thinking": "enabled",
+        "reasoningEffort": "high",
+        "maxOutputTokens": 32000
+      }
+    },
+    "pricingUsdPerMTok": {
+      "deepseek-v4.1-flash": {
+        "offPeak": {
+          "input": 0.15,
+          "output": 0.6,
+          "cacheRead": 0.003
+        },
+        "peak": {
+          "input": 0.3,
+          "output": 1.2,
+          "cacheRead": 0.006
+        }
+      }
+    },
+    "peakHoursUtc": {
+      "days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ],
+      "ranges": [
+        [
+          "01:00",
+          "04:00"
+        ],
+        [
+          "06:00",
+          "10:00"
+        ]
+      ]
+    },
+    "plan": {
+      "name": "go",
+      "monthlyAllowanceUsd": {
+        "deepseek-v4.1-flash": 80
+      }
+    },
+    "maxTurnsPerTask": 16,
+    "requestTimeoutSeconds": 300
+  },
+  "fetch": {
+    "userAgent": "IndieAtlasBot/0.1 (+{SITE_URL}{BASE_PATH}about/)",
+    "timeoutSeconds": 15,
+    "maxBytes": 2000000,
+    "perDomainMinIntervalMs": 3000,
+    "maxTextChars": 20000
+  },
+  "publish": {
+    "candidateTagMinGames": 3,
+    "autoPublishNewCollections": false,
+    "autoMergeGames": false
+  },
+  "evidence": {
+    "storeQuotes": true,
+    "maxQuoteChars": 200
+  },
+  "atlas": {
+    "seed": 20261027
+  },
+  "retention": {
+    "seenUrlDays": 180,
+    "doneTaskDays": 30
+  }
+}
