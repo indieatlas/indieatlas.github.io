@@ -77,6 +77,7 @@ export interface SiteGame {
   collections: string[]; // コレクション ID
   coverage: { articleCount: number; filledFields: number };
   prominence: Prominence;
+  madeInJapan: boolean; // 開発元のいずれかが日本を拠点にしている（出典で確かめたもの）
   steamReviews?: number; // Steam のレビュー数（知名度の目安）
   // IGDB の評価（0〜100 の整数に丸める）。件数が少ないものは出さない
   ratings?: { total?: number; totalCount?: number; critic?: number; criticCount?: number; url: string };

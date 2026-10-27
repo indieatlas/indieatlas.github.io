@@ -27,6 +27,13 @@ export const Developer = z.object({
       }),
     )
     .max(20),
+  // 拠点の国（ISO 3166-1 alpha-2）。出典で確かめたときだけ。日本の開発元の作品に印を付けるのに使う
+  country: z
+    .object({
+      code: z.string().regex(/^[A-Z]{2}$/),
+      evidence: z.array(Evidence).min(1).max(5),
+    })
+    .optional(),
   independence: z.object({
     status: z.enum(['independent', 'affiliated', 'major', 'unknown']),
     setBy: Actor,

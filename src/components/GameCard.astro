@@ -55,6 +55,7 @@ const showOriginal = game.title.original !== game.title.display;
     <div class="game-card__meta">
       <PlatformList platforms={game.platforms} max={4} />
       <JapaneseSupportBadge support={game.japaneseSupport} />
+      {game.madeInJapan && <span class="made-jp">国産</span>}
     </div>
     {note && <p class="game-card__note">{note}</p>}
     {dateMode !== 'none' && (

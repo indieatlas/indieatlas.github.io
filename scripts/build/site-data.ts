@@ -286,6 +286,7 @@ export function buildSiteData(repo: RepoData, today = todayJst()): SiteDataSet {
       screenshots,
       ...paletteOf(g, image?.url, repo),
       prominence: prominenceOf(repo.popularity.entries[g.id]?.steamReviews),
+      madeInJapan: g.developerIds.some((id) => devById.get(id)?.country?.code === 'JP'),
       ...(repo.popularity.entries[g.id] ? { steamReviews: repo.popularity.entries[g.id]!.steamReviews } : {}),
       ...ratingsOf(g, repo),
       ...(primaryGenre(tags, tagUse) ? { primaryGenre: primaryGenre(tags, tagUse) } : {}),

@@ -9,6 +9,8 @@ export function pagefindFilters(g: SiteGame): Record<string, string[]> {
     release: g.release && !g.release.conflicted ? [g.release.overall.status] : ['unknown'],
     ja: [jaFilterValue(g)],
     mode: g.playerModes?.modes ?? [],
+    fame: g.prominence === 'standard' ? [] : [g.prominence],
+    origin: g.madeInJapan ? ['jp'] : [],
   };
 }
 
@@ -44,6 +46,8 @@ export const FILTER_VALUE_LABELS: Record<string, Record<string, string>> = {
     unknown: '不明',
   },
   mode: PLAYER_MODE_LABELS,
+  fame: { landmark: '殿堂入り', notable: '人気' },
+  origin: { jp: '日本の開発元' },
 };
 
 /** 発売日の並び替えのキー（YYYY-MM-DD）。発売日不明は空 */

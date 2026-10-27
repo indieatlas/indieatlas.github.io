@@ -111,6 +111,15 @@
   letter-spacing: 0.1em;
   box-shadow: 0 4px 14px -6px rgb(0 0 0 / 0.7);
 }
+.made-jp {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 6px;
+  font-size: 0.6875rem;
+  font-weight: 800;
+  color: #fff;
+  background: #c8283c;
+}
 /* 殿堂入りの作品はカードの面と枠を変える */
 .game-card.is-landmark {
   background:

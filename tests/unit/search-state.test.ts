@@ -13,7 +13,7 @@ describe('検索の状態と URL', () => {
     expect(s).toEqual({
       q: 'lantern',
       sort: 'released',
-      filters: { tag: ['roguelike', 'cozy'], platform: ['switch'], release: [], ja: [], mode: [] },
+      filters: { tag: ['roguelike', 'cozy'], platform: ['switch'], release: [], ja: [], mode: [], fame: [], origin: [] },
     });
     expect(paramsFromState(s).toString()).toBe('q=lantern&tag=roguelike&tag=cozy&platform=switch&sort=released');
   });

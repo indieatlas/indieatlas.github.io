@@ -102,6 +102,22 @@ const radio = (name: string, values: string[]) => values.map((v) => ({ v, label:
         ))}
       </fieldset>
       <fieldset>
+        <legend>評判と開発元</legend>
+        <ul class="options">
+          {[
+            ...radio('fame', ['landmark', 'notable']).map((o) => ({ ...o, name: 'fame' })),
+            ...radio('origin', ['jp']).map((o) => ({ ...o, name: 'origin' })),
+          ].map((o) => (
+            <li>
+              <label class="option">
+                <input type="checkbox" name={o.name} value={o.v} />
+                <span>{o.label}</span>
+              </label>
+            </li>
+          ))}
+        </ul>
+      </fieldset>
+      <fieldset>
         <legend>機種</legend>
         <ul class="options">
           {platformOptions.map((p) => (

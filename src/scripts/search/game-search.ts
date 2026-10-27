@@ -25,7 +25,7 @@ interface PagefindApi {
   ): Promise<{ results: { id: string; data(): Promise<PagefindResultData> }[] }>;
 }
 
-export const FILTER_KEYS = ['tag', 'platform', 'release', 'ja', 'mode'] as const;
+export const FILTER_KEYS = ['tag', 'platform', 'release', 'ja', 'mode', 'fame', 'origin'] as const;
 type FilterKey = (typeof FILTER_KEYS)[number];
 export interface SearchState {
   q: string;
@@ -159,7 +159,7 @@ ${m.original && m.original !== m.title ? `<p class="game-card__original">${esc(m
 <p class="game-card__release"><span class="release-label">${esc(release)}</span></p>
 <div class="game-card__meta">
 <ul class="platform-list" aria-label="機種">${shown.map((p) => `<li title="${esc(cfg.labels.platform?.[p] ?? p)}"><span aria-hidden="true">${esc(PLATFORM_SHORT[p] ?? p)}</span><span class="visually-hidden">${esc(cfg.labels.platform?.[p] ?? p)}</span></li>`).join('')}${platforms.length > 4 ? `<li class="more">+${platforms.length - 4}</li>` : ''}</ul>
-<span class="ja-badge ja-${jaClass}">日本語: ${jaLabel}</span>
+<span class="ja-badge ja-${jaClass}">日本語: ${jaLabel}</span>${m.origin === 'jp' ? '<span class="made-jp">国産</span>' : ''}
 </div>
 ${added ? `<p class="game-card__added">${m.updated ? '更新' : '収録'} <time datetime="${esc(m.updated ?? m.added!)}">${esc(added)}</time></p>` : ''}
 </div></a></li>`;
