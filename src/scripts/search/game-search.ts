@@ -67,7 +67,7 @@ export function normalizeQuery(q: string): string {
 export function pagefindFilters(f: SearchState['filters']): Record<string, unknown> {
   const out: Record<string, unknown> = {};
   if (f.tag.length) out.tag = { all: f.tag };
-  for (const k of ['platform', 'release', 'ja', 'mode'] as const) if (f[k].length) out[k] = { any: f[k] };
+  for (const k of ['platform', 'release', 'ja', 'mode', 'fame', 'origin'] as const) if (f[k].length) out[k] = { any: f[k] };
   return out;
 }
 

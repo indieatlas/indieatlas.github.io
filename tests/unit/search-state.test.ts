@@ -31,6 +31,12 @@ describe('検索の状態と URL', () => {
     });
   });
 
+  it('評判と開発元の国でも絞り込める', () => {
+    const s = stateFromParams(new URLSearchParams('fame=landmark&origin=jp&sort=popular'));
+    expect(s.sort).toBe('popular');
+    expect(pagefindFilters(s.filters)).toEqual({ fame: { any: ['landmark'] }, origin: { any: ['jp'] } });
+  });
+
   it('全角英数字を揃える', () => {
     expect(normalizeQuery('  Ｌａｎｔｅｒｎ　Ｔｉｄｅ ')).toBe('Lantern Tide');
   });
