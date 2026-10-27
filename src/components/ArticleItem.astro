@@ -16,6 +16,9 @@ const role = forGame ? article.games.find((g) => g.gameId === forGame)?.role : u
 const others = article.games.filter((g) => g.gameId !== forGame);
 const shown = others.slice(0, maxGames);
 const rest = others.length - shown.length;
+// 記事の画像がなければ、主な作品のストアの画像で代える
+const primary = article.games.find((g) => g.role === 'primary') ?? article.games[0];
+const fallback = !article.image && primary ? getGame(primary.gameId)?.image : undefined;
 ---
 
 <article class="article-item">
@@ -26,6 +29,16 @@ const rest = others.length - shown.length;
         alt=""
         width={article.image.width}
         height={article.image.height}
+        loading="lazy"
+        decoding="async"
+        data-fallback
+      />
+    ) : fallback ? (
+      <img
+        src={fallback.url}
+        alt=""
+        width={fallback.width ?? 460}
+        height={fallback.height ?? 215}
         loading="lazy"
         decoding="async"
         data-fallback

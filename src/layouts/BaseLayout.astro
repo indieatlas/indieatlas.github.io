@@ -109,6 +109,8 @@ const placeholder = url('placeholder.svg');
     <SiteFooter />
     <script>
       import { startStageWhenIdle } from '../scripts/gl/stage.ts';
+      import { applyRelativeTimes } from '../scripts/relative-time.ts';
+      applyRelativeTimes();
       startStageWhenIdle();
     </script>
   </body>

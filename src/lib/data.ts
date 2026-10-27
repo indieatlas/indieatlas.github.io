@@ -3,6 +3,7 @@ import path from 'node:path';
 import type {
   SiteArticle,
   SiteCollection,
+  SiteDeveloper,
   SiteEvent,
   SiteGame,
   SiteGenre,
@@ -28,6 +29,7 @@ function load<T>(name: string): T {
 }
 
 export const getGames = () => load<SiteGame[]>('games');
+export const getDevelopers = () => load<SiteDeveloper[]>('developers');
 export const getArticles = () => load<SiteArticle[]>('articles');
 export const getCollections = () => load<SiteCollection[]>('collections');
 export const getTags = () => load<SiteTag[]>('tags');
@@ -82,4 +84,44 @@ export function genreColorVar(genreId: string | undefined): string {
 export function genreColorName(genreId: string | undefined): string {
   const i = genreColorIndex(genreId);
   return i < 0 ? '--genre-neutral' : `--genre-c${i}`;
+}
+
+const KIND_WEIGHT: Partial<Record<SiteArticle['kind'], number>> = {
+  review: 2,
+  interview: 2,
+  feature: 2,
+  announcement: 1,
+  preview: 1,
+};
+const PROMINENCE_WEIGHT = { landmark: 3, notable: 1.5, standard: 0 } as const;
+
+/**
+ * ホームで大きく見せる記事を選ぶ。画像のある新しい記事のうち、記事の種類（レビューや特集）と
+ * 主な作品の知名度で点を付ける。日付は最も新しい記事からの経過日数で数え、ビルドの日に左右されない
+ */
+export function homeNews(featuredCount = 3, restCount = 8): { featured: SiteArticle[]; rest: SiteArticle[] } {
+  const articles = getArticles().filter((a) => a.publishedAt);
+  const newest = Date.parse(articles[0]?.publishedAt ?? '1970-01-01');
+  const score = (a: SiteArticle) => {
+    const days = (newest - Date.parse(a.publishedAt!)) / 86_400_000;
+    const primary = a.games.find((g) => g.role === 'primary') ?? a.games[0];
+    const game = primary ? getGame(primary.gameId) : undefined;
+    return (
+      Math.max(0, 6 - days / 15) + (KIND_WEIGHT[a.kind] ?? 0) + (game ? PROMINENCE_WEIGHT[game.prominence] : 0)
+    );
+  };
+  // 記事の画像か、主な作品の画像のある記事だけを大きく見せる
+  const hasVisual = (a: SiteArticle) =>
+    !!a.image || a.games.some((g) => g.role === 'primary' && getGame(g.gameId)?.image);
+  const pool = articles.slice(0, 24).filter(hasVisual);
+  // 点の高い順。先頭を一番大きい枠に置く
+  const featured = [...pool]
+    .sort((a, b) => score(b) - score(a) || (a.publishedAt! < b.publishedAt! ? 1 : -1))
+    .slice(0, featuredCount);
+  const ids = new Set(featured.map((a) => a.id));
+  return { featured, rest: articles.filter((a) => !ids.has(a.id)).slice(0, restCount) };
+}
+
+export function getDeveloper(id: string): SiteDeveloper | undefined {
+  return getDevelopers().find((d) => d.id === id);
 }

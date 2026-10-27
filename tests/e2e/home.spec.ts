@@ -1,41 +1,49 @@
 import { expect, test } from '@playwright/test';
 
-// ホームの最新情報のカルーセルと、背景の WebGL
-test('カルーセルを前後のボタンで送れる', async ({ page }) => {
-  await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('./');
-  const carousel = page.locator('[data-carousel]');
-  await expect(carousel.locator('[data-controls]')).toBeVisible();
-  const track = carousel.locator('[data-track]');
-  const before = await track.evaluate((t) => t.scrollLeft);
-  await carousel.getByRole('button', { name: '次の情報' }).click();
-  await expect.poll(() => track.evaluate((t) => t.scrollLeft)).toBeGreaterThan(before);
-  // 自動再生は止められる（WCAG 2.2.2）
-  const pause = carousel.locator('[data-pause]');
-  if (await pause.isVisible()) {
-    await pause.click();
-    await expect(pause).toHaveAttribute('aria-pressed', 'true');
-  }
-});
-
-test('広い画面では複数の記事が同時に見える', async ({ page }) => {
+// ホームの先頭の記事の枠と、背景の WebGL
+test('大きく見せる記事が画面の先頭にある', async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto('./');
-  const slides = page.locator('[data-slide]');
-  await expect(slides.nth(0)).toBeInViewport();
-  await expect(slides.nth(1)).toBeInViewport();
+  const lead = page.locator('.news-tile--lg');
+  await expect(lead).toHaveCount(1);
+  await expect(lead).toBeInViewport();
+  // 見出しは記事へのリンク（新しいタブ）
+  await expect(lead.locator('.news-tile__link')).toHaveAttribute('target', '_blank');
 });
 
-test('カルーセルから作品詳細へ移れる', async ({ page }) => {
+test('記事の枠から作品詳細へ移れる', async ({ page }) => {
   await page.goto('./');
-  await page.locator('[data-slide]').first().locator('.games a').click();
+  await page.locator('.news-tile__game').first().click();
   await expect(page).toHaveURL(/games\/g_\d{6}\/$/);
 });
 
-test('reduced motion の環境では自動再生しない', async ({ page }) => {
+test('横の記事の枠は切り替えられ、自動の切り替えは止められる', async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto('./');
+  const rotator = page.locator('[data-rotator]');
+  const dots = rotator.locator('[data-dot]');
+  if ((await dots.count()) < 2) test.skip(true, '切り替える記事が足りない');
+  await dots.nth(1).click();
+  await expect(rotator.locator('[data-page]').nth(1)).not.toHaveAttribute('aria-hidden', 'true');
+  await expect(rotator.locator('[data-page]').nth(0)).toHaveAttribute('aria-hidden', 'true');
+  const pause = rotator.locator('[data-pause]');
+  await pause.click();
+  await expect(pause).toHaveAttribute('aria-pressed', 'true');
+});
+
+test('reduced motion の環境では自動で切り替えない', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto('./');
-  await expect(page.locator('[data-pause]')).toHaveAttribute('aria-pressed', 'true');
+  const pause = page.locator('[data-rotator] [data-pause]');
+  if ((await pause.count()) === 0) test.skip(true, '切り替える記事が足りない');
+  await expect(pause).toHaveAttribute('aria-pressed', 'true');
+});
+
+test('スマートフォンでも横にはみ出さない', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('./');
+  await expect(page.locator('.news-tile--lg')).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(0);
 });
 
 test('WebGL の背景は1つだけで、操作の邪魔をしない', async ({ page }) => {

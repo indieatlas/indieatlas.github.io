@@ -3,56 +3,51 @@ import ArticleList from '../components/ArticleList.astro';
 import CollectionCard from '../components/CollectionCard.astro';
 import EventCard from '../components/EventCard.astro';
 import GameGrid from '../components/GameGrid.astro';
-import HeroCarousel from '../components/HeroCarousel.astro';
+import NewsMosaic from '../components/NewsMosaic.astro';
 import SectionHeading from '../components/SectionHeading.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getArticles, getCollections, getEvents, gamesByAdded } from '../lib/data.ts';
-import { paths, url } from '../lib/urls.ts';
+import { gamesByAdded, getCollections, getEvents, homeNews } from '../lib/data.ts';
+import { amazonBestsellersUrl } from '../lib/amazon.ts';
+import ExternalLink from '../components/ExternalLink.astro';
+import { paths } from '../lib/urls.ts';
+
+const bestsellers = amazonBestsellersUrl();
 
 const byAdded = gamesByAdded();
 
-// 最新情報: 掲載日の新しい記事を6件（articles.json は新しい順）
-const articles = getArticles();
-const news = articles.slice(0, 6);
-const latest = articles.slice(6, 12);
+// 先頭は大きく見せる記事1件と、横で2件ずつ切り替わる6件。残りは下の一覧に回す
+const news = homeNews(7, 0);
+const shownNews = new Set(news.featured.map((a) => a.id));
+const moreNews = homeNews(0, 40).rest.filter((a) => !shownNews.has(a.id)).slice(0, 6);
 
-const recent = byAdded.slice(0, 10);
 const events = getEvents()
   .filter((e) => e.phase !== 'past')
   .slice(0, 5);
+
+const recent = byAdded.slice(0, 10);
 const recentIds = new Set(recent.map((g) => g.id));
 
-// 最近情報が充実した作品: enrichedAt の新しい順に8件。最近収録した作品は除く
+// 最近情報が充実した作品: enrichedAt の新しい順に5件。ほかの区画に出した作品は除く
 const enriched = byAdded
   .filter((g) => g.enrichedAt && !recentIds.has(g.id))
   .sort((a, b) => (a.enrichedAt! < b.enrichedAt! ? 1 : a.enrichedAt! > b.enrichedAt! ? -1 : 0))
   .slice(0, 5);
 
-// コレクション: featured を最大6件。足りなければ更新の新しい順で補う
+// コレクション: featured を優先し、足りなければ更新の新しい順で補う
 const all = getCollections();
 const featured = all.filter((c) => c.featured);
 const rest = all.filter((c) => !c.featured).sort((a, b) => (a.updatedAt < b.updatedAt ? 1 : -1));
 const collections = [...featured, ...rest].slice(0, 4);
-
-let n = 0;
-const idx = () => String(++n).padStart(2, '0');
 ---
 
 <BaseLayout path={paths.home()}>
   <h1 class="visually-hidden">Indie Atlas — まだ知らないインディーゲームに出会う</h1>
   <div class="container home">
-    {news.length > 0 && <HeroCarousel articles={news} />}
+    {news.featured.length > 0 && <NewsMosaic featured={news.featured} />}
 
     {events.length > 0 && (
       <section class="section" aria-labelledby="events-h">
-        <SectionHeading
-          id="events-h"
-          index={idx()}
-          en="Upcoming events"
-          title="これからのイベント"
-          linkPath={paths.events()}
-          linkLabel="カレンダー"
-        />
+        <SectionHeading id="events-h" title="イベント" linkPath={paths.events()} linkLabel="カレンダー" />
         <ul class="event-row">
           {events.map((e) => (
             <li>
@@ -63,35 +58,22 @@ const idx = () => String(++n).padStart(2, '0');
       </section>
     )}
 
+
     <section class="section" aria-labelledby="recent-h">
-      <SectionHeading
-        id="recent-h"
-        index={idx()}
-        en="New arrivals"
-        title="最近収録した作品"
-        linkPath={paths.games()}
-        linkLabel="すべての作品"
-      />
-      <GameGrid games={recent} eagerCount={0} />
+      <SectionHeading id="recent-h" title="最近収録した作品" linkPath={paths.games()} linkLabel="すべての作品" />
+      <GameGrid games={recent} eagerCount={0} dateMode="none" />
     </section>
 
     {enriched.length > 0 && (
       <section class="section" aria-labelledby="enriched-h">
-        <SectionHeading id="enriched-h" index={idx()} en="Updated" title="最近情報が充実した作品" />
-        <GameGrid games={enriched} notes={Object.fromEntries(enriched.map((g) => [g.id, g.enrichedNote ?? '']))} />
+        <SectionHeading id="enriched-h" title="情報が増えた作品" />
+        <GameGrid games={enriched} dateMode="none" notes={Object.fromEntries(enriched.map((g) => [g.id, g.enrichedNote ?? '']))} />
       </section>
     )}
 
     {collections.length > 0 && (
       <section class="section" aria-labelledby="collections-h">
-        <SectionHeading
-          id="collections-h"
-          index={idx()}
-          en="Collections"
-          title="コレクション"
-          linkPath={paths.collections()}
-          linkLabel="すべてのコレクション"
-        />
+        <SectionHeading id="collections-h" title="コレクション" linkPath={paths.collections()} />
         <ul class="collection-grid">
           {collections.map((c) => (
             <li>
@@ -102,17 +84,18 @@ const idx = () => String(++n).padStart(2, '0');
       </section>
     )}
 
-    {latest.length > 0 && (
+    {bestsellers && (
+      <p class="ranking-link">
+        <ExternalLink href={bestsellers} sponsored>
+          Amazon のゲーム売れ筋ランキング
+        </ExternalLink>
+      </p>
+    )}
+
+    {moreNews.length > 0 && (
       <section class="section" aria-labelledby="news-h">
-        <SectionHeading
-          id="news-h"
-          index={idx()}
-          en="Latest news"
-          title="新着の記事"
-          linkPath={paths.articles()}
-          linkLabel="すべての記事"
-        />
-        <ArticleList articles={latest} columns={2} />
+        <SectionHeading id="news-h" title="記事" linkPath={paths.articles()} />
+        <ArticleList articles={moreNews} columns={2} />
       </section>
     )}
   </div>
@@ -121,7 +104,7 @@ const idx = () => String(++n).padStart(2, '0');
 <style>
   /* ホームは情報を詰めて並べる。区画どうしの間をつめ、見出しを小さくする */
   .home :global(.section) {
-    padding-block: var(--space-5) var(--space-3);
+    padding-block: var(--space-6) var(--space-2);
   }
   .home :global(.section-heading) {
     margin-bottom: var(--space-4);
@@ -147,7 +130,22 @@ const idx = () => String(++n).padStart(2, '0');
   .home :global(.game-card__body) {
     padding: var(--space-2) var(--space-3) var(--space-3);
   }
-  /* これからのイベントは1行だけ。入りきらない分は横にスクロールする */
+  /* スマートフォンでは2列にして、機種などの細かい情報は省く */
+  @media (max-width: 640px) {
+    .home :global(.game-grid) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-3);
+    }
+    .home :global(.game-card__meta),
+    .home :global(.game-card__original),
+    .home :global(.game-card__note) {
+      display: none;
+    }
+    .home :global(.game-card__title) {
+      font-size: 0.875rem;
+    }
+  }
+  /* イベントは1行だけ。入りきらない分は横にスクロールする */
   .event-row {
     position: relative;
     display: grid;
@@ -173,6 +171,25 @@ const idx = () => String(++n).padStart(2, '0');
     .event-row {
       grid-auto-columns: 72%;
     }
+  }
+  .ranking-link {
+    margin: var(--space-6) 0 0;
+  }
+  .ranking-link :global(a) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    min-height: 56px;
+    background: var(--color-surface);
+    box-shadow: inset 0 0 0 1px var(--color-border-strong);
+    color: var(--color-text);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .ranking-link :global(a:hover) {
+    background: var(--color-accent-warm);
+    color: var(--color-on-warm);
   }
   .collection-grid {
     display: grid;

@@ -1,0 +1,235 @@
+---
+import type { SiteArticle } from '../../schema/site-data.ts';
+import { getGame } from '../lib/data.ts';
+import { ARTICLE_KIND_LABELS, formatCardDate } from '../lib/format.ts';
+import { paths, url } from '../lib/urls.ts';
+import ExternalLink from './ExternalLink.astro';
+
+// 画像の上に見出しを重ねた記事の枠。size=lg はホームの一番大きい枠
+interface Props {
+  article: SiteArticle;
+  size?: 'lg' | 'md' | 'sm';
+  eager?: boolean;
+}
+const { article: a, size = 'md', eager = false } = Astro.props;
+const primary = a.games.find((g) => g.role === 'primary') ?? a.games[0];
+const game = primary ? getGame(primary.gameId) : undefined;
+const image = a.image
+  ? { src: url(a.image.path), width: a.image.width, height: a.image.height }
+  : game?.image
+    ? { src: game.image.url, width: game.image.width ?? 460, height: game.image.height ?? 215 }
+    : undefined;
+---
+
+<article class:list={['news-tile', `news-tile--${size}`]}>
+  {image ? (
+    <img
+      class="news-tile__img"
+      src={image.src}
+      alt=""
+      width={image.width}
+      height={image.height}
+      loading={eager ? 'eager' : 'lazy'}
+      fetchpriority={eager && size === 'lg' ? 'high' : undefined}
+      decoding="async"
+      data-fallback
+    />
+  ) : (
+    <div class="news-tile__img news-tile__img--empty" />
+  )}
+  <div class="news-tile__body">
+    <span class="news-tile__kind">{ARTICLE_KIND_LABELS[a.kind]}</span>
+    <h3 class="news-tile__title" lang={a.lang}>
+      <ExternalLink href={a.url} class="news-tile__link">
+        {a.title ?? `${a.outlet.name} の記事`}
+      </ExternalLink>
+    </h3>
+    <p class="news-tile__meta">
+      <svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6">
+        <circle cx="8" cy="8" r="6.2"></circle>
+        <path d="M8 4.6V8l2.4 1.6"></path>
+      </svg>
+      {a.publishedAt && (
+        <time datetime={a.publishedAt} data-relative>
+          {formatCardDate(a.publishedAt)}
+        </time>
+      )}
+      <span class="news-tile__outlet">{a.outlet.name}</span>
+    </p>
+  </div>
+  {game && (
+    <a class="news-tile__game" href={url(paths.game(game.id))}>
+      {game.title.display}
+    </a>
+  )}
+</article>
+
+<style>
+  .news-tile {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100%;
+    overflow: hidden;
+    background: var(--color-surface-raised);
+    color: #fff;
+  }
+  .news-tile__img {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--dur-base) var(--ease-out);
+  }
+  .news-tile__img--empty {
+    background: linear-gradient(135deg, var(--color-surface-raised), var(--color-bg-deep));
+  }
+  .news-tile::before {
+    /* 見出しを読みやすくするための下からの暗がり */
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+      to top,
+      rgb(4 5 8 / 0.94) 0%,
+      rgb(4 5 8 / 0.78) 38%,
+      rgb(4 5 8 / 0.15) 72%,
+      rgb(4 5 8 / 0) 100%
+    );
+  }
+  .news-tile:hover .news-tile__img,
+  .news-tile:focus-within .news-tile__img {
+    transform: scale(1.03);
+  }
+  .news-tile__body {
+    display: grid;
+    justify-items: start;
+    gap: var(--space-2);
+    padding: var(--space-4);
+  }
+  .news-tile__kind {
+    padding: 3px 10px;
+    background: var(--color-signal);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+  .news-tile__title {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.45;
+    font-weight: 800;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 0.6);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+  }
+  .news-tile__title :global(.news-tile__link) {
+    color: inherit;
+    text-decoration: none;
+  }
+  .news-tile__title :global(.news-tile__link::after) {
+    /* 枠全体を記事へのリンクにする */
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+  .news-tile__title :global(.external-icon) {
+    display: none;
+  }
+  .news-tile__link:focus-visible {
+    outline: none;
+  }
+  .news-tile:has(.news-tile__link:focus-visible) {
+    outline: 3px solid var(--color-focus, var(--color-accent));
+    outline-offset: 2px;
+  }
+  .news-tile__meta {
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    font-size: 0.8125rem;
+    color: rgb(255 255 255 / 0.86);
+  }
+  .news-tile__meta svg {
+    width: 14px;
+    height: 14px;
+    flex: none;
+  }
+  .news-tile__outlet {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .news-tile__outlet::before {
+    content: '·';
+    margin-right: 6px;
+  }
+  .news-tile__game {
+    position: absolute;
+    top: var(--space-3);
+    right: var(--space-3);
+    z-index: 1;
+    max-width: 60%;
+    padding: 4px 10px;
+    background: rgb(4 5 8 / 0.72);
+    backdrop-filter: blur(6px);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.22);
+  }
+  .news-tile__game:hover {
+    background: #fff;
+    color: #08090c;
+  }
+  .news-tile--lg .news-tile__body {
+    padding: var(--space-6);
+    gap: var(--space-3);
+  }
+  .news-tile--lg .news-tile__kind {
+    font-size: 0.875rem;
+    padding: 5px 14px;
+  }
+  .news-tile--lg .news-tile__title {
+    font-size: clamp(1.25rem, 0.9rem + 1.3vw, 2rem);
+    line-height: 1.4;
+  }
+  .news-tile--sm .news-tile__body {
+    padding: var(--space-3);
+  }
+  .news-tile--sm .news-tile__title {
+    font-size: 0.875rem;
+  }
+  @media (max-width: 640px) {
+    .news-tile--lg .news-tile__body {
+      padding: var(--space-4);
+    }
+    .news-tile--md .news-tile__body {
+      padding: var(--space-3);
+      gap: 6px;
+    }
+    .news-tile--md .news-tile__title {
+      font-size: 0.9375rem;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+    }
+    .news-tile--md .news-tile__kind {
+      font-size: 0.6875rem;
+      padding: 2px 8px;
+    }
+  }
+</style>
