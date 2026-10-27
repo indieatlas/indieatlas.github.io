@@ -20,6 +20,9 @@ npm test               # 単体テスト（外部と通信しない）
 npm run test:e2e       # ビルド済みの dist/ に対する E2E テスト
 npm run seed:steam -- --app 413150   # Steam の作品情報から候補の作品と Claim を作る
 npm run media:articles               # 記事の OGP 画像を WebP で public/media/articles/ に保存する
+npm run media:events                 # イベントの OGP 画像を public/media/events/ に保存する
+npm run media:palettes               # 作品の画像から色を抽出する（作品詳細のページの色）
+npm run igdb:sync                    # IGDB から機種とスクリーンショットを取り込む（.env にキーが必要）
 ```
 
 E2E テストと CI は、架空の作品だけのフィクスチャ（`tests/fixtures/repo/`）でビルドしたサイトを使います。

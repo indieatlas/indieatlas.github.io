@@ -33,6 +33,7 @@
 | `/articles/kind/{kind}/` | 記事の種別ごとの一覧（2ページ目以降は `/page/{n}/` を付ける） | 静的 |
 | `/collections/` | コレクション一覧 | 静的 |
 | `/collections/{collectionId}/` | コレクション詳細（例: `/collections/col_0001/`） | 静的 |
+| `/events/` | イベントのカレンダー（月ごと。終わったものは折りたたむ） | 静的 |
 | `/about/` | 運営説明 | 静的（Markdown） |
 | `/404.html` | 見つからないページ | 静的 |
 | `/build-manifest.json` | 公開成果物の manifest | ビルド時に生成（[07](07-workflows-and-operations.md) §7.4） |
