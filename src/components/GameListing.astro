@@ -19,7 +19,7 @@ const games = all.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
 <div class="game-listing" data-static-listing>
   <p class="muted small">
-    {all.length}作品を更新の新しい順に表示しています（{page} / {total} ページ）。
+    {all.length}作品{total > 1 && ` ・ ${page} / ${total}`}
   </p>
   <GameGrid games={games} eagerCount={page === 1 ? 4 : 0} headingLevel={2} dateMode="updated" />
   <Pagination current={page} total={total} pathFor={(p) => paths.games(p)} />

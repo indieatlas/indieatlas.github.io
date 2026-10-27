@@ -7,7 +7,7 @@ test('ホームから作品詳細へ移る', async ({ page }) => {
   await expect(page.getByRole('heading', { name: '最近収録した作品' })).toBeVisible();
   await page.locator('section[aria-labelledby="recent-h"] a.game-card').first().click();
   await expect(page).toHaveURL(/\/games\/g_\d{6}\/$/);
-  await expect(page.getByRole('heading', { name: '基本情報' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: '基本情報' })).toBeAttached();
 });
 
 test('作品一覧（JS なしの静的な一覧）とページ送り', async ({ browser, baseURL }) => {
@@ -23,12 +23,10 @@ test('作品詳細: 不明の表示と出典のリンク（受入基準4）', as
   const info = page.locator('.info');
   await expect(info.locator('dt', { hasText: '日本語対応' }).locator('xpath=..')).toContainText('不明');
   await page.goto('games/g_000001/');
-  for (const label of ['発売', '機種', '日本語対応']) {
+  // 機種は見出しの横に並べる
+  await expect(page.locator('.headline .chips')).toContainText('Nintendo Switch');
+  for (const label of ['発売', '日本語対応']) {
     const row = info.locator('dt', { hasText: new RegExp(`^${label}$`) }).locator('xpath=..');
-    if (label === '機種') {
-      await expect(row).toContainText('Nintendo Switch');
-      continue;
-    }
     await expect(row.locator('.source-refs a').first()).toHaveAttribute('href', /^https?:\/\//);
     await expect(row.locator('.source-refs').first()).toContainText('確認日');
   }

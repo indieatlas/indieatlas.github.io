@@ -206,7 +206,7 @@ const description =
       <div class="container detail-grid">
         <div class="main-col">
           <section aria-labelledby="summary-h" class="block">
-            <h2 id="summary-h">概要</h2>
+            <h2 class="visually-hidden" id="summary-h">概要</h2>
             {game.summary ? (
               <>
                 {game.overview ? (
@@ -229,7 +229,7 @@ const description =
 
           {game.features && (
             <section aria-labelledby="features-h" class="block">
-              <h2 id="features-h">特徴</h2>
+              <h2 class="visually-hidden" id="features-h">特徴</h2>
               <ul class="features">
                 {game.features.items.map((f) => (
                   <li>{f}</li>
@@ -281,7 +281,7 @@ const description =
 
         <aside class="side-col" aria-labelledby="info-h">
           <section class="info-card">
-            <h2 id="info-h">基本情報</h2>
+            <h2 class="visually-hidden" id="info-h">基本情報</h2>
             <dl class="info">
               <div>
                 <dt>開発</dt>
@@ -314,7 +314,7 @@ const description =
                 </dd>
               </div>
               <div>
-                <dt>タグ</dt>
+                <dt class="visually-hidden">タグ</dt>
                 <dd>
                   {game.tags.length ? (
                     <>
@@ -333,17 +333,7 @@ const description =
                 </dd>
               </div>
               <div>
-                <dt>機種</dt>
-                <dd>
-                  {game.platforms.length ? (
-                    <PlatformList platforms={game.platforms} variant="text" />
-                  ) : (
-                    <UnknownValue />
-                  )}
-                </dd>
-              </div>
-              <div>
-                <dt>発売</dt>
+                <dt class="visually-hidden">発売</dt>
                 <dd>
                   {game.release && game.release.entries.length > 0 ? (
                     <ul class="release-list">
@@ -399,7 +389,7 @@ const description =
                 </dd>
               </div>
               <div>
-                <dt>プレイ人数と形式</dt>
+                <dt class="visually-hidden">プレイ人数と形式</dt>
                 <dd>
                   <PlayerModes modes={game.playerModes} />
                   {game.playerModes && <SourceRefs sources={game.playerModes.sources} />}
@@ -407,7 +397,7 @@ const description =
               </div>
               {(game.stores.length > 0 || amazonUrl) && (
                 <div>
-                  <dt>ストア</dt>
+                  <dt class="visually-hidden">ストア</dt>
                   <dd>
                     <ul class="store-list">
                       {game.stores.map((st) => (
@@ -427,16 +417,14 @@ const description =
                   </dd>
                 </div>
               )}
-              <div>
-                <dt>公式サイト</dt>
-                <dd>
-                  {game.officialUrl ? (
+              {game.officialUrl && (
+                <div>
+                  <dt class="visually-hidden">公式サイト</dt>
+                  <dd>
                     <ExternalLink href={game.officialUrl}>{new URL(game.officialUrl).host}</ExternalLink>
-                  ) : (
-                    <UnknownValue />
-                  )}
-                </dd>
-              </div>
+                  </dd>
+                </div>
+              )}
               {game.ratings && (
                 <div>
                   <dt>評価</dt>
