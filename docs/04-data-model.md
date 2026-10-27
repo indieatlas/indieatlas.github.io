@@ -309,7 +309,7 @@ export const Developer = z.object({
   | `notable` | 3万件以上 | 「人気」の札 | 23 |
   | `standard` | それ以外 | 印なし | 40 |
 
-  境目は、誰もが名前を知る作品（Terraria、Slay the Spire など）が `landmark` に、ジャンルの中で広く知られた作品（Celeste、Baba Is You より上の層）が `notable` に入るように置いた。収録作品が増えて上位の割合が大きく変わったら見直す。
+  境目は、誰もが名前を知る作品（Terraria、Slay the Spire など）が `landmark` に、ジャンルの中で広く知られた作品（Celeste、Hades II など）が `notable` に入るように置いた。収録作品が増えて上位の割合が大きく変わったら見直す。
 
 ## 4.5 Claim と Evidence
 
