@@ -128,3 +128,13 @@ export const RELATION_LABELS: Record<string, string> = {
   'often-compared': 'よく比べられる',
   'same-developer': '同じ開発者',
 };
+
+export const TAG_GROUP_LABELS: Record<string, string> = {
+  genre: 'ジャンル',
+  mechanic: '仕組み',
+  'play-style': '遊び方',
+  theme: '題材',
+  mood: '雰囲気',
+  setting: '舞台',
+  'art-style': '絵柄',
+};

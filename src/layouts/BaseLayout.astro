@@ -2,6 +2,7 @@
 import '../styles/tokens.css';
 import '../styles/base.css';
 import '../styles/utilities.css';
+import '../styles/components.css';
 import SiteFooter from '../components/SiteFooter.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import SkipLink from '../components/SkipLink.astro';
@@ -59,6 +60,7 @@ const placeholder = url('placeholder.svg');
     <link rel="sitemap" href={url('sitemap-index.xml')} />
     <script is:inline>
       // 表示テーマを描画の前に反映する
+      document.documentElement.classList.add('js');
       try {
         var c = localStorage.getItem('indieatlas-theme');
         if (c === 'light' || c === 'dark') document.documentElement.dataset.theme = c;

@@ -1,0 +1,16 @@
+[
+  { "id": "Q01", "query": "ランタンタイド", "expect": { "includes": ["g_000001"], "within": 3 } },
+  { "id": "Q02", "query": "lantern", "expect": { "includes": ["g_000001"], "within": 3 } },
+  { "id": "Q03", "query": "らんたん", "expect": { "includes": ["g_000001"], "within": 5 } },
+  { "id": "Q04", "query": "Ｌａｎｔｅｒｎ", "expect": { "includes": ["g_000001"], "within": 3 } },
+  { "id": "Q05", "query": "星屑", "expect": { "includes": ["g_000004"], "within": 3 } },
+  { "id": "Q06", "query": "Stardust Atelier", "expect": { "includes": ["g_000004"], "within": 3 } },
+  { "id": "Q07", "query": "Small Harbor", "expect": { "includes": ["g_000001"], "within": 5 } },
+  {
+    "id": "Q08",
+    "query": "ローグライク",
+    "filters": { "platform": ["switch"] },
+    "expect": { "allMatch": { "tag": "roguelike", "platform": "switch" } }
+  },
+  { "id": "Q09", "query": "", "filters": { "ja": ["yes"] }, "expect": { "allMatch": { "ja": "yes" } } }
+]

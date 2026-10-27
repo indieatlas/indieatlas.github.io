@@ -1,0 +1,330 @@
+---
+import { getTags } from '../lib/data.ts';
+import { FILTER_VALUE_LABELS } from '../lib/game-view.ts';
+import { TAG_GROUP_LABELS } from '../lib/format.ts';
+import { BASE_PATH, paths, url } from '../lib/urls.ts';
+
+// 作品の検索 UI（02 §2.3.4）。JS が無効な環境では GET のフォームと静的な一覧として働く
+const tags = getTags().filter((t) => t.gameCount > 0);
+const groups = [...new Set(tags.map((t) => t.group))];
+const platformOptions = [
+  'pc',
+  'mac',
+  'linux',
+  'switch',
+  'switch2',
+  'ps5',
+  'ps4',
+  'xbox-series',
+  'xbox-one',
+  'ios',
+  'android',
+];
+const config = {
+  base: BASE_PATH,
+  pagefind: url('pagefind/pagefind.js'),
+  gamesPath: url(paths.games()),
+  placeholder: url('placeholder.svg'),
+  labels: { ...FILTER_VALUE_LABELS, tag: Object.fromEntries(tags.map((t) => [t.id, t.label])) },
+};
+const radio = (name: string, values: string[]) => values.map((v) => ({ v, label: FILTER_VALUE_LABELS[name]![v] ?? v }));
+---
+
+<game-search>
+  <form class="search-form" action={url(paths.games())} method="get" role="search" data-search-form>
+    <div class="query-row">
+      <label for="search-input" class="visually-hidden">
+        作品を検索
+      </label>
+      <input
+        id="search-input"
+        name="q"
+        type="search"
+        placeholder="タイトル、別名、開発者、タグ、概要から検索"
+        autocomplete="off"
+        enterkeyhint="search"
+      />
+      <button
+        type="button"
+        class="button filter-toggle"
+        data-open-filters
+        aria-controls="search-filters"
+        aria-expanded="false"
+      >
+        絞り込み<span class="filter-count" data-filter-count></span>
+      </button>
+      <label class="sort">
+        <span class="visually-hidden">並び順</span>
+        <select name="sort" data-sort>
+          <option value="">関連度・収録日</option>
+          <option value="added">収録日の新しい順</option>
+          <option value="released">発売日の新しい順</option>
+        </select>
+      </label>
+      <noscript>
+        <button type="submit" class="button button-primary">
+          検索
+        </button>
+      </noscript>
+    </div>
+
+    <div class="filters" id="search-filters" data-filters>
+      <div class="sheet-head">
+        <p class="sheet-title">絞り込み</p>
+        <button type="button" class="button" data-close-filters>
+          閉じる
+        </button>
+      </div>
+      <fieldset>
+        <legend>タグ</legend>
+        {groups.map((g) => (
+          <div class="tag-group">
+            <p class="group-label">{TAG_GROUP_LABELS[g]}</p>
+            <ul class="options">
+              {tags
+                .filter((t) => t.group === g)
+                .map((t) => (
+                  <li>
+                    <label class="option">
+                      <input type="checkbox" name="tag" value={t.id} />
+                      <span>
+                        {t.label}
+                        <span class="count">{t.gameCount}</span>
+                      </span>
+                    </label>
+                  </li>
+                ))}
+            </ul>
+          </div>
+        ))}
+      </fieldset>
+      <fieldset>
+        <legend>機種</legend>
+        <ul class="options">
+          {platformOptions.map((p) => (
+            <li>
+              <label class="option">
+                <input type="checkbox" name="platform" value={p} />
+                <span>{FILTER_VALUE_LABELS.platform![p]}</span>
+              </label>
+            </li>
+          ))}
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>発売状況</legend>
+        <ul class="options">
+          {radio('release', ['released', 'early-access', 'upcoming', 'tba']).map((o) => (
+            <li>
+              <label class="option">
+                <input type="checkbox" name="release" value={o.v} />
+                <span>{o.label}</span>
+              </label>
+            </li>
+          ))}
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>日本語対応（表示）</legend>
+        <ul class="options">
+          {radio('ja', ['yes', 'partial', 'planned', 'no', 'unknown']).map((o) => (
+            <li>
+              <label class="option">
+                <input type="checkbox" name="ja" value={o.v} />
+                <span>{o.label}</span>
+              </label>
+            </li>
+          ))}
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>プレイ形式</legend>
+        <ul class="options">
+          {radio('mode', ['single', 'local-coop', 'online-coop', 'local-pvp', 'online-pvp', 'mmo']).map((o) => (
+            <li>
+              <label class="option">
+                <input type="checkbox" name="mode" value={o.v} />
+                <span>{o.label}</span>
+              </label>
+            </li>
+          ))}
+        </ul>
+      </fieldset>
+      <div class="sheet-foot">
+        <button type="button" class="button" data-clear-filters>
+          条件をクリア
+        </button>
+        <button type="submit" class="button button-primary" data-apply-filters>
+          結果を見る
+        </button>
+      </div>
+    </div>
+  </form>
+
+  <div class="active-filters" data-active-filters hidden></div>
+  <p class="status" role="status" aria-live="polite" data-status></p>
+  <div class="results" data-results hidden></div>
+  <div data-static-slot>
+    <slot />
+  </div>
+  <script type="application/json" data-search-config set:html={JSON.stringify(config)} />
+</game-search>
+
+<script>
+  import { defineGameSearch } from '../scripts/search/game-search.ts';
+  defineGameSearch();
+</script>
+
+<style>
+  .search-form {
+    margin-bottom: var(--space-5);
+  }
+  .query-row {
+    display: flex;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+  #search-input {
+    flex: 1 1 18rem;
+    min-width: 0;
+    min-height: 48px;
+    padding: 0 var(--space-4);
+    border-radius: 999px;
+    border: 1px solid var(--color-border-strong);
+    background: var(--color-surface);
+  }
+  .sort select {
+    min-height: 48px;
+    padding: 0 var(--space-3);
+    border-radius: 999px;
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+  }
+  .filter-count:not(:empty) {
+    margin-left: 6px;
+    padding: 0 7px;
+    border-radius: 999px;
+    background: var(--color-accent);
+    color: var(--color-accent-contrast);
+    font-size: 0.75rem;
+  }
+  .filters {
+    margin-top: var(--space-4);
+    padding: var(--space-4) var(--space-5);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-l);
+    background: var(--color-surface);
+  }
+  :global(.js) .filters:not([data-open]) {
+    display: none;
+  }
+  .sheet-head,
+  .sheet-foot {
+    display: none;
+  }
+  :global(.js) .sheet-foot {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+  }
+  fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0 0 var(--space-4);
+  }
+  legend {
+    font-weight: 700;
+    font-size: var(--text-small);
+    margin-bottom: var(--space-2);
+  }
+  .group-label {
+    margin: var(--space-2) 0 var(--space-1);
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
+  }
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .option {
+    position: relative;
+    display: inline-flex;
+  }
+  .option input {
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+  .option span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 44px;
+    padding: 0 14px;
+    border-radius: 999px;
+    border: 1px solid var(--color-border);
+    font-size: var(--text-xsmall);
+    font-weight: 600;
+  }
+  .option input:checked + span {
+    border-color: var(--color-accent);
+    background: color-mix(in srgb, var(--color-accent) 18%, transparent);
+    color: var(--color-text);
+  }
+  .option input:focus-visible + span {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+  .count {
+    color: var(--color-text-muted);
+    font-weight: 400;
+  }
+  .active-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-bottom: var(--space-3);
+  }
+  .status {
+    color: var(--color-text-muted);
+    font-size: var(--text-small);
+  }
+  @media (max-width: 760px) {
+    :global(.js) .filters[data-open] {
+      position: fixed;
+      inset: auto 0 0 0;
+      z-index: 80;
+      max-height: 80vh;
+      overflow-y: auto;
+      margin: 0;
+      border-radius: var(--radius-l) var(--radius-l) 0 0;
+      box-shadow: 0 -16px 48px rgb(0 0 0 / 0.4);
+    }
+    :global(.js) .sheet-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: calc(-1 * var(--space-4));
+      background: var(--color-surface);
+      padding-block: var(--space-2);
+    }
+    :global(.js) .sheet-foot {
+      position: sticky;
+      bottom: calc(-1 * var(--space-4));
+      background: var(--color-surface);
+      padding-block: var(--space-3);
+    }
+    .sheet-title {
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+</style>

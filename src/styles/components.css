@@ -1,0 +1,193 @@
+/* 作品カード（02 §2.3.3）。検索結果を JS で描くときも同じクラスを使う */
+.game-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: var(--radius-m);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  color: var(--color-text);
+  text-decoration: none;
+  transition:
+    transform var(--dur-base) var(--ease-out),
+    border-color var(--dur-base) var(--ease-out),
+    box-shadow var(--dur-base) var(--ease-out);
+}
+.game-card:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--color-accent) 70%, transparent);
+  box-shadow: var(--glow-accent);
+}
+.game-card:hover img {
+  transform: scale(1.03);
+}
+.game-card img {
+  transition: transform var(--dur-slow) var(--ease-out);
+}
+.game-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: var(--space-3) var(--space-4) var(--space-4);
+  flex: 1;
+}
+.game-card__title {
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.45;
+}
+.game-card__original {
+  margin: 0;
+  font-size: var(--text-xsmall);
+  color: var(--color-text-muted);
+  font-family: var(--font-display);
+}
+.game-card__developer,
+.game-card__release {
+  margin: 0;
+  font-size: var(--text-xsmall);
+  color: var(--color-text-muted);
+}
+.game-card__developer.is-unknown {
+  color: var(--color-unknown);
+}
+.game-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+.game-card__note {
+  margin: var(--space-2) 0 0;
+  font-size: var(--text-xsmall);
+  color: var(--color-accent-warm);
+  font-weight: 600;
+}
+.game-card__added {
+  margin: auto 0 0;
+  padding-top: var(--space-2);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+/* GameImage */
+.game-image {
+  position: relative;
+  aspect-ratio: 460 / 215;
+  overflow: hidden;
+  background: radial-gradient(
+    circle at 30% 35%,
+    color-mix(in srgb, var(--genre-color) 35%, transparent),
+    var(--color-bg-deep)
+  );
+}
+.game-image img,
+.game-image svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* GameGrid */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: var(--space-5);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 400px) {
+  .game-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* PlatformList */
+.platform-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.platform-list li {
+  font-family: var(--font-display);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 4px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+}
+
+/* JapaneseSupportBadge */
+.ja-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+  color: var(--color-unknown);
+  white-space: nowrap;
+}
+.ja-full {
+  color: var(--color-positive);
+  border-color: color-mix(in srgb, var(--color-positive) 50%, transparent);
+}
+.ja-partial,
+.ja-planned {
+  color: var(--color-accent-warm);
+  border-color: color-mix(in srgb, var(--color-accent-warm) 45%, transparent);
+}
+.ja-none {
+  color: var(--color-text-muted);
+}
+
+/* ReleaseLabel */
+.release-label {
+  font-variant-numeric: tabular-nums;
+}
+.release-label.status-upcoming,
+.release-label.status-early-access {
+  color: var(--color-accent-warm);
+}
+.release-label.status-cancelled,
+.release-label.status-delisted {
+  color: var(--color-unknown);
+}
+
+/* 検索結果（src/scripts/search/game-search.ts） */
+.more-button {
+  display: flex;
+  margin: var(--space-6) auto 0;
+}
+.chip-button {
+  min-height: 44px;
+  padding: 0 var(--space-3);
+  font-size: var(--text-xsmall);
+}
+.search-empty {
+  padding: var(--space-8) var(--space-4);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-l);
+  text-align: center;
+  color: var(--color-text-muted);
+}
+.search-empty .chip-row {
+  justify-content: center;
+}
+.search-empty__title {
+  color: var(--color-text);
+  font-weight: 700;
+}

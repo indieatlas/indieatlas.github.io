@@ -52,23 +52,3 @@ const vt = transition ? `view-transition-name: game-${game.id}` : undefined;
     </svg>
   )}
 </div>
-
-<style>
-  .game-image {
-    position: relative;
-    aspect-ratio: 460 / 215;
-    overflow: hidden;
-    background: radial-gradient(
-      circle at 30% 35%,
-      color-mix(in srgb, var(--genre-color) 35%, transparent),
-      var(--color-bg-deep)
-    );
-  }
-  .game-image img,
-  .game-image svg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-</style>

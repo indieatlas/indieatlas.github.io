@@ -18,19 +18,3 @@ const { games, eagerCount = 0, notes = {}, headingLevel = 3 } = Astro.props;
     </li>
   ))}
 </ul>
-
-<style>
-  .game-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-    gap: var(--space-5);
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  @media (max-width: 400px) {
-    .game-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>
