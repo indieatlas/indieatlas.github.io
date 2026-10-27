@@ -22,7 +22,9 @@ npm run seed:steam -- --app 413150   # Steam の作品情報から候補の作�
 npm run media:articles               # 記事の OGP 画像を WebP で public/media/articles/ に保存する
 npm run media:events                 # イベントの OGP 画像を public/media/events/ に保存する
 npm run media:palettes               # 作品の画像から色を抽出する（作品詳細のページの色）
-npm run igdb:sync                    # IGDB から機種とスクリーンショットを取り込む（.env にキーが必要）
+npm run igdb:sync                    # IGDB から機種、スクリーンショット、ストアのリンクを取り込む（.env にキーが必要）
+npm run metrics:popularity           # Steam のレビュー数と IGDB の評価を取得する（殿堂入り、人気の判定）
+npm run amazon:ranking               # Amazon の売れ筋を取得する（.env に Creators API のキーが必要。コミットしない）
 ```
 
 E2E テストと CI は、架空の作品だけのフィクスチャ（`tests/fixtures/repo/`）でビルドしたサイトを使います。
