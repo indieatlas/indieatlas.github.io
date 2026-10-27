@@ -1,9 +1,10 @@
 ---
 import EmptyState from '../components/EmptyState.astro';
-import EventItem from '../components/EventItem.astro';
+import EventRow from '../components/EventRow.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getEvents } from '../lib/data.ts';
-import { paths } from '../lib/urls.ts';
+import { EVENT_GROUPS, EVENT_REGIONS } from '../lib/events.ts';
+import { paths, url } from '../lib/urls.ts';
 
 const events = getEvents();
 const upcoming = events.filter((e) => e.phase !== 'past');
@@ -14,6 +15,9 @@ for (const e of upcoming) {
   byMonth.set(key, [...(byMonth.get(key) ?? []), e]);
 }
 const monthLabel = (k: string) => `${Number(k.slice(0, 4))}年${Number(k.slice(5, 7))}月`;
+const shortMonth = (k: string, i: number, keys: string[]) =>
+  i === 0 || keys[i - 1]!.slice(0, 4) !== k.slice(0, 4) ? monthLabel(k) : `${Number(k.slice(5, 7))}月`;
+const keys = [...byMonth.keys()];
 ---
 
 <BaseLayout
@@ -22,70 +26,242 @@ const monthLabel = (k: string) => `${Number(k.slice(0, 4))}年${Number(k.slice(5
   path={paths.events()}
   current="events"
 >
-  <div class="container section">
-    <h1 class="page-title">イベント</h1>
-    <p class="muted lede">
-      インディーゲームの展示会、試遊会、発表配信、オンラインのフェスの日程です。日程は公式のページや告知の記事で確かめたものを載せ、変更があれば更新します。
-    </p>
+  <div class="container section events-page">
+    <div class="head">
+      <h1 class="page-title">イベント</h1>
+      <a class="subscribe" href={url('events.ics')} download>
+        <svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6">
+          <rect x="2" y="3" width="12" height="11"></rect>
+          <path d="M2 6.5h12M5 1.5v3M11 1.5v3"></path>
+        </svg>
+        カレンダーに登録（iCal）
+      </a>
+    </div>
+
     {upcoming.length === 0 ? (
       <EmptyState title="予定されているイベントはまだありません" />
     ) : (
-      [...byMonth.entries()].map(([k, list]) => (
-        <section class="month" aria-labelledby={`m-${k}`}>
-          <h2 id={`m-${k}`}>
-            <span class="ym">{monthLabel(k)}</span>
-            <span class="count">{list.length}件</span>
-          </h2>
-          {list.map((e) => (
-            <EventItem event={e} />
+      <>
+        <div class="toolbar" data-event-filter hidden>
+          <div class="chips" role="group" aria-label="種類">
+            {EVENT_GROUPS.map((g) => (
+              <button type="button" class="chip" data-filter-group={g.id} aria-pressed="false">
+                {g.label}
+              </button>
+            ))}
+          </div>
+          <div class="chips" role="group" aria-label="地域">
+            {EVENT_REGIONS.map((r) => (
+              <button type="button" class="chip" data-filter-region={r.id} aria-pressed="false">
+                {r.label}
+              </button>
+            ))}
+          </div>
+        </div>
+        <nav class="months" aria-label="月">
+          {keys.map((k, i) => (
+            <a href={`#m-${k}`}>{shortMonth(k, i, keys)}</a>
           ))}
-        </section>
-      ))
+        </nav>
+        {[...byMonth.entries()].map(([k, list]) => (
+          <section class="month" aria-labelledby={`m-${k}`} data-month>
+            <h2 id={`m-${k}`}>{monthLabel(k)}</h2>
+            <div class="rows">
+              {list.map((e) => (
+                <EventRow event={e} />
+              ))}
+            </div>
+          </section>
+        ))}
+        <p class="no-match muted" data-no-match hidden>
+          条件に合うイベントはありません。
+        </p>
+      </>
     )}
     {past.length > 0 && (
       <details class="past">
         <summary>
           <h2>終わったイベント（{past.length}件）</h2>
         </summary>
-        {past.map((e) => (
-          <EventItem event={e} />
-        ))}
+        <div class="rows">
+          {past.map((e) => (
+            <EventRow event={e} />
+          ))}
+        </div>
       </details>
     )}
   </div>
 </BaseLayout>
 
+<script>
+  // 種類と地域での絞り込み。同じ組の中は「または」、組どうしは「かつ」
+  const bar = document.querySelector<HTMLElement>('[data-event-filter]');
+  if (bar) {
+    bar.hidden = false;
+    const apply = () => {
+      const groups = [...bar.querySelectorAll<HTMLButtonElement>('[data-filter-group][aria-pressed="true"]')].map(
+        (b) => b.dataset.filterGroup!,
+      );
+      const regions = [...bar.querySelectorAll<HTMLButtonElement>('[data-filter-region][aria-pressed="true"]')].map(
+        (b) => b.dataset.filterRegion!,
+      );
+      let shown = 0;
+      for (const month of document.querySelectorAll<HTMLElement>('[data-month]')) {
+        let n = 0;
+        for (const row of month.querySelectorAll<HTMLElement>('[data-event]')) {
+          const ok =
+            (!groups.length || groups.includes(row.dataset.group!)) &&
+            (!regions.length || regions.includes(row.dataset.region!));
+          row.hidden = !ok;
+          if (ok) n++;
+        }
+        month.hidden = n === 0;
+        shown += n;
+      }
+      document.querySelector<HTMLElement>('[data-no-match]')!.hidden = shown > 0;
+    };
+    bar.addEventListener('click', (ev) => {
+      const b = (ev.target as Element).closest<HTMLButtonElement>('button.chip');
+      if (!b) return;
+      b.setAttribute('aria-pressed', String(b.getAttribute('aria-pressed') !== 'true'));
+      apply();
+    });
+  }
+</script>
+
 <style>
-  .lede {
-    max-width: var(--measure);
-    margin-bottom: var(--space-7);
+  .head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-3);
+  }
+  .subscribe {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-height: 40px;
+    padding: 0 var(--space-4);
+    box-shadow: inset 0 0 0 1px var(--color-border-strong);
+    color: var(--color-text);
+    font-size: var(--text-small);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .subscribe:hover {
+    background: var(--color-accent-warm);
+    color: var(--color-on-warm);
+  }
+  .subscribe svg {
+    width: 16px;
+    height: 16px;
+  }
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3) var(--space-6);
+    margin: var(--space-5) 0 var(--space-3);
+  }
+  .toolbar[hidden] {
+    display: none;
+  }
+  @media (max-width: 640px) {
+    .toolbar {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;
+      gap: var(--space-4);
+    }
+    .chips {
+      flex-wrap: nowrap;
+      flex: none;
+    }
+    .chip {
+      white-space: nowrap;
+    }
+  }
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  .chip {
+    min-height: 36px;
+    padding: 0 var(--space-4);
+    border: 0;
+    background: var(--color-surface);
+    box-shadow: inset 0 0 0 1px var(--color-border-strong);
+    color: var(--color-text);
+    font: inherit;
+    font-size: var(--text-small);
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .chip:hover {
+    box-shadow: inset 0 0 0 1px var(--color-text);
+  }
+  .chip[aria-pressed='true'] {
+    background: var(--color-signal);
+    color: var(--color-on-signal);
+    box-shadow: none;
+  }
+  .months {
+    position: sticky;
+    top: var(--header-height);
+    z-index: 5;
+    display: flex;
+    gap: 2px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin: 0 0 var(--space-5);
+    padding: var(--space-2) 0;
+    background: color-mix(in srgb, var(--color-bg) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .months a {
+    flex: none;
+    padding: 6px 12px;
+    color: var(--color-text-muted);
+    font-size: var(--text-small);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .months a:hover {
+    color: var(--color-text);
+    background: var(--color-surface);
   }
   .month {
-    margin-bottom: var(--space-8);
+    margin-bottom: var(--space-7);
+    scroll-margin-top: calc(var(--header-height) + 4rem);
+  }
+  .month[hidden] {
+    display: none;
   }
   .month h2 {
-    display: flex;
-    align-items: baseline;
-    gap: var(--space-3);
-    margin: 0 0 var(--space-2);
-    padding-bottom: var(--space-2);
-    border-bottom: 1px solid var(--color-border-strong);
-    font-size: 1.375rem;
+    margin: 0 0 var(--space-3);
+    font-size: 1.25rem;
   }
-  .count {
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    color: var(--color-text-muted);
+  .rows {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-3);
+  }
+  @media (max-width: 1100px) {
+    .rows {
+      grid-template-columns: 1fr;
+    }
+  }
+  .past {
+    margin-top: var(--space-8);
   }
   .past summary {
     cursor: pointer;
-    min-height: 44px;
-    display: flex;
-    align-items: center;
+    margin-bottom: var(--space-3);
   }
   .past summary h2 {
-    margin: 0;
+    display: inline;
     font-size: 1.125rem;
-    color: var(--color-text-muted);
   }
 </style>

@@ -1,0 +1,225 @@
+---
+import type { SiteEvent } from '../../schema/site-data.ts';
+import { getGame } from '../lib/data.ts';
+import { googleCalendarUrl } from '../lib/event-calendar.ts';
+import { EVENT_KIND_LABELS, eventGroup, eventRegion } from '../lib/events.ts';
+import { paths, url } from '../lib/urls.ts';
+import ExternalLink from './ExternalLink.astro';
+
+// イベント一覧の1件。画像、日付、名前、日時と場所、説明。カレンダーへの追加と案内のページへのリンク
+interface Props {
+  event: SiteEvent;
+}
+const { event: e } = Astro.props;
+const WEEK = ['日', '月', '火', '水', '木', '金', '土'];
+const d = e.start;
+const isDay = d.precision === 'day';
+const weekday = isDay ? WEEK[new Date(Date.UTC(d.year, d.month - 1, d.day)).getUTCDay()] : undefined;
+const games = e.games.map((id) => getGame(id)).filter((g) => g !== undefined);
+const gcal = googleCalendarUrl(e);
+const place = e.format === 'online' ? 'オンライン' : [e.location?.venue, e.location?.city].filter(Boolean).join('・');
+---
+
+<article
+  class:list={['event-row', `phase-${e.phase}`]}
+  data-event
+  data-group={eventGroup(e.kind)}
+  data-region={eventRegion(e)}
+>
+  <div class="media" aria-hidden="true">
+    {e.image ? (
+      <img src={url(e.image.path)} alt="" width={e.image.width} height={e.image.height} loading="lazy" decoding="async" data-fallback />
+    ) : (
+      <span class="poster">{e.nameEn ?? e.name}</span>
+    )}
+    <span class="date">
+      <span class="md">
+        {'month' in d ? d.month : ''}
+        {isDay && <span class="sep">/</span>}
+        {isDay ? d.day : ''}
+      </span>
+      {weekday && <span class="wd">{weekday}</span>}
+    </span>
+    {e.phase === 'ongoing' && <span class="now">{e.startKey === e.endKey ? '本日' : '開催中'}</span>}
+  </div>
+  <div class="body">
+    <p class="meta">
+      <span class="kind">{EVENT_KIND_LABELS[e.kind] ?? e.kind}</span>
+      {e.tentative && <span class="tentative">予定</span>}
+    </p>
+    <h3 class="name">
+      <ExternalLink href={e.url} class="name-link">{e.name}</ExternalLink>
+    </h3>
+    <p class="when">
+      <time datetime={e.startKey}>{e.dateLabel}</time>
+      {e.time && <span>{e.time}</span>}
+    </p>
+    {place && <p class="where">{place}</p>}
+    <p class="summary">{e.summary}</p>
+    {games.length > 0 && (
+      <p class="games">
+        {games.map((g, i) => (
+          <>
+            {i > 0 && '、'}
+            <a href={url(paths.game(g!.id))}>{g!.title.display}</a>
+          </>
+        ))}
+      </p>
+    )}
+    {gcal && (
+      <p class="actions">
+        <ExternalLink href={gcal} class="add">
+          Google カレンダーに追加
+        </ExternalLink>
+      </p>
+    )}
+  </div>
+</article>
+
+<style>
+  .event-row {
+    display: grid;
+    grid-template-columns: 15rem minmax(0, 1fr);
+    background: var(--color-surface);
+    box-shadow: inset 0 0 0 1px var(--color-border);
+    transition: box-shadow var(--dur-base) var(--ease-out);
+  }
+  .event-row:hover {
+    box-shadow: inset 0 0 0 1px var(--color-accent-warm);
+  }
+  .event-row[hidden] {
+    display: none;
+  }
+  .media {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    align-self: start;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--color-surface-raised), var(--color-bg-deep));
+  }
+  .media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .poster {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    padding: var(--space-3) var(--space-4);
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 0.9375rem;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-text);
+  }
+  .date {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    padding: 4px 10px;
+    background: rgb(4 5 8 / 0.82);
+    color: #fff;
+    font-family: var(--font-display);
+    line-height: 1.2;
+  }
+  .md {
+    font-size: 1.25rem;
+    font-weight: 800;
+  }
+  .sep {
+    margin: 0 1px;
+    opacity: 0.6;
+  }
+  .wd {
+    font-size: 0.75rem;
+    font-weight: 700;
+    opacity: 0.85;
+  }
+  .now {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 4px 10px;
+    background: var(--color-signal);
+    color: var(--color-on-signal);
+    font-size: 0.75rem;
+    font-weight: 800;
+  }
+  .body {
+    display: grid;
+    align-content: start;
+    gap: 4px;
+    padding: var(--space-3) var(--space-5) var(--space-4);
+    min-width: 0;
+  }
+  .meta {
+    display: flex;
+    gap: var(--space-2);
+    margin: 0;
+  }
+  .kind {
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: var(--color-accent);
+  }
+  .tentative {
+    padding: 0 6px;
+    font-size: 0.75rem;
+    box-shadow: inset 0 0 0 1px var(--color-border-strong);
+    color: var(--color-text-muted);
+  }
+  .name {
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.45;
+  }
+  .name :global(.name-link) {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  .name :global(.name-link:hover) {
+    text-decoration: underline;
+  }
+  .when {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 var(--space-3);
+    margin: 0;
+    font-weight: 700;
+    font-size: var(--text-small);
+  }
+  .where,
+  .summary,
+  .games {
+    margin: 0;
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+  }
+  .summary {
+    margin-top: 2px;
+    color: var(--color-text);
+    line-height: 1.7;
+  }
+  .actions {
+    margin: var(--space-2) 0 0;
+    font-size: var(--text-xsmall);
+    font-weight: 700;
+  }
+  .phase-past {
+    opacity: 0.72;
+  }
+  @media (max-width: 640px) {
+    .event-row {
+      grid-template-columns: 1fr;
+    }
+    .body {
+      padding: var(--space-3) var(--space-4) var(--space-4);
+    }
+  }
+</style>
