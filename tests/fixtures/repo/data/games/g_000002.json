@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000002",
+  "status": "published",
+  "title": {
+    "display": "Echoes",
+    "original": "Echoes",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 900010
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000002"
+  ],
+  "publisherIds": [
+    "dev_000002"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/900010/",
+            "retrievedAt": "2026-10-20T00:20:11Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T00:31:40Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/900010/",
+        "retrievedAt": "2026-10-20T00:20:11Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam"
+      }
+    }
+  ],
+  "disambiguation": "Quiet Bell Studio の音のパズル。Northwind Interactive の Echoes とは別作品",
+  "createdAt": "2026-10-20T00:25:00Z",
+  "addedAt": "2026-10-21",
+  "updatedAt": "2026-10-27T00:31:40Z",
+  "createdByRun": "local-fixture"
+}

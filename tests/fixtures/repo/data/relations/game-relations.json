@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "relations": [
+    {
+      "id": "r_80254b40a5f31eff",
+      "a": "g_000001",
+      "b": "g_000005",
+      "kind": "same-series",
+      "reason": "同じ開発者による『Lantern Tide』シリーズの作品。",
+      "basis": "fact",
+      "evidenceClaimIds": [],
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900004/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails.name",
+          "originKey": "store:steam"
+        }
+      ],
+      "status": "adopted",
+      "createdBy": "human",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "createdByRun": "local-fixture"
+    },
+    {
+      "id": "r_de4a7b147b1bab2b",
+      "a": "g_000003",
+      "b": "g_000006",
+      "kind": "similar-play",
+      "reason": "どちらも挑戦のたびに構成が変わり、繰り返して深い階層を目指すローグライク。",
+      "basis": "editorial",
+      "evidenceClaimIds": [
+        "c_f9f4ccc088044cad",
+        "c_ad273130c6aedfe4"
+      ],
+      "evidence": [],
+      "status": "adopted",
+      "createdBy": "human",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "createdByRun": "local-fixture"
+    }
+  ]
+}

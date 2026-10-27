@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000005",
+  "status": "candidate",
+  "title": {
+    "display": "Lantern Tide 2",
+    "original": "Lantern Tide 2",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 900004
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000001"
+  ],
+  "publisherIds": [
+    "dev_000001"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/900004/",
+            "retrievedAt": "2026-10-20T00:20:11Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T00:31:40Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/900004/",
+        "retrievedAt": "2026-10-20T00:20:11Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam"
+      }
+    }
+  ],
+  "createdAt": "2026-10-20T00:25:00Z",
+  "updatedAt": "2026-10-27T00:31:40Z",
+  "createdByRun": "local-fixture"
+}

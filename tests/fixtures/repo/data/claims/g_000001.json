@@ -1,0 +1,420 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000001",
+  "claims": [
+    {
+      "id": "c_62cca6b5c9339a6b",
+      "gameId": "g_000001",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://lanterntide.example.com/news/release-window",
+          "publishedAt": "2026-06-10",
+          "retrievedAt": "2026-06-11T00:18:02Z",
+          "quote": "Lantern Tide launches on PC in Winter 2026.",
+          "originKey": "official:example.com"
+        }
+      ],
+      "asOf": "2026-06-10",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersededBy": "c_ecf7cc58f72b0c28",
+      "adoptedAt": "2026-06-11T00:30:00Z",
+      "createdAt": "2026-06-11T00:30:00Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-06-11T00:18:02Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "season",
+          "year": 2026,
+          "season": "winter"
+        },
+        "rawText": "Winter 2026"
+      }
+    },
+    {
+      "id": "c_ecf7cc58f72b0c28",
+      "gameId": "g_000001",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://lanterntide.example.com/news/new-release-window",
+          "publishedAt": "2026-10-24",
+          "retrievedAt": "2026-10-27T00:22:15Z",
+          "quote": "we have decided to move the PC launch of Lantern Tide to Spring 2027",
+          "originKey": "official:example.com"
+        }
+      ],
+      "asOf": "2026-10-24",
+      "status": "adopted",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_62cca6b5c9339a6b"
+      ],
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-27T00:22:15Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "season",
+          "year": 2027,
+          "season": "spring"
+        },
+        "rawText": "Spring 2027"
+      }
+    },
+    {
+      "id": "c_437d7058bebbe090",
+      "gameId": "g_000001",
+      "scope": {
+        "platform": "switch",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://lanterntide.example.com/news/release-window",
+          "publishedAt": "2026-06-10",
+          "retrievedAt": "2026-06-11T00:18:02Z",
+          "quote": "The Nintendo Switch version follows in 2027.",
+          "originKey": "official:example.com"
+        }
+      ],
+      "asOf": "2026-06-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-06-11T00:30:00Z",
+      "createdAt": "2026-06-11T00:30:00Z",
+      "updatedAt": "2026-06-11T00:30:00Z",
+      "lastCheckedAt": "2026-06-11T00:18:02Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "year",
+          "year": 2027
+        },
+        "rawText": "2027"
+      }
+    },
+    {
+      "id": "c_67f2a51e5cdea12e",
+      "gameId": "g_000001",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900001/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_a29a5989c51f5c0f",
+      "gameId": "g_000001",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900001/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_07079e55c9518c71",
+      "gameId": "g_000001",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900001/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "summary",
+      "value": {
+        "ja": "灯台守の少女となり、潮の満ち引きで姿を変える群島を探索する海洋アドベンチャー。満潮と干潮で道や遺跡の現れ方が変わり、島々の秘密を少しずつ解き明かしていく。"
+      }
+    },
+    {
+      "id": "c_dd6c23d94232df67",
+      "gameId": "g_000001",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900001/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "features",
+      "value": {
+        "ja": [
+          "潮の満ち引きで地形が変わる群島を探索できる",
+          "灯台に光を灯すと新しい航路が開ける",
+          "手描きのドット絵で描かれた海と空"
+        ]
+      }
+    },
+    {
+      "id": "c_11df526fa4e6da81",
+      "gameId": "g_000001",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900001/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_65f3ecc27f900cea",
+      "gameId": "g_000001",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900001/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_99b2cd8b25995b43",
+      "gameId": "g_000001",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900001/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "tag",
+      "value": {
+        "tagId": "pixel-art"
+      }
+    },
+    {
+      "id": "c_e8642059fe4e433d",
+      "gameId": "g_000001",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900001/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "tag",
+      "value": {
+        "tagId": "ocean"
+      }
+    },
+    {
+      "id": "c_e1bad21b690ba325",
+      "gameId": "g_000001",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900001/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/900001/"
+      }
+    },
+    {
+      "id": "c_6786ccb18dcd4376",
+      "gameId": "g_000001",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900001/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "image",
+      "value": {
+        "url": "https://lanterntide.example.com/press/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Lantern Tide のキーアート",
+        "usage": {
+          "basis": "official-press-kit",
+          "credit": "Small Harbor Games"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000003",
+  "claims": [
+    {
+      "id": "c_a16274f547f88a82",
+      "gameId": "g_000003",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900020/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails.release_date.date",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2024,
+          "month": 11,
+          "day": 8
+        }
+      }
+    },
+    {
+      "id": "c_d7cbe4241715f7cd",
+      "gameId": "g_000003",
+      "scope": {
+        "platform": "switch",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900020/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails.release_date.date",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 3,
+          "day": 13
+        }
+      }
+    },
+    {
+      "id": "c_b8f0e4d186659b13",
+      "gameId": "g_000003",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900020/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "no",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_c2dd034f2f9fb634",
+      "gameId": "g_000003",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900020/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "summary",
+      "value": {
+        "ja": "過去の自分の動きが残像として残るローグライクアクション。倒れるたびに前の挑戦の残像が味方として戦い、少しずつ深い階層へ進む。"
+      }
+    },
+    {
+      "id": "c_bd2cca7e641edcc8",
+      "gameId": "g_000003",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900020/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "tag",
+      "value": {
+        "tagId": "platformer"
+      }
+    },
+    {
+      "id": "c_e5ce46c461fdb2fb",
+      "gameId": "g_000003",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900020/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "tag",
+      "value": {
+        "tagId": "difficult"
+      }
+    },
+    {
+      "id": "c_f9f4ccc088044cad",
+      "gameId": "g_000003",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900020/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_2b5fff484628a7b4",
+      "gameId": "g_000003",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900020/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/900020/"
+      }
+    }
+  ]
+}

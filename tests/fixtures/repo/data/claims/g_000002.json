@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000002",
+  "claims": [
+    {
+      "id": "c_d6273af9fe085c47",
+      "gameId": "g_000002",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900010/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails.release_date.date",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 4,
+          "day": 2
+        }
+      }
+    },
+    {
+      "id": "c_2572209de3bf6182",
+      "gameId": "g_000002",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900010/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "summary",
+      "value": {
+        "ja": "反響する音を手がかりに、暗い建物の中で道筋を探すパズルゲーム。音が壁に当たって返ってくるまでの時間から、部屋の形を思い描いて進む。"
+      }
+    },
+    {
+      "id": "c_59e8e19fbc3ef1f7",
+      "gameId": "g_000002",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900010/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_4b003950c91f6533",
+      "gameId": "g_000002",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900010/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/900010/"
+      }
+    }
+  ]
+}

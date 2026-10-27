@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000005",
+  "claims": [
+    {
+      "id": "c_eb5d49958b66dac6",
+      "gameId": "g_000005",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/900004/",
+          "retrievedAt": "2026-10-20T00:20:11Z",
+          "locator": "steam:appdetails",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T00:31:40Z",
+      "createdAt": "2026-10-27T00:31:40Z",
+      "updatedAt": "2026-10-27T00:31:40Z",
+      "lastCheckedAt": "2026-10-20T00:20:11Z",
+      "createdBy": "human",
+      "createdByRun": "local-fixture",
+      "field": "release",
+      "value": {
+        "status": "tba"
+      }
+    }
+  ]
+}

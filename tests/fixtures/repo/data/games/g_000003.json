@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000003",
+  "status": "published",
+  "title": {
+    "display": "Echoes",
+    "original": "Echoes",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 900020
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000003"
+  ],
+  "publisherIds": [
+    "dev_000003"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/900020/",
+            "retrievedAt": "2026-10-20T00:20:11Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T00:31:40Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/900020/",
+        "retrievedAt": "2026-10-20T00:20:11Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam"
+      }
+    }
+  ],
+  "disambiguation": "Northwind Interactive のローグライク。Quiet Bell Studio の Echoes とは別作品",
+  "createdAt": "2026-10-20T00:25:00Z",
+  "addedAt": "2026-10-22",
+  "updatedAt": "2026-10-27T00:31:40Z",
+  "createdByRun": "local-fixture"
+}

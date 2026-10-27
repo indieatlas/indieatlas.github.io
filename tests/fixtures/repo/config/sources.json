@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "example-news-jp",
+      "name": "Example News",
+      "homepage": "https://news.example.jp/",
+      "lang": "ja",
+      "role": "understand",
+      "kind": "media",
+      "evidenceKind": "media",
+      "enabled": true,
+      "fetch": {
+        "method": "rss",
+        "url": "https://news.example.jp/feed/indie.xml",
+        "frequency": "every-run",
+        "maxItemsPerRun": 20
+      },
+      "filters": {
+        "excludeCategories": [
+          "セール情報"
+        ]
+      },
+      "rights": {
+        "termsUrl": "https://news.example.jp/terms/",
+        "checkedAt": "2026-10-27",
+        "checkedBy": "operator",
+        "allowFetch": true,
+        "displayTitle": true,
+        "displaySummary": true,
+        "displayImages": false,
+        "storeQuotes": true,
+        "notes": "見出しとリンクの掲載は可。記事画像の転載は不可。"
+      }
+    }
+  ]
+}

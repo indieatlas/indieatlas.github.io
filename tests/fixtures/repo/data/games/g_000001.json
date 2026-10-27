@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000001",
+  "status": "published",
+  "title": {
+    "display": "ランタンタイド",
+    "original": "Lantern Tide",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "ランタン・タイド",
+      "lang": "ja",
+      "kind": "localized"
+    },
+    {
+      "value": "らんたんたいど",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 900001
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "900002",
+      "kind": "demo",
+      "title": "Lantern Tide Demo"
+    },
+    {
+      "store": "steam",
+      "id": "900003",
+      "kind": "dlc",
+      "title": "Lantern Tide - Deep Currents"
+    }
+  ],
+  "officialUrl": "https://lanterntide.example.com/",
+  "developerIds": [
+    "dev_000001"
+  ],
+  "publisherIds": [
+    "dev_000001"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/900001/",
+            "retrievedAt": "2026-10-20T00:20:11Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T00:31:40Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/900001/",
+        "retrievedAt": "2026-10-20T00:20:11Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "official",
+        "url": "https://lanterntide.example.com/",
+        "publishedAt": "2026-10-01",
+        "retrievedAt": "2026-10-20T00:20:11Z",
+        "quote": "Lantern Tide official website",
+        "originKey": "official:example.com"
+      }
+    }
+  ],
+  "createdAt": "2026-10-20T00:25:00Z",
+  "addedAt": "2026-10-20",
+  "updatedAt": "2026-10-27T00:31:40Z",
+  "createdByRun": "local-fixture"
+}

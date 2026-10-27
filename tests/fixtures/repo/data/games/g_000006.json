@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000006",
+  "status": "published",
+  "title": {
+    "display": "デッキバウンド・デプス",
+    "original": "Deckbound Depths",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "でっきばうんど",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 900030
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000005"
+  ],
+  "publisherIds": [
+    "dev_000005"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/900030/",
+            "retrievedAt": "2026-10-20T00:20:11Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T00:31:40Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/900030/",
+        "retrievedAt": "2026-10-20T00:20:11Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam"
+      }
+    }
+  ],
+  "createdAt": "2026-10-20T00:25:00Z",
+  "addedAt": "2026-10-24",
+  "updatedAt": "2026-10-27T00:31:40Z",
+  "createdByRun": "local-fixture"
+}
