@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000072",
+  "status": "published",
+  "title": {
+    "display": "ANIMAL WELL",
+    "original": "ANIMAL WELL",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "アニマルウェル",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 813230,
+    "igdbId": 191435
+  },
+  "associatedApps": [],
+  "officialUrl": "https://www.animalwell.net",
+  "developerIds": [
+    "dev_000082"
+  ],
+  "publisherIds": [
+    "dev_000083"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "solo-developer",
+        "note": "Billy Basso氏ひとりの開発と公式サイトに明記",
+        "evidence": [
+          {
+            "kind": "official",
+            "url": "https://www.animalwell.net/",
+            "retrievedAt": "2026-10-27T18:17:31Z",
+            "quote": "Billy Basso is the sole developer of Animal Well.",
+            "originKey": "official:animalwell.net"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T18:17:31Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/813230/",
+        "retrievedAt": "2026-10-27T13:54:05Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/813230/",
+        "retrievedAt": "2026-10-27T18:06:08Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dd7af3b22576b24fd2b074625b2c9502bdde0b6c63657d714f5fe25ff3ec158a"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/813230/",
+        "retrievedAt": "2026-10-27T18:06:08Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dd7af3b22576b24fd2b074625b2c9502bdde0b6c63657d714f5fe25ff3ec158a"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/animal-well",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/813230/",
+        "retrievedAt": "2026-10-27T18:06:08Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dd7af3b22576b24fd2b074625b2c9502bdde0b6c63657d714f5fe25ff3ec158a"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/813230/",
+        "retrievedAt": "2026-10-27T18:06:08Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dd7af3b22576b24fd2b074625b2c9502bdde0b6c63657d714f5fe25ff3ec158a"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/813230/",
+        "retrievedAt": "2026-10-27T18:06:08Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dd7af3b22576b24fd2b074625b2c9502bdde0b6c63657d714f5fe25ff3ec158a"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:06:08Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

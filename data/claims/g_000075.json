@@ -1,0 +1,1163 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000075",
+  "claims": [
+    {
+      "id": "c_62e101ed49dce749",
+      "gameId": "g_000075",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/553420/",
+          "retrievedAt": "2026-10-27T18:06:35Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8b6f4e48fcff0df947433e9394e2288f04e77e1d536a4dc6cc44822cfdb52b19"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:06:35Z",
+      "createdAt": "2026-10-27T18:06:35Z",
+      "updatedAt": "2026-10-27T18:06:35Z",
+      "lastCheckedAt": "2026-10-27T18:06:35Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2022,
+          "month": 3,
+          "day": 16
+        },
+        "rawText": "16 Mar, 2022"
+      }
+    },
+    {
+      "id": "c_1f0bdbb7b275c7d4",
+      "gameId": "g_000075",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/553420/",
+          "retrievedAt": "2026-10-27T18:06:35Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8b6f4e48fcff0df947433e9394e2288f04e77e1d536a4dc6cc44822cfdb52b19"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:06:35Z",
+      "createdAt": "2026-10-27T18:06:35Z",
+      "updatedAt": "2026-10-27T18:06:35Z",
+      "lastCheckedAt": "2026-10-27T18:06:35Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2022,
+          "month": 3,
+          "day": 16
+        },
+        "rawText": "16 Mar, 2022"
+      }
+    },
+    {
+      "id": "c_bfbaea1b2cef8a20",
+      "gameId": "g_000075",
+      "scope": {
+        "platform": "ps4",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/tunic",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2022,
+          "month": 9,
+          "day": 27
+        },
+        "rawText": "Sep 27, 2022"
+      }
+    },
+    {
+      "id": "c_a10a9eab3f7c8e76",
+      "gameId": "g_000075",
+      "scope": {
+        "platform": "ps5",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/tunic",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2022,
+          "month": 9,
+          "day": 27
+        },
+        "rawText": "Sep 27, 2022"
+      }
+    },
+    {
+      "id": "c_ed4e177c3bfee9be",
+      "gameId": "g_000075",
+      "scope": {
+        "platform": "switch2",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/tunic",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "tba",
+        "rawText": "TBD"
+      }
+    },
+    {
+      "id": "c_aeaeabb71cf6c202",
+      "gameId": "g_000075",
+      "scope": {
+        "platform": "switch",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/tunic",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2022,
+          "month": 9,
+          "day": 27
+        },
+        "rawText": "Sep 27, 2022"
+      }
+    },
+    {
+      "id": "c_0fb711450a23f647",
+      "gameId": "g_000075",
+      "scope": {
+        "platform": "xbox-one",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/tunic",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2022,
+          "month": 3,
+          "day": 16
+        },
+        "rawText": "Mar 16, 2022"
+      }
+    },
+    {
+      "id": "c_3d9055101adede0c",
+      "gameId": "g_000075",
+      "scope": {
+        "platform": "xbox-series",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/tunic",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2022,
+          "month": 3,
+          "day": 16
+        },
+        "rawText": "Mar 16, 2022"
+      }
+    },
+    {
+      "id": "c_cecddd82a2091d77",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/553420/",
+          "retrievedAt": "2026-10-27T18:06:41Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b49cb37bf851573082c71c4d27570865dfa59686d6b8b9c2acb8717e3c36ee6d"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:06:35Z",
+      "createdAt": "2026-10-27T18:06:35Z",
+      "updatedAt": "2026-10-27T18:06:35Z",
+      "lastCheckedAt": "2026-10-27T18:06:41Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_00996bcb515bf55c",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/553420/",
+          "retrievedAt": "2026-10-27T18:06:35Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8b6f4e48fcff0df947433e9394e2288f04e77e1d536a4dc6cc44822cfdb52b19"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:06:35Z",
+      "createdAt": "2026-10-27T18:06:35Z",
+      "updatedAt": "2026-10-27T18:06:35Z",
+      "lastCheckedAt": "2026-10-27T18:06:35Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_d8828ee067c413d2",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/553420/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "quote": "子ギツネが大冒険を繰り広げるクォータービューアクションゲーム「TUNIC」で、失われた伝説や古代の力、恐ろしい怪物たちであふれる世界を探索しましょう。",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "荒廃した島に打ち上げられた子ギツネが、失われた伝説や古代の秘密を探るクォータービューのアクションアドベンチャー。旅の途中で見つかるゲームの説明書のページを集め、地図や技、隠された秘密を知っていく。"
+      }
+    },
+    {
+      "id": "c_83fe46af3afc10cf",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/553420/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "quote": "子ギツネが大冒険を繰り広げるクォータービューアクションゲーム「TUNIC」で、失われた伝説や古代の力、恐ろしい怪物たちであふれる世界を探索しましょう。",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "回避、防御、パリィ、攻撃を使い分ける戦闘",
+          "失われた説明書のページを集めて世界の秘密を知る",
+          "森、遺跡、地下墓地などが入り組んだ世界を探索する"
+        ]
+      }
+    },
+    {
+      "id": "c_639afa5709fd617a",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/553420/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "animals"
+      }
+    },
+    {
+      "id": "c_661eadd2020516fd",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/553420/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_66bb36a2260352cd",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/553420/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_be3568b2afec38b3",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/553420/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_e7cbc7adddc2de3c",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/553420/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_e8232a9d5bb26550",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/553420/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_eccd393943db6e1c",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/553420/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "difficult"
+      }
+    },
+    {
+      "id": "c_caae6638428ba90b",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/553420/",
+          "retrievedAt": "2026-10-27T18:06:35Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8b6f4e48fcff0df947433e9394e2288f04e77e1d536a4dc6cc44822cfdb52b19"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:06:35Z",
+      "createdAt": "2026-10-27T18:06:35Z",
+      "updatedAt": "2026-10-27T18:06:35Z",
+      "lastCheckedAt": "2026-10-27T18:06:35Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/553420/"
+      }
+    },
+    {
+      "id": "c_1275533c21c0f939",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/tunic",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "storeLink",
+      "value": {
+        "store": "microsoft-store",
+        "url": "https://www.xbox.com/ja-JP/games/store/tunic/9NLRT31Z4RWM"
+      }
+    },
+    {
+      "id": "c_492e2940e2e53db8",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/tunic",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "storeLink",
+      "value": {
+        "store": "itch",
+        "url": "https://finji.itch.io/tunic"
+      }
+    },
+    {
+      "id": "c_7a73ce9e9edd3c77",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/tunic",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "storeLink",
+      "value": {
+        "store": "nintendo-eshop",
+        "url": "https://www.nintendo.com/store/products/tunic-switch/"
+      }
+    },
+    {
+      "id": "c_84ab582685a7b7d0",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/tunic",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "storeLink",
+      "value": {
+        "store": "epic",
+        "url": "https://store.epicgames.com/p/tunic"
+      }
+    },
+    {
+      "id": "c_f24681ede6860f6e",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/tunic",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "storeLink",
+      "value": {
+        "store": "gog",
+        "url": "https://www.gog.com/game/tunic"
+      }
+    },
+    {
+      "id": "c_f309c8d93edb5682",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/tunic",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "storeLink",
+      "value": {
+        "store": "playstation-store",
+        "url": "https://store.playstation.com/ja-jp/concept/10002475"
+      }
+    },
+    {
+      "id": "c_77713e5aec1164fb",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/553420/",
+          "retrievedAt": "2026-10-27T18:06:35Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8b6f4e48fcff0df947433e9394e2288f04e77e1d536a4dc6cc44822cfdb52b19"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:06:35Z",
+      "createdAt": "2026-10-27T18:06:35Z",
+      "updatedAt": "2026-10-27T18:06:35Z",
+      "lastCheckedAt": "2026-10-27T18:06:35Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553420/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "TUNIC のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Finji"
+        }
+      }
+    },
+    {
+      "id": "c_04e6954966a9a77c",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/tunic",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scjt5b.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "TUNIC のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_14ed7d22805047dd",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/tunic",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8ggk.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "TUNIC のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_3c0aa97390232745",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/tunic",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8ggm.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "TUNIC のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_9f5be4077610ff18",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/tunic",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scjt5c.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "TUNIC のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_a998e01f93c82078",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/tunic",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8ggn.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "TUNIC のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_bb6c9548a522495c",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/tunic",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8ggj.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "TUNIC のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_cdc992be3581bdd0",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/tunic",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc8ggi.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "TUNIC のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_f6518a971313204a",
+      "gameId": "g_000075",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/tunic",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scjt5d.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "TUNIC のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    }
+  ]
+}

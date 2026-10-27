@@ -1,0 +1,695 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000065",
+  "claims": [
+    {
+      "id": "c_6ce64af1f5d192df",
+      "gameId": "g_000065",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1025250/",
+          "retrievedAt": "2026-10-27T18:05:05Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:19eed61b28cbb0a3f6e06096a750a066accf4257f45d036216675c8836a52b7b"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:05:05Z",
+      "createdAt": "2026-10-27T18:05:05Z",
+      "updatedAt": "2026-10-27T18:05:05Z",
+      "lastCheckedAt": "2026-10-27T18:05:05Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2019,
+          "month": 3,
+          "day": 8
+        },
+        "rawText": "8 Mar, 2019"
+      }
+    },
+    {
+      "id": "c_ceaf1df3b953a179",
+      "gameId": "g_000065",
+      "scope": {
+        "platform": "ps4",
+        "region": "jp"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/shadow-corridor",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2019,
+          "month": 12,
+          "day": 25
+        },
+        "rawText": "Dec 25, 2019"
+      }
+    },
+    {
+      "id": "c_f4bfa4b9f7d52402",
+      "gameId": "g_000065",
+      "scope": {
+        "platform": "switch",
+        "region": "na"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/shadow-corridor",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2021,
+          "month": 10,
+          "day": 26
+        },
+        "rawText": "Oct 26, 2021"
+      }
+    },
+    {
+      "id": "c_8900e441a008a2fe",
+      "gameId": "g_000065",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1025250/",
+          "retrievedAt": "2026-10-27T18:05:11Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:50bbeb8a5ffc69f7c3d5bd44a05591f84514f5730562cdf3e38ddbd4c0075d0b"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:05:05Z",
+      "createdAt": "2026-10-27T18:05:05Z",
+      "updatedAt": "2026-10-27T18:05:05Z",
+      "lastCheckedAt": "2026-10-27T18:05:11Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_b876790835d4c33a",
+      "gameId": "g_000065",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1025250/",
+          "retrievedAt": "2026-10-27T18:05:05Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:19eed61b28cbb0a3f6e06096a750a066accf4257f45d036216675c8836a52b7b"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:05:05Z",
+      "createdAt": "2026-10-27T18:05:05Z",
+      "updatedAt": "2026-10-27T18:05:05Z",
+      "lastCheckedAt": "2026-10-27T18:05:05Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_4d88f6d876b0c4d8",
+      "gameId": "g_000065",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1025250/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "quote": "ランダムに生成される不気味な和風ダンジョンで、迫りくる能面から生き延びろ！",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "プレイするたびに形を変える古びた和風の回廊を探索し、徘徊する能面の怪異から逃れながら生き延びる3Dホラー。フリーゲームとして公開された『影廊』を、ボリュームやシステムを拡張してSteamで発売した作品。"
+      }
+    },
+    {
+      "id": "c_8ab8d2fbf0958931",
+      "gameId": "g_000065",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1025250/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "quote": "ランダムに生成される不気味な和風ダンジョンで、迫りくる能面から生き延びろ！",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "プレイするたびに形を変えるランダム生成の回廊",
+          "視覚や聴覚でプレイヤーを追う複数タイプの徘徊者",
+          "部屋や棚に散らばる多彩なアイテム",
+          "フリーゲーム版の10倍以上のボリューム"
+        ]
+      }
+    },
+    {
+      "id": "c_171a7ff88ea5a1c7",
+      "gameId": "g_000065",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1025250/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "horror"
+      }
+    },
+    {
+      "id": "c_1d5513d391b9493a",
+      "gameId": "g_000065",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1025250/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_7357970e9c07108e",
+      "gameId": "g_000065",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1025250/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "dark"
+      }
+    },
+    {
+      "id": "c_9b536a94e6a33fac",
+      "gameId": "g_000065",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1025250/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "tense"
+      }
+    },
+    {
+      "id": "c_b21e40ce81d74541",
+      "gameId": "g_000065",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1025250/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "procedural-generation"
+      }
+    },
+    {
+      "id": "c_c54beed541bcc835",
+      "gameId": "g_000065",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1025250/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "japan"
+      }
+    },
+    {
+      "id": "c_1d1e5c1388841445",
+      "gameId": "g_000065",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1025250/",
+          "retrievedAt": "2026-10-27T18:05:05Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:19eed61b28cbb0a3f6e06096a750a066accf4257f45d036216675c8836a52b7b"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:05:05Z",
+      "createdAt": "2026-10-27T18:05:05Z",
+      "updatedAt": "2026-10-27T18:05:05Z",
+      "lastCheckedAt": "2026-10-27T18:05:05Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1025250/"
+      }
+    },
+    {
+      "id": "c_db0991872b739784",
+      "gameId": "g_000065",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/shadow-corridor",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "storeLink",
+      "value": {
+        "store": "nintendo-eshop",
+        "url": "https://www.nintendo.com/us/store/products/shadow-corridor-switch/"
+      }
+    },
+    {
+      "id": "c_58dae184a4e340a4",
+      "gameId": "g_000065",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1025250/",
+          "retrievedAt": "2026-10-27T18:05:05Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:19eed61b28cbb0a3f6e06096a750a066accf4257f45d036216675c8836a52b7b"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:05:05Z",
+      "createdAt": "2026-10-27T18:05:05Z",
+      "updatedAt": "2026-10-27T18:05:05Z",
+      "lastCheckedAt": "2026-10-27T18:05:05Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1025250/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Shadow Corridor のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Space Onigiri Game LLC"
+        }
+      }
+    },
+    {
+      "id": "c_221a602af4d12723",
+      "gameId": "g_000065",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/shadow-corridor",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scdtaz.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Shadow Corridor のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_5985faa7e020e6e5",
+      "gameId": "g_000065",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/shadow-corridor",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scdtb2.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Shadow Corridor のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_688fe64bb7882ef5",
+      "gameId": "g_000065",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/shadow-corridor",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scdtb5.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Shadow Corridor のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_6dcd4ee04760adee",
+      "gameId": "g_000065",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/shadow-corridor",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scdtb4.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Shadow Corridor のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_b251c8892dc77537",
+      "gameId": "g_000065",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/shadow-corridor",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scdtax.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Shadow Corridor のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    }
+  ]
+}

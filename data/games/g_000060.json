@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000060",
+  "status": "published",
+  "title": {
+    "display": "８番出口",
+    "original": "８番出口",
+    "originalLang": "ja"
+  },
+  "aliases": [
+    {
+      "value": "Exit 8",
+      "lang": "en",
+      "kind": "abbreviation"
+    },
+    {
+      "value": "The Exit 8",
+      "lang": "en",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 2653790,
+    "igdbId": 275404
+  },
+  "associatedApps": [],
+  "officialUrl": "https://www.kotakecreate.com/",
+  "developerIds": [
+    "dev_000056"
+  ],
+  "publisherIds": [
+    "dev_000057"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "solo-developer",
+        "note": "個人開発者KOTAKE CREATEによる作品とAUTOMATON WESTのインタビューに明記",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://automaton-media.com/en/interviews/interview-the-exit-8-developer-kotake-create-on-the-perks-of-being-a-solo-dev-and-how-platform-8-came-to-be/",
+            "publishedAt": "2024-06-28",
+            "retrievedAt": "2026-10-27T18:17:31Z",
+            "quote": "We sat down with Kotake Create, the solo Japanese developer behind indie hit The Exit 8",
+            "originKey": "media:automaton-media.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T18:17:31Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2653790/",
+        "retrievedAt": "2026-10-27T13:49:28Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2653790/",
+        "retrievedAt": "2026-10-27T18:04:20Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:fd3ceb52a5a71dbbcf013812be0cb9530c0b0df34add56385f24550e31f69981"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2653790/",
+        "retrievedAt": "2026-10-27T18:04:20Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:fd3ceb52a5a71dbbcf013812be0cb9530c0b0df34add56385f24550e31f69981"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/the-exit-8",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2653790/",
+        "retrievedAt": "2026-10-27T18:04:20Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:fd3ceb52a5a71dbbcf013812be0cb9530c0b0df34add56385f24550e31f69981"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2653790/",
+        "retrievedAt": "2026-10-27T18:04:20Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:fd3ceb52a5a71dbbcf013812be0cb9530c0b0df34add56385f24550e31f69981"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2653790/",
+        "retrievedAt": "2026-10-27T18:04:20Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:fd3ceb52a5a71dbbcf013812be0cb9530c0b0df34add56385f24550e31f69981"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:04:20Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

@@ -1,0 +1,863 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000061",
+  "claims": [
+    {
+      "id": "c_94420e79fbaea048",
+      "gameId": "g_000061",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1356670/",
+          "retrievedAt": "2026-10-27T18:04:29Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c6e9f38f37adf0e6b2d48920258f762a43607639fb5651f9a4cd7b09572aa610"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:04:29Z",
+      "createdAt": "2026-10-27T18:04:29Z",
+      "updatedAt": "2026-10-27T18:04:29Z",
+      "lastCheckedAt": "2026-10-27T18:04:29Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2020,
+          "month": 11,
+          "day": 10
+        },
+        "rawText": "10 Nov, 2020"
+      }
+    },
+    {
+      "id": "c_9b6ba20b5becb02d",
+      "gameId": "g_000061",
+      "scope": {
+        "platform": "ps4",
+        "region": "jp"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/sakuna-of-rice-and-ruin",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2020,
+          "month": 11,
+          "day": 12
+        },
+        "rawText": "Nov 12, 2020"
+      }
+    },
+    {
+      "id": "c_a012079727e04fd9",
+      "gameId": "g_000061",
+      "scope": {
+        "platform": "switch",
+        "region": "jp"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/sakuna-of-rice-and-ruin",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2020,
+          "month": 11,
+          "day": 12
+        },
+        "rawText": "Nov 12, 2020"
+      }
+    },
+    {
+      "id": "c_81f3909c093cf360",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1356670/",
+          "retrievedAt": "2026-10-27T18:04:35Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8249ad81a25fd62048d65477902dcf09956aa3943fd1f22f80468526c5d5ceb2"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:04:29Z",
+      "createdAt": "2026-10-27T18:04:29Z",
+      "updatedAt": "2026-10-27T18:04:29Z",
+      "lastCheckedAt": "2026-10-27T18:04:35Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_4a5281cc304b0c1a",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1356670/",
+          "retrievedAt": "2026-10-27T18:04:29Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c6e9f38f37adf0e6b2d48920258f762a43607639fb5651f9a4cd7b09572aa610"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:04:29Z",
+      "createdAt": "2026-10-27T18:04:29Z",
+      "updatedAt": "2026-10-27T18:04:29Z",
+      "lastCheckedAt": "2026-10-27T18:04:29Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_892d147a851f0176",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1356670/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "quote": "稲を育てて強くなる和風アクションRPG登場！",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "鬼が支配する「ヒノエ島」を舞台に、横スクロールのコンボアクションと米づくりのシミュレーションを組み合わせた和風アクションRPG。田植えから刈り取りまでの工程を経て育てた米によって、サクナヒメが強くなる。"
+      }
+    },
+    {
+      "id": "c_6bc12c96f97ada96",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1356670/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "quote": "稲を育てて強くなる和風アクションRPG登場！",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "田植え、育成、刈り取りなどの工程を経て米を育てる",
+          "農具を武器にした武技と、伸び縮みする羽衣による移動",
+          "島を支配する鬼と戦う横スクロールのアクション"
+        ]
+      }
+    },
+    {
+      "id": "c_2d708b2b6aa36bb3",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1356670/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_3dbaaad5bff30966",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1356670/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "farming-sim"
+      }
+    },
+    {
+      "id": "c_cf682f2bc85a43d9",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1356670/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "japan"
+      }
+    },
+    {
+      "id": "c_d59f6e04abfa7731",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1356670/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_dae3c509b8f586dd",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1356670/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "action-rpg"
+      }
+    },
+    {
+      "id": "c_f56c28e89ffb75ea",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1356670/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_4aeb8ff16795e9cc",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1356670/",
+          "retrievedAt": "2026-10-27T18:04:29Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c6e9f38f37adf0e6b2d48920258f762a43607639fb5651f9a4cd7b09572aa610"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:04:29Z",
+      "createdAt": "2026-10-27T18:04:29Z",
+      "updatedAt": "2026-10-27T18:04:29Z",
+      "lastCheckedAt": "2026-10-27T18:04:29Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1356670/"
+      }
+    },
+    {
+      "id": "c_40a49b57957cd738",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/sakuna-of-rice-and-ruin",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "storeLink",
+      "value": {
+        "store": "epic",
+        "url": "https://store.epicgames.com/ja/p/sakuna-of-rice-and-ruin"
+      }
+    },
+    {
+      "id": "c_7d1c2d2fb358f3a8",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/sakuna-of-rice-and-ruin",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "storeLink",
+      "value": {
+        "store": "nintendo-eshop",
+        "url": "https://www.nintendo.com/games/detail/sakuna-of-rice-and-ruin-switch/"
+      }
+    },
+    {
+      "id": "c_fc227e3d229fc8a9",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/sakuna-of-rice-and-ruin",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "storeLink",
+      "value": {
+        "store": "playstation-store",
+        "url": "https://store.playstation.com/ja-jp/concept/229323"
+      }
+    },
+    {
+      "id": "c_a710fee0f7a1134b",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1356670/",
+          "retrievedAt": "2026-10-27T18:04:29Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c6e9f38f37adf0e6b2d48920258f762a43607639fb5651f9a4cd7b09572aa610"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:04:29Z",
+      "createdAt": "2026-10-27T18:04:29Z",
+      "updatedAt": "2026-10-27T18:04:29Z",
+      "lastCheckedAt": "2026-10-27T18:04:29Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1356670/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "天穂のサクナヒメ のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "XSEED Games"
+        }
+      }
+    },
+    {
+      "id": "c_1430ce26a0af8b39",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/sakuna-of-rice-and-ruin",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/srr2vs7gqzvecm2ckje9.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "天穂のサクナヒメ のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_1800252f8ebae9d4",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/sakuna-of-rice-and-ruin",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ju9phtfzrcx9s6cvqo1l.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "天穂のサクナヒメ のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_61659184fb300f2a",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/sakuna-of-rice-and-ruin",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scju2a.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "天穂のサクナヒメ のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_de192bcf49335a11",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/sakuna-of-rice-and-ruin",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scju26.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "天穂のサクナヒメ のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_e4b5871a9ee49773",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/sakuna-of-rice-and-ruin",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scju28.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "天穂のサクナヒメ のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_f5c637c63890d310",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/sakuna-of-rice-and-ruin",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scju29.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "天穂のサクナヒメ のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_fce9f8d879e3b755",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/sakuna-of-rice-and-ruin",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/bvzk7zukw7bpwkjzppnd.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "天穂のサクナヒメ のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_fe33fc20f6e4abad",
+      "gameId": "g_000061",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/sakuna-of-rice-and-ruin",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/kkus2c8uwdpwyiky7j6s.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "天穂のサクナヒメ のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    }
+  ]
+}

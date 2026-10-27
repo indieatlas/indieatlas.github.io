@@ -1,0 +1,799 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000063",
+  "claims": [
+    {
+      "id": "c_efa7cbbfbef3af63",
+      "gameId": "g_000063",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1901370/",
+          "retrievedAt": "2026-10-27T18:04:47Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:efed95e4cf76d63150926f1052520e35248c2022a96bc12bf19057935c464c69"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:04:47Z",
+      "createdAt": "2026-10-27T18:04:47Z",
+      "updatedAt": "2026-10-27T18:04:47Z",
+      "lastCheckedAt": "2026-10-27T18:04:47Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2022,
+          "month": 4,
+          "day": 11
+        },
+        "rawText": "11 Apr, 2022"
+      }
+    },
+    {
+      "id": "c_a8588947b28a1581",
+      "gameId": "g_000063",
+      "scope": {
+        "platform": "ps4",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/ib--1",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2024,
+          "month": 3,
+          "day": 14
+        },
+        "rawText": "Mar 14, 2024"
+      }
+    },
+    {
+      "id": "c_dde5ce4628d08ae1",
+      "gameId": "g_000063",
+      "scope": {
+        "platform": "ps5",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/ib--1",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2024,
+          "month": 3,
+          "day": 14
+        },
+        "rawText": "Mar 14, 2024"
+      }
+    },
+    {
+      "id": "c_d9d7628972fc5500",
+      "gameId": "g_000063",
+      "scope": {
+        "platform": "switch",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/ib--1",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2023,
+          "month": 3,
+          "day": 9
+        },
+        "rawText": "Mar 09, 2023"
+      }
+    },
+    {
+      "id": "c_8a8ef375af5c04de",
+      "gameId": "g_000063",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1901370/",
+          "retrievedAt": "2026-10-27T18:04:53Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2de62a2a66c0ac9d1078d55ad1bc311f1aef501c8fa3bf281baff73075b5234f"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:04:47Z",
+      "createdAt": "2026-10-27T18:04:47Z",
+      "updatedAt": "2026-10-27T18:04:47Z",
+      "lastCheckedAt": "2026-10-27T18:04:53Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_5460eeff03f12306",
+      "gameId": "g_000063",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1901370/",
+          "retrievedAt": "2026-10-27T18:04:47Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:efed95e4cf76d63150926f1052520e35248c2022a96bc12bf19057935c464c69"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:04:47Z",
+      "createdAt": "2026-10-27T18:04:47Z",
+      "updatedAt": "2026-10-27T18:04:47Z",
+      "lastCheckedAt": "2026-10-27T18:04:47Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_3f75b0fce7a22966",
+      "gameId": "g_000063",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1901370/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "quote": "アイテムや美術品の特性を活かして様々なギミックを解き明かし、",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "両親と訪れた美術館でひとりきりになった少女イヴが、異変の起きた館からの脱出を目指す2D探索型アドベンチャー。アイテムや美術品の特性を使ってギミックを解く。2012年に公開されたフリーゲームのリメイク。"
+      }
+    },
+    {
+      "id": "c_e804ed25b583796c",
+      "gameId": "g_000063",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1901370/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "quote": "アイテムや美術品の特性を活かして様々なギミックを解き明かし、",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "基本操作は移動と調べるだけで、初心者でも遊べる難易度",
+          "プレイヤーの選択や行動で変わる7種類のエンディング",
+          "クリア後に解禁される美術品収集や追加ダンジョン",
+          "同行キャラクターからヒントを得られる会話システム"
+        ]
+      }
+    },
+    {
+      "id": "c_0382eafccef0d318",
+      "gameId": "g_000063",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1901370/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_2b977a3a1d80ffef",
+      "gameId": "g_000063",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1901370/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "pixel-art"
+      }
+    },
+    {
+      "id": "c_af73fd7e2b2e27b7",
+      "gameId": "g_000063",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1901370/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_c4f070aca8075e52",
+      "gameId": "g_000063",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1901370/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "horror"
+      }
+    },
+    {
+      "id": "c_d1d7e574aba0059e",
+      "gameId": "g_000063",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1901370/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_d725a9309a2d06f6",
+      "gameId": "g_000063",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1901370/",
+          "retrievedAt": "2026-10-27T18:02:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T18:02:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_cd38310ef8532ef5",
+      "gameId": "g_000063",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1901370/",
+          "retrievedAt": "2026-10-27T18:04:47Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:efed95e4cf76d63150926f1052520e35248c2022a96bc12bf19057935c464c69"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:04:47Z",
+      "createdAt": "2026-10-27T18:04:47Z",
+      "updatedAt": "2026-10-27T18:04:47Z",
+      "lastCheckedAt": "2026-10-27T18:04:47Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1901370/"
+      }
+    },
+    {
+      "id": "c_4bf65547d3a4c570",
+      "gameId": "g_000063",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/ib--1",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "storeLink",
+      "value": {
+        "store": "playstation-store",
+        "url": "https://store.playstation.com/ja-jp/concept/10008940"
+      }
+    },
+    {
+      "id": "c_ec74dcfebdac1834",
+      "gameId": "g_000063",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/ib--1",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "storeLink",
+      "value": {
+        "store": "nintendo-eshop",
+        "url": "https://www.nintendo.com/store/products/ib-switch/"
+      }
+    },
+    {
+      "id": "c_b66ee90014679b74",
+      "gameId": "g_000063",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1901370/",
+          "retrievedAt": "2026-10-27T18:04:47Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:efed95e4cf76d63150926f1052520e35248c2022a96bc12bf19057935c464c69"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:04:47Z",
+      "createdAt": "2026-10-27T18:04:47Z",
+      "updatedAt": "2026-10-27T18:04:47Z",
+      "lastCheckedAt": "2026-10-27T18:04:47Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1901370/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Ib のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "PLAYISM"
+        }
+      }
+    },
+    {
+      "id": "c_117ba7b1a6b190b8",
+      "gameId": "g_000063",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/ib--1",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scge6q.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Ib のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_5172a3fbb5ad9634",
+      "gameId": "g_000063",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/ib--1",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scge6o.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Ib のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_6dc13407388e0be8",
+      "gameId": "g_000063",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/ib--1",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scge6p.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Ib のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_8092fbaef95e37d3",
+      "gameId": "g_000063",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/ib--1",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scge6s.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Ib のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_87489f1c41f69f8d",
+      "gameId": "g_000063",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/ib--1",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scge6r.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Ib のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_bebb4ca3ca5da638",
+      "gameId": "g_000063",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/ib--1",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scge6t.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Ib のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    }
+  ]
+}

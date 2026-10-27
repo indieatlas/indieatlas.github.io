@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000066",
+  "status": "candidate",
+  "title": {
+    "display": "魔法少女ノ魔女裁判",
+    "original": "魔法少女ノ魔女裁判",
+    "originalLang": "ja"
+  },
+  "aliases": [
+    {
+      "value": "まのさば",
+      "lang": "ja",
+      "kind": "abbreviation"
+    },
+    {
+      "value": "Magical Girl Witch Trials",
+      "lang": "en",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 3101040,
+    "igdbId": 324791
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3369090",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "3423770",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://manosaba.com",
+  "developerIds": [
+    "dev_000070",
+    "dev_000071"
+  ],
+  "publisherIds": [
+    "dev_000071",
+    "dev_000072"
+  ],
+  "indie": {
+    "assessment": "unknown",
+    "reasons": [],
+    "assessedAt": "2026-10-27T18:05:14Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3101040/",
+        "retrievedAt": "2026-10-27T18:02:58Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3101040/",
+        "retrievedAt": "2026-10-27T18:05:14Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:8f21aee01bff1945de462389b79926f05b1f6fa9eb4437e149f336cfb8631941"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3101040/",
+        "retrievedAt": "2026-10-27T18:05:14Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:8f21aee01bff1945de462389b79926f05b1f6fa9eb4437e149f336cfb8631941"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/magical-girl-witch-trials",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3101040/",
+        "retrievedAt": "2026-10-27T18:05:14Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:8f21aee01bff1945de462389b79926f05b1f6fa9eb4437e149f336cfb8631941"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3101040/",
+        "retrievedAt": "2026-10-27T18:05:14Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:8f21aee01bff1945de462389b79926f05b1f6fa9eb4437e149f336cfb8631941"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3101040/",
+        "retrievedAt": "2026-10-27T18:05:14Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:8f21aee01bff1945de462389b79926f05b1f6fa9eb4437e149f336cfb8631941"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:05:14Z",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

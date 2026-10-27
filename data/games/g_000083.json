@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000083",
+  "status": "published",
+  "title": {
+    "display": "A Little to the Left",
+    "original": "A Little to the Left",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1629520,
+    "igdbId": 152180
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "2343790",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2828160",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://maxinferno.com/",
+  "developerIds": [
+    "dev_000107"
+  ],
+  "publisherIds": [
+    "dev_000108"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "small-team",
+        "note": "小さな開発スタジオと公式サイトに明記",
+        "evidence": [
+          {
+            "kind": "official",
+            "url": "https://www.maxinferno.com/",
+            "retrievedAt": "2026-10-27T18:17:31Z",
+            "quote": "Tiny dev studio in a seaside town making a tidy puzzler,",
+            "originKey": "official:maxinferno.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T18:17:31Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1629520/",
+        "retrievedAt": "2026-10-27T18:07:47Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2b5cd14383aff9309f64ced1409ef834ec8cf5264ba3468263f64baa65f80cfe"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1629520/",
+        "retrievedAt": "2026-10-27T18:07:47Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2b5cd14383aff9309f64ced1409ef834ec8cf5264ba3468263f64baa65f80cfe"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/a-little-to-the-left",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1629520/",
+        "retrievedAt": "2026-10-27T18:07:47Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2b5cd14383aff9309f64ced1409ef834ec8cf5264ba3468263f64baa65f80cfe"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1629520/",
+        "retrievedAt": "2026-10-27T18:07:47Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2b5cd14383aff9309f64ced1409ef834ec8cf5264ba3468263f64baa65f80cfe"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1629520/",
+        "retrievedAt": "2026-10-27T18:07:47Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2b5cd14383aff9309f64ced1409ef834ec8cf5264ba3468263f64baa65f80cfe"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:07:47Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

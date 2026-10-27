@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000068",
+  "status": "published",
+  "title": {
+    "display": "ENDER LILIES: Quietus of the Knights",
+    "original": "ENDER LILIES: Quietus of the Knights",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "エンダーリリーズ",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1369630,
+    "igdbId": 138858
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1658570",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://www.enderlilies.com/",
+  "developerIds": [
+    "dev_000075",
+    "dev_000076"
+  ],
+  "publisherIds": [
+    "dev_000077"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-showcase",
+        "note": "Nintendo Indie World（2021年4月14日）で完成版が発表されたと記載（Wikipedia）",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://en.wikipedia.org/wiki/Ender_Lilies:_Quietus_of_the_Knights",
+            "retrievedAt": "2026-10-27T18:17:31Z",
+            "quote": "On April 14, 2021, during Nintendo's Indie World showcase, Binary Haze Interactive released a trailer announcing the full release of the game",
+            "originKey": "media:wikipedia.org"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T18:17:31Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1369630/",
+        "retrievedAt": "2026-10-27T18:02:58Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1369630/",
+        "retrievedAt": "2026-10-27T18:05:32Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2b72dc76290131ebb3034eceba7e8ca69e947d3a9ededd68b6fb40a7d26259b2"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1369630/",
+        "retrievedAt": "2026-10-27T18:05:32Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2b72dc76290131ebb3034eceba7e8ca69e947d3a9ededd68b6fb40a7d26259b2"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/ender-lilies-quietus-of-the-knights",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1369630/",
+        "retrievedAt": "2026-10-27T18:05:32Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2b72dc76290131ebb3034eceba7e8ca69e947d3a9ededd68b6fb40a7d26259b2"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1369630/",
+        "retrievedAt": "2026-10-27T18:05:32Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2b72dc76290131ebb3034eceba7e8ca69e947d3a9ededd68b6fb40a7d26259b2"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1369630/",
+        "retrievedAt": "2026-10-27T18:05:32Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2b72dc76290131ebb3034eceba7e8ca69e947d3a9ededd68b6fb40a7d26259b2"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:05:32Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

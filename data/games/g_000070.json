@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000070",
+  "status": "candidate",
+  "title": {
+    "display": "Touhou Luna Nights",
+    "original": "Touhou Luna Nights",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "東方ルナナイツ",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 851100,
+    "igdbId": 105447
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1142470",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://whysoserious.jp/",
+  "developerIds": [
+    "dev_000079",
+    "dev_000061"
+  ],
+  "publisherIds": [
+    "dev_000061",
+    "dev_000063"
+  ],
+  "indie": {
+    "assessment": "unknown",
+    "reasons": [],
+    "assessedAt": "2026-10-27T18:05:50Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/851100/",
+        "retrievedAt": "2026-10-27T18:02:59Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/851100/",
+        "retrievedAt": "2026-10-27T18:05:50Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:1fca741bccd5d8718e0bc9bedda7f9ad5c499fd7a0f53e4ea572f88c08de4ab5"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/851100/",
+        "retrievedAt": "2026-10-27T18:05:50Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:1fca741bccd5d8718e0bc9bedda7f9ad5c499fd7a0f53e4ea572f88c08de4ab5"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/touhou-luna-nights",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/851100/",
+        "retrievedAt": "2026-10-27T18:05:50Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:1fca741bccd5d8718e0bc9bedda7f9ad5c499fd7a0f53e4ea572f88c08de4ab5"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/851100/",
+        "retrievedAt": "2026-10-27T18:05:50Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:1fca741bccd5d8718e0bc9bedda7f9ad5c499fd7a0f53e4ea572f88c08de4ab5"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/851100/",
+        "retrievedAt": "2026-10-27T18:05:50Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:1fca741bccd5d8718e0bc9bedda7f9ad5c499fd7a0f53e4ea572f88c08de4ab5"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:05:50Z",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

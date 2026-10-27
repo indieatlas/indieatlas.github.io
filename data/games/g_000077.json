@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000077",
+  "status": "published",
+  "title": {
+    "display": "DREDGE",
+    "original": "DREDGE",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "ドレッジ",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1562430,
+    "igdbId": 164867
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "2104240",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2198580",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2198610",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2561440",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2561450",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://www.dredge.game/",
+  "developerIds": [
+    "dev_000092"
+  ],
+  "publisherIds": [
+    "dev_000093"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "small-team",
+        "note": "ニュージーランドの小規模インディースタジオと公式サイトに明記",
+        "evidence": [
+          {
+            "kind": "official",
+            "url": "https://www.blacksaltgames.com/",
+            "retrievedAt": "2026-10-27T18:17:31Z",
+            "quote": "Black Salt Games is a small indie studio from New Zealand driven by a love for video games.",
+            "originKey": "official:blacksaltgames.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T18:17:31Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1562430/",
+        "retrievedAt": "2026-10-27T18:02:58Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1562430/",
+        "retrievedAt": "2026-10-27T18:06:53Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:64a4aa94b0df86458a44529a01c670f3d2dcd3311c5a2da844c2a19f6fbb8bba"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1562430/",
+        "retrievedAt": "2026-10-27T18:06:53Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:64a4aa94b0df86458a44529a01c670f3d2dcd3311c5a2da844c2a19f6fbb8bba"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/dredge",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1562430/",
+        "retrievedAt": "2026-10-27T18:06:53Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:64a4aa94b0df86458a44529a01c670f3d2dcd3311c5a2da844c2a19f6fbb8bba"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1562430/",
+        "retrievedAt": "2026-10-27T18:06:53Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:64a4aa94b0df86458a44529a01c670f3d2dcd3311c5a2da844c2a19f6fbb8bba"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1562430/",
+        "retrievedAt": "2026-10-27T18:06:53Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:64a4aa94b0df86458a44529a01c670f3d2dcd3311c5a2da844c2a19f6fbb8bba"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:06:53Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

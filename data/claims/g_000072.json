@@ -1,0 +1,930 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000072",
+  "claims": [
+    {
+      "id": "c_169d9e777b4bb0c6",
+      "gameId": "g_000072",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/813230/",
+          "retrievedAt": "2026-10-27T18:06:08Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dd7af3b22576b24fd2b074625b2c9502bdde0b6c63657d714f5fe25ff3ec158a"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:06:08Z",
+      "createdAt": "2026-10-27T18:06:08Z",
+      "updatedAt": "2026-10-27T18:06:08Z",
+      "lastCheckedAt": "2026-10-27T18:06:08Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2024,
+          "month": 5,
+          "day": 9
+        },
+        "rawText": "9 May, 2024"
+      }
+    },
+    {
+      "id": "c_08fa4e604b5abe31",
+      "gameId": "g_000072",
+      "scope": {
+        "platform": "ps5",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/animal-well",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2024,
+          "month": 5,
+          "day": 9
+        },
+        "rawText": "May 09, 2024"
+      }
+    },
+    {
+      "id": "c_ed2baa2583f77c08",
+      "gameId": "g_000072",
+      "scope": {
+        "platform": "switch",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/animal-well",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2024,
+          "month": 5,
+          "day": 9
+        },
+        "rawText": "May 09, 2024"
+      }
+    },
+    {
+      "id": "c_8eb855701233cb1f",
+      "gameId": "g_000072",
+      "scope": {
+        "platform": "xbox-series",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/animal-well",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2024,
+          "month": 10,
+          "day": 17
+        },
+        "rawText": "Oct 17, 2024"
+      }
+    },
+    {
+      "id": "c_fbd0688493879b82",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/813230/",
+          "retrievedAt": "2026-10-27T18:06:14Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e26f171f77258e1f58177e9901403b629a6ffbd98ae502a30333d46d673b4042"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:06:08Z",
+      "createdAt": "2026-10-27T18:06:08Z",
+      "updatedAt": "2026-10-27T18:06:08Z",
+      "lastCheckedAt": "2026-10-27T18:06:14Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_a8b2239d95d3600a",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/813230/",
+          "retrievedAt": "2026-10-27T18:06:08Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dd7af3b22576b24fd2b074625b2c9502bdde0b6c63657d714f5fe25ff3ec158a"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:06:08Z",
+      "createdAt": "2026-10-27T18:06:08Z",
+      "updatedAt": "2026-10-27T18:06:08Z",
+      "lastCheckedAt": "2026-10-27T18:06:08Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_99b8c5522dac438d",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/813230/",
+          "retrievedAt": "2026-10-27T13:54:05Z",
+          "quote": "入り組んだ迷宮の中を探索し、多くの秘密を解き明かそう。",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T13:54:05Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "summary",
+      "value": {
+        "ja": "入り組んだ迷宮を探索し、隠された多くの秘密を解き明かしていく2Dの探索アドベンチャー。戦う力を持たない主人公が、複数の使い道を持つアイテムや周囲の環境を利用して、美しくも恐ろしい生き物たちが潜む世界を進む。"
+      }
+    },
+    {
+      "id": "c_1feafbd94723dc19",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/813230/",
+          "retrievedAt": "2026-10-27T13:54:05Z",
+          "quote": "入り組んだ迷宮の中を探索し、多くの秘密を解き明かそう。",
+          "locator": "steam:appdetails.about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T13:54:05Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "features",
+      "value": {
+        "ja": [
+          "すべてのアイテムに複数の使い道がある",
+          "自由に選んだルートで探索しアイテムを集める",
+          "本編の後にも長く遊べる隠されたパズル",
+          "アクションよりも緊張感とサスペンスを重視した作り"
+        ]
+      }
+    },
+    {
+      "id": "c_07bd1fa7a77c342c",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/813230/",
+          "retrievedAt": "2026-10-27T13:54:05Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T13:54:05Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "pixel-art"
+      }
+    },
+    {
+      "id": "c_0edeb53f56dbbf38",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/813230/",
+          "retrievedAt": "2026-10-27T13:54:05Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T13:54:05Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_a5030e6f52c999c7",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/813230/",
+          "retrievedAt": "2026-10-27T13:54:05Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T13:54:05Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_ce7c4ebd0e7ea77f",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/813230/",
+          "retrievedAt": "2026-10-27T13:54:05Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T13:54:05Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_e125e0282bb7a905",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/813230/",
+          "retrievedAt": "2026-10-27T13:54:05Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T13:54:05Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "metroidvania"
+      }
+    },
+    {
+      "id": "c_ecd241f19455b8d7",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/813230/",
+          "retrievedAt": "2026-10-27T13:54:05Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T13:54:05Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "animals"
+      }
+    },
+    {
+      "id": "c_f4bc79330bf012d2",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/813230/",
+          "retrievedAt": "2026-10-27T13:54:05Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:17:43Z",
+      "createdAt": "2026-10-27T18:17:43Z",
+      "updatedAt": "2026-10-27T18:17:43Z",
+      "lastCheckedAt": "2026-10-27T13:54:05Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "tag",
+      "value": {
+        "tagId": "tense"
+      }
+    },
+    {
+      "id": "c_89e92b6466e16499",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/813230/",
+          "retrievedAt": "2026-10-27T18:06:08Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dd7af3b22576b24fd2b074625b2c9502bdde0b6c63657d714f5fe25ff3ec158a"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:06:08Z",
+      "createdAt": "2026-10-27T18:06:08Z",
+      "updatedAt": "2026-10-27T18:06:08Z",
+      "lastCheckedAt": "2026-10-27T18:06:08Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/813230/"
+      }
+    },
+    {
+      "id": "c_0aa2230c9254799e",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/animal-well",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "storeLink",
+      "value": {
+        "store": "nintendo-eshop",
+        "url": "https://www.nintendo.com/store/products/animal-well-switch/"
+      }
+    },
+    {
+      "id": "c_5c1132f50191348e",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/animal-well",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "storeLink",
+      "value": {
+        "store": "playstation-store",
+        "url": "https://store.playstation.com/ja-jp/concept/10004542"
+      }
+    },
+    {
+      "id": "c_6d6b30b5fefbb7e2",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/animal-well",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "storeLink",
+      "value": {
+        "store": "microsoft-store",
+        "url": "https://www.xbox.com/ja-JP/games/store/animal-well/9nfcmc3s42nv"
+      }
+    },
+    {
+      "id": "c_e8ef18e6e4360d00",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/813230/",
+          "retrievedAt": "2026-10-27T18:06:08Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dd7af3b22576b24fd2b074625b2c9502bdde0b6c63657d714f5fe25ff3ec158a"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:06:08Z",
+      "createdAt": "2026-10-27T18:06:08Z",
+      "updatedAt": "2026-10-27T18:06:08Z",
+      "lastCheckedAt": "2026-10-27T18:06:08Z",
+      "createdBy": "agent",
+      "createdByRun": "local-seed",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/813230/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "ANIMAL WELL のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Bigmode"
+        }
+      }
+    },
+    {
+      "id": "c_1fdfa6b9ba29aa2a",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/animal-well",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scfttz.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "ANIMAL WELL のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_53b0a2e79a164319",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/animal-well",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scfttu.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "ANIMAL WELL のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_56f1987ffc174e81",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/animal-well",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scftto.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "ANIMAL WELL のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_6617a991ed1baf0f",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/animal-well",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scfttw.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "ANIMAL WELL のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_697680739bf61fdc",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/animal-well",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scfttx.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "ANIMAL WELL のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_a33530cf132f2778",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/animal-well",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scftts.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "ANIMAL WELL のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_acbccd3b1d2a0c87",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/animal-well",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scfttp.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "ANIMAL WELL のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_e07bba51ab317587",
+      "gameId": "g_000072",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/animal-well",
+          "retrievedAt": "2026-10-27T18:18:00Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-10-28",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-10-27T18:18:00Z",
+      "createdAt": "2026-10-27T18:18:00Z",
+      "updatedAt": "2026-10-27T18:18:00Z",
+      "lastCheckedAt": "2026-10-27T18:18:00Z",
+      "createdBy": "agent",
+      "createdByRun": "local-igdb",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scftty.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "ANIMAL WELL のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    }
+  ]
+}

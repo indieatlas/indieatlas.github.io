@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000071",
+  "status": "published",
+  "title": {
+    "display": "Balatro",
+    "original": "Balatro",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "バラトロ",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 2379780,
+    "igdbId": 251833
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "2834460",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://www.playbalatro.com/",
+  "developerIds": [
+    "dev_000080"
+  ],
+  "publisherIds": [
+    "dev_000081"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-showcase",
+        "note": "IGF 2025のExcellence in Design部門ファイナリスト",
+        "evidence": [
+          {
+            "kind": "event",
+            "url": "https://igf.com/archive-2025/",
+            "retrievedAt": "2026-10-27T18:17:31Z",
+            "quote": "Excellence in Design Tactical Breach Wizards (Suspicious Developments) Balatro (LocalThunk / Playstack)",
+            "originKey": "event:igf.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T18:17:31Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2379780/",
+        "retrievedAt": "2026-10-27T18:02:58Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2379780/",
+        "retrievedAt": "2026-10-27T18:05:59Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9f89e366270705ae7e2cce94ef322c1fdee735a3badc1e60a088e8b00ab09d40"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2379780/",
+        "retrievedAt": "2026-10-27T18:05:59Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9f89e366270705ae7e2cce94ef322c1fdee735a3badc1e60a088e8b00ab09d40"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/balatro",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2379780/",
+        "retrievedAt": "2026-10-27T18:05:59Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9f89e366270705ae7e2cce94ef322c1fdee735a3badc1e60a088e8b00ab09d40"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2379780/",
+        "retrievedAt": "2026-10-27T18:05:59Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9f89e366270705ae7e2cce94ef322c1fdee735a3badc1e60a088e8b00ab09d40"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2379780/",
+        "retrievedAt": "2026-10-27T18:05:59Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9f89e366270705ae7e2cce94ef322c1fdee735a3badc1e60a088e8b00ab09d40"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:05:59Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

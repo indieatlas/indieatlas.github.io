@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000081",
+  "status": "published",
+  "title": {
+    "display": "Lil Gator Game",
+    "original": "Lil Gator Game",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "リル ゲーター ゲーム",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1586800,
+    "igdbId": 145796
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3205060",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://www.playtonicgames.com/game/lil-gator-game/",
+  "developerIds": [
+    "dev_000103"
+  ],
+  "publisherIds": [
+    "dev_000104"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "small-team",
+        "note": "3人の友人によるチームと公式サイトに明記",
+        "evidence": [
+          {
+            "kind": "official",
+            "url": "https://megawobble.games/about/",
+            "retrievedAt": "2026-10-27T18:17:31Z",
+            "quote": "Megawobble is a team of three long-time friends based in Louisville, Kentucky, and Orlando, Florida.",
+            "originKey": "official:megawobble.games"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T18:17:31Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1586800/",
+        "retrievedAt": "2026-10-27T18:02:58Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1586800/",
+        "retrievedAt": "2026-10-27T18:07:29Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:18cf975c2095da01acdfecf13244d8869608a8379d1deeaf2f1c84d3ad4c8bb6"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1586800/",
+        "retrievedAt": "2026-10-27T18:07:29Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:18cf975c2095da01acdfecf13244d8869608a8379d1deeaf2f1c84d3ad4c8bb6"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/lil-gator-game",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1586800/",
+        "retrievedAt": "2026-10-27T18:07:29Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:18cf975c2095da01acdfecf13244d8869608a8379d1deeaf2f1c84d3ad4c8bb6"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1586800/",
+        "retrievedAt": "2026-10-27T18:07:29Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:18cf975c2095da01acdfecf13244d8869608a8379d1deeaf2f1c84d3ad4c8bb6"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1586800/",
+        "retrievedAt": "2026-10-27T18:07:29Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:18cf975c2095da01acdfecf13244d8869608a8379d1deeaf2f1c84d3ad4c8bb6"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:07:29Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

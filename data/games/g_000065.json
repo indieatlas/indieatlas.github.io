@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000065",
+  "status": "published",
+  "title": {
+    "display": "Shadow Corridor",
+    "original": "Shadow Corridor",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "影廊",
+      "lang": "ja",
+      "kind": "abbreviation"
+    },
+    {
+      "value": "Shadow Corridor 影の回廊",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1025250,
+    "igdbId": 172854
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1363880",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://www.spaceonigirigames.com/games",
+  "developerIds": [
+    "dev_000069"
+  ],
+  "publisherIds": [
+    "dev_000069"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1025250/",
+            "retrievedAt": "2026-10-27T18:05:05Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:19eed61b28cbb0a3f6e06096a750a066accf4257f45d036216675c8836a52b7b"
+          }
+        ]
+      },
+      {
+        "code": "solo-developer",
+        "note": "モデリングから脚本まで一人で制作と公式サイトのプロフィールに明記",
+        "evidence": [
+          {
+            "kind": "official",
+            "url": "https://www.spaceonigirigames.com/profiele",
+            "retrievedAt": "2026-10-27T18:17:31Z",
+            "quote": "3Dモデリング、プログラミング、ゲームデザイン、脚本などは 一人で作っています",
+            "originKey": "official:spaceonigirigames.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T18:17:31Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1025250/",
+        "retrievedAt": "2026-10-27T18:02:58Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1025250/",
+        "retrievedAt": "2026-10-27T18:05:05Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:19eed61b28cbb0a3f6e06096a750a066accf4257f45d036216675c8836a52b7b"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1025250/",
+        "retrievedAt": "2026-10-27T18:05:05Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:19eed61b28cbb0a3f6e06096a750a066accf4257f45d036216675c8836a52b7b"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/shadow-corridor",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1025250/",
+        "retrievedAt": "2026-10-27T18:05:05Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:19eed61b28cbb0a3f6e06096a750a066accf4257f45d036216675c8836a52b7b"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1025250/",
+        "retrievedAt": "2026-10-27T18:05:05Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:19eed61b28cbb0a3f6e06096a750a066accf4257f45d036216675c8836a52b7b"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1025250/",
+        "retrievedAt": "2026-10-27T18:05:05Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:19eed61b28cbb0a3f6e06096a750a066accf4257f45d036216675c8836a52b7b"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:05:05Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

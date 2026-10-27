@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000075",
+  "status": "published",
+  "title": {
+    "display": "TUNIC",
+    "original": "TUNIC",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "チュニック",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 553420,
+    "igdbId": 23733
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1928140",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://www.tunicgame.com/",
+  "developerIds": [
+    "dev_000088"
+  ],
+  "publisherIds": [
+    "dev_000089"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-showcase",
+        "note": "IGF 2023のExcellence in Audio部門ファイナリスト",
+        "evidence": [
+          {
+            "kind": "event",
+            "url": "https://igf.com/archive-2023/",
+            "retrievedAt": "2026-10-27T18:17:31Z",
+            "quote": "Excellence in Audio The Forest Quartet (Mads & Friends) Dome Keeper (Bippinbits) Paradise Marsh (LazyEti) South of the Circle (State of Play) TUNIC (Isometricorp Games)",
+            "originKey": "event:igf.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T18:17:31Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/553420/",
+        "retrievedAt": "2026-10-27T18:02:58Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/553420/",
+        "retrievedAt": "2026-10-27T18:06:35Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:8b6f4e48fcff0df947433e9394e2288f04e77e1d536a4dc6cc44822cfdb52b19"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/553420/",
+        "retrievedAt": "2026-10-27T18:06:35Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:8b6f4e48fcff0df947433e9394e2288f04e77e1d536a4dc6cc44822cfdb52b19"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/tunic",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/553420/",
+        "retrievedAt": "2026-10-27T18:06:35Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:8b6f4e48fcff0df947433e9394e2288f04e77e1d536a4dc6cc44822cfdb52b19"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/553420/",
+        "retrievedAt": "2026-10-27T18:06:35Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:8b6f4e48fcff0df947433e9394e2288f04e77e1d536a4dc6cc44822cfdb52b19"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/553420/",
+        "retrievedAt": "2026-10-27T18:06:35Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:8b6f4e48fcff0df947433e9394e2288f04e77e1d536a4dc6cc44822cfdb52b19"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:06:35Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000069",
+  "status": "published",
+  "title": {
+    "display": "La-Mulana",
+    "original": "La-Mulana",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "LA-MULANA",
+      "lang": "en",
+      "kind": "localized"
+    },
+    {
+      "value": "ラ・ムラーナ",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 230700,
+    "igdbId": 7936
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "396690",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "http://la-mulana.com/",
+  "developerIds": [
+    "dev_000078"
+  ],
+  "publisherIds": [
+    "dev_000057"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "small-team",
+        "note": "NIGOROは4人のメンバー（本作当時は3人）とAUTOMATONのレポートに記載",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://automaton-media.com/articles/reportjp/20180805-73517/",
+            "publishedAt": "2018-08-05",
+            "retrievedAt": "2026-10-27T18:17:31Z",
+            "quote": "『LA-MULANA』の開発であるNIGOROのメンバーである楢村匠氏、サミエルこと鮫島朋龍氏、duplexこと蛯原隆行氏、そして『LA-MULANA 2』から加わった中川啓己氏の4人が勢ぞろいした",
+            "originKey": "media:automaton-media.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T18:17:31Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/230700/",
+        "retrievedAt": "2026-10-27T18:02:58Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/230700/",
+        "retrievedAt": "2026-10-27T18:05:41Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bf439fa4f810a12175d781364a4e251442bc4c649f5b066648a40ce8dac1e9a0"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/230700/",
+        "retrievedAt": "2026-10-27T18:05:41Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bf439fa4f810a12175d781364a4e251442bc4c649f5b066648a40ce8dac1e9a0"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/la-mulana--1",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/230700/",
+        "retrievedAt": "2026-10-27T18:05:41Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bf439fa4f810a12175d781364a4e251442bc4c649f5b066648a40ce8dac1e9a0"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/230700/",
+        "retrievedAt": "2026-10-27T18:05:41Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bf439fa4f810a12175d781364a4e251442bc4c649f5b066648a40ce8dac1e9a0"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/230700/",
+        "retrievedAt": "2026-10-27T18:05:41Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bf439fa4f810a12175d781364a4e251442bc4c649f5b066648a40ce8dac1e9a0"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:05:41Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

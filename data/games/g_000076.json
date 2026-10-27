@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000076",
+  "status": "published",
+  "title": {
+    "display": "Unpacking",
+    "original": "Unpacking",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "Unpacking アンパッキング",
+      "lang": "ja",
+      "kind": "localized"
+    },
+    {
+      "value": "アンパッキング",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1135690,
+    "igdbId": 115843
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1790460",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://www.unpackinggame.com/",
+  "developerIds": [
+    "dev_000090"
+  ],
+  "publisherIds": [
+    "dev_000091"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-showcase",
+        "note": "IGF 2022のSeumas McNally Grand Prize部門ファイナリスト",
+        "evidence": [
+          {
+            "kind": "event",
+            "url": "https://igf.com/archive-2022/",
+            "retrievedAt": "2026-10-27T18:17:31Z",
+            "quote": "Seumas McNally Grand Prize Inscryption (Daniel Mullins Games) Unpacking (Witch Beam)",
+            "originKey": "event:igf.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T18:17:31Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1135690/",
+        "retrievedAt": "2026-10-27T18:02:58Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1135690/",
+        "retrievedAt": "2026-10-27T18:06:44Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:da91def721c02653c5efe43680959765d91533b203681af5d3a105b141a26278"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1135690/",
+        "retrievedAt": "2026-10-27T18:06:44Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:da91def721c02653c5efe43680959765d91533b203681af5d3a105b141a26278"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/unpacking",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1135690/",
+        "retrievedAt": "2026-10-27T18:06:44Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:da91def721c02653c5efe43680959765d91533b203681af5d3a105b141a26278"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1135690/",
+        "retrievedAt": "2026-10-27T18:06:44Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:da91def721c02653c5efe43680959765d91533b203681af5d3a105b141a26278"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1135690/",
+        "retrievedAt": "2026-10-27T18:06:44Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:da91def721c02653c5efe43680959765d91533b203681af5d3a105b141a26278"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:06:44Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

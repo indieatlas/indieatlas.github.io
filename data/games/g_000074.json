@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000074",
+  "status": "published",
+  "title": {
+    "display": "Outer Wilds",
+    "original": "Outer Wilds",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "アウターワイルズ",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 753640,
+    "igdbId": 11737
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1286760",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "1622100",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000086"
+  ],
+  "publisherIds": [
+    "dev_000087"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-showcase",
+        "note": "IGF 2015のSeumas McNally Grand Prize部門ファイナリスト",
+        "evidence": [
+          {
+            "kind": "event",
+            "url": "https://igf.com/archive-2015/",
+            "retrievedAt": "2026-10-27T18:17:31Z",
+            "quote": "Seumas McNally Grand Prize Outer Wilds (Team Outer Wilds)",
+            "originKey": "event:igf.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T18:17:31Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/753640/",
+        "retrievedAt": "2026-10-27T18:02:58Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/753640/",
+        "retrievedAt": "2026-10-27T18:06:26Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e0cb00844a760855922816fc448937e5a23e0260afa16442d084cdd868964bc2"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/753640/",
+        "retrievedAt": "2026-10-27T18:06:26Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e0cb00844a760855922816fc448937e5a23e0260afa16442d084cdd868964bc2"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/outer-wilds",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/753640/",
+        "retrievedAt": "2026-10-27T18:06:26Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e0cb00844a760855922816fc448937e5a23e0260afa16442d084cdd868964bc2"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/753640/",
+        "retrievedAt": "2026-10-27T18:06:26Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e0cb00844a760855922816fc448937e5a23e0260afa16442d084cdd868964bc2"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:06:26Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

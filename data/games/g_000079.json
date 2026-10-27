@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000079",
+  "status": "published",
+  "title": {
+    "display": "Chicory: A Colorful Tale",
+    "original": "Chicory: A Colorful Tale",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "チコリー",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1123450,
+    "igdbId": 117266
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1123930",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "1635470",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2446380",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "http://chicorygame.com",
+  "developerIds": [
+    "dev_000096",
+    "dev_000097",
+    "dev_000098",
+    "dev_000099",
+    "dev_000100",
+    "dev_000101"
+  ],
+  "publisherIds": [
+    "dev_000089"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-showcase",
+        "note": "IGF 2021のSeumas McNally Grand Prize部門ファイナリスト",
+        "evidence": [
+          {
+            "kind": "event",
+            "url": "https://igf.com/archive-2021/",
+            "retrievedAt": "2026-10-27T18:17:31Z",
+            "quote": "Seumas McNally Grand Prize Umurangi Generation (Origame Digital) Paradise Killer (Kaizen Game Works) Teardown (Tuxedo Labs) Chicory: A Colorful Tale (The Chicory Team)",
+            "originKey": "event:igf.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T18:17:31Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1123450/",
+        "retrievedAt": "2026-10-27T18:02:58Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1123450/",
+        "retrievedAt": "2026-10-27T18:07:11Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eada24c55650b2ad98a70407594c6a0c4f13e8e50ce9f7e95c1097828322cb5d"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1123450/",
+        "retrievedAt": "2026-10-27T18:07:11Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eada24c55650b2ad98a70407594c6a0c4f13e8e50ce9f7e95c1097828322cb5d"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/chicory-a-colorful-tale",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1123450/",
+        "retrievedAt": "2026-10-27T18:07:11Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eada24c55650b2ad98a70407594c6a0c4f13e8e50ce9f7e95c1097828322cb5d"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1123450/",
+        "retrievedAt": "2026-10-27T18:07:11Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eada24c55650b2ad98a70407594c6a0c4f13e8e50ce9f7e95c1097828322cb5d"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1123450/",
+        "retrievedAt": "2026-10-27T18:07:11Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eada24c55650b2ad98a70407594c6a0c4f13e8e50ce9f7e95c1097828322cb5d"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:07:11Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

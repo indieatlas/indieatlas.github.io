@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000062",
+  "status": "candidate",
+  "title": {
+    "display": "NEEDY GIRL OVERDOSE",
+    "original": "NEEDY GIRL OVERDOSE",
+    "originalLang": "ja"
+  },
+  "aliases": [
+    {
+      "value": "ニディガ",
+      "lang": "ja",
+      "kind": "abbreviation"
+    },
+    {
+      "value": "NEEDY STREAMER OVERLOAD",
+      "lang": "en",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1451940,
+    "igdbId": 146564
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1645220",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "1645230",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "3412770",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://whysoserious.jp/needy/",
+  "developerIds": [
+    "dev_000061",
+    "dev_000062"
+  ],
+  "publisherIds": [
+    "dev_000061",
+    "dev_000063"
+  ],
+  "indie": {
+    "assessment": "unknown",
+    "reasons": [],
+    "assessedAt": "2026-10-27T18:04:38Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1451940/",
+        "retrievedAt": "2026-10-27T18:02:58Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1451940/",
+        "retrievedAt": "2026-10-27T18:04:38Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:668580c38c071d6661b1cb01b8ce1b7fad98ea203ca66f168918d0e89074de58"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1451940/",
+        "retrievedAt": "2026-10-27T18:04:38Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:668580c38c071d6661b1cb01b8ce1b7fad98ea203ca66f168918d0e89074de58"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/needy-streamer-overload",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1451940/",
+        "retrievedAt": "2026-10-27T18:04:38Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:668580c38c071d6661b1cb01b8ce1b7fad98ea203ca66f168918d0e89074de58"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1451940/",
+        "retrievedAt": "2026-10-27T18:04:38Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:668580c38c071d6661b1cb01b8ce1b7fad98ea203ca66f168918d0e89074de58"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1451940/",
+        "retrievedAt": "2026-10-27T18:04:38Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:668580c38c071d6661b1cb01b8ce1b7fad98ea203ca66f168918d0e89074de58"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:04:38Z",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000061",
+  "status": "published",
+  "title": {
+    "display": "天穂のサクナヒメ",
+    "original": "天穂のサクナヒメ",
+    "originalLang": "ja"
+  },
+  "aliases": [
+    {
+      "value": "サクナヒメ",
+      "lang": "ja",
+      "kind": "abbreviation"
+    },
+    {
+      "value": "Sakuna: Of Rice and Ruin",
+      "lang": "en",
+      "kind": "localized"
+    },
+    {
+      "value": "てんすいのサクナヒメ",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1356670,
+    "igdbId": 36595
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1682740",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "1703320",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "http://sakunaofriceandruin.com/",
+  "developerIds": [
+    "dev_000058"
+  ],
+  "publisherIds": [
+    "dev_000059",
+    "dev_000060"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "small-team",
+        "note": "えーでるわいすは2人のチームと記載（Wikipedia、ほかに適切な出典なし）",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://en.wikipedia.org/wiki/Sakuna:_Of_Rice_and_Ruin",
+            "retrievedAt": "2026-10-27T18:17:31Z",
+            "quote": "Sakuna: Of Rice and Ruin was developed by Edelweiss, a two-man team who previously developed the 2014 shoot 'em up game Astebreed",
+            "originKey": "media:wikipedia.org"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T18:17:31Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1356670/",
+        "retrievedAt": "2026-10-27T18:02:58Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1356670/",
+        "retrievedAt": "2026-10-27T18:04:29Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c6e9f38f37adf0e6b2d48920258f762a43607639fb5651f9a4cd7b09572aa610"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1356670/",
+        "retrievedAt": "2026-10-27T18:04:29Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c6e9f38f37adf0e6b2d48920258f762a43607639fb5651f9a4cd7b09572aa610"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/sakuna-of-rice-and-ruin",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1356670/",
+        "retrievedAt": "2026-10-27T18:04:29Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c6e9f38f37adf0e6b2d48920258f762a43607639fb5651f9a4cd7b09572aa610"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1356670/",
+        "retrievedAt": "2026-10-27T18:04:29Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c6e9f38f37adf0e6b2d48920258f762a43607639fb5651f9a4cd7b09572aa610"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1356670/",
+        "retrievedAt": "2026-10-27T18:04:29Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c6e9f38f37adf0e6b2d48920258f762a43607639fb5651f9a4cd7b09572aa610"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:04:29Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000078",
+  "status": "published",
+  "title": {
+    "display": "Return of the Obra Dinn",
+    "original": "Return of the Obra Dinn",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "Obra Dinn",
+      "lang": "en",
+      "kind": "abbreviation"
+    },
+    {
+      "value": "オブラ・ディン号",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 653530,
+    "igdbId": 9643
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1568780",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://obradinn.com",
+  "developerIds": [
+    "dev_000094"
+  ],
+  "publisherIds": [
+    "dev_000095"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-showcase",
+        "note": "IGF 2019のSeumas McNally Grand Prize部門ファイナリスト",
+        "evidence": [
+          {
+            "kind": "event",
+            "url": "https://igf.com/archive-2019/",
+            "retrievedAt": "2026-10-27T18:17:31Z",
+            "quote": "Seumas McNally Grand Prize Return of the Obra Dinn (Lucas Pope)",
+            "originKey": "event:igf.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T18:17:31Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/653530/",
+        "retrievedAt": "2026-10-27T13:48:34Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/653530/",
+        "retrievedAt": "2026-10-27T18:07:02Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c56fad1238466f5ce852317d3cbf4d9d0053f65f571662771c54d92b8c1f6ca0"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/653530/",
+        "retrievedAt": "2026-10-27T18:07:02Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c56fad1238466f5ce852317d3cbf4d9d0053f65f571662771c54d92b8c1f6ca0"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/return-of-the-obra-dinn",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/653530/",
+        "retrievedAt": "2026-10-27T18:07:02Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c56fad1238466f5ce852317d3cbf4d9d0053f65f571662771c54d92b8c1f6ca0"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/653530/",
+        "retrievedAt": "2026-10-27T18:07:02Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c56fad1238466f5ce852317d3cbf4d9d0053f65f571662771c54d92b8c1f6ca0"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/653530/",
+        "retrievedAt": "2026-10-27T18:07:02Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c56fad1238466f5ce852317d3cbf4d9d0053f65f571662771c54d92b8c1f6ca0"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:07:02Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000080",
+  "status": "published",
+  "title": {
+    "display": "Patrick's Parabox",
+    "original": "Patrick's Parabox",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1260520,
+    "igdbId": 133227
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1320610",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "1928340",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://www.patricksparabox.com/",
+  "developerIds": [
+    "dev_000102"
+  ],
+  "publisherIds": [
+    "dev_000102"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1260520/",
+            "retrievedAt": "2026-10-27T18:07:20Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:53fa97e4bd5ea629a5e138df2b01f18e551801b72fabc0c51c432f2a58d42d6a"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T18:07:20Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1260520/",
+        "retrievedAt": "2026-10-27T18:07:20Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:53fa97e4bd5ea629a5e138df2b01f18e551801b72fabc0c51c432f2a58d42d6a"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1260520/",
+        "retrievedAt": "2026-10-27T18:07:20Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:53fa97e4bd5ea629a5e138df2b01f18e551801b72fabc0c51c432f2a58d42d6a"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/patricks-parabox",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1260520/",
+        "retrievedAt": "2026-10-27T18:07:20Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:53fa97e4bd5ea629a5e138df2b01f18e551801b72fabc0c51c432f2a58d42d6a"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1260520/",
+        "retrievedAt": "2026-10-27T18:07:20Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:53fa97e4bd5ea629a5e138df2b01f18e551801b72fabc0c51c432f2a58d42d6a"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1260520/",
+        "retrievedAt": "2026-10-27T18:07:20Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:53fa97e4bd5ea629a5e138df2b01f18e551801b72fabc0c51c432f2a58d42d6a"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:07:20Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

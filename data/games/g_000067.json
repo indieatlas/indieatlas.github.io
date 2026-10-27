@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000067",
+  "status": "published",
+  "title": {
+    "display": "東方虹龍洞 ～ Unconnected Marketeers.",
+    "original": "東方虹龍洞 ～ Unconnected Marketeers.",
+    "originalLang": "ja"
+  },
+  "aliases": [
+    {
+      "value": "東方虹龍洞",
+      "lang": "ja",
+      "kind": "abbreviation"
+    },
+    {
+      "value": "Touhou Kouryudou ~ Unconnected Marketeers.",
+      "lang": "en",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1566410,
+    "igdbId": 144093
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1566420",
+      "kind": "demo"
+    }
+  ],
+  "officialUrl": "http://www16.big.or.jp/~zun/",
+  "developerIds": [
+    "dev_000073"
+  ],
+  "publisherIds": [
+    "dev_000074"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "solo-developer",
+        "note": "ZUN氏の一人サークルによる東方Projectと記載（Wikipedia）",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://en.wikipedia.org/wiki/ZUN_(video_game_developer)",
+            "retrievedAt": "2026-10-27T18:17:31Z",
+            "quote": "known for creating the Touhou Project bullet hell shoot 'em up video game series through his one-man doujin group",
+            "originKey": "media:wikipedia.org"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T18:17:31Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1566410/",
+        "retrievedAt": "2026-10-27T18:02:58Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1566410/",
+        "retrievedAt": "2026-10-27T18:05:23Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2e3c1651f3ebf70c589614c795c71b2451057396ffd8d8d23553000fb6c744b4"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1566410/",
+        "retrievedAt": "2026-10-27T18:05:23Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2e3c1651f3ebf70c589614c795c71b2451057396ffd8d8d23553000fb6c744b4"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/touhou-kouryuudou-unconnected-marketeers",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1566410/",
+        "retrievedAt": "2026-10-27T18:05:23Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2e3c1651f3ebf70c589614c795c71b2451057396ffd8d8d23553000fb6c744b4"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1566410/",
+        "retrievedAt": "2026-10-27T18:05:23Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2e3c1651f3ebf70c589614c795c71b2451057396ffd8d8d23553000fb6c744b4"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1566410/",
+        "retrievedAt": "2026-10-27T18:05:23Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2e3c1651f3ebf70c589614c795c71b2451057396ffd8d8d23553000fb6c744b4"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:05:23Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

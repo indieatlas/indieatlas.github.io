@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000073",
+  "status": "published",
+  "title": {
+    "display": "Inscryption",
+    "original": "Inscryption",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "インスクリプション",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1092790,
+    "igdbId": 139090
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1752910",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "1753260",
+      "kind": "demo"
+    }
+  ],
+  "officialUrl": "https://www.inscryption-game.com",
+  "developerIds": [
+    "dev_000084"
+  ],
+  "publisherIds": [
+    "dev_000085"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-showcase",
+        "note": "IGF 2022のSeumas McNally Grand Prize部門ファイナリスト",
+        "evidence": [
+          {
+            "kind": "event",
+            "url": "https://igf.com/archive-2022/",
+            "retrievedAt": "2026-10-27T18:17:31Z",
+            "quote": "Seumas McNally Grand Prize Inscryption (Daniel Mullins Games)",
+            "originKey": "event:igf.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T18:17:31Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1092790/",
+        "retrievedAt": "2026-10-27T18:02:58Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1092790/",
+        "retrievedAt": "2026-10-27T18:06:17Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2caa49fb55ba67ad6ebb06005fd18f68fc0037d88f248429bcb40fb2c24b2b56"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1092790/",
+        "retrievedAt": "2026-10-27T18:06:17Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2caa49fb55ba67ad6ebb06005fd18f68fc0037d88f248429bcb40fb2c24b2b56"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/inscryption",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1092790/",
+        "retrievedAt": "2026-10-27T18:06:17Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2caa49fb55ba67ad6ebb06005fd18f68fc0037d88f248429bcb40fb2c24b2b56"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1092790/",
+        "retrievedAt": "2026-10-27T18:06:17Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2caa49fb55ba67ad6ebb06005fd18f68fc0037d88f248429bcb40fb2c24b2b56"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1092790/",
+        "retrievedAt": "2026-10-27T18:06:17Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2caa49fb55ba67ad6ebb06005fd18f68fc0037d88f248429bcb40fb2c24b2b56"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:06:17Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000064",
+  "status": "published",
+  "title": {
+    "display": "アンリアルライフ",
+    "original": "アンリアルライフ",
+    "originalLang": "ja"
+  },
+  "aliases": [
+    {
+      "value": "UNREAL LIFE",
+      "lang": "en",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1335560,
+    "igdbId": 119168
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1464980",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "http://www.unreal-life.net/",
+  "developerIds": [
+    "dev_000065",
+    "dev_000066"
+  ],
+  "publisherIds": [
+    "dev_000067",
+    "dev_000068"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "solo-developer",
+        "note": "個人開発者hako 生活氏の開発とAUTOMATONが報道",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://automaton-media.com/articles/newsjp/20201113-143244/",
+            "publishedAt": "2020-11-13",
+            "retrievedAt": "2026-10-27T18:17:31Z",
+            "quote": "本作を開発したのは、個人開発者のhako 生活氏だ",
+            "originKey": "media:automaton-media.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T18:17:31Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1335560/",
+        "retrievedAt": "2026-10-27T18:02:58Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1335560/",
+        "retrievedAt": "2026-10-27T18:04:56Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d53eb426fbf7d4e5f28ae05943364b8b6a644a9bd113443aea1037887c4482a8"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1335560/",
+        "retrievedAt": "2026-10-27T18:04:56Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d53eb426fbf7d4e5f28ae05943364b8b6a644a9bd113443aea1037887c4482a8"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/unreal-life",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1335560/",
+        "retrievedAt": "2026-10-27T18:04:56Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d53eb426fbf7d4e5f28ae05943364b8b6a644a9bd113443aea1037887c4482a8"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1335560/",
+        "retrievedAt": "2026-10-27T18:04:56Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d53eb426fbf7d4e5f28ae05943364b8b6a644a9bd113443aea1037887c4482a8"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1335560/",
+        "retrievedAt": "2026-10-27T18:04:56Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d53eb426fbf7d4e5f28ae05943364b8b6a644a9bd113443aea1037887c4482a8"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:04:56Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}

@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000063",
+  "status": "published",
+  "title": {
+    "display": "Ib",
+    "original": "Ib",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "イヴ",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1901370,
+    "igdbId": 195732
+  },
+  "associatedApps": [],
+  "officialUrl": "https://playism.com/game/ib/",
+  "developerIds": [
+    "dev_000064"
+  ],
+  "publisherIds": [
+    "dev_000057"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "solo-developer",
+        "note": "音以外はkouri氏が1人で制作したと開発者インタビューで回答",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://automaton-media.com/articles/interviewsjp/20220411-198625/",
+            "publishedAt": "2022-04-12",
+            "retrievedAt": "2026-10-27T18:17:31Z",
+            "quote": "音に関する部分以外は自分1人で作っています",
+            "originKey": "media:automaton-media.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-27T18:17:31Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1901370/",
+        "retrievedAt": "2026-10-27T18:02:58Z",
+        "locator": "steam:appdetails.name,about_the_game",
+        "originKey": "store:steam"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1901370/",
+        "retrievedAt": "2026-10-27T18:04:47Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:efed95e4cf76d63150926f1052520e35248c2022a96bc12bf19057935c464c69"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1901370/",
+        "retrievedAt": "2026-10-27T18:04:47Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:efed95e4cf76d63150926f1052520e35248c2022a96bc12bf19057935c464c69"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/ib--1",
+        "retrievedAt": "2026-10-27T18:18:00Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1901370/",
+        "retrievedAt": "2026-10-27T18:04:47Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:efed95e4cf76d63150926f1052520e35248c2022a96bc12bf19057935c464c69"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1901370/",
+        "retrievedAt": "2026-10-27T18:04:47Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:efed95e4cf76d63150926f1052520e35248c2022a96bc12bf19057935c464c69"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1901370/",
+        "retrievedAt": "2026-10-27T18:04:47Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:efed95e4cf76d63150926f1052520e35248c2022a96bc12bf19057935c464c69"
+      }
+    }
+  ],
+  "createdAt": "2026-10-27T18:04:47Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-27T18:18:00Z",
+  "createdByRun": "local-seed"
+}
