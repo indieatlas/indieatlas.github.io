@@ -1,7 +1,7 @@
 import path from 'node:path';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { prepareSite } from '../../scripts/build/prepare-site.ts';
-import { buildSiteData } from '../../scripts/build/site-data.ts';
+import { buildSiteData, prominenceOf } from '../../scripts/build/site-data.ts';
 import { loadRepo, type RepoData } from '../../scripts/lib/repo-io.ts';
 
 const CODE = {
@@ -128,5 +128,12 @@ describe('ジャンルのカテゴリ色', () => {
     expect(d.genres.length).toBeGreaterThan(0);
     expect(d.genres.length).toBeLessThanOrEqual(8);
     expect(d.genres).toContainEqual({ id: 'roguelike', label: 'ローグライク' });
+  });
+
+  it('知名度の区分は Steam のレビュー数で決まる', () => {
+    expect(prominenceOf(undefined)).toBe('standard');
+    expect(prominenceOf(29_999)).toBe('standard');
+    expect(prominenceOf(30_000)).toBe('notable');
+    expect(prominenceOf(150_000)).toBe('landmark');
   });
 });

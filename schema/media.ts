@@ -16,3 +16,19 @@ export const ImagePalettes = z.object({
   ),
 });
 export type ImagePalettes = z.infer<typeof ImagePalettes>;
+
+/**
+ * 作品の知名度の目安（data/metrics/popularity.json）。Steam のレビュー数（appdetails の recommendations.total）。
+ * サイトでの見せ方の強弱（定番、人気）を決めるのに使い、数そのものは丸めて表示する
+ */
+export const PopularityMetrics = z.object({
+  schemaVersion: z.literal(1),
+  entries: z.record(
+    GameId,
+    z.object({
+      steamReviews: z.number().int().min(0),
+      retrievedAt: IsoDateTime,
+    }),
+  ),
+});
+export type PopularityMetrics = z.infer<typeof PopularityMetrics>;

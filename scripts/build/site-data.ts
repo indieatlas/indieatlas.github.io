@@ -12,6 +12,7 @@ import type {
   SiteStats,
   SiteTag,
   SourceRef,
+  Prominence,
 } from '../../schema/site-data.ts';
 import { adoptedOf, claimsView } from '../lib/claims-view.ts';
 import { todayJst, toJstDate } from '../lib/clock.ts';
@@ -47,10 +48,21 @@ const ENRICH_NOTES: Record<string, string> = {
   japaneseSupport: '日本語対応を確認',
   playerModes: 'プレイ形式を確認',
   summary: '紹介文を追加',
+  overview: '詳しい紹介を追加',
   features: '特徴を追加',
   image: '画像を追加',
   article: '紹介記事を追加',
 };
+
+// 知名度の区分。Steam のレビュー数で決める（data/metrics/popularity.json）
+export const PROMINENCE_THRESHOLDS = { landmark: 150_000, notable: 30_000 } as const;
+
+export function prominenceOf(steamReviews: number | undefined): Prominence {
+  if (steamReviews === undefined) return 'standard';
+  if (steamReviews >= PROMINENCE_THRESHOLDS.landmark) return 'landmark';
+  if (steamReviews >= PROMINENCE_THRESHOLDS.notable) return 'notable';
+  return 'standard';
+}
 
 const dateOnly = (iso: string) => toJstDate(new Date(iso));
 
@@ -150,6 +162,7 @@ export function buildSiteData(repo: RepoData, today = todayJst()): SiteDataSet {
     const modes = adoptedOf(claims, 'playerModes')[0];
     const summary = adoptedOf(claims, 'summary')[0];
     const features = adoptedOf(claims, 'features')[0];
+    const overview = adoptedOf(claims, 'overview')[0];
     const tagClaims = adoptedOf(claims, 'tag').filter((c) => visibleTag(c.value.tagId));
     const tags = tagClaims
       .map((c) => tagById.get(c.value.tagId)!)
@@ -231,6 +244,7 @@ export function buildSiteData(repo: RepoData, today = todayJst()): SiteDataSet {
       playerModes: modes ? { ...modes.value, sources: refs([modes]) } : null,
       summary: summary ? { text: summary.value.ja, sources: refs([summary]) } : null,
       features: features ? { items: [...features.value.ja], sources: refs([features]) } : null,
+      overview: overview ? { paragraphs: [...overview.value.ja], sources: refs([overview]) } : null,
       tags,
       tagSources: refs(tagClaims),
       stores,
@@ -238,6 +252,8 @@ export function buildSiteData(repo: RepoData, today = todayJst()): SiteDataSet {
       ...(image ? { image } : {}),
       screenshots,
       ...paletteOf(g, image?.url, repo),
+      prominence: prominenceOf(repo.popularity.entries[g.id]?.steamReviews),
+      ...(repo.popularity.entries[g.id] ? { steamReviews: repo.popularity.entries[g.id]!.steamReviews } : {}),
       ...(primaryGenre(tags, tagUse) ? { primaryGenre: primaryGenre(tags, tagUse) } : {}),
       articles,
       related: [],

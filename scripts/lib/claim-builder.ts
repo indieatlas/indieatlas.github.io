@@ -25,6 +25,7 @@ const DEFAULT_BASIS: Record<ClaimField, Claim['basis']> = {
   playerModes: 'fact',
   summary: 'editorial',
   features: 'editorial',
+  overview: 'editorial',
   tag: 'editorial',
   storeLink: 'fact',
   image: 'fact',

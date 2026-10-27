@@ -51,6 +51,7 @@ export const ClaimField = z.enum([
   'playerModes',
   'summary',
   'features',
+  'overview',
   'tag',
   'storeLink',
   'image',
@@ -126,6 +127,11 @@ export const Claim = z.discriminatedUnion('field', [
     field: z.literal('features'),
     value: z.object({ ja: z.array(z.string().min(10).max(60)).min(3).max(5) }),
   }),
+  // 詳しい紹介（定番の作品など）。2〜4段落。複数の出典をもとに当サイトが書く
+  ClaimBase.extend({
+    field: z.literal('overview'),
+    value: z.object({ ja: z.array(z.string().min(40).max(300)).min(2).max(4) }),
+  }),
   ClaimBase.extend({ field: z.literal('tag'), value: z.object({ tagId: TagId }) }),
   ClaimBase.extend({ field: z.literal('storeLink'), value: z.object({ store: Store, url: HttpUrl }) }),
   ClaimBase.extend({ field: z.literal('image'), value: ImageValue }),
@@ -147,6 +153,7 @@ export const SINGLE_VALUE_FIELDS: readonly ClaimField[] = [
   'playerModes',
   'summary',
   'features',
+  'overview',
 ];
 
 /** 範囲のキー（platform、region の順で結合した文字列） */

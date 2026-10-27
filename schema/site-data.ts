@@ -62,6 +62,7 @@ export interface SiteGame {
   playerModes: null | { modes: PlayerMode[]; minPlayers?: number; maxPlayers?: number; sources: SourceRef[] };
   summary: null | { text: string; sources: SourceRef[] };
   features: null | { items: string[]; sources: SourceRef[] };
+  overview: null | { paragraphs: string[]; sources: SourceRef[] }; // 定番の作品などの詳しい紹介
   tags: { id: string; label: string; group: TagGroup }[];
   tagSources: SourceRef[];
   stores: { store: Store; url: string; platform?: Platform; sources: SourceRef[] }[];
@@ -75,7 +76,12 @@ export interface SiteGame {
   related: { gameId: string; kind: RelationKind | 'same-developer'; reason: string }[];
   collections: string[]; // コレクション ID
   coverage: { articleCount: number; filledFields: number };
+  prominence: Prominence;
+  steamReviews?: number; // Steam のレビュー数（知名度の目安）
 }
+
+/** 見せ方の強弱。landmark は誰もが知る定番、notable は話題になった作品 */
+export type Prominence = 'landmark' | 'notable' | 'standard';
 
 export interface SiteArticle {
   id: string;

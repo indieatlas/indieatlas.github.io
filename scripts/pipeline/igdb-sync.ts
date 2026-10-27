@@ -91,7 +91,7 @@ export function applyIgdb(game: Game, file: ClaimsFile | undefined, ig: IgdbGame
     if (upsertClaim(claims, claim)) screenshots++;
   }
   const linked = new Set(
-    claims.claims.filter((c) => c.field === 'storeLink' && c.status === 'adopted').map((c) => c.value.store),
+    claims.claims.flatMap((c) => (c.field === 'storeLink' && c.status === 'adopted' ? [c.value.store] : [])),
   );
   const stores: string[] = [];
   for (const l of igdbStoreLinks(ig)) {
