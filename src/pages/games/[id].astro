@@ -904,5 +904,14 @@ const description =
     .cta :global(.store-button) {
       flex: 1 1 100%;
     }
+    /* ほかのストアと公式サイトは、同じ幅の小さめのボタンで1〜2行に収める */
+    .cta :global(.button:not(.store-button)) {
+      flex: 1 1 calc(50% - var(--space-2));
+      min-height: 40px;
+      padding-inline: var(--space-2);
+      font-size: 0.8125rem;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
   }
 </style>
