@@ -16,6 +16,10 @@
   --color-accent: #7aa7ff; /* リンクなど、文字として使う青 */
   --color-signal: #2a60ea; /* 面として使う青（ボタン、選択中のタブ） */
   --color-on-signal: #ffffff;
+  /* 殿堂入りの金 */
+  --hof-gold: #e2b65a;
+  --hof-ink: #1c1405;
+  --hof-gradient: linear-gradient(135deg, #fff1c4 0%, #f0c96a 38%, #c8922e 70%, #f7dc8f 100%);
   --color-accent-warm: #eceef2; /* 選択とホバーの反転色 */
   --color-on-warm: #08090c;
   --color-positive: #6fdfa0;
@@ -99,6 +103,7 @@
   --color-accent: #1d55d4;
   --color-signal: #1d55d4;
   --color-on-signal: #ffffff;
+  --hof-gold: #b8862a;
   --color-accent-warm: #0d1016;
   --color-on-warm: #ffffff;
   --color-positive: #157a42;
@@ -133,6 +138,7 @@
     --color-accent: #1d55d4;
     --color-signal: #1d55d4;
     --color-on-signal: #ffffff;
+    --hof-gold: #b8862a;
     --color-accent-warm: #0d1016;
     --color-on-warm: #ffffff;
     --color-positive: #157a42;

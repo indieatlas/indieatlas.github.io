@@ -17,7 +17,8 @@ interface Props {
   dateMode?: 'added' | 'updated' | 'none';
 }
 const { game, eager = false, note, headingLevel = 3, dateMode = 'added' } = Astro.props;
-const badge = game.prominence === 'landmark' ? '定番' : game.prominence === 'notable' ? '人気' : undefined;
+const CROWN = '<svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M2 5l3 3 3-5 3 5 3-3-1.2 7H3.2z"/><rect x="3" y="13" width="10" height="1.6"/></svg>';
+const badge = game.prominence === 'landmark' ? '殿堂入り' : game.prominence === 'notable' ? '人気' : undefined;
 const dateValue = dateMode === 'updated' ? game.activityAt : game.addedAt;
 const Heading = `h${headingLevel}` as 'h2' | 'h3';
 const dev = game.developers[0];
@@ -33,7 +34,12 @@ const showOriginal = game.title.original !== game.title.display;
 >
   <div class="game-card__media">
     <GameImage game={game} eager={eager} />
-    {badge && <span class="game-card__badge">{badge}</span>}
+    {badge && (
+      <span class="game-card__badge">
+        {game.prominence === 'landmark' && <Fragment set:html={CROWN} />}
+        {badge}
+      </span>
+    )}
   </div>
   <div class="game-card__body">
     <Heading class="game-card__title">{game.title.display}</Heading>

@@ -149,7 +149,7 @@ export function renderCard(d: PagefindResultData, cfg: SearchConfig): string {
   const gi = cfg.genres.indexOf(m.genre ?? '');
   const genreColor = gi < 0 ? 'var(--genre-neutral)' : `var(--genre-c${gi})`;
   const prominence = m.prominence === 'landmark' || m.prominence === 'notable' ? m.prominence : '';
-  const badge = prominence === 'landmark' ? '定番' : prominence === 'notable' ? '人気' : '';
+  const badge = prominence === 'landmark' ? `<svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M2 5l3 3 3-5 3 5 3-3-1.2 7H3.2z"/><rect x="3" y="13" width="10" height="1.6"/></svg>殿堂入り` : prominence === 'notable' ? '人気' : '';
   return `<li class="card-slot"><a class="game-card${prominence ? ` is-${prominence}` : ''}" href="${esc(d.url)}" data-game-id="${esc(id)}" style="--genre-color: ${genreColor}">
 <div class="game-card__media"><div class="game-image">${img}</div>${badge ? `<span class="game-card__badge">${badge}</span>` : ''}</div>
 <div class="game-card__body">
