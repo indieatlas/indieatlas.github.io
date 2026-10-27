@@ -1,0 +1,19 @@
+---
+import type { ArticleKind } from '../../../../../schema/common.ts';
+import ArticleIndex from '../../../../components/ArticleIndex.astro';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import { ARTICLE_KIND_LABELS, ARTICLE_TABS } from '../../../../lib/format.ts';
+import { paths } from '../../../../lib/urls.ts';
+
+export function getStaticPaths() {
+  return ARTICLE_TABS.map((kind) => ({ params: { kind } }));
+}
+const kind = Astro.params.kind as ArticleKind;
+---
+
+<BaseLayout title={`記事: ${ARTICLE_KIND_LABELS[kind]}`} path={paths.articleKind(kind)} current="articles">
+  <div class="container section">
+    <h1>記事: {ARTICLE_KIND_LABELS[kind]}</h1>
+    <ArticleIndex kind={kind} page={1} />
+  </div>
+</BaseLayout>

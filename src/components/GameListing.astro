@@ -1,0 +1,26 @@
+---
+import { gamesByAdded } from '../lib/data.ts';
+import { paths } from '../lib/urls.ts';
+import GameGrid from './GameGrid.astro';
+import Pagination from './Pagination.astro';
+
+import { GAMES_PER_PAGE as PAGE_SIZE, pageCount } from '../lib/listing.ts';
+
+// 静的な作品一覧（収録日の新しい順、1ページ48件）。JS が無効な環境でのページ送りを兼ねる
+
+interface Props {
+  page: number;
+}
+const { page } = Astro.props;
+const all = gamesByAdded();
+const total = pageCount(all.length, PAGE_SIZE);
+const games = all.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+---
+
+<div class="game-listing" data-static-listing>
+  <p class="muted small">
+    {all.length}作品を収録日の新しい順に表示しています（{page} / {total} ページ）。
+  </p>
+  <GameGrid games={games} eagerCount={page === 1 ? 4 : 0} headingLevel={2} />
+  <Pagination current={page} total={total} pathFor={(p) => paths.games(p)} />
+</div>

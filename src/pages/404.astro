@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { paths, url } from '../lib/urls.ts';
+---
+
+<BaseLayout title="ページが見つかりません" path="404.html" noindex>
+  <div class="container section not-found">
+    <p class="eyebrow">404</p>
+    <h1>このページは星図にありません</h1>
+    <p class="muted">URL が変わったか、ページが削除された可能性があります。</p>
+    <p>
+      <a class="button button-primary" href={url(paths.games())}>
+        作品を探す
+      </a>
+      <a class="button" href={url(paths.home())}>
+        ホームへ
+      </a>
+    </p>
+  </div>
+</BaseLayout>
+
+<style>
+  .not-found {
+    text-align: center;
+    padding-block: var(--space-12);
+  }
+  .not-found p:last-child {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+  }
+</style>

@@ -1,0 +1,615 @@
+---
+import ArticleList from '../../components/ArticleList.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import DetailBackdrop from '../../components/DetailBackdrop.astro';
+import ExternalLink from '../../components/ExternalLink.astro';
+import GameGrid from '../../components/GameGrid.astro';
+import GameImage from '../../components/GameImage.astro';
+import JapaneseSupportBadge from '../../components/JapaneseSupportBadge.astro';
+import PlatformList from '../../components/PlatformList.astro';
+import PlayerModes from '../../components/PlayerModes.astro';
+import ReleaseLabel from '../../components/ReleaseLabel.astro';
+import SourceRefs from '../../components/SourceRefs.astro';
+import TagChip from '../../components/TagChip.astro';
+import UnknownValue from '../../components/UnknownValue.astro';
+import { site } from '../../config/site.ts';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getArticle, getCollection, getGame, getGames, getRedirects } from '../../lib/data.ts';
+import {
+  ARTICLE_KIND_LABELS,
+  formatDate,
+  isoDate,
+  PLATFORM_LABELS,
+  RELATION_LABELS,
+  STORE_LABELS,
+  SUPPORT_LABELS,
+} from '../../lib/format.ts';
+import { pagefindFilters, releasedSortKey } from '../../lib/game-view.ts';
+import { absoluteUrl, paths, url } from '../../lib/urls.ts';
+import type { SiteArticle, SiteGame } from '../../../schema/site-data.ts';
+import { kanaVariants } from '../../../scripts/lib/text-normalize.ts';
+import { startOf } from '../../../scripts/lib/partial-date.ts';
+
+export function getStaticPaths() {
+  const games = getGames().map((g) => ({ params: { id: g.id }, props: { gameId: g.id, redirectTo: undefined } }));
+  const redirects = getRedirects().map((r) => ({ params: { id: r.from }, props: { gameId: r.to, redirectTo: r.to } }));
+  return [...games, ...redirects];
+}
+
+const { gameId, redirectTo } = Astro.props as { gameId: string; redirectTo?: string };
+const game = getGame(gameId)!;
+const target = absoluteUrl(paths.game(gameId));
+
+// 関連記事: 種別ごとにまとめる
+const articles = game.articles.map((a) => getArticle(a.id)).filter((a): a is SiteArticle => a !== undefined);
+const byKind = new Map<string, SiteArticle[]>();
+for (const a of articles) byKind.set(a.kind, [...(byKind.get(a.kind) ?? []), a]);
+const related = game.related
+  .map((r) => ({ ...r, game: getGame(r.gameId) }))
+  .filter((r): r is typeof r & { game: SiteGame } => r.game !== undefined);
+const collections = game.collections.map((id) => getCollection(id)).filter((c) => c !== undefined);
+const primaryStore = game.stores[0];
+const showOriginal = game.title.original !== game.title.display;
+const mainAliases = game.aliases.filter((a) => a !== game.title.original).slice(0, 2);
+const filters = pagefindFilters(game);
+const searchTerms = [...new Set([...game.aliases, ...kanaVariants(game.title.display)])];
+
+const jsonLd: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': 'VideoGame',
+  name: game.title.display,
+  url: target,
+  ...(game.image ? { image: game.image.url } : {}),
+  ...(game.platforms.length ? { gamePlatform: game.platforms.map((p) => PLATFORM_LABELS[p]) } : {}),
+  ...(game.developers.length
+    ? { author: game.developers.map((d) => ({ '@type': 'Organization', name: d.name })) }
+    : {}),
+  ...(game.publishers.length
+    ? { publisher: game.publishers.map((d) => ({ '@type': 'Organization', name: d.name })) }
+    : {}),
+};
+// datePublished は、日単位で発売済みと確定している場合だけ
+const releasedDay = game.release?.entries
+  .filter((e) => e.status === 'released' && e.date?.precision === 'day')
+  .map((e) => startOf(e.date!))
+  .sort()[0];
+if (releasedDay) jsonLd.datePublished = releasedDay;
+
+const description =
+  game.summary?.text ?? `${game.title.display} の作品情報。発売状況、機種、日本語対応、関連記事をまとめています。`;
+---
+
+{redirectTo ? (
+  <html lang="ja">
+    <head>
+      <meta charset="utf-8" />
+      <title>{game.title.display} | {site.name}</title>
+      <meta http-equiv="refresh" content={`0; url=${target}`} />
+      <link rel="canonical" href={target} />
+      <meta name="robots" content="noindex" />
+    </head>
+    <body>
+      <p>
+        この作品のページは移動しました。<a href={url(paths.game(gameId))}>{game.title.display} のページ</a>
+        へ移動します。
+      </p>
+    </body>
+  </html>
+) : (
+  <BaseLayout
+    title={game.title.display}
+    description={description}
+    path={paths.game(game.id)}
+    ogImage={game.image?.url}
+    ogType="article"
+    jsonLd={jsonLd}
+    current="games"
+  >
+    <article data-pagefind-body>
+      <header class="detail-header">
+        <DetailBackdrop game={game} />
+        <div class="container header-inner">
+          <Breadcrumbs
+            items={[
+              { label: 'ホーム', path: paths.home() },
+              { label: '作品', path: paths.games() },
+              { label: game.title.display },
+            ]}
+          />
+          <div class="header-grid">
+            <div class="keyart">
+              <GameImage game={game} eager />
+            </div>
+            <div class="headline">
+              <h1 data-pagefind-meta="title" data-pagefind-weight="10">
+                {game.title.display}
+              </h1>
+              {showOriginal && (
+                <p class="original" lang={game.title.originalLang} data-pagefind-weight="10">
+                  {game.title.original}
+                </p>
+              )}
+              {mainAliases.length > 0 && <p class="aliases muted small">別名: {mainAliases.join('、')}</p>}
+              <p class="byline">
+                {game.developers.length ? (
+                  game.developers.map((d) => d.name).join('、')
+                ) : (
+                  <UnknownValue label="開発者不明" />
+                )}
+              </p>
+              <p class="status">
+                <ReleaseLabel release={game.release} />
+              </p>
+              <div class="chips">
+                <PlatformList platforms={game.platforms} />
+                <JapaneseSupportBadge support={game.japaneseSupport} />
+              </div>
+              <div class="cta">
+                {primaryStore && (
+                  <ExternalLink href={primaryStore.url} class="button button-primary store-button">
+                    {STORE_LABELS[primaryStore.store]}で見る
+                  </ExternalLink>
+                )}
+                {game.stores.slice(1).map((s) => (
+                  <ExternalLink href={s.url} class="button">
+                    {STORE_LABELS[s.store]}
+                  </ExternalLink>
+                ))}
+                {game.officialUrl && (
+                  <ExternalLink href={game.officialUrl} class="button">
+                    公式サイト
+                  </ExternalLink>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container detail-grid">
+        <div class="main-col">
+          <section aria-labelledby="summary-h" class="block">
+            <h2 id="summary-h">概要</h2>
+            {game.summary ? (
+              <>
+                <p class="summary">{game.summary.text}</p>
+                <SourceRefs sources={game.summary.sources} />
+              </>
+            ) : (
+              <p>
+                <UnknownValue label="概要はまだありません" />
+              </p>
+            )}
+            <p class="ai-note small muted" data-pagefind-ignore>
+              複数の出典をもとに要約した紹介です。プレイした感想ではありません。
+              <a href={url(paths.about())}>運営方式について</a>
+            </p>
+          </section>
+
+          {game.features && (
+            <section aria-labelledby="features-h" class="block">
+              <h2 id="features-h">特徴</h2>
+              <ul class="features">
+                {game.features.items.map((f) => (
+                  <li>{f}</li>
+                ))}
+              </ul>
+              <SourceRefs sources={game.features.sources} />
+            </section>
+          )}
+
+          <section aria-labelledby="articles-h" class="block" data-pagefind-ignore>
+            <h2 id="articles-h">関連記事</h2>
+            {articles.length === 0 ? (
+              <p>
+                <UnknownValue label="関連記事はまだありません" />
+              </p>
+            ) : (
+              [...byKind.entries()].map(([kind, list]) => (
+                <div class="article-group">
+                  <h3 class="group-title">{ARTICLE_KIND_LABELS[kind as keyof typeof ARTICLE_KIND_LABELS]}</h3>
+                  <ArticleList articles={list} forGame={game.id} />
+                </div>
+              ))
+            )}
+          </section>
+
+          {game.release && game.release.history.length > 0 && (
+            <section aria-labelledby="history-h" class="block" data-pagefind-ignore>
+              <details class="history">
+                <summary>
+                  <h2 id="history-h">発売情報の変遷</h2>
+                </summary>
+                <ol>
+                  {game.release.history.map((h) => (
+                    <li>
+                      <time datetime={h.asOf}>{formatDate(h.asOf)}</time> 時点: {PLATFORM_LABELS[h.platform]} {h.label}
+                      <SourceRefs sources={h.sources} inline />
+                    </li>
+                  ))}
+                  {game.release.entries.map((e) => (
+                    <li class="current">
+                      現在: {PLATFORM_LABELS[e.platform]} {e.label}
+                    </li>
+                  ))}
+                </ol>
+              </details>
+            </section>
+          )}
+        </div>
+
+        <aside class="side-col" aria-labelledby="info-h">
+          <section class="info-card">
+            <h2 id="info-h">基本情報</h2>
+            <dl class="info">
+              <div>
+                <dt>開発</dt>
+                <dd>{game.developers.length ? game.developers.map((d) => d.name).join('、') : <UnknownValue />}</dd>
+              </div>
+              <div>
+                <dt>パブリッシャー</dt>
+                <dd>{game.publishers.length ? game.publishers.map((d) => d.name).join('、') : <UnknownValue />}</dd>
+              </div>
+              <div>
+                <dt>タグ</dt>
+                <dd>
+                  {game.tags.length ? (
+                    <>
+                      <ul class="chip-row">
+                        {game.tags.map((t) => (
+                          <li>
+                            <TagChip id={t.id} label={t.label} />
+                          </li>
+                        ))}
+                      </ul>
+                      <SourceRefs sources={game.tagSources} />
+                    </>
+                  ) : (
+                    <UnknownValue />
+                  )}
+                </dd>
+              </div>
+              <div>
+                <dt>機種</dt>
+                <dd>
+                  {game.platforms.length ? (
+                    <PlatformList platforms={game.platforms} variant="text" />
+                  ) : (
+                    <UnknownValue />
+                  )}
+                </dd>
+              </div>
+              <div>
+                <dt>発売</dt>
+                <dd>
+                  {game.release && game.release.entries.length > 0 ? (
+                    <ul class="release-list">
+                      {game.release.entries.map((e) => (
+                        <li>
+                          <span class="platform">
+                            {PLATFORM_LABELS[e.platform]}
+                            {e.region !== 'global' && `（${e.region.toUpperCase()}）`}
+                          </span>{' '}
+                          {e.label}
+                          <SourceRefs sources={e.sources} />
+                        </li>
+                      ))}
+                    </ul>
+                  ) : game.release?.conflicted ? (
+                    <UnknownValue kind="checking" />
+                  ) : (
+                    <UnknownValue />
+                  )}
+                </dd>
+              </div>
+              <div>
+                <dt>日本語対応</dt>
+                <dd>
+                  {game.japaneseSupport ? (
+                    <>
+                      <table class="ja-table">
+                        <thead>
+                          <tr>
+                            <th scope="col">表示</th>
+                            <th scope="col">字幕</th>
+                            <th scope="col">音声</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            {(['interface', 'subtitles', 'audio'] as const).map((k) => (
+                              <td class={`support-${game.japaneseSupport![k]}`}>
+                                {SUPPORT_LABELS[game.japaneseSupport![k]]}
+                              </td>
+                            ))}
+                          </tr>
+                        </tbody>
+                      </table>
+                      {game.japaneseSupport.platform && (
+                        <p class="small muted">（{PLATFORM_LABELS[game.japaneseSupport.platform]} 版）</p>
+                      )}
+                      <SourceRefs sources={game.japaneseSupport.sources} />
+                    </>
+                  ) : (
+                    <UnknownValue />
+                  )}
+                </dd>
+              </div>
+              <div>
+                <dt>プレイ人数と形式</dt>
+                <dd>
+                  <PlayerModes modes={game.playerModes} />
+                  {game.playerModes && <SourceRefs sources={game.playerModes.sources} />}
+                </dd>
+              </div>
+              <div>
+                <dt>公式サイト</dt>
+                <dd>
+                  {game.officialUrl ? (
+                    <ExternalLink href={game.officialUrl}>{new URL(game.officialUrl).host}</ExternalLink>
+                  ) : (
+                    <UnknownValue />
+                  )}
+                </dd>
+              </div>
+            </dl>
+          </section>
+        </aside>
+      </div>
+
+      {related.length > 0 && (
+        <section class="container block" aria-labelledby="related-h" data-pagefind-ignore>
+          <h2 id="related-h">関連作品</h2>
+          <GameGrid
+            games={related.map((r) => r.game)}
+            notes={Object.fromEntries(
+              related.map((r) => [r.gameId, `${RELATION_LABELS[r.kind] ?? r.kind}: ${r.reason}`]),
+            )}
+          />
+        </section>
+      )}
+
+      {collections.length > 0 && (
+        <section class="container block" aria-labelledby="collections-h" data-pagefind-ignore>
+          <h2 id="collections-h">収録コレクション</h2>
+          <ul class="chip-row">
+            {collections.map((c) => (
+              <li>
+                <a class="button" href={url(paths.collection(c!.id))}>
+                  {c!.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <footer class="container page-info small muted" data-pagefind-ignore>
+        <p>
+          収録日 <time datetime={isoDate(game.addedAt)}>{formatDate(game.addedAt)}</time> ・ ページの最終更新日{' '}
+          <time datetime={isoDate(game.updatedAt)}>{formatDate(game.updatedAt)}</time> ・{' '}
+          <ExternalLink href={site.correctionUrl}>情報の誤りを報告</ExternalLink>
+        </p>
+      </footer>
+
+      <div class="visually-hidden" data-pagefind-weight="10">
+        {searchTerms.join(' ')}
+      </div>
+      <div class="visually-hidden">
+        {game.developers.map((d) => d.name).join(' ')} {game.publishers.map((d) => d.name).join(' ')}{' '}
+        {game.tags.map((t) => t.label).join(' ')}
+      </div>
+      <span hidden data-pagefind-meta={`original:${game.title.original}`}></span>
+      <span hidden data-pagefind-meta={`id:${game.id}`}></span>
+      {game.image && <span hidden data-pagefind-meta={`image:${game.image.url}`}></span>}
+      <span hidden data-pagefind-meta={`release:${game.release?.overall.label ?? '発売時期不明'}`}></span>
+      <span hidden data-pagefind-meta={`ja:${filters.ja![0]}`}></span>
+      <span
+        hidden
+        data-pagefind-meta={`developer:${game.developers[0]?.name ?? ''}${game.developers.length > 1 ? ' ほか' : ''}`}
+      ></span>
+      <span hidden data-pagefind-meta={`platforms:${game.platforms.join(',')}`}></span>
+      <span hidden data-pagefind-meta={`genre:${game.primaryGenre ?? ''}`}></span>
+      <span hidden data-pagefind-meta={`added:${game.addedAt}`}></span>
+      <span hidden data-pagefind-sort={`added:${game.addedAt}`}></span>
+      <span hidden data-pagefind-sort={`released:${releasedSortKey(game) || '0000-00-00'}`}></span>
+      {Object.entries(filters).flatMap(([k, values]) =>
+        values.map((v) => <span hidden data-pagefind-filter={`${k}:${v}`}></span>),
+      )}
+    </article>
+  </BaseLayout>
+)}
+
+<style>
+  .detail-header {
+    position: relative;
+    isolation: isolate;
+    padding-block: var(--space-6) var(--space-8);
+  }
+  .header-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    gap: var(--space-7);
+    align-items: center;
+  }
+  .keyart :global(.game-image) {
+    border-radius: var(--radius-l);
+    border: 1px solid var(--color-border);
+    box-shadow: 0 24px 64px -24px rgb(0 0 0 / 0.6);
+  }
+  .headline h1 {
+    margin-bottom: var(--space-1);
+  }
+  .original {
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    margin: 0 0 var(--space-2);
+  }
+  .aliases {
+    margin: 0 0 var(--space-2);
+  }
+  .byline {
+    margin: 0;
+    font-weight: 600;
+  }
+  .status {
+    margin: 0 0 var(--space-3);
+  }
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    align-items: center;
+    margin-bottom: var(--space-5);
+  }
+  .cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  .detail-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 22rem;
+    gap: var(--space-8);
+    align-items: start;
+  }
+  .block {
+    margin-bottom: var(--space-8);
+  }
+  .summary {
+    font-size: 1.0625rem;
+    max-width: var(--measure);
+  }
+  .ai-note {
+    margin-top: var(--space-3);
+  }
+  .features {
+    max-width: var(--measure);
+    padding-left: 1.25em;
+  }
+  .features li::marker {
+    color: var(--color-accent-warm);
+  }
+  .group-title {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+    margin: var(--space-4) 0 var(--space-1);
+  }
+  .history summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-height: 44px;
+  }
+  .history summary::-webkit-details-marker {
+    display: none;
+  }
+  .history summary h2 {
+    margin: 0;
+  }
+  .history summary::before {
+    content: '';
+    width: 0.6em;
+    height: 0.6em;
+    border-right: 2px solid var(--color-accent);
+    border-bottom: 2px solid var(--color-accent);
+    transform: rotate(-45deg);
+    transition: transform var(--dur-fast) var(--ease-out);
+  }
+  .history[open] summary::before {
+    transform: rotate(45deg);
+  }
+  .history ol {
+    padding-left: 1.25em;
+  }
+  .history .current {
+    color: var(--color-accent-warm);
+  }
+  .side-col {
+    position: sticky;
+    top: calc(var(--header-height) + var(--space-4));
+  }
+  .info-card {
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    border-radius: var(--radius-l);
+    padding: var(--space-5);
+    box-shadow: var(--shadow-card);
+  }
+  .info-card h2 {
+    font-size: var(--text-h3);
+  }
+  .info {
+    margin: 0;
+  }
+  .info > div {
+    padding: var(--space-3) 0;
+    border-top: 1px solid var(--color-border);
+  }
+  dt {
+    font-size: var(--text-xsmall);
+    font-weight: 700;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-1);
+  }
+  dd {
+    margin: 0;
+    font-size: var(--text-small);
+  }
+  .release-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--space-2);
+  }
+  .platform {
+    font-weight: 700;
+  }
+  .ja-table th,
+  .ja-table td {
+    text-align: left;
+    padding: 2px 8px 2px 0;
+    font-size: var(--text-small);
+  }
+  .ja-table th {
+    font-weight: 600;
+    color: var(--color-text-muted);
+    font-size: var(--text-xsmall);
+  }
+  .support-yes {
+    color: var(--color-positive);
+    font-weight: 700;
+  }
+  .support-unknown {
+    color: var(--color-unknown);
+  }
+  .page-info {
+    margin-top: var(--space-6);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--color-border);
+  }
+  @media (max-width: 1023px) {
+    .detail-grid {
+      grid-template-columns: 1fr;
+    }
+    .side-col {
+      position: static;
+    }
+  }
+  @media (max-width: 760px) {
+    .header-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-4);
+    }
+    .detail-header {
+      padding-top: var(--space-3);
+    }
+    .cta :global(.store-button) {
+      flex: 1 1 100%;
+    }
+  }
+</style>

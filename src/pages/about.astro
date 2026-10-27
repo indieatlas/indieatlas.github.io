@@ -1,0 +1,26 @@
+---
+import { Content } from '../content/about.md';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getStats } from '../lib/data.ts';
+import { paths } from '../lib/urls.ts';
+
+const stats = getStats();
+---
+
+<BaseLayout
+  title="運営説明"
+  description="Indie Atlas の目的、収録の対象、情報の集め方、出典と画像の扱いについて。"
+  path={paths.about()}
+  current="about"
+>
+  <div class="container section">
+    <p class="eyebrow">About</p>
+    <h1>運営説明</h1>
+    <p class="muted">
+      現在 {stats.games} 作品、{stats.articles} 件の記事、{stats.collections} 件のコレクションを掲載しています。
+    </p>
+    <div class="prose">
+      <Content />
+    </div>
+  </div>
+</BaseLayout>

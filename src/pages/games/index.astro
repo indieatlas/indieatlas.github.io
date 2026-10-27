@@ -1,0 +1,17 @@
+---
+import GameListing from '../../components/GameListing.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { paths } from '../../lib/urls.ts';
+---
+
+<BaseLayout
+  title="作品一覧と検索"
+  description="収録しているインディーゲームを、タイトル、タグ、機種、日本語対応などで検索できます。"
+  path={paths.games()}
+  current="games"
+>
+  <div class="container section">
+    <h1 id="search">作品</h1>
+    <GameListing page={1} />
+  </div>
+</BaseLayout>

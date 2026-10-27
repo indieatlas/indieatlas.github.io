@@ -1,12 +1,108 @@
 ---
+import AtlasHero from '../components/AtlasHero.astro';
+import CollectionCard from '../components/CollectionCard.astro';
+import GameGrid from '../components/GameGrid.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollections, getStats, gamesByAdded } from '../lib/data.ts';
+import { paths, url } from '../lib/urls.ts';
+import { seededRandom } from '../../scripts/build/atlas-layout.ts';
+import { shortHash } from '../../scripts/lib/hash.ts';
+
+const stats = getStats();
+const byAdded = gamesByAdded();
+const recent = byAdded.slice(0, 12);
+const recentIds = new Set(recent.map((g) => g.id));
+
+// 最近情報が充実した作品: enrichedAt の新しい順に8件。最近収録した作品は除く
+const enriched = byAdded
+  .filter((g) => g.enrichedAt && !recentIds.has(g.id))
+  .sort((a, b) => (a.enrichedAt! < b.enrichedAt! ? 1 : a.enrichedAt! > b.enrichedAt! ? -1 : 0))
+  .slice(0, 8);
+
+// コレクション: featured を最大6件。足りなければ更新の新しい順で補う
+const all = getCollections();
+const featured = all.filter((c) => c.featured);
+const rest = all.filter((c) => !c.featured).sort((a, b) => (a.updatedAt < b.updatedAt ? 1 : -1));
+const collections = [...featured, ...rest].slice(0, 6);
+
+// まだあまり知られていない作品: 関連記事が1件以下の作品から、日付をシードにした決定的な乱数で6件
+const rand = seededRandom(parseInt(shortHash(stats.lastUpdated || 'indieatlas', 8), 16));
+const quiet = byAdded
+  .filter((g) => g.coverage.articleCount <= 1)
+  .map((g) => ({ g, k: rand() }))
+  .sort((a, b) => a.k - b.k)
+  .slice(0, 6)
+  .map((x) => x.g);
 ---
 
-<html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <title>Indie Atlas</title>
-  </head>
-  <body>
-    <h1>Indie Atlas</h1>
-  </body>
-</html>
+<BaseLayout path={paths.home()}>
+  <AtlasHero featured={recent} />
+
+  <div class="container">
+    <section class="section" aria-labelledby="recent-h">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">New in the atlas</p>
+          <h2 id="recent-h">最近収録した作品</h2>
+        </div>
+        <a href={url(paths.games())}>すべての作品</a>
+      </div>
+      <GameGrid games={recent} />
+    </section>
+
+    {enriched.length > 0 && (
+      <section class="section" aria-labelledby="enriched-h">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Updated</p>
+            <h2 id="enriched-h">最近情報が充実した作品</h2>
+          </div>
+        </div>
+        <GameGrid games={enriched} notes={Object.fromEntries(enriched.map((g) => [g.id, g.enrichedNote ?? '']))} />
+      </section>
+    )}
+
+    {collections.length > 0 && (
+      <section class="section" aria-labelledby="collections-h">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Constellations</p>
+            <h2 id="collections-h">コレクション</h2>
+          </div>
+          <a href={url(paths.collections())}>すべてのコレクション</a>
+        </div>
+        <ul class="collection-grid">
+          {collections.map((c) => (
+            <li>
+              <CollectionCard collection={c} />
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {quiet.length > 0 && (
+      <section class="section" aria-labelledby="quiet-h">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Hidden stars</p>
+            <h2 id="quiet-h">まだあまり知られていない作品</h2>
+          </div>
+        </div>
+        <p class="muted">紹介記事がまだ少ない作品から選んでいます。</p>
+        <GameGrid games={quiet} />
+      </section>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .collection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: var(--space-5);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+</style>

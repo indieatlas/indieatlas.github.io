@@ -1,0 +1,82 @@
+---
+import type { ArticleKind } from '../../schema/common.ts';
+import { getArticles } from '../lib/data.ts';
+import { ARTICLE_KIND_LABELS, ARTICLE_TABS } from '../lib/format.ts';
+import { ARTICLES_PER_PAGE, pageCount } from '../lib/listing.ts';
+import { paths, url } from '../lib/urls.ts';
+import ArticleList from './ArticleList.astro';
+import EmptyState from './EmptyState.astro';
+import Pagination from './Pagination.astro';
+
+// 記事一覧（掲載日の新しい順、1ページ30件）と種別のタブ（02 §2.3.6）
+interface Props {
+  kind?: ArticleKind;
+  page: number;
+}
+const { kind, page } = Astro.props;
+const all = getArticles().filter((a) => !kind || a.kind === kind);
+const total = pageCount(all.length, ARTICLES_PER_PAGE);
+const list = all.slice((page - 1) * ARTICLES_PER_PAGE, page * ARTICLES_PER_PAGE);
+const tabs = [
+  { key: undefined, label: 'すべて', path: paths.articles() },
+  ...ARTICLE_TABS.map((k) => ({ key: k, label: ARTICLE_KIND_LABELS[k], path: paths.articleKind(k) })),
+];
+---
+
+<nav class="tabs" aria-label="記事の種別">
+  <ul>
+    {tabs.map((t) => (
+      <li>
+        <a href={url(t.path)} aria-current={t.key === kind ? 'page' : undefined}>
+          {t.label}
+        </a>
+      </li>
+    ))}
+  </ul>
+</nav>
+{list.length === 0 ? (
+  <EmptyState title="この種別の記事はまだありません">
+    <p>
+      <a href={url(paths.articles())}>すべての記事</a>を見る
+    </p>
+  </EmptyState>
+) : (
+  <ArticleList articles={list} />
+)}
+<Pagination current={page} total={total} pathFor={(p) => (kind ? paths.articleKind(kind, p) : paths.articles(p))} />
+
+<style>
+  .tabs {
+    overflow-x: auto;
+    margin-bottom: var(--space-5);
+  }
+  .tabs ul {
+    display: flex;
+    gap: var(--space-2);
+    list-style: none;
+    margin: 0;
+    padding: 0 0 var(--space-2);
+  }
+  .tabs a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 var(--space-4);
+    border-radius: 999px;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: var(--text-small);
+    font-weight: 600;
+  }
+  .tabs a:hover {
+    border-color: var(--color-accent);
+    color: var(--color-text);
+  }
+  .tabs a[aria-current='page'] {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-accent-contrast);
+  }
+</style>

@@ -1,0 +1,45 @@
+---
+import CollectionCard from '../../components/CollectionCard.astro';
+import EmptyState from '../../components/EmptyState.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollections } from '../../lib/data.ts';
+import { paths } from '../../lib/urls.ts';
+
+const collections = getCollections();
+---
+
+<BaseLayout
+  title="コレクション"
+  description="テーマや遊び方ごとに作品を集めたコレクション。"
+  path={paths.collections()}
+  current="collections"
+>
+  <div class="container section">
+    <h1>コレクション</h1>
+    <p class="muted">
+      テーマや遊び方ごとに、選定条件を決めて作品を集めています。星座のように、作品どうしを結ぶ道しるべです。
+    </p>
+    {collections.length === 0 ? (
+      <EmptyState title="コレクションはまだありません" />
+    ) : (
+      <ul class="grid">
+        {collections.map((c) => (
+          <li>
+            <CollectionCard collection={c} headingLevel={2} />
+          </li>
+        ))}
+      </ul>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: var(--space-5);
+    list-style: none;
+    margin: var(--space-6) 0 0;
+    padding: 0;
+  }
+</style>

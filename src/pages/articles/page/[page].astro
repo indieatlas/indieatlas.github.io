@@ -1,0 +1,20 @@
+---
+import ArticleIndex from '../../../components/ArticleIndex.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getArticles } from '../../../lib/data.ts';
+import { ARTICLES_PER_PAGE, pageCount } from '../../../lib/listing.ts';
+import { paths } from '../../../lib/urls.ts';
+
+export function getStaticPaths() {
+  const total = pageCount(getArticles().length, ARTICLES_PER_PAGE);
+  return Array.from({ length: total - 1 }, (_, i) => ({ params: { page: String(i + 2) } }));
+}
+const page = Number(Astro.params.page);
+---
+
+<BaseLayout title={`記事（${page}ページ目）`} path={paths.articles(page)} current="articles">
+  <div class="container section">
+    <h1>記事</h1>
+    <ArticleIndex page={page} />
+  </div>
+</BaseLayout>

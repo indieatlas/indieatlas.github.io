@@ -1,0 +1,67 @@
+---
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import GameGrid from '../../components/GameGrid.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, getCollections, getGame } from '../../lib/data.ts';
+import { formatDate } from '../../lib/format.ts';
+import { renderMarkdown } from '../../lib/markdown.ts';
+import { paths } from '../../lib/urls.ts';
+
+export function getStaticPaths() {
+  return getCollections().map((c) => ({ params: { id: c.id } }));
+}
+const collection = getCollection(Astro.params.id!)!;
+const games = collection.items.map((i) => getGame(i.gameId)!).filter(Boolean);
+const notes = Object.fromEntries(collection.items.map((i) => [i.gameId, i.reason]));
+---
+
+<BaseLayout
+  title={collection.title}
+  description={collection.lede}
+  path={paths.collection(collection.id)}
+  ogImage={games[0]?.image?.url}
+  current="collections"
+>
+  <div class="container section">
+    <Breadcrumbs
+      items={[
+        { label: 'ホーム', path: paths.home() },
+        { label: 'コレクション', path: paths.collections() },
+        { label: collection.title },
+      ]}
+    />
+    <p class="eyebrow">Collection · {games.length}作品</p>
+    <h1>{collection.title}</h1>
+    <p class="lede">{collection.lede}</p>
+    <div class="prose description" set:html={renderMarkdown(collection.description)} />
+    <aside class="criteria">
+      <h2>選定条件</h2>
+      <p>{collection.criteria}</p>
+      <p class="small muted">更新日 {formatDate(collection.updatedAt)}</p>
+    </aside>
+    <h2 class="list-title">収録作品</h2>
+    <GameGrid games={games} notes={notes} eagerCount={4} />
+  </div>
+</BaseLayout>
+
+<style>
+  .lede {
+    font-size: 1.125rem;
+    max-width: var(--measure);
+  }
+  .criteria {
+    max-width: var(--measure);
+    margin: var(--space-6) 0 var(--space-8);
+    padding: var(--space-4) var(--space-5);
+    border-left: 3px solid var(--color-accent-warm);
+    background: var(--color-surface);
+    border-radius: 0 var(--radius-m) var(--radius-m) 0;
+  }
+  .criteria h2 {
+    font-size: var(--text-h3);
+    margin-bottom: var(--space-2);
+  }
+  .criteria p:last-child {
+    margin-bottom: 0;
+  }
+</style>

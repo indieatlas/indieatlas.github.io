@@ -1,0 +1,20 @@
+---
+import GameListing from '../../../components/GameListing.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getGames } from '../../../lib/data.ts';
+import { GAMES_PER_PAGE, pageCount } from '../../../lib/listing.ts';
+import { paths } from '../../../lib/urls.ts';
+
+export function getStaticPaths() {
+  const total = pageCount(getGames().length, GAMES_PER_PAGE);
+  return Array.from({ length: Math.max(0, total - 1) }, (_, i) => ({ params: { page: String(i + 2) } }));
+}
+const page = Number(Astro.params.page);
+---
+
+<BaseLayout title={`作品一覧（${page}ページ目）`} path={paths.games(page)} current="games">
+  <div class="container section">
+    <h1>作品</h1>
+    <GameListing page={page} />
+  </div>
+</BaseLayout>
