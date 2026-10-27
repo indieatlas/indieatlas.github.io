@@ -3,6 +3,7 @@ import path from 'node:path';
 import type {
   SiteArticle,
   SiteCollection,
+  SiteEvent,
   SiteGame,
   SiteGenre,
   SiteMeta,
@@ -31,6 +32,7 @@ export const getArticles = () => load<SiteArticle[]>('articles');
 export const getCollections = () => load<SiteCollection[]>('collections');
 export const getTags = () => load<SiteTag[]>('tags');
 export const getGenres = () => load<SiteGenre[]>('genres');
+export const getEvents = () => load<SiteEvent[]>('events');
 export const getStats = () => load<SiteStats>('stats');
 export const getMeta = () => load<SiteMeta & { hashInputs: unknown }>('meta');
 export const getRedirects = () => load<{ from: string; to: string }[]>('redirects');

@@ -17,7 +17,7 @@ interface Props {
   ogType?: 'website' | 'article';
   noindex?: boolean;
   jsonLd?: Record<string, unknown>;
-  current?: 'games' | 'articles' | 'collections' | 'about';
+  current?: 'games' | 'articles' | 'collections' | 'events' | 'about';
   canonical?: string; // 絶対 URL で上書きする場合（転送ページ）
   stageTint?: string; // 背景の WebGL に混ぜる色（#rrggbb か CSS の変数名）
   theme?: { dark: Record<string, string>; light: Record<string, string> }; // ページの色を上書きする

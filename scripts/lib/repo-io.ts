@@ -7,6 +7,7 @@ import { ClaimsFile } from '../../schema/claim.ts';
 import { Collection } from '../../schema/collection.ts';
 import { RuntimeConfig, SourcesFile } from '../../schema/config.ts';
 import { Developer } from '../../schema/developer.ts';
+import { IndieEvent } from '../../schema/event.ts';
 import { Game } from '../../schema/game.ts';
 import { ImagePalettes } from '../../schema/media.ts';
 import { GameRelationsFile } from '../../schema/relation.ts';
@@ -20,6 +21,7 @@ import {
   sortRelations,
   sortReviewQueue,
   sortRuns,
+  sortEvent,
   sortPalettes,
   sortSeenUrls,
   sortTags,
@@ -93,6 +95,7 @@ export const FILE_KINDS: FileKind[] = [
   defineKind({ name: 'game', dir: 'data/games', schema: Game, sort: sortGame, idOf: (v) => v.id }),
   defineKind({ name: 'claims', dir: 'data/claims', schema: ClaimsFile, sort: sortClaimsFile, idOf: (v) => v.gameId }),
   defineKind({ name: 'article', dir: 'data/articles', schema: Article, sort: sortArticle, idOf: (v) => v.id }),
+  defineKind({ name: 'event', dir: 'data/events', schema: IndieEvent, sort: sortEvent, idOf: (v) => v.id }),
   defineKind({ name: 'developer', dir: 'data/developers', schema: Developer, sort: identity, idOf: (v) => v.id }),
   defineKind({
     name: 'collection',
@@ -142,6 +145,7 @@ export interface RepoData {
   claims: Map<string, ClaimsFile>;
   articles: Article[];
   developers: Developer[];
+  events: IndieEvent[];
   collections: Collection[];
   relations: GameRelationsFile;
   tags: TagsFile;
@@ -166,6 +170,7 @@ export function loadRepo(): RepoData {
     claims,
     articles: readDir('data/articles', Article),
     developers: readDir('data/developers', Developer),
+    events: readDir('data/events', IndieEvent),
     collections: readDir('data/collections', Collection),
     relations: readJsonIfExists(GameRelationsFile, repoPath('data/relations/game-relations.json')) ?? {
       schemaVersion: 1,

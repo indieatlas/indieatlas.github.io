@@ -5,13 +5,14 @@ import SearchDialog from './SearchDialog.astro';
 import ThemeToggle from './ThemeToggle.astro';
 
 interface Props {
-  current?: 'games' | 'articles' | 'collections' | 'about';
+  current?: 'games' | 'articles' | 'collections' | 'events' | 'about';
 }
 const { current } = Astro.props;
 const nav = [
   { key: 'games', label: '作品', en: 'Games', href: url(paths.games()) },
   { key: 'articles', label: '記事', en: 'News', href: url(paths.articles()) },
   { key: 'collections', label: 'コレクション', en: 'Collections', href: url(paths.collections()) },
+  { key: 'events', label: 'イベント', en: 'Events', href: url(paths.events()) },
   { key: 'about', label: '運営説明', en: 'About', href: url(paths.about()) },
 ] as const;
 ---

@@ -1,0 +1,172 @@
+---
+import type { SiteEvent } from '../../schema/site-data.ts';
+import { getGame } from '../lib/data.ts';
+import { paths, url } from '../lib/urls.ts';
+import ExternalLink from './ExternalLink.astro';
+
+// 催しの1件。日付の札、名前、種類、場所、時間、説明、公式のページへのリンク
+interface Props {
+  event: SiteEvent;
+  compact?: boolean;
+}
+const { event: e, compact = false } = Astro.props;
+const KIND: Record<string, string> = {
+  exhibition: '展示・試遊',
+  showcase: '発表配信',
+  festival: 'オンラインフェス',
+  conference: 'カンファレンス',
+  awards: 'アワード',
+  'game-jam': 'ゲームジャム',
+  sale: 'セール',
+  other: 'その他',
+};
+const FORMAT: Record<string, string> = { 'in-person': '会場', online: 'オンライン', hybrid: '会場とオンライン' };
+const WEEK = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+const d = e.start;
+const isDay = d.precision === 'day';
+const weekday = isDay ? WEEK[new Date(Date.UTC(d.year, d.month - 1, d.day)).getUTCDay()] : undefined;
+const games = e.games.map((id) => getGame(id)).filter((g) => g !== undefined);
+---
+
+<article class:list={['event', `phase-${e.phase}`, { compact }]}>
+  <div class="date" aria-hidden="true">
+    <span class="month">
+      {d.year}.{'month' in d ? String(d.month).padStart(2, '0') : '--'}
+    </span>
+    <span class="day">{isDay ? String(d.day).padStart(2, '0') : '--'}</span>
+    {weekday && <span class="weekday">{weekday}</span>}
+  </div>
+  <div class="body">
+    <p class="meta">
+      <span class="kind">{KIND[e.kind] ?? e.kind}</span>
+      <span>{FORMAT[e.format]}</span>
+      {e.phase === 'ongoing' && <span class="now">{e.startKey === e.endKey ? '本日' : '開催中'}</span>}
+      {e.tentative && <span class="tentative">日程は予定</span>}
+    </p>
+    <h3 class="name">
+      <ExternalLink href={e.url}>{e.name}</ExternalLink>
+    </h3>
+    <p class="when">
+      <time datetime={e.startKey}>{e.dateLabel}</time>
+      {e.time && <span>{e.time}</span>}
+      {e.location && <span>{e.location.venue}</span>}
+    </p>
+    {!compact && <p class="summary">{e.summary}</p>}
+    {!compact && games.length > 0 && (
+      <p class="games">
+        収録作品:{' '}
+        {games.map((g, i) => (
+          <>
+            {i > 0 && '、'}
+            <a href={url(paths.game(g!.id))}>{g!.title.display}</a>
+          </>
+        ))}
+      </p>
+    )}
+  </div>
+</article>
+
+<style>
+  .event {
+    display: grid;
+    grid-template-columns: 5.5rem minmax(0, 1fr);
+    gap: var(--space-5);
+    padding: var(--space-4) 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .date {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    padding: var(--space-2) 0;
+    background: var(--color-surface);
+    box-shadow: inset 0 0 0 1px var(--color-border);
+    border-top: 2px solid var(--color-signal);
+    font-family: var(--font-mono);
+    line-height: 1.1;
+  }
+  .month,
+  .weekday {
+    font-size: 0.6875rem;
+    letter-spacing: 0.08em;
+    color: var(--color-text-muted);
+  }
+  .day {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-text);
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-3);
+    margin: 0 0 var(--space-1);
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
+  }
+  .kind {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.06em;
+    color: var(--color-accent);
+  }
+  .now {
+    padding: 0 8px;
+    background: var(--color-signal);
+    color: var(--color-on-signal);
+    font-weight: 700;
+  }
+  .tentative {
+    padding: 0 6px;
+    box-shadow: inset 0 0 0 1px var(--color-border-strong);
+  }
+  .name {
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    line-height: 1.5;
+  }
+  .name :global(a) {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  .name :global(a:hover) {
+    color: var(--color-accent);
+    text-decoration: underline;
+  }
+  .when {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-4);
+    margin: var(--space-1) 0 0;
+    font-size: var(--text-small);
+    color: var(--color-text);
+  }
+  .summary,
+  .games {
+    margin: var(--space-2) 0 0;
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+    max-width: var(--measure);
+  }
+  .phase-past {
+    opacity: 0.7;
+  }
+  .compact {
+    grid-template-columns: 4.5rem minmax(0, 1fr);
+    gap: var(--space-4);
+  }
+  .compact .day {
+    font-size: 1.625rem;
+  }
+  @media (max-width: 560px) {
+    .event {
+      grid-template-columns: 4.25rem minmax(0, 1fr);
+      gap: var(--space-3);
+    }
+    .day {
+      font-size: 1.5rem;
+    }
+  }
+</style>

@@ -27,6 +27,7 @@ export function prepareSite(repo: RepoData, code: Record<string, string> = codeH
     collections: data.collections,
     tags: data.tags,
     genres: data.genres,
+    events: data.events,
     stats: data.stats,
   };
   const hashInputs: HashInputs = { siteData: siteDataHash(files), code, env: siteEnv() };

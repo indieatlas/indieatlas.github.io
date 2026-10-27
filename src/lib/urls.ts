@@ -27,5 +27,6 @@ export const paths = {
     page === 1 ? `articles/kind/${kind}/` : `articles/kind/${kind}/page/${page}/`,
   collections: () => 'collections/',
   collection: (id: string) => `collections/${id}/`,
+  events: () => 'events/',
   about: () => 'about/',
 };

@@ -2,6 +2,7 @@ import type { Article } from '../../schema/article.ts';
 import type { ClaimsFile } from '../../schema/claim.ts';
 import { ClaimField, scopeKey } from '../../schema/claim.ts';
 import type { Collection } from '../../schema/collection.ts';
+import type { IndieEvent } from '../../schema/event.ts';
 import type { Game } from '../../schema/game.ts';
 import type { ImagePalettes } from '../../schema/media.ts';
 import type { GameRelationsFile } from '../../schema/relation.ts';
@@ -133,6 +134,19 @@ export function sortRuns(f: RunsFile): RunsFile {
       by(
         (r) => r.startedAt,
         (r) => r.runId,
+      ),
+    ),
+  };
+}
+
+export function sortEvent(e: IndieEvent): IndieEvent {
+  return {
+    ...e,
+    games: [...e.games].sort(),
+    evidence: [...e.evidence].sort(
+      by(
+        (x) => x.retrievedAt,
+        (x) => x.url,
       ),
     ),
   };

@@ -3,7 +3,8 @@ import path from 'node:path';
 import { SINGLE_VALUE_FIELDS, scopeKey, type Claim } from '../../schema/claim.ts';
 import { MIN_PUBLISHED_COLLECTION_ITEMS } from '../../schema/collection.ts';
 import { claimsView, matchesRules } from '../lib/claims-view.ts';
-import { articleId, claimId, relationId } from '../lib/ids.ts';
+import { articleId, claimId, eventId, relationId } from '../lib/ids.ts';
+import { startOf } from '../lib/partial-date.ts';
 import {
   FILE_KINDS,
   formatJson,
@@ -101,6 +102,7 @@ export function checkFiles(): { issues: CheckIssue[]; data: RepoData | undefined
     claims,
     articles: (parsed.get('article') ?? []) as RepoData['articles'],
     developers: (parsed.get('developer') ?? []) as RepoData['developers'],
+    events: (parsed.get('event') ?? []) as RepoData['events'],
     collections: (parsed.get('collection') ?? []) as RepoData['collections'],
     relations: one('relations', { schemaVersion: 1, relations: [] }),
     tags: one('tags', { schemaVersion: 1, tags: [] }),
@@ -157,6 +159,13 @@ export function checkConsistency(data: RepoData): CheckIssue[] {
     if (a.image && !fs.existsSync(path.join(PROJECT_ROOT, 'public', a.image.path))) {
       add('D-03', `data/articles/${a.id}.json`, `image public/${a.image.path} does not exist`);
     }
+  }
+  for (const ev of data.events) {
+    for (const id of ev.games) {
+      if (!gameById.has(id)) add('D-03', `data/events/${ev.id}.json`, `game ${id} does not exist`);
+    }
+    const expected = eventId(ev.url, startOf(ev.start));
+    if (ev.id !== expected) add('D-08', `data/events/${ev.id}.json`, `event id should be ${expected}`);
   }
   for (const col of data.collections) {
     for (const item of col.items) {

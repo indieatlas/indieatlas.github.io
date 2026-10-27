@@ -1,11 +1,12 @@
 ---
 import ArticleList from '../components/ArticleList.astro';
 import CollectionCard from '../components/CollectionCard.astro';
+import EventItem from '../components/EventItem.astro';
 import GameGrid from '../components/GameGrid.astro';
 import HeroCarousel from '../components/HeroCarousel.astro';
 import SectionHeading from '../components/SectionHeading.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { getArticles, getCollections, gamesByAdded } from '../lib/data.ts';
+import { getArticles, getCollections, getEvents, gamesByAdded } from '../lib/data.ts';
 import { paths, url } from '../lib/urls.ts';
 
 const byAdded = gamesByAdded();
@@ -16,6 +17,9 @@ const news = articles.slice(0, 6);
 const latest = articles.slice(6, 12);
 
 const recent = byAdded.slice(0, 12);
+const events = getEvents()
+  .filter((e) => e.phase !== 'past')
+  .slice(0, 4);
 const recentIds = new Set(recent.map((g) => g.id));
 
 // 最近情報が充実した作品: enrichedAt の新しい順に8件。最近収録した作品は除く
@@ -38,6 +42,24 @@ const idx = () => String(++n).padStart(2, '0');
   <h1 class="visually-hidden">Indie Atlas — まだ知らないインディーゲームに出会う</h1>
   <div class="container">
     {news.length > 0 && <HeroCarousel articles={news} />}
+
+    {events.length > 0 && (
+      <section class="section" aria-labelledby="events-h">
+        <SectionHeading
+          id="events-h"
+          index={idx()}
+          en="Upcoming events"
+          title="これからのイベント"
+          linkPath={paths.events()}
+          linkLabel="カレンダー"
+        />
+        <div class="event-grid">
+          {events.map((e) => (
+            <EventItem event={e} compact />
+          ))}
+        </div>
+      </section>
+    )}
 
     <section class="section" aria-labelledby="recent-h">
       <SectionHeading
@@ -95,6 +117,11 @@ const idx = () => String(++n).padStart(2, '0');
 </BaseLayout>
 
 <style>
+  .event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+    column-gap: var(--space-7);
+  }
   .collection-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));

@@ -5,6 +5,7 @@ import type { Game } from '../../schema/game.ts';
 import type {
   SiteArticle,
   SiteCollection,
+  SiteEvent,
   SiteGame,
   SiteGenre,
   SiteReleaseEntry,
@@ -13,9 +14,9 @@ import type {
   SourceRef,
 } from '../../schema/site-data.ts';
 import { adoptedOf, claimsView } from '../lib/claims-view.ts';
-import { toJstDate } from '../lib/clock.ts';
+import { todayJst, toJstDate } from '../lib/clock.ts';
 import { registrableDomain, storeOf } from '../lib/domains.ts';
-import { compare, startOf } from '../lib/partial-date.ts';
+import { compare, endOf, format, startOf } from '../lib/partial-date.ts';
 import type { RepoData } from '../lib/repo-io.ts';
 import { by, cmp } from '../lib/sort.ts';
 import { kanaVariants } from '../lib/text-normalize.ts';
@@ -24,6 +25,7 @@ import { releaseEntryLabel, releaseLabel, STORE_LABELS } from './labels.ts';
 
 export interface SiteDataSet {
   games: SiteGame[];
+  events: SiteEvent[];
   genres: SiteGenre[];
   redirects: { from: string; to: string }[];
   articles: SiteArticle[];
@@ -53,7 +55,7 @@ const ENRICH_NOTES: Record<string, string> = {
 const dateOnly = (iso: string) => toJstDate(new Date(iso));
 
 /** data/ から、公開してよい項目だけを表示用の形にする（03 §3.7） */
-export function buildSiteData(repo: RepoData): SiteDataSet {
+export function buildSiteData(repo: RepoData, today = todayJst()): SiteDataSet {
   const published = repo.games.filter((g) => g.status === 'published');
   const publishedIds = new Set(published.map((g) => g.id));
   const devById = new Map(repo.developers.map((d) => [d.id, d]));
@@ -326,6 +328,34 @@ export function buildSiteData(repo: RepoData): SiteDataSet {
   const lastUpdated = games.reduce((m, g) => (g.updatedAt > m ? g.updatedAt : m), '');
   return {
     games: games.sort(by((g) => g.id)),
+    events: repo.events
+      .filter((e) => e.status !== 'hidden' && e.status !== 'cancelled')
+      .map((e) => ({
+        id: e.id,
+        name: e.name,
+        ...(e.nameEn ? { nameEn: e.nameEn } : {}),
+        kind: e.kind,
+        format: e.format,
+        start: e.start,
+        ...(e.end ? { end: e.end } : {}),
+        startKey: startOf(e.start),
+        endKey: endOf(e.end ?? e.start),
+        dateLabel: eventDateLabel(e.start, e.end),
+        ...(e.time ? { time: e.time } : {}),
+        ...(e.location ? { location: e.location } : {}),
+        url: e.url,
+        summary: e.summary,
+        tentative: e.status === 'tentative',
+        phase: phaseOf(startOf(e.start), endOf(e.end ?? e.start), today),
+        games: e.games.filter((id) => publishedIds.has(id)),
+        sources: refs([{ evidence: e.evidence, lastCheckedAt: e.updatedAt } as unknown as Claim]),
+      }))
+      .sort(
+        by(
+          (e) => e.startKey,
+          (e) => e.id,
+        ),
+      ),
     genres,
     redirects,
     articles: siteArticles,
@@ -508,4 +538,25 @@ function paletteOf(g: Game, imageUrl: string | undefined, repo: RepoData): Pick<
   if (!p || !imageUrl || p.imageUrl !== imageUrl) return {};
   const theme = gameTheme(p.colors);
   return { palette: p.colors, ...(theme ? { theme } : {}) };
+}
+
+const WEEKDAYS = ['日', '月', '火', '水', '木', '金', '土'];
+
+function withWeekday(d: PartialDate): string {
+  if (d.precision !== 'day') return format(d);
+  const w = new Date(Date.UTC(d.year, d.month - 1, d.day)).getUTCDay();
+  return `${format(d)}（${WEEKDAYS[w]}）`;
+}
+
+/** 催しの日程の表記。終わりの日が同じ年なら年を省く */
+export function eventDateLabel(start: PartialDate, end?: PartialDate): string {
+  if (!end || startOf(end) === startOf(start)) return withWeekday(start);
+  const e = withWeekday(end);
+  return `${withWeekday(start)}〜${end.year === start.year ? e.replace(/^\d+年/, '') : e}`;
+}
+
+function phaseOf(start: string, end: string, today: string): 'upcoming' | 'ongoing' | 'past' {
+  if (end < today) return 'past';
+  if (start <= today) return 'ongoing';
+  return 'upcoming';
 }

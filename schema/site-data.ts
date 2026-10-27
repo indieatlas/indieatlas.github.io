@@ -110,6 +110,27 @@ export interface SiteTag {
   gameCount: number;
 }
 
+export interface SiteEvent {
+  id: string;
+  name: string;
+  nameEn?: string;
+  kind: string;
+  format: 'in-person' | 'online' | 'hybrid';
+  start: PartialDate;
+  end?: PartialDate;
+  startKey: string; // YYYY-MM-DD（並べ替えと月の見出しに使う）
+  endKey: string;
+  dateLabel: string; // 例: 2026年11月3日（火）、2027年2月22日（月）〜3月1日（月）
+  time?: string;
+  location?: { venue: string; city?: string; country?: string };
+  url: string;
+  summary: string;
+  tentative: boolean;
+  phase: 'upcoming' | 'ongoing' | 'past'; // ビルドした日（日本時間）での状態。終わると公開内容ハッシュが変わり、公開し直す
+  games: string[];
+  sources: SourceRef[];
+}
+
 /** ジャンルのカテゴリ色に使う、主なジャンルの上位8件（02 §2.6.1） */
 export interface SiteGenre {
   id: string;

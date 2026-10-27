@@ -7,6 +7,11 @@ export function articleId(canonicalUrl: string): string {
   return `a_${shortHash(normalizeUrl(canonicalUrl))}`;
 }
 
+/** 催し: sha256(normalizeUrl(url)|開始日) の先頭16桁 */
+export function eventId(url: string, startKey: string): string {
+  return `ev_${shortHash(`${normalizeUrl(url)}|${startKey}`)}`;
+}
+
 /** 正規化した URL のハッシュ（state/seen-urls.json のキー） */
 export function urlKey(url: string): string {
   return shortHash(normalizeUrl(url));
