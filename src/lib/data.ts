@@ -11,6 +11,7 @@ import type {
   SiteStats,
   SiteTag,
 } from '../../schema/site-data.ts';
+import type { AmazonRanking } from '../../schema/amazon.ts';
 
 /**
  * サイト用データの読み出し。.generated/site-data/ だけを読む（03 §3.3）。
@@ -30,6 +31,8 @@ function load<T>(name: string): T {
 
 export const getGames = () => load<SiteGame[]>('games');
 export const getDevelopers = () => load<SiteDeveloper[]>('developers');
+export const getAmazonRanking = () =>
+  load<{ fetchedAt?: string; items: AmazonRanking['items'] }>('amazon-ranking');
 export const getArticles = () => load<SiteArticle[]>('articles');
 export const getCollections = () => load<SiteCollection[]>('collections');
 export const getTags = () => load<SiteTag[]>('tags');

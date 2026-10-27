@@ -1,0 +1,53 @@
+---
+import AmazonRankingList from '../components/AmazonRankingList.astro';
+import EmptyState from '../components/EmptyState.astro';
+import ExternalLink from '../components/ExternalLink.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { amazonBestsellersUrl, AMAZON_DISCLOSURE } from '../lib/amazon.ts';
+import { getAmazonRanking } from '../lib/data.ts';
+import { formatDate } from '../lib/format.ts';
+import { paths } from '../lib/urls.ts';
+
+const ranking = getAmazonRanking();
+const bestsellers = amazonBestsellersUrl();
+---
+
+<BaseLayout
+  title="Amazon の売れ筋"
+  description="Amazon.co.jp で売れているゲームソフト。プリペイドカードや周辺機器は除いています。"
+  path={paths.ranking()}
+>
+  <div class="container section">
+    <h1 class="page-title">Amazon の売れ筋</h1>
+    {ranking.items.length > 0 ? (
+      <>
+        <AmazonRankingList items={ranking.items} />
+        <p class="note small muted">
+          {ranking.fetchedAt && (
+            <>
+              <time datetime={ranking.fetchedAt}>{formatDate(ranking.fetchedAt)}</time> 時点。
+            </>
+          )}
+          ゲームソフトだけを、Amazon の売れ筋の順位で並べています。{AMAZON_DISCLOSURE}
+        </p>
+      </>
+    ) : (
+      <EmptyState title="売れ筋はいま表示できません">
+        {bestsellers && (
+          <p>
+            <ExternalLink href={bestsellers} sponsored>
+              Amazon のゲームの売れ筋ランキング
+            </ExternalLink>
+            で確かめられます。
+          </p>
+        )}
+      </EmptyState>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .note {
+    margin-top: var(--space-5);
+  }
+</style>

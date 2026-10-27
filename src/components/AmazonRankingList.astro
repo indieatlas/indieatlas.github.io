@@ -1,0 +1,112 @@
+---
+import type { AmazonRanking } from '../../schema/amazon.ts';
+import ExternalLink from './ExternalLink.astro';
+
+// Amazon の売れ筋。順位、商品の画像、商品名。商品ページへはアソシエイトのリンクで移る
+interface Props {
+  items: AmazonRanking['items'];
+  layout?: 'row' | 'grid';
+}
+const { items, layout = 'grid' } = Astro.props;
+---
+
+<ol class:list={['amazon-ranking', `is-${layout}`]}>
+  {items.map((it, i) => (
+    <li>
+      <ExternalLink href={it.url} class="item" sponsored>
+        <span class:list={['rank', { top: i < 3 }]}>{i + 1}</span>
+        <span class="thumb">
+          {it.image && (
+            <img src={it.image.url} alt="" width={it.image.width} height={it.image.height} loading="lazy" decoding="async" />
+          )}
+        </span>
+        {it.platform && <span class="platform">{it.platform}</span>}
+        <span class="title">{it.title}</span>
+      </ExternalLink>
+    </li>
+  ))}
+</ol>
+
+<style>
+  .amazon-ranking {
+    display: grid;
+    gap: var(--space-3);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .is-grid {
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  }
+  .is-row {
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - 9 * var(--space-3)) / 10);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  @media (max-width: 1023px) {
+    .is-row {
+      grid-auto-columns: 9rem;
+    }
+  }
+  .amazon-ranking :global(.item) {
+    position: relative;
+    display: grid;
+    gap: 4px;
+    height: 100%;
+    padding: var(--space-2);
+    background: var(--color-surface);
+    box-shadow: inset 0 0 0 1px var(--color-border);
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  .amazon-ranking :global(.item:hover) {
+    box-shadow: inset 0 0 0 1px var(--color-accent-warm);
+  }
+  .amazon-ranking :global(.external-icon) {
+    display: none;
+  }
+  .rank {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    min-width: 1.75rem;
+    padding: 2px 6px;
+    background: var(--color-bg-deep);
+    color: var(--color-text);
+    font-family: var(--font-display);
+    font-weight: 800;
+    text-align: center;
+  }
+  .rank.top {
+    background: var(--hof-gradient);
+    color: var(--hof-ink);
+  }
+  .thumb {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    background: #fff;
+    overflow: hidden;
+  }
+  .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .platform {
+    font-size: 0.6875rem;
+    font-weight: 800;
+    color: var(--color-accent);
+  }
+  .title {
+    font-size: var(--text-xsmall);
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+  }
+</style>

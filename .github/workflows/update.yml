@@ -2,6 +2,9 @@ name: update
 
 # 第1段階では build と deploy だけを行う。定期実行、research、adopt は P3-01 で加える（07 §7.2）
 on:
+  # Amazon の売れ筋は取得から24時間以内のものしか出せないので、12時間ごとに作り直す
+  schedule:
+    - cron: '17 */12 * * *'
   workflow_dispatch:
     inputs:
       force_deploy:
@@ -51,6 +54,14 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check:data
+      - name: Fetch Amazon ranking
+        # キーがなければ何もしない。失敗しても売れ筋の欄を出さずに公開を続ける
+        continue-on-error: true
+        env:
+          AMAZON_CREATORS_CREDENTIAL_ID: ${{ secrets.AMAZON_CREATORS_CREDENTIAL_ID }}
+          AMAZON_CREATORS_CREDENTIAL_SECRET: ${{ secrets.AMAZON_CREATORS_CREDENTIAL_SECRET }}
+          AMAZON_CREATORS_VERSION: ${{ vars.AMAZON_CREATORS_VERSION || '3.3' }}
+        run: npm run amazon:ranking
       - name: Build
         env:
           SOURCE_COMMIT: ${{ steps.source.outputs.commit }}

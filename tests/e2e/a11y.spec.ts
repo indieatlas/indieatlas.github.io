@@ -10,6 +10,7 @@ for (const [name, path] of [
   ['コレクション', 'collections/col_0001/'],
   ['運営説明', 'about/'],
   ['イベント', 'events/'],
+  ['売れ筋', 'ranking/'],
   ['開発元の一覧', 'developers/'],
   ['パブリッシャーの一覧', 'publishers/'],
   ['開発元', 'developers/dev_000001/'],
