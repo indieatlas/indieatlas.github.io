@@ -1,5 +1,6 @@
 /**
- * ページの背景の WebGL（02 §2.7）。斜めに流れる帯、網点、粒子のノイズを、全画面の三角形1枚で描く。
+ * ページの背景の WebGL（02 §2.7）。ページの色のグラデーションに、重なってうねる半透明の波と、
+ * 波のまわりを漂う光の粒を、全画面の三角形1枚で描く（携帯ゲーム機のメニューの背景のように）。
  * 本文は不透明度の高い面（main）に載せ、この背景の上に文字を直接置かない。
  * 1ページに1つのキャンバスだけを使う。描けない環境では body の CSS の背景のままにする。
  */
@@ -28,51 +29,65 @@ float noise(vec2 p) {
   vec2 u = f * f * (3.0 - 2.0 * f);
   return mix(mix(hash(i), hash(i + vec2(1, 0)), u.x), mix(hash(i + vec2(0, 1)), hash(i + vec2(1, 1)), u.x), u.y);
 }
-
 void main() {
-  vec2 px = gl_FragCoord.xy / uScale;           // CSS ピクセル
+  vec2 px = gl_FragCoord.xy / uScale;           // CSS ピクセル（下から上）
   vec2 res = uRes / uScale;
-  px.y = res.y - px.y;                           // 上から下へ
-  vec2 par = uPointer * vec2(14.0, 10.0);        // 視差
-  vec3 col = uBg;
-
-  // 斜めの帯（115度）。ゆっくり流れ、スクロールとポインターで少しずれる
-  float ang = radians(-25.0);
-  mat2 rot = mat2(cos(ang), -sin(ang), sin(ang), cos(ang));
-  vec2 q = rot * (px + par + vec2(0.0, uScroll * 0.25));
-  float t = uTime;
-  float w = res.x;
-  float b1 = q.x - w * 0.62 - t * 6.0;
-  float band1 = smoothstep(0.0, 2.0, mod(b1, w * 1.4)) * (1.0 - smoothstep(w * 0.16, w * 0.16 + 2.0, mod(b1, w * 1.4)));
-  float b2 = q.x - w * 0.35 + t * 3.5 + par.x * 1.5;
-  float band2 = smoothstep(0.0, 1.5, mod(b2, w * 1.1)) * (1.0 - smoothstep(10.0, 11.5, mod(b2, w * 1.1)));
-  float b3 = q.x - w * 0.9 - t * 9.0;
-  float band3 = smoothstep(0.0, 1.5, mod(b3, w * 1.7)) * (1.0 - smoothstep(3.0, 4.5, mod(b3, w * 1.7)));
-
-  vec3 sig = mix(uSignal, uTint, 0.35);
-  col = mix(col, sig, band1 * (uDark > 0.5 ? 0.34 : 0.16));
-  col = mix(col, uWarm, band2 * (uDark > 0.5 ? 0.55 : 0.35));
-  col = mix(col, uInk, band3 * 0.12);
-
-  // 網点。左下と右上ほど大きく、ゆっくり脈打つ
-  float cell = 12.0;
-  vec2 g = mod(px + vec2(t * 2.0, 0.0), cell) - cell * 0.5;
   vec2 uv = px / res;
-  float corner = max(smoothstep(0.55, 1.0, (1.0 - uv.x) * 0.6 + uv.y * 0.7), smoothstep(0.6, 1.0, uv.x * 0.8 + (1.0 - uv.y) * 0.5));
-  float pulse = 0.85 + 0.15 * sin(t * 0.6 + uv.x * 6.0);
-  float r = cell * 0.42 * corner * pulse;
-  float dotMask = 1.0 - smoothstep(r - 0.8, r + 0.8, length(g));
-  col = mix(col, sig, dotMask * (uDark > 0.5 ? 0.22 : 0.12));
+  float aspect = res.x / res.y;
+  float t = uTime;
+  bool dark = uDark > 0.5;
+  vec3 tint = mix(uSignal, uTint, 0.75);         // ページの色（作品詳細では作品の色）
 
-  // 霧のようなむら
-  float n = noise(px / 260.0 + vec2(t * 0.02, -t * 0.015));
-  col = mix(col, sig, smoothstep(0.55, 1.0, n) * (uDark > 0.5 ? 0.10 : 0.05));
+  // 1. 地: 上が深く、中ほどが明るい、ページの色のグラデーション
+  vec3 col;
+  if (dark) {
+    vec3 top = uBg * 0.6;
+    vec3 midc = mix(uBg, tint, 0.38);
+    vec3 bottom = mix(uBg, tint, 0.16);
+    col = mix(midc, top, smoothstep(0.45, 1.0, uv.y));
+    col = mix(bottom, col, smoothstep(0.0, 0.5, uv.y));
+  } else {
+    vec3 top = mix(uBg, tint, 0.18);
+    vec3 midc = mix(vec3(1.0), uBg, 0.4);
+    col = mix(midc, top, smoothstep(0.4, 1.0, uv.y));
+    col = mix(mix(uBg, tint, 0.1), col, smoothstep(0.0, 0.45, uv.y));
+  }
+  col += tint * (noise(uv * vec2(aspect, 1.0) * 2.0 + vec2(t * 0.03, 0.0)) - 0.5) * (dark ? 0.06 : 0.03);
 
-  // 粒子のノイズと周辺の減光
-  float grain = (hash(px + fract(t) * 37.0) - 0.5) * (uDark > 0.5 ? 0.035 : 0.025);
-  float vig = smoothstep(1.25, 0.35, length((uv - 0.5) * vec2(1.2, 1.0)));
-  col = col * mix(uDark > 0.5 ? 0.72 : 0.94, 1.0, vig) + grain;
-  o = vec4(col, 1.0);
+  // 2. 波。重なった半透明の帯が、ゆっくりうねりながら横へ流れる（携帯ゲーム機のメニューの背景のように）
+  float x = uv.x * aspect + uPointer.x * 0.04;
+  float lift = uScroll * 0.00006 + uPointer.y * 0.01;
+  vec3 waves = vec3(0.0);
+  for (int i = 0; i < 6; i++) {
+    float fi = float(i);
+    float y = 0.48 + lift + (fi - 2.5) * 0.012
+      + 0.09 * sin(x * (0.9 + fi * 0.07) + t * (0.22 + fi * 0.03) + fi * 1.7)
+      + 0.035 * sin(x * (2.1 - fi * 0.1) - t * (0.31 + fi * 0.02) + fi * 0.9)
+      + 0.012 * sin(x * 5.3 + t * 0.6 + fi * 2.3);
+    float d = uv.y - y;
+    float line = exp(-pow(d / (0.0016 + fi * 0.0004), 2.0));
+    float halo = exp(-pow(d / 0.018, 2.0));
+    float sheet = d < 0.0 ? exp(d * (9.0 + fi * 2.0)) : exp(-d * 60.0);
+    float w = 1.0 - fi * 0.11;
+    waves += (vec3(1.0) * line * 0.55 + mix(tint, vec3(1.0), 0.5) * halo * 0.08 + mix(tint, vec3(1.0), 0.25) * sheet * 0.1) * w;
+  }
+  col = dark ? col + waves : mix(col, col + waves * 0.9, 0.85);
+
+  // 3. 波のまわりを漂う光の粒
+  vec2 sp = vec2(px.x + t * 8.0, px.y);
+  vec2 id = floor(sp / 34.0);
+  vec2 f = fract(sp / 34.0) - 0.5;
+  float h = hash(id);
+  vec2 off = vec2(hash(id + 3.1), hash(id + 7.7)) - 0.5;
+  float star = step(0.9, h) * smoothstep(0.07, 0.0, length(f - off * 0.6));
+  float band = exp(-pow((uv.y - 0.48) / 0.16, 2.0));
+  col += vec3(1.0) * star * band * (0.35 + 0.35 * sin(t * (1.0 + h * 3.0) + h * 30.0)) * (dark ? 0.7 : 0.5);
+
+  // 4. 粒子のノイズと周辺の減光
+  col += (hash(px + fract(t) * 37.0) - 0.5) * (dark ? 0.025 : 0.015);
+  float vig = smoothstep(1.35, 0.3, length((uv - vec2(0.5, 0.5)) * vec2(1.1, 1.0)));
+  col *= mix(dark ? 0.6 : 0.95, 1.0, vig);
+  o = vec4(clamp(col, 0.0, 1.0), 1.0);
 }`;
 
 function hexToRgb(hex: string): [number, number, number] {
