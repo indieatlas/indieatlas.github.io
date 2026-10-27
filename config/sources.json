@@ -169,6 +169,126 @@
       }
     },
     {
+      "id": "famitsu",
+      "name": "ファミ通.com",
+      "homepage": "https://www.famitsu.com/",
+      "lang": "ja",
+      "role": "understand",
+      "kind": "media",
+      "evidenceKind": "media",
+      "enabled": false,
+      "fetch": {
+        "method": "rss",
+        "url": "https://www.famitsu.com/rss/",
+        "frequency": "every-run",
+        "maxItemsPerRun": 30
+      },
+      "rights": {
+        "allowFetch": true,
+        "displayTitle": true,
+        "displaySummary": false,
+        "displayImages": false,
+        "storeQuotes": true,
+        "notes": "記事の見出しとリンクを掲載する（2026-10-28 追加）。画像は使わない。利用条件と RSS の URL は P2-02 で確認する。"
+      }
+    },
+    {
+      "id": "game-watch",
+      "name": "GAME Watch",
+      "homepage": "https://game.watch.impress.co.jp/",
+      "lang": "ja",
+      "role": "understand",
+      "kind": "media",
+      "evidenceKind": "media",
+      "enabled": false,
+      "fetch": {
+        "method": "rss",
+        "url": "https://game.watch.impress.co.jp/data/rss/1.0/gmw/feed.rdf",
+        "frequency": "every-run",
+        "maxItemsPerRun": 30
+      },
+      "rights": {
+        "allowFetch": true,
+        "displayTitle": true,
+        "displaySummary": false,
+        "displayImages": false,
+        "storeQuotes": true,
+        "notes": "記事の見出しとリンクを掲載する（2026-10-28 追加）。画像は使わない。利用条件と RSS の URL は P2-02 で確認する。"
+      }
+    },
+    {
+      "id": "inside-games",
+      "name": "インサイド",
+      "homepage": "https://www.inside-games.jp/",
+      "lang": "ja",
+      "role": "understand",
+      "kind": "media",
+      "evidenceKind": "media",
+      "enabled": false,
+      "fetch": {
+        "method": "rss",
+        "url": "https://www.inside-games.jp/rss/index.rdf",
+        "frequency": "every-run",
+        "maxItemsPerRun": 30
+      },
+      "rights": {
+        "allowFetch": true,
+        "displayTitle": true,
+        "displaySummary": false,
+        "displayImages": false,
+        "storeQuotes": true,
+        "notes": "記事の見出しとリンクを掲載する（2026-10-28 追加）。画像は使わない。利用条件と RSS の URL は P2-02 で確認する。"
+      }
+    },
+    {
+      "id": "pc-gamer",
+      "name": "PC Gamer",
+      "homepage": "https://www.pcgamer.com/",
+      "lang": "en",
+      "role": "understand",
+      "kind": "media",
+      "evidenceKind": "media",
+      "enabled": false,
+      "fetch": {
+        "method": "rss",
+        "url": "https://www.pcgamer.com/feeds.xml",
+        "frequency": "every-run",
+        "maxItemsPerRun": 30
+      },
+      "rights": {
+        "allowFetch": true,
+        "displayTitle": true,
+        "displaySummary": false,
+        "displayImages": false,
+        "storeQuotes": true,
+        "notes": "記事の見出しとリンクを掲載する（2026-10-28 追加）。画像は使わない。利用条件と RSS の URL は P2-02 で確認する。"
+      }
+    },
+    {
+      "id": "gamesradar",
+      "name": "GamesRadar+",
+      "homepage": "https://www.gamesradar.com/",
+      "lang": "en",
+      "role": "understand",
+      "kind": "media",
+      "evidenceKind": "media",
+      "enabled": false,
+      "fetch": {
+        "method": "rss",
+        "url": "https://www.gamesradar.com/feeds.xml",
+        "frequency": "every-run",
+        "maxItemsPerRun": 30
+      },
+      "rights": {
+        "allowFetch": true,
+        "displayTitle": true,
+        "displaySummary": false,
+        "displayImages": false,
+        "storeQuotes": true,
+        "notes": "記事の見出しとリンクを掲載する（2026-10-28 追加）。画像は使わない。利用条件と RSS の URL は P2-02 で確認する。"
+      }
+    },
+    {
       "id": "bitsummit",
       "name": "BitSummit",
       "homepage": "https://bitsummit.org/",
