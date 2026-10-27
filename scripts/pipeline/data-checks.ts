@@ -6,6 +6,7 @@ import { claimsView, matchesRules } from '../lib/claims-view.ts';
 import { articleId, claimId, relationId } from '../lib/ids.ts';
 import { FILE_KINDS, formatJson, listJsonFiles, repoPath, repoRoot, type RepoData } from '../lib/repo-io.ts';
 import { associatedAppKeys, strongKeys } from '../lib/strong-keys.ts';
+import { SECRET_PATTERN } from '../lib/secrets.ts';
 import { normalizeTitle } from '../lib/text-normalize.ts';
 import { canPublish } from './publish-rules.ts';
 
@@ -14,10 +15,6 @@ export interface CheckIssue {
   file?: string; // repoRoot からの相対パス
   message: string;
 }
-
-/** 機密情報らしい文字列（D-14、B-06） */
-export const SECRET_PATTERN =
-  /(sk-ant-[A-Za-z0-9_-]{8,}|ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|-----BEGIN [A-Z ]+-----|AKIA[0-9A-Z]{16})/;
 
 function rel(file: string): string {
   return path.relative(repoRoot(), file);
