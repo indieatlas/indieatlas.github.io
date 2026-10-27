@@ -2,8 +2,8 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
-const site = process.env.SITE_URL ?? 'http://localhost:4321';
-const base = process.env.BASE_PATH ?? '/';
+const site = process.env.SITE_URL || 'http://localhost:4321';
+const base = process.env.BASE_PATH || '/';
 if (!/^\/([^/]+\/)*$/.test(base)) throw new Error(`BASE_PATH must start and end with "/": ${base}`);
 if (!/^https?:\/\/[^/]+$/.test(site)) throw new Error(`SITE_URL must be an origin without a path: ${site}`);
 

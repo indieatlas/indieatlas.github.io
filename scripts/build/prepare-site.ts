@@ -15,7 +15,7 @@ export interface PreparedSite {
 }
 
 export function siteEnv(): { SITE_URL: string; BASE_PATH: string } {
-  return { SITE_URL: process.env.SITE_URL ?? 'http://localhost:4321', BASE_PATH: process.env.BASE_PATH ?? '/' };
+  return { SITE_URL: process.env.SITE_URL || 'http://localhost:4321', BASE_PATH: process.env.BASE_PATH || '/' };
 }
 
 /** data/ から .generated/site-data/ の内容を作る（03 §3.7） */

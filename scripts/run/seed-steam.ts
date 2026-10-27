@@ -25,8 +25,8 @@ await runMain(async () => {
   const runtime = loadRepo().runtime;
   const http = createSimpleHttp({
     userAgent: runtime.fetch.userAgent
-      .replace('{SITE_URL}', process.env.SITE_URL ?? 'http://localhost:4321')
-      .replace('{BASE_PATH}', process.env.BASE_PATH ?? '/'),
+      .replace('{SITE_URL}', process.env.SITE_URL || 'http://localhost:4321')
+      .replace('{BASE_PATH}', process.env.BASE_PATH || '/'),
     minIntervalMs: runtime.fetch.perDomainMinIntervalMs,
     timeoutMs: runtime.fetch.timeoutSeconds * 1000,
     maxBytes: runtime.fetch.maxBytes,

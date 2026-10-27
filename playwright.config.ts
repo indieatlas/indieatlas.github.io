@@ -1,6 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
 
-const basePath = process.env.BASE_PATH ?? '/';
+const basePath = process.env.BASE_PATH || '/';
 const port = 4173;
 const baseURL = process.env.E2E_BASE_URL ?? `http://localhost:${port}${basePath}`;
 

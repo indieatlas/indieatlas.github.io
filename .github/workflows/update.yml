@@ -1,0 +1,84 @@
+name: update
+
+# 第1段階では build と deploy だけを行う。定期実行、research、adopt は P3-01 で加える（07 §7.2）
+on:
+  workflow_dispatch:
+    inputs:
+      force_deploy:
+        description: '公開内容が同じでもデプロイする'
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'schema/**'
+      - 'data/**'
+      - 'scripts/build/**'
+      - 'astro.config.mjs'
+      - 'package-lock.json'
+
+concurrency:
+  group: site-update-and-publish
+  cancel-in-progress: false
+
+permissions: {} # 既定は権限なし。ジョブごとに必要な分だけ付与する
+
+jobs:
+  build:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    outputs:
+      should_deploy: ${{ steps.publish_check.outputs.should_deploy }}
+      content_hash: ${{ steps.publish_check.outputs.content_hash }}
+    env:
+      SITE_URL: ${{ vars.SITE_URL }}
+      BASE_PATH: ${{ vars.BASE_PATH }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - id: source
+        run: echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run check:data
+      - name: Build
+        env:
+          SOURCE_COMMIT: ${{ steps.source.outputs.commit }}
+          TRIGGER_COMMIT: ${{ github.sha }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+        run: npm run build
+      - run: npm run check:dist
+      - id: publish_check
+        env:
+          FORCE_DEPLOY: ${{ inputs.force_deploy || 'false' }}
+        run: npm run check:publish
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        if: ${{ steps.publish_check.outputs.should_deploy == 'true' }}
+        with:
+          path: dist/
+
+  deploy:
+    needs: build
+    if: ${{ !cancelled() && needs.build.outputs.should_deploy == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

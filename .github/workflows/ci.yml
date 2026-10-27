@@ -1,0 +1,80 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with: { persist-credentials: false }
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with: { node-version-file: .nvmrc, cache: npm }
+      - run: npm ci
+      # astro check は .generated/site-data/ を読むページの型も確かめるため、先にサイト用データを作る
+      - run: npm run prepare-site
+      - run: npm run check:types
+      - run: npm run check:data
+      - run: npm test
+
+  site:
+    needs: verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      matrix:
+        base_path: ['/indieatlas/', '/']
+    env:
+      SITE_URL: https://example.github.io
+      BASE_PATH: ${{ matrix.base_path }}
+      INDIEATLAS_ROOT: tests/fixtures/repo # 決定的な結果にするため、架空のデータでビルドする
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with: { persist-credentials: false }
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with: { node-version-file: .nvmrc, cache: npm }
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium webkit
+      - run: npm run check:data
+      - run: npm run build
+      - run: npm run check:dist
+      - run: npm run test:e2e
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: ${{ failure() }}
+        with:
+          name: playwright-report-${{ strategy.job-index }}
+          path: playwright-report/
+          retention-days: 7
+
+  # 性能の計測（02 §2.8）。第1〜4段階は警告だけにし、合否には使わない
+  lighthouse:
+    needs: verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    continue-on-error: true
+    env:
+      SITE_URL: http://localhost:4173
+      BASE_PATH: /
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with: { persist-credentials: false }
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with: { node-version-file: .nvmrc, cache: npm }
+      - run: npm ci
+      - run: npm run build
+      - name: Lighthouse (mobile)
+        run: |
+          npx tsx scripts/dev/serve-dist.ts --base / --port 4173 &
+          sleep 2
+          for path in '' 'games/' "games/$(node -e "console.log(require('./.generated/site-data/games.json')[0].id)")/"; do
+            npx --yes lighthouse@13 "http://localhost:4173/$path" --quiet --chrome-flags="--headless=new --no-sandbox" \
+              --only-categories=performance,accessibility --output=json --output-path=lh.json
+            node -e "const r=require('./lh.json');const s=k=>Math.round(r.categories[k].score*100);const line='$path → performance '+s('performance')+', accessibility '+s('accessibility');console.log(line);require('fs').appendFileSync(process.env.GITHUB_STEP_SUMMARY,'- '+line+'\n')"
+          done
