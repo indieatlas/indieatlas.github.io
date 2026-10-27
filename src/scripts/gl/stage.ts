@@ -1,6 +1,6 @@
 /**
  * ページの背景の WebGL（02 §2.7）。ページの色のグラデーションに、重なってうねる半透明の波と、
- * 波のまわりを漂う光の粒を、全画面の三角形1枚で描く（携帯ゲーム機のメニューの背景のように）。
+ * 画面全体に散らばる大小の光の粒を、全画面の三角形1枚で描く（携帯ゲーム機のメニューの背景のように）。
  * 本文は不透明度の高い面（main）に載せ、この背景の上に文字を直接置かない。
  * 1ページに1つのキャンバスだけを使う。描けない環境では body の CSS の背景のままにする。
  */
@@ -54,34 +54,47 @@ void main() {
   }
   col += tint * (noise(uv * vec2(aspect, 1.0) * 2.0 + vec2(t * 0.03, 0.0)) - 0.5) * (dark ? 0.06 : 0.03);
 
-  // 2. 波。重なった半透明の帯が、ゆっくりうねりながら横へ流れる（携帯ゲーム機のメニューの背景のように）
+  // 2. 波。重なった半透明の帯が、上下に大きくうねりながら横へ流れる（携帯ゲーム機のメニューの背景のように）
   float x = uv.x * aspect + uPointer.x * 0.04;
   float lift = uScroll * 0.00006 + uPointer.y * 0.01;
   vec3 waves = vec3(0.0);
   for (int i = 0; i < 6; i++) {
     float fi = float(i);
-    float y = 0.48 + lift + (fi - 2.5) * 0.012
-      + 0.09 * sin(x * (0.9 + fi * 0.07) + t * (0.22 + fi * 0.03) + fi * 1.7)
-      + 0.035 * sin(x * (2.1 - fi * 0.1) - t * (0.31 + fi * 0.02) + fi * 0.9)
-      + 0.012 * sin(x * 5.3 + t * 0.6 + fi * 2.3);
+    float y = 0.5 + lift + (fi - 2.5) * 0.018
+      + 0.15 * sin(x * (0.75 + fi * 0.06) + t * (0.2 + fi * 0.025) + fi * 1.7)
+      + 0.06 * sin(x * (1.8 - fi * 0.08) - t * (0.28 + fi * 0.02) + fi * 0.9)
+      + 0.025 * sin(x * 4.1 + t * 0.5 + fi * 2.3);
     float d = uv.y - y;
-    float line = exp(-pow(d / (0.0016 + fi * 0.0004), 2.0));
-    float halo = exp(-pow(d / 0.018, 2.0));
-    float sheet = d < 0.0 ? exp(d * (9.0 + fi * 2.0)) : exp(-d * 60.0);
-    float w = 1.0 - fi * 0.11;
-    waves += (vec3(1.0) * line * 0.55 + mix(tint, vec3(1.0), 0.5) * halo * 0.08 + mix(tint, vec3(1.0), 0.25) * sheet * 0.1) * w;
+    float width = 0.0055 + fi * 0.0012;
+    float line = exp(-pow(d / width, 2.0));
+    float halo = exp(-pow(d / 0.035, 2.0));
+    float sheet = d < 0.0 ? exp(d * (7.0 + fi * 1.5)) : exp(-d * 45.0);
+    float w = 1.0 - fi * 0.1;
+    waves += (mix(tint, vec3(1.0), 0.7) * line * 0.2 + mix(tint, vec3(1.0), 0.45) * halo * 0.05 + mix(tint, vec3(1.0), 0.2) * sheet * 0.07) * w;
   }
   col = dark ? col + waves : mix(col, col + waves * 0.9, 0.85);
 
-  // 3. 波のまわりを漂う光の粒
-  vec2 sp = vec2(px.x + t * 8.0, px.y);
-  vec2 id = floor(sp / 34.0);
-  vec2 f = fract(sp / 34.0) - 0.5;
-  float h = hash(id);
-  vec2 off = vec2(hash(id + 3.1), hash(id + 7.7)) - 0.5;
-  float star = step(0.9, h) * smoothstep(0.07, 0.0, length(f - off * 0.6));
-  float band = exp(-pow((uv.y - 0.48) / 0.16, 2.0));
-  col += vec3(1.0) * star * band * (0.35 + 0.35 * sin(t * (1.0 + h * 3.0) + h * 30.0)) * (dark ? 0.7 : 0.5);
+  // 3. 光の粒。大きさの違う3層を画面全体に散らし、ゆっくり漂わせて瞬かせる。大きな粒はぼかして玉のように見せる
+  vec3 dust = vec3(0.0);
+  for (int k = 0; k < 3; k++) {
+    float fk = float(k);
+    float cell = 26.0 + fk * 34.0;               // 小さい粒ほど細かく
+    vec2 sp = px + vec2(t * (6.0 + fk * 5.0), t * (2.0 + fk * 1.5)) + uPointer * (4.0 + fk * 10.0);
+    vec2 id = floor(sp / cell);
+    vec2 f = fract(sp / cell) - 0.5;
+    float h = hash(id + fk * 31.7);
+    vec2 off = vec2(hash(id + 3.1 + fk), hash(id + 7.7 + fk)) - 0.5;
+    float r = mix(0.025, 0.09, hash(id + 11.3)) * (1.0 + fk * 0.6);
+    float dd = length(f - off * 0.4);
+    float core = smoothstep(r, r * 0.2, dd);
+    // にじみはセルの端より内側で消し、セルの境目が見えないようにする
+    float bloom = exp(-dd * dd / (r * r * (fk + 1.5) * 1.8)) * 0.35 * smoothstep(0.3, 0.1, dd);
+    float tw = 0.45 + 0.55 * sin(t * (0.6 + h * 1.8) + h * 50.0);
+    float on = step(0.72 - fk * 0.08, h);
+    float bright = (0.18 + 0.12 * fk) * tw * on * (fk > 1.5 ? 0.6 : 1.0);
+    dust += mix(vec3(1.0), mix(tint, vec3(1.0), 0.5), fk * 0.4) * (core + bloom) * bright;
+  }
+  col += dust * (dark ? 0.75 : 0.45) * mix(0.55, 1.0, smoothstep(0.0, 0.6, uv.y));
 
   // 4. 粒子のノイズと周辺の減光
   col += (hash(px + fract(t) * 37.0) - 0.5) * (dark ? 0.025 : 0.015);
