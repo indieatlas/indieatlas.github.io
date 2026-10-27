@@ -12,7 +12,7 @@ const credits = [...new Set(shots.map((s) => s.credit).filter(Boolean))];
 
 {shots.length > 0 && (
   <section class="screenshots" aria-labelledby="shots-h" data-gallery>
-    <h2 id="shots-h">スクリーンショット</h2>
+    <h2 id="shots-h" class="visually-hidden">スクリーンショット</h2>
     <ul class="strip">
       {shots.map((s, i) => (
         <li>

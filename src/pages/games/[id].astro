@@ -54,7 +54,9 @@ const primaryStore = game.stores[0];
 const showOriginal = game.title.original !== game.title.display;
 const mainAliases = game.aliases.filter((a) => a !== game.title.original && a !== game.title.display).slice(0, 4);
 const amazonUrl = amazonSearchUrl(game.title.display, game.platforms);
-const prominenceLabel = game.prominence === 'landmark' ? '定番' : game.prominence === 'notable' ? '人気' : undefined;
+const scoreClass = (v: number) => (v >= 80 ? 'is-high' : v >= 60 ? 'is-mid' : 'is-low');
+const CROWN = '<svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M2 5l3 3 3-5 3 5 3-3-1.2 7H3.2z"/><rect x="3" y="13" width="10" height="1.6"/></svg>';
+const prominenceLabel = game.prominence === 'landmark' ? '殿堂入り' : game.prominence === 'notable' ? '人気' : undefined;
 const reviewsLabel =
   game.steamReviews === undefined || game.steamReviews < 1_000
     ? undefined
@@ -154,8 +156,19 @@ const description =
                 )}
               </p>
               <p class="status">
-                {prominenceLabel && <span class:list={['prominence', `is-${game.prominence}`]}>{prominenceLabel}</span>}
+                {prominenceLabel && (
+                  <span class:list={['prominence', `is-${game.prominence}`]}>
+                    {game.prominence === 'landmark' && <Fragment set:html={CROWN} />}
+                    {prominenceLabel}
+                  </span>
+                )}
                 <ReleaseLabel release={game.release} />
+                {game.ratings?.total !== undefined && (
+                  <span class="rating-chip" title={`IGDB の評価（${game.ratings.totalCount}件）`}>
+                    <span class:list={['score', scoreClass(game.ratings.total)]}>{game.ratings.total}</span>
+                    IGDB
+                  </span>
+                )}
                 {reviewsLabel && <span class="reviews">Steam レビュー {reviewsLabel}</span>}
               </p>
               <div class="chips">
@@ -183,6 +196,12 @@ const description =
           </div>
         </div>
       </header>
+
+      {game.screenshots.length > 0 && (
+        <div class="container shots-wrap" data-pagefind-ignore>
+          <Screenshots game={game} />
+        </div>
+      )}
 
       <div class="container detail-grid">
         <div class="main-col">
@@ -286,7 +305,7 @@ const description =
                     game.publishers.map((d, i) => (
                       <>
                         {i > 0 && '、'}
-                        <a href={url(paths.developer(d.id))}>{d.name}</a>
+                        <a href={url(paths.publisher(d.id))}>{d.name}</a>
                       </>
                     ))
                   ) : (
@@ -418,6 +437,30 @@ const description =
                   )}
                 </dd>
               </div>
+              {game.ratings && (
+                <div>
+                  <dt>評価</dt>
+                  <dd>
+                    <ul class="ratings">
+                      {game.ratings.total !== undefined && (
+                        <li>
+                          <span class:list={['score', scoreClass(game.ratings.total)]}>{game.ratings.total}</span>
+                          総合（{game.ratings.totalCount}件）
+                        </li>
+                      )}
+                      {game.ratings.critic !== undefined && (
+                        <li>
+                          <span class:list={['score', scoreClass(game.ratings.critic)]}>{game.ratings.critic}</span>
+                          批評（{game.ratings.criticCount}件）
+                        </li>
+                      )}
+                    </ul>
+                    <p class="small muted">
+                      100点満点。出典: <ExternalLink href={game.ratings.url}>IGDB</ExternalLink>
+                    </p>
+                  </dd>
+                </div>
+              )}
               {mainAliases.length > 0 && (
                 <div>
                   <dt>別名</dt>
@@ -538,17 +581,67 @@ const description =
     margin: 0 0 var(--space-3);
   }
   .prominence {
-    padding: 2px 10px;
-    background: var(--color-signal);
-    color: var(--color-on-signal);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 12px 3px 10px;
+    background: var(--hof-gradient);
+    color: var(--hof-ink);
     font-size: 0.8125rem;
     font-weight: 800;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.08em;
+    box-shadow: 0 0 0 1px rgb(255 236 180 / 0.35), 0 6px 18px -8px rgb(214 168 72 / 0.8);
+  }
+  .prominence :global(svg) {
+    width: 14px;
+    height: 14px;
   }
   .prominence.is-notable {
     background: transparent;
     color: var(--color-text);
     box-shadow: inset 0 0 0 1px var(--color-border-strong);
+  }
+  .rating-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: var(--text-small);
+    font-weight: 700;
+    color: var(--color-text-muted);
+  }
+  .score {
+    display: inline-grid;
+    place-items: center;
+    min-width: 2.25rem;
+    height: 1.75rem;
+    padding: 0 6px;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 0.9375rem;
+  }
+  .score.is-high {
+    background: #1f7a4d;
+    color: #fff;
+  }
+  .score.is-mid {
+    background: #e0b23a;
+    color: #1c1405;
+  }
+  .score.is-low {
+    background: #b3372c;
+    color: #fff;
+  }
+  .ratings {
+    display: grid;
+    gap: var(--space-2);
+    list-style: none;
+    margin: 0 0 var(--space-1);
+    padding: 0;
+  }
+  .ratings li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
   }
   .reviews {
     font-size: var(--text-small);
@@ -614,6 +707,9 @@ const description =
   .overview.is-lead {
     font-size: 1.0625rem;
     font-weight: 700;
+  }
+  .shots-wrap {
+    margin-bottom: var(--space-6);
   }
   .overview {
     max-width: var(--measure);
