@@ -167,6 +167,102 @@
         "storeQuotes": true,
         "notes": "英語の媒体。インディーの記事が多い。フィードの URL と利用条件は P2-02 で確認する。 記事の OGP 画像を縮小して記事のカードに表示する（2026-10-28 利用者の判断）。本文の画像は使わない。"
       }
+    },
+    {
+      "id": "bitsummit",
+      "name": "BitSummit",
+      "homepage": "https://bitsummit.org/",
+      "lang": "ja",
+      "role": "discover",
+      "kind": "event",
+      "evidenceKind": "event",
+      "enabled": false,
+      "fetch": {
+        "method": "html-list",
+        "url": "https://bitsummit.org/",
+        "frequency": "weekly",
+        "maxItemsPerRun": 10
+      },
+      "rights": {
+        "allowFetch": true,
+        "displayTitle": true,
+        "displaySummary": false,
+        "displayImages": true,
+        "storeQuotes": true,
+        "notes": "京都のインディーゲームの祭典。開催日程と出展作品の告知を取得する（06 §6.13）。利用条件は P2-02 で確認する。"
+      }
+    },
+    {
+      "id": "digigame-expo",
+      "name": "デジゲー博",
+      "homepage": "https://digigame-expo.org/",
+      "lang": "ja",
+      "role": "discover",
+      "kind": "event",
+      "evidenceKind": "event",
+      "enabled": false,
+      "fetch": {
+        "method": "html-list",
+        "url": "https://digigame-expo.org/",
+        "frequency": "weekly",
+        "maxItemsPerRun": 10
+      },
+      "rights": {
+        "allowFetch": true,
+        "displayTitle": true,
+        "displaySummary": false,
+        "displayImages": true,
+        "storeQuotes": true,
+        "notes": "同人・インディーゲームの展示即売会。開催日程とサークル一覧を取得する。利用条件は P2-02 で確認する。"
+      }
+    },
+    {
+      "id": "404-shibuya",
+      "name": "404 Not Found（渋谷）",
+      "homepage": "https://www.404shibuya.tokyo/",
+      "lang": "ja",
+      "role": "discover",
+      "kind": "event",
+      "evidenceKind": "event",
+      "enabled": false,
+      "fetch": {
+        "method": "html-list",
+        "url": "https://www.404shibuya.tokyo/event/",
+        "frequency": "weekly",
+        "maxItemsPerRun": 10
+      },
+      "rights": {
+        "allowFetch": true,
+        "displayTitle": true,
+        "displaySummary": false,
+        "displayImages": true,
+        "storeQuotes": true,
+        "notes": "SHIBUYA GAME CROSS などの催しの一覧。利用条件は P2-02 で確認する。"
+      }
+    },
+    {
+      "id": "steam-upcoming-events",
+      "name": "Steam の今後のイベント",
+      "homepage": "https://partner.steamgames.com/doc/marketing/upcoming_events",
+      "lang": "en",
+      "role": "discover",
+      "kind": "event",
+      "evidenceKind": "store",
+      "enabled": false,
+      "fetch": {
+        "method": "html-list",
+        "url": "https://partner.steamgames.com/doc/marketing/upcoming_events",
+        "frequency": "weekly",
+        "maxItemsPerRun": 20
+      },
+      "rights": {
+        "allowFetch": true,
+        "displayTitle": true,
+        "displaySummary": false,
+        "displayImages": true,
+        "storeQuotes": true,
+        "notes": "Steam Next Fest やテーマ別のフェスの日程。利用条件は P2-02 で確認する。"
+      }
     }
   ]
 }
