@@ -27,6 +27,7 @@ import {
 } from '../../lib/format.ts';
 import { pagefindFilters, releasedSortKey } from '../../lib/game-view.ts';
 import { absoluteUrl, paths, url } from '../../lib/urls.ts';
+import { amazonSearchUrl } from '../../lib/amazon.ts';
 import type { SiteArticle, SiteGame } from '../../../schema/site-data.ts';
 import { kanaVariants } from '../../../scripts/lib/text-normalize.ts';
 import { startOf } from '../../../scripts/lib/partial-date.ts';
@@ -51,7 +52,15 @@ const related = game.related
 const collections = game.collections.map((id) => getCollection(id)).filter((c) => c !== undefined);
 const primaryStore = game.stores[0];
 const showOriginal = game.title.original !== game.title.display;
-const mainAliases = game.aliases.filter((a) => a !== game.title.original).slice(0, 2);
+const mainAliases = game.aliases.filter((a) => a !== game.title.original && a !== game.title.display).slice(0, 4);
+const amazonUrl = amazonSearchUrl(game.title.display, game.platforms);
+const prominenceLabel = game.prominence === 'landmark' ? '定番' : game.prominence === 'notable' ? '人気' : undefined;
+const reviewsLabel =
+  game.steamReviews === undefined || game.steamReviews < 1_000
+    ? undefined
+    : game.steamReviews >= 10_000
+      ? `${Math.floor(game.steamReviews / 10_000)}万件以上`
+      : `${game.steamReviews.toLocaleString('ja-JP')}件`;
 const filters = pagefindFilters(game);
 const searchTerms = [...new Set([...game.aliases, ...kanaVariants(game.title.display)])];
 
@@ -132,16 +141,22 @@ const description =
                   {game.title.original}
                 </p>
               )}
-              {mainAliases.length > 0 && <p class="aliases muted small">別名: {mainAliases.join('、')}</p>}
               <p class="byline">
                 {game.developers.length ? (
-                  game.developers.map((d) => d.name).join('、')
+                  game.developers.map((d, i) => (
+                    <>
+                      {i > 0 && '、'}
+                      <a href={url(paths.developer(d.id))}>{d.name}</a>
+                    </>
+                  ))
                 ) : (
                   <UnknownValue label="開発者不明" />
                 )}
               </p>
               <p class="status">
+                {prominenceLabel && <span class:list={['prominence', `is-${game.prominence}`]}>{prominenceLabel}</span>}
                 <ReleaseLabel release={game.release} />
+                {reviewsLabel && <span class="reviews">Steam レビュー {reviewsLabel}</span>}
               </p>
               <div class="chips">
                 <PlatformList platforms={game.platforms} />
@@ -153,7 +168,7 @@ const description =
                     {STORE_LABELS[primaryStore.store]}で見る
                   </ExternalLink>
                 )}
-                {game.stores.slice(1).map((s) => (
+                {game.stores.slice(1, 3).map((s) => (
                   <ExternalLink href={s.url} class="button">
                     {STORE_LABELS[s.store]}
                   </ExternalLink>
@@ -175,8 +190,12 @@ const description =
             <h2 id="summary-h">概要</h2>
             {game.summary ? (
               <>
-                <p class="summary">{game.summary.text}</p>
-                <SourceRefs sources={game.summary.sources} />
+                {game.overview ? (
+                  game.overview.paragraphs.map((p, i) => <p class:list={['overview', { 'is-lead': i === 0 }]}>{p}</p>)
+                ) : (
+                  <p class="summary">{game.summary.text}</p>
+                )}
+                <SourceRefs sources={[...game.summary.sources, ...(game.overview?.sources ?? [])]} />
               </>
             ) : (
               <p>
@@ -247,11 +266,33 @@ const description =
             <dl class="info">
               <div>
                 <dt>開発</dt>
-                <dd>{game.developers.length ? game.developers.map((d) => d.name).join('、') : <UnknownValue />}</dd>
+                <dd>
+                  {game.developers.length ? (
+                    game.developers.map((d, i) => (
+                      <>
+                        {i > 0 && '、'}
+                        <a href={url(paths.developer(d.id))}>{d.name}</a>
+                      </>
+                    ))
+                  ) : (
+                    <UnknownValue />
+                  )}
+                </dd>
               </div>
               <div>
                 <dt>パブリッシャー</dt>
-                <dd>{game.publishers.length ? game.publishers.map((d) => d.name).join('、') : <UnknownValue />}</dd>
+                <dd>
+                  {game.publishers.length ? (
+                    game.publishers.map((d, i) => (
+                      <>
+                        {i > 0 && '、'}
+                        <a href={url(paths.developer(d.id))}>{d.name}</a>
+                      </>
+                    ))
+                  ) : (
+                    <UnknownValue />
+                  )}
+                </dd>
               </div>
               <div>
                 <dt>タグ</dt>
@@ -345,6 +386,28 @@ const description =
                   {game.playerModes && <SourceRefs sources={game.playerModes.sources} />}
                 </dd>
               </div>
+              {(game.stores.length > 0 || amazonUrl) && (
+                <div>
+                  <dt>ストア</dt>
+                  <dd>
+                    <ul class="store-list">
+                      {game.stores.map((st) => (
+                        <li>
+                          <ExternalLink href={st.url}>{STORE_LABELS[st.store]}</ExternalLink>
+                        </li>
+                      ))}
+                      {amazonUrl && (
+                        <li>
+                          <ExternalLink href={amazonUrl} sponsored>
+                            Amazon で探す
+                          </ExternalLink>
+                        </li>
+                      )}
+                    </ul>
+                    <SourceRefs sources={game.stores.flatMap((st) => st.sources)} />
+                  </dd>
+                </div>
+              )}
               <div>
                 <dt>公式サイト</dt>
                 <dd>
@@ -355,6 +418,12 @@ const description =
                   )}
                 </dd>
               </div>
+              {mainAliases.length > 0 && (
+                <div>
+                  <dt>別名</dt>
+                  <dd>{mainAliases.join('、')}</dd>
+                </div>
+              )}
             </dl>
           </section>
         </aside>
@@ -414,6 +483,8 @@ const description =
       <span hidden data-pagefind-meta={`platforms:${game.platforms.join(',')}`}></span>
       <span hidden data-pagefind-meta={`genre:${game.primaryGenre ?? ''}`}></span>
       <span hidden data-pagefind-meta={`added:${game.addedAt}`}></span>
+      <span hidden data-pagefind-meta={`prominence:${game.prominence}`}></span>
+      <span hidden data-pagefind-sort={`popular:${String(game.steamReviews ?? 0).padStart(9, '0')}`}></span>
       <span hidden data-pagefind-sort={`added:${game.addedAt}`}></span>
       <span hidden data-pagefind-sort={`updated:${game.activityAt}`}></span>
       <span hidden data-pagefind-meta={`updated:${game.activityAt.slice(0, 10)}`}></span>
@@ -454,16 +525,50 @@ const description =
     color: var(--color-text-muted);
     margin: 0 0 var(--space-2);
   }
-  .aliases {
-    margin: 0 0 var(--space-2);
-  }
   .byline {
     display: inline-block;
     margin: 0 0 var(--space-2);
     font-weight: 700;
   }
   .status {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2) var(--space-3);
     margin: 0 0 var(--space-3);
+  }
+  .prominence {
+    padding: 2px 10px;
+    background: var(--color-signal);
+    color: var(--color-on-signal);
+    font-size: 0.8125rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+  }
+  .prominence.is-notable {
+    background: transparent;
+    color: var(--color-text);
+    box-shadow: inset 0 0 0 1px var(--color-border-strong);
+  }
+  .reviews {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+  }
+  .byline a {
+    color: inherit;
+    text-decoration-color: var(--color-border-strong);
+    text-underline-offset: 3px;
+  }
+  .byline a:hover {
+    text-decoration-color: currentColor;
+  }
+  .store-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px var(--space-3);
+    list-style: none;
+    margin: 0 0 var(--space-1);
+    padding: 0;
   }
   .chips {
     display: flex;
@@ -505,6 +610,14 @@ const description =
   .summary {
     font-size: 1.0625rem;
     max-width: var(--measure);
+  }
+  .overview.is-lead {
+    font-size: 1.0625rem;
+    font-weight: 700;
+  }
+  .overview {
+    max-width: var(--measure);
+    line-height: 1.9;
   }
   .ai-note {
     margin-top: var(--space-3);

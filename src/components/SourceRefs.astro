@@ -9,7 +9,9 @@ interface Props {
   label?: string;
   inline?: boolean;
 }
-const { sources, label = '出典', inline = false } = Astro.props;
+const { sources: all, label = '出典', inline = false } = Astro.props;
+// 同じ出典は1つにまとめる
+const sources = [...new Map(all.map((s) => [s.url, s])).values()];
 const checkedAt = sources.reduce((m, s) => (s.checkedAt > m ? s.checkedAt : m), '');
 ---
 

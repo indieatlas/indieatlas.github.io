@@ -8,4 +8,6 @@ export const site = {
   // 訂正依頼の窓口（D-10 の既定値: リポジトリが公開なら GitHub の Issue のフォーム）
   correctionUrl: 'https://github.com/uakihir0/indieatlas/issues/new?template=correction.yml',
   repositoryUrl: 'https://github.com/uakihir0/indieatlas',
+  // Amazon アソシエイトのトラッキング ID（公開してよい値）。空にすると Amazon へのリンクを出さない
+  amazonTag: 'pspken-22',
 };

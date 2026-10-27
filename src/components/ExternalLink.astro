@@ -4,11 +4,12 @@ interface Props {
   href: string;
   class?: string;
   lang?: string;
+  sponsored?: boolean; // アフィリエイトのリンク
 }
-const { href, class: className, lang } = Astro.props;
+const { href, class: className, lang, sponsored = false } = Astro.props;
 ---
 
-<a href={href} target="_blank" rel="noopener" class={className} lang={lang}>
+<a href={href} target="_blank" rel={sponsored ? 'sponsored noopener' : 'noopener'} class={className} lang={lang}>
   <slot />
   <svg
     class="external-icon"

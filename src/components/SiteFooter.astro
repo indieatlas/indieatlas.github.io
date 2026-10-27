@@ -1,4 +1,5 @@
 ---
+import { AMAZON_DISCLOSURE } from '../lib/amazon.ts';
 import { site } from '../config/site.ts';
 import { getStats } from '../lib/data.ts';
 import { formatDate } from '../lib/format.ts';
@@ -22,9 +23,10 @@ const stats = getStats();
         掲載している情報は、ストア、公式サイト、媒体の記事などの出典に基づいています。記事は見出し、共有用の画像、原文へのリンクだけを掲載し、本文は転載しません。作品の画像はストアや公式のプレスキットが配信しているものを参照しています。
       </p>
       <p>
-        <a href={url(paths.about())}>運営説明</a> ・{' '}
+        <a href={url(paths.developers())}>開発元・パブリッシャー</a> ・ <a href={url(paths.about())}>運営説明</a> ・{' '}
         <ExternalLink href={site.correctionUrl}>情報の訂正を依頼する</ExternalLink>
       </p>
+      {site.amazonTag && <p>{AMAZON_DISCLOSURE}</p>}
       {stats.lastUpdated && (
         <p>
           最終更新: <time datetime={stats.lastUpdated}>{formatDate(stats.lastUpdated)}</time>
