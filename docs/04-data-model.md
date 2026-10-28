@@ -834,7 +834,7 @@ export const UsageLedger = z.object({
 | D-05 | 統合済みでない作品どうしで、強いキー（§4.3.1）が重複しない。`associatedApps` の ID も他の作品の強いキーと重複しない |
 | D-06 | 公開中の作品が公開の条件（[05](05-sources-and-editorial-policy.md) §5.5）を満たす |
 | D-07 | Claim の ID が §4.2.1 の計算と一致する。値が1つの項目では、範囲ごとに採用済みの Claim が1つ以下である。`superseded` には `supersededBy` がある |
-| D-08 | 記事の ID が `canonicalUrl` から計算した値と一致する |
+| D-08 | 記事の ID が `canonicalUrl` から計算した値と一致する。ストアの告知（`store.steampowered.com`、`steamcommunity.com` の更新のお知らせ）は記事として登録しない |
 | D-09 | 公開中のコレクションは4作品以上を含み、すべての作品が公開中で、`rules` を満たす。`evidenceClaimIds` はその作品の採用済みの Claim である |
 | D-10 | 作品間の関係は `a < b` で、`(a, b, kind)` が重複しない |
 | D-11 | タグの ID が重複しない。`mergedInto` が存在する。正規化したラベルと別名が、タグどうしで重複しない |

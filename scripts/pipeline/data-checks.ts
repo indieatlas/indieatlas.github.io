@@ -127,6 +127,9 @@ function* walk(dir: string): Generator<string> {
   }
 }
 
+// 記事として扱わないストアの告知のホスト
+const STORE_NEWS_HOSTS = new Set(['store.steampowered.com', 'steamcommunity.com']);
+
 /** D-03〜D-13 */
 export function checkConsistency(data: RepoData): CheckIssue[] {
   const issues: CheckIssue[] = [];
@@ -247,10 +250,13 @@ export function checkConsistency(data: RepoData): CheckIssue[] {
     }
   }
 
-  // D-08: 記事の ID
+  // D-08: 記事の ID。ストアの告知（Steam の更新のお知らせ）は記事として扱わない
   for (const a of data.articles) {
     const expected = articleId(a.canonicalUrl);
     if (a.id !== expected) add('D-08', `data/articles/${a.id}.json`, `article id should be ${expected}`);
+    if (STORE_NEWS_HOSTS.has(new URL(a.canonicalUrl).hostname)) {
+      add('D-08', `data/articles/${a.id}.json`, 'store announcements are not articles');
+    }
   }
 
   // D-09: 公開中のコレクション
