@@ -36,6 +36,7 @@ export const SteamRanking = z.object({
         appId: z.number().int().positive(),
         title: z.string().min(1).max(300),
         image: HttpUrl.optional(), // 231x87 のカプセル画像
+        consoles: z.array(z.string().max(20)).max(10).optional(), // IGDB で分かった家庭用ゲーム機。調べられなければ省く
       }),
     )
     .max(50),

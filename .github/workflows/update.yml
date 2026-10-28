@@ -65,6 +65,9 @@ jobs:
       - name: Fetch Steam indie top sellers
         # Amazon の売れ筋がないときに出す。失敗しても公開を続ける
         continue-on-error: true
+        env:
+          IGDB_CLIENT_ID: ${{ secrets.IGDB_CLIENT_ID }}
+          IGDB_CLIENT_SECRET: ${{ secrets.IGDB_CLIENT_SECRET }}
         run: npm run ranking:steam
       - name: Build
         env:

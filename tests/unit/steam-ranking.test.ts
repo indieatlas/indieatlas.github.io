@@ -38,6 +38,8 @@ describe('Steam のインディーの売上上位', () => {
       items: [
         { appId, title: 'Lantern Tide' },
         { appId: 1, title: '霧の灯台' },
+        { appId: 2, title: 'PC だけの作品', consoles: [] },
+        { appId: 3, title: '据え置きもある作品', consoles: ['ps5', 'xbox-one', 'switch', 'xbox-series'] },
       ],
     });
     expect(r.source).toBe('steam');
@@ -47,5 +49,8 @@ describe('Steam のインディーの売上上位', () => {
     expect(u.hostname).toBe('www.amazon.co.jp');
     expect(u.searchParams.get('tag')).toBe('pspken-22');
     expect(u.searchParams.get('k')).toBe('霧の灯台');
+    // 家庭用ゲーム機版がないと分かった作品は Steam のストアへ
+    expect(r.items[2]).toMatchObject({ store: 'steam', url: 'https://store.steampowered.com/app/2/' });
+    expect(r.items[3]).toMatchObject({ store: 'amazon', platform: 'Switch / PS5 / Xbox' });
   });
 });

@@ -18,7 +18,7 @@ const shortTitle = (t: string) =>
 <ol class:list={['ranking-list', `is-${layout}`, { 'is-wide': wide }]}>
   {items.map((it, i) => (
     <li>
-      <ExternalLink href={it.url} class="item" sponsored>
+      <ExternalLink href={it.url} class="item" sponsored={it.store !== 'steam'}>
         <span class:list={['rank', { top: i < 3 }]}>{i + 1}</span>
         <span class="thumb">
           {it.image && (
@@ -27,6 +27,7 @@ const shortTitle = (t: string) =>
         </span>
         {it.platform && <span class="platform">{it.platform}</span>}
         <span class="title">{shortTitle(it.title)}</span>
+        <span class="dest">{it.store === 'steam' ? 'Steam で見る' : 'Amazon で探す'}</span>
       </ExternalLink>
       {it.gameId && (
         <a class="in-catalog" href={url(paths.game(it.gameId))}>
@@ -110,6 +111,12 @@ const shortTitle = (t: string) =>
   .ranking-list li {
     display: grid;
     grid-template-rows: 1fr auto;
+  }
+  .dest {
+    margin-top: auto;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    color: var(--color-text-muted);
   }
   .in-catalog {
     display: block;

@@ -20,11 +20,30 @@ export function readFreshSteamRanking(file = STEAM_RANKING_FILE, at = now()): St
   return r.success && at.getTime() - Date.parse(r.data.fetchedAt) < 3 * 86_400_000 ? r.data : undefined;
 }
 
-/** サイトに出す売れ筋の1件。リンクは Amazon（アソシエイト） */
+const CONSOLE_LABELS: Record<string, string> = {
+  switch: 'Switch',
+  switch2: 'Switch 2',
+  ps5: 'PS5',
+  ps4: 'PS4',
+  'xbox-series': 'Xbox',
+  'xbox-one': 'Xbox',
+};
+const CONSOLE_ORDER = ['switch2', 'switch', 'ps5', 'ps4', 'xbox-series', 'xbox-one'];
+const consoleLabel = (consoles: string[]) =>
+  [
+    ...new Set(
+      [...consoles]
+        .sort((a, b) => CONSOLE_ORDER.indexOf(a) - CONSOLE_ORDER.indexOf(b))
+        .map((c) => CONSOLE_LABELS[c] ?? c),
+    ),
+  ].join(' / ');
+
+/** サイトに出す売れ筋の1件。リンクは Amazon（アソシエイト）。PC だけの作品は Steam のストア */
 export interface SiteRankingItem {
   title: string;
   image?: { url: string; width: number; height: number };
   url: string;
+  store?: 'amazon' | 'steam';
   platform?: string;
   gameId?: string; // 収録作品なら、その ID
 }
@@ -57,9 +76,15 @@ export function siteRanking(repo: RepoData, amazon?: AmazonRanking, steam?: Stea
       fetchedAt: steam.fetchedAt,
       items: steam.items.map((i) => {
         const gameId = byApp.get(i.appId);
+        // 家庭用ゲーム機版がないと分かった作品は、Amazon ではなく Steam のストアに向ける
+        const pcOnly = i.consoles !== undefined && i.consoles.length === 0;
         return {
           title: i.title,
-          url: amazonSearchUrl(i.title, siteConfig.amazonTag),
+          url: pcOnly
+            ? `https://store.steampowered.com/app/${i.appId}/`
+            : amazonSearchUrl(i.title, siteConfig.amazonTag),
+          store: pcOnly ? ('steam' as const) : ('amazon' as const),
+          ...(i.consoles?.length ? { platform: consoleLabel(i.consoles) } : {}),
           ...(i.image ? { image: { url: i.image, width: 231, height: 87 } } : {}),
           ...(gameId ? { gameId } : {}),
         };
