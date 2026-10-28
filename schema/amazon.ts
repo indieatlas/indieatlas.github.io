@@ -22,3 +22,22 @@ export const AmazonRanking = z.object({
     .max(50),
 });
 export type AmazonRanking = z.infer<typeof AmazonRanking>;
+
+/**
+ * Steam のインディーの売上上位（store.steampowered.com の検索結果、`filter=topsellers&tags=492`）。
+ * .generated/ranking/steam.json に置く。API キーを使わずに取れる売れ筋として、Amazon の売れ筋がないときに出す
+ */
+export const SteamRanking = z.object({
+  schemaVersion: z.literal(1),
+  fetchedAt: IsoDateTime,
+  items: z
+    .array(
+      z.object({
+        appId: z.number().int().positive(),
+        title: z.string().min(1).max(300),
+        image: HttpUrl.optional(), // 231x87 のカプセル画像
+      }),
+    )
+    .max(50),
+});
+export type SteamRanking = z.infer<typeof SteamRanking>;

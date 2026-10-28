@@ -149,3 +149,8 @@ export async function fetchRanking(client: CreatorsClient, partnerTag: string, f
 export function isFresh(r: AmazonRanking, now: Date): boolean {
   return now.getTime() - Date.parse(r.fetchedAt) < 24 * 3_600_000;
 }
+
+/** Amazon.co.jp でのゲームの検索結果へのアソシエイトのリンク（商品の情報は取得しない） */
+export function amazonSearchUrl(title: string, tag: string): string {
+  return `https://www.amazon.co.jp/s?${new URLSearchParams({ k: title, i: 'videogames', tag })}`;
+}

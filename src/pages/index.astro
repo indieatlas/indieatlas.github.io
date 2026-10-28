@@ -6,14 +6,15 @@ import GameGrid from '../components/GameGrid.astro';
 import NewsMosaic from '../components/NewsMosaic.astro';
 import SectionHeading from '../components/SectionHeading.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { gamesByAdded, getAmazonRanking, getCollections, getEvents, homeNews } from '../lib/data.ts';
-import AmazonRankingList from '../components/AmazonRankingList.astro';
+import { gamesByAdded, getCollections, getEvents, getRanking, homeNews } from '../lib/data.ts';
+import RankingList from '../components/RankingList.astro';
 import { amazonBestsellersUrl } from '../lib/amazon.ts';
 import ExternalLink from '../components/ExternalLink.astro';
 import { paths } from '../lib/urls.ts';
 
 const bestsellers = amazonBestsellersUrl();
-const ranking = getAmazonRanking();
+const ranking = getRanking();
+const rankingTitle = ranking.source === 'steam' ? 'Steam のインディー売れ筋' : 'Amazon の売れ筋';
 
 const byAdded = gamesByAdded();
 
@@ -88,8 +89,8 @@ const collections = [...featured, ...rest].slice(0, 4);
 
     {ranking.items.length > 0 ? (
       <section class="section" aria-labelledby="ranking-h">
-        <SectionHeading id="ranking-h" title="Amazon の売れ筋" linkPath={paths.ranking()} />
-        <AmazonRankingList items={ranking.items.slice(0, 10)} layout="row" />
+        <SectionHeading id="ranking-h" title={rankingTitle} linkPath={paths.ranking()} />
+        <RankingList items={ranking.items.slice(0, 10)} layout="row" wide={ranking.source === 'steam'} />
       </section>
     ) : (
       bestsellers && (

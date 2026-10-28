@@ -279,3 +279,26 @@ export function parseReviewList(text: string): SteamReview[] | undefined {
     return undefined;
   }
 }
+
+/** インディーのタグ（492）が付いたゲーム本編（category1=998）の、日本での売上上位 */
+export function indieTopSellersUrl(count = 30): string {
+  return `https://store.steampowered.com/search/results/?filter=topsellers&cc=jp&l=japanese&json=1&count=${count}&category1=998&tags=492`;
+}
+
+export function parseTopSellers(text: string): { appId: number; title: string; image?: string }[] | undefined {
+  try {
+    const body = JSON.parse(text) as { items?: { name?: string; logo?: string }[] };
+    if (!Array.isArray(body.items)) return undefined;
+    const out: { appId: number; title: string; image?: string }[] = [];
+    for (const it of body.items) {
+      const id = it.logo?.match(/\/apps\/(\d+)\//)?.[1];
+      if (!id || !it.name) continue;
+      // 一覧の小さな画像（120x45）の URL を、同じ場所にある 231x87 の画像にする
+      const image = it.logo!.replace('capsule_sm_120', 'capsule_231x87');
+      out.push({ appId: Number(id), title: it.name, ...(image.startsWith('https://') ? { image } : {}) });
+    }
+    return out;
+  } catch {
+    return undefined;
+  }
+}

@@ -1,34 +1,38 @@
 ---
-import AmazonRankingList from '../components/AmazonRankingList.astro';
+import RankingList from '../components/RankingList.astro';
 import EmptyState from '../components/EmptyState.astro';
 import ExternalLink from '../components/ExternalLink.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { amazonBestsellersUrl, AMAZON_DISCLOSURE } from '../lib/amazon.ts';
-import { getAmazonRanking } from '../lib/data.ts';
+import { getRanking } from '../lib/data.ts';
 import { formatDate } from '../lib/format.ts';
 import { paths } from '../lib/urls.ts';
 
-const ranking = getAmazonRanking();
+const ranking = getRanking();
+const title = ranking.source === 'steam' ? 'Steam のインディー売れ筋' : 'Amazon の売れ筋';
 const bestsellers = amazonBestsellersUrl();
 ---
 
 <BaseLayout
-  title="Amazon の売れ筋"
-  description="Amazon.co.jp で売れているゲームソフト。プリペイドカードや周辺機器は除いています。"
+  title={title}
+  description="いま売れているゲーム。Amazon の売れ筋か、Steam のインディーの売上上位を並べています。"
   path={paths.ranking()}
 >
   <div class="container section">
-    <h1 class="page-title">Amazon の売れ筋</h1>
+    <h1 class="page-title">{title}</h1>
     {ranking.items.length > 0 ? (
       <>
-        <AmazonRankingList items={ranking.items} />
+        <RankingList items={ranking.items} wide={ranking.source === 'steam'} />
         <p class="note small muted">
           {ranking.fetchedAt && (
             <>
               <time datetime={ranking.fetchedAt}>{formatDate(ranking.fetchedAt)}</time> 時点。
             </>
           )}
-          ゲームソフトだけを、Amazon の売れ筋の順位で並べています。{AMAZON_DISCLOSURE}
+          {ranking.source === 'steam'
+            ? 'Steam の日本での売上上位のうち、インディーのタグが付いたゲームを並べています。リンク先は Amazon での検索結果です。'
+            : 'ゲームソフトだけを、Amazon の売れ筋の順位で並べています。'}
+          {AMAZON_DISCLOSURE}
         </p>
       </>
     ) : (

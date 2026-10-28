@@ -25,6 +25,7 @@ npm run media:palettes               # 作品の画像から色を抽出する�
 npm run igdb:sync                    # IGDB から機種、スクリーンショット、ストアのリンクを取り込む（.env にキーが必要）
 npm run metrics:popularity           # Steam のレビュー数と IGDB の評価を取得する（殿堂入り、人気の判定）
 npm run reviews:summarize            # Steam のレビューを LLM で要約する（OPENCODE_API_KEY と Steam への接続が必要）
+npm run ranking:steam                # Steam のインディーの売上上位を取得する（キー不要。コミットしない）
 npm run amazon:ranking               # Amazon の売れ筋を取得する（.env に Creators API のキーが必要。コミットしない）
 ```
 

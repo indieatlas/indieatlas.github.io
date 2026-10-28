@@ -4,12 +4,70 @@ import { toIsoDateTime, now } from '../lib/clock.ts';
 import { PROJECT_ROOT, type RepoData } from '../lib/repo-io.ts';
 import { codeHashes, contentHash, siteDataHash, type HashInputs } from './content-hash.ts';
 import { buildSiteData } from './site-data.ts';
-import { AmazonRanking } from '../../schema/amazon.ts';
-import { isFresh } from '../sources/amazon.ts';
+import { AmazonRanking, SteamRanking } from '../../schema/amazon.ts';
+import { site as siteConfig } from '../../src/config/site.ts';
+import { amazonSearchUrl, isFresh } from '../sources/amazon.ts';
 
 export const SITE_DATA_DIR = path.join(PROJECT_ROOT, '.generated/site-data');
 export const HOSTING_DIR = path.join(PROJECT_ROOT, '.generated/hosting');
 export const AMAZON_RANKING_FILE = path.join(PROJECT_ROOT, '.generated/amazon/ranking.json');
+export const STEAM_RANKING_FILE = path.join(PROJECT_ROOT, '.generated/ranking/steam.json');
+
+/** 取得から3日以内の Steam の売上上位を読む。なければ undefined */
+export function readFreshSteamRanking(file = STEAM_RANKING_FILE, at = now()): SteamRanking | undefined {
+  if (!fs.existsSync(file)) return undefined;
+  const r = SteamRanking.safeParse(JSON.parse(fs.readFileSync(file, 'utf8')));
+  return r.success && at.getTime() - Date.parse(r.data.fetchedAt) < 3 * 86_400_000 ? r.data : undefined;
+}
+
+/** サイトに出す売れ筋の1件。リンクは Amazon（アソシエイト） */
+export interface SiteRankingItem {
+  title: string;
+  image?: { url: string; width: number; height: number };
+  url: string;
+  platform?: string;
+  gameId?: string; // 収録作品なら、その ID
+}
+export interface SiteRanking {
+  source?: 'amazon' | 'steam';
+  fetchedAt?: string;
+  items: SiteRankingItem[];
+}
+
+/** Amazon の売れ筋があればそれを、なければ Steam のインディーの売上上位を、Amazon へのリンクで出す */
+export function siteRanking(repo: RepoData, amazon?: AmazonRanking, steam?: SteamRanking): SiteRanking {
+  if (amazon && amazon.items.length) {
+    return {
+      source: 'amazon',
+      fetchedAt: amazon.fetchedAt,
+      items: amazon.items.map((i) => ({
+        title: i.title,
+        url: i.url,
+        ...(i.image ? { image: i.image } : {}),
+        ...(i.platform ? { platform: i.platform } : {}),
+      })),
+    };
+  }
+  if (steam && steam.items.length && siteConfig.amazonTag) {
+    const byApp = new Map(
+      repo.games.filter((g) => g.status === 'published').map((g) => [g.externalIds.steamAppId, g.id]),
+    );
+    return {
+      source: 'steam',
+      fetchedAt: steam.fetchedAt,
+      items: steam.items.map((i) => {
+        const gameId = byApp.get(i.appId);
+        return {
+          title: i.title,
+          url: amazonSearchUrl(i.title, siteConfig.amazonTag),
+          ...(i.image ? { image: { url: i.image, width: 231, height: 87 } } : {}),
+          ...(gameId ? { gameId } : {}),
+        };
+      }),
+    };
+  }
+  return { items: [] };
+}
 
 /** 取得から24時間以内の売れ筋だけを読む。なければ undefined */
 export function readFreshAmazonRanking(file = AMAZON_RANKING_FILE, at = now()): AmazonRanking | undefined {
@@ -32,6 +90,7 @@ export function prepareSite(
   repo: RepoData,
   code: Record<string, string> = codeHashes(),
   amazon?: AmazonRanking,
+  steam?: SteamRanking,
 ): PreparedSite {
   const data = buildSiteData(repo);
   const files: Record<string, unknown> = {
@@ -44,8 +103,8 @@ export function prepareSite(
     genres: data.genres,
     events: data.events,
     stats: data.stats,
-    // Amazon の売れ筋（取得から24時間以内のものだけ。なければ空）
-    'amazon-ranking': amazon ? { fetchedAt: amazon.fetchedAt, items: amazon.items } : { items: [] },
+    // 売れ筋（Amazon は取得から24時間以内、Steam は3日以内のものだけ。なければ空）
+    ranking: siteRanking(repo, amazon, steam),
   };
   const hashInputs: HashInputs = { siteData: siteDataHash(files), code, env: siteEnv() };
   return { files, meta: { contentHash: contentHash(hashInputs), hashInputs, generatedAt: toIsoDateTime(now()) } };

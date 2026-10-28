@@ -62,6 +62,10 @@ jobs:
           AMAZON_CREATORS_CREDENTIAL_SECRET: ${{ secrets.AMAZON_CREATORS_CREDENTIAL_SECRET }}
           AMAZON_CREATORS_VERSION: ${{ vars.AMAZON_CREATORS_VERSION || '3.3' }}
         run: npm run amazon:ranking
+      - name: Fetch Steam indie top sellers
+        # Amazon の売れ筋がないときに出す。失敗しても公開を続ける
+        continue-on-error: true
+        run: npm run ranking:steam
       - name: Build
         env:
           SOURCE_COMMIT: ${{ steps.source.outputs.commit }}

@@ -796,6 +796,12 @@ user メッセージには、今日の日付、タスク、対象のデータ、
 - 商品の情報は取得から24時間以内のものだけを使う。リポジトリには入れず、12時間ごとにビルドし直す。キーがない、または取得に失敗したときは、売れ筋の欄を出さず Amazon のランキングへのリンクだけにする。
 - キーは環境変数 `AMAZON_CREATORS_CREDENTIAL_ID`、`AMAZON_CREATORS_CREDENTIAL_SECRET`、`AMAZON_CREATORS_VERSION`（日本は 3.3）。定期実行では GitHub のシークレットに置く。
 
+### 6.13.5a Steam のインディーの売上上位（`npm run ranking:steam`）
+
+- API キーを使わずに取れる売れ筋として、Steam のストアの検索結果（`filter=topsellers`、インディーのタグ `492`、ゲーム本編 `category1=998`、日本 `cc=jp`）の上位30件を `.generated/ranking/steam.json` に書く。robots.txt で禁じられていない。
+- Amazon の売れ筋（§6.13.5）がないときに、こちらを「Steam のインディー売れ筋」として出す。各作品のリンクは Amazon での検索結果（アソシエイトのタグ付き）にし、収録作品なら作品ページへのリンクも添える。
+- Amazon の売れ筋のページを自動で読み取る方法（スクレイピング）は、Amazon の利用規約とアソシエイトの規約で禁じられているため使わない。以前の公式の RSS（`/gp/rss/bestsellers/`）は 2026-10-28 時点で廃止されている。
+
 ### 6.13.6 Steam のレビューの要約（`npm run reviews:summarize`、P4-10）
 
 - 目的: 作品詳細に、利用者のレビューで多く挙がる長所と短所を3〜5行で示す。レビューの文をそのまま載せず、当サイトの言葉で要約する。

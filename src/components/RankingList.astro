@@ -1,19 +1,21 @@
 ---
-import type { AmazonRanking } from '../../schema/amazon.ts';
+import type { SiteRankingItem } from '../../scripts/build/prepare-site.ts';
+import { paths, url } from '../lib/urls.ts';
 import ExternalLink from './ExternalLink.astro';
 
-// Amazon の売れ筋。順位、商品の画像、商品名。商品ページへはアソシエイトのリンクで移る
+// 売れ筋。順位、画像、名前。リンクは Amazon（アソシエイト）。収録作品なら作品ページへのリンクも出す
 interface Props {
-  items: AmazonRanking['items'];
+  items: SiteRankingItem[];
   layout?: 'row' | 'grid';
+  wide?: boolean; // 横長の画像（Steam のカプセル画像）
 }
-const { items, layout = 'grid' } = Astro.props;
+const { items, layout = 'grid', wide = false } = Astro.props;
 // 機種は別に出すので、商品名の末尾の「- Switch」などは省く
 const shortTitle = (t: string) =>
   t.replace(/\s*[-－–]\s*(Nintendo\s*)?(Switch\s*2|Switch|PS5|PS4|Xbox[^-－–]*)\s*$/i, '');
 ---
 
-<ol class:list={['amazon-ranking', `is-${layout}`]}>
+<ol class:list={['ranking-list', `is-${layout}`, { 'is-wide': wide }]}>
   {items.map((it, i) => (
     <li>
       <ExternalLink href={it.url} class="item" sponsored>
@@ -26,12 +28,17 @@ const shortTitle = (t: string) =>
         {it.platform && <span class="platform">{it.platform}</span>}
         <span class="title">{shortTitle(it.title)}</span>
       </ExternalLink>
+      {it.gameId && (
+        <a class="in-catalog" href={url(paths.game(it.gameId))}>
+          作品ページ
+        </a>
+      )}
     </li>
   ))}
 </ol>
 
 <style>
-  .amazon-ranking {
+  .ranking-list {
     display: grid;
     gap: var(--space-3);
     list-style: none;
@@ -52,7 +59,7 @@ const shortTitle = (t: string) =>
       grid-auto-columns: 9rem;
     }
   }
-  .amazon-ranking :global(.item) {
+  .ranking-list :global(.item) {
     position: relative;
     display: grid;
     gap: 4px;
@@ -63,10 +70,10 @@ const shortTitle = (t: string) =>
     color: var(--color-text);
     text-decoration: none;
   }
-  .amazon-ranking :global(.item:hover) {
+  .ranking-list :global(.item:hover) {
     box-shadow: inset 0 0 0 1px var(--color-accent-warm);
   }
-  .amazon-ranking :global(.external-icon) {
+  .ranking-list :global(.external-icon) {
     display: none;
   }
   .rank {
@@ -92,6 +99,26 @@ const shortTitle = (t: string) =>
     aspect-ratio: 1;
     background: #fff;
     overflow: hidden;
+  }
+  .is-wide .thumb {
+    aspect-ratio: 231 / 87;
+    background: var(--color-surface-raised);
+  }
+  .is-wide .thumb img {
+    object-fit: cover;
+  }
+  .ranking-list li {
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+  .in-catalog {
+    display: block;
+    padding: 4px var(--space-2);
+    background: var(--color-surface);
+    box-shadow: inset 0 0 0 1px var(--color-border);
+    font-size: var(--text-xsmall);
+    font-weight: 700;
+    text-align: center;
   }
   .thumb img {
     width: 100%;
