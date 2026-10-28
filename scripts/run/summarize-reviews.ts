@@ -7,7 +7,13 @@ import { runMain } from '../lib/errors.ts';
 import { fileKind, loadRepo, PROJECT_ROOT, repoPath, writeKind } from '../lib/repo-io.ts';
 import { createOpenAiCompatibleClient } from '../llm/client.ts';
 import { summarizeReviews } from '../pipeline/review-summary.ts';
-import { appReviewListUrl, parseReviewList, type SteamReview } from '../sources/steam.ts';
+import {
+  appReviewListUrl,
+  communityReviewsUrl,
+  parseCommunityReviews,
+  parseReviewList,
+  type SteamReview,
+} from '../sources/steam.ts';
 
 // Steam のレビューの要約を作る（06 §6.13.6）。data/metrics/review-summaries.json に書く
 //   npm run reviews:summarize [-- --game g_000001] [-- --force]
@@ -53,12 +59,19 @@ await runMain(async () => {
     const reviews: SteamReview[] = [];
     for (const lang of ['japanese', 'english'] as const) {
       const res = await http.get(appReviewListUrl(g.externalIds.steamAppId!, lang)).catch(() => undefined);
-      const list = res?.status === 200 ? parseReviewList(res.text) : undefined;
+      let list = res?.status === 200 ? parseReviewList(res.text) : undefined;
+      // appreviews を取れない環境では、コミュニティのレビューの一覧（「役に立った」順）から取る
       if (!list) {
-        console.log('reviews:summarize: Steam のレビューを取得できない環境なので終える');
-        return;
+        list = [];
+        for (let page = 1; page <= 3 && list.length < 25; page++) {
+          const p = await http.get(communityReviewsUrl(g.externalIds.steamAppId!, lang, page)).catch(() => undefined);
+          if (p?.status !== 200) break;
+          const more = parseCommunityReviews(p.text, lang);
+          if (!more.length) break;
+          list.push(...more.filter((r) => !list!.some((x) => x.id === r.id)));
+        }
       }
-      reviews.push(...list.slice(0, 25));
+      reviews.push(...list.slice(0, 25).filter((r) => !reviews.some((x) => x.id === r.id)));
     }
     const r = await summarizeReviews(llm, { id: g.id, title: g.title.display }, reviews, {
       at,

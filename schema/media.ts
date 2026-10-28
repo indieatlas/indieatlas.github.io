@@ -29,7 +29,12 @@ export const PopularityMetrics = z.object({
       steamReviews: z.number().int().min(0),
       // Steam のレビューの好評の割合（appreviews の query_summary）。取得できた環境でだけ入る
       steamScore: z
-        .object({ positive: z.number().int().min(0), total: z.number().int().min(1), desc: z.string().max(40) })
+        .object({
+          positive: z.number().int().min(0),
+          total: z.number().int().min(1),
+          desc: z.string().max(40),
+          language: z.literal('japanese').optional(), // 日本語のレビューだけの集計
+        })
         .optional(),
       // IGDB の評価（0〜100）。total は利用者と批評の総合、critic は批評サイトの平均
       igdb: z
@@ -52,7 +57,7 @@ export type PopularityMetrics = z.infer<typeof PopularityMetrics>;
  */
 const SummaryPoint = z.object({
   text: z.string().min(8).max(60),
-  reviewIds: z.array(z.string().regex(/^\d+$/)).min(2).max(10), // 根拠のレビュー（recommendationid）。サイトには出さない
+  reviewIds: z.array(z.string().regex(/^[\w-]{1,64}$/)).min(2).max(10), // 根拠のレビュー（レビューの ID か投稿者の ID）。サイトには出さない
 });
 export const ReviewSummaries = z.object({
   schemaVersion: z.literal(1),

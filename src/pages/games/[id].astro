@@ -171,8 +171,8 @@ const description =
                 )}
                 {game.steamScore ? (
                   <span class="reviews">
-                    Steam <strong>{game.steamScore.label}</strong>（好評 {game.steamScore.percent}%・
-                    {game.steamScore.total.toLocaleString('ja-JP')}件）
+                    Steam{game.steamScore.japaneseOnly && 'の日本語のレビュー'} <strong>{game.steamScore.label}</strong>（好評{' '}
+                    {game.steamScore.percent}%・{game.steamScore.total.toLocaleString('ja-JP')}件）
                   </span>
                 ) : (
                   reviewsLabel && <span class="reviews">Steam レビュー {reviewsLabel}</span>

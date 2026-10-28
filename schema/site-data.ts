@@ -79,7 +79,7 @@ export interface SiteGame {
   prominence: Prominence;
   madeInJapan: boolean; // 開発元のいずれかが日本を拠点にしている（出典で確かめたもの）
   steamReviews?: number; // Steam のレビュー数（知名度の目安）
-  steamScore?: { percent: number; total: number; label: string }; // Steam の好評の割合と評価の表記
+  steamScore?: { percent: number; total: number; label: string; japaneseOnly: boolean }; // Steam の好評の割合と評価の表記
   reviewSummary?: { pros: string[]; cons: string[]; reviewCount: number; generatedAt: string }; // Steam のレビューの要約
   // IGDB の評価（0〜100 の整数に丸める）。件数が少ないものは出さない
   ratings?: { total?: number; totalCount?: number; critic?: number; criticCount?: number; url: string };

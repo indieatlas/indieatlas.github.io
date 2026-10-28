@@ -79,7 +79,7 @@ export function localStoreUrl(store: string, url: string, title: string): string
   return `https://store-jp.nintendo.com/search/?q=${encodeURIComponent(title)}`;
 }
 
-function steamScoreOf(s: { positive: number; total: number; desc: string } | undefined): {
+function steamScoreOf(s: { positive: number; total: number; desc: string; language?: 'japanese' } | undefined): {
   steamScore?: SiteGame['steamScore'];
 } {
   if (!s || s.total < 10) return {};
@@ -88,6 +88,7 @@ function steamScoreOf(s: { positive: number; total: number; desc: string } | und
       percent: Math.round((s.positive / s.total) * 100),
       total: s.total,
       label: REVIEW_SCORE_JA[s.desc] ?? s.desc,
+      japaneseOnly: s.language === 'japanese',
     },
   };
 }

@@ -1,3 +1,4 @@
+import { shortHash } from '../lib/hash.ts';
 import type { PartialDate, PlayerMode, ReleaseStatus, Support } from '../../schema/common.ts';
 import type { HttpClient } from '../fetch/http.ts';
 
@@ -215,7 +216,8 @@ export function appReviewsUrl(appId: number): string {
 export interface SteamReviewScore {
   positive: number;
   total: number;
-  desc: string; // 例: Overwhelmingly Positive
+  desc: string; // 例: Overwhelmingly Positive、非常に好評
+  language?: 'japanese'; // 日本語のレビューだけの集計なら japanese。なければすべての言語
 }
 
 /** appreviews の応答から集計を読む。形が違えば undefined（転送されたときなど） */
@@ -270,7 +272,11 @@ export function parseReviewList(text: string): SteamReview[] | undefined {
       .filter((r) => r.review && r.review.trim().length >= 20)
       .map((r) => ({
         id: r.recommendationid,
-        text: r.review.replace(/\[[^\]]+\]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 1200),
+        text: r.review
+          .replace(/\[[^\]]+\]/g, ' ')
+          .replace(/\s+/g, ' ')
+          .trim()
+          .slice(0, 1200),
         votedUp: r.voted_up,
         votesUp: r.votes_up,
         language: r.language,
@@ -301,4 +307,75 @@ export function parseTopSellers(text: string): { appId: number; title: string; i
   } catch {
     return undefined;
   }
+}
+
+/** ストアのページ（日本語）の、日本語のレビューの集計。「あなたの言語でのユーザーレビュー2,054件中92%が好評です」 */
+export function storeReviewPageUrl(appId: number): string {
+  return `https://store.steampowered.com/app/${appId}/?l=japanese&cc=jp`;
+}
+
+export function parseStoreReviewScore(html: string): SteamReviewScore | undefined {
+  const m = html.match(/あなたの言語でのユーザーレビュー([\d,]+)件中(\d+)%が好評です/);
+  if (!m) return undefined;
+  const total = Number(m[1]!.replace(/,/g, ''));
+  const percent = Number(m[2]);
+  if (!total) return undefined;
+  // 「あなたの言語」の行の近くにある評価の表記（例: 非常に好評）
+  const rest = html.slice(html.indexOf(m[0]));
+  const desc = rest.match(/game_review_summary[^"]*"[^>]*>([^<]+)</)?.[1]?.trim() ?? '';
+  return { positive: Math.round((total * percent) / 100), total, desc, language: 'japanese' };
+}
+
+/** コミュニティのレビューの一覧（「役に立った」順、10件ずつ）。robots.txt で禁じられていない */
+export function communityReviewsUrl(appId: number, language: 'japanese' | 'english', page: number): string {
+  const q = new URLSearchParams({
+    userreviewsoffset: String((page - 1) * 10),
+    p: String(page),
+    numperpage: '10',
+    browsefilter: 'toprated',
+    appid: String(appId),
+    appHubSubSection: '10',
+    l: language,
+    filterLanguage: 'default',
+    searchText: '',
+    maxInappropriateScore: '50',
+  });
+  return `https://steamcommunity.com/app/${appId}/homecontent/?${q}`;
+}
+
+export function parseCommunityReviews(html: string, language: string): SteamReview[] {
+  const out: SteamReview[] = [];
+  for (const card of html.split('class="apphub_Card ').slice(1)) {
+    const id = card.match(/steamcommunity\.com\/(?:profiles|id)\/([\w-]{1,64})\/recommended\//)?.[1];
+    const body = card.match(/apphub_CardTextContent">([\s\S]*?)<\/div>\s*<\/div>/)?.[1];
+    if (!id || !body) continue;
+    const text = decodeEntities(
+      body
+        .replace(/<div class="date_posted">[\s\S]*?<\/div>/, ' ')
+        .replace(/<br\s*\/?>/g, ' ')
+        .replace(/<[^>]+>/g, ' '),
+    )
+      .replace(/\s+/g, ' ')
+      .trim()
+      .slice(0, 1200);
+    if (text.length < 20) continue;
+    const votes = Number(
+      card
+        .match(/([\d,]+)\s*(?:人がこのレビューが参考になったと投票|people found this review helpful)/)?.[1]
+        ?.replace(/,/g, '') ?? 0,
+    );
+    // 投稿者のプロフィールの ID は個人に結びつくので、ハッシュにして持つ
+    out.push({ id: shortHash(`steam-user:${id}`), text, votedUp: /thumbsUp/.test(card), votesUp: votes, language });
+  }
+  return out;
+}
+
+function decodeEntities(s: string): string {
+  return s
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&');
 }
