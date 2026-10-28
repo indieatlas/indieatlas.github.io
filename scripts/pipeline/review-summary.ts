@@ -88,7 +88,7 @@ export async function summarizeReviews(
 ): Promise<{ entry?: ReviewSummaries['entries'][string]; errors: string[] }> {
   if (reviews.length < MIN_REVIEWS) return { errors: [`レビューが${MIN_REVIEWS}件に満たない`] };
   const raw = await llm.generateObject({
-    role: 'execute',
+    role: 'triage', // 要約は思考なしで足りる。速く、安い
     sessionId: `ia-${o.runId}-reviews-${game.id}`,
     system: SUMMARY_SYSTEM,
     prompt: summaryPrompt(game.title, reviews),

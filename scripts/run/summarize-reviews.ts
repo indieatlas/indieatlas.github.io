@@ -39,7 +39,14 @@ await runMain(async () => {
     maxBytes: 5_000_000,
   });
   const roles = repo.runtime.llm.roles;
-  const llm = createOpenAiCompatibleClient(http, {
+  // LLM の応答は思考を含めて時間がかかるので、取得とは別に長いタイムアウトにする
+  const llmHttp = createSimpleHttp({
+    userAgent: 'IndieAtlasBot/0.1',
+    minIntervalMs: 0,
+    timeoutMs: repo.runtime.llm.requestTimeoutSeconds * 1000,
+    maxBytes: 5_000_000,
+  });
+  const llm = createOpenAiCompatibleClient(llmHttp, {
     baseUrl: repo.runtime.llm.baseUrl,
     apiKey,
     sessionHeader: repo.runtime.llm.sessionHeader,
@@ -73,16 +80,22 @@ await runMain(async () => {
       }
       reviews.push(...list.slice(0, 25).filter((r) => !reviews.some((x) => x.id === r.id)));
     }
-    const r = await summarizeReviews(llm, { id: g.id, title: g.title.display }, reviews, {
-      at,
-      model: roles.execute.model,
-      runId,
-    });
-    if (r.entry) {
-      out.entries[g.id] = r.entry;
-      n++;
-      console.log(`ok   ${g.id} ${g.title.display}: 長所${r.entry.pros.length} 短所${r.entry.cons.length}`);
-    } else console.log(`skip ${g.id} ${g.title.display}: ${r.errors.join(' / ')}`);
+    try {
+      const r = await summarizeReviews(llm, { id: g.id, title: g.title.display }, reviews, {
+        at,
+        model: roles.triage.model,
+        runId,
+      });
+      if (r.entry) {
+        out.entries[g.id] = r.entry;
+        n++;
+        console.log(`ok   ${g.id} ${g.title.display}: 長所${r.entry.pros.length} 短所${r.entry.cons.length}`);
+      } else console.log(`skip ${g.id} ${g.title.display}: ${r.errors.join(' / ')}`);
+    } catch (e) {
+      console.log(`fail ${g.id} ${g.title.display}: ${(e as Error).message}`);
+    }
+    // 途中で止まっても、それまでの結果を残す
+    writeKind(fileKind('review-summaries'), file, out);
   }
   writeKind(fileKind('review-summaries'), file, out);
   console.log(`reviews:summarize: ${n} game(s)`);
