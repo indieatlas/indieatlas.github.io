@@ -169,7 +169,14 @@ const description =
                     IGDB
                   </span>
                 )}
-                {reviewsLabel && <span class="reviews">Steam レビュー {reviewsLabel}</span>}
+                {game.steamScore ? (
+                  <span class="reviews">
+                    Steam <strong>{game.steamScore.label}</strong>（好評 {game.steamScore.percent}%・
+                    {game.steamScore.total.toLocaleString('ja-JP')}件）
+                  </span>
+                ) : (
+                  reviewsLabel && <span class="reviews">Steam レビュー {reviewsLabel}</span>
+                )}
               </p>
               <div class="chips">
                 <PlatformList platforms={game.platforms} />

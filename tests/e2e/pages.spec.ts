@@ -77,3 +77,13 @@ test('build-manifest.json を配信する', async ({ request }) => {
   const m = await (await request.get('build-manifest.json')).json();
   expect(m.contentHash).toMatch(/^sha256:/);
 });
+
+test('殿堂入りと人気の作品は一覧と詳細で見分けられる', async ({ page }) => {
+  await page.goto('games/');
+  await expect(page.locator('a.game-card[data-game-id="g_000001"]')).toHaveClass(/is-landmark/);
+  await expect(page.locator('a.game-card[data-game-id="g_000001"] .game-card__badge')).toHaveText(/殿堂入り/);
+  await expect(page.locator('a.game-card[data-game-id="g_000002"] .game-card__badge')).toHaveText('人気');
+  await page.goto('games/g_000001/');
+  await expect(page.locator('.headline .prominence')).toHaveText(/殿堂入り/);
+  await expect(page.locator('.headline .reviews')).toContainText('圧倒的に好評（好評 95%');
+});

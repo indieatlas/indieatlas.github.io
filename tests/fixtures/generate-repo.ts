@@ -14,6 +14,7 @@ import { RuntimeConfig, SourcesFile } from '../../schema/config.ts';
 import { Developer } from '../../schema/developer.ts';
 import { Game } from '../../schema/game.ts';
 import { GameRelationsFile } from '../../schema/relation.ts';
+import { PopularityMetrics } from '../../schema/media.ts';
 import { ReviewQueue, SeenUrls, TasksFile } from '../../schema/state.ts';
 import { TagsFile } from '../../schema/taxonomy.ts';
 import { makeClaim, supersede } from '../../scripts/lib/claim-builder.ts';
@@ -605,6 +606,19 @@ writeJson(Collection, out('data/collections/col_0002.json'), sortCollection({
   createdAt: AT,
   updatedAt: AT,
 }));
+
+// 知名度（架空の数）。g_000001 は殿堂入り、g_000002 は人気
+writeJson(PopularityMetrics, out('data/metrics/popularity.json'), {
+  schemaVersion: 1,
+  entries: {
+    g_000001: {
+      steamReviews: 180000,
+      steamScore: { positive: 171000, total: 180000, desc: 'Overwhelmingly Positive' },
+      retrievedAt: AT,
+    },
+    g_000002: { steamReviews: 42000, retrievedAt: AT },
+  },
+});
 
 // 作品間の関係
 writeJson(GameRelationsFile, out('data/relations/game-relations.json'), sortRelations({

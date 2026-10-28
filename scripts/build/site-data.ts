@@ -23,6 +23,7 @@ import type { RepoData } from '../lib/repo-io.ts';
 import { by, cmp } from '../lib/sort.ts';
 import { kanaVariants } from '../lib/text-normalize.ts';
 import { gameTheme } from './game-theme.ts';
+import { REVIEW_SCORE_JA } from '../sources/steam.ts';
 import { releaseEntryLabel, releaseLabel, STORE_LABELS } from './labels.ts';
 
 export interface SiteDataSet {
@@ -76,6 +77,19 @@ export function localStoreUrl(store: string, url: string, title: string): string
   if (u.hostname === 'store-jp.nintendo.com' || u.hostname === 'www.nintendo.co.jp' || u.pathname.startsWith('/jp/'))
     return url;
   return `https://store-jp.nintendo.com/search/?q=${encodeURIComponent(title)}`;
+}
+
+function steamScoreOf(s: { positive: number; total: number; desc: string } | undefined): {
+  steamScore?: SiteGame['steamScore'];
+} {
+  if (!s || s.total < 10) return {};
+  return {
+    steamScore: {
+      percent: Math.round((s.positive / s.total) * 100),
+      total: s.total,
+      label: REVIEW_SCORE_JA[s.desc] ?? s.desc,
+    },
+  };
 }
 
 // 評価の件数がこれより少なければ出さない
@@ -289,6 +303,7 @@ export function buildSiteData(repo: RepoData, today = todayJst()): SiteDataSet {
       madeInJapan: g.developerIds.some((id) => devById.get(id)?.country?.code === 'JP'),
       ...(repo.popularity.entries[g.id] ? { steamReviews: repo.popularity.entries[g.id]!.steamReviews } : {}),
       ...ratingsOf(g, repo),
+      ...steamScoreOf(repo.popularity.entries[g.id]?.steamScore),
       ...(primaryGenre(tags, tagUse) ? { primaryGenre: primaryGenre(tags, tagUse) } : {}),
       articles,
       related: [],

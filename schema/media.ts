@@ -27,6 +27,10 @@ export const PopularityMetrics = z.object({
     GameId,
     z.object({
       steamReviews: z.number().int().min(0),
+      // Steam のレビューの好評の割合（appreviews の query_summary）。取得できた環境でだけ入る
+      steamScore: z
+        .object({ positive: z.number().int().min(0), total: z.number().int().min(1), desc: z.string().max(40) })
+        .optional(),
       // IGDB の評価（0〜100）。total は利用者と批評の総合、critic は批評サイトの平均
       igdb: z
         .object({

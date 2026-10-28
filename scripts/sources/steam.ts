@@ -206,3 +206,42 @@ export function stableImageUrl(url: string): string {
   u.search = '';
   return u.href;
 }
+
+/** レビューの集計（appreviews の query_summary）。言語はすべて、購入の経路はすべて */
+export function appReviewsUrl(appId: number): string {
+  return `https://store.steampowered.com/appreviews/${appId}?json=1&language=all&purchase_type=all&num_per_page=0`;
+}
+
+export interface SteamReviewScore {
+  positive: number;
+  total: number;
+  desc: string; // 例: Overwhelmingly Positive
+}
+
+/** appreviews の応答から集計を読む。形が違えば undefined（転送されたときなど） */
+export function parseReviewSummary(text: string): SteamReviewScore | undefined {
+  try {
+    const body = JSON.parse(text) as {
+      success?: number;
+      query_summary?: { total_positive?: number; total_reviews?: number; review_score_desc?: string };
+    };
+    const q = body.query_summary;
+    if (body.success !== 1 || !q || !q.total_reviews || q.total_positive === undefined) return undefined;
+    return { positive: q.total_positive, total: q.total_reviews, desc: q.review_score_desc ?? '' };
+  } catch {
+    return undefined;
+  }
+}
+
+// Steam の評価の表記（英語）を日本語のストアの表記にする
+export const REVIEW_SCORE_JA: Record<string, string> = {
+  'Overwhelmingly Positive': '圧倒的に好評',
+  'Very Positive': '非常に好評',
+  Positive: '好評',
+  'Mostly Positive': 'やや好評',
+  Mixed: '賛否両論',
+  'Mostly Negative': 'やや不評',
+  Negative: '不評',
+  'Very Negative': '非常に不評',
+  'Overwhelmingly Negative': '圧倒的に不評',
+};

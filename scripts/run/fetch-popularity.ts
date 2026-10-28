@@ -6,6 +6,7 @@ import { nowIso } from '../lib/clock.ts';
 import { runMain } from '../lib/errors.ts';
 import { fileKind, loadRepo, PROJECT_ROOT, repoPath, writeKind } from '../lib/repo-io.ts';
 import { createIgdbClient, igdbRatings } from '../sources/igdb.ts';
+import { appReviewsUrl, parseReviewSummary } from '../sources/steam.ts';
 
 // Steam のレビュー数と IGDB の評価を取得し、data/metrics/popularity.json に保存する
 // （作品の見せ方の強弱と、作品詳細の評価の表示に使う）。IGDB はキーがあるときだけ
@@ -36,9 +37,13 @@ await runMain(async () => {
       const entry = body[String(appId)];
       if (!entry?.success) throw new Error('not found');
       const data = Array.isArray(entry.data) ? undefined : entry.data;
+      // 好評の割合は取れる環境でだけ取る（取れなければ前の値を残す）
+      const reviews = await http.get(appReviewsUrl(appId)).catch(() => undefined);
+      const score = reviews?.status === 200 ? parseReviewSummary(reviews.text) : undefined;
       out.entries[g.id] = {
         ...out.entries[g.id],
         steamReviews: data?.recommendations?.total ?? 0,
+        ...(score ? { steamScore: score } : {}),
         retrievedAt: nowIso(),
       };
       n++;
