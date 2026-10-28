@@ -44,6 +44,7 @@ describe('Steam のレビューの要約', () => {
           { text: '探索の手ざわりと音楽の評価が高い', reviewIds: ['1000', '1001', '1002'] },
           { text: '一件だけの意見', reviewIds: ['1003'] },
           { text: '神ゲーと言われている', reviewIds: ['1000', '1001'] },
+          { text: '早期アクセスでも遊びごたえがある', reviewIds: ['1000', '1001'] },
         ],
         cons: [
           { text: '操作に慣れるまで時間がかかるという声', reviewIds: ['1008', '1009'] },
@@ -56,6 +57,7 @@ describe('Steam のレビューの要約', () => {
     expect(r.entry!.cons.map((p) => p.text)).toEqual([]);
     expect(r.errors.join('\n')).toContain('根拠が2件未満');
     expect(r.errors.join('\n')).toContain('誇張や主観の表現');
+    expect(r.errors.join('\n')).toContain('時期によって変わる事柄');
     expect(r.errors.join('\n')).toContain('レビューの文の写し');
     expect(llm.prompts[0]).toContain('"id":"1000"');
   });

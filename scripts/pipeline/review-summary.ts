@@ -26,10 +26,13 @@ export const SUMMARY_SYSTEM = [
   '- 各行には、その点に触れているレビューの id を2件以上 reviewIds に入れる。1件しか触れていない点は書かない。',
   '- レビューの文をそのまま写さず、自分の言葉で言い換える。',
   '- 「神ゲー」「最高」「必見」のような誇張、「私は」のような主観、推測は書かない。',
+  '- 早期アクセスかどうか、アップデートでの変化、価格やセールなど、時期によって変わる事柄は書かない（古いレビューも含まれるため）。',
   '- 出力は JSON だけ: {"pros":[{"text":"...","reviewIds":["..."]}],"cons":[...]}',
 ].join('\n');
 
 const BANNED = /(神ゲー|傑作|名作|最高|必見|間違いなく|今すぐ|私は|筆者|僕は|だろう|と思われる|に違いない|https?:)/;
+// 時期によって変わる事柄（古いレビューでは事実と違っていることがある）
+const DATED = /(早期アクセス|アップデート|アプデ|セール|値下げ|定価|円で)/;
 
 export function summaryPrompt(title: string, reviews: SteamReview[]): string {
   const lines = reviews.map((r) => JSON.stringify({ id: r.id, positive: r.votedUp, text: r.text }));
@@ -67,6 +70,7 @@ export function validateSummary(
         unique.length < 2 ? '根拠が2件未満' : '',
         kind === 'pros' && unique.filter((id) => byId.get(id)!.votedUp).length < 2 ? '好評の根拠が2件未満' : '',
         BANNED.test(text) ? '誇張や主観の表現' : '',
+        DATED.test(text) ? '時期によって変わる事柄' : '',
         copies(text, reviews) ? 'レビューの文の写し' : '',
       ].filter(Boolean);
       if (problems.length) errors.push(`${kind}「${text}」: ${problems.join('、')}`);
