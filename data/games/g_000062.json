@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "g_000062",
-  "status": "candidate",
+  "status": "published",
   "title": {
     "display": "NEEDY GIRL OVERDOSE",
     "original": "NEEDY GIRL OVERDOSE",
@@ -50,9 +50,24 @@
     "dev_000063"
   ],
   "indie": {
-    "assessment": "unknown",
-    "reasons": [],
-    "assessedAt": "2026-10-27T18:04:38Z"
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "independent-publisher",
+        "note": "パブリッシャーはインディーゲームのレーベル WSS playground",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://news.denfaminicogamer.jp/news/250121d",
+            "publishedAt": "2025-01-21",
+            "retrievedAt": "2026-10-28T05:55:32Z",
+            "quote": "個人・少人数のチームをプロデュースし、世界を「遊び場」としていくインディーゲームレーベル「WSS playground」",
+            "originKey": "media:denfaminicogamer.jp"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-10-28T05:55:32Z"
   },
   "identityEvidence": [
     {
@@ -132,6 +147,7 @@
     }
   ],
   "createdAt": "2026-10-27T18:04:38Z",
-  "updatedAt": "2026-10-27T19:07:15Z",
+  "addedAt": "2026-10-28",
+  "updatedAt": "2026-10-28T05:55:32Z",
   "createdByRun": "local-seed"
 }
