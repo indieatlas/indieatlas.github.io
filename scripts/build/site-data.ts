@@ -183,6 +183,7 @@ export function buildSiteData(repo: RepoData, today = todayJst()): SiteDataSet {
         (a) => a.id,
       ),
     );
+  groupSameTopic(siteArticles);
   const articlesByGame = new Map<string, { id: string; role: Article['games'][number]['role'] }[]>();
   for (const a of siteArticles) {
     for (const g of a.games) {
@@ -513,6 +514,37 @@ function toSiteArticle(
       : {}),
     games: a.games.filter((g) => publishedIds.has(g.gameId)).map((g) => ({ gameId: g.gameId, role: g.role })),
   };
+}
+
+// 同じ作品を主題にした、この日数以内の記事は同じ話題とみなす
+const SAME_TOPIC_DAYS = 3;
+
+/**
+ * 同じ作品を主題にし、掲載日が近い記事をまとめる（似たニュースが並ばないようにする）。
+ * まとまりの先頭は、画像があり、日本語で、最も早い記事を優先する。まとめ記事（roundup）はまとめない
+ */
+export function groupSameTopic(articles: SiteArticle[]): void {
+  const primaryOf = (a: SiteArticle) =>
+    a.kind === 'roundup' ? undefined : a.games.find((g) => g.role === 'primary')?.gameId;
+  const time = (a: SiteArticle) => Date.parse(a.publishedAt ?? '');
+  const groups: SiteArticle[][] = [];
+  for (const a of [...articles].sort((x, y) => time(x) - time(y))) {
+    const gid = primaryOf(a);
+    if (!gid || Number.isNaN(time(a))) continue;
+    const g = groups.find(
+      (list) => primaryOf(list[0]!) === gid && time(a) - time(list[0]!) <= SAME_TOPIC_DAYS * 86_400_000,
+    );
+    if (g) g.push(a);
+    else groups.push([a]);
+  }
+  for (const list of groups.filter((l) => l.length > 1)) {
+    const score = (a: SiteArticle) => (a.image ? 2 : 0) + (a.lang === 'ja' ? 1 : 0);
+    const lead = [...list].sort((x, y) => score(y) - score(x) || time(x) - time(y))[0]!;
+    lead.sameTopic = list
+      .filter((a) => a !== lead)
+      .map((a) => ({ id: a.id, outlet: a.outlet.name, url: a.url, lang: a.lang }));
+    for (const a of list) if (a !== lead) a.topicOf = lead.id;
+  }
 }
 
 function buildRelease(claims: Claim[], refs: (c: Claim[]) => SourceRef[]): SiteGame['release'] {

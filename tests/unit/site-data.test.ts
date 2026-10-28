@@ -137,3 +137,39 @@ describe('ジャンルのカテゴリ色', () => {
     expect(prominenceOf(150_000)).toBe('landmark');
   });
 });
+
+import { groupSameTopic } from '../../scripts/build/site-data.ts';
+import type { SiteArticle } from '../../schema/site-data.ts';
+
+describe('同じ話題の記事', () => {
+  const art = (id: string, day: string, game: string, o: Partial<SiteArticle> = {}): SiteArticle => ({
+    id,
+    url: `https://news.example.jp/${id}`,
+    title: id,
+    lang: 'ja',
+    kind: 'news',
+    outlet: { name: id.toUpperCase(), domain: 'news.example.jp' },
+    publishedAt: `2026-10-${day}T00:00:00Z`,
+    games: [{ gameId: game, role: 'primary' }],
+    ...o,
+  });
+
+  it('同じ作品を主題にした3日以内の記事をまとめ、画像のある日本語の記事を先頭にする', () => {
+    const list = [
+      art('a', '20', 'g_000001', { lang: 'en' }),
+      art('b', '21', 'g_000001', { image: { path: 'media/articles/a_0000000000000001.webp', width: 1, height: 1 } }),
+      art('c', '22', 'g_000001'),
+      art('d', '27', 'g_000001'),
+      art('e', '21', 'g_000002'),
+      art('f', '21', 'g_000001', { kind: 'roundup' }),
+    ];
+    groupSameTopic(list);
+    const by = Object.fromEntries(list.map((a) => [a.id, a]));
+    expect(by.b!.sameTopic!.map((t) => t.id)).toEqual(['a', 'c']);
+    expect(by.a!.topicOf).toBe('b');
+    expect(by.c!.topicOf).toBe('b');
+    expect(by.d!.topicOf).toBeUndefined();
+    expect(by.e!.topicOf).toBeUndefined();
+    expect(by.f!.topicOf).toBeUndefined();
+  });
+});

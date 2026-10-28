@@ -48,6 +48,17 @@ export function getGame(id: string): SiteGame | undefined {
 }
 
 let articleIndex: Map<string, SiteArticle> | undefined;
+/**
+ * 一覧に出す記事。同じ話題の記事（topicOf がある記事）は、まとまりの先頭の記事に添えるので除く。
+ * 種別で絞るときは、先頭の記事が別の種別なら残す
+ */
+export function listedArticles(kind?: SiteArticle['kind']): SiteArticle[] {
+  const byId = new Map(getArticles().map((a) => [a.id, a]));
+  return getArticles().filter(
+    (a) => (!kind || a.kind === kind) && (!a.topicOf || (kind !== undefined && byId.get(a.topicOf)?.kind !== kind)),
+  );
+}
+
 export function getArticle(id: string): SiteArticle | undefined {
   articleIndex ??= new Map(getArticles().map((a) => [a.id, a]));
   return articleIndex.get(id);
@@ -102,7 +113,7 @@ const PROMINENCE_WEIGHT = { landmark: 3, notable: 1.5, standard: 0 } as const;
  * 主な作品の知名度で点を付ける。日付は最も新しい記事からの経過日数で数え、ビルドの日に左右されない
  */
 export function homeNews(featuredCount = 3, restCount = 8): { featured: SiteArticle[]; rest: SiteArticle[] } {
-  const articles = getArticles().filter((a) => a.publishedAt);
+  const articles = listedArticles().filter((a) => a.publishedAt);
   const newest = Date.parse(articles[0]?.publishedAt ?? '1970-01-01');
   const score = (a: SiteArticle) => {
     const days = (newest - Date.parse(a.publishedAt!)) / 86_400_000;
@@ -117,9 +128,16 @@ export function homeNews(featuredCount = 3, restCount = 8): { featured: SiteArti
     !!a.image || a.games.some((g) => g.role === 'primary' && getGame(g.gameId)?.image);
   const pool = articles.slice(0, 24).filter(hasVisual);
   // 点の高い順。先頭を一番大きい枠に置く
-  const featured = [...pool]
-    .sort((a, b) => score(b) - score(a) || (a.publishedAt! < b.publishedAt! ? 1 : -1))
-    .slice(0, featuredCount);
+  // 同じ作品の記事は大きな枠に1件だけ
+  const featured: SiteArticle[] = [];
+  const usedGames = new Set<string>();
+  for (const a of [...pool].sort((a, b) => score(b) - score(a) || (a.publishedAt! < b.publishedAt! ? 1 : -1))) {
+    if (featured.length >= featuredCount) break;
+    const gid = (a.games.find((g) => g.role === 'primary') ?? a.games[0])?.gameId;
+    if (gid && usedGames.has(gid)) continue;
+    if (gid) usedGames.add(gid);
+    featured.push(a);
+  }
   const ids = new Set(featured.map((a) => a.id));
   return { featured, rest: articles.filter((a) => !ids.has(a.id)).slice(0, restCount) };
 }

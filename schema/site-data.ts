@@ -99,6 +99,9 @@ export interface SiteArticle {
   summaryJa?: string;
   image?: { path: string; width: number; height: number }; // public/ からの相対パス
   games: { gameId: string; role: ArticleRole }[];
+  // 同じ話題の記事のまとまり。一覧ではまとまりの先頭（topicLead）だけを出し、ほかの記事は「同じ話題」として添える
+  topicOf?: string; // まとまりの先頭の記事の ID（自分が先頭でなければ）
+  sameTopic?: { id: string; outlet: string; url: string; lang: string }[]; // 先頭の記事に添える、同じ話題のほかの記事
 }
 
 /** 開発元とパブリッシャー（/developers/{id}/） */

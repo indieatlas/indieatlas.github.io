@@ -1,6 +1,6 @@
 ---
 import type { ArticleKind } from '../../schema/common.ts';
-import { getArticles } from '../lib/data.ts';
+import { listedArticles } from '../lib/data.ts';
 import { ARTICLE_KIND_LABELS, ARTICLE_TABS } from '../lib/format.ts';
 import { ARTICLES_PER_PAGE, pageCount } from '../lib/listing.ts';
 import { paths, url } from '../lib/urls.ts';
@@ -14,7 +14,7 @@ interface Props {
   page: number;
 }
 const { kind, page } = Astro.props;
-const all = getArticles().filter((a) => !kind || a.kind === kind);
+const all = listedArticles(kind);
 const total = pageCount(all.length, ARTICLES_PER_PAGE);
 const list = all.slice((page - 1) * ARTICLES_PER_PAGE, page * ARTICLES_PER_PAGE);
 const tabs = [

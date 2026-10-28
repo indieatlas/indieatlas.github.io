@@ -1,12 +1,12 @@
 ---
 import ArticleIndex from '../../../components/ArticleIndex.astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { getArticles } from '../../../lib/data.ts';
+import { listedArticles } from '../../../lib/data.ts';
 import { ARTICLES_PER_PAGE, pageCount } from '../../../lib/listing.ts';
 import { paths } from '../../../lib/urls.ts';
 
 export function getStaticPaths() {
-  const total = pageCount(getArticles().length, ARTICLES_PER_PAGE);
+  const total = pageCount(listedArticles().length, ARTICLES_PER_PAGE);
   return Array.from({ length: total - 1 }, (_, i) => ({ params: { page: String(i + 2) } }));
 }
 const page = Number(Astro.params.page);

@@ -61,6 +61,19 @@ const fallback = !article.image && primary ? getGame(primary.gameId)?.image : un
       </ExternalLink>
     </h3>
     {article.summaryJa && <p class="summary">{article.summaryJa}</p>}
+    {!forGame && article.sameTopic && article.sameTopic.length > 0 && (
+      <p class="same-topic">
+        同じ話題:{' '}
+        {article.sameTopic.map((t, i) => (
+          <>
+            {i > 0 && '、'}
+            <ExternalLink href={t.url} lang={t.lang}>
+              {t.outlet}
+            </ExternalLink>
+          </>
+        ))}
+      </p>
+    )}
     {shown.length > 0 && (
       <p class="games">
         {forGame ? 'ほかに扱う作品' : '関連作品'}:{' '}
@@ -148,6 +161,11 @@ const fallback = !article.image && primary ? getGame(primary.gameId)?.image : un
   }
   .title :global(a:hover) {
     color: var(--color-accent);
+  }
+  .same-topic {
+    margin: var(--space-1) 0 0;
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
   }
   .summary,
   .games {
