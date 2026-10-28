@@ -788,7 +788,7 @@ user メッセージには、今日の日付、タスク、対象のデータ、
 
 ### 6.13.4 知名度と評価（`npm run metrics:popularity`）
 
-- 週に1回、IGDB のジョブと同じ流れで、Steam のレビュー数（appdetails の `recommendations.total`）と IGDB の評価を `data/metrics/popularity.json` に書く。殿堂入りと人気の区分は [04](04-data-model.md) §4.4.4。
+- 週に1回（`.github/workflows/refresh-metrics.yml`、月曜 9時23分）、Steam のレビュー数（appdetails の `recommendations.total`）と IGDB の評価を `data/metrics/popularity.json` に書く。殿堂入りと人気の区分は [04](04-data-model.md) §4.4.4。
 
 ### 6.13.5 Amazon の売れ筋（`npm run amazon:ranking`）
 
@@ -809,4 +809,4 @@ user メッセージには、今日の日付、タスク、対象のデータ、
 - 要約: DeepSeek V4.1 Flash で、作品ごとに1回（入力 約1万トークン、出力 約500トークン）。81作品を月に1回作り直しても、OpenCode Go の定額（D-20）の範囲に収まる。
 - 検証: 要約の各行が、2件以上のレビューで述べられていることを LLM の出力の根拠（レビューの ID）で確かめる。好評の割合は数値のまま出し、LLM に作らせない。
 - 実装: `scripts/pipeline/review-summary.ts`（検証）、`scripts/llm/client.ts`（OpenAI 互換の接続の構造化出力。§6.9.2 の `generateObject` の部分だけ）、`scripts/run/summarize-reviews.ts`。結果は `data/metrics/review-summaries.json`（`schema/media.ts` の `ReviewSummaries`）。長所は好評のレビュー2件以上に支えられていること、レビューの文を8文字以上そのまま写していないこと、誇張や主観の表現がないことをコードで確かめ、合わない行は捨てる。
-- 実行: `OPENCODE_API_KEY` があり、Steam のレビューを取得できる環境で、手元か `research` の環境で実行し、結果を PR で取り込む。キーがないか取得できなければ何もしない。
+- 実行: `refresh-metrics.yml` が週に1回、環境 `research` のシークレットで実行し、変わった分を PR にする。要約は4週ごとに作り直し、それ以外の週はまだない作品の分だけ作る。手元でも `npm run reviews:summarize` で作れる。キーがないか取得できなければ何もしない。

@@ -1,0 +1,61 @@
+name: refresh-metrics
+
+# 週に1回、Steam のレビュー数と評価、IGDB の評価、Steam のレビューの要約を作り直し、PR にする（06 §6.13.4、§6.13.6）。
+# 結果は PR で人が確かめてから取り込む。キーは環境 research のシークレットに置く
+on:
+  schedule:
+    - cron: '23 0 * * 1' # 毎週月曜 9時23分（日本時間）
+  workflow_dispatch:
+
+concurrency:
+  group: refresh-metrics
+  cancel-in-progress: false
+
+permissions: {}
+
+jobs:
+  refresh:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    environment: research
+    permissions:
+      contents: write
+      pull-requests: write
+    env:
+      IGDB_CLIENT_ID: ${{ secrets.IGDB_CLIENT_ID }}
+      IGDB_CLIENT_SECRET: ${{ secrets.IGDB_CLIENT_SECRET }}
+      OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run metrics:popularity
+      # 要約は4週ごとに作り直す（それ以外の週は、まだない作品の分だけ作る）
+      - name: Summarize Steam reviews
+        run: |
+          if [ $(( $(date -u +%V) % 4 )) -eq 0 ]; then npm run reviews:summarize -- --force; else npm run reviews:summarize; fi
+      - run: npm run check:data
+      - name: Open a pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- data/metrics; then
+            echo "no changes"
+            exit 0
+          fi
+          branch="metrics/$(date -u +%Y%m%d)"
+          git config user.name "indieatlas-bot"
+          git config user.email "indieatlas-bot@users.noreply.github.com"
+          git switch -c "$branch"
+          git add data/metrics
+          git commit -m "data: refresh popularity metrics and review summaries"
+          git push origin "$branch"
+          gh pr create --base main --head "$branch" \
+            --title "data: refresh popularity metrics and review summaries" \
+            --body "Steam のレビュー数と評価、IGDB の評価、Steam のレビューの要約を更新しました（refresh-metrics）。要約の内容を確かめてから取り込んでください。"
