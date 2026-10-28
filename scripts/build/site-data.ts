@@ -304,6 +304,16 @@ export function buildSiteData(repo: RepoData, today = todayJst()): SiteDataSet {
       ...(repo.popularity.entries[g.id] ? { steamReviews: repo.popularity.entries[g.id]!.steamReviews } : {}),
       ...ratingsOf(g, repo),
       ...steamScoreOf(repo.popularity.entries[g.id]?.steamScore),
+      ...(repo.reviewSummaries.entries[g.id]
+        ? {
+            reviewSummary: {
+              pros: repo.reviewSummaries.entries[g.id]!.pros.map((p) => p.text),
+              cons: repo.reviewSummaries.entries[g.id]!.cons.map((p) => p.text),
+              reviewCount: repo.reviewSummaries.entries[g.id]!.reviewCount,
+              generatedAt: dateOnly(repo.reviewSummaries.entries[g.id]!.generatedAt),
+            },
+          }
+        : {}),
       ...(primaryGenre(tags, tagUse) ? { primaryGenre: primaryGenre(tags, tagUse) } : {}),
       articles,
       related: [],

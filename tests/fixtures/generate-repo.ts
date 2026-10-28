@@ -14,7 +14,7 @@ import { RuntimeConfig, SourcesFile } from '../../schema/config.ts';
 import { Developer } from '../../schema/developer.ts';
 import { Game } from '../../schema/game.ts';
 import { GameRelationsFile } from '../../schema/relation.ts';
-import { PopularityMetrics } from '../../schema/media.ts';
+import { PopularityMetrics, ReviewSummaries } from '../../schema/media.ts';
 import { ReviewQueue, SeenUrls, TasksFile } from '../../schema/state.ts';
 import { TagsFile } from '../../schema/taxonomy.ts';
 import { makeClaim, supersede } from '../../scripts/lib/claim-builder.ts';
@@ -617,6 +617,23 @@ writeJson(PopularityMetrics, out('data/metrics/popularity.json'), {
       retrievedAt: AT,
     },
     g_000002: { steamReviews: 42000, retrievedAt: AT },
+  },
+});
+
+// Steam のレビューの要約（架空）
+writeJson(ReviewSummaries, out('data/metrics/review-summaries.json'), {
+  schemaVersion: 1,
+  entries: {
+    g_000001: {
+      pros: [
+        { text: '灯台を巡る探索と音楽の評価が高い', reviewIds: ['1000', '1001', '1002'] },
+        { text: '短い時間でも遊びやすいという声が多い', reviewIds: ['1003', '1004'] },
+      ],
+      cons: [{ text: '後半の展開が単調だという意見がある', reviewIds: ['1008', '1009'] }],
+      reviewCount: 50,
+      model: 'deepseek-v4.1-flash',
+      generatedAt: AT,
+    },
   },
 });
 

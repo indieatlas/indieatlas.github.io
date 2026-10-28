@@ -247,6 +247,30 @@ const description =
             </section>
           )}
 
+          {game.reviewSummary && (
+            <section aria-labelledby="reviews-h" class="block" data-pagefind-ignore>
+              <h2 id="reviews-h">Steam のレビューでよく挙がる点</h2>
+              <ul class="review-points">
+                {game.reviewSummary.pros.map((p) => (
+                  <li class="pro">
+                    <span class="mark" aria-label="長所">＋</span>
+                    {p}
+                  </li>
+                ))}
+                {game.reviewSummary.cons.map((p) => (
+                  <li class="con">
+                    <span class="mark" aria-label="短所">－</span>
+                    {p}
+                  </li>
+                ))}
+              </ul>
+              <p class="small muted">
+                Steam の利用者のレビュー{game.reviewSummary.reviewCount}件を、当サイトが LLM で要約しました（
+                {formatDate(game.reviewSummary.generatedAt)}）。各点は2件以上のレビューで述べられています。
+              </p>
+            </section>
+          )}
+
           <section aria-labelledby="articles-h" class="block" data-pagefind-ignore>
             <h2 id="articles-h">関連記事</h2>
             {articles.length === 0 ? (
@@ -707,6 +731,36 @@ const description =
   }
   .shots-wrap {
     margin-bottom: var(--space-6);
+  }
+  .review-points {
+    display: grid;
+    gap: var(--space-2);
+    max-width: var(--measure);
+    margin: 0 0 var(--space-2);
+    padding: 0;
+    list-style: none;
+  }
+  .review-points li {
+    display: flex;
+    gap: var(--space-3);
+    align-items: baseline;
+  }
+  .review-points .mark {
+    flex: none;
+    display: inline-grid;
+    place-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-weight: 800;
+  }
+  .review-points .pro .mark {
+    background: #1f7a4d;
+    color: #fff;
+  }
+  .review-points .con .mark {
+    background: var(--color-surface-raised);
+    color: var(--color-text);
+    box-shadow: inset 0 0 0 1px var(--color-border-strong);
   }
   .overview {
     max-width: var(--measure);

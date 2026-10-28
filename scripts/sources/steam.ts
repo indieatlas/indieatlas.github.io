@@ -245,3 +245,37 @@ export const REVIEW_SCORE_JA: Record<string, string> = {
   'Very Negative': '非常に不評',
   'Overwhelmingly Negative': '圧倒的に不評',
 };
+
+/** 「役に立った」順のレビュー（本文を含む）。言語ごとに取る */
+export function appReviewListUrl(appId: number, language: 'japanese' | 'english', count = 50): string {
+  return `https://store.steampowered.com/appreviews/${appId}?json=1&filter=all&language=${language}&purchase_type=all&num_per_page=${count}&cursor=*`;
+}
+
+export interface SteamReview {
+  id: string; // recommendationid
+  text: string;
+  votedUp: boolean;
+  votesUp: number;
+  language: string;
+}
+
+export function parseReviewList(text: string): SteamReview[] | undefined {
+  try {
+    const body = JSON.parse(text) as {
+      success?: number;
+      reviews?: { recommendationid: string; review: string; voted_up: boolean; votes_up: number; language: string }[];
+    };
+    if (body.success !== 1 || !Array.isArray(body.reviews)) return undefined;
+    return body.reviews
+      .filter((r) => r.review && r.review.trim().length >= 20)
+      .map((r) => ({
+        id: r.recommendationid,
+        text: r.review.replace(/\[[^\]]+\]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 1200),
+        votedUp: r.voted_up,
+        votesUp: r.votes_up,
+        language: r.language,
+      }));
+  } catch {
+    return undefined;
+  }
+}

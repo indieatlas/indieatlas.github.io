@@ -9,7 +9,7 @@ import { RuntimeConfig, SourcesFile } from '../../schema/config.ts';
 import { Developer } from '../../schema/developer.ts';
 import { IndieEvent } from '../../schema/event.ts';
 import { Game } from '../../schema/game.ts';
-import { ImagePalettes, PopularityMetrics } from '../../schema/media.ts';
+import { ImagePalettes, PopularityMetrics, ReviewSummaries } from '../../schema/media.ts';
 import { GameRelationsFile } from '../../schema/relation.ts';
 import { ReviewQueue, RunsFile, SeenUrls, SourceState, TasksFile, UsageLedger } from '../../schema/state.ts';
 import { TagsFile } from '../../schema/taxonomy.ts';
@@ -24,6 +24,7 @@ import {
   sortEvent,
   sortPalettes,
   sortPopularity,
+  sortReviewSummaries,
   sortSeenUrls,
   sortTags,
   sortTasks,
@@ -114,6 +115,12 @@ export const FILE_KINDS: FileKind[] = [
   defineKind({ name: 'tags', file: 'data/taxonomy/tags.json', schema: TagsFile, sort: sortTags }),
   defineKind({ name: 'palettes', file: 'data/media/palettes.json', schema: ImagePalettes, sort: sortPalettes }),
   defineKind({
+    name: 'review-summaries',
+    file: 'data/metrics/review-summaries.json',
+    schema: ReviewSummaries,
+    sort: sortReviewSummaries,
+  }),
+  defineKind({
     name: 'popularity',
     file: 'data/metrics/popularity.json',
     schema: PopularityMetrics,
@@ -158,6 +165,7 @@ export interface RepoData {
   tags: TagsFile;
   palettes: ImagePalettes;
   popularity: PopularityMetrics;
+  reviewSummaries: ReviewSummaries;
   tasks: TasksFile;
   reviewQueue: ReviewQueue;
   seenUrls: SeenUrls;
@@ -190,6 +198,10 @@ export function loadRepo(): RepoData {
       entries: {},
     },
     popularity: readJsonIfExists(PopularityMetrics, repoPath('data/metrics/popularity.json')) ?? {
+      schemaVersion: 1,
+      entries: {},
+    },
+    reviewSummaries: readJsonIfExists(ReviewSummaries, repoPath('data/metrics/review-summaries.json')) ?? {
       schemaVersion: 1,
       entries: {},
     },

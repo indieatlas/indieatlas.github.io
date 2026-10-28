@@ -87,3 +87,11 @@ test('殿堂入りと人気の作品は一覧と詳細で見分けられる', as
   await expect(page.locator('.headline .prominence')).toHaveText(/殿堂入り/);
   await expect(page.locator('.headline .reviews')).toContainText('圧倒的に好評（好評 95%');
 });
+
+test('作品詳細: Steam のレビューの要約を長所と短所に分けて出す', async ({ page }) => {
+  await page.goto('games/g_000001/');
+  const section = page.locator('section[aria-labelledby="reviews-h"]');
+  await expect(section.locator('li.pro')).toHaveCount(2);
+  await expect(section.locator('li.con')).toHaveCount(1);
+  await expect(section).toContainText('レビュー50件');
+});

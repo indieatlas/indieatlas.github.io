@@ -45,3 +45,26 @@ export const PopularityMetrics = z.object({
   ),
 });
 export type PopularityMetrics = z.infer<typeof PopularityMetrics>;
+
+/**
+ * Steam のレビューの要約（data/metrics/review-summaries.json、06 §6.13.6）。
+ * 利用者のレビューでよく挙がる点を当サイトの言葉でまとめたもの。各行は2件以上のレビューに支えられている
+ */
+const SummaryPoint = z.object({
+  text: z.string().min(8).max(60),
+  reviewIds: z.array(z.string().regex(/^\d+$/)).min(2).max(10), // 根拠のレビュー（recommendationid）。サイトには出さない
+});
+export const ReviewSummaries = z.object({
+  schemaVersion: z.literal(1),
+  entries: z.record(
+    GameId,
+    z.object({
+      pros: z.array(SummaryPoint).min(1).max(4),
+      cons: z.array(SummaryPoint).max(3),
+      reviewCount: z.number().int().min(1), // 要約に使ったレビューの数
+      model: z.string().min(1).max(80),
+      generatedAt: IsoDateTime,
+    }),
+  ),
+});
+export type ReviewSummaries = z.infer<typeof ReviewSummaries>;
