@@ -286,3 +286,10 @@ export async function igdbRatings(client: IgdbClient, ids: number[]): Promise<Ig
   }
   return out;
 }
+
+/** 「Rust」と「Rust Console Edition」のように、名前が単語の切れ目で一致すれば同じ作品の版とみなす（「Rusty Lake」は別） */
+export function isSameWorkName(candidate: string, title: string): boolean {
+  const a = candidate.toLowerCase();
+  const b = title.toLowerCase();
+  return a === b || (a.startsWith(b) && !/[\p{L}\p{N}]/u.test(a.charAt(b.length)));
+}

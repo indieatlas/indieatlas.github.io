@@ -2,7 +2,7 @@ import path from 'node:path';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { loadRepo } from '../../scripts/lib/repo-io.ts';
 import { applyIgdb } from '../../scripts/pipeline/igdb-sync.ts';
-import { igdbDate, igdbReleases, igdbStoreLinks, mapPlatform, mapRegion, type IgdbGame } from '../../scripts/sources/igdb.ts';
+import { igdbDate, igdbReleases, igdbStoreLinks, isSameWorkName, mapPlatform, mapRegion, type IgdbGame } from '../../scripts/sources/igdb.ts';
 
 const utc = (s: string) => Date.parse(`${s}T00:00:00Z`) / 1000;
 
@@ -83,6 +83,13 @@ describe('IGDB の変換', () => {
       'switch:global:released',
       'xbox-series:global:tba',
     ]);
+  });
+
+  it('家庭用ゲーム機版の別登録を、単語の切れ目で一致する名前として見つける', () => {
+    expect(isSameWorkName('Lantern Tide Console Edition', 'Lantern Tide')).toBe(true);
+    expect(isSameWorkName('Lantern Tide: Deluxe', 'Lantern Tide')).toBe(true);
+    expect(isSameWorkName('Lantern Tides', 'Lantern Tide')).toBe(false);
+    expect(isSameWorkName('lantern tide', 'Lantern Tide')).toBe(true);
   });
 
   it('ストアのリンクは Steam 以外を1ストア1件、日本向けの URL にする', () => {

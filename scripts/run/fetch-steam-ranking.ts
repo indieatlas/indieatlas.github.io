@@ -6,13 +6,14 @@ import { createSimpleHttp } from '../fetch/http.ts';
 import { nowIso } from '../lib/clock.ts';
 import { runMain } from '../lib/errors.ts';
 import { PROJECT_ROOT } from '../lib/repo-io.ts';
-import { createIgdbClient, igdbGames, igdbIdsForSteam, mapPlatform } from '../sources/igdb.ts';
+import { createIgdbClient, igdbGames, igdbIdsForSteam, isSameWorkName, mapPlatform } from '../sources/igdb.ts';
 import { indieTopSellersUrl, parseTopSellers } from '../sources/steam.ts';
 
 const CONSOLES = new Set(['switch', 'switch2', 'ps5', 'ps4', 'xbox-series', 'xbox-one']);
 
 /** IGDB で、それぞれの作品が出ている家庭用ゲーム機を調べる。キーがなければ undefined */
-async function consolesByApp(appIds: number[]): Promise<Map<number, string[]> | undefined> {
+async function consolesByApp(names: Map<number, string>): Promise<Map<number, string[]> | undefined> {
+  const appIds = [...names.keys()];
   const clientId = process.env.IGDB_CLIENT_ID;
   const clientSecret = process.env.IGDB_CLIENT_SECRET;
   if (!clientId || !clientSecret) return undefined;
@@ -38,6 +39,23 @@ async function consolesByApp(appIds: number[]): Promise<Map<number, string[]> | 
     ];
     out.set(app, consoles);
   }
+  // 家庭用ゲーム機版が別の作品として登録されていることがある（例: Rust と Rust Console Edition）。
+  // 見つからなかった作品は、名前が同じで始まる作品も調べる
+  for (const [app, consoles] of out) {
+    if (consoles.length) continue;
+    const name = names.get(app);
+    if (!name) continue;
+    const q = name.replace(/"/g, '');
+    const hits = await client.query<{ name: string; platforms?: { slug: string }[] }[]>(
+      'games',
+      `search "${q}"; fields name,platforms.slug; limit 30;`,
+    );
+    const more = hits
+      .filter((h) => isSameWorkName(h.name, q))
+      .flatMap((h) => (h.platforms ?? []).map((p) => mapPlatform(p.slug)))
+      .filter((p): p is NonNullable<typeof p> => !!p && CONSOLES.has(p));
+    if (more.length) out.set(app, [...new Set(more)]);
+  }
   return out;
 }
 
@@ -60,7 +78,7 @@ await runMain(async () => {
     return;
   }
   const top = items.slice(0, 30);
-  const consoles = await consolesByApp(top.map((i) => i.appId)).catch((e: Error) => {
+  const consoles = await consolesByApp(new Map(top.map((i) => [i.appId, i.title]))).catch((e: Error) => {
     console.log(`ranking:steam: IGDB で機種を調べられない（${e.message}）`);
     return undefined;
   });
