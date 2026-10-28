@@ -315,15 +315,23 @@ export function storeReviewPageUrl(appId: number): string {
 }
 
 export function parseStoreReviewScore(html: string): SteamReviewScore | undefined {
-  const m = html.match(/あなたの言語でのユーザーレビュー([\d,]+)件中(\d+)%が好評です/);
+  // 日本語のレビューが十分にあれば日本語の集計、なければすべての言語の集計
+  const ja = html.match(/あなたの言語でのユーザーレビュー([\d,]+)件中(\d+)%が好評です/);
+  const all = html.match(/このゲームのユーザーレビュー([\d,]+)件中(\d+)%が好評です/);
+  const m = ja ?? all;
   if (!m) return undefined;
   const total = Number(m[1]!.replace(/,/g, ''));
   const percent = Number(m[2]);
   if (!total) return undefined;
-  // 「あなたの言語」の行の近くにある評価の表記（例: 非常に好評）
+  // その行の近くにある評価の表記（例: 非常に好評）
   const rest = html.slice(html.indexOf(m[0]));
   const desc = rest.match(/game_review_summary[^"]*"[^>]*>([^<]+)</)?.[1]?.trim() ?? '';
-  return { positive: Math.round((total * percent) / 100), total, desc, language: 'japanese' };
+  return {
+    positive: Math.round((total * percent) / 100),
+    total,
+    desc,
+    ...(ja ? { language: 'japanese' as const } : {}),
+  };
 }
 
 /** コミュニティのレビューの一覧（「役に立った」順、10件ずつ）。robots.txt で禁じられていない */

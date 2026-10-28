@@ -19,7 +19,7 @@ await runMain(async () => {
     userAgent: 'IndieAtlasBot/0.1',
     minIntervalMs: 1_200,
     timeoutMs: 20_000,
-    maxBytes: 200_000,
+    maxBytes: 3_000_000, // ストアのページは 200KB を超える
   });
   const out: PopularityMetrics = structuredClone(repo.popularity);
   let n = 0;
