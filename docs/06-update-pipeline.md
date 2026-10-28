@@ -785,3 +785,20 @@ user メッセージには、今日の日付、タスク、対象のデータ、
 
 - 採用ジョブが、新しい記事とイベントの OGP 画像を WebP（幅720px）で `public/media/` に保存し、作品のヘッダー画像から色を抽出して `data/media/palettes.json` を更新する。
 - 色から作るページの色は、ビルドのときに文字のコントラスト（4.5:1 以上）を満たすように調整する（`scripts/build/game-theme.ts`）。
+
+### 6.13.4 知名度と評価（`npm run metrics:popularity`）
+
+- 週に1回、IGDB のジョブと同じ流れで、Steam のレビュー数（appdetails の `recommendations.total`）と IGDB の評価を `data/metrics/popularity.json` に書く。殿堂入りと人気の区分は [04](04-data-model.md) §4.4.4。
+
+### 6.13.5 Amazon の売れ筋（`npm run amazon:ranking`）
+
+- update.yml のビルドの前に、Creators API で家庭用ゲーム機のソフトを検索し、売れ筋の順位（`browseNodeInfo.websiteSalesRank`）で並べて `.generated/amazon/ranking.json` に書く。プリペイドカード、利用券、本体と周辺機器は除く（`scripts/sources/amazon.ts`）。
+- 商品の情報は取得から24時間以内のものだけを使う。リポジトリには入れず、12時間ごとにビルドし直す。キーがない、または取得に失敗したときは、売れ筋の欄を出さず Amazon のランキングへのリンクだけにする。
+- キーは環境変数 `AMAZON_CREATORS_CREDENTIAL_ID`、`AMAZON_CREATORS_CREDENTIAL_SECRET`、`AMAZON_CREATORS_VERSION`（日本は 3.3）。定期実行では GitHub のシークレットに置く。
+
+### 6.13.6 Steam のレビューの要約（未実装、P4-10）
+
+- 目的: 作品詳細に、利用者のレビューで多く挙がる長所と短所を3〜5行で示す。レビューの文をそのまま載せず、当サイトの言葉で要約する。
+- 取得: Steam の `appreviews/{appId}?json=1`（robots.txt で禁じられていない）から、言語ごとに「役に立った」順の上位50件と、好評の割合（`query_summary`）を取る。2026-10-28 時点、開発の環境からは store のトップへ転送されて取得できなかったため、CI の環境で取得できるかを先に確かめる。
+- 要約: DeepSeek V4.1 Flash で、作品ごとに1回（入力 約1万トークン、出力 約500トークン）。81作品を月に1回作り直しても、OpenCode Go の定額（D-20）の範囲に収まる。
+- 検証: 要約の各行が、2件以上のレビューで述べられていることを LLM の出力の根拠（レビューの ID）で確かめる。好評の割合は数値のまま出し、LLM に作らせない。
