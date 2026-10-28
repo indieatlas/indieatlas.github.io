@@ -28,7 +28,17 @@ await runMain(async () => {
     credentialSecret,
     version: process.env.AMAZON_CREATORS_VERSION || '3.3',
   });
-  const ranking = AmazonRanking.parse(await fetchRanking(client, site.amazonTag, nowIso()));
+  let ranking: AmazonRanking;
+  try {
+    ranking = AmazonRanking.parse(await fetchRanking(client, site.amazonTag, nowIso()));
+  } catch (e) {
+    // アソシエイトの実績が条件に届かないうちは AssociateNotEligible が返る。売れ筋の欄を出さずに続ける
+    if (/AssociateNotEligible/.test((e as Error).message)) {
+      console.log('amazon:ranking: アカウントが Creators API の利用条件をまだ満たしていない（AssociateNotEligible）。取得しない');
+      return;
+    }
+    throw e;
+  }
   fs.mkdirSync(path.dirname(AMAZON_RANKING_FILE), { recursive: true });
   fs.writeFileSync(AMAZON_RANKING_FILE, JSON.stringify(ranking, null, 2) + '\n');
   console.log(`amazon:ranking: ${ranking.items.length} item(s) → ${AMAZON_RANKING_FILE}`);
