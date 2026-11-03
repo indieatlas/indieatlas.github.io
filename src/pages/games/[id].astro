@@ -50,7 +50,9 @@ const related = game.related
   .map((r) => ({ ...r, game: getGame(r.gameId) }))
   .filter((r): r is typeof r & { game: SiteGame } => r.game !== undefined);
 const collections = game.collections.map((id) => getCollection(id)).filter((c) => c !== undefined);
-const primaryStore = game.stores[0];
+// ヘッダーのボタンには、日本で知られたストアだけを出す。すべてのストアは基本情報に並べる
+const headerStores = game.stores.filter((s) => s.store !== 'gog');
+const primaryStore = headerStores[0];
 const showOriginal = game.title.original !== game.title.display;
 const mainAliases = game.aliases.filter((a) => a !== game.title.original && a !== game.title.display).slice(0, 4);
 const amazonUrl = amazonSearchUrl(game.title.display, game.platforms);
@@ -63,6 +65,26 @@ const reviewsLabel =
     : game.steamReviews >= 10_000
       ? `${Math.floor(game.steamReviews / 10_000)}万件以上`
       : `${game.steamReviews.toLocaleString('ja-JP')}件`;
+// ヘッダーの評価。IGDB と Steam を同じ形（点数の箱、出典、件数）で並べる
+const scores: { source: string; value?: number; unit?: string; verdict?: string; count: string }[] = [];
+if (game.ratings?.total !== undefined) {
+  scores.push({
+    source: 'IGDB',
+    value: game.ratings.total,
+    count: game.ratings.totalCount ? `${game.ratings.totalCount.toLocaleString('ja-JP')}件の評価` : '総合評価',
+  });
+}
+if (game.steamScore) {
+  scores.push({
+    source: 'Steam',
+    value: game.steamScore.percent,
+    unit: '%',
+    verdict: game.steamScore.label,
+    count: `${game.steamScore.japaneseOnly ? '日本語のレビュー ' : ''}${game.steamScore.total.toLocaleString('ja-JP')}件`,
+  });
+} else if (reviewsLabel) {
+  scores.push({ source: 'Steam', count: `レビュー ${reviewsLabel}` });
+}
 const filters = pagefindFilters(game);
 const searchTerms = [...new Set([...game.aliases, ...kanaVariants(game.title.display)])];
 
@@ -119,6 +141,7 @@ const description =
     stageTint={game.theme ? '--color-signal' : genreColorName(game.primaryGenre)}
     theme={game.theme}
   >
+    <link slot="head" rel="expect" href="#detail-headline" blocking="render" />
     <article data-pagefind-body>
       <header class="detail-header">
         <DetailBackdrop game={game} />
@@ -134,7 +157,7 @@ const description =
             <div class="keyart">
               <GameImage game={game} eager />
             </div>
-            <div class="headline">
+            <div class="headline" id="detail-headline">
               <h1 data-pagefind-meta="title" data-pagefind-weight="10">
                 {game.title.display}
               </h1>
@@ -154,42 +177,50 @@ const description =
                 ) : (
                   <UnknownValue label="開発者不明" />
                 )}
+                <span class="byline-sep" aria-hidden="true">·</span>
+                <ReleaseLabel release={game.release} year />
               </p>
-              <p class="status">
+              <div class="chips">
                 {prominenceLabel && (
                   <span class:list={['prominence', `is-${game.prominence}`]}>
                     {game.prominence === 'landmark' && <Fragment set:html={CROWN} />}
                     {prominenceLabel}
                   </span>
                 )}
-                <ReleaseLabel release={game.release} />
-                {game.ratings?.total !== undefined && (
-                  <span class="rating-chip" title={`IGDB の評価（${game.ratings.totalCount}件）`}>
-                    <span class:list={['score', scoreClass(game.ratings.total)]}>{game.ratings.total}</span>
-                    IGDB
-                  </span>
-                )}
-                {game.steamScore ? (
-                  <span class="reviews">
-                    Steam{game.steamScore.japaneseOnly && 'の日本語のレビュー'} <strong>{game.steamScore.label}</strong>（好評{' '}
-                    {game.steamScore.percent}%・{game.steamScore.total.toLocaleString('ja-JP')}件）
-                  </span>
-                ) : (
-                  reviewsLabel && <span class="reviews">Steam レビュー {reviewsLabel}</span>
-                )}
-              </p>
-              <div class="chips">
                 <PlatformList platforms={game.platforms} />
                 <JapaneseSupportBadge support={game.japaneseSupport} />
                 {game.madeInJapan && <span class="made-jp">国産</span>}
               </div>
+              {scores.length > 0 && (
+                <ul class="scores" aria-label="評価">
+                  {scores.map((sc) => (
+                    <li>
+                      {sc.value !== undefined ? (
+                        <span class:list={['score', scoreClass(sc.value)]}>
+                          {sc.value}
+                          {sc.unit && <small>{sc.unit}</small>}
+                        </span>
+                      ) : (
+                        <span class="score is-none" aria-hidden="true">—</span>
+                      )}
+                      <span class="score-text">
+                        <span class="score-source">
+                          {sc.source}
+                          {sc.verdict && <strong>{sc.verdict}</strong>}
+                        </span>
+                        <span class="score-count">{sc.count}</span>
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              )}
               <div class="cta">
                 {primaryStore && (
                   <ExternalLink href={primaryStore.url} class="button button-primary store-button">
-                    {STORE_LABELS[primaryStore.store]}で見る
+                    {STORE_LABELS[primaryStore.store]}
                   </ExternalLink>
                 )}
-                {game.stores.slice(1, 3).map((s) => (
+                {headerStores.slice(1, 3).map((s) => (
                   <ExternalLink href={s.url} class="button">
                     {STORE_LABELS[s.store]}
                   </ExternalLink>
@@ -253,13 +284,17 @@ const description =
               <ul class="review-points">
                 {game.reviewSummary.pros.map((p) => (
                   <li class="pro">
-                    <span class="mark" aria-label="長所">＋</span>
+                    <span class="mark" role="img" aria-label="長所">
+                      <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M6 1.5v9M1.5 6h9" /></svg>
+                    </span>
                     {p}
                   </li>
                 ))}
                 {game.reviewSummary.cons.map((p) => (
                   <li class="con">
-                    <span class="mark" aria-label="短所">－</span>
+                    <span class="mark" role="img" aria-label="短所">
+                      <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1.5 6h9" /></svg>
+                    </span>
                     {p}
                   </li>
                 ))}
@@ -590,16 +625,8 @@ const description =
     margin: 0 0 var(--space-2);
   }
   .byline {
-    display: inline-block;
-    margin: 0 0 var(--space-2);
-    font-weight: 700;
-  }
-  .status {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: var(--space-2) var(--space-3);
     margin: 0 0 var(--space-3);
+    font-weight: 700;
   }
   .prominence {
     display: inline-flex;
@@ -621,14 +648,6 @@ const description =
     background: transparent;
     color: var(--color-text);
     box-shadow: inset 0 0 0 1px var(--color-border-strong);
-  }
-  .rating-chip {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: var(--text-small);
-    font-weight: 700;
-    color: var(--color-text-muted);
   }
   .score {
     display: inline-grid;
@@ -664,8 +683,65 @@ const description =
     align-items: center;
     gap: var(--space-2);
   }
-  .reviews {
+  .byline-sep {
+    margin-inline: var(--space-2);
+    color: var(--color-text-muted);
+  }
+  .byline :global(.release-label) {
+    font-weight: 400;
+    color: var(--color-text-muted);
+  }
+  .byline :global(.release-label.status-upcoming),
+  .byline :global(.release-label.status-early-access) {
+    color: var(--color-accent-warm);
+  }
+  .scores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3) var(--space-6);
+    margin: 0 0 var(--space-5);
+    padding: 0;
+    list-style: none;
+  }
+  .scores li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+  .scores .score {
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+    min-width: 3.25rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1.25rem;
+  }
+  .score small {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    margin-left: 1px;
+  }
+  .score.is-none {
+    background: var(--color-surface-raised);
+    color: var(--color-text-muted);
+    box-shadow: inset 0 0 0 1px var(--color-border-strong);
+  }
+  .score-text {
+    display: grid;
+    line-height: 1.35;
+  }
+  .score-source {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2);
+    font-weight: 700;
+  }
+  .score-source strong {
     font-size: var(--text-small);
+  }
+  .score-count {
+    font-size: var(--text-xsmall);
     color: var(--color-text-muted);
   }
   .byline a {
@@ -689,7 +765,7 @@ const description =
     flex-wrap: wrap;
     gap: var(--space-2);
     align-items: center;
-    margin-bottom: var(--space-5);
+    margin-bottom: var(--space-4);
   }
   .cta {
     display: flex;
@@ -743,15 +819,23 @@ const description =
   .review-points li {
     display: flex;
     gap: var(--space-3);
-    align-items: baseline;
+    align-items: flex-start;
   }
   .review-points .mark {
     flex: none;
-    display: inline-grid;
+    display: grid;
     place-items: center;
     width: 1.5rem;
     height: 1.5rem;
-    font-weight: 800;
+    /* 1行目の文字の高さの中央にそろえる */
+    margin-top: calc((1lh - 1.5rem) / 2);
+  }
+  .review-points .mark svg {
+    width: 0.75rem;
+    height: 0.75rem;
+    stroke: currentColor;
+    stroke-width: 2.2;
+    fill: none;
   }
   .review-points .pro .mark {
     background: #1f7a4d;

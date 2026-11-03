@@ -59,7 +59,7 @@ export const STORE_LABELS: Record<Store, string> = {
   itch: 'itch.io',
   epic: 'Epic Games Store',
   gog: 'GOG',
-  'nintendo-eshop': 'ニンテンドーeショップ',
+  'nintendo-eshop': 'Nintendo eShop',
   'playstation-store': 'PlayStation Store',
   'microsoft-store': 'Microsoft Store',
   'app-store': 'App Store',

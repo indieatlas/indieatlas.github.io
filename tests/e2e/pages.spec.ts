@@ -90,7 +90,9 @@ test('殿堂入りと人気の作品は一覧と詳細で見分けられる', as
   await expect(page.locator('a.game-card[data-game-id="g_000002"] .game-card__badge')).toHaveText('人気');
   await page.goto('games/g_000001/');
   await expect(page.locator('.headline .prominence')).toHaveText(/殿堂入り/);
-  await expect(page.locator('.headline .reviews')).toContainText('圧倒的に好評（好評 95%');
+  const steam = page.locator('.headline .scores li', { hasText: 'Steam' });
+  await expect(steam.locator('.score')).toHaveText('95%');
+  await expect(steam).toContainText('圧倒的に好評');
 });
 
 test('作品詳細: Steam のレビューの要約を長所と短所に分けて出す', async ({ page }) => {

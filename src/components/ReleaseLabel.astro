@@ -5,11 +5,23 @@ import UnknownValue from './UnknownValue.astro';
 interface Props {
   release: SiteGame['release'];
   compact?: boolean;
+  year?: boolean; // 年だけにする（作品詳細のヘッダー。日付は基本情報に出す）
 }
-const { release, compact = false } = Astro.props;
+const { release, compact = false, year = false } = Astro.props;
 const label = release?.overall.label;
-const short =
-  compact && label
+const y = release?.overall.sortKey?.slice(0, 4);
+const yearLabel = !release
+  ? undefined
+  : release.overall.status === 'released'
+    ? y ? `${y}年発売` : '発売中'
+    : release.overall.status === 'early-access'
+      ? y ? `${y}年から早期アクセス` : label
+      : release.overall.status === 'upcoming'
+        ? y ? `${y}年発売予定` : label
+        : label;
+const short = year
+  ? yearLabel
+  : compact && label
     ? label.replace(/^発売中（(.+) 発売）$/, '$1 発売').replace(/^発売予定（(.+)）$/, '$1 発売予定')
     : label;
 ---
