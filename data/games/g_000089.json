@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000089",
+  "status": "published",
+  "title": {
+    "display": "Can 'Em All",
+    "original": "Can 'Em All",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5133900,
+    "igdbId": 425026
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5364590",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5364590",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000115"
+  ],
+  "publisherIds": [
+    "dev_000115"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5133900/",
+            "retrievedAt": "2026-11-03T07:44:19Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:801d6f9e99a3a8875e726637791b595ecc63ec4dbe4c7792e98a4d0e5009510f"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-03T07:44:19Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5133900/",
+        "retrievedAt": "2026-11-03T07:44:19Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:801d6f9e99a3a8875e726637791b595ecc63ec4dbe4c7792e98a4d0e5009510f"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5133900/",
+        "retrievedAt": "2026-11-03T07:44:19Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:801d6f9e99a3a8875e726637791b595ecc63ec4dbe4c7792e98a4d0e5009510f"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/can-em-all",
+        "retrievedAt": "2026-11-03T07:51:17Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5133900/",
+        "retrievedAt": "2026-11-03T07:44:19Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:801d6f9e99a3a8875e726637791b595ecc63ec4dbe4c7792e98a4d0e5009510f"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5133900/",
+        "retrievedAt": "2026-11-03T07:44:19Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:801d6f9e99a3a8875e726637791b595ecc63ec4dbe4c7792e98a4d0e5009510f"
+      }
+    }
+  ],
+  "createdAt": "2026-11-03T07:44:19Z",
+  "addedAt": "2026-11-03",
+  "updatedAt": "2026-11-03T07:51:17Z",
+  "createdByRun": "local-20261103-135409-refresh"
+}

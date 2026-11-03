@@ -1,0 +1,546 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000090",
+  "claims": [
+    {
+      "id": "c_665df8232f8a7d84",
+      "gameId": "g_000090",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3432860/",
+          "retrievedAt": "2026-11-03T07:44:28Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6ebf09cba9ffc4d55b1407d086fef11ac889f2e59013c7e77b35783bf6fedc97"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:44:28Z",
+      "createdAt": "2026-11-03T07:44:28Z",
+      "updatedAt": "2026-11-03T07:44:28Z",
+      "lastCheckedAt": "2026-11-03T07:44:28Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 5
+        },
+        "rawText": "5 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_eb4d7f1173b3cbc2",
+      "gameId": "g_000090",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3432860/",
+          "retrievedAt": "2026-11-03T07:44:34Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c15588b492d1900bd89afddbe7aafcc52f9ceb415bad0698382a4fc58087673e"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:44:28Z",
+      "createdAt": "2026-11-03T07:44:28Z",
+      "updatedAt": "2026-11-03T07:44:28Z",
+      "lastCheckedAt": "2026-11-03T07:44:34Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_93bd23bd8ce5148a",
+      "gameId": "g_000090",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3432860/",
+          "retrievedAt": "2026-11-03T07:44:28Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6ebf09cba9ffc4d55b1407d086fef11ac889f2e59013c7e77b35783bf6fedc97"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:44:28Z",
+      "createdAt": "2026-11-03T07:44:28Z",
+      "updatedAt": "2026-11-03T07:44:28Z",
+      "lastCheckedAt": "2026-11-03T07:44:28Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_eb78fed8741cf7a4",
+      "gameId": "g_000090",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3432860/",
+          "retrievedAt": "2026-11-03T07:46:12Z",
+          "quote": "認知異常×本格ミステリーのデスゲーム推理アドベンチャー。",
+          "locator": "steam:appdetails.short_description",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:46:12Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "summary",
+      "value": {
+        "ja": "認知の異常で歪められた殺人現場で真実を探る推理アドベンチャー。嘘がつけない、視界の左半分が見えないといった異常なルールを乗り越えて、真犯人を突き止める。"
+      }
+    },
+    {
+      "id": "c_407f8d814790ffc3",
+      "gameId": "g_000090",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3432860/",
+          "retrievedAt": "2026-11-03T07:46:12Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:46:12Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_6236158bd6b2b73d",
+      "gameId": "g_000090",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3432860/",
+          "retrievedAt": "2026-11-03T07:46:12Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:46:12Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_b1623a277cba16bf",
+      "gameId": "g_000090",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3432860/",
+          "retrievedAt": "2026-11-03T07:46:12Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:46:12Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_0f0dbf6587536ade",
+      "gameId": "g_000090",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3432860/",
+          "retrievedAt": "2026-11-03T07:44:28Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6ebf09cba9ffc4d55b1407d086fef11ac889f2e59013c7e77b35783bf6fedc97"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:44:28Z",
+      "createdAt": "2026-11-03T07:44:28Z",
+      "updatedAt": "2026-11-03T07:44:28Z",
+      "lastCheckedAt": "2026-11-03T07:44:28Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3432860/"
+      }
+    },
+    {
+      "id": "c_830f8c32cea86021",
+      "gameId": "g_000090",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3432860/",
+          "retrievedAt": "2026-11-03T07:44:28Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6ebf09cba9ffc4d55b1407d086fef11ac889f2e59013c7e77b35783bf6fedc97"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:44:28Z",
+      "createdAt": "2026-11-03T07:44:28Z",
+      "updatedAt": "2026-11-03T07:44:28Z",
+      "lastCheckedAt": "2026-11-03T07:44:28Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3432860/33e3be2e4a8757667a6d1faa894ab7ec954c6c01/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "病能探偵 のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Thermite Games"
+        }
+      }
+    },
+    {
+      "id": "c_1b2dd523c4e19e1d",
+      "gameId": "g_000090",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/psycho-sleuth",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scx6tn.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "病能探偵 のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_21cf44e962ee513b",
+      "gameId": "g_000090",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/psycho-sleuth",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scx6tm.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "病能探偵 のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_29b0fe1eb93c5c79",
+      "gameId": "g_000090",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/psycho-sleuth",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scx6tq.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "病能探偵 のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_391c962604c8450e",
+      "gameId": "g_000090",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/psycho-sleuth",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scx6tl.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "病能探偵 のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_814a09f6296d5767",
+      "gameId": "g_000090",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/psycho-sleuth",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scx6tr.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "病能探偵 のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_c84c838a71971625",
+      "gameId": "g_000090",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/psycho-sleuth",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scx6to.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "病能探偵 のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_dadbea5f40148baf",
+      "gameId": "g_000090",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/psycho-sleuth",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scx6tp.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "病能探偵 のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    }
+  ]
+}

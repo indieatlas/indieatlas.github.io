@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000091",
+  "status": "published",
+  "title": {
+    "display": "Selaco",
+    "original": "Selaco",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1592280,
+    "igdbId": 145828
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3047790",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://selacogame.com/",
+  "developerIds": [
+    "dev_000119"
+  ],
+  "publisherIds": [
+    "dev_000119"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1592280/",
+            "retrievedAt": "2026-11-03T07:44:37Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:b8c7a5e94c44a3db88f924b763cc486f816593caf7ee4f24a41c527a6f4ae745"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-03T07:44:37Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1592280/",
+        "retrievedAt": "2026-11-03T07:44:37Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b8c7a5e94c44a3db88f924b763cc486f816593caf7ee4f24a41c527a6f4ae745"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1592280/",
+        "retrievedAt": "2026-11-03T07:44:37Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b8c7a5e94c44a3db88f924b763cc486f816593caf7ee4f24a41c527a6f4ae745"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/selaco",
+        "retrievedAt": "2026-11-03T07:51:17Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1592280/",
+        "retrievedAt": "2026-11-03T07:44:37Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b8c7a5e94c44a3db88f924b763cc486f816593caf7ee4f24a41c527a6f4ae745"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1592280/",
+        "retrievedAt": "2026-11-03T07:44:37Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b8c7a5e94c44a3db88f924b763cc486f816593caf7ee4f24a41c527a6f4ae745"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1592280/",
+        "retrievedAt": "2026-11-03T07:44:37Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b8c7a5e94c44a3db88f924b763cc486f816593caf7ee4f24a41c527a6f4ae745"
+      }
+    }
+  ],
+  "createdAt": "2026-11-03T07:44:37Z",
+  "addedAt": "2026-11-03",
+  "updatedAt": "2026-11-03T07:51:17Z",
+  "createdByRun": "local-20261103-135409-refresh"
+}

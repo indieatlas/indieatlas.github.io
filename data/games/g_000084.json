@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000084",
+  "status": "published",
+  "title": {
+    "display": "Message From Aliens",
+    "original": "Message From Aliens",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1858720,
+    "igdbId": 415077
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5195140",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5195140",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000109"
+  ],
+  "publisherIds": [
+    "dev_000109"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1858720/",
+            "retrievedAt": "2026-11-03T07:43:34Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:c910563420a6525ca9bae3d86e7fe9f6166b28c7f3eeccad95e76c5ab6452f0e"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-03T07:43:34Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1858720/",
+        "retrievedAt": "2026-11-03T07:43:34Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c910563420a6525ca9bae3d86e7fe9f6166b28c7f3eeccad95e76c5ab6452f0e"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1858720/",
+        "retrievedAt": "2026-11-03T07:43:34Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c910563420a6525ca9bae3d86e7fe9f6166b28c7f3eeccad95e76c5ab6452f0e"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/message-from-aliens",
+        "retrievedAt": "2026-11-03T07:51:17Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1858720/",
+        "retrievedAt": "2026-11-03T07:43:34Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c910563420a6525ca9bae3d86e7fe9f6166b28c7f3eeccad95e76c5ab6452f0e"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1858720/",
+        "retrievedAt": "2026-11-03T07:43:34Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c910563420a6525ca9bae3d86e7fe9f6166b28c7f3eeccad95e76c5ab6452f0e"
+      }
+    }
+  ],
+  "createdAt": "2026-11-03T07:43:34Z",
+  "addedAt": "2026-11-03",
+  "updatedAt": "2026-11-03T07:51:17Z",
+  "createdByRun": "local-20261103-135409-refresh"
+}

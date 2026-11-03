@@ -1,0 +1,507 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000085",
+  "claims": [
+    {
+      "id": "c_913bbeb6ff837112",
+      "gameId": "g_000085",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3498720/",
+          "retrievedAt": "2026-11-03T07:43:43Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b3e85700a555d28fe47532a9a0a339537601433a2fc02fa20daa399f65dc62a9"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:43:43Z",
+      "createdAt": "2026-11-03T07:43:43Z",
+      "updatedAt": "2026-11-03T07:43:43Z",
+      "lastCheckedAt": "2026-11-03T07:43:43Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "year",
+          "year": 2027
+        },
+        "rawText": "2027"
+      }
+    },
+    {
+      "id": "c_c2e6c9b042ce450c",
+      "gameId": "g_000085",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3498720/",
+          "retrievedAt": "2026-11-03T07:43:49Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3614d6b401e5fd536d77c9d707b0539a04a7b1779ba8227e4c7800b5d7c0fb2a"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:43:43Z",
+      "createdAt": "2026-11-03T07:43:43Z",
+      "updatedAt": "2026-11-03T07:43:43Z",
+      "lastCheckedAt": "2026-11-03T07:43:49Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_633ebeffca2ba224",
+      "gameId": "g_000085",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3498720/",
+          "retrievedAt": "2026-11-03T07:43:43Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b3e85700a555d28fe47532a9a0a339537601433a2fc02fa20daa399f65dc62a9"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:43:43Z",
+      "createdAt": "2026-11-03T07:43:43Z",
+      "updatedAt": "2026-11-03T07:43:43Z",
+      "lastCheckedAt": "2026-11-03T07:43:43Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_d46d6dd39ac6506d",
+      "gameId": "g_000085",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3498720/",
+          "retrievedAt": "2026-11-03T07:45:54Z",
+          "quote": "1998年、東京。終わらない雨、滅びを望む少女。孤独な若者たちの選択が、世界の運命を決める。",
+          "locator": "steam:appdetails.short_description",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:45:54Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "summary",
+      "value": {
+        "ja": "1998年の東京を舞台に、降り止まない雨の中で世界の滅びを望む少女と出会うアドベンチャー。孤独な若者たちの選択が、世界の行く末を左右する。"
+      }
+    },
+    {
+      "id": "c_04ccbe8f1481f8b1",
+      "gameId": "g_000085",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3498720/",
+          "retrievedAt": "2026-11-03T07:45:54Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:45:54Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "tag",
+      "value": {
+        "tagId": "japan"
+      }
+    },
+    {
+      "id": "c_83e5395a3f860295",
+      "gameId": "g_000085",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3498720/",
+          "retrievedAt": "2026-11-03T07:45:54Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:45:54Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_85556b93be5af8b4",
+      "gameId": "g_000085",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3498720/",
+          "retrievedAt": "2026-11-03T07:45:54Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:45:54Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_581ae610cae21994",
+      "gameId": "g_000085",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3498720/",
+          "retrievedAt": "2026-11-03T07:43:43Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b3e85700a555d28fe47532a9a0a339537601433a2fc02fa20daa399f65dc62a9"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:43:43Z",
+      "createdAt": "2026-11-03T07:43:43Z",
+      "updatedAt": "2026-11-03T07:43:43Z",
+      "lastCheckedAt": "2026-11-03T07:43:43Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3498720/"
+      }
+    },
+    {
+      "id": "c_ab7b758875c10758",
+      "gameId": "g_000085",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3498720/",
+          "retrievedAt": "2026-11-03T07:43:43Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b3e85700a555d28fe47532a9a0a339537601433a2fc02fa20daa399f65dc62a9"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:43:43Z",
+      "createdAt": "2026-11-03T07:43:43Z",
+      "updatedAt": "2026-11-03T07:43:43Z",
+      "lastCheckedAt": "2026-11-03T07:43:43Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3498720/5ec3b5ee4480973fbf0b6e6ff29333818f701ead/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Rain98 のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "C#4R4CT3R"
+        }
+      }
+    },
+    {
+      "id": "c_07ab9586df57277c",
+      "gameId": "g_000085",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/rain98",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scw91z.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Rain98 のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_283d006a24c2b339",
+      "gameId": "g_000085",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/rain98",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scw921.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Rain98 のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_323acf86f7c74b47",
+      "gameId": "g_000085",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/rain98",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scw920.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Rain98 のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_5354e1b0a03a7c4c",
+      "gameId": "g_000085",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/rain98",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scw924.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Rain98 のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_a1eb98a203254f4f",
+      "gameId": "g_000085",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/rain98",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scw922.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Rain98 のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_c8b71189cb6f133d",
+      "gameId": "g_000085",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/rain98",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scw923.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Rain98 のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    }
+  ]
+}

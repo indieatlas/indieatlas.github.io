@@ -1,0 +1,622 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000086",
+  "claims": [
+    {
+      "id": "c_9143d9f8fc4dfd31",
+      "gameId": "g_000086",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2060160/",
+          "retrievedAt": "2026-11-03T07:43:52Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:355b460a69a07a2cd99674a67073a0925a603ee1f97e1844dd2ab1363d14eca5"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:43:52Z",
+      "createdAt": "2026-11-03T07:43:52Z",
+      "updatedAt": "2026-11-03T07:43:52Z",
+      "lastCheckedAt": "2026-11-03T07:45:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 10,
+          "day": 10
+        },
+        "rawText": "10 Oct, 2025"
+      }
+    },
+    {
+      "id": "c_a62313f9e172e8f2",
+      "gameId": "g_000086",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2060160/",
+          "retrievedAt": "2026-11-03T07:43:52Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:355b460a69a07a2cd99674a67073a0925a603ee1f97e1844dd2ab1363d14eca5"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:43:52Z",
+      "createdAt": "2026-11-03T07:43:52Z",
+      "updatedAt": "2026-11-03T07:43:52Z",
+      "lastCheckedAt": "2026-11-03T07:45:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 10,
+          "day": 10
+        },
+        "rawText": "10 Oct, 2025"
+      }
+    },
+    {
+      "id": "c_be67f4853e4984ef",
+      "gameId": "g_000086",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2060160/",
+          "retrievedAt": "2026-11-03T07:43:58Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8cbd6099de71f6de3c9ce3d969c3793ee2937435893bd3f6369256053688009b"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:43:52Z",
+      "createdAt": "2026-11-03T07:43:52Z",
+      "updatedAt": "2026-11-03T07:43:52Z",
+      "lastCheckedAt": "2026-11-03T07:45:23Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_fa66add12c0cad73",
+      "gameId": "g_000086",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2060160/",
+          "retrievedAt": "2026-11-03T07:43:52Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:355b460a69a07a2cd99674a67073a0925a603ee1f97e1844dd2ab1363d14eca5"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:43:52Z",
+      "createdAt": "2026-11-03T07:43:52Z",
+      "updatedAt": "2026-11-03T07:43:52Z",
+      "lastCheckedAt": "2026-11-03T07:45:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_c0e5f25501247c52",
+      "gameId": "g_000086",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2060160/",
+          "retrievedAt": "2026-11-03T07:45:58Z",
+          "quote": "ドローンをプログラムし、最適化して農場を自動化し、仕事をするのを見守りましょう。",
+          "locator": "steam:appdetails.short_description",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:45:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "summary",
+      "value": {
+        "ja": "ドローンにプログラムを書いて農場の作業を自動化し、効率を高めていくプログラミングゲーム。集めた資源で新しい技術を解放しながら、問題解決とコーディングの力を磨いていく。"
+      }
+    },
+    {
+      "id": "c_210ac552d3c41987",
+      "gameId": "g_000086",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2060160/",
+          "retrievedAt": "2026-11-03T07:45:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:45:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_407c1681ee874ff5",
+      "gameId": "g_000086",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2060160/",
+          "retrievedAt": "2026-11-03T07:45:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:45:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "tag",
+      "value": {
+        "tagId": "farming-sim"
+      }
+    },
+    {
+      "id": "c_7a0b152058e837db",
+      "gameId": "g_000086",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2060160/",
+          "retrievedAt": "2026-11-03T07:45:58Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:45:58Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "tag",
+      "value": {
+        "tagId": "automation"
+      }
+    },
+    {
+      "id": "c_5afd860556f5bfc9",
+      "gameId": "g_000086",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2060160/",
+          "retrievedAt": "2026-11-03T07:43:52Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:355b460a69a07a2cd99674a67073a0925a603ee1f97e1844dd2ab1363d14eca5"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:43:52Z",
+      "createdAt": "2026-11-03T07:43:52Z",
+      "updatedAt": "2026-11-03T07:43:52Z",
+      "lastCheckedAt": "2026-11-03T07:45:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2060160/"
+      }
+    },
+    {
+      "id": "c_03858f8a6e0790c1",
+      "gameId": "g_000086",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2060160/",
+          "retrievedAt": "2026-11-03T07:45:17Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6f420844ed8dda2ff8e925ba66ab9ebc22e3daadd4d06fbfc322f5487fcc280c"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:45:17Z",
+      "createdAt": "2026-11-03T07:45:17Z",
+      "updatedAt": "2026-11-03T07:45:17Z",
+      "lastCheckedAt": "2026-11-03T07:45:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2060160/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "農家は Replace() されました のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Metaroot"
+        }
+      }
+    },
+    {
+      "id": "c_02af9da5ec502bf9",
+      "gameId": "g_000086",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/the-farmer-was-replaced",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scz7rx.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "農家は Replace() されました のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_68eb168bfbc0991a",
+      "gameId": "g_000086",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/the-farmer-was-replaced",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scz7s1.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "農家は Replace() されました のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_70cc1caf5920ff95",
+      "gameId": "g_000086",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/the-farmer-was-replaced",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scz7s4.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "農家は Replace() されました のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_7a6541d9f1a69fd5",
+      "gameId": "g_000086",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/the-farmer-was-replaced",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scz7s3.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "農家は Replace() されました のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_cc6924097194a6cb",
+      "gameId": "g_000086",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/the-farmer-was-replaced",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scz7s0.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "農家は Replace() されました のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_d596bb28592e79d8",
+      "gameId": "g_000086",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/the-farmer-was-replaced",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scz7rw.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "農家は Replace() されました のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_e7af971af3d06c26",
+      "gameId": "g_000086",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/the-farmer-was-replaced",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scz7rz.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "農家は Replace() されました のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_f67d8d18bc33bdc6",
+      "gameId": "g_000086",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/the-farmer-was-replaced",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scz7ry.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "農家は Replace() されました のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    }
+  ]
+}

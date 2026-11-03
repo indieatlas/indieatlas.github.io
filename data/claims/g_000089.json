@@ -1,0 +1,583 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000089",
+  "claims": [
+    {
+      "id": "c_a0f78ea4d735e569",
+      "gameId": "g_000089",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5133900/",
+          "retrievedAt": "2026-11-03T07:44:19Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:801d6f9e99a3a8875e726637791b595ecc63ec4dbe4c7792e98a4d0e5009510f"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:44:19Z",
+      "createdAt": "2026-11-03T07:44:19Z",
+      "updatedAt": "2026-11-03T07:44:19Z",
+      "lastCheckedAt": "2026-11-03T07:44:19Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 10,
+          "day": 30
+        },
+        "rawText": "30 Oct, 2026"
+      }
+    },
+    {
+      "id": "c_9128c30f8dba3a0a",
+      "gameId": "g_000089",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5133900/",
+          "retrievedAt": "2026-11-03T07:44:25Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:df9d090c3e39f95b9b34e353cd24952c2bc2850891a12b80130cdf646bf3e8e7"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:44:19Z",
+      "createdAt": "2026-11-03T07:44:19Z",
+      "updatedAt": "2026-11-03T07:44:19Z",
+      "lastCheckedAt": "2026-11-03T07:44:25Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "no",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_40148e031fb983d7",
+      "gameId": "g_000089",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5133900/",
+          "retrievedAt": "2026-11-03T07:44:19Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:801d6f9e99a3a8875e726637791b595ecc63ec4dbe4c7792e98a4d0e5009510f"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:44:19Z",
+      "createdAt": "2026-11-03T07:44:19Z",
+      "updatedAt": "2026-11-03T07:44:19Z",
+      "lastCheckedAt": "2026-11-03T07:44:19Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_6e915fcded12f4e2",
+      "gameId": "g_000089",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5133900/",
+          "retrievedAt": "2026-11-03T07:46:09Z",
+          "quote": "A juicy first-person incremental game about turning cute creatures into cans.",
+          "locator": "steam:appdetails.short_description",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:46:09Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "summary",
+      "value": {
+        "ja": "かわいい生き物を倒して集め、缶詰にして売る一人称視点のインクリメンタルゲーム。稼いだお金で武器や機械を強化し、生産量をどんどん増やしていく。"
+      }
+    },
+    {
+      "id": "c_3211bf2e70054a49",
+      "gameId": "g_000089",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5133900/",
+          "retrievedAt": "2026-11-03T07:46:09Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:46:09Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_b429ddf1b0d7a405",
+      "gameId": "g_000089",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5133900/",
+          "retrievedAt": "2026-11-03T07:46:09Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:46:09Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_c550191a0888e55d",
+      "gameId": "g_000089",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5133900/",
+          "retrievedAt": "2026-11-03T07:46:09Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:46:09Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_611934a1f25d5bd3",
+      "gameId": "g_000089",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5133900/",
+          "retrievedAt": "2026-11-03T07:44:19Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:801d6f9e99a3a8875e726637791b595ecc63ec4dbe4c7792e98a4d0e5009510f"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:44:19Z",
+      "createdAt": "2026-11-03T07:44:19Z",
+      "updatedAt": "2026-11-03T07:44:19Z",
+      "lastCheckedAt": "2026-11-03T07:44:19Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5133900/"
+      }
+    },
+    {
+      "id": "c_e67d5a50044df37e",
+      "gameId": "g_000089",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5133900/",
+          "retrievedAt": "2026-11-03T07:44:19Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:801d6f9e99a3a8875e726637791b595ecc63ec4dbe4c7792e98a4d0e5009510f"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:44:19Z",
+      "createdAt": "2026-11-03T07:44:19Z",
+      "updatedAt": "2026-11-03T07:44:19Z",
+      "lastCheckedAt": "2026-11-03T07:44:19Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5133900/19aa14ebe3720e02f7f8c720abbf9749cf36967f/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Can 'Em All のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "LuisDev"
+        }
+      }
+    },
+    {
+      "id": "c_1317efa5a9c839ff",
+      "gameId": "g_000089",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/can-em-all",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc164p3.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Can 'Em All のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_1725c8a49b03feee",
+      "gameId": "g_000089",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/can-em-all",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc164p8.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Can 'Em All のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_3a83bd6adb0511af",
+      "gameId": "g_000089",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/can-em-all",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc164p1.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Can 'Em All のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_4fb5305578c75b21",
+      "gameId": "g_000089",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/can-em-all",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc164p7.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Can 'Em All のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_655b7b9ea9830cf6",
+      "gameId": "g_000089",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/can-em-all",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc164p0.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Can 'Em All のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_7e7967b5adf5053f",
+      "gameId": "g_000089",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/can-em-all",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc164p5.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Can 'Em All のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_cd0f9a9723559dcc",
+      "gameId": "g_000089",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/can-em-all",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc164p4.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Can 'Em All のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_fafc2869d53ff9cb",
+      "gameId": "g_000089",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/can-em-all",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc164p2.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Can 'Em All のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    }
+  ]
+}

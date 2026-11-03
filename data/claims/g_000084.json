@@ -1,0 +1,546 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000084",
+  "claims": [
+    {
+      "id": "c_91d701bf3fbe64b5",
+      "gameId": "g_000084",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1858720/",
+          "retrievedAt": "2026-11-03T07:43:34Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c910563420a6525ca9bae3d86e7fe9f6166b28c7f3eeccad95e76c5ab6452f0e"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:43:34Z",
+      "createdAt": "2026-11-03T07:43:34Z",
+      "updatedAt": "2026-11-03T07:43:34Z",
+      "lastCheckedAt": "2026-11-03T07:43:34Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 1
+        },
+        "rawText": "1 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_501ce0ae6b019e76",
+      "gameId": "g_000084",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1858720/",
+          "retrievedAt": "2026-11-03T07:43:40Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bc99616a524418a297bf9c87b2a24bb6a50ad7623c80f3755512bd1631ffd5dd"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:43:34Z",
+      "createdAt": "2026-11-03T07:43:34Z",
+      "updatedAt": "2026-11-03T07:43:34Z",
+      "lastCheckedAt": "2026-11-03T07:43:40Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_ced54e15de6a66cb",
+      "gameId": "g_000084",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1858720/",
+          "retrievedAt": "2026-11-03T07:43:34Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c910563420a6525ca9bae3d86e7fe9f6166b28c7f3eeccad95e76c5ab6452f0e"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:43:34Z",
+      "createdAt": "2026-11-03T07:43:34Z",
+      "updatedAt": "2026-11-03T07:43:34Z",
+      "lastCheckedAt": "2026-11-03T07:43:34Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_fe8638ced5d8d989",
+      "gameId": "g_000084",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1858720/",
+          "retrievedAt": "2026-11-03T07:45:51Z",
+          "quote": "Explore an alien logographic writing system with over 1,000 glyphs, from their number system to their culture and thought.",
+          "locator": "steam:appdetails.short_description",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:45:51Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "summary",
+      "value": {
+        "ja": "1,000を超える記号からなる異星人の表語文字を、数の体系に始まり、彼らの文化や考え方に至るまで読み解いていく、SFの言語解読パズルゲーム。"
+      }
+    },
+    {
+      "id": "c_36e470cfd3e28025",
+      "gameId": "g_000084",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1858720/",
+          "retrievedAt": "2026-11-03T07:45:51Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:45:51Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "tag",
+      "value": {
+        "tagId": "sci-fi"
+      }
+    },
+    {
+      "id": "c_a2a51810180bdcc0",
+      "gameId": "g_000084",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1858720/",
+          "retrievedAt": "2026-11-03T07:45:51Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:45:51Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_b23deff36e852686",
+      "gameId": "g_000084",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1858720/",
+          "retrievedAt": "2026-11-03T07:45:51Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:45:51Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_393cd41cbc9c3899",
+      "gameId": "g_000084",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1858720/",
+          "retrievedAt": "2026-11-03T07:43:34Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c910563420a6525ca9bae3d86e7fe9f6166b28c7f3eeccad95e76c5ab6452f0e"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:43:34Z",
+      "createdAt": "2026-11-03T07:43:34Z",
+      "updatedAt": "2026-11-03T07:43:34Z",
+      "lastCheckedAt": "2026-11-03T07:43:34Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1858720/"
+      }
+    },
+    {
+      "id": "c_92f1d159783d4f80",
+      "gameId": "g_000084",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1858720/",
+          "retrievedAt": "2026-11-03T07:43:34Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c910563420a6525ca9bae3d86e7fe9f6166b28c7f3eeccad95e76c5ab6452f0e"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:43:34Z",
+      "createdAt": "2026-11-03T07:43:34Z",
+      "updatedAt": "2026-11-03T07:43:34Z",
+      "lastCheckedAt": "2026-11-03T07:43:34Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1858720/bd726485ace9f349ccaccacb01788053d65b50ad/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Message From Aliens のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Artless Games"
+        }
+      }
+    },
+    {
+      "id": "c_1102bf384d80f22b",
+      "gameId": "g_000084",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/message-from-aliens",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc14wq6.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Message From Aliens のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_6308d5e03f68cc72",
+      "gameId": "g_000084",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/message-from-aliens",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc14wq4.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Message From Aliens のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_761ccee657226a2d",
+      "gameId": "g_000084",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/message-from-aliens",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc14wq1.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Message From Aliens のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_872a26dbabfb9c41",
+      "gameId": "g_000084",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/message-from-aliens",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc14wq7.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Message From Aliens のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_ac5c98bd20fae1e8",
+      "gameId": "g_000084",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/message-from-aliens",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc14wqa.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Message From Aliens のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_b5402d7e50afc7ec",
+      "gameId": "g_000084",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/message-from-aliens",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc14wq3.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Message From Aliens のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_dfbf9d2f9f3fc56a",
+      "gameId": "g_000084",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/message-from-aliens",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc14wq8.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Message From Aliens のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    }
+  ]
+}

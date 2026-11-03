@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000090",
+  "status": "candidate",
+  "title": {
+    "display": "病能探偵",
+    "original": "Psycho-Sleuth",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "病能探偵",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 3432860,
+    "igdbId": 347036
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3753800",
+      "kind": "demo"
+    }
+  ],
+  "developerIds": [
+    "dev_000116"
+  ],
+  "publisherIds": [
+    "dev_000117",
+    "dev_000118"
+  ],
+  "indie": {
+    "assessment": "unknown",
+    "reasons": [],
+    "assessedAt": "2026-11-03T07:44:28Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3432860/",
+        "retrievedAt": "2026-11-03T07:44:28Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:6ebf09cba9ffc4d55b1407d086fef11ac889f2e59013c7e77b35783bf6fedc97"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3432860/",
+        "retrievedAt": "2026-11-03T07:44:28Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:6ebf09cba9ffc4d55b1407d086fef11ac889f2e59013c7e77b35783bf6fedc97"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/psycho-sleuth",
+        "retrievedAt": "2026-11-03T07:51:17Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3432860/",
+        "retrievedAt": "2026-11-03T07:44:28Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:6ebf09cba9ffc4d55b1407d086fef11ac889f2e59013c7e77b35783bf6fedc97"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3432860/",
+        "retrievedAt": "2026-11-03T07:44:28Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:6ebf09cba9ffc4d55b1407d086fef11ac889f2e59013c7e77b35783bf6fedc97"
+      }
+    }
+  ],
+  "createdAt": "2026-11-03T07:44:28Z",
+  "updatedAt": "2026-11-03T07:51:17Z",
+  "createdByRun": "local-20261103-135409-refresh"
+}

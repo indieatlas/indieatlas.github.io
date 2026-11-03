@@ -1,0 +1,891 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000087",
+  "claims": [
+    {
+      "id": "c_3c3e8b867f919b9e",
+      "gameId": "g_000087",
+      "scope": {
+        "platform": "linux",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/115800/",
+          "retrievedAt": "2026-11-03T07:44:01Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0472f27455d115ba227c0b58c1c45bd77cf964f9b1f0a69b1ea3329c65394e0e"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:44:01Z",
+      "createdAt": "2026-11-03T07:44:01Z",
+      "updatedAt": "2026-11-03T07:44:01Z",
+      "lastCheckedAt": "2026-11-03T07:45:26Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2016,
+          "month": 11,
+          "day": 1
+        },
+        "rawText": "1 Nov, 2016"
+      }
+    },
+    {
+      "id": "c_295682fa1023ce10",
+      "gameId": "g_000087",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/115800/",
+          "retrievedAt": "2026-11-03T07:44:01Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0472f27455d115ba227c0b58c1c45bd77cf964f9b1f0a69b1ea3329c65394e0e"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:44:01Z",
+      "createdAt": "2026-11-03T07:44:01Z",
+      "updatedAt": "2026-11-03T07:44:01Z",
+      "lastCheckedAt": "2026-11-03T07:45:26Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2016,
+          "month": 11,
+          "day": 1
+        },
+        "rawText": "1 Nov, 2016"
+      }
+    },
+    {
+      "id": "c_03b217c356988f28",
+      "gameId": "g_000087",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/115800/",
+          "retrievedAt": "2026-11-03T07:44:01Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0472f27455d115ba227c0b58c1c45bd77cf964f9b1f0a69b1ea3329c65394e0e"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:44:01Z",
+      "createdAt": "2026-11-03T07:44:01Z",
+      "updatedAt": "2026-11-03T07:44:01Z",
+      "lastCheckedAt": "2026-11-03T07:45:26Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2016,
+          "month": 11,
+          "day": 1
+        },
+        "rawText": "1 Nov, 2016"
+      }
+    },
+    {
+      "id": "c_ace60848d471bc0b",
+      "gameId": "g_000087",
+      "scope": {
+        "platform": "ps4",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/owlboy",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2018,
+          "month": 4,
+          "day": 10
+        },
+        "rawText": "Apr 10, 2018"
+      }
+    },
+    {
+      "id": "c_2d93074bc5e2513c",
+      "gameId": "g_000087",
+      "scope": {
+        "platform": "switch",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/owlboy",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2018,
+          "month": 2,
+          "day": 13
+        },
+        "rawText": "Feb 13, 2018"
+      }
+    },
+    {
+      "id": "c_671b1ef73d8b25de",
+      "gameId": "g_000087",
+      "scope": {
+        "platform": "xbox-one",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/owlboy",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2018,
+          "month": 4,
+          "day": 10
+        },
+        "rawText": "Apr 10, 2018"
+      }
+    },
+    {
+      "id": "c_980749f2eee5f966",
+      "gameId": "g_000087",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/115800/",
+          "retrievedAt": "2026-11-03T07:44:07Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a4e4e80922679fe20f3be094e87ec81fa499e29d8ddce9c9fab325793c3bf9d3"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:44:01Z",
+      "createdAt": "2026-11-03T07:44:01Z",
+      "updatedAt": "2026-11-03T07:44:01Z",
+      "lastCheckedAt": "2026-11-03T07:45:32Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_de69cf1994a4a282",
+      "gameId": "g_000087",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/115800/",
+          "retrievedAt": "2026-11-03T07:44:01Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0472f27455d115ba227c0b58c1c45bd77cf964f9b1f0a69b1ea3329c65394e0e"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:44:01Z",
+      "createdAt": "2026-11-03T07:44:01Z",
+      "updatedAt": "2026-11-03T07:44:01Z",
+      "lastCheckedAt": "2026-11-03T07:45:26Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_986d30ed77e0ca83",
+      "gameId": "g_000087",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/115800/",
+          "retrievedAt": "2026-11-03T07:46:01Z",
+          "quote": "落ちこぼれのフクロウ族“オータス”になって大空を飛び回り、仲間と共に戦いながら、雲間に浮かぶ世界の謎を解き明かす",
+          "locator": "steam:appdetails.short_description",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:46:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "summary",
+      "value": {
+        "ja": "落ちこぼれのフクロウ族の少年オータスとなって空を飛び回り、仲間と協力して戦いながら、雲の上に浮かぶ世界の謎に迫るアクションアドベンチャー。開発に8年以上をかけた作品。"
+      }
+    },
+    {
+      "id": "c_06cfd731325fb04e",
+      "gameId": "g_000087",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/115800/",
+          "retrievedAt": "2026-11-03T07:46:01Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:46:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_c59da3a30fb5b5ba",
+      "gameId": "g_000087",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/115800/",
+          "retrievedAt": "2026-11-03T07:46:01Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:46:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_e4b6b0215e35f605",
+      "gameId": "g_000087",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/115800/",
+          "retrievedAt": "2026-11-03T07:46:01Z",
+          "locator": "steam:appdetails.genres,categories,about_the_game",
+          "originKey": "store:steam"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:50:09Z",
+      "createdAt": "2026-11-03T07:50:09Z",
+      "updatedAt": "2026-11-03T07:50:09Z",
+      "lastCheckedAt": "2026-11-03T07:46:01Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "tag",
+      "value": {
+        "tagId": "pixel-art"
+      }
+    },
+    {
+      "id": "c_43c19e81ae6e0463",
+      "gameId": "g_000087",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/115800/",
+          "retrievedAt": "2026-11-03T07:44:01Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0472f27455d115ba227c0b58c1c45bd77cf964f9b1f0a69b1ea3329c65394e0e"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:44:01Z",
+      "createdAt": "2026-11-03T07:44:01Z",
+      "updatedAt": "2026-11-03T07:44:01Z",
+      "lastCheckedAt": "2026-11-03T07:45:26Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/115800/"
+      }
+    },
+    {
+      "id": "c_2bf39c5a76d22824",
+      "gameId": "g_000087",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/owlboy",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "storeLink",
+      "value": {
+        "store": "playstation-store",
+        "url": "https://store.playstation.com/ja-jp/concept/229827"
+      }
+    },
+    {
+      "id": "c_96558b45deb13859",
+      "gameId": "g_000087",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/owlboy",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "storeLink",
+      "value": {
+        "store": "nintendo-eshop",
+        "url": "https://www.nintendo.com/games/detail/owlboy-switch/"
+      }
+    },
+    {
+      "id": "c_d13678711d9c35b5",
+      "gameId": "g_000087",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/owlboy",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "storeLink",
+      "value": {
+        "store": "gog",
+        "url": "https://www.gog.com/game/owlboy"
+      }
+    },
+    {
+      "id": "c_feff2463bfc89c16",
+      "gameId": "g_000087",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/owlboy",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "storeLink",
+      "value": {
+        "store": "microsoft-store",
+        "url": "https://www.xbox.com/ja-JP/games/store/owlboy/c1phtb54976g"
+      }
+    },
+    {
+      "id": "c_1fe5b0f74b034982",
+      "gameId": "g_000087",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/115800/",
+          "retrievedAt": "2026-11-03T07:45:26Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0472f27455d115ba227c0b58c1c45bd77cf964f9b1f0a69b1ea3329c65394e0e"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:45:26Z",
+      "createdAt": "2026-11-03T07:45:26Z",
+      "updatedAt": "2026-11-03T07:45:26Z",
+      "lastCheckedAt": "2026-11-03T07:45:26Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/115800/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Owlboy のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "D-Pad Studio"
+        }
+      }
+    },
+    {
+      "id": "c_0ebb2f50ac7a017f",
+      "gameId": "g_000087",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/owlboy",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/hkdfgvqv2xzldtjs06yb.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Owlboy のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_35f67dada1e0190e",
+      "gameId": "g_000087",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/owlboy",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/fniksyg1adbv2y3q8otl.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Owlboy のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_6a5deb56108f2fe7",
+      "gameId": "g_000087",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/owlboy",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/asxhydaq5ibhrctahlj1.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Owlboy のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_b4a8dee7bd0fd74e",
+      "gameId": "g_000087",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/owlboy",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/n7ylzxzazymossx0eeng.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Owlboy のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_d2783fd21f924901",
+      "gameId": "g_000087",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/owlboy",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/bq2eevac6n7ujh3aqkhe.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Owlboy のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_d414c4681deb14c4",
+      "gameId": "g_000087",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/owlboy",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ovsavojx0id90fhbron2.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Owlboy のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_dbb4de0f46d74d50",
+      "gameId": "g_000087",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/owlboy",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/jpooxjvureppt4yplpfy.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Owlboy のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_ddc92363b931a033",
+      "gameId": "g_000087",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/owlboy",
+          "retrievedAt": "2026-11-03T07:51:17Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T07:51:17Z",
+      "createdAt": "2026-11-03T07:51:17Z",
+      "updatedAt": "2026-11-03T07:51:17Z",
+      "lastCheckedAt": "2026-11-03T07:51:17Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/udqvcuxwdiuylbxnlpge.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Owlboy のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    }
+  ]
+}

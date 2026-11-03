@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000086",
+  "status": "published",
+  "title": {
+    "display": "農家は Replace() されました",
+    "original": "The Farmer Was Replaced",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "農家は Replace() されました",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 2060160,
+    "igdbId": 243931
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4521700",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5180480",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5447020",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://www.metaroot.ch/press-kit/the-farmer-was-replaced",
+  "developerIds": [
+    "dev_000111"
+  ],
+  "publisherIds": [
+    "dev_000112",
+    "dev_000111"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "solo-developer",
+        "note": "開発者の Timon Herzog が大学で学びながら個人で作った（パブリッシャー Metaroot のプレスキット）",
+        "evidence": [
+          {
+            "kind": "official",
+            "url": "https://www.metaroot.ch/press-kit/the-farmer-was-replaced",
+            "retrievedAt": "2026-11-03T07:47:00Z",
+            "quote": "Since he particularly liked the technical aspect of making games he went on to study computer science, where he got inspired to make a small programming game about farming.",
+            "originKey": "official:metaroot.ch"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-03T07:50:09Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2060160/",
+        "retrievedAt": "2026-11-03T07:43:52Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:355b460a69a07a2cd99674a67073a0925a603ee1f97e1844dd2ab1363d14eca5"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2060160/",
+        "retrievedAt": "2026-11-03T07:43:52Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:355b460a69a07a2cd99674a67073a0925a603ee1f97e1844dd2ab1363d14eca5"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/the-farmer-was-replaced",
+        "retrievedAt": "2026-11-03T07:51:17Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2060160/",
+        "retrievedAt": "2026-11-03T07:43:52Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:355b460a69a07a2cd99674a67073a0925a603ee1f97e1844dd2ab1363d14eca5"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2060160/",
+        "retrievedAt": "2026-11-03T07:43:52Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:355b460a69a07a2cd99674a67073a0925a603ee1f97e1844dd2ab1363d14eca5"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2060160/",
+        "retrievedAt": "2026-11-03T07:43:52Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:355b460a69a07a2cd99674a67073a0925a603ee1f97e1844dd2ab1363d14eca5"
+      }
+    }
+  ],
+  "createdAt": "2026-11-03T07:43:52Z",
+  "addedAt": "2026-11-03",
+  "updatedAt": "2026-11-03T07:51:17Z",
+  "createdByRun": "local-20261103-135409-refresh"
+}

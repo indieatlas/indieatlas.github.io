@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000087",
+  "status": "published",
+  "title": {
+    "display": "Owlboy",
+    "original": "Owlboy",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 115800,
+    "igdbId": 12597
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1803680",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "536520",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "http://www.owlboygame.com",
+  "developerIds": [
+    "dev_000113"
+  ],
+  "publisherIds": [
+    "dev_000113"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/115800/",
+            "retrievedAt": "2026-11-03T07:44:01Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:0472f27455d115ba227c0b58c1c45bd77cf964f9b1f0a69b1ea3329c65394e0e"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-03T07:44:01Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/115800/",
+        "retrievedAt": "2026-11-03T07:44:01Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0472f27455d115ba227c0b58c1c45bd77cf964f9b1f0a69b1ea3329c65394e0e"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/115800/",
+        "retrievedAt": "2026-11-03T07:44:01Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0472f27455d115ba227c0b58c1c45bd77cf964f9b1f0a69b1ea3329c65394e0e"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/owlboy",
+        "retrievedAt": "2026-11-03T07:51:17Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/115800/",
+        "retrievedAt": "2026-11-03T07:44:01Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0472f27455d115ba227c0b58c1c45bd77cf964f9b1f0a69b1ea3329c65394e0e"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/115800/",
+        "retrievedAt": "2026-11-03T07:44:01Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0472f27455d115ba227c0b58c1c45bd77cf964f9b1f0a69b1ea3329c65394e0e"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/115800/",
+        "retrievedAt": "2026-11-03T07:44:01Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0472f27455d115ba227c0b58c1c45bd77cf964f9b1f0a69b1ea3329c65394e0e"
+      }
+    }
+  ],
+  "createdAt": "2026-11-03T07:44:01Z",
+  "addedAt": "2026-11-03",
+  "updatedAt": "2026-11-03T07:51:17Z",
+  "createdByRun": "local-20261103-135409-refresh"
+}

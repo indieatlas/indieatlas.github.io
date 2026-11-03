@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000088",
+  "status": "published",
+  "title": {
+    "display": "Croakwood",
+    "original": "Croakwood",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 2261380,
+    "igdbId": 305069
+  },
+  "associatedApps": [],
+  "officialUrl": "https://www.croakwood.com",
+  "developerIds": [
+    "dev_000114"
+  ],
+  "publisherIds": [
+    "dev_000114"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/2261380/",
+            "retrievedAt": "2026-11-03T07:44:09Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:380537c9a78d85cf2e4e9d9639c0bcdb59e7132a02c3a7f5bdd5285d1a435008"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-03T07:44:09Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2261380/",
+        "retrievedAt": "2026-11-03T07:44:09Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:380537c9a78d85cf2e4e9d9639c0bcdb59e7132a02c3a7f5bdd5285d1a435008"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2261380/",
+        "retrievedAt": "2026-11-03T07:44:09Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:380537c9a78d85cf2e4e9d9639c0bcdb59e7132a02c3a7f5bdd5285d1a435008"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/croakwood",
+        "retrievedAt": "2026-11-03T07:51:17Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2261380/",
+        "retrievedAt": "2026-11-03T07:44:09Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:380537c9a78d85cf2e4e9d9639c0bcdb59e7132a02c3a7f5bdd5285d1a435008"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2261380/",
+        "retrievedAt": "2026-11-03T07:44:09Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:380537c9a78d85cf2e4e9d9639c0bcdb59e7132a02c3a7f5bdd5285d1a435008"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2261380/",
+        "retrievedAt": "2026-11-03T07:44:09Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:380537c9a78d85cf2e4e9d9639c0bcdb59e7132a02c3a7f5bdd5285d1a435008"
+      }
+    }
+  ],
+  "createdAt": "2026-11-03T07:44:09Z",
+  "addedAt": "2026-11-03",
+  "updatedAt": "2026-11-03T07:51:17Z",
+  "createdByRun": "local-20261103-135409-refresh"
+}
