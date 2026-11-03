@@ -213,11 +213,12 @@
         }
       ],
       "asOf": "2026-10-28",
-      "status": "adopted",
-      "statusReason": "highest-rank",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersededBy": "c_881c5eb0b25e744a",
       "adoptedAt": "2026-10-27T16:30:31Z",
       "createdAt": "2026-10-27T16:30:31Z",
-      "updatedAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-11-03T05:23:53Z",
       "lastCheckedAt": "2026-10-27T16:30:31Z",
       "createdBy": "agent",
       "createdByRun": "local-igdb",
@@ -231,6 +232,53 @@
           "day": 25
         },
         "rawText": "Jan 25, 2018"
+      }
+    },
+    {
+      "id": "c_881c5eb0b25e744a",
+      "gameId": "g_000002",
+      "scope": {
+        "platform": "xbox-one",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://automaton-media.com/articles/newsjp/20261030-476680/",
+          "sourceId": "automaton",
+          "articleId": "a_2d1dc9b5c65a5b2a",
+          "publishedAt": "2026-10-30T03:58:23Z",
+          "retrievedAt": "2026-11-03T05:05:39Z",
+          "quote": "ゲームクリエイターのMaddy Thorson氏は10月29日、『Celeste』および『TowerFall: Ascension』のXBOX版の販売を終了したことを発表した。",
+          "originKey": "media:automaton-media.com"
+        },
+        {
+          "kind": "media",
+          "url": "https://www.pcgamer.com/games/action/celeste-and-towerfall-have-delisted-from-xboxs-digital-storefronts-to-support-bds-boycott/",
+          "sourceId": "pc-gamer",
+          "articleId": "a_2b52c41f2d9de2bc",
+          "publishedAt": "2026-10-31T18:57:47Z",
+          "retrievedAt": "2026-11-03T05:05:52Z",
+          "quote": "Narrative platformer Celeste and party fighter TowerFall have delisted from Xbox recently",
+          "originKey": "media:pcgamer.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_0e22efd38d4f3700"
+      ],
+      "adoptedAt": "2026-11-03T05:23:53Z",
+      "createdAt": "2026-11-03T05:23:53Z",
+      "updatedAt": "2026-11-03T05:23:53Z",
+      "lastCheckedAt": "2026-11-03T05:05:52Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "release",
+      "value": {
+        "status": "delisted"
       }
     },
     {
@@ -686,11 +734,11 @@
         }
       ],
       "asOf": "2026-10-28",
-      "status": "adopted",
-      "statusReason": "highest-rank",
+      "status": "retracted",
+      "statusReason": "retracted-by-evidence",
       "adoptedAt": "2026-10-27T17:01:56Z",
       "createdAt": "2026-10-27T17:01:56Z",
-      "updatedAt": "2026-10-27T17:01:56Z",
+      "updatedAt": "2026-11-03T07:42:40Z",
       "lastCheckedAt": "2026-10-27T17:01:56Z",
       "createdBy": "agent",
       "createdByRun": "local-igdb",
