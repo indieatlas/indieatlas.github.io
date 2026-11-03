@@ -18,16 +18,17 @@ const rankingTitle = ranking.source === 'steam' ? 'Steam のインディー売�
 
 const byAdded = gamesByAdded();
 
-// 先頭は大きく見せる記事1件と、横で2件ずつ切り替わる6件。残りは下の一覧に回す
+// 先頭は大きく見せる記事1件と、横で2件ずつ切り替わる6件。続く16件を下の一覧に出す
 const news = homeNews(7, 0);
 const shownNews = new Set(news.featured.map((a) => a.id));
-const moreNews = homeNews(0, 40).rest.filter((a) => !shownNews.has(a.id)).slice(0, 6);
+const moreNews = homeNews(0, 40).rest.filter((a) => !shownNews.has(a.id)).slice(0, 16);
 
 const events = getEvents()
   .filter((e) => e.phase !== 'past')
   .slice(0, 5);
 
-const recent = byAdded.slice(0, 10);
+// 作品の区画は1行だけにする
+const recent = byAdded.slice(0, 5);
 const recentIds = new Set(recent.map((g) => g.id));
 
 // 最近情報が充実した作品: enrichedAt の新しい順に5件。ほかの区画に出した作品は除く
@@ -132,18 +133,28 @@ const collections = [...featured, ...rest].slice(0, 4);
     gap: var(--space-3);
     padding: var(--space-3) 0;
   }
+  /* 5列に収まらない幅では、1行のまま横にスクロールする */
   @media (max-width: 1100px) {
     .home :global(.game-grid) {
-      grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+      grid-template-columns: none;
+      grid-auto-flow: column;
+      grid-auto-columns: calc((100% - 2 * var(--space-4)) / 3);
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      padding-block: 4px;
+    }
+    .home :global(.game-grid > li) {
+      scroll-snap-align: start;
     }
   }
   .home :global(.game-card__body) {
     padding: var(--space-2) var(--space-3) var(--space-3);
   }
-  /* スマートフォンでは2列にして、機種などの細かい情報は省く */
+  /* スマートフォンでは2枚ほどを見せて、機種などの細かい情報は省く */
   @media (max-width: 640px) {
     .home :global(.game-grid) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-auto-columns: 44%;
       gap: var(--space-3);
     }
     .home :global(.game-card__meta),
