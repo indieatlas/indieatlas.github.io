@@ -2,7 +2,8 @@
   font-family: 'Space Grotesk';
   font-style: normal;
   font-weight: 300 700;
-  font-display: swap;
+  /* 先読み（BaseLayout）と組み合わせ、ページごとに代替のフォントへ一瞬切り替わってロゴが揺れないようにする */
+  font-display: optional;
   src: url('../assets/fonts/space-grotesk-latin.woff2') format('woff2');
   unicode-range:
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC,
@@ -11,6 +12,30 @@
 
 @view-transition {
   navigation: auto;
+}
+
+/* ヘッダーはページ全体と一緒に重ねて切り替えず、そのまま置き換える。ロゴや項目が二重に見えないようにする */
+.site-header {
+  view-transition-name: site-header;
+}
+::view-transition-group(site-header),
+::view-transition-old(site-header),
+::view-transition-new(site-header) {
+  animation: none;
+}
+::view-transition-old(site-header) {
+  display: none;
+}
+
+/* 作品の画像（BaseLayout の遷移のスクリプトが、押した1枚と詳細のキーアートにだけ名前を付ける） */
+::view-transition-group(game-hero) {
+  animation-duration: 380ms;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+::view-transition-old(game-hero),
+::view-transition-new(game-hero) {
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -34,6 +59,8 @@
 }
 
 html {
+  /* スクロールバーの有無でページの幅が変わり、ヘッダーが左右にずれないようにする */
+  scrollbar-gutter: stable;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   scroll-padding-top: calc(var(--header-height) + var(--space-4));
@@ -172,6 +199,11 @@ canvas.stage {
   z-index: -2;
   pointer-events: none;
   animation: stage-in 600ms var(--ease-out) both;
+}
+
+/* ほかのページから来たときは前のページの背景から続けて描くので、フェードインしない */
+.stage-continued canvas.stage {
+  animation: none;
 }
 
 @keyframes stage-in {

@@ -11,7 +11,8 @@ interface Props {
 }
 const { game, eager = false, transition = true, class: className } = Astro.props;
 const color = genreColorVar(game.primaryGenre);
-const vt = transition ? `view-transition-name: game-${game.id}` : undefined;
+// 画面遷移でつなぐ画像の印。名前は遷移の直前に、押した1枚にだけ付ける（BaseLayout）
+const vt = transition ? game.id : undefined;
 ---
 
 <div class:list={['game-image', className]} style={`--genre-color: ${color}`}>
@@ -25,7 +26,7 @@ const vt = transition ? `view-transition-name: game-${game.id}` : undefined;
       decoding="async"
       fetchpriority={eager ? 'high' : undefined}
       data-fallback
-      style={vt}
+      data-vt-game={vt}
     />
   ) : (
     <svg
@@ -33,7 +34,7 @@ const vt = transition ? `view-transition-name: game-${game.id}` : undefined;
       viewBox="0 0 460 215"
       role="img"
       aria-label={`${game.title.display}（画像なし）`}
-      style={vt}
+      data-vt-game={vt}
     >
       <defs>
         <radialGradient id={`ph-${game.id}`} cx="30%" cy="35%" r="80%">

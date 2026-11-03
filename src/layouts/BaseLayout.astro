@@ -6,6 +6,8 @@ import '../styles/components.css';
 import SiteFooter from '../components/SiteFooter.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import SkipLink from '../components/SkipLink.astro';
+import displayFont from '../assets/fonts/space-grotesk-latin.woff2?url';
+import stageBoot from '../scripts/gl/stage-boot.ts?worker&url';
 import { site } from '../config/site.ts';
 import { absoluteUrl, BASE_PATH, url } from '../lib/urls.ts';
 
@@ -67,6 +69,7 @@ const placeholder = url('placeholder.svg');
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="theme-color" content="#08090c" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#f3f4f6" media="(prefers-color-scheme: light)" />
+    <link rel="preload" href={displayFont} as="font" type="font/woff2" crossorigin />
     <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
     <link rel="icon" href={url('icon-192.png')} type="image/png" sizes="192x192" />
     <link rel="apple-touch-icon" href={url('apple-touch-icon.png')} />
@@ -96,11 +99,79 @@ const placeholder = url('placeholder.svg');
         true,
       );
     </script>
+    <script is:inline>
+      // 作品の画像を、一覧と作品詳細の間でつなぐ（02 §2.6.5）。名前を常に付けておくと、画面の外の画像が
+      // 飛んできたり、同じ作品が2枚あって遷移ごと取り消されたりするので、遷移の直前に画面内の1枚にだけ付ける
+      (function () {
+        var KEY = 'indieatlas-vt-game';
+        var NAME = 'game-hero';
+        var GAME = /\/games\/(g_\d{6})\/(?:index\.html)?$/;
+        var clicked = null;
+        var named = [];
+        function gameOf(href) {
+          try {
+            var m = new URL(href, location.href).pathname.match(GAME);
+            return m ? m[1] : null;
+          } catch (e) {
+            return null;
+          }
+        }
+        function shown(el) {
+          var r = el.getBoundingClientRect();
+          if (r.width < 8 || r.bottom <= 0 || r.top >= innerHeight || r.right <= 0 || r.left >= innerWidth) return false;
+          return el.tagName !== 'IMG' || (el.complete && el.naturalWidth > 0);
+        }
+        function pick(id) {
+          var sel = '[data-vt-game="' + id + '"]';
+          var own = clicked && clicked.isConnected && clicked.querySelector(sel);
+          if (own && shown(own)) return own;
+          var all = document.querySelectorAll(sel);
+          for (var i = 0; i < all.length; i++) if (shown(all[i])) return all[i];
+          return null;
+        }
+        function name(el, vt) {
+          el.style.viewTransitionName = NAME;
+          named.push(el);
+          vt.finished.finally(clear);
+        }
+        function clear() {
+          for (var i = 0; i < named.length; i++) named[i].style.viewTransitionName = '';
+          named = [];
+        }
+        addEventListener('click', function (e) {
+          clicked = e.target instanceof Element ? e.target.closest('a') : null;
+        }, true);
+        addEventListener('pageswap', function (e) {
+          clear();
+          try { sessionStorage.removeItem(KEY); } catch (err) {}
+          if (!e.viewTransition || !e.activation || !e.activation.entry) return;
+          // 詳細へ行くならその作品、詳細から出るなら今の作品の画像をつなぐ
+          var id = gameOf(e.activation.entry.url) || gameOf(location.href);
+          var el = id && pick(id);
+          if (!el) return;
+          name(el, e.viewTransition);
+          try { sessionStorage.setItem(KEY, id); } catch (err) {}
+        });
+        addEventListener('pagereveal', function (e) {
+          clear();
+          clicked = null;
+          var id = null;
+          try {
+            id = sessionStorage.getItem(KEY);
+            sessionStorage.removeItem(KEY);
+          } catch (err) {}
+          if (!e.viewTransition || !id) return;
+          var el = pick(id);
+          if (el) name(el, e.viewTransition);
+        });
+      })();
+    </script>
     {themeCss && <style set:html={themeCss} />}
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
     <slot name="head" />
   </head>
   <body data-stage-tint={stageTint}>
+    <script is:inline src={stageBoot}></script>
     <SkipLink />
     <SiteHeader current={current} />
     <main id="main" tabindex="-1">
@@ -108,10 +179,8 @@ const placeholder = url('placeholder.svg');
     </main>
     <SiteFooter />
     <script>
-      import { startStageWhenIdle } from '../scripts/gl/stage.ts';
       import { applyRelativeTimes } from '../scripts/relative-time.ts';
       applyRelativeTimes();
-      startStageWhenIdle();
     </script>
   </body>
 </html>

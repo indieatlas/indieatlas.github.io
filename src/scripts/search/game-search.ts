@@ -144,7 +144,7 @@ export function renderCard(d: PagefindResultData, cfg: SearchConfig): string {
     .replace(/^発売予定（(.+)）$/, '$1 発売予定');
   const added = (m.updated ?? m.added ?? '').replace(/-/g, '/');
   const img = m.image
-    ? `<img src="${esc(m.image)}" alt="${esc(m.title ?? '')} の画像" width="460" height="215" loading="lazy" decoding="async" data-fallback style="view-transition-name: game-${esc(id)}">`
+    ? `<img src="${esc(m.image)}" alt="${esc(m.title ?? '')} の画像" width="460" height="215" loading="lazy" decoding="async" data-fallback data-vt-game="${esc(id)}">`
     : `<img src="${esc(cfg.placeholder)}" alt="" width="460" height="215" loading="lazy" decoding="async">`;
   const gi = cfg.genres.indexOf(m.genre ?? '');
   const genreColor = gi < 0 ? 'var(--genre-neutral)' : `var(--genre-c${gi})`;

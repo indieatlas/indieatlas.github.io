@@ -103,7 +103,12 @@ void main() {
   o = vec4(clamp(col, 0.0, 1.0), 1.0);
 }`;
 
-function hexToRgb(hex: string): [number, number, number] {
+type Rgb = [number, number, number];
+const COLORS_KEY = 'indieatlas-stage-colors';
+const CLOCK_KEY = 'indieatlas-stage-clock';
+const COLOR_FADE_MS = 900;
+
+function hexToRgb(hex: string): Rgb {
   const m = hex.trim().match(/^#?([0-9a-f]{6})$/i);
   if (!m) return [0.5, 0.5, 0.5];
   const n = parseInt(m[1]!, 16);
@@ -174,23 +179,77 @@ export function mountStage(): void {
     dark: U('uDark'),
   };
 
-  const applyColors = () => {
+  // 色は前のページの色から滑らかに移す。ページをまたいで覚えておく
+  type Colors = { bg: Rgb; signal: Rgb; warm: Rgb; ink: Rgb; tint: Rgb; dark: number };
+  const readColors = (): Colors => {
     const css = getComputedStyle(document.documentElement);
     const tint = document.body.dataset.stageTint;
     const v = (name: string) => css.getPropertyValue(name);
-    gl.uniform3f(u.bg, ...hexToRgb(v('--color-bg')));
-    gl.uniform3f(u.signal, ...hexToRgb(v('--color-signal')));
-    gl.uniform3f(u.warm, ...hexToRgb(v('--color-accent-warm')));
-    gl.uniform3f(u.ink, ...hexToRgb(v('--color-text')));
     // 色は #rrggbb か、CSS の変数名（例: --genre-c3）で指定する
     const tintHex = tint?.startsWith('--')
       ? v(tint)
       : tint && /^#[0-9a-f]{6}$/i.test(tint)
         ? tint
         : v('--color-signal');
-    gl.uniform3f(u.tint, ...hexToRgb(tintHex));
-    gl.uniform1f(u.dark, isDarkTheme() ? 1 : 0);
+    return {
+      bg: hexToRgb(v('--color-bg')),
+      signal: hexToRgb(v('--color-signal')),
+      warm: hexToRgb(v('--color-accent-warm')),
+      ink: hexToRgb(v('--color-text')),
+      tint: hexToRgb(tintHex),
+      dark: isDarkTheme() ? 1 : 0,
+    };
+  };
+  let to = readColors();
+  let from = to;
+  let fadeStart = 0;
+  const continueFromSaved = () => {
+    try {
+      const saved = JSON.parse(sessionStorage.getItem(COLORS_KEY) ?? 'null') as Colors | null;
+      // 明暗が同じときだけ引き継ぐ
+      if (saved && saved.dark === to.dark && !reduced.matches) {
+        from = saved;
+        fadeStart = performance.now();
+      }
+    } catch {
+      // 前の色がなければ、そのまま描く
+    }
+  };
+  continueFromSaved();
+  let current = to;
+  const mixColors = (now: number): boolean => {
+    const k = fadeStart ? Math.min(1, (now - fadeStart) / COLOR_FADE_MS) : 1;
+    const e = 1 - Math.pow(1 - k, 3);
+    const m = (a: Rgb, b: Rgb): Rgb => [a[0] + (b[0] - a[0]) * e, a[1] + (b[1] - a[1]) * e, a[2] + (b[2] - a[2]) * e];
+    current = {
+      bg: m(from.bg, to.bg),
+      signal: m(from.signal, to.signal),
+      warm: m(from.warm, to.warm),
+      ink: m(from.ink, to.ink),
+      tint: m(from.tint, to.tint),
+      dark: to.dark,
+    };
+    gl.uniform3f(u.bg, ...current.bg);
+    gl.uniform3f(u.signal, ...current.signal);
+    gl.uniform3f(u.warm, ...current.warm);
+    gl.uniform3f(u.ink, ...current.ink);
+    gl.uniform3f(u.tint, ...current.tint);
+    gl.uniform1f(u.dark, current.dark);
+    if (k >= 1) fadeStart = 0;
+    return k < 1;
+  };
+  const applyColors = () => {
+    from = current;
+    to = readColors();
+    fadeStart = from.dark === to.dark && !reduced.matches ? performance.now() : 0;
     request();
+  };
+  const saveColors = () => {
+    try {
+      sessionStorage.setItem(COLORS_KEY, JSON.stringify(current));
+    } catch {
+      // 保存できなければ、次のページでは色を引き継がない
+    }
   };
 
   // 背景は細部が不要なので、デバイスピクセル比を抑えて描く
@@ -207,7 +266,15 @@ export function mountStage(): void {
   let raf = 0;
   let last = 0;
   let animate = !reduced.matches;
-  const start = performance.now();
+  // 波の位相をページをまたいでつなぐ。長く開いたままなら1時間ごとに数え直す（シェーダーの精度のため）
+  let epoch = Date.now();
+  try {
+    const saved = Number(sessionStorage.getItem(CLOCK_KEY));
+    if (saved && epoch - saved < 3_600_000) epoch = saved;
+    else sessionStorage.setItem(CLOCK_KEY, String(epoch));
+  } catch {
+    // 保存できなければ、ページごとに始めから動かす
+  }
   const times: number[] = [];
 
   const frame = (now: number) => {
@@ -232,17 +299,26 @@ export function mountStage(): void {
     pointer = [pointer[0]! + (target[0]! - pointer[0]!) * 0.06, pointer[1]! + (target[1]! - pointer[1]!) * 0.06];
     gl.uniform2f(u.res, canvas.width, canvas.height);
     gl.uniform1f(u.scale, scale);
-    gl.uniform1f(u.time, animate ? (now - start) / 1000 : 12);
+    gl.uniform1f(u.time, animate ? (Date.now() - epoch) / 1000 : 12);
+    const fading = mixColors(now);
     gl.uniform1f(u.scroll, window.scrollY);
     gl.uniform2f(u.pointer, pointer[0]!, pointer[1]!);
     gl.drawArrays(gl.TRIANGLES, 0, 3);
-    if (animate) raf = requestAnimationFrame(frame);
+    if (animate || fading) raf = requestAnimationFrame(frame);
   };
   function request() {
     if (!raf) raf = requestAnimationFrame(frame);
   }
 
   window.addEventListener('resize', resize);
+  window.addEventListener('pageswap', saveColors);
+  window.addEventListener('pagehide', saveColors);
+  // 戻る・進むでキャッシュから戻ったときも、直前のページの色から移す
+  window.addEventListener('pageshow', (e) => {
+    if (!e.persisted) return;
+    continueFromSaved();
+    request();
+  });
   window.addEventListener(
     'pointermove',
     (e) => {
@@ -269,16 +345,26 @@ export function mountStage(): void {
     canvas.remove();
   });
 
+  // 最初の1枚はすぐに描き、遷移の間に背景が地の色だけにならないようにする
   document.body.prepend(canvas);
-  resize();
-  applyColors();
+  canvas.width = Math.max(1, Math.round(window.innerWidth * scale));
+  canvas.height = Math.max(1, Math.round(window.innerHeight * scale));
+  gl.viewport(0, 0, canvas.width, canvas.height);
+  frame(performance.now());
+  last = 0;
+  request();
   document.documentElement.classList.add('has-stage');
 }
 
-/** 待機状態になってから背景を始める */
-export function startStageWhenIdle(): void {
-  const w = window as Window & { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number };
-  const go = () => mountStage();
-  if (w.requestIdleCallback) w.requestIdleCallback(go, { timeout: 2000 });
-  else window.setTimeout(go, 600);
+/**
+ * 背景を始める。ページを移るたびに背景が地の色だけになって見えないよう、待たずにすぐ描く。
+ * ほかのページから来たときは、キャンバスをフェードインさせない
+ */
+export function startStage(): void {
+  try {
+    if (sessionStorage.getItem(COLORS_KEY)) document.documentElement.classList.add('stage-continued');
+  } catch {
+    // 保存できなければ、毎回フェードインする
+  }
+  mountStage();
 }
