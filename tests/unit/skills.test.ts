@@ -2,8 +2,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 
-// .claude/skills/ のスキルの形式（12 §12.4、§12.9）
-const SKILLS_DIR = '.claude/skills';
+// .agents/skills/ のスキルの形式（12 §12.4、§12.9）
+const SKILLS_DIR = '.agents/skills';
 const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8')) as { scripts: Record<string, string> };
 const skills = fs
   .readdirSync(SKILLS_DIR)
@@ -47,7 +47,7 @@ describe('スキル（12 §12.4）', () => {
     for (const [doc] of text.matchAll(/docs\/[\w-]+\.md/g)) {
       expect(fs.existsSync(doc), doc).toBe(true);
     }
-    for (const [, rel] of text.matchAll(/`((?:scripts|config|\.claude)\/[\w./-]+\.(?:ts|md|json))`/g)) {
+    for (const [, rel] of text.matchAll(/`((?:scripts|config|\.agents)\/[\w./-]+\.(?:ts|md|json))`/g)) {
       expect(fs.existsSync(rel!), rel).toBe(true);
     }
   });

@@ -30,8 +30,8 @@
 indieatlas/
 ├── AGENTS.md                   # コーディングエージェント向けの案内（12 §12.4）
 ├── CLAUDE.md                   # `@AGENTS.md` だけを書く
-├── .claude/
-│   └── skills/                 # 手動の作業のスキル（12 §12.6）。Claude Code と OpenCode が読む
+├── .agents/
+│   └── skills/                 # 手動の作業のスキル（12 §12.6）。Codex と OpenCode が読む
 │       ├── ia-common/RULES.md
 │       ├── ia-add-game/SKILL.md
 │       ├── ia-collect/SKILL.md
@@ -46,7 +46,7 @@ indieatlas/
 │   │   └── watchdog.yml        # 最終成功時刻の監視（07 §7.8）
 │   ├── ISSUE_TEMPLATE/
 │   │   └── correction.yml      # 情報の訂正依頼（リポジトリを公開する場合）
-│   └── CODEOWNERS              # config/、.github/、schema/、scripts/pipeline/validate/、.claude/skills/ の変更に人のレビューを必須にする
+│   └── CODEOWNERS              # config/、.github/、schema/、scripts/pipeline/validate/、.agents/skills/ の変更に人のレビューを必須にする
 ├── config/                     # 人が管理する設定。調査ジョブからは変更できない
 │   ├── policy.md               # 対象作品、編集、公開の方針（LLM にも渡す）
 │   ├── runtime.json            # 件数、時間、費用、モデルの設定

@@ -22,6 +22,8 @@ npm run seed:steam -- --app 413150   # Steam の作品情報から候補の作�
 npm run media:articles               # 記事の OGP 画像を WebP で public/media/articles/ に保存する
 npm run media:events                 # イベントの OGP 画像を public/media/events/ に保存する
 npm run refresh:status               # 古くなったもの、確かめ直すもの（発売予定、催し、指標、記事の情報源）を JSON で出す（通信しない）
+npm run refresh:feeds                # 媒体のフィードから、まだ登録していない新しい記事の候補を JSON で出す（データは変えない）
+npm run claims:repoint               # 置き換えられた Claim を参照するコレクションの項目を、置き換えた先に付け替える
 npm run media:palettes               # 作品の画像から色を抽出する（作品詳細のページの色）
 npm run igdb:sync                    # IGDB から機種、スクリーンショット、ストアのリンクを取り込む（.env にキーが必要）
 npm run metrics:popularity           # Steam のレビュー数と IGDB の評価を取得する（殿堂入り、人気の判定）
@@ -53,7 +55,7 @@ npm run test:e2e
 
 ## コーディングエージェントでの更新
 
-サイトの内容をまとめて最新にするときは、コーディングエージェント（Claude Code、OpenCode など）でスキル `ia-refresh`（`.claude/skills/ia-refresh/SKILL.md`）を使います。「サイトの内容を全部最新にして」のように頼むと、作品の発売情報、指標と要約、新しい記事、催しの日程、画像を順に更新し、検証とビルドまで行います（[docs/12-agent-skills.md](docs/12-agent-skills.md) §12.6.7）。
+サイトの内容をまとめて最新にするときは、コーディングエージェント（Codex など）でスキル `ia-refresh`（`.agents/skills/ia-refresh/SKILL.md`）を使います。「サイトの内容を全部最新にして」のように頼むと、作品の発売情報、指標と要約、新しい記事、催しの日程、画像を順に更新し、検証とビルドまで行います（[docs/12-agent-skills.md](docs/12-agent-skills.md) §12.6.7）。
 
 ## 公開
 

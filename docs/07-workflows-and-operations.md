@@ -375,7 +375,7 @@ contentHash = "sha256:" + sha256(canonicalJson({
 | 環境 `github-pages` | デプロイできるブランチを `main` に限る |
 | Variables | `SITE_URL`（例: `https://owner.github.io`）、`BASE_PATH`（例: `/indieatlas/`）、`INDIEATLAS_LLM_ENABLED`（`true`） |
 | `main` のルール | 強制 push と削除を禁止する。採用ジョブが直接 push するため、PR の必須化は行わない（人の変更は PR で行う運用にする） |
-| CODEOWNERS | `config/`、`.github/`、`schema/`、`scripts/pipeline/validate/`、`.claude/skills/`、`AGENTS.md`、`CLAUDE.md` に運営者を指定する |
+| CODEOWNERS | `config/`、`.github/`、`schema/`、`scripts/pipeline/validate/`、`.agents/skills/`、`AGENTS.md`、`CLAUDE.md` に運営者を指定する |
 | OpenCode Go | OpenCode のコンソールで Go（または Go Plus）を契約し、API キーを発行する。プライバシーの設定の Regions で **Global** を選ぶ（DeepSeek のモデルを使う条件）。「学習にリクエストを使う有料のエンドポイント」は許可しないままにする。**Extra Usage は無効にする**（利用上限を超えた分が従量課金にならないようにする）。Go のワークスペースはメンバーを招待できない。運営者が自分の開発にも同じワークスペースを使う場合は、利用上限を共有することになるため、`budget.monthlyLimit` を低めにするか、Indie Atlas 専用のワークスペースを作る（[11](11-open-decisions.md) D-20） |
 
 `GITHUB_TOKEN` は `.github/workflows/` の変更を push できない（`workflows` の権限がない）。採用ジョブの V-P01 と合わせ、調査の結果がワークフローや検証ルールを変更できない構成にする。
