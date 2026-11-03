@@ -1,6 +1,6 @@
 name: refresh-metrics
 
-# 週に1回、Steam のレビュー数と評価、IGDB の評価、Steam のレビューの要約を作り直し、PR にする（06 §6.13.4、§6.13.6）。
+# 週に1回、Steam のレビュー数と評価、IGDB の評価、Steam のレビューの要約、記事へのはてなブックマークの反応の要約を作り直し、PR にする（06 §6.13.4、§6.13.6、§6.13.7）。
 # 結果は PR で人が確かめてから取り込む。キーは環境 research のシークレットに置く
 on:
   schedule:
@@ -40,6 +40,8 @@ jobs:
       - name: Summarize Steam reviews
         run: |
           if [ $(( $(date -u +%V) % 4 )) -eq 0 ]; then npm run reviews:summarize -- --force; else npm run reviews:summarize; fi
+      # 掲載から2週間以内の記事の反応を取り直し、新しい記事の分を作る
+      - run: npm run reactions:summarize
       - run: npm run check:data
       - name: Open a pull request
         env:
@@ -54,8 +56,8 @@ jobs:
           git config user.email "indieatlas-bot@users.noreply.github.com"
           git switch -c "$branch"
           git add data/metrics
-          git commit -m "data: refresh popularity metrics and review summaries"
+          git commit -m "data: refresh popularity metrics, review summaries, and article reactions"
           git push origin "$branch"
           gh pr create --base main --head "$branch" \
-            --title "data: refresh popularity metrics and review summaries" \
-            --body "Steam のレビュー数と評価、IGDB の評価、Steam のレビューの要約を更新しました（refresh-metrics）。要約の内容を確かめてから取り込んでください。"
+            --title "data: refresh popularity metrics, review summaries, and article reactions" \
+            --body "Steam のレビュー数と評価、IGDB の評価、Steam のレビューの要約、記事へのはてなブックマークの反応の要約を更新しました（refresh-metrics）。要約の内容を確かめてから取り込んでください。"
