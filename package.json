@@ -33,7 +33,8 @@
     "amazon:ranking": "tsx scripts/run/fetch-amazon-ranking.ts",
     "ranking:steam": "tsx scripts/run/fetch-steam-ranking.ts",
     "media:events": "tsx scripts/run/fetch-event-images.ts",
-    "refresh:status": "tsx scripts/run/refresh-status.ts"
+    "refresh:status": "tsx scripts/run/refresh-status.ts",
+    "refresh:feeds": "tsx scripts/run/refresh-feeds.ts"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
