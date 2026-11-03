@@ -1,7 +1,8 @@
 name: refresh-metrics
 
-# 週に1回、Steam のレビュー数と評価、IGDB の評価、Steam のレビューの要約、記事へのはてなブックマークの反応の要約を作り直し、PR にする（06 §6.13.4、§6.13.6、§6.13.7）。
-# 結果は PR で人が確かめてから取り込む。キーは環境 research のシークレットに置く
+# 週に1回、Steam のレビュー数と評価、IGDB の評価、Steam のレビューの要約、記事へのはてなブックマークの反応の要約を作り直し、
+# main に直接コミットしてサイトを公開し直す（06 §6.13.4、§6.13.6、§6.13.7）。要約はコードの検証を通ったものだけが残る。
+# キーは環境 research のシークレットに置く
 on:
   schedule:
     - cron: '23 0 * * 1' # 毎週月曜 9時23分（日本時間）
@@ -21,7 +22,7 @@ jobs:
     environment: research
     permissions:
       contents: write
-      pull-requests: write
+      actions: write # 公開のワークフロー（update.yml）を呼ぶ
     env:
       IGDB_CLIENT_ID: ${{ secrets.IGDB_CLIENT_ID }}
       IGDB_CLIENT_SECRET: ${{ secrets.IGDB_CLIENT_SECRET }}
@@ -43,21 +44,24 @@ jobs:
       # 掲載から2週間以内の記事の反応を取り直し、新しい記事の分を作る
       - run: npm run reactions:summarize
       - run: npm run check:data
-      - name: Open a pull request
-        env:
-          GH_TOKEN: ${{ github.token }}
+      - name: Commit to main
+        id: commit
         run: |
-          if git diff --quiet -- data/metrics; then
+          if [ -z "$(git status --porcelain -- data/metrics)" ]; then
             echo "no changes"
             exit 0
           fi
-          branch="metrics/$(date -u +%Y%m%d)"
           git config user.name "indieatlas-bot"
           git config user.email "indieatlas-bot@users.noreply.github.com"
-          git switch -c "$branch"
           git add data/metrics
           git commit -m "data: refresh popularity metrics, review summaries, and article reactions"
-          git push origin "$branch"
-          gh pr create --base main --head "$branch" \
-            --title "data: refresh popularity metrics, review summaries, and article reactions" \
-            --body "Steam のレビュー数と評価、IGDB の評価、Steam のレビューの要約、記事へのはてなブックマークの反応の要約を更新しました（refresh-metrics）。要約の内容を確かめてから取り込んでください。"
+          # 実行中に main が進んでいたら、その上に載せ直す。ぶつかったら失敗させ、次の週に取り直す
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+      # GITHUB_TOKEN による push では update.yml の push のトリガーが動かないので、明示的に呼ぶ
+      - name: Publish the site
+        if: ${{ steps.commit.outputs.pushed == 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run update.yml --ref main -R "$GITHUB_REPOSITORY"

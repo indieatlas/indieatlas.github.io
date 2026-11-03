@@ -6,9 +6,10 @@
 | - | - | - |
 | `.github/workflows/update.yml` | 毎日の定期実行、手動実行、`main` へのサイトコードとデータの push | research → adopt → build → deploy |
 | `.github/workflows/ci.yml` | pull request、`main` への push | 型、データ、単体テスト、2種類のベースパスでのビルドと E2E |
+| `.github/workflows/refresh-metrics.yml` | 毎週月曜 9時23分（日本時間）、手動実行 | 知名度と評価、レビューとはてなブックマークの反応の要約を作り直し、`main` に直接コミットして update.yml を呼ぶ（[06](06-update-pipeline.md) §6.13.4、§6.13.6、§6.13.7） |
 | `.github/workflows/watchdog.yml` | 毎日の定期実行（update とは別の時刻） | 定期更新の最終成功時刻を確かめ、古ければ Issue で知らせる |
 
-`main` への push では、update.yml は `publish-only` として動き、build と deploy だけを行う。採用ジョブが `GITHUB_TOKEN` で push したコミットは、GitHub の仕様により新しいワークフローを起動しない。そのため、定期更新ではコミット後に別のワークフローを待たず、同じ実行の中で build と deploy に進む。
+`main` への push では、update.yml は `publish-only` として動き、build と deploy だけを行う。採用ジョブが `GITHUB_TOKEN` で push したコミットは、GitHub の仕様により新しいワークフローを起動しない。そのため、定期更新ではコミット後に別のワークフローを待たず、同じ実行の中で build と deploy に進む。refresh-metrics.yml は、コミットした後に `gh workflow run update.yml` で公開のワークフローを起動する（`workflow_dispatch` は `GITHUB_TOKEN` からでも起動できる）。
 
 ## 7.2 `update.yml`
 

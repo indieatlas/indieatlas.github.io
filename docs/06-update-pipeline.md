@@ -809,7 +809,7 @@ user メッセージには、今日の日付、タスク、対象のデータ、
 - 要約: DeepSeek V4.1 Flash で、作品ごとに1回（入力 約1万トークン、出力 約500トークン）。81作品を月に1回作り直しても、OpenCode Go の定額（D-20）の範囲に収まる。
 - 検証: 要約の各行が、2件以上のレビューで述べられていることを LLM の出力の根拠（レビューの ID）で確かめる。好評の割合は数値のまま出し、LLM に作らせない。
 - 実装: `scripts/pipeline/review-summary.ts`（検証）、`scripts/llm/client.ts`（OpenAI 互換の接続の構造化出力。§6.9.2 の `generateObject` の部分だけ）、`scripts/run/summarize-reviews.ts`。結果は `data/metrics/review-summaries.json`（`schema/media.ts` の `ReviewSummaries`）。長所は好評のレビュー2件以上に支えられていること、レビューの文を8文字以上そのまま写していないこと、誇張や主観の表現がないことをコードで確かめ、合わない行は捨てる。
-- 実行: `refresh-metrics.yml` が週に1回、環境 `research` のシークレットで実行し、変わった分を PR にする。要約は4週ごとに作り直し、それ以外の週はまだない作品の分だけ作る。手元でも `npm run reviews:summarize` で作れる。キーがないか取得できなければ何もしない。
+- 実行: `refresh-metrics.yml` が週に1回、環境 `research` のシークレットで実行し、変わった分を `main` に直接コミットしてサイトを公開し直す（2026-11-04 に PR での人の確認をやめた。要約はコードの検証を通った行だけが残る）。要約は4週ごとに作り直し、それ以外の週はまだない作品の分だけ作る。手元でも `npm run reviews:summarize` で作れる。キーがないか取得できなければ何もしない。
 
 ### 6.13.7 記事へのはてなブックマークの反応（`npm run reactions:summarize`）
 
