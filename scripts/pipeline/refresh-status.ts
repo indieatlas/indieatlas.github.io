@@ -16,7 +16,7 @@ export interface Freshness {
   entries: number;
   oldest?: string;
   newest?: string;
-  missing: string[]; // 対象なのにまだ値がない作品、記事の ID
+  missing: string[]; // 対象なのにまだ値がない作品、記事の ID（記事の反応では、はてなブックマークのない記事も含む）
 }
 
 export interface ReleaseCheck {
@@ -135,6 +135,8 @@ export function refreshStatus(repo: RepoData, today: string): RefreshStatus {
   const endedSince = addDays(today, -EVENT_ENDED_DAYS);
   const events: EventCheck[] = [];
   for (const e of liveEvents) {
+    // 確かめた後に recheckAfter を先の日にした催しは、その日まで挙げない
+    if (e.recheckAfter && e.recheckAfter > today) continue;
     const start = startOf(e.start);
     const end = endOf(e.end ?? e.start);
     const reasons: EventCheck['reasons'] = [];
@@ -189,6 +191,11 @@ export function refreshStatus(repo: RepoData, today: string): RefreshStatus {
   const rev = repo.reviewSummaries.entries;
   const rea = repo.articleReactions.entries;
   const pal = repo.palettes.entries;
+  // レビューの要約は、発売済みか早期アクセスの作品だけが対象（発売前の作品にはレビューがない）
+  const playable = (gameId: string) =>
+    adoptedOf(repo.claims.get(gameId)?.claims ?? [], 'release').some(
+      (c) => c.value.status === 'released' || c.value.status === 'early-access',
+    );
   const hasHeader = (gameId: string) => adoptedOf(repo.claims.get(gameId)?.claims ?? [], 'image').length > 0;
 
   const listed = new Set(
@@ -212,7 +219,7 @@ export function refreshStatus(repo: RepoData, today: string): RefreshStatus {
       ),
       reviewSummaries: freshness(
         Object.values(rev).map((e) => e.generatedAt),
-        onSteam.filter((g) => !rev[g.id]).map((g) => g.id),
+        onSteam.filter((g) => !rev[g.id] && playable(g.id)).map((g) => g.id),
       ),
       articleReactions: freshness(
         Object.values(rea).map((e) => e.retrievedAt),
