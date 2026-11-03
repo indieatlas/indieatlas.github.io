@@ -178,8 +178,7 @@
       "evidenceKind": "media",
       "enabled": false,
       "fetch": {
-        "method": "rss",
-        "url": "https://www.famitsu.com/rss/",
+        "method": "manual",
         "frequency": "every-run",
         "maxItemsPerRun": 30
       },
@@ -189,7 +188,7 @@
         "displaySummary": false,
         "displayImages": false,
         "storeQuotes": true,
-        "notes": "記事の見出しとリンクを掲載する（2026-10-28 追加）。画像は使わない。利用条件と RSS の URL は P2-02 で確認する。"
+        "notes": "記事の見出しとリンクを掲載する（2026-10-28 追加）。画像は使わない。利用条件と RSS の URL は P2-02 で確認する。 2026-11-03: RSS（https://www.famitsu.com/rss/）が 404 になり、代わりのフィードが見つからないため manual にした。"
       }
     },
     {
