@@ -225,13 +225,36 @@ export async function seedFromSteam(
       evidence: [ev('steam:appdetails.steam_appid')],
     }),
   );
-  if (app.header_image) {
+  const served = app.header_image ? stableImageUrl(app.header_image) : undefined;
+  // セールや催しの間だけ差し替わるヘッダー画像（header_alt_assets_N.jpg）は取り込まない。
+  // Steam のヘッダー画像がまだない作品では、差し替えの前の画像（/apps/{appId}/header.jpg）を使う
+  const temporaryHeader = !!served && /\/header_alt_assets_\d+\.\w+$/.test(served);
+  const hasSteamHeader = (repo.claims.get(gameId)?.claims ?? []).some(
+    (x) =>
+      x.field === 'image' &&
+      x.status === 'adopted' &&
+      x.value.role === 'header' &&
+      x.evidence.some((e) => e.locator === 'steam:appdetails.header_image'),
+  );
+  const header = temporaryHeader
+    ? hasSteamHeader
+      ? undefined
+      : served!.replace(new RegExp(`(/apps/${appId}/).*$`), '$1header.jpg')
+    : served;
+  if (temporaryHeader) {
+    notes.push(
+      header
+        ? 'ヘッダー画像が期間限定の差し替え（header_alt_assets）なので、差し替えの前の画像を使う'
+        : 'ヘッダー画像が期間限定の差し替え（header_alt_assets）なので取り込まない',
+    );
+  }
+  if (header) {
     claims.push(
       makeClaim({
         ...base,
         field: 'image',
         value: {
-          url: stableImageUrl(app.header_image),
+          url: header,
           role: 'header',
           width: 460,
           height: 215,
@@ -253,6 +276,20 @@ export async function seedFromSteam(
       );
       // 同じストアの、より新しい情報で置き換える（06 §6.8 の同じ順位で新しい根拠）
       if (current) supersede(current, c, at);
+    }
+    // Steam のヘッダー画像が新しくなったら、前の画像を置き換える（採用済みのヘッダーを2つにしない）
+    if (c.field === 'image' && c.value.role === 'header') {
+      for (const x of file.claims) {
+        if (
+          x.field === 'image' &&
+          x.status === 'adopted' &&
+          x.value.role === 'header' &&
+          x.id !== c.id &&
+          x.evidence.some((e) => e.locator === 'steam:appdetails.header_image')
+        ) {
+          supersede(x, c, at);
+        }
+      }
     }
     if (upsertClaim(file, c)) added++;
   }

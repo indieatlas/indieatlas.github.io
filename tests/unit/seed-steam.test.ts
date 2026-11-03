@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
+import { adoptedOf } from '../../scripts/lib/claims-view.ts';
 import { loadRepo } from '../../scripts/lib/repo-io.ts';
 import { seedFromSteam } from '../../scripts/pipeline/seed-steam.ts';
 import { parseSteamDate, releaseFrom } from '../../scripts/sources/steam.ts';
@@ -62,6 +63,62 @@ describe('seed:steam', () => {
     expect(second.created).toBe(false);
     expect(second.gameId).toBe(first.gameId);
     expect(second.claimsAdded).toBe(0);
+  });
+
+  it('ヘッダー画像が変わったら前の画像を置き換え、期間限定の差し替えは取り込まない', async () => {
+    const first = await seedFromSteam(fakeHttp(steamRoutes(900101)), loadRepo(), 900101, opts);
+    const repo = loadRepo();
+    repo.games.push(first.games[0]!);
+    repo.claims.set(first.gameId, first.claims!);
+    // 作品詳細の JSON の header_image だけを差し替えた Fake
+    const withHeader = (header: string) => {
+      const routes = steamRoutes(900101);
+      for (const [url, file] of Object.entries(routes)) {
+        if (!file.includes('appdetails')) continue;
+        const json = JSON.parse(fs.readFileSync(path.resolve('tests/fixtures/web', file), 'utf8'));
+        json['900101'].data.header_image = header;
+        const out = path.join(dir, path.basename(file));
+        fs.writeFileSync(out, JSON.stringify(json));
+        routes[url] = out;
+      }
+      return fakeHttp(routes);
+    };
+    const headers = (claims: typeof first.claims) => adoptedOf(claims!.claims, 'image').map((c) => c.value.url);
+
+    const alt = await seedFromSteam(
+      withHeader('https://shared.example.com/steam/apps/900101/abc/header_alt_assets_0.jpg?t=1'),
+      repo,
+      900101,
+      opts,
+    );
+    expect(headers(alt.claims)).toEqual(['https://shared.example.com/steam/apps/900101/header.jpg']);
+    expect(alt.notes.some((n) => n.includes('header_alt_assets'))).toBe(true);
+
+    const updated = await seedFromSteam(
+      withHeader('https://shared.example.com/steam/apps/900101/def/header.jpg?t=2'),
+      repo,
+      900101,
+      opts,
+    );
+    expect(headers(updated.claims)).toEqual(['https://shared.example.com/steam/apps/900101/def/header.jpg']);
+    const old = updated.claims!.claims.find((c) => c.field === 'image' && c.status === 'superseded')!;
+    expect(old.value).toMatchObject({ url: 'https://shared.example.com/steam/apps/900101/header.jpg' });
+  });
+
+  it('新しい作品のヘッダー画像が期間限定の差し替えなら、差し替えの前の画像を使う', async () => {
+    const routes = steamRoutes(900101);
+    for (const [url, file] of Object.entries(routes)) {
+      if (!file.includes('appdetails')) continue;
+      const json = JSON.parse(fs.readFileSync(path.resolve('tests/fixtures/web', file), 'utf8'));
+      json['900101'].data.header_image = 'https://shared.example.com/steam/apps/900101/abc/header_alt_assets_2.jpg?t=1';
+      const out = path.join(dir, path.basename(file));
+      fs.writeFileSync(out, JSON.stringify(json));
+      routes[url] = out;
+    }
+    const r = await seedFromSteam(fakeHttp(routes), loadRepo(), 900101, opts);
+    expect(adoptedOf(r.claims!.claims, 'image').map((c) => c.value.url)).toEqual([
+      'https://shared.example.com/steam/apps/900101/header.jpg',
+    ]);
   });
 
   it('体験版は本編の associatedApps に加える', async () => {
