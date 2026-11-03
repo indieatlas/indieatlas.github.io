@@ -14,7 +14,7 @@ import { RuntimeConfig, SourcesFile } from '../../schema/config.ts';
 import { Developer } from '../../schema/developer.ts';
 import { Game } from '../../schema/game.ts';
 import { GameRelationsFile } from '../../schema/relation.ts';
-import { PopularityMetrics, ReviewSummaries } from '../../schema/media.ts';
+import { ArticleReactions, PopularityMetrics, ReviewSummaries } from '../../schema/media.ts';
 import { ReviewQueue, SeenUrls, TasksFile } from '../../schema/state.ts';
 import { TagsFile } from '../../schema/taxonomy.ts';
 import { makeClaim, supersede } from '../../scripts/lib/claim-builder.ts';
@@ -633,6 +633,24 @@ writeJson(ReviewSummaries, out('data/metrics/review-summaries.json'), {
       reviewCount: 50,
       model: 'deepseek-v4.1-flash',
       generatedAt: AT,
+    },
+  },
+});
+
+// 記事へのはてなブックマークの反応の要約（架空）
+writeJson(ArticleReactions, out('data/metrics/article-reactions.json'), {
+  schemaVersion: 1,
+  entries: {
+    [articles[0]!.id]: {
+      entryUrl: 'https://b.hatena.ne.jp/entry/s/news.example.jp/articles/2026/10/25/lantern-tide-delay',
+      bookmarkCount: 42,
+      commentCount: 12,
+      points: [
+        { text: '完成度を優先した延期を歓迎する声', support: 5 },
+        { text: '前作の灯台めぐりを懐かしむ声', support: 2 },
+      ],
+      model: 'deepseek-v4.1-flash',
+      retrievedAt: AT,
     },
   },
 });

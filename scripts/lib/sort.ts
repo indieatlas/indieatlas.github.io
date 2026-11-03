@@ -4,7 +4,7 @@ import { ClaimField, scopeKey } from '../../schema/claim.ts';
 import type { Collection } from '../../schema/collection.ts';
 import type { IndieEvent } from '../../schema/event.ts';
 import type { Game } from '../../schema/game.ts';
-import type { ImagePalettes, PopularityMetrics, ReviewSummaries } from '../../schema/media.ts';
+import type { ArticleReactions, ImagePalettes, PopularityMetrics, ReviewSummaries } from '../../schema/media.ts';
 import type { GameRelationsFile } from '../../schema/relation.ts';
 import type { ReviewQueue, RunsFile, SeenUrls, TasksFile } from '../../schema/state.ts';
 import type { TagsFile } from '../../schema/taxonomy.ts';
@@ -166,6 +166,12 @@ export function sortPopularity(f: PopularityMetrics): PopularityMetrics {
 
 export function sortReviewSummaries(f: ReviewSummaries): ReviewSummaries {
   const entries: ReviewSummaries['entries'] = {};
+  for (const k of Object.keys(f.entries).sort()) entries[k] = f.entries[k]!;
+  return { ...f, entries };
+}
+
+export function sortArticleReactions(f: ArticleReactions): ArticleReactions {
+  const entries: ArticleReactions['entries'] = {};
   for (const k of Object.keys(f.entries).sort()) entries[k] = f.entries[k]!;
   return { ...f, entries };
 }

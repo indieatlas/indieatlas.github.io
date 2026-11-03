@@ -301,6 +301,7 @@ export const Developer = z.object({
 
 - `Developer.country` は開発元の拠点の国（ISO 3166-1 alpha-2）と、それを示す根拠（1〜5件）。根拠がなければ設定しない。開発元のいずれかが `JP` の作品には、サイトで「国産」の印を付ける（`SiteGame.madeInJapan`）。
 - `data/metrics/popularity.json`（`schema/media.ts` の `PopularityMetrics`）は、作品ごとの Steam のレビュー数（appdetails の `recommendations.total`）と IGDB の評価を持つ。`npm run metrics:popularity` が更新する。
+- `data/metrics/article-reactions.json`（`schema/media.ts` の `ArticleReactions`）は、記事ごとのはてなブックマークの件数、エントリーのページの URL、反応の要約（コメントの文と投稿者は持たない）を持つ。`npm run reactions:summarize` が更新する（[06](06-update-pipeline.md) §6.13.7）。
 - 知名度の区分（`SiteGame.prominence`）は Steam のレビュー数で決める（`scripts/build/site-data.ts` の `PROMINENCE_THRESHOLDS`）。
 
   | 区分 | 条件 | サイトでの表示 | 2026-10-28 時点の件数 |

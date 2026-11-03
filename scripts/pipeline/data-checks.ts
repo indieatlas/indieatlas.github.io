@@ -109,6 +109,7 @@ export function checkFiles(): { issues: CheckIssue[]; data: RepoData | undefined
     palettes: one('palettes', { schemaVersion: 1, entries: {} }),
     popularity: one('popularity', { schemaVersion: 1, entries: {} }),
     reviewSummaries: one('review-summaries', { schemaVersion: 1, entries: {} }),
+    articleReactions: one('article-reactions', { schemaVersion: 1, entries: {} }),
     tasks: one('tasks', { schemaVersion: 1, tasks: [] }),
     reviewQueue: one('review-queue', { schemaVersion: 1, items: [] }),
     seenUrls: one('seen-urls', { schemaVersion: 1, entries: {} }),

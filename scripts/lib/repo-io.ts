@@ -9,7 +9,7 @@ import { RuntimeConfig, SourcesFile } from '../../schema/config.ts';
 import { Developer } from '../../schema/developer.ts';
 import { IndieEvent } from '../../schema/event.ts';
 import { Game } from '../../schema/game.ts';
-import { ImagePalettes, PopularityMetrics, ReviewSummaries } from '../../schema/media.ts';
+import { ArticleReactions, ImagePalettes, PopularityMetrics, ReviewSummaries } from '../../schema/media.ts';
 import { GameRelationsFile } from '../../schema/relation.ts';
 import { ReviewQueue, RunsFile, SeenUrls, SourceState, TasksFile, UsageLedger } from '../../schema/state.ts';
 import { TagsFile } from '../../schema/taxonomy.ts';
@@ -25,6 +25,7 @@ import {
   sortPalettes,
   sortPopularity,
   sortReviewSummaries,
+  sortArticleReactions,
   sortSeenUrls,
   sortTags,
   sortTasks,
@@ -121,6 +122,12 @@ export const FILE_KINDS: FileKind[] = [
     sort: sortReviewSummaries,
   }),
   defineKind({
+    name: 'article-reactions',
+    file: 'data/metrics/article-reactions.json',
+    schema: ArticleReactions,
+    sort: sortArticleReactions,
+  }),
+  defineKind({
     name: 'popularity',
     file: 'data/metrics/popularity.json',
     schema: PopularityMetrics,
@@ -166,6 +173,7 @@ export interface RepoData {
   palettes: ImagePalettes;
   popularity: PopularityMetrics;
   reviewSummaries: ReviewSummaries;
+  articleReactions: ArticleReactions;
   tasks: TasksFile;
   reviewQueue: ReviewQueue;
   seenUrls: SeenUrls;
@@ -202,6 +210,10 @@ export function loadRepo(): RepoData {
       entries: {},
     },
     reviewSummaries: readJsonIfExists(ReviewSummaries, repoPath('data/metrics/review-summaries.json')) ?? {
+      schemaVersion: 1,
+      entries: {},
+    },
+    articleReactions: readJsonIfExists(ArticleReactions, repoPath('data/metrics/article-reactions.json')) ?? {
       schemaVersion: 1,
       entries: {},
     },

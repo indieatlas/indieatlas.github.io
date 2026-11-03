@@ -43,6 +43,11 @@ test('作品詳細: 外部リンクは新しいタブで開き、noreferrer を�
 test('記事一覧と種別のタブ', async ({ page }) => {
   await page.goto('articles/');
   await expect(page.locator('.article-item')).toHaveCount(3);
+  // はてなブックマークの反応は、当サイトの要約とエントリーへのリンクだけを出す
+  const reactions = page.locator('.article-item .reactions');
+  await expect(reactions).toHaveCount(1);
+  await expect(reactions.locator('li')).toHaveText(['完成度を優先した延期を歓迎する声', '前作の灯台めぐりを懐かしむ声']);
+  await expect(reactions.getByRole('link', { name: /はてブ 42件/ })).toHaveAttribute('href', /^https:\/\/b\.hatena\.ne\.jp\/entry\//);
   await page.getByRole('navigation', { name: '記事の種別' }).getByRole('link', { name: 'インタビュー' }).click();
   await expect(page).toHaveURL(/articles\/kind\/interview\/$/);
   await expect(page.locator('.article-item')).toHaveCount(1);

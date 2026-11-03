@@ -176,7 +176,7 @@ export function buildSiteData(repo: RepoData, today = todayJst()): SiteDataSet {
   // 記事
   const siteArticles: SiteArticle[] = repo.articles
     .filter((a) => a.status === 'active' && a.games.some((g) => publishedIds.has(g.gameId)))
-    .map((a) => toSiteArticle(a, publishedIds, sourceById))
+    .map((a) => toSiteArticle(a, publishedIds, sourceById, repo.articleReactions.entries[a.id]))
     .sort(
       by(
         (a) => invert(a.publishedAt ?? ''),
@@ -496,6 +496,7 @@ function toSiteArticle(
   a: Article,
   publishedIds: Set<string>,
   sourceById: Map<string, RepoData['sources']['sources'][number]>,
+  reactions?: RepoData['articleReactions']['entries'][string],
 ): SiteArticle {
   const rights = a.sourceId ? sourceById.get(a.sourceId)?.rights : undefined;
   const showTitle = rights ? rights.displayTitle : true;
@@ -513,6 +514,15 @@ function toSiteArticle(
       ? { image: { path: a.image.path, width: a.image.width, height: a.image.height } }
       : {}),
     games: a.games.filter((g) => publishedIds.has(g.gameId)).map((g) => ({ gameId: g.gameId, role: g.role })),
+    ...(reactions?.points.length
+      ? {
+          reactions: {
+            points: reactions.points.map((p) => p.text),
+            bookmarkCount: reactions.bookmarkCount,
+            entryUrl: reactions.entryUrl,
+          },
+        }
+      : {}),
   };
 }
 

@@ -89,6 +89,21 @@ const fallback = !article.image && primary ? getGame(primary.gameId)?.image : un
         {rest > 0 && <span> ほか{rest}件</span>}
       </p>
     )}
+    {article.reactions && (
+      <div class="reactions">
+        <p class="reactions-head">
+          <ExternalLink href={article.reactions.entryUrl}>
+            はてブ {article.reactions.bookmarkCount.toLocaleString('ja-JP')}件
+          </ExternalLink>
+          <span class="reactions-note">の主な反応（当サイトが要約）</span>
+        </p>
+        <ul>
+          {article.reactions.points.map((p) => (
+            <li>{p}</li>
+          ))}
+        </ul>
+      </div>
+    )}
   </div>
 </article>
 
@@ -172,6 +187,48 @@ const fallback = !article.image && primary ? getGame(primary.gameId)?.image : un
     margin: var(--space-1) 0 0;
     font-size: var(--text-small);
     color: var(--color-text-muted);
+  }
+  .reactions {
+    margin-top: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    background: color-mix(in srgb, var(--color-surface) 70%, transparent);
+    box-shadow: inset 2px 0 0 var(--color-signal);
+    font-size: var(--text-small);
+  }
+  .reactions-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0 var(--space-1);
+    margin: 0 0 2px;
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
+  }
+  .reactions-head :global(a) {
+    font-weight: 700;
+  }
+  .reactions ul {
+    display: grid;
+    gap: 2px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .reactions li {
+    position: relative;
+    padding-left: 1em;
+    line-height: 1.6;
+  }
+  .reactions li::before {
+    /* 吹き出しの形の小さな印 */
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 0.45em;
+    height: 0.38em;
+    background: var(--color-text-muted);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 40% 70%, 0 100%);
   }
   @media (max-width: 560px) {
     .article-item {

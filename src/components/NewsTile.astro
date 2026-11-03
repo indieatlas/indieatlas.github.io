@@ -55,7 +55,15 @@ const image = a.image
         </time>
       )}
       <span class="news-tile__outlet">{a.outlet.name}</span>
+      {a.reactions && <span class="news-tile__hatena">はてブ {a.reactions.bookmarkCount.toLocaleString('ja-JP')}</span>}
     </p>
+    {size === 'lg' && a.reactions && (
+      <ul class="news-tile__reactions" aria-label="はてなブックマークの主な反応（当サイトが要約）">
+        {a.reactions.points.slice(0, 2).map((p) => (
+          <li>{p}</li>
+        ))}
+      </ul>
+    )}
   </div>
   {game && (
     <a class="news-tile__game" href={url(paths.game(game.id))}>
@@ -174,6 +182,28 @@ const image = a.image
     content: '·';
     margin-right: 6px;
   }
+  .news-tile__hatena {
+    flex: none;
+    padding: 0 6px;
+    box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.4);
+    font-weight: 700;
+  }
+  .news-tile__reactions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .news-tile__reactions li {
+    padding: 4px 10px;
+    background: rgb(255 255 255 / 0.14);
+    backdrop-filter: blur(6px);
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    box-shadow: inset 2px 0 0 var(--color-signal);
+  }
   .news-tile__game {
     position: absolute;
     top: var(--space-3);
@@ -226,6 +256,9 @@ const image = a.image
       font-size: 0.9375rem;
       -webkit-line-clamp: 2;
       line-clamp: 2;
+    }
+    .news-tile__reactions {
+      display: none;
     }
     .news-tile--md .news-tile__kind {
       font-size: 0.6875rem;

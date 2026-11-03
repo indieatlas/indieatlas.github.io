@@ -119,8 +119,13 @@ export function homeNews(featuredCount = 3, restCount = 8): { featured: SiteArti
     const days = (newest - Date.parse(a.publishedAt!)) / 86_400_000;
     const primary = a.games.find((g) => g.role === 'primary') ?? a.games[0];
     const game = primary ? getGame(primary.gameId) : undefined;
+    // はてなブックマークで反応の多い記事は、話題になっているので少し前に出す
+    const buzz = a.reactions ? Math.min(2, a.reactions.bookmarkCount / 30) : 0;
     return (
-      Math.max(0, 6 - days / 15) + (KIND_WEIGHT[a.kind] ?? 0) + (game ? PROMINENCE_WEIGHT[game.prominence] : 0)
+      Math.max(0, 6 - days / 15) +
+      (KIND_WEIGHT[a.kind] ?? 0) +
+      (game ? PROMINENCE_WEIGHT[game.prominence] : 0) +
+      buzz
     );
   };
   // 記事の画像か、主な作品の画像のある記事だけを大きく見せる

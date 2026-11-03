@@ -102,6 +102,8 @@ export interface SiteArticle {
   // 同じ話題の記事のまとまり。一覧ではまとまりの先頭（topicLead）だけを出し、ほかの記事は「同じ話題」として添える
   topicOf?: string; // まとまりの先頭の記事の ID（自分が先頭でなければ）
   sameTopic?: { id: string; outlet: string; url: string; lang: string }[]; // 先頭の記事に添える、同じ話題のほかの記事
+  // はてなブックマークでの主な反応を、当サイトが要約したもの（06 §6.13.7）
+  reactions?: { points: string[]; bookmarkCount: number; entryUrl: string };
 }
 
 /** 開発元とパブリッシャー（/developers/{id}/） */

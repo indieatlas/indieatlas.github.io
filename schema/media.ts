@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { GameId, HttpUrl, IsoDateTime } from './common.ts';
+import { ArticleId, GameId, HttpUrl, IsoDateTime } from './common.ts';
 
 const Hex = z.string().regex(/^#[0-9a-f]{6}$/);
 
@@ -73,3 +73,30 @@ export const ReviewSummaries = z.object({
   ),
 });
 export type ReviewSummaries = z.infer<typeof ReviewSummaries>;
+
+/**
+ * はてなブックマークでの記事への反応の要約（data/metrics/article-reactions.json、06 §6.13.7）。
+ * コメントの文はそのまま載せず、当サイトの言葉で要約したものだけを持つ。コメントの投稿者も持たない
+ */
+export const ArticleReactions = z.object({
+  schemaVersion: z.literal(1),
+  entries: z.record(
+    ArticleId,
+    z.object({
+      entryUrl: HttpUrl, // はてなブックマークのエントリーのページ
+      bookmarkCount: z.number().int().min(0),
+      commentCount: z.number().int().min(0), // 要約に使ったコメントの数
+      points: z
+        .array(
+          z.object({
+            text: z.string().min(8).max(50),
+            support: z.number().int().min(1), // その点に触れたコメントの数
+          }),
+        )
+        .max(4),
+      model: z.string().min(1).max(80).optional(), // points が空なら要約していない
+      retrievedAt: IsoDateTime,
+    }),
+  ),
+});
+export type ArticleReactions = z.infer<typeof ArticleReactions>;
