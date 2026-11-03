@@ -117,6 +117,7 @@ export const ManualResult = z.object({
 | `ia-edit-collection` | 「○○なコレクションを作って」「このコレクションに追加して」 | `create-collection-draft`、`collection-add`、`collection-remove`、`ia decide`、`ia collection set` |
 | `ia-fix-data` | 「この情報が間違っている」「掲載をやめて」「この2つは同じ作品」「レビュー待ちを片づけて」 | `ia retract`、`ia set-status`、`propose-merge`、`ia decide` |
 | `ia-add-source` | 「この媒体を情報源に追加して」 | `config/sources.json` の編集、`ia source test` |
+| `ia-refresh` | 「サイトの内容を全部最新にして」「データをまるっと更新して」「今週分の更新をまとめてやって」 | `npm run refresh:status` で古くなったものを調べ、決定的な更新のコマンド（§6.13）を順に実行し、記事、催し、発売情報、コレクションの項目を利用者の確認を挟んで更新する |
 
 ### 12.6.1 `ia-add-game`
 
@@ -183,6 +184,32 @@ export const ManualResult = z.object({
 5. 利用者が利用条件を確かめて承認したら、`rights` の各項目、`rights.checkedAt`（今日の日付）、`rights.checkedBy`（利用者が指定した名前）を書き、利用者の指示に従って `enabled` を設定する。エージェントだけの判断で `checkedAt` を書かない。
 6. `ia source test {sourceId}` で、取得できる項目とフィルターの効き方を確かめて利用者に示す。
 7. `npm run check:data` を実行し、報告する。
+
+### 12.6.7 `ia-refresh`
+
+定期実行（第2段階以降）がまだない間、または定期実行の合間に、サイトの内容をまとめて最新にする。各段階は、定期実行のジョブ（[06](06-update-pipeline.md) §6.13、`.github/workflows/refresh-metrics.yml`）と同じコマンドを使う。
+
+1. `RULES.md` を読み、セッション ID を決める。`npm run refresh:status` で、古くなったもの、確かめ直すものを調べる（下の表）。キーがなければ、そのキーを使う段階を飛ばす。
+2. 作品の事実: 発売予定と早期アクセスの作品の Steam の情報を `seed:steam` で取り直し、`igdb:sync`、`media:palettes` を実行する。Steam の情報が、より順位の高い根拠の Claim を置き換えていないかを確かめる。
+3. 指標と要約: `metrics:popularity`、`reviews:summarize`（28日より古ければ `--force`）。
+4. 判断の要る内容: 情報源のフィードから新しい記事を、催しの案内のページから日程の変更と次の回を、公式の告知から Steam 以外の機種の発売情報を集め、コレクションに加える作品の案を作る。いずれも案を利用者に示し、確認を得てから書く。
+5. 付随するもの: `media:articles`、`media:events`、`reactions:summarize`。
+6. 検証: `check:data`、`npm test`、`build`、`check:dist`。作業後の `refresh:status` と比べ、残ったものを報告する。
+
+`npm run refresh:status`（`scripts/pipeline/refresh-status.ts`）は、外部と通信せず、データを変えない。出力は次の JSON である。`--url {URL}` を付けると、その URL の記事が登録済みか（canonical と別名を含む）、`state/seen-urls.json` で扱い済みかだけを出す。
+
+| 項目 | 内容 |
+| - | - |
+| `keys` | IGDB と LLM のキーがあるか（値は出さない） |
+| `counts` | 作品（状態ごと）、記事、催し、コレクション、未処理のタスク、レビュー待ちの数 |
+| `metrics` | 知名度、レビューの要約、記事の反応、画像の色について、件数、最も古いものと新しいものの日時、対象なのに値のない ID |
+| `releases` | 採用済みの発売情報が `upcoming`、`tba`、`early-access` の作品。予定日を過ぎたもの（`date-passed`）を先にする |
+| `events` | 確かめ直す催し。開始の30日前から（`soon`）、`recheckAfter` を過ぎた（`recheck-due`）、日程が予定（`tentative`）、終わってから1年以内で次の回が登録されていない（`ended-no-next`） |
+| `sources` | 取得してよい媒体と催しの情報源ごとの、フィードの URL、記事の数、最新の掲載日時 |
+| `articleImagesMissing` | 画像を使ってよい情報源の記事で、画像をまだ保存していないもの |
+| `gamesWithoutCollection` | 公開中で、どの公開中のコレクションにも入っていない作品 |
+
+`npm run ia`（§12.2）が実装されるまでは、コマンドのない変更（記事、催し、Claim、コレクションの項目）を、`scripts/lib/` の読み書き、ID、Claim の関数を使う一時的なスクリプトで書き、`npm run check:data` で確かめる（`RULES.md` の「`npm run ia` が使えない間の扱い」）。`ia` が実装されたら、これらは `ManualResult` と `ia validate`、`ia apply` に置き換える。
 
 ## 12.7 報告の形式
 

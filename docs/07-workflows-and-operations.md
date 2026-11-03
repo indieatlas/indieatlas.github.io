@@ -393,4 +393,4 @@ contentHash = "sha256:" + sha256(canonicalJson({
 | 掲載の停止依頼に対応する | 作品の `status` を `hidden` にし、`statusReason` を書く PR を作る |
 | 情報源を追加する | 利用条件を確認し、`config/sources.json` に `rights` を書いて PR を作る |
 | 設定を変える | `config/runtime.json` を PR で変更する。`check:data` がスキーマを検証する |
-| 手動でデータを集める、ページを作る | コーディングエージェントで、スキル（`ia-add-game`、`ia-collect`、`ia-link-article`、`ia-edit-collection`、`ia-fix-data`、`ia-add-source`）を使う。結果を確かめてから PR にする（[12](12-agent-skills.md)） |
+| 手動でデータを集める、ページを作る | コーディングエージェントで、スキル（`ia-add-game`、`ia-collect`、`ia-link-article`、`ia-edit-collection`、`ia-fix-data`、`ia-add-source`、`ia-refresh`）を使う。サイトの内容をまとめて最新にするときは `ia-refresh` を使う。結果を確かめてから PR にする（[12](12-agent-skills.md)） |
