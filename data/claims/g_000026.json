@@ -26,7 +26,7 @@
       "adoptedAt": "2026-10-27T14:24:19Z",
       "createdAt": "2026-10-27T14:24:19Z",
       "updatedAt": "2026-10-27T14:24:19Z",
-      "lastCheckedAt": "2026-10-27T14:24:19Z",
+      "lastCheckedAt": "2026-11-03T04:58:36Z",
       "createdBy": "agent",
       "createdByRun": "local-seed",
       "field": "release",
@@ -39,6 +39,42 @@
           "day": 26
         },
         "rawText": "26 Feb, 2025"
+      }
+    },
+    {
+      "id": "c_6bd8f88f8b2a03c3",
+      "gameId": "g_000026",
+      "scope": {
+        "platform": "switch2",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/repo",
+          "retrievedAt": "2026-11-03T04:59:09Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T04:59:09Z",
+      "createdAt": "2026-11-03T04:59:09Z",
+      "updatedAt": "2026-11-03T04:59:09Z",
+      "lastCheckedAt": "2026-11-03T04:59:09Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "year",
+          "year": 2027
+        },
+        "rawText": "2027"
       }
     },
     {
@@ -57,11 +93,12 @@
         }
       ],
       "asOf": "2026-10-27",
-      "status": "adopted",
-      "statusReason": "highest-rank",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersededBy": "c_c01aeb86be5d1191",
       "adoptedAt": "2026-10-27T14:24:19Z",
       "createdAt": "2026-10-27T14:24:19Z",
-      "updatedAt": "2026-10-27T14:24:19Z",
+      "updatedAt": "2026-11-03T04:58:36Z",
       "lastCheckedAt": "2026-10-27T14:24:25Z",
       "createdBy": "agent",
       "createdByRun": "local-seed",
@@ -69,6 +106,40 @@
       "value": {
         "interface": "no",
         "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_c01aeb86be5d1191",
+      "gameId": "g_000026",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3241660/",
+          "retrievedAt": "2026-11-03T04:58:42Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:140a996e7b7986207f1956b2f24c16dd44f706e4c7645dfb89eab8726b49c3a1"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_bd5187c5e1e7a87d"
+      ],
+      "adoptedAt": "2026-11-03T04:58:36Z",
+      "createdAt": "2026-11-03T04:58:36Z",
+      "updatedAt": "2026-11-03T04:58:36Z",
+      "lastCheckedAt": "2026-11-03T04:58:42Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
         "audio": "no"
       }
     },
@@ -93,7 +164,7 @@
       "adoptedAt": "2026-10-27T14:24:19Z",
       "createdAt": "2026-10-27T14:24:19Z",
       "updatedAt": "2026-10-27T14:24:19Z",
-      "lastCheckedAt": "2026-10-27T14:24:19Z",
+      "lastCheckedAt": "2026-11-03T04:58:36Z",
       "createdBy": "agent",
       "createdByRun": "local-seed",
       "field": "playerModes",
@@ -327,7 +398,7 @@
       "adoptedAt": "2026-10-27T14:24:19Z",
       "createdAt": "2026-10-27T14:24:19Z",
       "updatedAt": "2026-10-27T14:24:19Z",
-      "lastCheckedAt": "2026-10-27T14:24:19Z",
+      "lastCheckedAt": "2026-11-03T04:58:36Z",
       "createdBy": "agent",
       "createdByRun": "local-seed",
       "field": "storeLink",
@@ -504,7 +575,7 @@
       "adoptedAt": "2026-10-27T16:30:31Z",
       "createdAt": "2026-10-27T16:30:31Z",
       "updatedAt": "2026-10-27T16:30:31Z",
-      "lastCheckedAt": "2026-10-27T16:30:31Z",
+      "lastCheckedAt": "2026-11-03T04:59:09Z",
       "createdBy": "agent",
       "createdByRun": "local-igdb",
       "field": "image",

@@ -30,14 +30,15 @@
         }
       ],
       "asOf": "2026-10-27",
-      "status": "adopted",
+      "status": "superseded",
       "statusReason": "newer-source",
       "supersedes": [
         "c_b66f0eccbeed90be"
       ],
+      "supersededBy": "c_2a17d6dec8e6df96",
       "adoptedAt": "2026-10-27T14:25:40Z",
       "createdAt": "2026-10-27T14:25:40Z",
-      "updatedAt": "2026-10-27T14:47:35Z",
+      "updatedAt": "2026-11-03T04:57:24Z",
       "lastCheckedAt": "2026-10-27T14:25:40Z",
       "createdBy": "agent",
       "createdByRun": "local-seed",
@@ -91,6 +92,138 @@
       }
     },
     {
+      "id": "c_2a17d6dec8e6df96",
+      "gameId": "g_000035",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1846700/",
+          "retrievedAt": "2026-11-03T04:57:24Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fcf7de4b7c2b1c816acc90d232026d5741acae162b8be2e30b6dd79f0958b209"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_aba6301915974214"
+      ],
+      "adoptedAt": "2026-11-03T04:57:24Z",
+      "createdAt": "2026-11-03T04:57:24Z",
+      "updatedAt": "2026-11-03T04:57:24Z",
+      "lastCheckedAt": "2026-11-03T04:57:24Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2027,
+          "month": 1,
+          "day": 28
+        },
+        "rawText": "28 Jan, 2027"
+      }
+    },
+    {
+      "id": "c_f1c1b5cc8e039bd6",
+      "gameId": "g_000035",
+      "scope": {
+        "platform": "ps5",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/witchbrook",
+          "retrievedAt": "2026-11-03T04:59:09Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersededBy": "c_ba4addf9186a23eb",
+      "adoptedAt": "2026-11-03T04:59:09Z",
+      "createdAt": "2026-11-03T04:59:09Z",
+      "updatedAt": "2026-11-03T05:23:53Z",
+      "lastCheckedAt": "2026-11-03T04:59:09Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2027,
+          "month": 1,
+          "day": 28
+        },
+        "rawText": "Jan 28, 2027"
+      }
+    },
+    {
+      "id": "c_ba4addf9186a23eb",
+      "gameId": "g_000035",
+      "scope": {
+        "platform": "ps5",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://automaton-media.com/articles/newsjp/witchbrook-20261028-476222/",
+          "sourceId": "automaton",
+          "articleId": "a_011c70724840b413",
+          "publishedAt": "2026-10-28T14:40:36Z",
+          "retrievedAt": "2026-11-03T05:08:44Z",
+          "quote": "対応プラットフォームはPC（Steam）/Nintendo Switch/Nintendo Switch 2/PS5/XBOX Series X|S/XBOX Oneで、日本語表示に対応する。",
+          "originKey": "media:automaton-media.com"
+        },
+        {
+          "kind": "official",
+          "url": "https://www.witchbrook.com/",
+          "retrievedAt": "2026-11-03T05:22:32Z",
+          "quote": "Witchbrook will be launching on January 28th, 2027 on Steam , Nintendo Switch , Nintendo Switch 2 , Xbox One, Xbox Series S/X , and PlayStation 5 .",
+          "originKey": "official:witchbrook.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_f1c1b5cc8e039bd6"
+      ],
+      "adoptedAt": "2026-11-03T05:23:53Z",
+      "createdAt": "2026-11-03T05:23:53Z",
+      "updatedAt": "2026-11-03T05:23:53Z",
+      "lastCheckedAt": "2026-11-03T05:22:32Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2027,
+          "month": 1,
+          "day": 28
+        },
+        "rawText": "January 28th, 2027"
+      }
+    },
+    {
       "id": "c_791f759177290041",
       "gameId": "g_000035",
       "scope": {
@@ -108,17 +241,69 @@
         }
       ],
       "asOf": "2026-10-27",
-      "status": "adopted",
-      "statusReason": "highest-rank",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersededBy": "c_06853fdc075e6ca7",
       "adoptedAt": "2026-10-27T14:47:08Z",
       "createdAt": "2026-10-27T14:47:08Z",
-      "updatedAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-11-03T05:23:53Z",
       "lastCheckedAt": "2026-10-27T14:47:35Z",
       "createdBy": "agent",
       "createdByRun": "local-seed",
       "field": "release",
       "value": {
         "status": "upcoming"
+      }
+    },
+    {
+      "id": "c_06853fdc075e6ca7",
+      "gameId": "g_000035",
+      "scope": {
+        "platform": "switch2",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://automaton-media.com/articles/newsjp/witchbrook-20261028-476222/",
+          "sourceId": "automaton",
+          "articleId": "a_011c70724840b413",
+          "publishedAt": "2026-10-28T14:40:36Z",
+          "retrievedAt": "2026-11-03T05:08:44Z",
+          "quote": "対応プラットフォームはPC（Steam）/Nintendo Switch/Nintendo Switch 2/PS5/XBOX Series X|S/XBOX Oneで、日本語表示に対応する。",
+          "originKey": "media:automaton-media.com"
+        },
+        {
+          "kind": "official",
+          "url": "https://www.witchbrook.com/",
+          "retrievedAt": "2026-11-03T05:22:32Z",
+          "quote": "Witchbrook will be launching on January 28th, 2027 on Steam , Nintendo Switch , Nintendo Switch 2 , Xbox One, Xbox Series S/X , and PlayStation 5 .",
+          "originKey": "official:witchbrook.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_791f759177290041"
+      ],
+      "adoptedAt": "2026-11-03T05:23:53Z",
+      "createdAt": "2026-11-03T05:23:53Z",
+      "updatedAt": "2026-11-03T05:23:53Z",
+      "lastCheckedAt": "2026-11-03T05:22:32Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2027,
+          "month": 1,
+          "day": 28
+        },
+        "rawText": "January 28th, 2027"
       }
     },
     {
@@ -139,11 +324,12 @@
         }
       ],
       "asOf": "2026-10-27",
-      "status": "adopted",
-      "statusReason": "highest-rank",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersededBy": "c_39193a350b276b8d",
       "adoptedAt": "2026-10-27T14:47:08Z",
       "createdAt": "2026-10-27T14:47:08Z",
-      "updatedAt": "2026-10-27T14:47:08Z",
+      "updatedAt": "2026-11-03T05:23:53Z",
       "lastCheckedAt": "2026-10-27T14:47:35Z",
       "createdBy": "agent",
       "createdByRun": "local-seed",
@@ -155,6 +341,57 @@
           "year": 2026
         },
         "rawText": "2026"
+      }
+    },
+    {
+      "id": "c_39193a350b276b8d",
+      "gameId": "g_000035",
+      "scope": {
+        "platform": "switch",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://automaton-media.com/articles/newsjp/witchbrook-20261028-476222/",
+          "sourceId": "automaton",
+          "articleId": "a_011c70724840b413",
+          "publishedAt": "2026-10-28T14:40:36Z",
+          "retrievedAt": "2026-11-03T05:08:44Z",
+          "quote": "対応プラットフォームはPC（Steam）/Nintendo Switch/Nintendo Switch 2/PS5/XBOX Series X|S/XBOX Oneで、日本語表示に対応する。",
+          "originKey": "media:automaton-media.com"
+        },
+        {
+          "kind": "official",
+          "url": "https://www.witchbrook.com/",
+          "retrievedAt": "2026-11-03T05:22:32Z",
+          "quote": "Witchbrook will be launching on January 28th, 2027 on Steam , Nintendo Switch , Nintendo Switch 2 , Xbox One, Xbox Series S/X , and PlayStation 5 .",
+          "originKey": "official:witchbrook.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_e84d93d60739fc57"
+      ],
+      "adoptedAt": "2026-11-03T05:23:53Z",
+      "createdAt": "2026-11-03T05:23:53Z",
+      "updatedAt": "2026-11-03T05:23:53Z",
+      "lastCheckedAt": "2026-11-03T05:22:32Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2027,
+          "month": 1,
+          "day": 28
+        },
+        "rawText": "January 28th, 2027"
       }
     },
     {
@@ -175,11 +412,12 @@
         }
       ],
       "asOf": "2026-10-28",
-      "status": "adopted",
-      "statusReason": "highest-rank",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersededBy": "c_d966a295ee1a8abd",
       "adoptedAt": "2026-10-27T16:30:31Z",
       "createdAt": "2026-10-27T16:30:31Z",
-      "updatedAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-11-03T05:23:53Z",
       "lastCheckedAt": "2026-10-27T16:30:31Z",
       "createdBy": "agent",
       "createdByRun": "local-igdb",
@@ -191,6 +429,57 @@
           "year": 2026
         },
         "rawText": "2026"
+      }
+    },
+    {
+      "id": "c_d966a295ee1a8abd",
+      "gameId": "g_000035",
+      "scope": {
+        "platform": "xbox-one",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://automaton-media.com/articles/newsjp/witchbrook-20261028-476222/",
+          "sourceId": "automaton",
+          "articleId": "a_011c70724840b413",
+          "publishedAt": "2026-10-28T14:40:36Z",
+          "retrievedAt": "2026-11-03T05:08:44Z",
+          "quote": "対応プラットフォームはPC（Steam）/Nintendo Switch/Nintendo Switch 2/PS5/XBOX Series X|S/XBOX Oneで、日本語表示に対応する。",
+          "originKey": "media:automaton-media.com"
+        },
+        {
+          "kind": "official",
+          "url": "https://www.witchbrook.com/",
+          "retrievedAt": "2026-11-03T05:22:32Z",
+          "quote": "Witchbrook will be launching on January 28th, 2027 on Steam , Nintendo Switch , Nintendo Switch 2 , Xbox One, Xbox Series S/X , and PlayStation 5 .",
+          "originKey": "official:witchbrook.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_3dd5395adf714ad7"
+      ],
+      "adoptedAt": "2026-11-03T05:23:53Z",
+      "createdAt": "2026-11-03T05:23:53Z",
+      "updatedAt": "2026-11-03T05:23:53Z",
+      "lastCheckedAt": "2026-11-03T05:22:32Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2027,
+          "month": 1,
+          "day": 28
+        },
+        "rawText": "January 28th, 2027"
       }
     },
     {
@@ -211,11 +500,12 @@
         }
       ],
       "asOf": "2026-10-28",
-      "status": "adopted",
-      "statusReason": "highest-rank",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersededBy": "c_e49c51afe7e791c8",
       "adoptedAt": "2026-10-27T16:30:31Z",
       "createdAt": "2026-10-27T16:30:31Z",
-      "updatedAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-11-03T05:23:53Z",
       "lastCheckedAt": "2026-10-27T16:30:31Z",
       "createdBy": "agent",
       "createdByRun": "local-igdb",
@@ -227,6 +517,57 @@
           "year": 2026
         },
         "rawText": "2026"
+      }
+    },
+    {
+      "id": "c_e49c51afe7e791c8",
+      "gameId": "g_000035",
+      "scope": {
+        "platform": "xbox-series",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://automaton-media.com/articles/newsjp/witchbrook-20261028-476222/",
+          "sourceId": "automaton",
+          "articleId": "a_011c70724840b413",
+          "publishedAt": "2026-10-28T14:40:36Z",
+          "retrievedAt": "2026-11-03T05:08:44Z",
+          "quote": "対応プラットフォームはPC（Steam）/Nintendo Switch/Nintendo Switch 2/PS5/XBOX Series X|S/XBOX Oneで、日本語表示に対応する。",
+          "originKey": "media:automaton-media.com"
+        },
+        {
+          "kind": "official",
+          "url": "https://www.witchbrook.com/",
+          "retrievedAt": "2026-11-03T05:22:32Z",
+          "quote": "Witchbrook will be launching on January 28th, 2027 on Steam , Nintendo Switch , Nintendo Switch 2 , Xbox One, Xbox Series S/X , and PlayStation 5 .",
+          "originKey": "official:witchbrook.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_ffbba2c324e67a1d"
+      ],
+      "adoptedAt": "2026-11-03T05:23:53Z",
+      "createdAt": "2026-11-03T05:23:53Z",
+      "updatedAt": "2026-11-03T05:23:53Z",
+      "lastCheckedAt": "2026-11-03T05:22:32Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2027,
+          "month": 1,
+          "day": 28
+        },
+        "rawText": "January 28th, 2027"
       }
     },
     {
@@ -250,7 +591,7 @@
       "adoptedAt": "2026-10-27T14:25:40Z",
       "createdAt": "2026-10-27T14:25:40Z",
       "updatedAt": "2026-10-27T14:25:40Z",
-      "lastCheckedAt": "2026-10-27T14:25:46Z",
+      "lastCheckedAt": "2026-11-03T04:57:30Z",
       "createdBy": "agent",
       "createdByRun": "local-seed",
       "field": "japaneseSupport",
@@ -281,7 +622,7 @@
       "adoptedAt": "2026-10-27T14:25:40Z",
       "createdAt": "2026-10-27T14:25:40Z",
       "updatedAt": "2026-10-27T14:25:40Z",
-      "lastCheckedAt": "2026-10-27T14:25:40Z",
+      "lastCheckedAt": "2026-11-03T04:57:24Z",
       "createdBy": "agent",
       "createdByRun": "local-seed",
       "field": "playerModes",
@@ -571,7 +912,7 @@
       "adoptedAt": "2026-10-27T14:25:40Z",
       "createdAt": "2026-10-27T14:25:40Z",
       "updatedAt": "2026-10-27T14:25:40Z",
-      "lastCheckedAt": "2026-10-27T14:25:40Z",
+      "lastCheckedAt": "2026-11-03T04:57:24Z",
       "createdBy": "agent",
       "createdByRun": "local-seed",
       "field": "storeLink",
@@ -610,6 +951,35 @@
       }
     },
     {
+      "id": "c_f0d9dcde3c7792d1",
+      "gameId": "g_000035",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/witchbrook",
+          "retrievedAt": "2026-11-03T04:59:09Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-03T04:59:09Z",
+      "createdAt": "2026-11-03T04:59:09Z",
+      "updatedAt": "2026-11-03T04:59:09Z",
+      "lastCheckedAt": "2026-11-03T04:59:09Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "storeLink",
+      "value": {
+        "store": "playstation-store",
+        "url": "https://store.playstation.com/ja-jp/concept/10016633"
+      }
+    },
+    {
       "id": "c_b0514d1141a9e543",
       "gameId": "g_000035",
       "scope": {},
@@ -625,11 +995,12 @@
         }
       ],
       "asOf": "2026-10-27",
-      "status": "adopted",
-      "statusReason": "highest-rank",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersededBy": "c_7d1bfd5c3783c3e5",
       "adoptedAt": "2026-10-27T14:25:40Z",
       "createdAt": "2026-10-27T14:25:40Z",
-      "updatedAt": "2026-10-27T14:25:40Z",
+      "updatedAt": "2026-11-03T04:57:24Z",
       "lastCheckedAt": "2026-10-27T14:25:40Z",
       "createdBy": "agent",
       "createdByRun": "local-seed",
@@ -939,6 +1310,46 @@
           "basis": "other-permitted",
           "credit": "IGDB",
           "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_7d1bfd5c3783c3e5",
+      "gameId": "g_000035",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1846700/",
+          "retrievedAt": "2026-11-03T04:57:24Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fcf7de4b7c2b1c816acc90d232026d5741acae162b8be2e30b6dd79f0958b209"
+        }
+      ],
+      "asOf": "2026-11-03",
+      "status": "adopted",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_b0514d1141a9e543"
+      ],
+      "adoptedAt": "2026-11-03T04:57:24Z",
+      "createdAt": "2026-11-03T04:57:24Z",
+      "updatedAt": "2026-11-03T04:57:24Z",
+      "lastCheckedAt": "2026-11-03T04:57:24Z",
+      "createdBy": "agent",
+      "createdByRun": "local-20261103-135409-refresh",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1846700/957b7e61bf8cb5e91f5dce21403a4288d78fb7b7/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Witchbrook (ウィッチブルック) のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Chucklefish"
         }
       }
     }
