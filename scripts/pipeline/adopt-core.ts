@@ -88,7 +88,13 @@ export function readResearchBundle(dir: string): ResearchBundle {
   return {
     dir,
     meta: ResearchMeta.parse(JSON.parse(fs.readFileSync(path.join(dir, 'meta.json'), 'utf8'))),
-    taskUpdates: read(TaskUpdates, 'task-updates.json', { schemaVersion: 1, newTasks: [], reopened: [], attempts: [] }),
+    taskUpdates: read(TaskUpdates, 'task-updates.json', {
+      schemaVersion: 1,
+      newTasks: [],
+      reopened: [],
+      attempts: [],
+      expired: [],
+    }),
     collected: read(Collected, 'collected.json', { schemaVersion: 1, items: [] }),
     sourceUpdates: read(SourceUpdates, 'source-updates.json', { schemaVersion: 1, updates: [] }),
     results,
@@ -162,6 +168,20 @@ export async function adoptResearch(
     for (const id of bundle.taskUpdates.reopened) {
       const t = ws.repo.tasks.tasks.find((x) => x.id === id);
       if (t?.status === 'blocked') upsertTask(ws, { ...t, status: 'open' });
+    }
+    for (const id of bundle.taskUpdates.expired) {
+      const t = ws.repo.tasks.tasks.find((x) => x.id === id);
+      if (t?.status !== 'open') continue;
+      upsertTask(ws, {
+        ...t,
+        status: 'dropped',
+        resolution: {
+          at: o.at,
+          runId: ws.runId,
+          outcome: 'deferred',
+          summary: '作ってから14日を過ぎた記事なので扱わない',
+        },
+      });
     }
   }
 

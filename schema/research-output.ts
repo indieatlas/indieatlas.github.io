@@ -35,6 +35,8 @@ export const TaskUpdates = z.object({
   reopened: z.array(TaskId),
   // この実行で結果のなかったタスク（費用や時間の上限、失敗）
   attempts: z.array(z.object({ taskId: TaskId, outcome: z.enum(['failed', 'deferred']), note: z.string().max(300) })),
+  // 古くなって扱わないタスク（作ってから14日を過ぎた process-article）
+  expired: z.array(TaskId).default([]),
 });
 export type TaskUpdates = z.infer<typeof TaskUpdates>;
 

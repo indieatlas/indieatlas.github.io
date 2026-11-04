@@ -242,7 +242,11 @@ export function orderForExecution(tasks: Task[], exploration: Set<string>): Task
 export interface ScheduleResult {
   newTasks: Task[];
   reopened: string[];
+  expired: string[];
 }
+
+/** 記事の処理は、タスクを作ってからこの日数を過ぎたら扱わない（新着に追いつけないときに古い記事を積み残さない） */
+export const ARTICLE_TASK_MAX_AGE_DAYS = 14;
 
 export function scheduleTasks(repo: RepoData, today: string, at: string): ScheduleResult {
   const existing = new Map(repo.tasks.tasks.map((t) => [t.id, t]));
@@ -376,7 +380,11 @@ export function scheduleTasks(repo: RepoData, today: string, at: string): Schedu
   const reopened = repo.tasks.tasks
     .filter((t) => t.status === 'blocked' && t.recheck?.after && t.recheck.after <= today && t.attempts < 6)
     .map((t) => t.id);
-  return { newTasks: out, reopened };
+  const expireBefore = `${addDays(today, -ARTICLE_TASK_MAX_AGE_DAYS)}T00:00:00Z`;
+  const expired = repo.tasks.tasks
+    .filter((t) => t.type === 'process-article' && t.status === 'open' && t.createdAt < expireBefore)
+    .map((t) => t.id);
+  return { newTasks: out, reopened, expired };
 }
 
 // ------------------------------------------------------------------ 状態の遷移（04 §4.8.2）

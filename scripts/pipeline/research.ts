@@ -139,8 +139,11 @@ export async function runResearch(o: ResearchOptions): Promise<ResearchMeta> {
   const newTasks: Task[] = [...scheduled.newTasks];
   const tasks = new Map(repo.tasks.tasks.map((t) => [t.id, t]));
   for (const id of scheduled.reopened) tasks.set(id, { ...tasks.get(id)!, status: 'open' });
+  for (const id of scheduled.expired) tasks.delete(id);
   for (const t of newTasks) tasks.set(t.id, t);
-  log(`R1: 新しいタスク ${newTasks.length}、開き直し ${scheduled.reopened.length}`);
+  log(
+    `R1: 新しいタスク ${newTasks.length}、開き直し ${scheduled.reopened.length}、期限切れ ${scheduled.expired.length}`,
+  );
 
   // R2: collect
   const states = new Map<string, SourceState>();
@@ -203,6 +206,7 @@ export async function runResearch(o: ResearchOptions): Promise<ResearchMeta> {
       newTasks,
       reopened: scheduled.reopened,
       attempts,
+      expired: scheduled.expired,
     });
   writeTaskUpdates();
 
