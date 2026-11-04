@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000100",
+  "status": "candidate",
+  "title": {
+    "display": "Monster Train 2",
+    "original": "Monster Train 2",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 2742830
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3580200",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "3580220",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "3993450",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4739980",
+      "kind": "dlc",
+      "title": "Monster Train 2: The Punished"
+    }
+  ],
+  "developerIds": [
+    "dev_000131"
+  ],
+  "publisherIds": [
+    "dev_000132"
+  ],
+  "indie": {
+    "assessment": "unknown",
+    "reasons": [
+      {
+        "code": "independent-publisher",
+        "note": "販売元のBig Fan GamesはDevolver Digitalのレーベルで、インディースタジオと組んで作品を展開している。",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.bigfangames.com/",
+            "retrievedAt": "2026-11-04T04:28:20Z",
+            "quote": "Indie studios we’ve paired with the worlds they love",
+            "originKey": "media:bigfangames.com",
+            "fetchHash": "sha256:4d0fb0d60da59098509cd8b9f267a33bc1bcb6ca49fd07b510279fa9784805fe"
+          },
+          {
+            "kind": "media",
+            "url": "https://www.bigfangames.com/games/monster-train-2",
+            "publishedAt": "2025-05-21T00:00:00Z",
+            "retrievedAt": "2026-11-04T04:28:45Z",
+            "quote": "Copyright © 2025 Shiny Shoe Inc. Published by Big Fan Games.",
+            "originKey": "media:bigfangames.com",
+            "fetchHash": "sha256:49897c38336cf988def2b1e852dfb70e1dd2fc36152d33b9c72cc5114e11f60a"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-04T04:40:33Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "associatedApps",
+      "evidence": {
+        "kind": "media",
+        "url": "https://www.pcgamer.com/games/card-games/monster-train-2-the-punished-review/",
+        "sourceId": "pc-gamer",
+        "publishedAt": "2026-11-02T14:00:00Z",
+        "retrievedAt": "2026-11-04T04:27:32Z",
+        "quote": "The final faction being added to Monster Train 2, The Punished, arrive November 10 as a paid DLC.",
+        "originKey": "media:pcgamer.com",
+        "fetchHash": "sha256:d9bbcaec8fbbaf41b04619e8b5d20469088c47c6ab3a6689d801ccf193e097c8"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2742830/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:27:44Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:268fd58a89d0ea1e03b9a825c216c3f424056ab97c239fd53ce00a0d6a80f158"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2742830/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:27:44Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:268fd58a89d0ea1e03b9a825c216c3f424056ab97c239fd53ce00a0d6a80f158"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2742830/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:27:44Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:268fd58a89d0ea1e03b9a825c216c3f424056ab97c239fd53ce00a0d6a80f158"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "media",
+        "url": "https://www.bigfangames.com/games/monster-train-2",
+        "publishedAt": "2025-05-21T00:00:00Z",
+        "retrievedAt": "2026-11-04T04:28:45Z",
+        "quote": "Copyright © 2025 Shiny Shoe Inc. Published by Big Fan Games.",
+        "originKey": "media:bigfangames.com",
+        "fetchHash": "sha256:49897c38336cf988def2b1e852dfb70e1dd2fc36152d33b9c72cc5114e11f60a"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2742830/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:27:44Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:268fd58a89d0ea1e03b9a825c216c3f424056ab97c239fd53ce00a0d6a80f158"
+      }
+    }
+  ],
+  "createdAt": "2026-11-04T04:40:33Z",
+  "updatedAt": "2026-11-04T04:41:09Z",
+  "createdByRun": "local-20261104-132342-research"
+}

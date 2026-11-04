@@ -86,6 +86,90 @@
       "createdByRun": "local-seed"
     },
     {
+      "id": "r_dfccc0cf0abf3972",
+      "a": "g_000005",
+      "b": "g_000021",
+      "kind": "similar-play",
+      "reason": "資源を集めてクラフトし、拠点を築きながら世界を生き延びる遊びが共通する。",
+      "basis": "editorial",
+      "evidenceClaimIds": [
+        "c_4c122ecd4386ef5f",
+        "c_705fbd4571e4e9ec",
+        "c_93f5dd73d94df6a0",
+        "c_00aa38536e6535b3",
+        "c_89d9c654dc12ef16",
+        "c_e83978f390c72be1"
+      ],
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/105600/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:37:01Z",
+          "quote": "Will you delve deep into cavernous expanses in search of treasure and raw materials with which to craft ever-evolving gear, machinery, and aesthetics?",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ff7c14fe01110c02bd20d24c892fc7d5394911dcb705bc3315eb2b25bc429558"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/108600/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:37:13Z",
+          "quote": "Alone or in MP: you loot, build, craft, fight, farm and fish in a struggle to survive.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0a2db6e05455aaf9be4a7e217b97ea7b254be12d1ee781ae248ff8c0f2c9056d"
+        }
+      ],
+      "status": "adopted",
+      "createdBy": "llm",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "createdByRun": "local-20261104-132342-research"
+    },
+    {
+      "id": "r_b1cc7c3348b1eca5",
+      "a": "g_000005",
+      "b": "g_000037",
+      "kind": "similar-play",
+      "reason": "ランダムに生成される広大な世界を探索し、資源を集めて建物を作る遊びが共通する。",
+      "basis": "editorial",
+      "evidenceClaimIds": [
+        "c_4c122ecd4386ef5f",
+        "c_69c0acb326385dcb",
+        "c_93f5dd73d94df6a0",
+        "c_ba50fdb04bf9822d",
+        "c_714dc35eb2af1f79",
+        "c_90478e6c7c8f6aa9",
+        "c_b1f60895131b9368",
+        "c_fca745b25ce6d032"
+      ],
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/105600/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:37:01Z",
+          "quote": "Dig, Fight, Explore, Build: The very world is at your fingertips as you fight for survival, fortune, and glory.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ff7c14fe01110c02bd20d24c892fc7d5394911dcb705bc3315eb2b25bc429558"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2719590/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:37:07Z",
+          "quote": "A game about adventure, building, survival and exploration together. Set on a fantasy planet the size of Earth.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c8e37ee7bfccc1eae591944920b67edfa960b35042e71d50b55eb888695a02dc"
+        }
+      ],
+      "status": "adopted",
+      "createdBy": "llm",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "createdByRun": "local-20261104-132342-research"
+    },
+    {
       "id": "r_d2cc1e146e6c34cb",
       "a": "g_000006",
       "b": "g_000020",
@@ -172,6 +256,49 @@
       "createdAt": "2026-10-27T14:47:35Z",
       "updatedAt": "2026-10-27T14:47:35Z",
       "createdByRun": "local-seed"
+    },
+    {
+      "id": "r_e7d4a9b46892501a",
+      "a": "g_000012",
+      "b": "g_000081",
+      "kind": "similar-play",
+      "reason": "島を登り滑空しながら気ままに巡る、動物の主人公によるコージーな探索型アドベンチャー。",
+      "basis": "editorial",
+      "evidenceClaimIds": [
+        "c_2eff8e1b2632b1fb",
+        "c_47fa2b566a59fbf0",
+        "c_f6ceaa4505bc8cda",
+        "c_fa28368a00aa5fe2",
+        "c_98af238504c4a32a",
+        "c_be4e00c52430ce24",
+        "c_fe52e4c50528e609",
+        "c_bb0fb6c958031055"
+      ],
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1055540/A_Short_Hike/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:36:58Z",
+          "quote": "Hike, climb, and soar through the peaceful mountainside landscapes of Hawk Peak Provincial Park.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fa22e8b38a3973571525cce86b3f3027916bb9f608a2d7db7e09741354652334"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1586800/Lil_Gator_Game/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:36:58Z",
+          "quote": "Explore a lovingly crafted island full to the brim with areas to discover, friends to make and joy to be had.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:54093543bba593927996b640c85e416b4c6e960fbeaf8db0a541e1c8d75b9eb6"
+        }
+      ],
+      "status": "adopted",
+      "createdBy": "llm",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "createdByRun": "local-20261104-132342-research"
     },
     {
       "id": "r_183811571e36a812",

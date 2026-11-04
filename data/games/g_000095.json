@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000095",
+  "status": "candidate",
+  "title": {
+    "display": "Cinema Manager Simulator",
+    "original": "Cinema Manager Simulator",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 2983480
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4074970",
+      "kind": "demo"
+    }
+  ],
+  "developerIds": [
+    "dev_000124"
+  ],
+  "publisherIds": [
+    "dev_000125"
+  ],
+  "indie": {
+    "assessment": "unknown",
+    "reasons": [],
+    "assessedAt": "2026-11-04T04:40:33Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2983480/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:27:20Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0d9257d46d489f1c92aba45bbaa2e3ad131bda4397ce4c60a5907529cc013c97"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2983480/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:27:20Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0d9257d46d489f1c92aba45bbaa2e3ad131bda4397ce4c60a5907529cc013c97"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2983480/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:27:20Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0d9257d46d489f1c92aba45bbaa2e3ad131bda4397ce4c60a5907529cc013c97"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2983480/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:27:20Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0d9257d46d489f1c92aba45bbaa2e3ad131bda4397ce4c60a5907529cc013c97"
+      }
+    }
+  ],
+  "createdAt": "2026-11-04T04:40:33Z",
+  "updatedAt": "2026-11-04T04:40:46Z",
+  "createdByRun": "local-20261104-132342-research"
+}

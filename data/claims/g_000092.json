@@ -1,0 +1,514 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000092",
+  "claims": [
+    {
+      "id": "c_8b9c9b7ab7b20cec",
+      "gameId": "g_000092",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3026450/",
+          "retrievedAt": "2026-11-04T04:40:33Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6438dace862c6648fef3fe101047edebb0a854d6f70575a9552bb0fd6ee2df80"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:40:33Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 10,
+          "day": 29
+        },
+        "rawText": "29 Oct, 2026"
+      }
+    },
+    {
+      "id": "c_7b6dca8c0775918c",
+      "gameId": "g_000092",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3026450/",
+          "retrievedAt": "2026-11-04T04:40:36Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:556bad1933e4fa669089db89697408578b417ae1a6fb8331501ad21d041c4bcb"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:40:36Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_981a3516aed8d41b",
+      "gameId": "g_000092",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://automaton-media.com/articles/newsjp/20261101-476986/",
+          "sourceId": "automaton",
+          "articleId": "a_6e91da29f4865174",
+          "publishedAt": "2026-11-01T04:34:35Z",
+          "retrievedAt": "2026-11-04T04:25:55Z",
+          "quote": "さらにソロプレイに加え、ローカル限定ながら2人協力プレイにも対応。",
+          "originKey": "media:automaton-media.com",
+          "fetchHash": "sha256:ae5efae8ad9f18bc3cf624c66f46b49a0bc6fd1dd078e104443c0485656ecee6"
+        }
+      ],
+      "asOf": "2026-11-01",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:25:55Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "local-coop"
+        ],
+        "maxPlayers": 2
+      }
+    },
+    {
+      "id": "c_09a3df3f39e0f837",
+      "gameId": "g_000092",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3026450/",
+          "retrievedAt": "2026-11-04T04:40:33Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6438dace862c6648fef3fe101047edebb0a854d6f70575a9552bb0fd6ee2df80"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:40:33Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "local-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_ee8327f966f8982e",
+      "gameId": "g_000092",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3026450/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:02Z",
+          "quote": "Deadly Days: Roadtrip（デッドリーデイズ：ロードトリップ） は、バックパックがそのままビルドになる弾幕系ローグライト。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6438dace862c6648fef3fe101047edebb0a854d6f70575a9552bb0fd6ee2df80"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:02Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "summary",
+      "value": {
+        "ja": "ゾンビがはびこる終末世界をバスで旅するローグライト弾幕アクション。集めた武器や装備を小さなバックパックにパズルのように収め、隣接効果やシナジーを重ねてビルドを組み立てる。生存者の救出や2人協力プレイにも対応。"
+      }
+    },
+    {
+      "id": "c_1dc1d3f45788257e",
+      "gameId": "g_000092",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3026450/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:02Z",
+          "quote": "Deadly Days: Roadtrip（デッドリーデイズ：ロードトリップ） は、バックパックがそのままビルドになる弾幕系ローグライト。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6438dace862c6648fef3fe101047edebb0a854d6f70575a9552bb0fd6ee2df80"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:02Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_7299eaf5a78c12c1",
+      "gameId": "g_000092",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3026450/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:02Z",
+          "quote": "武器や装備を集めてパズルのように配置し、シナジーを重ねて、ゲームが壊れるほどのビルドを目指しましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6438dace862c6648fef3fe101047edebb0a854d6f70575a9552bb0fd6ee2df80"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:02Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_8ad4b231f64438a9",
+      "gameId": "g_000092",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3026450/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:02Z",
+          "quote": "Loot, shoot, and mow down zombie hordes in this bullet heaven fever dream.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6438dace862c6648fef3fe101047edebb0a854d6f70575a9552bb0fd6ee2df80"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:02Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_8b0c2036b2cdaa6f",
+      "gameId": "g_000092",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3026450/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:02Z",
+          "quote": "2.5Dピクセルのゾンビ終末世界を駆け抜け、バスの燃料を集めて、脱出のタイミングは自分で決めましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6438dace862c6648fef3fe101047edebb0a854d6f70575a9552bb0fd6ee2df80"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:02Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "post-apocalyptic"
+      }
+    },
+    {
+      "id": "c_9252750334cf3f99",
+      "gameId": "g_000092",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3026450/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:02Z",
+          "quote": "アイテムを合成してより強力なバージョンにしたり、まったく新しい伝説級アイテムをクラフトしたりもできます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6438dace862c6648fef3fe101047edebb0a854d6f70575a9552bb0fd6ee2df80"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:02Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "crafting"
+      }
+    },
+    {
+      "id": "c_a3ad47c1c73507e6",
+      "gameId": "g_000092",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3026450/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:02Z",
+          "quote": "2.5Dピクセルのゾンビ終末世界を駆け抜け、バスの燃料を集めて、脱出のタイミングは自分で決めましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6438dace862c6648fef3fe101047edebb0a854d6f70575a9552bb0fd6ee2df80"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:02Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "zombies"
+      }
+    },
+    {
+      "id": "c_e4fa3a9d5ac75835",
+      "gameId": "g_000092",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3026450/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:02Z",
+          "quote": "ソロでも協力プレイでもOK。しかもフレンドはゲームを持っていなくても大丈夫！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6438dace862c6648fef3fe101047edebb0a854d6f70575a9552bb0fd6ee2df80"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:02Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_f2e1418b2435e755",
+      "gameId": "g_000092",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3026450/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:02Z",
+          "quote": "2.5Dピクセルのゾンビ終末世界",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6438dace862c6648fef3fe101047edebb0a854d6f70575a9552bb0fd6ee2df80"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:02Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "pixel-art"
+      }
+    },
+    {
+      "id": "c_fd0797b27b96be2e",
+      "gameId": "g_000092",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3026450/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:02Z",
+          "quote": "ステージは自動生成で、ルートを決めるのはあなた。バスを再び走らせるのに十分な燃料をかき集めましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6438dace862c6648fef3fe101047edebb0a854d6f70575a9552bb0fd6ee2df80"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:02Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "procedural-generation"
+      }
+    },
+    {
+      "id": "c_0e3f317cb144fc14",
+      "gameId": "g_000092",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3026450/",
+          "retrievedAt": "2026-11-04T04:40:33Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6438dace862c6648fef3fe101047edebb0a854d6f70575a9552bb0fd6ee2df80"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:40:33Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3026450/"
+      }
+    },
+    {
+      "id": "c_c8f86ad6ceea6e80",
+      "gameId": "g_000092",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3026450/",
+          "retrievedAt": "2026-11-04T04:40:33Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6438dace862c6648fef3fe101047edebb0a854d6f70575a9552bb0fd6ee2df80"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:40:33Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3026450/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Deadly Days: Roadtrip デッドリーデイズ：ロードトリップ のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Sidekick Publishing"
+        }
+      }
+    }
+  ]
+}

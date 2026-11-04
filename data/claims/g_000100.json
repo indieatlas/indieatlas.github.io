@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000100",
+  "claims": [
+    {
+      "id": "c_73b395c628c2ab11",
+      "gameId": "g_000100",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2742830/",
+          "retrievedAt": "2026-11-04T04:41:09Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:268fd58a89d0ea1e03b9a825c216c3f424056ab97c239fd53ce00a0d6a80f158"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:41:09Z",
+      "createdAt": "2026-11-04T04:41:09Z",
+      "updatedAt": "2026-11-04T04:41:09Z",
+      "lastCheckedAt": "2026-11-04T04:41:09Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 5,
+          "day": 21
+        },
+        "rawText": "21 May, 2025"
+      }
+    },
+    {
+      "id": "c_109dc3e10137deb3",
+      "gameId": "g_000100",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2742830/",
+          "retrievedAt": "2026-11-04T04:41:09Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:268fd58a89d0ea1e03b9a825c216c3f424056ab97c239fd53ce00a0d6a80f158"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:41:09Z",
+      "createdAt": "2026-11-04T04:41:09Z",
+      "updatedAt": "2026-11-04T04:41:09Z",
+      "lastCheckedAt": "2026-11-04T04:41:09Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 5,
+          "day": 21
+        },
+        "rawText": "21 May, 2025"
+      }
+    },
+    {
+      "id": "c_de3fb1f06eb60773",
+      "gameId": "g_000100",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2742830/",
+          "retrievedAt": "2026-11-04T04:41:12Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d89eebf81655f0844e1946bbad5ce7115d4f9abc99646a4417c8f8b9631f0ad7"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:41:09Z",
+      "createdAt": "2026-11-04T04:41:09Z",
+      "updatedAt": "2026-11-04T04:41:09Z",
+      "lastCheckedAt": "2026-11-04T04:41:12Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_3c33b01976936ce7",
+      "gameId": "g_000100",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2742830/",
+          "retrievedAt": "2026-11-04T04:41:09Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:268fd58a89d0ea1e03b9a825c216c3f424056ab97c239fd53ce00a0d6a80f158"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:41:09Z",
+      "createdAt": "2026-11-04T04:41:09Z",
+      "updatedAt": "2026-11-04T04:41:09Z",
+      "lastCheckedAt": "2026-11-04T04:41:09Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_c605ba7f651d73ee",
+      "gameId": "g_000100",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2742830/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:27:44Z",
+          "quote": "『Monster Train』が新たなクラン、敵の派閥、チャレンジ、モードなど、多数の新要素を携えて帰ってきた！デッキ構築型ローグライクゲームの人気に火をつけた定番の3階層ゲームプレイで、列車の最上階にある地獄の結晶「パイア」を守り抜こう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:268fd58a89d0ea1e03b9a825c216c3f424056ab97c239fd53ce00a0d6a80f158"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:27:44Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "summary",
+      "value": {
+        "ja": "天使と悪魔の混成軍を率い、3階層の列車を守りながら天界を掌握したタイタンに挑むデッキ構築型ローグライク。5つの新クランや新種のカード、拠点での物語描写など、前作から要素を増やしている。"
+      }
+    },
+    {
+      "id": "c_035464f708804e03",
+      "gameId": "g_000100",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2742830/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:27:44Z",
+          "locator": "steam:appdetails.genres",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:268fd58a89d0ea1e03b9a825c216c3f424056ab97c239fd53ce00a0d6a80f158"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:27:44Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "strategy"
+      }
+    },
+    {
+      "id": "c_675e4c9da026a7ce",
+      "gameId": "g_000100",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2742830/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:27:44Z",
+          "quote": "デッキ構築型ローグライクゲームの人気に火をつけた定番の3階層ゲームプレイで、列車の最上階にある地獄の結晶「パイア」を守り抜こう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:268fd58a89d0ea1e03b9a825c216c3f424056ab97c239fd53ce00a0d6a80f158"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:27:44Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "deck-building"
+      }
+    },
+    {
+      "id": "c_a0c4d20d3a8f5160",
+      "gameId": "g_000100",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2742830/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:27:44Z",
+          "quote": "タイタンと呼ばれる強力な存在が天国を掌握した。元天使と悪魔は一時的に同盟を結び、共通の敵を倒すべく共闘することになる。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:268fd58a89d0ea1e03b9a825c216c3f424056ab97c239fd53ce00a0d6a80f158"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:27:44Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_c8880480963e7fec",
+      "gameId": "g_000100",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2742830/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:27:44Z",
+          "quote": "デッキ構築型ローグライクゲームの人気に火をつけた定番の3階層ゲームプレイで、列車の最上階にある地獄の結晶「パイア」を守り抜こう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:268fd58a89d0ea1e03b9a825c216c3f424056ab97c239fd53ce00a0d6a80f158"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:27:44Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_d7d348914f4c87db",
+      "gameId": "g_000100",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2742830/",
+          "retrievedAt": "2026-11-04T04:41:09Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:268fd58a89d0ea1e03b9a825c216c3f424056ab97c239fd53ce00a0d6a80f158"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:41:09Z",
+      "createdAt": "2026-11-04T04:41:09Z",
+      "updatedAt": "2026-11-04T04:41:09Z",
+      "lastCheckedAt": "2026-11-04T04:41:09Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2742830/"
+      }
+    },
+    {
+      "id": "c_1915ebf20d636f6b",
+      "gameId": "g_000100",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2742830/",
+          "retrievedAt": "2026-11-04T04:41:09Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:268fd58a89d0ea1e03b9a825c216c3f424056ab97c239fd53ce00a0d6a80f158"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:41:09Z",
+      "createdAt": "2026-11-04T04:41:09Z",
+      "updatedAt": "2026-11-04T04:41:09Z",
+      "lastCheckedAt": "2026-11-04T04:41:09Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2742830/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Monster Train 2 のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Big Fan Games"
+        }
+      }
+    }
+  ]
+}

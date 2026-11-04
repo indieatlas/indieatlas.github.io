@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000098",
+  "status": "candidate",
+  "title": {
+    "display": "Songkran Hazard: 4Lom",
+    "original": "Songkran Hazard: 4Lom",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5077980
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000129"
+  ],
+  "publisherIds": [],
+  "indie": {
+    "assessment": "unknown",
+    "reasons": [],
+    "assessedAt": "2026-11-04T04:40:33Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5077980/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:27:53Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a6940a57209d4aa5b16b5d5a3337a809bb25fad8783bf31290e9db0c8f0d5e6b"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5077980/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:27:53Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a6940a57209d4aa5b16b5d5a3337a809bb25fad8783bf31290e9db0c8f0d5e6b"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5077980/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:27:53Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a6940a57209d4aa5b16b5d5a3337a809bb25fad8783bf31290e9db0c8f0d5e6b"
+      }
+    }
+  ],
+  "createdAt": "2026-11-04T04:40:33Z",
+  "updatedAt": "2026-11-04T04:40:33Z",
+  "createdByRun": "local-20261104-132342-research"
+}

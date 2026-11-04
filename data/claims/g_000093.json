@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000093",
+  "claims": [
+    {
+      "id": "c_d20a6cdd8db25416",
+      "gameId": "g_000093",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2968420/",
+          "retrievedAt": "2026-11-04T04:40:37Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3f42b9729e8d3fa8ab1cb8a39a2167a265a01f044d68f1cc58eece5a8cbc8e6c"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:37Z",
+      "createdAt": "2026-11-04T04:40:37Z",
+      "updatedAt": "2026-11-04T04:40:37Z",
+      "lastCheckedAt": "2026-11-04T04:40:37Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 10,
+          "day": 23
+        },
+        "rawText": "23 Oct, 2025"
+      }
+    },
+    {
+      "id": "c_c74e8bfd98466f76",
+      "gameId": "g_000093",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2968420/",
+          "retrievedAt": "2026-11-04T04:40:40Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:98242043153cc2bf5b3d0198254cced066a2841b09c87097d04fcc7807138ce0"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:37Z",
+      "createdAt": "2026-11-04T04:40:37Z",
+      "updatedAt": "2026-11-04T04:40:37Z",
+      "lastCheckedAt": "2026-11-04T04:40:40Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_144e6fa21bd905bd",
+      "gameId": "g_000093",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2968420/",
+          "retrievedAt": "2026-11-04T04:40:37Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3f42b9729e8d3fa8ab1cb8a39a2167a265a01f044d68f1cc58eece5a8cbc8e6c"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:37Z",
+      "createdAt": "2026-11-04T04:40:37Z",
+      "updatedAt": "2026-11-04T04:40:37Z",
+      "lastCheckedAt": "2026-11-04T04:40:37Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "local-coop",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_85d101611a461041",
+      "gameId": "g_000093",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2968420/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:21Z",
+          "quote": "PowerWash Simulatorが帰ってきた！新たなロケーション、優れた清掃機材、魅力的な機能も新登場！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3f42b9729e8d3fa8ab1cb8a39a2167a265a01f044d68f1cc58eece5a8cbc8e6c"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:21Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "summary",
+      "value": {
+        "ja": "高圧洗浄機で汚れた場所を洗い流すシミュレーションの続編。新たなロケーションと洗浄ツールが加わり、分割画面やオンラインでの協力プレイに対応する。掃除の合間に家具や小物を集めて拠点を飾り、猫と過ごすこともできる。"
+      }
+    },
+    {
+      "id": "c_653cba86b2a895e2",
+      "gameId": "g_000093",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2968420/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:21Z",
+          "quote": "もちろん、かわいいペットたちを車に置き去りにするなんてこと出来る筈ありませんよね？",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3f42b9729e8d3fa8ab1cb8a39a2167a265a01f044d68f1cc58eece5a8cbc8e6c"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:21Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "animals"
+      }
+    },
+    {
+      "id": "c_6a995a89afc521be",
+      "gameId": "g_000093",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2968420/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:21Z",
+          "quote": "汚れた場所をピカピカに綺麗にして、心癒される景色へと変貌させよう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3f42b9729e8d3fa8ab1cb8a39a2167a265a01f044d68f1cc58eece5a8cbc8e6c"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:21Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_8aea31bb19d857b7",
+      "gameId": "g_000093",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2968420/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:21Z",
+          "quote": "掃除の合間に家具や小物を集めて、自分だけの空間にカスタマイズできます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3f42b9729e8d3fa8ab1cb8a39a2167a265a01f044d68f1cc58eece5a8cbc8e6c"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:21Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "base-building"
+      }
+    },
+    {
+      "id": "c_9cdd0cf85b91e013",
+      "gameId": "g_000093",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2968420/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:21Z",
+          "quote": "さらに、分割スクリーンの協力プレイにも対応。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3f42b9729e8d3fa8ab1cb8a39a2167a265a01f044d68f1cc58eece5a8cbc8e6c"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:21Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_a984f44df9166e17",
+      "gameId": "g_000093",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2968420/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:21Z",
+          "quote": "眠っていた高圧洗浄機を引っ張り出し、爽快感満載の洗浄リラックスタイムを楽しみましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3f42b9729e8d3fa8ab1cb8a39a2167a265a01f044d68f1cc58eece5a8cbc8e6c"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:21Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_d254bb1a819f7972",
+      "gameId": "g_000093",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2968420/",
+          "retrievedAt": "2026-11-04T04:40:37Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3f42b9729e8d3fa8ab1cb8a39a2167a265a01f044d68f1cc58eece5a8cbc8e6c"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:37Z",
+      "createdAt": "2026-11-04T04:40:37Z",
+      "updatedAt": "2026-11-04T04:40:37Z",
+      "lastCheckedAt": "2026-11-04T04:40:37Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2968420/"
+      }
+    },
+    {
+      "id": "c_bd3a0a02586847f1",
+      "gameId": "g_000093",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2968420/",
+          "retrievedAt": "2026-11-04T04:40:37Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3f42b9729e8d3fa8ab1cb8a39a2167a265a01f044d68f1cc58eece5a8cbc8e6c"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:37Z",
+      "createdAt": "2026-11-04T04:40:37Z",
+      "updatedAt": "2026-11-04T04:40:37Z",
+      "lastCheckedAt": "2026-11-04T04:40:37Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2968420/91fea40a711c5a74cce1bb1a9e05c48a379f6aa0/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "PowerWash Simulator 2 のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "FuturLab"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000095",
+  "claims": [
+    {
+      "id": "c_14c4be60cdc8e9c2",
+      "gameId": "g_000095",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2983480/",
+          "retrievedAt": "2026-11-04T04:40:46Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0d9257d46d489f1c92aba45bbaa2e3ad131bda4397ce4c60a5907529cc013c97"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:46Z",
+      "createdAt": "2026-11-04T04:40:46Z",
+      "updatedAt": "2026-11-04T04:40:46Z",
+      "lastCheckedAt": "2026-11-04T04:40:46Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 6
+        },
+        "rawText": "6 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_ce5677c7bc2b0632",
+      "gameId": "g_000095",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2983480/",
+          "retrievedAt": "2026-11-04T04:40:49Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8fd09b3875447e559d143163249f12fe7dfc397e8db7ef46314f332b594429a1"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:46Z",
+      "createdAt": "2026-11-04T04:40:46Z",
+      "updatedAt": "2026-11-04T04:40:46Z",
+      "lastCheckedAt": "2026-11-04T04:40:49Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_ab6049c06222f199",
+      "gameId": "g_000095",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2983480/",
+          "retrievedAt": "2026-11-04T04:40:46Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0d9257d46d489f1c92aba45bbaa2e3ad131bda4397ce4c60a5907529cc013c97"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:46Z",
+      "createdAt": "2026-11-04T04:40:46Z",
+      "updatedAt": "2026-11-04T04:40:46Z",
+      "lastCheckedAt": "2026-11-04T04:40:46Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_fb25624123bbbf77",
+      "gameId": "g_000095",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2983480/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:27:20Z",
+          "quote": "夢の映画館を建てて、自由にカスタマイズして、経営しよう！上映スケジュールを組み、チケットを売り、おいしい軽食を提供して、お客さんを笑顔にしよう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0d9257d46d489f1c92aba45bbaa2e3ad131bda4397ce4c60a5907529cc013c97"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:27:20Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "summary",
+      "value": {
+        "ja": "映画館のオーナーとなり、上映作品の選定や上映スケジュールの編成、チケット販売、軽食の提供を通じて劇場を経営する一人称視点のシミュレーション。設備の強化や家具での模様替え、最大8人での協力プレイ、アーケードのミニゲーム、館内を歩く猫との触れ合いも用意する。"
+      }
+    },
+    {
+      "id": "c_10b577b94dbffb5c",
+      "gameId": "g_000095",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2983480/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:27:20Z",
+          "quote": "Meet the Cats! Adorable cats roam around your cinema! Pet them, give them names, and enjoy their company.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0d9257d46d489f1c92aba45bbaa2e3ad131bda4397ce4c60a5907529cc013c97"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:27:20Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "animals"
+      }
+    },
+    {
+      "id": "c_15b02158ee62a922",
+      "gameId": "g_000095",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2983480/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:27:20Z",
+          "quote": "Snacks & Arcade Fun! Prepare popcorn and cotton candy, then take a break to enjoy playable arcade mini-games with your friends!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0d9257d46d489f1c92aba45bbaa2e3ad131bda4397ce4c60a5907529cc013c97"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:27:20Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "food"
+      }
+    },
+    {
+      "id": "c_3e08f456b214f3d6",
+      "gameId": "g_000095",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2983480/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:27:20Z",
+          "quote": "Better Together! Team up with friends in multiplayer for up to 8 players!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0d9257d46d489f1c92aba45bbaa2e3ad131bda4397ce4c60a5907529cc013c97"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:27:20Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_97e71641f68bcb94",
+      "gameId": "g_000095",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2983480/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:27:20Z",
+          "quote": "かわいい猫たちが映画館の中を自由に歩き回る！なでてあげたり、名前を付けたりして、のんびり一緒に過ごそう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0d9257d46d489f1c92aba45bbaa2e3ad131bda4397ce4c60a5907529cc013c97"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:27:20Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_a6de3c4338acc57f",
+      "gameId": "g_000095",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2983480/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:27:20Z",
+          "quote": "Run the Show! Choose movies, set ticket prices, hire staff, upgrade your equipment, and expand your theater. Every decision counts!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0d9257d46d489f1c92aba45bbaa2e3ad131bda4397ce4c60a5907529cc013c97"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:27:20Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "strategy"
+      }
+    },
+    {
+      "id": "c_e1eafa5070eb94b0",
+      "gameId": "g_000095",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2983480/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:27:20Z",
+          "quote": "is a first-person simulation and management game where you take control of your very own cinema.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0d9257d46d489f1c92aba45bbaa2e3ad131bda4397ce4c60a5907529cc013c97"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:27:20Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_8e5fe46e1a8fe84c",
+      "gameId": "g_000095",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2983480/",
+          "retrievedAt": "2026-11-04T04:40:46Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0d9257d46d489f1c92aba45bbaa2e3ad131bda4397ce4c60a5907529cc013c97"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:46Z",
+      "createdAt": "2026-11-04T04:40:46Z",
+      "updatedAt": "2026-11-04T04:40:46Z",
+      "lastCheckedAt": "2026-11-04T04:40:46Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2983480/"
+      }
+    },
+    {
+      "id": "c_1f580aa724ead3e0",
+      "gameId": "g_000095",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2983480/",
+          "retrievedAt": "2026-11-04T04:40:46Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0d9257d46d489f1c92aba45bbaa2e3ad131bda4397ce4c60a5907529cc013c97"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:46Z",
+      "createdAt": "2026-11-04T04:40:46Z",
+      "updatedAt": "2026-11-04T04:40:46Z",
+      "lastCheckedAt": "2026-11-04T04:40:46Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2983480/e3ff7b28e00e1baebd9afd1ae205859b7eced9c5/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Cinema Manager Simulator のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "PlayWay S.A."
+        }
+      }
+    }
+  ]
+}

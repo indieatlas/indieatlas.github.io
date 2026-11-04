@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000099",
+  "status": "published",
+  "title": {
+    "display": "Blast Blade",
+    "original": "Blast Blade",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4158670
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000130"
+  ],
+  "publisherIds": [
+    "dev_000130"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4158670/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-04T04:28:05Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:3daa97e93bf94ed341b8f00781d3309bb59c386e528069feb86a669db529601c"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-04T04:40:33Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4158670/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:28:05Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3daa97e93bf94ed341b8f00781d3309bb59c386e528069feb86a669db529601c"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4158670/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:28:05Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3daa97e93bf94ed341b8f00781d3309bb59c386e528069feb86a669db529601c"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4158670/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:28:05Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3daa97e93bf94ed341b8f00781d3309bb59c386e528069feb86a669db529601c"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4158670/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:28:05Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3daa97e93bf94ed341b8f00781d3309bb59c386e528069feb86a669db529601c"
+      }
+    }
+  ],
+  "createdAt": "2026-11-04T04:40:33Z",
+  "addedAt": "2026-11-04",
+  "updatedAt": "2026-11-04T04:40:33Z",
+  "createdByRun": "local-20261104-132342-research"
+}

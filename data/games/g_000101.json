@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000101",
+  "status": "published",
+  "title": {
+    "display": "Queen's Domain",
+    "original": "Queen's Domain",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "女王の領域",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1799840
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4081520",
+      "kind": "demo",
+      "title": "Queen's Domain Demo"
+    },
+    {
+      "store": "steam",
+      "id": "5255650",
+      "kind": "soundtrack",
+      "title": "Queen's Domain - Original Soundtrack"
+    }
+  ],
+  "developerIds": [
+    "dev_000133"
+  ],
+  "publisherIds": [
+    "dev_000134"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "small-team",
+        "note": "サウンドトラックのストアページに、作曲者がゲームを手がけた2人組のうちの1人であると明記されている",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5255650/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-04T04:29:30Z",
+            "quote": "Composed by Eric Berger (Biogenesis), one half of the dev duo behind the game.",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:8050087bc6b1ffb84226effd1f5ec5a01f1de25094ea75c484a6f9c89df11db5"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-04T04:40:33Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1799840/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:28:20Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b7c03984a8e3ac6b12ba904f548c1a14686dab0d74879b053fbd6b9c5a5f6ceb"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1799840/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:28:20Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b7c03984a8e3ac6b12ba904f548c1a14686dab0d74879b053fbd6b9c5a5f6ceb"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1799840/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:28:20Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b7c03984a8e3ac6b12ba904f548c1a14686dab0d74879b053fbd6b9c5a5f6ceb"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1799840/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:28:20Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b7c03984a8e3ac6b12ba904f548c1a14686dab0d74879b053fbd6b9c5a5f6ceb"
+      }
+    }
+  ],
+  "createdAt": "2026-11-04T04:40:33Z",
+  "addedAt": "2026-11-04",
+  "updatedAt": "2026-11-04T04:40:33Z",
+  "createdByRun": "local-20261104-132342-research"
+}

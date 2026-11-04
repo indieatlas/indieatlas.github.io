@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000093",
+  "status": "published",
+  "title": {
+    "display": "PowerWash Simulator 2",
+    "original": "PowerWash Simulator 2",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "パワーウォッシュ シミュレーター2",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 2968420
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4043170",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "4043170",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "4173830",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4229450",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4556380",
+      "kind": "dlc",
+      "title": "PowerWash Simulator 2 - Barbie™ Pack"
+    }
+  ],
+  "developerIds": [
+    "dev_000122"
+  ],
+  "publisherIds": [
+    "dev_000122"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/2968420/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-04T04:26:21Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:3f42b9729e8d3fa8ab1cb8a39a2167a265a01f044d68f1cc58eece5a8cbc8e6c"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-04T04:40:33Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "media",
+        "url": "https://news.denfaminicogamer.jp/news/261103h",
+        "sourceId": "denfaminicogamer",
+        "publishedAt": "2026-11-03T01:18:54Z",
+        "retrievedAt": "2026-11-04T04:26:14Z",
+        "quote": "11月3日、FuturLabは、『PowerWash Simulator 2』の新たな有料ダウンロードコンテンツ「Barbie Pack」が、12月4日に配信されることを発表した。",
+        "originKey": "media:denfaminicogamer.jp",
+        "fetchHash": "sha256:de1e137c81a54780515ba42cf74b70cc4d3a3d34f59752811707bf429cb82057"
+      }
+    },
+    {
+      "field": "associatedApps",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4556380/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:26:27Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:62a808bed15e3b6a1dd1c991f827a41f447ae05ef1f6a3beebf12d096182b0c0"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2968420/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:26:21Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3f42b9729e8d3fa8ab1cb8a39a2167a265a01f044d68f1cc58eece5a8cbc8e6c"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2968420/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:26:21Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3f42b9729e8d3fa8ab1cb8a39a2167a265a01f044d68f1cc58eece5a8cbc8e6c"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2968420/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:26:21Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3f42b9729e8d3fa8ab1cb8a39a2167a265a01f044d68f1cc58eece5a8cbc8e6c"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2968420/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:26:21Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3f42b9729e8d3fa8ab1cb8a39a2167a265a01f044d68f1cc58eece5a8cbc8e6c"
+      }
+    }
+  ],
+  "createdAt": "2026-11-04T04:40:33Z",
+  "addedAt": "2026-11-04",
+  "updatedAt": "2026-11-04T04:40:33Z",
+  "createdByRun": "local-20261104-132342-research"
+}

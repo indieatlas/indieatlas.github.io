@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000092",
+  "status": "candidate",
+  "title": {
+    "display": "デッドリーデイズ：ロードトリップ",
+    "original": "Deadly Days: Roadtrip",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 3026450
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3883820",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000120"
+  ],
+  "publisherIds": [
+    "dev_000121"
+  ],
+  "indie": {
+    "assessment": "unknown",
+    "reasons": [
+      {
+        "code": "independent-publisher",
+        "note": "ベルリン拠点のインディー向けパブリッシャーが販売を担当",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://sidekickpublishing.com/",
+            "retrievedAt": "2026-11-04T04:26:10Z",
+            "quote": "Sidekick Publishing is a full-service indie game publisher based in Berlin-Spandau.",
+            "originKey": "media:sidekickpublishing.com",
+            "fetchHash": "sha256:46f26c5c78069528bfa2b90e7cb2e26e71cbe4248ed3d408e42bbcb218fb728a"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-04T04:40:33Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3026450/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:26:02Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:6438dace862c6648fef3fe101047edebb0a854d6f70575a9552bb0fd6ee2df80"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3026450/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:26:02Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:6438dace862c6648fef3fe101047edebb0a854d6f70575a9552bb0fd6ee2df80"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3026450/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:26:02Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:6438dace862c6648fef3fe101047edebb0a854d6f70575a9552bb0fd6ee2df80"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3026450/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:26:02Z",
+        "quote": "Deadly Days: Roadtrip デッドリーデイズ：ロードトリップ",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:6438dace862c6648fef3fe101047edebb0a854d6f70575a9552bb0fd6ee2df80"
+      }
+    }
+  ],
+  "createdAt": "2026-11-04T04:40:33Z",
+  "updatedAt": "2026-11-04T04:40:33Z",
+  "createdByRun": "local-20261104-132342-research"
+}

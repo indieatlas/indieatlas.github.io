@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000096",
+  "status": "candidate",
+  "title": {
+    "display": "MUAY THAI XTREME",
+    "original": "MUAY THAI XTREME",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 3970720
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000126"
+  ],
+  "publisherIds": [
+    "dev_000127"
+  ],
+  "indie": {
+    "assessment": "unknown",
+    "reasons": [],
+    "assessedAt": "2026-11-04T04:40:33Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3970720/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:27:32Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:37dfd8255d20553e4a01d656c12b30cb9c61e62ed20e430439fea7c9ddcc2ab3"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3970720/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:27:32Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:37dfd8255d20553e4a01d656c12b30cb9c61e62ed20e430439fea7c9ddcc2ab3"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3970720/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:27:32Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:37dfd8255d20553e4a01d656c12b30cb9c61e62ed20e430439fea7c9ddcc2ab3"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3970720/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:27:32Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:37dfd8255d20553e4a01d656c12b30cb9c61e62ed20e430439fea7c9ddcc2ab3"
+      }
+    }
+  ],
+  "createdAt": "2026-11-04T04:40:33Z",
+  "updatedAt": "2026-11-04T04:40:33Z",
+  "createdByRun": "local-20261104-132342-research"
+}

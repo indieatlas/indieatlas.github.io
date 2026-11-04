@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000097",
+  "status": "candidate",
+  "title": {
+    "display": "Sous Raccoon",
+    "original": "Sous Raccoon",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 3919140
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000128"
+  ],
+  "publisherIds": [
+    "dev_000127"
+  ],
+  "indie": {
+    "assessment": "unknown",
+    "reasons": [],
+    "assessedAt": "2026-11-04T04:40:33Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3919140/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:27:41Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:29cb8b2b116fbad18b85cd91aeed91952e328e3a7c49577cf4d277ee731b1207"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3919140/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:27:41Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:29cb8b2b116fbad18b85cd91aeed91952e328e3a7c49577cf4d277ee731b1207"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3919140/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:27:41Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:29cb8b2b116fbad18b85cd91aeed91952e328e3a7c49577cf4d277ee731b1207"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3919140/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-04T04:27:41Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:29cb8b2b116fbad18b85cd91aeed91952e328e3a7c49577cf4d277ee731b1207"
+      }
+    }
+  ],
+  "createdAt": "2026-11-04T04:40:33Z",
+  "updatedAt": "2026-11-04T04:40:33Z",
+  "createdByRun": "local-20261104-132342-research"
+}

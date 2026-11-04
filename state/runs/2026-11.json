@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "runs": [
+    {
+      "runId": "local-20261104-132342-research",
+      "runAttempt": 1,
+      "researchAttempt": 1,
+      "trigger": "local",
+      "mode": "full",
+      "startedAt": "2026-11-04T04:23:42Z",
+      "finishedAt": "2026-11-04T04:40:33Z",
+      "triggerCommit": "f919e7618ef997e3e431b34b822a9ecbab3ccc08",
+      "outcome": "success",
+      "stopReason": "completed",
+      "counts": {
+        "sourcesFetched": 9,
+        "sourcesFailed": 0,
+        "articlesCollected": 269,
+        "articlesLinked": 11,
+        "gamesCreated": 10,
+        "gamesPublished": 5,
+        "claimsAdded": 126,
+        "claimsAdopted": 64,
+        "claimsConflicted": 0,
+        "relationsAdded": 3,
+        "collectionsChanged": 0,
+        "tasksCreated": 119,
+        "tasksDone": 38,
+        "tasksBlocked": 0,
+        "operationsRejected": 170
+      },
+      "cost": {
+        "llmUsd": 0.184055,
+        "inputTokens": 4044301,
+        "outputTokens": 268101,
+        "cachedInputTokens": 3134336,
+        "reasoningTokens": 144868
+      },
+      "publish": {
+        "status": "pending"
+      },
+      "pending": [],
+      "rejections": [
+        {
+          "rule": "V-C01",
+          "count": 2
+        },
+        {
+          "rule": "V-C04",
+          "count": 1
+        },
+        {
+          "rule": "V-C06",
+          "count": 18
+        },
+        {
+          "rule": "V-E03",
+          "count": 1
+        },
+        {
+          "rule": "V-L01",
+          "count": 18
+        },
+        {
+          "rule": "V-S02",
+          "count": 130
+        }
+      ]
+    }
+  ]
+}

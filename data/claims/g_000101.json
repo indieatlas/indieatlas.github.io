@@ -1,0 +1,504 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000101",
+  "claims": [
+    {
+      "id": "c_260e3ca1451beb7d",
+      "gameId": "g_000101",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1799840/",
+          "retrievedAt": "2026-11-04T04:41:13Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7c03984a8e3ac6b12ba904f548c1a14686dab0d74879b053fbd6b9c5a5f6ceb"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:41:13Z",
+      "createdAt": "2026-11-04T04:41:13Z",
+      "updatedAt": "2026-11-04T04:41:13Z",
+      "lastCheckedAt": "2026-11-04T04:41:13Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 10,
+          "day": 30
+        },
+        "rawText": "30 Oct, 2026"
+      }
+    },
+    {
+      "id": "c_41b8dcbfd2dcaf35",
+      "gameId": "g_000101",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1799840/",
+          "retrievedAt": "2026-11-04T04:41:16Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e750c1b323c62497be27d4d3975508e85fd4d7ef9dd24cb5f42dbc741bd422d0"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:41:13Z",
+      "createdAt": "2026-11-04T04:41:13Z",
+      "updatedAt": "2026-11-04T04:41:13Z",
+      "lastCheckedAt": "2026-11-04T04:41:16Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_463ddd44e36fe424",
+      "gameId": "g_000101",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1799840/",
+          "retrievedAt": "2026-11-04T04:41:13Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7c03984a8e3ac6b12ba904f548c1a14686dab0d74879b053fbd6b9c5a5f6ceb"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:41:13Z",
+      "createdAt": "2026-11-04T04:41:13Z",
+      "updatedAt": "2026-11-04T04:41:13Z",
+      "lastCheckedAt": "2026-11-04T04:41:13Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_f3412d9dc9bb3c3b",
+      "gameId": "g_000101",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1799840/Queens_Domain/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:28:34Z",
+          "quote": "Queen’s Domain is a retro-fantasy action RPG. Washed up on the shores of the Isle of Neasied, you set out to find your father and uncover the dark heart of this mysterious isle.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9654ba0a076b835703b4f997fb2a9da2a519c0d84230f003b4abcb14e11e4312"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:28:34Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "summary",
+      "value": {
+        "ja": "レトロファンタジー世界のアクションRPG。謎に包まれたニアシード島の岸辺に打ち上げられた主人公が、行方不明の父を探して冒険する。スタミナを消費する戦闘と、秘密が隠された迷宮的な島の探索が特徴。"
+      }
+    },
+    {
+      "id": "c_3b7759cc5ad551d0",
+      "gameId": "g_000101",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1799840/Queens_Domain/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:28:34Z",
+          "quote": "Fight action-oriented battles with a classic stamina meter, powerful charge attacks, weapon specific special attacks, and secondary throwing weapons.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9654ba0a076b835703b4f997fb2a9da2a519c0d84230f003b4abcb14e11e4312"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:28:34Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_50ea2da725856fe6",
+      "gameId": "g_000101",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1799840/Queens_Domain/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:28:34Z",
+          "quote": "Lovingly crafted retro-fantasy aesthetic",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9654ba0a076b835703b4f997fb2a9da2a519c0d84230f003b4abcb14e11e4312"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:28:34Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "retro"
+      }
+    },
+    {
+      "id": "c_5843c748a091b48e",
+      "gameId": "g_000101",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1799840/Queens_Domain/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:28:34Z",
+          "quote": "Explore an interconnected island filled with hidden secrets",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9654ba0a076b835703b4f997fb2a9da2a519c0d84230f003b4abcb14e11e4312"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:28:34Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_61804e1ba43bb204",
+      "gameId": "g_000101",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1799840/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:28:20Z",
+          "quote": "Queen’s Domain is a retro-fantasy action RPG.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7c03984a8e3ac6b12ba904f548c1a14686dab0d74879b053fbd6b9c5a5f6ceb"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:28:34Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "rpg"
+      }
+    },
+    {
+      "id": "c_7a3d3092c356234e",
+      "gameId": "g_000101",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1799840/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:28:20Z",
+          "quote": "Lovingly crafted retro-fantasy aesthetic",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7c03984a8e3ac6b12ba904f548c1a14686dab0d74879b053fbd6b9c5a5f6ceb"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:28:34Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_81ccb668c036fba8",
+      "gameId": "g_000101",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1799840/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:28:20Z",
+          "quote": "A retro-fantasy action RPG with brutal combat and traversal-focused exploration.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7c03984a8e3ac6b12ba904f548c1a14686dab0d74879b053fbd6b9c5a5f6ceb"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:28:20Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "difficult"
+      }
+    },
+    {
+      "id": "c_aff7881a963bcd88",
+      "gameId": "g_000101",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1799840/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:28:20Z",
+          "quote": "discover an interconnected, labyrinthine world where secrets and dangers lurk around every corner",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7c03984a8e3ac6b12ba904f548c1a14686dab0d74879b053fbd6b9c5a5f6ceb"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:28:20Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "metroidvania"
+      }
+    },
+    {
+      "id": "c_b110b0712ea2bac8",
+      "gameId": "g_000101",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1799840/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:28:20Z",
+          "quote": "where sinister forces gather, secrets hide everywhere, and the sleeping Queen has begun to stir",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7c03984a8e3ac6b12ba904f548c1a14686dab0d74879b053fbd6b9c5a5f6ceb"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:28:20Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_ee8f3177d8f76f07",
+      "gameId": "g_000101",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1799840/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:28:20Z",
+          "quote": "discover an interconnected, labyrinthine world where secrets and dangers lurk around every corner",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7c03984a8e3ac6b12ba904f548c1a14686dab0d74879b053fbd6b9c5a5f6ceb"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:28:34Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_fbda43d4dec9cc51",
+      "gameId": "g_000101",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1799840/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:28:20Z",
+          "quote": "Queen’s Domain is a retro-fantasy action RPG.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7c03984a8e3ac6b12ba904f548c1a14686dab0d74879b053fbd6b9c5a5f6ceb"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:28:34Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "action-rpg"
+      }
+    },
+    {
+      "id": "c_4511e0f3e4f744bf",
+      "gameId": "g_000101",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1799840/",
+          "retrievedAt": "2026-11-04T04:41:13Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7c03984a8e3ac6b12ba904f548c1a14686dab0d74879b053fbd6b9c5a5f6ceb"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:41:13Z",
+      "createdAt": "2026-11-04T04:41:13Z",
+      "updatedAt": "2026-11-04T04:41:13Z",
+      "lastCheckedAt": "2026-11-04T04:41:13Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1799840/"
+      }
+    },
+    {
+      "id": "c_09e346b0e8f9fd3b",
+      "gameId": "g_000101",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1799840/",
+          "retrievedAt": "2026-11-04T04:41:13Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7c03984a8e3ac6b12ba904f548c1a14686dab0d74879b053fbd6b9c5a5f6ceb"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:41:13Z",
+      "createdAt": "2026-11-04T04:41:13Z",
+      "updatedAt": "2026-11-04T04:41:13Z",
+      "lastCheckedAt": "2026-11-04T04:41:13Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1799840/1a209734951f53b019ec9fa03f835def14f2a968/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Queen's Domain のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Future Friends Games"
+        }
+      }
+    }
+  ]
+}

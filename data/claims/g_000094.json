@@ -1,0 +1,383 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000094",
+  "claims": [
+    {
+      "id": "c_13ae9320da61af33",
+      "gameId": "g_000094",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231020/",
+          "retrievedAt": "2026-11-04T04:40:42Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95ad754c43067f20bdba4ff8a3ede52430fd13a7288d7f544db3d33a5d4fe2a1"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:42Z",
+      "createdAt": "2026-11-04T04:40:42Z",
+      "updatedAt": "2026-11-04T04:40:42Z",
+      "lastCheckedAt": "2026-11-04T04:40:42Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "year",
+          "year": 2027
+        },
+        "rawText": "2027"
+      }
+    },
+    {
+      "id": "c_e90772ee18fb6cf0",
+      "gameId": "g_000094",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231020/",
+          "retrievedAt": "2026-11-04T04:40:45Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:35e8c39f2d4ba585a4a18c8024d979608b465259e8cda33413bed610197180a4"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:42Z",
+      "createdAt": "2026-11-04T04:40:42Z",
+      "updatedAt": "2026-11-04T04:40:42Z",
+      "lastCheckedAt": "2026-11-04T04:40:45Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_0e6e5bf4b254eaa3",
+      "gameId": "g_000094",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231020/",
+          "retrievedAt": "2026-11-04T04:40:42Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95ad754c43067f20bdba4ff8a3ede52430fd13a7288d7f544db3d33a5d4fe2a1"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:42Z",
+      "createdAt": "2026-11-04T04:40:42Z",
+      "updatedAt": "2026-11-04T04:40:42Z",
+      "lastCheckedAt": "2026-11-04T04:40:42Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_6fc42d80027724ae",
+      "gameId": "g_000094",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231020/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:45Z",
+          "quote": "Step into a vast, dynamic medieval sandbox set in the age of the Hundred Years' War.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95ad754c43067f20bdba4ff8a3ede52430fd13a7288d7f544db3d33a5d4fe2a1"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:45Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "summary",
+      "value": {
+        "ja": "百年戦争の時代の中世ヨーロッパを舞台にした広大なサンドボックス。数百の兵士が入り乱れる大規模戦で、部隊に指示を出しながら自らも戦い、名もなき兵士から名声を築いていく。"
+      }
+    },
+    {
+      "id": "c_6cbc1f8db6613641",
+      "gameId": "g_000094",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231020/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:45Z",
+          "quote": "Explore a brutal but beautiful, historically grounded Europe, command armies in massive battles",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95ad754c43067f20bdba4ff8a3ede52430fd13a7288d7f544db3d33a5d4fe2a1"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:45Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "open-world"
+      }
+    },
+    {
+      "id": "c_779814c115da8d69",
+      "gameId": "g_000094",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231020/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:45Z",
+          "quote": "In the heat of battle, you issue orders to your troops without ever leaving the fight.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95ad754c43067f20bdba4ff8a3ede52430fd13a7288d7f544db3d33a5d4fe2a1"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:45Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "strategy"
+      }
+    },
+    {
+      "id": "c_97dcf90fad0c901c",
+      "gameId": "g_000094",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231020/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:45Z",
+          "quote": "Where you ride, who you fight, how you build your character and your army are your decisions",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95ad754c43067f20bdba4ff8a3ede52430fd13a7288d7f544db3d33a5d4fe2a1"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:45Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "rpg"
+      }
+    },
+    {
+      "id": "c_b10f00ca51bf929a",
+      "gameId": "g_000094",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231020/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:45Z",
+          "quote": "Combat is at the heart of it.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95ad754c43067f20bdba4ff8a3ede52430fd13a7288d7f544db3d33a5d4fe2a1"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:45Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_b22c8d4822760686",
+      "gameId": "g_000094",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231020/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:45Z",
+          "quote": "Factions shift in power, enemy forces patrol the landscape, and unexpected events unfold as you travel.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95ad754c43067f20bdba4ff8a3ede52430fd13a7288d7f544db3d33a5d4fe2a1"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:45Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_e9bbd9250115a517",
+      "gameId": "g_000094",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231020/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-04T04:26:45Z",
+          "quote": "Step into a vast, dynamic medieval sandbox set in the age of the Hundred Years' War.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95ad754c43067f20bdba4ff8a3ede52430fd13a7288d7f544db3d33a5d4fe2a1"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:33Z",
+      "createdAt": "2026-11-04T04:40:33Z",
+      "updatedAt": "2026-11-04T04:40:33Z",
+      "lastCheckedAt": "2026-11-04T04:26:45Z",
+      "createdBy": "llm",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "tag",
+      "value": {
+        "tagId": "sandbox"
+      }
+    },
+    {
+      "id": "c_d4f4e7282c368a37",
+      "gameId": "g_000094",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231020/",
+          "retrievedAt": "2026-11-04T04:40:42Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95ad754c43067f20bdba4ff8a3ede52430fd13a7288d7f544db3d33a5d4fe2a1"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:42Z",
+      "createdAt": "2026-11-04T04:40:42Z",
+      "updatedAt": "2026-11-04T04:40:42Z",
+      "lastCheckedAt": "2026-11-04T04:40:42Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2231020/"
+      }
+    },
+    {
+      "id": "c_562e61a05579ca86",
+      "gameId": "g_000094",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2231020/",
+          "retrievedAt": "2026-11-04T04:40:42Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95ad754c43067f20bdba4ff8a3ede52430fd13a7288d7f544db3d33a5d4fe2a1"
+        }
+      ],
+      "asOf": "2026-11-04",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-04T04:40:42Z",
+      "createdAt": "2026-11-04T04:40:42Z",
+      "updatedAt": "2026-11-04T04:40:42Z",
+      "lastCheckedAt": "2026-11-04T04:40:42Z",
+      "createdBy": "system",
+      "createdByRun": "local-20261104-132342-research",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2231020/322a3e5e98ce955972508f8ae5a6eb569ee40742/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Chronicles: Medieval のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Raw Power Games"
+        }
+      }
+    }
+  ]
+}
