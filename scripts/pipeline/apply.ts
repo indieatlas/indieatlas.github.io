@@ -474,12 +474,20 @@ function applyCreateGame(c: ResultContext, op: Extract<Operation, { op: 'create-
   if (ws.createdGames.length >= ws.repo.runtime.limits.maxNewGames) {
     c.temp.set(op.tempId, null);
     const hint = externalIds.steamAppId ? `steam:${externalIds.steamAppId}` : (officialUrl ?? '');
+    // 記事のタスクから来た作品は、次の回に記事も関連づけられるよう、記事の URL を対象に入れる
+    const articleUrl = c.task.type === 'process-article' ? c.task.target.url : undefined;
     addTask(
       ws,
       makeTask(
         'register-game',
-        { name: idn.title.display.slice(0, 120), ...(hint ? { hints: [hint] } : {}) },
-        `「${idn.title.display}」を登録する`,
+        {
+          name: idn.title.display.slice(0, 120),
+          ...(hint ? { hints: [hint] } : {}),
+          ...(articleUrl ? { url: articleUrl } : {}),
+        },
+        articleUrl
+          ? `「${idn.title.display}」を登録し、記事（target.url）に関連づける`
+          : `「${idn.title.display}」を登録する`,
         'validator',
         ws.at,
       ),
@@ -725,7 +733,20 @@ function applyUpsertArticle(c: ResultContext, op: Extract<Operation, { op: 'upse
   if (d.games.length > 30) reject('V-C06', 'too many games');
   if (d.games.some((g) => g.role === 'roundup') && d.kind !== 'roundup' && d.kind !== 'feature')
     reject('V-C06', 'roundup role needs a roundup or feature article');
-  if (d.summaryJa) assertText(d.summaryJa);
+  // 記事の短い説明は任意の項目なので、規則に合わなければ説明だけを外して記事は残す
+  let summaryJa = d.summaryJa;
+  if (summaryJa && textIssues(summaryJa).length) {
+    count(
+      ws,
+      c.taskId,
+      op.op,
+      'V-C01',
+      `summaryJa: ${textIssues(summaryJa)
+        .map((i) => i.match)
+        .join(', ')}（説明を外した）`,
+    );
+    summaryJa = undefined;
+  }
 
   // 記事が扱う作品だけを関連づける（本文やタイトルに名前がない作品は外す）
   const links: Article['games'] = [];
@@ -790,7 +811,7 @@ function applyUpsertArticle(c: ResultContext, op: Extract<Operation, { op: 'upse
       kind: d.kind,
       ...((d.publishedAt ?? entry!.publishedAt) ? { publishedAt: d.publishedAt ?? entry!.publishedAt } : {}),
       retrievedAt: entry!.retrievedAt,
-      ...(d.summaryJa && src?.rights.displaySummary ? { summaryJa: d.summaryJa } : {}),
+      ...(summaryJa && src?.rights.displaySummary ? { summaryJa } : {}),
       ...(d.derivedFrom
         ? {
             derivedFrom: {

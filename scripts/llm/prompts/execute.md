@@ -61,7 +61,7 @@ user メッセージの `task` を、ツールで調べて実行し、`submit_re
 
 ### register-game（未登録の作品の登録）
 
-target の名前や手がかりから作品を特定し、「新しい作品」の手順で登録する。既存の作品だと分かれば、識別情報の不足を `update-identity` で補う。
+target の名前や手がかりから作品を特定し、「新しい作品」の手順で登録する。`target.url` に記事があれば取得し、登録した作品を `upsert-article` で関連づける。既存の作品だと分かれば、識別情報の不足を `update-identity` で補う。
 
 ### check-change（発売情報の確認）
 
