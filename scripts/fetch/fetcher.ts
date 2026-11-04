@@ -49,6 +49,8 @@ export interface FetchedPage {
   text: string; // 抽出した本文。noai のページでは空
   links: { url: string; text: string }[];
   noai: boolean;
+  etag?: string; // 条件付きリクエスト（If-None-Match）に使う
+  lastModified?: string;
 }
 
 export interface FetcherOptions {
@@ -226,6 +228,8 @@ export function createFetcher(transport: Transport, opts: FetcherOptions): Fetch
           status: res.status,
           contentType,
           fetchHash: sha256Tagged(res.body),
+          ...(res.headers['etag'] ? { etag: res.headers['etag'].slice(0, 200) } : {}),
+          ...(res.headers['last-modified'] ? { lastModified: res.headers['last-modified'].slice(0, 100) } : {}),
         };
         if (contentType && !ALLOWED_TYPES.some((re) => re.test(contentType)))
           return { ...page, blocked: 'unsupported-type' };

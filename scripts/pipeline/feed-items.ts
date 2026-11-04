@@ -10,6 +10,8 @@ export interface FeedItem {
   url: string;
   publishedAt?: string; // UTC の ISO 8601
   categories: string[];
+  guid?: string;
+  description?: string; // フィードの説明（タグを除き、300字まで）
 }
 
 export interface FeedCandidate extends FeedItem {
@@ -58,7 +60,22 @@ export function parseFeed(xml: string): FeedItem[] {
       ),
       ...[...body.matchAll(/<category[^>]*?term="([^"]+)"/g)].map((c) => decode(c[1]!)),
     ];
-    items.push({ title, url: decode(url), ...(publishedAt ? { publishedAt } : {}), categories });
+    const guid = tag(body, 'guid') ?? tag(body, 'id');
+    const rawDesc = tag(body, 'description') ?? tag(body, 'summary') ?? tag(body, 'content:encoded');
+    const description = rawDesc
+      ? decode(rawDesc.replace(/<[^>]+>/g, ' '))
+          .replace(/\s+/g, ' ')
+          .trim()
+          .slice(0, 300)
+      : undefined;
+    items.push({
+      title,
+      url: decode(url),
+      ...(publishedAt ? { publishedAt } : {}),
+      categories,
+      ...(guid ? { guid: guid.slice(0, 300) } : {}),
+      ...(description ? { description } : {}),
+    });
   }
   return items;
 }
