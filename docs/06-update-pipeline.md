@@ -222,6 +222,7 @@ export const PlanOutput = z.object({
 | `find_games` | `{ query }` | 既存の作品（統合済みを除く）の候補10件: ID、表示名、原題、別名、開発者、強いキー、状態 | なし |
 | `get_game` | `{ gameId }` | 識別情報、採用済みと保留中の Claim、関連記事、未解決のタスク | なし |
 | `get_steam_app` | `{ appId }` | Steam の作品詳細から必要な項目だけを整形したもの（種類、本編の ID、名前、開発者、パブリッシャー、発売日、対応機種、プレイ形式、ヘッダー画像、公式サイト、ジャンル、成人向けの記述子の有無）と、英語と日本語の作品紹介（`short_description`）の本文 | タスクあたり5回。S1 の情報源が有効な場合だけ渡す |
+| `search_steam` | `{ term }` | Steam ストアの名前の検索（`/api/storesearch/`）の候補、最大5件（appId と名前）。記事にストアのリンクがないときに使う。結果は手がかりで根拠にならず、候補は `get_steam_app` で確かめる | `get_steam_app` との合計でタスクあたり8回。S1 の情報源が有効な場合だけ渡す（2026-11-04 に追加。登録した情報源の中の検索で、Web 検索ではない） |
 | `submit_result` | `TaskResult`（§6.6） | 受理したかどうか | — |
 
 - `fetch_url` は [05](05-sources-and-editorial-policy.md) §5.4.3 の規則に従う。取得のたびに `out/fetch-log/{fetchId}.json`（URL、最終 URL、状態、取得日時、Content-Type、本文のハッシュ、抽出した本文、機械学習の利用を拒否する表示の有無）を書く。採用ジョブは、根拠の検証にこのログを使う。
@@ -433,7 +434,7 @@ LLM に渡す `submit_result` の JSON Schema は、タスクごとに、その�
 | V-E02 | `quote` を、NFKC で正規化して空白をまとめたうえで、取得した本文に部分文字列として含む。`locator` の場合は、ログの該当項目の値が Claim の値と一致する | — |
 | V-E03 | 取得したページが対象の作品を扱っている。本文かタイトルに、作品の表示名、原題、別名のいずれか（正規化して比較）か、強いキーが含まれる | — |
 | V-E04 | 根拠の URL が、`allowFetch: false` の情報源のドメインでない。機械学習の利用を拒否する表示のあるページでない | — |
-| V-E05 | `basis: fact` の根拠に `official` か `store` の種類のものがある。`reported` の根拠に `media` か `event` のものがある。`editorial` は種類を問わず1件以上 | — |
+| V-E05 | `basis: fact` の根拠に `official` か `store` の種類のものがある。`reported` の根拠に `media` か `event` のものがある。`editorial` は種類を問わず1件以上。インディーの理由のうち `solo-developer`、`small-team`、`large-studio`、`subsidiary` は「公式に明記」が条件なので、`official` か `store` の根拠が要る（満たさない理由は除く） | — |
 | V-E06 | `asOf` が今日より後の日付でない | — |
 | V-E07 | `quote` の長さが `evidence.maxQuoteChars` 以下である。情報源の `storeQuotes: false` なら、抜粋をハッシュに置き換えて保存する | 置き換え（却下はしない） |
 
@@ -446,7 +447,7 @@ LLM に渡す `submit_result` の JSON Schema は、タスクごとに、その�
 | V-C03 | タグの Claim のタグが `core` か `candidate` として存在する。`propose-tag` のラベルと別名を正規化した値が既存のタグと重ならない（重なる場合は既存のタグに置き換えて続ける） | 置き換え |
 | V-C04 | `summary` と `features` で、採用済みの値がすでにある場合は、`replace` があり、かつ次のどちらかを満たす。(1) `reason: new-facts` で、`basedOnClaimIds` に、現在の値の `adoptedAt` より後に採用された Claim が含まれる。(2) `reason: current-invalid` で、対象の作品に未解決の `fix-reported-error` か `fix-conflict` がある | 却下の理由を `paraphrase-only` とする |
 | V-C05 | 画像の Claim に `usage.basis` があり、根拠の情報源の `displayImages` が `true`（登録していない情報源の場合は、根拠の種類が `official` か `store`）である | — |
-| V-C06 | 記事の作品の関連が30件以下で、`roundup` の扱いは記事の種別が `roundup` か `feature` の場合だけ | — |
+| V-C06 | 記事の作品の関連が30件以下で、`roundup` の扱いは記事の種別が `roundup` か `feature` の場合だけ。ストアの告知（Steam のお知らせ）とセールの告知（タイトルに「90%オフ」「過去最安」「セール開催」「sale」などがある記事）は記事にしない | — |
 | V-C07 | `collection-add` の作品が公開中で、コレクションの `rules` を満たし、`evidenceClaimIds` がその作品の採用済みの Claim である。コレクションの作品数が60件を超えない | — |
 | V-C08 | 作品間の関係で、`a` と `b` が異なり、どちらも公開中か候補である。`similar-play` は、採用済みのタグが2つ以上重なるか、両方の作品を扱う記事が根拠にある | — |
 
