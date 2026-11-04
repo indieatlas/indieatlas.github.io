@@ -134,6 +134,34 @@ export interface AdoptResult {
   tasksArchived: TasksFile['tasks'];
 }
 
+/** 後続のタスクの対象が、その種類のタスクを実行できるだけそろっているか（作品の ID のない check-change などは作らない） */
+export function followUpTargetOk(nt: { type: Task['type']; target: Task['target'] }, ws: Workspace): boolean {
+  const t = nt.target;
+  const gameOk = !!t.gameId && ws.repo.games.some((g) => g.id === t.gameId && g.status !== 'merged');
+  switch (nt.type) {
+    case 'check-change':
+    case 'fill-missing':
+    case 'refresh-game':
+    case 'improve-relations':
+    case 'fix-conflict':
+    case 'fix-duplicate':
+      return gameOk;
+    case 'register-game':
+      return !!(t.name || t.url);
+    case 'process-article':
+      return !!t.url;
+    case 'check-event':
+      return !!(t.eventId || t.url);
+    case 'register-event':
+    case 'discover':
+      return !!(t.url || t.sourceId);
+    case 'improve-collection':
+      return !!t.collectionId && ws.repo.collections.some((c) => c.id === t.collectionId);
+    default:
+      return true;
+  }
+}
+
 function upsertTask(ws: Workspace, t: Task): void {
   const tasks = ws.repo.tasks.tasks;
   const i = tasks.findIndex((x) => x.id === t.id);
@@ -227,6 +255,7 @@ export async function adoptResearch(
         )
           continue;
       }
+      if (!followUpTargetOk(nt, ws)) continue;
       // 同じ目的のタスクがあれば作らない。終わったものも14日たつまでは作り直さない（同じ確認の繰り返しを防ぐ）
       const t = fromNewTask(nt, 'executor', o.at, o.today);
       const prev = ws.repo.tasks.tasks.find((x) => x.id === t.id);

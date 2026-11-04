@@ -35,7 +35,7 @@ export interface TaskTools {
   fetched: () => number;
 }
 
-const MAX_STEAM_PER_TASK = 5;
+const MAX_STEAM_PER_TASK = 8; // get_steam_app と search_steam の合計
 const MAX_LINKS = 40;
 
 /** 外部の文章を <external_content> で囲む。閉じタグは無害な形に置き換える（06 §6.10） */
@@ -287,6 +287,31 @@ export function createTaskTools(env: ToolEnv, task: { id: string }, maxFetches: 
       },
     };
     tools.push(steamTool);
+    // Steam ストア（S1）の中の名前の検索。Web 検索ではない（06 §6.9.4）。結果は手がかりで、根拠には get_steam_app を使う
+    const searchTool: ToolSpec<{ term: string }> = {
+      name: 'search_steam',
+      description:
+        'Steam ストアで作品の名前を検索し、候補の appId と名前を最大5件返す。記事にストアのリンクがないときに使う。根拠にはならないので、候補は get_steam_app で確かめる。',
+      input: z.object({ term: z.string().min(1).max(120) }),
+      run: async ({ term }) => {
+        if (steamCalls >= MAX_STEAM_PER_TASK) return { ok: false, error: 'steam call limit reached' };
+        steamCalls++;
+        try {
+          const res = await http.get(
+            `https://store.steampowered.com/api/storesearch/?term=${encodeURIComponent(term)}&cc=jp&l=japanese`,
+          );
+          if (res.status !== 200) return { ok: false, error: `HTTP ${res.status}` };
+          const items = ((JSON.parse(res.text) as { items?: { type: string; id: number; name: string }[] }).items ?? [])
+            .filter((i) => i.type === 'app')
+            .slice(0, 5)
+            .map((i) => ({ appId: i.id, name: i.name }));
+          return { ok: true, content: JSON.stringify(items) };
+        } catch (e) {
+          return { ok: false, error: (e as Error).message };
+        }
+      },
+    };
+    tools.push(searchTool);
   }
   return { tools, fetched: () => fetches };
 }

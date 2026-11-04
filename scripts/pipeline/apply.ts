@@ -277,6 +277,12 @@ function assertText(text: string, rule = 'V-C01', allowMarkdown = false): void {
     reject(rule, `forbidden expression: ${issues.map((i) => `${i.category}「${i.match}」`).join(', ')}`);
 }
 
+/** 個人開発と小規模な体制は「公式に明記されている」ことが条件なので、公式かストアの根拠が要る（04 §4.4.3） */
+const OFFICIAL_ONLY_REASONS = new Set(['solo-developer', 'small-team', 'large-studio', 'subsidiary']);
+function reasonEvidenceOk(code: string, evidence: Evidence[]): boolean {
+  return !OFFICIAL_ONLY_REASONS.has(code) || evidence.some((e) => e.kind === 'official' || e.kind === 'store');
+}
+
 function steamLog(ws: Workspace, appId: number) {
   return ws.log.entries.find((e) => e.steam && Number(e.steam.appId) === appId)?.steam;
 }
@@ -529,6 +535,10 @@ function applyCreateGame(c: ResultContext, op: Extract<Operation, { op: 'create-
       if (v) count(ws, c.taskId, op.op, v.rule, `${v.message}（インディーの理由の根拠を除いた）`);
       else ev.push(toEvidence(d, reasonCtx));
     }
+    if (ev.length && !reasonEvidenceOk(r.code, ev)) {
+      count(ws, c.taskId, op.op, 'V-E05', `${r.code} needs official or store evidence（インディーの理由を除いた）`);
+      continue;
+    }
     if (ev.length) reasons.push({ code: r.code, ...(r.note ? { note: r.note } : {}), evidence: ev });
   }
   // 開発者とパブリッシャーが同じなら、ストアの情報を根拠に self-published とする
@@ -671,6 +681,10 @@ function applyUpdateIdentity(c: ResultContext, op: Extract<Operation, { op: 'upd
     const rctx = evidenceContext(ws, officialUrlsOf(ws, g));
     for (const r of ch.addIndieReasons) {
       const ev = r.evidence.filter((d) => !checkEvidence(d, undefined, rctx)).map((d) => toEvidence(d, rctx));
+      if (ev.length && !reasonEvidenceOk(r.code, ev)) {
+        count(ws, c.taskId, op.op, 'V-E05', `${r.code} needs official or store evidence（インディーの理由を除いた）`);
+        continue;
+      }
       if (ev.length && !g.indie.reasons.some((x) => x.code === r.code))
         g.indie.reasons.push({ code: r.code, ...(r.note ? { note: r.note } : {}), evidence: ev });
     }

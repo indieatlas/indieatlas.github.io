@@ -20,12 +20,12 @@ user メッセージの `task` を、ツールで調べて実行し、`submit_re
 ### 新しい作品（create-game）
 
 1. `find_games` で既存の作品を探す。あれば作らず、その gameId を使う。
-2. Steam で販売されている作品は、ストアの URL（`store.steampowered.com/app/{appId}`）を記事やページから探し、`get_steam_app` で確かめる。`type` が `game` の本編の appId を使う。
+2. Steam で販売されている作品は、ストアの URL（`store.steampowered.com/app/{appId}`）を記事やページから探す。見つからなければ `search_steam` で名前を検索する。候補は必ず `get_steam_app` で確かめ、`type` が `game` の本編で、開発者や名前が記事と合う appId を使う。
 3. `create-game` の `identity` には次を書く。
    - `title.display` は日本語の公式表記があればそれ、なければ原題。`title.original` は原題。
    - `externalIds.steamAppId`（Steam の作品）と、その根拠 `{ "field": "externalIds", "evidence": { "url": "{storeUrl}", "locator": "steam:appdetails.steam_appid" } }`。Steam にない作品は公式サイトの URL を `officialUrl` にし、`field: "officialUrl"` の根拠（公式サイトの本文の quote）を付ける。
    - `developers` と `publishers` は名前で書く（`{"name": "..."}`）。既存の開発者はコードが照合する。
-   - `indieReasons`: 開発者とパブリッシャーが同じなら、コードが自動で `self-published` を付ける。それ以外の理由（個人開発の明記 `solo-developer`、小規模な体制の明記 `small-team`、インディーのショーケースへの出展 `indie-showcase`、独立系パブリッシャー `independent-publisher`）は、本文の quote を根拠に書く。理由がなければ空にする（作品は候補のまま公開されない）。
+   - `indieReasons`: 開発者とパブリッシャーが同じなら、コードが自動で `self-published` を付ける。それ以外の理由は、本文の quote を根拠に書く。個人開発の明記 `solo-developer` と小規模な体制の明記 `small-team` は、公式サイトかストアの文が根拠に要る（媒体の記事だけでは認めない）。インディーのショーケースへの出展 `indie-showcase` は催しや媒体の記事でよい。理由がなければ空にする（作品は候補のまま公開されない）。
 4. 同じ結果の中で、`add-claim` で紹介文（`summary`）とタグ（`tag`）を加える。作品は一時 ID（`{"tempId": "new:1"}`）で指す。
    - Steam の作品の発売日、機種、日本語対応、ストアのリンク、ヘッダー画像は、コードがストアから自動で取り込む。これらの Claim を書かない。
 5. その作品を扱う記事があれば `upsert-article` で関連づける。
