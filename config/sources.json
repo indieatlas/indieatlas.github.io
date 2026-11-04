@@ -9,19 +9,21 @@
       "role": "resolve",
       "kind": "store",
       "evidenceKind": "store",
-      "enabled": false,
+      "enabled": true,
       "fetch": {
         "method": "steam",
         "frequency": "every-run",
         "maxItemsPerRun": 30
       },
       "rights": {
+        "checkedAt": "2026-11-04",
+        "checkedBy": "agent",
         "allowFetch": true,
         "displayTitle": true,
         "displaySummary": false,
         "displayImages": true,
         "storeQuotes": true,
-        "notes": "作品詳細の JSON（appdetails）とストアのページの言語の表を使う。初期データの作成（seed:steam）で使用した。定期実行での取得方法と利用条件は P2-02 で確認する。"
+        "notes": "作品詳細の JSON（appdetails）とストアのページの言語の表を使う。初期データの作成（seed:steam）で使用した。 2026-11-04 に robots.txt で取得が許されていることと、フィードと記事を取得できることを確かめ、定期実行で有効にした。"
       }
     },
     {
@@ -32,7 +34,7 @@
       "role": "understand",
       "kind": "media",
       "evidenceKind": "media",
-      "enabled": false,
+      "enabled": true,
       "fetch": {
         "method": "rss",
         "url": "https://automaton-media.com/feed/",
@@ -40,12 +42,14 @@
         "maxItemsPerRun": 30
       },
       "rights": {
+        "checkedAt": "2026-11-04",
+        "checkedBy": "agent",
         "allowFetch": true,
         "displayTitle": true,
         "displaySummary": false,
         "displayImages": true,
         "storeQuotes": true,
-        "notes": "インディーゲームの記事が多い日本語の媒体（S6）。利用条件は P2-02 で確認する。 記事の OGP 画像を縮小して記事のカードに表示する（2026-10-28 利用者の判断）。本文の画像は使わない。"
+        "notes": "インディーゲームの記事が多い日本語の媒体（S6）。記事の OGP 画像を縮小して記事のカードに表示する（2026-10-28 利用者の判断）。本文の画像は使わない。 2026-11-04 に robots.txt で取得が許されていることと、フィードと記事を取得できることを確かめ、定期実行で有効にした。"
       }
     },
     {
@@ -56,7 +60,7 @@
       "role": "understand",
       "kind": "media",
       "evidenceKind": "media",
-      "enabled": false,
+      "enabled": true,
       "fetch": {
         "method": "rss",
         "url": "https://www.gamespark.jp/rss/index.rdf",
@@ -64,12 +68,14 @@
         "maxItemsPerRun": 30
       },
       "rights": {
+        "checkedAt": "2026-11-04",
+        "checkedBy": "agent",
         "allowFetch": true,
         "displayTitle": true,
         "displaySummary": false,
         "displayImages": true,
         "storeQuotes": true,
-        "notes": "日本語の媒体（S7）。利用条件は P2-02 で確認する。 記事の OGP 画像を縮小して記事のカードに表示する（2026-10-28 利用者の判断）。本文の画像は使わない。"
+        "notes": "日本語の媒体（S7）。記事の OGP 画像を縮小して記事のカードに表示する（2026-10-28 利用者の判断）。本文の画像は使わない。 2026-11-04 に robots.txt で取得が許されていることと、フィードと記事を取得できることを確かめ、定期実行で有効にした。"
       }
     },
     {
@@ -80,7 +86,7 @@
       "role": "understand",
       "kind": "media",
       "evidenceKind": "media",
-      "enabled": false,
+      "enabled": true,
       "fetch": {
         "method": "rss",
         "url": "https://www.4gamer.net/rss/index.xml",
@@ -88,12 +94,14 @@
         "maxItemsPerRun": 30
       },
       "rights": {
+        "checkedAt": "2026-11-04",
+        "checkedBy": "agent",
         "allowFetch": true,
         "displayTitle": true,
         "displaySummary": false,
         "displayImages": false,
         "storeQuotes": true,
-        "notes": "日本語の媒体（S8）。利用条件は P2-02 で確認する。"
+        "notes": "日本語の媒体（S8）。 2026-11-04 に robots.txt で取得が許されていることと、フィードと記事を取得できることを確かめ、定期実行で有効にした。"
       }
     },
     {
@@ -104,7 +112,7 @@
       "role": "understand",
       "kind": "media",
       "evidenceKind": "media",
-      "enabled": false,
+      "enabled": true,
       "fetch": {
         "method": "rss",
         "url": "https://news.denfaminicogamer.jp/feed",
@@ -112,12 +120,14 @@
         "maxItemsPerRun": 30
       },
       "rights": {
+        "checkedAt": "2026-11-04",
+        "checkedBy": "agent",
         "allowFetch": true,
         "displayTitle": true,
         "displaySummary": false,
         "displayImages": false,
         "storeQuotes": true,
-        "notes": "日本語の媒体（S9）。利用条件は P2-02 で確認する。"
+        "notes": "日本語の媒体（S9）。 2026-11-04 に robots.txt で取得が許されていることと、フィードと記事を取得できることを確かめ、定期実行で有効にした。"
       }
     },
     {
@@ -152,7 +162,7 @@
       "role": "understand",
       "kind": "media",
       "evidenceKind": "media",
-      "enabled": false,
+      "enabled": true,
       "fetch": {
         "method": "rss",
         "url": "https://www.gamingonlinux.com/article_rss.php",
@@ -160,12 +170,14 @@
         "maxItemsPerRun": 30
       },
       "rights": {
+        "checkedAt": "2026-11-04",
+        "checkedBy": "agent",
         "allowFetch": true,
         "displayTitle": true,
         "displaySummary": false,
         "displayImages": true,
         "storeQuotes": true,
-        "notes": "英語の媒体。インディーの記事が多い。フィードの URL と利用条件は P2-02 で確認する。 記事の OGP 画像を縮小して記事のカードに表示する（2026-10-28 利用者の判断）。本文の画像は使わない。"
+        "notes": "英語の媒体。インディーの記事が多い。フィードの URL と記事の OGP 画像を縮小して記事のカードに表示する（2026-10-28 利用者の判断）。本文の画像は使わない。 2026-11-04 に robots.txt で取得が許されていることと、フィードと記事を取得できることを確かめ、定期実行で有効にした。"
       }
     },
     {
@@ -199,7 +211,7 @@
       "role": "understand",
       "kind": "media",
       "evidenceKind": "media",
-      "enabled": false,
+      "enabled": true,
       "fetch": {
         "method": "rss",
         "url": "https://game.watch.impress.co.jp/data/rss/1.0/gmw/feed.rdf",
@@ -207,12 +219,14 @@
         "maxItemsPerRun": 30
       },
       "rights": {
+        "checkedAt": "2026-11-04",
+        "checkedBy": "agent",
         "allowFetch": true,
         "displayTitle": true,
         "displaySummary": false,
         "displayImages": false,
         "storeQuotes": true,
-        "notes": "記事の見出しとリンクを掲載する（2026-10-28 追加）。画像は使わない。利用条件と RSS の URL は P2-02 で確認する。"
+        "notes": "記事の見出しとリンクを掲載する（2026-10-28 追加）。画像は使わない。利用条件と RSS の URL は P2-02 で確認する。 2026-11-04 に robots.txt で取得が許されていることと、フィードと記事を取得できることを確かめ、定期実行で有効にした。"
       }
     },
     {
@@ -223,7 +237,7 @@
       "role": "understand",
       "kind": "media",
       "evidenceKind": "media",
-      "enabled": false,
+      "enabled": true,
       "fetch": {
         "method": "rss",
         "url": "https://www.inside-games.jp/rss/index.rdf",
@@ -231,12 +245,14 @@
         "maxItemsPerRun": 30
       },
       "rights": {
+        "checkedAt": "2026-11-04",
+        "checkedBy": "agent",
         "allowFetch": true,
         "displayTitle": true,
         "displaySummary": false,
         "displayImages": false,
         "storeQuotes": true,
-        "notes": "記事の見出しとリンクを掲載する（2026-10-28 追加）。画像は使わない。利用条件と RSS の URL は P2-02 で確認する。"
+        "notes": "記事の見出しとリンクを掲載する（2026-10-28 追加）。画像は使わない。利用条件と RSS の URL は P2-02 で確認する。 2026-11-04 に robots.txt で取得が許されていることと、フィードと記事を取得できることを確かめ、定期実行で有効にした。"
       }
     },
     {
@@ -247,7 +263,7 @@
       "role": "understand",
       "kind": "media",
       "evidenceKind": "media",
-      "enabled": false,
+      "enabled": true,
       "fetch": {
         "method": "rss",
         "url": "https://www.pcgamer.com/feeds.xml",
@@ -255,12 +271,14 @@
         "maxItemsPerRun": 30
       },
       "rights": {
+        "checkedAt": "2026-11-04",
+        "checkedBy": "agent",
         "allowFetch": true,
         "displayTitle": true,
         "displaySummary": false,
         "displayImages": false,
         "storeQuotes": true,
-        "notes": "記事の見出しとリンクを掲載する（2026-10-28 追加）。画像は使わない。利用条件と RSS の URL は P2-02 で確認する。"
+        "notes": "記事の見出しとリンクを掲載する（2026-10-28 追加）。画像は使わない。利用条件と RSS の URL は P2-02 で確認する。 2026-11-04 に robots.txt で取得が許されていることと、フィードと記事を取得できることを確かめ、定期実行で有効にした。"
       }
     },
     {
@@ -271,7 +289,7 @@
       "role": "understand",
       "kind": "media",
       "evidenceKind": "media",
-      "enabled": false,
+      "enabled": true,
       "fetch": {
         "method": "rss",
         "url": "https://www.gamesradar.com/feeds.xml",
@@ -279,12 +297,14 @@
         "maxItemsPerRun": 30
       },
       "rights": {
+        "checkedAt": "2026-11-04",
+        "checkedBy": "agent",
         "allowFetch": true,
         "displayTitle": true,
         "displaySummary": false,
         "displayImages": false,
         "storeQuotes": true,
-        "notes": "記事の見出しとリンクを掲載する（2026-10-28 追加）。画像は使わない。利用条件と RSS の URL は P2-02 で確認する。"
+        "notes": "記事の見出しとリンクを掲載する（2026-10-28 追加）。画像は使わない。利用条件と RSS の URL は P2-02 で確認する。 2026-11-04 に robots.txt で取得が許されていることと、フィードと記事を取得できることを確かめ、定期実行で有効にした。"
       }
     },
     {
@@ -295,7 +315,7 @@
       "role": "discover",
       "kind": "event",
       "evidenceKind": "event",
-      "enabled": false,
+      "enabled": true,
       "fetch": {
         "method": "html-list",
         "url": "https://bitsummit.org/",
@@ -303,12 +323,14 @@
         "maxItemsPerRun": 10
       },
       "rights": {
+        "checkedAt": "2026-11-04",
+        "checkedBy": "agent",
         "allowFetch": true,
         "displayTitle": true,
         "displaySummary": false,
         "displayImages": true,
         "storeQuotes": true,
-        "notes": "京都のインディーゲームの祭典。開催日程と出展作品の告知を取得する（06 §6.13）。利用条件は P2-02 で確認する。"
+        "notes": "京都のインディーゲームの祭典。開催日程と出展作品の告知を取得する（06 §6.13）。 2026-11-04 に robots.txt で取得が許されていることと、フィードと記事を取得できることを確かめ、定期実行で有効にした。"
       }
     },
     {
@@ -319,7 +341,7 @@
       "role": "discover",
       "kind": "event",
       "evidenceKind": "event",
-      "enabled": false,
+      "enabled": true,
       "fetch": {
         "method": "html-list",
         "url": "https://digigame-expo.org/",
@@ -327,12 +349,14 @@
         "maxItemsPerRun": 10
       },
       "rights": {
+        "checkedAt": "2026-11-04",
+        "checkedBy": "agent",
         "allowFetch": true,
         "displayTitle": true,
         "displaySummary": false,
         "displayImages": true,
         "storeQuotes": true,
-        "notes": "同人・インディーゲームの展示即売会。開催日程とサークル一覧を取得する。利用条件は P2-02 で確認する。"
+        "notes": "同人・インディーゲームの展示即売会。開催日程とサークル一覧を取得する。 2026-11-04 に robots.txt で取得が許されていることと、フィードと記事を取得できることを確かめ、定期実行で有効にした。"
       }
     },
     {
@@ -343,7 +367,7 @@
       "role": "discover",
       "kind": "event",
       "evidenceKind": "event",
-      "enabled": false,
+      "enabled": true,
       "fetch": {
         "method": "html-list",
         "url": "https://www.404shibuya.tokyo/event/",
@@ -351,12 +375,14 @@
         "maxItemsPerRun": 10
       },
       "rights": {
+        "checkedAt": "2026-11-04",
+        "checkedBy": "agent",
         "allowFetch": true,
         "displayTitle": true,
         "displaySummary": false,
         "displayImages": true,
         "storeQuotes": true,
-        "notes": "SHIBUYA GAME CROSS などの催しの一覧。利用条件は P2-02 で確認する。"
+        "notes": "SHIBUYA GAME CROSS などの催しの一覧。 2026-11-04 に robots.txt で取得が許されていることと、フィードと記事を取得できることを確かめ、定期実行で有効にした。"
       }
     },
     {
@@ -367,7 +393,7 @@
       "role": "discover",
       "kind": "event",
       "evidenceKind": "store",
-      "enabled": false,
+      "enabled": true,
       "fetch": {
         "method": "html-list",
         "url": "https://partner.steamgames.com/doc/marketing/upcoming_events",
@@ -375,12 +401,14 @@
         "maxItemsPerRun": 20
       },
       "rights": {
+        "checkedAt": "2026-11-04",
+        "checkedBy": "agent",
         "allowFetch": true,
         "displayTitle": true,
         "displaySummary": false,
         "displayImages": true,
         "storeQuotes": true,
-        "notes": "Steam Next Fest やテーマ別のフェスの日程。利用条件は P2-02 で確認する。"
+        "notes": "Steam Next Fest やテーマ別のフェスの日程。 2026-11-04 に robots.txt で取得が許されていることと、フィードと記事を取得できることを確かめ、定期実行で有効にした。"
       }
     }
   ]
