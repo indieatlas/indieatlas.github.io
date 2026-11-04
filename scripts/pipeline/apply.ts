@@ -824,6 +824,7 @@ export function markSeen(
 // ------------------------------------------------------------------ Claim
 
 const TEXT_FIELDS = new Set(['summary', 'features', 'overview']);
+const UNSCOPED_FIELDS = new Set(['summary', 'features', 'overview', 'tag']);
 
 function claimsFileOf(ws: Workspace, gameId: string): ClaimsFile {
   let f = ws.repo.claims.get(gameId);
@@ -876,7 +877,8 @@ function applyAddClaim(c: ResultContext, op: Extract<Operation, { op: 'add-claim
   const ws = c.ws;
   const gid = resolveRef(c, op.game);
   const g = assertWritable(c, gid);
-  const d = op.claim;
+  // 紹介文、特徴、タグは機種ごとに分けない（LLM が範囲を付けても外す）
+  const d: ClaimDraft = UNSCOPED_FIELDS.has(op.claim.field) ? { ...op.claim, scope: {} } : op.claim;
   if (d.asOf > ws.today) reject('V-E06', `asOf ${d.asOf} is in the future`);
   for (const t of textsOf(d)) assertText(t);
   if (d.field === 'release' && (d.value.status === 'released' || d.value.status === 'early-access') && !d.value.date) {

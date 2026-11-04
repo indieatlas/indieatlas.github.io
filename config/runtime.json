@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "run": {
-    "softDeadlineMinutes": 16,
-    "hardDeadlineMinutes": 20,
-    "maxTasks": 12,
+    "softDeadlineMinutes": 40,
+    "hardDeadlineMinutes": 50,
+    "maxTasks": 40,
     "maxTasksPerGame": 2,
-    "executeConcurrency": 1
+    "executeConcurrency": 3
   },
   "limits": {
     "maxNewArticles": 30,
-    "maxNewGames": 5,
-    "maxNewlyPublishedGames": 5,
+    "maxNewGames": 10,
+    "maxNewlyPublishedGames": 10,
     "maxFetchesPerTask": 8,
     "maxOperationsPerTask": 60,
     "maxFollowUpTasksPerTask": 5
@@ -21,8 +21,8 @@
   },
   "budget": {
     "currency": "USD",
-    "monthlyLimit": 20,
-    "perRunLimit": 1,
+    "monthlyLimit": 30,
+    "perRunLimit": 1.5,
     "perTaskLimit": 0.15
   },
   "llm": {

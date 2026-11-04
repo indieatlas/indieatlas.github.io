@@ -276,60 +276,65 @@ export async function runResearch(o: ResearchOptions): Promise<ResearchMeta> {
       log,
     };
     const remaining = [...plan.selected];
+    const running = new Set<Task>();
     const explorationPending = () =>
-      remaining.some((t) => baseline.exploration.has(t.id) || isExploration(t, pctx, discoverSources));
-    while (remaining.length) {
-      const task = remaining.shift()!;
-      const exploration = baseline.exploration.has(task.id);
-      const gate = budget.canStartTask(exploration, explorationPending());
-      if (gate !== 'ok') {
-        // 探索のタスクが残っていれば、探索以外を飛ばして探索に進む
-        if (gate === 'cost-budget' && !exploration && explorationPending()) {
-          attempts.push({ taskId: task.id, outcome: 'deferred', note: 'exploration reserve' });
-          continue;
-        }
-        stopReason = gate;
-        for (const t of [task, ...remaining]) attempts.push({ taskId: t.id, outcome: 'deferred', note: gate });
-        break;
-      }
-      log(`R5: ${task.type} ${task.id} ${task.goal.slice(0, 60)}`);
-      let out;
-      try {
-        out = await executeTask(env, task, exploration, explorationPending);
-      } catch (e) {
-        if (e instanceof LlmError && e.kind === 'auth') {
-          stopReason = 'llm-disabled';
-          pending.push(`LLM の認証に失敗した: ${e.message.slice(0, 120)}`);
-          for (const t of [task, ...remaining])
-            attempts.push({ taskId: t.id, outcome: 'deferred', note: 'llm auth failed' });
+      [...remaining, ...running].some((t) => baseline.exploration.has(t.id) || isExploration(t, pctx, discoverSources));
+    let stopped = false;
+    const stop = (reason: ResearchMeta['stopReason'], note: string) => {
+      if (!stopped) stopReason = reason;
+      stopped = true;
+      for (const t of remaining.splice(0)) attempts.push({ taskId: t.id, outcome: 'deferred', note });
+    };
+    // runtime.run.executeConcurrency 件まで並行して実行する。取得の間隔はホストごとに Fetcher が守る
+    const worker = async () => {
+      while (!stopped && remaining.length) {
+        const task = remaining.shift()!;
+        const exploration = baseline.exploration.has(task.id);
+        const gate = budget.canStartTask(exploration, explorationPending());
+        if (gate !== 'ok') {
+          // 探索のタスクが残っていれば、探索以外を飛ばして探索に進む
+          if (gate === 'cost-budget' && !exploration && explorationPending()) {
+            attempts.push({ taskId: task.id, outcome: 'deferred', note: 'exploration reserve' });
+            continue;
+          }
+          attempts.push({ taskId: task.id, outcome: 'deferred', note: gate });
+          stop(gate, gate);
           break;
         }
-        throw e;
-      }
-      if (out.kind === 'result') {
-        fs.appendFileSync(
-          path.join(o.outDir, 'task-results.jsonl'),
-          JSON.stringify(TaskResultLine.parse(out.line)) + '\n',
-        );
-        log(
-          `     → ${out.line.result.outcome}（${out.line.result.operations.length} 操作、${out.line.costUsd.toFixed(4)} USD）`,
-        );
-      } else {
-        attempts.push({ taskId: task.id, outcome: out.outcome, note: out.note });
-        log(`     → ${out.outcome}: ${out.note}`);
-        if (out.stop === 'provider-limit') {
-          stopReason = 'provider-limit';
-          for (const t of remaining) attempts.push({ taskId: t.id, outcome: 'deferred', note: 'provider-limit' });
-          break;
+        log(`R5: ${task.type} ${task.id} ${task.goal.slice(0, 60)}`);
+        running.add(task);
+        let out;
+        try {
+          out = await executeTask(env, task, exploration, explorationPending);
+        } catch (e) {
+          if (e instanceof LlmError && e.kind === 'auth') {
+            pending.push(`LLM の認証に失敗した: ${e.message.slice(0, 120)}`);
+            attempts.push({ taskId: task.id, outcome: 'deferred', note: 'llm auth failed' });
+            stop('llm-disabled', 'llm auth failed');
+            break;
+          }
+          throw e;
+        } finally {
+          running.delete(task);
         }
-        if (out.stop === 'deadline') {
-          stopReason = 'hard-deadline';
-          for (const t of remaining) attempts.push({ taskId: t.id, outcome: 'deferred', note: 'hard-deadline' });
-          break;
+        if (out.kind === 'result') {
+          fs.appendFileSync(
+            path.join(o.outDir, 'task-results.jsonl'),
+            JSON.stringify(TaskResultLine.parse(out.line)) + '\n',
+          );
+          log(
+            `     → ${task.id} ${out.line.result.outcome}（${out.line.result.operations.length} 操作、${out.line.costUsd.toFixed(4)} USD）`,
+          );
+        } else {
+          attempts.push({ taskId: task.id, outcome: out.outcome, note: out.note });
+          log(`     → ${task.id} ${out.outcome}: ${out.note}`);
+          if (out.stop === 'provider-limit') stop('provider-limit', 'provider-limit');
+          if (out.stop === 'deadline') stop('hard-deadline', 'hard-deadline');
         }
+        writeTaskUpdates();
       }
-      writeTaskUpdates();
-    }
+    };
+    await Promise.all(Array.from({ length: Math.max(1, runtime.run.executeConcurrency) }, worker));
   }
   budget.dispose();
   writeTaskUpdates();

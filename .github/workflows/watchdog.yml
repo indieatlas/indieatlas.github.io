@@ -21,9 +21,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
         run: |
-          # 調査を行う朝の実行（00:17 UTC。混雑で遅れても 6時 UTC より前に始まる）だけを数える
+          # 調査を行う朝の実行（23:17 UTC。混雑で遅れても 5時 UTC より前に始まる）だけを数える
           last=$(gh run list -R "$REPO" --workflow update.yml --branch main --status success --event schedule --limit 20 --json createdAt \
-            --jq '[.[] | select((.createdAt[11:13] | tonumber) < 6)][0].createdAt // empty')
+            --jq '[.[] | select((.createdAt[11:13] | tonumber) as $h | $h >= 23 or $h < 5)][0].createdAt // empty')
           now=$(date -u +%s)
           if [ -n "$last" ]; then age=$(( (now - $(date -u -d "$last" +%s)) / 3600 )); else age=9999; fi
           echo "last success: ${last:-none} (${age}h ago)"

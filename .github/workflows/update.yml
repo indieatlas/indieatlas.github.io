@@ -1,12 +1,12 @@
 name: update
 
 # 毎日の定期更新と公開（07 §7.2）: research（調査）→ adopt（採用）→ build → deploy。
-# 日本時間 9時17分の実行で新しい記事、作品、催し、発売情報を調べて反映する。21時17分の実行は公開だけを行う
+# 日本時間 8時17分の実行で新しい記事、作品、催し、発売情報を調べて反映する。20時17分の実行は公開だけを行う
 # （Amazon の売れ筋は取得から24時間以内のものしか出せないので、12時間ごとに作り直す）
 on:
   schedule:
-    - cron: '17 0 * * *' # 日本時間 9時17分: full（OpenCode Go のオフピーク。06 §6.9.3）
-    - cron: '17 12 * * *' # 日本時間 21時17分: publish-only
+    - cron: '17 23 * * *' # 日本時間 8時17分: full（50分で終わり、OpenCode Go のオフピークに収まる。06 §6.9.3）
+    - cron: '17 11 * * *' # 日本時間 20時17分: publish-only
   workflow_dispatch:
     inputs:
       mode:
@@ -50,7 +50,7 @@ jobs:
           INPUT_MODE: ${{ inputs.mode }}
         run: |
           if [ "$EVENT" = push ]; then mode=publish-only
-          elif [ "$EVENT" = schedule ] && [ "$SCHEDULE" = '17 12 * * *' ]; then mode=publish-only
+          elif [ "$EVENT" = schedule ] && [ "$SCHEDULE" = '17 11 * * *' ]; then mode=publish-only
           elif [ -n "$INPUT_MODE" ]; then mode="$INPUT_MODE"
           else mode=full; fi
           echo "mode=$mode" >> "$GITHUB_OUTPUT"

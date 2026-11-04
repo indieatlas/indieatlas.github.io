@@ -122,12 +122,13 @@ export function createFetcher(transport: Transport, opts: FetcherOptions): Fetch
   const ua = opts.userAgent;
   const uaToken = ua.split('/')[0]!;
 
+  // 同じホストへの取得は、並行して呼ばれても順に間隔をあける（予約した時刻を先に書く）
   const wait = async (host: string) => {
     const interval = opts.intervalFor?.(host) ?? opts.minIntervalMs;
-    const last = lastByHost.get(host) ?? 0;
-    const delay = last + interval - Date.now();
+    const slot = Math.max(Date.now(), (lastByHost.get(host) ?? -Infinity) + interval);
+    lastByHost.set(host, slot);
+    const delay = slot - Date.now();
     if (delay > 0) await new Promise((r) => setTimeout(r, delay));
-    lastByHost.set(host, Date.now());
   };
 
   const checkAddress = async (u: URL): Promise<BlockReason | undefined> => {

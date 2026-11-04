@@ -32,10 +32,11 @@ export function createSimpleHttp(opts: SimpleHttpOptions): HttpClient {
   const request = async (method: 'GET' | 'POST', url: string, body?: string, headers?: Record<string, string>) => {
     const u = new URL(url);
     if (u.protocol !== 'https:' && u.protocol !== 'http:') throw new Error(`unsupported protocol: ${url}`);
-    const last = lastByHost.get(u.host) ?? 0;
-    const wait = last + opts.minIntervalMs - Date.now();
+    // 並行して呼ばれても、同じホストへは順に間隔をあける
+    const slot = Math.max(Date.now(), (lastByHost.get(u.host) ?? -Infinity) + opts.minIntervalMs);
+    lastByHost.set(u.host, slot);
+    const wait = slot - Date.now();
     if (wait > 0) await new Promise((r) => setTimeout(r, wait));
-    lastByHost.set(u.host, Date.now());
     const res = await fetch(url, {
       method,
       headers: { 'user-agent': opts.userAgent, ...headers },
