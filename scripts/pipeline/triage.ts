@@ -19,6 +19,7 @@ export const TriageOutput = z.object({
 export type TriageOutput = z.infer<typeof TriageOutput>;
 
 export const TRIAGE_BATCH = 15;
+const TRIAGE_CONCURRENCY = 3;
 
 export function triagePrompt(
   items: CollectedItem[],
@@ -68,10 +69,12 @@ export async function triageItems(
     log?: (line: string) => void;
   },
 ): Promise<CollectedItem[]> {
-  const out: CollectedItem[] = [];
-  for (let i = 0; i < items.length; i += TRIAGE_BATCH) {
-    const batch = items.slice(i, i + TRIAGE_BATCH);
-    const sessionId = `ia-${opts.runId}-triage-${i / TRIAGE_BATCH + 1}`;
+  const batches: CollectedItem[][] = [];
+  for (let i = 0; i < items.length; i += TRIAGE_BATCH) batches.push(items.slice(i, i + TRIAGE_BATCH));
+  const results: CollectedItem[][] = new Array(batches.length);
+  const one = async (n: number) => {
+    const batch = batches[n]!;
+    const sessionId = `ia-${opts.runId}-triage-${n + 1}`;
     let result: TriageOutput | undefined;
     if (llm && (opts.canCall?.() ?? true)) {
       try {
@@ -87,15 +90,23 @@ export async function triageItems(
         opts.log?.(`triage ${sessionId}: ${(e as Error).message}`);
       }
     }
-    for (const item of batch) {
+    results[n] = batch.map((item) => {
       const r = result?.items.find((x) => x.itemKey === item.itemKey);
-      out.push({
+      return {
         ...item,
         triage: r
           ? { relevant: r.relevant, mentionedGames: r.mentionedGames, kindGuess: r.kindGuess, reason: r.reason }
-          : { relevant: 'maybe', mentionedGames: [], kindGuess: 'other', reason: 'triage failed' },
-      });
-    }
-  }
+          : { relevant: 'maybe' as const, mentionedGames: [], kindGuess: 'other' as const, reason: 'triage failed' },
+      };
+    });
+  };
+  // 3つのバッチずつ並行して送る
+  let next = 0;
+  await Promise.all(
+    Array.from({ length: Math.min(TRIAGE_CONCURRENCY, batches.length) }, async () => {
+      while (next < batches.length) await one(next++);
+    }),
+  );
+  const out = results.flat();
   return out;
 }
