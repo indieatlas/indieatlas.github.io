@@ -187,7 +187,7 @@ export const ManualResult = z.object({
 
 ### 12.6.7 `ia-refresh`
 
-定期実行（第2段階以降）がまだない間、または定期実行の合間に、サイトの内容をまとめて最新にする。各段階は、定期実行のジョブ（[06](06-update-pipeline.md) §6.13、`.github/workflows/refresh-metrics.yml`）と同じコマンドを使う。
+定期実行（毎日の update.yml。2026-11-04 から）の合間に、または定期実行を止めている間に、サイトの内容をまとめて最新にする。定期実行と同じ記事や作品を扱っても、ID の規則で重複しない。各段階は、定期実行のジョブ（[06](06-update-pipeline.md) §6.13、`.github/workflows/refresh-metrics.yml`）と同じコマンドを使う。
 
 1. `RULES.md` を読み、セッション ID を決める。`npm run refresh:status` で、古くなったもの、確かめ直すものを調べる（下の表）。キーがなければ、そのキーを使う段階を飛ばす。
 2. 作品の事実: 発売予定と早期アクセスの作品の Steam の情報を `seed:steam` で取り直し、`igdb:sync`、`media:palettes`、`claims:repoint` を実行する。Steam の情報が、より新しい公式の告知の Claim を置き換えていないかを確かめる。`seed:steam` は、Steam のヘッダー画像が変わったら前の画像の Claim を置き換え、セールなどの間だけの差し替え（`header_alt_assets_N`）は取り込まない（Steam のヘッダー画像がまだない作品では、差し替えの前の `/apps/{appId}/header.jpg` を使う）。

@@ -5,7 +5,7 @@ name: refresh-metrics
 # キーは環境 research のシークレットに置く
 on:
   schedule:
-    - cron: '23 0 * * 1' # 毎週月曜 9時23分（日本時間）
+    - cron: '23 21 * * 0' # 毎週月曜 6時23分（日本時間）。毎日の update（8時17分）と重ならないようにする
   workflow_dispatch:
 
 concurrency:

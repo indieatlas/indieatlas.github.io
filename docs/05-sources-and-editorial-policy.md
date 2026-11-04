@@ -159,7 +159,7 @@ export const SourcesFile = z.object({ schemaVersion: z.literal(1), sources: z.ar
 | robots.txt | 守る。取得できない場合は、そのホストへのアクセスを控える |
 | User-Agent | `IndieAtlasBot/0.1 (+{SITE_URL}{BASE_PATH}about/)`。運営説明にボットの説明と連絡先を書く |
 | 間隔 | 同じホストへは3秒以上あける（`fetch.perDomainMinIntervalMs`） |
-| 大きさ | 2MB まで。対応する形式は HTML、XML、JSON、プレーンテキスト |
+| 大きさ | 4MB まで（`fetch.maxBytes`。PC Gamer の記事のページが 2.1MB あるため 2026-11-04 に 2MB から変更）。対応する形式は HTML、XML、JSON、プレーンテキスト |
 | 認証 | ログイン、有料記事の回避、CAPTCHA の回避をしない |
 | 機械学習の利用を拒否する表示 | `<meta name="robots">` または `X-Robots-Tag` に `noai` があるページや、TDMRep（`tdm-reservation: 1`）を示すページは、本文を LLM に渡さない。取得ログに理由を記録し、その URL は根拠に使わない |
 | 安全性 | `http` と `https` だけを許可する。ローカルとプライベートの IP アドレス（`localhost`、`127.0.0.0/8`、`10.0.0.0/8`、`172.16.0.0/12`、`192.168.0.0/16`、`169.254.0.0/16`、`::1`、`fc00::/7`）への接続は、リダイレクトの後も含めて拒否する |

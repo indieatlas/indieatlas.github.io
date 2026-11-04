@@ -4,179 +4,24 @@
 
 | ファイル | 起動条件 | 内容 |
 | - | - | - |
-| `.github/workflows/update.yml` | 毎日の定期実行、手動実行、`main` へのサイトコードとデータの push | research → adopt → build → deploy |
+| `.github/workflows/update.yml` | 毎日の定期実行（日本時間 8時17分に full、20時17分に publish-only）、手動実行、`main` へのサイトコードとデータの push | research → adopt → build → deploy |
 | `.github/workflows/ci.yml` | pull request、`main` への push | 型、データ、単体テスト、2種類のベースパスでのビルドと E2E |
-| `.github/workflows/refresh-metrics.yml` | 毎週月曜 9時23分（日本時間）、手動実行 | 知名度と評価、レビューとはてなブックマークの反応の要約を作り直し、`main` に直接コミットして update.yml を呼ぶ（[06](06-update-pipeline.md) §6.13.4、§6.13.6、§6.13.7） |
+| `.github/workflows/refresh-metrics.yml` | 毎週月曜 6時23分（日本時間。毎日の update と重ならない時刻）、手動実行 | IGDB の機種とスクリーンショット、作品の色、知名度と評価、レビューとはてなブックマークの反応の要約を作り直し、`main` に直接コミットして update.yml を呼ぶ（[06](06-update-pipeline.md) §6.13.2〜§6.13.7） |
 | `.github/workflows/watchdog.yml` | 毎日の定期実行（update とは別の時刻） | 定期更新の最終成功時刻を確かめ、古ければ Issue で知らせる |
 
 `main` への push では、update.yml は `publish-only` として動き、build と deploy だけを行う。採用ジョブが `GITHUB_TOKEN` で push したコミットは、GitHub の仕様により新しいワークフローを起動しない。そのため、定期更新ではコミット後に別のワークフローを待たず、同じ実行の中で build と deploy に進む。refresh-metrics.yml は、コミットした後に `gh workflow run update.yml` で公開のワークフローを起動する（`workflow_dispatch` は `GITHUB_TOKEN` からでも起動できる）。
 
 ## 7.2 `update.yml`
 
-アクションのバージョンは、実装時点の最新のメジャーバージョンを確認し、コミット SHA で固定する（下の例ではタグで書いている）。
+定義は `.github/workflows/update.yml` にある。アクションは、実装時点の最新のメジャーバージョンをコミット SHA で固定する。ジョブは次のとおり。
 
-```yaml
-name: update
-
-on:
-  schedule:
-    - cron: '17 9 * * *'
-      timezone: 'Asia/Tokyo'
-  workflow_dispatch:
-    inputs:
-      mode:
-        description: 'full / collect-only / publish-only'
-        type: choice
-        options: [full, collect-only, publish-only]
-        default: full
-      force_deploy:
-        description: '公開内容が同じでもデプロイする'
-        type: boolean
-        default: false
-  push:
-    branches: [main]
-    paths:
-      - 'src/**'
-      - 'public/**'
-      - 'schema/**'
-      - 'data/**'
-      - 'scripts/build/**'
-      - 'astro.config.mjs'
-      - 'package-lock.json'
-
-concurrency:
-  group: site-update-and-publish
-  cancel-in-progress: false
-
-permissions: {}   # 既定は権限なし。ジョブごとに必要な分だけ付与する
-
-jobs:
-  research:
-    if: ${{ github.ref == 'refs/heads/main' && github.event_name != 'push' && inputs.mode != 'publish-only' }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 25
-    environment: research          # OPENCODE_API_KEY はこの環境のシークレットにする（§7.9）
-    permissions:
-      contents: read
-    steps:
-      - uses: actions/checkout@v5
-        with:
-          persist-credentials: false
-      - uses: actions/setup-node@v5
-        with:
-          node-version-file: .nvmrc
-          cache: npm
-      - run: npm ci
-      - name: Research
-        env:
-          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
-          INDIEATLAS_LLM_ENABLED: ${{ vars.INDIEATLAS_LLM_ENABLED || 'true' }}
-          RUN_ID: ${{ github.run_id }}
-          RUN_ATTEMPT: ${{ github.run_attempt }}
-          TRIGGER_COMMIT: ${{ github.sha }}
-        run: npm run research -- --out out/ --mode "${{ inputs.mode || 'full' }}"
-      - uses: actions/upload-artifact@v4
-        if: ${{ always() }}
-        with:
-          name: research-${{ github.run_id }}-${{ github.run_attempt }}
-          path: out/
-          retention-days: 3
-          if-no-files-found: ignore
-
-  adopt:
-    needs: research
-    if: ${{ !cancelled() && github.ref == 'refs/heads/main' && github.event_name != 'push' && inputs.mode != 'publish-only' }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    permissions:
-      contents: write
-    outputs:
-      data_commit: ${{ steps.adopt.outputs.data_commit }}
-    steps:
-      - uses: actions/checkout@v5
-        with:
-          ref: main
-      - uses: actions/setup-node@v5
-        with:
-          node-version-file: .nvmrc
-          cache: npm
-      - run: npm ci
-      - uses: actions/download-artifact@v5
-        continue-on-error: true
-        with:
-          pattern: research-${{ github.run_id }}-*
-          path: research-artifacts/
-      - name: Adopt
-        id: adopt
-        env:
-          RUN_ID: ${{ github.run_id }}
-          RUN_ATTEMPT: ${{ github.run_attempt }}
-          TRIGGER_COMMIT: ${{ github.sha }}
-          SITE_URL: ${{ vars.SITE_URL }}
-          BASE_PATH: ${{ vars.BASE_PATH }}
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          npm run adopt -- --in research-artifacts/ --push
-
-  build:
-    needs: adopt
-    if: ${{ !cancelled() && github.ref == 'refs/heads/main' }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    permissions:
-      contents: read
-    outputs:
-      should_deploy: ${{ steps.publish_check.outputs.should_deploy }}
-      content_hash: ${{ steps.publish_check.outputs.content_hash }}
-    env:
-      SITE_URL: ${{ vars.SITE_URL }}
-      BASE_PATH: ${{ vars.BASE_PATH }}
-    steps:
-      - uses: actions/checkout@v5
-        with:
-          ref: ${{ needs.adopt.outputs.data_commit || github.sha }}
-          persist-credentials: false
-      - id: source
-        run: echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-      - uses: actions/setup-node@v5
-        with:
-          node-version-file: .nvmrc
-          cache: npm
-      - run: npm ci
-      - run: npm run check:data
-      - name: Build
-        env:
-          SOURCE_COMMIT: ${{ steps.source.outputs.commit }}
-          TRIGGER_COMMIT: ${{ github.sha }}
-          RUN_ID: ${{ github.run_id }}
-          RUN_ATTEMPT: ${{ github.run_attempt }}
-        run: npm run build
-      - run: npm run check:dist
-      - id: publish_check
-        env:
-          FORCE_DEPLOY: ${{ inputs.force_deploy || 'false' }}
-        run: npm run check:publish
-      - uses: actions/upload-pages-artifact@v4
-        if: ${{ steps.publish_check.outputs.should_deploy == 'true' }}
-        with:
-          path: dist/
-
-  deploy:
-    needs: build
-    if: ${{ !cancelled() && needs.build.outputs.should_deploy == 'true' }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
-```
+| ジョブ | 動く条件 | 権限 | 内容 |
+| - | - | - | - |
+| `setup` | `main` | なし | 実行のモードを決める。push と 20時17分の定期実行は `publish-only`、手動実行は入力のモード、8時17分の定期実行は `full` |
+| `research` | モードが `publish-only` 以外 | `contents: read`、環境 `research` | `npm run research -- --out out/research --mode {mode}`。`out/research/` を成果物 `research-{run_id}-{run_attempt}` にする（`if: always()`、保存は3日）。時間の上限は60分（調査の hard の締め切りは50分） |
+| `adopt` | `!cancelled()` で、モードが `publish-only` 以外 | `contents: write` | 成果物を受け取り、`npm run adopt -- --in research-artifacts/ --push`。LLM のキーを持たない。`data_commit` を出力する |
+| `build` | `!cancelled()` で `main` | `contents: read` | `data_commit`（なければ起動時のコミット）を1回だけ checkout し、売れ筋の取得、ビルド、`check:dist`、`check:publish` |
+| `deploy` | `should_deploy` が `true` | `pages: write`、`id-token: write` | GitHub Pages に公開する |
 
 要点は次のとおり。
 
@@ -188,7 +33,7 @@ jobs:
 | 失敗しても公開を試みる | adopt が失敗しても、build は `!cancelled()` で動く。そのときは起動時のコミットをビルドする。前回のデプロイが失敗していれば、ここで再公開される（§7.6） |
 | `main` 以外での手動実行 | `github.ref == 'refs/heads/main'` の条件で、research、adopt、build を行わない |
 
-定期実行の時刻（日本時間 9時17分 = UTC 0時17分）は、OpenCode Go のオフピーク（[06](06-update-pipeline.md) §6.9.3）に収まるように選んでいる。GitHub Actions の定期実行は混雑時に遅れることがあり、UTC 1時（日本時間10時）を過ぎた平日の呼び出しはピークの単価になる。
+定期実行の時刻（日本時間 8時17分 = UTC 23時17分）は、調査の50分が OpenCode Go のオフピーク（[06](06-update-pipeline.md) §6.9.3）に収まるように選んでいる（2026-11-04 に 9時17分から変更）。GitHub Actions の定期実行は混雑時に遅れることがあり、UTC 1時（日本時間10時）を過ぎた平日の呼び出しはピークの単価になる。
 
 既知の制約: GitHub Actions の `concurrency` では、同じグループで待機中の実行は1つだけになり、新しい実行が来ると待機中の古い実行は取り消される。定期更新が待機している間に `main` への push が2回続くと、定期更新が取り消される場合がある。その日の調査は行われず、翌日の実行で続きを扱う。最終成功時刻の監視（§7.8）で気づけるようにする。
 
@@ -356,7 +201,7 @@ contentHash = "sha256:" + sha256(canonicalJson({
 | 対象 | 方法 |
 | - | - |
 | 実行の失敗 | GitHub の通知（ワークフローの失敗をリポジトリの管理者にメールで知らせる設定）を使う |
-| 定期更新の最終成功時刻 | `watchdog.yml` が毎日、`gh run list --workflow update.yml --branch main --status success --limit 1` で最後の成功を調べる。36時間より古ければ、ラベル `ops-alert` の Issue を作る（すでに開いていればコメントを足す） |
+| 定期更新の最終成功時刻 | `watchdog.yml` が毎日（日本時間 12時47分）、`gh run list --workflow update.yml --branch main --status success --event schedule` で、調査を行う朝の実行（UTC 23時〜5時に始まったもの）の最後の成功を調べる。36時間より古ければ、ラベル `ops-alert` の Issue を作る（すでに開いていればコメントを足す） |
 | 公開サイトの稼働 | 外部の死活監視サービスで、`{SITE_URL}{BASE_PATH}` と `build-manifest.json` を監視する（任意） |
 | 費用 | 実行の記録の `cost` と `state/usage/` の月の合計。月の上限（`budget.monthlyLimit`）の80%を超えたら、ジョブの要約に警告を出す。正確な利用額は OpenCode のコンソールで、月に1回確かめる |
 
@@ -372,7 +217,7 @@ contentHash = "sha256:" + sha256(canonicalJson({
 | - | - |
 | Pages の公開元 | Settings → Pages → Source を「GitHub Actions」にする |
 | ワークフローの既定の権限 | Settings → Actions → General → Workflow permissions を「Read repository contents and packages permissions」にする。書き込みはジョブごとに付与する |
-| 環境 `research` | `OPENCODE_API_KEY` をこの環境のシークレットにする。デプロイできるブランチを `main` に限る |
+| 環境 `research` | `OPENCODE_API_KEY`、`IGDB_CLIENT_ID`、`IGDB_CLIENT_SECRET` をこの環境のシークレットにする。デプロイできるブランチを `main` に限る |
 | 環境 `github-pages` | デプロイできるブランチを `main` に限る |
 | Variables | `SITE_URL`（例: `https://owner.github.io`）、`BASE_PATH`（例: `/indieatlas/`）、`INDIEATLAS_LLM_ENABLED`（`true`） |
 | `main` のルール | 強制 push と削除を禁止する。採用ジョブが直接 push するため、PR の必須化は行わない（人の変更は PR で行う運用にする） |

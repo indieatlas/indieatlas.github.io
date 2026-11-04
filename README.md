@@ -30,6 +30,8 @@ npm run metrics:popularity           # Steam のレビュー数と IGDB の評�
 npm run reviews:summarize            # Steam のレビューを LLM で要約する（OPENCODE_API_KEY と Steam への接続が必要）
 npm run ranking:steam                # Steam のインディーの売上上位を取得する（キー不要。コミットしない）
 npm run amazon:ranking               # Amazon の売れ筋を取得する（.env に Creators API のキーが必要。コミットしない）
+npm run research -- --out out/research [--max-tasks 3]  # 調査ジョブ: 新着の記事、未収録の作品、催し、発売情報を LLM で調べ、提案を out/ に書く（data/ は変えない）
+npm run adopt -- --in out/research --dry-run            # 採用ジョブ: 提案を検証して data/ と state/ に反映する（--dry-run は差分を見て戻す。--push でコミットして push）
 ```
 
 E2E テストと CI は、架空の作品だけのフィクスチャ（`tests/fixtures/repo/`）でビルドしたサイトを使います。
@@ -57,10 +59,20 @@ npm run test:e2e
 
 サイトの内容をまとめて最新にするときは、コーディングエージェント（Codex など）でスキル `ia-refresh`（`.agents/skills/ia-refresh/SKILL.md`）を使います。「サイトの内容を全部最新にして」のように頼むと、作品の発売情報、指標と要約、新しい記事、催しの日程、画像を順に更新し、検証とビルドまで行います（[docs/12-agent-skills.md](docs/12-agent-skills.md) §12.6.7）。
 
+## 毎日の自動更新
+
+`.github/workflows/update.yml` が毎日、日本時間 8時17分に research → adopt → build → deploy を行います（[docs/07](docs/07-workflows-and-operations.md) §7.2）。
+
+- **research**（LLM のキーあり、書き込みなし）: 登録した媒体のフィードから新着を集め、タイトルで仕分け、記事を読んで扱う作品を探します。未収録のインディーの作品の登録、発売情報の変更の確認、催しの日程の確認、コレクションへの追加も、タスクとして実行します。LLM（OpenCode Go の DeepSeek V4.1 Flash）は決まったツール（`fetch_url`、`find_games`、`get_game`、`get_steam_app`）で調べ、結果を決まった形式の提案として返します。
+- **adopt**（書き込みあり、LLM のキーなし）: 提案を検証ルール（根拠の抜粋が取得したページにあるか、作品を扱っているページか、使わない表現がないか、同定、上限など。[docs/06](docs/06-update-pipeline.md) §6.7）で確かめ、通ったものだけを反映します。新しい Steam の作品の発売情報や画像はストアから取り込み、Claim の採用、公開の判定、`check:data` を通してから `main` にコミットします。
+- 20時17分は公開だけをやり直します（Amazon の売れ筋の更新）。毎週月曜には `refresh-metrics.yml` が IGDB の機種、知名度、レビューと反応の要約を作り直します。`watchdog.yml` は朝の更新が36時間以上成功していなければ Issue を作ります。
+
+LLM だけを止めるときは、リポジトリの Variables の `INDIEATLAS_LLM_ENABLED` を `false` にします（収集と公開は続きます）。
+
 ## 公開
 
 `main` への push で `.github/workflows/update.yml` が動き、公開中の `build-manifest.json` と内容が違うときだけ GitHub Pages にデプロイします。リポジトリの Variables に `SITE_URL`（例: `https://owner.github.io`）と `BASE_PATH`（例: `/indieatlas/`）を設定し、Settings → Pages → Source を「GitHub Actions」にしてください（07 §7.9）。
 
 ## 実装の状況
 
-第1段階（[docs/09-roadmap.md](docs/09-roadmap.md) の P1-01〜P1-13）を実装しました。情報源の自動取得、LLM による調査、定期実行（第2段階以降）は未実装で、`npm run research`、`adopt`、`ia`、`report:trial` は「未実装」と表示して終了します。
+第1段階（[docs/09-roadmap.md](docs/09-roadmap.md) の P1-01〜P1-13）、第2段階の情報の取り込み（P2-01〜P2-09）、第3段階の定期実行（P3-01〜P3-06）と、記事、作品、催し、発売情報、コレクションの更新に要る第4段階の一部を実装しました。手動の作業用の CLI（`npm run ia`、P2-11）と試行期間の集計（`report:trial`）は未実装で、「未実装」と表示して終了します。

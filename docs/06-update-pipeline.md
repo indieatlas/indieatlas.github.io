@@ -73,8 +73,8 @@ out/
    - `rss`、`atom`、`sitemap`: 記事の項目（`itemKey`、URL、タイトル、掲載日時、フィードの説明、カテゴリ）にする。
    - `steam`、`json-api`、`html-list`: 作品の候補（名前、URL、ストアの ID）にする。
 5. `filters` に合わない項目を除く。
-6. `cursor.recentItemKeys` にある項目と、`state/seen-urls.json` で `article`、`task`、`irrelevant` の URL を除く。
-7. 残りを掲載日時の古い順に並べ、情報源ごとに `maxItemsPerRun` 件までを取る。記事の項目は、全情報源の合計が `limits.maxNewArticles` を超えないよう、情報源を順番に回して1件ずつ取る。
+6. `cursor.recentItemKeys` にある項目、登録済みの記事の URL、`state/seen-urls.json` で `article`、`task`、`irrelevant` の URL、掲載から14日より古い項目を除く。
+7. 残りを掲載日時の古い順に並べ、情報源ごとに `maxItemsPerRun` 件までを取る。全情報源の合計の上限は設けない（triage はタイトルだけを見るので安い）。`limits.maxNewArticles` は、1回に実行する `process-article` の数（§6.4.3）と保存する記事の数（V-L02）に使う（2026-11-04 に変更。全体の上限を collect に置くと、1日に200件ほど届く新着に追いつけないため）。
 8. 取った項目だけを処理位置に反映する。上限で取らなかった項目は次回に回す（処理位置を進めない）。
 9. 作品の候補は、`register-game` タスク（`createdBy: 'collector'`、`target.url` と `target.hints` 付き）にする。
 10. 取得に失敗した情報源は、`source-updates.json` に失敗として記録する。その情報源の処理位置は進めず、他の情報源の処理を続ける。
@@ -203,7 +203,7 @@ export const PlanOutput = z.object({
 
 ### 6.5.3 execute（R5）
 
-選んだタスクを順に実行する（`run.executeConcurrency` の初期値は1）。各タスクで、LLM はツールを使って調べ、最後に `submit_result` ツールで結果（`TaskResult`）を返す。
+選んだタスクを順に実行する（`run.executeConcurrency` は3。同じホストへの取得の間隔は、並行して実行しても Fetcher が守る）。各タスクで、LLM はツールを使って調べ、最後に `submit_result` ツールで結果（`TaskResult`）を返す。
 
 1. タスクを始める前に、`softDeadlineMinutes` を過ぎていないか、予算が残っているか（§6.5.4）を確かめる。足りなければ、残りのタスクを `deferred` にして R6 に進む。
 2. 対象のデータ（作品の識別情報、採用済みの Claim の要約、未解決の矛盾、関連記事、タスクの目的、使ってよい操作の一覧、上限）を JSON にまとめて最初のメッセージにする。
@@ -221,7 +221,7 @@ export const PlanOutput = z.object({
 | `fetch_url` | `{ url }` | `{ fetchId, finalUrl, status, title, canonicalUrl, publishedAt, lang, text }`。`text` は Readability で抽出した本文で、`fetch.maxTextChars` で切る | タスクあたり `limits.maxFetchesPerTask` 回 |
 | `find_games` | `{ query }` | 既存の作品（統合済みを除く）の候補10件: ID、表示名、原題、別名、開発者、強いキー、状態 | なし |
 | `get_game` | `{ gameId }` | 識別情報、採用済みと保留中の Claim、関連記事、未解決のタスク | なし |
-| `get_steam_app` | `{ appId }` | Steam の作品詳細から必要な項目だけを整形したもの（種類、本編の ID、名前、開発者、パブリッシャー、発売日、対応機種、対応言語、ヘッダー画像、内容に関する記述子） | タスクあたり5回。S1 の情報源が有効な場合だけ渡す |
+| `get_steam_app` | `{ appId }` | Steam の作品詳細から必要な項目だけを整形したもの（種類、本編の ID、名前、開発者、パブリッシャー、発売日、対応機種、プレイ形式、ヘッダー画像、公式サイト、ジャンル、成人向けの記述子の有無）と、英語と日本語の作品紹介（`short_description`）の本文 | タスクあたり5回。S1 の情報源が有効な場合だけ渡す |
 | `submit_result` | `TaskResult`（§6.6） | 受理したかどうか | — |
 
 - `fetch_url` は [05](05-sources-and-editorial-policy.md) §5.4.3 の規則に従う。取得のたびに `out/fetch-log/{fetchId}.json`（URL、最終 URL、状態、取得日時、Content-Type、本文のハッシュ、抽出した本文、機械学習の利用を拒否する表示の有無）を書く。採用ジョブは、根拠の検証にこのログを使う。
@@ -413,6 +413,8 @@ LLM に渡す `submit_result` の JSON Schema は、タスクごとに、その�
 
 採用ジョブは、各操作を次のルールで検証する。1つでも違反した操作は反映しない（却下）。却下はルールの番号ごとに数え、実行の記録（`RunSummary.rejections`）に残す。却下した `create-game` の一時 ID を使う操作は、連鎖して却下する。
 
+ただし、1つの操作に根拠が複数ある場合は、検証を通らない根拠だけを除き、1件も残らないときに操作を却下する（除いた根拠も却下として数える）。記事の作品の関連（`upsert-article` の `games`）も、本文やタイトルに名前のない作品、却下した一時 ID の作品だけを外し、1件も残らないときに記事を却下する（2026-11-04）。
+
 ### 6.7.1 形式と参照
 
 | 番号 | ルール | 違反時の追加の動作 |
@@ -466,7 +468,7 @@ LLM に渡す `submit_result` の JSON Schema は、タスクごとに、その�
 | V-L02 | この実行で新しく保存する記事が `limits.maxNewArticles` 件以下である | 超えた分は `process-article` タスクに戻す |
 | V-L03 | 1つの結果の操作が `limits.maxOperationsPerTask` 件以下、後続のタスクが `limits.maxFollowUpTasksPerTask` 件以下である | 超えた結果は全体を却下する |
 | V-L04 | `propose-merge`、`propose-tag-change`、`upsert-developer` の `proposeIndependence`（`independent` と `major`）、`create-collection-draft` は直接反映せず、`state/review-queue.json` に入れる | レビュー待ちに入れる |
-| V-P01 | コミットの前に、変更されたファイルが `data/` と `state/` の下だけであることを `git status --porcelain` で確かめる | 違反したら採用ジョブ全体を失敗させる |
+| V-P01 | コミットの前に、変更されたファイルが `data/`、`state/`、`public/media/`（記事と催しの画像、§6.13.3）の下だけであることを `git status --porcelain` で確かめる | 違反したら変更を戻し、採用ジョブ全体を失敗させる |
 
 ## 6.8 Claim の採用アルゴリズム（`scripts/pipeline/resolve.ts`）
 
@@ -499,8 +501,9 @@ for each group:
   current = live の中の adopted（0件か1件）
   top = rank で最上位の Claim
 
-  // 2. 同順位の矛盾
+  // 2. 同順位の矛盾（公式とストアのより新しい情報は、前の情報の更新として扱い、矛盾にしない）
   rivals = live のうち、top と値が異なり、tier が同じで、asOf の差が14日以内のもの
+           （ただし tier(top) が 3 で、top より asOf が古いものは除く）
   if rivals がある:
     if current がある: current を維持し、current 以外の live を conflicted（conflict-same-rank）にする
     else: top と rivals を conflicted にする
@@ -529,6 +532,8 @@ for each group:
     else if c の値が adopted の値と異なる:
       c を candidate（outranked）にする
 ```
+
+値の比較では、発売情報（release）は状態と日付だけを比べ、原文の表記（`rawText`）の違いは同じ値として扱う。採用ジョブは、同じ値の有効な Claim がある `add-claim` を新しい Claim にせず、根拠をその Claim に加える（2026-11-04）。
 
 この手順により、矛盾した情報で確認済みの値が無条件に上書きされることはない。画面には採用済みの値を表示し続け、確認のタスクが新しい根拠を見つけた時点で入れ替わる。採用済みの値がないまま矛盾している項目は「確認中」と表示する（[02](02-ux-and-design.md) §2.4.3）。
 
@@ -561,7 +566,7 @@ Claim の計算の後、作品ごとに次を行う。
 
 LLM は、OpenCode Go の DeepSeek V4.1 Flash（モデル ID `deepseek-v4.1-flash`）を使う【確定】（2026-10-27）。OpenCode Go は OpenAI の Chat Completions と互換のエンドポイントで、このモデルを提供している。接続部分は `LlmClient` インターフェースで抽象化し、接続先を設定で差し替えられるようにする（§6.9.6）。
 
-この節の OpenCode Go と DeepSeek についての記述は、2026-10-27 時点の公式ドキュメント（[OpenCode Go](https://opencode.ai/docs/go/)、[DeepSeek API](https://api-docs.deepseek.com/)）に基づく。「要確認」と書いた項目は、P2-04 で実際に呼び出して確かめ、結果をこの節と [11](11-open-decisions.md) の決定ログに書く。
+この節の OpenCode Go と DeepSeek についての記述は、2026-10-27 時点の公式ドキュメント（[OpenCode Go](https://opencode.ai/docs/go/)、[DeepSeek API](https://api-docs.deepseek.com/)）に基づく。「要確認」だった項目は、2026-11-04 に P2-04 で実際に呼び出して確かめた（`scripts/dev/llm-smoke.ts`）。結果はこの節と [11](11-open-decisions.md) の決定ログに書いた。
 
 ### 6.9.1 インターフェース（`scripts/llm/client.ts`）
 
@@ -618,18 +623,18 @@ export interface LlmClient {
 | - | - |
 | 接続先 | `config.llm.baseUrl`。既定は `https://opencode.ai/inference/go/openai/v1`（Chat Completions は `{baseUrl}/chat/completions`） |
 | モデル | `config.llm.roles[role].model`。既定はすべての役割で `deepseek-v4.1-flash`。起動時に `https://opencode.ai/inference/go/v1/models` の一覧にモデルがあることを確かめ、なければ LLM を無効にして続ける（`collect-only` の動作） |
-| SDK | npm の `openai` パッケージ（Chat Completions）を、`baseURL` を指定して使う。会話の履歴を、受け取った応答のまま自分で管理する必要があるため（下の「会話の履歴」）、履歴を変換する高水準のライブラリは使わない |
-| 認証 | 環境変数 `OPENCODE_API_KEY`（OpenCode のコンソールで発行したキー）。OpenAI 互換の `Authorization: Bearer` で送る想定。ドキュメントに送り方の記載がないため要確認 |
+| SDK | 使わない。`scripts/llm/client.ts` が `scripts/fetch/http.ts` の POST で Chat Completions を直接呼ぶ（2026-11-04。要約の機能で先に作った接続を広げた。会話の履歴を受け取った応答のまま管理でき、テストでは HTTP の層で Fake に差し替えられる） |
+| 認証 | 環境変数 `OPENCODE_API_KEY`（OpenCode のコンソールで発行したキー）を `Authorization: Bearer` で送る（確認済み） |
 | 識別 | すべてのリクエストに `User-Agent: IndieAtlasBot/0.1 (+{SITE_URL}{BASE_PATH}about/)` を付ける。OpenCode Go は、汎用の SDK 名ではなく、クライアント自身の名前を名乗るよう求めている |
-| セッション | 会話ごとに固定の ID を `x-opencode-session` ヘッダーで送る。OpenCode Go はこれを経路の最適化とプロンプトキャッシュに使う。ID は、タスクの実行では `ia-{runId}-{taskId}`、triage では `ia-{runId}-triage-{n}`、plan では `ia-{runId}-plan` とする |
-| 思考モード | DeepSeek V4.1 Flash は、既定で思考（thinking）が有効である。`config.llm.roles[role].thinking`（`enabled` か `disabled`）と `reasoningEffort` を、リクエスト本文の `thinking: { type }` と `reasoning_effort` として送る（`openai` の型にない項目は、追加の本文として渡す）。OpenCode Go を経由してもこの指定が効くかは要確認 |
+| セッション | 会話ごとに固定の ID を `x-opencode-session` ヘッダーで送る（受け付けられることを確認済み）。OpenCode Go はこれを経路の最適化とプロンプトキャッシュに使う。ID は、タスクの実行では `ia-{runId}-{taskId}`、triage では `ia-{runId}-triage-{n}`、plan では `ia-{runId}-plan` とする |
+| 思考モード | DeepSeek V4.1 Flash は、既定で思考（thinking）が有効である。`config.llm.roles[role].thinking`（`enabled` か `disabled`）と `reasoningEffort` を、リクエスト本文の `thinking: { type }` と `reasoning_effort` として送る（`openai` の型にない項目は、追加の本文として渡す）。OpenCode Go を経由しても受け付けられる（確認済み） |
 | 送らないパラメーター | `temperature`、`top_p`、`presence_penalty`、`frequency_penalty`。思考モードでは効かないため、送らずに既定の動作に任せる |
-| 会話の履歴 | 追記だけで組み立てる。assistant の応答は、`reasoning_content` を含めて受け取ったまま履歴に加える。DeepSeek では、`tools` を使う会話で `reasoning_content` を後続のリクエストに含めないと 400 エラーになる |
+| 会話の履歴 | 追記だけで組み立てる。assistant の応答は、`reasoning_content` を含めて受け取ったまま履歴に加える（OpenCode Go 経由では、含めなくても 400 にはならなかったが、キャッシュのため含める） |
 | ツールの定義 | `tools: [{ type: 'function', function: { name, description, parameters } }]`。`parameters` は Zod から JSON Schema に変換する（Zod 4 の `z.toJSONSchema`）。`strict` は使わない（DeepSeek での対応が未確認のため）。ツールの並び順は固定する |
 | ツールの選択 | `tool_choice: 'auto'`。最後に `submit_result` を呼ぶよう、システムプロンプトで指示する |
 | ツールの実行 | 1つの応答に複数の `tool_calls` があれば、すべて実行し、`tool_call_id` ごとに `role: 'tool'` のメッセージを返してから次のリクエストをする。失敗したツールは `{"error": "..."}` を内容として返す。`arguments` の文字列は `JSON.parse` してから Zod で検証し、合わなければ検証エラーを結果として返す |
 | 停止理由の扱い | `finish_reason` が `tool_calls`: ツールを実行して続ける。`stop` で `submit_result` がない: 1回だけ提出を促す。`length`: `max_tokens` を倍にして（役割の上限まで）そのターンを1回だけやり直す。`content_filter`: `stop: 'refusal'` で終える |
-| 構造化出力（`generateObject`） | `response_format: { type: 'json_object' }` を指定し、システムプロンプトに出力の形（スキーマの説明と例）を書く。受け取った文字列を `JSON.parse` し、Zod で検証する。合わなければ、検証エラーを添えて2回までやり直させる。JSON モードが OpenCode Go 経由で使えない場合は、`submit_result` と同じ方式（結果を受け取る1つのツール）に切り替える（要確認） |
+| 構造化出力（`generateObject`） | `response_format: { type: 'json_object' }` を指定し、システムプロンプトに出力の形（スキーマの説明と例）を書く。受け取った文字列を `JSON.parse` し、Zod で検証する。合わなければ、検証エラーを添えて2回までやり直させる。OpenCode Go 経由で JSON モードを使えることを確認した |
 | ストリーミング | 初期は使わない（`stream: false`）。応答に時間がかかってタイムアウトする場合は、`stream: true` と usage の出力の指定を検討する |
 | タイムアウトと再試行 | 1リクエスト `llm.requestTimeoutSeconds`。SDK の再試行は2回（429、5xx、接続エラー）。締め切りは `AbortSignal` で伝える |
 | プロンプトキャッシュ | DeepSeek は、前方が一致する入力を自動でキャッシュする。固定部分（§6.10 の 1〜4）を常に先頭に置き、毎回変わる内容は user メッセージに入れる。履歴は追記だけにし、途中を書き換えない |
@@ -652,8 +657,9 @@ llmUsd   = ( uncached                 × input
 | 項目 | 内容 |
 | - | - |
 | 単価 | `config.llm.pricingUsdPerMTok[model][offPeak か peak]`（[03](03-architecture.md) §3.5.2）。DeepSeek V4.1 Flash は、オフピークが入力 0.15、出力 0.60、キャッシュ 0.003、ピークが入力 0.30、出力 1.20、キャッシュ 0.006（USD、100万トークンあたり） |
-| 時間帯 | ピークは月曜から金曜の UTC 01:00〜04:00 と 06:00〜10:00（日本時間 10:00〜13:00 と 15:00〜19:00）。それ以外と週末はオフピーク。リクエストの開始時刻（UTC）で判定する。日本時間 9時17分の定期実行は、10時までに終わればオフピークに収まる |
-| キャッシュのトークン数 | `usage.prompt_tokens_details.cached_tokens`（OpenAI の形式）か `usage.prompt_cache_hit_tokens`（DeepSeek の形式）のうち、ある方を使う。OpenCode Go がどちらを返すかは要確認 |
+| 時間帯 | ピークは月曜から金曜の UTC 01:00〜04:00 と 06:00〜10:00（日本時間 10:00〜13:00 と 15:00〜19:00）。それ以外と週末はオフピーク。リクエストの開始時刻（UTC）で判定する。日本時間 8時17分の定期実行は、調査の上限（50分）で終わってもオフピークに収まる |
+| キャッシュのトークン数 | `usage.prompt_tokens_details.cached_tokens`（OpenAI の形式）か `usage.prompt_cache_hit_tokens`（DeepSeek の形式）のうち、ある方を使う。OpenCode Go は前者を返す（確認済み） |
+| OpenCode Go の利用額 | OpenCode Go は `usage.opencode.allowance` に、プランの利用額に数えた額（USD）を返す。返されたときはこの値を費用とし、なければ上の式で計算する（2026-11-04） |
 | 思考のトークン | `usage.completion_tokens_details.reasoning_tokens` があれば記録する。課金上は出力に含まれる |
 | プランの上限 | Go の場合、DeepSeek V4.1 Flash の利用額の上限は月 80 USD。5時間あたりはその20%（16 USD）、1週間あたりは50%（40 USD）。Go Plus では月 160 USD |
 | 超過時の従量課金 | OpenCode Go の「Extra Usage」を有効にすると、上限を超えた分がコンソールの残高から支払われる。Indie Atlas では無効にしておき、費用がサブスクリプションの料金を超えないようにする（[07](07-workflows-and-operations.md) §7.9） |
@@ -721,7 +727,7 @@ user メッセージには、今日の日付、タスク、対象のデータ、
 
 1. **重複適用の確認**: `--in` に渡したディレクトリに、複数の試行の成果物（`research-{runId}-{attempt}/`）がある場合は、試行番号の最も大きいものを使う。`out/` を直接渡した場合はそれを使う。`out/meta.json` の `runId` と試行番号が、`state/runs/` の記録にすでにあれば、反映せずに現在の HEAD を `data_commit` として出力して終える。成果物が見つからない場合も、前回の公開状態の補完（手順3）だけを行う。
 2. **読み込み**: `main` の最新の状態を読む。
-3. **前回の公開状態の補完**: 公開中の `build-manifest.json` を取得し、`state/runs/` の前回までの `publish.status: pending` を、`contentHash` の一致で `deployed`、`skipped-unchanged`、`failed` に更新する。
+3. **前回の公開状態の補完**: 公開中の `build-manifest.json` を取得し、`state/runs/` の前回までの `publish.status: pending` を更新する。manifest の `runId` がその実行と同じか、`builtAt` がその実行の終了より後なら `deployed`（その実行のデータを含むサイトが公開された）、それ以外は `unknown` にする。
 4. **タスクの更新**: `out/task-updates.json` の新しいタスクと状態の変化を反映する（ID が同じものは重複させない）。
 5. **新着の記録**: `out/collected.json` の triage の結果に従い、`state/seen-urls.json` を更新する。
 6. **提案の反映**: `out/task-results.jsonl` の結果を、ファイルに書かれた順に処理する。1つの結果の中では、次の順で操作を検証して反映する。
@@ -734,13 +740,14 @@ user メッセージには、今日の日付、タスク、対象のデータ、
    7. `collection-add`、`collection-remove`
    8. `propose-tag`
    9. レビュー待ちに入れる操作（`propose-merge`、`propose-tag-change`、`create-collection-draft`、独立性の提案）
-7. **タスクの状態**: 結果の `outcome` に従って、対象のタスクを更新する（§4.8.2）。`followUpTasks` を検証して加える。結果のなかったタスク（`deferred`、`failed`）も、試行の記録を更新する。
+7. **タスクの状態**: 結果の `outcome` に従って、対象のタスクを更新する（§4.8.2）。`followUpTasks` を検証して加える。同じ ID のタスク（終えたばかりのタスク自身を含む）があれば加えず、終わったものも14日たつまでは作り直さない。結果のなかったタスク（`deferred`、`failed`）も、試行の記録を更新する。
+   - **Steam の作品情報の取り込み**（2026-11-04 に追加）: この実行で作った Steam の作品と、発売予定や早期アクセスの Steam の作品のうち、予定日を過ぎたものと6日以上確かめていないもの（1回に40作品まで）について、`seed:steam` と同じ処理で作品詳細とストアのページを読み、発売情報、機種、日本語対応、プレイ形式、ストアのリンク、ヘッダー画像の Claim を加える。LLM は使わない。LLM はこれらの Claim を書かず、紹介文、タグ、インディーの理由、記事を受け持つ。
 8. **採用の計算**: 変更のあった作品ごとに §6.8 を実行する。
 9. **レビュー待ちの反映**: `state/review-queue.json` で人が `accepted` にした項目を、通常の検証に通して反映し、`applied` にする。
 10. **処理位置**: `out/source-updates.json` の処理位置を `state/sources/` に反映する。手順4と5で、その情報源の項目がすべて保存されていることが前提である。
 11. **整理**: 古い `seen-urls` の項目を消し、古いタスクを `state/tasks-archive/` に移す。
 12. **記録**: `state/usage/{当月}.json` に費用を足し、`state/runs/{当月}.json` に実行の記録を追加する。
-13. **検証**: `check:data` と同じ検証を実行する。違反があれば、何もコミットせずに失敗する（処理位置は進まず、次回の実行で同じ項目を扱い直す）。
+13. **画像と検証**: 新しい記事と催しがあれば `media:articles` と `media:events`、Claim が変わった作品があれば `media:palettes` を実行する（§6.13.3。失敗しても続ける）。そのあと `check:data` と同じ検証を実行する。違反があれば、変更を戻し、何もコミットせずに失敗する（処理位置は進まず、次回の実行で同じ項目を扱い直す）。
 14. **コミット**: V-P01 を確かめ、差分があればコミットして push する。コミットメッセージは `chore(update): run {runId} (+{gamesCreated} games, +{articlesLinked} articles, {claimsAdopted} claims)` とする。差分がなければコミットしない。
 15. **競合**: push が non-fast-forward で拒否されたら、強制 push はせず、`git fetch` して `origin/main` にリセットし、手順2からやり直す（最大3回）。提案は ID が決定的で、反映は冪等なので、読み直した最新の状態に対して再評価できる。
 16. **出力**: 最終的な HEAD の SHA を `data_commit` として GitHub Actions の出力に書く。
@@ -769,17 +776,17 @@ user メッセージには、今日の日付、タスク、対象のデータ、
 | 段階 | 処理 |
 | - | - |
 | 集める | `config/sources.json` の `kind: event` の情報源（BitSummit、デジゲー博、404 Not Found、Steam の今後のイベントなど）を `collect` で取得する。媒体の記事の triage でも、開催や出展の告知を見つけたらイベントの候補にする |
-| 抽出する | `process-article` と新しいタスク `register-event` の実行で、LLM が操作 `upsert-event`（名前、種類、形式、開始日と終了日、時間、会場、案内のページ、短い説明、出展作品の候補）を提案する |
+| 抽出する | `process-article` と新しいタスク `register-event`（`kind: event` の情報源ごとに週1回）、`check-event`（`refresh:status` が挙げる催しごと）の実行で、LLM が操作 `upsert-event`（名前、種類、形式、状態、開始日と終了日、時間、会場、案内のページ、短い説明、出展作品、根拠。開始日が変わったときは前の ID の `replacesEventId`）を提案する |
 | 検証する | V-EV01: 根拠の抜粋に日付の文字列が含まれ、コードがその文字列から読み取った日付が提案の開始日と終了日に一致する。V-EV02: 案内のページは主催者の公式のページか、`kind: event` の情報源。なければ媒体の記事（`evidence.kind: media`）。V-EV03: `eventId`（案内のページと開始日のハッシュ）か、正規化した名前と開始日が同じ催しがあれば新しく作らず更新する。V-EV04: 出展作品は既存の作品に同定できたものだけを `games` に入れ、それ以外は `register-game` タスクにする |
-| 確かめ直す | 開始日の30日前と7日前に `check-event` タスクを作り、案内のページを読み直して日程と時間の変更を確かめる。日程が「予定」（`tentative`）のものは、確定するまで毎週確かめる |
+| 確かめ直す | `refresh:status` と同じ判定（開始の30日前から、`recheckAfter` を過ぎたもの、日程が予定のもの、終わって次の回がないもの）で `check-event` タスクを作る。採用ジョブが `recheckAfter` を、開始の7日前より前なら開始の7日前、それを過ぎていれば開始日、予定（`tentative`）なら1週間後、開始を過ぎていれば30日後にする |
 | 公開する | ビルドした日（日本時間）で、予定、開催中、終了を決める（`phase`）。終了すると公開内容ハッシュが変わり、その日のうちに公開し直される |
 | 画像 | 採用ジョブが、新しいイベントについて `npm run media:events` と同じ処理で OGP 画像を保存する |
 
 ### 6.13.2 IGDB（`npm run igdb:sync`）
 
-- 採用ジョブの後に、週に1回、IGDB の別のジョブを動かす。キーは環境 `igdb` のシークレット（`IGDB_CLIENT_ID`、`IGDB_CLIENT_SECRET`）にし、LLM のキーとは分ける。手元では `.env` に書く。
+- 週に1回、`refresh-metrics.yml` が `npm run igdb:sync -- --by system` を実行する（2026-11-04）。キーは環境 `research` のシークレット（`IGDB_CLIENT_ID`、`IGDB_CLIENT_SECRET`）。手元では `.env` に書く。
 - Steam の ID から IGDB の作品を引き、Steam で分からない機種の発売情報（根拠の種類は `database`。採用済みの Claim は上書きしない）と、スクリーンショット（最大8枚。出典として IGDB を表示する）を加える。
-- 新しく登録した作品は、次の週を待たずに `register-game` の後で同じ処理を行う。
+- 新しく登録した作品は、次の週の実行で同じ処理を受ける（それまでは、採用ジョブがストアから取り込んだ Steam の機種の情報だけを出す）。
 
 ### 6.13.3 画像と色（`npm run media:articles`、`media:events`、`media:palettes`）
 
@@ -788,7 +795,7 @@ user メッセージには、今日の日付、タスク、対象のデータ、
 
 ### 6.13.4 知名度と評価（`npm run metrics:popularity`）
 
-- 週に1回（`.github/workflows/refresh-metrics.yml`、月曜 9時23分）、Steam のレビュー数（appdetails の `recommendations.total`）と IGDB の評価を `data/metrics/popularity.json` に書く。殿堂入りと人気の区分は [04](04-data-model.md) §4.4.4。
+- 週に1回（`.github/workflows/refresh-metrics.yml`、月曜 6時23分）、Steam のレビュー数（appdetails の `recommendations.total`）と IGDB の評価を `data/metrics/popularity.json` に書く。殿堂入りと人気の区分は [04](04-data-model.md) §4.4.4。
 
 ### 6.13.5 Amazon の売れ筋（`npm run amazon:ranking`）
 

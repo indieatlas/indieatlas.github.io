@@ -12,11 +12,11 @@
 | スキーマ | Zod | データの型と形式を検証する。LLM の構造化出力のスキーマにも同じものを使う |
 | 検索 | Pagefind | ビルド結果から検索索引を作る（§3.6） |
 | サイトマップ | `@astrojs/sitemap` | |
-| フィード・HTML の解析 | `fast-xml-parser`（RSS、Atom、サイトマップ）、`linkedom`（HTML の DOM）、`@mozilla/readability`（本文の抽出） | |
+| フィード・HTML の解析 | RSS 1.0、RSS 2.0、Atom は `scripts/pipeline/feed-items.ts` の小さな読み取り（依存なし）。HTML は `linkedom`（DOM）と `@mozilla/readability`（本文の抽出） | 2026-11-04 に実装 |
 | robots.txt の解釈 | `robots-parser` | |
-| 並列数の制御 | `p-limit` | |
+| 並列数の制御 | 依存なし（`scripts/pipeline/research.ts` の小さなワーカー。同じホストへの間隔は Fetcher が守る） | |
 | 画像の変換 | `sharp`（手元とスクリプトだけで使う） | 記事の OGP 画像を WebP に変換して保存する（`npm run media:articles`） |
-| LLM | OpenCode Go の DeepSeek V4.1 Flash（`deepseek-v4.1-flash`）。npm の `openai` パッケージで、OpenAI 互換のエンドポイントに接続する | [06](06-update-pipeline.md) §6.9 |
+| LLM | OpenCode Go の DeepSeek V4.1 Flash（`deepseek-v4.1-flash`）。OpenAI 互換のエンドポイントに `scripts/llm/client.ts` が直接接続する（SDK は使わない） | [06](06-update-pipeline.md) §6.9 |
 | 単体テスト | Vitest | |
 | E2E テスト | Playwright と `@axe-core/playwright` | |
 | 整形 | Prettier と `prettier-plugin-astro` | |
@@ -179,7 +179,7 @@ schema/  ←─ scripts/lib/  ←─ scripts/{fetch,sources,llm,search}/  ←─
 - `schema/` は他のどこにも依存しない。I/O を持たない。
 - `src/`（サイト）は `data/` を直接読まない。`scripts/build/site-data.ts` が作った `.generated/site-data/` だけを `src/lib/data.ts` 経由で読む。データの保存先を DB などに変えても、変更は `scripts/build/` の範囲で済む。
 - `src/` から `scripts/pipeline/`、`scripts/llm/` を import しない。
-- LLM の SDK（`openai`）を import してよいのは `scripts/llm/opencode-go.ts` だけとする。他のモジュールは `LlmClient` インターフェースだけを使う。
+- LLM の接続先に送る処理は `scripts/llm/client.ts` だけに置く。他のモジュールは `LlmClient` インターフェースだけを使う。
 - 外部への HTTP 通信は `scripts/fetch/` と `scripts/llm/` からだけ行う。テストではこれらを Fake に差し替える。
 
 ## 3.4 npm scripts
@@ -226,16 +226,16 @@ schema/  ←─ scripts/lib/  ←─ scripts/{fetch,sources,llm,search}/  ←─
 {
   "schemaVersion": 1,
   "run": {
-    "softDeadlineMinutes": 16,
-    "hardDeadlineMinutes": 20,
-    "maxTasks": 12,
+    "softDeadlineMinutes": 40,
+    "hardDeadlineMinutes": 50,
+    "maxTasks": 40,
     "maxTasksPerGame": 2,
-    "executeConcurrency": 1
+    "executeConcurrency": 3
   },
   "limits": {
     "maxNewArticles": 30,
-    "maxNewGames": 5,
-    "maxNewlyPublishedGames": 5,
+    "maxNewGames": 10,
+    "maxNewlyPublishedGames": 10,
     "maxFetchesPerTask": 8,
     "maxOperationsPerTask": 60,
     "maxFollowUpTasksPerTask": 5
@@ -246,8 +246,8 @@ schema/  ←─ scripts/lib/  ←─ scripts/{fetch,sources,llm,search}/  ←─
   },
   "budget": {
     "currency": "USD",
-    "monthlyLimit": 20,
-    "perRunLimit": 1.0,
+    "monthlyLimit": 30,
+    "perRunLimit": 1.5,
     "perTaskLimit": 0.15
   },
   "llm": {
@@ -257,24 +257,69 @@ schema/  ←─ scripts/lib/  ←─ scripts/{fetch,sources,llm,search}/  ←─
     "sessionHeader": "x-opencode-session",
     "modelsUrl": "https://opencode.ai/inference/go/v1/models",
     "roles": {
-      "triage":  { "model": "deepseek-v4.1-flash", "thinking": "disabled", "reasoningEffort": null,   "maxOutputTokens": 8000 },
-      "plan":    { "model": "deepseek-v4.1-flash", "thinking": "enabled",  "reasoningEffort": null,   "maxOutputTokens": 16000 },
-      "execute": { "model": "deepseek-v4.1-flash", "thinking": "enabled",  "reasoningEffort": null,   "maxOutputTokens": 32000 },
-      "resolve": { "model": "deepseek-v4.1-flash", "thinking": "enabled",  "reasoningEffort": "high", "maxOutputTokens": 32000 }
+      "triage": {
+        "model": "deepseek-v4.1-flash",
+        "thinking": "disabled",
+        "reasoningEffort": null,
+        "maxOutputTokens": 8000
+      },
+      "plan": {
+        "model": "deepseek-v4.1-flash",
+        "thinking": "disabled",
+        "reasoningEffort": null,
+        "maxOutputTokens": 16000
+      },
+      "execute": {
+        "model": "deepseek-v4.1-flash",
+        "thinking": "enabled",
+        "reasoningEffort": null,
+        "maxOutputTokens": 32000
+      },
+      "resolve": {
+        "model": "deepseek-v4.1-flash",
+        "thinking": "enabled",
+        "reasoningEffort": "high",
+        "maxOutputTokens": 32000
+      }
     },
     "pricingUsdPerMTok": {
       "deepseek-v4.1-flash": {
-        "offPeak": { "input": 0.15, "output": 0.60, "cacheRead": 0.003 },
-        "peak":    { "input": 0.30, "output": 1.20, "cacheRead": 0.006 }
+        "offPeak": {
+          "input": 0.15,
+          "output": 0.6,
+          "cacheRead": 0.003
+        },
+        "peak": {
+          "input": 0.3,
+          "output": 1.2,
+          "cacheRead": 0.006
+        }
       }
     },
     "peakHoursUtc": {
-      "days": ["mon", "tue", "wed", "thu", "fri"],
-      "ranges": [["01:00", "04:00"], ["06:00", "10:00"]]
+      "days": [
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ],
+      "ranges": [
+        [
+          "01:00",
+          "04:00"
+        ],
+        [
+          "06:00",
+          "10:00"
+        ]
+      ]
     },
     "plan": {
       "name": "go",
-      "monthlyAllowanceUsd": { "deepseek-v4.1-flash": 80 }
+      "monthlyAllowanceUsd": {
+        "deepseek-v4.1-flash": 80
+      }
     },
     "maxTurnsPerTask": 16,
     "requestTimeoutSeconds": 300
@@ -282,7 +327,7 @@ schema/  ←─ scripts/lib/  ←─ scripts/{fetch,sources,llm,search}/  ←─
   "fetch": {
     "userAgent": "IndieAtlasBot/0.1 (+{SITE_URL}{BASE_PATH}about/)",
     "timeoutSeconds": 15,
-    "maxBytes": 2000000,
+    "maxBytes": 4000000,
     "perDomainMinIntervalMs": 3000,
     "maxTextChars": 20000
   },
