@@ -8,6 +8,7 @@ export interface SteamAppDetails {
   name: string;
   steam_appid: number;
   short_description?: string;
+  about_the_game?: string; // ストアの「このゲームについて」（HTML）
   supported_languages?: string;
   header_image?: string;
   capsule_image?: string;

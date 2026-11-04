@@ -15,7 +15,10 @@ export interface Violation {
 }
 
 export interface FetchLogIndex {
+  /** その URL の取得ログのうち、使えるもの（2xx で、取得を控えたものでない）を優先して1件 */
   get(url: string): FetchLogEntry | undefined;
+  /** その URL の取得ログのすべて（同じストアのページを get_steam_app と fetch_url の両方で取得した場合など） */
+  all(url: string): FetchLogEntry[];
   entries: FetchLogEntry[];
 }
 
@@ -27,19 +30,29 @@ function key(url: string): string | undefined {
   }
 }
 
-/** 取得ログを URL（要求、最終、canonical）で引けるようにする。2xx のものを優先する */
+export const usable = (e: FetchLogEntry) => e.status >= 200 && e.status < 300 && !e.blocked && !e.noai;
+
+/** 取得ログを URL（要求、最終、canonical）で引けるようにする */
 export function indexFetchLog(entries: FetchLogEntry[]): FetchLogIndex {
-  const map = new Map<string, FetchLogEntry>();
-  const ok = (e: FetchLogEntry) => e.status >= 200 && e.status < 300 && !e.blocked;
+  const map = new Map<string, FetchLogEntry[]>();
   for (const e of entries) {
-    for (const u of [e.url, e.finalUrl, e.canonicalUrl]) {
-      const k = u && key(u);
-      if (!k) continue;
-      const prev = map.get(k);
-      if (!prev || (!ok(prev) && ok(e)) || (ok(prev) === ok(e) && e.retrievedAt > prev.retrievedAt)) map.set(k, e);
+    for (const k of new Set(
+      [e.url, e.finalUrl, e.canonicalUrl].map((u) => u && key(u)).filter((k): k is string => !!k),
+    )) {
+      map.set(k, [...(map.get(k) ?? []), e]);
     }
   }
-  return { get: (url) => (key(url) ? map.get(key(url)!) : undefined), entries };
+  const all = (url: string) => (key(url) ? (map.get(key(url)!) ?? []) : []);
+  return {
+    all,
+    get: (url) => {
+      const list = all(url);
+      return [...list].sort(
+        (a, b) => Number(usable(b)) - Number(usable(a)) || (a.retrievedAt < b.retrievedAt ? 1 : -1),
+      )[0];
+    },
+    entries,
+  };
 }
 
 /** 抜粋の照合に使う正規化（NFKC、空白をまとめる、引用符の揺れを揃える） */
@@ -94,29 +107,35 @@ function sourceFor(url: string, sources: SourceConfig[]): SourceConfig | undefin
   );
 }
 
+/** 根拠に使う取得ログ。quote は本文にあるもの、locator は get_steam_app のものを選ぶ */
+export function entryFor(d: EvidenceDraft, log: FetchLogIndex): FetchLogEntry | undefined {
+  const list = log.all(d.url).filter(usable);
+  if (d.quote) return list.find((e) => quoteInText(d.quote!, e));
+  if (d.locator?.startsWith('steam:')) return list.find((e) => e.steam);
+  return list[0];
+}
+
 /** V-E01、V-E02（抜粋）、V-E03、V-E04 */
 export function checkEvidence(
   d: EvidenceDraft,
   subject: Subject | undefined,
   ctx: EvidenceContext,
 ): Violation | undefined {
-  const entry = ctx.log.get(d.url);
-  if (!entry || entry.status < 200 || entry.status >= 300) {
+  const any = ctx.log.get(d.url);
+  if (!any || any.status < 200 || any.status >= 300) {
     return { rule: 'V-E01', message: `evidence ${d.url} is not in the fetch log with 2xx` };
   }
   const src = sourceFor(d.url, ctx.sources);
   if (src && !src.rights.allowFetch)
     return { rule: 'V-E04', message: `${d.url} belongs to a source that forbids fetching` };
-  if (entry.noai || entry.blocked)
-    return { rule: 'V-E04', message: `${d.url} is not usable (${entry.blocked ?? 'noai'})` };
-  if (d.quote && !quoteInText(d.quote, entry))
-    return { rule: 'V-E02', message: `quote not found in ${d.url}: ${d.quote.slice(0, 60)}` };
-  if (d.locator && !d.quote) {
-    if (!entry.steam || !d.locator.startsWith('steam:'))
-      return { rule: 'V-E02', message: `locator ${d.locator} has no matching log` };
-  }
+  if (!ctx.log.all(d.url).some(usable))
+    return { rule: 'V-E04', message: `${d.url} is not usable (${any.blocked ?? 'noai'})` };
+  const entry = entryFor(d, ctx.log);
+  if (d.quote && !entry) return { rule: 'V-E02', message: `quote not found in ${d.url}: ${d.quote.slice(0, 60)}` };
+  if (d.locator && !d.quote && !entry?.steam)
+    return { rule: 'V-E02', message: `locator ${d.locator} has no matching log` };
   if (d.quote && d.quote.length > ctx.maxQuoteChars) return { rule: 'V-E07', message: 'quote too long' };
-  if (subject && !pageMentions(entry, subject)) {
+  if (subject && entry && !pageMentions(entry, subject)) {
     return { rule: 'V-E03', message: `${d.url} does not mention ${subject.names[0] ?? 'the game'}` };
   }
   return undefined;
@@ -124,7 +143,7 @@ export function checkEvidence(
 
 /** 検証を通った EvidenceDraft を保存する形にする。種類、originKey、取得日時は取得ログからコードが補う */
 export function toEvidence(d: EvidenceDraft, ctx: EvidenceContext): Evidence {
-  const entry = ctx.log.get(d.url)!;
+  const entry = entryFor(d, ctx.log) ?? ctx.log.get(d.url)!;
   const src = sourceFor(d.url, ctx.sources);
   const kind = entry.steam
     ? 'store'

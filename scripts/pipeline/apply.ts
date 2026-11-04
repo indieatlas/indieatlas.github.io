@@ -686,6 +686,9 @@ function applyUpdateIdentity(c: ResultContext, op: Extract<Operation, { op: 'upd
 // ------------------------------------------------------------------ 記事
 
 const STORE_NEWS_HOSTS = new Set(['store.steampowered.com', 'steamcommunity.com']);
+// セールの告知は記事にしない（ia-refresh のスキル、12 §12.6.7）。「90%オフ」「過去最安」「セール開催」など
+const SALE_TITLE =
+  /\d+\s*[%％]\s*(?:オフ|off)|過去最安|セール[」』]?(?:を)?(?:開催|開幕|実施|中)|\bsale\b|\bdiscounts?\b/i;
 const ROLE_RANK = { primary: 0, roundup: 1, mention: 2 } as const;
 
 function applyUpsertArticle(c: ResultContext, op: Extract<Operation, { op: 'upsert-article' }>): void {
@@ -701,6 +704,8 @@ function applyUpsertArticle(c: ResultContext, op: Extract<Operation, { op: 'upse
       ? entry!.canonicalUrl
       : finalUrl;
   if (STORE_NEWS_HOSTS.has(new URL(canonical).hostname)) reject('V-C06', 'store announcements are not articles');
+  if (SALE_TITLE.test(d.title) || SALE_TITLE.test(entry!.title ?? ''))
+    reject('V-C06', 'sale announcements are not articles');
   const src = ws.repo.sources.sources.find((s) => registrableDomain(s.homepage) === registrableDomain(canonical));
   if (src && !src.rights.allowFetch) reject('V-E04', `${src.id} forbids fetching`);
   if (d.games.length > 30) reject('V-C06', 'too many games');

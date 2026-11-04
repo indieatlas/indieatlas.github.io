@@ -254,9 +254,12 @@ export function createTaskTools(env: ToolEnv, task: { id: string }, maxFetches: 
             adult: isAdultSexualContent(app),
             storeUrl: storeUrl(app.steam_appid),
           };
+          // 作品紹介（短い説明と「このゲームについて」）を英語と日本語で渡す。根拠の quote はこの本文と照合する
           const descEn = stripHtml(app.short_description ?? '');
           const descJa = stripHtml(ja?.data.short_description ?? '');
-          const text = [app.name, steam.nameJa ?? '', descEn, descJa].filter(Boolean).join('\n');
+          const aboutEn = stripHtml(app.about_the_game ?? '').slice(0, 4000);
+          const aboutJa = stripHtml(ja?.data.about_the_game ?? '').slice(0, 4000);
+          const text = [app.name, steam.nameJa ?? '', descEn, descJa, aboutEn, aboutJa].filter(Boolean).join('\n');
           const fetchId = env.nextFetchId();
           writeLog(env, {
             schemaVersion: 1,

@@ -368,6 +368,72 @@ describe('内容と範囲の検証（06 §6.7.1、§6.7.3）', () => {
   });
 });
 
+describe('記事と取得ログの扱い', () => {
+  it('セールの告知は記事にしない（V-C06）', () => {
+    const url = 'https://news.example.jp/articles/lantern-tide-sale';
+    const ws = workspace([
+      log(url, `${BODY} 発売記念で90%オフになる。`, { title: '『Lantern Tide』が90%オフの過去最安に' }),
+    ]);
+    applyTaskResult(
+      ws,
+      makeTask('process-article', { url }, '記事を処理する', 'collector', at),
+      result([
+        {
+          op: 'upsert-article',
+          article: {
+            url,
+            title: '『Lantern Tide』が90%オフの過去最安に',
+            outletName: 'Example News',
+            lang: 'ja',
+            kind: 'news',
+            games: [{ ref: { gameId: 'g_000001' }, role: 'primary' }],
+          },
+        },
+      ]),
+    );
+    expect(rules(ws)).toEqual(['V-C06']);
+    expect(ws.newArticles).toEqual([]);
+  });
+
+  it('同じストアのページを2回取得していても、quote と locator はそれぞれ合う取得ログで確かめる', () => {
+    const store = 'https://store.steampowered.com/app/900001/';
+    const steam = log(store, 'Lantern Tide\nExplore an archipelago that changes with the tides.', {
+      fetchId: 'f_0002',
+      tool: 'get_steam_app',
+      steam: { appId: 900001, type: 'game', release: { status: 'upcoming' }, platforms: ['pc'] },
+    });
+    const html = log(store, 'Lantern Tide on Steam. About this game: Light the lighthouses to open new sea routes.', {
+      fetchId: 'f_0003',
+      retrievedAt: '2026-10-27T00:30:00Z',
+    });
+    const ws = workspace([steam, html]);
+    applyTaskResult(
+      ws,
+      makeTask('fill-missing', { gameId: 'g_000001', field: 'summary' }, '紹介文', 'scheduler', at),
+      result([
+        {
+          op: 'add-claim',
+          game: { gameId: 'g_000001' },
+          claim: {
+            field: 'tag',
+            scope: {},
+            value: { tagId: 'puzzle' },
+            basis: 'editorial',
+            asOf: '2026-10-27',
+            evidence: [{ url: store, quote: 'Light the lighthouses to open new sea routes.' }],
+          },
+        },
+        {
+          op: 'confirm-claim',
+          claimId: 'c_e1bad21b690ba325',
+          evidence: [{ url: store, locator: 'steam:appdetails.steam_appid' }],
+        },
+      ]),
+    );
+    expect(ws.rejectionLog).toEqual([]);
+  });
+});
+
 describe('文章の規則（05 §5.6.3）', () => {
   it('評価、宣伝、推測、URL、絵文字を検出する', () => {
     expect(textIssues('名作と呼ばれる作品').map((i) => i.category)).toEqual(['根拠のない評価']);
