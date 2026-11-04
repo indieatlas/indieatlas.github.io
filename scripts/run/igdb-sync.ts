@@ -11,7 +11,7 @@ import { applyIgdb } from '../pipeline/igdb-sync.ts';
 import { createIgdbClient, igdbGames, igdbIdsForSteam } from '../sources/igdb.ts';
 
 // IGDB から、Steam 以外の機種の発売情報、スクリーンショット、ストアへのリンクを取り込む
-//   npm run igdb:sync [-- --game g_000001] [-- --by human|agent]
+//   npm run igdb:sync [-- --game g_000001] [-- --by human|agent|system]
 // キーは環境変数 IGDB_CLIENT_ID と IGDB_CLIENT_SECRET（ローカルでは .env）から読む
 await runMain(async () => {
   const envFile = path.join(PROJECT_ROOT, '.env');
@@ -27,7 +27,8 @@ await runMain(async () => {
   const clientSecret = process.env.IGDB_CLIENT_SECRET;
   if (!clientId || !clientSecret)
     throw new UserError('IGDB_CLIENT_ID と IGDB_CLIENT_SECRET を .env か環境変数に設定する');
-  if (values.by !== 'human' && values.by !== 'agent') throw new UserError('--by は human か agent');
+  if (values.by !== 'human' && values.by !== 'agent' && values.by !== 'system')
+    throw new UserError('--by は human、agent、system のどれか');
 
   const repo = loadRepo();
   const targets = repo.games.filter(
