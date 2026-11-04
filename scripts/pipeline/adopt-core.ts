@@ -24,6 +24,7 @@ import { resolveGameClaims } from './resolve.ts';
 import { seedFromSteam } from './seed-steam.ts';
 import { addDays, applyOutcome, fromNewTask, makeTask } from './tasks.ts';
 import { indexFetchLog } from './validate/evidence.ts';
+import { recordUsage } from './usage-ledger.ts';
 import { nextNumericId } from '../lib/ids.ts';
 import { refreshStatus } from './refresh-status.ts';
 import { scopeKey } from '../../schema/claim.ts';
@@ -602,24 +603,13 @@ export function writeRunRecords(
     writeKind(fileKind('source-state'), repoPath(`state/sources/${u.sourceId}.json`), u.state);
   }
   const month = monthJst(new Date(summary.finishedAt));
-  if (summary.cost.llmUsd > 0) {
-    const f = repoPath(`state/usage/${month}.json`);
-    const ledger = readJsonIfExists(UsageLedger, f) ?? { schemaVersion: 1 as const, month, entries: [], totalUsd: 0 };
-    if (
-      !ledger.entries.some(
-        (e) => e.runId === summary.runId && e.runAttempt === (summary.researchAttempt ?? summary.runAttempt),
-      )
-    ) {
-      ledger.entries.push({
-        runId: summary.runId,
-        runAttempt: summary.researchAttempt ?? summary.runAttempt,
-        at: summary.finishedAt,
-        llmUsd: summary.cost.llmUsd,
-      });
-      ledger.totalUsd = Math.round(ledger.entries.reduce((a, e) => a + e.llmUsd, 0) * 1e6) / 1e6;
-      writeKind(fileKind('usage'), f, ledger);
-    }
-  }
+  recordUsage({
+    runId: summary.runId,
+    runAttempt: summary.researchAttempt ?? summary.runAttempt,
+    kind: 'update',
+    at: summary.finishedAt,
+    llmUsd: summary.cost.llmUsd,
+  });
   const f = repoPath(`state/runs/${month}.json`);
   const runs = readJsonIfExists(RunsFile, f) ?? { schemaVersion: 1 as const, runs: [] };
   // 前回までの pending を、公開中の manifest と比べて確定する

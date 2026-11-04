@@ -256,7 +256,7 @@ export const PlanOutput = z.object({
 | 予算 | 決め方 | 超えたときの動作 |
 | - | - | - |
 | 時間 | 実行の開始時刻に `softDeadlineMinutes` と `hardDeadlineMinutes` を足した時刻 | soft を過ぎたら新しいタスクを始めない。hard を過ぎたら実行中の呼び出しを `AbortSignal` で止め、そのタスクを `deferred` にする |
-| 月の利用額 | `budget.monthlyLimit` から `state/usage/{当月}.json` の `totalUsd` を引いた残り。`budget.monthlyLimit` は、プランの月の上限（§6.9.3）より低くし、運営者が OpenCode Go を他の用途にも使う場合の余裕を残す | 残りが0以下なら、LLM を使わない（`collect-only` の動作、`stopReason: 'cost-budget'`） |
+| 月の利用額 | `budget.monthlyLimit` から `state/usage/{当月}.json` の `totalUsd`（毎日の更新と、週次のレビューと反応の要約の合計）を引いた残り。`budget.monthlyLimit` は、プランの月の上限（§6.9.3）より低くし、運営者が OpenCode Go を他の用途にも使う場合の余裕を残す | 残りが0以下なら、LLM を使わない（`collect-only` の動作、`stopReason: 'cost-budget'`） |
 | プランの上限 | OpenCode Go の5時間、1週間、1か月の利用額の上限（§6.9.3） | 上限に達したことを示す応答（§6.9.2 の「エラー」）を受けたら、残りのタスクを `deferred` にして終える（`stopReason: 'provider-limit'`） |
 | 1回の費用 | `min(budget.perRunLimit, 月の残り)` | 次の呼び出しの見積もりを足すと超える場合は、新しい呼び出しをしない |
 | 1タスクの費用 | `budget.perTaskLimit` | 超えたら、実行の予算に余裕がある場合だけ最後の1回（結果の提出を促す）を許し、それ以外は `deferred` にする |

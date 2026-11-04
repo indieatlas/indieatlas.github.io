@@ -203,7 +203,7 @@ contentHash = "sha256:" + sha256(canonicalJson({
 | 実行の失敗 | GitHub の通知（ワークフローの失敗をリポジトリの管理者にメールで知らせる設定）を使う |
 | 定期更新の最終成功時刻 | `watchdog.yml` が毎日（日本時間 12時47分）、`gh run list --workflow update.yml --branch main --status success --event schedule` で、調査を行う朝の実行（UTC 23時〜5時に始まったもの）の最後の成功を調べる。36時間より古ければ、ラベル `ops-alert` の Issue を作る（すでに開いていればコメントを足す） |
 | 公開サイトの稼働 | 外部の死活監視サービスで、`{SITE_URL}{BASE_PATH}` と `build-manifest.json` を監視する（任意） |
-| 費用 | 実行の記録の `cost` と `state/usage/` の月の合計。月の上限（`budget.monthlyLimit`）の80%を超えたら、ジョブの要約に警告を出す。正確な利用額は OpenCode のコンソールで、月に1回確かめる |
+| 費用 | 実行の記録の `cost` と `state/usage/` の月の合計。台帳には、毎日の更新（`kind` なし）と、週次のレビューの要約（`kind: reviews`）、はてなブックマークの反応の要約（`kind: reactions`）の利用額を足す（2026-11-04）。月の上限（`budget.monthlyLimit`）はこの合計に対して判定する。月の上限（`budget.monthlyLimit`）の80%を超えたら、ジョブの要約に警告を出す。正確な利用額は OpenCode のコンソールで、月に1回確かめる |
 
 `watchdog.yml` の権限は `actions: read` と `issues: write` だけにする。
 

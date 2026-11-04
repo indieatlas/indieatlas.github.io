@@ -189,7 +189,16 @@ export type RunsFile = z.infer<typeof RunsFile>;
 export const UsageLedger = z.object({
   schemaVersion: z.literal(1),
   month: z.string().regex(/^\d{4}-\d{2}$/), // 日本時間の暦月
-  entries: z.array(z.object({ runId: RunId, runAttempt: z.number().int(), at: IsoDateTime, llmUsd: z.number() })),
+  entries: z.array(
+    z.object({
+      runId: RunId,
+      runAttempt: z.number().int(),
+      // 何に使ったか。省略は毎日の更新（update.yml の調査）。reviews と reactions は週次の要約（06 §6.13.6、§6.13.7）
+      kind: z.enum(['update', 'reviews', 'reactions']).optional(),
+      at: IsoDateTime,
+      llmUsd: z.number(),
+    }),
+  ),
   totalUsd: z.number(),
 });
 export type UsageLedger = z.infer<typeof UsageLedger>;

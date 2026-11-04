@@ -6,6 +6,7 @@ import { nowIso } from '../lib/clock.ts';
 import { runMain } from '../lib/errors.ts';
 import { fileKind, loadRepo, PROJECT_ROOT, repoPath, writeKind } from '../lib/repo-io.ts';
 import { createOpenAiCompatibleClient } from '../llm/client.ts';
+import { meteredLlm, recordUsage, usageRunId } from '../pipeline/usage-ledger.ts';
 import { summarizeReactions } from '../pipeline/article-reactions.ts';
 import { bookmarkEntryUrl, parseBookmarkEntry, type BookmarkEntry } from '../sources/hatena.ts';
 
@@ -46,17 +47,20 @@ await runMain(async () => {
     timeoutMs: repo.runtime.llm.requestTimeoutSeconds * 1000,
     maxBytes: 5_000_000,
   });
-  const llm = createOpenAiCompatibleClient(llmHttp, {
-    baseUrl: repo.runtime.llm.baseUrl,
-    apiKey,
-    sessionHeader: repo.runtime.llm.sessionHeader,
-    userAgent: 'IndieAtlasBot/0.1',
-    model: (role) => ({
-      model: roles[role].model,
-      thinking: roles[role].thinking,
-      maxOutputTokens: roles[role].maxOutputTokens,
+  const llm = meteredLlm(
+    createOpenAiCompatibleClient(llmHttp, {
+      baseUrl: repo.runtime.llm.baseUrl,
+      apiKey,
+      sessionHeader: repo.runtime.llm.sessionHeader,
+      userAgent: 'IndieAtlasBot/0.1',
+      model: (role) => ({
+        model: roles[role].model,
+        thinking: roles[role].thinking,
+        maxOutputTokens: roles[role].maxOutputTokens,
+      }),
     }),
-  });
+    repo.runtime,
+  );
   const at = nowIso();
   const now = Date.parse(at);
   const runId = `local-reactions-${at.slice(0, 10)}`;
@@ -98,5 +102,7 @@ await runMain(async () => {
     writeKind(fileKind('article-reactions'), file, out);
   }
   writeKind(fileKind('article-reactions'), file, out);
-  console.log(`reactions:summarize: ${n} article(s)`);
+  console.log(`reactions:summarize: ${n} article(s)、${llm.total().toFixed(4)} USD`);
+  // 利用額を費用の台帳に足す（毎日の更新と同じ月の上限に数える）
+  recordUsage({ ...usageRunId('reactions', at), kind: 'reactions', at, llmUsd: llm.total() });
 });
