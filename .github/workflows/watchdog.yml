@@ -1,0 +1,39 @@
+name: watchdog
+
+# 定期更新の最終成功時刻を確かめ、36時間より古ければ Issue で知らせる（07 §7.8）
+on:
+  schedule:
+    - cron: '47 3 * * *' # 日本時間 12時47分（update の後）
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      actions: read
+      issues: write
+    steps:
+      - name: Check the last successful update
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          # 調査を行う朝の実行（00:17 UTC。混雑で遅れても 6時 UTC より前に始まる）だけを数える
+          last=$(gh run list -R "$REPO" --workflow update.yml --branch main --status success --event schedule --limit 20 --json createdAt \
+            --jq '[.[] | select((.createdAt[11:13] | tonumber) < 6)][0].createdAt // empty')
+          now=$(date -u +%s)
+          if [ -n "$last" ]; then age=$(( (now - $(date -u -d "$last" +%s)) / 3600 )); else age=9999; fi
+          echo "last success: ${last:-none} (${age}h ago)"
+          if [ "$age" -le 36 ]; then exit 0; fi
+          title="定期更新が36時間以上成功していない"
+          body="update.yml の定期実行の最後の成功: ${last:-なし}（${age}時間前）。Actions の画面で失敗の原因を確かめる。"
+          gh label create ops-alert -R "$REPO" --color B60205 --description "運用の警告" 2>/dev/null || true
+          issue=$(gh issue list -R "$REPO" --label ops-alert --state open --limit 1 --json number --jq '.[0].number // empty')
+          if [ -n "$issue" ]; then
+            gh issue comment "$issue" -R "$REPO" --body "$body"
+          else
+            gh issue create -R "$REPO" --title "$title" --label ops-alert --body "$body"
+          fi
