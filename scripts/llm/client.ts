@@ -48,8 +48,11 @@ export interface RunToolsRequest<T> {
   finalTool: { name: string; description: string; schema: z.ZodType<T>; parameters?: unknown };
   maxTurns: number;
   signal?: AbortSignal;
-  /** 呼び出しの前に、見積もり（USD）を渡して続けてよいかを聞く。false なら呼び出さない */
-  beforeTurn?(estimateUsd: number, lastPromptTokens: number): boolean;
+  /**
+   * 呼び出しの前に、見積もり（USD）を渡して続けてよいかを聞く。false なら呼び出さない。
+   * 'final' なら、結果の提出を促してから最後の1回だけ呼び出す（1タスクの上限に達したとき）
+   */
+  beforeTurn?(estimateUsd: number, lastPromptTokens: number): boolean | 'final';
   onUsage?(usage: LlmUsage): void;
   onTranscript?(entry: unknown): void;
   /** 見積もりの単価（USD/100万トークン） */
@@ -286,7 +289,15 @@ export function createOpenAiCompatibleClient(http: HttpClient, o: OpenAiCompatib
           nudged = true;
         }
         const estimate = ((lastPrompt + 4000) * rates.input + 4000 * rates.output) / 1_000_000;
-        if (req.beforeTurn && !req.beforeTurn(estimate, lastPrompt)) return { value: null, stop: 'budget', turns };
+        const gate = req.beforeTurn ? req.beforeTurn(estimate, lastPrompt) : true;
+        if (gate === false || (gate === 'final' && nudged)) return { value: null, stop: 'budget', turns };
+        if (gate === 'final') {
+          messages.push({
+            role: 'user',
+            content: `予算の上限に近い。今ある情報で ${req.finalTool.name} を呼び、結果を返す。`,
+          });
+          nudged = true;
+        }
         let res: ChatResponse;
         try {
           const r = await chat(req.role, req.sessionId, { messages, tools: toolDefs, tool_choice: 'auto' }, req.signal);
