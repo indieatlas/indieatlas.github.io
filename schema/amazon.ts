@@ -14,7 +14,9 @@ export const AmazonRanking = z.object({
         asin: z.string().regex(/^[A-Z0-9]{10}$/),
         title: z.string().min(1).max(300),
         url: HttpUrl, // アソシエイトのタグ付きの商品ページ
-        image: z.object({ url: HttpUrl, width: z.number().int().positive(), height: z.number().int().positive() }).optional(),
+        image: z
+          .object({ url: HttpUrl, width: z.number().int().positive(), height: z.number().int().positive() })
+          .optional(),
         salesRank: z.number().int().positive(),
         platform: z.string().max(40).optional(), // 例: Nintendo Switch 2
       }),

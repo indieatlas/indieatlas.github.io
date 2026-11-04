@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { ClaimField } from './claim.ts';
+import { EventId } from './event.ts';
 import {
   ArticleId,
   ClaimId,
@@ -45,6 +46,8 @@ export const TaskType = z.enum([
   'improve-relations',
   'improve-collection',
   'review-tags', // 段階5: 関連作品、コレクション、分類の改善
+  'register-event',
+  'check-event', // 催しの登録と日程の確認（06 §6.13.1）
 ]);
 export type TaskType = z.infer<typeof TaskType>;
 export const TaskOutcome = z.enum(['completed', 'partial', 'not-found', 'blocked', 'irrelevant', 'failed', 'deferred']);
@@ -59,6 +62,7 @@ export const Task = z.object({
       url: HttpUrl.optional(),
       sourceId: SourceId.optional(),
       collectionId: CollectionId.optional(),
+      eventId: EventId.optional(),
       field: ClaimField.optional(),
       claimIds: z.array(ClaimId).max(10).optional(),
       name: z.string().max(120).optional(), // 未登録作品の名前など

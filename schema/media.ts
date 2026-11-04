@@ -57,7 +57,10 @@ export type PopularityMetrics = z.infer<typeof PopularityMetrics>;
  */
 const SummaryPoint = z.object({
   text: z.string().min(8).max(60),
-  reviewIds: z.array(z.string().regex(/^[\w-]{1,64}$/)).min(2).max(10), // 根拠のレビュー（レビューの ID か投稿者の ID）。サイトには出さない
+  reviewIds: z
+    .array(z.string().regex(/^[\w-]{1,64}$/))
+    .min(2)
+    .max(10), // 根拠のレビュー（レビューの ID か投稿者の ID）。サイトには出さない
 });
 export const ReviewSummaries = z.object({
   schemaVersion: z.literal(1),

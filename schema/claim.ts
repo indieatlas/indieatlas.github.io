@@ -72,7 +72,7 @@ export const ClaimStatusReason = z.enum([
   'game-merged',
 ]);
 
-const ClaimScope = z.object({ platform: Platform.optional(), region: Region.optional() }).strict();
+export const ClaimScope = z.object({ platform: Platform.optional(), region: Region.optional() }).strict();
 
 const ClaimBase = z.object({
   id: ClaimId,
@@ -118,22 +118,35 @@ export const PlayerModesValue = z.object({
   maxPlayers: z.number().int().min(1).max(1000).optional(),
 });
 
+export const SummaryValue = z.object({ ja: z.string().min(60).max(160) });
+export const FeaturesValue = z.object({ ja: z.array(z.string().min(10).max(60)).min(3).max(5) });
+// 詳しい紹介（定番の作品など）。2〜4段落。複数の出典をもとに当サイトが書く
+export const OverviewValue = z.object({ ja: z.array(z.string().min(40).max(300)).min(2).max(4) });
+export const TagValue = z.object({ tagId: TagId });
+export const StoreLinkValue = z.object({ store: Store, url: HttpUrl });
+
+/** 項目ごとの値のスキーマ。提案の ClaimDraft（schema/proposal.ts）もこれを使う */
+export const CLAIM_VALUES = {
+  release: ReleaseValue,
+  japaneseSupport: JapaneseSupportValue,
+  playerModes: PlayerModesValue,
+  summary: SummaryValue,
+  features: FeaturesValue,
+  overview: OverviewValue,
+  tag: TagValue,
+  storeLink: StoreLinkValue,
+  image: ImageValue,
+} as const;
+
 export const Claim = z.discriminatedUnion('field', [
   ClaimBase.extend({ field: z.literal('release'), value: ReleaseValue }),
   ClaimBase.extend({ field: z.literal('japaneseSupport'), value: JapaneseSupportValue }),
   ClaimBase.extend({ field: z.literal('playerModes'), value: PlayerModesValue }),
-  ClaimBase.extend({ field: z.literal('summary'), value: z.object({ ja: z.string().min(60).max(160) }) }),
-  ClaimBase.extend({
-    field: z.literal('features'),
-    value: z.object({ ja: z.array(z.string().min(10).max(60)).min(3).max(5) }),
-  }),
-  // 詳しい紹介（定番の作品など）。2〜4段落。複数の出典をもとに当サイトが書く
-  ClaimBase.extend({
-    field: z.literal('overview'),
-    value: z.object({ ja: z.array(z.string().min(40).max(300)).min(2).max(4) }),
-  }),
-  ClaimBase.extend({ field: z.literal('tag'), value: z.object({ tagId: TagId }) }),
-  ClaimBase.extend({ field: z.literal('storeLink'), value: z.object({ store: Store, url: HttpUrl }) }),
+  ClaimBase.extend({ field: z.literal('summary'), value: SummaryValue }),
+  ClaimBase.extend({ field: z.literal('features'), value: FeaturesValue }),
+  ClaimBase.extend({ field: z.literal('overview'), value: OverviewValue }),
+  ClaimBase.extend({ field: z.literal('tag'), value: TagValue }),
+  ClaimBase.extend({ field: z.literal('storeLink'), value: StoreLinkValue }),
   ClaimBase.extend({ field: z.literal('image'), value: ImageValue }),
 ]);
 export type Claim = z.infer<typeof Claim>;
