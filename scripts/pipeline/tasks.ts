@@ -251,13 +251,15 @@ export const ARTICLE_TASK_MAX_AGE_DAYS = 14;
 export function scheduleTasks(repo: RepoData, today: string, at: string): ScheduleResult {
   const existing = new Map(repo.tasks.tasks.map((t) => [t.id, t]));
   const out: Task[] = [];
-  // 終わった同じ ID のタスクは、renewDays を過ぎていれば作り直す（採用ジョブが置き換える）
-  const add = (t: Task, renewDays = Infinity): boolean => {
+  // 終わった同じ ID のタスクは、renewDays を過ぎていれば作り直す（採用ジョブが置き換える）。
+  // renewDays がなければ作り直さない（週ごとのタスクは ID に週を含むので、次の週に別のタスクになる）
+  const add = (t: Task, renewDays?: number): boolean => {
     if (out.some((x) => x.id === t.id)) return false;
     const prev = existing.get(t.id);
     if (prev) {
       const doneAt = prev.resolution?.at.slice(0, 10);
-      if (prev.status !== 'done' || !doneAt || doneAt > addDays(today, -renewDays)) return false;
+      if (renewDays === undefined || prev.status !== 'done' || !doneAt || doneAt > addDays(today, -renewDays))
+        return false;
     }
     out.push(t);
     return true;

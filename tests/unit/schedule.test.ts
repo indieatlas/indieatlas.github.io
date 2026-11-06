@@ -68,4 +68,24 @@ describe('定期的なタスク（06 §6.4.1）', () => {
     expect(scheduleTasks(repo, '2026-10-27', '2026-10-27T00:00:00Z').newTasks.map((x) => x.id)).toContain(t.id);
     expect(scheduleTasks(repo, '2026-10-05', '2026-10-05T00:00:00Z').newTasks.map((x) => x.id)).not.toContain(t.id);
   });
+
+  it('期間のない定期的なタスクは、終わったあと同じ週に作り直さない', () => {
+    const repo = loadRepo();
+    const base = repo.sources.sources[0]!;
+    repo.sources.sources.push({
+      ...base,
+      id: 'example-events',
+      kind: 'event',
+      fetch: { ...base.fetch, url: 'https://events.example.jp/' },
+    });
+    const t = scheduleTasks(repo, '2026-10-27', '2026-10-27T00:00:00Z').newTasks.find(
+      (x) => x.type === 'register-event',
+    )!;
+    repo.tasks.tasks.push({
+      ...t,
+      status: 'done',
+      resolution: { at: '2026-10-26T00:00:00Z', runId: '1', outcome: 'not-found', summary: 'x' },
+    });
+    expect(scheduleTasks(repo, '2026-10-27', '2026-10-27T00:00:00Z').newTasks.map((x) => x.id)).not.toContain(t.id);
+  });
 });
