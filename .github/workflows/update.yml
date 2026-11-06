@@ -115,7 +115,7 @@ jobs:
         continue-on-error: true
         with:
           pattern: research-${{ github.run_id }}-*
-          path: research-artifacts/
+          path: out/research-artifacts/
       - name: Adopt
         id: adopt
         env:
@@ -127,7 +127,7 @@ jobs:
         run: |
           git config user.name "indieatlas-bot"
           git config user.email "indieatlas-bot@users.noreply.github.com"
-          npm run adopt -- --in research-artifacts/ --push
+          npm run adopt -- --in out/research-artifacts/ --push
 
   build:
     needs: [setup, adopt]

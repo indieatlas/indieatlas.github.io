@@ -19,7 +19,7 @@
 | - | - | - | - |
 | `setup` | `main` | なし | 実行のモードを決める。push と 20時17分の定期実行は `publish-only`、手動実行は入力のモード、8時17分の定期実行は `full` |
 | `research` | モードが `publish-only` 以外 | `contents: read`、環境 `research` | `npm run research -- --out out/research --mode {mode}`。`out/research/` を成果物 `research-{run_id}-{run_attempt}` にする（`if: always()`、保存は3日）。時間の上限は60分（調査の hard の締め切りは50分） |
-| `adopt` | `!cancelled()` で、モードが `publish-only` 以外 | `contents: write` | 成果物を受け取り、`npm run adopt -- --in research-artifacts/ --push`。LLM のキーを持たない。`data_commit` を出力する |
+| `adopt` | `!cancelled()` で、モードが `publish-only` 以外 | `contents: write` | 成果物を受け取り、`npm run adopt -- --in out/research-artifacts/ --push`。LLM のキーを持たない。`data_commit` を出力する |
 | `build` | `!cancelled()` で `main` | `contents: read` | `data_commit`（なければ起動時のコミット）を1回だけ checkout し、売れ筋の取得、ビルド、`check:dist`、`check:publish` |
 | `deploy` | `should_deploy` が `true` | `pages: write`、`id-token: write` | GitHub Pages に公開する |
 
