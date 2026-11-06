@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000109",
+  "claims": [
+    {
+      "id": "c_880cc246da7a164d",
+      "gameId": "g_000109",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4210060/",
+          "retrievedAt": "2026-11-06T10:21:29Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9fe4b64419a9cbb2a3883a9d63e5f1d9891279abbf4fce151f658d7ef0fb80dd"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:29Z",
+      "createdAt": "2026-11-06T10:21:29Z",
+      "updatedAt": "2026-11-06T10:21:29Z",
+      "lastCheckedAt": "2026-11-06T10:21:29Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "release",
+      "value": {
+        "status": "tba",
+        "rawText": "To be announced"
+      }
+    },
+    {
+      "id": "c_85b0e3fed015eef6",
+      "gameId": "g_000109",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4210060/",
+          "retrievedAt": "2026-11-06T10:21:32Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ce2272532f49f3756bef0ca6e24ced5e10f6e3ec5b5951cf017bed9d42cb38e2"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:29Z",
+      "createdAt": "2026-11-06T10:21:29Z",
+      "updatedAt": "2026-11-06T10:21:29Z",
+      "lastCheckedAt": "2026-11-06T10:21:32Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_c3e7bf81310842c2",
+      "gameId": "g_000109",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4210060/",
+          "retrievedAt": "2026-11-06T10:21:29Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9fe4b64419a9cbb2a3883a9d63e5f1d9891279abbf4fce151f658d7ef0fb80dd"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:29Z",
+      "createdAt": "2026-11-06T10:21:29Z",
+      "updatedAt": "2026-11-06T10:21:29Z",
+      "lastCheckedAt": "2026-11-06T10:21:29Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_ace4091f822c1560",
+      "gameId": "g_000109",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4210060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:07:57Z",
+          "quote": "ZERO Sievert 2 is a top-down PvE extraction shooter set in the ruined country of Zakov. Hunt alone or with a crew, face anomalies, bandits, and mutants, and make it out alive.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9fe4b64419a9cbb2a3883a9d63e5f1d9891279abbf4fce151f658d7ef0fb80dd"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:07:57Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "summary",
+      "value": {
+        "ja": "崩壊した国ザコフの隔離区域を舞台に、ソロまたは最大4人で挑む見下ろし型のPvEエクストラクションシューター。アノマリーや盗賊、ミュータントの潜む自動生成マップで戦利品を集め、生き延びて持ち帰る。"
+      }
+    },
+    {
+      "id": "c_0fc82a2f86f2ab2d",
+      "gameId": "g_000109",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4210060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:07:57Z",
+          "quote": "What starts as a makeshift hideout gradually becomes a base for the Hunts ahead.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9fe4b64419a9cbb2a3883a9d63e5f1d9891279abbf4fce151f658d7ef0fb80dd"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:07:57Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "base-building"
+      }
+    },
+    {
+      "id": "c_64bf35f0d5fba005",
+      "gameId": "g_000109",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4210060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:07:57Z",
+          "quote": "Play solo or with friends across procedurally generated maps filled with anomalies, bandits, and mutants.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9fe4b64419a9cbb2a3883a9d63e5f1d9891279abbf4fce151f658d7ef0fb80dd"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:07:57Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "procedural-generation"
+      }
+    },
+    {
+      "id": "c_ad125d319e144caf",
+      "gameId": "g_000109",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4210060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:07:57Z",
+          "quote": "Hunt solo or with up to four players.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9fe4b64419a9cbb2a3883a9d63e5f1d9891279abbf4fce151f658d7ef0fb80dd"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:07:57Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_b1bdc264934cf06f",
+      "gameId": "g_000109",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4210060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:07:57Z",
+          "quote": "Each Hunt changes the layout, but fixed landmarks help you navigate, find loot, and spot danger early.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9fe4b64419a9cbb2a3883a9d63e5f1d9891279abbf4fce151f658d7ef0fb80dd"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:07:57Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_dd718071f96f6999",
+      "gameId": "g_000109",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4210060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:07:57Z",
+          "quote": "ZERO Sievert 2 is a top-down PvE extraction shooter set in the ruined country of Zakov.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9fe4b64419a9cbb2a3883a9d63e5f1d9891279abbf4fce151f658d7ef0fb80dd"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:07:57Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "shooter"
+      }
+    },
+    {
+      "id": "c_055174491a0d8f4e",
+      "gameId": "g_000109",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4210060/",
+          "retrievedAt": "2026-11-06T10:21:29Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9fe4b64419a9cbb2a3883a9d63e5f1d9891279abbf4fce151f658d7ef0fb80dd"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:29Z",
+      "createdAt": "2026-11-06T10:21:29Z",
+      "updatedAt": "2026-11-06T10:21:29Z",
+      "lastCheckedAt": "2026-11-06T10:21:29Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4210060/"
+      }
+    },
+    {
+      "id": "c_2f734de80a14de3a",
+      "gameId": "g_000109",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4210060/",
+          "retrievedAt": "2026-11-06T10:21:29Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9fe4b64419a9cbb2a3883a9d63e5f1d9891279abbf4fce151f658d7ef0fb80dd"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:29Z",
+      "createdAt": "2026-11-06T10:21:29Z",
+      "updatedAt": "2026-11-06T10:21:29Z",
+      "lastCheckedAt": "2026-11-06T10:21:29Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4210060/29513774a11dce37cd7e3144d73fea15505e05df/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "ZERO Sievert 2 のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Modern Wolf"
+        }
+      }
+    }
+  ]
+}

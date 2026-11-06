@@ -37,7 +37,7 @@
         "reasoningTokens": 144868
       },
       "publish": {
-        "status": "pending"
+        "status": "deployed"
       },
       "pending": [],
       "rejections": [
@@ -64,6 +64,68 @@
         {
           "rule": "V-S02",
           "count": 130
+        }
+      ]
+    },
+    {
+      "runId": "42199738593",
+      "runAttempt": 1,
+      "researchAttempt": 1,
+      "trigger": "workflow_dispatch",
+      "mode": "full",
+      "startedAt": "2026-11-06T10:04:11Z",
+      "finishedAt": "2026-11-06T10:20:57Z",
+      "triggerCommit": "d0dec82f1d4d6bbb8b794d63016e322325c91462",
+      "outcome": "success",
+      "stopReason": "completed",
+      "counts": {
+        "sourcesFetched": 9,
+        "sourcesFailed": 0,
+        "articlesCollected": 269,
+        "articlesLinked": 12,
+        "gamesCreated": 10,
+        "gamesPublished": 7,
+        "claimsAdded": 115,
+        "claimsAdopted": 52,
+        "claimsConflicted": 0,
+        "relationsAdded": 0,
+        "collectionsChanged": 0,
+        "tasksCreated": 113,
+        "tasksDone": 36,
+        "tasksBlocked": 1,
+        "operationsRejected": 280
+      },
+      "cost": {
+        "llmUsd": 0.176336,
+        "inputTokens": 4431824,
+        "outputTokens": 314325,
+        "cachedInputTokens": 3805952,
+        "reasoningTokens": 142315
+      },
+      "publish": {
+        "status": "pending"
+      },
+      "pending": [],
+      "rejections": [
+        {
+          "rule": "V-C06",
+          "count": 22
+        },
+        {
+          "rule": "V-E03",
+          "count": 1
+        },
+        {
+          "rule": "V-E05",
+          "count": 1
+        },
+        {
+          "rule": "V-L01",
+          "count": 29
+        },
+        {
+          "rule": "V-S02",
+          "count": 227
         }
       ]
     }

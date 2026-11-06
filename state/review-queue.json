@@ -1,4 +1,33 @@
 {
   "schemaVersion": 1,
-  "items": []
+  "items": [
+    {
+      "id": "rv_9383a821f46d2a82",
+      "kind": "developer-independence",
+      "operation": {
+        "op": "upsert-developer",
+        "developer": {
+          "name": "EMIKA_GAMES"
+        },
+        "changes": {
+          "setOfficialUrl": "https://www.emikagames.com/",
+          "proposeIndependence": "independent"
+        },
+        "evidence": [
+          {
+            "url": "https://www.emikagames.com/",
+            "quote": "Меня зовут Александр Решетников, я в одиночку создаю игры и выпускаю их под именем EMIKA_GAMES."
+          },
+          {
+            "url": "https://store.steampowered.com/app/2249160/",
+            "locator": "steam:appdetails.developers"
+          }
+        ]
+      },
+      "reason": "EMIKA_GAMES を independent とする提案",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "createdByRun": "42199738593",
+      "status": "open"
+    }
+  ]
 }

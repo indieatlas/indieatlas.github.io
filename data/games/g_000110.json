@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000110",
+  "status": "published",
+  "title": {
+    "display": "UPSHOT",
+    "original": "UPSHOT",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5377460
+  },
+  "associatedApps": [],
+  "officialUrl": "https://www.wazanggames.com",
+  "developerIds": [
+    "dev_000149"
+  ],
+  "publisherIds": [
+    "dev_000149"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "note": "開発元と販売元がともに Wazang Games",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5377460/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-06T10:09:15Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:f24488044266ce48fd1c9d28ce22e67ea7ac28cce0402a0ccf61d89f36032292"
+          },
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5377460/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-06T10:09:15Z",
+            "locator": "steam:appdetails.publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:f24488044266ce48fd1c9d28ce22e67ea7ac28cce0402a0ccf61d89f36032292"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-06T10:20:57Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5377460/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-06T10:09:15Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f24488044266ce48fd1c9d28ce22e67ea7ac28cce0402a0ccf61d89f36032292"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5377460/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-06T10:09:15Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f24488044266ce48fd1c9d28ce22e67ea7ac28cce0402a0ccf61d89f36032292"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5377460/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-06T10:09:15Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f24488044266ce48fd1c9d28ce22e67ea7ac28cce0402a0ccf61d89f36032292"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5377460/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-06T10:09:15Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f24488044266ce48fd1c9d28ce22e67ea7ac28cce0402a0ccf61d89f36032292"
+      }
+    }
+  ],
+  "createdAt": "2026-11-06T10:20:57Z",
+  "addedAt": "2026-11-06",
+  "updatedAt": "2026-11-06T10:20:57Z",
+  "createdByRun": "42199738593"
+}

@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000110",
+  "claims": [
+    {
+      "id": "c_f4a0410f212a5244",
+      "gameId": "g_000110",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5377460/",
+          "retrievedAt": "2026-11-06T10:21:34Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f24488044266ce48fd1c9d28ce22e67ea7ac28cce0402a0ccf61d89f36032292"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:34Z",
+      "createdAt": "2026-11-06T10:21:34Z",
+      "updatedAt": "2026-11-06T10:21:34Z",
+      "lastCheckedAt": "2026-11-06T10:21:34Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 12
+        },
+        "rawText": "12 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_01b7fe4b78b1cee2",
+      "gameId": "g_000110",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5377460/",
+          "retrievedAt": "2026-11-06T10:21:37Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a1c2dc7c72a1e44e2e6dac6ec47753105c7a13fc1eb25e40ec89628bfcfeb02a"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:34Z",
+      "createdAt": "2026-11-06T10:21:34Z",
+      "updatedAt": "2026-11-06T10:21:34Z",
+      "lastCheckedAt": "2026-11-06T10:21:37Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "no",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_d353d49700cbcf5a",
+      "gameId": "g_000110",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5377460/",
+          "retrievedAt": "2026-11-06T10:21:34Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f24488044266ce48fd1c9d28ce22e67ea7ac28cce0402a0ccf61d89f36032292"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:34Z",
+      "createdAt": "2026-11-06T10:21:34Z",
+      "updatedAt": "2026-11-06T10:21:34Z",
+      "lastCheckedAt": "2026-11-06T10:21:34Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_1a6550a7b282384c",
+      "gameId": "g_000110",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5377460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:09:15Z",
+          "quote": "UPSHOT is a 1–4 player arena shooter where bouncing balls keep breaking into smaller, faster ones.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f24488044266ce48fd1c9d28ce22e67ea7ac28cce0402a0ccf61d89f36032292"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:09:15Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "summary",
+      "value": {
+        "ja": "当てたボールが次々と小さく速いボールに分裂していくアリーナシューター。制限時間内に部屋のボールを割り切り、5部屋ごとに現れる巨大なボスを倒して先へ進む。ソロでも4人協力プレイでも遊べる。"
+      }
+    },
+    {
+      "id": "c_0519b097ef003702",
+      "gameId": "g_000110",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5377460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:09:15Z",
+          "quote": "Pop every last one before the clock runs out to clear the room, then move on to the next.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f24488044266ce48fd1c9d28ce22e67ea7ac28cce0402a0ccf61d89f36032292"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:09:15Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "short-session"
+      }
+    },
+    {
+      "id": "c_2d20323446bc1100",
+      "gameId": "g_000110",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5377460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:09:15Z",
+          "quote": "Big balls bounce around the room. Hit one and it breaks into two smaller, faster balls.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f24488044266ce48fd1c9d28ce22e67ea7ac28cce0402a0ccf61d89f36032292"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:09:15Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "physics"
+      }
+    },
+    {
+      "id": "c_852a31a70e9a3d42",
+      "gameId": "g_000110",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5377460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:09:15Z",
+          "quote": "Play solo or team up in 4-player co-op. Go down, and a teammate can pull you back up.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f24488044266ce48fd1c9d28ce22e67ea7ac28cce0402a0ccf61d89f36032292"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:09:15Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_c65dc1f844de2729",
+      "gameId": "g_000110",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5377460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:09:15Z",
+          "quote": "UPSHOT is a 3D arena shooter where every ball you hit splits in two.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f24488044266ce48fd1c9d28ce22e67ea7ac28cce0402a0ccf61d89f36032292"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:09:15Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_f1eda71f3359f635",
+      "gameId": "g_000110",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5377460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:09:15Z",
+          "quote": "UPSHOT is a 1–4 player arena shooter where bouncing balls keep breaking into smaller, faster ones.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f24488044266ce48fd1c9d28ce22e67ea7ac28cce0402a0ccf61d89f36032292"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:09:15Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "shooter"
+      }
+    },
+    {
+      "id": "c_533ca48bca9eceaa",
+      "gameId": "g_000110",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5377460/",
+          "retrievedAt": "2026-11-06T10:21:34Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f24488044266ce48fd1c9d28ce22e67ea7ac28cce0402a0ccf61d89f36032292"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:34Z",
+      "createdAt": "2026-11-06T10:21:34Z",
+      "updatedAt": "2026-11-06T10:21:34Z",
+      "lastCheckedAt": "2026-11-06T10:21:34Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5377460/"
+      }
+    },
+    {
+      "id": "c_fa46c618d054c5ca",
+      "gameId": "g_000110",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5377460/",
+          "retrievedAt": "2026-11-06T10:21:34Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f24488044266ce48fd1c9d28ce22e67ea7ac28cce0402a0ccf61d89f36032292"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:34Z",
+      "createdAt": "2026-11-06T10:21:34Z",
+      "updatedAt": "2026-11-06T10:21:34Z",
+      "lastCheckedAt": "2026-11-06T10:21:34Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5377460/0c5690715b16197f3f1159ec5e99d56ea38909a1/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "UPSHOT のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Wazang Games"
+        }
+      }
+    }
+  ]
+}

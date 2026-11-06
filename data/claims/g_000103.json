@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000103",
+  "claims": [
+    {
+      "id": "c_c58e0859f5e201cc",
+      "gameId": "g_000103",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4925240/",
+          "retrievedAt": "2026-11-06T10:21:02Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a58bb5bbfd94995798839ab632da34791875c1c1c150642f16adb8c634937706"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:02Z",
+      "createdAt": "2026-11-06T10:21:02Z",
+      "updatedAt": "2026-11-06T10:21:02Z",
+      "lastCheckedAt": "2026-11-06T10:21:02Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "year",
+          "year": 2027
+        },
+        "rawText": "2027"
+      }
+    },
+    {
+      "id": "c_619e9b1ef45707aa",
+      "gameId": "g_000103",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4925240/",
+          "retrievedAt": "2026-11-06T10:21:05Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:afd2bdf81a6609388cbdb7abaa12fd29ad4813e6a9ec754b0af50cd63e06742d"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:02Z",
+      "createdAt": "2026-11-06T10:21:02Z",
+      "updatedAt": "2026-11-06T10:21:02Z",
+      "lastCheckedAt": "2026-11-06T10:21:05Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_65740619942e606f",
+      "gameId": "g_000103",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4925240/",
+          "retrievedAt": "2026-11-06T10:21:02Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a58bb5bbfd94995798839ab632da34791875c1c1c150642f16adb8c634937706"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:02Z",
+      "createdAt": "2026-11-06T10:21:02Z",
+      "updatedAt": "2026-11-06T10:21:02Z",
+      "lastCheckedAt": "2026-11-06T10:21:02Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_6add3539e0c97cab",
+      "gameId": "g_000103",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4925240/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:06:23Z",
+          "quote": "35年ローンで手に入れた家族三人の夢の新居。だがそこは、独裁理事長が支配する異様なマンションだった。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a58bb5bbfd94995798839ab632da34791875c1c1c150642f16adb8c634937706"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:06:23Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "summary",
+      "value": {
+        "ja": "35年ローンで手に入れた新居は、独裁理事長が支配するマンションだった。理事として週に一度の一手で住民と交渉し、ルールを書き換えながら理想の住環境を目指すシミュレーションアドベンチャー。"
+      }
+    },
+    {
+      "id": "c_2211e9b0fcdab801",
+      "gameId": "g_000103",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4925240/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:06:23Z",
+          "quote": "あなたの道のりのひとつひとつがマンションの行く末を定める。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a58bb5bbfd94995798839ab632da34791875c1c1c150642f16adb8c634937706"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:06:23Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_91a2c23713741cd4",
+      "gameId": "g_000103",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4925240/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:06:23Z",
+          "quote": "『RULES OF RESIDENCE』は、マンションの理事となってルールを書き換える、シミュレーションアドベンチャー。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a58bb5bbfd94995798839ab632da34791875c1c1c150642f16adb8c634937706"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:06:23Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_aed772d36d3cd58e",
+      "gameId": "g_000103",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4925240/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:06:23Z",
+          "quote": "in this singleplayer management simulator",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a58bb5bbfd94995798839ab632da34791875c1c1c150642f16adb8c634937706"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:06:23Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_e1b488a53be3af35",
+      "gameId": "g_000103",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4925240/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:06:23Z",
+          "quote": "1ターンは1週間。理事が動けるのは、週に一手。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a58bb5bbfd94995798839ab632da34791875c1c1c150642f16adb8c634937706"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:06:23Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "turn-based"
+      }
+    },
+    {
+      "id": "c_4433e346fc5ba620",
+      "gameId": "g_000103",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4925240/",
+          "retrievedAt": "2026-11-06T10:21:02Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a58bb5bbfd94995798839ab632da34791875c1c1c150642f16adb8c634937706"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:02Z",
+      "createdAt": "2026-11-06T10:21:02Z",
+      "updatedAt": "2026-11-06T10:21:02Z",
+      "lastCheckedAt": "2026-11-06T10:21:02Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4925240/"
+      }
+    },
+    {
+      "id": "c_e3eaf7ebfec98809",
+      "gameId": "g_000103",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4925240/",
+          "retrievedAt": "2026-11-06T10:21:02Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a58bb5bbfd94995798839ab632da34791875c1c1c150642f16adb8c634937706"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:02Z",
+      "createdAt": "2026-11-06T10:21:02Z",
+      "updatedAt": "2026-11-06T10:21:02Z",
+      "lastCheckedAt": "2026-11-06T10:21:02Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4925240/8f0fc5fdf8a8f33f0f2e1b00bd6ff1d0a1c5660f/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "RULES OF RESIDENCE のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Toydium Inc."
+        }
+      }
+    }
+  ]
+}

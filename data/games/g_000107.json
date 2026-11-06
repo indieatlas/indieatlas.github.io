@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000107",
+  "status": "published",
+  "title": {
+    "display": "フードデビルズ",
+    "original": "Food Devils",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "Food Devils",
+      "lang": "en",
+      "kind": "romanization"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 2861730
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4690190",
+      "kind": "demo"
+    }
+  ],
+  "developerIds": [
+    "dev_000143"
+  ],
+  "publisherIds": [
+    "dev_000143"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/2861730/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-06T10:08:00Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:95c36e79bb39e4ca07f54c11e1ebdb3af8f1929e9438d760123457d394c9ed95"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-06T10:20:57Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2861730/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-06T10:08:00Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:95c36e79bb39e4ca07f54c11e1ebdb3af8f1929e9438d760123457d394c9ed95"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2861730/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-06T10:08:00Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:95c36e79bb39e4ca07f54c11e1ebdb3af8f1929e9438d760123457d394c9ed95"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2861730/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-06T10:08:00Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:95c36e79bb39e4ca07f54c11e1ebdb3af8f1929e9438d760123457d394c9ed95"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2861730/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-06T10:08:00Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:95c36e79bb39e4ca07f54c11e1ebdb3af8f1929e9438d760123457d394c9ed95"
+      }
+    }
+  ],
+  "createdAt": "2026-11-06T10:20:57Z",
+  "addedAt": "2026-11-06",
+  "updatedAt": "2026-11-06T10:20:57Z",
+  "createdByRun": "42199738593"
+}

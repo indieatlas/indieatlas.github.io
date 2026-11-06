@@ -1,0 +1,421 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000105",
+  "claims": [
+    {
+      "id": "c_1ec68522b0ae4df5",
+      "gameId": "g_000105",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2991310/",
+          "retrievedAt": "2026-11-06T10:21:11Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d27a5379a76d5962a5854431508dd2a35adb96faaa0502d9672cbce03a2c54a6"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:11Z",
+      "createdAt": "2026-11-06T10:21:11Z",
+      "updatedAt": "2026-11-06T10:21:11Z",
+      "lastCheckedAt": "2026-11-06T10:21:11Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 4
+        },
+        "rawText": "4 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_2e5a1206ebb2016a",
+      "gameId": "g_000105",
+      "scope": {
+        "platform": "switch",
+        "region": "jp"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://game.shochiku.co.jp/ja/news/1105/",
+          "retrievedAt": "2026-11-06T10:07:44Z",
+          "quote": "『夢幻桜楼閣』を、本日2026年11月5日（木）、Nintendo SwitchおよびSteamにて発売いたしました。",
+          "originKey": "official:shochiku.co.jp",
+          "fetchHash": "sha256:5a4ad9a9fc91d7485df46bc014feba96203a5fbbed0a1bc7feeb579a5eca0603"
+        }
+      ],
+      "asOf": "2026-11-05",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:07:44Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 5
+        },
+        "rawText": "2026年11月5日"
+      }
+    },
+    {
+      "id": "c_7c857459beb831c0",
+      "gameId": "g_000105",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2991310/",
+          "retrievedAt": "2026-11-06T10:21:14Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e319cf8d3add5614c15bc3691663cbf71fc5da4cd652a2215f1611cae3f1e7b1"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:11Z",
+      "createdAt": "2026-11-06T10:21:11Z",
+      "updatedAt": "2026-11-06T10:21:11Z",
+      "lastCheckedAt": "2026-11-06T10:21:14Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_d78cc596bfbea945",
+      "gameId": "g_000105",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2991310/",
+          "retrievedAt": "2026-11-06T10:21:11Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d27a5379a76d5962a5854431508dd2a35adb96faaa0502d9672cbce03a2c54a6"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:11Z",
+      "createdAt": "2026-11-06T10:21:11Z",
+      "updatedAt": "2026-11-06T10:21:11Z",
+      "lastCheckedAt": "2026-11-06T10:21:11Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_0c6fa01562f7c082",
+      "gameId": "g_000105",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2991310/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:06:45Z",
+          "quote": "『夢幻桜楼閣』は、桜舞い散るダンジョンを進んでキャラクターを強化し、ド派手なバトルと戦略が楽しめるローグライト3Dアクションです！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d27a5379a76d5962a5854431508dd2a35adb96faaa0502d9672cbce03a2c54a6"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:06:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "summary",
+      "value": {
+        "ja": "双剣を操る猫耳の少女レトラとなり、挑むたびに構造が変わる夢幻の迷宮を攻略するローグライト3Dアクション。連打でつながるコンボや必殺技を駆使し、50種類以上の強化アイテムでビルドを組み立てて深層を目指す。"
+      }
+    },
+    {
+      "id": "c_1cab61dd563378bc",
+      "gameId": "g_000105",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://game.shochiku.co.jp/ja/games/eternal-palace-sakura/",
+          "retrievedAt": "2026-11-06T10:06:48Z",
+          "quote": "戦闘後やマップ探索で手に入る様々な「アトリビュート（強化アイテム）」を集めることで、プレイヤーのステータスやアーツ（技）がどんどん強化！",
+          "originKey": "official:shochiku.co.jp",
+          "fetchHash": "sha256:69912754b538cb33b222d2bcb32d2934958ad91a013a590174604ad9cb966fe1"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:06:48Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_2ce9dd31c9ac58a3",
+      "gameId": "g_000105",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://game.shochiku.co.jp/ja/games/eternal-palace-sakura/",
+          "retrievedAt": "2026-11-06T10:06:48Z",
+          "quote": "そこは安息を知らぬ怪異たちが彷徨う夢幻の迷宮。",
+          "originKey": "official:shochiku.co.jp",
+          "fetchHash": "sha256:69912754b538cb33b222d2bcb32d2934958ad91a013a590174604ad9cb966fe1"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:06:48Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_651231d72aa84c99",
+      "gameId": "g_000105",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2991310/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:06:45Z",
+          "quote": "Anime-inspired fantasy world with a memorable, heroic protagonist.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d27a5379a76d5962a5854431508dd2a35adb96faaa0502d9672cbce03a2c54a6"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:06:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_8cc998e8c5ae310c",
+      "gameId": "g_000105",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2991310/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:06:45Z",
+          "quote": "『夢幻桜楼閣』は、桜舞い散るダンジョンを進んでキャラクターを強化し、ド派手なバトルと戦略が楽しめるローグライト3Dアクションです！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d27a5379a76d5962a5854431508dd2a35adb96faaa0502d9672cbce03a2c54a6"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:06:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_8f515ee72edfbeec",
+      "gameId": "g_000105",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2991310/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:06:45Z",
+          "quote": "『夢幻桜楼閣』は、桜舞い散るダンジョンを進んでキャラクターを強化し、ド派手なバトルと戦略が楽しめるローグライト3Dアクションです！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d27a5379a76d5962a5854431508dd2a35adb96faaa0502d9672cbce03a2c54a6"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:06:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_b361b4599f065772",
+      "gameId": "g_000105",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2991310/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:06:45Z",
+          "quote": "Procedurally generated labyrinths full of traps, treasures, and mysteries.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d27a5379a76d5962a5854431508dd2a35adb96faaa0502d9672cbce03a2c54a6"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:06:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "procedural-generation"
+      }
+    },
+    {
+      "id": "c_fac00df0613f823a",
+      "gameId": "g_000105",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2991310/",
+          "retrievedAt": "2026-11-06T10:21:11Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d27a5379a76d5962a5854431508dd2a35adb96faaa0502d9672cbce03a2c54a6"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:11Z",
+      "createdAt": "2026-11-06T10:21:11Z",
+      "updatedAt": "2026-11-06T10:21:11Z",
+      "lastCheckedAt": "2026-11-06T10:21:11Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2991310/"
+      }
+    },
+    {
+      "id": "c_e363fc49df993201",
+      "gameId": "g_000105",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2991310/",
+          "retrievedAt": "2026-11-06T10:21:11Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d27a5379a76d5962a5854431508dd2a35adb96faaa0502d9672cbce03a2c54a6"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:11Z",
+      "createdAt": "2026-11-06T10:21:11Z",
+      "updatedAt": "2026-11-06T10:21:11Z",
+      "lastCheckedAt": "2026-11-06T10:21:11Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2991310/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "夢幻桜楼閣 のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Denneko Yuugi"
+        }
+      }
+    }
+  ]
+}

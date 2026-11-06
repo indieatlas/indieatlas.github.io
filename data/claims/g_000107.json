@@ -1,0 +1,408 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000107",
+  "claims": [
+    {
+      "id": "c_762783b056c7f219",
+      "gameId": "g_000107",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2861730/",
+          "retrievedAt": "2026-11-06T10:21:20Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95c36e79bb39e4ca07f54c11e1ebdb3af8f1929e9438d760123457d394c9ed95"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:20Z",
+      "createdAt": "2026-11-06T10:21:20Z",
+      "updatedAt": "2026-11-06T10:21:20Z",
+      "lastCheckedAt": "2026-11-06T10:21:20Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "release",
+      "value": {
+        "status": "tba",
+        "rawText": "Coming soon"
+      }
+    },
+    {
+      "id": "c_7e04e112715b9b52",
+      "gameId": "g_000107",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2861730/",
+          "retrievedAt": "2026-11-06T10:21:23Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8acdc657a70bc68d87cba7dbb82b5cd32c4c2f6a9877be1ce2f1b2f9c82d58e4"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:20Z",
+      "createdAt": "2026-11-06T10:21:20Z",
+      "updatedAt": "2026-11-06T10:21:20Z",
+      "lastCheckedAt": "2026-11-06T10:21:23Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_5de54f1b11616289",
+      "gameId": "g_000107",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2861730/",
+          "retrievedAt": "2026-11-06T10:21:20Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95c36e79bb39e4ca07f54c11e1ebdb3af8f1929e9438d760123457d394c9ed95"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:20Z",
+      "createdAt": "2026-11-06T10:21:20Z",
+      "updatedAt": "2026-11-06T10:21:20Z",
+      "lastCheckedAt": "2026-11-06T10:21:20Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_1167c5ba05b0c1a1",
+      "gameId": "g_000107",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2861730/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:08:00Z",
+          "quote": "You're the last chef in a post-apocalyptic world. Attract adventurers with monstrous food, make them sign contracts with the Food Devils and organize expeditions to collect wicked ingredients!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95c36e79bb39e4ca07f54c11e1ebdb3af8f1929e9438d760123457d394c9ed95"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:08:00Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "summary",
+      "value": {
+        "ja": "終末世界に残った最後の料理人となり、モンスター料理で冒険者を惹きつけてレストランを営む戦術ローグライトRPG。食材を求める遠征と店づくりを重ね、デビルとの契約で戦力を強める。"
+      }
+    },
+    {
+      "id": "c_0a8d268fd5ad1a71",
+      "gameId": "g_000107",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2861730/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:08:00Z",
+          "quote": "There are four distinct biomes to explore in this post-apocalyptic world, each with its own monsters and loot.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95c36e79bb39e4ca07f54c11e1ebdb3af8f1929e9438d760123457d394c9ed95"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:08:00Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "post-apocalyptic"
+      }
+    },
+    {
+      "id": "c_297383bdb0bc0139",
+      "gameId": "g_000107",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2861730/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:08:00Z",
+          "quote": "Food Devils combines the strategic depth of Tactics RPGs with the endless possibilities of Roguelikes !",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95c36e79bb39e4ca07f54c11e1ebdb3af8f1929e9438d760123457d394c9ed95"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:08:00Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "strategy"
+      }
+    },
+    {
+      "id": "c_9f3bfe3b648c265a",
+      "gameId": "g_000107",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2861730/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:08:00Z",
+          "quote": "Food Devils combines the strategic depth of Tactics RPGs with the endless possibilities of Roguelikes !",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95c36e79bb39e4ca07f54c11e1ebdb3af8f1929e9438d760123457d394c9ed95"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:08:00Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_a098833e00b420f1",
+      "gameId": "g_000107",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2861730/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:08:00Z",
+          "quote": "And if you’re feeling bold, you can romance any of the five Devils — or even pair them with each other.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95c36e79bb39e4ca07f54c11e1ebdb3af8f1929e9438d760123457d394c9ed95"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:08:00Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "romance"
+      }
+    },
+    {
+      "id": "c_b6597cee5b104182",
+      "gameId": "g_000107",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2861730/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:08:00Z",
+          "quote": "Hunt monsters, loot their spoils and cook some otherworldly dishes!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95c36e79bb39e4ca07f54c11e1ebdb3af8f1929e9438d760123457d394c9ed95"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:08:00Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "food"
+      }
+    },
+    {
+      "id": "c_b95de2fb41328adc",
+      "gameId": "g_000107",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2861730/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:08:00Z",
+          "quote": "Customize your characters, build the perfect restaurant and plan every move in this Tactics-RPG Roguelite.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95c36e79bb39e4ca07f54c11e1ebdb3af8f1929e9438d760123457d394c9ed95"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:08:00Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "rpg"
+      }
+    },
+    {
+      "id": "c_cd1ebb1154f8c285",
+      "gameId": "g_000107",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2861730/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:08:00Z",
+          "quote": "Every expedition is procedurally generated, but experience makes a wise hunter.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95c36e79bb39e4ca07f54c11e1ebdb3af8f1929e9438d760123457d394c9ed95"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:08:00Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "procedural-generation"
+      }
+    },
+    {
+      "id": "c_92023d81a1235e2f",
+      "gameId": "g_000107",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2861730/",
+          "retrievedAt": "2026-11-06T10:21:20Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95c36e79bb39e4ca07f54c11e1ebdb3af8f1929e9438d760123457d394c9ed95"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:20Z",
+      "createdAt": "2026-11-06T10:21:20Z",
+      "updatedAt": "2026-11-06T10:21:20Z",
+      "lastCheckedAt": "2026-11-06T10:21:20Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2861730/"
+      }
+    },
+    {
+      "id": "c_1bcd9d540a34f00b",
+      "gameId": "g_000107",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2861730/",
+          "retrievedAt": "2026-11-06T10:21:20Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95c36e79bb39e4ca07f54c11e1ebdb3af8f1929e9438d760123457d394c9ed95"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:20Z",
+      "createdAt": "2026-11-06T10:21:20Z",
+      "updatedAt": "2026-11-06T10:21:20Z",
+      "lastCheckedAt": "2026-11-06T10:21:20Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2861730/047b5361528274bedb4b427ae70d26cfff624671/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Food Devils のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Studio Daimon"
+        }
+      }
+    }
+  ]
+}

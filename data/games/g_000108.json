@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000108",
+  "status": "candidate",
+  "title": {
+    "display": "Wheel Make It",
+    "original": "Wheel Make It",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4213320
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4594340",
+      "kind": "demo"
+    }
+  ],
+  "developerIds": [
+    "dev_000144"
+  ],
+  "publisherIds": [
+    "dev_000145"
+  ],
+  "indie": {
+    "assessment": "unknown",
+    "reasons": [],
+    "assessedAt": "2026-11-06T10:20:57Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4213320/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-06T10:08:09Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:71a6f6baff15ac50356968064e1e40fa33943be1257cd044d3aa5b2025462962"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4213320/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-06T10:08:09Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:71a6f6baff15ac50356968064e1e40fa33943be1257cd044d3aa5b2025462962"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4213320/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-06T10:08:09Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:71a6f6baff15ac50356968064e1e40fa33943be1257cd044d3aa5b2025462962"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4213320/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-06T10:08:09Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:71a6f6baff15ac50356968064e1e40fa33943be1257cd044d3aa5b2025462962"
+      }
+    }
+  ],
+  "createdAt": "2026-11-06T10:20:57Z",
+  "updatedAt": "2026-11-06T10:21:25Z",
+  "createdByRun": "42199738593"
+}

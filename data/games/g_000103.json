@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000103",
+  "status": "published",
+  "title": {
+    "display": "RULES OF RESIDENCE",
+    "original": "RULES OF RESIDENCE",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4925240
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000137"
+  ],
+  "publisherIds": [
+    "dev_000137"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4925240/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-06T10:06:23Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:a58bb5bbfd94995798839ab632da34791875c1c1c150642f16adb8c634937706"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-06T10:20:57Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4925240/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-06T10:06:23Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a58bb5bbfd94995798839ab632da34791875c1c1c150642f16adb8c634937706"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4925240/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-06T10:06:23Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a58bb5bbfd94995798839ab632da34791875c1c1c150642f16adb8c634937706"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4925240/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-06T10:06:23Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a58bb5bbfd94995798839ab632da34791875c1c1c150642f16adb8c634937706"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4925240/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-06T10:06:23Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a58bb5bbfd94995798839ab632da34791875c1c1c150642f16adb8c634937706"
+      }
+    }
+  ],
+  "createdAt": "2026-11-06T10:20:57Z",
+  "addedAt": "2026-11-06",
+  "updatedAt": "2026-11-06T10:20:57Z",
+  "createdByRun": "42199738593"
+}

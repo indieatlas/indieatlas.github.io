@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000102",
+  "claims": [
+    {
+      "id": "c_21f148d0c364bef5",
+      "gameId": "g_000102",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5396190/",
+          "retrievedAt": "2026-11-06T10:20:58Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:62bb1523b3aeaee01448e33427e58eaba931d9d8109158f63b2814247c6c2d6f"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:58Z",
+      "createdAt": "2026-11-06T10:20:58Z",
+      "updatedAt": "2026-11-06T10:20:58Z",
+      "lastCheckedAt": "2026-11-06T10:20:58Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "release",
+      "value": {
+        "status": "tba",
+        "rawText": "To be announced"
+      }
+    },
+    {
+      "id": "c_f1ebde00f4af883f",
+      "gameId": "g_000102",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5396190/",
+          "retrievedAt": "2026-11-06T10:21:01Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:076c5f8c099c8db1c57ba3f203e2cb2b65ca096319fae08471b72f410e2b178c"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:58Z",
+      "createdAt": "2026-11-06T10:20:58Z",
+      "updatedAt": "2026-11-06T10:20:58Z",
+      "lastCheckedAt": "2026-11-06T10:21:01Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_5353fe40df878737",
+      "gameId": "g_000102",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5396190/",
+          "retrievedAt": "2026-11-06T10:20:58Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:62bb1523b3aeaee01448e33427e58eaba931d9d8109158f63b2814247c6c2d6f"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:58Z",
+      "createdAt": "2026-11-06T10:20:58Z",
+      "updatedAt": "2026-11-06T10:20:58Z",
+      "lastCheckedAt": "2026-11-06T10:20:58Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_6a8e1348fce56eb4",
+      "gameId": "g_000102",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5396190/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:06:03Z",
+          "quote": "敵の上から武器を積み、隣接させることを基本として攻撃をしていきます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:62bb1523b3aeaee01448e33427e58eaba931d9d8109158f63b2814247c6c2d6f"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:06:03Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "summary",
+      "value": {
+        "ja": "敵の上に武器を落として積み上げ、隣接させて攻撃する戦闘が特徴のデッキ構築型ローグライト落ちものパズル。武器ごとの特性を見極めて最適な積み方を考え、集めた武器でデッキを構築して、天界のPCにはびこる魔物型ウイルスの退治にあたる。"
+      }
+    },
+    {
+      "id": "c_07ed18d90353c884",
+      "gameId": "g_000102",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5396190/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:06:03Z",
+          "quote": "敵を倒したときに配布される武器でデッキを構築して進んでいきます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:62bb1523b3aeaee01448e33427e58eaba931d9d8109158f63b2814247c6c2d6f"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:06:03Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "deck-building"
+      }
+    },
+    {
+      "id": "c_30e88f5947c0b995",
+      "gameId": "g_000102",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5396190/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:06:03Z",
+          "quote": "PCを管理する天使『フォルン』は地上から凄腕エンジニアを召喚しようと考えます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:62bb1523b3aeaee01448e33427e58eaba931d9d8109158f63b2814247c6c2d6f"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:06:03Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_621686adcf985f69",
+      "gameId": "g_000102",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5396190/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:06:03Z",
+          "quote": "武器ごとの特性を見極めて最適な積み方を考える、戦略的なパズル型戦闘が楽しめます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:62bb1523b3aeaee01448e33427e58eaba931d9d8109158f63b2814247c6c2d6f"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:06:03Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "strategy"
+      }
+    },
+    {
+      "id": "c_a64ace116a3715e3",
+      "gameId": "g_000102",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5396190/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:06:03Z",
+          "quote": "Drop Rogueは敵に武器を積み上げて戦う、デッキ構築型ローグライト落ちものパズルです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:62bb1523b3aeaee01448e33427e58eaba931d9d8109158f63b2814247c6c2d6f"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:06:03Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_a9689dab66cf194b",
+      "gameId": "g_000102",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5396190/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:06:03Z",
+          "quote": "Drop Rogueは敵に武器を積み上げて戦う、デッキ構築型ローグライト落ちものパズルです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:62bb1523b3aeaee01448e33427e58eaba931d9d8109158f63b2814247c6c2d6f"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:06:03Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_a64a6a6f079eae17",
+      "gameId": "g_000102",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5396190/",
+          "retrievedAt": "2026-11-06T10:20:58Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:62bb1523b3aeaee01448e33427e58eaba931d9d8109158f63b2814247c6c2d6f"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:58Z",
+      "createdAt": "2026-11-06T10:20:58Z",
+      "updatedAt": "2026-11-06T10:20:58Z",
+      "lastCheckedAt": "2026-11-06T10:20:58Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5396190/"
+      }
+    },
+    {
+      "id": "c_304a281f393b8b56",
+      "gameId": "g_000102",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5396190/",
+          "retrievedAt": "2026-11-06T10:20:58Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:62bb1523b3aeaee01448e33427e58eaba931d9d8109158f63b2814247c6c2d6f"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:58Z",
+      "createdAt": "2026-11-06T10:20:58Z",
+      "updatedAt": "2026-11-06T10:20:58Z",
+      "lastCheckedAt": "2026-11-06T10:20:58Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5396190/60f6e3558a593ea9de207b01a16631f0b85236e8/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Drop Rogue のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "MONO ENTERTAINMENT"
+        }
+      }
+    }
+  ]
+}

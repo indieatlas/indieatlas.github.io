@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000106",
+  "claims": [
+    {
+      "id": "c_1c2bbd0ad23b0a6d",
+      "gameId": "g_000106",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5379010/",
+          "retrievedAt": "2026-11-06T10:21:16Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3699c681b8cfd88912c4a3dcc00ddcc39485be756c50c742ffc1954670f0adf3"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:16Z",
+      "createdAt": "2026-11-06T10:21:16Z",
+      "updatedAt": "2026-11-06T10:21:16Z",
+      "lastCheckedAt": "2026-11-06T10:21:16Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 5
+        },
+        "rawText": "5 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_4047e358e9b8d6e1",
+      "gameId": "g_000106",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5379010/",
+          "retrievedAt": "2026-11-06T10:21:19Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:10173a43633cab1e578e25fb9d9e684f8cc6fc61203266125a7efa14563a810b"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:16Z",
+      "createdAt": "2026-11-06T10:21:16Z",
+      "updatedAt": "2026-11-06T10:21:16Z",
+      "lastCheckedAt": "2026-11-06T10:21:19Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "no",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_aaf06b581e6893b7",
+      "gameId": "g_000106",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5379010/",
+          "retrievedAt": "2026-11-06T10:21:16Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3699c681b8cfd88912c4a3dcc00ddcc39485be756c50c742ffc1954670f0adf3"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:16Z",
+      "createdAt": "2026-11-06T10:21:16Z",
+      "updatedAt": "2026-11-06T10:21:16Z",
+      "lastCheckedAt": "2026-11-06T10:21:16Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_3c23170016e9d55d",
+      "gameId": "g_000106",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5379010/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:07:51Z",
+          "quote": "In Cubic Earth's Early Access release, you can fly, walk and hang glide around a best-effort 1:1 scale voxel recreation of the planet we all call home!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3699c681b8cfd88912c4a3dcc00ddcc39485be756c50c742ffc1954670f0adf3"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:07:51Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "summary",
+      "value": {
+        "ja": "実在する地球をボクセルで1:1スケールに再現した探索アドベンチャー。ニューヨークやエベレストなど実在の場所を、徒歩やフライト、ハンググライダーで巡れる。"
+      }
+    },
+    {
+      "id": "c_15230eb92810e2b8",
+      "gameId": "g_000106",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5379010/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:07:51Z",
+          "quote": "In Cubic Earth's Early Access release, you can fly, walk and hang glide around a best-effort 1:1 scale voxel recreation of the planet we all call home!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3699c681b8cfd88912c4a3dcc00ddcc39485be756c50c742ffc1954670f0adf3"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:07:51Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_1f02bd26f2acd400",
+      "gameId": "g_000106",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5379010/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:07:51Z",
+          "quote": "In Cubic Earth's Early Access release, you can fly, walk and hang glide around a best-effort 1:1 scale voxel recreation of the planet we all call home!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3699c681b8cfd88912c4a3dcc00ddcc39485be756c50c742ffc1954670f0adf3"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:07:51Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "open-world"
+      }
+    },
+    {
+      "id": "c_7e0e7ebf47467755",
+      "gameId": "g_000106",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5379010/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:07:51Z",
+          "quote": "Cubic Earth makes use of voxel technology to ensure a street level which remains coherent across the planet.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3699c681b8cfd88912c4a3dcc00ddcc39485be756c50c742ffc1954670f0adf3"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:07:51Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_a005373af0957c33",
+      "gameId": "g_000106",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5379010/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:07:51Z",
+          "quote": "Cubic Earth makes use of voxel technology to ensure a street level which remains coherent across the planet.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3699c681b8cfd88912c4a3dcc00ddcc39485be756c50c742ffc1954670f0adf3"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:07:51Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_cca8f1c4f6bdc4f3",
+      "gameId": "g_000106",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5379010/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:07:51Z",
+          "quote": "Roads, trails, forests and more remain legible and navigable, unlike many planet-scale games.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3699c681b8cfd88912c4a3dcc00ddcc39485be756c50c742ffc1954670f0adf3"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:07:51Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "nature"
+      }
+    },
+    {
+      "id": "c_0f1fc36e45e7076b",
+      "gameId": "g_000106",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5379010/",
+          "retrievedAt": "2026-11-06T10:21:16Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3699c681b8cfd88912c4a3dcc00ddcc39485be756c50c742ffc1954670f0adf3"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:16Z",
+      "createdAt": "2026-11-06T10:21:16Z",
+      "updatedAt": "2026-11-06T10:21:16Z",
+      "lastCheckedAt": "2026-11-06T10:21:16Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5379010/"
+      }
+    },
+    {
+      "id": "c_a200fa29892b3347",
+      "gameId": "g_000106",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5379010/",
+          "retrievedAt": "2026-11-06T10:21:16Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3699c681b8cfd88912c4a3dcc00ddcc39485be756c50c742ffc1954670f0adf3"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:16Z",
+      "createdAt": "2026-11-06T10:21:16Z",
+      "updatedAt": "2026-11-06T10:21:16Z",
+      "lastCheckedAt": "2026-11-06T10:21:16Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5379010/871cbaf76ffa2bd8f825d8596ac5242c194f06a9/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Cubic Earth のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Team BLOCKHEAD!"
+        }
+      }
+    }
+  ]
+}

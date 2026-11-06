@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000109",
+  "status": "candidate",
+  "title": {
+    "display": "ZERO Sievert 2",
+    "original": "ZERO Sievert 2",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4210060
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000146"
+  ],
+  "publisherIds": [
+    "dev_000147",
+    "dev_000148"
+  ],
+  "indie": {
+    "assessment": "unknown",
+    "reasons": [],
+    "assessedAt": "2026-11-06T10:20:57Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4210060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-06T10:07:57Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9fe4b64419a9cbb2a3883a9d63e5f1d9891279abbf4fce151f658d7ef0fb80dd"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4210060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-06T10:07:57Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9fe4b64419a9cbb2a3883a9d63e5f1d9891279abbf4fce151f658d7ef0fb80dd"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4210060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-06T10:07:57Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9fe4b64419a9cbb2a3883a9d63e5f1d9891279abbf4fce151f658d7ef0fb80dd"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4210060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-06T10:07:57Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9fe4b64419a9cbb2a3883a9d63e5f1d9891279abbf4fce151f658d7ef0fb80dd"
+      }
+    }
+  ],
+  "createdAt": "2026-11-06T10:20:57Z",
+  "updatedAt": "2026-11-06T10:20:57Z",
+  "createdByRun": "42199738593"
+}

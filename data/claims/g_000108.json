@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000108",
+  "claims": [
+    {
+      "id": "c_1a0912da390bc98b",
+      "gameId": "g_000108",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4213320/",
+          "retrievedAt": "2026-11-06T10:21:25Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71a6f6baff15ac50356968064e1e40fa33943be1257cd044d3aa5b2025462962"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:25Z",
+      "createdAt": "2026-11-06T10:21:25Z",
+      "updatedAt": "2026-11-06T10:21:25Z",
+      "lastCheckedAt": "2026-11-06T10:21:25Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 1
+        },
+        "rawText": "1 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_6c21cf7a5393b9d0",
+      "gameId": "g_000108",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4213320/",
+          "retrievedAt": "2026-11-06T10:21:28Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bbb31159b7eea4619586180f92eb769659876b0ab81686361215916b1539c3b0"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:25Z",
+      "createdAt": "2026-11-06T10:21:25Z",
+      "updatedAt": "2026-11-06T10:21:25Z",
+      "lastCheckedAt": "2026-11-06T10:21:28Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_540ae3ac6eace1c9",
+      "gameId": "g_000108",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4213320/",
+          "retrievedAt": "2026-11-06T10:21:25Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71a6f6baff15ac50356968064e1e40fa33943be1257cd044d3aa5b2025462962"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:25Z",
+      "createdAt": "2026-11-06T10:21:25Z",
+      "updatedAt": "2026-11-06T10:21:25Z",
+      "lastCheckedAt": "2026-11-06T10:21:25Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "local-coop",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_dd34ae6af6869856",
+      "gameId": "g_000108",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4213320/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:08:09Z",
+          "quote": "One wheelchair. Two players. Infinite chaos. Wheel Make It is a solo or co-op physics-based game about teamwork, clumsiness, and the unstoppable power of friendship.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71a6f6baff15ac50356968064e1e40fa33943be1257cd044d3aa5b2025462962"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:08:09Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "summary",
+      "value": {
+        "ja": "1台の車椅子を2人で共有して操作する物理演算アクション。狭い通路や動く足場などの障害物を、息を合わせて突破していく。ソロプレイと協力プレイに対応。"
+      }
+    },
+    {
+      "id": "c_18180ac7ca1170c4",
+      "gameId": "g_000108",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4213320/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:08:09Z",
+          "quote": "Friendship on the Line : Laugh, scream, and argue as you and your partner struggle to stay in sync.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71a6f6baff15ac50356968064e1e40fa33943be1257cd044d3aa5b2025462962"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:08:09Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_989225f9ea563ce3",
+      "gameId": "g_000108",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4213320/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:08:09Z",
+          "quote": "FUN PHYSICS Momentum, friction, and collisions dictate how the wheelchair moves. Mastering balance and timing is the only way to survive.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71a6f6baff15ac50356968064e1e40fa33943be1257cd044d3aa5b2025462962"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:08:09Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "physics"
+      }
+    },
+    {
+      "id": "c_990ccf6fc5f42a2a",
+      "gameId": "g_000108",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4213320/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:08:09Z",
+          "quote": "BRUTAL OBSTACLES Maneuver through tight corridors, moving platforms, traps, and chaotic environments designed to push your coordination to the limit.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71a6f6baff15ac50356968064e1e40fa33943be1257cd044d3aa5b2025462962"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:08:09Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "difficult"
+      }
+    },
+    {
+      "id": "c_bc48c84672a30a3e",
+      "gameId": "g_000108",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4213320/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:08:09Z",
+          "quote": "UNIQUE CO-OP GAMEPLAY Two players share control of ONE wheelchair, testing your ability to sync up under pressure.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71a6f6baff15ac50356968064e1e40fa33943be1257cd044d3aa5b2025462962"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:08:09Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_f3f0bd9b20b9abd5",
+      "gameId": "g_000108",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4213320/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-06T10:08:09Z",
+          "quote": "One wheelchair. Two players. Infinite chaos. Wheel Make It is a solo or co-op physics-based game about teamwork, clumsiness, and the unstoppable power of friendship.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71a6f6baff15ac50356968064e1e40fa33943be1257cd044d3aa5b2025462962"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:20:57Z",
+      "createdAt": "2026-11-06T10:20:57Z",
+      "updatedAt": "2026-11-06T10:20:57Z",
+      "lastCheckedAt": "2026-11-06T10:08:09Z",
+      "createdBy": "llm",
+      "createdByRun": "42199738593",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_af78e66e6e62659c",
+      "gameId": "g_000108",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4213320/",
+          "retrievedAt": "2026-11-06T10:21:25Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71a6f6baff15ac50356968064e1e40fa33943be1257cd044d3aa5b2025462962"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:25Z",
+      "createdAt": "2026-11-06T10:21:25Z",
+      "updatedAt": "2026-11-06T10:21:25Z",
+      "lastCheckedAt": "2026-11-06T10:21:25Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4213320/"
+      }
+    },
+    {
+      "id": "c_ab7c6adff022c719",
+      "gameId": "g_000108",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4213320/",
+          "retrievedAt": "2026-11-06T10:21:25Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71a6f6baff15ac50356968064e1e40fa33943be1257cd044d3aa5b2025462962"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-06T10:21:25Z",
+      "createdAt": "2026-11-06T10:21:25Z",
+      "updatedAt": "2026-11-06T10:21:25Z",
+      "lastCheckedAt": "2026-11-06T10:21:25Z",
+      "createdBy": "system",
+      "createdByRun": "42199738593",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4213320/f91565e24e6c39b9d76ee4cbeb4f5d5661820c0c/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Wheel Make It のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "2 Left Thumbs"
+        }
+      }
+    }
+  ]
+}
