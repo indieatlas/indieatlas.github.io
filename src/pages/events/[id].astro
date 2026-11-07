@@ -88,15 +88,33 @@ const now =
         </h2>
         <ul class="reports">
           {e.reports.map((r) => (
-            <li>
-              <ExternalLink href={r.url} class="report-title">
-                {r.title}
-              </ExternalLink>
-              <p class="report-meta">
-                {r.author && <span>{r.author}</span>}
-                <span>{REPORT_PLATFORM_LABELS[r.platform]}</span>
-                {r.publishedAt && <time datetime={isoDate(r.publishedAt)}>{formatDate(r.publishedAt)}</time>}
-              </p>
+            <li class="report">
+              <span class="report-thumb" aria-hidden="true">
+                {r.image ? (
+                  <img
+                    src={r.image}
+                    alt=""
+                    width="640"
+                    height="335"
+                    loading="lazy"
+                    decoding="async"
+                    referrerpolicy="no-referrer"
+                    data-fallback
+                  />
+                ) : (
+                  <span class="report-empty">{REPORT_PLATFORM_LABELS[r.platform]}</span>
+                )}
+              </span>
+              <span class="report-body">
+                <ExternalLink href={r.url} class="report-title">
+                  {r.title}
+                </ExternalLink>
+                <span class="report-meta">
+                  {r.author && <span>{r.author}</span>}
+                  <span>{REPORT_PLATFORM_LABELS[r.platform]}</span>
+                  {r.publishedAt && <time datetime={isoDate(r.publishedAt)}>{formatDate(r.publishedAt)}</time>}
+                </span>
+              </span>
             </li>
           ))}
         </ul>
@@ -256,17 +274,53 @@ const now =
     font-size: var(--text-small);
     color: var(--color-text-muted);
   }
+  /* 感想は画像付きで2列。狭い画面では1列 */
   .reports {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0 var(--space-6);
     list-style: none;
     margin: 0;
     padding: 0;
+    border-top: 1px solid var(--color-border);
   }
-  .reports li {
+  @media (max-width: 900px) {
+    .reports {
+      grid-template-columns: 1fr;
+    }
+  }
+  .report {
+    position: relative;
+    display: grid;
+    grid-template-columns: 9rem minmax(0, 1fr);
+    gap: var(--space-4);
+    align-items: start;
     padding: var(--space-3) 0;
     border-bottom: 1px solid var(--color-border);
+  }
+  .report-thumb {
+    display: block;
+    aspect-ratio: 1.91 / 1;
+    overflow: hidden;
+    background: var(--color-bg-deep);
+  }
+  .report-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .report-empty {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    color: var(--color-text-muted);
+    font-size: var(--text-xsmall);
+    font-weight: 700;
+  }
+  .report-body {
+    display: grid;
+    gap: 2px;
+    min-width: 0;
   }
   .reports :global(.report-title) {
     color: var(--color-text);
@@ -274,14 +328,23 @@ const now =
     line-height: 1.6;
     text-decoration: none;
   }
-  .reports :global(.report-title:hover) {
+  /* 行全体（画像を含む）を押せるようにする */
+  .reports :global(.report-title)::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+  .report:hover :global(.report-title) {
     text-decoration: underline;
+  }
+  .report:hover .report-thumb img {
+    opacity: 0.85;
   }
   .report-meta {
     display: flex;
     flex-wrap: wrap;
     gap: 0 var(--space-3);
-    margin: 2px 0 0;
+    margin: 0;
     font-size: var(--text-xsmall);
     color: var(--color-text-muted);
   }
