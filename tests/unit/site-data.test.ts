@@ -173,3 +173,16 @@ describe('同じ話題の記事', () => {
     expect(by.f!.topicOf).toBeUndefined();
   });
 });
+
+import { phaseOf } from '../../scripts/build/site-data.ts';
+
+describe('催しの状態', () => {
+  it('3日以内の催しだけを、期間中に開催中にする', () => {
+    expect(phaseOf('2026-11-06', '2026-11-06', '2026-11-06')).toBe('ongoing');
+    expect(phaseOf('2026-11-04', '2026-11-06', '2026-11-06')).toBe('ongoing');
+    expect(phaseOf('2026-11-03', '2026-11-06', '2026-11-04')).toBe('running');
+    expect(phaseOf('2026-07-25', '2027-03-31', '2026-11-06')).toBe('running');
+    expect(phaseOf('2026-11-07', '2026-11-07', '2026-11-06')).toBe('upcoming');
+    expect(phaseOf('2026-11-01', '2026-11-05', '2026-11-06')).toBe('past');
+  });
+});

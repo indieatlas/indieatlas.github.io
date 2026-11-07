@@ -701,8 +701,12 @@ export function eventDateLabel(start: PartialDate, end?: PartialDate): string {
   return `${withWeekday(start)}〜${end.year === start.year ? e.replace(/^\d+年/, '') : e}`;
 }
 
-function phaseOf(start: string, end: string, today: string): 'upcoming' | 'ongoing' | 'past' {
+/** 「開催中」と見せる催しの長さの上限（日）。これより長い催しは、期間中でも running にする */
+export const ONGOING_MAX_DAYS = 3;
+
+export function phaseOf(start: string, end: string, today: string): SiteEvent['phase'] {
   if (end < today) return 'past';
-  if (start <= today) return 'ongoing';
-  return 'upcoming';
+  if (start > today) return 'upcoming';
+  const days = (Date.parse(`${end}T00:00:00Z`) - Date.parse(`${start}T00:00:00Z`)) / 86_400_000 + 1;
+  return days <= ONGOING_MAX_DAYS ? 'ongoing' : 'running';
 }

@@ -157,7 +157,9 @@ export interface SiteEvent {
   summary: string;
   image?: { path: string; width: number; height: number }; // public/ からの相対パス
   tentative: boolean;
-  phase: 'upcoming' | 'ongoing' | 'past'; // ビルドした日（日本時間）での状態。終わると公開内容ハッシュが変わり、公開し直す
+  // ビルドした日（日本時間）での状態。終わると公開内容ハッシュが変わり、公開し直す。
+  // ongoing は3日以内の催しの期間中、running はそれより長い催しの期間中（「開催中」とは見せない）
+  phase: 'upcoming' | 'ongoing' | 'running' | 'past';
   games: string[];
   sources: SourceRef[];
 }

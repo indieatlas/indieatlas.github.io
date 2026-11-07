@@ -23,8 +23,9 @@ const news = homeNews(7, 0);
 const shownNews = new Set(news.featured.map((a) => a.id));
 const moreNews = homeNews(0, 40).rest.filter((a) => !shownNews.has(a.id)).slice(0, 16);
 
+// 長い期間の催し（期間中のもの）は、いつ見ても先頭に残るので出さない
 const events = getEvents()
-  .filter((e) => e.phase !== 'past')
+  .filter((e) => e.phase === 'upcoming' || e.phase === 'ongoing')
   .slice(0, 5);
 
 // 作品の区画は1行だけにする
