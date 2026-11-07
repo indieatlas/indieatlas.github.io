@@ -135,6 +135,8 @@ await runMain(async () => {
       if (result.ws.newArticles.length) runMedia('media:articles');
       if (result.ws.newEvents.length) runMedia('media:events');
       if (result.ws.dirty.claims.size) runMedia('media:palettes');
+      // 終わったばかりの会場の催しの感想（06 §6.13.8。LLM は使わない）
+      runMedia('events:reports');
     }
     const s = result.summary;
     console.log(
