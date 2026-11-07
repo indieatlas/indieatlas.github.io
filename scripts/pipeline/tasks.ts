@@ -1,5 +1,6 @@
 import type { RuntimeConfig } from '../../schema/config.ts';
 import type { NewTask, TaskResult } from '../../schema/proposal.ts';
+import type { Game } from '../../schema/game.ts';
 import type { Task, TaskType } from '../../schema/state.ts';
 import { taskId } from '../lib/ids.ts';
 import type { RepoData } from '../lib/repo-io.ts';
@@ -289,10 +290,14 @@ export function scheduleTasks(repo: RepoData, today: string, at: string): Schedu
     ) && n++;
   }
 
-  // fill-missing: 公開中で紹介文のない作品と、候補のまま紹介文がなく公開できない作品
+  // fill-missing: 公開中で紹介文のない作品と、候補のまま紹介文がなく公開できない作品。
+  // 紹介文があれば公開できる作品（インディーと判定済みの候補。売れ筋や記事に出てくる作品など）を先にする
   n = 0;
-  for (const g of repo.games.filter((x) => x.status === 'published' || x.status === 'candidate')) {
-    if (n >= 5) break;
+  const fillOrder = (g: Game) => (g.status === 'published' ? 0 : g.indie.assessment === 'indie' ? 1 : 2);
+  for (const g of repo.games
+    .filter((x) => x.status === 'published' || x.status === 'candidate')
+    .sort((a, b) => fillOrder(a) - fillOrder(b))) {
+    if (n >= 10) break;
     const claims = repo.claims.get(g.id)?.claims ?? [];
     if (claims.some((c) => c.field === 'summary' && c.status === 'adopted')) continue;
     add(
