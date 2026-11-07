@@ -1,3 +1,4 @@
+import { titleIssues } from './title-translation.ts';
 import type { Article } from '../../schema/article.ts';
 import type { Claim, ClaimsFile, Evidence } from '../../schema/claim.ts';
 import type { Developer } from '../../schema/developer.ts';
@@ -747,6 +748,12 @@ function applyUpsertArticle(c: ResultContext, op: Extract<Operation, { op: 'upse
     );
     summaryJa = undefined;
   }
+  // 日本語以外の記事のタイトルの訳も任意の項目。規則に合わなければ訳だけを外す（06 §6.13.9）
+  let titleJa = d.lang !== 'ja' && d.titleJa ? d.titleJa.trim() : undefined;
+  if (titleJa && titleIssues(titleJa, d.title).length) {
+    count(ws, c.taskId, op.op, 'V-C01', `titleJa: ${titleIssues(titleJa, d.title).join('、')}（訳を外した）`);
+    titleJa = undefined;
+  }
 
   // 記事が扱う作品だけを関連づける（本文やタイトルに名前がない作品は外す）
   const links: Article['games'] = [];
@@ -796,6 +803,7 @@ function applyUpsertArticle(c: ResultContext, op: Extract<Operation, { op: 'upse
       else if (ROLE_RANK[l.role] < ROLE_RANK[cur.role]) cur.role = l.role;
     }
     existing.urlAliases = [...new Set([...existing.urlAliases, ...aliases])].slice(0, 10);
+    if (titleJa && !existing.titleJa && existing.lang !== 'ja') existing.titleJa = titleJa;
     existing.updatedAt = ws.at;
   } else {
     const article: Article = {
@@ -807,6 +815,7 @@ function applyUpsertArticle(c: ResultContext, op: Extract<Operation, { op: 'upse
       ...(src ? { sourceId: src.id } : {}),
       outlet: { name: src?.name ?? d.outletName, domain: new URL(canonical).hostname.replace(/^www\./, '') },
       title: d.title,
+      ...(titleJa && (src?.lang ?? d.lang) !== 'ja' ? { titleJa } : {}),
       lang: src?.lang ?? d.lang,
       kind: d.kind,
       ...((d.publishedAt ?? entry!.publishedAt) ? { publishedAt: d.publishedAt ?? entry!.publishedAt } : {}),

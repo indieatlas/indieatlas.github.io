@@ -7,7 +7,7 @@ import { costOf } from '../llm/pricing.ts';
 
 /** 費用の台帳（state/usage/{月}.json）。毎日の更新と週次の要約の利用額を同じ台帳に足す（06 §6.5.4） */
 
-export type UsageKind = 'update' | 'reviews' | 'reactions';
+export type UsageKind = 'update' | 'reviews' | 'reactions' | 'titles';
 
 export function recordUsage(entry: {
   runId: string;

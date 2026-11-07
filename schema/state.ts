@@ -194,7 +194,7 @@ export const UsageLedger = z.object({
       runId: RunId,
       runAttempt: z.number().int(),
       // 何に使ったか。省略は毎日の更新（update.yml の調査）。reviews と reactions は週次の要約（06 §6.13.6、§6.13.7）
-      kind: z.enum(['update', 'reviews', 'reactions']).optional(),
+      kind: z.enum(['update', 'reviews', 'reactions', 'titles']).optional(),
       at: IsoDateTime,
       llmUsd: z.number(),
     }),

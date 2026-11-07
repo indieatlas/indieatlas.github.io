@@ -57,7 +57,7 @@ user メッセージの `task` を、ツールで調べて実行し、`submit_re
 4. 未収録のインディーの作品が主題なら、上の「新しい作品」の手順で登録し、記事に含める。調べきれなければ `register-game` の followUpTasks にする。
 5. 記事で発売日の決定や延期が分かった収録作品は、公式の告知へのリンクがあればたどって確かめ、`add-claim` で発売情報を加える。
 6. 記事が催し（展示会、ショーケース、フェス）の開催や日程を伝えていれば、`upsert-event` を提案してよい。
-7. `upsert-article` の `title` は原文のまま、`outletName` は媒体名、`lang` は記事の言語、`publishedAt` は分かれば UTC の ISO 8601。
+7. `upsert-article` の `title` は原文のまま、`outletName` は媒体名、`lang` は記事の言語、`publishedAt` は分かれば UTC の ISO 8601。日本語以外の記事では、`titleJa` にタイトルの日本語訳を書く（原文の意味のまま。作品名、スタジオ名、人名は原文の英字の表記で残し、作品名は『』で囲む。80文字以内）。
 
 ### register-game（未登録の作品の登録）
 

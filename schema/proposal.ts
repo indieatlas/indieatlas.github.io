@@ -55,6 +55,7 @@ export type EvidenceDraft = z.infer<typeof EvidenceDraft>;
 export const ArticleDraft = z.object({
   url: HttpUrl,
   title: z.string().min(1).max(300),
+  titleJa: z.string().max(150).optional(), // 日本語以外の記事だけ。タイトルを日本語に訳したもの
   outletName: z.string().min(1).max(80),
   lang: Lang,
   kind: ArticleKind,

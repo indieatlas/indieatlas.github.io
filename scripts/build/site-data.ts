@@ -611,6 +611,7 @@ function toSiteArticle(
     id: a.id,
     url: a.canonicalUrl,
     title: showTitle ? a.title : null,
+    ...(showTitle && a.titleJa && a.lang !== 'ja' ? { titleJa: a.titleJa } : {}),
     lang: a.lang,
     kind: a.kind,
     outlet: { ...a.outlet },

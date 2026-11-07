@@ -36,7 +36,8 @@
     "refresh:status": "tsx scripts/run/refresh-status.ts",
     "refresh:feeds": "tsx scripts/run/refresh-feeds.ts",
     "claims:repoint": "tsx scripts/run/repoint-claims.ts",
-    "events:reports": "tsx scripts/run/collect-event-reports.ts"
+    "events:reports": "tsx scripts/run/collect-event-reports.ts",
+    "titles:translate": "tsx scripts/run/translate-titles.ts"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

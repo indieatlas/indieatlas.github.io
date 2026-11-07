@@ -48,6 +48,8 @@ jobs:
           if [ $(( $(date -u +%V) % 4 )) -eq 0 ]; then npm run reviews:summarize -- --force; else npm run reviews:summarize; fi
       # 掲載から2週間以内の記事の反応を取り直し、新しい記事の分を作る
       - run: npm run reactions:summarize
+      # 毎日の更新で訳の付かなかった、日本語以外の記事のタイトルを訳す
+      - run: npm run titles:translate
       - run: npm run check:data
       - name: Commit to main
         id: commit

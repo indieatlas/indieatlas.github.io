@@ -32,6 +32,7 @@ export const Article = z.object({
   sourceId: SourceId.optional(), // 情報源として登録していない媒体の記事では省略する
   outlet: z.object({ name: z.string().min(1).max(80), domain: z.string().min(3).max(120) }),
   title: z.string().min(1).max(300), // 原文のタイトル
+  titleJa: z.string().min(1).max(150).optional(), // 日本語以外の記事のタイトルを当サイトが訳したもの（06 §6.13.9）
   lang: Lang,
   kind: ArticleKind,
   publishedAt: IsoDateTime.optional(),

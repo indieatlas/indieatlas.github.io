@@ -120,6 +120,21 @@ export function langLabel(lang: string): string {
   return LANG_LABELS[lang.split('-')[0]!] ?? lang;
 }
 
+/**
+ * 記事の見出しの出し方。日本語以外の記事で訳があれば訳を大きく出し、原題を添える（06 §6.13.9）。
+ * foreign は「英語」などの印を付けるときの言語名
+ */
+export function articleHeadline(a: {
+  title: string | null;
+  titleJa?: string;
+  lang: string;
+  outlet: { name: string };
+}): { text: string; lang: string; original?: string; foreign?: string } {
+  const foreign = a.lang.split('-')[0] !== 'ja' ? langLabel(a.lang) : undefined;
+  if (a.titleJa && a.title) return { text: a.titleJa, lang: 'ja', original: a.title, ...(foreign ? { foreign } : {}) };
+  return { text: a.title ?? `${a.outlet.name} の記事`, lang: a.lang, ...(foreign ? { foreign } : {}) };
+}
+
 export const RELATION_LABELS: Record<string, string> = {
   'similar-play': '遊びが近い',
   'same-series': '同じシリーズ',

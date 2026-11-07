@@ -92,6 +92,7 @@ export interface SiteArticle {
   id: string;
   url: string;
   title: string | null; // displayTitle: false の情報源では null
+  titleJa?: string; // 日本語以外の記事のタイトルの訳（当サイトが訳したもの）
   lang: string;
   kind: ArticleKind;
   outlet: { name: string; domain: string };
