@@ -1,7 +1,7 @@
 ---
 import type { SiteArticle, SiteGame } from '../../schema/site-data.ts';
 import { genreColorVar } from '../lib/data.ts';
-import { ARTICLE_KIND_LABELS, formatDate, isoDate } from '../lib/format.ts';
+import { ARTICLE_KIND_LABELS, articleHeadline, formatDate, isoDate } from '../lib/format.ts';
 import { paths, url } from '../lib/urls.ts';
 import ExternalLink from './ExternalLink.astro';
 import GameImage from './GameImage.astro';
@@ -44,11 +44,12 @@ const devOf = (g: SiteGame) => g.developers.map((d) => d.name).join('、');
           <li>
             <p class="a-meta">
               <span class="kind">{ARTICLE_KIND_LABELS[a.kind]}</span>
+              {articleHeadline(a).foreign && <span class="lang-badge">{articleHeadline(a).foreign}</span>}
               <span>{a.outlet.name}</span>
               {a.publishedAt && <time datetime={isoDate(a.publishedAt)}>{formatDate(a.publishedAt)}</time>}
             </p>
-            <ExternalLink href={a.url} lang={a.lang} class="a-title">
-              {a.title}
+            <ExternalLink href={a.url} lang={articleHeadline(a).lang} class="a-title">
+              {articleHeadline(a).text}
             </ExternalLink>
             {a.summaryJa && <p class="a-summary">{a.summaryJa}</p>}
           </li>
@@ -65,7 +66,7 @@ const devOf = (g: SiteGame) => g.developers.map((d) => d.name).join('、');
                 <span class="sub-title">{game.title.display}</span>
                 {articles[0] && (
                   <span class="sub-article">
-                    {articles[0].outlet.name}「{articles[0].title}」
+                    {articles[0].outlet.name}「{articleHeadline(articles[0]).text}」
                   </span>
                 )}
               </span>

@@ -1,5 +1,5 @@
 ---
-import ArticleList from '../../components/ArticleList.astro';
+import ArticleCardGrid from '../../components/ArticleCardGrid.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ExternalLink from '../../components/ExternalLink.astro';
 import GameGrid from '../../components/GameGrid.astro';
@@ -124,7 +124,7 @@ const now =
     {articles.length > 0 && (
       <section class="block" aria-labelledby="articles-h">
         <h2 id="articles-h">記事</h2>
-        <ArticleList articles={articles} columns={2} />
+        <ArticleCardGrid articles={articles} />
       </section>
     )}
 

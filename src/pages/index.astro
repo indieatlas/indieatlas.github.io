@@ -1,5 +1,5 @@
 ---
-import ArticleList from '../components/ArticleList.astro';
+import ArticleCardGrid from '../components/ArticleCardGrid.astro';
 import CollectionCard from '../components/CollectionCard.astro';
 import DailyPick from '../components/DailyPick.astro';
 import GameGrid from '../components/GameGrid.astro';
@@ -20,8 +20,8 @@ const rankingTitle = ranking.source === 'steam' ? 'Steam のインディー売�
 
 const byAdded = gamesByAdded();
 
-// 先頭は大きく見せる記事1件と、横で2件ずつ切り替わる6件
-const news = homeNews(7, 0);
+// 先頭は大きく見せる記事1件と、その横と下に並べる8件
+const news = homeNews(9, 0);
 const shownNews = new Set(news.featured.map((a) => a.id));
 
 // 今日のピックアップ: 大きな記事の枠で扱っている作品を除いた先頭の3作品
@@ -33,7 +33,7 @@ const picks = getPicks()
   .filter((p) => p.game);
 const pickedArticles = new Set(picks.flatMap((p) => p.articles.map((a) => a.id)));
 
-// 記事の一覧: 大きな枠とピックアップに出していない新しい記事
+// 記事のカード: 先頭の枠とピックアップに出していない新しい記事（4列で5行）
 const moreNews = homeNews(0, 60)
   .rest.filter((a) => !shownNews.has(a.id) && !pickedArticles.has(a.id))
   .slice(0, 20);
@@ -92,7 +92,7 @@ const collections = [...featured, ...rest].slice(0, 4);
     {moreNews.length > 0 && (
       <section class="section" aria-labelledby="news-h">
         <SectionHeading id="news-h" title="記事" linkPath={paths.articles()} />
-        <ArticleList articles={moreNews} columns={2} />
+        <ArticleCardGrid articles={moreNews} />
       </section>
     )}
 

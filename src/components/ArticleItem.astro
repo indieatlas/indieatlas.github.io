@@ -1,7 +1,7 @@
 ---
 import type { SiteArticle } from '../../schema/site-data.ts';
 import { getGame } from '../lib/data.ts';
-import { ARTICLE_KIND_LABELS, ARTICLE_ROLE_LABELS, formatDate, isoDate, langLabel } from '../lib/format.ts';
+import { ARTICLE_KIND_LABELS, ARTICLE_ROLE_LABELS, articleHeadline, formatDate, isoDate } from '../lib/format.ts';
 import { paths, url } from '../lib/urls.ts';
 import ExternalLink from './ExternalLink.astro';
 
@@ -12,6 +12,7 @@ interface Props {
   maxGames?: number;
 }
 const { article, forGame, maxGames = 3 } = Astro.props;
+const h = articleHeadline(article);
 const role = forGame ? article.games.find((g) => g.gameId === forGame)?.role : undefined;
 const others = article.games.filter((g) => g.gameId !== forGame);
 const shown = others.slice(0, maxGames);
@@ -52,14 +53,19 @@ const fallback = !article.image && primary ? getGame(primary.gameId)?.image : un
       <span class="kind">{ARTICLE_KIND_LABELS[article.kind]}</span>
       <span class="outlet">{article.outlet.name}</span>
       {article.publishedAt && <time datetime={isoDate(article.publishedAt)}>{formatDate(article.publishedAt)}</time>}
-      <span class="lang">{langLabel(article.lang)}</span>
+      {h.foreign && <span class="lang-badge">{h.foreign}</span>}
       {role && <span class="role">{ARTICLE_ROLE_LABELS[role]}</span>}
     </p>
     <h3 class="title">
-      <ExternalLink href={article.url} lang={article.lang}>
-        {article.title ?? `${article.outlet.name} の記事`}
+      <ExternalLink href={article.url} lang={h.lang}>
+        {h.text}
       </ExternalLink>
     </h3>
+    {h.original && (
+      <p class="original" lang={article.lang}>
+        {h.original}
+      </p>
+    )}
     {article.summaryJa && <p class="summary">{article.summaryJa}</p>}
     {!forGame && article.sameTopic && article.sameTopic.length > 0 && (
       <p class="same-topic">
@@ -176,6 +182,12 @@ const fallback = !article.image && primary ? getGame(primary.gameId)?.image : un
   }
   .title :global(a:hover) {
     color: var(--color-accent);
+  }
+  .original {
+    margin: 2px 0 0;
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
+    line-height: 1.5;
   }
   .same-topic {
     margin: var(--space-1) 0 0;

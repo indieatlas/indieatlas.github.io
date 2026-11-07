@@ -1,0 +1,40 @@
+---
+import type { SiteArticle } from '../../schema/site-data.ts';
+import ArticleCard from './ArticleCard.astro';
+
+// 記事のカードの格子。広い画面で4列、狭くなるにつれて3列、2列にする
+interface Props {
+  articles: SiteArticle[];
+}
+const { articles } = Astro.props;
+---
+
+<ul class="article-card-grid">
+  {articles.map((a) => (
+    <li>
+      <ArticleCard article={a} />
+    </li>
+  ))}
+</ul>
+
+<style>
+  .article-card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-4);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  @media (max-width: 1100px) {
+    .article-card-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 760px) {
+    .article-card-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-3);
+    }
+  }
+</style>

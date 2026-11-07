@@ -319,3 +319,17 @@
   color: var(--color-text);
   font-weight: 700;
 }
+
+/* 日本語以外の記事の印（「英語」など）。見出しが訳であることも示す */
+.lang-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 6px;
+  box-shadow: inset 0 0 0 1px var(--color-accent);
+  color: var(--color-accent);
+  font-size: 0.6875rem;
+  font-weight: 800;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}

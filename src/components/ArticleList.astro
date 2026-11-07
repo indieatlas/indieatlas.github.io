@@ -8,27 +8,47 @@ interface Props {
   columns?: 1 | 2; // 2 なら広い画面で2列に並べる
 }
 const { articles, forGame, columns = 1 } = Astro.props;
+// 2列では、記事を左右に交互に積む。行で揃えると、長い記事の横の列に隙間が空くため
+// 1列に戻る狭い画面では、order で元の並びに戻す
+const indexed = articles.map((a, i) => ({ a, i }));
+const stacks = columns === 2 ? [indexed.filter((x) => x.i % 2 === 0), indexed.filter((x) => x.i % 2 === 1)] : [indexed];
 ---
 
-<ul class:list={['article-list', { 'article-list--2': columns === 2 }]}>
-  {articles.map((a) => (
-    <li>
-      <ArticleItem article={a} forGame={forGame} />
-    </li>
+<div class:list={['article-list', { 'article-list--2': columns === 2 }]}>
+  {stacks.map((list) => (
+    <ul>
+      {list.map(({ a, i }) => (
+        <li style={columns === 2 ? `order: ${i}` : undefined}>
+          <ArticleItem article={a} forGame={forGame} />
+        </li>
+      ))}
+    </ul>
   ))}
-</ul>
+</div>
 
 <style>
   .article-list {
+    border-top: 1px solid var(--color-border);
+  }
+  .article-list ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    border-top: 1px solid var(--color-border);
+  }
+  @media (max-width: 899px) {
+    .article-list--2 {
+      display: flex;
+      flex-direction: column;
+    }
+    .article-list--2 ul {
+      display: contents;
+    }
   }
   @media (min-width: 900px) {
     .article-list--2 {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: start;
       column-gap: var(--space-6);
     }
   }

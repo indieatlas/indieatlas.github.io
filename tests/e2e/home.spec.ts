@@ -17,26 +17,14 @@ test('記事の枠から作品詳細へ移れる', async ({ page }) => {
   await expect(page).toHaveURL(/games\/g_\d{6}\/$/);
 });
 
-test('横の記事の枠は切り替えられ、自動の切り替えは止められる', async ({ page }) => {
+test('先頭の記事は切り替えずに一度に並べる', async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto('./');
-  const rotator = page.locator('[data-rotator]');
-  const dots = rotator.locator('[data-dot]');
-  if ((await dots.count()) < 2) test.skip(true, '切り替える記事が足りない');
-  await dots.nth(1).click();
-  await expect(rotator.locator('[data-page]').nth(1)).not.toHaveAttribute('aria-hidden', 'true');
-  await expect(rotator.locator('[data-page]').nth(0)).toHaveAttribute('aria-hidden', 'true');
-  const pause = rotator.locator('[data-pause]');
-  await pause.click();
-  await expect(pause).toHaveAttribute('aria-pressed', 'true');
-});
-
-test('reduced motion の環境では自動で切り替えない', async ({ page }) => {
-  await page.emulateMedia({ reducedMotion: 'reduce' });
-  await page.goto('./');
-  const pause = page.locator('[data-rotator] [data-pause]');
-  if ((await pause.count()) === 0) test.skip(true, '切り替える記事が足りない');
-  await expect(pause).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('[data-rotator]')).toHaveCount(0);
+  const tiles = page.locator('.news-mosaic .news-tile');
+  const n = await tiles.count();
+  expect(n).toBeGreaterThanOrEqual(1);
+  for (let i = 0; i < Math.min(n, 5); i++) await expect(tiles.nth(i)).toBeInViewport();
 });
 
 test('スマートフォンでも横にはみ出さない', async ({ page }) => {

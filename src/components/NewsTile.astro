@@ -1,7 +1,7 @@
 ---
 import type { SiteArticle } from '../../schema/site-data.ts';
 import { getGame } from '../lib/data.ts';
-import { ARTICLE_KIND_LABELS, formatCardDate } from '../lib/format.ts';
+import { ARTICLE_KIND_LABELS, articleHeadline, formatCardDate } from '../lib/format.ts';
 import { paths, url } from '../lib/urls.ts';
 import ExternalLink from './ExternalLink.astro';
 
@@ -12,6 +12,7 @@ interface Props {
   eager?: boolean;
 }
 const { article: a, size = 'md', eager = false } = Astro.props;
+const h = articleHeadline(a);
 const primary = a.games.find((g) => g.role === 'primary') ?? a.games[0];
 const game = primary ? getGame(primary.gameId) : undefined;
 const image = a.image
@@ -38,10 +39,13 @@ const image = a.image
     <div class="news-tile__img news-tile__img--empty" />
   )}
   <div class="news-tile__body">
-    <span class="news-tile__kind">{ARTICLE_KIND_LABELS[a.kind]}</span>
-    <h3 class="news-tile__title" lang={a.lang}>
+    <span class="news-tile__labels">
+      <span class="news-tile__kind">{ARTICLE_KIND_LABELS[a.kind]}</span>
+      {h.foreign && <span class="news-tile__lang">{h.foreign}</span>}
+    </span>
+    <h3 class="news-tile__title" lang={h.lang}>
       <ExternalLink href={a.url} class="news-tile__link">
-        {a.title ?? `${a.outlet.name} の記事`}
+        {h.text}
       </ExternalLink>
     </h3>
     <p class="news-tile__meta">
@@ -96,6 +100,18 @@ const image = a.image
   .news-tile__img--empty {
     background: linear-gradient(135deg, var(--color-surface-raised), var(--color-bg-deep));
   }
+  .news-tile::after {
+    /* 暗い画像と暗い背景の境目が分かるよう、枠をうっすら付ける */
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.16);
+  }
+  .news-tile:hover::after {
+    box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.5);
+  }
   .news-tile::before {
     /* 見出しを読みやすくするための下からの暗がり */
     content: '';
@@ -119,6 +135,18 @@ const image = a.image
     justify-items: start;
     gap: var(--space-2);
     padding: var(--space-4);
+  }
+  .news-tile__labels {
+    display: flex;
+    gap: 6px;
+  }
+  .news-tile__lang {
+    padding: 3px 8px;
+    background: rgb(4 5 8 / 0.7);
+    box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.55);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
   }
   .news-tile__kind {
     padding: 3px 10px;
@@ -240,11 +268,41 @@ const image = a.image
   }
   .news-tile--sm .news-tile__body {
     padding: var(--space-3);
+    gap: 6px;
   }
   .news-tile--sm .news-tile__title {
     font-size: 0.875rem;
   }
+  .news-tile--sm .news-tile__kind,
+  .news-tile--sm .news-tile__lang {
+    padding: 1px 6px;
+    font-size: 0.6875rem;
+  }
+  .news-tile--sm .news-tile__meta {
+    font-size: 0.75rem;
+  }
+  .news-tile--sm .news-tile__hatena {
+    display: none;
+  }
+  .news-tile--sm .news-tile__game {
+    top: var(--space-2);
+    right: var(--space-2);
+    font-size: 0.6875rem;
+    padding: 2px 8px;
+  }
   @media (max-width: 640px) {
+    /* 狭い画面の小さな枠は、作品名の札を外して見出しに場所を空ける */
+    .news-tile--sm .news-tile__game,
+    .news-tile--sm .news-tile__outlet {
+      display: none;
+    }
+    .news-tile--sm .news-tile__body {
+      padding: var(--space-2);
+      gap: 4px;
+    }
+    .news-tile--sm .news-tile__title {
+      font-size: 0.8125rem;
+    }
     .news-tile--lg .news-tile__body {
       padding: var(--space-4);
     }

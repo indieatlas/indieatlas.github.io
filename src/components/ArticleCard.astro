@@ -1,0 +1,194 @@
+---
+import type { SiteArticle } from '../../schema/site-data.ts';
+import { getGame } from '../lib/data.ts';
+import { ARTICLE_KIND_LABELS, articleHeadline, formatDate, isoDate } from '../lib/format.ts';
+import { paths, url } from '../lib/urls.ts';
+import ExternalLink from './ExternalLink.astro';
+
+// 記事のカード。画像、種別、媒体名、掲載日、見出し、扱う作品。カード全体を記事へのリンクにし、
+// 作品の名前だけは作品のページへ移る。見出しは3行までにして、同じ行のカードの高さをそろえる
+interface Props {
+  article: SiteArticle;
+}
+const { article: a } = Astro.props;
+const h = articleHeadline(a);
+const primary = a.games.find((g) => g.role === 'primary') ?? a.games[0];
+const game = primary ? getGame(primary.gameId) : undefined;
+const image = a.image
+  ? { src: url(a.image.path), width: a.image.width, height: a.image.height }
+  : game?.image
+    ? { src: game.image.url, width: game.image.width ?? 460, height: game.image.height ?? 215 }
+    : undefined;
+---
+
+<article class="article-card">
+  <div class="media" aria-hidden="true">
+    {image ? (
+      <img
+        src={image.src}
+        alt=""
+        width={image.width}
+        height={image.height}
+        loading="lazy"
+        decoding="async"
+        data-fallback
+      />
+    ) : (
+      <span class="media-empty">{a.outlet.name}</span>
+    )}
+  </div>
+  <div class="body">
+    <p class="meta">
+      <span class="kind">{ARTICLE_KIND_LABELS[a.kind]}</span>
+      {h.foreign && <span class="lang-badge">{h.foreign}</span>}
+      <span class="outlet">{a.outlet.name}</span>
+      {a.publishedAt && <time datetime={isoDate(a.publishedAt)}>{formatDate(a.publishedAt)}</time>}
+    </p>
+    <h3 class="title" lang={h.lang}>
+      <ExternalLink href={a.url} class="title-link">
+        {h.text}
+      </ExternalLink>
+    </h3>
+    {h.original && (
+      <p class="original" lang={a.lang}>
+        {h.original}
+      </p>
+    )}
+    {game && (
+      <p class="game">
+        <a href={url(paths.game(game.id))}>{game.title.display}</a>
+        {a.games.length > 1 && <span class="more">ほか{a.games.length - 1}作品</span>}
+      </p>
+    )}
+  </div>
+</article>
+
+<style>
+  .article-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: var(--color-surface);
+    /* 暗い画像と背景の境目が分かるよう、枠をうっすら付ける */
+    box-shadow: inset 0 0 0 1px var(--color-border-strong);
+    transition: box-shadow var(--dur-base) var(--ease-out);
+  }
+  .article-card:hover,
+  .article-card:focus-within {
+    box-shadow: inset 0 0 0 1px var(--color-accent-warm);
+  }
+  .media {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    margin: 1px 1px 0;
+    background: var(--color-surface-raised);
+  }
+  .media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--dur-base) var(--ease-out);
+  }
+  .article-card:hover .media img {
+    transform: scale(1.03);
+  }
+  .media-empty {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    font-family: var(--font-display);
+    font-size: var(--text-small);
+    font-weight: 700;
+    color: var(--color-text-muted);
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    flex: 1;
+    padding: var(--space-3) var(--space-3) var(--space-3);
+    min-width: 0;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2px var(--space-2);
+    margin: 0;
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
+  }
+  .kind {
+    color: var(--color-accent);
+    font-weight: 800;
+  }
+  .outlet {
+    font-weight: 700;
+    color: var(--color-text);
+  }
+  .title {
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: 0.9375rem;
+    font-weight: 700;
+    line-height: 1.55;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+  }
+  .title :global(.title-link) {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  .title :global(.title-link)::after {
+    /* カード全体を記事へのリンクにする */
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+  .title :global(.external-icon) {
+    display: none;
+  }
+  .article-card:hover .title :global(.title-link) {
+    text-decoration: underline;
+  }
+  .original {
+    margin: 0;
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .game {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: var(--space-2);
+    align-items: baseline;
+    margin: auto 0 0;
+    padding-top: var(--space-1);
+    font-size: var(--text-xsmall);
+    min-width: 0;
+  }
+  .game a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .more {
+    flex: none;
+    color: var(--color-text-muted);
+  }
+  .title-link:focus-visible {
+    outline: none;
+  }
+  .article-card:has(:global(.title-link:focus-visible)) {
+    outline: 3px solid var(--color-focus, var(--color-accent));
+    outline-offset: 2px;
+  }
+</style>
