@@ -78,7 +78,8 @@ description: Indie Atlas のサイトの内容をまとめて最新にする。�
 
 1. `npm run media:articles` と `npm run media:events` を実行する。画像を使ってよい情報源の、画像のない記事と催しだけが対象である。Steam の予定表のように OGP 画像のないページは「OGP 画像がない」になるが、対応は要らない。
 2. `npm run events:reports` を実行する。終わってから30日以内の会場の催しについて、note と個人のブログの感想を集める（`docs/06-update-pipeline.md` §6.13.8）。加わった感想の見出しを読み、催しと関係のないもの（ほかの催しの話、出展の募集の告知など）は、消さずに `status` を `"hidden"` にする。
-3. `keys.llm` が `true` なら `npm run reactions:summarize` を実行する。掲載から14日以内の記事と、反応のまだない記事が対象である。`refresh:status` の `metrics.articleReactions.missing` には、はてなブックマークがまだない記事も含まれるので、残っていても問題ではない。
+3. `keys.llm` が `true` なら `npm run titles:translate` を実行する。日本語以外の記事のうち、タイトルの訳（`titleJa`）のないものを訳す（`docs/06-update-pipeline.md` §6.13.9）。手で記事を加えるときは、日本語以外の記事なら `titleJa` も書く。
+4. `keys.llm` が `true` なら `npm run reactions:summarize` を実行する。掲載から14日以内の記事と、反応のまだない記事が対象である。`refresh:status` の `metrics.articleReactions.missing` には、はてなブックマークがまだない記事も含まれるので、残っていても問題ではない。
 
 ## E. 検証とプレビュー
 
