@@ -59,11 +59,12 @@ export type IndieEvent = z.infer<typeof IndieEvent>;
 export const EventReportPlatform = z.enum(['note', 'hatena-blog', 'blog']);
 export type EventReportPlatform = z.infer<typeof EventReportPlatform>;
 
-/** 会場の催しに行った人、出展した人が書いた感想や記録（個人のブログ、note など）。見出しとリンクだけを載せる */
+/** 会場の催しに行った人、出展した人が書いた感想や記録（個人のブログ、note など）。見出し、共有用の画像、リンクを載せる */
 export const EventReport = z.object({
   url: HttpUrl,
   title: z.string().min(1).max(300),
   author: z.string().min(1).max(80).optional(), // 書き手の表示名
+  image: HttpUrl.optional(), // 記事の共有用の画像（OGP）。保存せず配信元を参照する
   platform: EventReportPlatform,
   publishedAt: IsoDateTime.optional(), // 分からなければ省く
   foundVia: z.enum(['note-hashtag', 'hatena-bookmark']),

@@ -5,9 +5,9 @@ import { createSimpleHttp } from '../fetch/http.ts';
 import { now, toIsoDateTime, toJstDate } from '../lib/clock.ts';
 import { runMain } from '../lib/errors.ts';
 import { fileKind, loadRepo, repoPath, writeKind } from '../lib/repo-io.ts';
-import { collectEventReports, reportTargets } from '../pipeline/event-reports.ts';
+import { collectEventReports, fillReportImages, reportTargets } from '../pipeline/event-reports.ts';
 
-// 終わったばかりの会場の催しについて、note と個人のブログの感想を集め、data/event-reports/ に書く（06 §6.13.8）
+// 終わったばかりの会場の催しについて、note と個人のブログの感想と画像を集め、data/event-reports/ に書く（06 §6.13.8）
 //   npm run events:reports [-- --event ev_xxx]
 await runMain(async () => {
   const { values } = parseArgs({ options: { event: { type: 'string' } } });
@@ -33,15 +33,19 @@ await runMain(async () => {
   for (const e of result.errors) console.warn(`warn ${e}`);
   const byEvent = new Map<string, typeof result.added>();
   for (const a of result.added) byEvent.set(a.eventId, [...(byEvent.get(a.eventId) ?? []), a]);
-  for (const [eventId, added] of byEvent) {
-    const file: EventReportsFile = files.get(eventId) ?? { schemaVersion: 1, eventId, reports: [] };
-    writeKind(fileKind('event-reports'), repoPath(`data/event-reports/${eventId}.json`), {
-      ...file,
-      reports: [...file.reports, ...added.map((a) => a.report)],
-    });
-    const name = targets.find((e) => e.id === eventId)?.name;
-    for (const a of added) console.log(`add  ${eventId} ${a.report.url} ${a.report.title}`);
-    console.log(`${name}: +${added.length}`);
+  let images = 0;
+  for (const e of targets) {
+    const file: EventReportsFile = files.get(e.id) ?? { schemaVersion: 1, eventId: e.id, reports: [] };
+    const added = byEvent.get(e.id) ?? [];
+    let reports = [...file.reports, ...added.map((a) => a.report)];
+    // フィードに画像のなかった感想は、記事のページの OGP 画像で補う
+    const filled = new Map((await fillReportImages(http, reports, at)).map((f) => [f.url, f.image]));
+    reports = reports.map((r) => (filled.has(r.url) ? { ...r, image: filled.get(r.url)! } : r));
+    if (!added.length && !filled.size) continue;
+    writeKind(fileKind('event-reports'), repoPath(`data/event-reports/${e.id}.json`), { ...file, reports });
+    for (const a of added) console.log(`add  ${e.id} ${a.report.url} ${a.report.title}`);
+    console.log(`${e.name}: +${added.length}, ${filled.size} image(s)`);
+    images += filled.size;
   }
-  console.log(`events:reports: ${targets.length} event(s), +${result.added.length} report(s)`);
+  console.log(`events:reports: ${targets.length} event(s), +${result.added.length} report(s), ${images} image(s)`);
 });

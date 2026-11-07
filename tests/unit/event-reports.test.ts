@@ -4,6 +4,7 @@ import type { FetchResult, HttpClient } from '../../scripts/fetch/http.ts';
 import {
   blogPlatform,
   collectEventReports,
+  fillReportImages,
   hatenaSearchUrl,
   isReportOf,
   mentionsEvent,
@@ -12,6 +13,7 @@ import {
   parseBlogPage,
   parseHatenaSearchFeed,
   parseNoteHashtagFeed,
+  reportImage,
   reportTargets,
 } from '../../scripts/pipeline/event-reports.ts';
 
@@ -46,6 +48,7 @@ const ev: IndieEvent = {
 
 const noteRss = `<?xml version="1.0"?><rss xmlns:note="https://note.com"><channel><title>#ランタン祭14タグ</title>
 <item><title>ランタン祭１４に行ってきた</title><description><![CDATA[<p>試遊したゲームの感想</p>]]></description>
+<media:thumbnail>https://assets.st-note.com/production/uploads/images/1/eyecatch.png?width=800</media:thumbnail>
 <note:creatorName>架空の書き手</note:creatorName><pubDate>Sun, 01 Nov 2026 20:00:00 +0900</pubDate>
 <link>https://note.com/writer/n/n0123456789ab?magazine_key=x</link></item>
 <item><title>ランタン祭14に出展します</title><pubDate>Thu, 29 Oct 2026 20:00:00 +0900</pubDate>
@@ -62,7 +65,7 @@ const hatenaRss = `<rdf:RDF><item rdf:about="https://diary.hatenablog.com/entry/
 <dc:date>2026-11-02T03:00:00Z</dc:date></item></rdf:RDF>`;
 
 const blogHtml = `<html><head><meta property="og:title" content="ランタン祭14 試遊メモ">
-<meta property="og:site_name" content="架空日記"><meta property="article:published_time" content="2026-11-01T21:00:00+09:00">
+<meta property="og:site_name" content="架空日記"><meta property="og:image" content="https://diary.example/ogp.png"><meta property="article:published_time" content="2026-11-01T21:00:00+09:00">
 </head></html>`;
 
 function fake(routes: Record<string, string>): HttpClient & { requested: string[] } {
@@ -126,6 +129,7 @@ describe('催しの感想（06 §6.13.8）', () => {
       url: 'https://note.com/writer/n/n0123456789ab',
       title: 'ランタン祭１４に行ってきた',
       author: '架空の書き手',
+      image: 'https://assets.st-note.com/production/uploads/images/1/eyecatch.png?width=640',
       publishedAt: '2026-11-01T11:00:00Z',
       description: '試遊したゲームの感想',
       platform: 'note',
@@ -133,11 +137,36 @@ describe('催しの感想（06 §6.13.8）', () => {
     });
   });
 
+  it('画像を設定していない記事に付く共通の画像は使わない', () => {
+    expect(
+      reportImage('https://assets.st-note.com/poc-image/manual/note-common-images/production/svg/production.png'),
+    ).toBeUndefined();
+    expect(reportImage('https://blog.example/images/noimage.png')).toBeUndefined();
+  });
+
+  it('画像のない感想は、記事のページの OGP 画像で補う', async () => {
+    const http = fake({ 'https://diary.hatenablog.com/entry/1': blogHtml });
+    const report = {
+      url: 'https://diary.hatenablog.com/entry/1',
+      title: 'ランタン祭14 試遊メモ',
+      platform: 'hatena-blog' as const,
+      foundVia: 'hatena-bookmark' as const,
+      foundAt: '2026-11-02T00:00:00Z',
+      status: 'shown' as const,
+    };
+    expect(await fillReportImages(http, [report], '2026-11-07T00:00:00Z')).toEqual([
+      { url: report.url, image: 'https://diary.example/ogp.png' },
+    ]);
+    // 見つけてから30日を過ぎたものは試さない
+    expect(await fillReportImages(http, [report], '2026-12-20T00:00:00Z')).toEqual([]);
+  });
+
   it('はてなブックマークの検索からは個人のブログだけを拾う', () => {
     expect(parseHatenaSearchFeed(hatenaRss).map((c) => c.url)).toEqual(['https://diary.hatenablog.com/entry/1']);
     expect(blogPlatform('https://news.example.jp/a')).toBeUndefined();
     expect(blogPlatform('https://someone.hateblo.jp/entry/x')).toBe('hatena-blog');
     expect(parseBlogPage(blogHtml)).toEqual({
+      image: 'https://diary.example/ogp.png',
       publishedAt: '2026-11-01T12:00:00Z',
       author: '架空日記',
       title: 'ランタン祭14 試遊メモ',
@@ -158,5 +187,9 @@ describe('催しの感想（06 §6.13.8）', () => {
       ['https://diary.hatenablog.com/entry/1', '架空日記', '2026-11-01T12:00:00Z'],
     ]);
     expect(r.added[1]!.report.title).toBe('ランタン祭14 試遊メモ');
+    expect(r.added.map((a) => a.report.image)).toEqual([
+      'https://assets.st-note.com/production/uploads/images/1/eyecatch.png?width=640',
+      'https://diary.example/ogp.png',
+    ]);
   });
 });

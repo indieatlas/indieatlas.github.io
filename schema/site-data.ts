@@ -168,11 +168,12 @@ export interface SiteEvent {
   reports: SiteEventReport[]; // 行った人、出展した人の感想（新しい順。会場の催しだけ）
 }
 
-/** 個人のブログや note に書かれた催しの感想。見出しとリンクだけを載せる */
+/** 個人のブログや note に書かれた催しの感想。見出し、画像、原文へのリンクを載せる */
 export interface SiteEventReport {
   url: string;
   title: string;
   author?: string;
+  image?: string; // 記事の共有用の画像（配信元の URL）
   platform: 'note' | 'hatena-blog' | 'blog';
   publishedAt?: string; // ISO 8601
 }

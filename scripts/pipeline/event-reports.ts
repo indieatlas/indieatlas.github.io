@@ -88,6 +88,7 @@ export interface ReportCandidate {
   author?: string;
   publishedAt?: string; // UTC の ISO 8601
   description?: string;
+  image?: string; // 共有用の画像（OGP）の URL
   platform: EventReportPlatform;
   foundVia: EventReport['foundVia'];
 }
@@ -166,10 +167,12 @@ export function parseNoteHashtagFeed(xml: string): ReportCandidate[] {
     const author = tag(body, 'note:creatorName');
     const publishedAt = iso(tag(body, 'pubDate'));
     const description = plain(tag(body, 'description'));
+    const image = reportImage(tag(body, 'media:thumbnail'));
     out.push({
       url,
       title: title.slice(0, 300),
       ...(author ? { author: author.slice(0, 80) } : {}),
+      ...(image ? { image } : {}),
       ...(publishedAt ? { publishedAt } : {}),
       ...(description ? { description } : {}),
       platform: 'note',
@@ -229,8 +232,21 @@ export function parseHatenaSearchFeed(xml: string): (ReportCandidate & { bookmar
   return out;
 }
 
-/** ブログの記事のページから、掲載日時と書き手（ブログの名前）を読む */
-export function parseBlogPage(html: string): { publishedAt?: string; author?: string; title?: string } {
+/**
+ * 感想の画像の URL。note の画像は一覧に合う大きさ（幅640px）で配信させる。
+ * 画像を設定していない記事に付く共通の画像（サービスのロゴなど）は使わない
+ */
+export function reportImage(url: string | undefined): string | undefined {
+  if (!url) return undefined;
+  const raw = decode(url);
+  if (!/^https:\/\//.test(raw) || /note-common-images|\/common\/|default|noimage|no_image/i.test(raw)) return undefined;
+  const u = new URL(raw);
+  if (u.hostname === 'assets.st-note.com') u.search = '?width=640';
+  return u.href;
+}
+
+/** ブログの記事のページから、掲載日時、書き手（ブログの名前）、見出し、共有用の画像を読む */
+export function parseBlogPage(html: string): { publishedAt?: string; author?: string; title?: string; image?: string } {
   const meta = (prop: string) =>
     new RegExp(`<meta[^>]+(?:property|name)=["']${prop}["'][^>]*content=["']([^"']+)["']`, 'i').exec(html)?.[1] ??
     new RegExp(`<meta[^>]+content=["']([^"']+)["'][^>]*(?:property|name)=["']${prop}["']`, 'i').exec(html)?.[1];
@@ -242,7 +258,9 @@ export function parseBlogPage(html: string): { publishedAt?: string; author?: st
   const publishedAt = iso(published);
   const site = meta('og:site_name');
   const title = meta('og:title');
+  const image = reportImage(meta('og:image'));
   return {
+    ...(image ? { image } : {}),
     ...(publishedAt ? { publishedAt } : {}),
     ...(site ? { author: decode(site).slice(0, 80) } : {}),
     ...(title ? { title: decode(title).slice(0, 300) } : {}),
@@ -291,6 +309,7 @@ export async function collectEventReports(
           url: c.url,
           title: c.title,
           ...(c.author ? { author: c.author } : {}),
+          ...(c.image ? { image: c.image } : {}),
           platform: c.platform,
           ...(c.publishedAt ? { publishedAt: c.publishedAt } : {}),
           foundVia: c.foundVia,
@@ -318,10 +337,32 @@ export async function collectEventReports(
           ...(page.title ? { title: page.title } : {}),
           ...(page.publishedAt ? { publishedAt: page.publishedAt } : {}),
           ...(page.author ? { author: page.author } : {}),
+          ...(page.image ? { image: page.image } : {}),
         };
       }
       accept(found, found.publishedAt ?? c.bookmarkedAt);
     }
   }
   return result;
+}
+
+/** 画像のない感想の画像を、記事のページの OGP 画像から補う。見つけてから30日以内のものだけを試す */
+export async function fillReportImages(
+  http: HttpClient,
+  reports: EventReport[],
+  at: string,
+  limit = 40,
+): Promise<{ url: string; image: string }[]> {
+  const since = new Date(Date.parse(at) - REPORT_WINDOW_DAYS * 86_400_000).toISOString();
+  const out: { url: string; image: string }[] = [];
+  for (const r of reports.filter((x) => x.status === 'shown' && !x.image && x.foundAt >= since).slice(0, limit)) {
+    try {
+      const res = await http.get(r.url);
+      const image = res.status === 200 ? parseBlogPage(res.text).image : undefined;
+      if (image) out.push({ url: r.url, image });
+    } catch {
+      // 取れなければ次の実行でまた試す
+    }
+  }
+  return out;
 }

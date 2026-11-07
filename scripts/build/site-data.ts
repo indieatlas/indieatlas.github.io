@@ -516,6 +516,7 @@ function eventReports(reports: EventReport[] | undefined): SiteEventReport[] {
       url: r.url,
       title: r.title,
       ...(r.author ? { author: r.author } : {}),
+      ...(r.image ? { image: r.image } : {}),
       platform: r.platform,
       ...(r.publishedAt ? { publishedAt: r.publishedAt } : {}),
     }));
