@@ -190,6 +190,8 @@ export const IndieReasonCode = z.enum([
   'small-team',             // 小規模な体制と公式に明記されている
   'indie-showcase',         // インディー向けのイベントやショーケースへの出展
   'indie-fund',             // インディー向けの助成やファンドの対象
+  'indie-top-seller',       // Steam のインディーの売上上位に入った（コードが付ける）
+  'indie-coverage',         // 収録した記事で取り上げられた（コードが付ける）
   // インディーではないと判定する理由
   'major-publisher',        // パブリッシャーが Developer で independence=major と登録済み
   'large-studio',           // 大規模な開発体制と公式に明記されている
@@ -296,6 +298,11 @@ export const Developer = z.object({
 3. どちらでもなければ `unknown` とする。
 
 `unknown` の作品は candidate のまま保持し、公開しない（[05](05-sources-and-editorial-policy.md) §5.5）。
+
+売れ筋と記事に出てくる作品には個別のページを作るため、採用ジョブが、ほかの理由でインディーと判定できない candidate に次の理由を付ける（LLM は提案できない）。どちらも否定的な理由より弱く、1. に当てはまる作品は `not-indie` のままである。
+
+- `indie-top-seller`: Steam のインディーの売上上位（[06](06-update-pipeline.md) §6.13.5a）に入った。根拠は Steam の検索結果のページ（`kind: store`）。
+- `indie-coverage`: 有効な記事（`status: active`）が作品を関連づけている。根拠は最初に収録した記事（`kind: media`、`articleId`）。
 
 ### 4.4.4 拠点の国と知名度
 
