@@ -90,10 +90,15 @@ const weekday = (e: SiteEvent) =>
 </div>
 
 <style>
+  /* 横のピックアップに高さを合わせる。オンラインの一覧は欄の下に寄せる */
   .home-events {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: var(--space-4);
+    min-width: 0;
+  }
+  .online {
+    margin-top: auto;
   }
   ul {
     list-style: none;

@@ -13,6 +13,9 @@ interface Props {
 }
 const { picks } = Astro.props;
 const [main, ...subs] = picks;
+// 横のイベントの欄に高さを合わせて伸びる段に、スクリーンショットを並べる
+const shots = main ? main.game.screenshots.slice(0, 4) : [];
+const credit = [...new Set(shots.map((sc) => sc.credit).filter(Boolean))].join('、');
 const devOf = (g: SiteGame) => g.developers.map((d) => d.name).join('、');
 ---
 
@@ -39,6 +42,14 @@ const devOf = (g: SiteGame) => g.developers.map((d) => d.name).join('、');
           </p>
         )}
       </div>
+      {shots.length > 0 && (
+        <a class="shots" href={url(paths.game(main.game.id))} tabindex="-1" aria-hidden="true">
+          {shots.map((sc) => (
+            <img src={sc.url} alt="" width={sc.width ?? 889} height={sc.height ?? 500} loading="lazy" decoding="async" data-fallback />
+          ))}
+          {credit && <span class="credit">画像: {credit}</span>}
+        </a>
+      )}
       <ul class="articles">
         {main.articles.map((a) => (
           <li>
@@ -79,13 +90,16 @@ const devOf = (g: SiteGame) => g.developers.map((d) => d.name).join('、');
 )}
 
 <style>
+  /* 横のイベントの欄に高さを合わせる。大きな枠が伸び、記事は枠の下に寄せる */
   .daily-pick {
     display: grid;
+    grid-template-rows: minmax(0, 1fr) auto;
     gap: var(--space-4);
   }
   .main {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr) auto;
     gap: var(--space-4) var(--space-5);
     padding: var(--space-4);
     background: var(--color-surface);
@@ -133,8 +147,33 @@ const devOf = (g: SiteGame) => g.developers.map((d) => d.name).join('、');
     font-size: var(--text-xsmall);
     color: var(--color-text-muted);
   }
+  .shots {
+    position: relative;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4px;
+    min-height: 6rem;
+  }
+  .shots img {
+    width: 100%;
+    height: 100%;
+    min-height: 6rem;
+    object-fit: cover;
+    background: var(--color-bg-deep);
+  }
+  .credit {
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    padding: 0 6px;
+    background: rgb(4 5 8 / 0.75);
+    color: #fff;
+    font-size: 0.6875rem;
+  }
   .articles {
     grid-column: 1 / -1;
+    align-self: end;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
     gap: var(--space-3) var(--space-5);
@@ -214,6 +253,12 @@ const devOf = (g: SiteGame) => g.developers.map((d) => d.name).join('、');
   @media (max-width: 640px) {
     .main {
       grid-template-columns: 1fr;
+    }
+    .shots {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .shots img:nth-of-type(n + 3) {
+      display: none;
     }
     .subs {
       grid-template-columns: 1fr;

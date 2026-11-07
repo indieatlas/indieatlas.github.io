@@ -2,17 +2,19 @@
 import type { SiteArticle } from '../../schema/site-data.ts';
 import ArticleCard from './ArticleCard.astro';
 
-// 記事のカードの格子。広い画面で4列、狭くなるにつれて3列、2列にする
+// 記事のカードの格子。縦長のカードは広い画面で4列、狭くなるにつれて3列、2列にする。
+// 横長のカード（row）は2列で、狭い画面では1列
 interface Props {
   articles: SiteArticle[];
+  layout?: 'stack' | 'row';
 }
-const { articles } = Astro.props;
+const { articles, layout = 'stack' } = Astro.props;
 ---
 
-<ul class="article-card-grid">
+<ul class:list={['article-card-grid', { 'article-card-grid--row': layout === 'row' }]}>
   {articles.map((a) => (
     <li>
-      <ArticleCard article={a} />
+      <ArticleCard article={a} layout={layout} />
     </li>
   ))}
 </ul>
@@ -35,6 +37,14 @@ const { articles } = Astro.props;
     .article-card-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: var(--space-3);
+    }
+  }
+  .article-card-grid--row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (max-width: 860px) {
+    .article-card-grid--row {
+      grid-template-columns: 1fr;
     }
   }
 </style>

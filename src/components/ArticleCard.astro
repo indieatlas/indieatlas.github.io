@@ -9,8 +9,9 @@ import ExternalLink from './ExternalLink.astro';
 // 作品の名前だけは作品のページへ移る。見出しは3行までにして、同じ行のカードの高さをそろえる
 interface Props {
   article: SiteArticle;
+  layout?: 'stack' | 'row'; // row: 画像を左に置く横長のカード
 }
-const { article: a } = Astro.props;
+const { article: a, layout = 'stack' } = Astro.props;
 const h = articleHeadline(a);
 const primary = a.games.find((g) => g.role === 'primary') ?? a.games[0];
 const game = primary ? getGame(primary.gameId) : undefined;
@@ -21,7 +22,7 @@ const image = a.image
     : undefined;
 ---
 
-<article class="article-card">
+<article class:list={['article-card', `article-card--${layout}`]}>
   <div class="media" aria-hidden="true">
     {image ? (
       <img
@@ -183,6 +184,37 @@ const image = a.image
   .more {
     flex: none;
     color: var(--color-text-muted);
+  }
+  /* 横長のカード。画像を左に、見出しなどを右に置く */
+  .article-card--row {
+    flex-direction: row;
+  }
+  .article-card--row .media {
+    flex: none;
+    width: 42%;
+    aspect-ratio: auto;
+    min-height: 100%;
+    margin: 1px 0 1px 1px;
+  }
+  .article-card--row .media img {
+    min-height: 7.5rem;
+  }
+  .article-card--row .body {
+    padding: var(--space-3) var(--space-4);
+  }
+  .article-card--row .title {
+    font-size: 1rem;
+  }
+  @media (max-width: 560px) {
+    .article-card--row .media {
+      width: 38%;
+    }
+    .article-card--row .body {
+      padding: var(--space-2) var(--space-3);
+    }
+    .article-card--row .title {
+      font-size: 0.875rem;
+    }
   }
   .title-link:focus-visible {
     outline: none;

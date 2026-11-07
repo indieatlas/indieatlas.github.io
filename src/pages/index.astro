@@ -33,7 +33,7 @@ const picks = getPicks()
   .filter((p) => p.game);
 const pickedArticles = new Set(picks.flatMap((p) => p.articles.map((a) => a.id)));
 
-// 記事のカード: 先頭の枠とピックアップに出していない新しい記事（4列で5行）
+// 記事のカード: 先頭の枠とピックアップに出していない新しい記事（横長のカードを2列で10行）
 const moreNews = homeNews(0, 60)
   .rest.filter((a) => !shownNews.has(a.id) && !pickedArticles.has(a.id))
   .slice(0, 20);
@@ -92,7 +92,7 @@ const collections = [...featured, ...rest].slice(0, 4);
     {moreNews.length > 0 && (
       <section class="section" aria-labelledby="news-h">
         <SectionHeading id="news-h" title="記事" linkPath={paths.articles()} />
-        <ArticleCardGrid articles={moreNews} />
+        <ArticleCardGrid articles={moreNews} layout="row" />
       </section>
     )}
 
@@ -197,7 +197,14 @@ const collections = [...featured, ...rest].slice(0, 4);
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(18rem, 22rem);
     gap: 0 var(--space-6);
-    align-items: start;
+  }
+  /* ピックアップとイベントの欄は、下の端をそろえて同じ高さにする */
+  .now > .section {
+    display: flex;
+    flex-direction: column;
+  }
+  .now > .section > :global(:last-child) {
+    flex: 1;
   }
   /* 一覧へのリンクのない見出しも、リンクのある見出しと同じ高さにして横で揃える */
   .now :global(.section-heading) {
