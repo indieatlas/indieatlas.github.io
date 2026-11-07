@@ -21,11 +21,14 @@ import { applyTaskResult, addTask, createWorkspace, markSeen, type Workspace } f
 import { repointCollections } from './claim-refs.ts';
 import { assessIndie, canPublish } from './publish-rules.ts';
 import { resolveGameClaims } from './resolve.ts';
-import { seedFromSteam } from './seed-steam.ts';
+import { seedFromSteam, type SeedResult } from './seed-steam.ts';
+import { addIndieReason, coverageEvidence, firstCoverage, topSellerEvidence } from './indie-signals.ts';
+import { indieTopSellersUrl, parseTopSellers } from '../sources/steam.ts';
 import { addDays, applyOutcome, fromNewTask, makeTask } from './tasks.ts';
 import { indexFetchLog } from './validate/evidence.ts';
 import { recordUsage } from './usage-ledger.ts';
 import { nextNumericId } from '../lib/ids.ts';
+import { UserError } from '../lib/errors.ts';
 import { refreshStatus } from './refresh-status.ts';
 import { scopeKey } from '../../schema/claim.ts';
 import { canonicalJson } from '../lib/canonical-json.ts';
@@ -125,7 +128,99 @@ export interface AdoptOptions {
   steamHttp?: HttpClient;
   /** 1回の実行で Steam から取り直す作品の上限 */
   maxSteamRefresh?: number;
+  /** 1回の実行で登録する、Steam のインディーの売上上位の作品の上限 */
+  maxTopSellerRegistrations?: number;
   log?: (line: string) => void;
+}
+
+/**
+ * Steam の作品情報の取り込み結果を作業領域に反映する。既存の作品は識別情報を今のものに保ち、
+ * 付属アプリ（体験版、DLC）が増えたときだけ取り込む
+ */
+function takeSeed(ws: Workspace, r: SeedResult): void {
+  for (const ng of r.games) {
+    const i = ws.repo.games.findIndex((x) => x.id === ng.id);
+    const cur = ws.repo.games[i];
+    if (!cur) {
+      ws.repo.games.push(ng);
+      ws.createdGames.push(ng.id);
+      ws.dirty.games.add(ng.id);
+    } else if (canonicalJson(cur.associatedApps) !== canonicalJson(ng.associatedApps)) {
+      ws.repo.games[i] = { ...cur, associatedApps: ng.associatedApps, updatedAt: ng.updatedAt };
+      ws.dirty.games.add(ng.id);
+    }
+  }
+  for (const d of r.developers) {
+    const i = ws.repo.developers.findIndex((x) => x.id === d.id);
+    if (i >= 0) ws.repo.developers[i] = d;
+    else ws.repo.developers.push(d);
+    ws.dirty.developers.add(d.id);
+  }
+  if (r.claims) {
+    const before = new Set((ws.repo.claims.get(r.gameId)?.claims ?? []).map((c) => c.id));
+    ws.repo.claims.set(r.gameId, r.claims);
+    const fresh = r.claims.claims.filter((c) => !before.has(c.id)).map((c) => c.id);
+    if (fresh.length) {
+      if (!ws.newClaimIds.has(r.gameId)) ws.newClaimIds.set(r.gameId, new Set());
+      for (const id of fresh) ws.newClaimIds.get(r.gameId)!.add(id);
+      ws.counts.claimsAdded += fresh.length;
+      ws.dirty.claims.add(r.gameId);
+    }
+  }
+}
+
+/**
+ * Steam のインディーの売上上位の作品を登録し、インディーの理由（indie-top-seller）を付ける（LLM を使わない）。
+ * 紹介文は、定期的なタスク（fill-missing）が次の調査で書く。1回に登録するのは max 件までで、
+ * Steam に断られたら（短い間に続けて取得すると失敗する）、残りは次の回にする
+ */
+async function registerTopSellers(ws: Workspace, http: HttpClient, at: string, max: number, log: (l: string) => void) {
+  let items: { appId: number; title: string }[] | undefined;
+  try {
+    const res = await http.get(indieTopSellersUrl());
+    items = res.status === 200 ? parseTopSellers(res.text) : undefined;
+    if (!items) log(`top-sellers: 取得できない（HTTP ${res.status}）`);
+  } catch (e) {
+    log(`top-sellers: 取得できない（${(e as Error).message}）`);
+  }
+  let registered = 0;
+  for (const item of items ?? []) {
+    let game = ws.repo.games.find((g) => g.status !== 'merged' && g.externalIds.steamAppId === item.appId);
+    if (!game) {
+      if (registered >= max) continue;
+      registered++;
+      try {
+        const r = await seedFromSteam(http, ws.repo, item.appId, { createdBy: 'system', runId: ws.runId });
+        takeSeed(ws, r);
+        for (const note of r.notes) log(`top-sellers ${r.gameId}: ${note}`);
+        game = ws.repo.games.find((g) => g.id === r.gameId);
+        if (game) log(`top-sellers: ${game.id} ${game.title.display} を登録した`);
+      } catch (e) {
+        log(`top-sellers ${item.appId} ${item.title}: ${(e as Error).message}`);
+        // 成人向けの作品など、登録しないと決めた作品は飛ばす。取得の失敗なら、残りの登録を次の回にする
+        if (e instanceof UserError) continue;
+        registered = max;
+        continue;
+      }
+    }
+    if (!game || game.status !== 'candidate' || assessIndie(game, ws.repo.developers) === 'indie') continue;
+    if (addIndieReason(game, 'indie-top-seller', topSellerEvidence(at))) {
+      game.updatedAt = at;
+      ws.dirty.games.add(game.id);
+    }
+  }
+}
+
+/** 記事で取り上げられた候補の作品に、インディーの理由（indie-coverage）を付ける */
+function markCoverage(ws: Workspace): void {
+  for (const game of ws.repo.games) {
+    if (game.status !== 'candidate' || assessIndie(game, ws.repo.developers) === 'indie') continue;
+    const article = firstCoverage(ws.repo.articles, game.id);
+    if (article && addIndieReason(game, 'indie-coverage', coverageEvidence(article))) {
+      game.updatedAt = ws.at;
+      ws.dirty.games.add(game.id);
+    }
+  }
 }
 
 export interface AdoptResult {
@@ -271,6 +366,10 @@ export async function adoptResearch(
     upsertTask(ws, applyOutcome(task, a.outcome, { at: o.at, runId: ws.runId, today: o.today, summary: a.note }));
   }
 
+  // Steam のインディーの売上上位の作品を、インディーとして収録する（11 の決定ログ 2026-11-06）。
+  // 作品情報の取り直しより先に行う（Steam への取得が続くと断られるため）
+  if (o.steamHttp) await registerTopSellers(ws, o.steamHttp, o.at, o.maxTopSellerRegistrations ?? 8, log);
+
   // Steam の作品情報の取り込み: 新しく作った作品と、発売の状態が変わりうる作品（LLM を使わない）
   if (o.steamHttp) {
     const status = refreshStatus(ws.repo, o.today);
@@ -303,38 +402,16 @@ export async function adoptResearch(
           createdBy: 'system',
           runId: ws.runId,
         });
-        for (const ng of r.games) {
-          const i = ws.repo.games.findIndex((x) => x.id === ng.id);
-          const cur = ws.repo.games[i];
-          // 識別情報は今のものを保ち、付属アプリ（体験版、DLC）が増えたときだけ取り込む
-          if (cur && canonicalJson(cur.associatedApps) !== canonicalJson(ng.associatedApps)) {
-            ws.repo.games[i] = { ...cur, associatedApps: ng.associatedApps, updatedAt: ng.updatedAt };
-            ws.dirty.games.add(ng.id);
-          }
-        }
-        for (const d of r.developers) {
-          const i = ws.repo.developers.findIndex((x) => x.id === d.id);
-          if (i >= 0) ws.repo.developers[i] = d;
-          else ws.repo.developers.push(d);
-          ws.dirty.developers.add(d.id);
-        }
-        if (r.claims) {
-          const before = new Set((ws.repo.claims.get(r.gameId)?.claims ?? []).map((c) => c.id));
-          ws.repo.claims.set(r.gameId, r.claims);
-          const fresh = r.claims.claims.filter((c) => !before.has(c.id)).map((c) => c.id);
-          if (fresh.length) {
-            if (!ws.newClaimIds.has(r.gameId)) ws.newClaimIds.set(r.gameId, new Set());
-            for (const id of fresh) ws.newClaimIds.get(r.gameId)!.add(id);
-            ws.counts.claimsAdded += fresh.length;
-            ws.dirty.claims.add(r.gameId);
-          }
-        }
+        takeSeed(ws, r);
         for (const note of r.notes) log(`steam ${gameId}: ${note}`);
       } catch (e) {
         log(`steam ${gameId}: ${(e as Error).message}`);
       }
     }
   }
+
+  // 記事で取り上げられた作品を、インディーとして収録する（11 の決定ログ 2026-11-06）
+  markCoverage(ws);
 
   // 8. 採用の計算と、作品単位の後処理（06 §6.8.6）
   let claimsAdopted = 0;

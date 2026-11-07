@@ -18,7 +18,7 @@ import {
 } from './common.ts';
 import { Developer } from './developer.ts';
 import { EventId, EventKind } from './event.ts';
-import { Alias, ExternalIds, AssociatedApp, IdentityEvidence, IndieReasonCode } from './game.ts';
+import { Alias, ExternalIds, AssociatedApp, IdentityEvidence, ProposableIndieReasonCode } from './game.ts';
 import { Task, TaskType } from './state.ts';
 import { Tag } from './taxonomy.ts';
 
@@ -66,7 +66,7 @@ export const ArticleDraft = z.object({
 export type ArticleDraft = z.infer<typeof ArticleDraft>;
 
 export const IndieReasonDraft = z.object({
-  code: IndieReasonCode,
+  code: ProposableIndieReasonCode,
   note: z.string().max(200).optional(),
   evidence: z.array(EvidenceDraft).min(1).max(5),
 });

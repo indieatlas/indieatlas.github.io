@@ -25,6 +25,8 @@ export const IndieReasonCode = z.enum([
   'small-team', // 小規模な体制と公式に明記されている
   'indie-showcase', // インディー向けのイベントやショーケースへの出展
   'indie-fund', // インディー向けの助成やファンドの対象
+  'indie-top-seller', // Steam のインディーの売上上位に入った（コードが付ける）
+  'indie-coverage', // 収録した記事で取り上げられた（コードが付ける）
   // インディーではないと判定する理由
   'major-publisher', // パブリッシャーが Developer で independence=major と登録済み
   'large-studio', // 大規模な開発体制と公式に明記されている
@@ -33,6 +35,10 @@ export const IndieReasonCode = z.enum([
 export type IndieReasonCode = z.infer<typeof IndieReasonCode>;
 
 export const NEGATIVE_INDIE_REASONS: readonly IndieReasonCode[] = ['major-publisher', 'large-studio', 'subsidiary'];
+/** コードだけが付ける理由。LLM は提案できない */
+export const SYSTEM_INDIE_REASONS = ['indie-top-seller', 'indie-coverage'] as const;
+/** LLM が提案できる理由 */
+export const ProposableIndieReasonCode = IndieReasonCode.exclude(SYSTEM_INDIE_REASONS);
 
 export const IdentityEvidence = z.object({
   field: z.enum(['title', 'aliases', 'externalIds', 'associatedApps', 'officialUrl', 'developers', 'publishers']),
