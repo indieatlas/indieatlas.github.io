@@ -1237,6 +1237,9 @@ function applyUpsertEvent(c: ResultContext, op: Extract<Operation, { op: 'upsert
   if (d.status !== 'cancelled' && !eventDatesSupported(d.start, d.end, quotes))
     reject('V-EV01', 'the quoted dates do not match start and end');
   if (d.end && startOf(d.end) < startOf(d.start)) reject('V-EV01', 'end is before start');
+  // V-EV05: 会場の催しとオンラインの催しを分ける（04 の D-15）。セールはオンライン、オンラインの催しに会場はない
+  if (d.kind === 'sale' && d.format !== 'online') reject('V-EV05', 'a sale must be online');
+  if (d.format === 'online' && d.location) reject('V-EV05', 'an online event must not have a location');
   // V-EV04: 出展作品は既存の作品だけ
   const games: string[] = [];
   for (const ref of d.games) {
@@ -1260,12 +1263,14 @@ function applyUpsertEvent(c: ResultContext, op: Extract<Operation, { op: 'upsert
     existing = undefined;
   }
   const base = existing ?? replaced;
+  const aliases = [...new Set([...(base?.aliases ?? []), ...(d.aliases ?? [])])].slice(0, 8);
   const event: IndieEvent = {
     schemaVersion: 1,
     id: existing?.id ?? id,
     status: d.status,
     name: d.name,
     ...(d.nameEn ? { nameEn: d.nameEn } : {}),
+    ...(aliases.length ? { aliases } : {}),
     kind: d.kind,
     format: d.format,
     start: d.start,

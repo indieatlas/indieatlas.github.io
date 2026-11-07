@@ -7,7 +7,7 @@ import { ClaimsFile } from '../../schema/claim.ts';
 import { Collection } from '../../schema/collection.ts';
 import { RuntimeConfig, SourcesFile } from '../../schema/config.ts';
 import { Developer } from '../../schema/developer.ts';
-import { IndieEvent } from '../../schema/event.ts';
+import { EventReportsFile, IndieEvent } from '../../schema/event.ts';
 import { Game } from '../../schema/game.ts';
 import { ArticleReactions, ImagePalettes, PopularityMetrics, ReviewSummaries } from '../../schema/media.ts';
 import { GameRelationsFile } from '../../schema/relation.ts';
@@ -22,6 +22,7 @@ import {
   sortReviewQueue,
   sortRuns,
   sortEvent,
+  sortEventReports,
   sortPalettes,
   sortPopularity,
   sortReviewSummaries,
@@ -99,6 +100,13 @@ export const FILE_KINDS: FileKind[] = [
   defineKind({ name: 'claims', dir: 'data/claims', schema: ClaimsFile, sort: sortClaimsFile, idOf: (v) => v.gameId }),
   defineKind({ name: 'article', dir: 'data/articles', schema: Article, sort: sortArticle, idOf: (v) => v.id }),
   defineKind({ name: 'event', dir: 'data/events', schema: IndieEvent, sort: sortEvent, idOf: (v) => v.id }),
+  defineKind({
+    name: 'event-reports',
+    dir: 'data/event-reports',
+    schema: EventReportsFile,
+    sort: sortEventReports,
+    idOf: (v) => v.eventId,
+  }),
   defineKind({ name: 'developer', dir: 'data/developers', schema: Developer, sort: identity, idOf: (v) => v.id }),
   defineKind({
     name: 'collection',
@@ -167,6 +175,7 @@ export interface RepoData {
   articles: Article[];
   developers: Developer[];
   events: IndieEvent[];
+  eventReports: EventReportsFile[];
   collections: Collection[];
   relations: GameRelationsFile;
   tags: TagsFile;
@@ -195,6 +204,7 @@ export function loadRepo(): RepoData {
     articles: readDir('data/articles', Article),
     developers: readDir('data/developers', Developer),
     events: readDir('data/events', IndieEvent),
+    eventReports: readDir('data/event-reports', EventReportsFile),
     collections: readDir('data/collections', Collection),
     relations: readJsonIfExists(GameRelationsFile, repoPath('data/relations/game-relations.json')) ?? {
       schemaVersion: 1,

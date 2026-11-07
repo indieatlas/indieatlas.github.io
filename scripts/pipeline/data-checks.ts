@@ -103,6 +103,7 @@ export function checkFiles(): { issues: CheckIssue[]; data: RepoData | undefined
     articles: (parsed.get('article') ?? []) as RepoData['articles'],
     developers: (parsed.get('developer') ?? []) as RepoData['developers'],
     events: (parsed.get('event') ?? []) as RepoData['events'],
+    eventReports: (parsed.get('event-reports') ?? []) as RepoData['eventReports'],
     collections: (parsed.get('collection') ?? []) as RepoData['collections'],
     relations: one('relations', { schemaVersion: 1, relations: [] }),
     tags: one('tags', { schemaVersion: 1, tags: [] }),
@@ -172,6 +173,22 @@ export function checkConsistency(data: RepoData): CheckIssue[] {
     }
     const expected = eventId(ev.url, startOf(ev.start));
     if (ev.id !== expected) add('D-08', `data/events/${ev.id}.json`, `event id should be ${expected}`);
+    // D-15: オンラインの催しは会場を持たない（会場の催しで会場がないのは「会場未定」）。セールはオンライン
+    if (ev.format === 'online' && ev.location)
+      add('D-15', `data/events/${ev.id}.json`, 'online event must not have a location');
+    if (ev.kind === 'sale' && ev.format !== 'online') add('D-15', `data/events/${ev.id}.json`, 'sale must be online');
+  }
+  const eventById = new Map(data.events.map((e) => [e.id, e]));
+  for (const f of data.eventReports) {
+    const file = `data/event-reports/${f.eventId}.json`;
+    const ev = eventById.get(f.eventId);
+    if (!ev) add('D-03', file, `event ${f.eventId} does not exist`);
+    else if (ev.format === 'online') add('D-15', file, 'reports are only for in-person and hybrid events');
+    const urls = new Set<string>();
+    for (const r of f.reports) {
+      if (urls.has(r.url)) add('D-15', file, `duplicate report ${r.url}`);
+      urls.add(r.url);
+    }
   }
   for (const col of data.collections) {
     for (const item of col.items) {

@@ -86,6 +86,6 @@ target.field の項目（主に summary とタグ）を、ストア（`get_steam
 ### register-event と check-event（催し）
 
 1. 案内のページ（target.url）を `fetch_url` で取得する。一覧のページなら、個々の催しのページもたどる。
-2. 催しごとに `upsert-event` を提案する。`url` は催しの案内のページ（取得したもの）。`start` と `end` は日本時間の暦日で、出典の粒度のまま。`evidence` の quote には、日付が書かれた文をそのまま含める（コードが日付を読み取って照合する）。`summary` は20〜160字で当サイトの言葉で書く。`games` には収録済みの作品だけを gameId で入れる。
+2. 催しごとに `upsert-event` を提案する。`url` は催しの案内のページ（取得したもの）。`start` と `end` は日本時間の暦日で、出典の粒度のまま。`evidence` の quote には、日付が書かれた文をそのまま含める（コードが日付を読み取って照合する）。`summary` は20〜160字で当サイトの言葉で書く。`games` には収録済みの作品だけを gameId で入れる。会場で開く催しは `format: in-person`（配信もあれば `hybrid`）で `location` を書き、配信やストアのフェス、セールは `format: online` で `location` を書かない。略称で呼ばれる催し（例: 東京ゲームダンジョン14 の「ゲムダン14」）は、案内のページにある略称を `aliases` に入れる。
 3. check-event で、開始日が変わっていたら `replacesEventId` に前の催しの ID を入れる。中止なら `status: "cancelled"`。日程が仮なら `tentative`。
 4. インディーゲームと関係のない催し（大手だけの発表会、物販だけの催し）は登録しない。

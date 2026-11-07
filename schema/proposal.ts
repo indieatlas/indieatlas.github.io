@@ -124,6 +124,7 @@ export type ClaimDraft = z.infer<typeof ClaimDraft>;
 export const EventDraft = z.object({
   name: z.string().min(1).max(120),
   nameEn: z.string().max(120).optional(),
+  aliases: z.array(z.string().min(2).max(60)).max(8).optional(), // 略称など（例: ゲムダン14）
   kind: EventKind,
   format: z.enum(['in-person', 'online', 'hybrid']),
   status: z.enum(['scheduled', 'tentative', 'cancelled']),
