@@ -9,6 +9,7 @@ import {
   SourceUpdates,
   TaskResultLine,
   TaskUpdates,
+  TitleTranslations,
   UsageFile,
 } from '../../schema/research-output.ts';
 import type { RunSummary, Task, TasksFile } from '../../schema/state.ts';
@@ -27,6 +28,7 @@ import { indieTopSellersUrl, parseTopSellers } from '../sources/steam.ts';
 import { addDays, applyOutcome, fromNewTask, makeTask } from './tasks.ts';
 import { indexFetchLog } from './validate/evidence.ts';
 import { recordUsage } from './usage-ledger.ts';
+import { applyTitleTranslations } from './title-translation.ts';
 import { nextNumericId } from '../lib/ids.ts';
 import { UserError } from '../lib/errors.ts';
 import { refreshStatus } from './refresh-status.ts';
@@ -44,6 +46,7 @@ export interface ResearchBundle {
   results: TaskResultLine[];
   fetchLog: FetchLogEntry[];
   usage: UsageFile;
+  titles: TitleTranslations;
 }
 
 /** 成果物のディレクトリを探す。research-{runId}-{attempt}/ が複数あれば試行番号の最も大きいもの（手順1） */
@@ -104,6 +107,7 @@ export function readResearchBundle(dir: string): ResearchBundle {
     results,
     fetchLog,
     usage: read(UsageFile, 'usage.json', { schemaVersion: 1, calls: [], totalUsd: 0 }),
+    titles: read(TitleTranslations, 'title-translations.json', { schemaVersion: 1, items: [] }),
   };
 }
 
@@ -364,6 +368,13 @@ export async function adoptResearch(
     const task = ws.repo.tasks.tasks.find((t) => t.id === a.taskId);
     if (!task || done.has(task.id)) continue;
     upsertTask(ws, applyOutcome(task, a.outcome, { at: o.at, runId: ws.runId, today: o.today, summary: a.note }));
+  }
+
+  // 日本語以外の記事のタイトルの訳（06 §6.13.9）。この実行で加えた記事にも当てる
+  if (bundle?.titles.items.length) {
+    const done = applyTitleTranslations(ws.repo.articles, bundle.titles);
+    for (const id of done) ws.dirty.articles.add(id);
+    if (done.length) log(`adopt: タイトルの訳 ${done.length} 件`);
   }
 
   // Steam のインディーの売上上位の作品を、インディーとして収録する（11 の決定ログ 2026-11-06）。

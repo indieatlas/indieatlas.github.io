@@ -7,6 +7,7 @@ import {
   SourceUpdates,
   TaskResultLine,
   TaskUpdates,
+  TitleTranslations,
   UsageFile,
   type CollectedItem,
   type UsageEntry,
@@ -26,6 +27,7 @@ import { matchGames } from './feed-items.ts';
 import { planTasks } from './plan.ts';
 import { fromNewTask, isExploration, makeTask, priorityContext, scheduleTasks, selectBaseline } from './tasks.ts';
 import { triageItems } from './triage.ts';
+import { pendingTitles, TITLE_BATCH, translateTitles } from './title-translation.ts';
 import { readJson } from '../lib/repo-io.ts';
 import { RunsFile } from '../../schema/state.ts';
 import { listJsonFiles } from '../lib/repo-io.ts';
@@ -342,6 +344,47 @@ export async function runResearch(o: ResearchOptions): Promise<ResearchMeta> {
   }
   budget.dispose();
   writeTaskUpdates();
+  // R5b: 日本語以外の記事のタイトルの訳（06 §6.13.9）。採用ジョブが記事に書く。
+  // 締め切りや予算で止まったときは訳さない（次の実行か、週次の titles:translate で訳す）
+  if (llm && stopReason === 'completed') {
+    const resultsFile = path.join(o.outDir, 'task-results.jsonl');
+    const lines = fs.existsSync(resultsFile)
+      ? fs
+          .readFileSync(resultsFile, 'utf8')
+          .split('\n')
+          .filter((l) => l.trim())
+          .flatMap((l) => {
+            const r = TaskResultLine.safeParse(JSON.parse(l));
+            return r.success ? [r.data] : [];
+          })
+      : [];
+    const todo = pendingTitles(repo.articles, lines);
+    const items: TitleTranslations['items'] = [];
+    for (let i = 0; i < todo.length; i += TITLE_BATCH) {
+      const batch = todo.slice(i, i + TITLE_BATCH);
+      try {
+        const r = await translateTitles(
+          llm,
+          batch.map((x, j) => ({ id: String(i + j), title: x.title })),
+          { runId: o.runId, batch: i / TITLE_BATCH + 1, onUsage: (u, sid) => onUsage(u, sid, 'triage') },
+        );
+        batch.forEach((x, j) => {
+          const titleJa = r.translated.get(String(i + j));
+          if (titleJa)
+            items.push({
+              ...(x.articleId ? { articleId: x.articleId } : {}),
+              ...(x.url ? { url: x.url } : {}),
+              title: x.title,
+              titleJa,
+            });
+        });
+      } catch (e) {
+        log(`R5b: タイトルの訳に失敗した: ${(e as Error).message.slice(0, 120)}`);
+      }
+    }
+    writeOut(o.outDir, 'title-translations.json', TitleTranslations, { schemaVersion: 1, items });
+    log(`R5b: タイトルの訳 ${items.length}/${todo.length} 件`);
+  }
   // R6
   const finished: ResearchMeta = { ...meta(), finishedAt: toIsoDateTime(now()) };
   writeOut(o.outDir, 'meta.json', ResearchMeta, finished);

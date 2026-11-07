@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { ArticleKind, HttpUrl, IsoDateTime, RunId, Sha256, SourceId, TaskId } from './common.ts';
+import { ArticleId, ArticleKind, HttpUrl, IsoDateTime, RunId, Sha256, SourceId, TaskId } from './common.ts';
 import { SourceState, Task } from './state.ts';
 import { TaskResult } from './proposal.ts';
 
@@ -135,3 +135,22 @@ export const UsageFile = z.object({
   totalUsd: z.number().min(0),
 });
 export type UsageFile = z.infer<typeof UsageFile>;
+
+/**
+ * 日本語以外の記事のタイトルの訳（out/title-translations.json、06 §6.13.9）。調査ジョブが訳し、採用ジョブが記事に書く。
+ * 登録済みの記事は articleId、この実行で提案した記事は url で指す
+ */
+export const TitleTranslations = z.object({
+  schemaVersion: z.literal(1),
+  items: z
+    .array(
+      z.object({
+        articleId: ArticleId.optional(),
+        url: HttpUrl.optional(),
+        title: z.string().min(1).max(300), // 訳した原題。記事のタイトルと一致するときだけ使う
+        titleJa: z.string().min(1).max(150),
+      }),
+    )
+    .max(200),
+});
+export type TitleTranslations = z.infer<typeof TitleTranslations>;

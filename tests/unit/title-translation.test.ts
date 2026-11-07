@@ -1,6 +1,13 @@
 import { describe, expect, it } from 'vitest';
 import { createFakeLlm } from '../../scripts/llm/client.ts';
-import { titleIssues, translateTitles } from '../../scripts/pipeline/title-translation.ts';
+import type { Article } from '../../schema/article.ts';
+import type { TaskResultLine } from '../../schema/research-output.ts';
+import {
+  applyTitleTranslations,
+  pendingTitles,
+  titleIssues,
+  translateTitles,
+} from '../../scripts/pipeline/title-translation.ts';
 import { articleHeadline } from '../../src/lib/format.ts';
 
 // 架空の作品の記事（10 §10.5.1）
@@ -50,5 +57,51 @@ describe('記事のタイトルの訳（06 §6.13.9）', () => {
       foreign: '英語',
     });
     expect(articleHeadline({ title: '発売', lang: 'ja', outlet })).toEqual({ text: '発売', lang: 'ja' });
+  });
+
+  it('調査ジョブが訳すのは、訳のない記事と、この実行で提案した記事', () => {
+    const article = (id: string, lang: string, titleJa?: string) =>
+      ({
+        id,
+        url: `https://news.example.com/${id}`,
+        canonicalUrl: `https://news.example.com/${id}`,
+        urlAliases: [],
+        title: `Lantern Tide ${id}`,
+        lang,
+        status: 'active',
+        ...(titleJa ? { titleJa } : {}),
+      }) as unknown as Article;
+    const articles = [article('a_1', 'en'), article('a_2', 'en', '訳済み'), article('a_3', 'ja')];
+    const line = {
+      result: {
+        operations: [
+          {
+            op: 'upsert-article',
+            article: { url: 'https://news.example.com/new', title: 'Moss Garden out now', lang: 'en' },
+          },
+          {
+            op: 'upsert-article',
+            article: { url: 'https://news.example.com/a_1', title: 'Lantern Tide a_1', lang: 'en' },
+          },
+        ],
+      },
+    } as unknown as TaskResultLine;
+    expect(pendingTitles(articles, [line])).toEqual([
+      { articleId: 'a_1', title: 'Lantern Tide a_1' },
+      { url: 'https://news.example.com/new', title: 'Moss Garden out now' },
+    ]);
+    // 採用ジョブは、記事のタイトルが訳した原題と同じものだけに書く
+    const added = { ...article('a_9', 'en'), url: 'https://news.example.com/new', title: 'Moss Garden out now' };
+    const all = [...articles, added];
+    const done = applyTitleTranslations(all, {
+      schemaVersion: 1,
+      items: [
+        { articleId: 'a_1', title: 'Lantern Tide a_1', titleJa: '『Lantern Tide』の記事' },
+        { url: 'https://news.example.com/new', title: 'Moss Garden out now', titleJa: '『Moss Garden』配信開始' },
+        { articleId: 'a_2', title: 'Lantern Tide a_2', titleJa: '上書きしない' },
+      ],
+    });
+    expect(done).toEqual(['a_1', 'a_9']);
+    expect(all[1]!.titleJa).toBe('訳済み');
   });
 });

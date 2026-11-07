@@ -1,5 +1,7 @@
 import { z } from 'zod';
-import type { LlmClient } from '../llm/client.ts';
+import type { Article } from '../../schema/article.ts';
+import type { TaskResultLine, TitleTranslations } from '../../schema/research-output.ts';
+import type { LlmClient, LlmUsage } from '../llm/client.ts';
 
 /**
  * 日本語以外の記事の見出しを、日本語に訳す（06 §6.13.9）。訳は記事の見出しとして原題とともに表示する。
@@ -48,7 +50,7 @@ export function titleIssues(titleJa: string, original: string): string[] {
 export async function translateTitles(
   llm: LlmClient,
   items: { id: string; title: string }[],
-  o: { runId: string; batch: number },
+  o: { runId: string; batch: number; onUsage?: (u: LlmUsage, sessionId: string) => void },
 ): Promise<{ translated: Map<string, string>; errors: string[] }> {
   const translated = new Map<string, string>();
   const errors: string[] = [];
@@ -56,9 +58,11 @@ export async function translateTitles(
   const prompt = `見出し（${items.length}件、1行に1件の JSON）:\n${items
     .map((x, i) => JSON.stringify({ id: keys[i], title: x.title }))
     .join('\n')}`;
+  const sessionId = `ia-${o.runId}-titles-${o.batch}`;
   const raw = await llm.generateObject({
     role: 'triage', // 訳は思考なしで足りる。速く、安い
-    sessionId: `ia-${o.runId}-titles-${o.batch}`,
+    sessionId,
+    ...(o.onUsage ? { onUsage: (u: LlmUsage) => o.onUsage!(u, sessionId) } : {}),
     system: TITLE_SYSTEM,
     prompt,
     schema: Output,
@@ -73,4 +77,44 @@ export async function translateTitles(
     else translated.set(item.id, text);
   }
   return { translated, errors };
+}
+
+/** 訳のない、日本語以外の記事のタイトル。登録済みの記事と、この実行の結果で提案された記事 */
+export function pendingTitles(
+  articles: Article[],
+  results: TaskResultLine[],
+  limit = 60,
+): { articleId?: string; url?: string; title: string }[] {
+  const out: { articleId?: string; url?: string; title: string }[] = [];
+  for (const a of articles) {
+    if (a.status === 'active' && a.lang !== 'ja' && !a.titleJa) out.push({ articleId: a.id, title: a.title });
+  }
+  const known = new Set(articles.flatMap((a) => [a.url, a.canonicalUrl, ...a.urlAliases]));
+  for (const line of results) {
+    for (const op of line.result.operations) {
+      if (op.op !== 'upsert-article') continue;
+      const d = op.article;
+      if (d.lang === 'ja' || d.titleJa || known.has(d.url)) continue;
+      known.add(d.url);
+      out.push({ url: d.url, title: d.title });
+    }
+  }
+  return out.slice(0, limit);
+}
+
+/** 訳を記事に書く。記事のタイトルが訳した原題と同じで、まだ訳がなく、規則に合うものだけ。書いた記事の ID を返す */
+export function applyTitleTranslations(articles: Article[], t: TitleTranslations): string[] {
+  const done: string[] = [];
+  for (const item of t.items) {
+    const a = articles.find(
+      (x) =>
+        (item.articleId && x.id === item.articleId) ||
+        (item.url && (x.url === item.url || x.canonicalUrl === item.url || x.urlAliases.includes(item.url))),
+    );
+    if (!a || a.lang === 'ja' || a.titleJa || a.title !== item.title) continue;
+    if (titleIssues(item.titleJa, a.title).length) continue;
+    a.titleJa = item.titleJa.trim();
+    done.push(a.id);
+  }
+  return done;
 }
