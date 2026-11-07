@@ -117,8 +117,9 @@ const KIND_WEIGHT: Partial<Record<SiteArticle['kind'], number>> = {
 const PROMINENCE_WEIGHT = { landmark: 3, notable: 1.5, standard: 0 } as const;
 
 /**
- * ホームで大きく見せる記事を選ぶ。画像のある新しい記事のうち、記事の種類（レビューや特集）と
- * 主な作品の知名度で点を付ける。日付は最も新しい記事からの経過日数で数え、ビルドの日に左右されない
+ * ホームで大きく見せる記事を選ぶ。新しさを第一にし、画像のある新しい記事のうち、新しいほど高い点を付ける
+ * （2日で半分）。記事の種類（レビューや特集）、主な作品の知名度、はてなブックマークの反応は、
+ * 同じころの記事どうしの順を決める程度の小さな点にする。日付は最も新しい記事からの経過日数で数え、ビルドの日に左右されない
  */
 export function homeNews(featuredCount = 3, restCount = 8): { featured: SiteArticle[]; rest: SiteArticle[] } {
   const articles = listedArticles().filter((a) => a.publishedAt);
@@ -130,16 +131,16 @@ export function homeNews(featuredCount = 3, restCount = 8): { featured: SiteArti
     // はてなブックマークで反応の多い記事は、話題になっているので少し前に出す
     const buzz = a.reactions ? Math.min(2, a.reactions.bookmarkCount / 30) : 0;
     return (
-      Math.max(0, 6 - days / 15) +
-      (KIND_WEIGHT[a.kind] ?? 0) +
-      (game ? PROMINENCE_WEIGHT[game.prominence] : 0) +
-      buzz
+      8 * 0.5 ** (days / 2) +
+      0.6 * (KIND_WEIGHT[a.kind] ?? 0) +
+      0.4 * (game ? PROMINENCE_WEIGHT[game.prominence] : 0) +
+      0.5 * buzz
     );
   };
   // 記事の画像か、主な作品の画像のある記事だけを大きく見せる
   const hasVisual = (a: SiteArticle) =>
     !!a.image || a.games.some((g) => g.role === 'primary' && getGame(g.gameId)?.image);
-  const pool = articles.slice(0, 24).filter(hasVisual);
+  const pool = articles.slice(0, 20).filter(hasVisual);
   // 点の高い順。先頭を一番大きい枠に置く
   // 同じ作品の記事は大きな枠に1件だけ
   const featured: SiteArticle[] = [];
@@ -151,6 +152,10 @@ export function homeNews(featuredCount = 3, restCount = 8): { featured: SiteArti
     if (gid) usedGames.add(gid);
     featured.push(a);
   }
+  // 一番大きい枠のほかは、新しい順に並べる
+  const [lead, ...others] = featured;
+  others.sort((a, b) => (a.publishedAt! < b.publishedAt! ? 1 : a.publishedAt! > b.publishedAt! ? -1 : 0));
+  if (lead) featured.splice(0, featured.length, lead, ...others);
   const ids = new Set(featured.map((a) => a.id));
   return { featured, rest: articles.filter((a) => !ids.has(a.id)).slice(0, restCount) };
 }
