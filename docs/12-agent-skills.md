@@ -193,7 +193,7 @@ export const ManualResult = z.object({
 2. 作品の事実: 発売予定と早期アクセスの作品の Steam の情報を `seed:steam` で取り直し、`igdb:sync`、`media:palettes`、`claims:repoint` を実行する。Steam の情報が、より新しい公式の告知の Claim を置き換えていないかを確かめる。`seed:steam` は、Steam のヘッダー画像が変わったら前の画像の Claim を置き換え、セールなどの間だけの差し替え（`header_alt_assets_N`）は取り込まない（Steam のヘッダー画像がまだない作品では、差し替えの前の `/apps/{appId}/header.jpg` を使う）。
 3. 指標と要約: `metrics:popularity`、`reviews:summarize`（28日より古ければ `--force`）。
 4. 判断の要る内容（利用者に尋ねない）: `refresh:feeds` の候補から新しい記事と収録していない作品（10作品程度まで。公開条件を満たせば公開する）を、催しの案内のページから日程の変更と次の回を、公式の告知から発売情報の変更を集め、既存のコレクションに合う作品を加える。エージェントが判断して書き、報告する。発売情報は公式の根拠を優先する（媒体の記事は公式やストアの Claim を置き換えられない。[06](06-update-pipeline.md) §6.8）。確かめた催しには、次に確かめる日（`recheckAfter`）を書く。Claim を置き換えたら `claims:repoint` を実行する。
-5. 付随するもの: `media:articles`、`media:events`、`reactions:summarize`。
+5. 付随するもの: `media:articles`、`media:events`、`events:reports`（会場の催しの感想。関係のないものは `hidden` にする）、`reactions:summarize`。
 6. 検証: `check:data`、`npm test`、`build`、`check:dist`。作業後の `refresh:status` と比べ、残ったものを報告する。
 
 `npm run refresh:status`（`scripts/pipeline/refresh-status.ts`）は、外部と通信せず、データを変えない。出力は次の JSON である。`--url {URL}` を付けると、その URL の記事が登録済みか（canonical と別名を含む）、`state/seen-urls.json` で扱い済みかだけを出す。

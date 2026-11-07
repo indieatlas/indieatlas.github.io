@@ -540,6 +540,39 @@ export const Article = z.object({
 - 未登録の作品への言及は Article には書かず、`register-game` タスク（対象に `articleId` を含める）にする。そのタスクで作品を登録したら、記事との関連を追加する。
 - 並び順: `games` は `role`（primary、roundup、mention の順）、`gameId` の順。
 
+## 4.6a IndieEvent と EventReports（`schema/event.ts`）
+
+催し（`data/events/{eventId}.json`）の項目は `schema/event.ts` にある。ここでは、会場とオンラインの区別と、感想の扱いを定める（2026-11-07 に追加）。
+
+- `format` で、会場で開く催し（`in-person`、配信もあるものは `hybrid`）とオンラインの催し（`online`）を分ける。`kind` は催しの中身（展示・試遊、発表配信、フェス、カンファレンス、アワード、ゲームジャム、セール）で、会場かどうかは表さない。
+- オンラインの催しは `location` を持たない。セール（`kind: sale`）は常にオンライン。会場の催しで `location` がないものは「会場未定」と表示する（D-15）。
+- `aliases`（任意、8件まで）: この回を指すほかの呼び名（略称など。例: 東京ゲームダンジョン14 の「ゲムダン14」）。感想を探す語と、記事の見出しとの照合に使う。
+
+感想（`data/event-reports/{eventId}.json`）は、会場の催しに行った人や出展した人が個人のブログや note に書いた記事への参照である。
+
+```ts
+export const EventReport = z.object({
+  url: HttpUrl,
+  title: z.string().min(1).max(300),     // 原文の見出し
+  author: z.string().min(1).max(80).optional(),  // 書き手の表示名
+  platform: z.enum(['note', 'hatena-blog', 'blog']),
+  publishedAt: IsoDateTime.optional(),   // 分からなければ省く
+  foundVia: z.enum(['note-hashtag', 'hatena-bookmark']),
+  foundAt: IsoDateTime,
+  status: z.enum(['shown', 'hidden']),   // hidden: 催しと関係がないなどで出さない。集め直しても戻さない
+});
+
+export const EventReportsFile = z.object({
+  schemaVersion: z.literal(1),
+  eventId: EventId,
+  reports: z.array(EventReport).max(80),
+});
+```
+
+- 本文は保存せず、見出し、書き手、掲載日、URL だけを残す。サイトに出すのも見出し、書き手、サービス名、掲載日と原文へのリンクだけとする（画像と説明は出さない）。
+- 並び順: `reports` は `url` の順。サイトでは掲載日の新しい順に並べる。
+- オンラインの催しには感想のファイルを作らない（D-15）。
+
 ## 4.7 Collection、Relation、Tag
 
 ### 4.7.1 Collection（`data/collections/{collectionId}.json`）
@@ -837,7 +870,7 @@ export const UsageLedger = z.object({
 | - | - |
 | D-01 | すべてのファイルがスキーマに合い、ファイル名が `id` と一致する |
 | D-02 | ファイルの内容が `writeJson` で書き直した結果と1バイトも違わない（書式と並び順） |
-| D-03 | 参照先が存在する（開発者、Claim の作品、記事の作品、コレクションの作品、関係の作品、タグの Claim のタグ、`mergedInto`） |
+| D-03 | 参照先が存在する（開発者、Claim の作品、記事の作品、催しの作品、感想の催し、コレクションの作品、関係の作品、タグの Claim のタグ、`mergedInto`） |
 | D-04 | 統合済みの作品の `mergedInto` は統合済みでない作品を指し、連鎖しない。統合済みの作品には、採用済みの Claim、記事の関連、コレクションの項目、関係が残っていない |
 | D-05 | 統合済みでない作品どうしで、強いキー（§4.3.1）が重複しない。`associatedApps` の ID も他の作品の強いキーと重複しない |
 | D-06 | 公開中の作品が公開の条件（[05](05-sources-and-editorial-policy.md) §5.5）を満たす |
@@ -849,6 +882,7 @@ export const UsageLedger = z.object({
 | D-12 | タスクとレビュー待ちの ID が重複しない。状態と項目が矛盾しない（`done` には `resolution` がある、など） |
 | D-13 | `config/sources.json` で `enabled: true` の情報源には `rights.checkedAt` がある |
 | D-14 | `data/`、`state/`、`config/` に機密情報らしい文字列がない（`sk-ant-`、`ghp_`、`github_pat_`、`-----BEGIN`、`AKIA` で始まる値など） |
+| D-15 | オンラインの催しは `location` を持たない。セールの催しはオンライン。感想のファイルは存在する会場の催しを指し、同じ URL が重複しない |
 
 ## 4.11 データの例（架空の作品）
 

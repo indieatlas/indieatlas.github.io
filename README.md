@@ -21,6 +21,7 @@ npm run test:e2e       # ビルド済みの dist/ に対する E2E テスト
 npm run seed:steam -- --app 413150   # Steam の作品情報から候補の作品と Claim を作る
 npm run media:articles               # 記事の OGP 画像を WebP で public/media/articles/ に保存する
 npm run media:events                 # イベントの OGP 画像を public/media/events/ に保存する
+npm run events:reports               # 終わったばかりの会場のイベントの感想（note、個人のブログ）を data/event-reports/ に集める
 npm run refresh:status               # 古くなったもの、確かめ直すもの（発売予定、催し、指標、記事の情報源）を JSON で出す（通信しない）
 npm run refresh:feeds                # 媒体のフィードから、まだ登録していない新しい記事の候補を JSON で出す（データは変えない）
 npm run claims:repoint               # 置き換えられた Claim を参照するコレクションの項目を、置き換えた先に付け替える

@@ -138,6 +138,7 @@ export const SourcesFile = z.object({ schemaVersion: z.literal(1), sources: z.ar
 
 - 原文へのリンクを基本にする。記事の全文を保存したり再配布したりしない。
 - 公開するのは、見出し（`displayTitle: true` の場合）、媒体名、掲載日、記事の種別、当サイトが書いた短い説明（`displaySummary: true` の場合、120字以内）、原文へのリンクだけとする。
+- 個人のブログや note に書かれた催しの感想（[06](06-update-pipeline.md) §6.13.8）は、情報源として登録せず、根拠にも使わない。公開するのは見出し、書き手の表示名、サービス名、掲載日、原文へのリンクだけで、画像、説明、本文の抜粋は載せない。会場の催しのページに「行った人・出展した人の感想」として並べる。
 - 記事の本文は、調査ジョブの実行中にメモリと成果物（artifact、3日で削除）にだけ置く。Git には本文のハッシュ（`contentHash`）だけを残す。
 - 根拠の抜粋（`Evidence.quote`）は200字以内とし、`rights.storeQuotes: false` の情報源では保存せず、ハッシュ（`quoteHash`）だけを保存する。抜粋はサイトに表示しない。
 

@@ -58,6 +58,7 @@ description: Indie Atlas のサイトの内容をまとめて最新にする。�
    - 確かめた催しには、次に確かめる日を `recheckAfter` に書く。開始の7日前より前なら開始の7日前、それを過ぎていれば開始日、日程が予定（`tentative`）なら1週間後、`ended-no-next` で次の回の告知がなければ1か月後にする。`refresh:status` は、`recheckAfter` が来るまで、その催しを挙げない。
    - 開始日が変わると催しの ID（`eventId(url, 開始日)`）が変わる。新しい ID のファイルに書き、古いファイルを消す（`npm run check:data` の D-08 で確かめられる）。
    - 出展作品（`games`）には、既存の作品に同定できたものだけを入れる。
+   - 会場で開く催しは `format: "in-person"`（配信もあれば `"hybrid"`）で `location` を書き、配信の発表会、ストアのフェスとセールは `format: "online"` で `location` を書かない（`check:data` の D-15）。略称で呼ばれる催しは、案内のページにある略称を `aliases` に入れる（例: 「ゲムダン14」）。感想を探す語になる。
 3. **発売情報**: 段階 A の手順5で控えた作品と、手順1の記事で発売日の決定、延期、配信の終了などが分かった作品について、新しい発売情報を確かめる。
    - 公式の根拠（公式サイト、開発者の告知）を優先して探す。記事に公式の告知へのリンクがあれば、たどって取得する。媒体の記事（順位2）は、公式やストア（順位3）の Claim を置き換えられないためである（`docs/06-update-pipeline.md` §6.8）。媒体の記事は、IGDB（順位1）の Claim を置き換える場合と、公式の根拠に添える2件目の根拠に使う。
    - 機種ごとに `makeClaim` で新しい `release` の Claim を作り、`supersede` で同じ機種の採用済みの Claim を置き換える。公式の根拠なら `basis: "fact"`、媒体の記事だけなら `basis: "reported"` にし、独立した2つの媒体の記事を根拠にする（`originKey` が異なるもの）。
@@ -76,7 +77,8 @@ description: Indie Atlas のサイトの内容をまとめて最新にする。�
 ## D. 記事と催しに付随するもの
 
 1. `npm run media:articles` と `npm run media:events` を実行する。画像を使ってよい情報源の、画像のない記事と催しだけが対象である。Steam の予定表のように OGP 画像のないページは「OGP 画像がない」になるが、対応は要らない。
-2. `keys.llm` が `true` なら `npm run reactions:summarize` を実行する。掲載から14日以内の記事と、反応のまだない記事が対象である。`refresh:status` の `metrics.articleReactions.missing` には、はてなブックマークがまだない記事も含まれるので、残っていても問題ではない。
+2. `npm run events:reports` を実行する。終わってから30日以内の会場の催しについて、note と個人のブログの感想を集める（`docs/06-update-pipeline.md` §6.13.8）。加わった感想の見出しを読み、催しと関係のないもの（ほかの催しの話、出展の募集の告知など）は、消さずに `status` を `"hidden"` にする。
+3. `keys.llm` が `true` なら `npm run reactions:summarize` を実行する。掲載から14日以内の記事と、反応のまだない記事が対象である。`refresh:status` の `metrics.articleReactions.missing` には、はてなブックマークがまだない記事も含まれるので、残っていても問題ではない。
 
 ## E. 検証とプレビュー
 
