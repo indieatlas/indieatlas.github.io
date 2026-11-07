@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000113",
+  "claims": [
+    {
+      "id": "c_e9d58c0847156ace",
+      "gameId": "g_000113",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3418870/",
+          "retrievedAt": "2026-11-07T03:03:25Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3a8a6bfb284c9a024380d8cebfd5b3d8e14dd753f66cdb3ad4473906fbb8cf83"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:25Z",
+      "createdAt": "2026-11-07T03:03:25Z",
+      "updatedAt": "2026-11-07T03:03:25Z",
+      "lastCheckedAt": "2026-11-07T03:03:25Z",
+      "createdBy": "system",
+      "createdByRun": "42331309638",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 12,
+          "day": 9
+        },
+        "rawText": "9 Dec, 2026"
+      }
+    },
+    {
+      "id": "c_a8dcff1d6a7de8d6",
+      "gameId": "g_000113",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3418870/",
+          "retrievedAt": "2026-11-07T03:03:28Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:277942e8dbdd381978b5f023bb9643d978e9c73ab698e361641e9c86c6eea669"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:25Z",
+      "createdAt": "2026-11-07T03:03:25Z",
+      "updatedAt": "2026-11-07T03:03:25Z",
+      "lastCheckedAt": "2026-11-07T03:03:28Z",
+      "createdBy": "system",
+      "createdByRun": "42331309638",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_106fe58096294f11",
+      "gameId": "g_000113",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3418870/",
+          "retrievedAt": "2026-11-07T03:03:25Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3a8a6bfb284c9a024380d8cebfd5b3d8e14dd753f66cdb3ad4473906fbb8cf83"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:25Z",
+      "createdAt": "2026-11-07T03:03:25Z",
+      "updatedAt": "2026-11-07T03:03:25Z",
+      "lastCheckedAt": "2026-11-07T03:03:25Z",
+      "createdBy": "system",
+      "createdByRun": "42331309638",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "local-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_dc32d2f3b638d5fd",
+      "gameId": "g_000113",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3418870/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:56:51Z",
+          "quote": "投げる・打つ・走る！野球と格闘がクロスオーバーしたベルトスクロールアクションが、90年代のゲームセンターから時を超えHDリメイクでカムバック！ 新キャラクター、新モード、新ステージ、新BGMを実装。最大4人プレイにも対応！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3a8a6bfb284c9a024380d8cebfd5b3d8e14dd753f66cdb3ad4473906fbb8cf83"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:56:51Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "summary",
+      "value": {
+        "ja": "90年代のアーケードで人気を博したアイレムのベルトスクロールアクション『野球格闘リーグマン』のHDリメイク。野球と格闘を組み合わせた戦いで、盗まれた黄金の野球像を取り戻す。新キャラクターや新ステージ、最大4人の協力プレイ、アレンジBGMを収録する。"
+      }
+    },
+    {
+      "id": "c_2240b73ec524965b",
+      "gameId": "g_000113",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3418870/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:56:51Z",
+          "quote": "投げる・打つ・走る！野球と格闘がクロスオーバーしたベルトスクロールアクションが、90年代のゲームセンターから時を超えHDリメイクでカムバック！ 新キャラクター、新モード、新ステージ、新BGMを実装。最大4人プレイにも対応！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3a8a6bfb284c9a024380d8cebfd5b3d8e14dd753f66cdb3ad4473906fbb8cf83"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:56:51Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_39046c2a50a80f67",
+      "gameId": "g_000113",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3418870/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:56:51Z",
+          "quote": "オリジナル版をベースにした「レギュラーシーズン」に加え、出現する敵や配置が変化し、新ステージも登場する高難易度アレンジモード「クライマックスシーズン」を搭載。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3a8a6bfb284c9a024380d8cebfd5b3d8e14dd753f66cdb3ad4473906fbb8cf83"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:56:51Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "tag",
+      "value": {
+        "tagId": "difficult"
+      }
+    },
+    {
+      "id": "c_7ffb0614fb209da6",
+      "gameId": "g_000113",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3418870/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:56:51Z",
+          "quote": "ホームラン競争やハチャメチャなカーレースでハイスコアを競い合おう！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3a8a6bfb284c9a024380d8cebfd5b3d8e14dd753f66cdb3ad4473906fbb8cf83"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:56:51Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_821c21e400f39e3b",
+      "gameId": "g_000113",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3418870/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:56:51Z",
+          "quote": "投げる・打つ・走る！野球と格闘がクロスオーバーしたベルトスクロールアクションが、90年代のゲームセンターから時を超えHDリメイクでカムバック！ 新キャラクター、新モード、新ステージ、新BGMを実装。最大4人プレイにも対応！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3a8a6bfb284c9a024380d8cebfd5b3d8e14dd753f66cdb3ad4473906fbb8cf83"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:56:51Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "tag",
+      "value": {
+        "tagId": "retro"
+      }
+    },
+    {
+      "id": "c_8fed50d675fea6c0",
+      "gameId": "g_000113",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3418870/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:56:51Z",
+          "quote": "投げる・打つ・走る！野球と格闘がクロスオーバーしたベルトスクロールアクションが、90年代のゲームセンターから時を超えHDリメイクでカムバック！ 新キャラクター、新モード、新ステージ、新BGMを実装。最大4人プレイにも対応！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3a8a6bfb284c9a024380d8cebfd5b3d8e14dd753f66cdb3ad4473906fbb8cf83"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:56:51Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_b468d0f1643f106c",
+      "gameId": "g_000113",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3418870/",
+          "retrievedAt": "2026-11-07T03:03:25Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3a8a6bfb284c9a024380d8cebfd5b3d8e14dd753f66cdb3ad4473906fbb8cf83"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:25Z",
+      "createdAt": "2026-11-07T03:03:25Z",
+      "updatedAt": "2026-11-07T03:03:25Z",
+      "lastCheckedAt": "2026-11-07T03:03:25Z",
+      "createdBy": "system",
+      "createdByRun": "42331309638",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3418870/"
+      }
+    },
+    {
+      "id": "c_7711eba47e0de4ee",
+      "gameId": "g_000113",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3418870/",
+          "retrievedAt": "2026-11-07T03:03:25Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3a8a6bfb284c9a024380d8cebfd5b3d8e14dd753f66cdb3ad4473906fbb8cf83"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:25Z",
+      "createdAt": "2026-11-07T03:03:25Z",
+      "updatedAt": "2026-11-07T03:03:25Z",
+      "lastCheckedAt": "2026-11-07T03:03:25Z",
+      "createdBy": "system",
+      "createdByRun": "42331309638",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3418870/0c47fc31c6c0b3e1c85fb99776844779c452e9c3/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "野球格闘リーグマン Bases Loaded のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "CITY CONNECTION"
+        }
+      }
+    }
+  ]
+}

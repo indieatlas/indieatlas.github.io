@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000114",
+  "claims": [
+    {
+      "id": "c_237baf6596491f7a",
+      "gameId": "g_000114",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4173010/",
+          "retrievedAt": "2026-11-07T03:03:29Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1b3d7c8949897a7a9e047b3c0ebd6058e34f1b409f31f30175df562867bd6921"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:29Z",
+      "createdAt": "2026-11-07T03:03:29Z",
+      "updatedAt": "2026-11-07T03:03:29Z",
+      "lastCheckedAt": "2026-11-07T03:03:29Z",
+      "createdBy": "system",
+      "createdByRun": "42331309638",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "year",
+          "year": 2027
+        },
+        "rawText": "2027"
+      }
+    },
+    {
+      "id": "c_190d0b7ee8bb4c95",
+      "gameId": "g_000114",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4173010/",
+          "retrievedAt": "2026-11-07T03:03:32Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:17557c1c0ebe0dfc146a3314c9107d4517a2f276a54eca59c557f78d0c65d7f4"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:29Z",
+      "createdAt": "2026-11-07T03:03:29Z",
+      "updatedAt": "2026-11-07T03:03:29Z",
+      "lastCheckedAt": "2026-11-07T03:03:32Z",
+      "createdBy": "system",
+      "createdByRun": "42331309638",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_d5d4a99d2e09f670",
+      "gameId": "g_000114",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4173010/",
+          "retrievedAt": "2026-11-07T03:03:29Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1b3d7c8949897a7a9e047b3c0ebd6058e34f1b409f31f30175df562867bd6921"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:29Z",
+      "createdAt": "2026-11-07T03:03:29Z",
+      "updatedAt": "2026-11-07T03:03:29Z",
+      "lastCheckedAt": "2026-11-07T03:03:29Z",
+      "createdBy": "system",
+      "createdByRun": "42331309638",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_8540b9ad85ce4a09",
+      "gameId": "g_000114",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4173010/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:57:44Z",
+          "quote": "今回の『忍者じゃじゃ丸くん』は、妖怪いっぱいハクスラアクション！じゃじゃ丸が迷い込んだ異界のダンジョン、そこは妖怪たちが踊り騒ぐパーティー会場だった！？次々にやってくる妖怪たちを倒し、ダンジョンを駆け抜けろ！登場する武具は300種類以上。ド派手な忍法も使いこなせ！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1b3d7c8949897a7a9e047b3c0ebd6058e34f1b409f31f30175df562867bd6921"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:57:44Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "summary",
+      "value": {
+        "ja": "『忍者じゃじゃ丸くん』をハクスラアクションとして描く新作。異界のダンジョンに迷い込んだじゃじゃ丸が、踊り騒ぐ妖怪たちを倒しながら300種類以上の武具を集める。拠点の部屋を家具で飾り、強化してさくら姫の救出を目指す。"
+      }
+    },
+    {
+      "id": "c_227b1d98677db2cb",
+      "gameId": "g_000114",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4173010/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:57:44Z",
+          "quote": "今回の『忍者じゃじゃ丸くん』は、妖怪いっぱいハクスラアクション！じゃじゃ丸が迷い込んだ異界のダンジョン、そこは妖怪たちが踊り騒ぐパーティー会場だった！？次々にやってくる妖怪たちを倒し、ダンジョンを駆け抜けろ！登場する武具は300種類以上。ド派手な忍法も使いこなせ！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1b3d7c8949897a7a9e047b3c0ebd6058e34f1b409f31f30175df562867bd6921"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:57:44Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_80c9766ebe124fcc",
+      "gameId": "g_000114",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4173010/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:57:44Z",
+          "quote": "大群を引き連れ、個性的なダンスで魅せてくるヌシ妖怪とのバトルに挑戦しよう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1b3d7c8949897a7a9e047b3c0ebd6058e34f1b409f31f30175df562867bd6921"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:57:44Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_91cfbe8968715238",
+      "gameId": "g_000114",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4173010/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:57:44Z",
+          "quote": "忍者刀、くさりがま、手裏剣など、装備の種類は300以上！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1b3d7c8949897a7a9e047b3c0ebd6058e34f1b409f31f30175df562867bd6921"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:57:44Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "tag",
+      "value": {
+        "tagId": "japan"
+      }
+    },
+    {
+      "id": "c_a3d1e3936fb7ed7e",
+      "gameId": "g_000114",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4173010/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:57:44Z",
+          "quote": "次々にやってくる妖怪たちを倒し、ダンジョンを探索しながら強力な武具を探そう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1b3d7c8949897a7a9e047b3c0ebd6058e34f1b409f31f30175df562867bd6921"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:57:44Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_e8a743cd83f70555",
+      "gameId": "g_000114",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4173010/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:57:44Z",
+          "quote": "今回の『忍者じゃじゃ丸くん』は、妖怪いっぱいハクスラアクション！じゃじゃ丸が迷い込んだ異界のダンジョン、そこは妖怪たちが踊り騒ぐパーティー会場だった！？次々にやってくる妖怪たちを倒し、ダンジョンを駆け抜けろ！登場する武具は300種類以上。ド派手な忍法も使いこなせ！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1b3d7c8949897a7a9e047b3c0ebd6058e34f1b409f31f30175df562867bd6921"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:57:44Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_c3b98108f246ac7d",
+      "gameId": "g_000114",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4173010/",
+          "retrievedAt": "2026-11-07T03:03:29Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1b3d7c8949897a7a9e047b3c0ebd6058e34f1b409f31f30175df562867bd6921"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:29Z",
+      "createdAt": "2026-11-07T03:03:29Z",
+      "updatedAt": "2026-11-07T03:03:29Z",
+      "lastCheckedAt": "2026-11-07T03:03:29Z",
+      "createdBy": "system",
+      "createdByRun": "42331309638",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4173010/"
+      }
+    },
+    {
+      "id": "c_079699f5a5b5e7ad",
+      "gameId": "g_000114",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4173010/",
+          "retrievedAt": "2026-11-07T03:03:29Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1b3d7c8949897a7a9e047b3c0ebd6058e34f1b409f31f30175df562867bd6921"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:29Z",
+      "createdAt": "2026-11-07T03:03:29Z",
+      "updatedAt": "2026-11-07T03:03:29Z",
+      "lastCheckedAt": "2026-11-07T03:03:29Z",
+      "createdBy": "system",
+      "createdByRun": "42331309638",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4173010/09d69a32fa253ad6bfc87fded8ead441939f9acb/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "じゃじゃ丸の百鬼夜行伝 のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "CITY CONNECTION"
+        }
+      }
+    }
+  ]
+}

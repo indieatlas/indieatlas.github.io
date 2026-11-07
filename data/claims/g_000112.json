@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000112",
+  "claims": [
+    {
+      "id": "c_a9780ee3011a4571",
+      "gameId": "g_000112",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4968640/",
+          "retrievedAt": "2026-11-07T03:03:20Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fa9243172eca7964379bdb45cf6926f833ca25f574b3bae15db779a32904d83a"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T03:03:20Z",
+      "createdBy": "system",
+      "createdByRun": "42331309638",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 10,
+          "day": 9
+        },
+        "rawText": "9 Oct, 2026"
+      }
+    },
+    {
+      "id": "c_e15d04d6e6428ca0",
+      "gameId": "g_000112",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4968640/",
+          "retrievedAt": "2026-11-07T03:03:23Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8ec2ea16e433ef7ab8da51392c77f297060115749031ddb4e723babbed487236"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T03:03:23Z",
+      "createdBy": "system",
+      "createdByRun": "42331309638",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_04f03af46bf813c7",
+      "gameId": "g_000112",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4968640/",
+          "retrievedAt": "2026-11-07T03:03:20Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fa9243172eca7964379bdb45cf6926f833ca25f574b3bae15db779a32904d83a"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T03:03:20Z",
+      "createdBy": "system",
+      "createdByRun": "42331309638",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_72d23512c31f56f4",
+      "gameId": "g_000112",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4968640/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:54:03Z",
+          "quote": "『Japanese Ramen Simulator』は、最大6人で遊べるラーメン店経営シミュレーター。食材を仕込み、麺を茹で、トッピングを盛り付けて、こだわりの一杯を作ろう。オリジナルメニューを開発し、厨房や客席を自由にレイアウト。仲間との協力でも、一人でも、理想のラーメン店を目指せ！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fa9243172eca7964379bdb45cf6926f833ca25f574b3bae15db779a32904d83a"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:54:03Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "summary",
+      "value": {
+        "ja": "最大6人で協力してラーメン店を営む経営シミュレーション。食材の仕込みから調理、配膳、接客、片付けまでを分担し、こだわりの一杯を作る。厨房や客席のレイアウト、メニュー開発も自由。"
+      }
+    },
+    {
+      "id": "c_1e38017f746cf638",
+      "gameId": "g_000112",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4968640/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:54:03Z",
+          "quote": "『Japanese Ramen Simulator』は、最大6人で遊べるラーメン店経営シミュレーターです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fa9243172eca7964379bdb45cf6926f833ca25f574b3bae15db779a32904d83a"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:54:03Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_27684e3a7a0e1be3",
+      "gameId": "g_000112",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4968640/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:54:03Z",
+          "quote": "スープを仕込み、麺を茹で、トッピングを盛り付けて、お客様の注文に合わせた一杯を作ります。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fa9243172eca7964379bdb45cf6926f833ca25f574b3bae15db779a32904d83a"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:54:03Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "tag",
+      "value": {
+        "tagId": "japan"
+      }
+    },
+    {
+      "id": "c_db3ff0b19342e49f",
+      "gameId": "g_000112",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4968640/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:54:03Z",
+          "quote": "仲間と仕込み、調理、配膳、接客、片付けを分担し、次々に入る注文を乗り切りましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fa9243172eca7964379bdb45cf6926f833ca25f574b3bae15db779a32904d83a"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:54:03Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_dcf9ad9ad4cfe703",
+      "gameId": "g_000112",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4968640/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:54:03Z",
+          "quote": "餃子や丼もの、ビールなど、ラーメンと一緒に楽しめるメニューも用意できます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fa9243172eca7964379bdb45cf6926f833ca25f574b3bae15db779a32904d83a"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:54:03Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "tag",
+      "value": {
+        "tagId": "food"
+      }
+    },
+    {
+      "id": "c_f6ef70e93a2b0ef3",
+      "gameId": "g_000112",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4968640/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:54:03Z",
+          "quote": "スープに使う食材の組み合わせや、物理演算による盛り付けで、一杯ごとに違った仕上がりになります。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fa9243172eca7964379bdb45cf6926f833ca25f574b3bae15db779a32904d83a"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:54:03Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "tag",
+      "value": {
+        "tagId": "physics"
+      }
+    },
+    {
+      "id": "c_be4b5ab7f878b0ec",
+      "gameId": "g_000112",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4968640/",
+          "retrievedAt": "2026-11-07T03:03:20Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fa9243172eca7964379bdb45cf6926f833ca25f574b3bae15db779a32904d83a"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T03:03:20Z",
+      "createdBy": "system",
+      "createdByRun": "42331309638",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4968640/"
+      }
+    },
+    {
+      "id": "c_54d893946a4af47b",
+      "gameId": "g_000112",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4968640/",
+          "retrievedAt": "2026-11-07T03:03:20Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fa9243172eca7964379bdb45cf6926f833ca25f574b3bae15db779a32904d83a"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T03:03:20Z",
+      "createdBy": "system",
+      "createdByRun": "42331309638",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4968640/f271f45d7475a5270df309f6b7634d0a56a8055d/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Japanese Ramen Simulator のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Wild Dog"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000115",
+  "claims": [
+    {
+      "id": "c_954e4148db334a5a",
+      "gameId": "g_000115",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2488290/",
+          "retrievedAt": "2026-11-07T03:03:34Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:aabeedd426fc1c3641a15d63a3d23f19474711331959864b6dd893e1e8617bfa"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:34Z",
+      "createdAt": "2026-11-07T03:03:34Z",
+      "updatedAt": "2026-11-07T03:03:34Z",
+      "lastCheckedAt": "2026-11-07T03:03:34Z",
+      "createdBy": "system",
+      "createdByRun": "42331309638",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 3,
+          "day": 19
+        },
+        "rawText": "19 Mar, 2026"
+      }
+    },
+    {
+      "id": "c_b9df4b66f1073016",
+      "gameId": "g_000115",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2488290/",
+          "retrievedAt": "2026-11-07T03:03:37Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:45760193c0676bc357c5b4fe2b9906ce8ba48659a55b8e8146e5ac33f4cb6390"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:34Z",
+      "createdAt": "2026-11-07T03:03:34Z",
+      "updatedAt": "2026-11-07T03:03:34Z",
+      "lastCheckedAt": "2026-11-07T03:03:37Z",
+      "createdBy": "system",
+      "createdByRun": "42331309638",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_f5edf660ead1343d",
+      "gameId": "g_000115",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2488290/",
+          "retrievedAt": "2026-11-07T03:03:34Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:aabeedd426fc1c3641a15d63a3d23f19474711331959864b6dd893e1e8617bfa"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:34Z",
+      "createdAt": "2026-11-07T03:03:34Z",
+      "updatedAt": "2026-11-07T03:03:34Z",
+      "lastCheckedAt": "2026-11-07T03:03:34Z",
+      "createdBy": "system",
+      "createdByRun": "42331309638",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "local-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_2f1f859aa6cf9983",
+      "gameId": "g_000115",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2488290/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:58:23Z",
+          "quote": "正義の戦士たちが鍛え抜かれた肉体と格闘テクニックで巨悪に立ち向かう。ジャレコのベルトスクロールアクション『ラッシング・ビート』新作が登場。簡単操作のオートコンボを軸に、テクニックを磨けば多彩なコンボを繋ぐことができる爽快なアクションが特徴。拳に再び、怒りを宿せ――。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:aabeedd426fc1c3641a15d63a3d23f19474711331959864b6dd893e1e8617bfa"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:58:23Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "summary",
+      "value": {
+        "ja": "ジャレコのベルトスクロールアクション『ラッシング・ビート』の新作。ネオ・シスコを揺るがす事件の裏に潜む黒幕を追い、6人の格闘家が戦う。簡単操作のオートコンボを軸に、反撃や武器攻撃を組み合わせたコンボを組み立てられる。2人協力プレイにも対応。"
+      }
+    },
+    {
+      "id": "c_09dae7c3be76d475",
+      "gameId": "g_000115",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2488290/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:58:23Z",
+          "quote": "正義の戦士たちが鍛え抜かれた肉体と格闘テクニックで巨悪に立ち向かう。ジャレコのベルトスクロールアクション『ラッシング・ビート』新作が登場。簡単操作のオートコンボを軸に、テクニックを磨けば多彩なコンボを繋ぐことができる爽快なアクションが特徴。拳に再び、怒りを宿せ――。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:aabeedd426fc1c3641a15d63a3d23f19474711331959864b6dd893e1e8617bfa"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:58:23Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_0bc0b7dc65bc35cb",
+      "gameId": "g_000115",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2488290/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:58:23Z",
+          "quote": "ステージは全部で9つ。ショッピングモール、スラム街、地下鉄、研究所など、様々なエリアで待ち受ける敵を撃破し、物語の真相を追いかけよう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:aabeedd426fc1c3641a15d63a3d23f19474711331959864b6dd893e1e8617bfa"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:58:23Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_f82984346d8a2340",
+      "gameId": "g_000115",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2488290/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T02:58:23Z",
+          "quote": "また、本作は2人プレイにも対応。仲間と共に、修羅の道を突き進め！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:aabeedd426fc1c3641a15d63a3d23f19474711331959864b6dd893e1e8617bfa"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:20Z",
+      "createdAt": "2026-11-07T03:03:20Z",
+      "updatedAt": "2026-11-07T03:03:20Z",
+      "lastCheckedAt": "2026-11-07T02:58:23Z",
+      "createdBy": "llm",
+      "createdByRun": "42331309638",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_8f90aecb38e70ad3",
+      "gameId": "g_000115",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2488290/",
+          "retrievedAt": "2026-11-07T03:03:34Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:aabeedd426fc1c3641a15d63a3d23f19474711331959864b6dd893e1e8617bfa"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:34Z",
+      "createdAt": "2026-11-07T03:03:34Z",
+      "updatedAt": "2026-11-07T03:03:34Z",
+      "lastCheckedAt": "2026-11-07T03:03:34Z",
+      "createdBy": "system",
+      "createdByRun": "42331309638",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2488290/"
+      }
+    },
+    {
+      "id": "c_c8c8acf273df70b5",
+      "gameId": "g_000115",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2488290/",
+          "retrievedAt": "2026-11-07T03:03:34Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:aabeedd426fc1c3641a15d63a3d23f19474711331959864b6dd893e1e8617bfa"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T03:03:34Z",
+      "createdAt": "2026-11-07T03:03:34Z",
+      "updatedAt": "2026-11-07T03:03:34Z",
+      "lastCheckedAt": "2026-11-07T03:03:34Z",
+      "createdBy": "system",
+      "createdByRun": "42331309638",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2488290/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "RUSHING BEAT X: Return Of Brawl Brothers のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "CITY CONNECTION"
+        }
+      }
+    }
+  ]
+}
