@@ -127,6 +127,7 @@ export function prepareSite(
     tags: data.tags,
     genres: data.genres,
     events: data.events,
+    picks: data.picks,
     stats: data.stats,
     // 売れ筋（Amazon は取得から24時間以内、Steam は3日以内のものだけ。なければ空）
     ranking: siteRanking(repo, amazon, steam),

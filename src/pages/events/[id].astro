@@ -1,0 +1,288 @@
+---
+import ArticleList from '../../components/ArticleList.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ExternalLink from '../../components/ExternalLink.astro';
+import GameGrid from '../../components/GameGrid.astro';
+import SourceRefs from '../../components/SourceRefs.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getArticle, getEvent, getEvents, getGame } from '../../lib/data.ts';
+import { googleCalendarUrl } from '../../lib/event-calendar.ts';
+import { EVENT_FORMAT_LABELS, EVENT_KIND_LABELS, eventPlace, REPORT_PLATFORM_LABELS } from '../../lib/events.ts';
+import { formatDate, isoDate } from '../../lib/format.ts';
+import { absoluteUrl, paths, url } from '../../lib/urls.ts';
+
+export function getStaticPaths() {
+  return getEvents().map((e) => ({ params: { id: e.id } }));
+}
+const e = getEvent(Astro.params.id!)!;
+const games = e.games.map((id) => getGame(id)).filter((g) => g !== undefined);
+const articles = e.articles.map((id) => getArticle(id)).filter((a) => a !== undefined);
+const gcal = e.phase !== 'past' ? googleCalendarUrl(e) : undefined;
+const now =
+  e.phase === 'ongoing' ? (e.startKey === e.endKey ? '本日開催' : '開催中') : e.phase === 'past' ? '終了' : undefined;
+---
+
+<BaseLayout
+  title={e.name}
+  description={e.summary}
+  path={paths.event(e.id)}
+  ogImage={e.image ? absoluteUrl(e.image.path) : undefined}
+  current="events"
+>
+  <div class="container section event-page">
+    <Breadcrumbs
+      items={[{ label: 'ホーム', path: paths.home() }, { label: 'イベント', path: paths.events() }, { label: e.name }]}
+    />
+    <header class="hero">
+      <div class="media" aria-hidden="true">
+        {e.image ? (
+          <img
+            src={url(e.image.path)}
+            alt=""
+            width={e.image.width}
+            height={e.image.height}
+            decoding="async"
+            data-fallback
+          />
+        ) : (
+          <span class="poster">{e.nameEn ?? e.name}</span>
+        )}
+      </div>
+      <div class="body">
+        <p class="meta">
+          <span class:list={['format', `format-${e.format}`]}>{EVENT_FORMAT_LABELS[e.format]}</span>
+          <span class="kind">{EVENT_KIND_LABELS[e.kind] ?? e.kind}</span>
+          {e.tentative && <span class="tag">予定</span>}
+          {now && <span class:list={['tag', { live: e.phase === 'ongoing' }]}>{now}</span>}
+        </p>
+        <h1 class="page-title">{e.name}</h1>
+        {e.nameEn && e.nameEn !== e.name && (
+          <p class="name-en" lang="en">
+            {e.nameEn}
+          </p>
+        )}
+        <dl class="facts">
+          <dt>日程</dt>
+          <dd>
+            <time datetime={e.startKey}>{e.dateLabel}</time>
+            {e.time && <span class="time">{e.time}</span>}
+          </dd>
+          <dt>{e.format === 'online' ? '形式' : '会場'}</dt>
+          <dd>{eventPlace(e)}</dd>
+        </dl>
+        <p class="summary">{e.summary}</p>
+        <p class="actions">
+          <ExternalLink href={e.url} class="primary">
+            公式サイト
+          </ExternalLink>
+          {gcal && <ExternalLink href={gcal}>Google カレンダーに追加</ExternalLink>}
+        </p>
+        <SourceRefs sources={e.sources} inline />
+      </div>
+    </header>
+
+    {e.reports.length > 0 && (
+      <section class="block" aria-labelledby="reports-h">
+        <h2 id="reports-h">
+          行った人・出展した人の感想<span class="count">{e.reports.length}件</span>
+        </h2>
+        <ul class="reports">
+          {e.reports.map((r) => (
+            <li>
+              <ExternalLink href={r.url} class="report-title">
+                {r.title}
+              </ExternalLink>
+              <p class="report-meta">
+                {r.author && <span>{r.author}</span>}
+                <span>{REPORT_PLATFORM_LABELS[r.platform]}</span>
+                {r.publishedAt && <time datetime={isoDate(r.publishedAt)}>{formatDate(r.publishedAt)}</time>}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {articles.length > 0 && (
+      <section class="block" aria-labelledby="articles-h">
+        <h2 id="articles-h">記事</h2>
+        <ArticleList articles={articles} columns={2} />
+      </section>
+    )}
+
+    {games.length > 0 && (
+      <section class="block" aria-labelledby="games-h">
+        <h2 id="games-h">{e.kind === 'showcase' || e.kind === 'awards' ? '発表された作品' : '出展作品'}</h2>
+        <GameGrid games={games} dateMode="none" />
+      </section>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    gap: var(--space-6);
+    margin-top: var(--space-4);
+  }
+  @media (max-width: 900px) {
+    .hero {
+      grid-template-columns: 1fr;
+    }
+  }
+  .media {
+    aspect-ratio: 1.91 / 1;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--color-surface-raised), var(--color-bg-deep));
+  }
+  .media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .poster {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    padding: var(--space-4);
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+    margin: 0 0 var(--space-2);
+    font-size: 0.75rem;
+    font-weight: 800;
+  }
+  .format {
+    padding: 1px 8px;
+    background: var(--color-signal);
+    color: var(--color-on-signal);
+  }
+  .format-online {
+    background: transparent;
+    box-shadow: inset 0 0 0 1px var(--color-border-strong);
+    color: var(--color-text-muted);
+  }
+  .kind {
+    color: var(--color-accent);
+  }
+  .tag {
+    padding: 1px 8px;
+    box-shadow: inset 0 0 0 1px var(--color-border-strong);
+    color: var(--color-text-muted);
+  }
+  .tag.live {
+    background: var(--color-signal);
+    color: var(--color-on-signal);
+    box-shadow: none;
+  }
+  .page-title {
+    margin-bottom: var(--space-1);
+  }
+  .name-en {
+    margin: 0 0 var(--space-3);
+    color: var(--color-text-muted);
+    font-size: var(--text-small);
+  }
+  .facts {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: var(--space-1) var(--space-4);
+    margin: var(--space-3) 0;
+  }
+  .facts dt {
+    color: var(--color-text-muted);
+    font-size: var(--text-small);
+  }
+  .facts dd {
+    margin: 0;
+    font-weight: 700;
+  }
+  .time {
+    margin-left: var(--space-3);
+  }
+  .summary {
+    max-width: var(--measure);
+    line-height: 1.8;
+  }
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin: var(--space-4) 0;
+    font-weight: 700;
+  }
+  .actions :global(a) {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-height: 44px;
+    padding: 0 var(--space-4);
+    box-shadow: inset 0 0 0 1px var(--color-border-strong);
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  .actions :global(a.primary) {
+    background: var(--color-signal);
+    color: var(--color-on-signal);
+    box-shadow: none;
+  }
+  .actions :global(a:hover) {
+    background: var(--color-accent-warm);
+    color: var(--color-on-warm);
+  }
+  .block {
+    margin-top: var(--space-8);
+  }
+  .block h2 {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-3);
+    margin: 0 0 var(--space-4);
+    padding-bottom: var(--space-2);
+    border-bottom: 1px solid var(--color-border);
+    font-size: 1.25rem;
+  }
+  .count {
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+  }
+  .reports {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 0 var(--space-6);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .reports li {
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .reports :global(.report-title) {
+    color: var(--color-text);
+    font-weight: 700;
+    line-height: 1.6;
+    text-decoration: none;
+  }
+  .reports :global(.report-title:hover) {
+    text-decoration: underline;
+  }
+  .report-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 var(--space-3);
+    margin: 2px 0 0;
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
+  }
+</style>

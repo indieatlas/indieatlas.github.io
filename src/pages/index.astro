@@ -1,12 +1,14 @@
 ---
 import ArticleList from '../components/ArticleList.astro';
 import CollectionCard from '../components/CollectionCard.astro';
-import EventCard from '../components/EventCard.astro';
+import DailyPick from '../components/DailyPick.astro';
 import GameGrid from '../components/GameGrid.astro';
+import HomeEvents from '../components/HomeEvents.astro';
 import NewsMosaic from '../components/NewsMosaic.astro';
 import SectionHeading from '../components/SectionHeading.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { gamesByAdded, getCollections, getEvents, getRanking, homeNews } from '../lib/data.ts';
+import { gamesByAdded, getArticle, getCollections, getEvents, getGame, getPicks, getRanking, homeNews } from '../lib/data.ts';
+import { isVenueEvent } from '../lib/events.ts';
 import RankingList from '../components/RankingList.astro';
 import { amazonBestsellersUrl } from '../lib/amazon.ts';
 import ExternalLink from '../components/ExternalLink.astro';
@@ -18,15 +20,35 @@ const rankingTitle = ranking.source === 'steam' ? 'Steam のインディー売�
 
 const byAdded = gamesByAdded();
 
-// 先頭は大きく見せる記事1件と、横で2件ずつ切り替わる6件。続く16件を下の一覧に出す
+// 先頭は大きく見せる記事1件と、横で2件ずつ切り替わる6件
 const news = homeNews(7, 0);
 const shownNews = new Set(news.featured.map((a) => a.id));
-const moreNews = homeNews(0, 40).rest.filter((a) => !shownNews.has(a.id)).slice(0, 16);
 
-// 長い期間の催し（期間中のもの）は、いつ見ても先頭に残るので出さない
-const events = getEvents()
-  .filter((e) => e.phase === 'upcoming' || e.phase === 'ongoing')
-  .slice(0, 5);
+// 今日のピックアップ: 大きな記事の枠で扱っている作品を除いた先頭の3作品
+const mosaicGames = new Set(news.featured.flatMap((a) => a.games.filter((g) => g.role === 'primary').map((g) => g.gameId)));
+const picks = getPicks()
+  .games.filter((p) => !mosaicGames.has(p.gameId))
+  .slice(0, 3)
+  .map((p) => ({ game: getGame(p.gameId)!, articles: p.articleIds.map((id) => getArticle(id)!).filter(Boolean) }))
+  .filter((p) => p.game);
+const pickedArticles = new Set(picks.flatMap((p) => p.articles.map((a) => a.id)));
+
+// 記事の一覧: 大きな枠とピックアップに出していない新しい記事
+const moreNews = homeNews(0, 60)
+  .rest.filter((a) => !shownNews.has(a.id) && !pickedArticles.has(a.id))
+  .slice(0, 20);
+
+// イベント: 会場のイベントを先に4件。長い期間の催し（running）はいつ見ても先頭に残るので出さない。
+// 終わったばかりで感想や記事のある会場のイベントと、オンラインのイベント3件を小さく添える
+const events = getEvents();
+const soon = events.filter((e) => e.phase === 'upcoming' || e.phase === 'ongoing');
+const venueEvents = soon.filter(isVenueEvent).slice(0, 4);
+const echoes = events
+  .filter((e) => isVenueEvent(e) && e.recentlyEnded && e.reports.length + e.articles.length > 0)
+  .reverse()
+  .slice(0, 2);
+const onlineEvents = soon.filter((e) => !isVenueEvent(e)).slice(0, 3);
+const hasEvents = venueEvents.length + echoes.length + onlineEvents.length > 0;
 
 // 作品の区画は1行だけにする
 const recent = byAdded.slice(0, 5);
@@ -50,19 +72,29 @@ const collections = [...featured, ...rest].slice(0, 4);
   <div class="container home">
     {news.featured.length > 0 && <NewsMosaic featured={news.featured} />}
 
-    {events.length > 0 && (
-      <section class="section" aria-labelledby="events-h">
-        <SectionHeading id="events-h" title="イベント" linkPath={paths.events()} linkLabel="カレンダー" />
-        <ul class="event-row">
-          {events.map((e) => (
-            <li>
-              <EventCard event={e} />
-            </li>
-          ))}
-        </ul>
-      </section>
+    {(picks.length > 0 || hasEvents) && (
+      <div class="now">
+        {picks.length > 0 && (
+          <section class="section" aria-labelledby="pick-h">
+            <SectionHeading id="pick-h" title="今日のピックアップ" />
+            <DailyPick picks={picks} />
+          </section>
+        )}
+        {hasEvents && (
+          <section class="section" aria-labelledby="events-h">
+            <SectionHeading id="events-h" title="イベント" linkPath={paths.events()} linkLabel="カレンダー" />
+            <HomeEvents venue={venueEvents} echoes={echoes} online={onlineEvents} />
+          </section>
+        )}
+      </div>
     )}
 
+    {moreNews.length > 0 && (
+      <section class="section" aria-labelledby="news-h">
+        <SectionHeading id="news-h" title="記事" linkPath={paths.articles()} />
+        <ArticleList articles={moreNews} columns={2} />
+      </section>
+    )}
 
     <section class="section" aria-labelledby="recent-h">
       <SectionHeading id="recent-h" title="最近収録した作品" linkPath={paths.games()} linkLabel="すべての作品" />
@@ -102,13 +134,6 @@ const collections = [...featured, ...rest].slice(0, 4);
           </ExternalLink>
         </p>
       )
-    )}
-
-    {moreNews.length > 0 && (
-      <section class="section" aria-labelledby="news-h">
-        <SectionHeading id="news-h" title="記事" linkPath={paths.articles()} />
-        <ArticleList articles={moreNews} columns={2} />
-      </section>
     )}
   </div>
 </BaseLayout>
@@ -167,31 +192,21 @@ const collections = [...featured, ...rest].slice(0, 4);
       font-size: 0.875rem;
     }
   }
-  /* イベントは1行だけ。入りきらない分は横にスクロールする */
-  .event-row {
-    position: relative;
+  /* ピックアップとイベントを横に並べる。イベントは細い列にする */
+  .now {
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc((100% - 4 * var(--space-4)) / 5);
-    gap: var(--space-4);
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    list-style: none;
-    margin: 0;
-    padding: 4px 0;
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, 22rem);
+    gap: 0 var(--space-6);
+    align-items: start;
   }
-  .event-row li {
-    scroll-snap-align: start;
+  /* 一覧へのリンクのない見出しも、リンクのある見出しと同じ高さにして横で揃える */
+  .now :global(.section-heading) {
+    min-height: 44px;
+    box-sizing: content-box;
   }
   @media (max-width: 1023px) {
-    .event-row {
-      grid-auto-columns: 42%;
-    }
-  }
-  @media (max-width: 640px) {
-    .event-row {
-      grid-auto-columns: 72%;
+    .now {
+      grid-template-columns: 1fr;
     }
   }
   .ranking-link {

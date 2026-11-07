@@ -1,0 +1,85 @@
+---
+import type { SiteEvent } from '../../schema/site-data.ts';
+import { EVENT_KIND_LABELS, eventPlace } from '../lib/events.ts';
+import { paths, url } from '../lib/urls.ts';
+
+// イベントの1行の表示。日付、名前、種類（会場の催しなら場所）。オンラインの一覧とホームの小さな一覧に使う
+interface Props {
+  event: SiteEvent;
+  showPlace?: boolean;
+}
+const { event: e, showPlace = false } = Astro.props;
+const WEEK = ['日', '月', '火', '水', '木', '金', '土'];
+const d = e.start;
+const weekday = d.precision === 'day' ? WEEK[new Date(Date.UTC(d.year, d.month - 1, d.day)).getUTCDay()] : undefined;
+const now =
+  e.phase === 'ongoing' ? (e.startKey === e.endKey ? '本日' : '開催中') : e.phase === 'running' ? '期間中' : undefined;
+---
+
+<a class:list={['event-line', `phase-${e.phase}`]} href={url(paths.event(e.id))}>
+  <time class="date" datetime={e.startKey}>
+    <span class="md">{'month' in d ? `${d.month}/${d.precision === 'day' ? d.day : ''}` : d.year}</span>
+    {weekday && <span class="wd">{weekday}</span>}
+  </time>
+  <span class="name">{e.name}</span>
+  <span class="meta">
+    {now && <span class="now">{now}</span>}
+    {showPlace ? eventPlace(e, true) : (EVENT_KIND_LABELS[e.kind] ?? e.kind)}
+  </span>
+</a>
+
+<style>
+  .event-line {
+    display: grid;
+    grid-template-columns: 4.25rem minmax(0, 1fr) auto;
+    align-items: baseline;
+    gap: var(--space-3);
+    padding: var(--space-2) var(--space-2);
+    color: var(--color-text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .event-line:hover {
+    background: var(--color-surface);
+  }
+  .event-line:hover .name {
+    text-decoration: underline;
+  }
+  .date {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    font-family: var(--font-display);
+  }
+  .md {
+    font-weight: 800;
+  }
+  .wd {
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
+  }
+  .name {
+    font-size: var(--text-small);
+    font-weight: 700;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .meta {
+    display: flex;
+    gap: var(--space-2);
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
+    white-space: nowrap;
+  }
+  .now {
+    padding: 0 6px;
+    background: var(--color-signal);
+    color: var(--color-on-signal);
+    font-weight: 800;
+  }
+  .phase-past {
+    opacity: 0.72;
+  }
+</style>

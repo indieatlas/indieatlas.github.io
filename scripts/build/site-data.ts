@@ -1,12 +1,15 @@
 import type { Article } from '../../schema/article.ts';
 import type { Claim, ClaimOf, Evidence } from '../../schema/claim.ts';
 import { Platform, Store, TagGroup, type PartialDate } from '../../schema/common.ts';
+import type { EventReport, IndieEvent } from '../../schema/event.ts';
 import type { Game } from '../../schema/game.ts';
 import type {
   SiteArticle,
   SiteCollection,
   SiteDeveloper,
   SiteEvent,
+  SiteEventReport,
+  SitePicks,
   SiteGame,
   SiteGenre,
   SiteReleaseEntry,
@@ -17,6 +20,8 @@ import type {
 } from '../../schema/site-data.ts';
 import { adoptedOf, claimsView } from '../lib/claims-view.ts';
 import { todayJst, toJstDate } from '../lib/clock.ts';
+import { sha256Hex } from '../lib/hash.ts';
+import { mentionsEvent } from '../pipeline/event-reports.ts';
 import { registrableDomain, storeOf } from '../lib/domains.ts';
 import { compare, endOf, format, startOf } from '../lib/partial-date.ts';
 import type { RepoData } from '../lib/repo-io.ts';
@@ -30,6 +35,7 @@ export interface SiteDataSet {
   games: SiteGame[];
   developers: SiteDeveloper[];
   events: SiteEvent[];
+  picks: SitePicks;
   genres: SiteGenre[];
   redirects: { from: string; to: string }[];
   articles: SiteArticle[];
@@ -429,13 +435,17 @@ export function buildSiteData(repo: RepoData, today = todayJst()): SiteDataSet {
     .filter((d) => d.developed.length + d.published.length > 0)
     .sort(by((d) => d.id));
 
+  const reportsByEvent = new Map(repo.eventReports.map((f) => [f.eventId, f.reports]));
+
   return {
     games: games.sort(by((g) => g.id)),
+    picks: dailyPicks(games, siteArticles, today),
     developers,
     events: repo.events
       .filter((e) => e.status !== 'hidden' && e.status !== 'cancelled')
       .map((e) => ({
         id: e.id,
+        path: `events/${e.id}/`,
         name: e.name,
         ...(e.nameEn ? { nameEn: e.nameEn } : {}),
         kind: e.kind,
@@ -452,8 +462,11 @@ export function buildSiteData(repo: RepoData, today = todayJst()): SiteDataSet {
         ...(e.image ? { image: { path: e.image.path, width: e.image.width, height: e.image.height } } : {}),
         tentative: e.status === 'tentative',
         phase: phaseOf(startOf(e.start), endOf(e.end ?? e.start), today),
+        recentlyEnded: endOf(e.end ?? e.start) < today && shiftDay(endOf(e.end ?? e.start), RECENT_DAYS) >= today,
         games: e.games.filter((id) => publishedIds.has(id)),
         sources: refs([{ evidence: e.evidence, lastCheckedAt: e.updatedAt } as unknown as Claim]),
+        articles: eventArticles(e, siteArticles),
+        reports: e.format === 'online' ? [] : eventReports(reportsByEvent.get(e.id)),
       }))
       .sort(
         by(
@@ -473,6 +486,98 @@ export function buildSiteData(repo: RepoData, today = todayJst()): SiteDataSet {
       tags: tags.length,
       lastUpdated,
     },
+  };
+}
+
+/** 見出しにこの回の名前がある記事。告知から振り返りまでの、始まる60日前から終わって60日後まで */
+function eventArticles(e: IndieEvent, articles: SiteArticle[]): string[] {
+  const from = shiftDay(startOf(e.start), -60);
+  const to = shiftDay(endOf(e.end ?? e.start), 60);
+  return articles
+    .filter((a) => {
+      if (!a.title || !a.publishedAt) return false;
+      const day = toJstDate(new Date(a.publishedAt));
+      return day >= from && day <= to && mentionsEvent(e, a.title) === 'edition';
+    })
+    .slice(0, 30)
+    .map((a) => a.id);
+}
+
+function eventReports(reports: EventReport[] | undefined): SiteEventReport[] {
+  return (reports ?? [])
+    .filter((r) => r.status === 'shown')
+    .sort(
+      by(
+        (r) => invert(r.publishedAt ?? r.foundAt),
+        (r) => r.url,
+      ),
+    )
+    .map((r) => ({
+      url: r.url,
+      title: r.title,
+      ...(r.author ? { author: r.author } : {}),
+      platform: r.platform,
+      ...(r.publishedAt ? { publishedAt: r.publishedAt } : {}),
+    }));
+}
+
+/** 終わってから「最近終わった」とする日数 */
+const RECENT_DAYS = 30;
+
+const shiftDay = (day: string, n: number) =>
+  new Date(Date.parse(`${day}T00:00:00Z`) + n * 86_400_000).toISOString().slice(0, 10);
+
+/** ピックアップの候補の数。ホームはこのうち、大きな記事の枠に出ていない先頭から使う */
+const PICK_COUNT = 6;
+
+/**
+ * 今日のピックアップ。画像、紹介文、見出しのある記事がそろった作品から、日付で決まる乱数で選ぶ。
+ * 最近の記事がある作品ほど選ばれやすい（重み付きの抽出）。前の日と同じ作品は先頭にしない
+ */
+export function dailyPicks(games: SiteGame[], articles: SiteArticle[], today: string): SitePicks {
+  const articleById = new Map(articles.map((a) => [a.id, a]));
+  const pool = games
+    .map((g) => {
+      const list = g.articles
+        .map((r) => ({ role: r.role, a: articleById.get(r.id) }))
+        .filter((x): x is { role: typeof x.role; a: SiteArticle } => !!x.a?.title && !x.a.topicOf);
+      return { g, list };
+    })
+    .filter(({ g, list }) => g.image && g.summary && list.length > 0);
+  const rank = (day: string) =>
+    pool
+      .map(({ g, list }) => {
+        const newest = list.reduce((m, x) => ((x.a.publishedAt ?? '') > m ? x.a.publishedAt! : m), '');
+        const days = newest ? (Date.parse(`${day}T00:00:00Z`) - Date.parse(newest)) / 86_400_000 : 365;
+        const weight = 1 + Math.max(0, (90 - days) / 30) + Math.min(list.length, 4) * 0.25;
+        const u = (parseInt(sha256Hex(`${day}|${g.id}`).slice(0, 12), 16) + 1) / (2 ** 48 + 1);
+        return { g, list, key: Math.log(u) / weight };
+      })
+      .sort((a, b) => b.key - a.key || cmp(a.g.id, b.g.id));
+  // その日の先頭。前の日の先頭を除いて決める（さかのぼるのは1週間まで）
+  const top = (day: string, depth: number): string | undefined => {
+    const prev = depth > 0 ? top(shiftDay(day, -1), depth - 1) : undefined;
+    return rank(day).find((x) => x.g.id !== prev)?.g.id;
+  };
+  const yesterday = top(shiftDay(today, -1), 6);
+  const ranked = rank(today);
+  const first = ranked.findIndex((x) => x.g.id !== yesterday);
+  if (first > 0) ranked.unshift(...ranked.splice(first, 1));
+  return {
+    date: today,
+    games: ranked.slice(0, PICK_COUNT).map(({ g, list }) => ({
+      gameId: g.id,
+      // 主題として扱う記事を先に、新しい順で3件まで
+      articleIds: [...list]
+        .sort(
+          by(
+            (x) => (x.role === 'primary' ? 0 : 1),
+            (x) => invert(x.a.publishedAt ?? ''),
+          ),
+        )
+        .slice(0, 3)
+        .map((x) => x.a.id),
+    })),
   };
 }
 

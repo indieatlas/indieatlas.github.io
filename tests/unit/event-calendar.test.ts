@@ -5,6 +5,7 @@ import { googleCalendarUrl, nextDay, toICalendar } from '../../src/lib/event-cal
 // 架空のイベント（10 §10.5.1）
 const ev: SiteEvent = {
   id: 'ev_0000000000000001',
+  path: 'events/ev_0000000000000001/',
   name: 'ランタン祭り, 2027; 冬',
   kind: 'exhibition',
   format: 'in-person',
@@ -18,8 +19,11 @@ const ev: SiteEvent = {
   summary: '架空のインディーゲームの展示会。',
   tentative: false,
   phase: 'upcoming',
+  recentlyEnded: false,
   games: [],
   sources: [],
+  articles: [],
+  reports: [],
 };
 
 describe('イベントのカレンダー', () => {

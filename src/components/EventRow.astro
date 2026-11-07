@@ -2,11 +2,12 @@
 import type { SiteEvent } from '../../schema/site-data.ts';
 import { getGame } from '../lib/data.ts';
 import { googleCalendarUrl } from '../lib/event-calendar.ts';
-import { EVENT_KIND_LABELS, eventGroup, eventRegion } from '../lib/events.ts';
+import { EVENT_FORMAT_LABELS, EVENT_KIND_LABELS, eventGroup, eventPlace, eventRegion } from '../lib/events.ts';
 import { paths, url } from '../lib/urls.ts';
 import ExternalLink from './ExternalLink.astro';
 
-// イベント一覧の1件。画像、日付、名前、日時と場所、説明。カレンダーへの追加と案内のページへのリンク
+// イベント一覧の1件。画像、日付、名前、日時と場所、説明、記事と感想の数。名前はイベントのページへ、
+// 案内のページとカレンダーへの追加は外部へのリンク
 interface Props {
   event: SiteEvent;
 }
@@ -17,7 +18,11 @@ const isDay = d.precision === 'day';
 const weekday = isDay ? WEEK[new Date(Date.UTC(d.year, d.month - 1, d.day)).getUTCDay()] : undefined;
 const games = e.games.map((id) => getGame(id)).filter((g) => g !== undefined);
 const gcal = googleCalendarUrl(e);
-const place = e.format === 'online' ? 'オンライン' : [e.location?.venue, e.location?.city].filter(Boolean).join('・');
+const place = eventPlace(e);
+const echoes = [
+  e.articles.length > 0 ? `記事 ${e.articles.length}件` : '',
+  e.reports.length > 0 ? `感想 ${e.reports.length}件` : '',
+].filter(Boolean);
 ---
 
 <article
@@ -44,17 +49,18 @@ const place = e.format === 'online' ? 'オンライン' : [e.location?.venue, e.
   </div>
   <div class="body">
     <p class="meta">
+      <span class:list={['format', `format-${e.format}`]}>{EVENT_FORMAT_LABELS[e.format]}</span>
       <span class="kind">{EVENT_KIND_LABELS[e.kind] ?? e.kind}</span>
       {e.tentative && <span class="tentative">予定</span>}
     </p>
     <h3 class="name">
-      <ExternalLink href={e.url} class="name-link">{e.name}</ExternalLink>
+      <a href={url(paths.event(e.id))} class="name-link">{e.name}</a>
     </h3>
     <p class="when">
       <time datetime={e.startKey}>{e.dateLabel}</time>
       {e.time && <span>{e.time}</span>}
     </p>
-    {place && <p class="where">{place}</p>}
+    {e.format !== 'online' && <p class="where">{place}</p>}
     <p class="summary">{e.summary}</p>
     {games.length > 0 && (
       <p class="games">
@@ -66,13 +72,15 @@ const place = e.format === 'online' ? 'オンライン' : [e.location?.venue, e.
         ))}
       </p>
     )}
-    {gcal && (
-      <p class="actions">
-        <ExternalLink href={gcal} class="add">
-          Google カレンダーに追加
-        </ExternalLink>
+    {echoes.length > 0 && (
+      <p class="echoes">
+        <a href={url(paths.event(e.id))}>{echoes.join(' ・ ')}</a>
       </p>
     )}
+    <p class="actions">
+      <ExternalLink href={e.url}>公式サイト</ExternalLink>
+      {gcal && e.phase !== 'past' && <ExternalLink href={gcal}>Google カレンダーに追加</ExternalLink>}
+    </p>
   </div>
 </article>
 
@@ -168,6 +176,23 @@ const place = e.format === 'online' ? 'オンライン' : [e.location?.venue, e.
     font-weight: 800;
     color: var(--color-accent);
   }
+  .format {
+    padding: 0 6px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    background: var(--color-signal);
+    color: var(--color-on-signal);
+  }
+  .format-online {
+    background: transparent;
+    box-shadow: inset 0 0 0 1px var(--color-border-strong);
+    color: var(--color-text-muted);
+  }
+  .echoes {
+    margin: var(--space-1) 0 0;
+    font-size: var(--text-small);
+    font-weight: 700;
+  }
   .tentative {
     padding: 0 6px;
     font-size: 0.75rem;
@@ -207,6 +232,9 @@ const place = e.format === 'online' ? 'オンライン' : [e.location?.venue, e.
     line-height: 1.7;
   }
   .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 var(--space-4);
     margin: var(--space-2) 0 0;
     font-size: var(--text-xsmall);
     font-weight: 700;

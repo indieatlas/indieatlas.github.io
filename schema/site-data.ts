@@ -142,6 +142,7 @@ export interface SiteTag {
 
 export interface SiteEvent {
   id: string;
+  path: string; // /events/{eventId}/（ベースパスを含まない）
   name: string;
   nameEn?: string;
   kind: string;
@@ -160,8 +161,26 @@ export interface SiteEvent {
   // ビルドした日（日本時間）での状態。終わると公開内容ハッシュが変わり、公開し直す。
   // ongoing は3日以内の催しの期間中、running はそれより長い催しの期間中（「開催中」とは見せない）
   phase: 'upcoming' | 'ongoing' | 'running' | 'past';
+  recentlyEnded: boolean; // 終わってから30日以内（感想が集まる時期。一覧とホームで、終わったものとは分けて見せる）
   games: string[];
   sources: SourceRef[];
+  articles: string[]; // 見出しにこの回の名前がある記事の ID（新しい順）
+  reports: SiteEventReport[]; // 行った人、出展した人の感想（新しい順。会場の催しだけ）
+}
+
+/** 個人のブログや note に書かれた催しの感想。見出しとリンクだけを載せる */
+export interface SiteEventReport {
+  url: string;
+  title: string;
+  author?: string;
+  platform: 'note' | 'hatena-blog' | 'blog';
+  publishedAt?: string; // ISO 8601
+}
+
+/** ホームの「今日のピックアップ」。ビルドした日（日本時間）ごとに選び直す。先頭ほど優先 */
+export interface SitePicks {
+  date: string; // YYYY-MM-DD
+  games: { gameId: string; articleIds: string[] }[];
 }
 
 /** ジャンルのカテゴリ色に使う、主なジャンルの上位8件（02 §2.6.1） */

@@ -1,0 +1,221 @@
+---
+import type { SiteArticle, SiteGame } from '../../schema/site-data.ts';
+import { genreColorVar } from '../lib/data.ts';
+import { ARTICLE_KIND_LABELS, formatDate, isoDate } from '../lib/format.ts';
+import { paths, url } from '../lib/urls.ts';
+import ExternalLink from './ExternalLink.astro';
+import GameImage from './GameImage.astro';
+import ReleaseLabel from './ReleaseLabel.astro';
+
+// 今日のピックアップ。先頭の作品は紹介文と記事を合わせて大きく、続く作品は記事の見出しを1件添えて小さく見せる
+interface Props {
+  picks: { game: SiteGame; articles: SiteArticle[] }[];
+}
+const { picks } = Astro.props;
+const [main, ...subs] = picks;
+const devOf = (g: SiteGame) => g.developers.map((d) => d.name).join('、');
+---
+
+{main && (
+  <div class="daily-pick">
+    <article class="main" style={`--genre-color: ${genreColorVar(main.game.primaryGenre)}`}>
+      <a class="media" href={url(paths.game(main.game.id))} tabindex="-1" aria-hidden="true">
+        <GameImage game={main.game} />
+      </a>
+      <div class="body">
+        <h3 class="title">
+          <a href={url(paths.game(main.game.id))}>{main.game.title.display}</a>
+        </h3>
+        <p class="sub">
+          {devOf(main.game) && <span>{devOf(main.game)}</span>}
+          <ReleaseLabel release={main.game.release} compact />
+        </p>
+        {main.game.summary && <p class="summary">{main.game.summary.text}</p>}
+        {main.game.tags.length > 0 && (
+          <p class="tags">
+            {main.game.tags.slice(0, 4).map((t) => (
+              <span>#{t.label}</span>
+            ))}
+          </p>
+        )}
+      </div>
+      <ul class="articles">
+        {main.articles.map((a) => (
+          <li>
+            <p class="a-meta">
+              <span class="kind">{ARTICLE_KIND_LABELS[a.kind]}</span>
+              <span>{a.outlet.name}</span>
+              {a.publishedAt && <time datetime={isoDate(a.publishedAt)}>{formatDate(a.publishedAt)}</time>}
+            </p>
+            <ExternalLink href={a.url} lang={a.lang} class="a-title">
+              {a.title}
+            </ExternalLink>
+            {a.summaryJa && <p class="a-summary">{a.summaryJa}</p>}
+          </li>
+        ))}
+      </ul>
+    </article>
+    {subs.length > 0 && (
+      <ul class="subs">
+        {subs.map(({ game, articles }) => (
+          <li>
+            <a class="sub-card" href={url(paths.game(game.id))}>
+              <GameImage game={game} />
+              <span class="sub-body">
+                <span class="sub-title">{game.title.display}</span>
+                {articles[0] && (
+                  <span class="sub-article">
+                    {articles[0].outlet.name}「{articles[0].title}」
+                  </span>
+                )}
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
+  </div>
+)}
+
+<style>
+  .daily-pick {
+    display: grid;
+    gap: var(--space-4);
+  }
+  .main {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: var(--space-4) var(--space-5);
+    padding: var(--space-4);
+    background: var(--color-surface);
+    box-shadow:
+      inset 0 0 0 1px var(--color-border),
+      inset 3px 0 0 var(--genre-color);
+  }
+  .media {
+    display: block;
+    align-self: start;
+  }
+  .body {
+    min-width: 0;
+  }
+  .title {
+    margin: 0;
+    font-size: 1.375rem;
+    line-height: 1.35;
+  }
+  .title a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  .title a:hover {
+    text-decoration: underline;
+  }
+  .sub {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 var(--space-3);
+    margin: var(--space-1) 0 var(--space-3);
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
+  }
+  .summary {
+    margin: 0;
+    font-size: var(--text-small);
+    line-height: 1.8;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1) var(--space-3);
+    margin: var(--space-3) 0 0;
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
+  }
+  .articles {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: var(--space-3) var(--space-5);
+    list-style: none;
+    margin: 0;
+    padding: var(--space-3) 0 0;
+    border-top: 1px solid var(--color-border);
+  }
+  .a-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 var(--space-2);
+    margin: 0 0 2px;
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
+  }
+  .kind {
+    color: var(--color-accent);
+    font-weight: 800;
+  }
+  .articles :global(.a-title) {
+    color: var(--color-text);
+    font-size: var(--text-small);
+    font-weight: 700;
+    line-height: 1.6;
+    text-decoration: none;
+  }
+  .articles :global(.a-title:hover) {
+    text-decoration: underline;
+  }
+  .a-summary {
+    margin: var(--space-1) 0 0;
+    font-size: var(--text-xsmall);
+    line-height: 1.7;
+    color: var(--color-text-muted);
+  }
+  .subs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-4);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .sub-card {
+    display: grid;
+    grid-template-columns: 9rem minmax(0, 1fr);
+    gap: var(--space-3);
+    align-items: start;
+    padding: var(--space-2);
+    background: var(--color-surface);
+    box-shadow: inset 0 0 0 1px var(--color-border);
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  .sub-card:hover {
+    box-shadow: inset 0 0 0 1px var(--color-accent-warm);
+  }
+  .sub-body {
+    display: grid;
+    gap: 2px;
+    min-width: 0;
+  }
+  .sub-title {
+    font-weight: 700;
+    font-size: var(--text-small);
+  }
+  .sub-article {
+    font-size: var(--text-xsmall);
+    line-height: 1.6;
+    color: var(--color-text-muted);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  @media (max-width: 640px) {
+    .main {
+      grid-template-columns: 1fr;
+    }
+    .subs {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

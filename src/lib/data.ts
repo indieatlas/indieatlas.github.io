@@ -8,6 +8,7 @@ import type {
   SiteGame,
   SiteGenre,
   SiteMeta,
+  SitePicks,
   SiteStats,
   SiteTag,
 } from '../../schema/site-data.ts';
@@ -37,6 +38,7 @@ export const getCollections = () => load<SiteCollection[]>('collections');
 export const getTags = () => load<SiteTag[]>('tags');
 export const getGenres = () => load<SiteGenre[]>('genres');
 export const getEvents = () => load<SiteEvent[]>('events');
+export const getPicks = () => load<SitePicks>('picks');
 export const getStats = () => load<SiteStats>('stats');
 export const getMeta = () => load<SiteMeta & { hashInputs: unknown }>('meta');
 export const getRedirects = () => load<{ from: string; to: string }[]>('redirects');
@@ -62,6 +64,12 @@ export function listedArticles(kind?: SiteArticle['kind']): SiteArticle[] {
 export function getArticle(id: string): SiteArticle | undefined {
   articleIndex ??= new Map(getArticles().map((a) => [a.id, a]));
   return articleIndex.get(id);
+}
+
+let eventIndex: Map<string, SiteEvent> | undefined;
+export function getEvent(id: string): SiteEvent | undefined {
+  eventIndex ??= new Map(getEvents().map((e) => [e.id, e]));
+  return eventIndex.get(id);
 }
 
 export function getCollection(id: string): SiteCollection | undefined {

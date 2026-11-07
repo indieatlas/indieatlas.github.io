@@ -1,0 +1,215 @@
+---
+import type { SiteEvent } from '../../schema/site-data.ts';
+import { eventPlace } from '../lib/events.ts';
+import { paths, url } from '../lib/urls.ts';
+import EventLine from './EventLine.astro';
+
+// ホームのイベントの欄。会場のイベントを小さな画像付きで先に、終わったばかりで感想の集まったもの、
+// オンラインのイベントは1行ずつ数件だけ
+interface Props {
+  venue: SiteEvent[];
+  echoes: SiteEvent[];
+  online: SiteEvent[];
+}
+const { venue, echoes, online } = Astro.props;
+const WEEK = ['日', '月', '火', '水', '木', '金', '土'];
+const weekday = (e: SiteEvent) =>
+  e.start.precision === 'day' ? WEEK[new Date(Date.UTC(e.start.year, e.start.month - 1, e.start.day)).getUTCDay()] : '';
+---
+
+<div class="home-events">
+  {venue.length > 0 && (
+    <ul class="venue">
+      {venue.map((e) => (
+        <li>
+          <a class="venue-item" href={url(paths.event(e.id))}>
+            <span class="thumb" aria-hidden="true">
+              {e.image ? (
+                <img
+                  src={url(e.image.path)}
+                  alt=""
+                  width={e.image.width}
+                  height={e.image.height}
+                  loading="lazy"
+                  decoding="async"
+                  data-fallback
+                />
+              ) : (
+                <span class="poster">{e.nameEn ?? e.name}</span>
+              )}
+            </span>
+            <span class="v-body">
+              <span class="v-date">
+                <time datetime={e.startKey}>
+                  {'month' in e.start
+                    ? `${e.start.month}/${e.start.precision === 'day' ? e.start.day : ''}`
+                    : e.start.year}
+                </time>
+                <span class="wd">{weekday(e)}</span>
+                {e.phase === 'ongoing' && <span class="now">{e.startKey === e.endKey ? '本日' : '開催中'}</span>}
+              </span>
+              <span class="v-name">{e.name}</span>
+              <span class="v-place">{eventPlace(e, true)}</span>
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  )}
+  {echoes.length > 0 && (
+    <ul class="echoes">
+      {echoes.map((e) => (
+        <li>
+          <a href={url(paths.event(e.id))}>
+            <span class="e-name">{e.name}</span>
+            <span class="e-count">
+              {[
+                e.reports.length > 0 ? `感想 ${e.reports.length}件` : '',
+                e.articles.length > 0 ? `記事 ${e.articles.length}件` : '',
+              ]
+                .filter(Boolean)
+                .join(' ・ ')}
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  )}
+  {online.length > 0 && (
+    <div class="online">
+      <h3>オンライン</h3>
+      <ul>
+        {online.map((e) => (
+          <li>
+            <EventLine event={e} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+</div>
+
+<style>
+  .home-events {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-4);
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .venue {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-2);
+  }
+  .venue-item {
+    display: grid;
+    grid-template-columns: 6.5rem minmax(0, 1fr);
+    gap: var(--space-3);
+    align-items: center;
+    padding: var(--space-2);
+    background: var(--color-surface);
+    box-shadow: inset 0 0 0 1px var(--color-border);
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  .venue-item:hover {
+    box-shadow: inset 0 0 0 1px var(--color-accent-warm);
+  }
+  .thumb {
+    display: block;
+    aspect-ratio: 1.91 / 1;
+    overflow: hidden;
+    background: var(--color-bg-deep);
+  }
+  .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .poster {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    padding: 2px;
+    font-family: var(--font-display);
+    font-size: 0.5625rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .v-body {
+    display: grid;
+    min-width: 0;
+  }
+  .v-date {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    font-family: var(--font-display);
+    font-weight: 800;
+  }
+  .wd {
+    font-size: var(--text-xsmall);
+    font-weight: 600;
+    color: var(--color-text-muted);
+  }
+  .now {
+    padding: 0 6px;
+    background: var(--color-signal);
+    color: var(--color-on-signal);
+    font-size: 0.6875rem;
+  }
+  .v-name {
+    font-size: var(--text-small);
+    font-weight: 700;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .v-place {
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .echoes a {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-3);
+    padding: var(--space-2) var(--space-3);
+    background: color-mix(in srgb, var(--color-signal) 14%, var(--color-surface));
+    box-shadow: inset 3px 0 0 var(--color-signal);
+    color: var(--color-text);
+    font-size: var(--text-small);
+    text-decoration: none;
+  }
+  .echoes a:hover .e-name {
+    text-decoration: underline;
+  }
+  .e-name {
+    min-width: 0;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .e-count {
+    flex: none;
+    font-weight: 800;
+    color: var(--color-accent);
+  }
+  .online h3 {
+    margin: 0 0 var(--space-1);
+    font-size: var(--text-xsmall);
+    color: var(--color-text-muted);
+  }
+  .online ul {
+    border-top: 1px solid var(--color-border);
+  }
+</style>

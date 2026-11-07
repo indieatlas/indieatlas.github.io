@@ -1,28 +1,38 @@
 ---
-import EmptyState from '../components/EmptyState.astro';
-import EventRow from '../components/EventRow.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import { getEvents } from '../lib/data.ts';
-import { EVENT_GROUPS, EVENT_REGIONS } from '../lib/events.ts';
-import { paths, url } from '../lib/urls.ts';
+import EmptyState from '../../components/EmptyState.astro';
+import EventLine from '../../components/EventLine.astro';
+import EventRow from '../../components/EventRow.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getEvents } from '../../lib/data.ts';
+import { EVENT_REGIONS, isVenueEvent } from '../../lib/events.ts';
+import { paths, url } from '../../lib/urls.ts';
 
+// 会場で開くイベントを大きく、オンラインのイベント（配信、ストアのフェスとセール）は1行ずつ小さく並べる
 const events = getEvents();
-const upcoming = events.filter((e) => e.phase !== 'past');
-const past = events.filter((e) => e.phase === 'past').reverse();
-const byMonth = new Map<string, typeof upcoming>();
-for (const e of upcoming) {
-  const key = e.startKey.slice(0, 7);
-  byMonth.set(key, [...(byMonth.get(key) ?? []), e]);
-}
+const venue = events.filter(isVenueEvent);
+const online = events.filter((e) => !isVenueEvent(e));
+const upcoming = venue.filter((e) => e.phase !== 'past');
+const recent = venue.filter((e) => e.recentlyEnded).reverse();
+const onlineUpcoming = online.filter((e) => e.phase !== 'past');
+const past = events.filter((e) => e.phase === 'past' && !e.recentlyEnded).reverse();
+const groupByMonth = <T extends { startKey: string }>(list: T[]) => {
+  const m = new Map<string, T[]>();
+  for (const e of list) m.set(e.startKey.slice(0, 7), [...(m.get(e.startKey.slice(0, 7)) ?? []), e]);
+  return m;
+};
+const byMonth = groupByMonth(upcoming);
+const onlineByMonth = groupByMonth(onlineUpcoming);
 const monthLabel = (k: string) => `${Number(k.slice(0, 4))}年${Number(k.slice(5, 7))}月`;
 const shortMonth = (k: string, i: number, keys: string[]) =>
   i === 0 || keys[i - 1]!.slice(0, 4) !== k.slice(0, 4) ? monthLabel(k) : `${Number(k.slice(5, 7))}月`;
 const keys = [...byMonth.keys()];
+// 会場の地域（国内、海外）だけで絞り込む
+const regions = EVENT_REGIONS.filter((r) => r.id !== 'online');
 ---
 
 <BaseLayout
   title="イベント"
-  description="インディーゲームの展示会、発表配信、オンラインのフェスなどの日程をまとめたカレンダー。"
+  description="インディーゲームの展示会や即売会など会場で開かれるイベントと、発表配信、オンラインのフェスやセールの日程。"
   path={paths.events()}
   current="events"
 >
@@ -38,70 +48,102 @@ const keys = [...byMonth.keys()];
       </a>
     </div>
 
-    {upcoming.length === 0 ? (
-      <EmptyState title="予定されているイベントはまだありません" />
-    ) : (
-      <>
-        <div class="toolbar" data-event-filter hidden>
-          <div class="chips" role="group" aria-label="種類">
-            {EVENT_GROUPS.map((g) => (
-              <button type="button" class="chip" data-filter-group={g.id} aria-pressed="false">
-                {g.label}
-              </button>
-            ))}
-          </div>
-          <div class="chips" role="group" aria-label="地域">
-            {EVENT_REGIONS.map((r) => (
+    <section class="block" aria-labelledby="venue-h">
+      <div class="block-head">
+        <h2 id="venue-h">会場で開かれるイベント</h2>
+        {upcoming.length > 0 && (
+          <div class="chips" role="group" aria-label="地域" data-event-filter hidden>
+            {regions.map((r) => (
               <button type="button" class="chip" data-filter-region={r.id} aria-pressed="false">
                 {r.label}
               </button>
             ))}
           </div>
-        </div>
-        <nav class="months" aria-label="月">
-          {keys.map((k, i) => (
-            <a href={`#m-${k}`}>{shortMonth(k, i, keys)}</a>
+        )}
+      </div>
+      {upcoming.length === 0 ? (
+        <EmptyState title="予定されている会場のイベントはまだありません" />
+      ) : (
+        <>
+          <nav class="months" aria-label="月">
+            {keys.map((k, i) => (
+              <a href={`#m-${k}`}>{shortMonth(k, i, keys)}</a>
+            ))}
+            {recent.length > 0 && <a href="#recent-h">最近終わったもの</a>}
+            {onlineUpcoming.length > 0 && <a href="#online-h">オンライン</a>}
+          </nav>
+          {[...byMonth.entries()].map(([k, list]) => (
+            <section class="month" aria-labelledby={`m-${k}`} data-month>
+              <h3 id={`m-${k}`}>{monthLabel(k)}</h3>
+              <div class="rows">
+                {list.map((e) => (
+                  <EventRow event={e} />
+                ))}
+              </div>
+            </section>
           ))}
-        </nav>
-        {[...byMonth.entries()].map(([k, list]) => (
-          <section class="month" aria-labelledby={`m-${k}`} data-month>
-            <h2 id={`m-${k}`}>{monthLabel(k)}</h2>
-            <div class="rows">
-              {list.map((e) => (
-                <EventRow event={e} />
-              ))}
-            </div>
-          </section>
-        ))}
-        <p class="no-match muted" data-no-match hidden>
-          条件に合うイベントはありません。
-        </p>
-      </>
+          <p class="no-match muted" data-no-match hidden>
+            条件に合うイベントはありません。
+          </p>
+        </>
+      )}
+      {recent.length > 0 && (
+        <section class="month recent" aria-labelledby="recent-h">
+          <h3 id="recent-h">最近終わったイベント</h3>
+          <div class="rows">
+            {recent.map((e) => (
+              <EventRow event={e} />
+            ))}
+          </div>
+        </section>
+      )}
+    </section>
+
+    {onlineUpcoming.length > 0 && (
+      <section class="block online" aria-labelledby="online-h">
+        <div class="block-head">
+          <h2 id="online-h">オンライン</h2>
+        </div>
+        <div class="online-months">
+          {[...onlineByMonth.entries()].map(([k, list]) => (
+            <section aria-labelledby={`o-${k}`}>
+              <h3 id={`o-${k}`}>{monthLabel(k)}</h3>
+              <ul class="lines">
+                {list.map((e) => (
+                  <li>
+                    <EventLine event={e} />
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </div>
+      </section>
     )}
+
     {past.length > 0 && (
       <details class="past">
         <summary>
           <h2>終わったイベント（{past.length}件）</h2>
         </summary>
-        <div class="rows">
+        <ul class="lines">
           {past.map((e) => (
-            <EventRow event={e} />
+            <li>
+              <EventLine event={e} showPlace />
+            </li>
           ))}
-        </div>
+        </ul>
       </details>
     )}
   </div>
 </BaseLayout>
 
 <script>
-  // 種類と地域での絞り込み。同じ組の中は「または」、組どうしは「かつ」
+  // 会場のイベントを地域で絞り込む。どれも押していなければすべてを出す
   const bar = document.querySelector<HTMLElement>('[data-event-filter]');
   if (bar) {
     bar.hidden = false;
     const apply = () => {
-      const groups = [...bar.querySelectorAll<HTMLButtonElement>('[data-filter-group][aria-pressed="true"]')].map(
-        (b) => b.dataset.filterGroup!,
-      );
       const regions = [...bar.querySelectorAll<HTMLButtonElement>('[data-filter-region][aria-pressed="true"]')].map(
         (b) => b.dataset.filterRegion!,
       );
@@ -109,9 +151,7 @@ const keys = [...byMonth.keys()];
       for (const month of document.querySelectorAll<HTMLElement>('[data-month]')) {
         let n = 0;
         for (const row of month.querySelectorAll<HTMLElement>('[data-event]')) {
-          const ok =
-            (!groups.length || groups.includes(row.dataset.group!)) &&
-            (!regions.length || regions.includes(row.dataset.region!));
+          const ok = !regions.length || regions.includes(row.dataset.region!);
           row.hidden = !ok;
           if (ok) n++;
         }
@@ -157,29 +197,49 @@ const keys = [...byMonth.keys()];
     width: 16px;
     height: 16px;
   }
-  .toolbar {
+  .block {
+    margin-top: var(--space-6);
+  }
+  .block-head {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-3) var(--space-6);
-    margin: var(--space-5) 0 var(--space-3);
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    margin-bottom: var(--space-3);
   }
-  .toolbar[hidden] {
+  .block-head h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .online .block-head h2 {
+    font-size: 1.25rem;
+  }
+  .chips[hidden] {
     display: none;
   }
-  @media (max-width: 640px) {
-    .toolbar {
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      scrollbar-width: none;
-      gap: var(--space-4);
-    }
-    .chips {
-      flex-wrap: nowrap;
-      flex: none;
-    }
-    .chip {
-      white-space: nowrap;
-    }
+  .online {
+    margin-top: var(--space-8);
+    scroll-margin-top: calc(var(--header-height) + 4rem);
+  }
+  .online-months {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+    gap: var(--space-4) var(--space-6);
+  }
+  .online-months h3 {
+    margin: 0 0 var(--space-1);
+    font-size: var(--text-small);
+    color: var(--color-text-muted);
+  }
+  .lines {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--color-border);
+  }
+  .recent {
+    scroll-margin-top: calc(var(--header-height) + 4rem);
   }
   .chips {
     display: flex;
@@ -239,7 +299,7 @@ const keys = [...byMonth.keys()];
   .month[hidden] {
     display: none;
   }
-  .month h2 {
+  .month h3 {
     margin: 0 0 var(--space-3);
     font-size: 1.25rem;
   }
