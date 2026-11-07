@@ -555,6 +555,7 @@ export const EventReport = z.object({
   url: HttpUrl,
   title: z.string().min(1).max(300),     // 原文の見出し
   author: z.string().min(1).max(80).optional(),  // 書き手の表示名
+  image: HttpUrl.optional(),             // 共有用の画像（OGP）。保存せず配信元を参照する
   platform: z.enum(['note', 'hatena-blog', 'blog']),
   publishedAt: IsoDateTime.optional(),   // 分からなければ省く
   foundVia: z.enum(['note-hashtag', 'hatena-bookmark']),
@@ -569,7 +570,7 @@ export const EventReportsFile = z.object({
 });
 ```
 
-- 本文は保存せず、見出し、書き手、掲載日、URL だけを残す。サイトに出すのも見出し、書き手、サービス名、掲載日と原文へのリンクだけとする（画像と説明は出さない）。
+- 本文は保存せず、見出し、書き手、掲載日、URL だけを残す。サイトに出すのも見出し、書き手、サービス名、掲載日、共有用の画像と原文へのリンクだけとする（説明は出さない）。
 - 並び順: `reports` は `url` の順。サイトでは掲載日の新しい順に並べる。
 - オンラインの催しには感想のファイルを作らない（D-15）。
 
