@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000116",
+  "claims": [
+    {
+      "id": "c_df8cd42cdd59c2a3",
+      "gameId": "g_000116",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4572060/",
+          "retrievedAt": "2026-11-07T19:02:12Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4f0eb7a26842a4153f2be6a2b73f1be38447536021bdf29e548532deeae02945"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:12Z",
+      "createdAt": "2026-11-07T19:02:12Z",
+      "updatedAt": "2026-11-07T19:02:12Z",
+      "lastCheckedAt": "2026-11-07T19:02:12Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "quarter",
+          "year": 2027,
+          "quarter": 1
+        },
+        "rawText": "Q1 2027"
+      }
+    },
+    {
+      "id": "c_708dfceffd40d2a1",
+      "gameId": "g_000116",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4572060/",
+          "retrievedAt": "2026-11-07T19:02:15Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ed49279da8bb7a605405ab488c98a33db806dcbcf77df25934969133721eb384"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:12Z",
+      "createdAt": "2026-11-07T19:02:12Z",
+      "updatedAt": "2026-11-07T19:02:12Z",
+      "lastCheckedAt": "2026-11-07T19:02:15Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_f1e425fbe813ffde",
+      "gameId": "g_000116",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4572060/",
+          "retrievedAt": "2026-11-07T19:02:12Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4f0eb7a26842a4153f2be6a2b73f1be38447536021bdf29e548532deeae02945"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:12Z",
+      "createdAt": "2026-11-07T19:02:12Z",
+      "updatedAt": "2026-11-07T19:02:12Z",
+      "lastCheckedAt": "2026-11-07T19:02:12Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop",
+          "online-pvp"
+        ]
+      }
+    },
+    {
+      "id": "c_28a8e458223e76f2",
+      "gameId": "g_000116",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4572060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:43:25Z",
+          "quote": "完全武装した最大8人で競うオンラインスキーレース。バズーカで友達を林に吹き飛ばし、空爆を呼び、爆発するヤギを放って、誰よりも先に下まで滑り降りよう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4f0eb7a26842a4153f2be6a2b73f1be38447536021bdf29e548532deeae02945"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:43:25Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "summary",
+      "value": {
+        "ja": "最大8人で雪山を滑り降りるオンラインスキーレース。バズーカや地雷、空爆、爆発するヤギなどの武器でライバルを妨害しながら、先に麓へ着いた者が勝つ。ラグドール物理と近接ボイスチャットを備える。"
+      }
+    },
+    {
+      "id": "c_25f72cf48de6af87",
+      "gameId": "g_000116",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4572060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:43:25Z",
+          "quote": "完全武装した最大8人で競うオンラインスキーレース。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4f0eb7a26842a4153f2be6a2b73f1be38447536021bdf29e548532deeae02945"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:43:25Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_497845544456caa7",
+      "gameId": "g_000116",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4572060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:43:25Z",
+          "quote": "友達を吹き飛ばしても、谷底へ落ちていく悲鳴が聞こえなければ意味がない。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4f0eb7a26842a4153f2be6a2b73f1be38447536021bdf29e548532deeae02945"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:43:25Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_89649a759b00da71",
+      "gameId": "g_000116",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4572060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:43:25Z",
+          "quote": "バズーカ、追尾ロケット、地雷、空爆、爆発するヤギ……誰かの滑走を台無しにする手段はいくらでもある。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4f0eb7a26842a4153f2be6a2b73f1be38447536021bdf29e548532deeae02945"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:43:25Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "shooter"
+      }
+    },
+    {
+      "id": "c_e024fa2e4e3ea13a",
+      "gameId": "g_000116",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4572060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:43:25Z",
+          "quote": "そして転べば必ず、斜面をドタバタ転がり落ちる派手な見世物になる。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4f0eb7a26842a4153f2be6a2b73f1be38447536021bdf29e548532deeae02945"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:43:25Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "physics"
+      }
+    },
+    {
+      "id": "c_bc0739b8687c81a1",
+      "gameId": "g_000116",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4572060/",
+          "retrievedAt": "2026-11-07T19:02:12Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4f0eb7a26842a4153f2be6a2b73f1be38447536021bdf29e548532deeae02945"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:12Z",
+      "createdAt": "2026-11-07T19:02:12Z",
+      "updatedAt": "2026-11-07T19:02:12Z",
+      "lastCheckedAt": "2026-11-07T19:02:12Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4572060/"
+      }
+    },
+    {
+      "id": "c_e2b04cb76b12aff6",
+      "gameId": "g_000116",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4572060/",
+          "retrievedAt": "2026-11-07T19:02:12Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4f0eb7a26842a4153f2be6a2b73f1be38447536021bdf29e548532deeae02945"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:12Z",
+      "createdAt": "2026-11-07T19:02:12Z",
+      "updatedAt": "2026-11-07T19:02:12Z",
+      "lastCheckedAt": "2026-11-07T19:02:12Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4572060/374d0a92119cb09996206f26912fe95a3c1389ec/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Snow Panic のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "KAFI"
+        }
+      }
+    }
+  ]
+}

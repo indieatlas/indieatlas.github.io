@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "g_000106",
-  "status": "candidate",
+  "status": "published",
   "title": {
     "display": "Cubic Earth",
     "original": "Cubic Earth",
@@ -19,9 +19,24 @@
     "dev_000142"
   ],
   "indie": {
-    "assessment": "unknown",
-    "reasons": [],
-    "assessedAt": "2026-11-06T10:20:57Z"
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.pcgamer.com/gaming-industry/valve-admits-its-running-behind-on-approving-steam-games-because-it-has-to-keep-re-reviewing-them-which-surely-has-nothing-to-do-with-ai/",
+            "articleId": "a_338ca08ca34890ce",
+            "publishedAt": "2026-11-03T23:51:13Z",
+            "retrievedAt": "2026-11-06T10:07:25Z",
+            "locator": "article.games",
+            "originKey": "media:pcgamer.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-07T19:01:34Z"
   },
   "identityEvidence": [
     {
@@ -74,6 +89,7 @@
     }
   ],
   "createdAt": "2026-11-06T10:20:57Z",
-  "updatedAt": "2026-11-06T10:20:57Z",
+  "addedAt": "2026-11-08",
+  "updatedAt": "2026-11-07T19:01:34Z",
   "createdByRun": "42199738593"
 }

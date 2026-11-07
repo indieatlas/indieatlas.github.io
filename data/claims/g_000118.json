@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000118",
+  "claims": [
+    {
+      "id": "c_000dbe07d64b4c96",
+      "gameId": "g_000118",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3227510/",
+          "retrievedAt": "2026-11-07T19:02:21Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0ee1b11989c0ea88238886c764cbbd3ae71dbbb327dd64684cc2f0ee0cd45aea"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:21Z",
+      "createdAt": "2026-11-07T19:02:21Z",
+      "updatedAt": "2026-11-07T19:02:21Z",
+      "lastCheckedAt": "2026-11-07T19:02:21Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "release",
+      "value": {
+        "status": "tba",
+        "rawText": "Coming soon"
+      }
+    },
+    {
+      "id": "c_a8a7e1bf961dea69",
+      "gameId": "g_000118",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3227510/",
+          "retrievedAt": "2026-11-07T19:02:24Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dedd1cca23107be3fccae0a9475e6531b9b6e68cff595c131f308010eb803ffc"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:21Z",
+      "createdAt": "2026-11-07T19:02:21Z",
+      "updatedAt": "2026-11-07T19:02:21Z",
+      "lastCheckedAt": "2026-11-07T19:02:24Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_37ea22eaff2229dc",
+      "gameId": "g_000118",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3227510/",
+          "retrievedAt": "2026-11-07T19:02:21Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0ee1b11989c0ea88238886c764cbbd3ae71dbbb327dd64684cc2f0ee0cd45aea"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:21Z",
+      "createdAt": "2026-11-07T19:02:21Z",
+      "updatedAt": "2026-11-07T19:02:21Z",
+      "lastCheckedAt": "2026-11-07T19:02:21Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_63c4e1989d7b04a2",
+      "gameId": "g_000118",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3227510/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:45:00Z",
+          "quote": "AIによって完全管理された都市「Xenoria」。信頼や職業、恋愛までもが「共感スコア」で決まるこの街で、主人公は研修医として働き始める。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0ee1b11989c0ea88238886c764cbbd3ae71dbbb327dd64684cc2f0ee0cd45aea"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3227510/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:45:00Z",
+          "quote": "その先で【心】はこの街の秘密と、自分自身にまつわる真実を追い求めていく――",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0ee1b11989c0ea88238886c764cbbd3ae71dbbb327dd64684cc2f0ee0cd45aea"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:45:00Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "summary",
+      "value": {
+        "ja": "完全AI管理都市「Xenoria」を舞台に、共感スコアで職業も恋愛も決まる街へ赴いた研修医の心が、AIの乱れとともに街の秘密と自分自身の真実を追う恋愛サスペンスビジュアルノベル。"
+      }
+    },
+    {
+      "id": "c_0aeda001b709e7e8",
+      "gameId": "g_000118",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3227510/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:45:00Z",
+          "quote": "その先で【心】はこの街の秘密と、自分自身にまつわる真実を追い求めていく――",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0ee1b11989c0ea88238886c764cbbd3ae71dbbb327dd64684cc2f0ee0cd45aea"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:45:00Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_1316b2a96e89d100",
+      "gameId": "g_000118",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3227510/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:45:00Z",
+          "quote": "AIによって完全管理された都市「Xenoria」。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0ee1b11989c0ea88238886c764cbbd3ae71dbbb327dd64684cc2f0ee0cd45aea"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:45:00Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "sci-fi"
+      }
+    },
+    {
+      "id": "c_c8f21f223668c81e",
+      "gameId": "g_000118",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3227510/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:45:00Z",
+          "quote": "信頼や職業、恋愛までもが「共感スコア」で決まるこの街で、主人公は研修医として働き始める。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0ee1b11989c0ea88238886c764cbbd3ae71dbbb327dd64684cc2f0ee0cd45aea"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:45:00Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "romance"
+      }
+    },
+    {
+      "id": "c_fbf6c21b77b56066",
+      "gameId": "g_000118",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3227510/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:45:00Z",
+          "quote": "しかし平穏に見えた都市は次第に綻びが生まれ、乱れるAIと揺らぐ秩序の中で、主人公は街と自身に関わる真実を追い始める。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0ee1b11989c0ea88238886c764cbbd3ae71dbbb327dd64684cc2f0ee0cd45aea"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:45:00Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_c8988ced0c57839e",
+      "gameId": "g_000118",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3227510/",
+          "retrievedAt": "2026-11-07T19:02:21Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0ee1b11989c0ea88238886c764cbbd3ae71dbbb327dd64684cc2f0ee0cd45aea"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:21Z",
+      "createdAt": "2026-11-07T19:02:21Z",
+      "updatedAt": "2026-11-07T19:02:21Z",
+      "lastCheckedAt": "2026-11-07T19:02:21Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3227510/"
+      }
+    },
+    {
+      "id": "c_e22a731b89ce3d61",
+      "gameId": "g_000118",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3227510/",
+          "retrievedAt": "2026-11-07T19:02:21Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0ee1b11989c0ea88238886c764cbbd3ae71dbbb327dd64684cc2f0ee0cd45aea"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:21Z",
+      "createdAt": "2026-11-07T19:02:21Z",
+      "updatedAt": "2026-11-07T19:02:21Z",
+      "lastCheckedAt": "2026-11-07T19:02:21Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3227510/c16570878a3280dffc1eda89eff732ba9c7ac50b/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Algorithm Prescription のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Shochiku"
+        }
+      }
+    }
+  ]
+}

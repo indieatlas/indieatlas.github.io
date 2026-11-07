@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000126",
+  "status": "candidate",
+  "title": {
+    "display": "Find The Needle",
+    "original": "Find The Needle",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5160800
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5165210",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5165210",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://needlessgames.com/",
+  "developerIds": [
+    "dev_000171"
+  ],
+  "publisherIds": [
+    "dev_000171"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5160800/",
+            "retrievedAt": "2026-11-07T19:01:36Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:0a4d46e85ff3d20a6a0bc8e4dde043d7eee7e3a89ff5062735a4b45b602d153b"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-07T19:01:36Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5160800/",
+        "retrievedAt": "2026-11-07T19:01:36Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0a4d46e85ff3d20a6a0bc8e4dde043d7eee7e3a89ff5062735a4b45b602d153b"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5160800/",
+        "retrievedAt": "2026-11-07T19:01:36Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0a4d46e85ff3d20a6a0bc8e4dde043d7eee7e3a89ff5062735a4b45b602d153b"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5160800/",
+        "retrievedAt": "2026-11-07T19:01:36Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0a4d46e85ff3d20a6a0bc8e4dde043d7eee7e3a89ff5062735a4b45b602d153b"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5160800/",
+        "retrievedAt": "2026-11-07T19:01:36Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0a4d46e85ff3d20a6a0bc8e4dde043d7eee7e3a89ff5062735a4b45b602d153b"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5160800/",
+        "retrievedAt": "2026-11-07T19:01:36Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0a4d46e85ff3d20a6a0bc8e4dde043d7eee7e3a89ff5062735a4b45b602d153b"
+      }
+    }
+  ],
+  "createdAt": "2026-11-07T19:01:36Z",
+  "updatedAt": "2026-11-07T19:01:36Z",
+  "createdByRun": "42402321312"
+}

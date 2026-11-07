@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000124",
+  "claims": [
+    {
+      "id": "c_2c3bcf24d69d9b8b",
+      "gameId": "g_000124",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2914150/",
+          "retrievedAt": "2026-11-07T19:02:48Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:84004de61e98621ea49f2165425812964595d768af142c672e9b05172ae02b76"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:48Z",
+      "createdAt": "2026-11-07T19:02:48Z",
+      "updatedAt": "2026-11-07T19:02:48Z",
+      "lastCheckedAt": "2026-11-07T19:02:48Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 4,
+          "day": 23
+        },
+        "rawText": "23 Apr, 2026"
+      }
+    },
+    {
+      "id": "c_c71195500c8c538b",
+      "gameId": "g_000124",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2914150/",
+          "retrievedAt": "2026-11-07T19:02:51Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:86ad2fa00ca0bb6dd6153d0cfdf05247aa8459b3d341e56dd4d0cbb7507603ca"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:48Z",
+      "createdAt": "2026-11-07T19:02:48Z",
+      "updatedAt": "2026-11-07T19:02:48Z",
+      "lastCheckedAt": "2026-11-07T19:02:51Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_176bb6ce42bb269e",
+      "gameId": "g_000124",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2914150/",
+          "retrievedAt": "2026-11-07T19:02:48Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:84004de61e98621ea49f2165425812964595d768af142c672e9b05172ae02b76"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:48Z",
+      "createdAt": "2026-11-07T19:02:48Z",
+      "updatedAt": "2026-11-07T19:02:48Z",
+      "lastCheckedAt": "2026-11-07T19:02:48Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_136d6a1ce70df466",
+      "gameId": "g_000124",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2914150/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:48:40Z",
+          "quote": "『ゆんゆん電波シンドローム』はヒキコモリの少女が、電波ソングでハイになった脳みそでラブリーな怪文書をポストし、世界をゆんゆんに狂わせていくリズムアドベンチャーゲームです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:84004de61e98621ea49f2165425812964595d768af142c672e9b05172ae02b76"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:48:40Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "summary",
+      "value": {
+        "ja": "現実に疲れて引きこもった少女Qちゃんが、電波ソングに乗せてネットへ怪文書を投稿し、世界を狂わせていくリズムアドベンチャー。30曲以上の電波ソングとマルチエンディングを収録する。"
+      }
+    },
+    {
+      "id": "c_07dbcae26abc29a0",
+      "gameId": "g_000124",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2914150/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:48:40Z",
+          "quote": "狂気の果てにたどりつけるでしょう",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:84004de61e98621ea49f2165425812964595d768af142c672e9b05172ae02b76"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:48:40Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "dark"
+      }
+    },
+    {
+      "id": "c_3f90c980e0b20d6f",
+      "gameId": "g_000124",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2914150/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:48:40Z",
+          "quote": "世界をゆんゆんに狂わせていくリズムアドベンチャーゲームです",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:84004de61e98621ea49f2165425812964595d768af142c672e9b05172ae02b76"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:48:40Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_a73ef01387c84db1",
+      "gameId": "g_000124",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2914150/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:48:40Z",
+          "quote": "ラブリーな怪文書をポストし、世界をゆんゆんに狂わせていく",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:84004de61e98621ea49f2165425812964595d768af142c672e9b05172ae02b76"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:48:40Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_e3c3bf776041d45c",
+      "gameId": "g_000124",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2914150/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:48:40Z",
+          "quote": "30曲以上の電波ソングとマルチエンディング",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:84004de61e98621ea49f2165425812964595d768af142c672e9b05172ae02b76"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:48:40Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_157c5d7bc2fddd5f",
+      "gameId": "g_000124",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2914150/",
+          "retrievedAt": "2026-11-07T19:02:48Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:84004de61e98621ea49f2165425812964595d768af142c672e9b05172ae02b76"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:48Z",
+      "createdAt": "2026-11-07T19:02:48Z",
+      "updatedAt": "2026-11-07T19:02:48Z",
+      "lastCheckedAt": "2026-11-07T19:02:48Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2914150/"
+      }
+    },
+    {
+      "id": "c_51ca061301644fb6",
+      "gameId": "g_000124",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2914150/",
+          "retrievedAt": "2026-11-07T19:02:48Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:84004de61e98621ea49f2165425812964595d768af142c672e9b05172ae02b76"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:48Z",
+      "createdAt": "2026-11-07T19:02:48Z",
+      "updatedAt": "2026-11-07T19:02:48Z",
+      "lastCheckedAt": "2026-11-07T19:02:48Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2914150/b58ce7618c376997fa067ab78906652f1d62d995/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "ゆんゆん電波シンドローム のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Alliance Arts"
+        }
+      }
+    }
+  ]
+}

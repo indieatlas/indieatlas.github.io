@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000132",
+  "claims": [
+    {
+      "id": "c_92fa5f9dad3a1fda",
+      "gameId": "g_000132",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2622000/",
+          "retrievedAt": "2026-11-07T19:02:03Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:5045bcd15deeaba76c85aafc8cb9e7074c3ac6fe6facdf1837a217214e39c092"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:03Z",
+      "createdAt": "2026-11-07T19:02:03Z",
+      "updatedAt": "2026-11-07T19:02:03Z",
+      "lastCheckedAt": "2026-11-07T19:02:03Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2024,
+          "month": 2,
+          "day": 28
+        },
+        "rawText": "28 Feb, 2024"
+      }
+    },
+    {
+      "id": "c_8a11ac9920e0fd15",
+      "gameId": "g_000132",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2622000/",
+          "retrievedAt": "2026-11-07T19:02:06Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:5a7d0af6d65cd9b5dba1cff7136c7999b68d66b5d95da2a1b4c36343ffd83eb0"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:03Z",
+      "createdAt": "2026-11-07T19:02:03Z",
+      "updatedAt": "2026-11-07T19:02:03Z",
+      "lastCheckedAt": "2026-11-07T19:02:06Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_060e84a564cd707d",
+      "gameId": "g_000132",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2622000/",
+          "retrievedAt": "2026-11-07T19:02:03Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:5045bcd15deeaba76c85aafc8cb9e7074c3ac6fe6facdf1837a217214e39c092"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:03Z",
+      "createdAt": "2026-11-07T19:02:03Z",
+      "updatedAt": "2026-11-07T19:02:03Z",
+      "lastCheckedAt": "2026-11-07T19:02:03Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "online-coop",
+          "online-pvp"
+        ]
+      }
+    },
+    {
+      "id": "c_98187e50010ab54c",
+      "gameId": "g_000132",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2622000/",
+          "retrievedAt": "2026-11-07T19:02:03Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:5045bcd15deeaba76c85aafc8cb9e7074c3ac6fe6facdf1837a217214e39c092"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:03Z",
+      "createdAt": "2026-11-07T19:02:03Z",
+      "updatedAt": "2026-11-07T19:02:03Z",
+      "lastCheckedAt": "2026-11-07T19:02:03Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2622000/"
+      }
+    },
+    {
+      "id": "c_a80a7e15df3f3069",
+      "gameId": "g_000132",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2622000/",
+          "retrievedAt": "2026-11-07T19:02:03Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:5045bcd15deeaba76c85aafc8cb9e7074c3ac6fe6facdf1837a217214e39c092"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:03Z",
+      "createdAt": "2026-11-07T19:02:03Z",
+      "updatedAt": "2026-11-07T19:02:03Z",
+      "lastCheckedAt": "2026-11-07T19:02:03Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2622000/bf2f2f5bd97e0f3be91209888d067a4858235db7/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "アストラル☆パーティー のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Neverland Entertainment"
+        }
+      }
+    }
+  ]
+}

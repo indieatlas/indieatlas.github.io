@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "g_000096",
-  "status": "candidate",
+  "status": "published",
   "title": {
     "display": "MUAY THAI XTREME",
     "original": "MUAY THAI XTREME",
@@ -19,9 +19,24 @@
     "dev_000127"
   ],
   "indie": {
-    "assessment": "unknown",
-    "reasons": [],
-    "assessedAt": "2026-11-04T04:40:33Z"
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.4gamer.net/games/991/G999110/20261101008/",
+            "articleId": "a_174d57462c1e3112",
+            "publishedAt": "2026-11-01T05:32:22Z",
+            "retrievedAt": "2026-11-04T04:27:06Z",
+            "locator": "article.games",
+            "originKey": "media:4gamer.net"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-07T19:01:34Z"
   },
   "identityEvidence": [
     {
@@ -74,6 +89,7 @@
     }
   ],
   "createdAt": "2026-11-04T04:40:33Z",
-  "updatedAt": "2026-11-04T04:40:33Z",
+  "addedAt": "2026-11-08",
+  "updatedAt": "2026-11-07T19:01:34Z",
   "createdByRun": "local-20261104-132342-research"
 }

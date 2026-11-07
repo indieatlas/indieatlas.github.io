@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "g_000090",
-  "status": "candidate",
+  "status": "published",
   "title": {
     "display": "病能探偵",
     "original": "Psycho-Sleuth",
@@ -43,9 +43,24 @@
     "dev_000118"
   ],
   "indie": {
-    "assessment": "unknown",
-    "reasons": [],
-    "assessedAt": "2026-11-03T07:44:28Z"
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.gamespark.jp/article/2026/11/03/174420.html",
+            "articleId": "a_cb6277943a982273",
+            "publishedAt": "2026-11-02T22:00:02Z",
+            "retrievedAt": "2026-11-03T07:48:05Z",
+            "locator": "article.games",
+            "originKey": "media:gamespark.jp"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-07T19:01:34Z"
   },
   "identityEvidence": [
     {
@@ -104,6 +119,7 @@
     }
   ],
   "createdAt": "2026-11-03T07:44:28Z",
-  "updatedAt": "2026-11-06T10:21:43Z",
+  "addedAt": "2026-11-08",
+  "updatedAt": "2026-11-07T19:01:34Z",
   "createdByRun": "local-20261103-135409-refresh"
 }

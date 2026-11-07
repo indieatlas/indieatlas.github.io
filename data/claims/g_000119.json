@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000119",
+  "claims": [
+    {
+      "id": "c_88d0c78eb6d6a262",
+      "gameId": "g_000119",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1867240/",
+          "retrievedAt": "2026-11-07T19:02:26Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e792e4d20dc41194e5be8fea754e2317a6028b54124ead555482046e4590a28a"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:26Z",
+      "createdAt": "2026-11-07T19:02:26Z",
+      "updatedAt": "2026-11-07T19:02:26Z",
+      "lastCheckedAt": "2026-11-07T19:02:26Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 9,
+          "day": 10
+        },
+        "rawText": "10 Sep, 2026"
+      }
+    },
+    {
+      "id": "c_7fa2e0a1fde75054",
+      "gameId": "g_000119",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1867240/",
+          "retrievedAt": "2026-11-07T19:02:29Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2d7691f0adc25b385e683cf41ae952b31a7dc59076cd259a9f2d8e7e9b6449c2"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:26Z",
+      "createdAt": "2026-11-07T19:02:26Z",
+      "updatedAt": "2026-11-07T19:02:26Z",
+      "lastCheckedAt": "2026-11-07T19:02:29Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_6b8f8f63eab2e2d0",
+      "gameId": "g_000119",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1867240/",
+          "retrievedAt": "2026-11-07T19:02:26Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e792e4d20dc41194e5be8fea754e2317a6028b54124ead555482046e4590a28a"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:26Z",
+      "createdAt": "2026-11-07T19:02:26Z",
+      "updatedAt": "2026-11-07T19:02:26Z",
+      "lastCheckedAt": "2026-11-07T19:02:26Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "online-pvp"
+        ]
+      }
+    },
+    {
+      "id": "c_a3d056477a9ebaaa",
+      "gameId": "g_000119",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1867240/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:43:51Z",
+          "quote": "『WARDOGS』は、タクティカルな銃撃戦と連合部隊による戦闘に、建築と破壊のメカニクスが融合した、最大100人が参加可能なミリタリーサンドボックス型の大規模戦闘FPSだ。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f07d19f7a7428b9deea494de5aacf1766fe68cda3c7769489949705a3a1bec3f"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:43:51Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "summary",
+      "value": {
+        "ja": "最大100人が3チームに分かれて戦う大規模ミリタリーFPS。破壊可能な戦場でコントロールゾーンの支配を争い、稼いだ資金で武器や車両を購入してロードアウトを組む。建築や拠点強化、ローカルボイスチャットによる連携が特徴。"
+      }
+    },
+    {
+      "id": "c_26e82509815706d5",
+      "gameId": "g_000119",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1867240/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:43:51Z",
+          "quote": "タクティカルな銃撃戦と連合部隊による戦闘に、建築と破壊のメカニクスが融合した",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f07d19f7a7428b9deea494de5aacf1766fe68cda3c7769489949705a3a1bec3f"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:43:51Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_3feb37ab5c18225e",
+      "gameId": "g_000119",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1867240/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:43:51Z",
+          "quote": "「キング・オブ・ザ・ヒル」に着想を得た本作のゲームモードでは、3チームが256km²に及ぶマップ内にランダム生成される2ｘ2kmの「コントロールゾーン」の支配を巡って戦闘が繰り広げられる。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f07d19f7a7428b9deea494de5aacf1766fe68cda3c7769489949705a3a1bec3f"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:43:51Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "procedural-generation"
+      }
+    },
+    {
+      "id": "c_5218fdcabaefb185",
+      "gameId": "g_000119",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1867240/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:43:51Z",
+          "quote": "本作では、ロケットランチャーで団地を吹き飛ばしたり、重装甲戦車で街を踏み潰しながら突破できる。あなたの周囲の世界は、リアルタイムに変化するのだ。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f07d19f7a7428b9deea494de5aacf1766fe68cda3c7769489949705a3a1bec3f"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:43:51Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "physics"
+      }
+    },
+    {
+      "id": "c_9c2e47fcbef3de7c",
+      "gameId": "g_000119",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1867240/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:43:51Z",
+          "quote": "『WARDOGS』は、タクティカルな銃撃戦と連合部隊による戦闘に、建築と破壊のメカニクスが融合した、最大100人が参加可能なミリタリーサンドボックス型の大規模戦闘FPSだ。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f07d19f7a7428b9deea494de5aacf1766fe68cda3c7769489949705a3a1bec3f"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:43:51Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "shooter"
+      }
+    },
+    {
+      "id": "c_114d5644f9c450f1",
+      "gameId": "g_000119",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1867240/",
+          "retrievedAt": "2026-11-07T19:02:26Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e792e4d20dc41194e5be8fea754e2317a6028b54124ead555482046e4590a28a"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:26Z",
+      "createdAt": "2026-11-07T19:02:26Z",
+      "updatedAt": "2026-11-07T19:02:26Z",
+      "lastCheckedAt": "2026-11-07T19:02:26Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1867240/"
+      }
+    },
+    {
+      "id": "c_c26f1fc5205898ba",
+      "gameId": "g_000119",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1867240/",
+          "retrievedAt": "2026-11-07T19:02:26Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e792e4d20dc41194e5be8fea754e2317a6028b54124ead555482046e4590a28a"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:26Z",
+      "createdAt": "2026-11-07T19:02:26Z",
+      "updatedAt": "2026-11-07T19:02:26Z",
+      "lastCheckedAt": "2026-11-07T19:02:26Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "WARDOGS のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Team17"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000117",
+  "claims": [
+    {
+      "id": "c_fbd99a8942b11e0a",
+      "gameId": "g_000117",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3208460/",
+          "retrievedAt": "2026-11-07T19:02:17Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bd62b7fe3efa41c79c60add261be187c71619f257fa7a89ea0e2d8712e7b6dc1"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:17Z",
+      "createdAt": "2026-11-07T19:02:17Z",
+      "updatedAt": "2026-11-07T19:02:17Z",
+      "lastCheckedAt": "2026-11-07T19:02:17Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 6
+        },
+        "rawText": "6 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_1e1fa38cdcbcc12a",
+      "gameId": "g_000117",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3208460/",
+          "retrievedAt": "2026-11-07T19:02:20Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d5ddd7f2eeeb948ae3d7bbd1bbc9048161536cfe2052970da54753106833dea5"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:17Z",
+      "createdAt": "2026-11-07T19:02:17Z",
+      "updatedAt": "2026-11-07T19:02:17Z",
+      "lastCheckedAt": "2026-11-07T19:02:20Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_9d0fb060e788458d",
+      "gameId": "g_000117",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3208460/",
+          "retrievedAt": "2026-11-07T19:02:17Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bd62b7fe3efa41c79c60add261be187c71619f257fa7a89ea0e2d8712e7b6dc1"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:17Z",
+      "createdAt": "2026-11-07T19:02:17Z",
+      "updatedAt": "2026-11-07T19:02:17Z",
+      "lastCheckedAt": "2026-11-07T19:02:17Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_a902e2669c28e650",
+      "gameId": "g_000117",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3208460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:43:31Z",
+          "quote": "入るたびに形が変わる自動生成ダンジョン。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bd62b7fe3efa41c79c60add261be187c71619f257fa7a89ea0e2d8712e7b6dc1"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:43:31Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "summary",
+      "value": {
+        "ja": "入るたびに形が変わる自動生成ダンジョンに挑むターン制ローグライクRPG。快適ダッシュでテンポよく進められ、杖やピアスの効果は自動で識別され、店ではアイテムを床に置くだけで売値が付く。"
+      }
+    },
+    {
+      "id": "c_162a3f96d4b7a670",
+      "gameId": "g_000117",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3208460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:43:31Z",
+          "quote": "自動生成ダンジョンのターン制王道ローグライクRPG",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bd62b7fe3efa41c79c60add261be187c71619f257fa7a89ea0e2d8712e7b6dc1"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:43:31Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "rpg"
+      }
+    },
+    {
+      "id": "c_3664acc70853e2fb",
+      "gameId": "g_000117",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3208460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:43:31Z",
+          "quote": "ターン制なのでサクサク進んでもじっくり時間をかけても大丈夫。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bd62b7fe3efa41c79c60add261be187c71619f257fa7a89ea0e2d8712e7b6dc1"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:43:31Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "turn-based"
+      }
+    },
+    {
+      "id": "c_451fb149f76834f2",
+      "gameId": "g_000117",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3208460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:43:31Z",
+          "quote": "A procedurally generated dungeon that changes shape every time you enter.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bd62b7fe3efa41c79c60add261be187c71619f257fa7a89ea0e2d8712e7b6dc1"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:43:31Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "procedural-generation"
+      }
+    },
+    {
+      "id": "c_e993445ffb4c420b",
+      "gameId": "g_000117",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3208460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:43:31Z",
+          "quote": "自動生成ダンジョンのターン制王道ローグライクRPG",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bd62b7fe3efa41c79c60add261be187c71619f257fa7a89ea0e2d8712e7b6dc1"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:43:31Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_c076997af8c9f1b6",
+      "gameId": "g_000117",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3208460/",
+          "retrievedAt": "2026-11-07T19:02:17Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bd62b7fe3efa41c79c60add261be187c71619f257fa7a89ea0e2d8712e7b6dc1"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:17Z",
+      "createdAt": "2026-11-07T19:02:17Z",
+      "updatedAt": "2026-11-07T19:02:17Z",
+      "lastCheckedAt": "2026-11-07T19:02:17Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3208460/"
+      }
+    },
+    {
+      "id": "c_c586d526a314c223",
+      "gameId": "g_000117",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3208460/",
+          "retrievedAt": "2026-11-07T19:02:17Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bd62b7fe3efa41c79c60add261be187c71619f257fa7a89ea0e2d8712e7b6dc1"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:17Z",
+      "createdAt": "2026-11-07T19:02:17Z",
+      "updatedAt": "2026-11-07T19:02:17Z",
+      "lastCheckedAt": "2026-11-07T19:02:17Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3208460/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Rogue Braver | 勇者ローグ のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "DORASA.NET"
+        }
+      }
+    }
+  ]
+}

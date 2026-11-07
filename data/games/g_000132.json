@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000132",
+  "status": "candidate",
+  "title": {
+    "display": "アストラル☆パーティー",
+    "original": "Astral Party",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "アストラル☆パーティー",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 2622000
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000178"
+  ],
+  "publisherIds": [
+    "dev_000179"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-07T19:01:34Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-07T19:01:34Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2622000/",
+        "retrievedAt": "2026-11-07T19:02:03Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5045bcd15deeaba76c85aafc8cb9e7074c3ac6fe6facdf1837a217214e39c092"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2622000/",
+        "retrievedAt": "2026-11-07T19:02:03Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5045bcd15deeaba76c85aafc8cb9e7074c3ac6fe6facdf1837a217214e39c092"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2622000/",
+        "retrievedAt": "2026-11-07T19:02:03Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5045bcd15deeaba76c85aafc8cb9e7074c3ac6fe6facdf1837a217214e39c092"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2622000/",
+        "retrievedAt": "2026-11-07T19:02:03Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5045bcd15deeaba76c85aafc8cb9e7074c3ac6fe6facdf1837a217214e39c092"
+      }
+    }
+  ],
+  "createdAt": "2026-11-07T19:02:03Z",
+  "updatedAt": "2026-11-07T19:01:34Z",
+  "createdByRun": "42402321312"
+}

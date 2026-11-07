@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000117",
+  "status": "candidate",
+  "title": {
+    "display": "勇者ローグ",
+    "original": "Rogue Braver",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "Rogue Braver",
+      "lang": "en",
+      "kind": "romanization"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 3208460
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000161"
+  ],
+  "publisherIds": [
+    "dev_000161"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/3208460/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-07T18:43:31Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:bd62b7fe3efa41c79c60add261be187c71619f257fa7a89ea0e2d8712e7b6dc1"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-07T19:01:34Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3208460/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:43:31Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bd62b7fe3efa41c79c60add261be187c71619f257fa7a89ea0e2d8712e7b6dc1"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3208460/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:43:31Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bd62b7fe3efa41c79c60add261be187c71619f257fa7a89ea0e2d8712e7b6dc1"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3208460/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:43:31Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bd62b7fe3efa41c79c60add261be187c71619f257fa7a89ea0e2d8712e7b6dc1"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3208460/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:43:31Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bd62b7fe3efa41c79c60add261be187c71619f257fa7a89ea0e2d8712e7b6dc1"
+      }
+    }
+  ],
+  "createdAt": "2026-11-07T19:01:34Z",
+  "updatedAt": "2026-11-07T19:01:34Z",
+  "createdByRun": "42402321312"
+}

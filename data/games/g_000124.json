@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000124",
+  "status": "candidate",
+  "title": {
+    "display": "ゆんゆん電波シンドローム",
+    "original": "ゆんゆん電波シンドローム",
+    "originalLang": "ja"
+  },
+  "aliases": [
+    {
+      "value": "Yunyun Syndrome!? Rhythm Psychosis",
+      "lang": "en",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 2914150
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4535490",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4535510",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4535520",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4535530",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4535540",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4535550",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4535570",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5253050",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5253060",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000063",
+    "dev_000168"
+  ],
+  "publisherIds": [
+    "dev_000063"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-showcase",
+        "note": "INDIE Live Expo Awards 予選突破作品として特集",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.inside-games.jp/article/2026/11/07/190513.html",
+            "sourceId": "inside-games",
+            "publishedAt": "2026-11-07T08:00:03Z",
+            "retrievedAt": "2026-11-07T18:47:19Z",
+            "quote": "「INDIE Live Expo Awards」の激戦を勝ち抜き、見事に予選を突破した注目の5タイトルをご紹介しました。",
+            "originKey": "media:inside-games.jp",
+            "fetchHash": "sha256:5e28d90e07589a57ad35ffea4f168612fff8bde143d27456e80eb17d142f04a7"
+          }
+        ]
+      },
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/2914150/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-07T18:48:40Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:84004de61e98621ea49f2165425812964595d768af142c672e9b05172ae02b76"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-07T19:01:34Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2914150/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:48:40Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:84004de61e98621ea49f2165425812964595d768af142c672e9b05172ae02b76"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2914150/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:48:40Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:84004de61e98621ea49f2165425812964595d768af142c672e9b05172ae02b76"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2914150/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:48:40Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:84004de61e98621ea49f2165425812964595d768af142c672e9b05172ae02b76"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2914150/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:48:40Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:84004de61e98621ea49f2165425812964595d768af142c672e9b05172ae02b76"
+      }
+    }
+  ],
+  "createdAt": "2026-11-07T19:01:34Z",
+  "updatedAt": "2026-11-07T19:02:48Z",
+  "createdByRun": "42402321312"
+}

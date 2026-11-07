@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000119",
+  "status": "candidate",
+  "title": {
+    "display": "WARDOGS",
+    "original": "WARDOGS",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1867240
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4809930",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4809960",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://bulkhead.com/",
+  "developerIds": [
+    "dev_000162"
+  ],
+  "publisherIds": [
+    "dev_000093"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.gamespark.jp/article/2026/11/07/174604.html",
+            "articleId": "a_392b314f4fd7c80e",
+            "publishedAt": "2026-11-07T05:45:02Z",
+            "retrievedAt": "2026-11-07T18:43:42Z",
+            "locator": "article.games",
+            "originKey": "media:gamespark.jp"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-07T19:01:34Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1867240/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:43:51Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f07d19f7a7428b9deea494de5aacf1766fe68cda3c7769489949705a3a1bec3f"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1867240/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:43:51Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f07d19f7a7428b9deea494de5aacf1766fe68cda3c7769489949705a3a1bec3f"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "official",
+        "url": "https://bulkhead.com/",
+        "retrievedAt": "2026-11-07T18:44:10Z",
+        "quote": "WARDOGS rewrites the rules of all out warfare having three teams fight to secure a dynamic 100-player battlefield",
+        "originKey": "official:bulkhead.com",
+        "fetchHash": "sha256:41f7879a4f1eee58ed928915220710d5349614d780f96c2d5d175269b11e9daa"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1867240/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:43:51Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f07d19f7a7428b9deea494de5aacf1766fe68cda3c7769489949705a3a1bec3f"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1867240/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:43:51Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f07d19f7a7428b9deea494de5aacf1766fe68cda3c7769489949705a3a1bec3f"
+      }
+    }
+  ],
+  "createdAt": "2026-11-07T19:01:34Z",
+  "updatedAt": "2026-11-07T19:01:34Z",
+  "createdByRun": "42402321312"
+}

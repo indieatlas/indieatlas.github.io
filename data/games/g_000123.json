@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000123",
+  "status": "candidate",
+  "title": {
+    "display": "DRAPLINE",
+    "original": "DRAPLINE",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "ドラプリン",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 3103780
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3369350",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5074600",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000166"
+  ],
+  "publisherIds": [
+    "dev_000167"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "solo-developer",
+        "note": "ストアの作者紹介でカナヲが個人でインディーゲームを作るクリエイターと明記",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/3103780/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-07T18:48:34Z",
+            "quote": "個人でインディーゲームを作るゲームクリエイター。",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:88a30da22195bc988c6e53e500f9152121e210694c44f4e2b6c0fdc183c28908"
+          }
+        ]
+      },
+      {
+        "code": "indie-showcase",
+        "note": "INDIE Live Expo Awards 予選突破作品として特集",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.inside-games.jp/article/2026/11/07/190513.html",
+            "sourceId": "inside-games",
+            "publishedAt": "2026-11-07T08:00:03Z",
+            "retrievedAt": "2026-11-07T18:47:19Z",
+            "quote": "「INDIE Live Expo Awards」の激戦を勝ち抜き、見事に予選を突破した注目の5タイトルをご紹介しました。",
+            "originKey": "media:inside-games.jp",
+            "fetchHash": "sha256:5e28d90e07589a57ad35ffea4f168612fff8bde143d27456e80eb17d142f04a7"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-07T19:01:34Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3103780/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:48:34Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:88a30da22195bc988c6e53e500f9152121e210694c44f4e2b6c0fdc183c28908"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3103780/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:48:34Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:88a30da22195bc988c6e53e500f9152121e210694c44f4e2b6c0fdc183c28908"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3103780/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:48:34Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:88a30da22195bc988c6e53e500f9152121e210694c44f4e2b6c0fdc183c28908"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3103780/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:48:34Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:88a30da22195bc988c6e53e500f9152121e210694c44f4e2b6c0fdc183c28908"
+      }
+    }
+  ],
+  "createdAt": "2026-11-07T19:01:34Z",
+  "updatedAt": "2026-11-07T19:02:44Z",
+  "createdByRun": "42402321312"
+}

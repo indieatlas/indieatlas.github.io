@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000127",
+  "status": "candidate",
+  "title": {
+    "display": "Potato Please",
+    "original": "Potato Please",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5266240
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5391760",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000172"
+  ],
+  "publisherIds": [
+    "dev_000172"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5266240/",
+            "retrievedAt": "2026-11-07T19:01:41Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:95df3f5737a2356f7d6cc7b7b4d3ae7daff57cfb0a609491349149ccee7b98ea"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-07T19:01:41Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5266240/",
+        "retrievedAt": "2026-11-07T19:01:41Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:95df3f5737a2356f7d6cc7b7b4d3ae7daff57cfb0a609491349149ccee7b98ea"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5266240/",
+        "retrievedAt": "2026-11-07T19:01:41Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:95df3f5737a2356f7d6cc7b7b4d3ae7daff57cfb0a609491349149ccee7b98ea"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5266240/",
+        "retrievedAt": "2026-11-07T19:01:41Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:95df3f5737a2356f7d6cc7b7b4d3ae7daff57cfb0a609491349149ccee7b98ea"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5266240/",
+        "retrievedAt": "2026-11-07T19:01:41Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:95df3f5737a2356f7d6cc7b7b4d3ae7daff57cfb0a609491349149ccee7b98ea"
+      }
+    }
+  ],
+  "createdAt": "2026-11-07T19:01:41Z",
+  "updatedAt": "2026-11-07T19:01:41Z",
+  "createdByRun": "42402321312"
+}

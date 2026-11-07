@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000121",
+  "status": "candidate",
+  "title": {
+    "display": "ゴブリン・ノーム・ホーン",
+    "original": "Goblin_Gnome_Horn",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 3675060
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000163",
+    "dev_000164"
+  ],
+  "publisherIds": [
+    "dev_000163",
+    "dev_000164"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/3675060/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-07T18:47:32Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:486cfafa1c38191869b1c8678e5b7ede95964f31624be893c4d7cdcfed85bb05"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-07T19:01:34Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3675060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:47:32Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:486cfafa1c38191869b1c8678e5b7ede95964f31624be893c4d7cdcfed85bb05"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3675060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:47:32Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:486cfafa1c38191869b1c8678e5b7ede95964f31624be893c4d7cdcfed85bb05"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3675060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:47:32Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:486cfafa1c38191869b1c8678e5b7ede95964f31624be893c4d7cdcfed85bb05"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3675060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:47:32Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:486cfafa1c38191869b1c8678e5b7ede95964f31624be893c4d7cdcfed85bb05"
+      }
+    }
+  ],
+  "createdAt": "2026-11-07T19:01:34Z",
+  "updatedAt": "2026-11-07T19:01:34Z",
+  "createdByRun": "42402321312"
+}

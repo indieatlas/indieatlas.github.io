@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000125",
+  "claims": [
+    {
+      "id": "c_a070950d0607bd69",
+      "gameId": "g_000125",
+      "scope": {
+        "platform": "linux",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4551150/",
+          "retrievedAt": "2026-11-07T19:02:53Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:00df3453a9338b10f5349d3e342cbe0c621d7b39c6ee4ff53d910b2d7e21d073"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:53Z",
+      "createdAt": "2026-11-07T19:02:53Z",
+      "updatedAt": "2026-11-07T19:02:53Z",
+      "lastCheckedAt": "2026-11-07T19:02:53Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 5
+        },
+        "rawText": "5 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_1804925e0c105782",
+      "gameId": "g_000125",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4551150/",
+          "retrievedAt": "2026-11-07T19:02:53Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:00df3453a9338b10f5349d3e342cbe0c621d7b39c6ee4ff53d910b2d7e21d073"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:53Z",
+      "createdAt": "2026-11-07T19:02:53Z",
+      "updatedAt": "2026-11-07T19:02:53Z",
+      "lastCheckedAt": "2026-11-07T19:02:53Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 5
+        },
+        "rawText": "5 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_394bb2e8afd996b5",
+      "gameId": "g_000125",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4551150/",
+          "retrievedAt": "2026-11-07T19:02:56Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb28678a31347072588479a8ac091228d23b8260bf3983c5181c3a74e72944ae"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:53Z",
+      "createdAt": "2026-11-07T19:02:53Z",
+      "updatedAt": "2026-11-07T19:02:53Z",
+      "lastCheckedAt": "2026-11-07T19:02:56Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_63f9471fe9238634",
+      "gameId": "g_000125",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4551150/",
+          "retrievedAt": "2026-11-07T19:02:53Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:00df3453a9338b10f5349d3e342cbe0c621d7b39c6ee4ff53d910b2d7e21d073"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:53Z",
+      "createdAt": "2026-11-07T19:02:53Z",
+      "updatedAt": "2026-11-07T19:02:53Z",
+      "lastCheckedAt": "2026-11-07T19:02:53Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_711bcd3ce819ce32",
+      "gameId": "g_000125",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4551150/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:50:45Z",
+          "quote": "二択の決断で進む街づくりゲーム。あなたはひょんなことから臨時皇帝となった宇宙人の道化師となり、法令に判を押して奇妙な決断を下しながら、帝国の崩壊をなんとしても食い止めます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:00df3453a9338b10f5349d3e342cbe0c621d7b39c6ee4ff53d910b2d7e21d073"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:50:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "summary",
+      "value": {
+        "ja": "提案に判を押して帝国を治める二択形式の街づくりゲーム。臨時皇帝となった宇宙人の道化師となり、資金・食料・幸福度・治安・人口の均衡を保ちながら、帝国の崩壊を食い止める。"
+      }
+    },
+    {
+      "id": "c_03feb84c3995ef5e",
+      "gameId": "g_000125",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4551150/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:50:45Z",
+          "quote": "帝国を拡大し、 資金、食料、幸福度、治安、人口 を管理しましょう。すべての建物は帝国のバランスを変化させ、助けになることもあれば、崩壊を早めることもあります。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:00df3453a9338b10f5349d3e342cbe0c621d7b39c6ee4ff53d910b2d7e21d073"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:50:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_5e159fd4452ec20e",
+      "gameId": "g_000125",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4551150/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:50:45Z",
+          "quote": "提案は予測不能です。領地に現れるあらゆる問題に対処するには、戦略的な判断が必要になります。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:00df3453a9338b10f5349d3e342cbe0c621d7b39c6ee4ff53d910b2d7e21d073"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:50:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "strategy"
+      }
+    },
+    {
+      "id": "c_8e594ec9dde50bd0",
+      "gameId": "g_000125",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4551150/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:50:45Z",
+          "quote": "二択の決断で進む街づくりゲーム。あなたはひょんなことから臨時皇帝となった宇宙人の道化師となり、法令に判を押して奇妙な決断を下しながら、帝国の崩壊をなんとしても食い止めます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:00df3453a9338b10f5349d3e342cbe0c621d7b39c6ee4ff53d910b2d7e21d073"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:50:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "city-builder"
+      }
+    },
+    {
+      "id": "c_ae4ac82b9f0b5c2c",
+      "gameId": "g_000125",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4551150/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:50:45Z",
+          "quote": "キャラクターごとに異なる性格と物語があり、有益な提案を持ちかけてくることもあれば、ありえないほど馬鹿げた方法であなたを脅してくることもあります。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:00df3453a9338b10f5349d3e342cbe0c621d7b39c6ee4ff53d910b2d7e21d073"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:50:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_caa606e82fb0ead1",
+      "gameId": "g_000125",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4551150/",
+          "retrievedAt": "2026-11-07T19:02:53Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:00df3453a9338b10f5349d3e342cbe0c621d7b39c6ee4ff53d910b2d7e21d073"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:53Z",
+      "createdAt": "2026-11-07T19:02:53Z",
+      "updatedAt": "2026-11-07T19:02:53Z",
+      "lastCheckedAt": "2026-11-07T19:02:53Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4551150/"
+      }
+    },
+    {
+      "id": "c_5b5a8eaccf18b061",
+      "gameId": "g_000125",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4551150/",
+          "retrievedAt": "2026-11-07T19:02:53Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:00df3453a9338b10f5349d3e342cbe0c621d7b39c6ee4ff53d910b2d7e21d073"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:53Z",
+      "createdAt": "2026-11-07T19:02:53Z",
+      "updatedAt": "2026-11-07T19:02:53Z",
+      "lastCheckedAt": "2026-11-07T19:02:53Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4551150/343338afa8c4593491b2b889aeb5710ced814a4d/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "スタンペラー のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Moon Mind Studio"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000116",
+  "status": "published",
+  "title": {
+    "display": "Snow Panic",
+    "original": "Snow Panic",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4572060
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000160"
+  ],
+  "publisherIds": [
+    "dev_000160"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4572060/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-07T18:43:25Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:4f0eb7a26842a4153f2be6a2b73f1be38447536021bdf29e548532deeae02945"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-07T19:01:34Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4572060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:43:25Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4f0eb7a26842a4153f2be6a2b73f1be38447536021bdf29e548532deeae02945"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4572060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:43:25Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4f0eb7a26842a4153f2be6a2b73f1be38447536021bdf29e548532deeae02945"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4572060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:43:25Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4f0eb7a26842a4153f2be6a2b73f1be38447536021bdf29e548532deeae02945"
+      }
+    }
+  ],
+  "createdAt": "2026-11-07T19:01:34Z",
+  "addedAt": "2026-11-08",
+  "updatedAt": "2026-11-07T19:01:34Z",
+  "createdByRun": "42402321312"
+}

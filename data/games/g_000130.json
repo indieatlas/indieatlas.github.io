@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000130",
+  "status": "candidate",
+  "title": {
+    "display": "BOMBANANA!",
+    "original": "BOMBANANA!",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4656000
+  },
+  "associatedApps": [],
+  "officialUrl": "http://bombanana.leftostudio.com/",
+  "developerIds": [
+    "dev_000175"
+  ],
+  "publisherIds": [
+    "dev_000176"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-07T19:01:34Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-07T19:01:34Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4656000/",
+        "retrievedAt": "2026-11-07T19:01:54Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a6649a1933739ce7da4fbe3446bfeaba07f7b079e21f0be7bbe592d2368f1155"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4656000/",
+        "retrievedAt": "2026-11-07T19:01:54Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a6649a1933739ce7da4fbe3446bfeaba07f7b079e21f0be7bbe592d2368f1155"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4656000/",
+        "retrievedAt": "2026-11-07T19:01:54Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a6649a1933739ce7da4fbe3446bfeaba07f7b079e21f0be7bbe592d2368f1155"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4656000/",
+        "retrievedAt": "2026-11-07T19:01:54Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a6649a1933739ce7da4fbe3446bfeaba07f7b079e21f0be7bbe592d2368f1155"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4656000/",
+        "retrievedAt": "2026-11-07T19:01:54Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a6649a1933739ce7da4fbe3446bfeaba07f7b079e21f0be7bbe592d2368f1155"
+      }
+    }
+  ],
+  "createdAt": "2026-11-07T19:01:54Z",
+  "updatedAt": "2026-11-07T19:01:34Z",
+  "createdByRun": "42402321312"
+}

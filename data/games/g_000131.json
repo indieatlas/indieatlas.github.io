@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000131",
+  "status": "candidate",
+  "title": {
+    "display": "How to Fish",
+    "original": "How to Fish",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4001890
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5208130",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://dazed.games/",
+  "developerIds": [
+    "dev_000177"
+  ],
+  "publisherIds": [
+    "dev_000177"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4001890/",
+            "retrievedAt": "2026-11-07T19:01:59Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:77d8328a8b0f9b1d648436d2508dbbde4c38a4ffad2a1b30c5120e8b72d02b5e"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-07T19:01:59Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4001890/",
+        "retrievedAt": "2026-11-07T19:01:59Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:77d8328a8b0f9b1d648436d2508dbbde4c38a4ffad2a1b30c5120e8b72d02b5e"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4001890/",
+        "retrievedAt": "2026-11-07T19:01:59Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:77d8328a8b0f9b1d648436d2508dbbde4c38a4ffad2a1b30c5120e8b72d02b5e"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4001890/",
+        "retrievedAt": "2026-11-07T19:01:59Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:77d8328a8b0f9b1d648436d2508dbbde4c38a4ffad2a1b30c5120e8b72d02b5e"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4001890/",
+        "retrievedAt": "2026-11-07T19:01:59Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:77d8328a8b0f9b1d648436d2508dbbde4c38a4ffad2a1b30c5120e8b72d02b5e"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4001890/",
+        "retrievedAt": "2026-11-07T19:01:59Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:77d8328a8b0f9b1d648436d2508dbbde4c38a4ffad2a1b30c5120e8b72d02b5e"
+      }
+    }
+  ],
+  "createdAt": "2026-11-07T19:01:59Z",
+  "updatedAt": "2026-11-07T19:01:59Z",
+  "createdByRun": "42402321312"
+}

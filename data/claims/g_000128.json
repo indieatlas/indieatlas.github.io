@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000128",
+  "claims": [
+    {
+      "id": "c_d8194165c0000b1c",
+      "gameId": "g_000128",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5335510/",
+          "retrievedAt": "2026-11-07T19:01:45Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:db303af1ba5ae019a2805a086ec553c75af1f60f9218d9e09c3cc98709129f7d"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:45Z",
+      "createdAt": "2026-11-07T19:01:45Z",
+      "updatedAt": "2026-11-07T19:01:45Z",
+      "lastCheckedAt": "2026-11-07T19:01:45Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 10,
+          "day": 23
+        },
+        "rawText": "23 Oct, 2026"
+      }
+    },
+    {
+      "id": "c_45cd81bb3ddc63fc",
+      "gameId": "g_000128",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5335510/",
+          "retrievedAt": "2026-11-07T19:01:48Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:611b7076153cc4c661a32762af01072cfec9bc8819d32c66226df851c2a8a199"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:45Z",
+      "createdAt": "2026-11-07T19:01:45Z",
+      "updatedAt": "2026-11-07T19:01:45Z",
+      "lastCheckedAt": "2026-11-07T19:01:48Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_bfb2e9d647164b4c",
+      "gameId": "g_000128",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5335510/",
+          "retrievedAt": "2026-11-07T19:01:45Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:db303af1ba5ae019a2805a086ec553c75af1f60f9218d9e09c3cc98709129f7d"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:45Z",
+      "createdAt": "2026-11-07T19:01:45Z",
+      "updatedAt": "2026-11-07T19:01:45Z",
+      "lastCheckedAt": "2026-11-07T19:01:45Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_c77a3bf83f011427",
+      "gameId": "g_000128",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5335510/",
+          "retrievedAt": "2026-11-07T19:01:45Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:db303af1ba5ae019a2805a086ec553c75af1f60f9218d9e09c3cc98709129f7d"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:45Z",
+      "createdAt": "2026-11-07T19:01:45Z",
+      "updatedAt": "2026-11-07T19:01:45Z",
+      "lastCheckedAt": "2026-11-07T19:01:45Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5335510/"
+      }
+    },
+    {
+      "id": "c_8befdd3b907fc5c4",
+      "gameId": "g_000128",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5335510/",
+          "retrievedAt": "2026-11-07T19:01:45Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:db303af1ba5ae019a2805a086ec553c75af1f60f9218d9e09c3cc98709129f7d"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:45Z",
+      "createdAt": "2026-11-07T19:01:45Z",
+      "updatedAt": "2026-11-07T19:01:45Z",
+      "lastCheckedAt": "2026-11-07T19:01:45Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5335510/41e1e802dfc069cc245b91043e451a2f9ffa80e3/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Moon Sweepers のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "DragDrop Games"
+        }
+      }
+    }
+  ]
+}

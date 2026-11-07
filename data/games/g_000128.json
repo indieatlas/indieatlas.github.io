@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000128",
+  "status": "candidate",
+  "title": {
+    "display": "Moon Sweepers",
+    "original": "Moon Sweepers",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5335510
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000173"
+  ],
+  "publisherIds": [
+    "dev_000173"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5335510/",
+            "retrievedAt": "2026-11-07T19:01:45Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:db303af1ba5ae019a2805a086ec553c75af1f60f9218d9e09c3cc98709129f7d"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-07T19:01:45Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5335510/",
+        "retrievedAt": "2026-11-07T19:01:45Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:db303af1ba5ae019a2805a086ec553c75af1f60f9218d9e09c3cc98709129f7d"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5335510/",
+        "retrievedAt": "2026-11-07T19:01:45Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:db303af1ba5ae019a2805a086ec553c75af1f60f9218d9e09c3cc98709129f7d"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5335510/",
+        "retrievedAt": "2026-11-07T19:01:45Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:db303af1ba5ae019a2805a086ec553c75af1f60f9218d9e09c3cc98709129f7d"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5335510/",
+        "retrievedAt": "2026-11-07T19:01:45Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:db303af1ba5ae019a2805a086ec553c75af1f60f9218d9e09c3cc98709129f7d"
+      }
+    }
+  ],
+  "createdAt": "2026-11-07T19:01:45Z",
+  "updatedAt": "2026-11-07T19:01:45Z",
+  "createdByRun": "42402321312"
+}

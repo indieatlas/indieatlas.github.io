@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "g_000109",
-  "status": "candidate",
+  "status": "published",
   "title": {
     "display": "ZERO Sievert 2",
     "original": "ZERO Sievert 2",
@@ -20,9 +20,24 @@
     "dev_000148"
   ],
   "indie": {
-    "assessment": "unknown",
-    "reasons": [],
-    "assessedAt": "2026-11-06T10:20:57Z"
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.4gamer.net/games/004/G100421/20261104052/",
+            "articleId": "a_ce499aedb0efa9bf",
+            "publishedAt": "2026-11-04T11:42:20Z",
+            "retrievedAt": "2026-11-06T10:07:48Z",
+            "locator": "article.games",
+            "originKey": "media:4gamer.net"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-07T19:01:34Z"
   },
   "identityEvidence": [
     {
@@ -75,6 +90,7 @@
     }
   ],
   "createdAt": "2026-11-06T10:20:57Z",
-  "updatedAt": "2026-11-06T10:20:57Z",
+  "addedAt": "2026-11-08",
+  "updatedAt": "2026-11-07T19:01:34Z",
   "createdByRun": "42199738593"
 }

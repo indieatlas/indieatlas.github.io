@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000133",
+  "status": "candidate",
+  "title": {
+    "display": "カウンティ・オブ・フォーチュン",
+    "original": "County of Fortune",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "カウンティ・オブ・フォーチュン",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 3204330
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4601050",
+      "kind": "demo"
+    }
+  ],
+  "officialUrl": "https://nepos.games/county_of_fortune/",
+  "developerIds": [
+    "dev_000180"
+  ],
+  "publisherIds": [
+    "dev_000181"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-07T19:01:34Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-07T19:01:34Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3204330/",
+        "retrievedAt": "2026-11-07T19:02:08Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3330683171ebbab6ba7989ff596808c6f49679f0bd9f0d66daa32d9d0948b805"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3204330/",
+        "retrievedAt": "2026-11-07T19:02:08Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3330683171ebbab6ba7989ff596808c6f49679f0bd9f0d66daa32d9d0948b805"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3204330/",
+        "retrievedAt": "2026-11-07T19:02:08Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3330683171ebbab6ba7989ff596808c6f49679f0bd9f0d66daa32d9d0948b805"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3204330/",
+        "retrievedAt": "2026-11-07T19:02:08Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3330683171ebbab6ba7989ff596808c6f49679f0bd9f0d66daa32d9d0948b805"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3204330/",
+        "retrievedAt": "2026-11-07T19:02:08Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3330683171ebbab6ba7989ff596808c6f49679f0bd9f0d66daa32d9d0948b805"
+      }
+    }
+  ],
+  "createdAt": "2026-11-07T19:02:08Z",
+  "updatedAt": "2026-11-07T19:01:34Z",
+  "createdByRun": "42402321312"
+}

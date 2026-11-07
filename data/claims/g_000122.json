@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000122",
+  "claims": [
+    {
+      "id": "c_85d5a7b543e900d8",
+      "gameId": "g_000122",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3548580/",
+          "retrievedAt": "2026-11-07T19:02:39Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e651bb8a93ac32c93be6a767f8beab02667b868d06c31a8cc214628e5a6b630d"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:39Z",
+      "createdAt": "2026-11-07T19:02:39Z",
+      "updatedAt": "2026-11-07T19:02:39Z",
+      "lastCheckedAt": "2026-11-07T19:02:39Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 11,
+          "day": 16
+        },
+        "rawText": "16 Nov, 2025"
+      }
+    },
+    {
+      "id": "c_a9a3e6a248bd9ada",
+      "gameId": "g_000122",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3548580/",
+          "retrievedAt": "2026-11-07T19:02:39Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e651bb8a93ac32c93be6a767f8beab02667b868d06c31a8cc214628e5a6b630d"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:39Z",
+      "createdAt": "2026-11-07T19:02:39Z",
+      "updatedAt": "2026-11-07T19:02:39Z",
+      "lastCheckedAt": "2026-11-07T19:02:39Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 11,
+          "day": 16
+        },
+        "rawText": "16 Nov, 2025"
+      }
+    },
+    {
+      "id": "c_2d1ee043dd3f47ef",
+      "gameId": "g_000122",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3548580/",
+          "retrievedAt": "2026-11-07T19:02:42Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dad203c04108b8f73307e2f8fca605ac284b15f75d774411c245fb775e7473f0"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:39Z",
+      "createdAt": "2026-11-07T19:02:39Z",
+      "updatedAt": "2026-11-07T19:02:39Z",
+      "lastCheckedAt": "2026-11-07T19:02:42Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_9602314aa2a64090",
+      "gameId": "g_000122",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3548580/",
+          "retrievedAt": "2026-11-07T19:02:39Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e651bb8a93ac32c93be6a767f8beab02667b868d06c31a8cc214628e5a6b630d"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:39Z",
+      "createdAt": "2026-11-07T19:02:39Z",
+      "updatedAt": "2026-11-07T19:02:39Z",
+      "lastCheckedAt": "2026-11-07T19:02:39Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_a5bfe1a2f8194cb5",
+      "gameId": "g_000122",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3548580/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:48:46Z",
+          "quote": "『Chill with You Lo-Fi Story』は小説を書くのが好きな妄想豊かな少女（サトネ）と一緒にデスクワークする作業用ADVです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e651bb8a93ac32c93be6a767f8beab02667b868d06c31a8cc214628e5a6b630d"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:48:46Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "summary",
+      "value": {
+        "ja": "小説を書くのが好きな少女サトネと作業通話をしながら、勉強やデスクワークに取り組む作業用アドベンチャー。Lo-Fi音楽や環境音、風景を組み合わせて作業環境を整え、ポモドーロタイマーで休憩を挟みながら、サトネとの距離を縮めていく。"
+      }
+    },
+    {
+      "id": "c_388248d7a249672e",
+      "gameId": "g_000122",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3548580/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:48:46Z",
+          "quote": "作業をするほどに信頼関係が深まっていき、サトネと心が通じ合うことも…？",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e651bb8a93ac32c93be6a767f8beab02667b868d06c31a8cc214628e5a6b630d"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:48:46Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_5725f10cd2092ac5",
+      "gameId": "g_000122",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3548580/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:48:46Z",
+          "quote": "『Chill with You : Lo-Fi Story』は小説を書くのが好きな妄想豊かな少女（サトネ）と一緒にデスクワークする作業用ADVです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e651bb8a93ac32c93be6a767f8beab02667b868d06c31a8cc214628e5a6b630d"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:48:46Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_697ac8404d0a700a",
+      "gameId": "g_000122",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3548580/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:48:46Z",
+          "quote": "あなたと一緒に作業をした「大切な時間」によってサトネとの仲が深まったらサトネはあなたに心を許すかもしれません。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e651bb8a93ac32c93be6a767f8beab02667b868d06c31a8cc214628e5a6b630d"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:48:46Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "romance"
+      }
+    },
+    {
+      "id": "c_7b4b65f202a9040f",
+      "gameId": "g_000122",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3548580/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:48:46Z",
+          "quote": "作業後の休憩時間にサトネとコミュニケーションを取ろう。あなたと一緒に作業をした「大切な時間」によってサトネとの仲が深まったらサトネはあなたに心を許すかもしれません。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e651bb8a93ac32c93be6a767f8beab02667b868d06c31a8cc214628e5a6b630d"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:48:46Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_99e871741e54fbfd",
+      "gameId": "g_000122",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3548580/",
+          "retrievedAt": "2026-11-07T19:02:39Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e651bb8a93ac32c93be6a767f8beab02667b868d06c31a8cc214628e5a6b630d"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:39Z",
+      "createdAt": "2026-11-07T19:02:39Z",
+      "updatedAt": "2026-11-07T19:02:39Z",
+      "lastCheckedAt": "2026-11-07T19:02:39Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3548580/"
+      }
+    },
+    {
+      "id": "c_30dd4fd0dbd74494",
+      "gameId": "g_000122",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3548580/",
+          "retrievedAt": "2026-11-07T19:02:39Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e651bb8a93ac32c93be6a767f8beab02667b868d06c31a8cc214628e5a6b630d"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:39Z",
+      "createdAt": "2026-11-07T19:02:39Z",
+      "updatedAt": "2026-11-07T19:02:39Z",
+      "lastCheckedAt": "2026-11-07T19:02:39Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3548580/2c7a564c618bbfb933436be119f0f8cb040bae4b/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Chill with You : Lo-Fi Story のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Nestopi Inc."
+        }
+      }
+    }
+  ]
+}

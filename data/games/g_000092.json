@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "g_000092",
-  "status": "candidate",
+  "status": "published",
   "title": {
     "display": "デッドリーデイズ：ロードトリップ",
     "original": "Deadly Days: Roadtrip",
@@ -25,7 +25,7 @@
     "dev_000121"
   ],
   "indie": {
-    "assessment": "unknown",
+    "assessment": "indie",
     "reasons": [
       {
         "code": "independent-publisher",
@@ -40,9 +40,23 @@
             "fetchHash": "sha256:46f26c5c78069528bfa2b90e7cb2e26e71cbe4248ed3d408e42bbcb218fb728a"
           }
         ]
+      },
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://automaton-media.com/articles/newsjp/20261101-476986/",
+            "articleId": "a_6e91da29f4865174",
+            "publishedAt": "2026-11-01T04:34:35Z",
+            "retrievedAt": "2026-11-04T04:25:55Z",
+            "locator": "article.games",
+            "originKey": "media:automaton-media.com"
+          }
+        ]
       }
     ],
-    "assessedAt": "2026-11-04T04:40:33Z"
+    "assessedAt": "2026-11-07T19:01:34Z"
   },
   "identityEvidence": [
     {
@@ -95,6 +109,7 @@
     }
   ],
   "createdAt": "2026-11-04T04:40:33Z",
-  "updatedAt": "2026-11-04T04:40:33Z",
+  "addedAt": "2026-11-08",
+  "updatedAt": "2026-11-07T19:01:34Z",
   "createdByRun": "local-20261104-132342-research"
 }

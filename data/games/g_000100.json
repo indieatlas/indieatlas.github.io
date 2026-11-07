@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "g_000100",
-  "status": "candidate",
+  "status": "published",
   "title": {
     "display": "Monster Train 2",
     "original": "Monster Train 2",
@@ -41,7 +41,7 @@
     "dev_000132"
   ],
   "indie": {
-    "assessment": "unknown",
+    "assessment": "indie",
     "reasons": [
       {
         "code": "independent-publisher",
@@ -65,9 +65,23 @@
             "fetchHash": "sha256:49897c38336cf988def2b1e852dfb70e1dd2fc36152d33b9c72cc5114e11f60a"
           }
         ]
+      },
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.pcgamer.com/games/card-games/monster-train-2-the-punished-review/",
+            "articleId": "a_b95fd0905735eb60",
+            "publishedAt": "2026-11-02T14:00:00Z",
+            "retrievedAt": "2026-11-04T04:27:32Z",
+            "locator": "article.games",
+            "originKey": "media:pcgamer.com"
+          }
+        ]
       }
     ],
-    "assessedAt": "2026-11-04T04:40:33Z"
+    "assessedAt": "2026-11-07T19:01:34Z"
   },
   "identityEvidence": [
     {
@@ -145,6 +159,7 @@
     }
   ],
   "createdAt": "2026-11-04T04:40:33Z",
-  "updatedAt": "2026-11-04T04:41:09Z",
+  "addedAt": "2026-11-08",
+  "updatedAt": "2026-11-07T19:01:34Z",
   "createdByRun": "local-20261104-132342-research"
 }

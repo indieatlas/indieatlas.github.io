@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000123",
+  "claims": [
+    {
+      "id": "c_8ff7231b1e168cb1",
+      "gameId": "g_000123",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3103780/",
+          "retrievedAt": "2026-11-07T19:02:44Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88a30da22195bc988c6e53e500f9152121e210694c44f4e2b6c0fdc183c28908"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:44Z",
+      "createdAt": "2026-11-07T19:02:44Z",
+      "updatedAt": "2026-11-07T19:02:44Z",
+      "lastCheckedAt": "2026-11-07T19:02:44Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 9,
+          "day": 23
+        },
+        "rawText": "23 Sep, 2026"
+      }
+    },
+    {
+      "id": "c_d61cf591eae90bf4",
+      "gameId": "g_000123",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3103780/",
+          "retrievedAt": "2026-11-07T19:02:47Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:be02ff6ce29ce1c5792c119003cdac3ba441e948d001539b7d62d4327c27b742"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:44Z",
+      "createdAt": "2026-11-07T19:02:44Z",
+      "updatedAt": "2026-11-07T19:02:44Z",
+      "lastCheckedAt": "2026-11-07T19:02:47Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_231f75a80a748390",
+      "gameId": "g_000123",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3103780/",
+          "retrievedAt": "2026-11-07T19:02:44Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88a30da22195bc988c6e53e500f9152121e210694c44f4e2b6c0fdc183c28908"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:44Z",
+      "createdAt": "2026-11-07T19:02:44Z",
+      "updatedAt": "2026-11-07T19:02:44Z",
+      "lastCheckedAt": "2026-11-07T19:02:44Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_0054f2795b238592",
+      "gameId": "g_000123",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3103780/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:48:34Z",
+          "quote": "『DRAPLINE（ドラプリン）』は、なんでも食べるドラゴン娘を1年間で最強に育てる育成ローグライトゲームです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88a30da22195bc988c6e53e500f9152121e210694c44f4e2b6c0fdc183c28908"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:48:34Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "summary",
+      "value": {
+        "ja": "なんでも食べるドラゴン娘「神竜」を1年間で最強に育てる育成ローグライト。200種類以上のスキルを組み合わせて災いと戦い、育て方によって25種類の結末に分岐する。"
+      }
+    },
+    {
+      "id": "c_3a05ec0321cd9ed3",
+      "gameId": "g_000123",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3103780/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:48:34Z",
+          "quote": "200種類以上のスキルを組み合わせてシナジーを生み出し、自分だけの戦略を構築しましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88a30da22195bc988c6e53e500f9152121e210694c44f4e2b6c0fdc183c28908"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:48:34Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_7a07258347c95a28",
+      "gameId": "g_000123",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3103780/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:48:34Z",
+          "quote": "早ければ約1時間でエンディングを迎えることができるため、何度でも様々な方針の育成を楽しめます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88a30da22195bc988c6e53e500f9152121e210694c44f4e2b6c0fdc183c28908"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:48:34Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "short-session"
+      }
+    },
+    {
+      "id": "c_a1db6c2d5d808466",
+      "gameId": "g_000123",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3103780/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:48:34Z",
+          "quote": "やがて神竜の未来は25種類の結末へと分岐します。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88a30da22195bc988c6e53e500f9152121e210694c44f4e2b6c0fdc183c28908"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:48:34Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_df6f977412784f37",
+      "gameId": "g_000123",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3103780/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:48:34Z",
+          "quote": "あなたは1年後に迫る世界の終わりを阻止するため、「神竜」と呼ばれるドラゴン娘を育てなければなりません。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88a30da22195bc988c6e53e500f9152121e210694c44f4e2b6c0fdc183c28908"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:48:34Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_ea1bd7e678021e9d",
+      "gameId": "g_000123",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3103780/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:48:34Z",
+          "quote": "育成ローグライトゲームです",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88a30da22195bc988c6e53e500f9152121e210694c44f4e2b6c0fdc183c28908"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:48:34Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_e2c3bdbd30bf09c5",
+      "gameId": "g_000123",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3103780/",
+          "retrievedAt": "2026-11-07T19:02:44Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88a30da22195bc988c6e53e500f9152121e210694c44f4e2b6c0fdc183c28908"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:44Z",
+      "createdAt": "2026-11-07T19:02:44Z",
+      "updatedAt": "2026-11-07T19:02:44Z",
+      "lastCheckedAt": "2026-11-07T19:02:44Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3103780/"
+      }
+    },
+    {
+      "id": "c_79121ef5567c3a3e",
+      "gameId": "g_000123",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3103780/",
+          "retrievedAt": "2026-11-07T19:02:44Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88a30da22195bc988c6e53e500f9152121e210694c44f4e2b6c0fdc183c28908"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:44Z",
+      "createdAt": "2026-11-07T19:02:44Z",
+      "updatedAt": "2026-11-07T19:02:44Z",
+      "lastCheckedAt": "2026-11-07T19:02:44Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3103780/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "DRAPLINE のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Vaka Game Magazine"
+        }
+      }
+    }
+  ]
+}

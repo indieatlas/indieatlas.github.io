@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000118",
+  "status": "candidate",
+  "title": {
+    "display": "Algorithm Prescription",
+    "original": "Algorithm Prescription",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 3227510
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4533090",
+      "kind": "demo",
+      "title": "Algorithm Prescription Demo"
+    }
+  ],
+  "developerIds": [
+    "dev_000153"
+  ],
+  "publisherIds": [
+    "dev_000153"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/3227510/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-07T18:45:00Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:0ee1b11989c0ea88238886c764cbbd3ae71dbbb327dd64684cc2f0ee0cd45aea"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-07T19:01:34Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "associatedApps",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4533090/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:45:06Z",
+        "locator": "steam:appdetails.fullgameAppId",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:70c0fe9192cfde991a219cd45aebaa0c2d6b3e054258acbc143ff6a39e63ceef"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3227510/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:45:00Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0ee1b11989c0ea88238886c764cbbd3ae71dbbb327dd64684cc2f0ee0cd45aea"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3227510/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:45:00Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0ee1b11989c0ea88238886c764cbbd3ae71dbbb327dd64684cc2f0ee0cd45aea"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3227510/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-07T18:45:00Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0ee1b11989c0ea88238886c764cbbd3ae71dbbb327dd64684cc2f0ee0cd45aea"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "media",
+        "url": "https://automaton-media.com/articles/newsjp/20261107-478030/",
+        "sourceId": "automaton",
+        "publishedAt": "2026-11-07T06:55:29Z",
+        "retrievedAt": "2026-11-07T18:44:26Z",
+        "quote": "松竹株式会社イノベーション推進部ゲーム事業室（松竹ゲームズ）は11月7日、『Algorithm Prescription』の最新情報を公開した。",
+        "originKey": "media:automaton-media.com",
+        "fetchHash": "sha256:7ab2defdb9ceeb442e0b1b51a50eaa7b1c45047466a03518ca81a16a0b18527e"
+      }
+    }
+  ],
+  "createdAt": "2026-11-07T19:01:34Z",
+  "updatedAt": "2026-11-07T19:01:34Z",
+  "createdByRun": "42402321312"
+}

@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000121",
+  "claims": [
+    {
+      "id": "c_fc5198a7effd4d83",
+      "gameId": "g_000121",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3675060/",
+          "retrievedAt": "2026-11-07T19:02:35Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:486cfafa1c38191869b1c8678e5b7ede95964f31624be893c4d7cdcfed85bb05"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:35Z",
+      "createdAt": "2026-11-07T19:02:35Z",
+      "updatedAt": "2026-11-07T19:02:35Z",
+      "lastCheckedAt": "2026-11-07T19:02:35Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 5,
+          "day": 22
+        },
+        "rawText": "22 May, 2025"
+      }
+    },
+    {
+      "id": "c_e6c9730501b949be",
+      "gameId": "g_000121",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3675060/",
+          "retrievedAt": "2026-11-07T19:02:35Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:486cfafa1c38191869b1c8678e5b7ede95964f31624be893c4d7cdcfed85bb05"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:35Z",
+      "createdAt": "2026-11-07T19:02:35Z",
+      "updatedAt": "2026-11-07T19:02:35Z",
+      "lastCheckedAt": "2026-11-07T19:02:35Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 5,
+          "day": 22
+        },
+        "rawText": "22 May, 2025"
+      }
+    },
+    {
+      "id": "c_4b3d5d4f768d3bca",
+      "gameId": "g_000121",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3675060/",
+          "retrievedAt": "2026-11-07T19:02:38Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1f2d19d1dc0d39dea745acb1754999335de44c702625fb47f7e9c976d87998dc"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:35Z",
+      "createdAt": "2026-11-07T19:02:35Z",
+      "updatedAt": "2026-11-07T19:02:35Z",
+      "lastCheckedAt": "2026-11-07T19:02:38Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_7b270566b43794d2",
+      "gameId": "g_000121",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3675060/",
+          "retrievedAt": "2026-11-07T19:02:35Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:486cfafa1c38191869b1c8678e5b7ede95964f31624be893c4d7cdcfed85bb05"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:35Z",
+      "createdAt": "2026-11-07T19:02:35Z",
+      "updatedAt": "2026-11-07T19:02:35Z",
+      "lastCheckedAt": "2026-11-07T19:02:35Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_c088978d74779ae7",
+      "gameId": "g_000121",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3675060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:47:32Z",
+          "quote": "プレイヤーは小さなゴブリン「ネックビ」を操作して、「薪割り」や「便所そうじ」などの様々なミニゲームを通してドングリを貯めて、強い装備を購入し、魔王を倒すことを目指します。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:486cfafa1c38191869b1c8678e5b7ede95964f31624be893c4d7cdcfed85bb05"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:47:32Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "summary",
+      "value": {
+        "ja": "小さなゴブリン「ネックビ」を操作し、薪割りや便所そうじなどのミニゲームでドングリを貯めて装備を整え、隣の部屋の魔王の撃破を目指す2D横スクロールアクション。手描きのグラフィックとシュールな世界観で描かれる。"
+      }
+    },
+    {
+      "id": "c_032ee28b9745c15e",
+      "gameId": "g_000121",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3675060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:47:32Z",
+          "quote": "プレイヤーは小さなゴブリン「ネックビ」を操作して、「薪割り」や「便所そうじ」などの様々なミニゲームを通してドングリを貯めて、強い装備を購入し、魔王を倒すことを目指します。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:486cfafa1c38191869b1c8678e5b7ede95964f31624be893c4d7cdcfed85bb05"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:47:32Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_7700535d6eabb487",
+      "gameId": "g_000121",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3675060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:47:32Z",
+          "quote": "手描きのグラフィックと愉快でシュールな世界観の2D横スクロールアクションゲーム",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:486cfafa1c38191869b1c8678e5b7ede95964f31624be893c4d7cdcfed85bb05"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:47:32Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_aef6eabfa5aae5e8",
+      "gameId": "g_000121",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3675060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:47:32Z",
+          "quote": "プレイ時間 クリアまで2時間程度を想定。カジュアルに楽しめます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:486cfafa1c38191869b1c8678e5b7ede95964f31624be893c4d7cdcfed85bb05"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:47:32Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "short-session"
+      }
+    },
+    {
+      "id": "c_af839a329ce2acae",
+      "gameId": "g_000121",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3675060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:47:32Z",
+          "quote": "手描きのグラフィックと愉快でシュールな世界観の2D横スクロールアクションゲーム",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:486cfafa1c38191869b1c8678e5b7ede95964f31624be893c4d7cdcfed85bb05"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:47:32Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "hand-drawn"
+      }
+    },
+    {
+      "id": "c_eb2a73f8756292a9",
+      "gameId": "g_000121",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3675060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-07T18:47:32Z",
+          "quote": "手描きのグラフィックと愉快でシュールな世界観の2D横スクロールアクションゲーム",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:486cfafa1c38191869b1c8678e5b7ede95964f31624be893c4d7cdcfed85bb05"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:34Z",
+      "createdAt": "2026-11-07T19:01:34Z",
+      "updatedAt": "2026-11-07T19:01:34Z",
+      "lastCheckedAt": "2026-11-07T18:47:32Z",
+      "createdBy": "llm",
+      "createdByRun": "42402321312",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_f08ee91291cfff05",
+      "gameId": "g_000121",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3675060/",
+          "retrievedAt": "2026-11-07T19:02:35Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:486cfafa1c38191869b1c8678e5b7ede95964f31624be893c4d7cdcfed85bb05"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:35Z",
+      "createdAt": "2026-11-07T19:02:35Z",
+      "updatedAt": "2026-11-07T19:02:35Z",
+      "lastCheckedAt": "2026-11-07T19:02:35Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3675060/"
+      }
+    },
+    {
+      "id": "c_83c4cee1fdc516e9",
+      "gameId": "g_000121",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3675060/",
+          "retrievedAt": "2026-11-07T19:02:35Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:486cfafa1c38191869b1c8678e5b7ede95964f31624be893c4d7cdcfed85bb05"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:02:35Z",
+      "createdAt": "2026-11-07T19:02:35Z",
+      "updatedAt": "2026-11-07T19:02:35Z",
+      "lastCheckedAt": "2026-11-07T19:02:35Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3675060/983e10367f6115ce02b794d4d51f2de723003da7/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "ゴブリン・ノーム・ホーン のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "kawashiri_kodama"
+        }
+      }
+    }
+  ]
+}

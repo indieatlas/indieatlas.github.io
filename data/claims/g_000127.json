@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000127",
+  "claims": [
+    {
+      "id": "c_39277c93e32b9ae5",
+      "gameId": "g_000127",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5266240/",
+          "retrievedAt": "2026-11-07T19:01:41Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95df3f5737a2356f7d6cc7b7b4d3ae7daff57cfb0a609491349149ccee7b98ea"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:41Z",
+      "createdAt": "2026-11-07T19:01:41Z",
+      "updatedAt": "2026-11-07T19:01:41Z",
+      "lastCheckedAt": "2026-11-07T19:01:41Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 3
+        },
+        "rawText": "3 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_847f1c1df32db8b1",
+      "gameId": "g_000127",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5266240/",
+          "retrievedAt": "2026-11-07T19:01:44Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:352b361156f92472f5d0c147a2db14cc540d9a5a9a2c391fa9b2a321dac53346"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:41Z",
+      "createdAt": "2026-11-07T19:01:41Z",
+      "updatedAt": "2026-11-07T19:01:41Z",
+      "lastCheckedAt": "2026-11-07T19:01:44Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_b1b5a6a62fa3a8dd",
+      "gameId": "g_000127",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5266240/",
+          "retrievedAt": "2026-11-07T19:01:41Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95df3f5737a2356f7d6cc7b7b4d3ae7daff57cfb0a609491349149ccee7b98ea"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:41Z",
+      "createdAt": "2026-11-07T19:01:41Z",
+      "updatedAt": "2026-11-07T19:01:41Z",
+      "lastCheckedAt": "2026-11-07T19:01:41Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_9ff9d4cc11dfb65d",
+      "gameId": "g_000127",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5266240/",
+          "retrievedAt": "2026-11-07T19:01:41Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95df3f5737a2356f7d6cc7b7b4d3ae7daff57cfb0a609491349149ccee7b98ea"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:41Z",
+      "createdAt": "2026-11-07T19:01:41Z",
+      "updatedAt": "2026-11-07T19:01:41Z",
+      "lastCheckedAt": "2026-11-07T19:01:41Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5266240/"
+      }
+    },
+    {
+      "id": "c_972ace6a91f807d7",
+      "gameId": "g_000127",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5266240/",
+          "retrievedAt": "2026-11-07T19:01:41Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:95df3f5737a2356f7d6cc7b7b4d3ae7daff57cfb0a609491349149ccee7b98ea"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-07T19:01:41Z",
+      "createdAt": "2026-11-07T19:01:41Z",
+      "updatedAt": "2026-11-07T19:01:41Z",
+      "lastCheckedAt": "2026-11-07T19:01:41Z",
+      "createdBy": "system",
+      "createdByRun": "42402321312",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5266240/e289442aa6b3756109bc65b427556ea538efb849/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Potato Please のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": " Golden Horn Studios"
+        }
+      }
+    }
+  ]
+}
