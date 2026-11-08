@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000136",
+  "claims": [
+    {
+      "id": "c_ebc035bb2e34a60a",
+      "gameId": "g_000136",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4735200/",
+          "retrievedAt": "2026-11-08T02:52:54Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e7ad103bb8870d231180d146b086ad9e991911ca416be40f1b8da5ca08e15996"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:54Z",
+      "createdAt": "2026-11-08T02:52:54Z",
+      "updatedAt": "2026-11-08T02:52:54Z",
+      "lastCheckedAt": "2026-11-08T02:52:54Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 6
+        },
+        "rawText": "6 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_b6968a7dc8782012",
+      "gameId": "g_000136",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4735200/",
+          "retrievedAt": "2026-11-08T02:52:57Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:54ef5c8e5157d7a8cd6311d2710aaae3ae2221565b150fd69adbbdca122ee133"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:54Z",
+      "createdAt": "2026-11-08T02:52:54Z",
+      "updatedAt": "2026-11-08T02:52:54Z",
+      "lastCheckedAt": "2026-11-08T02:52:57Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_1fe0fedf0fddb066",
+      "gameId": "g_000136",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4735200/",
+          "retrievedAt": "2026-11-08T02:52:54Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e7ad103bb8870d231180d146b086ad9e991911ca416be40f1b8da5ca08e15996"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:54Z",
+      "createdAt": "2026-11-08T02:52:54Z",
+      "updatedAt": "2026-11-08T02:52:54Z",
+      "lastCheckedAt": "2026-11-08T02:52:54Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_989c32620193cf21",
+      "gameId": "g_000136",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4735200/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:36:53Z",
+          "quote": "『VOID ARMOR: FORM DRIVE』は、エナジーブレード、ライフル、ランチャー、防御システムを瞬時に切り替えて敵メカを撃破する、見下ろし型メカアクションシューティングです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e7ad103bb8870d231180d146b086ad9e991911ca416be40f1b8da5ca08e15996"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:36:53Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "summary",
+      "value": {
+        "ja": "実験機「ARORA」を操り、エナジーブレード、ライフル、ランチャー、防御システムを瞬時に切り替えて戦う見下ろし型メカアクションシューター。出撃前のロードアウト構築と、クリアタイムや被ダメージ、命中率で評価されるミッション制の戦闘が特徴。"
+      }
+    },
+    {
+      "id": "c_0872767072721fe9",
+      "gameId": "g_000136",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4735200/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:36:53Z",
+          "quote": "短い戦闘ミッションをクリアし、繰り返し挑戦することで、より良い結果を目指します。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e7ad103bb8870d231180d146b086ad9e991911ca416be40f1b8da5ca08e15996"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:36:53Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "short-session"
+      }
+    },
+    {
+      "id": "c_1775296b659813f8",
+      "gameId": "g_000136",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4735200/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:36:53Z",
+          "quote": "VOID ARMOR: FORM DRIVE は、短時間のミッション、出撃前のLOADOUT構築、戦闘中の武装フォーム切り替え、リザルト評価を中心とした見下ろし型メカアクションシューティングです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e7ad103bb8870d231180d146b086ad9e991911ca416be40f1b8da5ca08e15996"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:36:53Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_214a6c393f3616a2",
+      "gameId": "g_000136",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4735200/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:36:53Z",
+          "quote": "『VOID ARMOR: FORM DRIVE』は、エナジーブレード、ライフル、ランチャー、防御システムを瞬時に切り替えて敵メカを撃破する、見下ろし型メカアクションシューティングです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e7ad103bb8870d231180d146b086ad9e991911ca416be40f1b8da5ca08e15996"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:36:53Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "shooter"
+      }
+    },
+    {
+      "id": "c_60c271c73db8c36a",
+      "gameId": "g_000136",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4735200/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:36:53Z",
+          "quote": "実験機「ARORA」を操作し、さまざまな敵メカとのミッションに挑め。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e7ad103bb8870d231180d146b086ad9e991911ca416be40f1b8da5ca08e15996"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:36:53Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "sci-fi"
+      }
+    },
+    {
+      "id": "c_bf0bf8ac3cc71180",
+      "gameId": "g_000136",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4735200/",
+          "retrievedAt": "2026-11-08T02:52:54Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e7ad103bb8870d231180d146b086ad9e991911ca416be40f1b8da5ca08e15996"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:54Z",
+      "createdAt": "2026-11-08T02:52:54Z",
+      "updatedAt": "2026-11-08T02:52:54Z",
+      "lastCheckedAt": "2026-11-08T02:52:54Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4735200/"
+      }
+    },
+    {
+      "id": "c_793b57d7ea47c71c",
+      "gameId": "g_000136",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4735200/",
+          "retrievedAt": "2026-11-08T02:52:54Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e7ad103bb8870d231180d146b086ad9e991911ca416be40f1b8da5ca08e15996"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:54Z",
+      "createdAt": "2026-11-08T02:52:54Z",
+      "updatedAt": "2026-11-08T02:52:54Z",
+      "lastCheckedAt": "2026-11-08T02:52:54Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4735200/802f8f2839754e254995b5f351dddd6e3cd0a155/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "VOID ARMOR: FORM DRIVE のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "XXIV"
+        }
+      }
+    }
+  ]
+}

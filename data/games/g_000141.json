@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000141",
+  "status": "candidate",
+  "title": {
+    "display": "Once Upon a Kill",
+    "original": "Once Upon a Kill",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5547910
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000191"
+  ],
+  "publisherIds": [
+    "dev_000191"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5547910/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-08T02:39:23Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:788e3e0c3709b9b6827976a25ac0fbdc3db33e4c410e60aeb490ce8d24acda0a"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-08T02:52:07Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5547910/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:39:23Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:788e3e0c3709b9b6827976a25ac0fbdc3db33e4c410e60aeb490ce8d24acda0a"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5547910/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:39:23Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:788e3e0c3709b9b6827976a25ac0fbdc3db33e4c410e60aeb490ce8d24acda0a"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5547910/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:39:23Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:788e3e0c3709b9b6827976a25ac0fbdc3db33e4c410e60aeb490ce8d24acda0a"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5547910/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:39:23Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:788e3e0c3709b9b6827976a25ac0fbdc3db33e4c410e60aeb490ce8d24acda0a"
+      }
+    }
+  ],
+  "createdAt": "2026-11-08T02:52:07Z",
+  "updatedAt": "2026-11-08T02:52:07Z",
+  "createdByRun": "42438991793"
+}

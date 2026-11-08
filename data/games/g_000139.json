@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000139",
+  "status": "candidate",
+  "title": {
+    "display": "Darkest Dungeon",
+    "original": "Darkest Dungeon",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 262060
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1117860",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "345800",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "445700",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4964110",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "580100",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "702540",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "735730",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000189"
+  ],
+  "publisherIds": [
+    "dev_000189"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-showcase",
+        "note": "インディーメガブースへの出展歴がストアページに記載されている",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/262060/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-08T02:38:04Z",
+            "quote": "Indie Megabooth Selection - PAX East 2014, PAX Prime 2015",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:0bb8887a9f20c313bcd7f766d0ed88a99f90a3442f6e3abab6a010ca70395e75"
+          }
+        ]
+      },
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/262060/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-08T02:38:04Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:0bb8887a9f20c313bcd7f766d0ed88a99f90a3442f6e3abab6a010ca70395e75"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-08T02:52:07Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/262060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:38:04Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0bb8887a9f20c313bcd7f766d0ed88a99f90a3442f6e3abab6a010ca70395e75"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/262060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:38:04Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0bb8887a9f20c313bcd7f766d0ed88a99f90a3442f6e3abab6a010ca70395e75"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/262060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:38:04Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0bb8887a9f20c313bcd7f766d0ed88a99f90a3442f6e3abab6a010ca70395e75"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/262060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:38:04Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0bb8887a9f20c313bcd7f766d0ed88a99f90a3442f6e3abab6a010ca70395e75"
+      }
+    }
+  ],
+  "createdAt": "2026-11-08T02:52:07Z",
+  "updatedAt": "2026-11-08T02:53:08Z",
+  "createdByRun": "42438991793"
+}

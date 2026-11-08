@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000150",
+  "status": "candidate",
+  "title": {
+    "display": "エターナルリターン",
+    "original": "Eternal Return",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "エターナルリターン",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1049590
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1300410",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4692290",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://playeternalreturn.com/",
+  "developerIds": [
+    "dev_000204"
+  ],
+  "publisherIds": [
+    "dev_000204",
+    "dev_000205",
+    "dev_000206"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-08T02:52:07Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-08T02:52:07Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1049590/",
+        "retrievedAt": "2026-11-08T02:52:36Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:256a223829af48e8c4479e1a5d47f13faada8bce50a7ecfeff0e0b47f42380c7"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1049590/",
+        "retrievedAt": "2026-11-08T02:52:36Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:256a223829af48e8c4479e1a5d47f13faada8bce50a7ecfeff0e0b47f42380c7"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1049590/",
+        "retrievedAt": "2026-11-08T02:52:36Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:256a223829af48e8c4479e1a5d47f13faada8bce50a7ecfeff0e0b47f42380c7"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1049590/",
+        "retrievedAt": "2026-11-08T02:52:36Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:256a223829af48e8c4479e1a5d47f13faada8bce50a7ecfeff0e0b47f42380c7"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1049590/",
+        "retrievedAt": "2026-11-08T02:52:36Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:256a223829af48e8c4479e1a5d47f13faada8bce50a7ecfeff0e0b47f42380c7"
+      }
+    }
+  ],
+  "createdAt": "2026-11-08T02:52:36Z",
+  "updatedAt": "2026-11-08T02:52:07Z",
+  "createdByRun": "42438991793"
+}

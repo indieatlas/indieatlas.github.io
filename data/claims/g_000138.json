@@ -1,0 +1,454 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000138",
+  "claims": [
+    {
+      "id": "c_479ae1c99cc3541d",
+      "gameId": "g_000138",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3296060/",
+          "retrievedAt": "2026-11-08T02:53:03Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88284a4f385f102311d824a6fc79a2d59d1010581281cc1d2035acc8487fe54d"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:03Z",
+      "createdAt": "2026-11-08T02:53:03Z",
+      "updatedAt": "2026-11-08T02:53:03Z",
+      "lastCheckedAt": "2026-11-08T02:53:03Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 5
+        },
+        "rawText": "5 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_a70c7e41e349fc5d",
+      "gameId": "g_000138",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3296060/",
+          "retrievedAt": "2026-11-08T02:53:06Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2f05c0153a0c7b676b4a8352ba2d53306640cfe50b667fffe57773ed249d4277"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:03Z",
+      "createdAt": "2026-11-08T02:53:03Z",
+      "updatedAt": "2026-11-08T02:53:03Z",
+      "lastCheckedAt": "2026-11-08T02:53:06Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_503a3a52e3368c98",
+      "gameId": "g_000138",
+      "scope": {
+        "platform": "pc"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3296060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:36:59Z",
+          "quote": "Escape Academy 2 features both online and splitscreen couch co-op support.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88284a4f385f102311d824a6fc79a2d59d1010581281cc1d2035acc8487fe54d"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:36:59Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "local-coop",
+          "online-coop"
+        ],
+        "minPlayers": 1,
+        "maxPlayers": 2
+      }
+    },
+    {
+      "id": "c_a511fb1169a323e5",
+      "gameId": "g_000138",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3296060/",
+          "retrievedAt": "2026-11-08T02:53:03Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88284a4f385f102311d824a6fc79a2d59d1010581281cc1d2035acc8487fe54d"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:03Z",
+      "createdAt": "2026-11-08T02:53:03Z",
+      "updatedAt": "2026-11-08T02:53:03Z",
+      "lastCheckedAt": "2026-11-08T02:53:03Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "local-coop",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_bfe52c432ad0c2dd",
+      "gameId": "g_000138",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3296060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:36:59Z",
+          "quote": "Play in solo or co-op and explore an all-new campus, escape life-threatening puzzle rooms, and unravel a conspiracy as old as the school itself — all before the bell rings.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88284a4f385f102311d824a6fc79a2d59d1010581281cc1d2035acc8487fe54d"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:36:59Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "summary",
+      "value": {
+        "ja": "脱出術を教える秘密教育機関「エスケープ・アカデミー」を舞台に、キャンパス全体がひとつのパズルルームとなった学園を探索する脱出パズルゲーム。ソロのほか、オンラインや画面分割での協力プレイにも対応する。"
+      }
+    },
+    {
+      "id": "c_0dfa79ddda91804b",
+      "gameId": "g_000138",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3296060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:36:59Z",
+          "quote": "Play in solo or co-op and explore an all-new campus, escape life-threatening puzzle rooms, and unravel a conspiracy as old as the school itself — all before the bell rings.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88284a4f385f102311d824a6fc79a2d59d1010581281cc1d2035acc8487fe54d"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:36:59Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "school"
+      }
+    },
+    {
+      "id": "c_37e4a2dbf377d2ea",
+      "gameId": "g_000138",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3296060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:36:59Z",
+          "quote": "Play in solo or co-op and explore an all-new campus, escape life-threatening puzzle rooms, and unravel a conspiracy as old as the school itself — all before the bell rings.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88284a4f385f102311d824a6fc79a2d59d1010581281cc1d2035acc8487fe54d"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:36:59Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_40003d22d2965199",
+      "gameId": "g_000138",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3296060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:36:59Z",
+          "quote": "This is the first open world escape room game, and it's available right in the comfort of your own home.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88284a4f385f102311d824a6fc79a2d59d1010581281cc1d2035acc8487fe54d"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:36:59Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "open-world"
+      }
+    },
+    {
+      "id": "c_60cbf9cc652b2a7e",
+      "gameId": "g_000138",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3296060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:36:59Z",
+          "quote": "You’ll discover a dark mystery surrounding the school’s founding, leading to shocking new revelations about the very nature of The Academy.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88284a4f385f102311d824a6fc79a2d59d1010581281cc1d2035acc8487fe54d"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:36:59Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_9bf3c00cf982c5d4",
+      "gameId": "g_000138",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3296060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:36:59Z",
+          "quote": "Escape Academy 2 features both online and splitscreen couch co-op support.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88284a4f385f102311d824a6fc79a2d59d1010581281cc1d2035acc8487fe54d"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:36:59Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_acf70d56af0d5175",
+      "gameId": "g_000138",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3296060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:36:59Z",
+          "quote": "Play in solo or co-op and explore an all-new campus, escape life-threatening puzzle rooms, and unravel a conspiracy as old as the school itself — all before the bell rings.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88284a4f385f102311d824a6fc79a2d59d1010581281cc1d2035acc8487fe54d"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:36:59Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_d3bd557f6516993f",
+      "gameId": "g_000138",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3296060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:36:59Z",
+          "quote": "Play in solo or co-op and explore an all-new campus, escape life-threatening puzzle rooms, and unravel a conspiracy as old as the school itself — all before the bell rings.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88284a4f385f102311d824a6fc79a2d59d1010581281cc1d2035acc8487fe54d"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:36:59Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_c7c52810bd60c7f5",
+      "gameId": "g_000138",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3296060/",
+          "retrievedAt": "2026-11-08T02:53:03Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88284a4f385f102311d824a6fc79a2d59d1010581281cc1d2035acc8487fe54d"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:03Z",
+      "createdAt": "2026-11-08T02:53:03Z",
+      "updatedAt": "2026-11-08T02:53:03Z",
+      "lastCheckedAt": "2026-11-08T02:53:03Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3296060/"
+      }
+    },
+    {
+      "id": "c_848fcb2c62cda695",
+      "gameId": "g_000138",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3296060/",
+          "retrievedAt": "2026-11-08T02:53:03Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88284a4f385f102311d824a6fc79a2d59d1010581281cc1d2035acc8487fe54d"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:03Z",
+      "createdAt": "2026-11-08T02:53:03Z",
+      "updatedAt": "2026-11-08T02:53:03Z",
+      "lastCheckedAt": "2026-11-08T02:53:03Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3296060/2602a19a9df4c306febaed3f9cab850b78515f23/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "エスケープ・アカデミー2：バック・トゥ・スクール のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "iam8bit Presents"
+        }
+      }
+    }
+  ]
+}

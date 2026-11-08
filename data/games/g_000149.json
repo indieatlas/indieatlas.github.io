@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000149",
+  "status": "candidate",
+  "title": {
+    "display": "インボキア-呪いのダイスゲーム-",
+    "original": "Invokyr",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "インボキア-呪いのダイスゲーム-",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 3883570
+  },
+  "associatedApps": [],
+  "officialUrl": "https://ludogram.io/",
+  "developerIds": [
+    "dev_000203"
+  ],
+  "publisherIds": [
+    "dev_000203",
+    "dev_000153"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-08T02:52:07Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-08T02:52:07Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3883570/",
+        "retrievedAt": "2026-11-08T02:52:32Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c0c03a67e11eaf6fe5106629707c5eaf43befc14d0bbb2d3997f03a0c1f3246e"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3883570/",
+        "retrievedAt": "2026-11-08T02:52:32Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c0c03a67e11eaf6fe5106629707c5eaf43befc14d0bbb2d3997f03a0c1f3246e"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3883570/",
+        "retrievedAt": "2026-11-08T02:52:32Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c0c03a67e11eaf6fe5106629707c5eaf43befc14d0bbb2d3997f03a0c1f3246e"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3883570/",
+        "retrievedAt": "2026-11-08T02:52:32Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c0c03a67e11eaf6fe5106629707c5eaf43befc14d0bbb2d3997f03a0c1f3246e"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3883570/",
+        "retrievedAt": "2026-11-08T02:52:32Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c0c03a67e11eaf6fe5106629707c5eaf43befc14d0bbb2d3997f03a0c1f3246e"
+      }
+    }
+  ],
+  "createdAt": "2026-11-08T02:52:32Z",
+  "updatedAt": "2026-11-08T02:52:07Z",
+  "createdByRun": "42438991793"
+}

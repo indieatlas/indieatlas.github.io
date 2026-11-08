@@ -1,0 +1,399 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000141",
+  "claims": [
+    {
+      "id": "c_f50f3c5c584fda81",
+      "gameId": "g_000141",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5547910/",
+          "retrievedAt": "2026-11-08T02:53:17Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:788e3e0c3709b9b6827976a25ac0fbdc3db33e4c410e60aeb490ce8d24acda0a"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:17Z",
+      "createdAt": "2026-11-08T02:53:17Z",
+      "updatedAt": "2026-11-08T02:53:17Z",
+      "lastCheckedAt": "2026-11-08T02:53:17Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2027,
+          "month": 1,
+          "day": 15
+        },
+        "rawText": "15 Jan, 2027"
+      }
+    },
+    {
+      "id": "c_98912f1c95da378e",
+      "gameId": "g_000141",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5547910/",
+          "retrievedAt": "2026-11-08T02:53:17Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:788e3e0c3709b9b6827976a25ac0fbdc3db33e4c410e60aeb490ce8d24acda0a"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:17Z",
+      "createdAt": "2026-11-08T02:53:17Z",
+      "updatedAt": "2026-11-08T02:53:17Z",
+      "lastCheckedAt": "2026-11-08T02:53:17Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2027,
+          "month": 1,
+          "day": 15
+        },
+        "rawText": "15 Jan, 2027"
+      }
+    },
+    {
+      "id": "c_3162a2d6a265cd02",
+      "gameId": "g_000141",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5547910/",
+          "retrievedAt": "2026-11-08T02:53:20Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e6534825f2a1dea9f0b3170bfa7168e360a16722fffae1dcfb2dda84ea905cc"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:17Z",
+      "createdAt": "2026-11-08T02:53:17Z",
+      "updatedAt": "2026-11-08T02:53:17Z",
+      "lastCheckedAt": "2026-11-08T02:53:20Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "no",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_476c2710a9c62a4d",
+      "gameId": "g_000141",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5547910/",
+          "retrievedAt": "2026-11-08T02:53:17Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:788e3e0c3709b9b6827976a25ac0fbdc3db33e4c410e60aeb490ce8d24acda0a"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:17Z",
+      "createdAt": "2026-11-08T02:53:17Z",
+      "updatedAt": "2026-11-08T02:53:17Z",
+      "lastCheckedAt": "2026-11-08T02:53:17Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_85836f7ff5753ac3",
+      "gameId": "g_000141",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5547910/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:39:23Z",
+          "quote": "Once Upon a Kill is a 2D action game drawn in black cut paper, ink and a single red. You are Red Hood, two knives and a grudge, walking into the old tales to finish them.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:788e3e0c3709b9b6827976a25ac0fbdc3db33e4c410e60aeb490ce8d24acda0a"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:39:23Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "summary",
+      "value": {
+        "ja": "グリム童話の赤ずきんとなり、2本のナイフを手に童話の魔女や怪物を狩る2Dアクション。切り絵と墨絵の白黒の世界で、ボスごとに童話にちなんだ方法でとどめを刺す。"
+      }
+    },
+    {
+      "id": "c_049a725fd6cd88e6",
+      "gameId": "g_000141",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.4gamer.net/games/056/G105629/20261106037/",
+          "sourceId": "4gamer",
+          "articleId": "a_fb8eb8d084ec2c00",
+          "publishedAt": "2026-11-06T11:00:44Z",
+          "retrievedAt": "2026-11-08T02:39:19Z",
+          "quote": "本作は，グリム童話に登場する赤ずきんを主人公にした2Dアクションゲームだ。",
+          "originKey": "media:4gamer.net",
+          "fetchHash": "sha256:05e45cdc2f2f70f8ae68fc9ac46da4442f6e7dfa0e604e535b2c9706158a83c2"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:39:19Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_230fb3b52174761b",
+      "gameId": "g_000141",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.4gamer.net/games/056/G105629/20261106037/",
+          "sourceId": "4gamer",
+          "articleId": "a_fb8eb8d084ec2c00",
+          "publishedAt": "2026-11-06T11:00:44Z",
+          "retrievedAt": "2026-11-08T02:39:19Z",
+          "quote": "スラヴの民間伝承に邪悪な魔術師として伝わる「不死身のコシチェイ」，鶏の足が生えた不思議な小屋に住む「バーバ・ヤーガ」といった面々がボスとして登場する。",
+          "originKey": "media:4gamer.net",
+          "fetchHash": "sha256:05e45cdc2f2f70f8ae68fc9ac46da4442f6e7dfa0e604e535b2c9706158a83c2"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:39:19Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "magic"
+      }
+    },
+    {
+      "id": "c_244e743def1d0eb8",
+      "gameId": "g_000141",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5547910/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:39:23Z",
+          "quote": "Once Upon a Kill is a 2D action game drawn in black cut paper, ink and a single red.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:788e3e0c3709b9b6827976a25ac0fbdc3db33e4c410e60aeb490ce8d24acda0a"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:39:23Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_85ba9816a8d51f1e",
+      "gameId": "g_000141",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.4gamer.net/games/056/G105629/20261106037/",
+          "sourceId": "4gamer",
+          "articleId": "a_fb8eb8d084ec2c00",
+          "publishedAt": "2026-11-06T11:00:44Z",
+          "retrievedAt": "2026-11-08T02:39:19Z",
+          "quote": "白黒を基調としており，特に残酷な場面では画面全体が赤く染まり，不穏な空気を醸し出している。",
+          "originKey": "media:4gamer.net",
+          "fetchHash": "sha256:05e45cdc2f2f70f8ae68fc9ac46da4442f6e7dfa0e604e535b2c9706158a83c2"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:39:19Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "dark"
+      }
+    },
+    {
+      "id": "c_ded31696ca533645",
+      "gameId": "g_000141",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5547910/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:39:23Z",
+          "quote": "A hand-cut silhouette world in the spirit of Lotte Reiniger and sumi-e ink.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:788e3e0c3709b9b6827976a25ac0fbdc3db33e4c410e60aeb490ce8d24acda0a"
+        }
+      ],
+      "asOf": "2026-11-06",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:39:23Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "hand-drawn"
+      }
+    },
+    {
+      "id": "c_37ebe48435257a15",
+      "gameId": "g_000141",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5547910/",
+          "retrievedAt": "2026-11-08T02:53:17Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:788e3e0c3709b9b6827976a25ac0fbdc3db33e4c410e60aeb490ce8d24acda0a"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:17Z",
+      "createdAt": "2026-11-08T02:53:17Z",
+      "updatedAt": "2026-11-08T02:53:17Z",
+      "lastCheckedAt": "2026-11-08T02:53:17Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5547910/"
+      }
+    },
+    {
+      "id": "c_c47b4fbbcdf86301",
+      "gameId": "g_000141",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5547910/",
+          "retrievedAt": "2026-11-08T02:53:17Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:788e3e0c3709b9b6827976a25ac0fbdc3db33e4c410e60aeb490ce8d24acda0a"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:17Z",
+      "createdAt": "2026-11-08T02:53:17Z",
+      "updatedAt": "2026-11-08T02:53:17Z",
+      "lastCheckedAt": "2026-11-08T02:53:17Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5547910/94c7aab9155325df14da1f88b0f4cb18d9ef9abb/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Once Upon a Kill のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "LogiK"
+        }
+      }
+    }
+  ]
+}

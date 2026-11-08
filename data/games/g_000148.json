@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000148",
+  "status": "candidate",
+  "title": {
+    "display": "めっちゃカメレオン",
+    "original": "MECCHA CHAMELEON",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "めっちゃカメレオン",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 4704690
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000202"
+  ],
+  "publisherIds": [
+    "dev_000202"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4704690/",
+            "retrievedAt": "2026-11-08T02:52:27Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:9efc569bc98352273bdab863e0f2cb20374fb64c3609ea6aef0f840922923694"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-08T02:52:27Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4704690/",
+        "retrievedAt": "2026-11-08T02:52:27Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9efc569bc98352273bdab863e0f2cb20374fb64c3609ea6aef0f840922923694"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4704690/",
+        "retrievedAt": "2026-11-08T02:52:27Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9efc569bc98352273bdab863e0f2cb20374fb64c3609ea6aef0f840922923694"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4704690/",
+        "retrievedAt": "2026-11-08T02:52:27Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9efc569bc98352273bdab863e0f2cb20374fb64c3609ea6aef0f840922923694"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4704690/",
+        "retrievedAt": "2026-11-08T02:52:27Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9efc569bc98352273bdab863e0f2cb20374fb64c3609ea6aef0f840922923694"
+      }
+    }
+  ],
+  "createdAt": "2026-11-08T02:52:27Z",
+  "updatedAt": "2026-11-08T02:52:27Z",
+  "createdByRun": "42438991793"
+}

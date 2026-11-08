@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000138",
+  "status": "candidate",
+  "title": {
+    "display": "エスケープ・アカデミー2：バック・トゥ・スクール",
+    "original": "Escape Academy 2: Back 2 School",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 3296060
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4198180",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "4732000",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5370630",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5370680",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000187"
+  ],
+  "publisherIds": [
+    "dev_000188"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "small-team",
+        "note": "開発元の公式サイトが自らをインディーゲームスタジオと明記",
+        "evidence": [
+          {
+            "kind": "official",
+            "url": "https://www.coincrew.games/",
+            "retrievedAt": "2026-11-08T02:37:25Z",
+            "quote": "Coin Crew Games is an indie games studio founded in 2018 with one goal in mind: bringing people together to play.",
+            "originKey": "official:coincrew.games",
+            "fetchHash": "sha256:c2915a3b6d15d99f9a791ab63bee430d73f2af0725039995eeac3538e1678fbf"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-08T02:52:07Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3296060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:36:59Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:88284a4f385f102311d824a6fc79a2d59d1010581281cc1d2035acc8487fe54d"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3296060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:36:59Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:88284a4f385f102311d824a6fc79a2d59d1010581281cc1d2035acc8487fe54d"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3296060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:36:59Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:88284a4f385f102311d824a6fc79a2d59d1010581281cc1d2035acc8487fe54d"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3296060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:36:59Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:88284a4f385f102311d824a6fc79a2d59d1010581281cc1d2035acc8487fe54d"
+      }
+    }
+  ],
+  "createdAt": "2026-11-08T02:52:07Z",
+  "updatedAt": "2026-11-08T02:53:03Z",
+  "createdByRun": "42438991793"
+}

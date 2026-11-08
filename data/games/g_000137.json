@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000137",
+  "status": "candidate",
+  "title": {
+    "display": "クライムライト／CRYMELIGHT",
+    "original": "CRYMELIGHT",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "クライムライト",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 3891160
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4864600",
+      "kind": "demo",
+      "title": "クライムライト／CRYMELIGHT Demo"
+    }
+  ],
+  "developerIds": [
+    "dev_000185",
+    "dev_000186"
+  ],
+  "publisherIds": [
+    "dev_000185"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/3891160/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-08T02:36:29Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:dc6587d166ae9e6a2be4411f701897b80f4a6b39bdef092e7631d39e7259c26f"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-08T02:52:07Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "media",
+        "url": "https://www.4gamer.net/games/002/G100206/20261102001/",
+        "sourceId": "4gamer",
+        "publishedAt": "2026-11-06T10:19:00Z",
+        "retrievedAt": "2026-11-08T02:35:59Z",
+        "quote": "（PS5 / Switch2，PC版は後日発売予定，以下，クライムライト）",
+        "originKey": "media:4gamer.net",
+        "fetchHash": "sha256:d4b3150c4bc189028ec6d0b05756748c972cfd0a8af7d01c8a67f8c3d5a06ca7"
+      }
+    },
+    {
+      "field": "associatedApps",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4864600/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:37:32Z",
+        "locator": "steam:appdetails.type",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bf05396fe55b8c90df1e2bee21178c60bf4044c30b1cfeac6e040983e4714399"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3891160/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:36:29Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dc6587d166ae9e6a2be4411f701897b80f4a6b39bdef092e7631d39e7259c26f"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3891160/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:36:29Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dc6587d166ae9e6a2be4411f701897b80f4a6b39bdef092e7631d39e7259c26f"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3891160/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:36:29Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dc6587d166ae9e6a2be4411f701897b80f4a6b39bdef092e7631d39e7259c26f"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3891160/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:36:29Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dc6587d166ae9e6a2be4411f701897b80f4a6b39bdef092e7631d39e7259c26f"
+      }
+    }
+  ],
+  "createdAt": "2026-11-08T02:52:07Z",
+  "updatedAt": "2026-11-08T02:52:07Z",
+  "createdByRun": "42438991793"
+}

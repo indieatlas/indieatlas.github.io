@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000150",
+  "claims": [
+    {
+      "id": "c_66b330ac20af0c50",
+      "gameId": "g_000150",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1049590/",
+          "retrievedAt": "2026-11-08T02:52:36Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:256a223829af48e8c4479e1a5d47f13faada8bce50a7ecfeff0e0b47f42380c7"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:36Z",
+      "createdAt": "2026-11-08T02:52:36Z",
+      "updatedAt": "2026-11-08T02:52:36Z",
+      "lastCheckedAt": "2026-11-08T02:52:36Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2023,
+          "month": 7,
+          "day": 19
+        },
+        "rawText": "19 Jul, 2023"
+      }
+    },
+    {
+      "id": "c_1bc1004447603a1e",
+      "gameId": "g_000150",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1049590/",
+          "retrievedAt": "2026-11-08T02:52:40Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:21b93dd5138f7d463c3d0c96c4fa99905c6cd927a320673e2cba83ca9bd62221"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:36Z",
+      "createdAt": "2026-11-08T02:52:36Z",
+      "updatedAt": "2026-11-08T02:52:36Z",
+      "lastCheckedAt": "2026-11-08T02:52:40Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_8311b88c7ad4d57a",
+      "gameId": "g_000150",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1049590/",
+          "retrievedAt": "2026-11-08T02:52:36Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:256a223829af48e8c4479e1a5d47f13faada8bce50a7ecfeff0e0b47f42380c7"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:36Z",
+      "createdAt": "2026-11-08T02:52:36Z",
+      "updatedAt": "2026-11-08T02:52:36Z",
+      "lastCheckedAt": "2026-11-08T02:52:36Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "online-pvp"
+        ]
+      }
+    },
+    {
+      "id": "c_bb5fab1a47eb622d",
+      "gameId": "g_000150",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1049590/",
+          "retrievedAt": "2026-11-08T02:52:36Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:256a223829af48e8c4479e1a5d47f13faada8bce50a7ecfeff0e0b47f42380c7"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:36Z",
+      "createdAt": "2026-11-08T02:52:36Z",
+      "updatedAt": "2026-11-08T02:52:36Z",
+      "lastCheckedAt": "2026-11-08T02:52:36Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1049590/"
+      }
+    },
+    {
+      "id": "c_dc12a03e61e94a22",
+      "gameId": "g_000150",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1049590/",
+          "retrievedAt": "2026-11-08T02:52:36Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:256a223829af48e8c4479e1a5d47f13faada8bce50a7ecfeff0e0b47f42380c7"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:36Z",
+      "createdAt": "2026-11-08T02:52:36Z",
+      "updatedAt": "2026-11-08T02:52:36Z",
+      "lastCheckedAt": "2026-11-08T02:52:36Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1049590/72918ebacd0d4f8537969dc8b976ceb98f681cab/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "エターナルリターン のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Nimble Neuron"
+        }
+      }
+    }
+  ]
+}

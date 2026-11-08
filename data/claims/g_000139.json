@@ -1,0 +1,492 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000139",
+  "claims": [
+    {
+      "id": "c_273017e51505a60c",
+      "gameId": "g_000139",
+      "scope": {
+        "platform": "linux",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/262060/",
+          "retrievedAt": "2026-11-08T02:53:08Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71a8cd892f4123561dbe4b93e324952fd2aa36a72c7729e69c32937b1d25be46"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:08Z",
+      "createdAt": "2026-11-08T02:53:08Z",
+      "updatedAt": "2026-11-08T02:53:08Z",
+      "lastCheckedAt": "2026-11-08T02:53:08Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2016,
+          "month": 1,
+          "day": 19
+        },
+        "rawText": "19 Jan, 2016"
+      }
+    },
+    {
+      "id": "c_247fd131cbad3705",
+      "gameId": "g_000139",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/262060/",
+          "retrievedAt": "2026-11-08T02:53:08Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71a8cd892f4123561dbe4b93e324952fd2aa36a72c7729e69c32937b1d25be46"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:08Z",
+      "createdAt": "2026-11-08T02:53:08Z",
+      "updatedAt": "2026-11-08T02:53:08Z",
+      "lastCheckedAt": "2026-11-08T02:53:08Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2016,
+          "month": 1,
+          "day": 19
+        },
+        "rawText": "19 Jan, 2016"
+      }
+    },
+    {
+      "id": "c_5c0ddfe9bff0557c",
+      "gameId": "g_000139",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/262060/",
+          "retrievedAt": "2026-11-08T02:53:08Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71a8cd892f4123561dbe4b93e324952fd2aa36a72c7729e69c32937b1d25be46"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:08Z",
+      "createdAt": "2026-11-08T02:53:08Z",
+      "updatedAt": "2026-11-08T02:53:08Z",
+      "lastCheckedAt": "2026-11-08T02:53:08Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2016,
+          "month": 1,
+          "day": 19
+        },
+        "rawText": "19 Jan, 2016"
+      }
+    },
+    {
+      "id": "c_f796d681f2be254d",
+      "gameId": "g_000139",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/262060/",
+          "retrievedAt": "2026-11-08T02:53:11Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1eb15f8953279a16d0ec730f72464a7a5f6b11b1491f371dd78ba7b13067f51f"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:08Z",
+      "createdAt": "2026-11-08T02:53:08Z",
+      "updatedAt": "2026-11-08T02:53:08Z",
+      "lastCheckedAt": "2026-11-08T02:53:11Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_63c9c44beef379e9",
+      "gameId": "g_000139",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/262060/",
+          "retrievedAt": "2026-11-08T02:53:08Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71a8cd892f4123561dbe4b93e324952fd2aa36a72c7729e69c32937b1d25be46"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:08Z",
+      "createdAt": "2026-11-08T02:53:08Z",
+      "updatedAt": "2026-11-08T02:53:08Z",
+      "lastCheckedAt": "2026-11-08T02:53:08Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_48d1131a5fff9af6",
+      "gameId": "g_000139",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/262060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:38:04Z",
+          "quote": "Darkest Dungeon is a challenging gothic roguelike turn-based RPG about the psychological stresses of adventuring.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0bb8887a9f20c313bcd7f766d0ed88a99f90a3442f6e3abab6a010ca70395e75"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:38:04Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "summary",
+      "value": {
+        "ja": "プレイするたびにダンジョンが変化するゴシック調のローグライクRPG。傷を抱えたヒーローを雇って訓練し、暗い森や迷宮へ送り込む。モンスターだけでなく、探索で蓄積するストレスや疫病との戦いが中心となる。"
+      }
+    },
+    {
+      "id": "c_31bd4d3c59250cdf",
+      "gameId": "g_000139",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/262060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:38:04Z",
+          "quote": "カラスの羽ペンを用いた、手描きの美しいゴシックグラフィック",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0bb8887a9f20c313bcd7f766d0ed88a99f90a3442f6e3abab6a010ca70395e75"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:38:04Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "hand-drawn"
+      }
+    },
+    {
+      "id": "c_3c368e5bafe4acdb",
+      "gameId": "g_000139",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/262060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:38:04Z",
+          "quote": "Darkest Dungeon is a challenging gothic roguelike turn-based RPG about the psychological stresses of adventuring.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0bb8887a9f20c313bcd7f766d0ed88a99f90a3442f6e3abab6a010ca70395e75"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:38:04Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "turn-based"
+      }
+    },
+    {
+      "id": "c_7fa81df413f7f05c",
+      "gameId": "g_000139",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/262060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:38:04Z",
+          "quote": "『Darkest Dungeon』は、プレイする度にダンジョンが変わるローグライクダークファンタジーRPG。本作の最大の特徴は、冒険における「ストレス」。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0bb8887a9f20c313bcd7f766d0ed88a99f90a3442f6e3abab6a010ca70395e75"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:38:04Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_8a5652ee6437d1b5",
+      "gameId": "g_000139",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/262060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:38:04Z",
+          "quote": "Darkest Dungeon is a challenging gothic roguelike turn-based RPG about the psychological stresses of adventuring.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0bb8887a9f20c313bcd7f766d0ed88a99f90a3442f6e3abab6a010ca70395e75"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:38:04Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "rpg"
+      }
+    },
+    {
+      "id": "c_ad8e73da07ebb5b6",
+      "gameId": "g_000139",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/262060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:38:04Z",
+          "quote": "Darkest Dungeon is a challenging gothic roguelike turn-based RPG about the psychological stresses of adventuring.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0bb8887a9f20c313bcd7f766d0ed88a99f90a3442f6e3abab6a010ca70395e75"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:38:04Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "difficult"
+      }
+    },
+    {
+      "id": "c_bbf6ef571d2f9426",
+      "gameId": "g_000139",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/262060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:38:04Z",
+          "quote": "ランダム生成のダンジョン、死んだら終わり",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0bb8887a9f20c313bcd7f766d0ed88a99f90a3442f6e3abab6a010ca70395e75"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:38:04Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "procedural-generation"
+      }
+    },
+    {
+      "id": "c_f2a75903edd95c57",
+      "gameId": "g_000139",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/262060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:38:04Z",
+          "quote": "『Darkest Dungeon』は、プレイする度にダンジョンが変わるローグライクダークファンタジーRPG。本作の最大の特徴は、冒険における「ストレス」。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0bb8887a9f20c313bcd7f766d0ed88a99f90a3442f6e3abab6a010ca70395e75"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:38:04Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "dark"
+      }
+    },
+    {
+      "id": "c_4ca88ca1ea9f1941",
+      "gameId": "g_000139",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/262060/",
+          "retrievedAt": "2026-11-08T02:53:08Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71a8cd892f4123561dbe4b93e324952fd2aa36a72c7729e69c32937b1d25be46"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:08Z",
+      "createdAt": "2026-11-08T02:53:08Z",
+      "updatedAt": "2026-11-08T02:53:08Z",
+      "lastCheckedAt": "2026-11-08T02:53:08Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/262060/"
+      }
+    },
+    {
+      "id": "c_89c9f6100c7d6728",
+      "gameId": "g_000139",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/262060/",
+          "retrievedAt": "2026-11-08T02:53:08Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71a8cd892f4123561dbe4b93e324952fd2aa36a72c7729e69c32937b1d25be46"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:08Z",
+      "createdAt": "2026-11-08T02:53:08Z",
+      "updatedAt": "2026-11-08T02:53:08Z",
+      "lastCheckedAt": "2026-11-08T02:53:08Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/262060/58cc9af814f8767242167a3f8ad013c1ac471074/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Darkest Dungeon® のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Red Hook Studios"
+        }
+      }
+    }
+  ]
+}

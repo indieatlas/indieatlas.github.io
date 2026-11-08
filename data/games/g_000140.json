@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000140",
+  "status": "candidate",
+  "title": {
+    "display": "Rulehouse",
+    "original": "Rulehouse",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4537280
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5267290",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5267290",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000190"
+  ],
+  "publisherIds": [
+    "dev_000190"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4537280/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-08T02:38:44Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:087923a73982fda0883e8c782dfebf955db1bc4cabc9211cea6bc2055a5863d2"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-08T02:52:07Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4537280/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:38:44Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:087923a73982fda0883e8c782dfebf955db1bc4cabc9211cea6bc2055a5863d2"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4537280/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:38:44Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:087923a73982fda0883e8c782dfebf955db1bc4cabc9211cea6bc2055a5863d2"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4537280/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:38:44Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:087923a73982fda0883e8c782dfebf955db1bc4cabc9211cea6bc2055a5863d2"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4537280/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:38:44Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:087923a73982fda0883e8c782dfebf955db1bc4cabc9211cea6bc2055a5863d2"
+      }
+    }
+  ],
+  "createdAt": "2026-11-08T02:52:07Z",
+  "updatedAt": "2026-11-08T02:53:12Z",
+  "createdByRun": "42438991793"
+}

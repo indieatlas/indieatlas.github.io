@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000144",
+  "claims": [
+    {
+      "id": "c_9b0ebc2f7948b9f5",
+      "gameId": "g_000144",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1203620/",
+          "retrievedAt": "2026-11-08T02:52:09Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:54560b52960b9224004be50f5536ce06edb848d36e6edbd3d0812cffcaad1f85"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:09Z",
+      "createdAt": "2026-11-08T02:52:09Z",
+      "updatedAt": "2026-11-08T02:52:09Z",
+      "lastCheckedAt": "2026-11-08T02:52:09Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 10,
+          "day": 15
+        },
+        "rawText": "15 Oct, 2026"
+      }
+    },
+    {
+      "id": "c_038fa1435601ed93",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1203620/",
+          "retrievedAt": "2026-11-08T02:52:12Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:40680f1162a73d9b3375000d7b7c1ed6ca131fd27fca7f378ce4cc0ed1010104"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:09Z",
+      "createdAt": "2026-11-08T02:52:09Z",
+      "updatedAt": "2026-11-08T02:52:09Z",
+      "lastCheckedAt": "2026-11-08T02:52:12Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_431a8cf65c84e526",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1203620/",
+          "retrievedAt": "2026-11-08T02:52:09Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:54560b52960b9224004be50f5536ce06edb848d36e6edbd3d0812cffcaad1f85"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:09Z",
+      "createdAt": "2026-11-08T02:52:09Z",
+      "updatedAt": "2026-11-08T02:52:09Z",
+      "lastCheckedAt": "2026-11-08T02:52:09Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_eca9d96227eb7b32",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1203620/",
+          "retrievedAt": "2026-11-08T02:52:09Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:54560b52960b9224004be50f5536ce06edb848d36e6edbd3d0812cffcaad1f85"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:09Z",
+      "createdAt": "2026-11-08T02:52:09Z",
+      "updatedAt": "2026-11-08T02:52:09Z",
+      "lastCheckedAt": "2026-11-08T02:52:09Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1203620/"
+      }
+    },
+    {
+      "id": "c_f61f09eb6f7ffb50",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1203620/",
+          "retrievedAt": "2026-11-08T02:52:09Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:54560b52960b9224004be50f5536ce06edb848d36e6edbd3d0812cffcaad1f85"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:09Z",
+      "createdAt": "2026-11-08T02:52:09Z",
+      "updatedAt": "2026-11-08T02:52:09Z",
+      "lastCheckedAt": "2026-11-08T02:52:09Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1203620/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Enshrouded~霧の王国~ のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Keen Games GmbH"
+        }
+      }
+    }
+  ]
+}

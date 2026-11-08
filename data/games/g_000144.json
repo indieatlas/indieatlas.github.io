@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000144",
+  "status": "candidate",
+  "title": {
+    "display": "Enshrouded~霧の王国~",
+    "original": "Enshrouded",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "Enshrouded~霧の王国~",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1203620
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "2815510",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4951850",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://www.enshrouded.com",
+  "developerIds": [
+    "dev_000197"
+  ],
+  "publisherIds": [
+    "dev_000197"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1203620/",
+            "retrievedAt": "2026-11-08T02:52:09Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:54560b52960b9224004be50f5536ce06edb848d36e6edbd3d0812cffcaad1f85"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-08T02:52:09Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1203620/",
+        "retrievedAt": "2026-11-08T02:52:09Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:54560b52960b9224004be50f5536ce06edb848d36e6edbd3d0812cffcaad1f85"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1203620/",
+        "retrievedAt": "2026-11-08T02:52:09Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:54560b52960b9224004be50f5536ce06edb848d36e6edbd3d0812cffcaad1f85"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1203620/",
+        "retrievedAt": "2026-11-08T02:52:09Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:54560b52960b9224004be50f5536ce06edb848d36e6edbd3d0812cffcaad1f85"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1203620/",
+        "retrievedAt": "2026-11-08T02:52:09Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:54560b52960b9224004be50f5536ce06edb848d36e6edbd3d0812cffcaad1f85"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1203620/",
+        "retrievedAt": "2026-11-08T02:52:09Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:54560b52960b9224004be50f5536ce06edb848d36e6edbd3d0812cffcaad1f85"
+      }
+    }
+  ],
+  "createdAt": "2026-11-08T02:52:09Z",
+  "updatedAt": "2026-11-08T02:52:09Z",
+  "createdByRun": "42438991793"
+}

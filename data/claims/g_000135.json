@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000135",
+  "claims": [
+    {
+      "id": "c_8681b447b8398038",
+      "gameId": "g_000135",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4864060/",
+          "retrievedAt": "2026-11-08T02:52:50Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:06ab48adc2352751373dcb3c6feeae69dde8cb259096b7e7054b03280aa65457"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:50Z",
+      "createdAt": "2026-11-08T02:52:50Z",
+      "updatedAt": "2026-11-08T02:52:50Z",
+      "lastCheckedAt": "2026-11-08T02:52:50Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2027,
+          "month": 2,
+          "day": 24
+        },
+        "rawText": "24 Feb, 2027"
+      }
+    },
+    {
+      "id": "c_16111cabcfd0f474",
+      "gameId": "g_000135",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4864060/",
+          "retrievedAt": "2026-11-08T02:52:53Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:293ba1d77899e62077b6dd86b8d4c5047beb4d599bf0b257a44eed9dfc9e109e"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:50Z",
+      "createdAt": "2026-11-08T02:52:50Z",
+      "updatedAt": "2026-11-08T02:52:50Z",
+      "lastCheckedAt": "2026-11-08T02:52:53Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_56187959f611127e",
+      "gameId": "g_000135",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4864060/",
+          "retrievedAt": "2026-11-08T02:52:50Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:06ab48adc2352751373dcb3c6feeae69dde8cb259096b7e7054b03280aa65457"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:50Z",
+      "createdAt": "2026-11-08T02:52:50Z",
+      "updatedAt": "2026-11-08T02:52:50Z",
+      "lastCheckedAt": "2026-11-08T02:52:50Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_7eacbfa2a1416753",
+      "gameId": "g_000135",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4864060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:36:05Z",
+          "quote": "キャラメイクで部隊を編成。装備を集めて強化し、異界〈黄泉〉へ挑む。探索・戦闘・収集・育成を繰り返す、ディストピア・ダンジョンRPG。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:06ab48adc2352751373dcb3c6feeae69dde8cb259096b7e7054b03280aa65457"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:36:05Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "summary",
+      "value": {
+        "ja": "異界〈黄泉〉へ転移した黄泉高校の生徒たちが、デモンが徘徊する迷宮に挑むディストピア・ダンジョンRPG。キャラメイクで部隊を編成し、装備を集めて強化しながら探索と戦闘を繰り返す。"
+      }
+    },
+    {
+      "id": "c_023debd4db18c9ce",
+      "gameId": "g_000135",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4864060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:36:05Z",
+          "quote": "キャラメイクで部隊を編成。装備を集めて強化し、異界〈黄泉〉へ挑む。探索・戦闘・収集・育成を繰り返す、ディストピア・ダンジョンRPG。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:06ab48adc2352751373dcb3c6feeae69dde8cb259096b7e7054b03280aa65457"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:36:05Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "rpg"
+      }
+    },
+    {
+      "id": "c_4444bc30421377a8",
+      "gameId": "g_000135",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4864060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:36:05Z",
+          "quote": "キャラメイクで部隊を編成。装備を集めて強化し、異界〈黄泉〉へ挑む。探索・戦闘・収集・育成を繰り返す、ディストピア・ダンジョンRPG。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:06ab48adc2352751373dcb3c6feeae69dde8cb259096b7e7054b03280aa65457"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:36:05Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_67954be15943c7c8",
+      "gameId": "g_000135",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4864060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:36:05Z",
+          "quote": "キャラメイクで部隊を編成。装備を集めて強化し、異界〈黄泉〉へ挑む。探索・戦闘・収集・育成を繰り返す、ディストピア・ダンジョンRPG。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:06ab48adc2352751373dcb3c6feeae69dde8cb259096b7e7054b03280aa65457"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:36:05Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "dark"
+      }
+    },
+    {
+      "id": "c_682fa7df7372b55a",
+      "gameId": "g_000135",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4864060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:36:05Z",
+          "quote": "キャラメイクで部隊を編成。装備を集めて強化し、異界〈黄泉〉へ挑む。探索・戦闘・収集・育成を繰り返す、ディストピア・ダンジョンRPG。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:06ab48adc2352751373dcb3c6feeae69dde8cb259096b7e7054b03280aa65457"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:36:05Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_8edbeae1e0b56e70",
+      "gameId": "g_000135",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4864060/",
+          "retrievedAt": "2026-11-08T02:52:50Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:06ab48adc2352751373dcb3c6feeae69dde8cb259096b7e7054b03280aa65457"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:50Z",
+      "createdAt": "2026-11-08T02:52:50Z",
+      "updatedAt": "2026-11-08T02:52:50Z",
+      "lastCheckedAt": "2026-11-08T02:52:50Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4864060/"
+      }
+    },
+    {
+      "id": "c_dc88b66b3a0066dd",
+      "gameId": "g_000135",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4864060/",
+          "retrievedAt": "2026-11-08T02:52:50Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:06ab48adc2352751373dcb3c6feeae69dde8cb259096b7e7054b03280aa65457"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:50Z",
+      "createdAt": "2026-11-08T02:52:50Z",
+      "updatedAt": "2026-11-08T02:52:50Z",
+      "lastCheckedAt": "2026-11-08T02:52:50Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4864060/472101417b7c2c87251fcdf775823b92618ffd93/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "デモンキルデモン ～黄泉１９８４～ のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Experience Inc."
+        }
+      }
+    }
+  ]
+}

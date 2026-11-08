@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000143",
+  "status": "candidate",
+  "title": {
+    "display": "座敷童カレシ ILOVEラーメン",
+    "original": "座敷童カレシ ILOVEラーメン",
+    "originalLang": "ja"
+  },
+  "aliases": [
+    {
+      "value": "My Yokai Boyfriend: I LOVE RAMEN!",
+      "lang": "en",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 4635180
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000195"
+  ],
+  "publisherIds": [
+    "dev_000196"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.4gamer.net/games/035/G103500/20261105045/",
+            "articleId": "a_90ba07d2660cf16c",
+            "publishedAt": "2026-11-06T08:00:00Z",
+            "retrievedAt": "2026-11-08T02:39:36Z",
+            "locator": "article.games",
+            "originKey": "media:4gamer.net"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-08T02:52:07Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4635180/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:39:40Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:cfecaf03c8a6fea5350c3c8355311086d1ee6ab884097c7ec298add43d2a04c8"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4635180/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:39:40Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:cfecaf03c8a6fea5350c3c8355311086d1ee6ab884097c7ec298add43d2a04c8"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4635180/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:39:40Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:cfecaf03c8a6fea5350c3c8355311086d1ee6ab884097c7ec298add43d2a04c8"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4635180/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:39:40Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:cfecaf03c8a6fea5350c3c8355311086d1ee6ab884097c7ec298add43d2a04c8"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4635180/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-08T02:39:40Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:cfecaf03c8a6fea5350c3c8355311086d1ee6ab884097c7ec298add43d2a04c8"
+      }
+    }
+  ],
+  "createdAt": "2026-11-08T02:52:07Z",
+  "updatedAt": "2026-11-08T02:52:07Z",
+  "createdByRun": "42438991793"
+}

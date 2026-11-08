@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000149",
+  "claims": [
+    {
+      "id": "c_0b6dfa85fab6a22b",
+      "gameId": "g_000149",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3883570/",
+          "retrievedAt": "2026-11-08T02:52:32Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c0c03a67e11eaf6fe5106629707c5eaf43befc14d0bbb2d3997f03a0c1f3246e"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:32Z",
+      "createdAt": "2026-11-08T02:52:32Z",
+      "updatedAt": "2026-11-08T02:52:32Z",
+      "lastCheckedAt": "2026-11-08T02:52:32Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 10,
+          "day": 8
+        },
+        "rawText": "8 Oct, 2026"
+      }
+    },
+    {
+      "id": "c_816605bdbf7b7e2e",
+      "gameId": "g_000149",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3883570/",
+          "retrievedAt": "2026-11-08T02:52:35Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:20bfb30ee444ee9e5f0bdb9605f47ac9c2ebde2e637e494c235db55c937e53e6"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:32Z",
+      "createdAt": "2026-11-08T02:52:32Z",
+      "updatedAt": "2026-11-08T02:52:32Z",
+      "lastCheckedAt": "2026-11-08T02:52:35Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_12090c5280355b98",
+      "gameId": "g_000149",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3883570/",
+          "retrievedAt": "2026-11-08T02:52:32Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c0c03a67e11eaf6fe5106629707c5eaf43befc14d0bbb2d3997f03a0c1f3246e"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:32Z",
+      "createdAt": "2026-11-08T02:52:32Z",
+      "updatedAt": "2026-11-08T02:52:32Z",
+      "lastCheckedAt": "2026-11-08T02:52:32Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_c37b37a2dbca26eb",
+      "gameId": "g_000149",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3883570/",
+          "retrievedAt": "2026-11-08T02:52:32Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c0c03a67e11eaf6fe5106629707c5eaf43befc14d0bbb2d3997f03a0c1f3246e"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:32Z",
+      "createdAt": "2026-11-08T02:52:32Z",
+      "updatedAt": "2026-11-08T02:52:32Z",
+      "lastCheckedAt": "2026-11-08T02:52:32Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3883570/"
+      }
+    },
+    {
+      "id": "c_d249800559c8b110",
+      "gameId": "g_000149",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3883570/",
+          "retrievedAt": "2026-11-08T02:52:32Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c0c03a67e11eaf6fe5106629707c5eaf43befc14d0bbb2d3997f03a0c1f3246e"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:32Z",
+      "createdAt": "2026-11-08T02:52:32Z",
+      "updatedAt": "2026-11-08T02:52:32Z",
+      "lastCheckedAt": "2026-11-08T02:52:32Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3883570/a1d37fb2bf0de54d1746d1aa4b83fb7ca81700d8/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "インボキア-呪いのダイスゲーム- のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Ludogram"
+        }
+      }
+    }
+  ]
+}

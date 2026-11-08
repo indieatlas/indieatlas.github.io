@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000147",
+  "status": "candidate",
+  "title": {
+    "display": "要塞英雄伝",
+    "original": "Legend of Defenders",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "要塞英雄伝",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 4740930
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5222770",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5471750",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000200"
+  ],
+  "publisherIds": [
+    "dev_000201"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-08T02:52:07Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-08T02:52:07Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4740930/",
+        "retrievedAt": "2026-11-08T02:52:23Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:280f9bc39f05d602fb057c185e1f35372e4149c4d9e7a57892e65a944e5fbb8a"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4740930/",
+        "retrievedAt": "2026-11-08T02:52:23Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:280f9bc39f05d602fb057c185e1f35372e4149c4d9e7a57892e65a944e5fbb8a"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4740930/",
+        "retrievedAt": "2026-11-08T02:52:23Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:280f9bc39f05d602fb057c185e1f35372e4149c4d9e7a57892e65a944e5fbb8a"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4740930/",
+        "retrievedAt": "2026-11-08T02:52:23Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:280f9bc39f05d602fb057c185e1f35372e4149c4d9e7a57892e65a944e5fbb8a"
+      }
+    }
+  ],
+  "createdAt": "2026-11-08T02:52:23Z",
+  "updatedAt": "2026-11-08T02:52:07Z",
+  "createdByRun": "42438991793"
+}

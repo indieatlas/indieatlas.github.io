@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000151",
+  "status": "candidate",
+  "title": {
+    "display": "Core Keeper",
+    "original": "Core Keeper",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1621690
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3398360",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4160230",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000207"
+  ],
+  "publisherIds": [
+    "dev_000208",
+    "dev_000209"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-08T02:52:07Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-08T02:52:07Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1621690/",
+        "retrievedAt": "2026-11-08T02:52:41Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ac3b81c505c46521d063e9a1e903b666bd49d984d673098a708d4ca493bce608"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1621690/",
+        "retrievedAt": "2026-11-08T02:52:41Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ac3b81c505c46521d063e9a1e903b666bd49d984d673098a708d4ca493bce608"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1621690/",
+        "retrievedAt": "2026-11-08T02:52:41Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ac3b81c505c46521d063e9a1e903b666bd49d984d673098a708d4ca493bce608"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1621690/",
+        "retrievedAt": "2026-11-08T02:52:41Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ac3b81c505c46521d063e9a1e903b666bd49d984d673098a708d4ca493bce608"
+      }
+    }
+  ],
+  "createdAt": "2026-11-08T02:52:41Z",
+  "updatedAt": "2026-11-08T02:52:07Z",
+  "createdByRun": "42438991793"
+}

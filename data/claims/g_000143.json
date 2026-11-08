@@ -1,0 +1,427 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000143",
+  "claims": [
+    {
+      "id": "c_e8fcba0c1c945ed6",
+      "gameId": "g_000143",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4635180/",
+          "retrievedAt": "2026-11-08T02:53:26Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cfecaf03c8a6fea5350c3c8355311086d1ee6ab884097c7ec298add43d2a04c8"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:26Z",
+      "createdAt": "2026-11-08T02:53:26Z",
+      "updatedAt": "2026-11-08T02:53:26Z",
+      "lastCheckedAt": "2026-11-08T02:53:26Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 6
+        },
+        "rawText": "6 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_c385613309c75f76",
+      "gameId": "g_000143",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4635180/",
+          "retrievedAt": "2026-11-08T02:53:29Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f85bb35f92cd38b1cedad7850a9fb7ab200cb7f344ad42fc502db3385cd96147"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:26Z",
+      "createdAt": "2026-11-08T02:53:26Z",
+      "updatedAt": "2026-11-08T02:53:26Z",
+      "lastCheckedAt": "2026-11-08T02:53:29Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_6d1b32cf66c30c04",
+      "gameId": "g_000143",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4635180/",
+          "retrievedAt": "2026-11-08T02:53:26Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cfecaf03c8a6fea5350c3c8355311086d1ee6ab884097c7ec298add43d2a04c8"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:26Z",
+      "createdAt": "2026-11-08T02:53:26Z",
+      "updatedAt": "2026-11-08T02:53:26Z",
+      "lastCheckedAt": "2026-11-08T02:53:26Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_8ceee388d2f65cb5",
+      "gameId": "g_000143",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4635180/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:39:40Z",
+          "quote": "自分のお店をオープンし、伝説級のラーメン職人になることを夢見る女性「ささみ」",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cfecaf03c8a6fea5350c3c8355311086d1ee6ab884097c7ec298add43d2a04c8"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4635180/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:39:40Z",
+          "quote": "新しいラーメン作りとミニゲーム、探索パートが追加され",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cfecaf03c8a6fea5350c3c8355311086d1ee6ab884097c7ec298add43d2a04c8"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:39:40Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "summary",
+      "value": {
+        "ja": "ラーメン職人を夢見るささみが、正体が座敷童のラーメンのスペシャリスト・マリリンと出会い、妖怪たちとの交流を描くラブコメノベルゲーム。無料公開された本編に、新たな長編ストーリーやミニゲーム、探索パートを加えて収録する。"
+      }
+    },
+    {
+      "id": "c_0eb85d5aa1c0478e",
+      "gameId": "g_000143",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4635180/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:39:40Z",
+          "quote": "マリリン師匠の正体は妖怪「座敷童（ざしきわらし）」",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cfecaf03c8a6fea5350c3c8355311086d1ee6ab884097c7ec298add43d2a04c8"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:39:40Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "japan"
+      }
+    },
+    {
+      "id": "c_1286718d42ad0a81",
+      "gameId": "g_000143",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4635180/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:39:40Z",
+          "quote": "マリリン師匠の正体は妖怪「座敷童（ざしきわらし）」",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cfecaf03c8a6fea5350c3c8355311086d1ee6ab884097c7ec298add43d2a04c8"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:39:40Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_3b0e3891554ab469",
+      "gameId": "g_000143",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.4gamer.net/games/035/G103500/20261105045/",
+          "sourceId": "4gamer",
+          "articleId": "a_90ba07d2660cf16c",
+          "publishedAt": "2026-11-06T08:00:00Z",
+          "retrievedAt": "2026-11-08T02:39:36Z",
+          "quote": "本作は，クリエイターの荒花ぬぬ氏が手掛けるラブコメノベルゲームだ。",
+          "originKey": "media:4gamer.net",
+          "fetchHash": "sha256:bae42d1d8ea6c35f36fe4cc9835aff8e1a7b81a5459ce4adc0c307ae875b2a2e"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:39:36Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_8a64a86eab35f396",
+      "gameId": "g_000143",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4635180/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:39:40Z",
+          "quote": "ラーメンで大切なものを守り抜く、強くて優しいストーリー。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cfecaf03c8a6fea5350c3c8355311086d1ee6ab884097c7ec298add43d2a04c8"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:39:40Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_90e94e65cb672519",
+      "gameId": "g_000143",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.4gamer.net/games/035/G103500/20261105045/",
+          "sourceId": "4gamer",
+          "articleId": "a_90ba07d2660cf16c",
+          "publishedAt": "2026-11-06T08:00:00Z",
+          "retrievedAt": "2026-11-08T02:39:36Z",
+          "quote": "本作は，クリエイターの荒花ぬぬ氏が手掛けるラブコメノベルゲームだ。",
+          "originKey": "media:4gamer.net",
+          "fetchHash": "sha256:bae42d1d8ea6c35f36fe4cc9835aff8e1a7b81a5459ce4adc0c307ae875b2a2e"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:39:36Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "romance"
+      }
+    },
+    {
+      "id": "c_b521bd098d40977e",
+      "gameId": "g_000143",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4635180/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:39:40Z",
+          "quote": "自分のお店をオープンし、伝説級のラーメン職人になることを夢見る女性「ささみ」",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cfecaf03c8a6fea5350c3c8355311086d1ee6ab884097c7ec298add43d2a04c8"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:39:40Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "food"
+      }
+    },
+    {
+      "id": "c_eaaa4ffa2f8aea63",
+      "gameId": "g_000143",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4635180/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:39:40Z",
+          "quote": "ラーメンで大切なものを守り抜く、強くて優しいストーリー。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cfecaf03c8a6fea5350c3c8355311086d1ee6ab884097c7ec298add43d2a04c8"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:39:40Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_fc878fada326809b",
+      "gameId": "g_000143",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4635180/",
+          "retrievedAt": "2026-11-08T02:53:26Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cfecaf03c8a6fea5350c3c8355311086d1ee6ab884097c7ec298add43d2a04c8"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:26Z",
+      "createdAt": "2026-11-08T02:53:26Z",
+      "updatedAt": "2026-11-08T02:53:26Z",
+      "lastCheckedAt": "2026-11-08T02:53:26Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4635180/"
+      }
+    },
+    {
+      "id": "c_c4b6617c1f8b5027",
+      "gameId": "g_000143",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4635180/",
+          "retrievedAt": "2026-11-08T02:53:26Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cfecaf03c8a6fea5350c3c8355311086d1ee6ab884097c7ec298add43d2a04c8"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:53:26Z",
+      "createdAt": "2026-11-08T02:53:26Z",
+      "updatedAt": "2026-11-08T02:53:26Z",
+      "lastCheckedAt": "2026-11-08T02:53:26Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4635180/cd3cfb769017b933d6e529491420fc7075cca784/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "座敷童カレシ ILOVEラーメン のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Phoenixx Inc."
+        }
+      }
+    }
+  ]
+}

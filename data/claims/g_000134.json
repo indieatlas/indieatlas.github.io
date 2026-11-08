@@ -1,0 +1,402 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000134",
+  "claims": [
+    {
+      "id": "c_98cf5ae8bb450a3a",
+      "gameId": "g_000134",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1684660/",
+          "retrievedAt": "2026-11-08T02:52:45Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:97a10e3359110b10e65be3ba3e5791ff27c899d30211d6e2273f71abf4a8a46e"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:45Z",
+      "createdAt": "2026-11-08T02:52:45Z",
+      "updatedAt": "2026-11-08T02:52:45Z",
+      "lastCheckedAt": "2026-11-08T02:52:45Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2022,
+          "month": 8,
+          "day": 17
+        },
+        "rawText": "17 Aug, 2022"
+      }
+    },
+    {
+      "id": "c_6cfddec2239b084d",
+      "gameId": "g_000134",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1684660/",
+          "retrievedAt": "2026-11-08T02:52:45Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:97a10e3359110b10e65be3ba3e5791ff27c899d30211d6e2273f71abf4a8a46e"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:45Z",
+      "createdAt": "2026-11-08T02:52:45Z",
+      "updatedAt": "2026-11-08T02:52:45Z",
+      "lastCheckedAt": "2026-11-08T02:52:45Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2022,
+          "month": 8,
+          "day": 17
+        },
+        "rawText": "17 Aug, 2022"
+      }
+    },
+    {
+      "id": "c_60afad79f0e39523",
+      "gameId": "g_000134",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1684660/",
+          "retrievedAt": "2026-11-08T02:52:48Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f76434ee9b65effd0fc7e67051216b6abbcb271d37aedcece98bfea4106fbe7c"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:45Z",
+      "createdAt": "2026-11-08T02:52:45Z",
+      "updatedAt": "2026-11-08T02:52:45Z",
+      "lastCheckedAt": "2026-11-08T02:52:48Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_266f9a1a579148e4",
+      "gameId": "g_000134",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1684660/",
+          "retrievedAt": "2026-11-08T02:52:45Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:97a10e3359110b10e65be3ba3e5791ff27c899d30211d6e2273f71abf4a8a46e"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:45Z",
+      "createdAt": "2026-11-08T02:52:45Z",
+      "updatedAt": "2026-11-08T02:52:45Z",
+      "lastCheckedAt": "2026-11-08T02:52:45Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_322e89b9d51325b7",
+      "gameId": "g_000134",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1684660/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:35:41Z",
+          "quote": "「ナツノカナタ」は、終末を迎えた世界を旅する少女たちを描いた、テキストアドベンチャーゲームです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:97a10e3359110b10e65be3ba3e5791ff27c899d30211d6e2273f71abf4a8a46e"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1684660/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:35:41Z",
+          "quote": "どういうわけか別の世界を生きる少女と通話を繋げてしまったあなたは、彼女たちの旅に巻き込まれていきます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:97a10e3359110b10e65be3ba3e5791ff27c899d30211d6e2273f71abf4a8a46e"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:35:41Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "summary",
+      "value": {
+        "ja": "終末を迎えた世界を旅する少女ナツノと、祖母の遺品の古いパソコンを通じて通話がつながった主人公。彼女たちの旅を見守りながら、崩壊した世界の謎に迫るテキストアドベンチャー。"
+      }
+    },
+    {
+      "id": "c_0a90bb038b5262d1",
+      "gameId": "g_000134",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1684660/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:35:41Z",
+          "quote": "少女たちとの通話を通して、彼女たちのことを知り、そして世界の謎に迫っていく──",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:97a10e3359110b10e65be3ba3e5791ff27c899d30211d6e2273f71abf4a8a46e"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:35:41Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_0b304141b1084fdf",
+      "gameId": "g_000134",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1684660/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:35:41Z",
+          "quote": "銃を握って動く死体に立ち向かう少女たちを、あなたは通話越しにサポートします。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:97a10e3359110b10e65be3ba3e5791ff27c899d30211d6e2273f71abf4a8a46e"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:35:41Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "zombies"
+      }
+    },
+    {
+      "id": "c_116d50e90e06b5c3",
+      "gameId": "g_000134",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1684660/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:35:41Z",
+          "quote": "「ナツノカナタ」は、終末を迎えた世界を旅する少女たちを描いた、テキストアドベンチャーゲームです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:97a10e3359110b10e65be3ba3e5791ff27c899d30211d6e2273f71abf4a8a46e"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:35:41Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_541f987143c0ef4f",
+      "gameId": "g_000134",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1684660/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:35:41Z",
+          "quote": "生き抜くために荒廃した町を探索し、銃を握って動く死体に立ち向かう少女たちを、あなたは通話越しにサポートします。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:97a10e3359110b10e65be3ba3e5791ff27c899d30211d6e2273f71abf4a8a46e"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:35:41Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_a181d1097770fada",
+      "gameId": "g_000134",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1684660/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-08T02:35:41Z",
+          "quote": "ナツノの話し相手になって旅を見守るうちに、あなたは終末を迎えた世界の謎に迫っていきます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:97a10e3359110b10e65be3ba3e5791ff27c899d30211d6e2273f71abf4a8a46e"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:07Z",
+      "createdAt": "2026-11-08T02:52:07Z",
+      "updatedAt": "2026-11-08T02:52:07Z",
+      "lastCheckedAt": "2026-11-08T02:35:41Z",
+      "createdBy": "llm",
+      "createdByRun": "42438991793",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_65c79ffb4697b7b9",
+      "gameId": "g_000134",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1684660/",
+          "retrievedAt": "2026-11-08T02:52:45Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:97a10e3359110b10e65be3ba3e5791ff27c899d30211d6e2273f71abf4a8a46e"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:45Z",
+      "createdAt": "2026-11-08T02:52:45Z",
+      "updatedAt": "2026-11-08T02:52:45Z",
+      "lastCheckedAt": "2026-11-08T02:52:45Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1684660/"
+      }
+    },
+    {
+      "id": "c_b1504f3f3fbd4eec",
+      "gameId": "g_000134",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1684660/",
+          "retrievedAt": "2026-11-08T02:52:45Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:97a10e3359110b10e65be3ba3e5791ff27c899d30211d6e2273f71abf4a8a46e"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-08T02:52:45Z",
+      "createdAt": "2026-11-08T02:52:45Z",
+      "updatedAt": "2026-11-08T02:52:45Z",
+      "lastCheckedAt": "2026-11-08T02:52:45Z",
+      "createdBy": "system",
+      "createdByRun": "42438991793",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1684660/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "ナツノカナタ のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Kazuhide Oka"
+        }
+      }
+    }
+  ]
+}
