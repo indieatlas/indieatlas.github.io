@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000154",
+  "claims": [
+    {
+      "id": "c_139a570f937db0c3",
+      "gameId": "g_000154",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5116770/",
+          "retrievedAt": "2026-11-09T01:38:43Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e953178343a5307d6c6f3adf33f56dcf01689c88c5c4d7a4958ec1be94ac650d"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:43Z",
+      "createdAt": "2026-11-09T01:38:43Z",
+      "updatedAt": "2026-11-09T01:38:43Z",
+      "lastCheckedAt": "2026-11-09T01:38:43Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "year",
+          "year": 2027
+        },
+        "rawText": "2027"
+      }
+    },
+    {
+      "id": "c_806ae43d92937f2d",
+      "gameId": "g_000154",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5116770/",
+          "retrievedAt": "2026-11-09T01:38:46Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:47a837a30dfa44dae948065e2d5702f73cda38f01006a5a8361663b670e26a8c"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:43Z",
+      "createdAt": "2026-11-09T01:38:43Z",
+      "updatedAt": "2026-11-09T01:38:43Z",
+      "lastCheckedAt": "2026-11-09T01:38:46Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_5e764d7eac4651b8",
+      "gameId": "g_000154",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5116770/",
+          "retrievedAt": "2026-11-09T01:38:43Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e953178343a5307d6c6f3adf33f56dcf01689c88c5c4d7a4958ec1be94ac650d"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:43Z",
+      "createdAt": "2026-11-09T01:38:43Z",
+      "updatedAt": "2026-11-09T01:38:43Z",
+      "lastCheckedAt": "2026-11-09T01:38:43Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_26b934a51c211449",
+      "gameId": "g_000154",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5116770/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:25:00Z",
+          "quote": "『花札ノ巫孤』は、花札×ローグライト×アクションゲームです。巫孤として花札の力で敵を倒し、迷宮を探索して札を集め、自分を強化していきましょう！迷宮の奥で待つボスとの花札バトルでは、集めた手札で役を揃え、強力な力を引き出して勝利を目指せ！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e953178343a5307d6c6f3adf33f56dcf01689c88c5c4d7a4958ec1be94ac650d"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:25:00Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "summary",
+      "value": {
+        "ja": "花札を題材にしたローグライトアクション。巫孤となって和風の迷宮を進み、部屋を抜けるたびに示される三枚の花札から一枚を選んで強化する。ボス戦では集めた札で役を揃える花札バトルに移行する。"
+      }
+    },
+    {
+      "id": "c_184ce3f6bcdd431c",
+      "gameId": "g_000154",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5116770/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:25:00Z",
+          "quote": "『花札ノ巫孤』は、花札×ローグライト×アクションゲームです。巫孤として花札の力で敵を倒し、迷宮を探索して札を集め、自分を強化していきましょう！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e953178343a5307d6c6f3adf33f56dcf01689c88c5c4d7a4958ec1be94ac650d"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:25:00Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "procedural-generation"
+      }
+    },
+    {
+      "id": "c_83302f65cd0d33d1",
+      "gameId": "g_000154",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5116770/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:25:00Z",
+          "quote": "『花札ノ巫孤』は、花札×ローグライト×アクションゲームです。巫孤として花札の力で敵を倒し、迷宮を探索して札を集め、自分を強化していきましょう！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e953178343a5307d6c6f3adf33f56dcf01689c88c5c4d7a4958ec1be94ac650d"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:25:00Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_b7cbfe950da95c55",
+      "gameId": "g_000154",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5116770/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:25:00Z",
+          "quote": "『花札ノ巫孤』は、花札×ローグライト×アクションゲームです。巫孤として花札の力で敵を倒し、迷宮を探索して札を集め、自分を強化していきましょう！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e953178343a5307d6c6f3adf33f56dcf01689c88c5c4d7a4958ec1be94ac650d"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:25:00Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_ca8be5b666caf779",
+      "gameId": "g_000154",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5116770/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:25:00Z",
+          "quote": "『花札ノ巫孤』は、花札×ローグライト×アクションゲームです。巫孤として花札の力で敵を倒し、迷宮を探索して札を集め、自分を強化していきましょう！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e953178343a5307d6c6f3adf33f56dcf01689c88c5c4d7a4958ec1be94ac650d"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:25:00Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_d888739a4dbf1133",
+      "gameId": "g_000154",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5116770/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:25:00Z",
+          "quote": "『花札ノ巫孤』は、花札×ローグライト×アクションゲームです。巫孤として花札の力で敵を倒し、迷宮を探索して札を集め、自分を強化していきましょう！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e953178343a5307d6c6f3adf33f56dcf01689c88c5c4d7a4958ec1be94ac650d"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:25:00Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "japan"
+      }
+    },
+    {
+      "id": "c_1a30fdb768f1dbd9",
+      "gameId": "g_000154",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5116770/",
+          "retrievedAt": "2026-11-09T01:38:43Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e953178343a5307d6c6f3adf33f56dcf01689c88c5c4d7a4958ec1be94ac650d"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:43Z",
+      "createdAt": "2026-11-09T01:38:43Z",
+      "updatedAt": "2026-11-09T01:38:43Z",
+      "lastCheckedAt": "2026-11-09T01:38:43Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5116770/"
+      }
+    },
+    {
+      "id": "c_ebebc896d79600f9",
+      "gameId": "g_000154",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5116770/",
+          "retrievedAt": "2026-11-09T01:38:43Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e953178343a5307d6c6f3adf33f56dcf01689c88c5c4d7a4958ec1be94ac650d"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:43Z",
+      "createdAt": "2026-11-09T01:38:43Z",
+      "updatedAt": "2026-11-09T01:38:43Z",
+      "lastCheckedAt": "2026-11-09T01:38:43Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5116770/4c13237e084e58d87c4d14efc7d85346ffc6faec/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "花札ノ巫孤 / Blooming Solitude: Priestess of Hanafuda のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "KNPARTICLE"
+        }
+      }
+    }
+  ]
+}

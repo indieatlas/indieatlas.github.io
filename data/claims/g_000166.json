@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000166",
+  "claims": [
+    {
+      "id": "c_338726944777d4a9",
+      "gameId": "g_000166",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1943950/",
+          "retrievedAt": "2026-11-09T01:38:16Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f1931bcfd751a1a3c881d7c0a73dfc4776553431232430db0ade3b0db8d3e7bf"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:16Z",
+      "createdAt": "2026-11-09T01:38:16Z",
+      "updatedAt": "2026-11-09T01:38:16Z",
+      "lastCheckedAt": "2026-11-09T01:38:16Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 10,
+          "day": 23
+        },
+        "rawText": "23 Oct, 2025"
+      }
+    },
+    {
+      "id": "c_a6ad15841e972627",
+      "gameId": "g_000166",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1943950/",
+          "retrievedAt": "2026-11-09T01:38:19Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a9ae97c1b2cbfe0d1c7467edf16220ffa387c019fae69cebc491beeb8605526c"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:16Z",
+      "createdAt": "2026-11-09T01:38:16Z",
+      "updatedAt": "2026-11-09T01:38:16Z",
+      "lastCheckedAt": "2026-11-09T01:38:19Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_d79ebd279d7e1575",
+      "gameId": "g_000166",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1943950/",
+          "retrievedAt": "2026-11-09T01:38:16Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f1931bcfd751a1a3c881d7c0a73dfc4776553431232430db0ade3b0db8d3e7bf"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:16Z",
+      "createdAt": "2026-11-09T01:38:16Z",
+      "updatedAt": "2026-11-09T01:38:16Z",
+      "lastCheckedAt": "2026-11-09T01:38:16Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_059d04d6df3c91d5",
+      "gameId": "g_000166",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1943950/",
+          "retrievedAt": "2026-11-09T01:38:16Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f1931bcfd751a1a3c881d7c0a73dfc4776553431232430db0ade3b0db8d3e7bf"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:16Z",
+      "createdAt": "2026-11-09T01:38:16Z",
+      "updatedAt": "2026-11-09T01:38:16Z",
+      "lastCheckedAt": "2026-11-09T01:38:16Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1943950/"
+      }
+    },
+    {
+      "id": "c_235a04129c61dd2f",
+      "gameId": "g_000166",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1943950/",
+          "retrievedAt": "2026-11-09T01:38:16Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f1931bcfd751a1a3c881d7c0a73dfc4776553431232430db0ade3b0db8d3e7bf"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:16Z",
+      "createdAt": "2026-11-09T01:38:16Z",
+      "updatedAt": "2026-11-09T01:38:16Z",
+      "lastCheckedAt": "2026-11-09T01:38:16Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1943950/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Escape the Backrooms のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Secret Mode"
+        }
+      }
+    }
+  ]
+}

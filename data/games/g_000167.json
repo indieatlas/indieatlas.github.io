@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000167",
+  "status": "candidate",
+  "title": {
+    "display": "東方紅魔郷：New Classic　～ the Embodiment of Scarlet Devil.",
+    "original": "Touhou Koumakyou: New Classic - the Embodiment of Scarlet Devil",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "東方紅魔郷：New Classic　～ the Embodiment of Scarlet Devil.",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 4659620
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4924910",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000073",
+    "dev_000229"
+  ],
+  "publisherIds": [
+    "dev_000063"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-09T01:37:56Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-09T01:37:56Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4659620/",
+        "retrievedAt": "2026-11-09T01:38:20Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:42f6b638ca67f39eeff6ede950c8fe5a6438f41c3267e8da60073548fda0306b"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4659620/",
+        "retrievedAt": "2026-11-09T01:38:20Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:42f6b638ca67f39eeff6ede950c8fe5a6438f41c3267e8da60073548fda0306b"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4659620/",
+        "retrievedAt": "2026-11-09T01:38:20Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:42f6b638ca67f39eeff6ede950c8fe5a6438f41c3267e8da60073548fda0306b"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4659620/",
+        "retrievedAt": "2026-11-09T01:38:20Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:42f6b638ca67f39eeff6ede950c8fe5a6438f41c3267e8da60073548fda0306b"
+      }
+    }
+  ],
+  "createdAt": "2026-11-09T01:38:20Z",
+  "updatedAt": "2026-11-09T01:37:56Z",
+  "createdByRun": "42544889895"
+}

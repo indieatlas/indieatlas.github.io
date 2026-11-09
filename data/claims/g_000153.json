@@ -1,0 +1,383 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000153",
+  "claims": [
+    {
+      "id": "c_c3cfdf1ed647096c",
+      "gameId": "g_000153",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5239710/",
+          "retrievedAt": "2026-11-09T01:38:38Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:79c78f2066a9224c796a77bfc806e1149f3b3fbc618e69a6e59ad6233fc71b4f"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:38Z",
+      "createdAt": "2026-11-09T01:38:38Z",
+      "updatedAt": "2026-11-09T01:38:38Z",
+      "lastCheckedAt": "2026-11-09T01:38:38Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "month",
+          "year": 2027,
+          "month": 3
+        },
+        "rawText": "March 2027"
+      }
+    },
+    {
+      "id": "c_35f0929a3a2b9358",
+      "gameId": "g_000153",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5239710/",
+          "retrievedAt": "2026-11-09T01:38:41Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4fd682656c9122a61078a8bf2f49b433b1b33e2a387963f9c983546e9196f20b"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:38Z",
+      "createdAt": "2026-11-09T01:38:38Z",
+      "updatedAt": "2026-11-09T01:38:38Z",
+      "lastCheckedAt": "2026-11-09T01:38:41Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_bc6c4d02e6c25f41",
+      "gameId": "g_000153",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5239710/",
+          "retrievedAt": "2026-11-09T01:38:38Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:79c78f2066a9224c796a77bfc806e1149f3b3fbc618e69a6e59ad6233fc71b4f"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:38Z",
+      "createdAt": "2026-11-09T01:38:38Z",
+      "updatedAt": "2026-11-09T01:38:38Z",
+      "lastCheckedAt": "2026-11-09T01:38:38Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_76781f858fc23443",
+      "gameId": "g_000153",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5239710/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:24:48Z",
+          "quote": "実写写真で描かれた横浜を探索し、巨大ロボットで暴走族と殴り合え！ 機動暴走族たちのクーデターを追う、ドラマチックアクションアドベンチャー。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:79c78f2066a9224c796a77bfc806e1149f3b3fbc618e69a6e59ad6233fc71b4f"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:24:48Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "summary",
+      "value": {
+        "ja": "実写写真で描いた横浜を舞台に、巨大ロボットを駆る機動暴走族の抗争を追う探索型アクションアドベンチャー。街で技を記録したDISKを集め、機体を強化しながら敵総長との一対一の決闘に挑む。"
+      }
+    },
+    {
+      "id": "c_0238410e6e71113c",
+      "gameId": "g_000153",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5239710/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:24:48Z",
+          "quote": "実写写真で描かれた横浜を探索し、巨大ロボットで暴走族と殴り合え！ 機動暴走族たちのクーデターを追う、ドラマチックアクションアドベンチャー。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:79c78f2066a9224c796a77bfc806e1149f3b3fbc618e69a6e59ad6233fc71b4f"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:24:48Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_43770b3f755509e5",
+      "gameId": "g_000153",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5239710/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:24:48Z",
+          "quote": "実写写真で描かれた横浜を探索し、巨大ロボットで暴走族と殴り合え！ 機動暴走族たちのクーデターを追う、ドラマチックアクションアドベンチャー。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:79c78f2066a9224c796a77bfc806e1149f3b3fbc618e69a6e59ad6233fc71b4f"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:24:48Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_56553edcfb484f0d",
+      "gameId": "g_000153",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5239710/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:24:48Z",
+          "quote": "実写写真で描かれた横浜を探索し、巨大ロボットで暴走族と殴り合え！ 機動暴走族たちのクーデターを追う、ドラマチックアクションアドベンチャー。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:79c78f2066a9224c796a77bfc806e1149f3b3fbc618e69a6e59ad6233fc71b4f"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:24:48Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_65a8fc219ecb0871",
+      "gameId": "g_000153",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5239710/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:24:48Z",
+          "quote": "実写写真で描かれた横浜を探索し、巨大ロボットで暴走族と殴り合え！ 機動暴走族たちのクーデターを追う、ドラマチックアクションアドベンチャー。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:79c78f2066a9224c796a77bfc806e1149f3b3fbc618e69a6e59ad6233fc71b4f"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:24:48Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "retro"
+      }
+    },
+    {
+      "id": "c_6725abdd60c60d56",
+      "gameId": "g_000153",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5239710/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:24:48Z",
+          "quote": "実写写真で描かれた横浜を探索し、巨大ロボットで暴走族と殴り合え！ 機動暴走族たちのクーデターを追う、ドラマチックアクションアドベンチャー。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:79c78f2066a9224c796a77bfc806e1149f3b3fbc618e69a6e59ad6233fc71b4f"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:24:48Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "japan"
+      }
+    },
+    {
+      "id": "c_7378457753889a19",
+      "gameId": "g_000153",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5239710/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:24:48Z",
+          "quote": "実写写真で描かれた横浜を探索し、巨大ロボットで暴走族と殴り合え！ 機動暴走族たちのクーデターを追う、ドラマチックアクションアドベンチャー。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:79c78f2066a9224c796a77bfc806e1149f3b3fbc618e69a6e59ad6233fc71b4f"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:24:48Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_d9796f2bf84f77f4",
+      "gameId": "g_000153",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5239710/",
+          "retrievedAt": "2026-11-09T01:38:38Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:79c78f2066a9224c796a77bfc806e1149f3b3fbc618e69a6e59ad6233fc71b4f"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:38Z",
+      "createdAt": "2026-11-09T01:38:38Z",
+      "updatedAt": "2026-11-09T01:38:38Z",
+      "lastCheckedAt": "2026-11-09T01:38:38Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5239710/"
+      }
+    },
+    {
+      "id": "c_4f55ea72572951ad",
+      "gameId": "g_000153",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5239710/",
+          "retrievedAt": "2026-11-09T01:38:38Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:79c78f2066a9224c796a77bfc806e1149f3b3fbc618e69a6e59ad6233fc71b4f"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:38Z",
+      "createdAt": "2026-11-09T01:38:38Z",
+      "updatedAt": "2026-11-09T01:38:38Z",
+      "lastCheckedAt": "2026-11-09T01:38:38Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5239710/4aeae94791338f4711cf572f9cbaf47e55eb1dcd/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "横浜機動暴走族 ROCK 'N' ROLL SUICIDE のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "FUJII Production"
+        }
+      }
+    }
+  ]
+}

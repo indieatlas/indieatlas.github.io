@@ -78,10 +78,11 @@
         {
           "kind": "store",
           "url": "https://store.steampowered.com/app/4656000/",
-          "retrievedAt": "2026-11-07T19:01:54Z",
-          "locator": "steam:appdetails.release_date",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:20:03Z",
+          "locator": "steam:appdetails.release",
           "originKey": "store:steam",
-          "fetchHash": "sha256:a6649a1933739ce7da4fbe3446bfeaba07f7b079e21f0be7bbe592d2368f1155"
+          "fetchHash": "sha256:6eab9436e30d62ae66fba50c3d8a73c95ce8d9e31e13057d1542cfff994f1d6f"
         }
       ],
       "asOf": "2026-11-08",
@@ -90,7 +91,7 @@
       "adoptedAt": "2026-11-07T19:01:54Z",
       "createdAt": "2026-11-07T19:01:54Z",
       "updatedAt": "2026-11-07T19:01:54Z",
-      "lastCheckedAt": "2026-11-07T19:01:54Z",
+      "lastCheckedAt": "2026-11-09T01:20:03Z",
       "createdBy": "system",
       "createdByRun": "42402321312",
       "field": "release",
@@ -115,12 +116,21 @@
       "basis": "fact",
       "evidence": [
         {
+          "kind": "official",
+          "url": "https://bombanana.leftostudio.com/",
+          "retrievedAt": "2026-11-09T01:19:50Z",
+          "quote": "RELEASE DATE:2 Sep, 2026",
+          "originKey": "official:leftostudio.com",
+          "fetchHash": "sha256:86ddc85d1156cb69c48fa475178e19218ff0bdb7375f3d5c0600b3e1cfe0565e"
+        },
+        {
           "kind": "store",
           "url": "https://store.steampowered.com/app/4656000/",
-          "retrievedAt": "2026-11-07T19:01:54Z",
-          "locator": "steam:appdetails.release_date",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:20:03Z",
+          "locator": "steam:appdetails.release",
           "originKey": "store:steam",
-          "fetchHash": "sha256:a6649a1933739ce7da4fbe3446bfeaba07f7b079e21f0be7bbe592d2368f1155"
+          "fetchHash": "sha256:6eab9436e30d62ae66fba50c3d8a73c95ce8d9e31e13057d1542cfff994f1d6f"
         }
       ],
       "asOf": "2026-11-08",
@@ -129,7 +139,7 @@
       "adoptedAt": "2026-11-07T19:01:54Z",
       "createdAt": "2026-11-07T19:01:54Z",
       "updatedAt": "2026-11-07T19:01:54Z",
-      "lastCheckedAt": "2026-11-07T19:01:54Z",
+      "lastCheckedAt": "2026-11-09T01:20:03Z",
       "createdBy": "system",
       "createdByRun": "42402321312",
       "field": "release",
@@ -159,6 +169,14 @@
           "retrievedAt": "2026-11-09T01:03:15Z",
           "locator": "igdb:games.release_dates",
           "originKey": "database:igdb.com"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.playstation.com/ja-jp/concept/10020779",
+          "retrievedAt": "2026-11-09T01:20:15Z",
+          "quote": "発売日:2026/11/13",
+          "originKey": "store:playstation-store",
+          "fetchHash": "sha256:34e432992846cbe1896acab4a4b61563edae056e89f43cf7b565efb8b621c778"
         }
       ],
       "asOf": "2026-11-09",
@@ -167,7 +185,7 @@
       "adoptedAt": "2026-11-09T01:03:15Z",
       "createdAt": "2026-11-09T01:03:15Z",
       "updatedAt": "2026-11-09T01:03:15Z",
-      "lastCheckedAt": "2026-11-09T01:03:15Z",
+      "lastCheckedAt": "2026-11-09T01:20:15Z",
       "createdBy": "system",
       "createdByRun": "42543439932",
       "field": "release",

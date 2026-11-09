@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000168",
+  "status": "candidate",
+  "title": {
+    "display": "ミメシス",
+    "original": "MIMESIS",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "ミメシス",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 2827200
+  },
+  "associatedApps": [],
+  "officialUrl": "https://mimesis.relugames.com/",
+  "developerIds": [
+    "dev_000230"
+  ],
+  "publisherIds": [
+    "dev_000230",
+    "dev_000206"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-09T01:37:56Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-09T01:37:56Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2827200/",
+        "retrievedAt": "2026-11-09T01:38:25Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:573fb9612ccba1ac5d7961029c70afe6216a3b7a338817789db26749cd952b0a"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2827200/",
+        "retrievedAt": "2026-11-09T01:38:25Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:573fb9612ccba1ac5d7961029c70afe6216a3b7a338817789db26749cd952b0a"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2827200/",
+        "retrievedAt": "2026-11-09T01:38:25Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:573fb9612ccba1ac5d7961029c70afe6216a3b7a338817789db26749cd952b0a"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2827200/",
+        "retrievedAt": "2026-11-09T01:38:25Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:573fb9612ccba1ac5d7961029c70afe6216a3b7a338817789db26749cd952b0a"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2827200/",
+        "retrievedAt": "2026-11-09T01:38:25Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:573fb9612ccba1ac5d7961029c70afe6216a3b7a338817789db26749cd952b0a"
+      }
+    }
+  ],
+  "createdAt": "2026-11-09T01:38:25Z",
+  "updatedAt": "2026-11-09T01:37:56Z",
+  "createdByRun": "42544889895"
+}

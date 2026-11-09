@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000166",
+  "status": "candidate",
+  "title": {
+    "display": "Escape the Backrooms",
+    "original": "Escape the Backrooms",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1943950
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5002700",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000227",
+    "dev_000228"
+  ],
+  "publisherIds": [
+    "dev_000108"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-09T01:37:56Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-09T01:37:56Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1943950/",
+        "retrievedAt": "2026-11-09T01:38:16Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f1931bcfd751a1a3c881d7c0a73dfc4776553431232430db0ade3b0db8d3e7bf"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1943950/",
+        "retrievedAt": "2026-11-09T01:38:16Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f1931bcfd751a1a3c881d7c0a73dfc4776553431232430db0ade3b0db8d3e7bf"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1943950/",
+        "retrievedAt": "2026-11-09T01:38:16Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f1931bcfd751a1a3c881d7c0a73dfc4776553431232430db0ade3b0db8d3e7bf"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1943950/",
+        "retrievedAt": "2026-11-09T01:38:16Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f1931bcfd751a1a3c881d7c0a73dfc4776553431232430db0ade3b0db8d3e7bf"
+      }
+    }
+  ],
+  "createdAt": "2026-11-09T01:38:16Z",
+  "updatedAt": "2026-11-09T01:37:56Z",
+  "createdByRun": "42544889895"
+}

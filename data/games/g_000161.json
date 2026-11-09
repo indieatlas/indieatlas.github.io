@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000161",
+  "status": "candidate",
+  "title": {
+    "display": "シャンハイ サマー",
+    "original": "Shanghai Summer",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "シャンハイサマー",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1323830
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1399330",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "2867830",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2867940",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "http://footooo.com",
+  "developerIds": [
+    "dev_000221"
+  ],
+  "publisherIds": [
+    "dev_000222"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.inside-games.jp/article/2026/11/08/190555.html",
+            "articleId": "a_4ce2e4c04ed52676",
+            "publishedAt": "2026-11-08T08:00:04Z",
+            "retrievedAt": "2026-11-09T01:24:06Z",
+            "locator": "article.games",
+            "originKey": "media:inside-games.jp"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-09T01:37:56Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "media",
+        "url": "https://www.inside-games.jp/article/2026/11/08/190555.html",
+        "sourceId": "inside-games",
+        "publishedAt": "2026-11-08T08:00:04Z",
+        "retrievedAt": "2026-11-09T01:24:06Z",
+        "quote": "◆『シャンハイサマー』（ニンテンドースイッチ/PS5/PS4/Steam）",
+        "originKey": "media:inside-games.jp",
+        "fetchHash": "sha256:1b3a1118ed5152900863bac2952144b97240d830b853caac00fd16131a9c96a6"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1323830/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T01:25:09Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dca93a09f8d92a54851fabf1eaf268d1cbad2b6d87d1c762e93b8801e7a16a79"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1323830/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T01:25:09Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dca93a09f8d92a54851fabf1eaf268d1cbad2b6d87d1c762e93b8801e7a16a79"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1323830/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T01:25:09Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dca93a09f8d92a54851fabf1eaf268d1cbad2b6d87d1c762e93b8801e7a16a79"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1323830/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T01:25:09Z",
+        "locator": "steam:appdetails.nameJa",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dca93a09f8d92a54851fabf1eaf268d1cbad2b6d87d1c762e93b8801e7a16a79"
+      }
+    }
+  ],
+  "createdAt": "2026-11-09T01:37:56Z",
+  "updatedAt": "2026-11-09T01:37:56Z",
+  "createdByRun": "42544889895"
+}

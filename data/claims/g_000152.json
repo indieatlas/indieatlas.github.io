@@ -1,0 +1,371 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000152",
+  "claims": [
+    {
+      "id": "c_7a07550cecdb7084",
+      "gameId": "g_000152",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3760370/",
+          "retrievedAt": "2026-11-09T01:38:34Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e96122c197aa2a84849b36b8bfdee37f2d05499278f7ff30691b7fdc56c92f3"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:34Z",
+      "createdAt": "2026-11-09T01:38:34Z",
+      "updatedAt": "2026-11-09T01:38:34Z",
+      "lastCheckedAt": "2026-11-09T01:38:34Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 3
+        },
+        "rawText": "3 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_2bf2168cddcece6d",
+      "gameId": "g_000152",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3760370/",
+          "retrievedAt": "2026-11-09T01:38:37Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b9419bd85b0d5e052279de47f963a808ac3a61d13c9ba474c0b41db64bc923d5"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:34Z",
+      "createdAt": "2026-11-09T01:38:34Z",
+      "updatedAt": "2026-11-09T01:38:34Z",
+      "lastCheckedAt": "2026-11-09T01:38:37Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_d8ab4e85d459382a",
+      "gameId": "g_000152",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3760370/",
+          "retrievedAt": "2026-11-09T01:38:34Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e96122c197aa2a84849b36b8bfdee37f2d05499278f7ff30691b7fdc56c92f3"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:34Z",
+      "createdAt": "2026-11-09T01:38:34Z",
+      "updatedAt": "2026-11-09T01:38:34Z",
+      "lastCheckedAt": "2026-11-09T01:38:34Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_83e273533d9dbe37",
+      "gameId": "g_000152",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3760370/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:22:43Z",
+          "quote": "あなたの目標は、各レベルの最後まで到達し、行く手を阻む数々の障害物や難題を避けながらコインを集めることです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e96122c197aa2a84849b36b8bfdee37f2d05499278f7ff30691b7fdc56c92f3"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3760370/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:22:43Z",
+          "quote": "ゲームを進めるにつれて、様々なユニークなサッカーボールのデザインや旗をアンロックして集めることができ、それらを使ってスタイリッシュにサッカーを楽しみながら自分の部屋を飾ることができます！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e96122c197aa2a84849b36b8bfdee37f2d05499278f7ff30691b7fdc56c92f3"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:22:43Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "summary",
+      "value": {
+        "ja": "サッカーボールを蹴って操りながら、障害物や難題が待つ通学路を学校まで進む横スクロールアクション。コインを集めてボールのデザインや旗をアンロックし、自分の部屋を飾る楽しみもある。"
+      }
+    },
+    {
+      "id": "c_411230edf590f0da",
+      "gameId": "g_000152",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://automaton-media.com/articles/interviewsjp/20261108-478098/",
+          "sourceId": "automaton",
+          "articleId": "a_6d9158c4549d2af7",
+          "publishedAt": "2026-11-08T04:00:21Z",
+          "retrievedAt": "2026-11-09T01:22:29Z",
+          "quote": "本作の舞台は日本になっています。",
+          "originKey": "media:automaton-media.com",
+          "fetchHash": "sha256:46624a921eea11c8ad787dda5c00005fa3f779d8a59992851ce49435c40d57a5"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:22:29Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "japan"
+      }
+    },
+    {
+      "id": "c_59bf94fef572f4ba",
+      "gameId": "g_000152",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://automaton-media.com/articles/interviewsjp/20261108-478098/",
+          "sourceId": "automaton",
+          "articleId": "a_6d9158c4549d2af7",
+          "publishedAt": "2026-11-08T04:00:21Z",
+          "retrievedAt": "2026-11-09T01:22:29Z",
+          "quote": "『Kick』は非常にシンプルな横スクロールのゲームです。",
+          "originKey": "media:automaton-media.com",
+          "fetchHash": "sha256:46624a921eea11c8ad787dda5c00005fa3f779d8a59992851ce49435c40d57a5"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:22:29Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "platformer"
+      }
+    },
+    {
+      "id": "c_7cc38149fb094be2",
+      "gameId": "g_000152",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://automaton-media.com/articles/interviewsjp/20261108-478098/",
+          "sourceId": "automaton",
+          "articleId": "a_6d9158c4549d2af7",
+          "publishedAt": "2026-11-08T04:00:21Z",
+          "retrievedAt": "2026-11-09T01:22:29Z",
+          "quote": "物理演算に基づいた動きをするサッカーボールを蹴ってゴールを目指すのが特徴です。",
+          "originKey": "media:automaton-media.com",
+          "fetchHash": "sha256:46624a921eea11c8ad787dda5c00005fa3f779d8a59992851ce49435c40d57a5"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:22:29Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "physics"
+      }
+    },
+    {
+      "id": "c_8241a86810e45a0f",
+      "gameId": "g_000152",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://automaton-media.com/articles/interviewsjp/20261108-478098/",
+          "sourceId": "automaton",
+          "articleId": "a_6d9158c4549d2af7",
+          "publishedAt": "2026-11-08T04:00:21Z",
+          "retrievedAt": "2026-11-09T01:22:29Z",
+          "quote": "通学路の各所には隠された要素もあり、特定の場所にボールをぶつけるなどして見つけていく探索要素もある。",
+          "originKey": "media:automaton-media.com",
+          "fetchHash": "sha256:46624a921eea11c8ad787dda5c00005fa3f779d8a59992851ce49435c40d57a5"
+        }
+      ],
+      "asOf": "2026-11-08",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:22:29Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_aba160f92f119b23",
+      "gameId": "g_000152",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3760370/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:22:43Z",
+          "quote": "プレイヤーは「ザ・キッド」として、冒険に満ちたノスタルジックな旅に出て、学校へ向かいます！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e96122c197aa2a84849b36b8bfdee37f2d05499278f7ff30691b7fdc56c92f3"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:22:43Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_bd48313965ee94c9",
+      "gameId": "g_000152",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3760370/",
+          "retrievedAt": "2026-11-09T01:38:34Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e96122c197aa2a84849b36b8bfdee37f2d05499278f7ff30691b7fdc56c92f3"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:34Z",
+      "createdAt": "2026-11-09T01:38:34Z",
+      "updatedAt": "2026-11-09T01:38:34Z",
+      "lastCheckedAt": "2026-11-09T01:38:34Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3760370/"
+      }
+    },
+    {
+      "id": "c_ddb9ba8378f7b86c",
+      "gameId": "g_000152",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3760370/",
+          "retrievedAt": "2026-11-09T01:38:34Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e96122c197aa2a84849b36b8bfdee37f2d05499278f7ff30691b7fdc56c92f3"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:34Z",
+      "createdAt": "2026-11-09T01:38:34Z",
+      "updatedAt": "2026-11-09T01:38:34Z",
+      "lastCheckedAt": "2026-11-09T01:38:34Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3760370/d5e0d563d85638e59c3f1c58b135782a1b43be20/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Kick のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Shoreline Games"
+        }
+      }
+    }
+  ]
+}

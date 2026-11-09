@@ -16,14 +16,19 @@
     "month": 10,
     "day": 31
   },
-  "time": "11:00〜17:00",
+  "end": {
+    "precision": "day",
+    "year": 2026,
+    "month": 10,
+    "day": 31
+  },
   "location": {
-    "venue": "東京都立産業貿易センター 浜松町館 2・3階展示室",
-    "city": "東京都港区",
+    "venue": "都立産業貿易センター浜松町館",
+    "city": "東京",
     "country": "JP"
   },
   "url": "https://tokyogamedungeon.com/",
-  "summary": "国内の個人・小規模チームが制作したインディーゲームの試遊展示とグッズ頒布を行う、浜松町開催の即売・展示会。",
+  "summary": "2026年10月31日に東京・都立産業貿易センター浜松町館で開催されたインディーゲームの展示イベント。4Gamerが前後編のレポートで会場の作品を紹介した。",
   "image": {
     "path": "media/events/ev_49cacc07f9a6cb70.webp",
     "width": 720,
@@ -32,7 +37,13 @@
     "retrievedAt": "2026-10-27T17:09:30Z",
     "hash": "sha256:dcec78b78209f3018b97de85a1d2602d42d57635c01ef0609b0aaec7b1310c29"
   },
-  "games": [],
+  "games": [
+    "g_000153",
+    "g_000154",
+    "g_000155",
+    "g_000156",
+    "g_000157"
+  ],
   "evidence": [
     {
       "kind": "official",
@@ -40,10 +51,21 @@
       "retrievedAt": "2026-10-27T17:09:03Z",
       "quote": "開催日時 2026年10月31日(土) 11:00〜17:00",
       "originKey": "official:tokyogamedungeon.com"
+    },
+    {
+      "kind": "official",
+      "url": "https://www.4gamer.net/games/991/G999110/20261106043/",
+      "sourceId": "4gamer",
+      "publishedAt": "2026-11-07T04:00:00Z",
+      "retrievedAt": "2026-11-09T01:22:13Z",
+      "quote": "2026年10月31日，東京・都立産業貿易センター浜松町館にて開催された「東京ゲームダンジョン14」。",
+      "originKey": "official:4gamer.net",
+      "fetchHash": "sha256:ff2c8e80b83338661d845c3b08eb21aa6451cb4021f233cf9014669a9f1eee6e"
     }
   ],
+  "recheckAfter": "2026-12-09",
   "createdAt": "2026-10-27T17:09:03Z",
-  "updatedAt": "2026-11-07T10:33:46Z",
+  "updatedAt": "2026-11-09T01:37:56Z",
   "createdBy": "agent",
   "createdByRun": "local-events"
 }

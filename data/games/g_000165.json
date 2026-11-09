@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000165",
+  "status": "candidate",
+  "title": {
+    "display": "Palworld / パルワールド",
+    "original": "Palworld",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "Palworld / パルワールド",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1623730
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "2771110",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://www.pocketpair.jp/palworld",
+  "developerIds": [
+    "dev_000226"
+  ],
+  "publisherIds": [
+    "dev_000226"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1623730/",
+            "retrievedAt": "2026-11-09T01:38:11Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:d30d068e558a9e5cf82db552f1dbac809092c791cda3729c8d19513a4399eeab"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-09T01:38:11Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1623730/",
+        "retrievedAt": "2026-11-09T01:38:11Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d30d068e558a9e5cf82db552f1dbac809092c791cda3729c8d19513a4399eeab"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1623730/",
+        "retrievedAt": "2026-11-09T01:38:11Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d30d068e558a9e5cf82db552f1dbac809092c791cda3729c8d19513a4399eeab"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1623730/",
+        "retrievedAt": "2026-11-09T01:38:11Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d30d068e558a9e5cf82db552f1dbac809092c791cda3729c8d19513a4399eeab"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1623730/",
+        "retrievedAt": "2026-11-09T01:38:11Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d30d068e558a9e5cf82db552f1dbac809092c791cda3729c8d19513a4399eeab"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1623730/",
+        "retrievedAt": "2026-11-09T01:38:11Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d30d068e558a9e5cf82db552f1dbac809092c791cda3729c8d19513a4399eeab"
+      }
+    }
+  ],
+  "createdAt": "2026-11-09T01:38:11Z",
+  "updatedAt": "2026-11-09T01:38:11Z",
+  "createdByRun": "42544889895"
+}

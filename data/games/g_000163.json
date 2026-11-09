@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000163",
+  "status": "candidate",
+  "title": {
+    "display": "Clair Obscur: Expedition 33",
+    "original": "Clair Obscur: Expedition 33",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1903340
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3228520",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "3405480",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "3873750",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4227900",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://www.expedition33.com/",
+  "developerIds": [
+    "dev_000224"
+  ],
+  "publisherIds": [
+    "dev_000225"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-09T01:37:56Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-09T01:37:56Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1903340/",
+        "retrievedAt": "2026-11-09T01:38:02Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7c7ba86444a70dd778a435d2a5f9cf164b90bebb803542a416c86efc7d7225cf"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1903340/",
+        "retrievedAt": "2026-11-09T01:38:02Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7c7ba86444a70dd778a435d2a5f9cf164b90bebb803542a416c86efc7d7225cf"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1903340/",
+        "retrievedAt": "2026-11-09T01:38:02Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7c7ba86444a70dd778a435d2a5f9cf164b90bebb803542a416c86efc7d7225cf"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1903340/",
+        "retrievedAt": "2026-11-09T01:38:02Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7c7ba86444a70dd778a435d2a5f9cf164b90bebb803542a416c86efc7d7225cf"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1903340/",
+        "retrievedAt": "2026-11-09T01:38:02Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7c7ba86444a70dd778a435d2a5f9cf164b90bebb803542a416c86efc7d7225cf"
+      }
+    }
+  ],
+  "createdAt": "2026-11-09T01:38:02Z",
+  "updatedAt": "2026-11-09T01:37:56Z",
+  "createdByRun": "42544889895"
+}

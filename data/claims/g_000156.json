@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000156",
+  "claims": [
+    {
+      "id": "c_1d2a465ba680804e",
+      "gameId": "g_000156",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5129150/",
+          "retrievedAt": "2026-11-09T01:38:52Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d925677831f29cfec52815ff107b0584b95b16ad7473cd1daedb45c2baa4b2ed"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:52Z",
+      "createdAt": "2026-11-09T01:38:52Z",
+      "updatedAt": "2026-11-09T01:38:52Z",
+      "lastCheckedAt": "2026-11-09T01:38:52Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "quarter",
+          "year": 2027,
+          "quarter": 1
+        },
+        "rawText": "Q1 2027"
+      }
+    },
+    {
+      "id": "c_0888ace6f91225d2",
+      "gameId": "g_000156",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5129150/",
+          "retrievedAt": "2026-11-09T01:38:55Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:33d49d207c2c11b3293287ea11b32bbae1ab84b53df18cf6858232316f95d7b1"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:52Z",
+      "createdAt": "2026-11-09T01:38:52Z",
+      "updatedAt": "2026-11-09T01:38:52Z",
+      "lastCheckedAt": "2026-11-09T01:38:55Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_e73ab209e99eb192",
+      "gameId": "g_000156",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5129150/",
+          "retrievedAt": "2026-11-09T01:38:52Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d925677831f29cfec52815ff107b0584b95b16ad7473cd1daedb45c2baa4b2ed"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:52Z",
+      "createdAt": "2026-11-09T01:38:52Z",
+      "updatedAt": "2026-11-09T01:38:52Z",
+      "lastCheckedAt": "2026-11-09T01:38:52Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_68ed573f9cd456b8",
+      "gameId": "g_000156",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5129150/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:22:58Z",
+          "quote": "夢の中で、謎めいたケモ耳少女と命がけのローグライトカードゲーム。役を揃え、カードを強化し、強力な能力を手に入れてボスを倒しましょう。負ければ二度と夢から目覚めることはできません。でも、彼女がそばにいるなら、夢の中に残るのも悪くないのかもしれません。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d925677831f29cfec52815ff107b0584b95b16ad7473cd1daedb45c2baa4b2ed"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:22:58Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "summary",
+      "value": {
+        "ja": "夢の中の因習村を舞台に、ケモ耳の少女タマちゃんと命がけのトランプ勝負を繰り広げるローグライトカードゲーム。ジンラミーを基に役を揃えて「呪い」を減らし、カード強化やルート選択を重ねてボスを目指す。"
+      }
+    },
+    {
+      "id": "c_0c5b1b45572cc297",
+      "gameId": "g_000156",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5129150/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:22:58Z",
+          "quote": "夢の中で、謎めいたケモ耳少女と命がけのローグライトカードゲーム。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d925677831f29cfec52815ff107b0584b95b16ad7473cd1daedb45c2baa4b2ed"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:22:58Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_1297aaf69da4f556",
+      "gameId": "g_000156",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5129150/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:22:58Z",
+          "quote": "でも、彼女がそばにいるなら、夢の中に残るのも悪くないのかもしれません。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d925677831f29cfec52815ff107b0584b95b16ad7473cd1daedb45c2baa4b2ed"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:22:58Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "romance"
+      }
+    },
+    {
+      "id": "c_1b92530e48ef0243",
+      "gameId": "g_000156",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5129150/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:22:58Z",
+          "quote": "負ければ二度と夢から目覚めることはできません。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d925677831f29cfec52815ff107b0584b95b16ad7473cd1daedb45c2baa4b2ed"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:22:58Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "horror"
+      }
+    },
+    {
+      "id": "c_62a7edc4040311dc",
+      "gameId": "g_000156",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5129150/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:22:58Z",
+          "quote": "夢の中で、謎めいたケモ耳少女と命がけのローグライトカードゲーム。役を揃え、カードを強化し、強力な能力を手に入れてボスを倒しましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d925677831f29cfec52815ff107b0584b95b16ad7473cd1daedb45c2baa4b2ed"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:22:58Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "deck-building"
+      }
+    },
+    {
+      "id": "c_aeae69284902bb47",
+      "gameId": "g_000156",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5129150/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:22:58Z",
+          "quote": "夢の中で、謎めいたケモ耳少女と命がけのローグライトカードゲーム。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d925677831f29cfec52815ff107b0584b95b16ad7473cd1daedb45c2baa4b2ed"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:22:58Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_f5c13cc758623fa3",
+      "gameId": "g_000156",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5129150/",
+          "retrievedAt": "2026-11-09T01:38:52Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d925677831f29cfec52815ff107b0584b95b16ad7473cd1daedb45c2baa4b2ed"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:52Z",
+      "createdAt": "2026-11-09T01:38:52Z",
+      "updatedAt": "2026-11-09T01:38:52Z",
+      "lastCheckedAt": "2026-11-09T01:38:52Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5129150/"
+      }
+    },
+    {
+      "id": "c_63bd0b30a0dd6201",
+      "gameId": "g_000156",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5129150/",
+          "retrievedAt": "2026-11-09T01:38:52Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d925677831f29cfec52815ff107b0584b95b16ad7473cd1daedb45c2baa4b2ed"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:52Z",
+      "createdAt": "2026-11-09T01:38:52Z",
+      "updatedAt": "2026-11-09T01:38:52Z",
+      "lastCheckedAt": "2026-11-09T01:38:52Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5129150/7eeca8a7f7b162cd1bad40ce5405099b3dc12124/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "因習村ときめきトランプゲーム のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "作っちゃうおじさん/TUKUCHAU-OJISAN"
+        }
+      }
+    }
+  ]
+}

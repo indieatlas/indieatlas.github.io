@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000168",
+  "claims": [
+    {
+      "id": "c_c28150feda7a0916",
+      "gameId": "g_000168",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2827200/",
+          "retrievedAt": "2026-11-09T01:38:25Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:573fb9612ccba1ac5d7961029c70afe6216a3b7a338817789db26749cd952b0a"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:25Z",
+      "createdAt": "2026-11-09T01:38:25Z",
+      "updatedAt": "2026-11-09T01:38:25Z",
+      "lastCheckedAt": "2026-11-09T01:38:25Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 10,
+          "day": 27
+        },
+        "rawText": "27 Oct, 2025"
+      }
+    },
+    {
+      "id": "c_04a9561d991011bb",
+      "gameId": "g_000168",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2827200/",
+          "retrievedAt": "2026-11-09T01:38:28Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:571b1dc4f88fdce5baf45d1fdc3103c083edc83a64ee02603e3792d8d5c2b408"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:25Z",
+      "createdAt": "2026-11-09T01:38:25Z",
+      "updatedAt": "2026-11-09T01:38:25Z",
+      "lastCheckedAt": "2026-11-09T01:38:28Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_b0afc60ff0cf394d",
+      "gameId": "g_000168",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2827200/",
+          "retrievedAt": "2026-11-09T01:38:25Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:573fb9612ccba1ac5d7961029c70afe6216a3b7a338817789db26749cd952b0a"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:25Z",
+      "createdAt": "2026-11-09T01:38:25Z",
+      "updatedAt": "2026-11-09T01:38:25Z",
+      "lastCheckedAt": "2026-11-09T01:38:25Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_e75c78819fb8a85c",
+      "gameId": "g_000168",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2827200/",
+          "retrievedAt": "2026-11-09T01:38:25Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:573fb9612ccba1ac5d7961029c70afe6216a3b7a338817789db26749cd952b0a"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:25Z",
+      "createdAt": "2026-11-09T01:38:25Z",
+      "updatedAt": "2026-11-09T01:38:25Z",
+      "lastCheckedAt": "2026-11-09T01:38:25Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2827200/"
+      }
+    },
+    {
+      "id": "c_37e234f57ca79332",
+      "gameId": "g_000168",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2827200/",
+          "retrievedAt": "2026-11-09T01:38:25Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:573fb9612ccba1ac5d7961029c70afe6216a3b7a338817789db26749cd952b0a"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:25Z",
+      "createdAt": "2026-11-09T01:38:25Z",
+      "updatedAt": "2026-11-09T01:38:25Z",
+      "lastCheckedAt": "2026-11-09T01:38:25Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2827200/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "ミメシス のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "ReLU Games, Inc."
+        }
+      }
+    }
+  ]
+}

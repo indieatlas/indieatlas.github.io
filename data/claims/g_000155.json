@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000155",
+  "claims": [
+    {
+      "id": "c_8b98887487b0f0c5",
+      "gameId": "g_000155",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4228700/",
+          "retrievedAt": "2026-11-09T01:38:47Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f93b1c052a86b8e75bc1c62a06bd2f87ad4a9cd9571bef83b7485cf1df81cf4b"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:47Z",
+      "createdAt": "2026-11-09T01:38:47Z",
+      "updatedAt": "2026-11-09T01:38:47Z",
+      "lastCheckedAt": "2026-11-09T01:38:47Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "year",
+          "year": 2027
+        },
+        "rawText": "2027"
+      }
+    },
+    {
+      "id": "c_45267ce622c5f186",
+      "gameId": "g_000155",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4228700/",
+          "retrievedAt": "2026-11-09T01:38:50Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f4cc65844873b91dd46d731a112a13c8eaca6098b5037c6e97198a31631318bb"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:47Z",
+      "createdAt": "2026-11-09T01:38:47Z",
+      "updatedAt": "2026-11-09T01:38:47Z",
+      "lastCheckedAt": "2026-11-09T01:38:50Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_ef10e5bddadfa566",
+      "gameId": "g_000155",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4228700/",
+          "retrievedAt": "2026-11-09T01:38:47Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f93b1c052a86b8e75bc1c62a06bd2f87ad4a9cd9571bef83b7485cf1df81cf4b"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:47Z",
+      "createdAt": "2026-11-09T01:38:47Z",
+      "updatedAt": "2026-11-09T01:38:47Z",
+      "lastCheckedAt": "2026-11-09T01:38:47Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_ea53ea9422497bf7",
+      "gameId": "g_000155",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4228700/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:25:12Z",
+          "quote": "崩壊した限界集落を復興する、クラフト×農業×村づくりゲーム。資材集め、料理、農地管理、襲撃イベント、露店経営など多彩な要素で集落を復興しよう！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f93b1c052a86b8e75bc1c62a06bd2f87ad4a9cd9571bef83b7485cf1df81cf4b"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:25:12Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "summary",
+      "value": {
+        "ja": "荒廃した限界集落に一人で乗り込み、木を伐り、鉱石を掘り、畑を耕して村を再建するクラフト×農業×村づくりゲーム。稼いだ資金を村長に納税すると村人が移住し、集落が少しずつ活力を取り戻していく。"
+      }
+    },
+    {
+      "id": "c_13a03863f0819df8",
+      "gameId": "g_000155",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4228700/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:25:12Z",
+          "quote": "崩壊した限界集落を復興する、クラフト×農業×村づくりゲーム。資材集め、料理、農地管理、襲撃イベント、露店経営など多彩な要素で集落を復興しよう！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f93b1c052a86b8e75bc1c62a06bd2f87ad4a9cd9571bef83b7485cf1df81cf4b"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:25:12Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "crafting"
+      }
+    },
+    {
+      "id": "c_282123c0049593ab",
+      "gameId": "g_000155",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4228700/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:25:12Z",
+          "quote": "崩壊した限界集落を復興する、クラフト×農業×村づくりゲーム。資材集め、料理、農地管理、襲撃イベント、露店経営など多彩な要素で集落を復興しよう！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f93b1c052a86b8e75bc1c62a06bd2f87ad4a9cd9571bef83b7485cf1df81cf4b"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:25:12Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "base-building"
+      }
+    },
+    {
+      "id": "c_562881baaae173d8",
+      "gameId": "g_000155",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4228700/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:25:12Z",
+          "quote": "崩壊した限界集落を復興する、クラフト×農業×村づくりゲーム。資材集め、料理、農地管理、襲撃イベント、露店経営など多彩な要素で集落を復興しよう！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f93b1c052a86b8e75bc1c62a06bd2f87ad4a9cd9571bef83b7485cf1df81cf4b"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:25:12Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_ec0fbfde8bc4a7b6",
+      "gameId": "g_000155",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4228700/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:25:12Z",
+          "quote": "崩壊した限界集落を復興する、クラフト×農業×村づくりゲーム。資材集め、料理、農地管理、襲撃イベント、露店経営など多彩な要素で集落を復興しよう！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f93b1c052a86b8e75bc1c62a06bd2f87ad4a9cd9571bef83b7485cf1df81cf4b"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:25:12Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "farming-sim"
+      }
+    },
+    {
+      "id": "c_f5bacbbe080dc283",
+      "gameId": "g_000155",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4228700/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:25:12Z",
+          "quote": "崩壊した限界集落を復興する、クラフト×農業×村づくりゲーム。資材集め、料理、農地管理、襲撃イベント、露店経営など多彩な要素で集落を復興しよう！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f93b1c052a86b8e75bc1c62a06bd2f87ad4a9cd9571bef83b7485cf1df81cf4b"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:25:12Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "fishing"
+      }
+    },
+    {
+      "id": "c_706e5e53b42ea35b",
+      "gameId": "g_000155",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4228700/",
+          "retrievedAt": "2026-11-09T01:38:47Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f93b1c052a86b8e75bc1c62a06bd2f87ad4a9cd9571bef83b7485cf1df81cf4b"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:47Z",
+      "createdAt": "2026-11-09T01:38:47Z",
+      "updatedAt": "2026-11-09T01:38:47Z",
+      "lastCheckedAt": "2026-11-09T01:38:47Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4228700/"
+      }
+    },
+    {
+      "id": "c_3eb9a5c5dcd1963f",
+      "gameId": "g_000155",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4228700/",
+          "retrievedAt": "2026-11-09T01:38:47Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f93b1c052a86b8e75bc1c62a06bd2f87ad4a9cd9571bef83b7485cf1df81cf4b"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:38:47Z",
+      "createdAt": "2026-11-09T01:38:47Z",
+      "updatedAt": "2026-11-09T01:38:47Z",
+      "lastCheckedAt": "2026-11-09T01:38:47Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4228700/881d55cb7948e088a698daac98baa7da8b970486/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "限界集落 のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Software GeNie"
+        }
+      }
+    }
+  ]
+}

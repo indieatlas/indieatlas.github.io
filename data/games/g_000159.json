@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000159",
+  "status": "candidate",
+  "title": {
+    "display": "Goodbye Volcano High",
+    "original": "Goodbye Volcano High",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1310330
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "2570270",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://www.goodbyevolcanohigh.com/",
+  "developerIds": [
+    "dev_000218"
+  ],
+  "publisherIds": [
+    "dev_000218"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1310330/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-09T01:24:45Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:bae487ee91ece6d1f017be00ef3dd23945df828953fbcf40a570ac88441d9121"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-09T01:37:56Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1310330/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T01:24:45Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bae487ee91ece6d1f017be00ef3dd23945df828953fbcf40a570ac88441d9121"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1310330/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T01:24:45Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bae487ee91ece6d1f017be00ef3dd23945df828953fbcf40a570ac88441d9121"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1310330/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T01:24:45Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bae487ee91ece6d1f017be00ef3dd23945df828953fbcf40a570ac88441d9121"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1310330/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T01:24:45Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bae487ee91ece6d1f017be00ef3dd23945df828953fbcf40a570ac88441d9121"
+      }
+    }
+  ],
+  "createdAt": "2026-11-09T01:37:56Z",
+  "updatedAt": "2026-11-09T01:39:05Z",
+  "createdByRun": "42544889895"
+}

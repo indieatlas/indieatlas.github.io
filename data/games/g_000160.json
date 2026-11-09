@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000160",
+  "status": "candidate",
+  "title": {
+    "display": "Until Then",
+    "original": "Until Then",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1574820
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "2296400",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "3902750",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://untilthengame.com/",
+  "developerIds": [
+    "dev_000219"
+  ],
+  "publisherIds": [
+    "dev_000220"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.inside-games.jp/article/2026/11/08/190555.html",
+            "articleId": "a_4ce2e4c04ed52676",
+            "publishedAt": "2026-11-08T08:00:04Z",
+            "retrievedAt": "2026-11-09T01:24:06Z",
+            "locator": "article.games",
+            "originKey": "media:inside-games.jp"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-09T01:37:56Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1574820/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T01:24:57Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4eb260e46ad73598e34871de6b8b2d685a637d74e174c23aa35f66d3a4c878b7"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1574820/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T01:24:57Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4eb260e46ad73598e34871de6b8b2d685a637d74e174c23aa35f66d3a4c878b7"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1574820/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T01:24:57Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4eb260e46ad73598e34871de6b8b2d685a637d74e174c23aa35f66d3a4c878b7"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1574820/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T01:24:57Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4eb260e46ad73598e34871de6b8b2d685a637d74e174c23aa35f66d3a4c878b7"
+      }
+    }
+  ],
+  "createdAt": "2026-11-09T01:37:56Z",
+  "updatedAt": "2026-11-09T01:37:56Z",
+  "createdByRun": "42544889895"
+}

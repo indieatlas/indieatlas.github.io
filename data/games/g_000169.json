@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000169",
+  "status": "candidate",
+  "title": {
+    "display": "Valheim",
+    "original": "Valheim",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 892970
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1620250",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "http://www.valheim.com",
+  "developerIds": [
+    "dev_000231"
+  ],
+  "publisherIds": [
+    "dev_000232"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-09T01:37:56Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-09T01:37:56Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/892970/",
+        "retrievedAt": "2026-11-09T01:38:29Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bf4a53a350840de1730ff43e5f6117da9b2b2a73048fa2bd7563fd124dfcc080"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/892970/",
+        "retrievedAt": "2026-11-09T01:38:29Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bf4a53a350840de1730ff43e5f6117da9b2b2a73048fa2bd7563fd124dfcc080"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/892970/",
+        "retrievedAt": "2026-11-09T01:38:29Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bf4a53a350840de1730ff43e5f6117da9b2b2a73048fa2bd7563fd124dfcc080"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/892970/",
+        "retrievedAt": "2026-11-09T01:38:29Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bf4a53a350840de1730ff43e5f6117da9b2b2a73048fa2bd7563fd124dfcc080"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/892970/",
+        "retrievedAt": "2026-11-09T01:38:29Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bf4a53a350840de1730ff43e5f6117da9b2b2a73048fa2bd7563fd124dfcc080"
+      }
+    }
+  ],
+  "createdAt": "2026-11-09T01:38:29Z",
+  "updatedAt": "2026-11-09T01:37:56Z",
+  "createdByRun": "42544889895"
+}

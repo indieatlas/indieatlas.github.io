@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000159",
+  "claims": [
+    {
+      "id": "c_68f25145838a13b0",
+      "gameId": "g_000159",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1310330/",
+          "retrievedAt": "2026-11-09T01:39:05Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bae487ee91ece6d1f017be00ef3dd23945df828953fbcf40a570ac88441d9121"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:39:05Z",
+      "createdAt": "2026-11-09T01:39:05Z",
+      "updatedAt": "2026-11-09T01:39:05Z",
+      "lastCheckedAt": "2026-11-09T01:39:05Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2023,
+          "month": 8,
+          "day": 29
+        },
+        "rawText": "29 Aug, 2023"
+      }
+    },
+    {
+      "id": "c_ae8f8920d63019ce",
+      "gameId": "g_000159",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1310330/",
+          "retrievedAt": "2026-11-09T01:39:08Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ccc559c189f249edbfa291de59bf4ae9c9bc2ed2f4d691019a9b65f35b112828"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:39:05Z",
+      "createdAt": "2026-11-09T01:39:05Z",
+      "updatedAt": "2026-11-09T01:39:05Z",
+      "lastCheckedAt": "2026-11-09T01:39:08Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_c6ebd467bff86862",
+      "gameId": "g_000159",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1310330/",
+          "retrievedAt": "2026-11-09T01:39:05Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bae487ee91ece6d1f017be00ef3dd23945df828953fbcf40a570ac88441d9121"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:39:05Z",
+      "createdAt": "2026-11-09T01:39:05Z",
+      "updatedAt": "2026-11-09T01:39:05Z",
+      "lastCheckedAt": "2026-11-09T01:39:05Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_0104e2003d469f5f",
+      "gameId": "g_000159",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1310330/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:24:45Z",
+          "quote": "『Goodbye Volcano High』は世界が終わり行く中での「愛」や「変化」をテーマとした、シネマティック・ナラティブアドベンチャー。主人公ファングの高校最後の一年を描いた作品。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bae487ee91ece6d1f017be00ef3dd23945df828953fbcf40a570ac88441d9121"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:24:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "summary",
+      "value": {
+        "ja": "世界の終わりが迫るなか、恐竜の高校生ファングが最後の一年を過ごすシネマティックな物語アドベンチャー。友情や恋愛を育む選択が結末を変え、楽曲を演奏するリズムゲームも織り込む。"
+      }
+    },
+    {
+      "id": "c_31f0068282482e9d",
+      "gameId": "g_000159",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1310330/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:24:45Z",
+          "quote": "『Goodbye Volcano High』は選択によって分岐が起こる、ストーリー主導のシネマティック・アドベンチャー。内面の成長、受け容れる覚悟、コミュニティが持つ力を描く。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bae487ee91ece6d1f017be00ef3dd23945df828953fbcf40a570ac88441d9121"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:24:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_4167e121a9738547",
+      "gameId": "g_000159",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1310330/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:24:45Z",
+          "quote": "仲間との交流を通じてファングの日常を体験。恐竜モチーフのゲーム内SNS、一度きりの選択がファングの生活を彩る。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bae487ee91ece6d1f017be00ef3dd23945df828953fbcf40a570ac88441d9121"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:24:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "animals"
+      }
+    },
+    {
+      "id": "c_7166f3a42db9ef76",
+      "gameId": "g_000159",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1310330/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:24:45Z",
+          "quote": "『Goodbye Volcano High』は世界が終わり行く中での「愛」や「変化」をテーマとした、シネマティック・ナラティブアドベンチャー。主人公ファングの高校最後の一年を描いた作品。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bae487ee91ece6d1f017be00ef3dd23945df828953fbcf40a570ac88441d9121"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:24:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_eba0eab32dcecd3a",
+      "gameId": "g_000159",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1310330/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T01:24:45Z",
+          "quote": "友達、家族、顔見知り、ライバル、そして意中の相手（い、意中の相手！？）との関係を深めていこう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bae487ee91ece6d1f017be00ef3dd23945df828953fbcf40a570ac88441d9121"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:37:56Z",
+      "createdAt": "2026-11-09T01:37:56Z",
+      "updatedAt": "2026-11-09T01:37:56Z",
+      "lastCheckedAt": "2026-11-09T01:24:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42544889895",
+      "field": "tag",
+      "value": {
+        "tagId": "romance"
+      }
+    },
+    {
+      "id": "c_75ec31f9b5da523c",
+      "gameId": "g_000159",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1310330/",
+          "retrievedAt": "2026-11-09T01:39:05Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bae487ee91ece6d1f017be00ef3dd23945df828953fbcf40a570ac88441d9121"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:39:05Z",
+      "createdAt": "2026-11-09T01:39:05Z",
+      "updatedAt": "2026-11-09T01:39:05Z",
+      "lastCheckedAt": "2026-11-09T01:39:05Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1310330/"
+      }
+    },
+    {
+      "id": "c_7b9531e35f6f48bf",
+      "gameId": "g_000159",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1310330/",
+          "retrievedAt": "2026-11-09T01:39:05Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bae487ee91ece6d1f017be00ef3dd23945df828953fbcf40a570ac88441d9121"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:39:05Z",
+      "createdAt": "2026-11-09T01:39:05Z",
+      "updatedAt": "2026-11-09T01:39:05Z",
+      "lastCheckedAt": "2026-11-09T01:39:05Z",
+      "createdBy": "system",
+      "createdByRun": "42544889895",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1310330/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Goodbye Volcano High のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "KO_OP"
+        }
+      }
+    }
+  ]
+}
