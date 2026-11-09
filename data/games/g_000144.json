@@ -15,7 +15,8 @@
     }
   ],
   "externalIds": {
-    "steamAppId": 1203620
+    "steamAppId": 1203620,
+    "igdbId": 248643
   },
   "associatedApps": [
     {
@@ -79,6 +80,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/enshrouded",
+        "retrievedAt": "2026-11-09T01:03:15Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "store",
@@ -113,6 +124,6 @@
     }
   ],
   "createdAt": "2026-11-08T02:52:09Z",
-  "updatedAt": "2026-11-08T02:52:09Z",
+  "updatedAt": "2026-11-09T01:03:15Z",
   "createdByRun": "42438991793"
 }

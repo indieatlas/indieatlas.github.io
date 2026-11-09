@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 3675060
+    "steamAppId": 3675060,
+    "igdbId": 344743
   },
   "associatedApps": [],
   "developerIds": [
@@ -66,6 +67,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/goblin-gnome-horn",
+        "retrievedAt": "2026-11-09T01:03:15Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -91,6 +102,6 @@
     }
   ],
   "createdAt": "2026-11-07T19:01:34Z",
-  "updatedAt": "2026-11-07T19:01:34Z",
+  "updatedAt": "2026-11-09T01:03:15Z",
   "createdByRun": "42402321312"
 }

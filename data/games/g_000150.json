@@ -15,7 +15,8 @@
     }
   ],
   "externalIds": {
-    "steamAppId": 1049590
+    "steamAppId": 1049590,
+    "igdbId": 135842
   },
   "associatedApps": [
     {
@@ -80,6 +81,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/eternal-return--1",
+        "retrievedAt": "2026-11-09T01:03:15Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "store",
@@ -114,6 +125,6 @@
     }
   ],
   "createdAt": "2026-11-08T02:52:36Z",
-  "updatedAt": "2026-11-08T02:52:07Z",
+  "updatedAt": "2026-11-09T01:03:15Z",
   "createdByRun": "42438991793"
 }

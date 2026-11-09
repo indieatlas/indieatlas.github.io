@@ -15,7 +15,8 @@
     }
   ],
   "externalIds": {
-    "steamAppId": 2914150
+    "steamAppId": 2914150,
+    "igdbId": 302655
   },
   "associatedApps": [
     {
@@ -133,6 +134,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/yunyun-syndrome-rhythm-psychosis",
+        "retrievedAt": "2026-11-09T01:03:15Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -158,6 +169,6 @@
     }
   ],
   "createdAt": "2026-11-07T19:01:34Z",
-  "updatedAt": "2026-11-07T19:02:48Z",
+  "updatedAt": "2026-11-09T01:03:15Z",
   "createdByRun": "42402321312"
 }

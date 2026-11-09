@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 5160800
+    "steamAppId": 5160800,
+    "igdbId": 415859
   },
   "associatedApps": [
     {
@@ -73,6 +74,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/find-the-needle",
+        "retrievedAt": "2026-11-09T01:03:15Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "store",
@@ -108,6 +119,6 @@
   ],
   "createdAt": "2026-11-07T19:01:36Z",
   "addedAt": "2026-11-08",
-  "updatedAt": "2026-11-08T02:52:07Z",
+  "updatedAt": "2026-11-09T01:03:15Z",
   "createdByRun": "42402321312"
 }

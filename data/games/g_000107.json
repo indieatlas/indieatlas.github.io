@@ -15,7 +15,8 @@
     }
   ],
   "externalIds": {
-    "steamAppId": 2861730
+    "steamAppId": 2861730,
+    "igdbId": 301330
   },
   "associatedApps": [
     {
@@ -76,6 +77,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/food-devils",
+        "retrievedAt": "2026-11-09T01:03:15Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -102,6 +113,6 @@
   ],
   "createdAt": "2026-11-06T10:20:57Z",
   "addedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T10:20:57Z",
+  "updatedAt": "2026-11-09T01:03:15Z",
   "createdByRun": "42199738593"
 }

@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 3026450
+    "steamAppId": 3026450,
+    "igdbId": 314090
   },
   "associatedApps": [
     {
@@ -84,6 +85,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/deadly-days-roadtrip",
+        "retrievedAt": "2026-11-09T01:03:15Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -110,6 +121,6 @@
   ],
   "createdAt": "2026-11-04T04:40:33Z",
   "addedAt": "2026-11-08",
-  "updatedAt": "2026-11-07T19:01:34Z",
+  "updatedAt": "2026-11-09T01:03:15Z",
   "createdByRun": "local-20261104-132342-research"
 }

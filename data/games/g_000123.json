@@ -15,7 +15,8 @@
     }
   ],
   "externalIds": {
-    "steamAppId": 3103780
+    "steamAppId": 3103780,
+    "igdbId": 333105
   },
   "associatedApps": [
     {
@@ -98,6 +99,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/drapline",
+        "retrievedAt": "2026-11-09T01:03:15Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -123,6 +134,6 @@
     }
   ],
   "createdAt": "2026-11-07T19:01:34Z",
-  "updatedAt": "2026-11-07T19:02:44Z",
+  "updatedAt": "2026-11-09T01:03:15Z",
   "createdByRun": "42402321312"
 }

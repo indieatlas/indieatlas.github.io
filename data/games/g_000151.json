@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 1621690
+    "steamAppId": 1621690,
+    "igdbId": 152127
   },
   "associatedApps": [
     {
@@ -72,6 +73,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/core-keeper",
+        "retrievedAt": "2026-11-09T01:03:15Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -95,6 +106,6 @@
     }
   ],
   "createdAt": "2026-11-08T02:52:41Z",
-  "updatedAt": "2026-11-08T02:52:07Z",
+  "updatedAt": "2026-11-09T01:03:15Z",
   "createdByRun": "42438991793"
 }

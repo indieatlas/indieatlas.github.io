@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 5377460
+    "steamAppId": 5377460,
+    "igdbId": 427902
   },
   "associatedApps": [],
   "officialUrl": "https://www.wazanggames.com",
@@ -75,6 +76,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/upshot",
+        "retrievedAt": "2026-11-09T01:03:15Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -101,6 +112,6 @@
   ],
   "createdAt": "2026-11-06T10:20:57Z",
   "addedAt": "2026-11-06",
-  "updatedAt": "2026-11-06T10:20:57Z",
+  "updatedAt": "2026-11-09T01:03:15Z",
   "createdByRun": "42199738593"
 }

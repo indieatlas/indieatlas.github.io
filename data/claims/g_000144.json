@@ -42,6 +42,76 @@
       }
     },
     {
+      "id": "c_974b4e2b8afc0f50",
+      "gameId": "g_000144",
+      "scope": {
+        "platform": "ps5",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/enshrouded",
+          "retrievedAt": "2026-11-09T01:03:15Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:03:15Z",
+      "createdAt": "2026-11-09T01:03:15Z",
+      "updatedAt": "2026-11-09T01:03:15Z",
+      "lastCheckedAt": "2026-11-09T01:03:15Z",
+      "createdBy": "system",
+      "createdByRun": "42543439932",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 10,
+          "day": 15
+        },
+        "rawText": "Oct 15, 2026"
+      }
+    },
+    {
+      "id": "c_0eb40be49b085630",
+      "gameId": "g_000144",
+      "scope": {
+        "platform": "xbox-series",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/enshrouded",
+          "retrievedAt": "2026-11-09T01:03:15Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:03:15Z",
+      "createdAt": "2026-11-09T01:03:15Z",
+      "updatedAt": "2026-11-09T01:03:15Z",
+      "lastCheckedAt": "2026-11-09T01:03:15Z",
+      "createdBy": "system",
+      "createdByRun": "42543439932",
+      "field": "release",
+      "value": {
+        "status": "tba",
+        "rawText": "TBD"
+      }
+    },
+    {
       "id": "c_038fa1435601ed93",
       "gameId": "g_000144",
       "scope": {},
@@ -135,6 +205,35 @@
       }
     },
     {
+      "id": "c_87b58092fbb4b6bd",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/enshrouded",
+          "retrievedAt": "2026-11-09T01:03:15Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:03:15Z",
+      "createdAt": "2026-11-09T01:03:15Z",
+      "updatedAt": "2026-11-09T01:03:15Z",
+      "lastCheckedAt": "2026-11-09T01:03:15Z",
+      "createdBy": "system",
+      "createdByRun": "42543439932",
+      "field": "storeLink",
+      "value": {
+        "store": "playstation-store",
+        "url": "https://store.playstation.com/ja-jp/concept/10016067"
+      }
+    },
+    {
       "id": "c_f61f09eb6f7ffb50",
       "gameId": "g_000144",
       "scope": {},
@@ -168,6 +267,302 @@
         "usage": {
           "basis": "store-asset",
           "credit": "Keen Games GmbH"
+        }
+      }
+    },
+    {
+      "id": "c_3c16166082f55473",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/enshrouded",
+          "retrievedAt": "2026-11-09T01:03:15Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:03:15Z",
+      "createdAt": "2026-11-09T01:03:15Z",
+      "updatedAt": "2026-11-09T01:03:15Z",
+      "lastCheckedAt": "2026-11-09T01:03:15Z",
+      "createdBy": "system",
+      "createdByRun": "42543439932",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc11ani.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Enshrouded~霧の王国~ のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_46dde7e5ddd9afee",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/enshrouded",
+          "retrievedAt": "2026-11-09T01:03:15Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:03:15Z",
+      "createdAt": "2026-11-09T01:03:15Z",
+      "updatedAt": "2026-11-09T01:03:15Z",
+      "lastCheckedAt": "2026-11-09T01:03:15Z",
+      "createdBy": "system",
+      "createdByRun": "42543439932",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc11anm.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Enshrouded~霧の王国~ のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_70f096a8ab066de6",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/enshrouded",
+          "retrievedAt": "2026-11-09T01:03:15Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:03:15Z",
+      "createdAt": "2026-11-09T01:03:15Z",
+      "updatedAt": "2026-11-09T01:03:15Z",
+      "lastCheckedAt": "2026-11-09T01:03:15Z",
+      "createdBy": "system",
+      "createdByRun": "42543439932",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc11anh.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Enshrouded~霧の王国~ のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_a01d964dcf4ad7bd",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/enshrouded",
+          "retrievedAt": "2026-11-09T01:03:15Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:03:15Z",
+      "createdAt": "2026-11-09T01:03:15Z",
+      "updatedAt": "2026-11-09T01:03:15Z",
+      "lastCheckedAt": "2026-11-09T01:03:15Z",
+      "createdBy": "system",
+      "createdByRun": "42543439932",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc11ang.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Enshrouded~霧の王国~ のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_adbf967b15441cd4",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/enshrouded",
+          "retrievedAt": "2026-11-09T01:03:15Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:03:15Z",
+      "createdAt": "2026-11-09T01:03:15Z",
+      "updatedAt": "2026-11-09T01:03:15Z",
+      "lastCheckedAt": "2026-11-09T01:03:15Z",
+      "createdBy": "system",
+      "createdByRun": "42543439932",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc11dps.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Enshrouded~霧の王国~ のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_b4c59cb62e61cb67",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/enshrouded",
+          "retrievedAt": "2026-11-09T01:03:15Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:03:15Z",
+      "createdAt": "2026-11-09T01:03:15Z",
+      "updatedAt": "2026-11-09T01:03:15Z",
+      "lastCheckedAt": "2026-11-09T01:03:15Z",
+      "createdBy": "system",
+      "createdByRun": "42543439932",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc11ank.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Enshrouded~霧の王国~ のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_dac837df4f144d36",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/enshrouded",
+          "retrievedAt": "2026-11-09T01:03:15Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:03:15Z",
+      "createdAt": "2026-11-09T01:03:15Z",
+      "updatedAt": "2026-11-09T01:03:15Z",
+      "lastCheckedAt": "2026-11-09T01:03:15Z",
+      "createdBy": "system",
+      "createdByRun": "42543439932",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc11anj.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Enshrouded~霧の王国~ のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_fbc29da698652859",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/enshrouded",
+          "retrievedAt": "2026-11-09T01:03:15Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T01:03:15Z",
+      "createdAt": "2026-11-09T01:03:15Z",
+      "updatedAt": "2026-11-09T01:03:15Z",
+      "lastCheckedAt": "2026-11-09T01:03:15Z",
+      "createdBy": "system",
+      "createdByRun": "42543439932",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc11anl.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Enshrouded~霧の王国~ のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
         }
       }
     }

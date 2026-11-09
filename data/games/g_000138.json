@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 3296060
+    "steamAppId": 3296060,
+    "igdbId": 347671
   },
   "associatedApps": [
     {
@@ -85,6 +86,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/escape-academy-2-back-2-school",
+        "retrievedAt": "2026-11-09T01:03:15Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -110,6 +121,6 @@
     }
   ],
   "createdAt": "2026-11-08T02:52:07Z",
-  "updatedAt": "2026-11-08T02:53:03Z",
+  "updatedAt": "2026-11-09T01:03:15Z",
   "createdByRun": "42438991793"
 }

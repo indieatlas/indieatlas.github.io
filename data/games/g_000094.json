@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 2231020
+    "steamAppId": 2231020,
+    "igdbId": 347635
   },
   "associatedApps": [],
   "developerIds": [
@@ -64,6 +65,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/chronicles-medieval",
+        "retrievedAt": "2026-11-09T01:03:15Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -90,6 +101,6 @@
   ],
   "createdAt": "2026-11-04T04:40:33Z",
   "addedAt": "2026-11-04",
-  "updatedAt": "2026-11-04T04:40:33Z",
+  "updatedAt": "2026-11-09T01:03:15Z",
   "createdByRun": "local-20261104-132342-research"
 }

@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 4001890
+    "steamAppId": 4001890,
+    "igdbId": 378170
   },
   "associatedApps": [
     {
@@ -68,6 +69,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/how-to-fish",
+        "retrievedAt": "2026-11-09T01:03:15Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "store",
@@ -103,6 +114,6 @@
   ],
   "createdAt": "2026-11-07T19:01:59Z",
   "addedAt": "2026-11-08",
-  "updatedAt": "2026-11-08T02:52:07Z",
+  "updatedAt": "2026-11-09T01:03:15Z",
   "createdByRun": "42402321312"
 }

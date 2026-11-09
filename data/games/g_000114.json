@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 4173010
+    "steamAppId": 4173010,
+    "igdbId": 414846
   },
   "associatedApps": [],
   "developerIds": [
@@ -65,6 +66,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/ninja-jajamaru-yokai-night-parade",
+        "retrievedAt": "2026-11-09T01:03:15Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -91,6 +102,6 @@
   ],
   "createdAt": "2026-11-07T03:03:20Z",
   "addedAt": "2026-11-07",
-  "updatedAt": "2026-11-07T03:03:20Z",
+  "updatedAt": "2026-11-09T01:03:15Z",
   "createdByRun": "42331309638"
 }

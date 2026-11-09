@@ -15,7 +15,8 @@
     }
   ],
   "externalIds": {
-    "steamAppId": 2622000
+    "steamAppId": 2622000,
+    "igdbId": 270039
   },
   "associatedApps": [],
   "developerIds": [
@@ -66,6 +67,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/astral-party",
+        "retrievedAt": "2026-11-09T01:03:15Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -90,6 +101,6 @@
   ],
   "createdAt": "2026-11-07T19:02:03Z",
   "addedAt": "2026-11-08",
-  "updatedAt": "2026-11-08T02:52:07Z",
+  "updatedAt": "2026-11-09T01:03:15Z",
   "createdByRun": "42402321312"
 }

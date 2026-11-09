@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 4537280
+    "steamAppId": 4537280,
+    "igdbId": 422402
   },
   "associatedApps": [
     {
@@ -75,6 +76,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/rulehouse",
+        "retrievedAt": "2026-11-09T01:03:15Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -100,6 +111,6 @@
     }
   ],
   "createdAt": "2026-11-08T02:52:07Z",
-  "updatedAt": "2026-11-08T02:53:12Z",
+  "updatedAt": "2026-11-09T01:03:15Z",
   "createdByRun": "42438991793"
 }

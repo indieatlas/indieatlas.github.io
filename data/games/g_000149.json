@@ -15,7 +15,8 @@
     }
   ],
   "externalIds": {
-    "steamAppId": 3883570
+    "steamAppId": 3883570,
+    "igdbId": 359277
   },
   "associatedApps": [],
   "officialUrl": "https://ludogram.io/",
@@ -68,6 +69,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/invokyr",
+        "retrievedAt": "2026-11-09T01:03:15Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "store",
@@ -102,6 +113,6 @@
     }
   ],
   "createdAt": "2026-11-08T02:52:32Z",
-  "updatedAt": "2026-11-08T02:52:07Z",
+  "updatedAt": "2026-11-09T01:03:15Z",
   "createdByRun": "42438991793"
 }
