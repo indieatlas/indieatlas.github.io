@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000171",
+  "status": "published",
+  "title": {
+    "display": "Milki Delivery：ミルキィの牛乳屋さん",
+    "original": "Milki Delivery",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "ミルキィの牛乳屋さん",
+      "lang": "ja",
+      "kind": "abbreviation"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 4259360
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4694360",
+      "kind": "demo",
+      "title": "Milki Delivery Demo"
+    },
+    {
+      "store": "steam",
+      "id": "5433500",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000235",
+    "dev_000236"
+  ],
+  "publisherIds": [
+    "dev_000237",
+    "dev_000238"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "small-team",
+        "note": "開発者2名による制作であることがストアの開発チーム紹介に書かれている",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4259360/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-09T02:51:43Z",
+            "quote": "こんにちは！開発者のBlibloopとDootです。私たちは『おいでませ、みなみ通りへ！』を完成させたあと、もっと管理要素が少なく、ひとつの世界やそこで暮らす人々のことを深く知っていくゲームを制作したいと考えました。",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:13ca752007101002774e30e0c09b5be58a23192143faae4d4500daac11d524aa"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-09T03:07:11Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "media",
+        "url": "https://news.denfaminicogamer.jp/news/261109l",
+        "sourceId": "denfaminicogamer",
+        "publishedAt": "2026-11-09T01:55:29Z",
+        "retrievedAt": "2026-11-09T02:51:37Z",
+        "quote": "自転車に乗って「ビン牛乳」を届けるゲーム『ミルキィの牛乳屋さん』11月18日にリリース。",
+        "originKey": "media:denfaminicogamer.jp",
+        "fetchHash": "sha256:65defe6486cb235336819708f7d3ebe5faa879fec4e97bb5f2302db639debce9"
+      }
+    },
+    {
+      "field": "associatedApps",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4694360/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:51:49Z",
+        "locator": "steam:appdetails.type",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:28d801f8fdced1bf621dab9d7c79b2dffca61985f20c62607c936f7878d87dd9"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4259360/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:51:43Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:13ca752007101002774e30e0c09b5be58a23192143faae4d4500daac11d524aa"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4259360/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:51:43Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:13ca752007101002774e30e0c09b5be58a23192143faae4d4500daac11d524aa"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4259360/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:51:43Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:13ca752007101002774e30e0c09b5be58a23192143faae4d4500daac11d524aa"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4259360/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:51:43Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:13ca752007101002774e30e0c09b5be58a23192143faae4d4500daac11d524aa"
+      }
+    }
+  ],
+  "createdAt": "2026-11-09T03:07:11Z",
+  "addedAt": "2026-11-09",
+  "updatedAt": "2026-11-09T03:07:11Z",
+  "createdByRun": "42552417088"
+}

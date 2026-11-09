@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000180",
+  "status": "candidate",
+  "title": {
+    "display": "Brick Buddies",
+    "original": "Brick Buddies",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4901540
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000253"
+  ],
+  "publisherIds": [
+    "dev_000254"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-09T03:07:11Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-09T03:07:11Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4901540/",
+        "retrievedAt": "2026-11-09T03:07:13Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2f02ec1e763ad782cf39044ce2d4f508f6774796e1e7f15e5965b5c1bf0b148e"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4901540/",
+        "retrievedAt": "2026-11-09T03:07:13Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2f02ec1e763ad782cf39044ce2d4f508f6774796e1e7f15e5965b5c1bf0b148e"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4901540/",
+        "retrievedAt": "2026-11-09T03:07:13Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2f02ec1e763ad782cf39044ce2d4f508f6774796e1e7f15e5965b5c1bf0b148e"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4901540/",
+        "retrievedAt": "2026-11-09T03:07:13Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:2f02ec1e763ad782cf39044ce2d4f508f6774796e1e7f15e5965b5c1bf0b148e"
+      }
+    }
+  ],
+  "createdAt": "2026-11-09T03:07:13Z",
+  "updatedAt": "2026-11-09T03:07:11Z",
+  "createdByRun": "42552417088"
+}

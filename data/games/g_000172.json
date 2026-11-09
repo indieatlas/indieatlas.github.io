@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000172",
+  "status": "published",
+  "title": {
+    "display": "Idle Slayer",
+    "original": "Idle Slayer",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1353300
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000239"
+  ],
+  "publisherIds": [
+    "dev_000239"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1353300/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-09T02:52:54Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:83c92f27500b7340114b4753c03dbe58c858866cfa64335affb614929b9aa9f0"
+          },
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1353300/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-09T02:52:54Z",
+            "locator": "steam:appdetails.publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:83c92f27500b7340114b4753c03dbe58c858866cfa64335affb614929b9aa9f0"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-09T03:07:11Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1353300/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:52:54Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:83c92f27500b7340114b4753c03dbe58c858866cfa64335affb614929b9aa9f0"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1353300/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:52:54Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:83c92f27500b7340114b4753c03dbe58c858866cfa64335affb614929b9aa9f0"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1353300/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:52:54Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:83c92f27500b7340114b4753c03dbe58c858866cfa64335affb614929b9aa9f0"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1353300/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:52:54Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:83c92f27500b7340114b4753c03dbe58c858866cfa64335affb614929b9aa9f0"
+      }
+    }
+  ],
+  "createdAt": "2026-11-09T03:07:11Z",
+  "addedAt": "2026-11-09",
+  "updatedAt": "2026-11-09T03:07:11Z",
+  "createdByRun": "42552417088"
+}

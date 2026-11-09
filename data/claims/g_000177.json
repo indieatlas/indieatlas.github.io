@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000177",
+  "claims": [
+    {
+      "id": "c_7aa09bb1604fbc8f",
+      "gameId": "g_000177",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2894960/",
+          "retrievedAt": "2026-11-09T03:07:49Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:322d3dbedc2a287a3fe278c6495e8a3d70ffb8fc843b22193d627c35fa5ce1b0"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:49Z",
+      "createdAt": "2026-11-09T03:07:49Z",
+      "updatedAt": "2026-11-09T03:07:49Z",
+      "lastCheckedAt": "2026-11-09T03:07:49Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2024,
+          "month": 7,
+          "day": 5
+        },
+        "rawText": "5 Jul, 2024"
+      }
+    },
+    {
+      "id": "c_75a4281d84fdea2c",
+      "gameId": "g_000177",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2894960/",
+          "retrievedAt": "2026-11-09T03:07:49Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:322d3dbedc2a287a3fe278c6495e8a3d70ffb8fc843b22193d627c35fa5ce1b0"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:49Z",
+      "createdAt": "2026-11-09T03:07:49Z",
+      "updatedAt": "2026-11-09T03:07:49Z",
+      "lastCheckedAt": "2026-11-09T03:07:49Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2024,
+          "month": 7,
+          "day": 5
+        },
+        "rawText": "5 Jul, 2024"
+      }
+    },
+    {
+      "id": "c_f5a4655ebd934989",
+      "gameId": "g_000177",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2894960/",
+          "retrievedAt": "2026-11-09T03:07:52Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:579f18674c1d36806c3c4a3fa8b1bac0ffa627acd8bf5800df19c16f29330078"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:49Z",
+      "createdAt": "2026-11-09T03:07:49Z",
+      "updatedAt": "2026-11-09T03:07:49Z",
+      "lastCheckedAt": "2026-11-09T03:07:52Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_7ae8cb44374e339b",
+      "gameId": "g_000177",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2894960/",
+          "retrievedAt": "2026-11-09T03:07:49Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:322d3dbedc2a287a3fe278c6495e8a3d70ffb8fc843b22193d627c35fa5ce1b0"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:49Z",
+      "createdAt": "2026-11-09T03:07:49Z",
+      "updatedAt": "2026-11-09T03:07:49Z",
+      "lastCheckedAt": "2026-11-09T03:07:49Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_f91565a48c07ea75",
+      "gameId": "g_000177",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2894960/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:57:02Z",
+          "quote": "あなたの恋人を名乗る知らない女性。でも、ただのストーカーにしては色々なことを知りすぎている。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:322d3dbedc2a287a3fe278c6495e8a3d70ffb8fc843b22193d627c35fa5ce1b0"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:57:02Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "summary",
+      "value": {
+        "ja": "恋人を名乗る見知らぬ女性が突然自宅を訪ねてくる。インターホン越しの会話で手掛かりを集め、プレイヤーが自由入力した推理をAIがニュアンスで判定して物語が分岐する推理アドベンチャー。"
+      }
+    },
+    {
+      "id": "c_220f64c8ca906d46",
+      "gameId": "g_000177",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2894960/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:57:02Z",
+          "quote": "あなたが入力した推理が\"だいたいのニュアンス\"で判定されるKawaii Future Mysteryです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:322d3dbedc2a287a3fe278c6495e8a3d70ffb8fc843b22193d627c35fa5ce1b0"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:57:02Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_aedd3437c726cbf5",
+      "gameId": "g_000177",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2894960/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:57:02Z",
+          "quote": "あなたの恋人を名乗る知らない女性。でも、ただのストーカーにしては色々なことを知りすぎている。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:322d3dbedc2a287a3fe278c6495e8a3d70ffb8fc843b22193d627c35fa5ce1b0"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:57:02Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "romance"
+      }
+    },
+    {
+      "id": "c_b3f551f05d26e67f",
+      "gameId": "g_000177",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2894960/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:57:02Z",
+          "quote": "インターフォン越しに話を合わせながら、あなたの考える彼女の正体に辿り着きましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:322d3dbedc2a287a3fe278c6495e8a3d70ffb8fc843b22193d627c35fa5ce1b0"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:57:02Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_b8de098d36914e09",
+      "gameId": "g_000177",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2894960/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:57:02Z",
+          "quote": "対話を通して、あなたにとっての彼女の正体に辿り着きましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:322d3dbedc2a287a3fe278c6495e8a3d70ffb8fc843b22193d627c35fa5ce1b0"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:57:02Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_764e8980ecd61a15",
+      "gameId": "g_000177",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2894960/",
+          "retrievedAt": "2026-11-09T03:07:49Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:322d3dbedc2a287a3fe278c6495e8a3d70ffb8fc843b22193d627c35fa5ce1b0"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:49Z",
+      "createdAt": "2026-11-09T03:07:49Z",
+      "updatedAt": "2026-11-09T03:07:49Z",
+      "lastCheckedAt": "2026-11-09T03:07:49Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2894960/"
+      }
+    },
+    {
+      "id": "c_2a14b31372cc1f59",
+      "gameId": "g_000177",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2894960/",
+          "retrievedAt": "2026-11-09T03:07:49Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:322d3dbedc2a287a3fe278c6495e8a3d70ffb8fc843b22193d627c35fa5ce1b0"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:49Z",
+      "createdAt": "2026-11-09T03:07:49Z",
+      "updatedAt": "2026-11-09T03:07:49Z",
+      "lastCheckedAt": "2026-11-09T03:07:49Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2894960/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Inverted Angel のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "SCIKA"
+        }
+      }
+    }
+  ]
+}

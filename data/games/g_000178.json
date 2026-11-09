@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000178",
+  "status": "candidate",
+  "title": {
+    "display": "マーセナリーズグレイス 黒い羽根と黄金の右腕",
+    "original": "Mercenaries Grace",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "マーセナリーズグレイス",
+      "lang": "ja",
+      "kind": "abbreviation"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 5150750
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000245",
+    "dev_000246"
+  ],
+  "publisherIds": [
+    "dev_000246"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5150750/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-09T02:56:59Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:91da50378d91753c28aeef8ec513956dcb63c95a500501b233d88a13e164ba4a"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-09T03:07:11Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "media",
+        "url": "https://www.gamespark.jp/article/2026/11/03/174422.html",
+        "sourceId": "gamespark",
+        "publishedAt": "2026-11-02T22:30:02Z",
+        "retrievedAt": "2026-11-09T02:56:54Z",
+        "quote": "『マーセナリーズグレイス 黒い羽根と黄金の右腕』はPS5/ニンテンドースイッチ/PC（Steam）にて発売予定です。",
+        "originKey": "media:gamespark.jp",
+        "fetchHash": "sha256:7f2003db272701c80ad8c66db2a77cdcd413c452f0419255c7f64e28f071f3e2"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5150750/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:56:59Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:91da50378d91753c28aeef8ec513956dcb63c95a500501b233d88a13e164ba4a"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5150750/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:56:59Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:91da50378d91753c28aeef8ec513956dcb63c95a500501b233d88a13e164ba4a"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5150750/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:56:59Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:91da50378d91753c28aeef8ec513956dcb63c95a500501b233d88a13e164ba4a"
+      }
+    }
+  ],
+  "createdAt": "2026-11-09T03:07:11Z",
+  "updatedAt": "2026-11-09T03:07:11Z",
+  "createdByRun": "42552417088"
+}

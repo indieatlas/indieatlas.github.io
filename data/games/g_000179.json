@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000179",
+  "status": "candidate",
+  "title": {
+    "display": "You Are Empty: Absolute Edition",
+    "original": "You Are Empty: Absolute Edition",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4760480
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5080090",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000247",
+    "dev_000248",
+    "dev_000249",
+    "dev_000250"
+  ],
+  "publisherIds": [
+    "dev_000251",
+    "dev_000252"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.gamingonlinux.com/2026/10/alternate-history-1950s-soviet-kyiv-shooter-you-are-empty-absolute-edition-released/",
+            "articleId": "a_2944d4d13b4705ab",
+            "publishedAt": "2026-10-28T11:22:58Z",
+            "retrievedAt": "2026-11-09T02:57:24Z",
+            "locator": "article.games",
+            "originKey": "media:gamingonlinux.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-09T03:07:11Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4760480/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:57:31Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c997b80ef7f80a6a40adc7416c9d528e9a9b7416a9bf68b5fdaab6d4877ab9c5"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4760480/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:57:31Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c997b80ef7f80a6a40adc7416c9d528e9a9b7416a9bf68b5fdaab6d4877ab9c5"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4760480/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:57:31Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c997b80ef7f80a6a40adc7416c9d528e9a9b7416a9bf68b5fdaab6d4877ab9c5"
+      }
+    }
+  ],
+  "createdAt": "2026-11-09T03:07:11Z",
+  "updatedAt": "2026-11-09T03:07:11Z",
+  "createdByRun": "42552417088"
+}

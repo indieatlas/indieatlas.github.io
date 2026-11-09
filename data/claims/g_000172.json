@@ -1,0 +1,402 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000172",
+  "claims": [
+    {
+      "id": "c_1be9bf6346b375d6",
+      "gameId": "g_000172",
+      "scope": {
+        "platform": "linux",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353300/",
+          "retrievedAt": "2026-11-09T03:07:27Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:83c92f27500b7340114b4753c03dbe58c858866cfa64335affb614929b9aa9f0"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:27Z",
+      "createdAt": "2026-11-09T03:07:27Z",
+      "updatedAt": "2026-11-09T03:07:27Z",
+      "lastCheckedAt": "2026-11-09T03:07:27Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2020,
+          "month": 12,
+          "day": 21
+        },
+        "rawText": "21 Dec, 2020"
+      }
+    },
+    {
+      "id": "c_719ed1e595b2fc9f",
+      "gameId": "g_000172",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353300/",
+          "retrievedAt": "2026-11-09T03:07:27Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:83c92f27500b7340114b4753c03dbe58c858866cfa64335affb614929b9aa9f0"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:27Z",
+      "createdAt": "2026-11-09T03:07:27Z",
+      "updatedAt": "2026-11-09T03:07:27Z",
+      "lastCheckedAt": "2026-11-09T03:07:27Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2020,
+          "month": 12,
+          "day": 21
+        },
+        "rawText": "21 Dec, 2020"
+      }
+    },
+    {
+      "id": "c_1a3a855fd40eee1e",
+      "gameId": "g_000172",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353300/",
+          "retrievedAt": "2026-11-09T03:07:27Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:83c92f27500b7340114b4753c03dbe58c858866cfa64335affb614929b9aa9f0"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:27Z",
+      "createdAt": "2026-11-09T03:07:27Z",
+      "updatedAt": "2026-11-09T03:07:27Z",
+      "lastCheckedAt": "2026-11-09T03:07:27Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2020,
+          "month": 12,
+          "day": 21
+        },
+        "rawText": "21 Dec, 2020"
+      }
+    },
+    {
+      "id": "c_6ebd53c5696e5524",
+      "gameId": "g_000172",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353300/",
+          "retrievedAt": "2026-11-09T03:07:30Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:20f6e09099dbea4e77537596695a5ae83e12a571df347321e4e806080c061b7d"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:27Z",
+      "createdAt": "2026-11-09T03:07:27Z",
+      "updatedAt": "2026-11-09T03:07:27Z",
+      "lastCheckedAt": "2026-11-09T03:07:30Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_21a36d2318db2629",
+      "gameId": "g_000172",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353300/",
+          "retrievedAt": "2026-11-09T03:07:27Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:83c92f27500b7340114b4753c03dbe58c858866cfa64335affb614929b9aa9f0"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:27Z",
+      "createdAt": "2026-11-09T03:07:27Z",
+      "updatedAt": "2026-11-09T03:07:27Z",
+      "lastCheckedAt": "2026-11-09T03:07:27Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_15eb965ff802cb7c",
+      "gameId": "g_000172",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353300/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:52:54Z",
+          "quote": "Explore countless dimensions, collect souls, unlock powerful upgrades, craft powerful gear, defeat epic bosses, and enjoy a deep idle RPG with active and offline progression.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:83c92f27500b7340114b4753c03dbe58c858866cfa64335affb614929b9aa9f0"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:52:54Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "summary",
+      "value": {
+        "ja": "何も持たないスレイヤーとして始まり、次元を巡ってソウルを集め、スキルツリーや装備のクラフトで成長していく放置型RPG。アクティブとオフラインの両方で進行し、ミニゲームや村の探索も用意されている。"
+      }
+    },
+    {
+      "id": "c_5dca719b330bec22",
+      "gameId": "g_000172",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353300/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:52:54Z",
+          "quote": "Explore countless dimensions, collect souls, unlock powerful upgrades",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:83c92f27500b7340114b4753c03dbe58c858866cfa64335affb614929b9aa9f0"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:52:54Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_9ddcaf0876f4b70e",
+      "gameId": "g_000172",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353300/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:52:54Z",
+          "quote": "Explore freely, interact with characters, uncover secrets, and follow a story that continues to expand with new updates.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:83c92f27500b7340114b4753c03dbe58c858866cfa64335affb614929b9aa9f0"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:52:54Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_c456a9953f846fc9",
+      "gameId": "g_000172",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353300/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:52:54Z",
+          "quote": "Gather materials to craft increasingly powerful items and obtain Divinities that can completely transform your gameplay experience.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:83c92f27500b7340114b4753c03dbe58c858866cfa64335affb614929b9aa9f0"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:52:54Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "crafting"
+      }
+    },
+    {
+      "id": "c_c47a3a2bf8604e71",
+      "gameId": "g_000172",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353300/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:52:54Z",
+          "quote": "enjoy a deep idle RPG with active and offline progression",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:83c92f27500b7340114b4753c03dbe58c858866cfa64335affb614929b9aa9f0"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:52:54Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "rpg"
+      }
+    },
+    {
+      "id": "c_3f88c4b190d43f97",
+      "gameId": "g_000172",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353300/",
+          "retrievedAt": "2026-11-09T03:07:27Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:83c92f27500b7340114b4753c03dbe58c858866cfa64335affb614929b9aa9f0"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:27Z",
+      "createdAt": "2026-11-09T03:07:27Z",
+      "updatedAt": "2026-11-09T03:07:27Z",
+      "lastCheckedAt": "2026-11-09T03:07:27Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1353300/"
+      }
+    },
+    {
+      "id": "c_617324da57320bbb",
+      "gameId": "g_000172",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1353300/",
+          "retrievedAt": "2026-11-09T03:07:27Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:83c92f27500b7340114b4753c03dbe58c858866cfa64335affb614929b9aa9f0"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:27Z",
+      "createdAt": "2026-11-09T03:07:27Z",
+      "updatedAt": "2026-11-09T03:07:27Z",
+      "lastCheckedAt": "2026-11-09T03:07:27Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1353300/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Idle Slayer のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Pablo Leban"
+        }
+      }
+    }
+  ]
+}

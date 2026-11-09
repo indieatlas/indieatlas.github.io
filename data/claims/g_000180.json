@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000180",
+  "claims": [
+    {
+      "id": "c_799ae2a02be9c297",
+      "gameId": "g_000180",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4901540/",
+          "retrievedAt": "2026-11-09T03:07:13Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2f02ec1e763ad782cf39044ce2d4f508f6774796e1e7f15e5965b5c1bf0b148e"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:13Z",
+      "createdAt": "2026-11-09T03:07:13Z",
+      "updatedAt": "2026-11-09T03:07:13Z",
+      "lastCheckedAt": "2026-11-09T03:07:13Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 8
+        },
+        "rawText": "8 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_851890260e9e9845",
+      "gameId": "g_000180",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4901540/",
+          "retrievedAt": "2026-11-09T03:07:16Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d1736ff6c9e6d82a50543ed1bcf4b494e9e1eae1675f4adb8447cf4aa38df185"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:13Z",
+      "createdAt": "2026-11-09T03:07:13Z",
+      "updatedAt": "2026-11-09T03:07:13Z",
+      "lastCheckedAt": "2026-11-09T03:07:16Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_23ef53279ee0cf58",
+      "gameId": "g_000180",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4901540/",
+          "retrievedAt": "2026-11-09T03:07:13Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2f02ec1e763ad782cf39044ce2d4f508f6774796e1e7f15e5965b5c1bf0b148e"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:13Z",
+      "createdAt": "2026-11-09T03:07:13Z",
+      "updatedAt": "2026-11-09T03:07:13Z",
+      "lastCheckedAt": "2026-11-09T03:07:13Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_cef2b59f0fd90de3",
+      "gameId": "g_000180",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4901540/",
+          "retrievedAt": "2026-11-09T03:07:13Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2f02ec1e763ad782cf39044ce2d4f508f6774796e1e7f15e5965b5c1bf0b148e"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:13Z",
+      "createdAt": "2026-11-09T03:07:13Z",
+      "updatedAt": "2026-11-09T03:07:13Z",
+      "lastCheckedAt": "2026-11-09T03:07:13Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4901540/"
+      }
+    },
+    {
+      "id": "c_c31f4374912309c1",
+      "gameId": "g_000180",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4901540/",
+          "retrievedAt": "2026-11-09T03:07:13Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2f02ec1e763ad782cf39044ce2d4f508f6774796e1e7f15e5965b5c1bf0b148e"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:13Z",
+      "createdAt": "2026-11-09T03:07:13Z",
+      "updatedAt": "2026-11-09T03:07:13Z",
+      "lastCheckedAt": "2026-11-09T03:07:13Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4901540/45650fc36212b56784e565f5891b12670fca8bd7/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Brick Buddies のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "BunnyhopHome"
+        }
+      }
+    }
+  ]
+}

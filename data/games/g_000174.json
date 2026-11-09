@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000174",
+  "status": "candidate",
+  "title": {
+    "display": "Figure Me Out",
+    "original": "Figure Me Out",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5313470
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5382540",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000241"
+  ],
+  "publisherIds": [
+    "dev_000241"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5313470/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-09T02:55:30Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:ecd843c55425e7f08e1ffbfe82b76354c27ea9b15b04ea874001530b93291697"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-09T03:07:11Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5313470/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:55:30Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ecd843c55425e7f08e1ffbfe82b76354c27ea9b15b04ea874001530b93291697"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5313470/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:55:30Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ecd843c55425e7f08e1ffbfe82b76354c27ea9b15b04ea874001530b93291697"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5313470/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:55:30Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ecd843c55425e7f08e1ffbfe82b76354c27ea9b15b04ea874001530b93291697"
+      }
+    }
+  ],
+  "createdAt": "2026-11-09T03:07:11Z",
+  "updatedAt": "2026-11-09T03:07:36Z",
+  "createdByRun": "42552417088"
+}

@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000177",
+  "status": "candidate",
+  "title": {
+    "display": "Inverted Angel",
+    "original": "Inverted Angel",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 2894960
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3192400",
+      "kind": "soundtrack",
+      "title": "Inverted Angel Soundtrack"
+    },
+    {
+      "store": "steam",
+      "id": "4612670",
+      "kind": "other",
+      "title": "Inverted Angel 朝焼けに足跡をとかして"
+    }
+  ],
+  "officialUrl": "https://inverted-angel.com/",
+  "developerIds": [
+    "dev_000244"
+  ],
+  "publisherIds": [
+    "dev_000244"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/2894960/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-09T02:57:02Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:322d3dbedc2a287a3fe278c6495e8a3d70ffb8fc843b22193d627c35fa5ce1b0"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-09T03:07:11Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "associatedApps",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4612670/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:57:18Z",
+        "quote": "ゲーム『Inverted Angel』制作者SCIKAによる掌編と解説をまとめた書籍『朝焼けに足跡をとかして』の電子書籍版です。",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ce50c7e0fb907860cfd34a10d1d039d8d54d6c496fed35f1c2460fc7b8a966fc"
+      }
+    },
+    {
+      "field": "associatedApps",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3192400/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:57:25Z",
+        "quote": "『Inverted Angel』本編に収録されているSCIKA作編曲BGMのサウンドトラックです。",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5e51b5bb26a98bfd2b3db7d10bef80aa0557a0cd4ca37fc8dcf7f00c0a0fc033"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2894960/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:57:02Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:322d3dbedc2a287a3fe278c6495e8a3d70ffb8fc843b22193d627c35fa5ce1b0"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2894960/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:57:02Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:322d3dbedc2a287a3fe278c6495e8a3d70ffb8fc843b22193d627c35fa5ce1b0"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2894960/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:57:02Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:322d3dbedc2a287a3fe278c6495e8a3d70ffb8fc843b22193d627c35fa5ce1b0"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2894960/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:57:02Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:322d3dbedc2a287a3fe278c6495e8a3d70ffb8fc843b22193d627c35fa5ce1b0"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2894960/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-09T02:57:02Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:322d3dbedc2a287a3fe278c6495e8a3d70ffb8fc843b22193d627c35fa5ce1b0"
+      }
+    }
+  ],
+  "createdAt": "2026-11-09T03:07:11Z",
+  "updatedAt": "2026-11-09T03:07:11Z",
+  "createdByRun": "42552417088"
+}

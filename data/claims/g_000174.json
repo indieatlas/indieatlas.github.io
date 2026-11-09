@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000174",
+  "claims": [
+    {
+      "id": "c_58e2a3ed6e20b8c3",
+      "gameId": "g_000174",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5313470/",
+          "retrievedAt": "2026-11-09T03:07:36Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ecd843c55425e7f08e1ffbfe82b76354c27ea9b15b04ea874001530b93291697"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:36Z",
+      "createdAt": "2026-11-09T03:07:36Z",
+      "updatedAt": "2026-11-09T03:07:36Z",
+      "lastCheckedAt": "2026-11-09T03:07:36Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 2
+        },
+        "rawText": "2 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_cefaf66c375885c6",
+      "gameId": "g_000174",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5313470/",
+          "retrievedAt": "2026-11-09T03:07:39Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d0febe4ab8d50b484e5cd7145bde252dd63d13c2804a4de72aae8e37e26c0e62"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:36Z",
+      "createdAt": "2026-11-09T03:07:36Z",
+      "updatedAt": "2026-11-09T03:07:36Z",
+      "lastCheckedAt": "2026-11-09T03:07:39Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_1d76ff54dcd187bd",
+      "gameId": "g_000174",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5313470/",
+          "retrievedAt": "2026-11-09T03:07:36Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ecd843c55425e7f08e1ffbfe82b76354c27ea9b15b04ea874001530b93291697"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:36Z",
+      "createdAt": "2026-11-09T03:07:36Z",
+      "updatedAt": "2026-11-09T03:07:36Z",
+      "lastCheckedAt": "2026-11-09T03:07:36Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "online-pvp"
+        ]
+      }
+    },
+    {
+      "id": "c_f72896817fafab43",
+      "gameId": "g_000174",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5313470/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:55:30Z",
+          "quote": "相手の額に書かれた数字を入力して倒す、マルチプレイヤーFPS。自分の数字を読まれる前に、相手の数字を読み取ろう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ecd843c55425e7f08e1ffbfe82b76354c27ea9b15b04ea874001530b93291697"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:55:30Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "summary",
+      "value": {
+        "ja": "相手の額に表示された数字を読み取り、入力して倒すマルチプレイFPS。フラッシュバンやスモークなどのガジェットで相手の視界を妨害し、最大20人で撃ち合う。"
+      }
+    },
+    {
+      "id": "c_1b6eb468cbf2455e",
+      "gameId": "g_000174",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5313470/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:55:30Z",
+          "quote": "相手の額に書かれた数字を入力して倒す、マルチプレイヤーFPS。自分の数字を読まれる前に、相手の数字を読み取ろう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ecd843c55425e7f08e1ffbfe82b76354c27ea9b15b04ea874001530b93291697"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:55:30Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "shooter"
+      }
+    },
+    {
+      "id": "c_5b38ee789b0dbf22",
+      "gameId": "g_000174",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5313470/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:55:30Z",
+          "quote": "動き回りながら、誰がこちらを見ているかにも注意。焦る場面でも、さっき見た数字を忘れずに。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ecd843c55425e7f08e1ffbfe82b76354c27ea9b15b04ea874001530b93291697"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:55:30Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "tense"
+      }
+    },
+    {
+      "id": "c_e168dedfed4a42aa",
+      "gameId": "g_000174",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5313470/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:55:30Z",
+          "quote": "読め。打ち込め。倒せ。 相手の額をしっかり捉え、そこに書かれた数字を入力して倒そう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ecd843c55425e7f08e1ffbfe82b76354c27ea9b15b04ea874001530b93291697"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:55:30Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_b0591935dfbd9ce7",
+      "gameId": "g_000174",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5313470/",
+          "retrievedAt": "2026-11-09T03:07:36Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ecd843c55425e7f08e1ffbfe82b76354c27ea9b15b04ea874001530b93291697"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:36Z",
+      "createdAt": "2026-11-09T03:07:36Z",
+      "updatedAt": "2026-11-09T03:07:36Z",
+      "lastCheckedAt": "2026-11-09T03:07:36Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5313470/"
+      }
+    },
+    {
+      "id": "c_0e698842626275dc",
+      "gameId": "g_000174",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5313470/",
+          "retrievedAt": "2026-11-09T03:07:36Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ecd843c55425e7f08e1ffbfe82b76354c27ea9b15b04ea874001530b93291697"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:36Z",
+      "createdAt": "2026-11-09T03:07:36Z",
+      "updatedAt": "2026-11-09T03:07:36Z",
+      "lastCheckedAt": "2026-11-09T03:07:36Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5313470/2501fdac2bb79ccecc260783360aff70ae781e69/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Figure Me Out のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Solo Groove Games"
+        }
+      }
+    }
+  ]
+}

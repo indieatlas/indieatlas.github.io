@@ -97,11 +97,12 @@
         }
       ],
       "asOf": "2026-11-09",
-      "status": "adopted",
-      "statusReason": "highest-rank",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersededBy": "c_abf89ad741933c58",
       "adoptedAt": "2026-11-09T01:03:15Z",
       "createdAt": "2026-11-09T01:03:15Z",
-      "updatedAt": "2026-11-09T01:03:15Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
       "lastCheckedAt": "2026-11-09T01:03:15Z",
       "createdBy": "system",
       "createdByRun": "42543439932",
@@ -109,6 +110,48 @@
       "value": {
         "status": "tba",
         "rawText": "TBD"
+      }
+    },
+    {
+      "id": "c_abf89ad741933c58",
+      "gameId": "g_000144",
+      "scope": {
+        "platform": "xbox-series",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://enshrouded.com/en-US/faq",
+          "publishedAt": "2026-11-09",
+          "retrievedAt": "2026-11-09T02:44:19Z",
+          "quote": "Xbox X|S is planned for Spring 2027.",
+          "originKey": "official:enshrouded.com",
+          "fetchHash": "sha256:cde9a230cec4d276e7173e595f714d5b6e8e298101e0df02e4287850c1ed513c"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_0eb40be49b085630"
+      ],
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:44:19Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "season",
+          "year": 2027,
+          "season": "spring"
+        },
+        "rawText": "Spring 2027"
       }
     },
     {
@@ -172,6 +215,276 @@
           "single",
           "online-coop"
         ]
+      }
+    },
+    {
+      "id": "c_bfbe5995f0939ab4",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1203620/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:43:55Z",
+          "quote": "エンバーベール王国を飲み込み、腐敗をもたらす霧「シュラウド」に立ち向かおう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a4534a7bfd86740e5404d2d183236375e38282bb9d6ceeb3c5cb50c021c6845c"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:43:55Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "summary",
+      "value": {
+        "ja": "エンバーベール王国を覆う腐敗した霧「シュラウド」に立ち向かう、ソロ・協力プレイ対応のサバイバルアクションRPG。地形を改造できるボクセル建築で拠点を築き、探索や狩り、農業、釣りで生き抜きながら、自分だけのヒーローを育てる。"
+      }
+    },
+    {
+      "id": "c_47ed33e48fd2b3f6",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1203620/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:43:55Z",
+          "quote": "自然の恵みで生き抜こう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a4534a7bfd86740e5404d2d183236375e38282bb9d6ceeb3c5cb50c021c6845c"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:43:55Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "survival"
+      }
+    },
+    {
+      "id": "c_4f6a3d6fee306663",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1203620/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:43:55Z",
+          "quote": "explore a handcrafted world full of secrets, forge your hero your way, and build anything, anywhere in a fully terraformable land.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a4534a7bfd86740e5404d2d183236375e38282bb9d6ceeb3c5cb50c021c6845c"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:43:55Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "open-world"
+      }
+    },
+    {
+      "id": "c_59b3113c7aa79712",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1203620/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:43:55Z",
+          "quote": "ボクセルベースの建築システムにより、自由にこの世界を自分だけの家にすることができる。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a4534a7bfd86740e5404d2d183236375e38282bb9d6ceeb3c5cb50c021c6845c"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:43:55Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "base-building"
+      }
+    },
+    {
+      "id": "c_68885f30df733701",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1203620/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:43:55Z",
+          "quote": "秘密に満ちた緻密に作り込まれた世界を探索し",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a4534a7bfd86740e5404d2d183236375e38282bb9d6ceeb3c5cb50c021c6845c"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:43:55Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_74369cd222077c91",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1203620/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:43:55Z",
+          "quote": "Enshrouded is a solo and co-op survival action RPG where your freedom and creativity come first.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a4534a7bfd86740e5404d2d183236375e38282bb9d6ceeb3c5cb50c021c6845c"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:43:55Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_88e8fdc81903be65",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1203620/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:43:55Z",
+          "quote": "Enshrouded is a solo and co-op survival action RPG where your freedom and creativity come first.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a4534a7bfd86740e5404d2d183236375e38282bb9d6ceeb3c5cb50c021c6845c"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:43:55Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "action-rpg"
+      }
+    },
+    {
+      "id": "c_9869775811e00d82",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1203620/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:43:55Z",
+          "quote": "新たなレシピや装備がアンロックされていく。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a4534a7bfd86740e5404d2d183236375e38282bb9d6ceeb3c5cb50c021c6845c"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:43:55Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "crafting"
+      }
+    },
+    {
+      "id": "c_db6724845b6f6d09",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1203620/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:43:55Z",
+          "quote": "あなたは、滅びた王国の最後の希望として目を覚ます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a4534a7bfd86740e5404d2d183236375e38282bb9d6ceeb3c5cb50c021c6845c"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:43:55Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
       }
     },
     {

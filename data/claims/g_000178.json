@@ -1,0 +1,391 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000178",
+  "claims": [
+    {
+      "id": "c_a59f8b44838cb1de",
+      "gameId": "g_000178",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5150750/",
+          "retrievedAt": "2026-11-09T03:07:54Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:91da50378d91753c28aeef8ec513956dcb63c95a500501b233d88a13e164ba4a"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:54Z",
+      "createdAt": "2026-11-09T03:07:54Z",
+      "updatedAt": "2026-11-09T03:07:54Z",
+      "lastCheckedAt": "2026-11-09T03:07:54Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "year",
+          "year": 2026
+        },
+        "rawText": "2026"
+      }
+    },
+    {
+      "id": "c_f86e99b3f5ef278e",
+      "gameId": "g_000178",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5150750/",
+          "retrievedAt": "2026-11-09T03:07:57Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3888ef776e08203b75513a7ed25d7948c0a6cf67fc2747b025df6b23dc13ffc4"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:54Z",
+      "createdAt": "2026-11-09T03:07:54Z",
+      "updatedAt": "2026-11-09T03:07:54Z",
+      "lastCheckedAt": "2026-11-09T03:07:57Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_853d2293738658e1",
+      "gameId": "g_000178",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5150750/",
+          "retrievedAt": "2026-11-09T03:07:54Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:91da50378d91753c28aeef8ec513956dcb63c95a500501b233d88a13e164ba4a"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:54Z",
+      "createdAt": "2026-11-09T03:07:54Z",
+      "updatedAt": "2026-11-09T03:07:54Z",
+      "lastCheckedAt": "2026-11-09T03:07:54Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_ec0637f016de2e3a",
+      "gameId": "g_000178",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5150750/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:56:59Z",
+          "quote": "「マーセナリーズグレイス」はファンタジー世界を舞台にしたタクティカルシミュレーションRPGです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:91da50378d91753c28aeef8ec513956dcb63c95a500501b233d88a13e164ba4a"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5150750/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:56:59Z",
+          "quote": "戦闘は高低差のあるクォータビューのマップで行われ、正面・背後・横方向で変わる戦闘結果、味方キャラの立ち位置による援護効果など戦略性の高さが特徴です。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:91da50378d91753c28aeef8ec513956dcb63c95a500501b233d88a13e164ba4a"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:56:59Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "summary",
+      "value": {
+        "ja": "ファンタジー世界を舞台にしたタクティカルシミュレーションRPG。高低差のあるクォータビューのマップで、攻撃する方向や味方の立ち位置による援護効果を見極めて戦う。『マーセナリーズサーガ』シリーズ8作目にあたる。"
+      }
+    },
+    {
+      "id": "c_102fb5cf6be0ddc4",
+      "gameId": "g_000178",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5150750/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:56:59Z",
+          "quote": "「マーセナリーズグレイス」はファンタジー世界を舞台にしたタクティカルシミュレーションRPGです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:91da50378d91753c28aeef8ec513956dcb63c95a500501b233d88a13e164ba4a"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:56:59Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "rpg"
+      }
+    },
+    {
+      "id": "c_2c5d1cfd002ff3a4",
+      "gameId": "g_000178",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5150750/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:56:59Z",
+          "quote": "プレイヤー側と敵側のキャラは、将棋やチェスのように交互に1キャラずつ行動をする一手交代制となります。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:91da50378d91753c28aeef8ec513956dcb63c95a500501b233d88a13e164ba4a"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:56:59Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "turn-based"
+      }
+    },
+    {
+      "id": "c_3729491fc5392afe",
+      "gameId": "g_000178",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5150750/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:56:59Z",
+          "quote": "「マーセナリーズグレイス」はファンタジー世界を舞台にしたタクティカルシミュレーションRPGです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:91da50378d91753c28aeef8ec513956dcb63c95a500501b233d88a13e164ba4a"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:56:59Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_6165e9aa83e11b81",
+      "gameId": "g_000178",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5150750/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:56:59Z",
+          "quote": "若き傭兵は明日を目指して羽ばたく！鉄の義手と望まれぬ女王の物語！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:91da50378d91753c28aeef8ec513956dcb63c95a500501b233d88a13e164ba4a"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:56:59Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_765f4fc1c84b8e56",
+      "gameId": "g_000178",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5150750/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:56:59Z",
+          "quote": "戦闘は高低差のあるクォータビューのマップで行われ、正面・背後・横方向で変わる戦闘結果、味方キャラの立ち位置による援護効果など戦略性の高さが特徴です。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:91da50378d91753c28aeef8ec513956dcb63c95a500501b233d88a13e164ba4a"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:56:59Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "strategy"
+      }
+    },
+    {
+      "id": "c_974361b4644f0ac9",
+      "gameId": "g_000178",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5150750/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-09T02:56:59Z",
+          "quote": "本作では、戦士/盗賊/神官/魔術師といった大枠を超えた8系統のクラス「ラダークラス」というシステムになります。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:91da50378d91753c28aeef8ec513956dcb63c95a500501b233d88a13e164ba4a"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:11Z",
+      "createdAt": "2026-11-09T03:07:11Z",
+      "updatedAt": "2026-11-09T03:07:11Z",
+      "lastCheckedAt": "2026-11-09T02:56:59Z",
+      "createdBy": "llm",
+      "createdByRun": "42552417088",
+      "field": "tag",
+      "value": {
+        "tagId": "magic"
+      }
+    },
+    {
+      "id": "c_2b3931e3e36aeee5",
+      "gameId": "g_000178",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5150750/",
+          "retrievedAt": "2026-11-09T03:07:54Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:91da50378d91753c28aeef8ec513956dcb63c95a500501b233d88a13e164ba4a"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:54Z",
+      "createdAt": "2026-11-09T03:07:54Z",
+      "updatedAt": "2026-11-09T03:07:54Z",
+      "lastCheckedAt": "2026-11-09T03:07:54Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5150750/"
+      }
+    },
+    {
+      "id": "c_beddb65f75351f6a",
+      "gameId": "g_000178",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5150750/",
+          "retrievedAt": "2026-11-09T03:07:54Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:91da50378d91753c28aeef8ec513956dcb63c95a500501b233d88a13e164ba4a"
+        }
+      ],
+      "asOf": "2026-11-09",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-09T03:07:54Z",
+      "createdAt": "2026-11-09T03:07:54Z",
+      "updatedAt": "2026-11-09T03:07:54Z",
+      "lastCheckedAt": "2026-11-09T03:07:54Z",
+      "createdBy": "system",
+      "createdByRun": "42552417088",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5150750/fb405c38052bb7c115d503eac31a2dd75caf6f0d/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Mercenaries Grace のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "RideonJapan"
+        }
+      }
+    }
+  ]
+}
