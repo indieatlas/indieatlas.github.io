@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000181",
+  "claims": [
+    {
+      "id": "c_57e99ec6e9f29ee9",
+      "gameId": "g_000181",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5455760/",
+          "retrievedAt": "2026-11-10T04:57:24Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb1a8d2bf0ee3c48883c64afb50209fa439dee5acb81855edeac2ade963d3bdd"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:24Z",
+      "createdAt": "2026-11-10T04:57:24Z",
+      "updatedAt": "2026-11-10T04:57:24Z",
+      "lastCheckedAt": "2026-11-10T04:57:24Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "year",
+          "year": 2027
+        },
+        "rawText": "2027"
+      }
+    },
+    {
+      "id": "c_0fc8dc7d672371c3",
+      "gameId": "g_000181",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5455760/",
+          "retrievedAt": "2026-11-10T04:57:27Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d9c31ff07bdde0c96a8b7a20d1eb853cf8720a6d7f0ffdd5f03df471305b958c"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:24Z",
+      "createdAt": "2026-11-10T04:57:24Z",
+      "updatedAt": "2026-11-10T04:57:24Z",
+      "lastCheckedAt": "2026-11-10T04:57:27Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "no",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_3ba71688c60fdd65",
+      "gameId": "g_000181",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5455760/",
+          "retrievedAt": "2026-11-10T04:57:24Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb1a8d2bf0ee3c48883c64afb50209fa439dee5acb81855edeac2ade963d3bdd"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:24Z",
+      "createdAt": "2026-11-10T04:57:24Z",
+      "updatedAt": "2026-11-10T04:57:24Z",
+      "lastCheckedAt": "2026-11-10T04:57:24Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_623ec491bc06b2d8",
+      "gameId": "g_000181",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5455760/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:44:39Z",
+          "quote": "Action roguelite meets tower defense: the swarm and fog threaten your base. Build turrets by day, fight at night as a small robot.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb1a8d2bf0ee3c48883c64afb50209fa439dee5acb81855edeac2ade963d3bdd"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:44:39Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "summary",
+      "value": {
+        "ja": "昼にタレットや中継器を配置して防衛網を築き、夜は小さなロボットを操作して群れと戦うアクションローグライトとタワーディフェンスの融合作。倒した敵が落とす光の燃料「Lumen」を原子炉へ運び、霧に蝕まれる拠点の明かりを守る。"
+      }
+    },
+    {
+      "id": "c_6f97c3bb421547e8",
+      "gameId": "g_000181",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5455760/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:44:39Z",
+          "quote": "Take control of a small robot and face the swarm in an action roguelite blending tower defense and base building.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb1a8d2bf0ee3c48883c64afb50209fa439dee5acb81855edeac2ade963d3bdd"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:44:39Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_a69390b8858505c5",
+      "gameId": "g_000181",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5455760/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:44:39Z",
+          "quote": "Place turrets, cover vulnerable approaches, and extend your network with relays.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb1a8d2bf0ee3c48883c64afb50209fa439dee5acb81855edeac2ade963d3bdd"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:44:39Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "strategy"
+      }
+    },
+    {
+      "id": "c_b82780ab78293331",
+      "gameId": "g_000181",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5455760/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:44:39Z",
+          "quote": "Aim, fire and dodge alongside your turrets. Protect the reactor and bring Lumen from fallen enemies back to it to keep the light on.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb1a8d2bf0ee3c48883c64afb50209fa439dee5acb81855edeac2ade963d3bdd"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:44:39Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_e5e38238aebf06ae",
+      "gameId": "g_000181",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5455760/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:44:39Z",
+          "quote": "Day has no timer: prepare your defenses at your own pace, then start the night when you're ready to put them to the test.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb1a8d2bf0ee3c48883c64afb50209fa439dee5acb81855edeac2ade963d3bdd"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:44:39Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "base-building"
+      }
+    },
+    {
+      "id": "c_9bc679ce4659e3e5",
+      "gameId": "g_000181",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5455760/",
+          "retrievedAt": "2026-11-10T04:57:24Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb1a8d2bf0ee3c48883c64afb50209fa439dee5acb81855edeac2ade963d3bdd"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:24Z",
+      "createdAt": "2026-11-10T04:57:24Z",
+      "updatedAt": "2026-11-10T04:57:24Z",
+      "lastCheckedAt": "2026-11-10T04:57:24Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5455760/"
+      }
+    },
+    {
+      "id": "c_309b8a718a8e0385",
+      "gameId": "g_000181",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5455760/",
+          "retrievedAt": "2026-11-10T04:57:24Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb1a8d2bf0ee3c48883c64afb50209fa439dee5acb81855edeac2ade963d3bdd"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:24Z",
+      "createdAt": "2026-11-10T04:57:24Z",
+      "updatedAt": "2026-11-10T04:57:24Z",
+      "lastCheckedAt": "2026-11-10T04:57:24Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5455760/912c2f656426fd837a28cd66b560882f990052ca/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Lumen Keeper のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Pelleteuse Gaming"
+        }
+      }
+    }
+  ]
+}

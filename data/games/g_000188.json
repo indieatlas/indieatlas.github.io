@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000188",
+  "status": "candidate",
+  "title": {
+    "display": "ROB RUN",
+    "original": "ROB RUN",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4262460
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000264"
+  ],
+  "publisherIds": [
+    "dev_000264"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4262460/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-10T04:48:45Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:99dc99cf4f394af9873627b30859da9d673103b9cb33a82c151a115dc4fa92d6"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-10T04:57:00Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4262460/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:48:45Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:99dc99cf4f394af9873627b30859da9d673103b9cb33a82c151a115dc4fa92d6"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4262460/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:48:45Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:99dc99cf4f394af9873627b30859da9d673103b9cb33a82c151a115dc4fa92d6"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4262460/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:48:45Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:99dc99cf4f394af9873627b30859da9d673103b9cb33a82c151a115dc4fa92d6"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4262460/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:48:45Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:99dc99cf4f394af9873627b30859da9d673103b9cb33a82c151a115dc4fa92d6"
+      }
+    }
+  ],
+  "createdAt": "2026-11-10T04:57:00Z",
+  "updatedAt": "2026-11-10T04:57:00Z",
+  "createdByRun": "42757239487"
+}

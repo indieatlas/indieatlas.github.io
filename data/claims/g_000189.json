@@ -1,0 +1,423 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000189",
+  "claims": [
+    {
+      "id": "c_5e57562a8d59808c",
+      "gameId": "g_000189",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4183770/",
+          "retrievedAt": "2026-11-10T04:58:00Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:92edbd94909299a6acbfff1fb3df372b6266830c0e5918d1b5e46c91b2fab0e0"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:58:00Z",
+      "createdAt": "2026-11-10T04:58:00Z",
+      "updatedAt": "2026-11-10T04:58:00Z",
+      "lastCheckedAt": "2026-11-10T04:58:00Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 10,
+          "day": 8
+        },
+        "rawText": "8 Oct, 2026"
+      }
+    },
+    {
+      "id": "c_27c8a4bca2a009f0",
+      "gameId": "g_000189",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4183770/",
+          "retrievedAt": "2026-11-10T04:58:00Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:92edbd94909299a6acbfff1fb3df372b6266830c0e5918d1b5e46c91b2fab0e0"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:58:00Z",
+      "createdAt": "2026-11-10T04:58:00Z",
+      "updatedAt": "2026-11-10T04:58:00Z",
+      "lastCheckedAt": "2026-11-10T04:58:00Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 10,
+          "day": 8
+        },
+        "rawText": "8 Oct, 2026"
+      }
+    },
+    {
+      "id": "c_b033b7c89c4375f4",
+      "gameId": "g_000189",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4183770/",
+          "retrievedAt": "2026-11-10T04:58:03Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:59161cddfc65f8915bb12240a955417a0b160bca9a089f9bcca7790c5a3f5a42"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:58:00Z",
+      "createdAt": "2026-11-10T04:58:00Z",
+      "updatedAt": "2026-11-10T04:58:00Z",
+      "lastCheckedAt": "2026-11-10T04:58:03Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_017d46d1243a427d",
+      "gameId": "g_000189",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4183770/",
+          "retrievedAt": "2026-11-10T04:58:00Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:92edbd94909299a6acbfff1fb3df372b6266830c0e5918d1b5e46c91b2fab0e0"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:58:00Z",
+      "createdAt": "2026-11-10T04:58:00Z",
+      "updatedAt": "2026-11-10T04:58:00Z",
+      "lastCheckedAt": "2026-11-10T04:58:00Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_49ed8edf6c80be4b",
+      "gameId": "g_000189",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4183770/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:48:42Z",
+          "quote": "CELESTAYは、釣りで素材を集めながら家を空へと伸ばしていく、放置要素のあるデスクトップアクセサリーです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:92edbd94909299a6acbfff1fb3df372b6266830c0e5918d1b5e46c91b2fab0e0"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:48:42Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "summary",
+      "value": {
+        "ja": "すべてが海に沈んだ終末世界を舞台に、釣りで魚や木材を集めて家を空へと積み上げていく放置要素のあるデスクトップアクセサリー。家が高くなるほど景色が変わり、星座や仲間との物語が少しずつ明らかになる。"
+      }
+    },
+    {
+      "id": "c_2d4936df201849a8",
+      "gameId": "g_000189",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4183770/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:48:42Z",
+          "quote": "CELESTAYは、釣りで素材を集めながら家を空へと伸ばしていく、放置要素のあるデスクトップアクセサリーです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:92edbd94909299a6acbfff1fb3df372b6266830c0e5918d1b5e46c91b2fab0e0"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:48:42Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "fishing"
+      }
+    },
+    {
+      "id": "c_aaaf7de81b5f009f",
+      "gameId": "g_000189",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4183770/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:48:42Z",
+          "quote": "Meet dear friends, discover new views, and slowly uncover why the world sank—all to the gentle sounds of waves and hammers.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:92edbd94909299a6acbfff1fb3df372b6266830c0e5918d1b5e46c91b2fab0e0"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:48:42Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_ae291fbbcc794ae7",
+      "gameId": "g_000189",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4183770/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:48:42Z",
+          "quote": "釣りで集めた魚や木材を材料に、家を建築できます。家が高くなると、見える景色も変わっていきます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:92edbd94909299a6acbfff1fb3df372b6266830c0e5918d1b5e46c91b2fab0e0"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:48:42Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "base-building"
+      }
+    },
+    {
+      "id": "c_bd075b5873b2793e",
+      "gameId": "g_000189",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4183770/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:48:42Z",
+          "quote": "CELESTAY is a cozy desktop companion with idle elements.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:92edbd94909299a6acbfff1fb3df372b6266830c0e5918d1b5e46c91b2fab0e0"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:48:42Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_dd99cfc5b4730903",
+      "gameId": "g_000189",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4183770/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:48:42Z",
+          "quote": "Fish for wood and other materials in a world lost beneath the sea, and build a little home toward the sky.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:92edbd94909299a6acbfff1fb3df372b6266830c0e5918d1b5e46c91b2fab0e0"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:48:42Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "ocean"
+      }
+    },
+    {
+      "id": "c_e5f8122ee5b8e053",
+      "gameId": "g_000189",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4183770/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:48:42Z",
+          "quote": "本作について CELESTAYはクリッカータイプのインクリメンタルゲームではありません。 終末世界を舞台に、ゆったりと流れる時間と音楽を楽しむ放置要素のあるデスクトップアクセサリです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:92edbd94909299a6acbfff1fb3df372b6266830c0e5918d1b5e46c91b2fab0e0"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:48:42Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "post-apocalyptic"
+      }
+    },
+    {
+      "id": "c_7a7ec4a61163abc3",
+      "gameId": "g_000189",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4183770/",
+          "retrievedAt": "2026-11-10T04:58:00Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:92edbd94909299a6acbfff1fb3df372b6266830c0e5918d1b5e46c91b2fab0e0"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:58:00Z",
+      "createdAt": "2026-11-10T04:58:00Z",
+      "updatedAt": "2026-11-10T04:58:00Z",
+      "lastCheckedAt": "2026-11-10T04:58:00Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4183770/"
+      }
+    },
+    {
+      "id": "c_2d57bf8044d1e202",
+      "gameId": "g_000189",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4183770/",
+          "retrievedAt": "2026-11-10T04:58:00Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:92edbd94909299a6acbfff1fb3df372b6266830c0e5918d1b5e46c91b2fab0e0"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:58:00Z",
+      "createdAt": "2026-11-10T04:58:00Z",
+      "updatedAt": "2026-11-10T04:58:00Z",
+      "lastCheckedAt": "2026-11-10T04:58:00Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4183770/361bb8cfdf7993a6654bd52422dae2defcea4b2b/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "CELESTAY Craft&Slowlife のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "BUBBLE GUM LLC"
+        }
+      }
+    }
+  ]
+}

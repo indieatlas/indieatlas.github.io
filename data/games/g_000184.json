@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000184",
+  "status": "candidate",
+  "title": {
+    "display": "CINERIS SOMNIA",
+    "original": "CINERIS SOMNIA",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 752470
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "903610",
+      "kind": "soundtrack",
+      "title": "CINERIS SOMNIA - Original Soundtrack"
+    }
+  ],
+  "developerIds": [
+    "dev_000039"
+  ],
+  "publisherIds": [
+    "dev_000057"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "independent-publisher",
+        "note": "開発はNAYUTA STUDIO、販売はインディーゲームを扱うPLAYISM。PLAYISMは公式サイトで、一人か数人のチームが制作したインディーゲームを支援すると説明している。",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://playism.com/about/",
+            "publishedAt": "2026-11-10",
+            "retrievedAt": "2026-11-10T04:45:56Z",
+            "quote": "誰が求めたわけでもなく、たった一人、ないし数人のチームが、自ら「つくりたい」と願って開発されたゲームがあります。",
+            "originKey": "media:playism.com",
+            "fetchHash": "sha256:c8b9d47e29cf3809c9df38cf60f93dcf43a2178e12ec6547b51c2a579ca10acd"
+          },
+          {
+            "kind": "media",
+            "url": "https://playism.com/game/cineris-somnia/",
+            "publishedAt": "2026-11-10",
+            "retrievedAt": "2026-11-10T04:45:42Z",
+            "quote": "「CINERIS SOMNIA」は、美しく奇妙で不可思議な世界を探索しながら物語を進めていく三人称視点の3Dアドベンチャーゲームです。",
+            "originKey": "media:playism.com",
+            "fetchHash": "sha256:bbd8d4917af2ee834fb1a340f201e9c522b61e632fa9c3638c48136c89eaeb4d"
+          }
+        ]
+      },
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://automaton-media.com/articles/newsjp/20261109-478250/",
+            "articleId": "a_e991a3ee5da015f4",
+            "publishedAt": "2026-11-09T08:39:22Z",
+            "retrievedAt": "2026-11-10T04:45:06Z",
+            "locator": "article.games",
+            "originKey": "media:automaton-media.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-10T04:57:00Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "associatedApps",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/903610/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:46:37Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:8eb5127e307924390676d2a4adf0e67077adb9ed9b76fbe2160c5eb007e7b346"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/752470/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:45:13Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:71242f41a97c83dc2fc1588dbf57c141f67cba00c01f95528204d87e318097b7"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/752470/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:45:13Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:71242f41a97c83dc2fc1588dbf57c141f67cba00c01f95528204d87e318097b7"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/752470/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:45:13Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:71242f41a97c83dc2fc1588dbf57c141f67cba00c01f95528204d87e318097b7"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/752470/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:45:13Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:71242f41a97c83dc2fc1588dbf57c141f67cba00c01f95528204d87e318097b7"
+      }
+    }
+  ],
+  "createdAt": "2026-11-10T04:57:00Z",
+  "updatedAt": "2026-11-10T04:57:00Z",
+  "createdByRun": "42757239487"
+}

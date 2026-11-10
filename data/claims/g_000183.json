@@ -1,0 +1,413 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000183",
+  "claims": [
+    {
+      "id": "c_83b14bc0b068afdf",
+      "gameId": "g_000183",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5386940/",
+          "retrievedAt": "2026-11-10T04:57:33Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c792868cd7d837e6af065b506cf7cfe7c5125eb0d083cd19613093d52da56345"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:33Z",
+      "createdAt": "2026-11-10T04:57:33Z",
+      "updatedAt": "2026-11-10T04:57:33Z",
+      "lastCheckedAt": "2026-11-10T04:57:33Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "quarter",
+          "year": 2027,
+          "quarter": 2
+        },
+        "rawText": "Q2 2027"
+      }
+    },
+    {
+      "id": "c_17bbf5b657cd544e",
+      "gameId": "g_000183",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5386940/",
+          "retrievedAt": "2026-11-10T04:57:36Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c3c6b25539f28793335dcf9e045e7f14e004f053f2cd8acb50a7903bb2a9465b"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:33Z",
+      "createdAt": "2026-11-10T04:57:33Z",
+      "updatedAt": "2026-11-10T04:57:33Z",
+      "lastCheckedAt": "2026-11-10T04:57:36Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_bef51cf6cda93e4c",
+      "gameId": "g_000183",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5386940/",
+          "retrievedAt": "2026-11-10T04:57:33Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c792868cd7d837e6af065b506cf7cfe7c5125eb0d083cd19613093d52da56345"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:33Z",
+      "createdAt": "2026-11-10T04:57:33Z",
+      "updatedAt": "2026-11-10T04:57:33Z",
+      "lastCheckedAt": "2026-11-10T04:57:33Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_c9806a37082745e5",
+      "gameId": "g_000183",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5386940/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:45:40Z",
+          "quote": "Aftermind is a fast roguelike boomer shooter inside a coma patient's nightmares. Shoot limbs off, stagger enemies and end them with brutal finishers.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c792868cd7d837e6af065b506cf7cfe7c5125eb0d083cd19613093d52da56345"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:45:40Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "summary",
+      "value": {
+        "ja": "昏睡状態の患者の悪夢を舞台にした高速ローグライク・ブーマーシューター。四肢を撃ち飛ばして敵の体勢を崩し、フィニッシャーでとどめを刺す。周回ごとに新たな力と、事故の真相のかけらを得る。"
+      }
+    },
+    {
+      "id": "c_2342d83a4a5682a3",
+      "gameId": "g_000183",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5386940/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:45:40Z",
+          "quote": "Enemies surround you, flank you and cut off your escape. Stand still and you're dead.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c792868cd7d837e6af065b506cf7cfe7c5125eb0d083cd19613093d52da56345"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:45:40Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "tense"
+      }
+    },
+    {
+      "id": "c_29def2a2a99eb376",
+      "gameId": "g_000183",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5386940/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:45:40Z",
+          "quote": "Aftermind is a fast roguelike boomer shooter inside a coma patient's nightmares.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c792868cd7d837e6af065b506cf7cfe7c5125eb0d083cd19613093d52da56345"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:45:40Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "shooter"
+      }
+    },
+    {
+      "id": "c_35ab1f050df780c0",
+      "gameId": "g_000183",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5386940/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:45:40Z",
+          "quote": "Aftermind is a fast roguelike boomer shooter inside a coma patient's nightmares.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c792868cd7d837e6af065b506cf7cfe7c5125eb0d083cd19613093d52da56345"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:45:40Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_6c2a8d0b9de158d3",
+      "gameId": "g_000183",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5386940/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:45:40Z",
+          "quote": "Find the notes hidden in every dream, fill your journal, and piece together what really happened.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c792868cd7d837e6af065b506cf7cfe7c5125eb0d083cd19613093d52da56345"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:45:40Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_74950ab3cff6cc91",
+      "gameId": "g_000183",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5386940/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:45:40Z",
+          "quote": "Every run is procedurally generated, and enemies grow faster, tougher and smarter the deeper you go.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c792868cd7d837e6af065b506cf7cfe7c5125eb0d083cd19613093d52da56345"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:45:40Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "procedural-generation"
+      }
+    },
+    {
+      "id": "c_8d488afec3690973",
+      "gameId": "g_000183",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5386940/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:45:40Z",
+          "quote": "Shoot limbs off, stagger enemies and end them with brutal finishers.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c792868cd7d837e6af065b506cf7cfe7c5125eb0d083cd19613093d52da56345"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:45:40Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_ec5fc565ebfabd6e",
+      "gameId": "g_000183",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5386940/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:45:40Z",
+          "quote": "Every time it speaks, you wake up somewhere worse.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c792868cd7d837e6af065b506cf7cfe7c5125eb0d083cd19613093d52da56345"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:45:40Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "dark"
+      }
+    },
+    {
+      "id": "c_85366367faec3f9f",
+      "gameId": "g_000183",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5386940/",
+          "retrievedAt": "2026-11-10T04:57:33Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c792868cd7d837e6af065b506cf7cfe7c5125eb0d083cd19613093d52da56345"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:33Z",
+      "createdAt": "2026-11-10T04:57:33Z",
+      "updatedAt": "2026-11-10T04:57:33Z",
+      "lastCheckedAt": "2026-11-10T04:57:33Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5386940/"
+      }
+    },
+    {
+      "id": "c_c2dfb73ab959f47f",
+      "gameId": "g_000183",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5386940/",
+          "retrievedAt": "2026-11-10T04:57:33Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c792868cd7d837e6af065b506cf7cfe7c5125eb0d083cd19613093d52da56345"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:33Z",
+      "createdAt": "2026-11-10T04:57:33Z",
+      "updatedAt": "2026-11-10T04:57:33Z",
+      "lastCheckedAt": "2026-11-10T04:57:33Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5386940/adbd5e4a1d828e2fca7738a90522a88b09143d17/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Aftermind のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Shift Orbit Games"
+        }
+      }
+    }
+  ]
+}

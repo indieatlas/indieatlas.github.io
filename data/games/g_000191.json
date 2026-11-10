@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000191",
+  "status": "candidate",
+  "title": {
+    "display": "Severed Steel",
+    "original": "Severed Steel",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1227690
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1631910",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "1754220",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "1754230",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://www.greylockgamesstudio.com/",
+  "developerIds": [
+    "dev_000267"
+  ],
+  "publisherIds": [
+    "dev_000267"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1227690/",
+            "retrievedAt": "2026-11-10T04:57:02Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:540842106d60f26ddd6366ef31af14afbae74cc54d8384d07f276ee33b873368"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-10T04:57:02Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1227690/",
+        "retrievedAt": "2026-11-10T04:57:02Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:540842106d60f26ddd6366ef31af14afbae74cc54d8384d07f276ee33b873368"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1227690/",
+        "retrievedAt": "2026-11-10T04:57:02Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:540842106d60f26ddd6366ef31af14afbae74cc54d8384d07f276ee33b873368"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1227690/",
+        "retrievedAt": "2026-11-10T04:57:02Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:540842106d60f26ddd6366ef31af14afbae74cc54d8384d07f276ee33b873368"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1227690/",
+        "retrievedAt": "2026-11-10T04:57:02Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:540842106d60f26ddd6366ef31af14afbae74cc54d8384d07f276ee33b873368"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1227690/",
+        "retrievedAt": "2026-11-10T04:57:02Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:540842106d60f26ddd6366ef31af14afbae74cc54d8384d07f276ee33b873368"
+      }
+    }
+  ],
+  "createdAt": "2026-11-10T04:57:02Z",
+  "updatedAt": "2026-11-10T04:57:02Z",
+  "createdByRun": "42757239487"
+}

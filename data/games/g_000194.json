@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000194",
+  "status": "candidate",
+  "title": {
+    "display": "Brick by Brick: Tidy Up the Small Town!",
+    "original": "Brick by Brick: Tidy Up the Small Town!",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5228920
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000271"
+  ],
+  "publisherIds": [
+    "dev_000271"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5228920/",
+            "retrievedAt": "2026-11-10T04:57:15Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:149e00afe9d513e3a3412bb139f1be7a39d3a7dd90a1054c7b1507f7361008df"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-10T04:57:15Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5228920/",
+        "retrievedAt": "2026-11-10T04:57:15Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:149e00afe9d513e3a3412bb139f1be7a39d3a7dd90a1054c7b1507f7361008df"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5228920/",
+        "retrievedAt": "2026-11-10T04:57:15Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:149e00afe9d513e3a3412bb139f1be7a39d3a7dd90a1054c7b1507f7361008df"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5228920/",
+        "retrievedAt": "2026-11-10T04:57:15Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:149e00afe9d513e3a3412bb139f1be7a39d3a7dd90a1054c7b1507f7361008df"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5228920/",
+        "retrievedAt": "2026-11-10T04:57:15Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:149e00afe9d513e3a3412bb139f1be7a39d3a7dd90a1054c7b1507f7361008df"
+      }
+    }
+  ],
+  "createdAt": "2026-11-10T04:57:15Z",
+  "updatedAt": "2026-11-10T04:57:15Z",
+  "createdByRun": "42757239487"
+}

@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000186",
+  "claims": [
+    {
+      "id": "c_8713a1c17d9aa023",
+      "gameId": "g_000186",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4498270/",
+          "retrievedAt": "2026-11-10T04:57:46Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fdce84a5ea7f7049fb913d2e2172cde45ddfc969045d99f9b0fa3d647a2ebc46"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:46Z",
+      "createdAt": "2026-11-10T04:57:46Z",
+      "updatedAt": "2026-11-10T04:57:46Z",
+      "lastCheckedAt": "2026-11-10T04:57:46Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "release",
+      "value": {
+        "status": "tba",
+        "rawText": "To be announced"
+      }
+    },
+    {
+      "id": "c_5bb6a838eac65932",
+      "gameId": "g_000186",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4498270/",
+          "retrievedAt": "2026-11-10T04:57:50Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:01f3fce29a29d718dec6422f5743f34f5d30e3364b4304c6075b781c16699841"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:46Z",
+      "createdAt": "2026-11-10T04:57:46Z",
+      "updatedAt": "2026-11-10T04:57:46Z",
+      "lastCheckedAt": "2026-11-10T04:57:50Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "no",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_91a5b4e8100c2907",
+      "gameId": "g_000186",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4498270/",
+          "retrievedAt": "2026-11-10T04:57:46Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fdce84a5ea7f7049fb913d2e2172cde45ddfc969045d99f9b0fa3d647a2ebc46"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:46Z",
+      "createdAt": "2026-11-10T04:57:46Z",
+      "updatedAt": "2026-11-10T04:57:46Z",
+      "lastCheckedAt": "2026-11-10T04:57:46Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_3ff473b7ad48bca4",
+      "gameId": "g_000186",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4498270/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:47:46Z",
+          "quote": "A story-driven retro FPS. Fight through industrial zones, the districts of a dead city, and experimental areas to recover your memories and uncover the bloody truth of SAMOPAL Protocol.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fdce84a5ea7f7049fb913d2e2172cde45ddfc969045d99f9b0fa3d647a2ebc46"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:47:46Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "summary",
+      "value": {
+        "ja": "記憶を失ったまま、廃工場裏の墓地で目覚めた主人公が、工業地帯や死都の各街区、実験施設を戦い抜きながら自らの過去をたどるストーリードリブンのレトロFPS。"
+      }
+    },
+    {
+      "id": "c_148da4ca0da347f8",
+      "gameId": "g_000186",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4498270/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:47:46Z",
+          "quote": "Unravel a narrative told through exploration, environment, and recovered memories.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fdce84a5ea7f7049fb913d2e2172cde45ddfc969045d99f9b0fa3d647a2ebc46"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:47:46Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_363dfeb09cbe81bd",
+      "gameId": "g_000186",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4498270/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:47:46Z",
+          "quote": "A story-driven retro FPS. Fight through industrial zones, the districts of a dead city, and experimental areas to recover your memories and uncover the bloody truth of SAMOPAL Protocol.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fdce84a5ea7f7049fb913d2e2172cde45ddfc969045d99f9b0fa3d647a2ebc46"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:47:46Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "shooter"
+      }
+    },
+    {
+      "id": "c_41875ef2a4ff9957",
+      "gameId": "g_000186",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4498270/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:47:46Z",
+          "quote": "Piece together who you are — and what led you to end up among the dead.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fdce84a5ea7f7049fb913d2e2172cde45ddfc969045d99f9b0fa3d647a2ebc46"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:47:46Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_45bbc4e113b0997f",
+      "gameId": "g_000186",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4498270/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:47:46Z",
+          "quote": "Fast-paced, skill-based shooting inspired by classic arena shooters.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fdce84a5ea7f7049fb913d2e2172cde45ddfc969045d99f9b0fa3d647a2ebc46"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:47:46Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_81fa6f04f75d8397",
+      "gameId": "g_000186",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4498270/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:47:46Z",
+          "quote": "A story-driven retro FPS. Fight through industrial zones, the districts of a dead city, and experimental areas to recover your memories and uncover the bloody truth of SAMOPAL Protocol.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fdce84a5ea7f7049fb913d2e2172cde45ddfc969045d99f9b0fa3d647a2ebc46"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:47:46Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "retro"
+      }
+    },
+    {
+      "id": "c_8e9aed2cf412ab34",
+      "gameId": "g_000186",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4498270/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:47:46Z",
+          "quote": "Hidden paths, environmental storytelling, and fragments of lore reward attentive players.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fdce84a5ea7f7049fb913d2e2172cde45ddfc969045d99f9b0fa3d647a2ebc46"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:47:46Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_df9415c41b2c5478",
+      "gameId": "g_000186",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4498270/",
+          "retrievedAt": "2026-11-10T04:57:46Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fdce84a5ea7f7049fb913d2e2172cde45ddfc969045d99f9b0fa3d647a2ebc46"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:46Z",
+      "createdAt": "2026-11-10T04:57:46Z",
+      "updatedAt": "2026-11-10T04:57:46Z",
+      "lastCheckedAt": "2026-11-10T04:57:46Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4498270/"
+      }
+    },
+    {
+      "id": "c_4f28da47e98aa87a",
+      "gameId": "g_000186",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4498270/",
+          "retrievedAt": "2026-11-10T04:57:46Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fdce84a5ea7f7049fb913d2e2172cde45ddfc969045d99f9b0fa3d647a2ebc46"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:46Z",
+      "createdAt": "2026-11-10T04:57:46Z",
+      "updatedAt": "2026-11-10T04:57:46Z",
+      "lastCheckedAt": "2026-11-10T04:57:46Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4498270/5c8ec1fc6ec3fe4ce42cf53e9654330d167a0e17/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "SAMOPAL Protocol のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "MolotDivision"
+        }
+      }
+    }
+  ]
+}

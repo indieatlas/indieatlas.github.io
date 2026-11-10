@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000181",
+  "status": "published",
+  "title": {
+    "display": "Lumen Keeper",
+    "original": "Lumen Keeper",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5455760
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000255"
+  ],
+  "publisherIds": [
+    "dev_000255"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "solo-developer",
+        "note": "開発者が一人で制作している旨がストアページに記載",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5455760/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-10T04:44:39Z",
+            "quote": "I'm making Lumen Keeper at Pelleteuse Gaming, my one-person studio.",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:eb1a8d2bf0ee3c48883c64afb50209fa439dee5acb81855edeac2ade963d3bdd"
+          }
+        ]
+      },
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5455760/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-10T04:44:39Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:eb1a8d2bf0ee3c48883c64afb50209fa439dee5acb81855edeac2ade963d3bdd"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-10T04:57:00Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5455760/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:44:39Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eb1a8d2bf0ee3c48883c64afb50209fa439dee5acb81855edeac2ade963d3bdd"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5455760/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:44:39Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eb1a8d2bf0ee3c48883c64afb50209fa439dee5acb81855edeac2ade963d3bdd"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5455760/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:44:39Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eb1a8d2bf0ee3c48883c64afb50209fa439dee5acb81855edeac2ade963d3bdd"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5455760/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:44:39Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eb1a8d2bf0ee3c48883c64afb50209fa439dee5acb81855edeac2ade963d3bdd"
+      }
+    }
+  ],
+  "createdAt": "2026-11-10T04:57:00Z",
+  "addedAt": "2026-11-10",
+  "updatedAt": "2026-11-10T04:57:00Z",
+  "createdByRun": "42757239487"
+}

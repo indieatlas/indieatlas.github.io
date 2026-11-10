@@ -1,0 +1,444 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000185",
+  "claims": [
+    {
+      "id": "c_92a3a2eec85e9898",
+      "gameId": "g_000185",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2638080/",
+          "retrievedAt": "2026-11-10T04:57:42Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:334aeea9753c1c1a67a4a7a6c3d36599035e6f3964a2767c98a994b197e349ba"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:42Z",
+      "createdAt": "2026-11-10T04:57:42Z",
+      "updatedAt": "2026-11-10T04:57:42Z",
+      "lastCheckedAt": "2026-11-10T04:57:42Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 10
+        },
+        "rawText": "10 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_00ffac0f3e389206",
+      "gameId": "g_000185",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2638080/",
+          "retrievedAt": "2026-11-10T04:57:45Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cf5d0ea32b0e9feb7d523fbe4f58c1dc537383d5317df1665246e4f593296cc2"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:42Z",
+      "createdAt": "2026-11-10T04:57:42Z",
+      "updatedAt": "2026-11-10T04:57:42Z",
+      "lastCheckedAt": "2026-11-10T04:57:45Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_7d7f3ff2dcddd3d0",
+      "gameId": "g_000185",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2638080/",
+          "retrievedAt": "2026-11-10T04:57:42Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:334aeea9753c1c1a67a4a7a6c3d36599035e6f3964a2767c98a994b197e349ba"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:42Z",
+      "createdAt": "2026-11-10T04:57:42Z",
+      "updatedAt": "2026-11-10T04:57:42Z",
+      "lastCheckedAt": "2026-11-10T04:57:42Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_4c5980ac34e6013f",
+      "gameId": "g_000185",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2638080/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:47:02Z",
+          "quote": "『勇者パーティはぜんめつしました。』は、壊れてしまった仲間の〈業〉と向き合い、一緒にケジメをつける高湿度・激重感情RPGです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:334aeea9753c1c1a67a4a7a6c3d36599035e6f3964a2767c98a994b197e349ba"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:47:02Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "summary",
+      "value": {
+        "ja": "ダンジョンで壊滅した勇者パーティから、たったひとりのパートナーを選んで脱出を目指す高湿度・激重感情RPG。4人それぞれの独立したルートとマルチエンディングが用意され、選んだ相手との関係が結末を変える。"
+      }
+    },
+    {
+      "id": "c_07220e44b27ce99e",
+      "gameId": "g_000185",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2638080/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:47:02Z",
+          "quote": "各キャラクターのルートは完全に独立。ダンジョンを抜けた先の結末は、選んだ相手と、あなたの気持ち次第でまったく別のものになります。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:334aeea9753c1c1a67a4a7a6c3d36599035e6f3964a2767c98a994b197e349ba"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:47:02Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_543225e41ecab71b",
+      "gameId": "g_000185",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2638080/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:47:02Z",
+          "quote": "『勇者パーティはぜんめつしました。』は、壊れてしまった仲間の〈業〉と向き合い、一緒にケジメをつける高湿度・激重感情RPGです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:334aeea9753c1c1a67a4a7a6c3d36599035e6f3964a2767c98a994b197e349ba"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:47:02Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "rpg"
+      }
+    },
+    {
+      "id": "c_5a74608fe299ebb9",
+      "gameId": "g_000185",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2638080/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:47:02Z",
+          "quote": "強大な魔法をあやつり、戦闘・探索、なんでもござれの万能魔法使い。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:334aeea9753c1c1a67a4a7a6c3d36599035e6f3964a2767c98a994b197e349ba"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:47:02Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_6082b2881da882b9",
+      "gameId": "g_000185",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2638080/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:47:02Z",
+          "quote": "敵との戦闘は、ターンベースのカードバトル。手持ちのアイテムはすべて「手札」となり、それぞれに使用回数があります。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:334aeea9753c1c1a67a4a7a6c3d36599035e6f3964a2767c98a994b197e349ba"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:47:02Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "turn-based"
+      }
+    },
+    {
+      "id": "c_8f436deac2edf7b0",
+      "gameId": "g_000185",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2638080/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:47:02Z",
+          "quote": "敵との戦闘は、ターンベースのカードバトル。手持ちのアイテムはすべて「手札」となり、それぞれに使用回数があります。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:334aeea9753c1c1a67a4a7a6c3d36599035e6f3964a2767c98a994b197e349ba"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:47:02Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "deck-building"
+      }
+    },
+    {
+      "id": "c_ccff59df6b9fef21",
+      "gameId": "g_000185",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2638080/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:47:02Z",
+          "quote": "限界状況、ふたりきりのダンジョン探索。そこで生まれるのは絆か、疑心か、依存か。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:334aeea9753c1c1a67a4a7a6c3d36599035e6f3964a2767c98a994b197e349ba"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:47:02Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "dark"
+      }
+    },
+    {
+      "id": "c_de4ce639bd8c0a2b",
+      "gameId": "g_000185",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2638080/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:47:02Z",
+          "quote": "運悪く倒れたら、その階層からリトライ。ため込んだ呪いから欲しいアイテムを生み出し、残りはそのまま経験値に。死ぬたびに、次の挑戦が有利になります。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:334aeea9753c1c1a67a4a7a6c3d36599035e6f3964a2767c98a994b197e349ba"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:47:02Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_df934e9f57980b0f",
+      "gameId": "g_000185",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2638080/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:47:02Z",
+          "quote": "ダンジョンにはトラップやモンスターが潜んでいます。危険を避けて安全な道を行くか、経験や物資のために、あえてリスクをとるかは、あなた次第です。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:334aeea9753c1c1a67a4a7a6c3d36599035e6f3964a2767c98a994b197e349ba"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:47:02Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "underground"
+      }
+    },
+    {
+      "id": "c_eeadb254d67f334d",
+      "gameId": "g_000185",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2638080/",
+          "retrievedAt": "2026-11-10T04:57:42Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:334aeea9753c1c1a67a4a7a6c3d36599035e6f3964a2767c98a994b197e349ba"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:42Z",
+      "createdAt": "2026-11-10T04:57:42Z",
+      "updatedAt": "2026-11-10T04:57:42Z",
+      "lastCheckedAt": "2026-11-10T04:57:42Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2638080/"
+      }
+    },
+    {
+      "id": "c_667dd89d8fbb3757",
+      "gameId": "g_000185",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2638080/",
+          "retrievedAt": "2026-11-10T04:57:42Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:334aeea9753c1c1a67a4a7a6c3d36599035e6f3964a2767c98a994b197e349ba"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:42Z",
+      "createdAt": "2026-11-10T04:57:42Z",
+      "updatedAt": "2026-11-10T04:57:42Z",
+      "lastCheckedAt": "2026-11-10T04:57:42Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638080/e44c696c243b2fc64b65eb2ef439ef3535ba1e40/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "勇者パーティはぜんめつしました。 のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Death Kumiai"
+        }
+      }
+    }
+  ]
+}

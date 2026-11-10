@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000195",
+  "status": "candidate",
+  "title": {
+    "display": "活俠傳",
+    "original": "Legend of Mortal",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "活俠傳",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1859910
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1992090",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "2983230",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "3968660",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000272"
+  ],
+  "publisherIds": [
+    "dev_000273",
+    "dev_000272"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-10T04:57:00Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-10T04:57:00Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1859910/",
+        "retrievedAt": "2026-11-10T04:57:20Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b49b372ae92d472df843838e71b2893a4d65c3b1eceb83904405a93696710ea8"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1859910/",
+        "retrievedAt": "2026-11-10T04:57:20Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b49b372ae92d472df843838e71b2893a4d65c3b1eceb83904405a93696710ea8"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1859910/",
+        "retrievedAt": "2026-11-10T04:57:20Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b49b372ae92d472df843838e71b2893a4d65c3b1eceb83904405a93696710ea8"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1859910/",
+        "retrievedAt": "2026-11-10T04:57:20Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b49b372ae92d472df843838e71b2893a4d65c3b1eceb83904405a93696710ea8"
+      }
+    }
+  ],
+  "createdAt": "2026-11-10T04:57:20Z",
+  "updatedAt": "2026-11-10T04:57:00Z",
+  "createdByRun": "42757239487"
+}

@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000194",
+  "claims": [
+    {
+      "id": "c_5b9793d654a88791",
+      "gameId": "g_000194",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5228920/",
+          "retrievedAt": "2026-11-10T04:57:15Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:149e00afe9d513e3a3412bb139f1be7a39d3a7dd90a1054c7b1507f7361008df"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:15Z",
+      "createdAt": "2026-11-10T04:57:15Z",
+      "updatedAt": "2026-11-10T04:57:15Z",
+      "lastCheckedAt": "2026-11-10T04:57:15Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 10,
+          "day": 15
+        },
+        "rawText": "15 Oct, 2026"
+      }
+    },
+    {
+      "id": "c_21c2a73cb19bd05a",
+      "gameId": "g_000194",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5228920/",
+          "retrievedAt": "2026-11-10T04:57:18Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:abfc66941e67386149437958eae65e18106b7f96f9d59996d13c6f6a750a2e14"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:15Z",
+      "createdAt": "2026-11-10T04:57:15Z",
+      "updatedAt": "2026-11-10T04:57:15Z",
+      "lastCheckedAt": "2026-11-10T04:57:18Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_69a6f24a32172ec7",
+      "gameId": "g_000194",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5228920/",
+          "retrievedAt": "2026-11-10T04:57:15Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:149e00afe9d513e3a3412bb139f1be7a39d3a7dd90a1054c7b1507f7361008df"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:15Z",
+      "createdAt": "2026-11-10T04:57:15Z",
+      "updatedAt": "2026-11-10T04:57:15Z",
+      "lastCheckedAt": "2026-11-10T04:57:15Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_c27fb41302f640f5",
+      "gameId": "g_000194",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5228920/",
+          "retrievedAt": "2026-11-10T04:57:15Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:149e00afe9d513e3a3412bb139f1be7a39d3a7dd90a1054c7b1507f7361008df"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:15Z",
+      "createdAt": "2026-11-10T04:57:15Z",
+      "updatedAt": "2026-11-10T04:57:15Z",
+      "lastCheckedAt": "2026-11-10T04:57:15Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5228920/"
+      }
+    },
+    {
+      "id": "c_a992bdd3d28ddd7c",
+      "gameId": "g_000194",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5228920/",
+          "retrievedAt": "2026-11-10T04:57:15Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:149e00afe9d513e3a3412bb139f1be7a39d3a7dd90a1054c7b1507f7361008df"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:15Z",
+      "createdAt": "2026-11-10T04:57:15Z",
+      "updatedAt": "2026-11-10T04:57:15Z",
+      "lastCheckedAt": "2026-11-10T04:57:15Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5228920/8c57f18ab6a1940b328584fe5556f4c87839e1a0/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Brick by Brick: Tidy Up the Small Town! のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "PaperPixel Games"
+        }
+      }
+    }
+  ]
+}

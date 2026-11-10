@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000190",
+  "status": "candidate",
+  "title": {
+    "display": "Daydream Drifters",
+    "original": "Daydream Drifters",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4453930
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5359690",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000266"
+  ],
+  "publisherIds": [
+    "dev_000266"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4453930/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-10T04:49:24Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:3a1e8c4f52c17d0dc611258e22cabfa2722a27e7650836462d83538f95f16a3f"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-10T04:57:00Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4453930/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:49:24Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3a1e8c4f52c17d0dc611258e22cabfa2722a27e7650836462d83538f95f16a3f"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4453930/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:49:24Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3a1e8c4f52c17d0dc611258e22cabfa2722a27e7650836462d83538f95f16a3f"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4453930/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:49:24Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3a1e8c4f52c17d0dc611258e22cabfa2722a27e7650836462d83538f95f16a3f"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4453930/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:49:24Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3a1e8c4f52c17d0dc611258e22cabfa2722a27e7650836462d83538f95f16a3f"
+      }
+    }
+  ],
+  "createdAt": "2026-11-10T04:57:00Z",
+  "updatedAt": "2026-11-10T04:58:04Z",
+  "createdByRun": "42757239487"
+}

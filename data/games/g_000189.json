@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000189",
+  "status": "candidate",
+  "title": {
+    "display": "CELESTAY Craft&Slowlife",
+    "original": "CELESTAY Craft&Slowlife",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "CELESTAY",
+      "kind": "abbreviation"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 4183770
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4358370",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5432100",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000265"
+  ],
+  "publisherIds": [
+    "dev_000265"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4183770/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-10T04:48:42Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:92edbd94909299a6acbfff1fb3df372b6266830c0e5918d1b5e46c91b2fab0e0"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-10T04:57:00Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4183770/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:48:42Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:92edbd94909299a6acbfff1fb3df372b6266830c0e5918d1b5e46c91b2fab0e0"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4183770/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:48:42Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:92edbd94909299a6acbfff1fb3df372b6266830c0e5918d1b5e46c91b2fab0e0"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4183770/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:48:42Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:92edbd94909299a6acbfff1fb3df372b6266830c0e5918d1b5e46c91b2fab0e0"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4183770/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:48:42Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:92edbd94909299a6acbfff1fb3df372b6266830c0e5918d1b5e46c91b2fab0e0"
+      }
+    }
+  ],
+  "createdAt": "2026-11-10T04:57:00Z",
+  "updatedAt": "2026-11-10T04:58:00Z",
+  "createdByRun": "42757239487"
+}

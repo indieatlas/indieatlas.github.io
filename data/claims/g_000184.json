@@ -1,0 +1,391 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000184",
+  "claims": [
+    {
+      "id": "c_65efe0c757ff0d6c",
+      "gameId": "g_000184",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/752470/",
+          "retrievedAt": "2026-11-10T04:57:38Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f208a0252123cb58200278edcc805cff09cb5c4a6617992dbb1d727495fa7db5"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:38Z",
+      "createdAt": "2026-11-10T04:57:38Z",
+      "updatedAt": "2026-11-10T04:57:38Z",
+      "lastCheckedAt": "2026-11-10T04:57:38Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2018,
+          "month": 10,
+          "day": 9
+        },
+        "rawText": "9 Oct, 2018"
+      }
+    },
+    {
+      "id": "c_39977b52a80854a8",
+      "gameId": "g_000184",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/752470/",
+          "retrievedAt": "2026-11-10T04:57:41Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bcfbe6db77380ee258894c5526cadb95dbb6f15a0c1fd0c40ab5c93c4d081ef7"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:38Z",
+      "createdAt": "2026-11-10T04:57:38Z",
+      "updatedAt": "2026-11-10T04:57:38Z",
+      "lastCheckedAt": "2026-11-10T04:57:41Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_1b3b2a623ef6b1b6",
+      "gameId": "g_000184",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/752470/",
+          "retrievedAt": "2026-11-10T04:57:38Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f208a0252123cb58200278edcc805cff09cb5c4a6617992dbb1d727495fa7db5"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:38Z",
+      "createdAt": "2026-11-10T04:57:38Z",
+      "updatedAt": "2026-11-10T04:57:38Z",
+      "lastCheckedAt": "2026-11-10T04:57:38Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_238089ae539322c5",
+      "gameId": "g_000184",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/752470/",
+          "sourceId": "steam-store",
+          "publishedAt": "2026-11-10",
+          "retrievedAt": "2026-11-10T04:45:13Z",
+          "quote": "「CINERIS SOMNIA」は、美しく奇妙で不可思議な世界を探索しながら物語を進めていく三人称視点の3Dアドベンチャーゲームです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71242f41a97c83dc2fc1588dbf57c141f67cba00c01f95528204d87e318097b7"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:45:13Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "summary",
+      "value": {
+        "ja": "美しく奇妙で不可思議な世界を探索する三人称視点の3Dアドベンチャー。海辺で目を覚ました少女や療養所で暮らす少女など、それぞれの事情を抱えた少女たちの残酷で儚い夢を描く。"
+      }
+    },
+    {
+      "id": "c_49e8251270d8117e",
+      "gameId": "g_000184",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/752470/",
+          "sourceId": "steam-store",
+          "publishedAt": "2026-11-10",
+          "retrievedAt": "2026-11-10T04:45:13Z",
+          "quote": "「CINERIS SOMNIA」は、美しく奇妙で不可思議な世界を探索しながら物語を進めていく三人称視点の3Dアドベンチャーゲームです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71242f41a97c83dc2fc1588dbf57c141f67cba00c01f95528204d87e318097b7"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:45:13Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_83b1712ea398b72a",
+      "gameId": "g_000184",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/752470/",
+          "sourceId": "steam-store",
+          "publishedAt": "2026-11-10",
+          "retrievedAt": "2026-11-10T04:45:13Z",
+          "quote": "「CINERIS SOMNIA」は、美しく奇妙で不可思議な世界を探索しながら物語を進めていく三人称視点の3Dアドベンチャーゲームです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71242f41a97c83dc2fc1588dbf57c141f67cba00c01f95528204d87e318097b7"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:45:13Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_9be9c3c382e715f2",
+      "gameId": "g_000184",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/752470/",
+          "sourceId": "steam-store",
+          "publishedAt": "2026-11-10",
+          "retrievedAt": "2026-11-10T04:45:13Z",
+          "quote": "少女たちの残酷で儚い夢。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71242f41a97c83dc2fc1588dbf57c141f67cba00c01f95528204d87e318097b7"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:45:13Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "emotional"
+      }
+    },
+    {
+      "id": "c_ae9f4ee8256755be",
+      "gameId": "g_000184",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/752470/",
+          "sourceId": "steam-store",
+          "publishedAt": "2026-11-10",
+          "retrievedAt": "2026-11-10T04:45:13Z",
+          "quote": "「CINERIS SOMNIA」は、美しく奇妙で不可思議な世界を探索しながら物語を進めていく三人称視点の3Dアドベンチャーゲームです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71242f41a97c83dc2fc1588dbf57c141f67cba00c01f95528204d87e318097b7"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:45:13Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_b2ffa57fe5dfc37c",
+      "gameId": "g_000184",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/752470/",
+          "sourceId": "steam-store",
+          "publishedAt": "2026-11-10",
+          "retrievedAt": "2026-11-10T04:45:13Z",
+          "quote": "少女たちの残酷で儚い夢。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71242f41a97c83dc2fc1588dbf57c141f67cba00c01f95528204d87e318097b7"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:45:13Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "dark"
+      }
+    },
+    {
+      "id": "c_b33705cc5e0e6cfa",
+      "gameId": "g_000184",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/752470/",
+          "sourceId": "steam-store",
+          "publishedAt": "2026-11-10",
+          "retrievedAt": "2026-11-10T04:45:13Z",
+          "quote": "「CINERIS SOMNIA」は、美しく奇妙で不可思議な世界を探索しながら物語を進めていく三人称視点の3Dアドベンチャーゲームです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:71242f41a97c83dc2fc1588dbf57c141f67cba00c01f95528204d87e318097b7"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:45:13Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_3bad74ccf1b9807a",
+      "gameId": "g_000184",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/752470/",
+          "retrievedAt": "2026-11-10T04:57:38Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f208a0252123cb58200278edcc805cff09cb5c4a6617992dbb1d727495fa7db5"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:38Z",
+      "createdAt": "2026-11-10T04:57:38Z",
+      "updatedAt": "2026-11-10T04:57:38Z",
+      "lastCheckedAt": "2026-11-10T04:57:38Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/752470/"
+      }
+    },
+    {
+      "id": "c_9dd9459a561a8a68",
+      "gameId": "g_000184",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/752470/",
+          "retrievedAt": "2026-11-10T04:57:38Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f208a0252123cb58200278edcc805cff09cb5c4a6617992dbb1d727495fa7db5"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:38Z",
+      "createdAt": "2026-11-10T04:57:38Z",
+      "updatedAt": "2026-11-10T04:57:38Z",
+      "lastCheckedAt": "2026-11-10T04:57:38Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/752470/d03d7d32c0233336faef60b84ff5ce0dc26845c9/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "CINERIS SOMNIA のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "PLAYISM"
+        }
+      }
+    }
+  ]
+}

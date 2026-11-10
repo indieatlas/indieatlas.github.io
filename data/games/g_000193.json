@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000193",
+  "status": "candidate",
+  "title": {
+    "display": "Oboro no Ichi",
+    "original": "Oboro no Ichi",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4559930
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5271720",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5271720",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000270"
+  ],
+  "publisherIds": [
+    "dev_000270"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4559930/",
+            "retrievedAt": "2026-11-10T04:57:10Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:e2334203557149e00a3defdcc523ba9e3d75d48890be1ab5b3713f3e99de0b76"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-10T04:57:10Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4559930/",
+        "retrievedAt": "2026-11-10T04:57:10Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e2334203557149e00a3defdcc523ba9e3d75d48890be1ab5b3713f3e99de0b76"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4559930/",
+        "retrievedAt": "2026-11-10T04:57:10Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e2334203557149e00a3defdcc523ba9e3d75d48890be1ab5b3713f3e99de0b76"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4559930/",
+        "retrievedAt": "2026-11-10T04:57:10Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e2334203557149e00a3defdcc523ba9e3d75d48890be1ab5b3713f3e99de0b76"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4559930/",
+        "retrievedAt": "2026-11-10T04:57:10Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e2334203557149e00a3defdcc523ba9e3d75d48890be1ab5b3713f3e99de0b76"
+      }
+    }
+  ],
+  "createdAt": "2026-11-10T04:57:10Z",
+  "updatedAt": "2026-11-10T04:57:10Z",
+  "createdByRun": "42757239487"
+}

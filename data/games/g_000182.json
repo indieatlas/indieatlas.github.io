@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000182",
+  "status": "published",
+  "title": {
+    "display": "Grab Your Deck",
+    "original": "Grab Your Deck",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4842090
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5423110",
+      "kind": "demo"
+    }
+  ],
+  "officialUrl": "https://grabyourdeck.com/",
+  "developerIds": [
+    "dev_000256"
+  ],
+  "publisherIds": [
+    "dev_000257"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "solo-developer",
+        "note": "プレスキットに1人で開発したとの明記がある",
+        "evidence": [
+          {
+            "kind": "official",
+            "url": "https://grabyourdeck.com/press",
+            "retrievedAt": "2026-11-10T04:45:43Z",
+            "quote": "Grab Your Deck is made by one developer, Kyle Arch, in the Godot engine.",
+            "originKey": "official:grabyourdeck.com",
+            "fetchHash": "sha256:288d603c94175399c887cd2d3b1897c89db84227e4d589a7526270eae62d6217"
+          }
+        ]
+      },
+      {
+        "code": "self-published",
+        "note": "パブリッシャーの Sunday Games は開発者本人の1人スタジオと明記されている",
+        "evidence": [
+          {
+            "kind": "official",
+            "url": "https://grabyourdeck.com/press",
+            "retrievedAt": "2026-11-10T04:45:43Z",
+            "quote": "Sunday Games makes tiny indie games. It's the one-person studio of Kyle Arch.",
+            "originKey": "official:grabyourdeck.com",
+            "fetchHash": "sha256:288d603c94175399c887cd2d3b1897c89db84227e4d589a7526270eae62d6217"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-10T04:57:00Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4842090/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:45:22Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:38b66c5e8ace6d8f4e4f71ab757d9de08efd0f4c29954678ff31602b9cd1fd50"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4842090/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:45:22Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:38b66c5e8ace6d8f4e4f71ab757d9de08efd0f4c29954678ff31602b9cd1fd50"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "official",
+        "url": "https://grabyourdeck.com/",
+        "retrievedAt": "2026-11-10T04:45:35Z",
+        "quote": "A skateboarding game. With a twist.",
+        "originKey": "official:grabyourdeck.com",
+        "fetchHash": "sha256:d676502bae8a8e78a282ded3579ee1d31f45f86ec4e14a62c941dac5db2d86f6"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4842090/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:45:22Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:38b66c5e8ace6d8f4e4f71ab757d9de08efd0f4c29954678ff31602b9cd1fd50"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4842090/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:45:22Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:38b66c5e8ace6d8f4e4f71ab757d9de08efd0f4c29954678ff31602b9cd1fd50"
+      }
+    }
+  ],
+  "createdAt": "2026-11-10T04:57:00Z",
+  "addedAt": "2026-11-10",
+  "updatedAt": "2026-11-10T04:57:00Z",
+  "createdByRun": "42757239487"
+}

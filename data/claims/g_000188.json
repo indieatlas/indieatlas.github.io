@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000188",
+  "claims": [
+    {
+      "id": "c_a28ac7d06b549ec3",
+      "gameId": "g_000188",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4262460/",
+          "retrievedAt": "2026-11-10T04:57:55Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99dc99cf4f394af9873627b30859da9d673103b9cb33a82c151a115dc4fa92d6"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:55Z",
+      "createdAt": "2026-11-10T04:57:55Z",
+      "updatedAt": "2026-11-10T04:57:55Z",
+      "lastCheckedAt": "2026-11-10T04:57:55Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 4
+        },
+        "rawText": "4 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_4e3718212a06afe8",
+      "gameId": "g_000188",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4262460/",
+          "retrievedAt": "2026-11-10T04:57:59Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:5357bf4599fe2bba423e2afa74e040a6cb15e2a31a63678ab6846d16439d15fb"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:55Z",
+      "createdAt": "2026-11-10T04:57:55Z",
+      "updatedAt": "2026-11-10T04:57:55Z",
+      "lastCheckedAt": "2026-11-10T04:57:59Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "no",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_55bd9ab261b157b2",
+      "gameId": "g_000188",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4262460/",
+          "retrievedAt": "2026-11-10T04:57:55Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99dc99cf4f394af9873627b30859da9d673103b9cb33a82c151a115dc4fa92d6"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:55Z",
+      "createdAt": "2026-11-10T04:57:55Z",
+      "updatedAt": "2026-11-10T04:57:55Z",
+      "lastCheckedAt": "2026-11-10T04:57:55Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "online-coop",
+          "online-pvp",
+          "mmo"
+        ]
+      }
+    },
+    {
+      "id": "c_defc90c2b4081ccc",
+      "gameId": "g_000188",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4262460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:48:45Z",
+          "quote": "ROB RUN is a brutal crime sandbox featuring thousands of players.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99dc99cf4f394af9873627b30859da9d673103b9cb33a82c151a115dc4fa92d6"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:48:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "summary",
+      "value": {
+        "ja": "数千人規模のプレイヤーが同じサーバーで犯罪者や警察として過ごすPvP犯罪サンドボックス。犯罪で得た金や物資を拠点に持ち帰り、ギャングの勢力拡大や拠点づくりを進める。"
+      }
+    },
+    {
+      "id": "c_1d5afbd6082bd0b5",
+      "gameId": "g_000188",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4262460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:48:45Z",
+          "quote": "Bank robberies, raids on rivals' hideouts, police chases, and bloody shootouts.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99dc99cf4f394af9873627b30859da9d673103b9cb33a82c151a115dc4fa92d6"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:48:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_1d986a26df5a6313",
+      "gameId": "g_000188",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4262460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:48:45Z",
+          "quote": "Build and upgrade your base, store loot and vehicles, and place workbenches and safes.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99dc99cf4f394af9873627b30859da9d673103b9cb33a82c151a115dc4fa92d6"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:48:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "base-building"
+      }
+    },
+    {
+      "id": "c_67f769a81cf5bbf3",
+      "gameId": "g_000188",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4262460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:48:45Z",
+          "quote": "You risk losing absolutely everything every minute.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99dc99cf4f394af9873627b30859da9d673103b9cb33a82c151a115dc4fa92d6"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:48:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "tense"
+      }
+    },
+    {
+      "id": "c_82bdc61e5a24c4bf",
+      "gameId": "g_000188",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4262460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:48:45Z",
+          "quote": "ROB RUN is a brutal crime sandbox featuring thousands of players.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99dc99cf4f394af9873627b30859da9d673103b9cb33a82c151a115dc4fa92d6"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:48:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "sandbox"
+      }
+    },
+    {
+      "id": "c_a613f0a4ddd02fb3",
+      "gameId": "g_000188",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4262460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:48:45Z",
+          "quote": "To survive, you have to be able to plan, make quick decisions, and pull the trigger at the right moment.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99dc99cf4f394af9873627b30859da9d673103b9cb33a82c151a115dc4fa92d6"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:48:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "shooter"
+      }
+    },
+    {
+      "id": "c_c673bf05a8fd160c",
+      "gameId": "g_000188",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4262460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-10T04:48:45Z",
+          "quote": "You can survive on your own, but you can only thrive by working together.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99dc99cf4f394af9873627b30859da9d673103b9cb33a82c151a115dc4fa92d6"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:00Z",
+      "createdAt": "2026-11-10T04:57:00Z",
+      "updatedAt": "2026-11-10T04:57:00Z",
+      "lastCheckedAt": "2026-11-10T04:48:45Z",
+      "createdBy": "llm",
+      "createdByRun": "42757239487",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_7a8d614f878ab3eb",
+      "gameId": "g_000188",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4262460/",
+          "retrievedAt": "2026-11-10T04:57:55Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99dc99cf4f394af9873627b30859da9d673103b9cb33a82c151a115dc4fa92d6"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:55Z",
+      "createdAt": "2026-11-10T04:57:55Z",
+      "updatedAt": "2026-11-10T04:57:55Z",
+      "lastCheckedAt": "2026-11-10T04:57:55Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4262460/"
+      }
+    },
+    {
+      "id": "c_e5d3cb732f5826d1",
+      "gameId": "g_000188",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4262460/",
+          "retrievedAt": "2026-11-10T04:57:55Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99dc99cf4f394af9873627b30859da9d673103b9cb33a82c151a115dc4fa92d6"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-10T04:57:55Z",
+      "createdAt": "2026-11-10T04:57:55Z",
+      "updatedAt": "2026-11-10T04:57:55Z",
+      "lastCheckedAt": "2026-11-10T04:57:55Z",
+      "createdBy": "system",
+      "createdByRun": "42757239487",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4262460/db8e0cf43c9475b96fb9446b4908de79fcb9f619/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "ROB RUN のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Kefir"
+        }
+      }
+    }
+  ]
+}

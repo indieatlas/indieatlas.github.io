@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000183",
+  "status": "candidate",
+  "title": {
+    "display": "Aftermind",
+    "original": "Aftermind",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5386940
+  },
+  "associatedApps": [],
+  "officialUrl": "https://shiftorbitgames.com",
+  "developerIds": [
+    "dev_000258"
+  ],
+  "publisherIds": [
+    "dev_000258"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "note": "開発者とパブリッシャーがともに Shift Orbit Games",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5386940/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-10T04:45:40Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:c792868cd7d837e6af065b506cf7cfe7c5125eb0d083cd19613093d52da56345"
+          },
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5386940/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-10T04:45:40Z",
+            "locator": "steam:appdetails.publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:c792868cd7d837e6af065b506cf7cfe7c5125eb0d083cd19613093d52da56345"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-10T04:57:00Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5386940/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:45:40Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c792868cd7d837e6af065b506cf7cfe7c5125eb0d083cd19613093d52da56345"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5386940/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:45:40Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c792868cd7d837e6af065b506cf7cfe7c5125eb0d083cd19613093d52da56345"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "official",
+        "url": "http://localhost:3000/",
+        "publishedAt": "2026-11-10",
+        "retrievedAt": "2026-11-10T04:45:54Z",
+        "quote": "Biz Shift Orbit, bağımsız bir oyun stüdyosuyuz.",
+        "originKey": "official:shiftorbitgames.com",
+        "fetchHash": "sha256:11b303a247c0b1acd6e0430346986e4d4bb467dba401aaecffa597a97907398a"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5386940/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:45:40Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c792868cd7d837e6af065b506cf7cfe7c5125eb0d083cd19613093d52da56345"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5386940/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-10T04:45:40Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c792868cd7d837e6af065b506cf7cfe7c5125eb0d083cd19613093d52da56345"
+      }
+    }
+  ],
+  "createdAt": "2026-11-10T04:57:00Z",
+  "updatedAt": "2026-11-10T04:57:00Z",
+  "createdByRun": "42757239487"
+}
