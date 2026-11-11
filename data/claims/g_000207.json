@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000207",
+  "claims": [
+    {
+      "id": "c_f9e9bb3059062ad0",
+      "gameId": "g_000207",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1308700/",
+          "retrievedAt": "2026-11-11T03:07:28Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9e643d83cf376d280de5c3e30c275ad6db93210b76fd7983ed048e6933185002"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:28Z",
+      "createdAt": "2026-11-11T03:07:28Z",
+      "updatedAt": "2026-11-11T03:07:28Z",
+      "lastCheckedAt": "2026-11-11T03:07:28Z",
+      "createdBy": "system",
+      "createdByRun": "42948722984",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2023,
+          "month": 10,
+          "day": 26
+        },
+        "rawText": "26 Oct, 2023"
+      }
+    },
+    {
+      "id": "c_2cd9aa024bbd948d",
+      "gameId": "g_000207",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1308700/",
+          "retrievedAt": "2026-11-11T03:07:31Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9259a084d2494d934229a7e5706ba0cb1a2b056c989601e1c5a08b2addaed872"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:28Z",
+      "createdAt": "2026-11-11T03:07:28Z",
+      "updatedAt": "2026-11-11T03:07:28Z",
+      "lastCheckedAt": "2026-11-11T03:07:31Z",
+      "createdBy": "system",
+      "createdByRun": "42948722984",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_e5565d358755e297",
+      "gameId": "g_000207",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1308700/",
+          "retrievedAt": "2026-11-11T03:07:28Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9e643d83cf376d280de5c3e30c275ad6db93210b76fd7983ed048e6933185002"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:28Z",
+      "createdAt": "2026-11-11T03:07:28Z",
+      "updatedAt": "2026-11-11T03:07:28Z",
+      "lastCheckedAt": "2026-11-11T03:07:28Z",
+      "createdBy": "system",
+      "createdByRun": "42948722984",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_0a1e509261189bb5",
+      "gameId": "g_000207",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1308700/",
+          "retrievedAt": "2026-11-11T03:07:28Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9e643d83cf376d280de5c3e30c275ad6db93210b76fd7983ed048e6933185002"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:28Z",
+      "createdAt": "2026-11-11T03:07:28Z",
+      "updatedAt": "2026-11-11T03:07:28Z",
+      "lastCheckedAt": "2026-11-11T03:07:28Z",
+      "createdBy": "system",
+      "createdByRun": "42948722984",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1308700/"
+      }
+    },
+    {
+      "id": "c_fe359da261d550c5",
+      "gameId": "g_000207",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1308700/",
+          "retrievedAt": "2026-11-11T03:07:28Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9e643d83cf376d280de5c3e30c275ad6db93210b76fd7983ed048e6933185002"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:28Z",
+      "createdAt": "2026-11-11T03:07:28Z",
+      "updatedAt": "2026-11-11T03:07:28Z",
+      "lastCheckedAt": "2026-11-11T03:07:28Z",
+      "createdBy": "system",
+      "createdByRun": "42948722984",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1308700/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Wizardry外伝 五つの試練 のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Game*Spark Publishing"
+        }
+      }
+    }
+  ]
+}

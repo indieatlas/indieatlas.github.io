@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000209",
+  "status": "candidate",
+  "title": {
+    "display": "脱毛サロンシミュレーター",
+    "original": "Hair Removal Salon Simulator",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "脱毛サロンシミュレーター",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 4351380
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5173120",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5173120",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000295"
+  ],
+  "publisherIds": [
+    "dev_000296"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-11T03:07:21Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-11T03:07:21Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4351380/",
+        "retrievedAt": "2026-11-11T03:07:37Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:44a525597eaa9a5d22af896a86fb0b9ad44c90b910955496e549ecc7a6a009c6"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4351380/",
+        "retrievedAt": "2026-11-11T03:07:37Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:44a525597eaa9a5d22af896a86fb0b9ad44c90b910955496e549ecc7a6a009c6"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4351380/",
+        "retrievedAt": "2026-11-11T03:07:37Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:44a525597eaa9a5d22af896a86fb0b9ad44c90b910955496e549ecc7a6a009c6"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4351380/",
+        "retrievedAt": "2026-11-11T03:07:37Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:44a525597eaa9a5d22af896a86fb0b9ad44c90b910955496e549ecc7a6a009c6"
+      }
+    }
+  ],
+  "createdAt": "2026-11-11T03:07:37Z",
+  "updatedAt": "2026-11-11T03:07:21Z",
+  "createdByRun": "42948722984"
+}

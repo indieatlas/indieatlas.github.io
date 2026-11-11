@@ -415,7 +415,9 @@
       "goal": "PC版について国内発売日2026年12月10日を公式の告知で裏づけ、必要なら地域別の release Claim を追加する。",
       "status": "open",
       "priority": 0,
-      "attempts": 0,
+      "attempts": 1,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
       "createdAt": "2026-11-10T04:57:00Z",
       "createdBy": "executor"
     },
@@ -567,6 +569,31 @@
       "createdBy": "validator"
     },
     {
+      "id": "t_0bdf9212faf39318",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.inside-games.jp/article/2026/11/10/190680.html",
+        "sourceId": "inside-games",
+        "hints": [
+          "ゆにれいど！"
+        ]
+      },
+      "goal": "記事「ファンとの強い結びつきを体感！「ゆにれいど！」の“共創”を体現した第2回リアルイベント「Uniraid! Creative Studio」現地レポート」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "irrelevant",
+        "summary": "記事は異世界VTuberプロジェクト「ゆにれいど！」の第2回リアルイベント「Uniraid! Creative Studio」（2026年11月1日・渋谷ストリームホール）の現地レポート。展示、物販、ファンミーティングの模様を伝える内容で、ゲーム作品の発表はない。find_games と search_steam で該当ゲームは見つからず、催しもインディーゲーム関連ではないため登録しない。ページ内に指示文はなかった。"
+      }
+    },
+    {
       "id": "t_0be3db9cd43489eb",
       "type": "process-article",
       "target": {
@@ -672,6 +699,31 @@
       "createdBy": "validator"
     },
     {
+      "id": "t_0da91578cf1e3ec3",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.4gamer.net/games/813/G081367/20261109028/",
+        "sourceId": "4gamer",
+        "hints": [
+          "1999トコヨビル"
+        ]
+      },
+      "goal": "記事「PC向けホラーアドベンチャー「1999トコヨビル」，Steamで配信開始。2ndPVやグッズ情報も公開に」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "4Gamer記事を取得し、講談社ゲームラボのホラーアドベンチャー『1999トコヨビル』を新規登録した。Steam AppID 4099810、開発は常夜不動産。公式製品ページで発売日2026年11月10日、Steamでは11月9日表記、対応言語は日本語・英語・簡体字を確認。紹介文とタグ5件を付与し、記事をprimaryで関連づけた。小規模体制の根拠はレーベル紹介文（個人／少人数のクリエイター支援）にとどまるため、限定的な根拠として付した。ページ内に指示文はなかった。"
+      }
+    },
+    {
       "id": "t_0dcf518d82566bbf",
       "type": "register-game",
       "target": {
@@ -765,6 +817,31 @@
       }
     },
     {
+      "id": "t_114368cd3437a304",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.4gamer.net/games/056/G105681/20261109050/",
+        "sourceId": "4gamer",
+        "hints": [
+          "PianoGlow"
+        ]
+      },
+      "goal": "記事「オンラインロビーに集まり，世界中のプレイヤーのピアノ演奏を聴こう。「PianoGlow」，Steamで配信開始」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "4Gamerの記事を取得し、TheAlanskiの「PianoGlow」が2026年11月6日にSteamで配信開始されたと確認した。未収録のため新規登録する。Steam（appId 3499520、表記は「Piano Glow」、開発・販売TheAlanski）と公式サイトを照合し、小規模体制の理由を補った。オンライン演奏や曲名当てなどのモード、練習機能を紹介文とタグにまとめ、記事をprimaryで関連づけた。発売日・機種はストアから自動取得のためClaimは書いていない。"
+      }
+    },
+    {
       "id": "t_11644d0d30491869",
       "type": "register-game",
       "target": {
@@ -787,6 +864,31 @@
         "runId": "42199738593",
         "outcome": "completed",
         "summary": "EMIKA_GAMESの『September 7th』(Steam appId 2249160)を新規登録する。Steamストアで本体ゲーム、開発・パブリッシュともにEMIKA_GAMES、2023年1月6日発売、PC単機種・シングルの短編サイコホラージャンルと確認。公式サイトで作者が一人で制作している旨の記述があり、個人開発の根拠とした。ストア紹介文を基に紹介文とタグ（ホラー、アドベンチャー、短時間、謎めいた、ダーク）を提案。関連記事は見つからず未提案。"
+      }
+    },
+    {
+      "id": "t_1178bea2511dc5a7",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.4gamer.net/games/052/G105278/20261110013/",
+        "sourceId": "4gamer",
+        "hints": [
+          "Against Heroes"
+        ]
+      },
+      "goal": "記事「魔王が主人公の戦略オートバトラー「Against Heroes」，Steamで本日発売。成長していく勇者たちを，モンスター軍団で先回りして討伐しよう」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "4Gamer記事を取得。Spacewisp Gamesの「Against Heroes」がSteamで発売。記事内リンクのストア（app 5351930）をget_steam_appで確認し、本編・開発元Spacewisp Games/Nextday・販売元同社を確認。未収録のため登録し、ストア紹介文を根拠に紹介文とタグ4件を追加、記事をprimaryで関連づけた。ストア表記の発売日は11月9日で記事の10日とずれるが、日付はストアから自動取込のため個別Claimは出していない。"
       }
     },
     {
@@ -1021,6 +1123,58 @@
         "runId": "42199738593",
         "outcome": "completed",
         "summary": "4Gamer記事を読み、扱われているのは電猫遊戯開発・松竹ゲームズ発売の『夢幻桜楼閣』（ローグライト3Dアクション、2026年11月5日発売）と確認。既存登録はなく、Steamアプリ2991310（本体）と4070720（Demo）を確認して新規登録を提案した。松竹ゲームズの公式発表で「インディーゲームサークル」と明記されている点を小規模体制の根拠にした。紹介文とタグ6件、Switch版の発売情報を追加し、記事を主題として関連づけた。SteamはPCのみ表記、記事と公式発表はSwitch併売としている点は要注意。"
+      }
+    },
+    {
+      "id": "t_1676966fffa442bb",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.pcgamer.com/games/roguelike/warhammer-survivors-review/",
+        "sourceId": "pc-gamer",
+        "hints": [
+          "Warhammer Survivors",
+          "Vampire Survivors",
+          "g_000006"
+        ]
+      },
+      "goal": "記事「Warhammer Survivors review: More than just Vampire Survivors with Space Marines」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "PC Gamer の『Warhammer Survivors』レビューを取得。記事は Steam ストア（app 3669620）をリンクしており、get_steam_app で開発・販売とも Auroch Digital、2026年11月10日発売の本編と確認した。既存作品になかったため新規登録し、ストアの作品紹介を根拠に紹介文とタグを提案。記事は同作を主題に扱い、『Vampire Survivors』（g_000006）は比較対象として言及されるのみ。発売日・機種などはストアから自動取得されるため Claim は付けていない。ページ内に指示文はなかった。"
+      }
+    },
+    {
+      "id": "t_16bebc99a7a0b83d",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.pcgamer.com/games/puzzle/big-walk-developer-reveals-it-used-generative-ai-sparingly-estimates-well-under-0-1-percent-was-actually-coded-using-llms/",
+        "sourceId": "pc-gamer",
+        "hints": [
+          "Big Walk"
+        ]
+      },
+      "goal": "記事「Big Walk developer reveals it used generative AI 'sparingly', estimates 'well under 0.1%' was actually coded using LLMs」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "PC Gamer の記事は Big Walk（House House 開発、Panic 発売）の生成AI使用をめぐる報道で、作品を主題として扱っていた。既存DBになかったため Steam（appId 1478500）で同一作品を確認して新規登録し、ストアの作品紹介を根拠に紹介文とタグを付けた。記事は news として primary で関連づけた。記事には開発者の公式FAQの引用があり、コードの0.1%未満でLLMを使ったとの説明が含まれる。ページ内に当方への指示文はなかった。日本語公式表記やプレイヤー人数の Claim は確認していない。"
       }
     },
     {
@@ -1340,6 +1494,23 @@
         "outcome": "completed",
         "summary": "GamingOnLinuxの記事を取得し、音楽サンドボックス『Vibe Together』（The Music Unc）を扱うインディー作品と確認。未収録だったため Steam（appId 5347180、種類はgame、開発・販売とも The Music Unc）を根拠に新規登録し、ストアの作品紹介から紹介文とタグ（sandbox、co-op-focused、roguelike、procedural-generation）を提案、記事をprimaryとして関連づけた。記事によればSteam体験版が近日公開予定で、発売日と価格は未定。ページ内に指示文はなし。"
       }
+    },
+    {
+      "id": "t_1b3c59717822d852",
+      "type": "register-game",
+      "target": {
+        "url": "https://www.4gamer.net/games/057/G105703/20261110025/",
+        "name": "The Little Aquarist",
+        "hints": [
+          "steam:5549240"
+        ]
+      },
+      "goal": "「The Little Aquarist」を登録し、記事（target.url）に関連づける",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T03:07:21Z",
+      "createdBy": "validator"
     },
     {
       "id": "t_1b8edd0c32f7f584",
@@ -1701,6 +1872,28 @@
       }
     },
     {
+      "id": "t_238298c1b5d16092",
+      "type": "process-article",
+      "target": {
+        "url": "http://www.gamespark.jp/article/2026/11/10/174704.html",
+        "sourceId": "gamespark"
+      },
+      "goal": "記事「ゲームの「プレイ体験」を磨く人におすすめのブース・セッション8選！音響からキャラクター表現、フォントまで【GTMF 2026】」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "記事を取得したところ、内容は開発者向けツール・ミドルウェア展示会「GTMF 2026」（大阪12月2日、東京12月8日）の注目ブース／セッション紹介で、ゲーム作品が主題ではなかった。ヤマハのセッションで音響設計が取り上げられた『義妹生活 Days with My Lo-Fi Sister』だけが作品として言及されていたため、Steamで同名の本編を確認し、開発Minstrel／Neilo、販売Minstrelの未収録作として登録して記事にmentionで関連づけた。GTMF 2026はインディーゲームの催しではないためイベント登録は見送った。"
+      }
+    },
+    {
       "id": "t_23cdeb54fb98d449",
       "type": "process-article",
       "target": {
@@ -1788,6 +1981,22 @@
       "createdBy": "executor"
     },
     {
+      "id": "t_24a2a800b28f3905",
+      "type": "process-article",
+      "target": {
+        "url": "http://www.gamespark.jp/article/2026/11/10/174698.html",
+        "sourceId": "gamespark"
+      },
+      "goal": "記事「『ツイステッド・メタル』を彷彿させる新作カーコンバットゲームのゲームプレイ映像が公開！」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 1,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
+    },
+    {
       "id": "t_25531cbfc6eabd10",
       "type": "register-game",
       "target": {
@@ -1827,6 +2036,31 @@
         "runId": "42199738593",
         "outcome": "completed",
         "summary": "記事は、ボールを撃って分裂させ部屋を片付ける1〜4人協力アリーナシューター『UPSHOT』を扱っていた。Steam（app 5377460）を確認し、開発・販売が同じ Wazang Games、2026年11月12日配信予定の本編と判断。find_games では未収録だったため新規登録し、ストアの作品紹介を根拠に紹介文とタグを付けた。記事は primary として関連づけた。発売日などはコードがストアから取り込む項目のため Claim には書いていない。"
+      }
+    },
+    {
+      "id": "t_25a4000bc115dd34",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.4gamer.net/games/056/G105680/20261109049/",
+        "sourceId": "4gamer",
+        "hints": [
+          "Argent Cocoon"
+        ]
+      },
+      "goal": "記事「人類滅亡後，虫の民“インセクタ”が暮らす世界では“進化”が絶対の法則となっている。ストーリー重視の百合ADV「Argent Cocoon」，体験版配信開始」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "4Gamer記事を取得し、中国の白鸢尾剧团 WhiteIrisStudio のPC向け百合ADV「银茧 Argent Cocoon」（Steam 4976520）と同定。未登録だったためcreate-gameで登録し、ストアの作品紹介を根拠に紹介文とタグを追加、記事をprimaryで関連づけた。開発者とパブリッシャーが同一のためself-published。体験版配信開始とされるが、記事は「2026年内」、ストアは「2027」表記で発売時期に相違があり、日付Claimは作成していない。記事に指示文はなし。"
       }
     },
     {
@@ -2016,6 +2250,32 @@
       }
     },
     {
+      "id": "t_2844dcb4fa99ca0e",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.inside-games.jp/article/2026/11/10/190675.html",
+        "sourceId": "inside-games",
+        "hints": [
+          "ENDER LILIES",
+          "ENDER MAGNOLIA"
+        ]
+      },
+      "goal": "記事「『ENDER LILIES』『ENDER MAGNOLIA』の公式グッズがネット展開！Tシャツやトートバッグ、アクリルスタンドなどを用意」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "irrelevant",
+        "summary": "記事を取得。内容はインフォレンズが『ENDER LILIES』『ENDER MAGNOLIA』の公式ライセンスグッズをINFOLENS GEEK SHOPで販売開始する商品告知で、Tシャツやトートバッグ等の価格と販売日時のみ。作品内容や発売情報、催しには触れていない。方針によりグッズ告知は対象外のため操作は提案しない。『ENDER LILIES』は既収録（g_000068）。ページ内に指示文はない。"
+      }
+    },
+    {
       "id": "t_289da8732c0921e0",
       "type": "fill-missing",
       "target": {
@@ -2060,6 +2320,28 @@
         "runId": "42199738593",
         "outcome": "completed",
         "summary": "Game*Spark記事を取得し、未収録の『Westlanders』をSteam（appId 3886530、開発The Breach Studios／発売Team17）で確認して登録した。2026年11月10日よりSteamでクローズド・プレイテスト実施、2027年初頭に早期アクセス開始予定、PS5/Xbox Series X|S版も予定と記事は伝える。ストアの作品紹介から紹介文とタグを提案し、記事をprimaryで関連づけた。開発元の独立系であることを示す本文の記述は得られず、インディー理由は空のまま（候補扱い）。"
+      }
+    },
+    {
+      "id": "t_29e5a99c7534a763",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.4gamer.net/games/991/G999101/20261109048/",
+        "sourceId": "4gamer"
+      },
+      "goal": "記事「「ゲーム開発×AI、今どこまで来たか」ミートアップイベントを12月3日に高輪ゲートウェイで開催。実務への導入と課題に迫る」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "irrelevant",
+        "summary": "記事はリヴァイとPolyscapeが共催するゲーム開発×AIのミートアップ（2026年12月3日、東京・高輪ゲートウェイのEIGHT）の告知で、特定のゲーム作品を扱っていない。登録・関連づけできる作品はない。催しも開発者向けの業務ミートアップであり、インディーゲームの展示・ショーケース・フェスに当たらないため登録しない。ページ内に指示文はなかった。"
       }
     },
     {
@@ -2109,11 +2391,19 @@
         "field": "features"
       },
       "goal": "ストアの作品紹介をもとに、作品の特徴（features）を3〜5項目で補う",
-      "status": "open",
+      "status": "done",
       "priority": 0,
       "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
       "createdAt": "2026-11-09T03:07:11Z",
-      "createdBy": "executor"
+      "createdBy": "executor",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "Steam ストア（app 3883570）の作品紹介を取得し、記載内容に沿って features を5項目作成した。内容は、ダイスを振るたびに召喚される恐怖・罠・呪い、最大6人のオンライン協力でのダイス探索、回復・潜伏・妨害の特殊ダイス、ジャングルや氷の山などのバイオーム、報酬と高難度挑戦のアンロック。すべてストア本文の抜粋を根拠とした。ページ内に当サイトへの指示文はなかった。"
+      }
     },
     {
       "id": "t_2b0c56c0a4fcfc69",
@@ -2188,6 +2478,31 @@
         "runId": "local-20261104-132342-research",
         "outcome": "completed",
         "summary": "AUTOMATON記事を取得し、扱われている『Queen's Domain』を未収録と確認。Steam（appId 1799840、type=game、開発Freshly Baked Games LLC／販売Future Friends Games）を特定し新規登録を提案した。サウンドトラックのストアページに「dev duo」とあるためsmall-teamを根拠付きで設定。ストア紹介文を根拠に紹介文とタグ7件を追加し、記事をprimaryで関連づけた。体験版とサウンドトラックを付属アプリに登録。ページ内に指示文はなかった。"
+      }
+    },
+    {
+      "id": "t_2c0e65b1de8c5255",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.gamingonlinux.com/2026/11/dwarf-fortress-now-has-audio-for-the-fortress-mode/",
+        "sourceId": "gamingonlinux",
+        "hints": [
+          "Dwarf Fortress"
+        ]
+      },
+      "goal": "記事「Dwarf Fortress now has audio for the Fortress Mode」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "GamingOnLinuxの記事を取得し、扱われている『Dwarf Fortress』が未収録だったためSteam（appId 975370）で確認して登録した。開発はBay 12 Games、販売はKitfox Gamesで、Steamの説明文に「二人の兄弟が16年以上更新」とあり小規模体制の根拠とした。記事は要塞モードの音響システム刷新（FMOD Studio移行、バイオーム別環境音、採掘音の立体化など）と、Myth & Magicアップデートの今年度内配信見送りを伝えている。記事はnewsとして作品をprimaryで関連づけた。ページ内に指示文はなかった。"
       }
     },
     {
@@ -2618,6 +2933,28 @@
       "createdBy": "collector"
     },
     {
+      "id": "t_30ada119f81b9cdc",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.gamesradar.com/games/dev-creates-a-tool-to-automatically-inform-sam-altman-of-all-the-ram-sitting-unused-in-your-pc-as-openai-co-founder-complains/",
+        "sourceId": "gamesradar"
+      },
+      "goal": "記事「Dev creates a tool to automatically inform Sam Altman of all the RAM sitting unused in your PC」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "irrelevant",
+        "summary": "記事を取得して本文を確認した。内容は、OpenAI の Sam Altman がポッドキャストで「PC内で使われていないRAM」について述べた発言をめぐり、開発者 Iain Kay が、未使用RAMがあるとAltman宛に1日1通メールを送るbashスクリプト「Ram-Altman」をGitHubで公開したという話題。ゲーム作品の告知・発売・レビューではなく、インディーゲームを扱った記事ではないため、作品の登録や記事の関連づけは行わない。ページ内に当方への指示文はなかった。"
+      }
+    },
+    {
       "id": "t_30e11f5b1c9f4484",
       "type": "process-article",
       "target": {
@@ -2632,6 +2969,31 @@
       "lastRunId": "42402321312",
       "createdAt": "2026-11-07T18:39:25Z",
       "createdBy": "collector"
+    },
+    {
+      "id": "t_31578277e8f4c1b0",
+      "type": "process-article",
+      "target": {
+        "url": "https://news.denfaminicogamer.jp/news/2611102b",
+        "sourceId": "denfaminicogamer",
+        "hints": [
+          "Aveltuner"
+        ]
+      },
+      "goal": "記事「魔法の“仕組み”を理解して研究するゲーム『Aveltuner』が面白そう。水を操ったり地面を隆起させたり、オープンワールド世界で魔法の実験し放題」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "記事は個人ゲーム開発者Karigami氏の新作『Aveltuner』を扱うニュースで、既存登録はなかった。Steam（appId 5534190、開発・販売ともKarigami、PC、発売日未発表）と公式サイトで裏づけ、作品を登録した。魔法をスキルとして解放せず仕組みを理解して使う探索ゲームで、密度の高いオープンワールドを舞台とする。紹介文とタグ5件をストア説明から作成し、記事をprimaryで関連づけた。開発初期段階との記載があり、詳細は変更される見込み。"
+      }
     },
     {
       "id": "t_31c09c6157b26855",
@@ -2700,6 +3062,31 @@
       "createdBy": "collector"
     },
     {
+      "id": "t_32aada7352e82aa6",
+      "type": "process-article",
+      "target": {
+        "url": "https://automaton-media.com/articles/newsjp/20261110-478459/",
+        "sourceId": "automaton",
+        "hints": [
+          "Battle Sweeper"
+        ]
+      },
+      "goal": "記事「Steam無料・マインスイーパーRPG『Battle Sweeper』まもなく配信終了へ。今入手すればずっと遊べる」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "AUTOMATON記事を取得。無料のマインスイーパーRPG『Battle Sweeper』を扱う記事で、AlpaSun Gamesが11月9日に配信終了を発表し、所有済みなら終了後もプレイ可能と報じていた。未収録だったためfind_gamesで確認後、Steam appId 1380360をget_steam_appで照合し登録。開発・販売が同一のAlpaSun Gamesのため自己出版。ストア紹介と記事本文を根拠に紹介文とタグを付与し、記事をprimaryとして関連づけた。配信終了は記事1本のみの情報のため発売情報Claimは見送り、事実確認を後続に残した。"
+      }
+    },
+    {
       "id": "t_335cd71dba2f745a",
       "type": "process-article",
       "target": {
@@ -2722,6 +3109,32 @@
         "runId": "42402321312",
         "outcome": "completed",
         "summary": "電ファミニコゲーマーの記事は、ネストピの作業用ADV『Chill with You : Lo-Fi Story』の1周年記念として無料アップデート「君と見る夢」と有料DLC『Room & Cozy Activity』の発表を伝える内容。未収録だったためSteam（appId 3548580）で同一作品と確認して新規登録し、ストア紹介文を根拠に紹介文とタグ4件を付けた。DLC（appId 3718890）は本編の associatedApps に登録。開発・販売はともに Nestopi Inc. のため自己出版。公式サイトの会社概要は従業員20名のため小規模体制の理由は付けていない。"
+      }
+    },
+    {
+      "id": "t_33c6928d7ee887a1",
+      "type": "process-article",
+      "target": {
+        "url": "https://game.watch.impress.co.jp/docs/review/rev1/2153481.html",
+        "sourceId": "game-watch",
+        "hints": [
+          "勇者パーティはぜんめつしました。",
+          "g_000185"
+        ]
+      },
+      "goal": "記事「勇者たちの重すぎる感情と複雑な人間関係。武器を壊して奪う戦闘も魅力！「勇者パーティはぜんめつしました。」レビュー」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "Game Watch のレビュー記事を取得。扱う作品は収録済みの「勇者パーティはぜんめつしました。」（g_000185、候補）だったため新規登録せず、記事を primary で関連づけた。記事は4人の勇者から1人を選ぶルート分岐、ターン制カードバトル、武器を壊して奪う仕組み、呪いによるリトライを紹介し、2026年11月10日発売と伝える。Steam は発売済み（9 Nov, 2026）で既存の発売 Claim が upcoming のままだったため、released で上書きする Claim を提案した。記事本文に指示文はなかった。"
       }
     },
     {
@@ -2787,6 +3200,32 @@
         "runId": "42402321312",
         "outcome": "completed",
         "summary": "AUTOMATON記事を取得し、tinyBuild発売・Questing Goose Studio開発の『Probably Stolen - Cyberpunk Shopkeeper Sim』（Steam appId 4348910、2026年10月28日発売）を特定。未収録だったため新規登録し、ストアの作品紹介を根拠に紹介文とタグ5件を提案、記事をprimaryで関連づけた。売上100万本突破と今後の無料アップデート計画が記事に記載。開発元の規模を示す公式記載は見つからず、インディー理由は独立系パブリッシャー（tinyBuild）の自己説明のみを根拠にしている。ページ内に指示文はなかった。"
+      }
+    },
+    {
+      "id": "t_3580c03799a9d61d",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.4gamer.net/games/056/G105644/20261109046/",
+        "sourceId": "4gamer",
+        "hints": [
+          "Brick Buddies",
+          "g_000180"
+        ]
+      },
+      "goal": "記事「ゆったりとした空間で，色とりどりのブロックを組み立てよう。「Brick Buddies」，配信開始」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "4Gamer.netの記事を取得し、Bunnyhop開発・BunnyhopHome販売の「Brick Buddies」が2026年11月9日に配信開始（799円、11月23日まで10％オフ）と報じていることを確認した。作品は既に候補として収録済み（g_000180、Steam appId 4901540）だったため新規登録はせず、記事をprimaryとして関連づけた。Steamストアでもリリース日・開発元・販売元を確認し、既存の採用済みClaimと矛盾はなかった。紹介文とタグは別の未解決タスク（fill-missing）の担当範囲のため変更していない。"
       }
     },
     {
@@ -2858,6 +3297,31 @@
       "attempts": 0,
       "createdAt": "2026-11-06T10:20:57Z",
       "createdBy": "validator"
+    },
+    {
+      "id": "t_37affcad895c7cb3",
+      "type": "process-article",
+      "target": {
+        "url": "https://game.watch.impress.co.jp/docs/news/2154920.html",
+        "sourceId": "game-watch",
+        "hints": [
+          "NIGHTMARE OPERATOR"
+        ]
+      },
+      "goal": "記事「ローポリなホラーTPS「NIGHTMARE OPERATOR」のティザートレーラー公開！久々の新情報。パブリッシャーは集英社ゲームズに決定」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "GAME Watch の記事を取得し、未収録だった『NIGHTMARE OPERATOR』を Steam（appId 2957360、開発 DDDistortion／販売 SHUEISHA GAMES、PC、発売日未定）で特定して登録した。記事は集英社ゲームズがパブリッシャーになったこと、ティザートレーラー公開、近未来の廃墟の東京で妖怪と戦うTPSアクションホラーであることを伝えている。Steam の作品紹介を根拠に紹介文とタグを付け、記事を primary で関連づけた。インディー判断は Steam のジャンル「Indie」のみが根拠で、小規模体制の明記は確認できなかった。"
+      }
     },
     {
       "id": "t_37d92c4cbedcc0ec",
@@ -3310,6 +3774,57 @@
       "createdBy": "executor"
     },
     {
+      "id": "t_3d6bbb5ba360ff83",
+      "type": "process-article",
+      "target": {
+        "url": "https://news.denfaminicogamer.jp/kikakuthetower/261110a",
+        "sourceId": "denfaminicogamer",
+        "hints": [
+          "勇者パーティはぜんめつしました。",
+          "g_000185"
+        ]
+      },
+      "goal": "記事「新作RPG『勇者パーティはぜんめつしました。の“魔力がない魔法使い”に情緒を焼き尽くされた。魔力も腕力もなく毒舌で──なのに、残してしまったときの背中が、寂しすぎる。えらべるパーティメンバーはひとりなのに、置いていけない」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "電ファミニコゲーマーの特集記事は『勇者パーティはぜんめつしました。』（Death Kumiai）の魔法使いルートを遊んだ体験記事で、扱う作品は既存の g_000185 と一致したため新規登録せず、記事を primary で関連づけた。記事は2026年11月10日リリースと伝えており、ストアでも発売済み（2026年11月9日表記）を確認したため、発売情報を released として追加し旧 Claim を置き換えた。本文に指示文はなかった。"
+      }
+    },
+    {
+      "id": "t_3d900c02bc9c3671",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.gamesradar.com/games/survival/glorybound-codes/",
+        "sourceId": "gamesradar",
+        "hints": [
+          "GloryBound"
+        ]
+      },
+      "goal": "記事「GloryBound codes (November 2026) and how to redeem them for Lucky Spins and Chests」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "irrelevant",
+        "summary": "記事は Roblox 体験「GloryBound」（クレジット表記 SphereX Studio）のプロモコード一覧と入力手順を紹介する攻略ガイドで、作品の内容や開発体制を伝える記事ではない。Roblox 上の体験のため Steam や公式ストアのページがなく、インディーかどうかを裏づける根拠も得られない。Steam で同名の「Glorybound」（appId 5452550、Glorybound game 開発のターン制ローグライト）が見つかったが、記事の剣闘士アリーナ作品とは別物。よって収録対象外と判断し、操作は提案しない。ページ内に指示文はなかった。"
+      }
+    },
+    {
       "id": "t_3da0995a20227393",
       "type": "process-article",
       "target": {
@@ -3551,6 +4066,31 @@
       }
     },
     {
+      "id": "t_4202bfbd5132113d",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.4gamer.net/games/056/G105682/20261110002/",
+        "sourceId": "4gamer",
+        "hints": [
+          "Beholder 4"
+        ]
+      },
+      "goal": "記事「シリーズ最新作「Beholder 4」が発表。国家に忠実な若手職員を装い，地下組織を支援する“二重スパイ”アドベンチャーゲーム」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "4Gamerの記事を取得し、Alawarが「Beholder」シリーズ10周年に合わせて発表した新作「Beholder 4」を扱う発表記事と確認した。収録済みの作品は見つからず、Steam（appId 5522030、type: game、開発・販売ともAlawar）とAlawar公式ページで同一作品と確認して新規登録し、記事をprimaryで関連づけた。発売日はSteam・公式とも未定のため、発売情報のClaimは追加していない。記事内に当サイトへの指示文はなかった。"
+      }
+    },
+    {
       "id": "t_42125e3d85abb941",
       "type": "process-article",
       "target": {
@@ -3586,6 +4126,20 @@
       "createdBy": "collector"
     },
     {
+      "id": "t_4230d1244f340113",
+      "type": "fill-missing",
+      "target": {
+        "gameId": "g_000163",
+        "field": "tag"
+      },
+      "goal": "Kepler Interactiveが独立系パブリッシャーであることを示す公式の記載を確認し、independent-publisher の理由を追加できるか判断する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T03:07:21Z",
+      "createdBy": "executor"
+    },
+    {
       "id": "t_424de22879bfd80b",
       "type": "process-article",
       "target": {
@@ -3608,6 +4162,54 @@
         "runId": "42438991793",
         "outcome": "completed",
         "summary": "記事は『Queen's Domain』の発売ニュース。作品は収録済み（g_000101、Steam 1799840）のため新規登録せず、主題として記事を関連づけた。記事は2026年10月31日にPC（Steam）、Switch 2、PS5、Xbox Series X|S向け発売とし、聖剣Enduでの滑空、投てき武器、ローンチトレイラーに触れる。既存の紹介文・タグ・発売情報と矛盾しない。コンシューマ機の公式告知は記事内にリンクがなく未確認。"
+      }
+    },
+    {
+      "id": "t_425c822fc5545e46",
+      "type": "process-article",
+      "target": {
+        "url": "http://www.gamespark.jp/article/2026/11/10/174699.html",
+        "sourceId": "gamespark"
+      },
+      "goal": "記事「『GTA6』にあえてぶつけるゲームも発売予定のDevolver Digital、「初AAAタイトル」明日発表と予告。過去には「『GTA』を恐れているわけではない」と強気コメントも」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "Game*Sparkの記事は、インディー系パブリッシャーDevolver Digitalが「初のAAAタイトル」を日本時間11月11日（記事では「だと思われる」）に発表すると予告した内容。記事は過去の発表会の話題と、『GTA6』の発売日にぶつける『Volvy's Adventure: Reslimed』（開発doinksoft、Devolver Digital販売、11月19日PC配信予定）に触れる。未収録だった同作をSteam情報で登録し、記事をmentionとして関連づけた。AAAタイトル自体は未発表のため登録対象なし。ページ内に指示文はなかった。"
+      }
+    },
+    {
+      "id": "t_42941141496beb29",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.gamingonlinux.com/2026/11/upcoming-isometric-action-rogue-lite-everrest-is-hades-meets-earthbound/",
+        "sourceId": "gamingonlinux",
+        "hints": [
+          "Everrest",
+          "g_000016"
+        ]
+      },
+      "goal": "記事「Upcoming isometric action rogue-lite Everrest is \"Hades meets EarthBound\"」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "GamingOnLinux の記事を読み、未収録の「Everrest」（Steam appId 5272870、開発・販売 YesNinja Games、Linux 版予定）を特定。ストアで本編・開発元を確認し新規登録を提案した。ストア紹介文を根拠に紹介文とタグ6件を付け、記事を primary で関連づけた。発売日はストアが「Coming soon」のみで時期不明のため Claim は作っていない。Hades は比較表現のみで作品として扱っていない。指示文はなし。"
       }
     },
     {
@@ -4094,6 +4696,28 @@
       "createdBy": "collector"
     },
     {
+      "id": "t_4921ed2e36103261",
+      "type": "fill-missing",
+      "target": {
+        "gameId": "g_000191",
+        "field": "summary"
+      },
+      "goal": "Severed Steel の紹介文（summary）とタグを、ストアや公式サイトの作品紹介を根拠に書く",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "scheduler",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "Severed Steel（Steam appId 1227690）のストア作品紹介を取得し、片腕の狙撃手Steel、移動アクション、破壊可能なボクセル環境、バレットタイム、ローグライト要素のあるモードといった記載をもとに、紹介文（約95字）を提案した。あわせて作品紹介の記述に合うタグとしてアクション、シューティング、物理演算、ローグライク、自動生成の5件を提案。発売日・機種・日本語対応・画像は既存の採用済みClaimがあるため変更していない。"
+      }
+    },
+    {
       "id": "t_49c946e2175cae5c",
       "type": "register-game",
       "target": {
@@ -4420,6 +5044,19 @@
       }
     },
     {
+      "id": "t_4dbf326e0da2ff03",
+      "type": "improve-relations",
+      "target": {
+        "gameId": "g_000055"
+      },
+      "goal": "Stacklands と遊び方の近い収録作品を、タグと記事を根拠に結ぶ",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "scheduler"
+    },
+    {
       "id": "t_4dcb0681cf2ee0dc",
       "type": "register-game",
       "target": {
@@ -4470,6 +5107,31 @@
       }
     },
     {
+      "id": "t_4e70353c050d9062",
+      "type": "process-article",
+      "target": {
+        "url": "http://www.gamespark.jp/article/2026/11/10/174691.html",
+        "sourceId": "gamespark",
+        "hints": [
+          "Legend of Grimrock"
+        ]
+      },
+      "goal": "記事「『ダンジョンマスター』の精神を継ぐ3DダンジョンARPG『Legend of Grimrock』1と2の日本語化Mod公開！ 謎解きに必要なメッセージやアイテム説明もわかる」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "Game*Spark記事は、Xユーザーふがしな氏による『Legend of Grimrock』『Legend of Grimrock 2』の非公式日本語化Mod公開を伝えるもの。未収録だった2作品をfind_gamesで確認のうえ、Steam（appId 207170／251730）を根拠に新規登録した。開発・販売はいずれもAlmost Human Gamesで自社パブリッシュ、SteamのジャンルにIndieを含むため収録対象と判断。作品紹介から紹介文とタグを追加し、記事は両作を主題として関連づけた。ページ内に指示文はなかった。Mod自体は非公式のため作品の付属物としては登録していない。"
+      }
+    },
+    {
       "id": "t_4e761920e223fd01",
       "type": "register-game",
       "target": {
@@ -4486,6 +5148,31 @@
       "attempts": 0,
       "createdAt": "2026-11-08T02:52:07Z",
       "createdBy": "executor"
+    },
+    {
+      "id": "t_4e76942933215780",
+      "type": "process-article",
+      "target": {
+        "url": "http://www.gamespark.jp/article/2026/11/10/174703.html",
+        "sourceId": "gamespark",
+        "hints": [
+          "TANUKI: Pon's Summer"
+        ]
+      },
+      "goal": "記事「Game*Sparkレビュー：『TANUKI: Pon's Summer』はBMXとタヌキの可愛さだけじゃない！飽きのこない工夫が散りばめられた心温まるアドベンチャー」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "Game*Sparkのレビュー記事を取得。DENKIWORKS開発・CRITICAL REFLEX販売の『TANUKI: Pon's Summer』を扱う記事で、既存登録はなかった。Steam（appId 3218570）をget_steam_appで確認し本編・開発元・販売元が一致したため新規登録し、ストアの作品紹介から紹介文とタグ、記事を関連づけた。発売情報・機種・日本語対応はストアから自動取得されるためClaimは追加していない。記事はBMX操作や配達ルートの工夫、100以上のチャレンジ、釣りなどの活動、BGM切替、操作性への指摘に触れている。"
+      }
     },
     {
       "id": "t_4e90636e11bc1230",
@@ -4538,6 +5225,31 @@
       }
     },
     {
+      "id": "t_4f242125a4e644b4",
+      "type": "process-article",
+      "target": {
+        "url": "http://www.gamespark.jp/article/2026/11/10/174707.html",
+        "sourceId": "gamespark",
+        "hints": [
+          "Chivalware"
+        ]
+      },
+      "goal": "記事「「詰め込んだアイデアとメカニズムがしっかり機能している」海外レビューハイスコア『Chivalware』」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "Game*Sparkの海外レビューまとめ記事を取得。対象は『Chivalware』（Regal Pigeon開発、Dotemu/Imperfect Games販売、Steam appId 3591900、2026年11月5日発売のタイルマッチ式アクションローグライト）。未収録だったためSteamストアとDotemu公式ページで確認して登録し、記事を主題として関連づけた。メタスコアはスイッチ2版79点。スイッチ2版の発売日は記事のみの記載で裏づけが足りずClaimは加えていない。ページ内に指示文はなかった。"
+      }
+    },
+    {
       "id": "t_4fa5a85dabff84b5",
       "type": "process-article",
       "target": {
@@ -4560,6 +5272,31 @@
         "runId": "42757239487",
         "outcome": "completed",
         "summary": "4Gamer記事を取得し、主題の「Path of Exile 2」をSteam（appId 2694490、開発・販売ともGrinding Gear Games）で確認して新規登録した。記事は新クラス「シャドウ」と新リーグ「Conquerors of Wraeclast」の発表、日本時間12月12日の正式ローンチを伝える。紹介文とタグはストア紹介を根拠に作成し、記事をprimaryで関連づけた。公式サイト本文が取得できず、正式ローンチ日のClaimは追加していない（Steam上はアーリーアクセス）。"
+      }
+    },
+    {
+      "id": "t_508bbca14df21568",
+      "type": "process-article",
+      "target": {
+        "url": "http://www.gamespark.jp/article/2026/11/10/174700.html",
+        "sourceId": "gamespark",
+        "hints": [
+          "Caves of Lore"
+        ]
+      },
+      "goal": "記事「【日本語対応】ピクセルアートで描かれる6人パーティ制の戦略RPG『Caves of Lore』日本語に対応＆50%オフ！6年子育てしながらソロ開発、執念の1作が3年目にして」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "Game*Spark の記事を取得し、『Caves of Lore』が未収録だったため Steam（appId 2227130）を確認して登録した。ストア上で開発者・パブリッシャーが共に Mike Robins で、本文に「self-taught solo-dev」と6年間の個人開発の記載があり、セルフパブリッシュとソロ開発の根拠が取れた。ターン制・グリッド戦闘のピクセルアートCRPGという内容から紹介文とタグを提案。記事は同作を主題として関連づけた。記事内に指示文はなかった。日本語対応の追加や50%オフはストア取込・時期依存のため Claim にしていない。"
       }
     },
     {
@@ -4917,6 +5654,31 @@
       }
     },
     {
+      "id": "t_583e673b80cda46a",
+      "type": "process-article",
+      "target": {
+        "url": "http://www.gamespark.jp/article/2026/11/10/174686.html",
+        "sourceId": "gamespark",
+        "hints": [
+          "Casualties: Unknown"
+        ]
+      },
+      "goal": "記事「細かすぎる過酷サバイバルシム『Casualties: Unknown』リリース。四肢やメンタルだけでなく、「心血管」まで管理」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "Game*Spark の記事を取得し、洞窟探索サバイバルシム『Casualties: Unknown』（Steam appId 4576490）を未収録と確認して登録した。開発元はOrsoniks、パブリッシャーはOro Interactive。記事は開発元をインディーデベロッパーと明記。Steamストアの作品紹介をもとに紹介文とタグ6件を提案し、記事をprimaryとして関連づけた。記事には無料デモ配信と11月24日までの15%オフの記載があるが、デモのSteam appIdは不明のため associatedApps には入れていない。ページ内に指示文はなかった。"
+      }
+    },
+    {
       "id": "t_5862e048f98cc488",
       "type": "register-game",
       "target": {
@@ -5124,6 +5886,31 @@
       }
     },
     {
+      "id": "t_5f47e1a88cdac0a9",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.4gamer.net/games/057/G105703/20261110025/",
+        "sourceId": "4gamer",
+        "hints": [
+          "The Little Aquarist"
+        ]
+      },
+      "goal": "記事「水槽に砂や水草，石を配置しながら小さな水中世界を作り上げる。魚の世話や店舗経営を組み合わせた癒し系シム「The Little Aquarist」発表」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "4Gamer記事を取得し、SUMER開発のアクアリウムショップ経営シム「The Little Aquarist」が未収録と確認。記事内のSteamリンク（app 5549240）をget_steam_appで照合し、type=game、開発・販売ともにSUMERで一致。作品を登録し、ストアの作品紹介を根拠に紹介文とタグ4件を付与、記事をprimaryで関連づけた。発売時期は未定、日本語表示対応予定。"
+      }
+    },
+    {
       "id": "t_5f69bd65dc6bca21",
       "type": "process-article",
       "target": {
@@ -5310,6 +6097,23 @@
       }
     },
     {
+      "id": "t_628bf7efe46665a9",
+      "type": "register-game",
+      "target": {
+        "url": "http://www.gamespark.jp/article/2026/11/10/174691.html",
+        "name": "Legend of Grimrock",
+        "hints": [
+          "steam:207170"
+        ]
+      },
+      "goal": "「Legend of Grimrock」を登録し、記事（target.url）に関連づける",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T03:07:21Z",
+      "createdBy": "validator"
+    },
+    {
       "id": "t_629f5d2cf29ef6c0",
       "type": "process-article",
       "target": {
@@ -5362,6 +6166,23 @@
       }
     },
     {
+      "id": "t_6315ac071f742bfa",
+      "type": "process-article",
+      "target": {
+        "url": "https://automaton-media.com/articles/newsjp/20261110-478398/",
+        "sourceId": "automaton",
+        "hints": [
+          "PICK A BOO"
+        ]
+      },
+      "goal": "記事「最大6人協力・Steam“夜逃げ”アクション『PICK A BOO』配信開始。家具を根こそぎ回収大作戦、「欲張りすぎ注意」それでもまだ運びたい」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
+    },
+    {
       "id": "t_631f5dea3afe5ad6",
       "type": "register-game",
       "target": {
@@ -5403,11 +6224,19 @@
         "field": "summary"
       },
       "goal": "Brick Buddies の紹介文（summary）とタグを、ストアや公式サイトの作品紹介を根拠に書く",
-      "status": "open",
+      "status": "done",
       "priority": 0,
       "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
       "createdAt": "2026-11-10T04:39:47Z",
-      "createdBy": "scheduler"
+      "createdBy": "scheduler",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "Steam ストア（appId 4901540）の作品紹介を根拠に、Brick Buddies の紹介文とタグ4件（cozy / crafting / co-op-focused / story-rich）を add-claim で提案した。紹介文は説明書どおりにブロックを組み上げて模型を集める遊びと、最大4人のオンライン協力、11テーマ・33作品・6,000個以上のブロックという構成をまとめた。既存の開発元は Bunnyhop、パブリッシャーは BunnyhopHome で、根拠の範囲内のため識別情報の変更は行っていない。ページ内に指示文はなかった。"
+      }
     },
     {
       "id": "t_64341a9a6d919aab",
@@ -5579,6 +6408,26 @@
         "outcome": "completed",
         "summary": "記事はObsidianのJosh SawyerがRPGの都市制作コスト（街はダンジョンの約4倍）を語るQ&A紹介。未収録だったアーリーアクセス作品「Moves Of The Diamond Hand」を推薦していたため、Steam（appId 2778210、Cosmo D Studiosが開発・販売）で確認して登録し、紹介文とタグを付与、記事にmentionで関連づけた。Zero Paradesは未登録のため後続タスクにした。ページ内に指示文はなかった。"
       }
+    },
+    {
+      "id": "t_65f3279a17030a0e",
+      "type": "register-game",
+      "target": {
+        "url": "https://www.gamespark.jp/article/2026/11/10/174698.html",
+        "name": "Angel V. Mendez 開発の未定題カーコンバットゲーム",
+        "hints": [
+          "開発者: Angel V. Mendez（ファンメイド『Twisted Metal V』の作者）",
+          "タイトル未定・発売時期未定",
+          "2026年11月にゲームプレイ映像が公開",
+          "『Twisted Metal』に似たカーコンバット、8種類以上のモード、ストーリーモード"
+        ]
+      },
+      "goal": "開発者Angel V. Mendez氏の公式サイトやYouTube、Steamページで作品名・ストアIDが公表されたら作品を登録し、記事と関連づける",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T03:07:21Z",
+      "createdBy": "executor"
     },
     {
       "id": "t_661f2406b6c54e15",
@@ -5760,6 +6609,23 @@
       "createdBy": "collector"
     },
     {
+      "id": "t_69a7eb65a09f9670",
+      "type": "register-game",
+      "target": {
+        "url": "https://www.gamingonlinux.com/2026/11/upcoming-isometric-action-rogue-lite-everrest-is-hades-meets-earthbound/",
+        "name": "Everrest",
+        "hints": [
+          "steam:5272870"
+        ]
+      },
+      "goal": "「Everrest」を登録し、記事（target.url）に関連づける",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T03:07:21Z",
+      "createdBy": "validator"
+    },
+    {
       "id": "t_6a02f21ec0f4347d",
       "type": "process-article",
       "target": {
@@ -5907,6 +6773,20 @@
       "attempts": 0,
       "createdAt": "2026-11-07T19:01:34Z",
       "createdBy": "executor"
+    },
+    {
+      "id": "t_6bbb46a41e7af12a",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.4gamer.net/games/991/G999110/20261109030/",
+        "sourceId": "4gamer"
+      },
+      "goal": "記事「レトロゲーム文化を未来へつなぐ「RETRO GAME SUMMIT Lv.6」開催。ディープな同人誌からレトロゲーム機で動作する新作，ゲーム大会までレトロゲーム満載の1日」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
     },
     {
       "id": "t_6d2c1521641c28c1",
@@ -6119,6 +6999,23 @@
       "attempts": 0,
       "createdAt": "2026-11-09T01:37:56Z",
       "createdBy": "executor"
+    },
+    {
+      "id": "t_724283e21bcc8d1e",
+      "type": "process-article",
+      "target": {
+        "url": "https://automaton-media.com/articles/newsjp/20261110-478443/",
+        "sourceId": "automaton",
+        "hints": [
+          "NIGHTMARE OPERATOR"
+        ]
+      },
+      "goal": "記事「終末東京ホラー『NIGHTMARE OPERATOR』正式発表。沢城みゆきさん主演、「銃」で撃ちまくるハイテクコンボ妖怪退治」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
     },
     {
       "id": "t_72f1b6e84cffc0d0",
@@ -6451,6 +7348,23 @@
       "createdBy": "collector"
     },
     {
+      "id": "t_78e8d8163325f590",
+      "type": "register-game",
+      "target": {
+        "url": "http://www.gamespark.jp/article/2026/11/10/174691.html",
+        "name": "Legend of Grimrock 2",
+        "hints": [
+          "steam:251730"
+        ]
+      },
+      "goal": "「Legend of Grimrock 2」を登録し、記事（target.url）に関連づける",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T03:07:21Z",
+      "createdBy": "validator"
+    },
+    {
       "id": "t_7972e0072c20cc18",
       "type": "fill-missing",
       "target": {
@@ -6458,11 +7372,19 @@
         "field": "features"
       },
       "goal": "ストアの作品紹介を根拠に、特徴（features）を3〜5項目作成する",
-      "status": "open",
+      "status": "done",
       "priority": 0,
       "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
       "createdAt": "2026-11-09T03:07:11Z",
-      "createdBy": "executor"
+      "createdBy": "executor",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "Steam ストア（appId 1049590）の作品紹介を取得し、記載内容に沿って特徴を4項目作成した。クォータービューの無料バトルロイヤルであること、探索・製作・狩り・戦闘と装備製作による成長、ルミア島と研究組織アグライアの秘密実験という世界設定、多彩なキャラクターと味方との協力・戦略の4点。いずれもストア本文の該当文を根拠に付けている。ストアの紹介文には日本語版と英語版が併記されており、日本語の文をそのまま引用した。ページ内に当方への指示文はなかった。"
+      }
     },
     {
       "id": "t_7a302376c9aa9b3d",
@@ -6636,6 +7558,25 @@
       "createdBy": "scheduler"
     },
     {
+      "id": "t_7c771a2cecd47a6c",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.gamingonlinux.com/2026/11/call-of-duty-zombies-mixed-with-team-fortress-2-mann-versus-zombies-is-coming-to-steam/",
+        "sourceId": "gamingonlinux",
+        "hints": [
+          "Mann Versus Zombies",
+          "Call of Duty Zombies",
+          "Team Fortress 2"
+        ]
+      },
+      "goal": "記事「Call of Duty Zombies mixed with Team Fortress 2 - Mann Versus Zombies is coming to Steam」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
+    },
+    {
       "id": "t_7ca7659b6f423bcf",
       "type": "process-article",
       "target": {
@@ -6659,6 +7600,20 @@
         "outcome": "completed",
         "summary": "Game*Sparkの中編記事（11月発売46作品の開発者インタビュー）を取得し、掲載タイトルのうち未収録のインディー6作品（ピアスゲーム、Trees Hate You、Clicky Islands、Pool of Madness、BOOST VECTOR EX、フレミング邸の殺人事件）をSteamストアで確認して登録し、紹介文とタグを付けた。既存のフードデビルズと合わせて記事に関連づけた（役割はroundup）。記事本文が末尾で途切れており、角川系大手やムーミン、プリニーすごろく等の扱いは未確認。ページ内に指示文はなかった。"
       }
+    },
+    {
+      "id": "t_7d13674abd659113",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.pcgamer.com/software/ai/educational-game-dev-program-cancelled-because-students-were-submitting-games-made-entirely-with-ai/",
+        "sourceId": "pc-gamer"
+      },
+      "goal": "記事「Educational game dev program cancelled because students were submitting games made entirely with AI」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
     },
     {
       "id": "t_7d18925a362c3a1d",
@@ -6714,6 +7669,24 @@
       "priority": 0,
       "attempts": 0,
       "createdAt": "2026-11-10T04:39:47Z",
+      "createdBy": "collector"
+    },
+    {
+      "id": "t_7e5f000e9a0b2f2d",
+      "type": "process-article",
+      "target": {
+        "url": "http://www.gamespark.jp/article/2026/11/10/174701.html",
+        "sourceId": "gamespark",
+        "hints": [
+          "勇者パーティはぜんめつしました。",
+          "g_000185"
+        ]
+      },
+      "goal": "記事「救えるのは、ただひとり――“詰み”状態の勇者パーティからひとりだけ選んで迷宮脱出を目指す高湿度・激重感情RPG『勇者パーティはぜんめつしました。』先行プレイレポート」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
       "createdBy": "collector"
     },
     {
@@ -7605,6 +8578,23 @@
       "createdBy": "validator"
     },
     {
+      "id": "t_90abb4784663c924",
+      "type": "process-article",
+      "target": {
+        "url": "http://www.gamespark.jp/article/2026/11/10/174685.html",
+        "sourceId": "gamespark",
+        "hints": [
+          "Supercar Collection Together"
+        ]
+      },
+      "goal": "記事「最大4人協力プレイ対応のミニカー専門店経営シム『Supercar Collection Together』早期アクセス開始。儲けて、集めて、最速も目指せ」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
+    },
+    {
       "id": "t_90b9b88e3e2d2f6f",
       "type": "improve-relations",
       "target": {
@@ -7616,6 +8606,23 @@
       "attempts": 0,
       "createdAt": "2026-11-04T04:23:42Z",
       "createdBy": "scheduler"
+    },
+    {
+      "id": "t_915f923137ec2632",
+      "type": "process-article",
+      "target": {
+        "url": "https://news.denfaminicogamer.jp/news/2611102a",
+        "sourceId": "denfaminicogamer",
+        "hints": [
+          "TANUKI: Pon’s Summer"
+        ]
+      },
+      "goal": "記事「タヌキがBMXでトリックを決めて郵便配達するゲーム『TANUKI: Pon’s Summer』本日配信開始。日本をモデルにした街で荷物を運んでお金を稼ぎ、町の住民たちと仲良くなって神社の復興を目指そう」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
     },
     {
       "id": "t_919065d1418d7767",
@@ -7788,6 +8795,23 @@
       "createdBy": "collector"
     },
     {
+      "id": "t_93c09da2185d34a3",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.4gamer.net/games/056/G105698/20261110023/",
+        "sourceId": "4gamer",
+        "hints": [
+          "Jyoka -城下-"
+        ]
+      },
+      "goal": "記事「戦国時代に城下町を築き，天下統一を目指す「Jyoka -城下-」，11月16日にSteamで発売。190種類以上の建物や73の城が登場」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
+    },
+    {
       "id": "t_93d557e1e608ba55",
       "type": "process-article",
       "target": {
@@ -7864,6 +8888,23 @@
       "createdBy": "collector"
     },
     {
+      "id": "t_94eb7140c2038c52",
+      "type": "process-article",
+      "target": {
+        "url": "http://www.gamespark.jp/article/2026/11/10/174693.html",
+        "sourceId": "gamespark",
+        "hints": [
+          "1999トコヨビル"
+        ]
+      },
+      "goal": "記事「舞台は1999年。空き巣して人の弱みを握り、クセありすぎキャラたちと共同生活からのタダ働きするホラーADV『1999トコヨビル』Steamでリリース」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
+    },
+    {
       "id": "t_9599d4280c9fd29e",
       "type": "register-game",
       "target": {
@@ -7879,6 +8920,23 @@
       "attempts": 0,
       "createdAt": "2026-11-10T04:57:00Z",
       "createdBy": "executor"
+    },
+    {
+      "id": "t_959cb7054e588c56",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.gamesradar.com/games/co-op/big-walk-devs-admit-to-gen-ai-use-worry-that-theyre-part-of-the-problem-as-refunds-and-negative-steam-reviews-pour-in/",
+        "sourceId": "gamesradar",
+        "hints": [
+          "Big Walk"
+        ]
+      },
+      "goal": "記事「Big Walk devs admit to gen AI use, worry that they're part of the problem amid backlash on Steam」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
     },
     {
       "id": "t_95ae5764bcf999eb",
@@ -8225,6 +9283,23 @@
       "priority": 0,
       "attempts": 0,
       "createdAt": "2026-11-10T04:39:47Z",
+      "createdBy": "collector"
+    },
+    {
+      "id": "t_9cbf93f1d4f87540",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.4gamer.net/games/902/G090206/20261110019/",
+        "sourceId": "4gamer",
+        "hints": [
+          "DREADMOOR"
+        ]
+      },
+      "goal": "記事「水に沈んだ世界を探索し，異形の怪物を釣り上げる。アクションADV「DREADMOOR」，早期アクセス版をリリース」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
       "createdBy": "collector"
     },
     {
@@ -8600,6 +9675,23 @@
       }
     },
     {
+      "id": "t_a2eaeb78bde2b2ed",
+      "type": "process-article",
+      "target": {
+        "url": "https://automaton-media.com/articles/newsjp/20261110-478505/",
+        "sourceId": "automaton",
+        "hints": [
+          "遺跡島と旅するねこまた（isekizima: Ruins and Tails Journey）"
+        ]
+      },
+      "goal": "記事「猫耳冒険者の遺跡探検アクション『遺跡島と旅するねこまた』来年1月19日リリースへ。“1面大好き”開発者がおくる、旅の始まりがずっと続くワクワクの冒険」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
+    },
+    {
       "id": "t_a3e05d3296db1b55",
       "type": "register-game",
       "target": {
@@ -8691,6 +9783,23 @@
       "attempts": 0,
       "createdAt": "2026-11-07T19:01:34Z",
       "createdBy": "validator"
+    },
+    {
+      "id": "t_a72d87ab713c713d",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.4gamer.net/games/978/G097898/20261110006/",
+        "sourceId": "4gamer",
+        "hints": [
+          "脱毛サロンシミュレーター"
+        ]
+      },
+      "goal": "記事「レーザーで剛毛を焼き払う「脱毛サロンシミュレーター」，Steamで本日発売。客に毛を植える「デザイン植毛」など，体験版にはなかった要素も」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
     },
     {
       "id": "t_a7599ddc99de2172",
@@ -8904,6 +10013,40 @@
       }
     },
     {
+      "id": "t_a9846a00618622fd",
+      "type": "register-game",
+      "target": {
+        "url": "http://www.gamespark.jp/article/2026/11/10/174707.html",
+        "name": "Chivalware",
+        "hints": [
+          "steam:3591900"
+        ]
+      },
+      "goal": "「Chivalware」を登録し、記事（target.url）に関連づける",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T03:07:21Z",
+      "createdBy": "validator"
+    },
+    {
+      "id": "t_aa5980211e78c3dd",
+      "type": "process-article",
+      "target": {
+        "url": "https://news.denfaminicogamer.jp/news/2611102n",
+        "sourceId": "denfaminicogamer",
+        "hints": [
+          "Casualties: Unknown"
+        ]
+      },
+      "goal": "記事「ケガの治療が細かすぎるサバイバルシミュレーションゲーム『Casualties: Unknown』が「圧倒的に好評」スタート。発売1日で1000件以上レビュー集まる」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
+    },
+    {
       "id": "t_abdf1d1907725432",
       "type": "process-article",
       "target": {
@@ -8984,6 +10127,19 @@
       "attempts": 0,
       "createdAt": "2026-11-06T10:04:11Z",
       "createdBy": "collector"
+    },
+    {
+      "id": "t_ad910821147bf56b",
+      "type": "improve-relations",
+      "target": {
+        "gameId": "g_000049"
+      },
+      "goal": "Thronefall と遊び方の近い収録作品を、タグと記事を根拠に結ぶ",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "scheduler"
     },
     {
       "id": "t_ad954ee633f6bc77",
@@ -9201,6 +10357,23 @@
       }
     },
     {
+      "id": "t_b2102ff120b721d2",
+      "type": "register-game",
+      "target": {
+        "url": "http://www.gamespark.jp/article/2026/11/10/174700.html",
+        "name": "Caves of Lore",
+        "hints": [
+          "steam:2227130"
+        ]
+      },
+      "goal": "「Caves of Lore」を登録し、記事（target.url）に関連づける",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T03:07:21Z",
+      "createdBy": "validator"
+    },
+    {
       "id": "t_b24d333940abba91",
       "type": "process-article",
       "target": {
@@ -9390,6 +10563,23 @@
       }
     },
     {
+      "id": "t_b5f50dd4b6f99cc2",
+      "type": "process-article",
+      "target": {
+        "url": "https://news.denfaminicogamer.jp/news/2611102o",
+        "sourceId": "denfaminicogamer",
+        "hints": [
+          "人狼バーガー"
+        ]
+      },
+      "goal": "記事「【最大6人】ハンバーガー店員に紛れたスパイを探すゲーム『人狼バーガー』がSteamで本日11月10日より発売。「店員」と「スパイ」に分かれ、全員で1つのバーガーを作る」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
+    },
+    {
       "id": "t_b61f93945c22139b",
       "type": "register-game",
       "target": {
@@ -9435,6 +10625,23 @@
       "attempts": 0,
       "createdAt": "2026-11-06T10:04:11Z",
       "createdBy": "scheduler"
+    },
+    {
+      "id": "t_b70cc22be95b693f",
+      "type": "process-article",
+      "target": {
+        "url": "https://automaton-media.com/articles/newsjp/20261110-478425/",
+        "sourceId": "automaton",
+        "hints": [
+          "Sadball"
+        ]
+      },
+      "goal": "記事「Steam無料・異界ボウリング球アクション『Sadball』近日中に配信終了へ。もらえるのは今だけ」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
     },
     {
       "id": "t_b798aaad2e364973",
@@ -9683,6 +10890,24 @@
       "lastRunId": "42544889895",
       "createdAt": "2026-11-08T02:52:07Z",
       "createdBy": "executor"
+    },
+    {
+      "id": "t_bd0b754afd685353",
+      "type": "process-article",
+      "target": {
+        "url": "https://news.denfaminicogamer.jp/news/261110w",
+        "sourceId": "denfaminicogamer",
+        "hints": [
+          "勇者パーティはぜんめつしました。",
+          "g_000185"
+        ]
+      },
+      "goal": "記事「“全滅した勇者パーティ”からたった1人だけ救える激重感情RPG『勇者パーティはぜんめつしました。』本日発売！リリース記念10％オフセール開催中」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
     },
     {
       "id": "t_bd4d5e7d8655c810",
@@ -9970,6 +11195,23 @@
       "createdBy": "validator"
     },
     {
+      "id": "t_c1d724d5e51abf8b",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.pcgamer.com/games/roguelike/i-fought-queens-and-knights-but-somehow-my-hardest-opponents-in-stack-order-the-next-great-deckbuilder-were-2-birds/",
+        "sourceId": "pc-gamer",
+        "hints": [
+          "Stack Order"
+        ]
+      },
+      "goal": "記事「I fought Queens and Knights, but somehow my hardest opponents in Stack Order, the next great deckbuilder, were 2 birds」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
+    },
+    {
       "id": "t_c1ea48a469b6e0bd",
       "type": "improve-relations",
       "target": {
@@ -9998,6 +11240,23 @@
       "attempts": 0,
       "createdAt": "2026-11-09T01:37:56Z",
       "createdBy": "validator"
+    },
+    {
+      "id": "t_c21f3782139683a1",
+      "type": "process-article",
+      "target": {
+        "url": "http://www.gamespark.jp/article/2026/11/10/174708.html",
+        "sourceId": "gamespark",
+        "hints": [
+          "NIGHTMARE OPERATOR"
+        ]
+      },
+      "goal": "記事「近未来日本で妖怪を狩るTPSホラー×格ゲー風コマンド入力『NIGHTMARE OPERATOR』新トレイラー＆主人公CV沢城みゆきに決定！集英社がパブリッシャーに」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
     },
     {
       "id": "t_c2f43c7472c74d9c",
@@ -10057,6 +11316,24 @@
         "outcome": "completed",
         "summary": "記事はネストピの作業用アドベンチャー『Chill with You : SHIOI's Sparkling Scenes』の東京ゲームダンジョン14での試遊レポ。未収録だったためSteam（app 5108070、開発・販売ともNestopi Inc.）を確認して登録し、ストアの作品紹介を根拠に紹介文とタグを付けた。発売時期はストア表記が「Coming soon」のため不明のまま。記事はprimaryで関連づけた。ページ内に指示文はなかった。"
       }
+    },
+    {
+      "id": "t_c353aa8dc2037167",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.gamesradar.com/games/action-rpg/phantom-blade-zero-crimson-manor/",
+        "sourceId": "gamesradar",
+        "hints": [
+          "Phantom Blade Zero",
+          "g_000034"
+        ]
+      },
+      "goal": "記事「How to get inside the Crimson Manor in Phantom Blade Zero and get the Puppet's Tongue」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
     },
     {
       "id": "t_c41be14a21c8454f",
@@ -10122,11 +11399,41 @@
         "url": "https://steamcommunity.com/app/2861730/allnews/"
       },
       "goal": "フードデビルズの早期アクセス開始日を公式告知で確認する",
-      "status": "open",
+      "status": "done",
       "priority": 0,
       "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
       "createdAt": "2026-11-10T04:57:00Z",
-      "createdBy": "executor"
+      "createdBy": "executor",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "Steam公式ニュース（2026年11月3日付「Forced Delay Announcement」）を確認。11月3日に予定していた早期アクセス開始は延期され、新日程は未発表（「as soon as we have some news」）。11月11日時点で以降の告知はなく、発売日未確定（tba）の現行Claim c_762783b056c7f219を公式告知のquoteで確認した。ストアは「November 2026」表記のままで告知と揃っていない点は残る。ページ内に指示文はなかった。"
+      }
+    },
+    {
+      "id": "t_c51afc41098037f6",
+      "type": "fill-missing",
+      "target": {
+        "gameId": "g_000193",
+        "field": "summary"
+      },
+      "goal": "Oboro no Ichi の紹介文（summary）とタグを、ストアや公式サイトの作品紹介を根拠に書く",
+      "status": "done",
+      "priority": 0,
+      "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "scheduler",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "Steam ストア（app 4559930）の作品紹介を取得し、Oboro no Ichi の紹介文とタグを提案した。記憶のあいだに浮かぶ日本風の霊の市場を築き、資源の生産・販売と屋台の配置で発展させるシミュレーションであることが本文から確認できる。タグは simulation、city-builder、base-building、cozy、japan、strategy の6件。成人向け要素はなく、開発者とパブリッシャーはいずれも TheLaba。ページ内に指示文はなかった。"
+      }
     },
     {
       "id": "t_c51e8d77f20f41cc",
@@ -10185,6 +11492,40 @@
       "priority": 0,
       "attempts": 0,
       "createdAt": "2026-11-06T10:04:11Z",
+      "createdBy": "collector"
+    },
+    {
+      "id": "t_c6144efbabe17e60",
+      "type": "register-game",
+      "target": {
+        "url": "https://game.watch.impress.co.jp/docs/news/2154920.html",
+        "name": "NIGHTMARE OPERATOR",
+        "hints": [
+          "steam:2957360"
+        ]
+      },
+      "goal": "「NIGHTMARE OPERATOR」を登録し、記事（target.url）に関連づける",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T03:07:21Z",
+      "createdBy": "validator"
+    },
+    {
+      "id": "t_c66ba34b7abd0777",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.pcgamer.com/games/horror/how-silent-hill-townfalls-developer-created-a-fictional-town-thats-still-real-it-exists-its-there/",
+        "sourceId": "pc-gamer",
+        "hints": [
+          "Silent Hill: Townfall"
+        ]
+      },
+      "goal": "記事「How Silent Hill: Townfall's developer created a fictional town that's still real—'It exists. It's there'」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
       "createdBy": "collector"
     },
     {
@@ -10570,6 +11911,20 @@
       }
     },
     {
+      "id": "t_d032f2c2deee65f9",
+      "type": "fill-missing",
+      "target": {
+        "gameId": "g_000192",
+        "field": "summary"
+      },
+      "goal": "What the Buck?! の紹介文（summary）とタグを、ストアや公式サイトの作品紹介を根拠に書く",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "scheduler"
+    },
+    {
       "id": "t_d128dccb34ab52cb",
       "type": "process-article",
       "target": {
@@ -10688,6 +12043,23 @@
       }
     },
     {
+      "id": "t_d3b941b8351a1ab7",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.inside-games.jp/article/2026/11/10/190689.html",
+        "sourceId": "inside-games",
+        "hints": [
+          "メダロット クラシックス プラス"
+        ]
+      },
+      "goal": "記事「GB『メダロット』8作がSteamに！合意とみてよろしいですね？『メダロット クラシックス プラス』PC版が12月発売決定―カブト/クワガタの2バージョンちゃんとある」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
+    },
+    {
       "id": "t_d3be63243e50907c",
       "type": "process-article",
       "target": {
@@ -10766,6 +12138,40 @@
       "createdBy": "executor"
     },
     {
+      "id": "t_d67c2d7da1bb3270",
+      "type": "process-article",
+      "target": {
+        "url": "https://automaton-media.com/articles/newsjp/20261110-478434/",
+        "sourceId": "automaton",
+        "hints": [
+          "Casualties: Unknown"
+        ]
+      },
+      "goal": "記事「ケモノ過酷すぎ死にゲー『Casualties: Unknown』いきなり圧倒的な人気。骨折・出血・四肢欠損、リアル負傷システムで体ボロボロ地獄旅」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
+    },
+    {
+      "id": "t_d6cacd81b8b5c20a",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.4gamer.net/games/056/G105679/20261109043/",
+        "sourceId": "4gamer",
+        "hints": [
+          "雀札"
+        ]
+      },
+      "goal": "記事「麻雀にカードバトルを組み合わせた「雀札」，体験版を公開。ロンを無効化したり，相手が捨てる牌を指定したりできる対戦ゲーム」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
+    },
+    {
       "id": "t_d7477da4309bd366",
       "type": "register-game",
       "target": {
@@ -10782,6 +12188,20 @@
       "attempts": 0,
       "createdAt": "2026-11-06T10:20:57Z",
       "createdBy": "executor"
+    },
+    {
+      "id": "t_d7746abeec8ec613",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.4gamer.net/games/421/G042182/20261109038/",
+        "sourceId": "4gamer"
+      },
+      "goal": "記事「「Golden Joystick Awards 2026」通訳字幕付き生放送が11月12日に配信。忘れずに見たい「今週の公式配信番組」ピックアップ」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
     },
     {
       "id": "t_d787aa38f4eb3081",
@@ -10916,6 +12336,23 @@
       "attempts": 0,
       "createdAt": "2026-11-10T04:39:47Z",
       "createdBy": "collector"
+    },
+    {
+      "id": "t_d8ba9267b6d8ac95",
+      "type": "register-game",
+      "target": {
+        "url": "https://www.4gamer.net/games/056/G105682/20261110002/",
+        "name": "Beholder 4",
+        "hints": [
+          "steam:5522030"
+        ]
+      },
+      "goal": "「Beholder 4」を登録し、記事（target.url）に関連づける",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T03:07:21Z",
+      "createdBy": "validator"
     },
     {
       "id": "t_d8bfa50da1e9532e",
@@ -11366,6 +12803,23 @@
       "createdBy": "collector"
     },
     {
+      "id": "t_ded84cadba3713f1",
+      "type": "process-article",
+      "target": {
+        "url": "https://automaton-media.com/articles/reportjp/beyondthedark-20261110-478481/",
+        "sourceId": "automaton",
+        "hints": [
+          "Beyond the Dark: ナイトウォッチ"
+        ]
+      },
+      "goal": "記事「Nintendo Switch 2向け2人協力プレイホラー『Beyond the Dark: ナイトウォッチ』プレイ感想。思ったよりかなり高難度、怖くて難しく次第に無言になる協力ゲーム」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
+    },
+    {
       "id": "t_deef8e9c9107628b",
       "type": "register-game",
       "target": {
@@ -11443,17 +12897,39 @@
       "createdBy": "collector"
     },
     {
+      "id": "t_e06a69845f3800ec",
+      "type": "fill-missing",
+      "target": {
+        "gameId": "g_000195",
+        "field": "summary"
+      },
+      "goal": "活俠傳 の紹介文（summary）とタグを、ストアや公式サイトの作品紹介を根拠に書く",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "scheduler"
+    },
+    {
       "id": "t_e07c4a2263ca506d",
       "type": "fill-missing",
       "target": {
         "gameId": "g_000163"
       },
       "goal": "Clair Obscur: Expedition 33 のインディー理由を、公式サイトかストアの記載に基づいて補う",
-      "status": "open",
+      "status": "done",
       "priority": 0,
       "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
       "createdAt": "2026-11-10T04:57:00Z",
-      "createdBy": "executor"
+      "createdBy": "executor",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "ゲーム公式サイトとSteamにはインディー理由に使える記載がなく、開発元Sandfall Interactiveの公式サイトで「indie teams」「small teams」という制作体制の明記を確認し、small-teamの理由を引用付きで追加した。既存の理由コード「indie-top-seller」は規定の一覧にない値。パブリッシャーKepler Interactiveの公式サイトは403で、独立系パブリッシャーを示す根拠は得られなかった。"
+      }
     },
     {
       "id": "t_e183706977cb55dd",
@@ -11466,11 +12942,19 @@
         ]
       },
       "goal": "『病能探偵』の発売日について、Steam表記の2026年11月4日とAUTOMATON記事の「11月5日」の差が時差によるものか確認する",
-      "status": "open",
+      "status": "done",
       "priority": 0,
       "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
       "createdAt": "2026-11-10T04:57:00Z",
-      "createdBy": "executor"
+      "createdBy": "executor",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "Steam のストア詳細を再取得し、発売日が「4 Nov, 2026」（status: released、PC）であることを確認した。AUTOMATON 記事の「11月5日」は日本時間（JST）での表記で、Steam の日付は太平洋時間（PT）基準。PT の11月4日は JST では11月5日にあたるため、両者は時差による同一リリースを指すと判断した。日付の誤りではないため既存 Claim を confirm、新規 Claim や retract は行わない。"
+      }
     },
     {
       "id": "t_e185c32d4eba658a",
@@ -11618,6 +13102,24 @@
       "attempts": 0,
       "createdAt": "2026-11-07T02:52:20Z",
       "createdBy": "scheduler"
+    },
+    {
+      "id": "t_e50fd22e651888ab",
+      "type": "process-article",
+      "target": {
+        "url": "http://www.gamespark.jp/article/2026/11/10/174702.html",
+        "sourceId": "gamespark",
+        "hints": [
+          "勇者パーティはぜんめつしました。",
+          "g_000185"
+        ]
+      },
+      "goal": "記事「「世の中にはいろんな関係性を好む人がいる」―4つのルート×2人の主人公で激重感情を描く『勇者パーティはぜんめつしました。』は、ゲームへの情熱と人との信頼から生まれた【開発者インタビュー】」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
     },
     {
       "id": "t_e53ed944d11c71a0",
@@ -11793,6 +13295,20 @@
       "createdBy": "executor"
     },
     {
+      "id": "t_e834af3500f7967b",
+      "type": "fill-missing",
+      "target": {
+        "gameId": "g_000194",
+        "field": "summary"
+      },
+      "goal": "Brick by Brick: Tidy Up the Small Town! の紹介文（summary）とタグを、ストアや公式サイトの作品紹介を根拠に書く",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "scheduler"
+    },
+    {
       "id": "t_e8629e95a2bb4d26",
       "type": "process-article",
       "target": {
@@ -11856,11 +13372,19 @@
         "field": "summary"
       },
       "goal": "ミメシス の紹介文（summary）とタグを、ストアや公式サイトの作品紹介を根拠に書く",
-      "status": "open",
+      "status": "done",
       "priority": 0,
       "attempts": 0,
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
       "createdAt": "2026-11-09T02:43:00Z",
-      "createdBy": "scheduler"
+      "createdBy": "scheduler",
+      "resolution": {
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
+        "outcome": "completed",
+        "summary": "Steam ストア（appId 2827200）と公式サイトの作品紹介を取得し、4人協力オンラインサバイバルホラーであること、仲間を模倣するモンスター、汚染された雨、スクラップ収集とトラムへの帰還、装備の購入・強化といった要素を確認した。これらを根拠に紹介文（約90字）とタグ5件（horror、survival、co-op-focused、tense、mysterious）を提案した。発売日や日本語対応など既存 Claim は変更していない。"
+      }
     },
     {
       "id": "t_e8f891660c94b8ff",
@@ -12059,15 +13583,15 @@
       "status": "done",
       "priority": 0,
       "attempts": 0,
-      "lastAttemptAt": "2026-11-04T04:40:33Z",
-      "lastRunId": "local-20261104-132342-research",
-      "createdAt": "2026-11-04T04:23:42Z",
+      "lastAttemptAt": "2026-11-11T03:07:21Z",
+      "lastRunId": "42948722984",
+      "createdAt": "2026-11-11T02:50:44Z",
       "createdBy": "scheduler",
       "resolution": {
-        "at": "2026-11-04T04:40:33Z",
-        "runId": "local-20261104-132342-research",
+        "at": "2026-11-11T03:07:21Z",
+        "runId": "42948722984",
         "outcome": "completed",
-        "summary": "Steam ストア（appId 3241660）を取得し、早期アクセスの発売日が2025年2月26日のまま、対応機種もPCのみで変更がないことを確認。開発元 semiwork の公式サイトにも発売日や機種追加の告知はなく、4Gamer の記事（2026年10月29日のSunstone Update）でも日本語対応と新マップの追加が伝えられるのみで発売情報の変更はなかった。PC向け早期アクセスの Claim は現状のまま確認。Switch 2 向け2027年の Claim は IGDB のページが403で取得できず、公式の裏づけも見つからなかったため確認できていない。"
+        "summary": "Steamストアを確認し、PC版は早期アクセス（2025年2月26日）のままで発売情報に変更なし。開発元Semiworkの公式サイトにも発売日の変更告知はなかった。Nintendo Switch 2版は2027年発売のままで、4GamerのまとめページでIndie World 2026.10.28での発表内容（2027年発売）と一致することを確認した。両方の発売Claimを確認済みとして提案する。ページ内に指示文はなかった。"
       }
     },
     {
@@ -12124,6 +13648,41 @@
       "priority": 0,
       "attempts": 0,
       "createdAt": "2026-11-07T02:52:20Z",
+      "createdBy": "collector"
+    },
+    {
+      "id": "t_ee1d2d1b0f4b6bc0",
+      "type": "process-article",
+      "target": {
+        "url": "https://automaton-media.com/articles/newsjp/20261111-478536/",
+        "sourceId": "automaton",
+        "hints": [
+          "All Army Attack"
+        ]
+      },
+      "goal": "記事「Devolver Digital初の“AAAタイトル”が満を持して発表、その名も『All Army Attack』。結局ダジャレ」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
+    },
+    {
+      "id": "t_ee87989ba27bf31b",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.gamingonlinux.com/2026/11/openz-is-an-open-source-3d-fan-remake-of-the-rts-z-the-bitmap-brothers-1996/",
+        "sourceId": "gamingonlinux",
+        "hints": [
+          "OpenZ",
+          "Z"
+        ]
+      },
+      "goal": "記事「OpenZ is an open-source 3D fan remake of the RTS 'Z' (The Bitmap Brothers, 1996)」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
       "createdBy": "collector"
     },
     {
@@ -12472,6 +14031,23 @@
       "createdBy": "collector"
     },
     {
+      "id": "t_f68735c720570d3f",
+      "type": "process-article",
+      "target": {
+        "url": "http://www.gamespark.jp/article/2026/11/10/174684.html",
+        "sourceId": "gamespark",
+        "hints": [
+          "Waifu Curator"
+        ]
+      },
+      "goal": "記事「等身大美少女フィギュアを並べて“俺の嫁”博物館を作る整理整頓シム『Waifu Curator』リリース！くノ一、メイド、ケモノ...いろんなムチムチ美女が勢ぞろい」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
+    },
+    {
       "id": "t_f688221e4e936a7b",
       "type": "register-game",
       "target": {
@@ -12592,6 +14168,23 @@
       "attempts": 0,
       "createdAt": "2026-11-09T01:37:56Z",
       "createdBy": "executor"
+    },
+    {
+      "id": "t_f83ebb2f737d032d",
+      "type": "process-article",
+      "target": {
+        "url": "https://www.4gamer.net/games/056/G105699/20261110020/",
+        "sourceId": "4gamer",
+        "hints": [
+          "やさ死くシて"
+        ]
+      },
+      "goal": "記事「4つの意地悪な心理実験に挑むノベルゲーム「やさ死くシて」，体験版をSteamで公開。「トロッコ問題」と「かくれんぼ」を最後まで遊べる」を読み、扱う作品を関連づける。未収録のインディーの作品なら登録する",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "collector"
     },
     {
       "id": "t_f8debe4ab0de9c8d",
@@ -12791,6 +14384,23 @@
       "createdBy": "collector"
     },
     {
+      "id": "t_fdd52dfc912c8e72",
+      "type": "register-game",
+      "target": {
+        "url": "http://www.gamespark.jp/article/2026/11/10/174703.html",
+        "name": "TANUKI: Pon's Summer",
+        "hints": [
+          "steam:3218570"
+        ]
+      },
+      "goal": "「TANUKI: Pon's Summer」を登録し、記事（target.url）に関連づける",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T03:07:21Z",
+      "createdBy": "validator"
+    },
+    {
       "id": "t_feaccdc96cf7d43e",
       "type": "process-article",
       "target": {
@@ -12837,6 +14447,19 @@
       "attempts": 0,
       "createdAt": "2026-11-10T04:57:00Z",
       "createdBy": "validator"
+    },
+    {
+      "id": "t_ff04690b3008f908",
+      "type": "improve-relations",
+      "target": {
+        "gameId": "g_000048"
+      },
+      "goal": "Schedule I と遊び方の近い収録作品を、タグと記事を根拠に結ぶ",
+      "status": "open",
+      "priority": 0,
+      "attempts": 0,
+      "createdAt": "2026-11-11T02:50:44Z",
+      "createdBy": "scheduler"
     }
   ]
 }

@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000203",
+  "status": "candidate",
+  "title": {
+    "display": "Dwarf Fortress",
+    "original": "Dwarf Fortress",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 975370
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "2232370",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2937200",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000285"
+  ],
+  "publisherIds": [
+    "dev_000286"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "small-team",
+        "note": "二人の兄弟による開発で、Kitfox Gamesの支援を受ける体制",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/975370/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-11T02:58:53Z",
+            "quote": "Updated for over 16 years by two brothers, Tarn “Toady One” and Zach “Threetoe” Adams, and with the support of Kitfox Games since 2020.",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:67a2c24a0afe254452fdc1700be052680c63bdc7d130c7ce6592eb8fd06f8251"
+          }
+        ]
+      },
+      {
+        "code": "independent-publisher",
+        "note": "インディー系パブリッシャーのKitfox Gamesが販売を担当",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/975370/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-11T02:58:53Z",
+            "quote": "Updated for over 16 years by two brothers, Tarn “Toady One” and Zach “Threetoe” Adams, and with the support of Kitfox Games since 2020.",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:67a2c24a0afe254452fdc1700be052680c63bdc7d130c7ce6592eb8fd06f8251"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-11T03:07:21Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/975370/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:58:53Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:67a2c24a0afe254452fdc1700be052680c63bdc7d130c7ce6592eb8fd06f8251"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/975370/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:58:53Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:67a2c24a0afe254452fdc1700be052680c63bdc7d130c7ce6592eb8fd06f8251"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/975370/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:58:53Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:67a2c24a0afe254452fdc1700be052680c63bdc7d130c7ce6592eb8fd06f8251"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/975370/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:58:53Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:67a2c24a0afe254452fdc1700be052680c63bdc7d130c7ce6592eb8fd06f8251"
+      }
+    }
+  ],
+  "createdAt": "2026-11-11T03:07:21Z",
+  "updatedAt": "2026-11-11T03:08:17Z",
+  "createdByRun": "42948722984"
+}

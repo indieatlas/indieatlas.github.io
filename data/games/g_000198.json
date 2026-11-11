@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000198",
+  "status": "published",
+  "title": {
+    "display": "1999トコヨビル",
+    "original": "1999トコヨビル",
+    "originalLang": "ja"
+  },
+  "aliases": [
+    {
+      "value": "1999TOKOYO Building",
+      "lang": "en",
+      "kind": "romanization"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 4099810
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5005110",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5005110",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5324310",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://creatorslab.kodansha.co.jp/products/3791/",
+  "developerIds": [
+    "dev_000277"
+  ],
+  "publisherIds": [
+    "dev_000278"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.4gamer.net/games/813/G081367/20261109028/",
+            "articleId": "a_da3a14ca47f2c987",
+            "publishedAt": "2026-11-10T03:00:00Z",
+            "retrievedAt": "2026-11-11T02:55:28Z",
+            "locator": "article.games",
+            "originKey": "media:4gamer.net"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-11T03:07:21Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4099810/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:55:35Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:cf592790ca16cafa30579841134ee2cc542ea0cbda0c255e54c93fbdaabef0c8"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4099810/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:55:35Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:cf592790ca16cafa30579841134ee2cc542ea0cbda0c255e54c93fbdaabef0c8"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4099810/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:55:35Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:cf592790ca16cafa30579841134ee2cc542ea0cbda0c255e54c93fbdaabef0c8"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "official",
+        "url": "https://creatorslab.kodansha.co.jp/products/3791/",
+        "retrievedAt": "2026-11-11T02:55:44Z",
+        "quote": "記憶喪失の少年・灯良が迷い込んだのは、秘密と怪しい噂がいっぱいの屋内遊園地「トコヨビル」。",
+        "originKey": "official:kodansha.co.jp",
+        "fetchHash": "sha256:cff85f2c2fbfb5b85e38bfdb31283ce967ef879c09963d7648ce8bb3d43b7753"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "media",
+        "url": "https://www.4gamer.net/games/813/G081367/20261109028/",
+        "sourceId": "4gamer",
+        "publishedAt": "2026-11-10T03:00:00Z",
+        "retrievedAt": "2026-11-11T02:55:28Z",
+        "quote": "講談社ゲームラボは本日（2026年11月10日），PC向け新作タイトル「1999トコヨビル」をSteamでリリースした。",
+        "originKey": "media:4gamer.net",
+        "fetchHash": "sha256:68a52287aee1d4a3b8911ca5f72761974e8358fb85ee947dd3a01cbe24e697cc"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "official",
+        "url": "https://creatorslab.kodansha.co.jp/products/3791/",
+        "retrievedAt": "2026-11-11T02:55:44Z",
+        "quote": "【発売中】1999トコヨビル",
+        "originKey": "official:kodansha.co.jp",
+        "fetchHash": "sha256:cff85f2c2fbfb5b85e38bfdb31283ce967ef879c09963d7648ce8bb3d43b7753"
+      }
+    }
+  ],
+  "createdAt": "2026-11-11T03:07:21Z",
+  "addedAt": "2026-11-11",
+  "updatedAt": "2026-11-11T03:07:21Z",
+  "createdByRun": "42948722984"
+}

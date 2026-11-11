@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000204",
+  "status": "candidate",
+  "title": {
+    "display": "Battle Sweeper",
+    "original": "Battle Sweeper",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1380360
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000287"
+  ],
+  "publisherIds": [
+    "dev_000287"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1380360/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-11T02:59:22Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:4eeff8e89be2478c1342da522572ea4e6a0c6783ffd7932b1acadd472153d4e3"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-11T03:07:21Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1380360/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:59:22Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4eeff8e89be2478c1342da522572ea4e6a0c6783ffd7932b1acadd472153d4e3"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1380360/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:59:22Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4eeff8e89be2478c1342da522572ea4e6a0c6783ffd7932b1acadd472153d4e3"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1380360/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:59:22Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4eeff8e89be2478c1342da522572ea4e6a0c6783ffd7932b1acadd472153d4e3"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1380360/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:59:22Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4eeff8e89be2478c1342da522572ea4e6a0c6783ffd7932b1acadd472153d4e3"
+      }
+    }
+  ],
+  "createdAt": "2026-11-11T03:07:21Z",
+  "updatedAt": "2026-11-11T03:07:21Z",
+  "createdByRun": "42948722984"
+}

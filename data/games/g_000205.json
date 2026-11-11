@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000205",
+  "status": "candidate",
+  "title": {
+    "display": "Aveltuner",
+    "original": "Aveltuner",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5534190
+  },
+  "associatedApps": [],
+  "officialUrl": "https://www.aveltuner.com/en",
+  "developerIds": [
+    "dev_000288"
+  ],
+  "publisherIds": [
+    "dev_000288"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5534190/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-11T02:59:13Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:d55fd13875b62d75f2cf8708368a25a5a8faf75f8766d5885ca140746b55c1aa"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-11T03:07:21Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5534190/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:59:13Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d55fd13875b62d75f2cf8708368a25a5a8faf75f8766d5885ca140746b55c1aa"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5534190/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:59:13Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d55fd13875b62d75f2cf8708368a25a5a8faf75f8766d5885ca140746b55c1aa"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "official",
+        "url": "https://www.aveltuner.com/en",
+        "retrievedAt": "2026-11-11T02:59:35Z",
+        "quote": "A game by Karigami",
+        "originKey": "official:aveltuner.com",
+        "fetchHash": "sha256:3e4260ccea1c64b2d37279c59b11c38d418cb536da7515f93d82d0df6e6cbd03"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5534190/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:59:13Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d55fd13875b62d75f2cf8708368a25a5a8faf75f8766d5885ca140746b55c1aa"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5534190/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:59:13Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d55fd13875b62d75f2cf8708368a25a5a8faf75f8766d5885ca140746b55c1aa"
+      }
+    }
+  ],
+  "createdAt": "2026-11-11T03:07:21Z",
+  "updatedAt": "2026-11-11T03:07:21Z",
+  "createdByRun": "42948722984"
+}

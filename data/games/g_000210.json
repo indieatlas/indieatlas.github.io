@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000210",
+  "status": "candidate",
+  "title": {
+    "display": "Dressmaker",
+    "original": "Dressmaker",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4019220
+  },
+  "associatedApps": [],
+  "officialUrl": "https://www.freelives.net",
+  "developerIds": [
+    "dev_000297"
+  ],
+  "publisherIds": [
+    "dev_000298"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-11T03:07:21Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-11T03:07:21Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4019220/",
+        "retrievedAt": "2026-11-11T03:07:41Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eee1ab946aff68473dcf94e5a6c46e705a737f248dd824e6cc713970a9195fb3"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4019220/",
+        "retrievedAt": "2026-11-11T03:07:41Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eee1ab946aff68473dcf94e5a6c46e705a737f248dd824e6cc713970a9195fb3"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4019220/",
+        "retrievedAt": "2026-11-11T03:07:41Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eee1ab946aff68473dcf94e5a6c46e705a737f248dd824e6cc713970a9195fb3"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4019220/",
+        "retrievedAt": "2026-11-11T03:07:41Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eee1ab946aff68473dcf94e5a6c46e705a737f248dd824e6cc713970a9195fb3"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4019220/",
+        "retrievedAt": "2026-11-11T03:07:41Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eee1ab946aff68473dcf94e5a6c46e705a737f248dd824e6cc713970a9195fb3"
+      }
+    }
+  ],
+  "createdAt": "2026-11-11T03:07:41Z",
+  "updatedAt": "2026-11-11T03:07:21Z",
+  "createdByRun": "42948722984"
+}

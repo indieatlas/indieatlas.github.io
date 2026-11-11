@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000200",
+  "status": "published",
+  "title": {
+    "display": "Big Walk",
+    "original": "Big Walk",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1478500
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000280"
+  ],
+  "publisherIds": [
+    "dev_000281"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "independent-publisher",
+        "note": "開発はHouse House、発売はインディー作品を手がけるPanic",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1478500/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-11T02:56:50Z",
+            "locator": "steam:appdetails.publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:024d079630d5847ddb717b125d39b107db9019514d3f796dd41b7e588bed03e6"
+          }
+        ]
+      },
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.pcgamer.com/games/puzzle/big-walk-developer-reveals-it-used-generative-ai-sparingly-estimates-well-under-0-1-percent-was-actually-coded-using-llms/",
+            "articleId": "a_c0b1e5cff0bd95e5",
+            "publishedAt": "2026-11-10T14:36:16Z",
+            "retrievedAt": "2026-11-11T02:56:42Z",
+            "locator": "article.games",
+            "originKey": "media:pcgamer.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-11T03:07:21Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1478500/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:56:50Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:024d079630d5847ddb717b125d39b107db9019514d3f796dd41b7e588bed03e6"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1478500/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:56:50Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:024d079630d5847ddb717b125d39b107db9019514d3f796dd41b7e588bed03e6"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1478500/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:56:50Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:024d079630d5847ddb717b125d39b107db9019514d3f796dd41b7e588bed03e6"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1478500/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:56:50Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:024d079630d5847ddb717b125d39b107db9019514d3f796dd41b7e588bed03e6"
+      }
+    }
+  ],
+  "createdAt": "2026-11-11T03:07:21Z",
+  "addedAt": "2026-11-11",
+  "updatedAt": "2026-11-11T03:07:21Z",
+  "createdByRun": "42948722984"
+}

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000196",
+  "status": "published",
+  "title": {
+    "display": "Piano Glow",
+    "original": "Piano Glow",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "PianoGlow",
+      "kind": "abbreviation"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 3499520
+  },
+  "associatedApps": [],
+  "officialUrl": "https://pianoglow.com",
+  "developerIds": [
+    "dev_000274"
+  ],
+  "publisherIds": [
+    "dev_000274"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "small-team",
+        "evidence": [
+          {
+            "kind": "official",
+            "url": "https://pianoglow.com/en",
+            "retrievedAt": "2026-11-11T02:55:41Z",
+            "quote": "ピアニストと元Googleエンジニアが制作",
+            "originKey": "official:pianoglow.com",
+            "fetchHash": "sha256:56638096678ae86102c1a2fcc45b5776ef597180e9805ce824c26c9c3a5ecab6"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-11T03:07:21Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "media",
+        "url": "https://www.4gamer.net/games/056/G105681/20261109050/",
+        "sourceId": "4gamer",
+        "publishedAt": "2026-11-09T12:42:14Z",
+        "retrievedAt": "2026-11-11T02:55:28Z",
+        "quote": "TheAlanskiは2026年11月6日，新作タイトル「PianoGlow」をリリースした。",
+        "originKey": "media:4gamer.net",
+        "fetchHash": "sha256:72868b8db09faca5c1c86a598cd5c07434896732ad9a3c71276aaaa064a22bcd"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3499520/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:55:52Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:85d7b6df45f34e569e405a37369574e7aa6e42b5664a8cfa8a3ee74f89d34c71"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3499520/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:55:52Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:85d7b6df45f34e569e405a37369574e7aa6e42b5664a8cfa8a3ee74f89d34c71"
+      }
+    }
+  ],
+  "createdAt": "2026-11-11T03:07:21Z",
+  "addedAt": "2026-11-11",
+  "updatedAt": "2026-11-11T03:07:21Z",
+  "createdByRun": "42948722984"
+}

@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000199",
+  "status": "published",
+  "title": {
+    "display": "Warhammer Survivors",
+    "original": "Warhammer Survivors",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 3669620
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4499200",
+      "kind": "demo"
+    }
+  ],
+  "developerIds": [
+    "dev_000279"
+  ],
+  "publisherIds": [
+    "dev_000279"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/3669620/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-11T02:56:41Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:657a18a1e9fda307b4a31babba35d90c17d28c831d03a3bddeb8e7e632b6afe4"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-11T03:07:21Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3669620/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:56:41Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:657a18a1e9fda307b4a31babba35d90c17d28c831d03a3bddeb8e7e632b6afe4"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3669620/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:56:41Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:657a18a1e9fda307b4a31babba35d90c17d28c831d03a3bddeb8e7e632b6afe4"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3669620/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:56:41Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:657a18a1e9fda307b4a31babba35d90c17d28c831d03a3bddeb8e7e632b6afe4"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3669620/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:56:41Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:657a18a1e9fda307b4a31babba35d90c17d28c831d03a3bddeb8e7e632b6afe4"
+      }
+    }
+  ],
+  "createdAt": "2026-11-11T03:07:21Z",
+  "addedAt": "2026-11-11",
+  "updatedAt": "2026-11-11T03:07:21Z",
+  "createdByRun": "42948722984"
+}

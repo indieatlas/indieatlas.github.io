@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000206",
+  "status": "candidate",
+  "title": {
+    "display": "TANUKI: Pon's Summer  - タヌキ： ポンの夏",
+    "original": "TANUKI: Pon's Summer",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "TANUKI: Pon's Summer  - タヌキ： ポンの夏",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 3218570
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000289"
+  ],
+  "publisherIds": [
+    "dev_000290"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-11T03:07:21Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-11T03:07:21Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3218570/",
+        "retrievedAt": "2026-11-11T03:07:23Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:67fc1c4331be9bec02789ebd0cce7580151096eaacae3c36105dc1ef1d5b3888"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3218570/",
+        "retrievedAt": "2026-11-11T03:07:23Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:67fc1c4331be9bec02789ebd0cce7580151096eaacae3c36105dc1ef1d5b3888"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3218570/",
+        "retrievedAt": "2026-11-11T03:07:23Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:67fc1c4331be9bec02789ebd0cce7580151096eaacae3c36105dc1ef1d5b3888"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3218570/",
+        "retrievedAt": "2026-11-11T03:07:23Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:67fc1c4331be9bec02789ebd0cce7580151096eaacae3c36105dc1ef1d5b3888"
+      }
+    }
+  ],
+  "createdAt": "2026-11-11T03:07:23Z",
+  "updatedAt": "2026-11-11T03:07:21Z",
+  "createdByRun": "42948722984"
+}

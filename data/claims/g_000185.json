@@ -21,11 +21,12 @@
         }
       ],
       "asOf": "2026-11-10",
-      "status": "adopted",
-      "statusReason": "highest-rank",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersededBy": "c_828add3498f2e96d",
       "adoptedAt": "2026-11-10T04:57:42Z",
       "createdAt": "2026-11-10T04:57:42Z",
-      "updatedAt": "2026-11-10T04:57:42Z",
+      "updatedAt": "2026-11-11T03:08:31Z",
       "lastCheckedAt": "2026-11-10T04:57:42Z",
       "createdBy": "system",
       "createdByRun": "42757239487",
@@ -39,6 +40,49 @@
           "day": 10
         },
         "rawText": "10 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_828add3498f2e96d",
+      "gameId": "g_000185",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2638080/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-11T03:00:13Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:957ffe21aec78a32ca45fe6e20f640f76bb7a4590e43c6c702795ceab1fc779d"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "supersedes": [
+        "c_92a3a2eec85e9898"
+      ],
+      "adoptedAt": "2026-11-11T03:07:21Z",
+      "createdAt": "2026-11-11T03:07:21Z",
+      "updatedAt": "2026-11-11T03:07:21Z",
+      "lastCheckedAt": "2026-11-11T03:08:31Z",
+      "createdBy": "llm",
+      "createdByRun": "42948722984",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 9
+        },
+        "rawText": "9 Nov, 2026"
       }
     },
     {
@@ -62,7 +106,7 @@
       "adoptedAt": "2026-11-10T04:57:42Z",
       "createdAt": "2026-11-10T04:57:42Z",
       "updatedAt": "2026-11-10T04:57:42Z",
-      "lastCheckedAt": "2026-11-10T04:57:45Z",
+      "lastCheckedAt": "2026-11-11T03:08:34Z",
       "createdBy": "system",
       "createdByRun": "42757239487",
       "field": "japaneseSupport",
@@ -93,7 +137,7 @@
       "adoptedAt": "2026-11-10T04:57:42Z",
       "createdAt": "2026-11-10T04:57:42Z",
       "updatedAt": "2026-11-10T04:57:42Z",
-      "lastCheckedAt": "2026-11-10T04:57:42Z",
+      "lastCheckedAt": "2026-11-11T03:08:31Z",
       "createdBy": "system",
       "createdByRun": "42757239487",
       "field": "playerModes",
@@ -394,7 +438,7 @@
       "adoptedAt": "2026-11-10T04:57:42Z",
       "createdAt": "2026-11-10T04:57:42Z",
       "updatedAt": "2026-11-10T04:57:42Z",
-      "lastCheckedAt": "2026-11-10T04:57:42Z",
+      "lastCheckedAt": "2026-11-11T03:08:31Z",
       "createdBy": "system",
       "createdByRun": "42757239487",
       "field": "storeLink",
@@ -424,7 +468,7 @@
       "adoptedAt": "2026-11-10T04:57:42Z",
       "createdAt": "2026-11-10T04:57:42Z",
       "updatedAt": "2026-11-10T04:57:42Z",
-      "lastCheckedAt": "2026-11-10T04:57:42Z",
+      "lastCheckedAt": "2026-11-11T03:08:31Z",
       "createdBy": "system",
       "createdByRun": "42757239487",
       "field": "image",

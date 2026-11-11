@@ -1,0 +1,411 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000200",
+  "claims": [
+    {
+      "id": "c_968b6c2ebc71e2ba",
+      "gameId": "g_000200",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1478500/",
+          "retrievedAt": "2026-11-11T03:08:04Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:024d079630d5847ddb717b125d39b107db9019514d3f796dd41b7e588bed03e6"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:08:04Z",
+      "createdAt": "2026-11-11T03:08:04Z",
+      "updatedAt": "2026-11-11T03:08:04Z",
+      "lastCheckedAt": "2026-11-11T03:08:04Z",
+      "createdBy": "system",
+      "createdByRun": "42948722984",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 8,
+          "day": 4
+        },
+        "rawText": "4 Aug, 2026"
+      }
+    },
+    {
+      "id": "c_0070ebf6d0ce53dc",
+      "gameId": "g_000200",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1478500/",
+          "retrievedAt": "2026-11-11T03:08:04Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:024d079630d5847ddb717b125d39b107db9019514d3f796dd41b7e588bed03e6"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:08:04Z",
+      "createdAt": "2026-11-11T03:08:04Z",
+      "updatedAt": "2026-11-11T03:08:04Z",
+      "lastCheckedAt": "2026-11-11T03:08:04Z",
+      "createdBy": "system",
+      "createdByRun": "42948722984",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 8,
+          "day": 4
+        },
+        "rawText": "4 Aug, 2026"
+      }
+    },
+    {
+      "id": "c_c4853be28d3adc0e",
+      "gameId": "g_000200",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1478500/",
+          "retrievedAt": "2026-11-11T03:08:07Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e4da40d2367de2c1b3a3ebf6a9c9801714e232fc3aaeb8d86fd836092520c01d"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:08:04Z",
+      "createdAt": "2026-11-11T03:08:04Z",
+      "updatedAt": "2026-11-11T03:08:04Z",
+      "lastCheckedAt": "2026-11-11T03:08:07Z",
+      "createdBy": "system",
+      "createdByRun": "42948722984",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_babfaa1512559ffb",
+      "gameId": "g_000200",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1478500/",
+          "retrievedAt": "2026-11-11T03:08:04Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:024d079630d5847ddb717b125d39b107db9019514d3f796dd41b7e588bed03e6"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:08:04Z",
+      "createdAt": "2026-11-11T03:08:04Z",
+      "updatedAt": "2026-11-11T03:08:04Z",
+      "lastCheckedAt": "2026-11-11T03:08:04Z",
+      "createdBy": "system",
+      "createdByRun": "42948722984",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_0bd617264c8357b8",
+      "gameId": "g_000200",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1478500/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-11T02:56:50Z",
+          "quote": "Big Walk is a cooperative multiplayer adventure about teamwork and talking.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:024d079630d5847ddb717b125d39b107db9019514d3f796dd41b7e588bed03e6"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1478500/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-11T02:56:50Z",
+          "quote": "Set out with your friends through a wide-open world full of challenges, puzzles, and discoveries.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:024d079630d5847ddb717b125d39b107db9019514d3f796dd41b7e588bed03e6"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1478500/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-11T02:56:50Z",
+          "quote": "Big Walk can be played with as few as 2 players (i.e. a focused co-op experience) or as many as 12 (i.e. an absolute mess)",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:024d079630d5847ddb717b125d39b107db9019514d3f796dd41b7e588bed03e6"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:21Z",
+      "createdAt": "2026-11-11T03:07:21Z",
+      "updatedAt": "2026-11-11T03:07:21Z",
+      "lastCheckedAt": "2026-11-11T02:56:50Z",
+      "createdBy": "llm",
+      "createdByRun": "42948722984",
+      "field": "summary",
+      "value": {
+        "ja": "『Untitled Goose Game』の開発陣が手がける協力型オンラインアドベンチャー。広大なオープンワールドを2〜12人で歩き回り、無線機や双眼鏡などの道具と近接ボイスチャットを使い、パズルや発見を仲間とともに進めていく。"
+      }
+    },
+    {
+      "id": "c_4d21d81421e88f1e",
+      "gameId": "g_000200",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1478500/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-11T02:56:50Z",
+          "quote": "Big Walk can be played with as few as 2 players (i.e. a focused co-op experience) or as many as 12 (i.e. an absolute mess)",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:024d079630d5847ddb717b125d39b107db9019514d3f796dd41b7e588bed03e6"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:21Z",
+      "createdAt": "2026-11-11T03:07:21Z",
+      "updatedAt": "2026-11-11T03:07:21Z",
+      "lastCheckedAt": "2026-11-11T02:56:50Z",
+      "createdBy": "llm",
+      "createdByRun": "42948722984",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_83f2c7668ba5af38",
+      "gameId": "g_000200",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1478500/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-11T02:56:50Z",
+          "quote": "Set out with your friends through a wide-open world full of challenges, puzzles, and discoveries.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:024d079630d5847ddb717b125d39b107db9019514d3f796dd41b7e588bed03e6"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:21Z",
+      "createdAt": "2026-11-11T03:07:21Z",
+      "updatedAt": "2026-11-11T03:07:21Z",
+      "lastCheckedAt": "2026-11-11T02:56:50Z",
+      "createdBy": "llm",
+      "createdByRun": "42948722984",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_b8a5b28c0d31714a",
+      "gameId": "g_000200",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1478500/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-11T02:56:50Z",
+          "quote": "Big Walk is a cooperative multiplayer adventure about teamwork and talking.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:024d079630d5847ddb717b125d39b107db9019514d3f796dd41b7e588bed03e6"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:21Z",
+      "createdAt": "2026-11-11T03:07:21Z",
+      "updatedAt": "2026-11-11T03:07:21Z",
+      "lastCheckedAt": "2026-11-11T02:56:50Z",
+      "createdBy": "llm",
+      "createdByRun": "42948722984",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_e71662ecdd828fc6",
+      "gameId": "g_000200",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1478500/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-11T02:56:50Z",
+          "quote": "Set out with your friends through a wide-open world full of challenges, puzzles, and discoveries.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:024d079630d5847ddb717b125d39b107db9019514d3f796dd41b7e588bed03e6"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:21Z",
+      "createdAt": "2026-11-11T03:07:21Z",
+      "updatedAt": "2026-11-11T03:07:21Z",
+      "lastCheckedAt": "2026-11-11T02:56:50Z",
+      "createdBy": "llm",
+      "createdByRun": "42948722984",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_f91e4db25ce8b869",
+      "gameId": "g_000200",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1478500/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-11T02:56:50Z",
+          "quote": "Find your way around an open world together, at your own pace",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:024d079630d5847ddb717b125d39b107db9019514d3f796dd41b7e588bed03e6"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:21Z",
+      "createdAt": "2026-11-11T03:07:21Z",
+      "updatedAt": "2026-11-11T03:07:21Z",
+      "lastCheckedAt": "2026-11-11T02:56:50Z",
+      "createdBy": "llm",
+      "createdByRun": "42948722984",
+      "field": "tag",
+      "value": {
+        "tagId": "open-world"
+      }
+    },
+    {
+      "id": "c_9d973ace5fc7f114",
+      "gameId": "g_000200",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1478500/",
+          "retrievedAt": "2026-11-11T03:08:04Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:024d079630d5847ddb717b125d39b107db9019514d3f796dd41b7e588bed03e6"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:08:04Z",
+      "createdAt": "2026-11-11T03:08:04Z",
+      "updatedAt": "2026-11-11T03:08:04Z",
+      "lastCheckedAt": "2026-11-11T03:08:04Z",
+      "createdBy": "system",
+      "createdByRun": "42948722984",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1478500/"
+      }
+    },
+    {
+      "id": "c_a28972ab03765961",
+      "gameId": "g_000200",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1478500/",
+          "retrievedAt": "2026-11-11T03:08:04Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:024d079630d5847ddb717b125d39b107db9019514d3f796dd41b7e588bed03e6"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:08:04Z",
+      "createdAt": "2026-11-11T03:08:04Z",
+      "updatedAt": "2026-11-11T03:08:04Z",
+      "lastCheckedAt": "2026-11-11T03:08:04Z",
+      "createdBy": "system",
+      "createdByRun": "42948722984",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1478500/62eeee1507dbac905e128a62f2ce690550238db0/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Big Walk のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Panic"
+        }
+      }
+    }
+  ]
+}

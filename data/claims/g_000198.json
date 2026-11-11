@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000198",
+  "claims": [
+    {
+      "id": "c_a9d9535be9279caf",
+      "gameId": "g_000198",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4099810/",
+          "retrievedAt": "2026-11-11T03:07:55Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cf592790ca16cafa30579841134ee2cc542ea0cbda0c255e54c93fbdaabef0c8"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:55Z",
+      "createdAt": "2026-11-11T03:07:55Z",
+      "updatedAt": "2026-11-11T03:07:55Z",
+      "lastCheckedAt": "2026-11-11T03:07:55Z",
+      "createdBy": "system",
+      "createdByRun": "42948722984",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 9
+        },
+        "rawText": "9 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_95515189ed1cb9db",
+      "gameId": "g_000198",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4099810/",
+          "retrievedAt": "2026-11-11T03:07:58Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:5a4361937ce54de88cf1c12a2f9ce781e0a35a884c494058e047464174677899"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:55Z",
+      "createdAt": "2026-11-11T03:07:55Z",
+      "updatedAt": "2026-11-11T03:07:55Z",
+      "lastCheckedAt": "2026-11-11T03:07:58Z",
+      "createdBy": "system",
+      "createdByRun": "42948722984",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_83f90c887301b251",
+      "gameId": "g_000198",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4099810/",
+          "retrievedAt": "2026-11-11T03:07:55Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cf592790ca16cafa30579841134ee2cc542ea0cbda0c255e54c93fbdaabef0c8"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:55Z",
+      "createdAt": "2026-11-11T03:07:55Z",
+      "updatedAt": "2026-11-11T03:07:55Z",
+      "lastCheckedAt": "2026-11-11T03:07:55Z",
+      "createdBy": "system",
+      "createdByRun": "42948722984",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_05a05f4f64dce758",
+      "gameId": "g_000198",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4099810/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-11T02:55:35Z",
+          "quote": "『1999 トコヨビル』は奇妙な従業員たちと関係を深めて、潰れかけの屋内遊園地からの脱出を目指す、ビジュアルノベル＆アドベンチャーです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cf592790ca16cafa30579841134ee2cc542ea0cbda0c255e54c93fbdaabef0c8"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:21Z",
+      "createdAt": "2026-11-11T03:07:21Z",
+      "updatedAt": "2026-11-11T03:07:21Z",
+      "lastCheckedAt": "2026-11-11T02:55:35Z",
+      "createdBy": "llm",
+      "createdByRun": "42948722984",
+      "field": "summary",
+      "value": {
+        "ja": "1999年、記憶喪失の少年・灯良が迷い込んだのは、秘密と怪しい噂の絶えない屋内遊園地「トコヨビル」。住み込みで働く奇妙な従業員たちと関係を深め、潰れかけの遊園地からの脱出を目指すビジュアルノベル＆アドベンチャー。"
+      }
+    },
+    {
+      "id": "c_46792197204b9106",
+      "gameId": "g_000198",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4099810/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-11T02:55:35Z",
+          "quote": "『1999 トコヨビル』は奇妙な従業員たちと関係を深めて、潰れかけの屋内遊園地からの脱出を目指す、ビジュアルノベル＆アドベンチャーです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cf592790ca16cafa30579841134ee2cc542ea0cbda0c255e54c93fbdaabef0c8"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:21Z",
+      "createdAt": "2026-11-11T03:07:21Z",
+      "updatedAt": "2026-11-11T03:07:21Z",
+      "lastCheckedAt": "2026-11-11T02:55:35Z",
+      "createdBy": "llm",
+      "createdByRun": "42948722984",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_5703cd5625dee11d",
+      "gameId": "g_000198",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4099810/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-11T02:55:35Z",
+          "quote": "『1999 トコヨビル』は奇妙な従業員たちと関係を深めて、潰れかけの屋内遊園地からの脱出を目指す、ビジュアルノベル＆アドベンチャーです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cf592790ca16cafa30579841134ee2cc542ea0cbda0c255e54c93fbdaabef0c8"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:21Z",
+      "createdAt": "2026-11-11T03:07:21Z",
+      "updatedAt": "2026-11-11T03:07:21Z",
+      "lastCheckedAt": "2026-11-11T02:55:35Z",
+      "createdBy": "llm",
+      "createdByRun": "42948722984",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_9492abe3b827f907",
+      "gameId": "g_000198",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4099810/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-11T02:55:35Z",
+          "quote": "※この作品には一部、暴力的な表現や恐怖を煽る演出、ならびに自殺を想起させる描写があります。苦手な方は設定画面から「表現フィルターモード」をご使用ください。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cf592790ca16cafa30579841134ee2cc542ea0cbda0c255e54c93fbdaabef0c8"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:21Z",
+      "createdAt": "2026-11-11T03:07:21Z",
+      "updatedAt": "2026-11-11T03:07:21Z",
+      "lastCheckedAt": "2026-11-11T02:55:35Z",
+      "createdBy": "llm",
+      "createdByRun": "42948722984",
+      "field": "tag",
+      "value": {
+        "tagId": "dark"
+      }
+    },
+    {
+      "id": "c_98f0ea7d20781e04",
+      "gameId": "g_000198",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4099810/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-11T02:55:35Z",
+          "quote": "『1999 トコヨビル』は奇妙な従業員たちと関係を深めて、潰れかけの屋内遊園地からの脱出を目指す、ビジュアルノベル＆アドベンチャーです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cf592790ca16cafa30579841134ee2cc542ea0cbda0c255e54c93fbdaabef0c8"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:21Z",
+      "createdAt": "2026-11-11T03:07:21Z",
+      "updatedAt": "2026-11-11T03:07:21Z",
+      "lastCheckedAt": "2026-11-11T02:55:35Z",
+      "createdBy": "llm",
+      "createdByRun": "42948722984",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_ca1a1f6e6e7c5e7a",
+      "gameId": "g_000198",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4099810/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-11T02:55:35Z",
+          "quote": "『1999 トコヨビル』は奇妙な従業員たちと関係を深めて、潰れかけの屋内遊園地からの脱出を目指す、ビジュアルノベル＆アドベンチャーです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cf592790ca16cafa30579841134ee2cc542ea0cbda0c255e54c93fbdaabef0c8"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:21Z",
+      "createdAt": "2026-11-11T03:07:21Z",
+      "updatedAt": "2026-11-11T03:07:21Z",
+      "lastCheckedAt": "2026-11-11T02:55:35Z",
+      "createdBy": "llm",
+      "createdByRun": "42948722984",
+      "field": "tag",
+      "value": {
+        "tagId": "horror"
+      }
+    },
+    {
+      "id": "c_409a38ea4af9494c",
+      "gameId": "g_000198",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4099810/",
+          "retrievedAt": "2026-11-11T03:07:55Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cf592790ca16cafa30579841134ee2cc542ea0cbda0c255e54c93fbdaabef0c8"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:55Z",
+      "createdAt": "2026-11-11T03:07:55Z",
+      "updatedAt": "2026-11-11T03:07:55Z",
+      "lastCheckedAt": "2026-11-11T03:07:55Z",
+      "createdBy": "system",
+      "createdByRun": "42948722984",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4099810/"
+      }
+    },
+    {
+      "id": "c_74e5e741c29b1dd5",
+      "gameId": "g_000198",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4099810/",
+          "retrievedAt": "2026-11-11T03:07:55Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cf592790ca16cafa30579841134ee2cc542ea0cbda0c255e54c93fbdaabef0c8"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:55Z",
+      "createdAt": "2026-11-11T03:07:55Z",
+      "updatedAt": "2026-11-11T03:07:55Z",
+      "lastCheckedAt": "2026-11-11T03:07:55Z",
+      "createdBy": "system",
+      "createdByRun": "42948722984",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4099810/b6cc300848c6d5186272fb10361dca827fb864a2/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "1999トコヨビル のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Kodansha"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000207",
+  "status": "candidate",
+  "title": {
+    "display": "Wizardry外伝 五つの試練",
+    "original": "Wizardry: The Five Ordeals",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "Wizardry外伝 五つの試練",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1308700
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1309770",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "1309771",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "1585620",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "2889060",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4422250",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4591060",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5539840",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://wiz.gamespark.jp/",
+  "developerIds": [
+    "dev_000291"
+  ],
+  "publisherIds": [
+    "dev_000292"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-11T03:07:21Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-11T03:07:21Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1308700/",
+        "retrievedAt": "2026-11-11T03:07:28Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9e643d83cf376d280de5c3e30c275ad6db93210b76fd7983ed048e6933185002"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1308700/",
+        "retrievedAt": "2026-11-11T03:07:28Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9e643d83cf376d280de5c3e30c275ad6db93210b76fd7983ed048e6933185002"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1308700/",
+        "retrievedAt": "2026-11-11T03:07:28Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9e643d83cf376d280de5c3e30c275ad6db93210b76fd7983ed048e6933185002"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1308700/",
+        "retrievedAt": "2026-11-11T03:07:28Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9e643d83cf376d280de5c3e30c275ad6db93210b76fd7983ed048e6933185002"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1308700/",
+        "retrievedAt": "2026-11-11T03:07:28Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9e643d83cf376d280de5c3e30c275ad6db93210b76fd7983ed048e6933185002"
+      }
+    }
+  ],
+  "createdAt": "2026-11-11T03:07:28Z",
+  "updatedAt": "2026-11-11T03:07:21Z",
+  "createdByRun": "42948722984"
+}

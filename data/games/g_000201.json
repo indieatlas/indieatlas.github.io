@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000201",
+  "status": "candidate",
+  "title": {
+    "display": "银茧 Argent Cocoon",
+    "original": "银茧 Argent Cocoon",
+    "originalLang": "zh"
+  },
+  "aliases": [
+    {
+      "value": "Argent Cocoon",
+      "lang": "en",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 4976520
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5344970",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5344970",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000282"
+  ],
+  "publisherIds": [
+    "dev_000282"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4976520/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-11T02:57:43Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:ef81567a1bbb7c28b71c944d868c91c210da4e7d56e9fa85959f6d39a54febb1"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-11T03:07:21Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4976520/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:57:43Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ef81567a1bbb7c28b71c944d868c91c210da4e7d56e9fa85959f6d39a54febb1"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4976520/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:57:43Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ef81567a1bbb7c28b71c944d868c91c210da4e7d56e9fa85959f6d39a54febb1"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4976520/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:57:43Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ef81567a1bbb7c28b71c944d868c91c210da4e7d56e9fa85959f6d39a54febb1"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4976520/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:57:43Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ef81567a1bbb7c28b71c944d868c91c210da4e7d56e9fa85959f6d39a54febb1"
+      }
+    }
+  ],
+  "createdAt": "2026-11-11T03:07:21Z",
+  "updatedAt": "2026-11-11T03:08:08Z",
+  "createdByRun": "42948722984"
+}

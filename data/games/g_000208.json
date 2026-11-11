@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000208",
+  "status": "candidate",
+  "title": {
+    "display": "Potion Craft: Alchemist Simulator",
+    "original": "Potion Craft: Alchemist Simulator",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1210320
+  },
+  "associatedApps": [],
+  "officialUrl": "https://www.potioncraft.com/",
+  "developerIds": [
+    "dev_000293"
+  ],
+  "publisherIds": [
+    "dev_000294"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-11T03:07:21Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-11T03:07:21Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1210320/",
+        "retrievedAt": "2026-11-11T03:07:32Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:34be8c2d9db8bf6c8dda3ee65a0bc87096d8f9ca4ff996dc2385ceb9c95d88ae"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1210320/",
+        "retrievedAt": "2026-11-11T03:07:32Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:34be8c2d9db8bf6c8dda3ee65a0bc87096d8f9ca4ff996dc2385ceb9c95d88ae"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1210320/",
+        "retrievedAt": "2026-11-11T03:07:32Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:34be8c2d9db8bf6c8dda3ee65a0bc87096d8f9ca4ff996dc2385ceb9c95d88ae"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1210320/",
+        "retrievedAt": "2026-11-11T03:07:32Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:34be8c2d9db8bf6c8dda3ee65a0bc87096d8f9ca4ff996dc2385ceb9c95d88ae"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1210320/",
+        "retrievedAt": "2026-11-11T03:07:32Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:34be8c2d9db8bf6c8dda3ee65a0bc87096d8f9ca4ff996dc2385ceb9c95d88ae"
+      }
+    }
+  ],
+  "createdAt": "2026-11-11T03:07:32Z",
+  "updatedAt": "2026-11-11T03:07:21Z",
+  "createdByRun": "42948722984"
+}

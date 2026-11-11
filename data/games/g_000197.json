@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000197",
+  "status": "published",
+  "title": {
+    "display": "Against Heroes",
+    "original": "Against Heroes",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5351930
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5450850",
+      "kind": "demo"
+    }
+  ],
+  "developerIds": [
+    "dev_000275",
+    "dev_000276"
+  ],
+  "publisherIds": [
+    "dev_000275"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5351930/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-11T02:55:46Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:78766d4218827e7745159896eaa529268009d58ba2cab0bb7f411775aca90328"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-11T03:07:21Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5351930/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:55:46Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:78766d4218827e7745159896eaa529268009d58ba2cab0bb7f411775aca90328"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5351930/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:55:46Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:78766d4218827e7745159896eaa529268009d58ba2cab0bb7f411775aca90328"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5351930/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:55:46Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:78766d4218827e7745159896eaa529268009d58ba2cab0bb7f411775aca90328"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5351930/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-11T02:55:46Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:78766d4218827e7745159896eaa529268009d58ba2cab0bb7f411775aca90328"
+      }
+    }
+  ],
+  "createdAt": "2026-11-11T03:07:21Z",
+  "addedAt": "2026-11-11",
+  "updatedAt": "2026-11-11T03:07:21Z",
+  "createdByRun": "42948722984"
+}

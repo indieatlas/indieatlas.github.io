@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000204",
+  "claims": [
+    {
+      "id": "c_e8cb0dd37a5d05fc",
+      "gameId": "g_000204",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1380360/",
+          "retrievedAt": "2026-11-11T03:08:22Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4eeff8e89be2478c1342da522572ea4e6a0c6783ffd7932b1acadd472153d4e3"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:08:22Z",
+      "createdAt": "2026-11-11T03:08:22Z",
+      "updatedAt": "2026-11-11T03:08:22Z",
+      "lastCheckedAt": "2026-11-11T03:08:22Z",
+      "createdBy": "system",
+      "createdByRun": "42948722984",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2020,
+          "month": 8,
+          "day": 13
+        },
+        "rawText": "13 Aug, 2020"
+      }
+    },
+    {
+      "id": "c_b95d6525c2263ac8",
+      "gameId": "g_000204",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1380360/",
+          "retrievedAt": "2026-11-11T03:08:25Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6c2d84614defec2d84358c8bc528fc8f52251c768e0d5551e026e9a82b422c7e"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:08:22Z",
+      "createdAt": "2026-11-11T03:08:22Z",
+      "updatedAt": "2026-11-11T03:08:22Z",
+      "lastCheckedAt": "2026-11-11T03:08:25Z",
+      "createdBy": "system",
+      "createdByRun": "42948722984",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "no",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_e3c342d5509ce0d7",
+      "gameId": "g_000204",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1380360/",
+          "retrievedAt": "2026-11-11T03:08:22Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4eeff8e89be2478c1342da522572ea4e6a0c6783ffd7932b1acadd472153d4e3"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:08:22Z",
+      "createdAt": "2026-11-11T03:08:22Z",
+      "updatedAt": "2026-11-11T03:08:22Z",
+      "lastCheckedAt": "2026-11-11T03:08:22Z",
+      "createdBy": "system",
+      "createdByRun": "42948722984",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_2c1ddac01f6f003a",
+      "gameId": "g_000204",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1380360/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-11T02:59:22Z",
+          "quote": "Battle Sweeper is still Minesweeper at its core, but one mistake doesn't end the game.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4eeff8e89be2478c1342da522572ea4e6a0c6783ffd7932b1acadd472153d4e3"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1380360/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-11T02:59:22Z",
+          "quote": "Each level you beat adds a monster to the next level and provides one bonus for your character - HP, attack, or a potion.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4eeff8e89be2478c1342da522572ea4e6a0c6783ffd7932b1acadd472153d4e3"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:21Z",
+      "createdAt": "2026-11-11T03:07:21Z",
+      "updatedAt": "2026-11-11T03:07:21Z",
+      "lastCheckedAt": "2026-11-11T02:59:22Z",
+      "createdBy": "llm",
+      "createdByRun": "42948722984",
+      "field": "summary",
+      "value": {
+        "ja": "マインスイーパーを基盤に、モンスターのタイルを開くとターン制バトルになるパズルRPG。4人のキャラクターから1人を選び、レベルを重ねるほどモンスターが増えるエンドレスなステージに挑む。"
+      }
+    },
+    {
+      "id": "c_11f2ee4a108beab6",
+      "gameId": "g_000204",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1380360/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-11T02:59:22Z",
+          "quote": "The turn-based monster battles are simple and fast, allowing you to quickly get back to clearing the level.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4eeff8e89be2478c1342da522572ea4e6a0c6783ffd7932b1acadd472153d4e3"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:21Z",
+      "createdAt": "2026-11-11T03:07:21Z",
+      "updatedAt": "2026-11-11T03:07:21Z",
+      "lastCheckedAt": "2026-11-11T02:59:22Z",
+      "createdBy": "llm",
+      "createdByRun": "42948722984",
+      "field": "tag",
+      "value": {
+        "tagId": "turn-based"
+      }
+    },
+    {
+      "id": "c_2c34648d8a6bd541",
+      "gameId": "g_000204",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1380360/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-11T02:59:22Z",
+          "quote": "Minesweeper gets revived with an adventurous twist!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4eeff8e89be2478c1342da522572ea4e6a0c6783ffd7932b1acadd472153d4e3"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:21Z",
+      "createdAt": "2026-11-11T03:07:21Z",
+      "updatedAt": "2026-11-11T03:07:21Z",
+      "lastCheckedAt": "2026-11-11T02:59:22Z",
+      "createdBy": "llm",
+      "createdByRun": "42948722984",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_5e7549de20e48f03",
+      "gameId": "g_000204",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1380360/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-11T02:59:22Z",
+          "quote": "Each time you complete a level, the next more difficult challenge awaits.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4eeff8e89be2478c1342da522572ea4e6a0c6783ffd7932b1acadd472153d4e3"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:21Z",
+      "createdAt": "2026-11-11T03:07:21Z",
+      "updatedAt": "2026-11-11T03:07:21Z",
+      "lastCheckedAt": "2026-11-11T02:59:22Z",
+      "createdBy": "llm",
+      "createdByRun": "42948722984",
+      "field": "tag",
+      "value": {
+        "tagId": "difficult"
+      }
+    },
+    {
+      "id": "c_8f7acd14feb2dacc",
+      "gameId": "g_000204",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://automaton-media.com/articles/newsjp/20261110-478459/",
+          "sourceId": "automaton",
+          "articleId": "a_5df0f2b28a01adfd",
+          "publishedAt": "2026-11-10T09:16:11Z",
+          "retrievedAt": "2026-11-11T02:59:13Z",
+          "quote": "クラシックな『マインスイーパー』とRPG要素が融合したパズルゲームだ",
+          "originKey": "media:automaton-media.com",
+          "fetchHash": "sha256:ae138c62f888bcaaec153cfe1f2f856aad4dcce30f77bb1e4b18ec08fdc2b3fe"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:07:21Z",
+      "createdAt": "2026-11-11T03:07:21Z",
+      "updatedAt": "2026-11-11T03:07:21Z",
+      "lastCheckedAt": "2026-11-11T02:59:13Z",
+      "createdBy": "llm",
+      "createdByRun": "42948722984",
+      "field": "tag",
+      "value": {
+        "tagId": "rpg"
+      }
+    },
+    {
+      "id": "c_67eb337027026c22",
+      "gameId": "g_000204",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1380360/",
+          "retrievedAt": "2026-11-11T03:08:22Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4eeff8e89be2478c1342da522572ea4e6a0c6783ffd7932b1acadd472153d4e3"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:08:22Z",
+      "createdAt": "2026-11-11T03:08:22Z",
+      "updatedAt": "2026-11-11T03:08:22Z",
+      "lastCheckedAt": "2026-11-11T03:08:22Z",
+      "createdBy": "system",
+      "createdByRun": "42948722984",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1380360/"
+      }
+    },
+    {
+      "id": "c_23f9a751deb49930",
+      "gameId": "g_000204",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1380360/",
+          "retrievedAt": "2026-11-11T03:08:22Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4eeff8e89be2478c1342da522572ea4e6a0c6783ffd7932b1acadd472153d4e3"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-11T03:08:22Z",
+      "createdAt": "2026-11-11T03:08:22Z",
+      "updatedAt": "2026-11-11T03:08:22Z",
+      "lastCheckedAt": "2026-11-11T03:08:22Z",
+      "createdBy": "system",
+      "createdByRun": "42948722984",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1380360/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Battle Sweeper のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "AlpaSun Games"
+        }
+      }
+    }
+  ]
+}
