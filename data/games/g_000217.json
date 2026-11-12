@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000217",
+  "status": "candidate",
+  "title": {
+    "display": "真夏のシトラス",
+    "original": "Citrus Summer",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 3725830
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3756690",
+      "kind": "demo"
+    }
+  ],
+  "developerIds": [
+    "dev_000308"
+  ],
+  "publisherIds": [
+    "dev_000309"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://automaton-media.com/articles/newsjp/20261111-478575/",
+            "articleId": "a_94ef74791b85f8c6",
+            "publishedAt": "2026-11-11T03:23:26Z",
+            "retrievedAt": "2026-11-12T03:59:21Z",
+            "locator": "article.games",
+            "originKey": "media:automaton-media.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-12T04:09:43Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3725830/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:59:30Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b4d61b73fd5869183eb305d1c44b1d05df3badccf4f9d03e94e17d15ca79b5bc"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3725830/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:59:30Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b4d61b73fd5869183eb305d1c44b1d05df3badccf4f9d03e94e17d15ca79b5bc"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3725830/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:59:30Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b4d61b73fd5869183eb305d1c44b1d05df3badccf4f9d03e94e17d15ca79b5bc"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3725830/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:59:30Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b4d61b73fd5869183eb305d1c44b1d05df3badccf4f9d03e94e17d15ca79b5bc"
+      }
+    }
+  ],
+  "createdAt": "2026-11-12T04:09:43Z",
+  "updatedAt": "2026-11-12T04:09:43Z",
+  "createdByRun": "43151022131"
+}

@@ -1,0 +1,454 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000213",
+  "claims": [
+    {
+      "id": "c_9b1020c32d9c3b3c",
+      "gameId": "g_000213",
+      "scope": {
+        "platform": "linux",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1814690/",
+          "retrievedAt": "2026-11-12T04:10:21Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b2472982b776052d036d116655df13d0619c2f5345302c435e64ee518a7be25a"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:21Z",
+      "createdAt": "2026-11-12T04:10:21Z",
+      "updatedAt": "2026-11-12T04:10:21Z",
+      "lastCheckedAt": "2026-11-12T04:10:21Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "release",
+      "value": {
+        "status": "tba",
+        "rawText": "Coming soon"
+      }
+    },
+    {
+      "id": "c_bb2876d811dfdd8a",
+      "gameId": "g_000213",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1814690/",
+          "retrievedAt": "2026-11-12T04:10:21Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b2472982b776052d036d116655df13d0619c2f5345302c435e64ee518a7be25a"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:21Z",
+      "createdAt": "2026-11-12T04:10:21Z",
+      "updatedAt": "2026-11-12T04:10:21Z",
+      "lastCheckedAt": "2026-11-12T04:10:21Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "release",
+      "value": {
+        "status": "tba",
+        "rawText": "Coming soon"
+      }
+    },
+    {
+      "id": "c_31461721e83885e3",
+      "gameId": "g_000213",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.gamingonlinux.com/2026/11/hand-drawn-dino-adventure-zid-journey-gets-a-new-trailer-set-to-arrive-in-q2-2027/",
+          "sourceId": "gamingonlinux",
+          "articleId": "a_6dfe817580f37c58",
+          "publishedAt": "2026-11-11T10:40:44Z",
+          "retrievedAt": "2026-11-12T03:57:08Z",
+          "quote": "It's set to arrive in Q2 2027.",
+          "originKey": "media:gamingonlinux.com",
+          "fetchHash": "sha256:3d0506a2922c8eadc5105c6547c97579bfa6b8c2eef3f4a7aab4228aa9a5dc83"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "candidate",
+      "statusReason": "outranked",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:57:08Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "quarter",
+          "year": 2027,
+          "quarter": 2
+        },
+        "rawText": "Q2 2027"
+      }
+    },
+    {
+      "id": "c_09baef82bb89efb1",
+      "gameId": "g_000213",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1814690/",
+          "retrievedAt": "2026-11-12T04:10:21Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b2472982b776052d036d116655df13d0619c2f5345302c435e64ee518a7be25a"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:21Z",
+      "createdAt": "2026-11-12T04:10:21Z",
+      "updatedAt": "2026-11-12T04:10:21Z",
+      "lastCheckedAt": "2026-11-12T04:10:21Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "release",
+      "value": {
+        "status": "tba",
+        "rawText": "Coming soon"
+      }
+    },
+    {
+      "id": "c_686c4ae5ba45a232",
+      "gameId": "g_000213",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1814690/",
+          "retrievedAt": "2026-11-12T04:10:24Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4217bee181b24a0f28f4fbe6722cd230a1f73b68caa55b3a1822b0b57181649a"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:21Z",
+      "createdAt": "2026-11-12T04:10:21Z",
+      "updatedAt": "2026-11-12T04:10:21Z",
+      "lastCheckedAt": "2026-11-12T04:10:24Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "no",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_3efb25e1e67cf613",
+      "gameId": "g_000213",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1814690/",
+          "retrievedAt": "2026-11-12T04:10:21Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b2472982b776052d036d116655df13d0619c2f5345302c435e64ee518a7be25a"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:21Z",
+      "createdAt": "2026-11-12T04:10:21Z",
+      "updatedAt": "2026-11-12T04:10:21Z",
+      "lastCheckedAt": "2026-11-12T04:10:21Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_fc97499c1890ba98",
+      "gameId": "g_000213",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1814690/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:57:12Z",
+          "quote": "Play as Zid, a yellow dinosaur, and point-and-click his way as he goes on a journey to find the lost parents of a small Daspletosaurus hatchling!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b2472982b776052d036d116655df13d0619c2f5345302c435e64ee518a7be25a"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:57:12Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "summary",
+      "value": {
+        "ja": "黄色い恐竜ジドとなり、置き去りにされたダスプレトサウルスの赤ちゃんを家族のもとへ届けるため、手描きの背景とコマ撮り風アニメで描かれた先史世界を巡るポイント＆クリック式アドベンチャー。"
+      }
+    },
+    {
+      "id": "c_231582727f871a7f",
+      "gameId": "g_000213",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1814690/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:57:12Z",
+          "quote": "Even more different dinosaurs and other prehistoric creatures to meet on your way!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b2472982b776052d036d116655df13d0619c2f5345302c435e64ee518a7be25a"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:57:12Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "animals"
+      }
+    },
+    {
+      "id": "c_3fda05c1569e166b",
+      "gameId": "g_000213",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1814690/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:57:12Z",
+          "quote": "Charming visuals featuring cartoony art style, hand-drawn backgrounds, and frame-by-frame animations!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b2472982b776052d036d116655df13d0619c2f5345302c435e64ee518a7be25a"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:57:12Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "hand-drawn"
+      }
+    },
+    {
+      "id": "c_bdac15f6e1572706",
+      "gameId": "g_000213",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1814690/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:57:12Z",
+          "quote": "Zid Journey is a hand-drawn adventure game with a strong, classic 90's vibe.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b2472982b776052d036d116655df13d0619c2f5345302c435e64ee518a7be25a"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:57:12Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_cab6b51e39285c21",
+      "gameId": "g_000213",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1814690/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:57:12Z",
+          "quote": "With all that, Zid decides to reunite the baby with its family.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b2472982b776052d036d116655df13d0619c2f5345302c435e64ee518a7be25a"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:57:12Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_eac82472ae2bd4de",
+      "gameId": "g_000213",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1814690/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:57:12Z",
+          "quote": "Zid Journey is a hand-drawn adventure game with a strong, classic 90's vibe.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b2472982b776052d036d116655df13d0619c2f5345302c435e64ee518a7be25a"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:57:12Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "retro"
+      }
+    },
+    {
+      "id": "c_849deeb6f17a06b2",
+      "gameId": "g_000213",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1814690/",
+          "retrievedAt": "2026-11-12T04:10:21Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b2472982b776052d036d116655df13d0619c2f5345302c435e64ee518a7be25a"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:21Z",
+      "createdAt": "2026-11-12T04:10:21Z",
+      "updatedAt": "2026-11-12T04:10:21Z",
+      "lastCheckedAt": "2026-11-12T04:10:21Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1814690/"
+      }
+    },
+    {
+      "id": "c_80ee5ac916411011",
+      "gameId": "g_000213",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1814690/",
+          "retrievedAt": "2026-11-12T04:10:21Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b2472982b776052d036d116655df13d0619c2f5345302c435e64ee518a7be25a"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:21Z",
+      "createdAt": "2026-11-12T04:10:21Z",
+      "updatedAt": "2026-11-12T04:10:21Z",
+      "lastCheckedAt": "2026-11-12T04:10:21Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1814690/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Zid Journey のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Azure Mountain"
+        }
+      }
+    }
+  ]
+}

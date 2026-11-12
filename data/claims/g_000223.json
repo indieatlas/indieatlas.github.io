@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000223",
+  "claims": [
+    {
+      "id": "c_75761c151cd1eaf0",
+      "gameId": "g_000223",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5135440/",
+          "retrievedAt": "2026-11-12T04:09:54Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e0adc98b9f6d3a7c4270dab0cba23c0f81b8fa0aed56cb875f2a52856fbe3dbd"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:54Z",
+      "createdAt": "2026-11-12T04:09:54Z",
+      "updatedAt": "2026-11-12T04:09:54Z",
+      "lastCheckedAt": "2026-11-12T04:09:54Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 11
+        },
+        "rawText": "11 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_3b54232be63fb068",
+      "gameId": "g_000223",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5135440/",
+          "retrievedAt": "2026-11-12T04:09:57Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0cc94e210c360f6db55e90dd308a95be223dd4fff1693013f38abe518a08836a"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:54Z",
+      "createdAt": "2026-11-12T04:09:54Z",
+      "updatedAt": "2026-11-12T04:09:54Z",
+      "lastCheckedAt": "2026-11-12T04:09:57Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_e64396c2bafb4e8c",
+      "gameId": "g_000223",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5135440/",
+          "retrievedAt": "2026-11-12T04:09:54Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e0adc98b9f6d3a7c4270dab0cba23c0f81b8fa0aed56cb875f2a52856fbe3dbd"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:54Z",
+      "createdAt": "2026-11-12T04:09:54Z",
+      "updatedAt": "2026-11-12T04:09:54Z",
+      "lastCheckedAt": "2026-11-12T04:09:54Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_d79700268d11de4d",
+      "gameId": "g_000223",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5135440/",
+          "retrievedAt": "2026-11-12T04:09:54Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e0adc98b9f6d3a7c4270dab0cba23c0f81b8fa0aed56cb875f2a52856fbe3dbd"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:54Z",
+      "createdAt": "2026-11-12T04:09:54Z",
+      "updatedAt": "2026-11-12T04:09:54Z",
+      "lastCheckedAt": "2026-11-12T04:09:54Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5135440/"
+      }
+    },
+    {
+      "id": "c_5df7b1e4d8721dd6",
+      "gameId": "g_000223",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5135440/",
+          "retrievedAt": "2026-11-12T04:09:54Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e0adc98b9f6d3a7c4270dab0cba23c0f81b8fa0aed56cb875f2a52856fbe3dbd"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:54Z",
+      "createdAt": "2026-11-12T04:09:54Z",
+      "updatedAt": "2026-11-12T04:09:54Z",
+      "lastCheckedAt": "2026-11-12T04:09:54Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5135440/cda8641b6a1e9fb0d17c1617cbab4f624138986f/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "デスクトップ・DPS：黄昏の遠征隊 のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "storytaco"
+        }
+      }
+    }
+  ]
+}

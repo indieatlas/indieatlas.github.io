@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000220",
+  "claims": [
+    {
+      "id": "c_80894be9a4968d0e",
+      "gameId": "g_000220",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1751730/",
+          "retrievedAt": "2026-11-12T04:10:52Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9c8c81777ece5287d1b45b018e2911f5090dd8911ae024e6d9abaea8ff889266"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:52Z",
+      "createdAt": "2026-11-12T04:10:52Z",
+      "updatedAt": "2026-11-12T04:10:52Z",
+      "lastCheckedAt": "2026-11-12T04:10:52Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 10,
+          "day": 14
+        },
+        "rawText": "14 Oct, 2026"
+      }
+    },
+    {
+      "id": "c_eddcfa9ea21701a5",
+      "gameId": "g_000220",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1751730/",
+          "retrievedAt": "2026-11-12T04:10:55Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8e9c76f0afe838c1747f9bb1cef08accbb4cc3f69398df1b8d33e8fbbade0cbd"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:52Z",
+      "createdAt": "2026-11-12T04:10:52Z",
+      "updatedAt": "2026-11-12T04:10:52Z",
+      "lastCheckedAt": "2026-11-12T04:10:55Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_fa2f15ce5f6e4eff",
+      "gameId": "g_000220",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1751730/",
+          "retrievedAt": "2026-11-12T04:10:52Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9c8c81777ece5287d1b45b018e2911f5090dd8911ae024e6d9abaea8ff889266"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:52Z",
+      "createdAt": "2026-11-12T04:10:52Z",
+      "updatedAt": "2026-11-12T04:10:52Z",
+      "lastCheckedAt": "2026-11-12T04:10:52Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_118103121ae25e02",
+      "gameId": "g_000220",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1751730/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T04:00:10Z",
+          "quote": "あなたは不気味な精神病院で目を覚ます。『Fire and Ashes』は、狂気と現実が交錯し、すべての怪物にあなたの悲鳴が届く没入型ホラーゲームです……たとえ病院の外であっても。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9c8c81777ece5287d1b45b018e2911f5090dd8911ae024e6d9abaea8ff889266"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T04:00:10Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "summary",
+      "value": {
+        "ja": "1977年の精神病院で目を覚ましたヘンリー・グレイとなり、狂気と現実が交錯する世界を探索する一人称ホラー。音声認識がプレイヤーの息遣いや悲鳴を検知し、敵が声に反応する。"
+      }
+    },
+    {
+      "id": "c_10eec055bbffb96f",
+      "gameId": "g_000220",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1751730/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T04:00:10Z",
+          "quote": "Fight using whatever resources you can find, solve puzzles, and piece together the truth behind the tragedy that shattered the hero's life.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9c8c81777ece5287d1b45b018e2911f5090dd8911ae024e6d9abaea8ff889266"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T04:00:10Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_1f4cb534f7d16509",
+      "gameId": "g_000220",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1751730/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T04:00:10Z",
+          "quote": "Fight using whatever resources you can find, solve puzzles, and piece together the truth behind the tragedy that shattered the hero's life.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9c8c81777ece5287d1b45b018e2911f5090dd8911ae024e6d9abaea8ff889266"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T04:00:10Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_764a3564cb482884",
+      "gameId": "g_000220",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1751730/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T04:00:10Z",
+          "quote": "Your main weapon, and your fatal vulnerability, is sound.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9c8c81777ece5287d1b45b018e2911f5090dd8911ae024e6d9abaea8ff889266"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T04:00:10Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "tense"
+      }
+    },
+    {
+      "id": "c_7a900a5c5068d230",
+      "gameId": "g_000220",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1751730/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T04:00:10Z",
+          "quote": "Fight using whatever resources you can find, solve puzzles, and piece together the truth behind the tragedy that shattered the hero's life.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9c8c81777ece5287d1b45b018e2911f5090dd8911ae024e6d9abaea8ff889266"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T04:00:10Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_9bb3a11d3404930a",
+      "gameId": "g_000220",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1751730/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T04:00:10Z",
+          "quote": "Become the protagonist of this surreal journey. You must escape into the bleak locations of Henry's past, where the line between reality and morbid delusion completely dissolves.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9c8c81777ece5287d1b45b018e2911f5090dd8911ae024e6d9abaea8ff889266"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T04:00:10Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_cf6eff1e13ec614a",
+      "gameId": "g_000220",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1751730/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T04:00:10Z",
+          "quote": "Fight external threats, face your inner demons, and remember: in this world, nothing can be fully trusted.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9c8c81777ece5287d1b45b018e2911f5090dd8911ae024e6d9abaea8ff889266"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T04:00:10Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "horror"
+      }
+    },
+    {
+      "id": "c_e59d31b75c9b5272",
+      "gameId": "g_000220",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1751730/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T04:00:10Z",
+          "quote": "Fight using whatever resources you can find, solve puzzles, and piece together the truth behind the tragedy that shattered the hero's life.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9c8c81777ece5287d1b45b018e2911f5090dd8911ae024e6d9abaea8ff889266"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T04:00:10Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_09a3026919535f81",
+      "gameId": "g_000220",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1751730/",
+          "retrievedAt": "2026-11-12T04:10:52Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9c8c81777ece5287d1b45b018e2911f5090dd8911ae024e6d9abaea8ff889266"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:52Z",
+      "createdAt": "2026-11-12T04:10:52Z",
+      "updatedAt": "2026-11-12T04:10:52Z",
+      "lastCheckedAt": "2026-11-12T04:10:52Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1751730/"
+      }
+    },
+    {
+      "id": "c_14aadc2d4c0139c4",
+      "gameId": "g_000220",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1751730/",
+          "retrievedAt": "2026-11-12T04:10:52Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9c8c81777ece5287d1b45b018e2911f5090dd8911ae024e6d9abaea8ff889266"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:52Z",
+      "createdAt": "2026-11-12T04:10:52Z",
+      "updatedAt": "2026-11-12T04:10:52Z",
+      "lastCheckedAt": "2026-11-12T04:10:52Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1751730/f0d6813c83d1d00df70c78ac20a4230aff9d2852/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "FIRE AND ASHES のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Antelus Games"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000225",
+  "status": "candidate",
+  "title": {
+    "display": "ファーム＆フィースト / Farm & Feast",
+    "original": "Farm & Feast",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "ファーム＆フィースト / Farm & Feast",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 4521650
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4691110",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5496530",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000320"
+  ],
+  "publisherIds": [
+    "dev_000320",
+    "dev_000201"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-12T04:09:43Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-12T04:09:43Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4521650/",
+        "retrievedAt": "2026-11-12T04:10:03Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:32509a6265b7f843b64aa43ea9735860b9d1a39eb9ac7ea62d445dfe897dfcc4"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4521650/",
+        "retrievedAt": "2026-11-12T04:10:03Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:32509a6265b7f843b64aa43ea9735860b9d1a39eb9ac7ea62d445dfe897dfcc4"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4521650/",
+        "retrievedAt": "2026-11-12T04:10:03Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:32509a6265b7f843b64aa43ea9735860b9d1a39eb9ac7ea62d445dfe897dfcc4"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4521650/",
+        "retrievedAt": "2026-11-12T04:10:03Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:32509a6265b7f843b64aa43ea9735860b9d1a39eb9ac7ea62d445dfe897dfcc4"
+      }
+    }
+  ],
+  "createdAt": "2026-11-12T04:10:03Z",
+  "updatedAt": "2026-11-12T04:09:43Z",
+  "createdByRun": "43151022131"
+}

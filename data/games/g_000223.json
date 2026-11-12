@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000223",
+  "status": "candidate",
+  "title": {
+    "display": "デスクトップ・DPS：黄昏の遠征隊",
+    "original": "DPS: Desktop Pension Squad",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "デスクトップ・DPS：黄昏の遠征隊",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 5135440
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5151320",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5367060",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5367070",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5374820",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5403100",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000316"
+  ],
+  "publisherIds": [
+    "dev_000317"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-12T04:09:43Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-12T04:09:43Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5135440/",
+        "retrievedAt": "2026-11-12T04:09:54Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e0adc98b9f6d3a7c4270dab0cba23c0f81b8fa0aed56cb875f2a52856fbe3dbd"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5135440/",
+        "retrievedAt": "2026-11-12T04:09:54Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e0adc98b9f6d3a7c4270dab0cba23c0f81b8fa0aed56cb875f2a52856fbe3dbd"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5135440/",
+        "retrievedAt": "2026-11-12T04:09:54Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e0adc98b9f6d3a7c4270dab0cba23c0f81b8fa0aed56cb875f2a52856fbe3dbd"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5135440/",
+        "retrievedAt": "2026-11-12T04:09:54Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e0adc98b9f6d3a7c4270dab0cba23c0f81b8fa0aed56cb875f2a52856fbe3dbd"
+      }
+    }
+  ],
+  "createdAt": "2026-11-12T04:09:54Z",
+  "updatedAt": "2026-11-12T04:09:43Z",
+  "createdByRun": "43151022131"
+}

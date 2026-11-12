@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000219",
+  "status": "candidate",
+  "title": {
+    "display": "Space Simulation Toolkit",
+    "original": "Space Simulation Toolkit",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1196080
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1320450",
+      "kind": "demo"
+    }
+  ],
+  "officialUrl": "https://sstgame.com",
+  "developerIds": [
+    "dev_000311"
+  ],
+  "publisherIds": [
+    "dev_000311"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1196080/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-12T04:00:52Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:8a3afe8f360fcde8e74cd9dfcef829983eb8bab2e1a200b35d85064eef6fae07"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-12T04:09:43Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1196080/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T04:00:52Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:8a3afe8f360fcde8e74cd9dfcef829983eb8bab2e1a200b35d85064eef6fae07"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1196080/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T04:00:52Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:8a3afe8f360fcde8e74cd9dfcef829983eb8bab2e1a200b35d85064eef6fae07"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1196080/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T04:00:52Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:8a3afe8f360fcde8e74cd9dfcef829983eb8bab2e1a200b35d85064eef6fae07"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1196080/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T04:00:52Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:8a3afe8f360fcde8e74cd9dfcef829983eb8bab2e1a200b35d85064eef6fae07"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1196080/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T04:00:52Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:8a3afe8f360fcde8e74cd9dfcef829983eb8bab2e1a200b35d85064eef6fae07"
+      }
+    }
+  ],
+  "createdAt": "2026-11-12T04:09:43Z",
+  "updatedAt": "2026-11-12T04:10:48Z",
+  "createdByRun": "43151022131"
+}

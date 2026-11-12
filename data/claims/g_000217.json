@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000217",
+  "claims": [
+    {
+      "id": "c_f0b762c1fce58cd4",
+      "gameId": "g_000217",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3725830/",
+          "retrievedAt": "2026-11-12T04:10:39Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b4d61b73fd5869183eb305d1c44b1d05df3badccf4f9d03e94e17d15ca79b5bc"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:39Z",
+      "createdAt": "2026-11-12T04:10:39Z",
+      "updatedAt": "2026-11-12T04:10:39Z",
+      "lastCheckedAt": "2026-11-12T04:10:39Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2027,
+          "month": 1,
+          "day": 4
+        },
+        "rawText": "4 Jan, 2027"
+      }
+    },
+    {
+      "id": "c_2cb8b5dc3b92c5e5",
+      "gameId": "g_000217",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3725830/",
+          "retrievedAt": "2026-11-12T04:10:42Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1f10378d424e16e40f6140a7a472f2f9f661af78e43965234c92ba24087f09dd"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:39Z",
+      "createdAt": "2026-11-12T04:10:39Z",
+      "updatedAt": "2026-11-12T04:10:39Z",
+      "lastCheckedAt": "2026-11-12T04:10:42Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_883e7308e198614c",
+      "gameId": "g_000217",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3725830/",
+          "retrievedAt": "2026-11-12T04:10:39Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b4d61b73fd5869183eb305d1c44b1d05df3badccf4f9d03e94e17d15ca79b5bc"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:39Z",
+      "createdAt": "2026-11-12T04:10:39Z",
+      "updatedAt": "2026-11-12T04:10:39Z",
+      "lastCheckedAt": "2026-11-12T04:10:39Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_472221ee7e884f43",
+      "gameId": "g_000217",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3725830/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:59:30Z",
+          "quote": "本作は、都市のワーキングライフを舞台にした百合テーマのビジュアルノベルです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b4d61b73fd5869183eb305d1c44b1d05df3badccf4f9d03e94e17d15ca79b5bc"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3725830/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:59:30Z",
+          "quote": "テキスト総量は約20万字、CGは20枚以上、攻略可能キャラクターは3人を予定しています。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b4d61b73fd5869183eb305d1c44b1d05df3badccf4f9d03e94e17d15ca79b5bc"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:59:30Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "summary",
+      "value": {
+        "ja": "ゲーム業界で残業に明け暮れる27歳の呉依が、深夜に現れた奇妙なぬいぐるみをきっかけに日常を変えていく百合ビジュアルノベル。3人の女性との恋を描き、約20万字のテキストと20枚以上のCGを収める。"
+      }
+    },
+    {
+      "id": "c_6bb3c0721a7cb073",
+      "gameId": "g_000217",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3725830/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:59:30Z",
+          "quote": "本作は、都市のワーキングライフを舞台にした百合テーマのビジュアルノベルです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b4d61b73fd5869183eb305d1c44b1d05df3badccf4f9d03e94e17d15ca79b5bc"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:59:30Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_a1397e208f9f536f",
+      "gameId": "g_000217",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3725830/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:59:30Z",
+          "quote": "突然舞い込んだ、3つの恋物語。彼女は、どんな選択を待っているのだろうか。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b4d61b73fd5869183eb305d1c44b1d05df3badccf4f9d03e94e17d15ca79b5bc"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:59:30Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "romance"
+      }
+    },
+    {
+      "id": "c_bad6cc455133dfc1",
+      "gameId": "g_000217",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3725830/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:59:30Z",
+          "quote": "テキスト総量は約20万字、CGは20枚以上、攻略可能キャラクターは3人を予定しています。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b4d61b73fd5869183eb305d1c44b1d05df3badccf4f9d03e94e17d15ca79b5bc"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:59:30Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_00c1ffa84f38a711",
+      "gameId": "g_000217",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3725830/",
+          "retrievedAt": "2026-11-12T04:10:39Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b4d61b73fd5869183eb305d1c44b1d05df3badccf4f9d03e94e17d15ca79b5bc"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:39Z",
+      "createdAt": "2026-11-12T04:10:39Z",
+      "updatedAt": "2026-11-12T04:10:39Z",
+      "lastCheckedAt": "2026-11-12T04:10:39Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3725830/"
+      }
+    },
+    {
+      "id": "c_ab9ebd22db42e740",
+      "gameId": "g_000217",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3725830/",
+          "retrievedAt": "2026-11-12T04:10:39Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b4d61b73fd5869183eb305d1c44b1d05df3badccf4f9d03e94e17d15ca79b5bc"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:39Z",
+      "createdAt": "2026-11-12T04:10:39Z",
+      "updatedAt": "2026-11-12T04:10:39Z",
+      "lastCheckedAt": "2026-11-12T04:10:39Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3725830/eff531fd21fda3d353a15741d1f703b17d968942/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "真夏のシトラス のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "ZtoA CO."
+        }
+      }
+    }
+  ]
+}

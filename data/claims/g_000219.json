@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000219",
+  "claims": [
+    {
+      "id": "c_8bc21da1a6dced85",
+      "gameId": "g_000219",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1196080/",
+          "retrievedAt": "2026-11-12T04:10:48Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8a3afe8f360fcde8e74cd9dfcef829983eb8bab2e1a200b35d85064eef6fae07"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:48Z",
+      "createdAt": "2026-11-12T04:10:48Z",
+      "updatedAt": "2026-11-12T04:10:48Z",
+      "lastCheckedAt": "2026-11-12T04:10:48Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2020,
+          "month": 6,
+          "day": 5
+        },
+        "rawText": "5 Jun, 2020"
+      }
+    },
+    {
+      "id": "c_537de6d09220f279",
+      "gameId": "g_000219",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1196080/",
+          "retrievedAt": "2026-11-12T04:10:51Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:fa6363b4cf23b0c73336c04db8fe70c7486e17861f460ef2468e3e6a64d5611b"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:48Z",
+      "createdAt": "2026-11-12T04:10:48Z",
+      "updatedAt": "2026-11-12T04:10:48Z",
+      "lastCheckedAt": "2026-11-12T04:10:51Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_b0ec4e5656af14d1",
+      "gameId": "g_000219",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1196080/",
+          "retrievedAt": "2026-11-12T04:10:48Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8a3afe8f360fcde8e74cd9dfcef829983eb8bab2e1a200b35d85064eef6fae07"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:48Z",
+      "createdAt": "2026-11-12T04:10:48Z",
+      "updatedAt": "2026-11-12T04:10:48Z",
+      "lastCheckedAt": "2026-11-12T04:10:48Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_26c7689325a84b0c",
+      "gameId": "g_000219",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1196080/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T04:00:52Z",
+          "quote": "グラフィックカードをスーパーコンピューターとして使う物理サンドボックスゲーム。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8a3afe8f360fcde8e74cd9dfcef829983eb8bab2e1a200b35d85064eef6fae07"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T04:00:52Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "summary",
+      "value": {
+        "ja": "グラフィックカードを計算資源として使う物理サンドボックス。重力や熱、素材の性質を変えながら、粒子でできた惑星への衝突や恒星の生成、人工生命の進化をリアルタイムに観察できる。"
+      }
+    },
+    {
+      "id": "c_261d35474ffc63d7",
+      "gameId": "g_000219",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1196080/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T04:00:52Z",
+          "quote": "物理法則を変え、機構を設計し、人工生命の世界を作って生き物を住まわせ、進化と AI の実験を行えます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8a3afe8f360fcde8e74cd9dfcef829983eb8bab2e1a200b35d85064eef6fae07"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T04:00:52Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_77ceb3fd90f532b2",
+      "gameId": "g_000219",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1196080/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T04:00:52Z",
+          "quote": "重力や熱、各材料の特性を調整して、宇宙がこの先どうなるかを見届けましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8a3afe8f360fcde8e74cd9dfcef829983eb8bab2e1a200b35d85064eef6fae07"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T04:00:52Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "physics"
+      }
+    },
+    {
+      "id": "c_d87d8496e473924b",
+      "gameId": "g_000219",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1196080/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T04:00:52Z",
+          "quote": "物理法則を変え、機構を設計し、人工生命の世界を作って生き物を住まわせ、進化と AI の実験を行えます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8a3afe8f360fcde8e74cd9dfcef829983eb8bab2e1a200b35d85064eef6fae07"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T04:00:52Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "sandbox"
+      }
+    },
+    {
+      "id": "c_dc2b363d03e15949",
+      "gameId": "g_000219",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1196080/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T04:00:52Z",
+          "quote": "「恒星」シーンでは、氷と溶岩からなる、回転する冷たい雲が自らの重力で収縮して恒星になり、その周りを破片の塊がまだ巡っています。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8a3afe8f360fcde8e74cd9dfcef829983eb8bab2e1a200b35d85064eef6fae07"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T04:00:52Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "space"
+      }
+    },
+    {
+      "id": "c_bc2b090b3713b493",
+      "gameId": "g_000219",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1196080/",
+          "retrievedAt": "2026-11-12T04:10:48Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8a3afe8f360fcde8e74cd9dfcef829983eb8bab2e1a200b35d85064eef6fae07"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:48Z",
+      "createdAt": "2026-11-12T04:10:48Z",
+      "updatedAt": "2026-11-12T04:10:48Z",
+      "lastCheckedAt": "2026-11-12T04:10:48Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1196080/"
+      }
+    },
+    {
+      "id": "c_2c46b9bc5b181195",
+      "gameId": "g_000219",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1196080/",
+          "retrievedAt": "2026-11-12T04:10:48Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8a3afe8f360fcde8e74cd9dfcef829983eb8bab2e1a200b35d85064eef6fae07"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:48Z",
+      "createdAt": "2026-11-12T04:10:48Z",
+      "updatedAt": "2026-11-12T04:10:48Z",
+      "lastCheckedAt": "2026-11-12T04:10:48Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1196080/c2cd1d1ce90cab552225d3483ae04abd4b6113da/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Space Simulation Toolkit のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Pavel Kudinov"
+        }
+      }
+    }
+  ]
+}

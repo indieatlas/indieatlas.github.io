@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000222",
+  "status": "candidate",
+  "title": {
+    "display": "みんなでティア表!",
+    "original": "EVERYONE'S TIER LIST!",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "みんなでティア表!",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 4921660
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000315"
+  ],
+  "publisherIds": [
+    "dev_000315"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4921660/",
+            "retrievedAt": "2026-11-12T04:09:49Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:e101e67cc9af4cdbe0b031843b069cf646e7458620e8abb4000a59230465a366"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-12T04:09:49Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4921660/",
+        "retrievedAt": "2026-11-12T04:09:49Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e101e67cc9af4cdbe0b031843b069cf646e7458620e8abb4000a59230465a366"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4921660/",
+        "retrievedAt": "2026-11-12T04:09:49Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e101e67cc9af4cdbe0b031843b069cf646e7458620e8abb4000a59230465a366"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4921660/",
+        "retrievedAt": "2026-11-12T04:09:49Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e101e67cc9af4cdbe0b031843b069cf646e7458620e8abb4000a59230465a366"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4921660/",
+        "retrievedAt": "2026-11-12T04:09:49Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e101e67cc9af4cdbe0b031843b069cf646e7458620e8abb4000a59230465a366"
+      }
+    }
+  ],
+  "createdAt": "2026-11-12T04:09:49Z",
+  "updatedAt": "2026-11-12T04:09:49Z",
+  "createdByRun": "43151022131"
+}

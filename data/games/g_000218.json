@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000218",
+  "status": "candidate",
+  "title": {
+    "display": "All Army Attack",
+    "original": "All Army Attack",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4128840
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000310"
+  ],
+  "publisherIds": [
+    "dev_000085"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "independent-publisher",
+        "note": "インディーゲームの出版を専門とするパブリッシャー Devolver Digital が販売を担当",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://en.wikipedia.org/wiki/Devolver_Digital",
+            "publishedAt": "2012-01-07T22:18:49Z",
+            "retrievedAt": "2026-11-12T04:00:06Z",
+            "quote": "Devolver Digital, Inc. is an American video game publisher based in Austin, Texas, specializing in the publishing of indie games.",
+            "originKey": "media:wikipedia.org",
+            "fetchHash": "sha256:34f1181586c16908e322531c75ef654337a18bbd98932de0dd1711be6a724957"
+          }
+        ]
+      },
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.gamingonlinux.com/2026/11/devolver-digital-trolling-with-its-first-ever-aaa-game-all-army-attack/",
+            "articleId": "a_9d01593243331b5c",
+            "publishedAt": "2026-11-11T10:10:40Z",
+            "retrievedAt": "2026-11-12T03:59:45Z",
+            "locator": "article.games",
+            "originKey": "media:gamingonlinux.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-12T04:09:43Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4128840/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:59:49Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eba479ff1145f8354420e9d21379a9e648bdb1108884c850e3a17c69a404fc0e"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4128840/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:59:49Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eba479ff1145f8354420e9d21379a9e648bdb1108884c850e3a17c69a404fc0e"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4128840/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:59:49Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eba479ff1145f8354420e9d21379a9e648bdb1108884c850e3a17c69a404fc0e"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4128840/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:59:49Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eba479ff1145f8354420e9d21379a9e648bdb1108884c850e3a17c69a404fc0e"
+      }
+    }
+  ],
+  "createdAt": "2026-11-12T04:09:43Z",
+  "updatedAt": "2026-11-12T04:09:43Z",
+  "createdByRun": "43151022131"
+}

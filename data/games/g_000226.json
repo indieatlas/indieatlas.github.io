@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000226",
+  "status": "candidate",
+  "title": {
+    "display": "Raft",
+    "original": "Raft",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 648800
+  },
+  "associatedApps": [],
+  "officialUrl": "http://www.raft-game.com",
+  "developerIds": [
+    "dev_000321"
+  ],
+  "publisherIds": [
+    "dev_000322"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-12T04:09:43Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-12T04:09:43Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/648800/",
+        "retrievedAt": "2026-11-12T04:10:07Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:80c15e8d274b2c86c9e0df859d74b93726377df97ed57f3f0d53b864f1002165"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/648800/",
+        "retrievedAt": "2026-11-12T04:10:07Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:80c15e8d274b2c86c9e0df859d74b93726377df97ed57f3f0d53b864f1002165"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/648800/",
+        "retrievedAt": "2026-11-12T04:10:07Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:80c15e8d274b2c86c9e0df859d74b93726377df97ed57f3f0d53b864f1002165"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/648800/",
+        "retrievedAt": "2026-11-12T04:10:07Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:80c15e8d274b2c86c9e0df859d74b93726377df97ed57f3f0d53b864f1002165"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/648800/",
+        "retrievedAt": "2026-11-12T04:10:07Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:80c15e8d274b2c86c9e0df859d74b93726377df97ed57f3f0d53b864f1002165"
+      }
+    }
+  ],
+  "createdAt": "2026-11-12T04:10:07Z",
+  "updatedAt": "2026-11-12T04:09:43Z",
+  "createdByRun": "43151022131"
+}

@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000226",
+  "claims": [
+    {
+      "id": "c_5f3185fdb6b43b9a",
+      "gameId": "g_000226",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/648800/",
+          "retrievedAt": "2026-11-12T04:10:07Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:80c15e8d274b2c86c9e0df859d74b93726377df97ed57f3f0d53b864f1002165"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:07Z",
+      "createdAt": "2026-11-12T04:10:07Z",
+      "updatedAt": "2026-11-12T04:10:07Z",
+      "lastCheckedAt": "2026-11-12T04:10:07Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2022,
+          "month": 6,
+          "day": 20
+        },
+        "rawText": "20 Jun, 2022"
+      }
+    },
+    {
+      "id": "c_637b53f676af1e71",
+      "gameId": "g_000226",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/648800/",
+          "retrievedAt": "2026-11-12T04:10:10Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:554ec935814fd8b2aebc150f46960cfc7e65c2db3c04070a5bb3925b0b848b7a"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:07Z",
+      "createdAt": "2026-11-12T04:10:07Z",
+      "updatedAt": "2026-11-12T04:10:07Z",
+      "lastCheckedAt": "2026-11-12T04:10:10Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_979048c63f6d181c",
+      "gameId": "g_000226",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/648800/",
+          "retrievedAt": "2026-11-12T04:10:07Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:80c15e8d274b2c86c9e0df859d74b93726377df97ed57f3f0d53b864f1002165"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:07Z",
+      "createdAt": "2026-11-12T04:10:07Z",
+      "updatedAt": "2026-11-12T04:10:07Z",
+      "lastCheckedAt": "2026-11-12T04:10:07Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_95990e1115373677",
+      "gameId": "g_000226",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/648800/",
+          "retrievedAt": "2026-11-12T04:10:07Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:80c15e8d274b2c86c9e0df859d74b93726377df97ed57f3f0d53b864f1002165"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:07Z",
+      "createdAt": "2026-11-12T04:10:07Z",
+      "updatedAt": "2026-11-12T04:10:07Z",
+      "lastCheckedAt": "2026-11-12T04:10:07Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/648800/"
+      }
+    },
+    {
+      "id": "c_a352d547563eb416",
+      "gameId": "g_000226",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/648800/",
+          "retrievedAt": "2026-11-12T04:10:07Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:80c15e8d274b2c86c9e0df859d74b93726377df97ed57f3f0d53b864f1002165"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:07Z",
+      "createdAt": "2026-11-12T04:10:07Z",
+      "updatedAt": "2026-11-12T04:10:07Z",
+      "lastCheckedAt": "2026-11-12T04:10:07Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/648800/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Raft のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Axolot Games"
+        }
+      }
+    }
+  ]
+}

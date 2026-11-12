@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000220",
+  "status": "candidate",
+  "title": {
+    "display": "FIRE AND ASHES",
+    "original": "FIRE AND ASHES",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1751730
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1840680",
+      "kind": "demo"
+    }
+  ],
+  "officialUrl": "https://asdstudiogame.com/",
+  "developerIds": [
+    "dev_000312"
+  ],
+  "publisherIds": [
+    "dev_000313"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "independent-publisher",
+        "note": "公式サイトでASD Studioを独立系の開発・パブリッシャーと明記",
+        "evidence": [
+          {
+            "kind": "official",
+            "url": "https://asdstudiogame.com/",
+            "retrievedAt": "2026-11-12T04:00:26Z",
+            "quote": "ASD Studio is an independent game development studio founded by Davit Galoyan and Arshak Khachatryan.",
+            "originKey": "official:asdstudiogame.com",
+            "fetchHash": "sha256:37afda6446c4fc6aa0c742aabd344b25253cb86aefb24d97d6bac5cce7ce7a89"
+          },
+          {
+            "kind": "media",
+            "url": "https://www.gamespark.jp/article/2026/11/11/174750.html",
+            "sourceId": "gamespark",
+            "publishedAt": "2026-11-11T08:00:04Z",
+            "retrievedAt": "2026-11-12T03:59:54Z",
+            "quote": "最終的に自分たちのインディーゲームスタジオを立ち上げることとなったのです。",
+            "originKey": "media:gamespark.jp",
+            "fetchHash": "sha256:323a79febb88d250817d9bf7e43f845757b6165fe332a4e914915204f4542e58"
+          }
+        ]
+      },
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.gamespark.jp/article/2026/11/11/174750.html",
+            "articleId": "a_7ffb55b2f03e4d0d",
+            "publishedAt": "2026-11-11T08:00:04Z",
+            "retrievedAt": "2026-11-12T03:59:54Z",
+            "locator": "article.games",
+            "originKey": "media:gamespark.jp"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-12T04:09:43Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1751730/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T04:00:10Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9c8c81777ece5287d1b45b018e2911f5090dd8911ae024e6d9abaea8ff889266"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1751730/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T04:00:10Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9c8c81777ece5287d1b45b018e2911f5090dd8911ae024e6d9abaea8ff889266"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "official",
+        "url": "https://asdstudiogame.com/",
+        "retrievedAt": "2026-11-12T04:00:26Z",
+        "quote": "ASD Studio is an independent game development studio founded by Davit Galoyan and Arshak Khachatryan.",
+        "originKey": "official:asdstudiogame.com",
+        "fetchHash": "sha256:37afda6446c4fc6aa0c742aabd344b25253cb86aefb24d97d6bac5cce7ce7a89"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1751730/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T04:00:10Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9c8c81777ece5287d1b45b018e2911f5090dd8911ae024e6d9abaea8ff889266"
+      }
+    }
+  ],
+  "createdAt": "2026-11-12T04:09:43Z",
+  "updatedAt": "2026-11-12T04:09:43Z",
+  "createdByRun": "43151022131"
+}

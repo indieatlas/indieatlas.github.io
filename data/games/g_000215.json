@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000215",
+  "status": "candidate",
+  "title": {
+    "display": "Medieval Pig",
+    "original": "Medieval Pig",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 3087860
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3547630",
+      "kind": "demo"
+    }
+  ],
+  "developerIds": [
+    "dev_000305"
+  ],
+  "publisherIds": [
+    "dev_000305"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/3087860/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-12T03:58:18Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:d6882bf1ea1451633be5ddf01acf765d13e224be7234a62d8e94c92f95c607ed"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-12T04:09:43Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3087860/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:58:18Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d6882bf1ea1451633be5ddf01acf765d13e224be7234a62d8e94c92f95c607ed"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3087860/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:58:18Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d6882bf1ea1451633be5ddf01acf765d13e224be7234a62d8e94c92f95c607ed"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3087860/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:58:18Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d6882bf1ea1451633be5ddf01acf765d13e224be7234a62d8e94c92f95c607ed"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3087860/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:58:18Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d6882bf1ea1451633be5ddf01acf765d13e224be7234a62d8e94c92f95c607ed"
+      }
+    }
+  ],
+  "createdAt": "2026-11-12T04:09:43Z",
+  "updatedAt": "2026-11-12T04:10:30Z",
+  "createdByRun": "43151022131"
+}

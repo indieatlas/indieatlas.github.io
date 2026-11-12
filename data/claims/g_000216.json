@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000216",
+  "claims": [
+    {
+      "id": "c_263a6fa84645d81f",
+      "gameId": "g_000216",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4335460/",
+          "retrievedAt": "2026-11-12T04:10:34Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:447c4354efbefaddc0d4b2db9b935d04659f72ddef623157b31d813714ff2a62"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:34Z",
+      "createdAt": "2026-11-12T04:10:34Z",
+      "updatedAt": "2026-11-12T04:10:34Z",
+      "lastCheckedAt": "2026-11-12T04:10:34Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 10
+        },
+        "rawText": "10 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_26b7080ec304e8cd",
+      "gameId": "g_000216",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4335460/",
+          "retrievedAt": "2026-11-12T04:10:37Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bc6700f598c562aeb0300dafa222573ab32c2488de35c3b4df36d0c520dda6b2"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:34Z",
+      "createdAt": "2026-11-12T04:10:34Z",
+      "updatedAt": "2026-11-12T04:10:34Z",
+      "lastCheckedAt": "2026-11-12T04:10:37Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_661caa33ac3e31ae",
+      "gameId": "g_000216",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4335460/",
+          "retrievedAt": "2026-11-12T04:10:34Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:447c4354efbefaddc0d4b2db9b935d04659f72ddef623157b31d813714ff2a62"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:34Z",
+      "createdAt": "2026-11-12T04:10:34Z",
+      "updatedAt": "2026-11-12T04:10:34Z",
+      "lastCheckedAt": "2026-11-12T04:10:34Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_31cd2aaf78a16299",
+      "gameId": "g_000216",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4335460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:58:07Z",
+          "quote": "自分の部屋と好みの棚の配置さえ設定できれば、あなたの実際のSteamライブラリのデータが棚へと読み込まれます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:447c4354efbefaddc0d4b2db9b935d04659f72ddef623157b31d813714ff2a62"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4335460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:58:07Z",
+          "quote": "ボックスコカタログを調べて気に入った家具やインテリアを発注",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:447c4354efbefaddc0d4b2db9b935d04659f72ddef623157b31d813714ff2a62"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4335460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:58:07Z",
+          "quote": "Steamのワークショップ機能を使って、自分だけのアイテムやテクスチャを組み込みましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:447c4354efbefaddc0d4b2db9b935d04659f72ddef623157b31d813714ff2a62"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:58:07Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "summary",
+      "value": {
+        "ja": "実際のSteamライブラリと連動し、所有するゲームをバーチャルな棚に並べて飾るゲーム部屋シミュレーター。家具やインテリアを選んで部屋を自由に整え、パッケージを手に取って並べ替えたり、Steamワークショップのアイテムで自分好みに仕上げたりできる。"
+      }
+    },
+    {
+      "id": "c_0993580acde7fe9f",
+      "gameId": "g_000216",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4335460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:58:07Z",
+          "quote": "自分の好きなようにゲームのパッケージを手に取り、鑑賞し、配置換えしましょう",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:447c4354efbefaddc0d4b2db9b935d04659f72ddef623157b31d813714ff2a62"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:58:07Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "sandbox"
+      }
+    },
+    {
+      "id": "c_1a9b433b8db815c8",
+      "gameId": "g_000216",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4335460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:58:07Z",
+          "quote": "これはSteamライブラリやゲームコレクションを自分好みの空間にアレンジできる、デザインや装飾のシミュレーションでもあります。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:447c4354efbefaddc0d4b2db9b935d04659f72ddef623157b31d813714ff2a62"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:58:07Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_721fdcb76bcc7360",
+      "gameId": "g_000216",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4335460/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:58:07Z",
+          "quote": "ゆっくり腰を下ろして自分だけの空間を楽しみましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:447c4354efbefaddc0d4b2db9b935d04659f72ddef623157b31d813714ff2a62"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:58:07Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_c3f1b3a0e96c88dc",
+      "gameId": "g_000216",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4335460/",
+          "retrievedAt": "2026-11-12T04:10:34Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:447c4354efbefaddc0d4b2db9b935d04659f72ddef623157b31d813714ff2a62"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:34Z",
+      "createdAt": "2026-11-12T04:10:34Z",
+      "updatedAt": "2026-11-12T04:10:34Z",
+      "lastCheckedAt": "2026-11-12T04:10:34Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4335460/"
+      }
+    },
+    {
+      "id": "c_09072200f327dc24",
+      "gameId": "g_000216",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4335460/",
+          "retrievedAt": "2026-11-12T04:10:34Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:447c4354efbefaddc0d4b2db9b935d04659f72ddef623157b31d813714ff2a62"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:34Z",
+      "createdAt": "2026-11-12T04:10:34Z",
+      "updatedAt": "2026-11-12T04:10:34Z",
+      "lastCheckedAt": "2026-11-12T04:10:34Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4335460/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "ボックスルーム のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Pantaloon"
+        }
+      }
+    }
+  ]
+}

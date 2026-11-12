@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000216",
+  "status": "candidate",
+  "title": {
+    "display": "ボックスルーム",
+    "original": "BOXROOM",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4335460
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000306"
+  ],
+  "publisherIds": [
+    "dev_000307"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "independent-publisher",
+        "note": "Pantaloonは自社を小規模なゲームレーベルと位置づけ、小ぶりな企画を扱う独立系パブリッシャーとして作品を販売している",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.pantaloon.io/games",
+            "publishedAt": "2025-11-06T00:00:00Z",
+            "retrievedAt": "2026-11-12T03:59:10Z",
+            "quote": "If you want to use that term, then sure. My hesitance here is that the world does not need another indie publisher.",
+            "originKey": "media:pantaloon.io",
+            "fetchHash": "sha256:7752adafa1bf996a6aa4e64629e1cd68a2a595c983891b7bd2097413e9d09ed0"
+          }
+        ]
+      },
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.gamespark.jp/article/2026/11/11/174745.html",
+            "articleId": "a_7a53aea4bf0288d0",
+            "publishedAt": "2026-11-11T06:45:02Z",
+            "retrievedAt": "2026-11-12T03:58:04Z",
+            "locator": "article.games",
+            "originKey": "media:gamespark.jp"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-12T04:09:43Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4335460/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:58:07Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:447c4354efbefaddc0d4b2db9b935d04659f72ddef623157b31d813714ff2a62"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4335460/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:58:07Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:447c4354efbefaddc0d4b2db9b935d04659f72ddef623157b31d813714ff2a62"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4335460/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:58:07Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:447c4354efbefaddc0d4b2db9b935d04659f72ddef623157b31d813714ff2a62"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4335460/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:58:07Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:447c4354efbefaddc0d4b2db9b935d04659f72ddef623157b31d813714ff2a62"
+      }
+    }
+  ],
+  "createdAt": "2026-11-12T04:09:43Z",
+  "updatedAt": "2026-11-12T04:09:43Z",
+  "createdByRun": "43151022131"
+}

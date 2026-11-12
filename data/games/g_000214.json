@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000214",
+  "status": "candidate",
+  "title": {
+    "display": "A Golden Wake: Roaring '20s Edition",
+    "original": "A Golden Wake: Roaring '20s Edition",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 3955330
+  },
+  "associatedApps": [],
+  "officialUrl": "https://www.grundislav.games/A-Golden-Wake.html",
+  "developerIds": [
+    "dev_000304"
+  ],
+  "publisherIds": [
+    "dev_000304"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/3955330/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-12T03:58:35Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:a8638d69c04ed70880d8772c18e16b864f79c5e963354484524271e5449d72b7"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-12T04:09:43Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3955330/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:58:35Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a8638d69c04ed70880d8772c18e16b864f79c5e963354484524271e5449d72b7"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3955330/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:58:35Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a8638d69c04ed70880d8772c18e16b864f79c5e963354484524271e5449d72b7"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3955330/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:58:35Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a8638d69c04ed70880d8772c18e16b864f79c5e963354484524271e5449d72b7"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3955330/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:58:35Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a8638d69c04ed70880d8772c18e16b864f79c5e963354484524271e5449d72b7"
+      }
+    }
+  ],
+  "createdAt": "2026-11-12T04:09:43Z",
+  "updatedAt": "2026-11-12T04:09:43Z",
+  "createdByRun": "43151022131"
+}

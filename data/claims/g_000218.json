@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000218",
+  "claims": [
+    {
+      "id": "c_457481eb41534416",
+      "gameId": "g_000218",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4128840/",
+          "retrievedAt": "2026-11-12T04:10:43Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eba479ff1145f8354420e9d21379a9e648bdb1108884c850e3a17c69a404fc0e"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:43Z",
+      "createdAt": "2026-11-12T04:10:43Z",
+      "updatedAt": "2026-11-12T04:10:43Z",
+      "lastCheckedAt": "2026-11-12T04:10:43Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "year",
+          "year": 2027
+        },
+        "rawText": "2027"
+      }
+    },
+    {
+      "id": "c_af943a860c963c32",
+      "gameId": "g_000218",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4128840/",
+          "retrievedAt": "2026-11-12T04:10:47Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ef596ddbfafa5d78385f8ee3acc19ced05e4e72c38c9af8a3c8a9d46a894973b"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:43Z",
+      "createdAt": "2026-11-12T04:10:43Z",
+      "updatedAt": "2026-11-12T04:10:43Z",
+      "lastCheckedAt": "2026-11-12T04:10:47Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_dfaca547cfe509f9",
+      "gameId": "g_000218",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4128840/",
+          "retrievedAt": "2026-11-12T04:10:43Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eba479ff1145f8354420e9d21379a9e648bdb1108884c850e3a17c69a404fc0e"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:43Z",
+      "createdAt": "2026-11-12T04:10:43Z",
+      "updatedAt": "2026-11-12T04:10:43Z",
+      "lastCheckedAt": "2026-11-12T04:10:43Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_f77f426bc649de49",
+      "gameId": "g_000218",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4128840/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:59:49Z",
+          "quote": "Unite animals and plants, build an army that spills off the screen, gamble it all with every battle",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eba479ff1145f8354420e9d21379a9e648bdb1108884c850e3a17c69a404fc0e"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:59:49Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "summary",
+      "value": {
+        "ja": "動植物を団結させ、画面からあふれるほどの大軍を築いて宇宙の脅威に挑む大規模ローグライク・オートバトラー。司令官としてカードから部隊を集め、戦闘ごとに編成や資源の使い方を選びながら軍を拡大していく。"
+      }
+    },
+    {
+      "id": "c_093f219bbe8b9707",
+      "gameId": "g_000218",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4128840/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:59:49Z",
+          "quote": "All Army Attack is a chaotic large-scale roguelike auto-battler.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eba479ff1145f8354420e9d21379a9e648bdb1108884c850e3a17c69a404fc0e"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:59:49Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_16038d6426688ee0",
+      "gameId": "g_000218",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4128840/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:59:49Z",
+          "quote": "All Army Attack is a chaotic large-scale roguelike auto-battler.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eba479ff1145f8354420e9d21379a9e648bdb1108884c850e3a17c69a404fc0e"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:59:49Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "auto-battle"
+      }
+    },
+    {
+      "id": "c_55b7d00aae5113f9",
+      "gameId": "g_000218",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4128840/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:59:49Z",
+          "quote": "Unite animals and plants, build an army that spills off the screen",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eba479ff1145f8354420e9d21379a9e648bdb1108884c850e3a17c69a404fc0e"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:59:49Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "animals"
+      }
+    },
+    {
+      "id": "c_1477fa76b5c4e01a",
+      "gameId": "g_000218",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4128840/",
+          "retrievedAt": "2026-11-12T04:10:43Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eba479ff1145f8354420e9d21379a9e648bdb1108884c850e3a17c69a404fc0e"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:43Z",
+      "createdAt": "2026-11-12T04:10:43Z",
+      "updatedAt": "2026-11-12T04:10:43Z",
+      "lastCheckedAt": "2026-11-12T04:10:43Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4128840/"
+      }
+    },
+    {
+      "id": "c_8a12cb7f15c6ae0c",
+      "gameId": "g_000218",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4128840/",
+          "retrievedAt": "2026-11-12T04:10:43Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eba479ff1145f8354420e9d21379a9e648bdb1108884c850e3a17c69a404fc0e"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:43Z",
+      "createdAt": "2026-11-12T04:10:43Z",
+      "updatedAt": "2026-11-12T04:10:43Z",
+      "lastCheckedAt": "2026-11-12T04:10:43Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4128840/743e6d51e433722e5d23cf5edf95683af84904ea/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "All Army Attack のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Devolver Digital"
+        }
+      }
+    }
+  ]
+}

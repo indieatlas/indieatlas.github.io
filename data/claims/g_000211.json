@@ -1,0 +1,472 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000211",
+  "claims": [
+    {
+      "id": "c_b89db1aa6133fed5",
+      "gameId": "g_000211",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4429710/",
+          "retrievedAt": "2026-11-12T04:10:12Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e5b7f8c9bf3371aaa3f5c470d48235c3082b8e1e33348caf9913b4874e21f90"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:12Z",
+      "createdAt": "2026-11-12T04:10:12Z",
+      "updatedAt": "2026-11-12T04:10:12Z",
+      "lastCheckedAt": "2026-11-12T04:10:12Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "year",
+          "year": 2027
+        },
+        "rawText": "2027"
+      }
+    },
+    {
+      "id": "c_b339692d4a7e1adb",
+      "gameId": "g_000211",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4429710/",
+          "retrievedAt": "2026-11-12T04:10:15Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ccb2e3ff206793a5802a0723fe7bd9421b162cc1240973b8240b226a13cba9b4"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:12Z",
+      "createdAt": "2026-11-12T04:10:12Z",
+      "updatedAt": "2026-11-12T04:10:12Z",
+      "lastCheckedAt": "2026-11-12T04:10:15Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_e46c2639fdedae7f",
+      "gameId": "g_000211",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4429710/",
+          "retrievedAt": "2026-11-12T04:10:12Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e5b7f8c9bf3371aaa3f5c470d48235c3082b8e1e33348caf9913b4874e21f90"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:12Z",
+      "createdAt": "2026-11-12T04:10:12Z",
+      "updatedAt": "2026-11-12T04:10:12Z",
+      "lastCheckedAt": "2026-11-12T04:10:12Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_e723d277f0b67232",
+      "gameId": "g_000211",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4429710/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:56:39Z",
+          "quote": "A slow-paced, cozy fantasy RPG where you play as a Wizard Lumberjack.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e5b7f8c9bf3371aaa3f5c470d48235c3082b8e1e33348caf9913b4874e21f90"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:56:39Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "summary",
+      "value": {
+        "ja": "魔法使いの木こりとなり、小さくも密な世界で農場を築きながら伐採に励む一人称ファンタジーRPG。釣りや採掘、作物の栽培をこなし、伐木魔術などのスキルツリーで成長。NPCの物語を追う探索も楽しめる。"
+      }
+    },
+    {
+      "id": "c_05ea5da2e8e1bcee",
+      "gameId": "g_000211",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4429710/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:56:39Z",
+          "quote": "It's smaller than you average open world game, but far more dense and filled with secret items to be found.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e5b7f8c9bf3371aaa3f5c470d48235c3082b8e1e33348caf9913b4874e21f90"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:56:39Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_08f939a2886949c4",
+      "gameId": "g_000211",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4429710/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:56:39Z",
+          "quote": "Explore a roughly ~1.5 km² map.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e5b7f8c9bf3371aaa3f5c470d48235c3082b8e1e33348caf9913b4874e21f90"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:56:39Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "open-world"
+      }
+    },
+    {
+      "id": "c_238705875d883b00",
+      "gameId": "g_000211",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4429710/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:56:39Z",
+          "quote": "A slow-paced, cozy fantasy RPG where you play as a Wizard Lumberjack.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e5b7f8c9bf3371aaa3f5c470d48235c3082b8e1e33348caf9913b4874e21f90"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:56:39Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "rpg"
+      }
+    },
+    {
+      "id": "c_33e24c3005405cb3",
+      "gameId": "g_000211",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4429710/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:56:39Z",
+          "quote": "A slow-paced, cozy fantasy RPG where you play as a Wizard Lumberjack.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e5b7f8c9bf3371aaa3f5c470d48235c3082b8e1e33348caf9913b4874e21f90"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:56:39Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_5fec00fc1154e07e",
+      "gameId": "g_000211",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4429710/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:56:39Z",
+          "quote": "A slow-paced, cozy fantasy RPG where you play as a Wizard Lumberjack.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e5b7f8c9bf3371aaa3f5c470d48235c3082b8e1e33348caf9913b4874e21f90"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:56:39Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_6fa07b4908c18e03",
+      "gameId": "g_000211",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4429710/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:56:39Z",
+          "quote": "You can learn to fish, mining and even plant and harvest food which will all aid you in the main task of taking down tree's.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e5b7f8c9bf3371aaa3f5c470d48235c3082b8e1e33348caf9913b4874e21f90"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:56:39Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "fishing"
+      }
+    },
+    {
+      "id": "c_959581aa65ceb89f",
+      "gameId": "g_000211",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4429710/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:56:39Z",
+          "quote": "Master skill-trees like Lumbermancy, Sawmanism, Barkane Magic and many more, each unlocking unique powers!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e5b7f8c9bf3371aaa3f5c470d48235c3082b8e1e33348caf9913b4874e21f90"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:56:39Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "magic"
+      }
+    },
+    {
+      "id": "c_975946957f5144a5",
+      "gameId": "g_000211",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4429710/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:56:39Z",
+          "quote": "Build and repair your farm, gather materials in able to build new crafting stations.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e5b7f8c9bf3371aaa3f5c470d48235c3082b8e1e33348caf9913b4874e21f90"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:56:39Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "crafting"
+      }
+    },
+    {
+      "id": "c_d477e5006481daf7",
+      "gameId": "g_000211",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4429710/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-12T03:56:39Z",
+          "quote": "Build and repair your farm, gather materials in able to build new crafting stations.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e5b7f8c9bf3371aaa3f5c470d48235c3082b8e1e33348caf9913b4874e21f90"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:09:43Z",
+      "createdAt": "2026-11-12T04:09:43Z",
+      "updatedAt": "2026-11-12T04:09:43Z",
+      "lastCheckedAt": "2026-11-12T03:56:39Z",
+      "createdBy": "llm",
+      "createdByRun": "43151022131",
+      "field": "tag",
+      "value": {
+        "tagId": "farming-sim"
+      }
+    },
+    {
+      "id": "c_3e9042557cb7594e",
+      "gameId": "g_000211",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4429710/",
+          "retrievedAt": "2026-11-12T04:10:12Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e5b7f8c9bf3371aaa3f5c470d48235c3082b8e1e33348caf9913b4874e21f90"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:12Z",
+      "createdAt": "2026-11-12T04:10:12Z",
+      "updatedAt": "2026-11-12T04:10:12Z",
+      "lastCheckedAt": "2026-11-12T04:10:12Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4429710/"
+      }
+    },
+    {
+      "id": "c_5b1ba77f42c6b935",
+      "gameId": "g_000211",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4429710/",
+          "retrievedAt": "2026-11-12T04:10:12Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e5b7f8c9bf3371aaa3f5c470d48235c3082b8e1e33348caf9913b4874e21f90"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-12T04:10:12Z",
+      "createdAt": "2026-11-12T04:10:12Z",
+      "updatedAt": "2026-11-12T04:10:12Z",
+      "lastCheckedAt": "2026-11-12T04:10:12Z",
+      "createdBy": "system",
+      "createdByRun": "43151022131",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4429710/67c273a193625b6e47630d5de073fed61ae65acc/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Spellogger のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "BASTI GAMES"
+        }
+      }
+    }
+  ]
+}

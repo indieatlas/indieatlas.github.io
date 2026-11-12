@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000213",
+  "status": "published",
+  "title": {
+    "display": "Zid Journey",
+    "original": "Zid Journey",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1814690
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "2179110",
+      "kind": "demo"
+    }
+  ],
+  "officialUrl": "https://zidandzniw.pl/",
+  "developerIds": [
+    "dev_000302"
+  ],
+  "publisherIds": [
+    "dev_000302",
+    "dev_000303"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.gamingonlinux.com/2026/11/hand-drawn-dino-adventure-zid-journey-gets-a-new-trailer-set-to-arrive-in-q2-2027/",
+            "articleId": "a_6dfe817580f37c58",
+            "publishedAt": "2026-11-11T10:40:44Z",
+            "retrievedAt": "2026-11-12T03:57:08Z",
+            "locator": "article.games",
+            "originKey": "media:gamingonlinux.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-12T04:09:43Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1814690/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:57:12Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b2472982b776052d036d116655df13d0619c2f5345302c435e64ee518a7be25a"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1814690/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:57:12Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b2472982b776052d036d116655df13d0619c2f5345302c435e64ee518a7be25a"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1814690/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:57:12Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b2472982b776052d036d116655df13d0619c2f5345302c435e64ee518a7be25a"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1814690/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-12T03:57:12Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b2472982b776052d036d116655df13d0619c2f5345302c435e64ee518a7be25a"
+      }
+    }
+  ],
+  "createdAt": "2026-11-12T04:09:43Z",
+  "addedAt": "2026-11-12",
+  "updatedAt": "2026-11-12T04:09:43Z",
+  "createdByRun": "43151022131"
+}

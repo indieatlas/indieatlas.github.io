@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000221",
+  "status": "candidate",
+  "title": {
+    "display": "PegLotto!",
+    "original": "PegLotto!",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4289450
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4372270",
+      "kind": "demo"
+    }
+  ],
+  "developerIds": [
+    "dev_000314"
+  ],
+  "publisherIds": [
+    "dev_000314"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4289450/",
+            "retrievedAt": "2026-11-12T04:09:45Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:15a03c5f54570ce5c1825f2c5c601c5ff96727a9fc06d16782e3919922c5de16"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-12T04:09:45Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4289450/",
+        "retrievedAt": "2026-11-12T04:09:45Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:15a03c5f54570ce5c1825f2c5c601c5ff96727a9fc06d16782e3919922c5de16"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4289450/",
+        "retrievedAt": "2026-11-12T04:09:45Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:15a03c5f54570ce5c1825f2c5c601c5ff96727a9fc06d16782e3919922c5de16"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4289450/",
+        "retrievedAt": "2026-11-12T04:09:45Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:15a03c5f54570ce5c1825f2c5c601c5ff96727a9fc06d16782e3919922c5de16"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4289450/",
+        "retrievedAt": "2026-11-12T04:09:45Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:15a03c5f54570ce5c1825f2c5c601c5ff96727a9fc06d16782e3919922c5de16"
+      }
+    }
+  ],
+  "createdAt": "2026-11-12T04:09:45Z",
+  "updatedAt": "2026-11-12T04:09:45Z",
+  "createdByRun": "43151022131"
+}
