@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000228",
+  "claims": [
+    {
+      "id": "c_74bb2601acd31586",
+      "gameId": "g_000228",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3158820/",
+          "retrievedAt": "2026-11-13T03:46:24Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c9e92e2a43fc0e6034defe1c87256fbc7dc4aeba2090c1024929bc481f83d58e"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:24Z",
+      "createdAt": "2026-11-13T03:46:24Z",
+      "updatedAt": "2026-11-13T03:46:24Z",
+      "lastCheckedAt": "2026-11-13T03:46:24Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 9,
+          "day": 24
+        },
+        "rawText": "24 Sep, 2026"
+      }
+    },
+    {
+      "id": "c_b551a627f086952a",
+      "gameId": "g_000228",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3158820/",
+          "retrievedAt": "2026-11-13T03:46:27Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f6034316e1ee804573cadc2f23a05c5c09fa0a8f14956508c477b1e6ad072f77"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:24Z",
+      "createdAt": "2026-11-13T03:46:24Z",
+      "updatedAt": "2026-11-13T03:46:24Z",
+      "lastCheckedAt": "2026-11-13T03:46:27Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_c08937bb9b07b27e",
+      "gameId": "g_000228",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3158820/",
+          "retrievedAt": "2026-11-13T03:46:24Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c9e92e2a43fc0e6034defe1c87256fbc7dc4aeba2090c1024929bc481f83d58e"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:24Z",
+      "createdAt": "2026-11-13T03:46:24Z",
+      "updatedAt": "2026-11-13T03:46:24Z",
+      "lastCheckedAt": "2026-11-13T03:46:24Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_e9429a8d07c3df1c",
+      "gameId": "g_000228",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3158820/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:31:37Z",
+          "quote": "マダガスカルの民話と、活気あふれるアートシーンへのオマージュである『カラノロ』の世界で、型破りなキツネザルたちとバンドを結成し、邪悪な魔女から島を救い出しましょう！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c9e92e2a43fc0e6034defe1c87256fbc7dc4aeba2090c1024929bc481f83d58e"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3158820/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:31:37Z",
+          "quote": "Kalanoro is an action-adventure platformer where you build a band of lemur artists.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c9e92e2a43fc0e6034defe1c87256fbc7dc4aeba2090c1024929bc481f83d58e"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:31:37Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "summary",
+      "value": {
+        "ja": "マダガスカルの民話を題材にした3Dアクションアドベンチャー。毛むくじゃらの少女カラケリを操作し、髪の力や即席の武器で魔女ラネニーの手下と戦いながら、島に囚われたキツネザルの音楽家たちを救い出してバンドを結成し、自由を取り戻す。"
+      }
+    },
+    {
+      "id": "c_7a81e2e778429734",
+      "gameId": "g_000228",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3158820/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:31:37Z",
+          "quote": "Defeat Raneny’s minions in fast-paced combat, using hair-based powers and improvised weapons (slippers included) to fight epic and groovy boss battles and free the island!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c9e92e2a43fc0e6034defe1c87256fbc7dc4aeba2090c1024929bc481f83d58e"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:31:37Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_ba0803f716b9784c",
+      "gameId": "g_000228",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3158820/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:31:37Z",
+          "quote": "Kalanoro is an action-adventure platformer where you build a band of lemur artists.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c9e92e2a43fc0e6034defe1c87256fbc7dc4aeba2090c1024929bc481f83d58e"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:31:37Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_c8989f7a778ee3df",
+      "gameId": "g_000228",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3158820/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:31:37Z",
+          "quote": "レムリアの世界を探索し、陽気なキツネザルのアーティストたちを救出しながら、魔女ラネニーを一曲ごとに打ち負かしていくのです！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c9e92e2a43fc0e6034defe1c87256fbc7dc4aeba2090c1024929bc481f83d58e"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:31:37Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "animals"
+      }
+    },
+    {
+      "id": "c_e2d0684e4d452664",
+      "gameId": "g_000228",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3158820/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:31:37Z",
+          "quote": "Kalanoro is an action-adventure platformer where you build a band of lemur artists.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c9e92e2a43fc0e6034defe1c87256fbc7dc4aeba2090c1024929bc481f83d58e"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:31:37Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "platformer"
+      }
+    },
+    {
+      "id": "c_e34e0a7c1bf5925b",
+      "gameId": "g_000228",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3158820/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:31:37Z",
+          "quote": "即席の武器（サンダルさえも！）を駆使して、テンポの良い戦闘でラネニーの手下たちを倒しましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c9e92e2a43fc0e6034defe1c87256fbc7dc4aeba2090c1024929bc481f83d58e"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:31:37Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_f0dfd0ab2dcd7fba",
+      "gameId": "g_000228",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3158820/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:31:37Z",
+          "quote": "レムリアの世界を探索し、陽気なキツネザルのアーティストたちを救出しながら、魔女ラネニーを一曲ごとに打ち負かしていくのです！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c9e92e2a43fc0e6034defe1c87256fbc7dc4aeba2090c1024929bc481f83d58e"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:31:37Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_3c825d36cb9c927e",
+      "gameId": "g_000228",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3158820/",
+          "retrievedAt": "2026-11-13T03:46:24Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c9e92e2a43fc0e6034defe1c87256fbc7dc4aeba2090c1024929bc481f83d58e"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:24Z",
+      "createdAt": "2026-11-13T03:46:24Z",
+      "updatedAt": "2026-11-13T03:46:24Z",
+      "lastCheckedAt": "2026-11-13T03:46:24Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3158820/"
+      }
+    },
+    {
+      "id": "c_bd9c3f1e6903e29b",
+      "gameId": "g_000228",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3158820/",
+          "retrievedAt": "2026-11-13T03:46:24Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c9e92e2a43fc0e6034defe1c87256fbc7dc4aeba2090c1024929bc481f83d58e"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:24Z",
+      "createdAt": "2026-11-13T03:46:24Z",
+      "updatedAt": "2026-11-13T03:46:24Z",
+      "lastCheckedAt": "2026-11-13T03:46:24Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3158820/e344d3d0514147e82f1fee043f7439523feffba6/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Kalanoro のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "New Tales"
+        }
+      }
+    }
+  ]
+}

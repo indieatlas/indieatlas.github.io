@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000240",
+  "status": "candidate",
+  "title": {
+    "display": "SONIC PICO PARK",
+    "original": "SONIC PICO PARK",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4304060
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000342"
+  ],
+  "publisherIds": [
+    "dev_000343"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-13T03:45:51Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-13T03:45:51Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4304060/",
+        "retrievedAt": "2026-11-13T03:46:06Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9f8801b68f0ddecc8281d1e516d37e0564c8c7b323e8978daabad81e81d3ec88"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4304060/",
+        "retrievedAt": "2026-11-13T03:46:06Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9f8801b68f0ddecc8281d1e516d37e0564c8c7b323e8978daabad81e81d3ec88"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4304060/",
+        "retrievedAt": "2026-11-13T03:46:06Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9f8801b68f0ddecc8281d1e516d37e0564c8c7b323e8978daabad81e81d3ec88"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4304060/",
+        "retrievedAt": "2026-11-13T03:46:06Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9f8801b68f0ddecc8281d1e516d37e0564c8c7b323e8978daabad81e81d3ec88"
+      }
+    }
+  ],
+  "createdAt": "2026-11-13T03:46:06Z",
+  "updatedAt": "2026-11-13T03:45:51Z",
+  "createdByRun": "43359055786"
+}

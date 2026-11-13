@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000233",
+  "status": "candidate",
+  "title": {
+    "display": "愛と死と、私の娘",
+    "original": "Love, Death & My Daughter",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "愛と死と、私の娘",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 5105650
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5162170",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5162180",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000332",
+    "dev_000333"
+  ],
+  "publisherIds": [
+    "dev_000332",
+    "dev_000333"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5105650/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-13T03:35:29Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:fe53a71f0a303edfcffe81c976081f79bdef53a47de6bad012d4f7d6e980064a"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-13T03:45:51Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5105650/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-13T03:35:29Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:fe53a71f0a303edfcffe81c976081f79bdef53a47de6bad012d4f7d6e980064a"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5105650/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-13T03:35:29Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:fe53a71f0a303edfcffe81c976081f79bdef53a47de6bad012d4f7d6e980064a"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5105650/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-13T03:35:29Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:fe53a71f0a303edfcffe81c976081f79bdef53a47de6bad012d4f7d6e980064a"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5105650/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-13T03:35:29Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:fe53a71f0a303edfcffe81c976081f79bdef53a47de6bad012d4f7d6e980064a"
+      }
+    }
+  ],
+  "createdAt": "2026-11-13T03:45:51Z",
+  "updatedAt": "2026-11-13T03:46:46Z",
+  "createdByRun": "43359055786"
+}

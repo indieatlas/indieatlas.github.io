@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000237",
+  "status": "candidate",
+  "title": {
+    "display": "ワロタ、俺の家のとなり魔王城www",
+    "original": "Warota: I Live Next to The Demon King's Castle LOL",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "ワロタ、俺の家のとなり魔王城www",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 2860490
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4777910",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5214670",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5214670",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://one-or-eight.co.jp/WRT/",
+  "developerIds": [
+    "dev_000338",
+    "dev_000339"
+  ],
+  "publisherIds": [
+    "dev_000338"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/2860490/",
+            "retrievedAt": "2026-11-13T03:45:52Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:4a6adb0449ff5ebd5c0fa8c510695665fb544db7cc49660188b21fd22aa283af"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-13T03:45:52Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2860490/",
+        "retrievedAt": "2026-11-13T03:45:52Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4a6adb0449ff5ebd5c0fa8c510695665fb544db7cc49660188b21fd22aa283af"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2860490/",
+        "retrievedAt": "2026-11-13T03:45:52Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4a6adb0449ff5ebd5c0fa8c510695665fb544db7cc49660188b21fd22aa283af"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2860490/",
+        "retrievedAt": "2026-11-13T03:45:52Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4a6adb0449ff5ebd5c0fa8c510695665fb544db7cc49660188b21fd22aa283af"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2860490/",
+        "retrievedAt": "2026-11-13T03:45:52Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4a6adb0449ff5ebd5c0fa8c510695665fb544db7cc49660188b21fd22aa283af"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2860490/",
+        "retrievedAt": "2026-11-13T03:45:52Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4a6adb0449ff5ebd5c0fa8c510695665fb544db7cc49660188b21fd22aa283af"
+      }
+    }
+  ],
+  "createdAt": "2026-11-13T03:45:52Z",
+  "updatedAt": "2026-11-13T03:45:52Z",
+  "createdByRun": "43359055786"
+}

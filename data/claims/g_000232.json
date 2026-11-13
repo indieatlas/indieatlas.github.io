@@ -1,0 +1,395 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000232",
+  "claims": [
+    {
+      "id": "c_5065be8f859cdf1f",
+      "gameId": "g_000232",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3802500/",
+          "retrievedAt": "2026-11-13T03:46:42Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dd5cab54a439949ba0c47119fb8f5749be8403ad0d159e76bfa0d945c7231803"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:42Z",
+      "createdAt": "2026-11-13T03:46:42Z",
+      "updatedAt": "2026-11-13T03:46:42Z",
+      "lastCheckedAt": "2026-11-13T03:46:42Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 11
+        },
+        "rawText": "11 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_771b76d898c8aad1",
+      "gameId": "g_000232",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3802500/",
+          "retrievedAt": "2026-11-13T03:46:45Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4d465e59bb5c94ebb239a50790d668ebb938403075da382da70a9915a8f83bb3"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:42Z",
+      "createdAt": "2026-11-13T03:46:42Z",
+      "updatedAt": "2026-11-13T03:46:42Z",
+      "lastCheckedAt": "2026-11-13T03:46:45Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_0a6586d0214a3a0b",
+      "gameId": "g_000232",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3802500/",
+          "retrievedAt": "2026-11-13T03:46:42Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dd5cab54a439949ba0c47119fb8f5749be8403ad0d159e76bfa0d945c7231803"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:42Z",
+      "createdAt": "2026-11-13T03:46:42Z",
+      "updatedAt": "2026-11-13T03:46:42Z",
+      "lastCheckedAt": "2026-11-13T03:46:42Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_56540925caf5fae1",
+      "gameId": "g_000232",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://news.denfaminicogamer.jp/news/2611122y",
+          "sourceId": "denfaminicogamer",
+          "articleId": "a_c813f2d0a02490c1",
+          "publishedAt": "2026-11-12T07:00:39Z",
+          "retrievedAt": "2026-11-13T03:33:42Z",
+          "quote": "目弾は100種類以上、能力にさまざまな効果を加える「突然変異」は70種類以上が登場する。",
+          "originKey": "media:denfaminicogamer.jp",
+          "fetchHash": "sha256:ea8aad24299e4c8268c1e5f0338719c1d32d417c756d6d5a1ca95962e1688630"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3802500/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:33:54Z",
+          "quote": "Play as a lovestruck alien in this chaotic roguelike pachinko in pixel art!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dd5cab54a439949ba0c47119fb8f5749be8403ad0d159e76bfa0d945c7231803"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:33:54Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "summary",
+      "value": {
+        "ja": "愛する者を奪われた星喰いのエイリアンとなり、クギが敷き詰められた盤面へ目弾を撃ち込むターン制ローグライク。跳ね返りの連鎖でダメージを伸ばし、100種類以上の目弾と70種類以上の突然変異を組み合わせてビルドを育てる。"
+      }
+    },
+    {
+      "id": "c_17be755ec244b11d",
+      "gameId": "g_000232",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3802500/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:33:54Z",
+          "quote": "That’s Splatchinko : a turn-based incremental roguelike that blends pachinko inspired physics, destructive abilities and increasingly questionable builds in one arcade shell.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dd5cab54a439949ba0c47119fb8f5749be8403ad0d159e76bfa0d945c7231803"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:33:54Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "turn-based"
+      }
+    },
+    {
+      "id": "c_22f52a76de9ae179",
+      "gameId": "g_000232",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3802500/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:33:54Z",
+          "quote": "Play as a lovestruck alien in this chaotic roguelike pachinko in pixel art!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dd5cab54a439949ba0c47119fb8f5749be8403ad0d159e76bfa0d945c7231803"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:33:54Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_33f16c2ddc3197b1",
+      "gameId": "g_000232",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3802500/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:33:54Z",
+          "quote": "Fire your shots across chaotic battlefields, bend the rules of gravity and tear entire planets apart as you search the cosmos for the one you lost.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dd5cab54a439949ba0c47119fb8f5749be8403ad0d159e76bfa0d945c7231803"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:33:54Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "physics"
+      }
+    },
+    {
+      "id": "c_3b54c13c4b582909",
+      "gameId": "g_000232",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3802500/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:33:54Z",
+          "quote": "Fire your shots across chaotic battlefields, bend the rules of gravity and tear entire planets apart as you search the cosmos for the one you lost.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dd5cab54a439949ba0c47119fb8f5749be8403ad0d159e76bfa0d945c7231803"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:33:54Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "space"
+      }
+    },
+    {
+      "id": "c_bc8e94e2d9bdd18a",
+      "gameId": "g_000232",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3802500/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:33:54Z",
+          "quote": "Launch your EYES across hostile planets, unlock bizarre mutations and build devastating combos as you tear through the galaxy to rescue your beloved.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dd5cab54a439949ba0c47119fb8f5749be8403ad0d159e76bfa0d945c7231803"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:33:54Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "sci-fi"
+      }
+    },
+    {
+      "id": "c_ec381cc0876374cb",
+      "gameId": "g_000232",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3802500/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:33:54Z",
+          "quote": "Play as a lovestruck alien in this chaotic roguelike pachinko in pixel art!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dd5cab54a439949ba0c47119fb8f5749be8403ad0d159e76bfa0d945c7231803"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:33:54Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "pixel-art"
+      }
+    },
+    {
+      "id": "c_d298c3634f39030b",
+      "gameId": "g_000232",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3802500/",
+          "retrievedAt": "2026-11-13T03:46:42Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dd5cab54a439949ba0c47119fb8f5749be8403ad0d159e76bfa0d945c7231803"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:42Z",
+      "createdAt": "2026-11-13T03:46:42Z",
+      "updatedAt": "2026-11-13T03:46:42Z",
+      "lastCheckedAt": "2026-11-13T03:46:42Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3802500/"
+      }
+    },
+    {
+      "id": "c_4611e1b3d41fb83a",
+      "gameId": "g_000232",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3802500/",
+          "retrievedAt": "2026-11-13T03:46:42Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dd5cab54a439949ba0c47119fb8f5749be8403ad0d159e76bfa0d945c7231803"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:42Z",
+      "createdAt": "2026-11-13T03:46:42Z",
+      "updatedAt": "2026-11-13T03:46:42Z",
+      "lastCheckedAt": "2026-11-13T03:46:42Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3802500/995c140d3af1ff93da52aab1a73b3827dbacf96d/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "スプラット・パチンコ のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Stratos Gaming"
+        }
+      }
+    }
+  ]
+}

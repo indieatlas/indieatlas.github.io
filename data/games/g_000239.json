@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000239",
+  "status": "candidate",
+  "title": {
+    "display": "Undealt",
+    "original": "Undealt",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5205880
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5295740",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5295760",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5295770",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5295780",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5295800",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5296080",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://tailhousestudio.com/games/undealt/",
+  "developerIds": [
+    "dev_000341"
+  ],
+  "publisherIds": [
+    "dev_000341"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5205880/",
+            "retrievedAt": "2026-11-13T03:46:01Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:1f86a03aa753c4e60711117a99cbe2679f116c3424497d834ce774847ec58807"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-13T03:46:01Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5205880/",
+        "retrievedAt": "2026-11-13T03:46:01Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:1f86a03aa753c4e60711117a99cbe2679f116c3424497d834ce774847ec58807"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5205880/",
+        "retrievedAt": "2026-11-13T03:46:01Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:1f86a03aa753c4e60711117a99cbe2679f116c3424497d834ce774847ec58807"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5205880/",
+        "retrievedAt": "2026-11-13T03:46:01Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:1f86a03aa753c4e60711117a99cbe2679f116c3424497d834ce774847ec58807"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5205880/",
+        "retrievedAt": "2026-11-13T03:46:01Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:1f86a03aa753c4e60711117a99cbe2679f116c3424497d834ce774847ec58807"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5205880/",
+        "retrievedAt": "2026-11-13T03:46:01Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:1f86a03aa753c4e60711117a99cbe2679f116c3424497d834ce774847ec58807"
+      }
+    }
+  ],
+  "createdAt": "2026-11-13T03:46:01Z",
+  "updatedAt": "2026-11-13T03:46:01Z",
+  "createdByRun": "43359055786"
+}

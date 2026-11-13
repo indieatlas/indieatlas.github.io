@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000232",
+  "status": "candidate",
+  "title": {
+    "display": "スプラット・パチンコ",
+    "original": "Splatchinko",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 3802500
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4395750",
+      "kind": "demo"
+    }
+  ],
+  "officialUrl": "https://www.stupidipixel.com/splatchinko/",
+  "developerIds": [
+    "dev_000330"
+  ],
+  "publisherIds": [
+    "dev_000331"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "independent-publisher",
+        "note": "インディー向けパブリッシャーのStratos Gamingが販売を担当",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://news.denfaminicogamer.jp/news/2611122y",
+            "sourceId": "denfaminicogamer",
+            "publishedAt": "2026-11-12T07:00:39Z",
+            "retrievedAt": "2026-11-13T03:33:42Z",
+            "quote": "Stratos Gamingは、Tied Company S.r.l.の元で運営されている、イタリアを拠点としたインディーゲームパブリッシャーです。",
+            "originKey": "media:denfaminicogamer.jp",
+            "fetchHash": "sha256:ea8aad24299e4c8268c1e5f0338719c1d32d417c756d6d5a1ca95962e1688630"
+          }
+        ]
+      },
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://news.denfaminicogamer.jp/news/2611122y",
+            "articleId": "a_c813f2d0a02490c1",
+            "publishedAt": "2026-11-12T07:00:39Z",
+            "retrievedAt": "2026-11-13T03:33:42Z",
+            "locator": "article.games",
+            "originKey": "media:denfaminicogamer.jp"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-13T03:45:51Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3802500/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-13T03:33:54Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dd5cab54a439949ba0c47119fb8f5749be8403ad0d159e76bfa0d945c7231803"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3802500/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-13T03:33:54Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dd5cab54a439949ba0c47119fb8f5749be8403ad0d159e76bfa0d945c7231803"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "official",
+        "url": "https://www.stupidipixel.com/splatchinko/",
+        "retrievedAt": "2026-11-13T03:34:06Z",
+        "quote": "Remember: you are the reflection of a thinking universe!",
+        "originKey": "official:stupidipixel.com",
+        "fetchHash": "sha256:564f20709e7a8dbd389cceaf79084281c6b98a78c454038a7967cdbb5468cac4"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3802500/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-13T03:33:54Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dd5cab54a439949ba0c47119fb8f5749be8403ad0d159e76bfa0d945c7231803"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3802500/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-13T03:33:54Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dd5cab54a439949ba0c47119fb8f5749be8403ad0d159e76bfa0d945c7231803"
+      }
+    }
+  ],
+  "createdAt": "2026-11-13T03:45:51Z",
+  "updatedAt": "2026-11-13T03:45:51Z",
+  "createdByRun": "43359055786"
+}

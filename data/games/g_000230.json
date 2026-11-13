@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000230",
+  "status": "candidate",
+  "title": {
+    "display": "SANKAN",
+    "original": "SANKAN",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 2131760
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000327"
+  ],
+  "publisherIds": [
+    "dev_000328"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "solo-developer",
+        "note": "ストアの開発者コメントでひとりで開発していると明記されている",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/2131760/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-13T03:33:48Z",
+            "quote": "SANKANはひとりで開発しています。実は私自身ホラーゲームが怖いので、怖がらせ方は加減しています。",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:5851a1d022d7713164d25e00db5f6d661edef60b34e0df19a6a552354bcb6a65"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-13T03:45:51Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2131760/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-13T03:33:48Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5851a1d022d7713164d25e00db5f6d661edef60b34e0df19a6a552354bcb6a65"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2131760/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-13T03:33:48Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5851a1d022d7713164d25e00db5f6d661edef60b34e0df19a6a552354bcb6a65"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2131760/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-13T03:33:48Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5851a1d022d7713164d25e00db5f6d661edef60b34e0df19a6a552354bcb6a65"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2131760/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-13T03:33:48Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5851a1d022d7713164d25e00db5f6d661edef60b34e0df19a6a552354bcb6a65"
+      }
+    }
+  ],
+  "createdAt": "2026-11-13T03:45:51Z",
+  "updatedAt": "2026-11-13T03:45:51Z",
+  "createdByRun": "43359055786"
+}

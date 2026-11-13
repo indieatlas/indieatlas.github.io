@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000242",
+  "claims": [
+    {
+      "id": "c_3817ed435b0a5950",
+      "gameId": "g_000242",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2784470/",
+          "retrievedAt": "2026-11-13T03:46:15Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1e5e8cc3742f9195f1234d5e2592e83965417aff660fd9035f6c68e3b978eb37"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:15Z",
+      "createdAt": "2026-11-13T03:46:15Z",
+      "updatedAt": "2026-11-13T03:46:15Z",
+      "lastCheckedAt": "2026-11-13T03:46:15Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 12
+        },
+        "rawText": "12 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_3e1b61d98ba8c6c0",
+      "gameId": "g_000242",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2784470/",
+          "retrievedAt": "2026-11-13T03:46:15Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1e5e8cc3742f9195f1234d5e2592e83965417aff660fd9035f6c68e3b978eb37"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:15Z",
+      "createdAt": "2026-11-13T03:46:15Z",
+      "updatedAt": "2026-11-13T03:46:15Z",
+      "lastCheckedAt": "2026-11-13T03:46:15Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 12
+        },
+        "rawText": "12 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_c5e7a44713dae82c",
+      "gameId": "g_000242",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2784470/",
+          "retrievedAt": "2026-11-13T03:46:18Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:5ab58d5df0d8b8944fe207d7117f27af8918a32efbe224179b77f3f7960ad5df"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:15Z",
+      "createdAt": "2026-11-13T03:46:15Z",
+      "updatedAt": "2026-11-13T03:46:15Z",
+      "lastCheckedAt": "2026-11-13T03:46:18Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_036cd4c1c8585f08",
+      "gameId": "g_000242",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2784470/",
+          "retrievedAt": "2026-11-13T03:46:15Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1e5e8cc3742f9195f1234d5e2592e83965417aff660fd9035f6c68e3b978eb37"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:15Z",
+      "createdAt": "2026-11-13T03:46:15Z",
+      "updatedAt": "2026-11-13T03:46:15Z",
+      "lastCheckedAt": "2026-11-13T03:46:15Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-pvp"
+        ]
+      }
+    },
+    {
+      "id": "c_5cefdf36eeeaca6f",
+      "gameId": "g_000242",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2784470/",
+          "retrievedAt": "2026-11-13T03:46:15Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1e5e8cc3742f9195f1234d5e2592e83965417aff660fd9035f6c68e3b978eb37"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:15Z",
+      "createdAt": "2026-11-13T03:46:15Z",
+      "updatedAt": "2026-11-13T03:46:15Z",
+      "lastCheckedAt": "2026-11-13T03:46:15Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2784470/"
+      }
+    },
+    {
+      "id": "c_4415520c02d50d20",
+      "gameId": "g_000242",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2784470/",
+          "retrievedAt": "2026-11-13T03:46:15Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1e5e8cc3742f9195f1234d5e2592e83965417aff660fd9035f6c68e3b978eb37"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:15Z",
+      "createdAt": "2026-11-13T03:46:15Z",
+      "updatedAt": "2026-11-13T03:46:15Z",
+      "lastCheckedAt": "2026-11-13T03:46:15Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2784470/640a138fbc6918daa276a4653360eca9e4488b65/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "9 Kings 9 キングス のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Hooded Horse"
+        }
+      }
+    }
+  ]
+}

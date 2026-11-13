@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000241",
+  "status": "candidate",
+  "title": {
+    "display": "Satelital",
+    "original": "Satelital",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 3256790
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5017320",
+      "kind": "demo"
+    }
+  ],
+  "officialUrl": "https://spectralorbit.com/satelital",
+  "developerIds": [
+    "dev_000344"
+  ],
+  "publisherIds": [
+    "dev_000345"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-13T03:45:51Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-13T03:45:51Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3256790/",
+        "retrievedAt": "2026-11-13T03:46:10Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:fcf259f953ef85acb2c0747394ca6f74ef770eefc063a79246c35a812162a9a1"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3256790/",
+        "retrievedAt": "2026-11-13T03:46:10Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:fcf259f953ef85acb2c0747394ca6f74ef770eefc063a79246c35a812162a9a1"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3256790/",
+        "retrievedAt": "2026-11-13T03:46:10Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:fcf259f953ef85acb2c0747394ca6f74ef770eefc063a79246c35a812162a9a1"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3256790/",
+        "retrievedAt": "2026-11-13T03:46:10Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:fcf259f953ef85acb2c0747394ca6f74ef770eefc063a79246c35a812162a9a1"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3256790/",
+        "retrievedAt": "2026-11-13T03:46:10Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:fcf259f953ef85acb2c0747394ca6f74ef770eefc063a79246c35a812162a9a1"
+      }
+    }
+  ],
+  "createdAt": "2026-11-13T03:46:10Z",
+  "updatedAt": "2026-11-13T03:45:51Z",
+  "createdByRun": "43359055786"
+}

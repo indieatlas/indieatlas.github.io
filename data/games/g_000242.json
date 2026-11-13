@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000242",
+  "status": "candidate",
+  "title": {
+    "display": "9 Kings 9 キングス",
+    "original": "9 Kings",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "9 Kings 9 キングス",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 2784470
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3122250",
+      "kind": "demo"
+    }
+  ],
+  "officialUrl": "https://www.sadsocket.com",
+  "developerIds": [
+    "dev_000346"
+  ],
+  "publisherIds": [
+    "dev_000347",
+    "dev_000121"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-13T03:45:51Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-13T03:45:51Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2784470/",
+        "retrievedAt": "2026-11-13T03:46:15Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:1e5e8cc3742f9195f1234d5e2592e83965417aff660fd9035f6c68e3b978eb37"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2784470/",
+        "retrievedAt": "2026-11-13T03:46:15Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:1e5e8cc3742f9195f1234d5e2592e83965417aff660fd9035f6c68e3b978eb37"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2784470/",
+        "retrievedAt": "2026-11-13T03:46:15Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:1e5e8cc3742f9195f1234d5e2592e83965417aff660fd9035f6c68e3b978eb37"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2784470/",
+        "retrievedAt": "2026-11-13T03:46:15Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:1e5e8cc3742f9195f1234d5e2592e83965417aff660fd9035f6c68e3b978eb37"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2784470/",
+        "retrievedAt": "2026-11-13T03:46:15Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:1e5e8cc3742f9195f1234d5e2592e83965417aff660fd9035f6c68e3b978eb37"
+      }
+    }
+  ],
+  "createdAt": "2026-11-13T03:46:15Z",
+  "updatedAt": "2026-11-13T03:45:51Z",
+  "createdByRun": "43359055786"
+}

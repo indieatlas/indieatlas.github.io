@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000236",
+  "claims": [
+    {
+      "id": "c_a90ffb1eaa355aac",
+      "gameId": "g_000236",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3179050/",
+          "retrievedAt": "2026-11-13T03:47:00Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:89ce8683cc650800c42861c2337e17948d565cd29cc282d8b551a0f6962febd6"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:47:00Z",
+      "createdAt": "2026-11-13T03:47:00Z",
+      "updatedAt": "2026-11-13T03:47:00Z",
+      "lastCheckedAt": "2026-11-13T03:47:00Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 3,
+          "day": 11
+        },
+        "rawText": "11 Mar, 2026"
+      }
+    },
+    {
+      "id": "c_97bb3f250ecf7fc8",
+      "gameId": "g_000236",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3179050/",
+          "retrievedAt": "2026-11-13T03:47:03Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7b9e675c061132bb60e34e299203a20c3251e3598f9b56f2cedb76a19d44da42"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:47:00Z",
+      "createdAt": "2026-11-13T03:47:00Z",
+      "updatedAt": "2026-11-13T03:47:00Z",
+      "lastCheckedAt": "2026-11-13T03:47:03Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_50b8220e3f62a08b",
+      "gameId": "g_000236",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3179050/",
+          "retrievedAt": "2026-11-13T03:47:00Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:89ce8683cc650800c42861c2337e17948d565cd29cc282d8b551a0f6962febd6"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:47:00Z",
+      "createdAt": "2026-11-13T03:47:00Z",
+      "updatedAt": "2026-11-13T03:47:00Z",
+      "lastCheckedAt": "2026-11-13T03:47:00Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_9d81c691823f0514",
+      "gameId": "g_000236",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3179050/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:35:23Z",
+          "quote": "Take on your Grandpa's old shop and fix up your customer's treasured belongings.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:89ce8683cc650800c42861c2337e17948d565cd29cc282d8b551a0f6962febd6"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:35:23Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "summary",
+      "value": {
+        "ja": "家族から受け継いだ森の修理屋を営み、森の住民たちが持ち込む骨董品や家宝をパズルのように修理するシミュレーション。裏庭でベリーを育てて塗料を作り、仕上げた品を店に並べて販売する。"
+      }
+    },
+    {
+      "id": "c_0556341d15c1e87d",
+      "gameId": "g_000236",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3179050/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:35:23Z",
+          "quote": "To-Do List: Piece together antiques, heirlooms, and favourite mugs for your customers, each with its own puzzle!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:89ce8683cc650800c42861c2337e17948d565cd29cc282d8b551a0f6962febd6"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:35:23Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_1d48ea7733989b05",
+      "gameId": "g_000236",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://automaton-media.com/articles/newsjp/20261113-479045/",
+          "sourceId": "automaton",
+          "articleId": "a_5dcc0353c2df7c19",
+          "publishedAt": "2026-11-13T02:19:25Z",
+          "retrievedAt": "2026-11-13T03:35:13Z",
+          "quote": "森の動物たちのために修理屋を運営するシミュレーションゲームで、発売日は3月12日だ。",
+          "originKey": "media:automaton-media.com",
+          "fetchHash": "sha256:eaff1100675605401b404b2f714ced7c210881ba551199f6bb057b294c5f3515"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:35:13Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "animals"
+      }
+    },
+    {
+      "id": "c_a252ac105a1f2146",
+      "gameId": "g_000236",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3179050/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:35:23Z",
+          "quote": "It's time to open shop! Inherit your family's repair shop, and roll up your sleeves.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:89ce8683cc650800c42861c2337e17948d565cd29cc282d8b551a0f6962febd6"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:35:23Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_da05a095e673be85",
+      "gameId": "g_000236",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3179050/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:35:23Z",
+          "quote": "bake cookies for your neighbours, and listen to the latest gossip",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:89ce8683cc650800c42861c2337e17948d565cd29cc282d8b551a0f6962febd6"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:35:23Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_fb75dffb1939103a",
+      "gameId": "g_000236",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3179050/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:35:23Z",
+          "quote": "Grow berries in your back garden to mix up into colourful paints, and paint up a storm",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:89ce8683cc650800c42861c2337e17948d565cd29cc282d8b551a0f6962febd6"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:35:23Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "crafting"
+      }
+    },
+    {
+      "id": "c_8f6eff0126d83f5f",
+      "gameId": "g_000236",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3179050/",
+          "retrievedAt": "2026-11-13T03:47:00Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:89ce8683cc650800c42861c2337e17948d565cd29cc282d8b551a0f6962febd6"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:47:00Z",
+      "createdAt": "2026-11-13T03:47:00Z",
+      "updatedAt": "2026-11-13T03:47:00Z",
+      "lastCheckedAt": "2026-11-13T03:47:00Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3179050/"
+      }
+    },
+    {
+      "id": "c_958105ccf95e4a9e",
+      "gameId": "g_000236",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3179050/",
+          "retrievedAt": "2026-11-13T03:47:00Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:89ce8683cc650800c42861c2337e17948d565cd29cc282d8b551a0f6962febd6"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:47:00Z",
+      "createdAt": "2026-11-13T03:47:00Z",
+      "updatedAt": "2026-11-13T03:47:00Z",
+      "lastCheckedAt": "2026-11-13T03:47:00Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3179050/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Piece by Piece のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "No More Robots"
+        }
+      }
+    }
+  ]
+}

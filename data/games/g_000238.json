@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000238",
+  "status": "candidate",
+  "title": {
+    "display": "BALL x PIT",
+    "original": "BALL x PIT",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 2062430
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3651790",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "4008250",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4091070",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5437630",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://www.ballxpit.com/",
+  "developerIds": [
+    "dev_000340"
+  ],
+  "publisherIds": [
+    "dev_000085"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-13T03:45:51Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-13T03:45:51Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2062430/",
+        "retrievedAt": "2026-11-13T03:45:57Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:23cb441f36f0bed0209063af4e72fcf15b65e9ca3ee03b6189577186eb143bfc"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2062430/",
+        "retrievedAt": "2026-11-13T03:45:57Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:23cb441f36f0bed0209063af4e72fcf15b65e9ca3ee03b6189577186eb143bfc"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2062430/",
+        "retrievedAt": "2026-11-13T03:45:57Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:23cb441f36f0bed0209063af4e72fcf15b65e9ca3ee03b6189577186eb143bfc"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2062430/",
+        "retrievedAt": "2026-11-13T03:45:57Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:23cb441f36f0bed0209063af4e72fcf15b65e9ca3ee03b6189577186eb143bfc"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2062430/",
+        "retrievedAt": "2026-11-13T03:45:57Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:23cb441f36f0bed0209063af4e72fcf15b65e9ca3ee03b6189577186eb143bfc"
+      }
+    }
+  ],
+  "createdAt": "2026-11-13T03:45:57Z",
+  "updatedAt": "2026-11-13T03:45:51Z",
+  "createdByRun": "43359055786"
+}

@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000235",
+  "claims": [
+    {
+      "id": "c_004a5d06eaef7a9b",
+      "gameId": "g_000235",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4536670/",
+          "retrievedAt": "2026-11-13T03:46:55Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:98f794b72582214fb78c14734eccc6d7ed6c39de15ddf6b8b6d29e72daeeedc5"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:55Z",
+      "createdAt": "2026-11-13T03:46:55Z",
+      "updatedAt": "2026-11-13T03:46:55Z",
+      "lastCheckedAt": "2026-11-13T03:46:55Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "quarter",
+          "year": 2027,
+          "quarter": 2
+        },
+        "rawText": "Q2 2027"
+      }
+    },
+    {
+      "id": "c_bbd49220f7718148",
+      "gameId": "g_000235",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4536670/",
+          "retrievedAt": "2026-11-13T03:46:58Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a24783302e7cd4ea82d7afed3e154c82766f577e2fb66075509813ab4a11ee96"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:55Z",
+      "createdAt": "2026-11-13T03:46:55Z",
+      "updatedAt": "2026-11-13T03:46:55Z",
+      "lastCheckedAt": "2026-11-13T03:46:58Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "no",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_6e2d26de45c7b933",
+      "gameId": "g_000235",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4536670/",
+          "retrievedAt": "2026-11-13T03:46:55Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:98f794b72582214fb78c14734eccc6d7ed6c39de15ddf6b8b6d29e72daeeedc5"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:55Z",
+      "createdAt": "2026-11-13T03:46:55Z",
+      "updatedAt": "2026-11-13T03:46:55Z",
+      "lastCheckedAt": "2026-11-13T03:46:55Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_cc509874ff1299d1",
+      "gameId": "g_000235",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4536670/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:36:22Z",
+          "quote": "The most realistic wingsuit and parachute physics on PC and in VR. Discover perfect lines across a 256 km² island built for proximity flying.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:98f794b72582214fb78c14734eccc6d7ed6c39de15ddf6b8b6d29e72daeeedc5"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:36:22Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "summary",
+      "value": {
+        "ja": "実際のウイングスーツパイロットのフィードバックをもとに開発された滑空シミュレーション。256km²の島を舞台に、山脈や峡谷、森林、砂漠などの地形を低空で飛び抜け、パラシュートでの着地までを操る。"
+      }
+    },
+    {
+      "id": "c_4ba3809300f141a6",
+      "gameId": "g_000235",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4536670/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:36:22Z",
+          "quote": "256 km². Five biomes. 4,500 meters of vertical terrain.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:98f794b72582214fb78c14734eccc6d7ed6c39de15ddf6b8b6d29e72daeeedc5"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:36:22Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "open-world"
+      }
+    },
+    {
+      "id": "c_94564ba5a4fc7969",
+      "gameId": "g_000235",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4536670/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:36:22Z",
+          "quote": "Explore mountain ridges, dive into canyons, and discover routes through forests, deserts, coastal landscapes, and urban spaces.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:98f794b72582214fb78c14734eccc6d7ed6c39de15ddf6b8b6d29e72daeeedc5"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:36:22Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_b1b47b93054f05a0",
+      "gameId": "g_000235",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4536670/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:36:22Z",
+          "quote": "the simulation models lift, drag, and wingsuit and parachute pressurization to make every input matter",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:98f794b72582214fb78c14734eccc6d7ed6c39de15ddf6b8b6d29e72daeeedc5"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:36:22Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "physics"
+      }
+    },
+    {
+      "id": "c_c14c24a88a742f6e",
+      "gameId": "g_000235",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4536670/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:36:22Z",
+          "quote": "The most realistic wingsuit flying experience on PC and in VR. Pick your exit. Read the terrain. Commit to your line.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:98f794b72582214fb78c14734eccc6d7ed6c39de15ddf6b8b6d29e72daeeedc5"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:36:22Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_eba487df8bce823f",
+      "gameId": "g_000235",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4536670/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-13T03:36:22Z",
+          "quote": "Explore mountain ridges, dive into canyons, and discover routes through forests, deserts, coastal landscapes, and urban spaces.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:98f794b72582214fb78c14734eccc6d7ed6c39de15ddf6b8b6d29e72daeeedc5"
+        }
+      ],
+      "asOf": "2026-11-12",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:45:51Z",
+      "createdAt": "2026-11-13T03:45:51Z",
+      "updatedAt": "2026-11-13T03:45:51Z",
+      "lastCheckedAt": "2026-11-13T03:36:22Z",
+      "createdBy": "llm",
+      "createdByRun": "43359055786",
+      "field": "tag",
+      "value": {
+        "tagId": "nature"
+      }
+    },
+    {
+      "id": "c_8ca4efb67bce5a7b",
+      "gameId": "g_000235",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4536670/",
+          "retrievedAt": "2026-11-13T03:46:55Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:98f794b72582214fb78c14734eccc6d7ed6c39de15ddf6b8b6d29e72daeeedc5"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:55Z",
+      "createdAt": "2026-11-13T03:46:55Z",
+      "updatedAt": "2026-11-13T03:46:55Z",
+      "lastCheckedAt": "2026-11-13T03:46:55Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4536670/"
+      }
+    },
+    {
+      "id": "c_c1aee696c3dfb4c1",
+      "gameId": "g_000235",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4536670/",
+          "retrievedAt": "2026-11-13T03:46:55Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:98f794b72582214fb78c14734eccc6d7ed6c39de15ddf6b8b6d29e72daeeedc5"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:55Z",
+      "createdAt": "2026-11-13T03:46:55Z",
+      "updatedAt": "2026-11-13T03:46:55Z",
+      "lastCheckedAt": "2026-11-13T03:46:55Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4536670/2d5178632e617febbc2dfa72e280f2398c410055/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Wingsuit Simulator のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Becoming Games"
+        }
+      }
+    }
+  ]
+}

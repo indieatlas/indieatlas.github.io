@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000239",
+  "claims": [
+    {
+      "id": "c_d9e5f3233feaaa7e",
+      "gameId": "g_000239",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5205880/",
+          "retrievedAt": "2026-11-13T03:46:01Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1f86a03aa753c4e60711117a99cbe2679f116c3424497d834ce774847ec58807"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:01Z",
+      "createdAt": "2026-11-13T03:46:01Z",
+      "updatedAt": "2026-11-13T03:46:01Z",
+      "lastCheckedAt": "2026-11-13T03:46:01Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 12
+        },
+        "rawText": "12 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_25b48a2e9a7912d7",
+      "gameId": "g_000239",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5205880/",
+          "retrievedAt": "2026-11-13T03:46:04Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:a2bf7d051fb08430dfce188fc1c5e2d8740826665927c2e45dccfa8d119fbe18"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:01Z",
+      "createdAt": "2026-11-13T03:46:01Z",
+      "updatedAt": "2026-11-13T03:46:01Z",
+      "lastCheckedAt": "2026-11-13T03:46:04Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_88a0bfb0dfb6cb46",
+      "gameId": "g_000239",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5205880/",
+          "retrievedAt": "2026-11-13T03:46:01Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1f86a03aa753c4e60711117a99cbe2679f116c3424497d834ce774847ec58807"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:01Z",
+      "createdAt": "2026-11-13T03:46:01Z",
+      "updatedAt": "2026-11-13T03:46:01Z",
+      "lastCheckedAt": "2026-11-13T03:46:01Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_adea9ab6106676bd",
+      "gameId": "g_000239",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5205880/",
+          "retrievedAt": "2026-11-13T03:46:01Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1f86a03aa753c4e60711117a99cbe2679f116c3424497d834ce774847ec58807"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:01Z",
+      "createdAt": "2026-11-13T03:46:01Z",
+      "updatedAt": "2026-11-13T03:46:01Z",
+      "lastCheckedAt": "2026-11-13T03:46:01Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5205880/"
+      }
+    },
+    {
+      "id": "c_bfcf96d0d58876ce",
+      "gameId": "g_000239",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5205880/",
+          "retrievedAt": "2026-11-13T03:46:01Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1f86a03aa753c4e60711117a99cbe2679f116c3424497d834ce774847ec58807"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-13T03:46:01Z",
+      "createdAt": "2026-11-13T03:46:01Z",
+      "updatedAt": "2026-11-13T03:46:01Z",
+      "lastCheckedAt": "2026-11-13T03:46:01Z",
+      "createdBy": "system",
+      "createdByRun": "43359055786",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5205880/f2a0603edd09251507938ea286c5a484820929e1/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Undealt のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Tail House"
+        }
+      }
+    }
+  ]
+}

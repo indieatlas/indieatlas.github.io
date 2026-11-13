@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000236",
+  "status": "candidate",
+  "title": {
+    "display": "ピースバイピース",
+    "original": "Piece by Piece",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "Piece by Piece",
+      "lang": "en",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 3179050
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3468410",
+      "kind": "demo"
+    }
+  ],
+  "developerIds": [
+    "dev_000336"
+  ],
+  "publisherIds": [
+    "dev_000337"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "independent-publisher",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://automaton-media.com/articles/newsjp/20261113-479045/",
+            "sourceId": "automaton",
+            "publishedAt": "2026-11-13T02:19:25Z",
+            "retrievedAt": "2026-11-13T03:35:13Z",
+            "quote": "No More Robotsは、元tinyBuildのMike Rose氏が2017年に立ち上げ、これまでに多数の人気タイトルを展開してきたパブリッシャーである。",
+            "originKey": "media:automaton-media.com",
+            "fetchHash": "sha256:eaff1100675605401b404b2f714ced7c210881ba551199f6bb057b294c5f3515"
+          }
+        ]
+      },
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://automaton-media.com/articles/newsjp/20261113-479045/",
+            "articleId": "a_5dcc0353c2df7c19",
+            "publishedAt": "2026-11-13T02:19:25Z",
+            "retrievedAt": "2026-11-13T03:35:13Z",
+            "locator": "article.games",
+            "originKey": "media:automaton-media.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-13T03:45:51Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3179050/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-13T03:35:23Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:89ce8683cc650800c42861c2337e17948d565cd29cc282d8b551a0f6962febd6"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3179050/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-13T03:35:23Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:89ce8683cc650800c42861c2337e17948d565cd29cc282d8b551a0f6962febd6"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3179050/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-13T03:35:23Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:89ce8683cc650800c42861c2337e17948d565cd29cc282d8b551a0f6962febd6"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "media",
+        "url": "https://automaton-media.com/articles/newsjp/20261113-479045/",
+        "sourceId": "automaton",
+        "publishedAt": "2026-11-13T02:19:25Z",
+        "retrievedAt": "2026-11-13T03:35:13Z",
+        "quote": "日本のNintendo Storeでは、No More Robotsのほうが『ピースバイピース』、Neon Polygonsのほうが『Piece by Piece』と、表記が区別されているようだ。",
+        "originKey": "media:automaton-media.com",
+        "fetchHash": "sha256:eaff1100675605401b404b2f714ced7c210881ba551199f6bb057b294c5f3515"
+      }
+    }
+  ],
+  "createdAt": "2026-11-13T03:45:51Z",
+  "updatedAt": "2026-11-13T03:45:51Z",
+  "createdByRun": "43359055786"
+}
