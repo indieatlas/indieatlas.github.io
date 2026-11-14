@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000253",
+  "status": "candidate",
+  "title": {
+    "display": "スロットバウンド - Slotbound",
+    "original": "Slotbound",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "スロットバウンド - Slotbound",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 4459590
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4906570",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "4906570",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://drive.google.com/drive/folders/1uGAy0KIUrUB0ndOyXkL0y-CEogN-F49I?usp=sharing",
+  "developerIds": [
+    "dev_000361"
+  ],
+  "publisherIds": [
+    "dev_000361"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4459590/",
+            "retrievedAt": "2026-11-14T03:36:12Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:0f1074c9fc8b7823d09698dafbf16d1646cab9ff5e64b4234cde0cd749520a4b"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-14T03:36:12Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4459590/",
+        "retrievedAt": "2026-11-14T03:36:12Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0f1074c9fc8b7823d09698dafbf16d1646cab9ff5e64b4234cde0cd749520a4b"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4459590/",
+        "retrievedAt": "2026-11-14T03:36:12Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0f1074c9fc8b7823d09698dafbf16d1646cab9ff5e64b4234cde0cd749520a4b"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4459590/",
+        "retrievedAt": "2026-11-14T03:36:12Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0f1074c9fc8b7823d09698dafbf16d1646cab9ff5e64b4234cde0cd749520a4b"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4459590/",
+        "retrievedAt": "2026-11-14T03:36:12Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0f1074c9fc8b7823d09698dafbf16d1646cab9ff5e64b4234cde0cd749520a4b"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4459590/",
+        "retrievedAt": "2026-11-14T03:36:12Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:0f1074c9fc8b7823d09698dafbf16d1646cab9ff5e64b4234cde0cd749520a4b"
+      }
+    }
+  ],
+  "createdAt": "2026-11-14T03:36:12Z",
+  "updatedAt": "2026-11-14T03:36:12Z",
+  "createdByRun": "43551223935"
+}

@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000247",
+  "status": "published",
+  "title": {
+    "display": "ロボガンビット",
+    "original": "Robo Fight",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "ロボガンビット",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 3892840
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4976670",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5362970",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5362970",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://drix-studios.com/",
+  "developerIds": [
+    "dev_000353"
+  ],
+  "publisherIds": [
+    "dev_000353"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/3892840/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-14T03:27:17Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:19af757ed0c259e48bbbbc1e669f486e013f11f1648d35dfd297fedebe3ec91b"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-14T03:36:10Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3892840/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-14T03:27:17Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:19af757ed0c259e48bbbbc1e669f486e013f11f1648d35dfd297fedebe3ec91b"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3892840/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-14T03:27:17Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:19af757ed0c259e48bbbbc1e669f486e013f11f1648d35dfd297fedebe3ec91b"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3892840/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-14T03:27:17Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:19af757ed0c259e48bbbbc1e669f486e013f11f1648d35dfd297fedebe3ec91b"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3892840/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-14T03:27:17Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:19af757ed0c259e48bbbbc1e669f486e013f11f1648d35dfd297fedebe3ec91b"
+      }
+    }
+  ],
+  "createdAt": "2026-11-14T03:36:10Z",
+  "addedAt": "2026-11-14",
+  "updatedAt": "2026-11-14T03:36:10Z",
+  "createdByRun": "43551223935"
+}

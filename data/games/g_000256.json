@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000256",
+  "status": "candidate",
+  "title": {
+    "display": "Dice Hoarder",
+    "original": "Dice Hoarder",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 3687090
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000366"
+  ],
+  "publisherIds": [
+    "dev_000366"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/3687090/",
+            "retrievedAt": "2026-11-14T03:36:25Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:5a8379ba285522b828f2800f3b02e77c1bef7ff3af412d21c241dc4839fd2d79"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-14T03:36:25Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3687090/",
+        "retrievedAt": "2026-11-14T03:36:25Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5a8379ba285522b828f2800f3b02e77c1bef7ff3af412d21c241dc4839fd2d79"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3687090/",
+        "retrievedAt": "2026-11-14T03:36:25Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5a8379ba285522b828f2800f3b02e77c1bef7ff3af412d21c241dc4839fd2d79"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3687090/",
+        "retrievedAt": "2026-11-14T03:36:25Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5a8379ba285522b828f2800f3b02e77c1bef7ff3af412d21c241dc4839fd2d79"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3687090/",
+        "retrievedAt": "2026-11-14T03:36:25Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5a8379ba285522b828f2800f3b02e77c1bef7ff3af412d21c241dc4839fd2d79"
+      }
+    }
+  ],
+  "createdAt": "2026-11-14T03:36:25Z",
+  "updatedAt": "2026-11-14T03:36:25Z",
+  "createdByRun": "43551223935"
+}

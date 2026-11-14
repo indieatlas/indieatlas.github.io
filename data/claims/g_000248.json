@@ -1,0 +1,402 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000248",
+  "claims": [
+    {
+      "id": "c_7b22090d3bd73358",
+      "gameId": "g_000248",
+      "scope": {
+        "platform": "linux",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/352720/",
+          "retrievedAt": "2026-11-14T03:37:01Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dab28ea175f63eb56ae2a6fe15db7ac1c12bfc7a644da93778ccdc6ad8259b59"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:01Z",
+      "createdAt": "2026-11-14T03:37:01Z",
+      "updatedAt": "2026-11-14T03:37:01Z",
+      "lastCheckedAt": "2026-11-14T03:37:01Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2024,
+          "month": 1,
+          "day": 22
+        },
+        "rawText": "22 Jan, 2024"
+      }
+    },
+    {
+      "id": "c_55255a81d2161675",
+      "gameId": "g_000248",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/352720/",
+          "retrievedAt": "2026-11-14T03:37:01Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dab28ea175f63eb56ae2a6fe15db7ac1c12bfc7a644da93778ccdc6ad8259b59"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:01Z",
+      "createdAt": "2026-11-14T03:37:01Z",
+      "updatedAt": "2026-11-14T03:37:01Z",
+      "lastCheckedAt": "2026-11-14T03:37:01Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2024,
+          "month": 1,
+          "day": 22
+        },
+        "rawText": "22 Jan, 2024"
+      }
+    },
+    {
+      "id": "c_8be65fb61ebe813e",
+      "gameId": "g_000248",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/352720/",
+          "retrievedAt": "2026-11-14T03:37:01Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dab28ea175f63eb56ae2a6fe15db7ac1c12bfc7a644da93778ccdc6ad8259b59"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:01Z",
+      "createdAt": "2026-11-14T03:37:01Z",
+      "updatedAt": "2026-11-14T03:37:01Z",
+      "lastCheckedAt": "2026-11-14T03:37:01Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2024,
+          "month": 1,
+          "day": 22
+        },
+        "rawText": "22 Jan, 2024"
+      }
+    },
+    {
+      "id": "c_67ebc7811d20281b",
+      "gameId": "g_000248",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/352720/",
+          "retrievedAt": "2026-11-14T03:37:04Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:05ef9440a47b874907c12c5c9eafff1095806efd7f4262b8cbec0628474a39db"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:01Z",
+      "createdAt": "2026-11-14T03:37:01Z",
+      "updatedAt": "2026-11-14T03:37:01Z",
+      "lastCheckedAt": "2026-11-14T03:37:04Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_afb99f6ca6728524",
+      "gameId": "g_000248",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/352720/",
+          "retrievedAt": "2026-11-14T03:37:01Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dab28ea175f63eb56ae2a6fe15db7ac1c12bfc7a644da93778ccdc6ad8259b59"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:01Z",
+      "createdAt": "2026-11-14T03:37:01Z",
+      "updatedAt": "2026-11-14T03:37:01Z",
+      "lastCheckedAt": "2026-11-14T03:37:01Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_b539e62df9399020",
+      "gameId": "g_000248",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/352720/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:28:07Z",
+          "quote": "Guide a civilization from the Stone Age to the Space Age in a city-building god game.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dab28ea175f63eb56ae2a6fe15db7ac1c12bfc7a644da93778ccdc6ad8259b59"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:28:07Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "summary",
+      "value": {
+        "ja": "石器時代から宇宙時代へと文明を導く、神の視点で遊ぶ都市建設ストラテジー。200種類以上の研究を進め、15種以上の神の力で信者「ナゲット」を守るか罰するかを選び、自動生成される惑星を開拓していく。"
+      }
+    },
+    {
+      "id": "c_5c6fd8b826ff6f19",
+      "gameId": "g_000248",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/352720/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:28:07Z",
+          "quote": "Guide a civilization from the Stone Age to the Space Age in a city-building god game.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dab28ea175f63eb56ae2a6fe15db7ac1c12bfc7a644da93778ccdc6ad8259b59"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:28:07Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "city-builder"
+      }
+    },
+    {
+      "id": "c_9a08d0b9d5bee9e1",
+      "gameId": "g_000248",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/352720/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:28:07Z",
+          "quote": "Discover and colonize a galaxy of procedurally generated planets, each with unique ecosystems and challenges to conquer.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dab28ea175f63eb56ae2a6fe15db7ac1c12bfc7a644da93778ccdc6ad8259b59"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:28:07Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "procedural-generation"
+      }
+    },
+    {
+      "id": "c_cdeccb0c0652b06c",
+      "gameId": "g_000248",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/352720/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:28:07Z",
+          "quote": "The Universim is a strategy city builder game with “God” elements where you guide a civilization (Nuggets) from the Stone Age to the Space Age.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dab28ea175f63eb56ae2a6fe15db7ac1c12bfc7a644da93778ccdc6ad8259b59"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:28:07Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "strategy"
+      }
+    },
+    {
+      "id": "c_d89f195bba748e93",
+      "gameId": "g_000248",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/352720/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:28:07Z",
+          "quote": "Manage resources, research technology, survive natural disasters and alien threats, use godly powers to protect or punish your creations, and colonize distant planets.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dab28ea175f63eb56ae2a6fe15db7ac1c12bfc7a644da93778ccdc6ad8259b59"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:28:07Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "space"
+      }
+    },
+    {
+      "id": "c_82cf071ac661e7aa",
+      "gameId": "g_000248",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/352720/",
+          "retrievedAt": "2026-11-14T03:37:01Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dab28ea175f63eb56ae2a6fe15db7ac1c12bfc7a644da93778ccdc6ad8259b59"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:01Z",
+      "createdAt": "2026-11-14T03:37:01Z",
+      "updatedAt": "2026-11-14T03:37:01Z",
+      "lastCheckedAt": "2026-11-14T03:37:01Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/352720/"
+      }
+    },
+    {
+      "id": "c_37a7f8c81297d326",
+      "gameId": "g_000248",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/352720/",
+          "retrievedAt": "2026-11-14T03:37:01Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dab28ea175f63eb56ae2a6fe15db7ac1c12bfc7a644da93778ccdc6ad8259b59"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:01Z",
+      "createdAt": "2026-11-14T03:37:01Z",
+      "updatedAt": "2026-11-14T03:37:01Z",
+      "lastCheckedAt": "2026-11-14T03:37:01Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/352720/20387acc49871cac817dc1bd288eb9a8049b20be/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "The Universim のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Crytivo"
+        }
+      }
+    }
+  ]
+}

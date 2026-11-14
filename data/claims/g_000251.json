@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000251",
+  "claims": [
+    {
+      "id": "c_c0b868f43d520630",
+      "gameId": "g_000251",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3285880/",
+          "retrievedAt": "2026-11-14T03:37:15Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f20add6d7341449277ec2dc1c88decae438f897cd0f7e308ccdbde5efe5afbf5"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:15Z",
+      "createdAt": "2026-11-14T03:37:15Z",
+      "updatedAt": "2026-11-14T03:37:15Z",
+      "lastCheckedAt": "2026-11-14T03:37:15Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 11
+        },
+        "rawText": "11 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_16badc237f1a5c77",
+      "gameId": "g_000251",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3285880/",
+          "retrievedAt": "2026-11-14T03:37:18Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e33adc739222d2d21d249d802797e025fd43e066ae95cc203fc82bec946876d7"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:15Z",
+      "createdAt": "2026-11-14T03:37:15Z",
+      "updatedAt": "2026-11-14T03:37:15Z",
+      "lastCheckedAt": "2026-11-14T03:37:18Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_178f7eb8c393cf42",
+      "gameId": "g_000251",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3285880/",
+          "retrievedAt": "2026-11-14T03:37:15Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f20add6d7341449277ec2dc1c88decae438f897cd0f7e308ccdbde5efe5afbf5"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:15Z",
+      "createdAt": "2026-11-14T03:37:15Z",
+      "updatedAt": "2026-11-14T03:37:15Z",
+      "lastCheckedAt": "2026-11-14T03:37:15Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_bf98cd852aa0c8d8",
+      "gameId": "g_000251",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3285880/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:30:40Z",
+          "quote": "月明かりに導かれ、隠れた真実を解き明かし、こじんまりとしたミステリアスなオープンワールドを歩き回ろう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f20add6d7341449277ec2dc1c88decae438f897cd0f7e308ccdbde5efe5afbf5"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3285880/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:30:40Z",
+          "quote": "シンプルなパズルから暗号や隠れゲームメカニクスまで、何層にも渡る秘密の数々。ゲームはエンドロール後も続く...",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f20add6d7341449277ec2dc1c88decae438f897cd0f7e308ccdbde5efe5afbf5"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:30:40Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "summary",
+      "value": {
+        "ja": "月明かりに導かれ、こじんまりとしたミステリアスなオープンワールドを探索するノンリニア型2Dゲーム。明確な指示はなく、パズルや暗号、隠されたゲームメカニクスを自力で解き明かし、エンドロール後も秘密が続く。"
+      }
+    },
+    {
+      "id": "c_25f98e303dc539dd",
+      "gameId": "g_000251",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3285880/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:30:40Z",
+          "quote": "パズルを解き、謎めいたアイテムを見つけ、目と鼻の先に隠されている秘密を暴きながら、自分の目標を推測して達成しよう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f20add6d7341449277ec2dc1c88decae438f897cd0f7e308ccdbde5efe5afbf5"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:30:40Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_78b00ee7959116dd",
+      "gameId": "g_000251",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3285880/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:30:40Z",
+          "quote": "月明かりに導かれ、隠れた真実を解き明かし、こじんまりとしたミステリアスなオープンワールドを歩き回ろう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f20add6d7341449277ec2dc1c88decae438f897cd0f7e308ccdbde5efe5afbf5"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:30:40Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_83aa3f4a48792990",
+      "gameId": "g_000251",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3285880/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:30:40Z",
+          "quote": "プレイヤー主体の探索と進行。自分のペースで探索・発見しよう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f20add6d7341449277ec2dc1c88decae438f897cd0f7e308ccdbde5efe5afbf5"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:30:40Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_8700e134a9ff03b1",
+      "gameId": "g_000251",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3285880/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:30:40Z",
+          "quote": "月明かりに導かれ、隠れた真実を解き明かし、こじんまりとしたミステリアスなオープンワールドを歩き回ろう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f20add6d7341449277ec2dc1c88decae438f897cd0f7e308ccdbde5efe5afbf5"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:30:40Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "open-world"
+      }
+    },
+    {
+      "id": "c_f2d583c52085cd73",
+      "gameId": "g_000251",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3285880/",
+          "retrievedAt": "2026-11-14T03:37:15Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f20add6d7341449277ec2dc1c88decae438f897cd0f7e308ccdbde5efe5afbf5"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:15Z",
+      "createdAt": "2026-11-14T03:37:15Z",
+      "updatedAt": "2026-11-14T03:37:15Z",
+      "lastCheckedAt": "2026-11-14T03:37:15Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3285880/"
+      }
+    },
+    {
+      "id": "c_76f428a4768d2a70",
+      "gameId": "g_000251",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3285880/",
+          "retrievedAt": "2026-11-14T03:37:15Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f20add6d7341449277ec2dc1c88decae438f897cd0f7e308ccdbde5efe5afbf5"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:15Z",
+      "createdAt": "2026-11-14T03:37:15Z",
+      "updatedAt": "2026-11-14T03:37:15Z",
+      "lastCheckedAt": "2026-11-14T03:37:15Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3285880/d47979f80e7e19ff0ffca75f42ba98a6238a3ce4/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "MONOMOON のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Gentle Giant"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000246",
+  "claims": [
+    {
+      "id": "c_0f011d8b7d6b1bea",
+      "gameId": "g_000246",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5477370/",
+          "retrievedAt": "2026-11-14T03:36:52Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dbdc9a3533ed2da40343882333390fabc022de3425e36ec42a2a137f6fe8e37b"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:52Z",
+      "createdAt": "2026-11-14T03:36:52Z",
+      "updatedAt": "2026-11-14T03:36:52Z",
+      "lastCheckedAt": "2026-11-14T03:36:52Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "release",
+      "value": {
+        "status": "tba",
+        "rawText": "Coming soon"
+      }
+    },
+    {
+      "id": "c_768d320a2bdecaf2",
+      "gameId": "g_000246",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5477370/",
+          "retrievedAt": "2026-11-14T03:36:55Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b023a38b48b00c297f4578f6126d020a92fcfded8ea99860246b2637eda6fda0"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:52Z",
+      "createdAt": "2026-11-14T03:36:52Z",
+      "updatedAt": "2026-11-14T03:36:52Z",
+      "lastCheckedAt": "2026-11-14T03:36:55Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_f55a0f211b39c04e",
+      "gameId": "g_000246",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5477370/",
+          "retrievedAt": "2026-11-14T03:36:52Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dbdc9a3533ed2da40343882333390fabc022de3425e36ec42a2a137f6fe8e37b"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:52Z",
+      "createdAt": "2026-11-14T03:36:52Z",
+      "updatedAt": "2026-11-14T03:36:52Z",
+      "lastCheckedAt": "2026-11-14T03:36:52Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_ca78b97686cac285",
+      "gameId": "g_000246",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5477370/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:27:08Z",
+          "quote": "腕だけの生き物になって、崖を登る。指で岩の角をつかみ、手のひらで体を支え、腕の力で体を引き上げる。ときどき落ちるかもね。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dbdc9a3533ed2da40343882333390fabc022de3425e36ec42a2a137f6fe8e37b"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:27:08Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "summary",
+      "value": {
+        "ja": "腕だけの生き物となり、マウスで手を動かして岩をつかみ、崖の頂上を目指す物理演算クライミングゲーム。片手で体を支えてもう片方の手を伸ばし、潮だまりから海の洞窟までを登っていく。"
+      }
+    },
+    {
+      "id": "c_40f99ad4449f8328",
+      "gameId": "g_000246",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5477370/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:27:08Z",
+          "quote": "波に削られた磯を登り、浮いた岩を渡り、上から光が差す暗い洞窟へ。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dbdc9a3533ed2da40343882333390fabc022de3425e36ec42a2a137f6fe8e37b"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:27:08Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "ocean"
+      }
+    },
+    {
+      "id": "c_8d1872246d01750f",
+      "gameId": "g_000246",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5477370/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:27:08Z",
+          "quote": "波に削られた磯を登り、浮いた岩を渡り、上から光が差す暗い洞窟へ。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dbdc9a3533ed2da40343882333390fabc022de3425e36ec42a2a137f6fe8e37b"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:27:08Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "nature"
+      }
+    },
+    {
+      "id": "c_a4fe8b815196a9d3",
+      "gameId": "g_000246",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5477370/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:27:08Z",
+          "quote": "腕だけの生き物になって、崖を登る。指で岩の角をつかみ、手のひらで体を支え、腕の力で体を引き上げる。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dbdc9a3533ed2da40343882333390fabc022de3425e36ec42a2a137f6fe8e37b"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:27:08Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "climbing"
+      }
+    },
+    {
+      "id": "c_b1b170ff9ce634ee",
+      "gameId": "g_000246",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5477370/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:27:08Z",
+          "quote": "Only Arms: Grab, Sometimes Fall is a physics climbing game about a creature that has two arms and nothing else.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dbdc9a3533ed2da40343882333390fabc022de3425e36ec42a2a137f6fe8e37b"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:27:08Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_cfd49aa30381afb9",
+      "gameId": "g_000246",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5477370/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:27:08Z",
+          "quote": "Only Arms: Grab, Sometimes Fall is a physics climbing game about a creature that has two arms and nothing else.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dbdc9a3533ed2da40343882333390fabc022de3425e36ec42a2a137f6fe8e37b"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:27:08Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "physics"
+      }
+    },
+    {
+      "id": "c_f3289b51dacbbbc5",
+      "gameId": "g_000246",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5477370/",
+          "retrievedAt": "2026-11-14T03:36:52Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dbdc9a3533ed2da40343882333390fabc022de3425e36ec42a2a137f6fe8e37b"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:52Z",
+      "createdAt": "2026-11-14T03:36:52Z",
+      "updatedAt": "2026-11-14T03:36:52Z",
+      "lastCheckedAt": "2026-11-14T03:36:52Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5477370/"
+      }
+    },
+    {
+      "id": "c_2ab75e05d747b224",
+      "gameId": "g_000246",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5477370/",
+          "retrievedAt": "2026-11-14T03:36:52Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:dbdc9a3533ed2da40343882333390fabc022de3425e36ec42a2a137f6fe8e37b"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:52Z",
+      "createdAt": "2026-11-14T03:36:52Z",
+      "updatedAt": "2026-11-14T03:36:52Z",
+      "lastCheckedAt": "2026-11-14T03:36:52Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5477370/7dffad2feb79fca4ba807d20af7359a45c7a34f2/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Only Arms: Grab, Sometimes Fall のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "世紀末どっこいしょ"
+        }
+      }
+    }
+  ]
+}

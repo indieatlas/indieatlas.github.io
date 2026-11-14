@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000248",
+  "status": "published",
+  "title": {
+    "display": "The Universim",
+    "original": "The Universim",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 352720
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "396940",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000354"
+  ],
+  "publisherIds": [
+    "dev_000354"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/352720/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-14T03:28:07Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:dab28ea175f63eb56ae2a6fe15db7ac1c12bfc7a644da93778ccdc6ad8259b59"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-14T03:36:10Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/352720/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-14T03:28:07Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dab28ea175f63eb56ae2a6fe15db7ac1c12bfc7a644da93778ccdc6ad8259b59"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/352720/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-14T03:28:07Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dab28ea175f63eb56ae2a6fe15db7ac1c12bfc7a644da93778ccdc6ad8259b59"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/352720/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-14T03:28:07Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dab28ea175f63eb56ae2a6fe15db7ac1c12bfc7a644da93778ccdc6ad8259b59"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/352720/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-14T03:28:07Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dab28ea175f63eb56ae2a6fe15db7ac1c12bfc7a644da93778ccdc6ad8259b59"
+      }
+    }
+  ],
+  "createdAt": "2026-11-14T03:36:10Z",
+  "addedAt": "2026-11-14",
+  "updatedAt": "2026-11-14T03:36:10Z",
+  "createdByRun": "43551223935"
+}

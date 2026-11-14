@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000256",
+  "claims": [
+    {
+      "id": "c_e4c8773bd1bc2e3a",
+      "gameId": "g_000256",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3687090/",
+          "retrievedAt": "2026-11-14T03:36:25Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:5a8379ba285522b828f2800f3b02e77c1bef7ff3af412d21c241dc4839fd2d79"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:25Z",
+      "createdAt": "2026-11-14T03:36:25Z",
+      "updatedAt": "2026-11-14T03:36:25Z",
+      "lastCheckedAt": "2026-11-14T03:36:25Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 13
+        },
+        "rawText": "13 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_dcbd2c4c17544b4c",
+      "gameId": "g_000256",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3687090/",
+          "retrievedAt": "2026-11-14T03:36:28Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4ed6aac0bc628b896e09fcba9aa5b41d5b676b45369a0267d05c6314eb7c7eb7"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:25Z",
+      "createdAt": "2026-11-14T03:36:25Z",
+      "updatedAt": "2026-11-14T03:36:25Z",
+      "lastCheckedAt": "2026-11-14T03:36:28Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_5431c163bd611dca",
+      "gameId": "g_000256",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3687090/",
+          "retrievedAt": "2026-11-14T03:36:25Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:5a8379ba285522b828f2800f3b02e77c1bef7ff3af412d21c241dc4839fd2d79"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:25Z",
+      "createdAt": "2026-11-14T03:36:25Z",
+      "updatedAt": "2026-11-14T03:36:25Z",
+      "lastCheckedAt": "2026-11-14T03:36:25Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_17890b89e3d8fec1",
+      "gameId": "g_000256",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3687090/",
+          "retrievedAt": "2026-11-14T03:36:25Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:5a8379ba285522b828f2800f3b02e77c1bef7ff3af412d21c241dc4839fd2d79"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:25Z",
+      "createdAt": "2026-11-14T03:36:25Z",
+      "updatedAt": "2026-11-14T03:36:25Z",
+      "lastCheckedAt": "2026-11-14T03:36:25Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3687090/"
+      }
+    },
+    {
+      "id": "c_2355f48fe3d53c88",
+      "gameId": "g_000256",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3687090/",
+          "retrievedAt": "2026-11-14T03:36:25Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:5a8379ba285522b828f2800f3b02e77c1bef7ff3af412d21c241dc4839fd2d79"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:25Z",
+      "createdAt": "2026-11-14T03:36:25Z",
+      "updatedAt": "2026-11-14T03:36:25Z",
+      "lastCheckedAt": "2026-11-14T03:36:25Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3687090/af03fa8cadd860459554ac85a2e47c47190c9f90/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Dice Hoarder のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "DieCorp Games"
+        }
+      }
+    }
+  ]
+}

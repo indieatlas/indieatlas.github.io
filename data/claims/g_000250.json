@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000250",
+  "claims": [
+    {
+      "id": "c_5473a2b06d07250f",
+      "gameId": "g_000250",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2882610/",
+          "retrievedAt": "2026-11-14T03:37:10Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:59d3fbab1344260b6668c2a91a576a61411b1003c24a6c7706e75bc2e50bdb12"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:10Z",
+      "createdAt": "2026-11-14T03:37:10Z",
+      "updatedAt": "2026-11-14T03:37:10Z",
+      "lastCheckedAt": "2026-11-14T03:37:10Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2024,
+          "month": 10,
+          "day": 17
+        },
+        "rawText": "17 Oct, 2024"
+      }
+    },
+    {
+      "id": "c_ab1379e561f0d351",
+      "gameId": "g_000250",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2882610/",
+          "retrievedAt": "2026-11-14T03:37:13Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6c704336e85b8fa19b1ca7dc862233798537603a6aed54dd0a66f84b58528861"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:10Z",
+      "createdAt": "2026-11-14T03:37:10Z",
+      "updatedAt": "2026-11-14T03:37:10Z",
+      "lastCheckedAt": "2026-11-14T03:37:13Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_de637bbf6d992cfb",
+      "gameId": "g_000250",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2882610/",
+          "retrievedAt": "2026-11-14T03:37:10Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:59d3fbab1344260b6668c2a91a576a61411b1003c24a6c7706e75bc2e50bdb12"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:10Z",
+      "createdAt": "2026-11-14T03:37:10Z",
+      "updatedAt": "2026-11-14T03:37:10Z",
+      "lastCheckedAt": "2026-11-14T03:37:10Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_77479f70c422264f",
+      "gameId": "g_000250",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2882610/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:28:52Z",
+          "quote": "You can’t fight what hunts you. Build makeshift hideouts to evade the cursed monsters of Radu Castle.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:59d3fbab1344260b6668c2a91a576a61411b1003c24a6c7706e75bc2e50bdb12"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:28:52Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "summary",
+      "value": {
+        "ja": "呪われたラドゥ城を舞台に、怪物と戦わず隠れて生き延びる一人称サバイバルホラー。資源を集めて即席の隠れ家を作り、怪物ごとに異なる習性を見極めながら、ドリネラとして城の秘密と過去のトラウマに向き合う。"
+      }
+    },
+    {
+      "id": "c_19127333dd8e6b0e",
+      "gameId": "g_000250",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2882610/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:28:52Z",
+          "quote": "Scavenge resources and build your own hideouts, while being hunted.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:59d3fbab1344260b6668c2a91a576a61411b1003c24a6c7706e75bc2e50bdb12"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:28:52Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "crafting"
+      }
+    },
+    {
+      "id": "c_21b701cc3d02da5a",
+      "gameId": "g_000250",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2882610/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:28:52Z",
+          "quote": "Immerse yourself in a deep story of trauma and survival.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:59d3fbab1344260b6668c2a91a576a61411b1003c24a6c7706e75bc2e50bdb12"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:28:52Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "horror"
+      }
+    },
+    {
+      "id": "c_9ed81d7d852da15a",
+      "gameId": "g_000250",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2882610/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:28:52Z",
+          "quote": "Discover and explore every corner of this vast Romanian castle.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:59d3fbab1344260b6668c2a91a576a61411b1003c24a6c7706e75bc2e50bdb12"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:28:52Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_a20a5fd950eef2b4",
+      "gameId": "g_000250",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2882610/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:28:52Z",
+          "quote": "A desperate plea has caused you to return to Radu castle. Face your abuser's hellish wrath.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:59d3fbab1344260b6668c2a91a576a61411b1003c24a6c7706e75bc2e50bdb12"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:28:52Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_e18badad9773721c",
+      "gameId": "g_000250",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2882610/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:28:52Z",
+          "quote": "Between the stalking and hiding, test your wits with light puzzling.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:59d3fbab1344260b6668c2a91a576a61411b1003c24a6c7706e75bc2e50bdb12"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:28:52Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_ef80da2184e63376",
+      "gameId": "g_000250",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2882610/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:28:52Z",
+          "quote": "A curse has placed Radu Castle in peril.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:59d3fbab1344260b6668c2a91a576a61411b1003c24a6c7706e75bc2e50bdb12"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:28:52Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "dark"
+      }
+    },
+    {
+      "id": "c_faf188acf9d5d514",
+      "gameId": "g_000250",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2882610/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:28:52Z",
+          "quote": "Immerse yourself in a deep story of trauma and survival.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:59d3fbab1344260b6668c2a91a576a61411b1003c24a6c7706e75bc2e50bdb12"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:28:52Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "survival"
+      }
+    },
+    {
+      "id": "c_b69d305b8226da39",
+      "gameId": "g_000250",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2882610/",
+          "retrievedAt": "2026-11-14T03:37:10Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:59d3fbab1344260b6668c2a91a576a61411b1003c24a6c7706e75bc2e50bdb12"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:10Z",
+      "createdAt": "2026-11-14T03:37:10Z",
+      "updatedAt": "2026-11-14T03:37:10Z",
+      "lastCheckedAt": "2026-11-14T03:37:10Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2882610/"
+      }
+    },
+    {
+      "id": "c_249f198df3ba8fe6",
+      "gameId": "g_000250",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2882610/",
+          "retrievedAt": "2026-11-14T03:37:10Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:59d3fbab1344260b6668c2a91a576a61411b1003c24a6c7706e75bc2e50bdb12"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:10Z",
+      "createdAt": "2026-11-14T03:37:10Z",
+      "updatedAt": "2026-11-14T03:37:10Z",
+      "lastCheckedAt": "2026-11-14T03:37:10Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2882610/8485005cb04151f604e58d040c8357e604744e55/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Confronted のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Grumpy Rock Studios"
+        }
+      }
+    }
+  ]
+}

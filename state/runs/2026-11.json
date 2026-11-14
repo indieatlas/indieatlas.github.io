@@ -669,7 +669,7 @@
         "reasoningTokens": 124589
       },
       "publish": {
-        "status": "pending"
+        "status": "deployed"
       },
       "pending": [],
       "rejections": [
@@ -700,6 +700,80 @@
         {
           "rule": "V-S02",
           "count": 95
+        }
+      ]
+    },
+    {
+      "runId": "43551223935",
+      "runAttempt": 1,
+      "researchAttempt": 1,
+      "trigger": "schedule",
+      "mode": "full",
+      "startedAt": "2026-11-14T03:21:56Z",
+      "finishedAt": "2026-11-14T03:36:10Z",
+      "triggerCommit": "a26b21acbab589a37054f59a608993983d5f7d54",
+      "outcome": "success",
+      "stopReason": "completed",
+      "counts": {
+        "sourcesFetched": 9,
+        "sourcesFailed": 0,
+        "articlesCollected": 221,
+        "articlesLinked": 17,
+        "gamesCreated": 16,
+        "gamesPublished": 10,
+        "claimsAdded": 179,
+        "claimsAdopted": 76,
+        "claimsConflicted": 0,
+        "relationsAdded": 0,
+        "collectionsChanged": 0,
+        "tasksCreated": 89,
+        "tasksDone": 38,
+        "tasksBlocked": 0,
+        "operationsRejected": 98
+      },
+      "cost": {
+        "llmUsd": 0.131498,
+        "inputTokens": 3128266,
+        "outputTokens": 176632,
+        "cachedInputTokens": 2422144,
+        "reasoningTokens": 86481
+      },
+      "publish": {
+        "status": "pending"
+      },
+      "pending": [],
+      "rejections": [
+        {
+          "rule": "V-C04",
+          "count": 1
+        },
+        {
+          "rule": "V-C06",
+          "count": 10
+        },
+        {
+          "rule": "V-E02",
+          "count": 2
+        },
+        {
+          "rule": "V-E03",
+          "count": 4
+        },
+        {
+          "rule": "V-E05",
+          "count": 2
+        },
+        {
+          "rule": "V-I05",
+          "count": 1
+        },
+        {
+          "rule": "V-L01",
+          "count": 8
+        },
+        {
+          "rule": "V-S02",
+          "count": 70
         }
       ]
     }

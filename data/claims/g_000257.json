@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000257",
+  "claims": [
+    {
+      "id": "c_38d8a5c9f36d9f4e",
+      "gameId": "g_000257",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2670630/",
+          "retrievedAt": "2026-11-14T03:36:29Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7a3b6ad3d21464f3eeeff4b08225ebdb0889a909bf3668867de35d1846eb266"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:29Z",
+      "createdAt": "2026-11-14T03:36:29Z",
+      "updatedAt": "2026-11-14T03:36:29Z",
+      "lastCheckedAt": "2026-11-14T03:36:29Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 6,
+          "day": 19
+        },
+        "rawText": "19 Jun, 2025"
+      }
+    },
+    {
+      "id": "c_efb4e503501a6f6d",
+      "gameId": "g_000257",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2670630/",
+          "retrievedAt": "2026-11-14T03:36:29Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7a3b6ad3d21464f3eeeff4b08225ebdb0889a909bf3668867de35d1846eb266"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:29Z",
+      "createdAt": "2026-11-14T03:36:29Z",
+      "updatedAt": "2026-11-14T03:36:29Z",
+      "lastCheckedAt": "2026-11-14T03:36:29Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2025,
+          "month": 6,
+          "day": 19
+        },
+        "rawText": "19 Jun, 2025"
+      }
+    },
+    {
+      "id": "c_726f327262bd15ab",
+      "gameId": "g_000257",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2670630/",
+          "retrievedAt": "2026-11-14T03:36:33Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2041348e6f76d79b6f35b0d68b5de5075fe2e8360b5849432bcdc014eed9ffa4"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:29Z",
+      "createdAt": "2026-11-14T03:36:29Z",
+      "updatedAt": "2026-11-14T03:36:29Z",
+      "lastCheckedAt": "2026-11-14T03:36:33Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_70a2f4ecdbe26962",
+      "gameId": "g_000257",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2670630/",
+          "retrievedAt": "2026-11-14T03:36:29Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7a3b6ad3d21464f3eeeff4b08225ebdb0889a909bf3668867de35d1846eb266"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:29Z",
+      "createdAt": "2026-11-14T03:36:29Z",
+      "updatedAt": "2026-11-14T03:36:29Z",
+      "lastCheckedAt": "2026-11-14T03:36:29Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_8e73a59a54bae816",
+      "gameId": "g_000257",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2670630/",
+          "retrievedAt": "2026-11-14T03:36:29Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7a3b6ad3d21464f3eeeff4b08225ebdb0889a909bf3668867de35d1846eb266"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:29Z",
+      "createdAt": "2026-11-14T03:36:29Z",
+      "updatedAt": "2026-11-14T03:36:29Z",
+      "lastCheckedAt": "2026-11-14T03:36:29Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2670630/"
+      }
+    },
+    {
+      "id": "c_a5e4c91c87382db6",
+      "gameId": "g_000257",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2670630/",
+          "retrievedAt": "2026-11-14T03:36:29Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b7a3b6ad3d21464f3eeeff4b08225ebdb0889a909bf3668867de35d1846eb266"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:29Z",
+      "createdAt": "2026-11-14T03:36:29Z",
+      "updatedAt": "2026-11-14T03:36:29Z",
+      "lastCheckedAt": "2026-11-14T03:36:29Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2670630/267eef055b0e5d45cb1c874f816a31dded4bb88e/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Supermarket Simulator のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Nokta Games"
+        }
+      }
+    }
+  ]
+}

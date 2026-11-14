@@ -1,0 +1,382 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000243",
+  "claims": [
+    {
+      "id": "c_cf2a9684fd3703f4",
+      "gameId": "g_000243",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5172300/",
+          "retrievedAt": "2026-11-14T03:36:39Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8518a417513634b608b0be10654f7993e449fd13f00f72a64b5388bfb475f3c"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:39Z",
+      "createdAt": "2026-11-14T03:36:39Z",
+      "updatedAt": "2026-11-14T03:36:39Z",
+      "lastCheckedAt": "2026-11-14T03:36:39Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "year",
+          "year": 2027
+        },
+        "rawText": "2027"
+      }
+    },
+    {
+      "id": "c_d60d9acdd615c415",
+      "gameId": "g_000243",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5172300/",
+          "retrievedAt": "2026-11-14T03:36:42Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:59959ff1ab086fe7ac007c07be33a76d3d4e3405da2b53a7d3182233d3e20f5f"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:39Z",
+      "createdAt": "2026-11-14T03:36:39Z",
+      "updatedAt": "2026-11-14T03:36:39Z",
+      "lastCheckedAt": "2026-11-14T03:36:42Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "no",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_a6dd8d87b7c311d1",
+      "gameId": "g_000243",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5172300/",
+          "retrievedAt": "2026-11-14T03:36:39Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8518a417513634b608b0be10654f7993e449fd13f00f72a64b5388bfb475f3c"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:39Z",
+      "createdAt": "2026-11-14T03:36:39Z",
+      "updatedAt": "2026-11-14T03:36:39Z",
+      "lastCheckedAt": "2026-11-14T03:36:39Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_5bca4cac3d369de5",
+      "gameId": "g_000243",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5172300/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:26:25Z",
+          "quote": "《I Am Not a Witch》is a narrative-driven adventure game. You play as a herbalist living under an assumed name, evading witch hunts.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8518a417513634b608b0be10654f7993e449fd13f00f72a64b5388bfb475f3c"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:26:25Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "summary",
+      "value": {
+        "ja": "魔女狩りが横行する時代を舞台に、逃亡中の薬草医の女性となって生き延びる物語重視のアドベンチャー。20種類以上の薬の調合や情報収集、村人との駆け引きで処刑の運命を変えていく。"
+      }
+    },
+    {
+      "id": "c_1d9290111f70a7d4",
+      "gameId": "g_000243",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5172300/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:26:25Z",
+          "quote": "In this age, anyone may be falsely accused of witchcraft and sent to the scaffold.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8518a417513634b608b0be10654f7993e449fd13f00f72a64b5388bfb475f3c"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:26:25Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "dark"
+      }
+    },
+    {
+      "id": "c_2bdc42d37f7366cf",
+      "gameId": "g_000243",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5172300/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:26:25Z",
+          "quote": "《I Am Not a Witch》is a narrative-driven adventure game. You play as a herbalist living under an assumed name, evading witch hunts.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8518a417513634b608b0be10654f7993e449fd13f00f72a64b5388bfb475f3c"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:26:25Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_4b06e437933b210a",
+      "gameId": "g_000243",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5172300/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:26:25Z",
+          "quote": "Brew herbs to alter fate. More than twenty recipes. They can heal, or silence people forever.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8518a417513634b608b0be10654f7993e449fd13f00f72a64b5388bfb475f3c"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:26:25Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "magic"
+      }
+    },
+    {
+      "id": "c_98471fd9461a00e1",
+      "gameId": "g_000243",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5172300/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:26:25Z",
+          "quote": "《I Am Not a Witch》is a narrative-driven adventure game. You play as a herbalist living under an assumed name, evading witch hunts.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8518a417513634b608b0be10654f7993e449fd13f00f72a64b5388bfb475f3c"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:26:25Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_dda2bf904fb88c09",
+      "gameId": "g_000243",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5172300/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:26:25Z",
+          "quote": "\"A woman shall lead the witches and found a new nation.\" A witch hunt began with a falsified prophecy.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8518a417513634b608b0be10654f7993e449fd13f00f72a64b5388bfb475f3c"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:26:25Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_f60b08a9b7e38044",
+      "gameId": "g_000243",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5172300/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:26:25Z",
+          "quote": "Every word may be remembered; every silence will be interpreted.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8518a417513634b608b0be10654f7993e449fd13f00f72a64b5388bfb475f3c"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:26:25Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_565e63f1518df15d",
+      "gameId": "g_000243",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5172300/",
+          "retrievedAt": "2026-11-14T03:36:39Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8518a417513634b608b0be10654f7993e449fd13f00f72a64b5388bfb475f3c"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:39Z",
+      "createdAt": "2026-11-14T03:36:39Z",
+      "updatedAt": "2026-11-14T03:36:39Z",
+      "lastCheckedAt": "2026-11-14T03:36:39Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5172300/"
+      }
+    },
+    {
+      "id": "c_723a8d6dc3589698",
+      "gameId": "g_000243",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5172300/",
+          "retrievedAt": "2026-11-14T03:36:39Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8518a417513634b608b0be10654f7993e449fd13f00f72a64b5388bfb475f3c"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:39Z",
+      "createdAt": "2026-11-14T03:36:39Z",
+      "updatedAt": "2026-11-14T03:36:39Z",
+      "lastCheckedAt": "2026-11-14T03:36:39Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5172300/8e731f372abe3ef43451effd6425985f1994851c/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "我不是女巫 のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "PinkScythe"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000244",
+  "status": "published",
+  "title": {
+    "display": "Love Locks",
+    "original": "Love Locks",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5288650
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000349"
+  ],
+  "publisherIds": [
+    "dev_000350"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "independent-publisher",
+        "note": "販売元Blue Brain Gamesは自らをインディーのパズルゲームスタジオと説明している",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.bluebraingames.com/",
+            "retrievedAt": "2026-11-14T03:26:26Z",
+            "quote": "We are an indie puzzle games studio with great people, proven technology and sense for details.",
+            "originKey": "media:bluebraingames.com",
+            "fetchHash": "sha256:8a8f1caca87409ef6f1c34af4c12dbd30e289083d5c81d4814b9912f763ca554"
+          }
+        ]
+      },
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://automaton-media.com/articles/newsjp/20261114-479254/",
+            "articleId": "a_c4afbd1d516f1465",
+            "publishedAt": "2026-11-14T03:14:23Z",
+            "retrievedAt": "2026-11-14T03:25:52Z",
+            "locator": "article.games",
+            "originKey": "media:automaton-media.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-14T03:36:10Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5288650/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-14T03:25:59Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:6c2ef504c16515fdf7d659430308f6dd9a0df9615e9f566da7818228f0f14093"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5288650/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-14T03:25:59Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:6c2ef504c16515fdf7d659430308f6dd9a0df9615e9f566da7818228f0f14093"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5288650/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-14T03:25:59Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:6c2ef504c16515fdf7d659430308f6dd9a0df9615e9f566da7818228f0f14093"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5288650/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-14T03:25:59Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:6c2ef504c16515fdf7d659430308f6dd9a0df9615e9f566da7818228f0f14093"
+      }
+    }
+  ],
+  "createdAt": "2026-11-14T03:36:10Z",
+  "addedAt": "2026-11-14",
+  "updatedAt": "2026-11-14T03:36:10Z",
+  "createdByRun": "43551223935"
+}

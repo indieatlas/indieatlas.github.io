@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000249",
+  "status": "candidate",
+  "title": {
+    "display": "Handmancers",
+    "original": "Handmancers",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 2423290
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "2451240",
+      "kind": "demo"
+    }
+  ],
+  "developerIds": [
+    "dev_000355"
+  ],
+  "publisherIds": [
+    "dev_000355",
+    "dev_000356"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/2423290/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-14T03:28:01Z",
+            "locator": "steam:appdetails.publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:e38f3cbcc975da80d45892508b0c8ed40e82c03ccc1a8852f8c3a0e9321fc0ed"
+          }
+        ]
+      },
+      {
+        "code": "independent-publisher",
+        "note": "インディー向けのマーケティング・パブリッシングエージェンシーであるHuman Qube Gamesと共同でパブリッシング",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.gamespark.jp/article/2026/11/13/174816.html",
+            "sourceId": "gamespark",
+            "publishedAt": "2026-11-12T17:00:03Z",
+            "retrievedAt": "2026-11-14T03:27:51Z",
+            "quote": "パブリッシングはインディーゲームのマーケティング・パブリッシングエージェンシーであるHuman Qube Gamesと共同で行われています。",
+            "originKey": "media:gamespark.jp",
+            "fetchHash": "sha256:48996bef947c8c4767100becae7e434569c502bdf5b63fe44718daffc5e7309e"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-14T03:36:10Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2423290/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-14T03:28:01Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e38f3cbcc975da80d45892508b0c8ed40e82c03ccc1a8852f8c3a0e9321fc0ed"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2423290/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-14T03:28:01Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e38f3cbcc975da80d45892508b0c8ed40e82c03ccc1a8852f8c3a0e9321fc0ed"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2423290/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-14T03:28:01Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e38f3cbcc975da80d45892508b0c8ed40e82c03ccc1a8852f8c3a0e9321fc0ed"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2423290/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-14T03:28:01Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e38f3cbcc975da80d45892508b0c8ed40e82c03ccc1a8852f8c3a0e9321fc0ed"
+      }
+    }
+  ],
+  "createdAt": "2026-11-14T03:36:10Z",
+  "updatedAt": "2026-11-14T03:37:05Z",
+  "createdByRun": "43551223935"
+}

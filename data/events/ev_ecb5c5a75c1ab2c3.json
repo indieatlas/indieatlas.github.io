@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "ev_ecb5c5a75c1ab2c3",
+  "status": "scheduled",
+  "name": "Steamオートバトラーフェス",
+  "nameEn": "Steam Auto-Battler Fest",
+  "kind": "festival",
+  "format": "online",
+  "start": {
+    "precision": "day",
+    "year": 2026,
+    "month": 11,
+    "day": 17
+  },
+  "end": {
+    "precision": "day",
+    "year": 2026,
+    "month": 11,
+    "day": 24
+  },
+  "url": "https://www.4gamer.net/games/057/G105740/20261112004/",
+  "summary": "Steamで開催されるオートバトラー作品のオンラインイベント。期間中は「All Army Attack」の体験版が配信される予定。",
+  "image": {
+    "path": "media/events/ev_ecb5c5a75c1ab2c3.webp",
+    "width": 720,
+    "height": 405,
+    "sourceUrl": "https://www.4gamer.net/games/057/G105740/20261112004/SS/026.jpg",
+    "retrievedAt": "2026-11-14T03:41:00Z",
+    "hash": "sha256:9fcf5eb3a37e1bd0b154350d3975fb6cbaa48888b2505ccd809e89cacb236d94"
+  },
+  "games": [
+    "g_000218"
+  ],
+  "evidence": [
+    {
+      "kind": "official",
+      "url": "https://www.4gamer.net/games/057/G105740/20261112004/",
+      "sourceId": "4gamer",
+      "publishedAt": "2026-11-12T08:05:47Z",
+      "retrievedAt": "2026-11-14T03:31:21Z",
+      "quote": "2026年11月17日から24日まで開催される「Steamオートバトラーフェス」では体験版の配信を予定している。",
+      "originKey": "official:4gamer.net",
+      "fetchHash": "sha256:758638923d37ca9d3c2c450c5beec561040df8d34ba26cdcf08a2816275408fd"
+    }
+  ],
+  "recheckAfter": "2026-11-17",
+  "createdAt": "2026-11-14T03:36:10Z",
+  "updatedAt": "2026-11-14T03:41:00Z",
+  "createdBy": "llm",
+  "createdByRun": "43551223935"
+}

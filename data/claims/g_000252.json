@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000252",
+  "claims": [
+    {
+      "id": "c_9c4c5593fa22c1ac",
+      "gameId": "g_000252",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2731030/",
+          "retrievedAt": "2026-11-14T03:37:19Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:55dd268fef1239a9488114e0638d76fe1e5f18178439cb8ac86009b63f51f138"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:19Z",
+      "createdAt": "2026-11-14T03:37:19Z",
+      "updatedAt": "2026-11-14T03:37:19Z",
+      "lastCheckedAt": "2026-11-14T03:37:19Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2027,
+          "month": 1,
+          "day": 26
+        },
+        "rawText": "26 Jan, 2027"
+      }
+    },
+    {
+      "id": "c_83b12a3dc9b943ad",
+      "gameId": "g_000252",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2731030/",
+          "retrievedAt": "2026-11-14T03:37:22Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6c1fef3011c8d580e1a44d36738742fab3b626d48b3d69dd98cfa8e808e73aee"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:19Z",
+      "createdAt": "2026-11-14T03:37:19Z",
+      "updatedAt": "2026-11-14T03:37:19Z",
+      "lastCheckedAt": "2026-11-14T03:37:22Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_d32c138ca0beab8c",
+      "gameId": "g_000252",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2731030/",
+          "retrievedAt": "2026-11-14T03:37:19Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:55dd268fef1239a9488114e0638d76fe1e5f18178439cb8ac86009b63f51f138"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:19Z",
+      "createdAt": "2026-11-14T03:37:19Z",
+      "updatedAt": "2026-11-14T03:37:19Z",
+      "lastCheckedAt": "2026-11-14T03:37:19Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_af02117ad2538ce6",
+      "gameId": "g_000252",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2731030/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:29:21Z",
+          "quote": "「ノードを繋ぎ、迷宮を攻略(ハック)せよ！」Algolemethはゴーレムの行動をビジュアルプログラミングで制御し、全自動でダンジョンを攻略するRPGです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:55dd268fef1239a9488114e0638d76fe1e5f18178439cb8ac86009b63f51f138"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2731030/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:29:21Z",
+          "quote": "進む方向や罠の解除、撤退の判断まで、パーティーの行動を決めるのはあなたが作ったブループリント（設計図）次第",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:55dd268fef1239a9488114e0638d76fe1e5f18178439cb8ac86009b63f51f138"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:29:21Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "summary",
+      "value": {
+        "ja": "錬金術師となってゴーレムを錬成し、ビジュアルプログラミングで動きを組んだパーティをダンジョンへ送り込むRPG。戦闘も移動も罠の解除も撤退の判断も全自動で進むため、設計図を修正しながら迷宮の踏破を目指す。"
+      }
+    },
+    {
+      "id": "c_06576534d6334ae0",
+      "gameId": "g_000252",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2731030/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:29:21Z",
+          "quote": "「ノードを繋ぎ、迷宮を攻略(ハック)せよ！」Algolemethはゴーレムの行動をビジュアルプログラミングで制御し、全自動でダンジョンを攻略するRPGです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:55dd268fef1239a9488114e0638d76fe1e5f18178439cb8ac86009b63f51f138"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:29:21Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "automation"
+      }
+    },
+    {
+      "id": "c_2086f30438d2543f",
+      "gameId": "g_000252",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2731030/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:29:21Z",
+          "quote": "一度ゴーレムを送り出したら、あなたに出来るのは見守ることだけ。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:55dd268fef1239a9488114e0638d76fe1e5f18178439cb8ac86009b63f51f138"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:29:21Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "auto-battle"
+      }
+    },
+    {
+      "id": "c_6424fe99dfd05dd0",
+      "gameId": "g_000252",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2731030/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:29:21Z",
+          "quote": "「ノードを繋ぎ、迷宮を攻略(ハック)せよ！」Algolemethはゴーレムの行動をビジュアルプログラミングで制御し、全自動でダンジョンを攻略するRPGです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:55dd268fef1239a9488114e0638d76fe1e5f18178439cb8ac86009b63f51f138"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:29:21Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "rpg"
+      }
+    },
+    {
+      "id": "c_bc67250dc9bcf0be",
+      "gameId": "g_000252",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2731030/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:29:21Z",
+          "quote": "The world of Dungeon Automata is an expressive fantasy world with beautifully handcrafted 8-bit pixel art.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:55dd268fef1239a9488114e0638d76fe1e5f18178439cb8ac86009b63f51f138"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:29:21Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "pixel-art"
+      }
+    },
+    {
+      "id": "c_bd52c91a71b74961",
+      "gameId": "g_000252",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://mediumraregames.com/algolemeth/",
+          "publishedAt": "2026-09-18T00:00:00Z",
+          "retrievedAt": "2026-11-14T03:29:43Z",
+          "quote": "ダンジョンでは、ゴーレムの能力を変化させる「触媒」や、新たな行動を可能にする「ノード」が手に入る。",
+          "originKey": "official:mediumraregames.com",
+          "fetchHash": "sha256:de23e56acead04d31f59c346ac27f3031670053af588d0ce06e23d99698ffe24"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:29:43Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_e1dd8073298e9761",
+      "gameId": "g_000252",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2731030/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:29:21Z",
+          "quote": "錬金術の奇跡に支えられし、繁栄の地「シンタクシア」。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:55dd268fef1239a9488114e0638d76fe1e5f18178439cb8ac86009b63f51f138"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:29:21Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_4b5a8618564a9ef4",
+      "gameId": "g_000252",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2731030/",
+          "retrievedAt": "2026-11-14T03:37:19Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:55dd268fef1239a9488114e0638d76fe1e5f18178439cb8ac86009b63f51f138"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:19Z",
+      "createdAt": "2026-11-14T03:37:19Z",
+      "updatedAt": "2026-11-14T03:37:19Z",
+      "lastCheckedAt": "2026-11-14T03:37:19Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2731030/"
+      }
+    },
+    {
+      "id": "c_ca87bd72cc3105e6",
+      "gameId": "g_000252",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2731030/",
+          "retrievedAt": "2026-11-14T03:37:19Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:55dd268fef1239a9488114e0638d76fe1e5f18178439cb8ac86009b63f51f138"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:37:19Z",
+      "createdAt": "2026-11-14T03:37:19Z",
+      "updatedAt": "2026-11-14T03:37:19Z",
+      "lastCheckedAt": "2026-11-14T03:37:19Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2731030/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Algolemeth のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Kakehashi Games"
+        }
+      }
+    }
+  ]
+}

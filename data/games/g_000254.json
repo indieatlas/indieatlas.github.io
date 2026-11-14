@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000254",
+  "status": "candidate",
+  "title": {
+    "display": "Revolution Idle",
+    "original": "Revolution Idle",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 2763740
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000362",
+    "dev_000363"
+  ],
+  "publisherIds": [
+    "dev_000362"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/2763740/",
+            "retrievedAt": "2026-11-14T03:36:16Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:f46cda6657f4c3277e329a27a108e447971337f7506fb5a0f6268a710a701bb2"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-14T03:36:16Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2763740/",
+        "retrievedAt": "2026-11-14T03:36:16Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f46cda6657f4c3277e329a27a108e447971337f7506fb5a0f6268a710a701bb2"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2763740/",
+        "retrievedAt": "2026-11-14T03:36:16Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f46cda6657f4c3277e329a27a108e447971337f7506fb5a0f6268a710a701bb2"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2763740/",
+        "retrievedAt": "2026-11-14T03:36:16Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f46cda6657f4c3277e329a27a108e447971337f7506fb5a0f6268a710a701bb2"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2763740/",
+        "retrievedAt": "2026-11-14T03:36:16Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f46cda6657f4c3277e329a27a108e447971337f7506fb5a0f6268a710a701bb2"
+      }
+    }
+  ],
+  "createdAt": "2026-11-14T03:36:16Z",
+  "updatedAt": "2026-11-14T03:36:16Z",
+  "createdByRun": "43551223935"
+}

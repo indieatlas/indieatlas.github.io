@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000255",
+  "status": "candidate",
+  "title": {
+    "display": "777勇者 〜時に抗う者〜",
+    "original": "777 HERO ~The One Who Defies Time~",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "777勇者 〜時に抗う者〜",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 5457010
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5459470",
+      "kind": "demo"
+    }
+  ],
+  "developerIds": [
+    "dev_000364"
+  ],
+  "publisherIds": [
+    "dev_000365"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-14T03:36:10Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-14T03:36:10Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5457010/",
+        "retrievedAt": "2026-11-14T03:36:21Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ba432468191b26046dbfa4d93cfbc29b7d833496e8f27f5035fed885b5286c39"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5457010/",
+        "retrievedAt": "2026-11-14T03:36:21Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ba432468191b26046dbfa4d93cfbc29b7d833496e8f27f5035fed885b5286c39"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5457010/",
+        "retrievedAt": "2026-11-14T03:36:21Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ba432468191b26046dbfa4d93cfbc29b7d833496e8f27f5035fed885b5286c39"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5457010/",
+        "retrievedAt": "2026-11-14T03:36:21Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ba432468191b26046dbfa4d93cfbc29b7d833496e8f27f5035fed885b5286c39"
+      }
+    }
+  ],
+  "createdAt": "2026-11-14T03:36:21Z",
+  "updatedAt": "2026-11-14T03:36:10Z",
+  "createdByRun": "43551223935"
+}

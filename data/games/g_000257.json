@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000257",
+  "status": "candidate",
+  "title": {
+    "display": "Supermarket Simulator",
+    "original": "Supermarket Simulator",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 2670630
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4078560",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4078570",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4196060",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4196070",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4196080",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4199610",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://supermarketsimulator.com/",
+  "developerIds": [
+    "dev_000367"
+  ],
+  "publisherIds": [
+    "dev_000367"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/2670630/",
+            "retrievedAt": "2026-11-14T03:36:29Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:b7a3b6ad3d21464f3eeeff4b08225ebdb0889a909bf3668867de35d1846eb266"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-14T03:36:29Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2670630/",
+        "retrievedAt": "2026-11-14T03:36:29Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b7a3b6ad3d21464f3eeeff4b08225ebdb0889a909bf3668867de35d1846eb266"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2670630/",
+        "retrievedAt": "2026-11-14T03:36:29Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b7a3b6ad3d21464f3eeeff4b08225ebdb0889a909bf3668867de35d1846eb266"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2670630/",
+        "retrievedAt": "2026-11-14T03:36:29Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b7a3b6ad3d21464f3eeeff4b08225ebdb0889a909bf3668867de35d1846eb266"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2670630/",
+        "retrievedAt": "2026-11-14T03:36:29Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b7a3b6ad3d21464f3eeeff4b08225ebdb0889a909bf3668867de35d1846eb266"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2670630/",
+        "retrievedAt": "2026-11-14T03:36:29Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b7a3b6ad3d21464f3eeeff4b08225ebdb0889a909bf3668867de35d1846eb266"
+      }
+    }
+  ],
+  "createdAt": "2026-11-14T03:36:29Z",
+  "updatedAt": "2026-11-14T03:36:29Z",
+  "createdByRun": "43551223935"
+}

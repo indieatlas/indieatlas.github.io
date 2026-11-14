@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000247",
+  "claims": [
+    {
+      "id": "c_e3663ba16aa6a382",
+      "gameId": "g_000247",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3892840/",
+          "retrievedAt": "2026-11-14T03:36:56Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:19af757ed0c259e48bbbbc1e669f486e013f11f1648d35dfd297fedebe3ec91b"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:56Z",
+      "createdAt": "2026-11-14T03:36:56Z",
+      "updatedAt": "2026-11-14T03:36:56Z",
+      "lastCheckedAt": "2026-11-14T03:36:56Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "release",
+      "value": {
+        "status": "tba",
+        "rawText": "To be announced"
+      }
+    },
+    {
+      "id": "c_991f6f25acb9be63",
+      "gameId": "g_000247",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3892840/",
+          "retrievedAt": "2026-11-14T03:37:00Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cd5b03739552cb796896282eb9f39cc3ea3edbc058318c99982423df244369c1"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:56Z",
+      "createdAt": "2026-11-14T03:36:56Z",
+      "updatedAt": "2026-11-14T03:36:56Z",
+      "lastCheckedAt": "2026-11-14T03:37:00Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_28d1fa09ec8bbb17",
+      "gameId": "g_000247",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3892840/",
+          "retrievedAt": "2026-11-14T03:36:56Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:19af757ed0c259e48bbbbc1e669f486e013f11f1648d35dfd297fedebe3ec91b"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:56Z",
+      "createdAt": "2026-11-14T03:36:56Z",
+      "updatedAt": "2026-11-14T03:36:56Z",
+      "lastCheckedAt": "2026-11-14T03:36:56Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_b9b6a91c71714987",
+      "gameId": "g_000247",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3892840/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:27:17Z",
+          "quote": "自分だけのおもちゃロボットチームを組み立ててプログラミングする、ロボットバトルシミュレーター。パーツを自由に組み合わせ、戦術をプログラムして、ますます過酷な格闘トーナメントで戦略の真価を証明しよう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:19af757ed0c259e48bbbbc1e669f486e013f11f1648d35dfd297fedebe3ec91b"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:27:17Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "summary",
+      "value": {
+        "ja": "おもちゃのロボットを組み立ててプログラミングし、自動で戦うアリーナのトーナメントを勝ち抜くロボットバトルシミュレーター。頭部や腕、脚、武器のパーツを組み合わせ、条件分岐で戦術を組み立てる。"
+      }
+    },
+    {
+      "id": "c_5f7372b6157007ba",
+      "gameId": "g_000247",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3892840/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:27:17Z",
+          "quote": "Your robots fight automatically.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:19af757ed0c259e48bbbbc1e669f486e013f11f1648d35dfd297fedebe3ec91b"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:27:17Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "auto-battle"
+      }
+    },
+    {
+      "id": "c_a234794cec530116",
+      "gameId": "g_000247",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3892840/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:27:17Z",
+          "quote": "Robo Fight is a strategic battle simulator set in the world of toy robot combat.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:19af757ed0c259e48bbbbc1e669f486e013f11f1648d35dfd297fedebe3ec91b"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:27:17Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "strategy"
+      }
+    },
+    {
+      "id": "c_b25ebfa60d9b2b12",
+      "gameId": "g_000247",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3892840/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:27:17Z",
+          "quote": "Push through a roguelite campaign of escalating tournaments",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:19af757ed0c259e48bbbbc1e669f486e013f11f1648d35dfd297fedebe3ec91b"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:27:17Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_ddacb108b801f29d",
+      "gameId": "g_000247",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3892840/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-14T03:27:17Z",
+          "quote": "Robo Fight is a strategic battle simulator set in the world of toy robot combat.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:19af757ed0c259e48bbbbc1e669f486e013f11f1648d35dfd297fedebe3ec91b"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:27:17Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_0dcfde2ca75799b8",
+      "gameId": "g_000247",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3892840/",
+          "retrievedAt": "2026-11-14T03:36:56Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:19af757ed0c259e48bbbbc1e669f486e013f11f1648d35dfd297fedebe3ec91b"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:56Z",
+      "createdAt": "2026-11-14T03:36:56Z",
+      "updatedAt": "2026-11-14T03:36:56Z",
+      "lastCheckedAt": "2026-11-14T03:36:56Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3892840/"
+      }
+    },
+    {
+      "id": "c_d10c263d440c29a7",
+      "gameId": "g_000247",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3892840/",
+          "retrievedAt": "2026-11-14T03:36:56Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:19af757ed0c259e48bbbbc1e669f486e013f11f1648d35dfd297fedebe3ec91b"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-14T03:36:56Z",
+      "createdAt": "2026-11-14T03:36:56Z",
+      "updatedAt": "2026-11-14T03:36:56Z",
+      "lastCheckedAt": "2026-11-14T03:36:56Z",
+      "createdBy": "system",
+      "createdByRun": "43551223935",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3892840/7871280b0e7cbac4ac5068be4d8462562ea5b0d2/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Robo Fight / ロボガンビット のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Drix Dev"
+        }
+      }
+    }
+  ]
+}

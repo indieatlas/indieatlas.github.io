@@ -91,10 +91,18 @@
           "kind": "store",
           "url": "https://store.steampowered.com/app/2239150/",
           "sourceId": "steam-store",
-          "retrievedAt": "2026-11-07T02:53:53Z",
+          "retrievedAt": "2026-11-14T03:23:32Z",
           "locator": "steam:appdetails.release",
           "originKey": "store:steam",
-          "fetchHash": "sha256:8a4a2bdd7ec6b473d43e83a55f10beef7f6f8aec4e93368cb33516dee7df16e6"
+          "fetchHash": "sha256:c257b12155069f94eff3f0f82963455401aaa5babedfa6b8d8d01fb32e763a88"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2239150/",
+          "retrievedAt": "2026-11-14T03:37:24Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c257b12155069f94eff3f0f82963455401aaa5babedfa6b8d8d01fb32e763a88"
         }
       ],
       "asOf": "2026-10-27",
@@ -103,7 +111,7 @@
       "adoptedAt": "2026-10-27T14:27:46Z",
       "createdAt": "2026-10-27T14:27:46Z",
       "updatedAt": "2026-10-27T14:27:46Z",
-      "lastCheckedAt": "2026-11-07T02:53:53Z",
+      "lastCheckedAt": "2026-11-14T03:37:24Z",
       "createdBy": "agent",
       "createdByRun": "local-seed",
       "field": "release",
@@ -131,10 +139,18 @@
           "kind": "store",
           "url": "https://store.steampowered.com/app/2239150/",
           "sourceId": "steam-store",
-          "retrievedAt": "2026-11-07T02:53:53Z",
+          "retrievedAt": "2026-11-14T03:23:32Z",
           "locator": "steam:appdetails.release",
           "originKey": "store:steam",
-          "fetchHash": "sha256:8a4a2bdd7ec6b473d43e83a55f10beef7f6f8aec4e93368cb33516dee7df16e6"
+          "fetchHash": "sha256:c257b12155069f94eff3f0f82963455401aaa5babedfa6b8d8d01fb32e763a88"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2239150/",
+          "retrievedAt": "2026-11-14T03:37:24Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c257b12155069f94eff3f0f82963455401aaa5babedfa6b8d8d01fb32e763a88"
         }
       ],
       "asOf": "2026-10-27",
@@ -143,7 +159,7 @@
       "adoptedAt": "2026-10-27T14:27:46Z",
       "createdAt": "2026-10-27T14:27:46Z",
       "updatedAt": "2026-10-27T14:27:46Z",
-      "lastCheckedAt": "2026-11-07T02:53:53Z",
+      "lastCheckedAt": "2026-11-14T03:37:24Z",
       "createdBy": "agent",
       "createdByRun": "local-seed",
       "field": "release",
@@ -260,11 +276,12 @@
         }
       ],
       "asOf": "2026-10-28",
-      "status": "adopted",
-      "statusReason": "highest-rank",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersededBy": "c_2bddcff0d7eb06e3",
       "adoptedAt": "2026-10-27T16:30:31Z",
       "createdAt": "2026-10-27T16:30:31Z",
-      "updatedAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
       "lastCheckedAt": "2026-10-27T16:30:31Z",
       "createdBy": "agent",
       "createdByRun": "local-igdb",
@@ -278,6 +295,49 @@
           "day": 11
         },
         "rawText": "Nov 11, 2026"
+      }
+    },
+    {
+      "id": "c_2bddcff0d7eb06e3",
+      "gameId": "g_000049",
+      "scope": {
+        "platform": "xbox-series",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://www.xbox.com/ja-JP/games/store/thronefall/9nwwl1cbwfcg",
+          "publishedAt": "2026-11-11T00:00:00Z",
+          "retrievedAt": "2026-11-14T03:23:38Z",
+          "quote": "リリース日11/11/2026",
+          "originKey": "store:microsoft-store",
+          "fetchHash": "sha256:6526e5c0dda6719886a0216e4aab8dc9e9344e8819e9f60e8b6009208fafcef2"
+        }
+      ],
+      "asOf": "2026-11-11",
+      "status": "adopted",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_f0a26fcb265d4d1d"
+      ],
+      "adoptedAt": "2026-11-14T03:36:10Z",
+      "createdAt": "2026-11-14T03:36:10Z",
+      "updatedAt": "2026-11-14T03:36:10Z",
+      "lastCheckedAt": "2026-11-14T03:23:38Z",
+      "createdBy": "llm",
+      "createdByRun": "43551223935",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 11
+        },
+        "rawText": "11/11/2026"
       }
     },
     {
@@ -301,7 +361,7 @@
       "adoptedAt": "2026-10-27T14:27:46Z",
       "createdAt": "2026-10-27T14:27:46Z",
       "updatedAt": "2026-10-27T14:27:46Z",
-      "lastCheckedAt": "2026-11-03T04:57:57Z",
+      "lastCheckedAt": "2026-11-14T03:37:27Z",
       "createdBy": "agent",
       "createdByRun": "local-seed",
       "field": "japaneseSupport",
@@ -332,7 +392,7 @@
       "adoptedAt": "2026-10-27T14:27:46Z",
       "createdAt": "2026-10-27T14:27:46Z",
       "updatedAt": "2026-10-27T14:27:46Z",
-      "lastCheckedAt": "2026-11-03T04:57:51Z",
+      "lastCheckedAt": "2026-11-14T03:37:24Z",
       "createdBy": "agent",
       "createdByRun": "local-seed",
       "field": "playerModes",
@@ -593,7 +653,7 @@
       "adoptedAt": "2026-10-27T14:27:46Z",
       "createdAt": "2026-10-27T14:27:46Z",
       "updatedAt": "2026-10-27T14:27:46Z",
-      "lastCheckedAt": "2026-11-03T04:57:51Z",
+      "lastCheckedAt": "2026-11-14T03:37:24Z",
       "createdBy": "agent",
       "createdByRun": "local-seed",
       "field": "storeLink",
