@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000260",
+  "status": "candidate",
+  "title": {
+    "display": "CultGame",
+    "original": "CultGame",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 2345980
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5295570",
+      "kind": "demo"
+    }
+  ],
+  "developerIds": [
+    "dev_000373"
+  ],
+  "publisherIds": [
+    "dev_000373"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/2345980/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-15T02:50:13Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:c8686b89318cd45bca86a041525f4e88f589b3e9768b038ee2ab9f7d3677c75f"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-15T03:00:27Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2345980/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:50:13Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c8686b89318cd45bca86a041525f4e88f589b3e9768b038ee2ab9f7d3677c75f"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2345980/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:50:13Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c8686b89318cd45bca86a041525f4e88f589b3e9768b038ee2ab9f7d3677c75f"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2345980/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:50:13Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c8686b89318cd45bca86a041525f4e88f589b3e9768b038ee2ab9f7d3677c75f"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2345980/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:50:13Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c8686b89318cd45bca86a041525f4e88f589b3e9768b038ee2ab9f7d3677c75f"
+      }
+    }
+  ],
+  "createdAt": "2026-11-15T03:00:27Z",
+  "updatedAt": "2026-11-15T03:00:33Z",
+  "createdByRun": "43669205389"
+}

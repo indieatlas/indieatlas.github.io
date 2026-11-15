@@ -1,13 +1,19 @@
 {
   "schemaVersion": 1,
   "id": "g_000258",
-  "status": "candidate",
+  "status": "published",
   "title": {
     "display": "Delve Survivors",
     "original": "Delve Survivors",
     "originalLang": "en"
   },
-  "aliases": [],
+  "aliases": [
+    {
+      "value": "デルヴ・サバイバーズ",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
   "externalIds": {
     "steamAppId": 3319680
   },
@@ -35,9 +41,22 @@
         ]
       }
     ],
-    "assessedAt": "2026-11-14T03:36:10Z"
+    "assessedAt": "2026-11-15T03:00:27Z"
   },
   "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3319680/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:54:47Z",
+        "quote": "『Delve Survivors(デルヴ・サバイバーズ)』の最大の特徴",
+        "locator": "steam:appdetails.detailed_description",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:6021b64fd2816e15b6712efcf0f658a31ea6f206b3057c6b842503533a3bc8ea"
+      }
+    },
     {
       "field": "developers",
       "evidence": {
@@ -84,6 +103,7 @@
     }
   ],
   "createdAt": "2026-11-14T03:36:34Z",
-  "updatedAt": "2026-11-14T03:36:10Z",
+  "addedAt": "2026-11-15",
+  "updatedAt": "2026-11-15T03:00:27Z",
   "createdByRun": "43551223935"
 }

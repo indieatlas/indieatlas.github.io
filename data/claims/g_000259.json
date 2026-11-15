@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000259",
+  "claims": [
+    {
+      "id": "c_f6d6a459adf79655",
+      "gameId": "g_000259",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3030560/",
+          "retrievedAt": "2026-11-15T03:00:29Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:953d0f254fd33e9cbd0abd03b4b730e6fe4660fc64b921774b2b08b64c7f3035"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:29Z",
+      "createdAt": "2026-11-15T03:00:29Z",
+      "updatedAt": "2026-11-15T03:00:29Z",
+      "lastCheckedAt": "2026-11-15T03:00:29Z",
+      "createdBy": "system",
+      "createdByRun": "43669205389",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 13
+        },
+        "rawText": "13 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_3dd977d8f55d0ce9",
+      "gameId": "g_000259",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3030560/",
+          "retrievedAt": "2026-11-15T03:00:32Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d9ea52c7c9b430355c8cd4fb3324324ac5c1b8497198cd529aa5ac20476c11cd"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:29Z",
+      "createdAt": "2026-11-15T03:00:29Z",
+      "updatedAt": "2026-11-15T03:00:29Z",
+      "lastCheckedAt": "2026-11-15T03:00:32Z",
+      "createdBy": "system",
+      "createdByRun": "43669205389",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_449d99084ffff974",
+      "gameId": "g_000259",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3030560/",
+          "retrievedAt": "2026-11-15T03:00:29Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:953d0f254fd33e9cbd0abd03b4b730e6fe4660fc64b921774b2b08b64c7f3035"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:29Z",
+      "createdAt": "2026-11-15T03:00:29Z",
+      "updatedAt": "2026-11-15T03:00:29Z",
+      "lastCheckedAt": "2026-11-15T03:00:29Z",
+      "createdBy": "system",
+      "createdByRun": "43669205389",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "local-pvp",
+          "online-pvp"
+        ]
+      }
+    },
+    {
+      "id": "c_aadc2944cca7d675",
+      "gameId": "g_000259",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3030560/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-15T02:49:36Z",
+          "quote": "『Sloppy Forgeries』は、名画とのそっくり度をリアルタイムでピクセルごとに採点する、ちょっと珍しいお絵描きゲーム。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:953d0f254fd33e9cbd0abd03b4b730e6fe4660fc64b921774b2b08b64c7f3035"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:49:36Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "summary",
+      "value": {
+        "ja": "世界の名画を3分以内にマウスで模写する対戦型お絵かきゲーム。使える色と筆のサイズは限られ、「元に戻す」も「塗りつぶし」も使えない。描くたびに原画とのそっくり度がリアルタイムで採点され、最大8人のオンライン対戦や1台のPCでの2人対戦、50作品の名画に挑むシングルプレイを収録する。"
+      }
+    },
+    {
+      "id": "c_a60564b5fd8ca179",
+      "gameId": "g_000259",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3030560/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-15T02:49:36Z",
+          "quote": "絵はうまく描けないけど、友達とお互いのへっぽこな絵を笑って楽しみたいあなたも。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:953d0f254fd33e9cbd0abd03b4b730e6fe4660fc64b921774b2b08b64c7f3035"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:49:36Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_de10380a7872967d",
+      "gameId": "g_000259",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3030560/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-15T02:49:36Z",
+          "quote": "Sloppy Forgeries is a fast-paced competitive painting game.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:953d0f254fd33e9cbd0abd03b4b730e6fe4660fc64b921774b2b08b64c7f3035"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:49:36Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_f8bb9971476dd1ca",
+      "gameId": "g_000259",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3030560/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-15T02:49:36Z",
+          "quote": "モナリザを模写しよう！マウスで！3分以内に！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:953d0f254fd33e9cbd0abd03b4b730e6fe4660fc64b921774b2b08b64c7f3035"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:49:36Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "tag",
+      "value": {
+        "tagId": "short-session"
+      }
+    },
+    {
+      "id": "c_30cee56c06d0b497",
+      "gameId": "g_000259",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3030560/",
+          "retrievedAt": "2026-11-15T03:00:29Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:953d0f254fd33e9cbd0abd03b4b730e6fe4660fc64b921774b2b08b64c7f3035"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:29Z",
+      "createdAt": "2026-11-15T03:00:29Z",
+      "updatedAt": "2026-11-15T03:00:29Z",
+      "lastCheckedAt": "2026-11-15T03:00:29Z",
+      "createdBy": "system",
+      "createdByRun": "43669205389",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3030560/"
+      }
+    },
+    {
+      "id": "c_67add3cba26fd115",
+      "gameId": "g_000259",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3030560/",
+          "retrievedAt": "2026-11-15T03:00:29Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:953d0f254fd33e9cbd0abd03b4b730e6fe4660fc64b921774b2b08b64c7f3035"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:29Z",
+      "createdAt": "2026-11-15T03:00:29Z",
+      "updatedAt": "2026-11-15T03:00:29Z",
+      "lastCheckedAt": "2026-11-15T03:00:29Z",
+      "createdBy": "system",
+      "createdByRun": "43669205389",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3030560/3eec630946545b5a7df00896cd735c3c110f7c0a/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Sloppy Forgeries のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Playful Systems LLC"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000265",
+  "status": "candidate",
+  "title": {
+    "display": "Little Witch in the Woods",
+    "original": "Little Witch in the Woods",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1594940
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5172760",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000380"
+  ],
+  "publisherIds": [
+    "dev_000380"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1594940/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-15T02:52:21Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:5d04e171fad0637b1b74b8de6e7180b34526059c44f3ec70dbc34f687bfc1b7d"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-15T03:00:27Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1594940/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:52:21Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5d04e171fad0637b1b74b8de6e7180b34526059c44f3ec70dbc34f687bfc1b7d"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1594940/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:52:21Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5d04e171fad0637b1b74b8de6e7180b34526059c44f3ec70dbc34f687bfc1b7d"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1594940/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:52:21Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5d04e171fad0637b1b74b8de6e7180b34526059c44f3ec70dbc34f687bfc1b7d"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "media",
+        "url": "https://www.4gamer.net/games/931/G093154/20261109019/",
+        "sourceId": "4gamer",
+        "publishedAt": "2026-11-13T03:00:00Z",
+        "retrievedAt": "2026-11-15T02:52:15Z",
+        "quote": "韓国のSUNNY SIDE UPが手がける「Little Witch in the Woods」（PC / Xbox One / Nintendo Switch）だ。",
+        "originKey": "media:4gamer.net",
+        "fetchHash": "sha256:5c392a548336cdcf36d1fb0d068ac0ffbd0e5dfcd5c0b9dfcbb487f40bef8158"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1594940/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:52:21Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5d04e171fad0637b1b74b8de6e7180b34526059c44f3ec70dbc34f687bfc1b7d"
+      }
+    }
+  ],
+  "createdAt": "2026-11-15T03:00:27Z",
+  "updatedAt": "2026-11-15T03:00:56Z",
+  "createdByRun": "43669205389"
+}

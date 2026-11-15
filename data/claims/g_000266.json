@@ -1,0 +1,471 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000266",
+  "claims": [
+    {
+      "id": "c_8e418286231bdea0",
+      "gameId": "g_000266",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3810510/",
+          "retrievedAt": "2026-11-15T03:01:00Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:08fbc73febf77ab293f62bf9f4ad5aff3d3d57ec214c0ea05f7fce143ff1c967"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:01:00Z",
+      "createdAt": "2026-11-15T03:01:00Z",
+      "updatedAt": "2026-11-15T03:01:00Z",
+      "lastCheckedAt": "2026-11-15T03:01:00Z",
+      "createdBy": "system",
+      "createdByRun": "43669205389",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 13
+        },
+        "rawText": "13 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_b07cc3a7ee07a166",
+      "gameId": "g_000266",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3810510/",
+          "retrievedAt": "2026-11-15T03:01:03Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:5ad7d88d57d38157a931d570fc47d543f7d94b589a1e6197d5a4b7d219e218b6"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:01:00Z",
+      "createdAt": "2026-11-15T03:01:00Z",
+      "updatedAt": "2026-11-15T03:01:00Z",
+      "lastCheckedAt": "2026-11-15T03:01:03Z",
+      "createdBy": "system",
+      "createdByRun": "43669205389",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_f0482a70b150a912",
+      "gameId": "g_000266",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3810510/",
+          "retrievedAt": "2026-11-15T03:01:00Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:08fbc73febf77ab293f62bf9f4ad5aff3d3d57ec214c0ea05f7fce143ff1c967"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:01:00Z",
+      "createdAt": "2026-11-15T03:01:00Z",
+      "updatedAt": "2026-11-15T03:01:00Z",
+      "lastCheckedAt": "2026-11-15T03:01:00Z",
+      "createdBy": "system",
+      "createdByRun": "43669205389",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_efd10282665b9139",
+      "gameId": "g_000266",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.gamespark.jp/article/2026/11/14/174861.html",
+          "sourceId": "gamespark",
+          "articleId": "a_18206e9607691bb9",
+          "publishedAt": "2026-11-13T23:00:03Z",
+          "retrievedAt": "2026-11-15T02:52:22Z",
+          "quote": "土星軌道の小惑星ステーションで生き延びるサバイバルホラー本作は、PS1時代の閉塞感あふれるSFホラーをイメージしたストーリー重視のレトロFPSです。",
+          "originKey": "media:gamespark.jp",
+          "fetchHash": "sha256:f25ec2aa9233dff08155a9eb69defd869414d8f2f87586a7a059cec376d73bde"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3810510/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-15T02:52:27Z",
+          "quote": "DERELIKT is a narrative retro FPS built for fans of claustrophobic PS1-era sci-fi horror.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:08fbc73febf77ab293f62bf9f4ad5aff3d3d57ec214c0ea05f7fce143ff1c967"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:52:27Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "summary",
+      "value": {
+        "ja": "土星軌道の小惑星にある遠隔研究施設を舞台に、乏しい装備と弾薬で生き延びるPS1風レトロSFホラーFPS。物語重視で、環境パズルや個性の異なるNPCとの対話、闇に潜む脅威との緊張感ある戦闘を描く。"
+      }
+    },
+    {
+      "id": "c_3e04deca5aef1f21",
+      "gameId": "g_000266",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.gamespark.jp/article/2026/11/14/174861.html",
+          "sourceId": "gamespark",
+          "articleId": "a_18206e9607691bb9",
+          "publishedAt": "2026-11-13T23:00:03Z",
+          "retrievedAt": "2026-11-15T02:52:22Z",
+          "quote": "プレイヤーは施設内で物資を探し、環境パズルを解きながら新たなルートを切り開いていきます。",
+          "originKey": "media:gamespark.jp",
+          "fetchHash": "sha256:f25ec2aa9233dff08155a9eb69defd869414d8f2f87586a7a059cec376d73bde"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:52:22Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_58af071b5b4b0760",
+      "gameId": "g_000266",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.gamespark.jp/article/2026/11/14/174861.html",
+          "sourceId": "gamespark",
+          "articleId": "a_18206e9607691bb9",
+          "publishedAt": "2026-11-13T23:00:03Z",
+          "retrievedAt": "2026-11-15T02:52:22Z",
+          "quote": "舞台は、土星軌道上の小惑星に築かれた遠隔研究施設「Von Neumann Outpost」。",
+          "originKey": "media:gamespark.jp",
+          "fetchHash": "sha256:f25ec2aa9233dff08155a9eb69defd869414d8f2f87586a7a059cec376d73bde"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:52:22Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "tag",
+      "value": {
+        "tagId": "space"
+      }
+    },
+    {
+      "id": "c_5d9b1f2dfe1a2abf",
+      "gameId": "g_000266",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.gamespark.jp/article/2026/11/14/174861.html",
+          "sourceId": "gamespark",
+          "articleId": "a_18206e9607691bb9",
+          "publishedAt": "2026-11-13T23:00:03Z",
+          "retrievedAt": "2026-11-15T02:52:22Z",
+          "quote": "土星軌道の小惑星ステーションで生き延びるサバイバルホラー本作は、PS1時代の閉塞感あふれるSFホラーをイメージしたストーリー重視のレトロFPSです。",
+          "originKey": "media:gamespark.jp",
+          "fetchHash": "sha256:f25ec2aa9233dff08155a9eb69defd869414d8f2f87586a7a059cec376d73bde"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:52:22Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_66fd2dbf1422373a",
+      "gameId": "g_000266",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.gamespark.jp/article/2026/11/14/174861.html",
+          "sourceId": "gamespark",
+          "articleId": "a_18206e9607691bb9",
+          "publishedAt": "2026-11-13T23:00:03Z",
+          "retrievedAt": "2026-11-15T02:52:22Z",
+          "quote": "戦闘では、従来型の銃器とエイリアン由来の武器を使い分けます。",
+          "originKey": "media:gamespark.jp",
+          "fetchHash": "sha256:f25ec2aa9233dff08155a9eb69defd869414d8f2f87586a7a059cec376d73bde"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:52:22Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "tag",
+      "value": {
+        "tagId": "shooter"
+      }
+    },
+    {
+      "id": "c_7f9f7b14ded11d2f",
+      "gameId": "g_000266",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.gamespark.jp/article/2026/11/14/174861.html",
+          "sourceId": "gamespark",
+          "articleId": "a_18206e9607691bb9",
+          "publishedAt": "2026-11-13T23:00:03Z",
+          "retrievedAt": "2026-11-15T02:52:22Z",
+          "quote": "土星軌道の小惑星ステーションで生き延びるサバイバルホラー本作は、PS1時代の閉塞感あふれるSFホラーをイメージしたストーリー重視のレトロFPSです。",
+          "originKey": "media:gamespark.jp",
+          "fetchHash": "sha256:f25ec2aa9233dff08155a9eb69defd869414d8f2f87586a7a059cec376d73bde"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:52:22Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "tag",
+      "value": {
+        "tagId": "sci-fi"
+      }
+    },
+    {
+      "id": "c_b9edbf8443cbf5bf",
+      "gameId": "g_000266",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.gamespark.jp/article/2026/11/14/174861.html",
+          "sourceId": "gamespark",
+          "articleId": "a_18206e9607691bb9",
+          "publishedAt": "2026-11-13T23:00:03Z",
+          "retrievedAt": "2026-11-15T02:52:22Z",
+          "quote": "土星軌道の小惑星ステーションで生き延びるサバイバルホラー本作は、PS1時代の閉塞感あふれるSFホラーをイメージしたストーリー重視のレトロFPSです。",
+          "originKey": "media:gamespark.jp",
+          "fetchHash": "sha256:f25ec2aa9233dff08155a9eb69defd869414d8f2f87586a7a059cec376d73bde"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:52:22Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "tag",
+      "value": {
+        "tagId": "horror"
+      }
+    },
+    {
+      "id": "c_bd502c50820e8fdd",
+      "gameId": "g_000266",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.gamespark.jp/article/2026/11/14/174861.html",
+          "sourceId": "gamespark",
+          "articleId": "a_18206e9607691bb9",
+          "publishedAt": "2026-11-13T23:00:03Z",
+          "retrievedAt": "2026-11-15T02:52:22Z",
+          "quote": "ビジュアル面では、アフィンテクスチャの歪みや動的細分化、手描きの頂点カラー、フルモーションCGIカットシーンといったPS1時代の表現を忠実に再現。",
+          "originKey": "media:gamespark.jp",
+          "fetchHash": "sha256:f25ec2aa9233dff08155a9eb69defd869414d8f2f87586a7a059cec376d73bde"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:52:22Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "tag",
+      "value": {
+        "tagId": "retro"
+      }
+    },
+    {
+      "id": "c_ee171f770203cfbc",
+      "gameId": "g_000266",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.gamespark.jp/article/2026/11/14/174861.html",
+          "sourceId": "gamespark",
+          "articleId": "a_18206e9607691bb9",
+          "publishedAt": "2026-11-13T23:00:03Z",
+          "retrievedAt": "2026-11-15T02:52:22Z",
+          "quote": "プレイヤーは施設内で物資を探し、環境パズルを解きながら新たなルートを切り開いていきます。",
+          "originKey": "media:gamespark.jp",
+          "fetchHash": "sha256:f25ec2aa9233dff08155a9eb69defd869414d8f2f87586a7a059cec376d73bde"
+        }
+      ],
+      "asOf": "2026-11-13",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:52:22Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_76e3c4647b8d3f2e",
+      "gameId": "g_000266",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3810510/",
+          "retrievedAt": "2026-11-15T03:01:00Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:08fbc73febf77ab293f62bf9f4ad5aff3d3d57ec214c0ea05f7fce143ff1c967"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:01:00Z",
+      "createdAt": "2026-11-15T03:01:00Z",
+      "updatedAt": "2026-11-15T03:01:00Z",
+      "lastCheckedAt": "2026-11-15T03:01:00Z",
+      "createdBy": "system",
+      "createdByRun": "43669205389",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3810510/"
+      }
+    },
+    {
+      "id": "c_2afbe2590f8161f5",
+      "gameId": "g_000266",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3810510/",
+          "retrievedAt": "2026-11-15T03:01:00Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:08fbc73febf77ab293f62bf9f4ad5aff3d3d57ec214c0ea05f7fce143ff1c967"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:01:00Z",
+      "createdAt": "2026-11-15T03:01:00Z",
+      "updatedAt": "2026-11-15T03:01:00Z",
+      "lastCheckedAt": "2026-11-15T03:01:00Z",
+      "createdBy": "system",
+      "createdByRun": "43669205389",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3810510/45f23f4a1143f49de0962289003d6b269fa970bd/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "DERELIKT のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Hyperstrange"
+        }
+      }
+    }
+  ]
+}

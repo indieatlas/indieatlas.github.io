@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000264",
+  "status": "candidate",
+  "title": {
+    "display": "Noble Fates",
+    "original": "Noble Fates",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1769420
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5238740",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5238740",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000378"
+  ],
+  "publisherIds": [
+    "dev_000379"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.gamespark.jp/article/2026/11/14/174857.html",
+            "articleId": "a_a63d829c161fcaaa",
+            "publishedAt": "2026-11-13T16:00:03Z",
+            "retrievedAt": "2026-11-15T02:51:34Z",
+            "locator": "article.games",
+            "originKey": "media:gamespark.jp"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-15T03:00:27Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1769420/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:51:38Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ee37f82895db35027e2fa863b9e5a9457d64a77e9802868c1bdf695ac464812c"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1769420/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:51:38Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ee37f82895db35027e2fa863b9e5a9457d64a77e9802868c1bdf695ac464812c"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1769420/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:51:38Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ee37f82895db35027e2fa863b9e5a9457d64a77e9802868c1bdf695ac464812c"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1769420/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:51:38Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ee37f82895db35027e2fa863b9e5a9457d64a77e9802868c1bdf695ac464812c"
+      }
+    }
+  ],
+  "createdAt": "2026-11-15T03:00:27Z",
+  "updatedAt": "2026-11-15T03:00:27Z",
+  "createdByRun": "43669205389"
+}

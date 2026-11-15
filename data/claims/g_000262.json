@@ -1,0 +1,453 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000262",
+  "claims": [
+    {
+      "id": "c_ce77e8066a094094",
+      "gameId": "g_000262",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3454650/",
+          "retrievedAt": "2026-11-15T03:00:42Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb452fae33b126b1eea977656cf9bb1ea68ef5920808a3f2a309d1b2d54569dc"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:42Z",
+      "createdAt": "2026-11-15T03:00:42Z",
+      "updatedAt": "2026-11-15T03:00:42Z",
+      "lastCheckedAt": "2026-11-15T03:00:42Z",
+      "createdBy": "system",
+      "createdByRun": "43669205389",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 13
+        },
+        "rawText": "13 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_19d3cc491e2ebc1e",
+      "gameId": "g_000262",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3454650/",
+          "retrievedAt": "2026-11-15T03:00:42Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb452fae33b126b1eea977656cf9bb1ea68ef5920808a3f2a309d1b2d54569dc"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:42Z",
+      "createdAt": "2026-11-15T03:00:42Z",
+      "updatedAt": "2026-11-15T03:00:42Z",
+      "lastCheckedAt": "2026-11-15T03:00:42Z",
+      "createdBy": "system",
+      "createdByRun": "43669205389",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 13
+        },
+        "rawText": "13 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_0f7296ad83349349",
+      "gameId": "g_000262",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3454650/",
+          "retrievedAt": "2026-11-15T03:00:45Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:1f2a69d5a9fad583de9cdee75f8de50ed3e45d29716ced72b7f8f0f22a194451"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:42Z",
+      "createdAt": "2026-11-15T03:00:42Z",
+      "updatedAt": "2026-11-15T03:00:42Z",
+      "lastCheckedAt": "2026-11-15T03:00:45Z",
+      "createdBy": "system",
+      "createdByRun": "43669205389",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_c2098d54a7fff938",
+      "gameId": "g_000262",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3454650/",
+          "retrievedAt": "2026-11-15T03:00:42Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb452fae33b126b1eea977656cf9bb1ea68ef5920808a3f2a309d1b2d54569dc"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:42Z",
+      "createdAt": "2026-11-15T03:00:42Z",
+      "updatedAt": "2026-11-15T03:00:42Z",
+      "lastCheckedAt": "2026-11-15T03:00:42Z",
+      "createdBy": "system",
+      "createdByRun": "43669205389",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "mmo"
+        ]
+      }
+    },
+    {
+      "id": "c_e7216e0860c1b9d9",
+      "gameId": "g_000262",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3454650/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-15T02:51:00Z",
+          "quote": "BitCraft Onlineは、すべてのプレイヤーが共有する広大な世界を舞台にしたサンドボックスMMORPGです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb452fae33b126b1eea977656cf9bb1ea68ef5920808a3f2a309d1b2d54569dc"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:51:00Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "summary",
+      "value": {
+        "ja": "すべてのプレイヤーが共有する広大な世界を舞台にしたサンドボックスMMORPG。資源を集めて12の職業を極め、集落や町を築き、地形を変えながら世界を発展させる。放置やパッシブでも進められる。"
+      }
+    },
+    {
+      "id": "c_143b007cd20107b0",
+      "gameId": "g_000262",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3454650/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-15T02:51:00Z",
+          "quote": "収納やクラフト作業場を設け、ボーナスが得られる装飾品を飾って、自分の拠点となる我が家を作りましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb452fae33b126b1eea977656cf9bb1ea68ef5920808a3f2a309d1b2d54569dc"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:51:00Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "tag",
+      "value": {
+        "tagId": "base-building"
+      }
+    },
+    {
+      "id": "c_14d3a0d3d73dd6ec",
+      "gameId": "g_000262",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3454650/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-15T02:51:00Z",
+          "quote": "素材を集め、レアアイテムを見つけ、道具や装備をクラフトして強化しましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb452fae33b126b1eea977656cf9bb1ea68ef5920808a3f2a309d1b2d54569dc"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:51:00Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "tag",
+      "value": {
+        "tagId": "crafting"
+      }
+    },
+    {
+      "id": "c_3a5f2ecbfc535862",
+      "gameId": "g_000262",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3454650/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-15T02:51:00Z",
+          "quote": "森を抜け、川を渡り、山々や古代遺跡を探索しましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb452fae33b126b1eea977656cf9bb1ea68ef5920808a3f2a309d1b2d54569dc"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:51:00Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_5ddd0185f68d1e95",
+      "gameId": "g_000262",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3454650/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-15T02:51:00Z",
+          "quote": "他のプレイヤーと協力して、誰もが訪れ、利用し、暮らせる町や都市を築きましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb452fae33b126b1eea977656cf9bb1ea68ef5920808a3f2a309d1b2d54569dc"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:51:00Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "tag",
+      "value": {
+        "tagId": "city-builder"
+      }
+    },
+    {
+      "id": "c_953b4b00a3758d02",
+      "gameId": "g_000262",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3454650/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-15T02:51:00Z",
+          "quote": "BitCraft Onlineは、すべてのプレイヤーが共有する広大な世界を舞台にしたサンドボックスMMORPGです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb452fae33b126b1eea977656cf9bb1ea68ef5920808a3f2a309d1b2d54569dc"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:51:00Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "tag",
+      "value": {
+        "tagId": "rpg"
+      }
+    },
+    {
+      "id": "c_c4d15a9e5a94847f",
+      "gameId": "g_000262",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3454650/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-15T02:51:00Z",
+          "quote": "BitCraft Onlineは、すべてのプレイヤーが共有する広大な世界を舞台にしたサンドボックスMMORPGです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb452fae33b126b1eea977656cf9bb1ea68ef5920808a3f2a309d1b2d54569dc"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:51:00Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "tag",
+      "value": {
+        "tagId": "sandbox"
+      }
+    },
+    {
+      "id": "c_f81fda7b2cf292fe",
+      "gameId": "g_000262",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3454650/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-15T02:51:00Z",
+          "quote": "何もない状態から始め、危険な旅に備え、野生動物を狩り、手ごわい敵が潜む古代遺跡に挑み、荒野の脅威から身を守りましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb452fae33b126b1eea977656cf9bb1ea68ef5920808a3f2a309d1b2d54569dc"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:51:00Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "tag",
+      "value": {
+        "tagId": "survival"
+      }
+    },
+    {
+      "id": "c_70b70ad9c2d9a14e",
+      "gameId": "g_000262",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3454650/",
+          "retrievedAt": "2026-11-15T03:00:42Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb452fae33b126b1eea977656cf9bb1ea68ef5920808a3f2a309d1b2d54569dc"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:42Z",
+      "createdAt": "2026-11-15T03:00:42Z",
+      "updatedAt": "2026-11-15T03:00:42Z",
+      "lastCheckedAt": "2026-11-15T03:00:42Z",
+      "createdBy": "system",
+      "createdByRun": "43669205389",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3454650/"
+      }
+    },
+    {
+      "id": "c_47580f59a3bcf027",
+      "gameId": "g_000262",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3454650/",
+          "retrievedAt": "2026-11-15T03:00:42Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:eb452fae33b126b1eea977656cf9bb1ea68ef5920808a3f2a309d1b2d54569dc"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:42Z",
+      "createdAt": "2026-11-15T03:00:42Z",
+      "updatedAt": "2026-11-15T03:00:42Z",
+      "lastCheckedAt": "2026-11-15T03:00:42Z",
+      "createdBy": "system",
+      "createdByRun": "43669205389",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3454650/c81158850eb9aaee1686694333f9040392fd22ec/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "BitCraft Online のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Clockwork Laboratories, Inc."
+        }
+      }
+    }
+  ]
+}

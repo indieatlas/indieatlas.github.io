@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000268",
+  "claims": [
+    {
+      "id": "c_89ddfa8258beea70",
+      "gameId": "g_000268",
+      "scope": {
+        "platform": "switch2",
+        "region": "jp"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://product.ccfolia.com/table-game-world/",
+          "retrievedAt": "2026-11-15T02:54:22Z",
+          "quote": "発売予定 2026年11月10日",
+          "originKey": "official:ccfolia.com",
+          "fetchHash": "sha256:20dbd539bba55f00da61ebddf7f98b4df08dbdeb494816cdba505892cf83ec82"
+        },
+        {
+          "kind": "official",
+          "url": "https://product.ccfolia.com/table-game-world/",
+          "retrievedAt": "2026-11-15T02:54:22Z",
+          "quote": "本日発売！『テーブルゲームワールド CCFOLIA for Nintendo Switch 2』",
+          "originKey": "official:ccfolia.com",
+          "fetchHash": "sha256:20dbd539bba55f00da61ebddf7f98b4df08dbdeb494816cdba505892cf83ec82"
+        }
+      ],
+      "asOf": "2026-11-10",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:54:22Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 10
+        },
+        "rawText": "2026年11月10日"
+      }
+    },
+    {
+      "id": "c_7994e86de3e8adc7",
+      "gameId": "g_000268",
+      "scope": {
+        "platform": "switch2",
+        "region": "jp"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://product.ccfolia.com/table-game-world/",
+          "retrievedAt": "2026-11-15T02:54:22Z",
+          "quote": "オンラインプレイ 2〜8人（タイトルにより異なる）",
+          "originKey": "official:ccfolia.com",
+          "fetchHash": "sha256:20dbd539bba55f00da61ebddf7f98b4df08dbdeb494816cdba505892cf83ec82"
+        },
+        {
+          "kind": "official",
+          "url": "https://product.ccfolia.com/table-game-world/",
+          "retrievedAt": "2026-11-15T02:54:22Z",
+          "quote": "通信 オンラインマルチプレイ（部屋コード制）／おすそわけ通信対応（最大4人）",
+          "originKey": "official:ccfolia.com",
+          "fetchHash": "sha256:20dbd539bba55f00da61ebddf7f98b4df08dbdeb494816cdba505892cf83ec82"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:54:22Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "online-coop",
+          "local-coop"
+        ],
+        "minPlayers": 2,
+        "maxPlayers": 8
+      }
+    },
+    {
+      "id": "c_530582b41f29ff7b",
+      "gameId": "g_000268",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://product.ccfolia.com/table-game-world/",
+          "retrievedAt": "2026-11-15T02:54:22Z",
+          "quote": "トランプや将棋などの定番ゲームから、話題のボードゲーム、TRPG、マーダーミステリーまで。発売時点で40作品以上を収録しています。",
+          "originKey": "official:ccfolia.com",
+          "fetchHash": "sha256:20dbd539bba55f00da61ebddf7f98b4df08dbdeb494816cdba505892cf83ec82"
+        },
+        {
+          "kind": "official",
+          "url": "https://product.ccfolia.com/table-game-world/",
+          "retrievedAt": "2026-11-15T02:54:22Z",
+          "quote": "ルールの判定はプレイヤーにおまかせ。「今のなし！」も、その場で思いついたルールの追加も自由。",
+          "originKey": "official:ccfolia.com",
+          "fetchHash": "sha256:20dbd539bba55f00da61ebddf7f98b4df08dbdeb494816cdba505892cf83ec82"
+        },
+        {
+          "kind": "official",
+          "url": "https://product.ccfolia.com/table-game-world/",
+          "retrievedAt": "2026-11-15T02:54:22Z",
+          "quote": "おすそわけ通信に対応。誰か1人がソフトを持っていれば、「ゲームチャット」に参加している人におすそわけして一緒に遊べます。",
+          "originKey": "official:ccfolia.com",
+          "fetchHash": "sha256:20dbd539bba55f00da61ebddf7f98b4df08dbdeb494816cdba505892cf83ec82"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:54:22Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "summary",
+      "value": {
+        "ja": "ボードゲーム・TRPG・マーダーミステリーをNintendo Switch 2で遊べるテーブルゲーム集。トランプや将棋などの定番から話題作まで40作品以上を収録する。ルールの判定や進行はプレイヤーが手動で行い、ルームパスワードの共有やおすそわけ通信で離れた相手とも遊べる。"
+      }
+    },
+    {
+      "id": "c_2b961933a0fdbda9",
+      "gameId": "g_000268",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.gamespark.jp/article/2026/11/13/174852.html",
+          "sourceId": "gamespark",
+          "articleId": "a_12e3e7766df9ab7c",
+          "publishedAt": "2026-11-13T14:15:03Z",
+          "retrievedAt": "2026-11-15T02:54:14Z",
+          "quote": "『犯人は踊る』などの人気ゲームやTRPG、囲碁やリバーシといった40種類以上のゲームを収録しています。",
+          "originKey": "media:gamespark.jp",
+          "fetchHash": "sha256:150a94ab2d0f360ed07648e440f72f2117ebdeca3193242958c3440e6df7880a"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:54:14Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "tag",
+      "value": {
+        "tagId": "turn-based"
+      }
+    },
+    {
+      "id": "c_829fc382b7e5c77b",
+      "gameId": "g_000268",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://product.ccfolia.com/table-game-world/",
+          "retrievedAt": "2026-11-15T02:54:22Z",
+          "quote": "おすそわけ通信に対応。誰か1人がソフトを持っていれば、「ゲームチャット」に参加している人におすそわけして一緒に遊べます。",
+          "originKey": "official:ccfolia.com",
+          "fetchHash": "sha256:20dbd539bba55f00da61ebddf7f98b4df08dbdeb494816cdba505892cf83ec82"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:54:22Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_edc7d35906b43ed4",
+      "gameId": "g_000268",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "official",
+          "url": "https://product.ccfolia.com/table-game-world/",
+          "retrievedAt": "2026-11-15T02:54:22Z",
+          "quote": "トランプや将棋などの定番ゲームから、話題のボードゲーム、TRPG、マーダーミステリーまで。",
+          "originKey": "official:ccfolia.com",
+          "fetchHash": "sha256:20dbd539bba55f00da61ebddf7f98b4df08dbdeb494816cdba505892cf83ec82"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:54:22Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "tag",
+      "value": {
+        "tagId": "strategy"
+      }
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000259",
+  "status": "published",
+  "title": {
+    "display": "Sloppy Forgeries 名画のつもり！",
+    "original": "Sloppy Forgeries",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 3030560
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5039270",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5274180",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5274180",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000371"
+  ],
+  "publisherIds": [
+    "dev_000371",
+    "dev_000372"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://news.denfaminicogamer.jp/news/261114s",
+            "articleId": "a_9fea85671cc10b90",
+            "publishedAt": "2026-11-14T03:00:58Z",
+            "retrievedAt": "2026-11-15T02:49:26Z",
+            "locator": "article.games",
+            "originKey": "media:denfaminicogamer.jp"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-15T03:00:27Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3030560/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:49:36Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:953d0f254fd33e9cbd0abd03b4b730e6fe4660fc64b921774b2b08b64c7f3035"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3030560/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:49:36Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:953d0f254fd33e9cbd0abd03b4b730e6fe4660fc64b921774b2b08b64c7f3035"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3030560/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:49:36Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:953d0f254fd33e9cbd0abd03b4b730e6fe4660fc64b921774b2b08b64c7f3035"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3030560/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:49:36Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:953d0f254fd33e9cbd0abd03b4b730e6fe4660fc64b921774b2b08b64c7f3035"
+      }
+    }
+  ],
+  "createdAt": "2026-11-15T03:00:27Z",
+  "addedAt": "2026-11-15",
+  "updatedAt": "2026-11-15T03:00:27Z",
+  "createdByRun": "43669205389"
+}

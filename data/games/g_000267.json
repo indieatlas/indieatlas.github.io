@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000267",
+  "status": "candidate",
+  "title": {
+    "display": "False Hero",
+    "original": "False Hero",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 2538870
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4702340",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "4709240",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "4739180",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000383"
+  ],
+  "publisherIds": [
+    "dev_000384"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-showcase",
+        "note": "Game*Sparkのインディーゲーム開発者インタビュー連載「注目インディーミニ問答」で取り上げられた作品。",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.gamespark.jp/article/2026/11/14/174874.html",
+            "sourceId": "gamespark",
+            "publishedAt": "2026-11-14T08:48:53Z",
+            "retrievedAt": "2026-11-15T02:53:32Z",
+            "quote": "気になる新作インディーゲームの開発者にインタビューする本企画。",
+            "originKey": "media:gamespark.jp",
+            "fetchHash": "sha256:75d464dfcbf5b2fd6b660fd256941094d9169552683cfce2c09bb19c9e7ac1e7"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-15T03:00:27Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2538870/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:53:38Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a8cf6a047641ce998118e6a4dba94c407b8f0c39d85bc6d9698c8c96c83bb774"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2538870/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:53:38Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a8cf6a047641ce998118e6a4dba94c407b8f0c39d85bc6d9698c8c96c83bb774"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2538870/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:53:38Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a8cf6a047641ce998118e6a4dba94c407b8f0c39d85bc6d9698c8c96c83bb774"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2538870/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:53:38Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a8cf6a047641ce998118e6a4dba94c407b8f0c39d85bc6d9698c8c96c83bb774"
+      }
+    }
+  ],
+  "createdAt": "2026-11-15T03:00:27Z",
+  "updatedAt": "2026-11-15T03:01:05Z",
+  "createdByRun": "43669205389"
+}

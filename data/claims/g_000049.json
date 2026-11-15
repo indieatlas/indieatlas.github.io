@@ -111,7 +111,7 @@
       "adoptedAt": "2026-10-27T14:27:46Z",
       "createdAt": "2026-10-27T14:27:46Z",
       "updatedAt": "2026-10-27T14:27:46Z",
-      "lastCheckedAt": "2026-11-14T03:37:24Z",
+      "lastCheckedAt": "2026-11-15T03:01:09Z",
       "createdBy": "agent",
       "createdByRun": "local-seed",
       "field": "release",
@@ -159,7 +159,7 @@
       "adoptedAt": "2026-10-27T14:27:46Z",
       "createdAt": "2026-10-27T14:27:46Z",
       "updatedAt": "2026-10-27T14:27:46Z",
-      "lastCheckedAt": "2026-11-14T03:37:24Z",
+      "lastCheckedAt": "2026-11-15T03:01:09Z",
       "createdBy": "agent",
       "createdByRun": "local-seed",
       "field": "release",
@@ -192,17 +192,60 @@
         }
       ],
       "asOf": "2026-10-28",
-      "status": "adopted",
-      "statusReason": "highest-rank",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersededBy": "c_873f477c87206a51",
       "adoptedAt": "2026-10-27T16:30:31Z",
       "createdAt": "2026-10-27T16:30:31Z",
-      "updatedAt": "2026-10-27T16:30:31Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
       "lastCheckedAt": "2026-10-27T16:30:31Z",
       "createdBy": "agent",
       "createdByRun": "local-igdb",
       "field": "release",
       "value": {
         "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 11
+        },
+        "rawText": "Nov 11, 2026"
+      }
+    },
+    {
+      "id": "c_873f477c87206a51",
+      "gameId": "g_000049",
+      "scope": {
+        "platform": "ps5",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.playstation.com/ja-jp/concept/10018202",
+          "retrievedAt": "2026-11-15T02:46:34Z",
+          "quote": "ミニマリストの戦略ゲーム『Thronefall』で毎夜毎晩、質素な王国を防衛しながら発展させていこう。",
+          "originKey": "store:playstation-store",
+          "fetchHash": "sha256:8d4c5ade7666789bb8121d602cc8dac50f1e2c3f00d7bed02f9fc73d6d8ebf70"
+        }
+      ],
+      "asOf": "2026-11-15",
+      "status": "adopted",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_7c0abd649a95c394"
+      ],
+      "adoptedAt": "2026-11-15T03:00:27Z",
+      "createdAt": "2026-11-15T03:00:27Z",
+      "updatedAt": "2026-11-15T03:00:27Z",
+      "lastCheckedAt": "2026-11-15T02:46:34Z",
+      "createdBy": "llm",
+      "createdByRun": "43669205389",
+      "field": "release",
+      "value": {
+        "status": "released",
         "date": {
           "precision": "day",
           "year": 2026,
@@ -231,10 +274,10 @@
         {
           "kind": "store",
           "url": "https://www.nintendo.com/us/store/products/thronefall-switch/",
-          "retrievedAt": "2026-11-07T02:54:25Z",
+          "retrievedAt": "2026-11-15T02:47:31Z",
           "quote": "Release dateOctober 11, 2024",
           "originKey": "store:nintendo-eshop",
-          "fetchHash": "sha256:af703126724eb315d502fe74f0d97e5fa14ece74599de5ed89bb163614567503"
+          "fetchHash": "sha256:1cbf441918e1b96a89109b5ab1bd3534303adef00dfd4890ce812af836066c1b"
         }
       ],
       "asOf": "2026-10-28",
@@ -243,7 +286,7 @@
       "adoptedAt": "2026-10-27T16:30:31Z",
       "createdAt": "2026-10-27T16:30:31Z",
       "updatedAt": "2026-10-27T16:30:31Z",
-      "lastCheckedAt": "2026-11-07T02:54:25Z",
+      "lastCheckedAt": "2026-11-15T02:47:31Z",
       "createdBy": "agent",
       "createdByRun": "local-igdb",
       "field": "release",
@@ -310,10 +353,10 @@
           "kind": "store",
           "url": "https://www.xbox.com/ja-JP/games/store/thronefall/9nwwl1cbwfcg",
           "publishedAt": "2026-11-11T00:00:00Z",
-          "retrievedAt": "2026-11-14T03:23:38Z",
+          "retrievedAt": "2026-11-15T02:46:43Z",
           "quote": "リリース日11/11/2026",
           "originKey": "store:microsoft-store",
-          "fetchHash": "sha256:6526e5c0dda6719886a0216e4aab8dc9e9344e8819e9f60e8b6009208fafcef2"
+          "fetchHash": "sha256:6cbbf5e7330302340b4aa6dd9da5e4d018ba304ca0c0a96f999ec50e0ecede48"
         }
       ],
       "asOf": "2026-11-11",
@@ -325,7 +368,7 @@
       "adoptedAt": "2026-11-14T03:36:10Z",
       "createdAt": "2026-11-14T03:36:10Z",
       "updatedAt": "2026-11-14T03:36:10Z",
-      "lastCheckedAt": "2026-11-14T03:23:38Z",
+      "lastCheckedAt": "2026-11-15T02:46:43Z",
       "createdBy": "llm",
       "createdByRun": "43551223935",
       "field": "release",
@@ -361,7 +404,7 @@
       "adoptedAt": "2026-10-27T14:27:46Z",
       "createdAt": "2026-10-27T14:27:46Z",
       "updatedAt": "2026-10-27T14:27:46Z",
-      "lastCheckedAt": "2026-11-14T03:37:27Z",
+      "lastCheckedAt": "2026-11-15T03:01:12Z",
       "createdBy": "agent",
       "createdByRun": "local-seed",
       "field": "japaneseSupport",
@@ -392,7 +435,7 @@
       "adoptedAt": "2026-10-27T14:27:46Z",
       "createdAt": "2026-10-27T14:27:46Z",
       "updatedAt": "2026-10-27T14:27:46Z",
-      "lastCheckedAt": "2026-11-14T03:37:24Z",
+      "lastCheckedAt": "2026-11-15T03:01:09Z",
       "createdBy": "agent",
       "createdByRun": "local-seed",
       "field": "playerModes",
@@ -653,7 +696,7 @@
       "adoptedAt": "2026-10-27T14:27:46Z",
       "createdAt": "2026-10-27T14:27:46Z",
       "updatedAt": "2026-10-27T14:27:46Z",
-      "lastCheckedAt": "2026-11-14T03:37:24Z",
+      "lastCheckedAt": "2026-11-15T03:01:09Z",
       "createdBy": "agent",
       "createdByRun": "local-seed",
       "field": "storeLink",

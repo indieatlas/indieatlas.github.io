@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000262",
+  "status": "candidate",
+  "title": {
+    "display": "BitCraft Online",
+    "original": "BitCraft Online",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "BitCraft",
+      "lang": "en",
+      "kind": "abbreviation"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 3454650
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000375"
+  ],
+  "publisherIds": [
+    "dev_000375"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/3454650/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-15T02:51:00Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:eb452fae33b126b1eea977656cf9bb1ea68ef5920808a3f2a309d1b2d54569dc"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-15T03:00:27Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "media",
+        "url": "https://automaton-media.com/articles/newsjp/bitcraft-20261114-479269/",
+        "sourceId": "automaton",
+        "publishedAt": "2026-11-14T05:22:49Z",
+        "retrievedAt": "2026-11-15T02:50:53Z",
+        "quote": "『BitCraft Online』（以下、BitCraft）を正式リリースした。",
+        "originKey": "media:automaton-media.com",
+        "fetchHash": "sha256:2b875b34b1be417ed1db483b02e3742e7f0280b0b00dc3d7af2da36b97893475"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3454650/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:51:00Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eb452fae33b126b1eea977656cf9bb1ea68ef5920808a3f2a309d1b2d54569dc"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3454650/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:51:00Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eb452fae33b126b1eea977656cf9bb1ea68ef5920808a3f2a309d1b2d54569dc"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3454650/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:51:00Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eb452fae33b126b1eea977656cf9bb1ea68ef5920808a3f2a309d1b2d54569dc"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3454650/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-15T02:51:00Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:eb452fae33b126b1eea977656cf9bb1ea68ef5920808a3f2a309d1b2d54569dc"
+      }
+    }
+  ],
+  "createdAt": "2026-11-15T03:00:27Z",
+  "updatedAt": "2026-11-15T03:00:27Z",
+  "createdByRun": "43669205389"
+}
