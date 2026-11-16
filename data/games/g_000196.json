@@ -14,7 +14,8 @@
     }
   ],
   "externalIds": {
-    "steamAppId": 3499520
+    "steamAppId": 3499520,
+    "igdbId": 338633
   },
   "associatedApps": [],
   "officialUrl": "https://pianoglow.com",
@@ -70,6 +71,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/pianoglow",
+        "retrievedAt": "2026-11-16T01:11:01Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "store",
@@ -84,6 +95,6 @@
   ],
   "createdAt": "2026-11-11T03:07:21Z",
   "addedAt": "2026-11-11",
-  "updatedAt": "2026-11-11T03:07:21Z",
+  "updatedAt": "2026-11-16T01:11:01Z",
   "createdByRun": "42948722984"
 }

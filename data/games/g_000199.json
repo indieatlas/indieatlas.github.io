@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 3669620
+    "steamAppId": 3669620,
+    "igdbId": 376145
   },
   "associatedApps": [
     {
@@ -70,6 +71,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/warhammer-survivors",
+        "retrievedAt": "2026-11-16T01:11:01Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -96,6 +107,6 @@
   ],
   "createdAt": "2026-11-11T03:07:21Z",
   "addedAt": "2026-11-11",
-  "updatedAt": "2026-11-11T03:07:21Z",
+  "updatedAt": "2026-11-16T01:11:01Z",
   "createdByRun": "42948722984"
 }

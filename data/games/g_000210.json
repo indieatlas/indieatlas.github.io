@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 4019220
+    "steamAppId": 4019220,
+    "igdbId": 365465
   },
   "associatedApps": [],
   "officialUrl": "https://www.freelives.net",
@@ -61,6 +62,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/dressmaker--1",
+        "retrievedAt": "2026-11-16T01:11:01Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "store",
@@ -96,6 +107,6 @@
   ],
   "createdAt": "2026-11-11T03:07:41Z",
   "addedAt": "2026-11-12",
-  "updatedAt": "2026-11-12T04:09:43Z",
+  "updatedAt": "2026-11-16T01:11:01Z",
   "createdByRun": "42948722984"
 }

@@ -15,7 +15,8 @@
     }
   ],
   "externalIds": {
-    "steamAppId": 1859910
+    "steamAppId": 1859910,
+    "igdbId": 203852
   },
   "associatedApps": [
     {
@@ -83,6 +84,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/legend-of-mortal",
+        "retrievedAt": "2026-11-16T01:11:01Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -107,6 +118,6 @@
   ],
   "createdAt": "2026-11-10T04:57:20Z",
   "addedAt": "2026-11-12",
-  "updatedAt": "2026-11-12T04:09:43Z",
+  "updatedAt": "2026-11-16T01:11:01Z",
   "createdByRun": "42757239487"
 }

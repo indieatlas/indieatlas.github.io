@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 1637460
+    "steamAppId": 1637460,
+    "igdbId": 381208
   },
   "associatedApps": [],
   "officialUrl": "https://www.tankrat.com/",
@@ -65,6 +66,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/tankrat",
+        "retrievedAt": "2026-11-16T01:11:01Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "official",
@@ -102,6 +113,6 @@
   ],
   "createdAt": "2026-11-13T03:45:51Z",
   "addedAt": "2026-11-13",
-  "updatedAt": "2026-11-13T03:45:51Z",
+  "updatedAt": "2026-11-16T01:11:01Z",
   "createdByRun": "43359055786"
 }

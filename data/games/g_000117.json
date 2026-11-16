@@ -15,7 +15,8 @@
     }
   ],
   "externalIds": {
-    "steamAppId": 3208460
+    "steamAppId": 3208460,
+    "igdbId": 428639
   },
   "associatedApps": [],
   "developerIds": [
@@ -70,6 +71,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/rogue-braver",
+        "retrievedAt": "2026-11-16T01:11:01Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -95,6 +106,6 @@
     }
   ],
   "createdAt": "2026-11-07T19:01:34Z",
-  "updatedAt": "2026-11-07T19:01:34Z",
+  "updatedAt": "2026-11-16T01:11:01Z",
   "createdByRun": "42402321312"
 }

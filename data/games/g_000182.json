@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 4842090
+    "steamAppId": 4842090,
+    "igdbId": 422884
   },
   "associatedApps": [
     {
@@ -85,6 +86,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/grab-your-deck",
+        "retrievedAt": "2026-11-16T01:11:01Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "official",
@@ -122,6 +133,6 @@
   ],
   "createdAt": "2026-11-10T04:57:00Z",
   "addedAt": "2026-11-10",
-  "updatedAt": "2026-11-10T04:57:00Z",
+  "updatedAt": "2026-11-16T01:11:01Z",
   "createdByRun": "42757239487"
 }

@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 4493130
+    "steamAppId": 4493130,
+    "igdbId": 414510
   },
   "associatedApps": [
     {
@@ -70,6 +71,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/ski-e-o-ski-resort-tycoon",
+        "retrievedAt": "2026-11-16T01:11:01Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -96,6 +107,6 @@
   ],
   "createdAt": "2026-11-14T03:36:10Z",
   "addedAt": "2026-11-14",
-  "updatedAt": "2026-11-14T03:36:10Z",
+  "updatedAt": "2026-11-16T01:11:01Z",
   "createdByRun": "43551223935"
 }

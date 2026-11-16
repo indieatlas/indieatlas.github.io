@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 1210320
+    "steamAppId": 1210320,
+    "igdbId": 142941
   },
   "associatedApps": [],
   "officialUrl": "https://www.potioncraft.com/",
@@ -61,6 +62,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/potion-craft",
+        "retrievedAt": "2026-11-16T01:11:01Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "store",
@@ -96,6 +107,6 @@
   ],
   "createdAt": "2026-11-11T03:07:32Z",
   "addedAt": "2026-11-13",
-  "updatedAt": "2026-11-13T03:45:51Z",
+  "updatedAt": "2026-11-16T01:11:01Z",
   "createdByRun": "42948722984"
 }

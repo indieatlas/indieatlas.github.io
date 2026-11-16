@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 1943950
+    "steamAppId": 1943950,
+    "igdbId": 197202
   },
   "associatedApps": [
     {
@@ -67,6 +68,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/escape-the-backrooms",
+        "retrievedAt": "2026-11-16T01:11:01Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -91,6 +102,6 @@
   ],
   "createdAt": "2026-11-09T01:38:16Z",
   "addedAt": "2026-11-09",
-  "updatedAt": "2026-11-09T03:07:11Z",
+  "updatedAt": "2026-11-16T01:11:01Z",
   "createdByRun": "42544889895"
 }

@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 1751730
+    "steamAppId": 1751730,
+    "igdbId": 171306
   },
   "associatedApps": [
     {
@@ -95,6 +96,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/fire-and-ashes--1",
+        "retrievedAt": "2026-11-16T01:11:01Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "official",
@@ -119,6 +130,6 @@
     }
   ],
   "createdAt": "2026-11-12T04:09:43Z",
-  "updatedAt": "2026-11-12T04:09:43Z",
+  "updatedAt": "2026-11-16T01:11:01Z",
   "createdByRun": "43151022131"
 }

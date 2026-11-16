@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 2882610
+    "steamAppId": 2882610,
+    "igdbId": 291708
   },
   "associatedApps": [
     {
@@ -80,6 +81,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/confronted",
+        "retrievedAt": "2026-11-16T01:11:01Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -105,6 +116,6 @@
     }
   ],
   "createdAt": "2026-11-14T03:36:10Z",
-  "updatedAt": "2026-11-14T03:37:10Z",
+  "updatedAt": "2026-11-16T01:11:01Z",
   "createdByRun": "43551223935"
 }

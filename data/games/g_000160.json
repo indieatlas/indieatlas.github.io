@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 1574820
+    "steamAppId": 1574820,
+    "igdbId": 134165
   },
   "associatedApps": [
     {
@@ -76,6 +77,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/until-then",
+        "retrievedAt": "2026-11-16T01:11:01Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -101,6 +112,6 @@
     }
   ],
   "createdAt": "2026-11-09T01:37:56Z",
-  "updatedAt": "2026-11-09T01:37:56Z",
+  "updatedAt": "2026-11-16T01:11:01Z",
   "createdByRun": "42544889895"
 }

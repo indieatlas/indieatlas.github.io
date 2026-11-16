@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 4304060
+    "steamAppId": 4304060,
+    "igdbId": 404714
   },
   "associatedApps": [],
   "developerIds": [
@@ -60,6 +61,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/sonic-pico-park",
+        "retrievedAt": "2026-11-16T01:11:01Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -84,6 +95,6 @@
   ],
   "createdAt": "2026-11-13T03:46:06Z",
   "addedAt": "2026-11-15",
-  "updatedAt": "2026-11-15T03:00:27Z",
+  "updatedAt": "2026-11-16T01:11:01Z",
   "createdByRun": "43359055786"
 }

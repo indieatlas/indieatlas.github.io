@@ -15,7 +15,8 @@
     }
   ],
   "externalIds": {
-    "steamAppId": 2827200
+    "steamAppId": 2827200,
+    "igdbId": 343183
   },
   "associatedApps": [],
   "officialUrl": "https://mimesis.relugames.com/",
@@ -68,6 +69,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/mimesis",
+        "retrievedAt": "2026-11-16T01:11:01Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "store",
@@ -103,6 +114,6 @@
   ],
   "createdAt": "2026-11-09T01:38:25Z",
   "addedAt": "2026-11-11",
-  "updatedAt": "2026-11-11T03:07:21Z",
+  "updatedAt": "2026-11-16T01:11:01Z",
   "createdByRun": "42544889895"
 }

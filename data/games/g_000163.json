@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 1903340
+    "steamAppId": 1903340,
+    "igdbId": 305152
   },
   "associatedApps": [
     {
@@ -82,6 +83,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/clair-obscur-expedition-33",
+        "retrievedAt": "2026-11-16T01:11:01Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "store",
@@ -117,6 +128,6 @@
   ],
   "createdAt": "2026-11-09T01:38:02Z",
   "addedAt": "2026-11-10",
-  "updatedAt": "2026-11-10T04:57:00Z",
+  "updatedAt": "2026-11-16T01:11:01Z",
   "createdByRun": "42544889895"
 }

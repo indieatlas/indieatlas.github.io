@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 1478500
+    "steamAppId": 1478500,
+    "igdbId": 279624
   },
   "associatedApps": [],
   "developerIds": [
@@ -79,6 +80,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/big-walk",
+        "retrievedAt": "2026-11-16T01:11:01Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -105,6 +116,6 @@
   ],
   "createdAt": "2026-11-11T03:07:21Z",
   "addedAt": "2026-11-11",
-  "updatedAt": "2026-11-11T03:07:21Z",
+  "updatedAt": "2026-11-16T01:11:01Z",
   "createdByRun": "42948722984"
 }

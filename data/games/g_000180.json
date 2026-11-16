@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 4901540
+    "steamAppId": 4901540,
+    "igdbId": 429347
   },
   "associatedApps": [],
   "developerIds": [
@@ -60,6 +61,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/brick-buddies--1",
+        "retrievedAt": "2026-11-16T01:11:01Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -84,6 +95,6 @@
   ],
   "createdAt": "2026-11-09T03:07:13Z",
   "addedAt": "2026-11-11",
-  "updatedAt": "2026-11-11T03:07:21Z",
+  "updatedAt": "2026-11-16T01:11:01Z",
   "createdByRun": "42552417088"
 }

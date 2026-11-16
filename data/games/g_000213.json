@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 1814690
+    "steamAppId": 1814690,
+    "igdbId": 212065
   },
   "associatedApps": [
     {
@@ -72,6 +73,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/zid-journey",
+        "retrievedAt": "2026-11-16T01:11:01Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "publishers",
       "evidence": {
         "kind": "store",
@@ -98,6 +109,6 @@
   ],
   "createdAt": "2026-11-12T04:09:43Z",
   "addedAt": "2026-11-12",
-  "updatedAt": "2026-11-12T04:09:43Z",
+  "updatedAt": "2026-11-16T01:11:01Z",
   "createdByRun": "43151022131"
 }

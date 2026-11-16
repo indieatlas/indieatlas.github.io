@@ -9,7 +9,8 @@
   },
   "aliases": [],
   "externalIds": {
-    "steamAppId": 2670630
+    "steamAppId": 2670630,
+    "igdbId": 274920
   },
   "associatedApps": [
     {
@@ -93,6 +94,16 @@
       }
     },
     {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "database",
+        "url": "https://www.igdb.com/games/supermarket-simulator--3",
+        "retrievedAt": "2026-11-16T01:11:01Z",
+        "locator": "igdb:external_games.steam",
+        "originKey": "database:igdb.com"
+      }
+    },
+    {
       "field": "officialUrl",
       "evidence": {
         "kind": "store",
@@ -127,6 +138,6 @@
     }
   ],
   "createdAt": "2026-11-14T03:36:29Z",
-  "updatedAt": "2026-11-14T03:36:29Z",
+  "updatedAt": "2026-11-16T01:11:01Z",
   "createdByRun": "43551223935"
 }

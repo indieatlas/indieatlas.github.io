@@ -3,6 +3,82 @@
   "gameId": "g_000234",
   "claims": [
     {
+      "id": "c_722e06aec8772ccc",
+      "gameId": "g_000234",
+      "scope": {
+        "platform": "android",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/cell-to-singularity",
+          "retrievedAt": "2026-11-16T01:11:01Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T01:11:01Z",
+      "createdAt": "2026-11-16T01:11:01Z",
+      "updatedAt": "2026-11-16T01:11:01Z",
+      "lastCheckedAt": "2026-11-16T01:11:01Z",
+      "createdBy": "system",
+      "createdByRun": "43784705964",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2020,
+          "month": 4,
+          "day": 6
+        },
+        "rawText": "Apr 06, 2020"
+      }
+    },
+    {
+      "id": "c_2fbb1057eb33387d",
+      "gameId": "g_000234",
+      "scope": {
+        "platform": "ios",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/cell-to-singularity",
+          "retrievedAt": "2026-11-16T01:11:01Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T01:11:01Z",
+      "createdAt": "2026-11-16T01:11:01Z",
+      "updatedAt": "2026-11-16T01:11:01Z",
+      "lastCheckedAt": "2026-11-16T01:11:01Z",
+      "createdBy": "system",
+      "createdByRun": "43784705964",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2019,
+          "month": 8,
+          "day": 4
+        },
+        "rawText": "Aug 04, 2019"
+      }
+    },
+    {
       "id": "c_73647f1cf161ffd7",
       "gameId": "g_000234",
       "scope": {
@@ -371,6 +447,64 @@
       }
     },
     {
+      "id": "c_2422f21271b931e7",
+      "gameId": "g_000234",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/cell-to-singularity",
+          "retrievedAt": "2026-11-16T01:11:01Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T01:11:01Z",
+      "createdAt": "2026-11-16T01:11:01Z",
+      "updatedAt": "2026-11-16T01:11:01Z",
+      "lastCheckedAt": "2026-11-16T01:11:01Z",
+      "createdBy": "system",
+      "createdByRun": "43784705964",
+      "field": "storeLink",
+      "value": {
+        "store": "google-play",
+        "url": "https://play.google.com/store/apps/details?id=com.computerlunch.evolution"
+      }
+    },
+    {
+      "id": "c_b185d5a5514c2870",
+      "gameId": "g_000234",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/cell-to-singularity",
+          "retrievedAt": "2026-11-16T01:11:01Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T01:11:01Z",
+      "createdAt": "2026-11-16T01:11:01Z",
+      "updatedAt": "2026-11-16T01:11:01Z",
+      "lastCheckedAt": "2026-11-16T01:11:01Z",
+      "createdBy": "system",
+      "createdByRun": "43784705964",
+      "field": "storeLink",
+      "value": {
+        "store": "app-store",
+        "url": "https://apps.apple.com/app/cell-to-singularity-evolution/id1327555461"
+      }
+    },
+    {
       "id": "c_6ca162b77d5e290e",
       "gameId": "g_000234",
       "scope": {},
@@ -404,6 +538,228 @@
         "usage": {
           "basis": "store-asset",
           "credit": "Computer Lunch"
+        }
+      }
+    },
+    {
+      "id": "c_1e54a62152ddaed4",
+      "gameId": "g_000234",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/cell-to-singularity",
+          "retrievedAt": "2026-11-16T01:11:01Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T01:11:01Z",
+      "createdAt": "2026-11-16T01:11:01Z",
+      "updatedAt": "2026-11-16T01:11:01Z",
+      "lastCheckedAt": "2026-11-16T01:11:01Z",
+      "createdBy": "system",
+      "createdByRun": "43784705964",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc5uzy.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Cell to Singularity - Evolution Never Ends のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_3759fdce7676d9fb",
+      "gameId": "g_000234",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/cell-to-singularity",
+          "retrievedAt": "2026-11-16T01:11:01Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T01:11:01Z",
+      "createdAt": "2026-11-16T01:11:01Z",
+      "updatedAt": "2026-11-16T01:11:01Z",
+      "lastCheckedAt": "2026-11-16T01:11:01Z",
+      "createdBy": "system",
+      "createdByRun": "43784705964",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc5v01.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Cell to Singularity - Evolution Never Ends のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_45598849216c2b9a",
+      "gameId": "g_000234",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/cell-to-singularity",
+          "retrievedAt": "2026-11-16T01:11:01Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T01:11:01Z",
+      "createdAt": "2026-11-16T01:11:01Z",
+      "updatedAt": "2026-11-16T01:11:01Z",
+      "lastCheckedAt": "2026-11-16T01:11:01Z",
+      "createdBy": "system",
+      "createdByRun": "43784705964",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc5uzx.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Cell to Singularity - Evolution Never Ends のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_6e30176af92307b0",
+      "gameId": "g_000234",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/cell-to-singularity",
+          "retrievedAt": "2026-11-16T01:11:01Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T01:11:01Z",
+      "createdAt": "2026-11-16T01:11:01Z",
+      "updatedAt": "2026-11-16T01:11:01Z",
+      "lastCheckedAt": "2026-11-16T01:11:01Z",
+      "createdBy": "system",
+      "createdByRun": "43784705964",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc5uzz.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Cell to Singularity - Evolution Never Ends のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_cdd23417a92390ad",
+      "gameId": "g_000234",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/cell-to-singularity",
+          "retrievedAt": "2026-11-16T01:11:01Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T01:11:01Z",
+      "createdAt": "2026-11-16T01:11:01Z",
+      "updatedAt": "2026-11-16T01:11:01Z",
+      "lastCheckedAt": "2026-11-16T01:11:01Z",
+      "createdBy": "system",
+      "createdByRun": "43784705964",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc5uzw.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Cell to Singularity - Evolution Never Ends のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_ea06fcd3785417cb",
+      "gameId": "g_000234",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/cell-to-singularity",
+          "retrievedAt": "2026-11-16T01:11:01Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T01:11:01Z",
+      "createdAt": "2026-11-16T01:11:01Z",
+      "updatedAt": "2026-11-16T01:11:01Z",
+      "lastCheckedAt": "2026-11-16T01:11:01Z",
+      "createdBy": "system",
+      "createdByRun": "43784705964",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/sc5v00.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Cell to Singularity - Evolution Never Ends のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
         }
       }
     }

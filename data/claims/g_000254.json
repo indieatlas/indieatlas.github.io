@@ -3,6 +3,44 @@
   "gameId": "g_000254",
   "claims": [
     {
+      "id": "c_7ca614802fb61e27",
+      "gameId": "g_000254",
+      "scope": {
+        "platform": "android",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/revolution-idle",
+          "retrievedAt": "2026-11-16T01:11:01Z",
+          "locator": "igdb:games.release_dates",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T01:11:01Z",
+      "createdAt": "2026-11-16T01:11:01Z",
+      "updatedAt": "2026-11-16T01:11:01Z",
+      "lastCheckedAt": "2026-11-16T01:11:01Z",
+      "createdBy": "system",
+      "createdByRun": "43784705964",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2024,
+          "month": 10,
+          "day": 11
+        },
+        "rawText": "Oct 11, 2024"
+      }
+    },
+    {
       "id": "c_a05c6c0c3c7056fb",
       "gameId": "g_000254",
       "scope": {
@@ -134,6 +172,35 @@
       }
     },
     {
+      "id": "c_16bbd75af647c9b7",
+      "gameId": "g_000254",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/revolution-idle",
+          "retrievedAt": "2026-11-16T01:11:01Z",
+          "locator": "igdb:games.websites",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T01:11:01Z",
+      "createdAt": "2026-11-16T01:11:01Z",
+      "updatedAt": "2026-11-16T01:11:01Z",
+      "lastCheckedAt": "2026-11-16T01:11:01Z",
+      "createdBy": "system",
+      "createdByRun": "43784705964",
+      "field": "storeLink",
+      "value": {
+        "store": "google-play",
+        "url": "https://play.google.com/store/apps/details?id=com.oninou.revolution"
+      }
+    },
+    {
       "id": "c_b444e223e5812d87",
       "gameId": "g_000254",
       "scope": {},
@@ -167,6 +234,265 @@
         "usage": {
           "basis": "store-asset",
           "credit": "Oni Gaming"
+        }
+      }
+    },
+    {
+      "id": "c_07378ab66ca55b13",
+      "gameId": "g_000254",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/revolution-idle",
+          "retrievedAt": "2026-11-16T01:11:01Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T01:11:01Z",
+      "createdAt": "2026-11-16T01:11:01Z",
+      "updatedAt": "2026-11-16T01:11:01Z",
+      "lastCheckedAt": "2026-11-16T01:11:01Z",
+      "createdBy": "system",
+      "createdByRun": "43784705964",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scry7f.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Revolution Idle のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_3219141df15f86f8",
+      "gameId": "g_000254",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/revolution-idle",
+          "retrievedAt": "2026-11-16T01:11:01Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T01:11:01Z",
+      "createdAt": "2026-11-16T01:11:01Z",
+      "updatedAt": "2026-11-16T01:11:01Z",
+      "lastCheckedAt": "2026-11-16T01:11:01Z",
+      "createdBy": "system",
+      "createdByRun": "43784705964",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scry7k.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Revolution Idle のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_6acb163823b5909c",
+      "gameId": "g_000254",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/revolution-idle",
+          "retrievedAt": "2026-11-16T01:11:01Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T01:11:01Z",
+      "createdAt": "2026-11-16T01:11:01Z",
+      "updatedAt": "2026-11-16T01:11:01Z",
+      "lastCheckedAt": "2026-11-16T01:11:01Z",
+      "createdBy": "system",
+      "createdByRun": "43784705964",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scry7i.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Revolution Idle のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_92a06df39b6370ec",
+      "gameId": "g_000254",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/revolution-idle",
+          "retrievedAt": "2026-11-16T01:11:01Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T01:11:01Z",
+      "createdAt": "2026-11-16T01:11:01Z",
+      "updatedAt": "2026-11-16T01:11:01Z",
+      "lastCheckedAt": "2026-11-16T01:11:01Z",
+      "createdBy": "system",
+      "createdByRun": "43784705964",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scry7j.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Revolution Idle のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_93e4c06ea1e59f8e",
+      "gameId": "g_000254",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/revolution-idle",
+          "retrievedAt": "2026-11-16T01:11:01Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T01:11:01Z",
+      "createdAt": "2026-11-16T01:11:01Z",
+      "updatedAt": "2026-11-16T01:11:01Z",
+      "lastCheckedAt": "2026-11-16T01:11:01Z",
+      "createdBy": "system",
+      "createdByRun": "43784705964",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scry7b.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Revolution Idle のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_a81f238b83f9cde3",
+      "gameId": "g_000254",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/revolution-idle",
+          "retrievedAt": "2026-11-16T01:11:01Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T01:11:01Z",
+      "createdAt": "2026-11-16T01:11:01Z",
+      "updatedAt": "2026-11-16T01:11:01Z",
+      "lastCheckedAt": "2026-11-16T01:11:01Z",
+      "createdBy": "system",
+      "createdByRun": "43784705964",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scry7g.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Revolution Idle のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_af29eb914da69573",
+      "gameId": "g_000254",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "database",
+          "url": "https://www.igdb.com/games/revolution-idle",
+          "retrievedAt": "2026-11-16T01:11:01Z",
+          "locator": "igdb:games.screenshots",
+          "originKey": "database:igdb.com"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T01:11:01Z",
+      "createdAt": "2026-11-16T01:11:01Z",
+      "updatedAt": "2026-11-16T01:11:01Z",
+      "lastCheckedAt": "2026-11-16T01:11:01Z",
+      "createdBy": "system",
+      "createdByRun": "43784705964",
+      "field": "image",
+      "value": {
+        "url": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/scry7d.jpg",
+        "role": "screenshot",
+        "width": 889,
+        "height": 500,
+        "alt": "Revolution Idle のスクリーンショット",
+        "usage": {
+          "basis": "other-permitted",
+          "credit": "IGDB",
+          "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
         }
       }
     }
