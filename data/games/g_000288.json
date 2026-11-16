@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000288",
+  "status": "candidate",
+  "title": {
+    "display": "トーエム2",
+    "original": "TOEM 2",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 2900640
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4414810",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000412"
+  ],
+  "publisherIds": [
+    "dev_000412",
+    "dev_000413"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.gamespark.jp/article/2026/11/03/174431.html",
+            "articleId": "a_7f63dea9fd0e96fd",
+            "publishedAt": "2026-11-03T03:30:03Z",
+            "retrievedAt": "2026-11-16T02:54:02Z",
+            "locator": "article.games",
+            "originKey": "media:gamespark.jp"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-16T03:07:29Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2900640/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:54:25Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:769d4ce3ab12778db08c0195c439424769fc361ca2629e75ecf455bc0045b1c0"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2900640/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:54:25Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:769d4ce3ab12778db08c0195c439424769fc361ca2629e75ecf455bc0045b1c0"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2900640/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:54:25Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:769d4ce3ab12778db08c0195c439424769fc361ca2629e75ecf455bc0045b1c0"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2900640/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:54:25Z",
+        "quote": "高評価作『トーエム』の続編『トーエム2』で、好奇心旺盛な写真家の冒険が再び始まる。",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:769d4ce3ab12778db08c0195c439424769fc361ca2629e75ecf455bc0045b1c0"
+      }
+    }
+  ],
+  "createdAt": "2026-11-16T03:07:29Z",
+  "updatedAt": "2026-11-16T03:07:29Z",
+  "createdByRun": "43794325944"
+}

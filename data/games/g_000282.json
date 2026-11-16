@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000282",
+  "status": "published",
+  "title": {
+    "display": "Terminus Historia｜境界戦役",
+    "original": "Terminus Historia｜境界戦役",
+    "originalLang": "ja"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 2011180
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3367280",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000399"
+  ],
+  "publisherIds": [
+    "dev_000400"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "solo-developer",
+        "note": "ストアのクレジットで、ディレクション・シナリオ・ゲームシステムの主要開発をIMAYUI単独と記載",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/2011180/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-16T02:52:24Z",
+            "quote": "Direction / Scenario / Game Systems: IMAYUI",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:88f5b8d155e3ff56941d40d11403983e508cf23eea247f32cc89fbb15b74715b"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-16T03:07:29Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2011180/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:52:24Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:88f5b8d155e3ff56941d40d11403983e508cf23eea247f32cc89fbb15b74715b"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2011180/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:52:24Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:88f5b8d155e3ff56941d40d11403983e508cf23eea247f32cc89fbb15b74715b"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2011180/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:52:24Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:88f5b8d155e3ff56941d40d11403983e508cf23eea247f32cc89fbb15b74715b"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2011180/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:52:24Z",
+        "locator": "steam:appdetails.nameJa",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:88f5b8d155e3ff56941d40d11403983e508cf23eea247f32cc89fbb15b74715b"
+      }
+    }
+  ],
+  "createdAt": "2026-11-16T03:07:29Z",
+  "addedAt": "2026-11-16",
+  "updatedAt": "2026-11-16T03:07:29Z",
+  "createdByRun": "43794325944"
+}

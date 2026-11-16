@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000289",
+  "status": "candidate",
+  "title": {
+    "display": "Shear It!",
+    "original": "Shear It!",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5411570
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000414"
+  ],
+  "publisherIds": [
+    "dev_000414"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5411570/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-16T02:56:41Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:3986a40b0f747589f8a39ecef088c86747f1ab3f65b0f4167276ecc9dc5c78dc"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-16T03:07:29Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5411570/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:56:41Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3986a40b0f747589f8a39ecef088c86747f1ab3f65b0f4167276ecc9dc5c78dc"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5411570/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:56:41Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3986a40b0f747589f8a39ecef088c86747f1ab3f65b0f4167276ecc9dc5c78dc"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5411570/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:56:41Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3986a40b0f747589f8a39ecef088c86747f1ab3f65b0f4167276ecc9dc5c78dc"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5411570/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:56:41Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3986a40b0f747589f8a39ecef088c86747f1ab3f65b0f4167276ecc9dc5c78dc"
+      }
+    }
+  ],
+  "createdAt": "2026-11-16T03:07:29Z",
+  "updatedAt": "2026-11-16T03:07:29Z",
+  "createdByRun": "43794325944"
+}

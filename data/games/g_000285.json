@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000285",
+  "status": "published",
+  "title": {
+    "display": "Drawquarium ドロークアリウム",
+    "original": "Drawquarium",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "ドロークアリウム",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 4045480
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4331760",
+      "kind": "demo"
+    }
+  ],
+  "developerIds": [
+    "dev_000405"
+  ],
+  "publisherIds": [
+    "dev_000406"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "solo-developer",
+        "note": "作者Kalebが個人で開発していることをストアページで説明している",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4045480/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-16T02:52:15Z",
+            "quote": "Hi, I'm Kaleb! I work as a 3D artist in the film industry, but my heart kept pulling me toward a small, very personal game idea.",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:bdbd1f1b3bc6965c11e868bf3eacd2b3c0cb339f854a9ff8ddf4549bf6d12f95"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-16T03:07:29Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4045480/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:52:15Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bdbd1f1b3bc6965c11e868bf3eacd2b3c0cb339f854a9ff8ddf4549bf6d12f95"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4045480/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:52:15Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bdbd1f1b3bc6965c11e868bf3eacd2b3c0cb339f854a9ff8ddf4549bf6d12f95"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4045480/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:52:15Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bdbd1f1b3bc6965c11e868bf3eacd2b3c0cb339f854a9ff8ddf4549bf6d12f95"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4045480/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:52:15Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bdbd1f1b3bc6965c11e868bf3eacd2b3c0cb339f854a9ff8ddf4549bf6d12f95"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4045480/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:52:15Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bdbd1f1b3bc6965c11e868bf3eacd2b3c0cb339f854a9ff8ddf4549bf6d12f95"
+      }
+    }
+  ],
+  "createdAt": "2026-11-16T03:07:29Z",
+  "addedAt": "2026-11-16",
+  "updatedAt": "2026-11-16T03:07:29Z",
+  "createdByRun": "43794325944"
+}

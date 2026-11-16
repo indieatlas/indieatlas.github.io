@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000284",
+  "status": "published",
+  "title": {
+    "display": "DREADMOOR",
+    "original": "DREADMOOR",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "ドレッドムア",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 3629430
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5307520",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://www.dream-dock.com/",
+  "developerIds": [
+    "dev_000403"
+  ],
+  "publisherIds": [
+    "dev_000404"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.4gamer.net/games/038/G003821/20261114005/",
+            "articleId": "a_743b9171332198c8",
+            "publishedAt": "2026-11-14T09:00:00Z",
+            "retrievedAt": "2026-11-16T02:51:15Z",
+            "locator": "article.games",
+            "originKey": "media:4gamer.net"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-16T03:07:29Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3629430/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:51:31Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:617dd141a245149fe381c2641fb8c292ce2751b255341f618f4ebe61adbb8466"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3629430/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:51:31Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:617dd141a245149fe381c2641fb8c292ce2751b255341f618f4ebe61adbb8466"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3629430/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:51:31Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:617dd141a245149fe381c2641fb8c292ce2751b255341f618f4ebe61adbb8466"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "official",
+        "url": "http://dream-dock.com/",
+        "retrievedAt": "2026-11-16T02:51:44Z",
+        "quote": "DREADMOOR is an atmospheric first-person adventure that combines fishing, exploration, crafting, inventory management and monster battles in a dark and dangerous world.",
+        "originKey": "official:dream-dock.com",
+        "fetchHash": "sha256:68550e11c4b9f77c17f8497a39a3db54a8a9e6a710762855f0a39cc990b1bb79"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3629430/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:51:31Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:617dd141a245149fe381c2641fb8c292ce2751b255341f618f4ebe61adbb8466"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3629430/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:51:31Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:617dd141a245149fe381c2641fb8c292ce2751b255341f618f4ebe61adbb8466"
+      }
+    }
+  ],
+  "createdAt": "2026-11-16T03:07:29Z",
+  "addedAt": "2026-11-16",
+  "updatedAt": "2026-11-16T03:07:29Z",
+  "createdByRun": "43794325944"
+}

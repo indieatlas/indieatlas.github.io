@@ -1,0 +1,432 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000288",
+  "claims": [
+    {
+      "id": "c_77e3dcdb4f3c6eae",
+      "gameId": "g_000288",
+      "scope": {
+        "platform": "linux",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2900640/",
+          "retrievedAt": "2026-11-16T03:08:02Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:769d4ce3ab12778db08c0195c439424769fc361ca2629e75ecf455bc0045b1c0"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:08:02Z",
+      "createdAt": "2026-11-16T03:08:02Z",
+      "updatedAt": "2026-11-16T03:08:02Z",
+      "lastCheckedAt": "2026-11-16T03:08:02Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 9,
+          "day": 29
+        },
+        "rawText": "29 Sep, 2026"
+      }
+    },
+    {
+      "id": "c_6f58fcb23fb7d032",
+      "gameId": "g_000288",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2900640/",
+          "retrievedAt": "2026-11-16T03:08:02Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:769d4ce3ab12778db08c0195c439424769fc361ca2629e75ecf455bc0045b1c0"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:08:02Z",
+      "createdAt": "2026-11-16T03:08:02Z",
+      "updatedAt": "2026-11-16T03:08:02Z",
+      "lastCheckedAt": "2026-11-16T03:08:02Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 9,
+          "day": 29
+        },
+        "rawText": "29 Sep, 2026"
+      }
+    },
+    {
+      "id": "c_5dcf5039bb45f9e1",
+      "gameId": "g_000288",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2900640/",
+          "retrievedAt": "2026-11-16T03:08:02Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:769d4ce3ab12778db08c0195c439424769fc361ca2629e75ecf455bc0045b1c0"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:08:02Z",
+      "createdAt": "2026-11-16T03:08:02Z",
+      "updatedAt": "2026-11-16T03:08:02Z",
+      "lastCheckedAt": "2026-11-16T03:08:02Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 9,
+          "day": 29
+        },
+        "rawText": "29 Sep, 2026"
+      }
+    },
+    {
+      "id": "c_791c762d8e2ccd61",
+      "gameId": "g_000288",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2900640/",
+          "retrievedAt": "2026-11-16T03:08:06Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f66fb224e91bba8daaddde5f1bd00166fd098f4306feb5f4343fc033100b63ae"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:08:02Z",
+      "createdAt": "2026-11-16T03:08:02Z",
+      "updatedAt": "2026-11-16T03:08:02Z",
+      "lastCheckedAt": "2026-11-16T03:08:06Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_970d38029d8c6d2a",
+      "gameId": "g_000288",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2900640/",
+          "retrievedAt": "2026-11-16T03:08:02Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:769d4ce3ab12778db08c0195c439424769fc361ca2629e75ecf455bc0045b1c0"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:08:02Z",
+      "createdAt": "2026-11-16T03:08:02Z",
+      "updatedAt": "2026-11-16T03:08:02Z",
+      "lastCheckedAt": "2026-11-16T03:08:02Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_110722254d48350d",
+      "gameId": "g_000288",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2900640/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:54:25Z",
+          "quote": "TOEM 2 was crafted to be welcoming for both returning fans of TOEM and those who want to jump in for the first time.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:769d4ce3ab12778db08c0195c439424769fc361ca2629e75ecf455bc0045b1c0"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:54:25Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "summary",
+      "value": {
+        "ja": "カメラを手に各地を巡り、風変わりな住民の頼みを聞きながら写真で謎を解く写真アドベンチャー『トーエム』の続編。新たなアタッチメントで各地の問題を解き、スタンプを集めて次のエリアを解放していく。"
+      }
+    },
+    {
+      "id": "c_35ef558845162b85",
+      "gameId": "g_000288",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2900640/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:54:25Z",
+          "quote": "TOEM 2 was crafted to be welcoming for both returning fans of TOEM and those who want to jump in for the first time.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:769d4ce3ab12778db08c0195c439424769fc361ca2629e75ecf455bc0045b1c0"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:54:25Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_57d0b3613c75e132",
+      "gameId": "g_000288",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2900640/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:54:25Z",
+          "quote": "TOEM 2 was crafted to be welcoming for both returning fans of TOEM and those who want to jump in for the first time.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:769d4ce3ab12778db08c0195c439424769fc361ca2629e75ecf455bc0045b1c0"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:54:25Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "animals"
+      }
+    },
+    {
+      "id": "c_5912d5cc0e6027bd",
+      "gameId": "g_000288",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2900640/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:54:25Z",
+          "quote": "TOEM 2 was crafted to be welcoming for both returning fans of TOEM and those who want to jump in for the first time.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:769d4ce3ab12778db08c0195c439424769fc361ca2629e75ecf455bc0045b1c0"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:54:25Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_691c1c15f1a9cc93",
+      "gameId": "g_000288",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2900640/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:54:25Z",
+          "quote": "TOEM 2 was crafted to be welcoming for both returning fans of TOEM and those who want to jump in for the first time.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:769d4ce3ab12778db08c0195c439424769fc361ca2629e75ecf455bc0045b1c0"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:54:25Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_f5dba11b5feb03c1",
+      "gameId": "g_000288",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2900640/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:54:25Z",
+          "quote": "TOEM 2 was crafted to be welcoming for both returning fans of TOEM and those who want to jump in for the first time.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:769d4ce3ab12778db08c0195c439424769fc361ca2629e75ecf455bc0045b1c0"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:54:25Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_6395ce80e73a461b",
+      "gameId": "g_000288",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2900640/",
+          "retrievedAt": "2026-11-16T03:08:02Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:769d4ce3ab12778db08c0195c439424769fc361ca2629e75ecf455bc0045b1c0"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:08:02Z",
+      "createdAt": "2026-11-16T03:08:02Z",
+      "updatedAt": "2026-11-16T03:08:02Z",
+      "lastCheckedAt": "2026-11-16T03:08:02Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2900640/"
+      }
+    },
+    {
+      "id": "c_429945fa37500c15",
+      "gameId": "g_000288",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2900640/",
+          "retrievedAt": "2026-11-16T03:08:02Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:769d4ce3ab12778db08c0195c439424769fc361ca2629e75ecf455bc0045b1c0"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:08:02Z",
+      "createdAt": "2026-11-16T03:08:02Z",
+      "updatedAt": "2026-11-16T03:08:02Z",
+      "lastCheckedAt": "2026-11-16T03:08:02Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2900640/499ae31f4d74c4c41e61058259fca32ccd73c93c/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "トーエム2 のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Something We Made"
+        }
+      }
+    }
+  ]
+}

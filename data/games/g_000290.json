@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000290",
+  "status": "candidate",
+  "title": {
+    "display": "over the hill",
+    "original": "over the hill",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 2929250
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5147400",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5208450",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000415"
+  ],
+  "publisherIds": [
+    "dev_000415"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.gamingonlinux.com/2026/11/check-out-some-of-the-highest-rated-steam-deck-verified-games-released-in-october-2026/",
+            "articleId": "a_42b99da4f3b8df6a",
+            "publishedAt": "2026-11-02T15:02:17Z",
+            "retrievedAt": "2026-11-16T02:58:41Z",
+            "locator": "article.games",
+            "originKey": "media:gamingonlinux.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-16T03:07:29Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2929250/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:54:46Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e9f22b28644c7774193f2f0b6f6a9eb68ca3ae686a16aa11ef87f4885a46d142"
+      }
+    }
+  ],
+  "createdAt": "2026-11-16T03:07:29Z",
+  "updatedAt": "2026-11-16T03:07:29Z",
+  "createdByRun": "43794325944"
+}

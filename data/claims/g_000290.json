@@ -1,0 +1,424 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000290",
+  "claims": [
+    {
+      "id": "c_08201ec3ab43a255",
+      "gameId": "g_000290",
+      "scope": {
+        "platform": "linux",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2929250/",
+          "retrievedAt": "2026-11-16T03:08:11Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ac3b4f7069b3de3a656992a34e0319dacfeea69bd8c4e9c023570e410577235b"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:08:11Z",
+      "createdAt": "2026-11-16T03:08:11Z",
+      "updatedAt": "2026-11-16T03:08:11Z",
+      "lastCheckedAt": "2026-11-16T03:08:11Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 10,
+          "day": 14
+        },
+        "rawText": "14 Oct, 2026"
+      }
+    },
+    {
+      "id": "c_8d75fe8fae35dbd4",
+      "gameId": "g_000290",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2929250/",
+          "retrievedAt": "2026-11-16T03:08:11Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ac3b4f7069b3de3a656992a34e0319dacfeea69bd8c4e9c023570e410577235b"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:08:11Z",
+      "createdAt": "2026-11-16T03:08:11Z",
+      "updatedAt": "2026-11-16T03:08:11Z",
+      "lastCheckedAt": "2026-11-16T03:08:11Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 10,
+          "day": 14
+        },
+        "rawText": "14 Oct, 2026"
+      }
+    },
+    {
+      "id": "c_cce9ab8452f0f07c",
+      "gameId": "g_000290",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2929250/",
+          "retrievedAt": "2026-11-16T03:08:15Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:04e0e5b8cf299ec1bb4929ec882673bac768848319c1688522b37ef2df970db0"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:08:11Z",
+      "createdAt": "2026-11-16T03:08:11Z",
+      "updatedAt": "2026-11-16T03:08:11Z",
+      "lastCheckedAt": "2026-11-16T03:08:15Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_08b2cd0002fb924a",
+      "gameId": "g_000290",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2929250/",
+          "retrievedAt": "2026-11-16T03:08:11Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ac3b4f7069b3de3a656992a34e0319dacfeea69bd8c4e9c023570e410577235b"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:08:11Z",
+      "createdAt": "2026-11-16T03:08:11Z",
+      "updatedAt": "2026-11-16T03:08:11Z",
+      "lastCheckedAt": "2026-11-16T03:08:11Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_fd256b6cb06e7d3f",
+      "gameId": "g_000290",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2929250/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:54:46Z",
+          "quote": "Drive iconic 4x4 vehicles from the 60s to 80s by yourself or with friends through challenging trails and beautiful scenery.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e9f22b28644c7774193f2f0b6f6a9eb68ca3ae686a16aa11ef87f4885a46d142"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:54:46Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "summary",
+      "value": {
+        "ja": "1960〜80年代の4WDを駆り、実在の風景をモデルにした渓谷や山岳を走るオフロードドライブゲーム。1人でも最大3人の仲間と協力しても遊べ、渡し板やウインチといった道具で行く手の障害を切り開きながら探索する。"
+      }
+    },
+    {
+      "id": "c_34d86970260c2a47",
+      "gameId": "g_000290",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2929250/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:54:46Z",
+          "quote": "Explore, navigate, and uncover the vast wilderness of over the hill, the newest installation from the creator of art of rally.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e9f22b28644c7774193f2f0b6f6a9eb68ca3ae686a16aa11ef87f4885a46d142"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:54:46Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "open-world"
+      }
+    },
+    {
+      "id": "c_761cc3427c7e6ee8",
+      "gameId": "g_000290",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2929250/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:54:46Z",
+          "quote": "Photograph the animals you encounter to fill out your wildlife compendium",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e9f22b28644c7774193f2f0b6f6a9eb68ca3ae686a16aa11ef87f4885a46d142"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:54:46Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "animals"
+      }
+    },
+    {
+      "id": "c_b6d1f1e4ef3467a8",
+      "gameId": "g_000290",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2929250/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:54:46Z",
+          "quote": "This is a driving game, not a racing game. Take your time, enjoy the drive, find your own route, and see where the road leads.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e9f22b28644c7774193f2f0b6f6a9eb68ca3ae686a16aa11ef87f4885a46d142"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:54:46Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_bf28b78ef359c6f2",
+      "gameId": "g_000290",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2929250/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:54:46Z",
+          "quote": "Take to the trails solo or with up to three friends.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e9f22b28644c7774193f2f0b6f6a9eb68ca3ae686a16aa11ef87f4885a46d142"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:54:46Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_cd794f202fac6625",
+      "gameId": "g_000290",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2929250/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:54:46Z",
+          "quote": "Ramble your way through varied biomes inspired by real-world locations, from valleys to mountains and everything in between.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e9f22b28644c7774193f2f0b6f6a9eb68ca3ae686a16aa11ef87f4885a46d142"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:54:46Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "nature"
+      }
+    },
+    {
+      "id": "c_f4ccf668b9d8ec0f",
+      "gameId": "g_000290",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2929250/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:54:46Z",
+          "quote": "Explore, navigate, and uncover the vast wilderness of over the hill, the newest installation from the creator of art of rally.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e9f22b28644c7774193f2f0b6f6a9eb68ca3ae686a16aa11ef87f4885a46d142"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:54:46Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_aad7e1bd1cb6a32e",
+      "gameId": "g_000290",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2929250/",
+          "retrievedAt": "2026-11-16T03:08:11Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ac3b4f7069b3de3a656992a34e0319dacfeea69bd8c4e9c023570e410577235b"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:08:11Z",
+      "createdAt": "2026-11-16T03:08:11Z",
+      "updatedAt": "2026-11-16T03:08:11Z",
+      "lastCheckedAt": "2026-11-16T03:08:11Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2929250/"
+      }
+    },
+    {
+      "id": "c_81b5853a030cfa3a",
+      "gameId": "g_000290",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2929250/",
+          "retrievedAt": "2026-11-16T03:08:11Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ac3b4f7069b3de3a656992a34e0319dacfeea69bd8c4e9c023570e410577235b"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:08:11Z",
+      "createdAt": "2026-11-16T03:08:11Z",
+      "updatedAt": "2026-11-16T03:08:11Z",
+      "lastCheckedAt": "2026-11-16T03:08:11Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929250/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "over the hill のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Funselektor Labs Inc."
+        }
+      }
+    }
+  ]
+}

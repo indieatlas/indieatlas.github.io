@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000285",
+  "claims": [
+    {
+      "id": "c_3432c8d9c8b07fbd",
+      "gameId": "g_000285",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4045480/",
+          "retrievedAt": "2026-11-16T03:07:49Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bdbd1f1b3bc6965c11e868bf3eacd2b3c0cb339f854a9ff8ddf4549bf6d12f95"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:49Z",
+      "createdAt": "2026-11-16T03:07:49Z",
+      "updatedAt": "2026-11-16T03:07:49Z",
+      "lastCheckedAt": "2026-11-16T03:07:49Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 13
+        },
+        "rawText": "13 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_a6bb9d745bc9754a",
+      "gameId": "g_000285",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4045480/",
+          "retrievedAt": "2026-11-16T03:07:52Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:97ff30acd0076a3265a0be145c823c2a48b645717e8db61265b6dccdd45699f4"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:49Z",
+      "createdAt": "2026-11-16T03:07:49Z",
+      "updatedAt": "2026-11-16T03:07:49Z",
+      "lastCheckedAt": "2026-11-16T03:07:52Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_e7295fd8a9948281",
+      "gameId": "g_000285",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4045480/",
+          "retrievedAt": "2026-11-16T03:07:49Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bdbd1f1b3bc6965c11e868bf3eacd2b3c0cb339f854a9ff8ddf4549bf6d12f95"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:49Z",
+      "createdAt": "2026-11-16T03:07:49Z",
+      "updatedAt": "2026-11-16T03:07:49Z",
+      "lastCheckedAt": "2026-11-16T03:07:49Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_38d6e8e8f1b964ae",
+      "gameId": "g_000285",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4045480/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:52:15Z",
+          "quote": "『Drawquarium』は、自分で描いた絵が生き生きと動き出す、のんびり楽しめる水槽サンドボックスゲームです！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bdbd1f1b3bc6965c11e868bf3eacd2b3c0cb339f854a9ff8ddf4549bf6d12f95"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:52:15Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "summary",
+      "value": {
+        "ja": "自分で描いた魚や水草を水槽に放ち、餌をあげて育てながら金のウロコを集めて飾りを増やしていく、リラックス系のアクアリウムサンドボックス。作った水槽はアニメーションするデスクトップ壁紙としても使える。"
+      }
+    },
+    {
+      "id": "c_017ea95c46b063ae",
+      "gameId": "g_000285",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4045480/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:52:15Z",
+          "quote": "新しい生き物を水槽に入れると、ほかの仲間たちと交流を始めます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bdbd1f1b3bc6965c11e868bf3eacd2b3c0cb339f854a9ff8ddf4549bf6d12f95"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:52:15Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "animals"
+      }
+    },
+    {
+      "id": "c_0a51e2b4d08b343b",
+      "gameId": "g_000285",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4045480/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:52:15Z",
+          "quote": "『Drawquarium』は、自分で描いた絵が生き生きと動き出す、のんびり楽しめる水槽サンドボックスゲームです！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bdbd1f1b3bc6965c11e868bf3eacd2b3c0cb339f854a9ff8ddf4549bf6d12f95"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:52:15Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "sandbox"
+      }
+    },
+    {
+      "id": "c_6c0a12097af4697b",
+      "gameId": "g_000285",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4045480/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:52:15Z",
+          "quote": "魚や水草を自由に描き、餌をあげて育てながら金色のウロコを集めて、新しい飾りやツールを解放しましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bdbd1f1b3bc6965c11e868bf3eacd2b3c0cb339f854a9ff8ddf4549bf6d12f95"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:52:15Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_85ae68cd9139bdd0",
+      "gameId": "g_000285",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4045480/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:52:15Z",
+          "quote": "魚や水草を自由に描き、餌をあげて育てながら金色のウロコを集めて、新しい飾りやツールを解放しましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bdbd1f1b3bc6965c11e868bf3eacd2b3c0cb339f854a9ff8ddf4549bf6d12f95"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:52:15Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "hand-drawn"
+      }
+    },
+    {
+      "id": "c_f79c30ff4ca9a381",
+      "gameId": "g_000285",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4045480/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:52:15Z",
+          "quote": "自分だけの居心地のいい水中世界を作り、動く壁紙としてデスクトップにも連れていけます！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bdbd1f1b3bc6965c11e868bf3eacd2b3c0cb339f854a9ff8ddf4549bf6d12f95"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:52:15Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_c3179cbd2ef7ac4c",
+      "gameId": "g_000285",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4045480/",
+          "retrievedAt": "2026-11-16T03:07:49Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bdbd1f1b3bc6965c11e868bf3eacd2b3c0cb339f854a9ff8ddf4549bf6d12f95"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:49Z",
+      "createdAt": "2026-11-16T03:07:49Z",
+      "updatedAt": "2026-11-16T03:07:49Z",
+      "lastCheckedAt": "2026-11-16T03:07:49Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4045480/"
+      }
+    },
+    {
+      "id": "c_25393a60e9dd85ba",
+      "gameId": "g_000285",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4045480/",
+          "retrievedAt": "2026-11-16T03:07:49Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bdbd1f1b3bc6965c11e868bf3eacd2b3c0cb339f854a9ff8ddf4549bf6d12f95"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:49Z",
+      "createdAt": "2026-11-16T03:07:49Z",
+      "updatedAt": "2026-11-16T03:07:49Z",
+      "lastCheckedAt": "2026-11-16T03:07:49Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4045480/84e76865a2649679dfb1687354ba0e5a05f44b0b/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Drawquarium ドロークアリウム のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "rokaplay"
+        }
+      }
+    }
+  ]
+}

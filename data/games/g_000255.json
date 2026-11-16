@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "g_000255",
-  "status": "candidate",
+  "status": "published",
   "title": {
     "display": "777勇者 〜時に抗う者〜",
     "original": "777 HERO ~The One Who Defies Time~",
@@ -44,9 +44,24 @@
             "originKey": "store:steam"
           }
         ]
+      },
+      {
+        "code": "solo-developer",
+        "note": "ストアの作品紹介に個人開発である旨の記載がある",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5457010/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-16T02:50:33Z",
+            "quote": "個人開発 777勇者は、涙ぐましい個人開発のゲームです。しかも宣伝まで自分でやっています……。",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:851e6100bbb79504d97810406c4ab99a5491d5b97598141468f25580a74a7535"
+          }
+        ]
       }
     ],
-    "assessedAt": "2026-11-14T03:36:10Z"
+    "assessedAt": "2026-11-16T03:07:29Z"
   },
   "identityEvidence": [
     {
@@ -95,6 +110,7 @@
     }
   ],
   "createdAt": "2026-11-14T03:36:21Z",
-  "updatedAt": "2026-11-14T03:36:10Z",
+  "addedAt": "2026-11-16",
+  "updatedAt": "2026-11-16T03:07:29Z",
   "createdByRun": "43551223935"
 }

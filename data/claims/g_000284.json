@@ -1,0 +1,444 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000284",
+  "claims": [
+    {
+      "id": "c_44659c554df38266",
+      "gameId": "g_000284",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3629430/",
+          "retrievedAt": "2026-11-16T03:07:44Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:96c9452d98a47e9f75386e75820c52fd250c0eec05eb5a2750f9b7efebf118be"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:44Z",
+      "createdAt": "2026-11-16T03:07:44Z",
+      "updatedAt": "2026-11-16T03:07:44Z",
+      "lastCheckedAt": "2026-11-16T03:07:44Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 9
+        },
+        "rawText": "9 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_a53f25e8eaeef8cc",
+      "gameId": "g_000284",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3629430/",
+          "retrievedAt": "2026-11-16T03:07:47Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ff82b490fbe7d232c5c8e3d49add3cf6ca315d83a2776bf2d391a8239c312ce5"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:44Z",
+      "createdAt": "2026-11-16T03:07:44Z",
+      "updatedAt": "2026-11-16T03:07:44Z",
+      "lastCheckedAt": "2026-11-16T03:07:47Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_28bbc852c69880bf",
+      "gameId": "g_000284",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3629430/",
+          "retrievedAt": "2026-11-16T03:07:44Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:96c9452d98a47e9f75386e75820c52fd250c0eec05eb5a2750f9b7efebf118be"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:44Z",
+      "createdAt": "2026-11-16T03:07:44Z",
+      "updatedAt": "2026-11-16T03:07:44Z",
+      "lastCheckedAt": "2026-11-16T03:07:44Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_c3eee8c12dc3e429",
+      "gameId": "g_000284",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3629430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:51:31Z",
+          "quote": "『DREADMOOR』は、かつての大災害で水没し、腐敗が進む世界を舞台にした、一人称視点のダークなフィッシングアドベンチャーゲーム。濁った水で魚を釣り、船をアップグレードし、サバイバル装備をクラフト。水中や陸上に潜む異形の怪物たちと戦おう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:617dd141a245149fe381c2641fb8c292ce2751b255341f618f4ebe61adbb8466"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:51:31Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "summary",
+      "value": {
+        "ja": "人類の過ちによる大災害で水没した世界を舞台にした一人称視点の釣りアドベンチャー。トロール漁船の舵を取り、点在する集落を巡りながら魚を釣って売買し、船や装備を強化して、変異した怪物との戦いや水没した廃墟の探索に挑む。"
+      }
+    },
+    {
+      "id": "c_1aedbd2299838153",
+      "gameId": "g_000284",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3629430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:51:31Z",
+          "quote": "廃墟、洞窟、難破船を探索し、希少で役立つものを見つけてください。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:617dd141a245149fe381c2641fb8c292ce2751b255341f618f4ebe61adbb8466"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:51:31Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_6446fbfb6f8decf6",
+      "gameId": "g_000284",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3629430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:51:31Z",
+          "quote": "一人称視点のダークなフィッシングアドベンチャーゲーム。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:617dd141a245149fe381c2641fb8c292ce2751b255341f618f4ebe61adbb8466"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:51:31Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_67750949fbf61ab7",
+      "gameId": "g_000284",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3629430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:51:31Z",
+          "quote": "沿岸地域は水没し、残された陸地の多くも水に覆われています。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:617dd141a245149fe381c2641fb8c292ce2751b255341f618f4ebe61adbb8466"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:51:31Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "ocean"
+      }
+    },
+    {
+      "id": "c_b85e0533ca2c0746",
+      "gameId": "g_000284",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3629430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:51:31Z",
+          "quote": "腕前が問われる釣り、生き延びるためのクラフト、リアルタイムの戦闘、腐敗した湿地の探索。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:617dd141a245149fe381c2641fb8c292ce2751b255341f618f4ebe61adbb8466"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:51:31Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "crafting"
+      }
+    },
+    {
+      "id": "c_bd11e9df74a3b5c3",
+      "gameId": "g_000284",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3629430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:51:31Z",
+          "quote": "水没地帯で集めた資源から、特殊な餌、強化された銛、希少な薬、この世界の過酷な環境に適したサバイバルツールをクラフトできます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:617dd141a245149fe381c2641fb8c292ce2751b255341f618f4ebe61adbb8466"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:51:31Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "survival"
+      }
+    },
+    {
+      "id": "c_e5fcd57d06998660",
+      "gameId": "g_000284",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3629430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:51:31Z",
+          "quote": "一人称視点のダークなフィッシングアドベンチャーゲーム。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:617dd141a245149fe381c2641fb8c292ce2751b255341f618f4ebe61adbb8466"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:51:31Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "dark"
+      }
+    },
+    {
+      "id": "c_f52d2066fef11c2e",
+      "gameId": "g_000284",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3629430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:51:31Z",
+          "quote": "人類の致命的な過ちで水に沈んだ世界を探索しましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:617dd141a245149fe381c2641fb8c292ce2751b255341f618f4ebe61adbb8466"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:51:31Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "post-apocalyptic"
+      }
+    },
+    {
+      "id": "c_fc260e409e186889",
+      "gameId": "g_000284",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3629430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:51:31Z",
+          "quote": "腕前が問われる釣り、生き延びるためのクラフト、リアルタイムの戦闘、腐敗した湿地の探索。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:617dd141a245149fe381c2641fb8c292ce2751b255341f618f4ebe61adbb8466"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:51:31Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "fishing"
+      }
+    },
+    {
+      "id": "c_029a6d478d59140d",
+      "gameId": "g_000284",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3629430/",
+          "retrievedAt": "2026-11-16T03:07:44Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:96c9452d98a47e9f75386e75820c52fd250c0eec05eb5a2750f9b7efebf118be"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:44Z",
+      "createdAt": "2026-11-16T03:07:44Z",
+      "updatedAt": "2026-11-16T03:07:44Z",
+      "lastCheckedAt": "2026-11-16T03:07:44Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3629430/"
+      }
+    },
+    {
+      "id": "c_9e38ce23c352b60a",
+      "gameId": "g_000284",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3629430/",
+          "retrievedAt": "2026-11-16T03:07:44Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:96c9452d98a47e9f75386e75820c52fd250c0eec05eb5a2750f9b7efebf118be"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:44Z",
+      "createdAt": "2026-11-16T03:07:44Z",
+      "updatedAt": "2026-11-16T03:07:44Z",
+      "lastCheckedAt": "2026-11-16T03:07:44Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3629430/5b80c132b3479c69a92c25a5266db523850cfc36/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "DREADMOOR (ドレッドムア) のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Digital Vortex Entertainment"
+        }
+      }
+    }
+  ]
+}

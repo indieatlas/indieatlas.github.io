@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000281",
+  "claims": [
+    {
+      "id": "c_a232ee2b7902f445",
+      "gameId": "g_000281",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5185890/",
+          "retrievedAt": "2026-11-16T03:07:31Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f77dbec1c4ad7d7a5161e40b9261a4b250159f1bc6c7f9e706c9443374b58027"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:31Z",
+      "createdAt": "2026-11-16T03:07:31Z",
+      "updatedAt": "2026-11-16T03:07:31Z",
+      "lastCheckedAt": "2026-11-16T03:07:31Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 13
+        },
+        "rawText": "13 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_0052e325037b6e76",
+      "gameId": "g_000281",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5185890/",
+          "retrievedAt": "2026-11-16T03:07:34Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b650ec74eb035bf158ad4505f50e90814b0b37833e2fdf8b3f7f890fc5151ce3"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:31Z",
+      "createdAt": "2026-11-16T03:07:31Z",
+      "updatedAt": "2026-11-16T03:07:31Z",
+      "lastCheckedAt": "2026-11-16T03:07:34Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "no",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_7188ce7bc930432b",
+      "gameId": "g_000281",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5185890/",
+          "retrievedAt": "2026-11-16T03:07:31Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f77dbec1c4ad7d7a5161e40b9261a4b250159f1bc6c7f9e706c9443374b58027"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:31Z",
+      "createdAt": "2026-11-16T03:07:31Z",
+      "updatedAt": "2026-11-16T03:07:31Z",
+      "lastCheckedAt": "2026-11-16T03:07:31Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_459a181e9ccae575",
+      "gameId": "g_000281",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5185890/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:51:38Z",
+          "quote": "Zombies Aren't Real is a horde-defense, strategy game where you deploy military forces in an attempt to quell a quick-spreading zombie infection and save as many civilians as you can!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f77dbec1c4ad7d7a5161e40b9261a4b250159f1bc6c7f9e706c9443374b58027"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5185890/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:51:38Z",
+          "quote": "If you're able to eliminate all the zombies you win and your score is determined by how many civilians you saved.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f77dbec1c4ad7d7a5161e40b9261a4b250159f1bc6c7f9e706c9443374b58027"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:51:38Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "summary",
+      "value": {
+        "ja": "現実の都市の地図を舞台に、限られた戦力で急速に広がるゾンビ感染の封じ込めを目指すホードディフェンス型ストラテジー。地上部隊や航空支援を投入して市民の救出を進め、救出できた市民の数でスコアが決まる。"
+      }
+    },
+    {
+      "id": "c_0c48514218acad6d",
+      "gameId": "g_000281",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5185890/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:51:38Z",
+          "quote": "Losing is fun! We encourage you to retry often, restarting a scenario once defeat is inevitable to adjust your strategy.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f77dbec1c4ad7d7a5161e40b9261a4b250159f1bc6c7f9e706c9443374b58027"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:51:38Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "difficult"
+      }
+    },
+    {
+      "id": "c_1a20e5af8a0809de",
+      "gameId": "g_000281",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5185890/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:51:38Z",
+          "quote": "Play with one other friend in Online Co-op Multiplayer",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f77dbec1c4ad7d7a5161e40b9261a4b250159f1bc6c7f9e706c9443374b58027"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:51:38Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_1fc55228d5d329fd",
+      "gameId": "g_000281",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5185890/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:51:38Z",
+          "quote": "If the zombies break through your perimeter you can call in air support such as bombers or gatling gun helicopters to attempt to stop the spread before it gets out of control.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f77dbec1c4ad7d7a5161e40b9261a4b250159f1bc6c7f9e706c9443374b58027"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:51:38Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "tense"
+      }
+    },
+    {
+      "id": "c_91e618cf7a49a5d7",
+      "gameId": "g_000281",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5185890/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:51:38Z",
+          "quote": "Zombies Aren't Real is a horde-defense, strategy game where you deploy military forces in an attempt to quell a quick-spreading zombie infection and save as many civilians as you can!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f77dbec1c4ad7d7a5161e40b9261a4b250159f1bc6c7f9e706c9443374b58027"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:51:38Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "strategy"
+      }
+    },
+    {
+      "id": "c_c4536d78be1a2718",
+      "gameId": "g_000281",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5185890/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:51:38Z",
+          "quote": "Once you're ready the chaos begins. The zombies will fan out and begin to infect the population.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f77dbec1c4ad7d7a5161e40b9261a4b250159f1bc6c7f9e706c9443374b58027"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:51:38Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "zombies"
+      }
+    },
+    {
+      "id": "c_71cc0cbf63387704",
+      "gameId": "g_000281",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5185890/",
+          "retrievedAt": "2026-11-16T03:07:31Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f77dbec1c4ad7d7a5161e40b9261a4b250159f1bc6c7f9e706c9443374b58027"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:31Z",
+      "createdAt": "2026-11-16T03:07:31Z",
+      "updatedAt": "2026-11-16T03:07:31Z",
+      "lastCheckedAt": "2026-11-16T03:07:31Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5185890/"
+      }
+    },
+    {
+      "id": "c_c6933d1fb77791a4",
+      "gameId": "g_000281",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5185890/",
+          "retrievedAt": "2026-11-16T03:07:31Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f77dbec1c4ad7d7a5161e40b9261a4b250159f1bc6c7f9e706c9443374b58027"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:31Z",
+      "createdAt": "2026-11-16T03:07:31Z",
+      "updatedAt": "2026-11-16T03:07:31Z",
+      "lastCheckedAt": "2026-11-16T03:07:31Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5185890/cd54755b9d15a2cad33471464fb630d6a5363ff0/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Zombies Aren't Real のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Jogamedev"
+        }
+      }
+    }
+  ]
+}

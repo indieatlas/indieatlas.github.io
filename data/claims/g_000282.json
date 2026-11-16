@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000282",
+  "claims": [
+    {
+      "id": "c_79b44560beb54c12",
+      "gameId": "g_000282",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2011180/",
+          "retrievedAt": "2026-11-16T03:07:35Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88f5b8d155e3ff56941d40d11403983e508cf23eea247f32cc89fbb15b74715b"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:35Z",
+      "createdAt": "2026-11-16T03:07:35Z",
+      "updatedAt": "2026-11-16T03:07:35Z",
+      "lastCheckedAt": "2026-11-16T03:07:35Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 14
+        },
+        "rawText": "14 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_cc18d2b98510c022",
+      "gameId": "g_000282",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2011180/",
+          "retrievedAt": "2026-11-16T03:07:38Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2d0dffdff6cb4956c6f5b9faca559e028c260cf23d6389e73fe194febece28da"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:35Z",
+      "createdAt": "2026-11-16T03:07:35Z",
+      "updatedAt": "2026-11-16T03:07:35Z",
+      "lastCheckedAt": "2026-11-16T03:07:38Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_c5b65a296b992aeb",
+      "gameId": "g_000282",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2011180/",
+          "retrievedAt": "2026-11-16T03:07:35Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88f5b8d155e3ff56941d40d11403983e508cf23eea247f32cc89fbb15b74715b"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:35Z",
+      "createdAt": "2026-11-16T03:07:35Z",
+      "updatedAt": "2026-11-16T03:07:35Z",
+      "lastCheckedAt": "2026-11-16T03:07:35Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_13e7f3a667512a66",
+      "gameId": "g_000282",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2011180/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:52:24Z",
+          "quote": "マルチルート × フリーシナリオ。ダークメルヘンなドット絵RPG。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88f5b8d155e3ff56941d40d11403983e508cf23eea247f32cc89fbb15b74715b"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2011180/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:52:24Z",
+          "quote": "Branching routes × free-form exploration. A dark fairy-tale pixel-art RPG set in Terminus, between the human and demon worlds.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88f5b8d155e3ff56941d40d11403983e508cf23eea247f32cc89fbb15b74715b"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:52:24Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "summary",
+      "value": {
+        "ja": "人と悪魔の世界のあわい「境界（Terminus）」を舞台にしたダークメルヘン調のドット絵RPG。騎士団に残るか、傭兵になるか、飛空船で空の海へ向かうか、どの勢力にも属さず旅するかを選び、物語の展開と結末が変わる。仲間との親密度は恋愛関係にも発展する。"
+      }
+    },
+    {
+      "id": "c_2e4fff271938965a",
+      "gameId": "g_000282",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2011180/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:52:24Z",
+          "quote": "各ルートの主要キャラクターとの親密度を高めることで恋愛関係へ発展。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88f5b8d155e3ff56941d40d11403983e508cf23eea247f32cc89fbb15b74715b"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:52:24Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "romance"
+      }
+    },
+    {
+      "id": "c_4054117061135778",
+      "gameId": "g_000282",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2011180/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:52:24Z",
+          "quote": "人と悪魔の世界のあわい“境界（Terminus）”を舞台に",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88f5b8d155e3ff56941d40d11403983e508cf23eea247f32cc89fbb15b74715b"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:52:24Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_6be786201f59e216",
+      "gameId": "g_000282",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2011180/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:52:24Z",
+          "quote": "グラフィックは、全てオリジナルのドット絵。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88f5b8d155e3ff56941d40d11403983e508cf23eea247f32cc89fbb15b74715b"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:52:24Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "pixel-art"
+      }
+    },
+    {
+      "id": "c_727c07aca29c0bfd",
+      "gameId": "g_000282",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2011180/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:52:24Z",
+          "quote": "マルチルート × フリーシナリオ。ダークメルヘンなドット絵RPG。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88f5b8d155e3ff56941d40d11403983e508cf23eea247f32cc89fbb15b74715b"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:52:24Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "rpg"
+      }
+    },
+    {
+      "id": "c_948e1a810bd4672b",
+      "gameId": "g_000282",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2011180/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:52:24Z",
+          "quote": "ダークメルヘンなドット絵RPG",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88f5b8d155e3ff56941d40d11403983e508cf23eea247f32cc89fbb15b74715b"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:52:24Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "dark"
+      }
+    },
+    {
+      "id": "c_c1072032d6381288",
+      "gameId": "g_000282",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2011180/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T02:52:24Z",
+          "quote": "所属や選択によって異なる物語へ",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88f5b8d155e3ff56941d40d11403983e508cf23eea247f32cc89fbb15b74715b"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:29Z",
+      "createdAt": "2026-11-16T03:07:29Z",
+      "updatedAt": "2026-11-16T03:07:29Z",
+      "lastCheckedAt": "2026-11-16T02:52:24Z",
+      "createdBy": "llm",
+      "createdByRun": "43794325944",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_e2d72053cf4820e9",
+      "gameId": "g_000282",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2011180/",
+          "retrievedAt": "2026-11-16T03:07:35Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88f5b8d155e3ff56941d40d11403983e508cf23eea247f32cc89fbb15b74715b"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:35Z",
+      "createdAt": "2026-11-16T03:07:35Z",
+      "updatedAt": "2026-11-16T03:07:35Z",
+      "lastCheckedAt": "2026-11-16T03:07:35Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2011180/"
+      }
+    },
+    {
+      "id": "c_e18d7709c502ee92",
+      "gameId": "g_000282",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2011180/",
+          "retrievedAt": "2026-11-16T03:07:35Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:88f5b8d155e3ff56941d40d11403983e508cf23eea247f32cc89fbb15b74715b"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T03:07:35Z",
+      "createdAt": "2026-11-16T03:07:35Z",
+      "updatedAt": "2026-11-16T03:07:35Z",
+      "lastCheckedAt": "2026-11-16T03:07:35Z",
+      "createdBy": "system",
+      "createdByRun": "43794325944",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2011180/d46d3056645741c8608ee0745c1fb2b3acc17009/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Terminus Historia | 境界戦役 のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "IMYUIC"
+        }
+      }
+    }
+  ]
+}

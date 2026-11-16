@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000281",
+  "status": "published",
+  "title": {
+    "display": "Zombies Aren't Real",
+    "original": "Zombies Aren't Real",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5185890
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5488850",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000398"
+  ],
+  "publisherIds": [
+    "dev_000398"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5185890/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-16T02:51:38Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:f77dbec1c4ad7d7a5161e40b9261a4b250159f1bc6c7f9e706c9443374b58027"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-16T03:07:29Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5185890/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:51:38Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f77dbec1c4ad7d7a5161e40b9261a4b250159f1bc6c7f9e706c9443374b58027"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5185890/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:51:38Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f77dbec1c4ad7d7a5161e40b9261a4b250159f1bc6c7f9e706c9443374b58027"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5185890/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:51:38Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f77dbec1c4ad7d7a5161e40b9261a4b250159f1bc6c7f9e706c9443374b58027"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5185890/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T02:51:38Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f77dbec1c4ad7d7a5161e40b9261a4b250159f1bc6c7f9e706c9443374b58027"
+      }
+    }
+  ],
+  "createdAt": "2026-11-16T03:07:29Z",
+  "addedAt": "2026-11-16",
+  "updatedAt": "2026-11-16T03:07:29Z",
+  "createdByRun": "43794325944"
+}
