@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000272",
+  "status": "published",
+  "title": {
+    "display": "HŌRU",
+    "original": "HŌRU",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "Horu",
+      "lang": "en",
+      "kind": "romanization"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1297450
+  },
+  "associatedApps": [],
+  "officialUrl": "https://horugame.com/",
+  "developerIds": [
+    "dev_000389"
+  ],
+  "publisherIds": [
+    "dev_000389"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "solo-developer",
+        "note": "David Nadaski（GlassBeaver）が単独で開発",
+        "evidence": [
+          {
+            "kind": "official",
+            "url": "https://horugame.com/press-kit/",
+            "retrievedAt": "2026-11-16T01:53:01Z",
+            "quote": "David Nadaski, known online as GlassBeaver, is the solo developer of HŌRU.",
+            "originKey": "official:horugame.com",
+            "fetchHash": "sha256:60b6391f4510ac774408bc4d8216a30f78702bfd1087c56ecedf07a7699eb089"
+          }
+        ]
+      },
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1297450/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-16T01:52:44Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:511ed78d0c89e0708cf388cda65260002ae9ca10880ab446ab61e72ea7a961e9"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-16T02:05:12Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1297450/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T01:52:44Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:511ed78d0c89e0708cf388cda65260002ae9ca10880ab446ab61e72ea7a961e9"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1297450/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T01:52:44Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:511ed78d0c89e0708cf388cda65260002ae9ca10880ab446ab61e72ea7a961e9"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "official",
+        "url": "https://horugame.com/press-kit/",
+        "retrievedAt": "2026-11-16T01:53:01Z",
+        "quote": "HŌRU is a science-fantasy real-time strategy (RTS) and 4X hybrid for PC.",
+        "originKey": "official:horugame.com",
+        "fetchHash": "sha256:60b6391f4510ac774408bc4d8216a30f78702bfd1087c56ecedf07a7699eb089"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1297450/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T01:52:44Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:511ed78d0c89e0708cf388cda65260002ae9ca10880ab446ab61e72ea7a961e9"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "official",
+        "url": "https://horugame.com/press-kit/",
+        "retrievedAt": "2026-11-16T01:53:01Z",
+        "quote": "David Nadaski, known online as GlassBeaver, is the solo developer of HŌRU.",
+        "originKey": "official:horugame.com",
+        "fetchHash": "sha256:60b6391f4510ac774408bc4d8216a30f78702bfd1087c56ecedf07a7699eb089"
+      }
+    }
+  ],
+  "createdAt": "2026-11-16T02:05:12Z",
+  "addedAt": "2026-11-16",
+  "updatedAt": "2026-11-16T02:05:12Z",
+  "createdByRun": "43788280314"
+}

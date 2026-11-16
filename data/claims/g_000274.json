@@ -1,0 +1,408 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000274",
+  "claims": [
+    {
+      "id": "c_c2c31b5dd235bc8c",
+      "gameId": "g_000274",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5243700/",
+          "retrievedAt": "2026-11-16T02:05:45Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2c98f7dcce2a997a0a3670d32b2dab0b8cf8c635eb924dcd84699a114dd4fa51"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:45Z",
+      "createdAt": "2026-11-16T02:05:45Z",
+      "updatedAt": "2026-11-16T02:05:45Z",
+      "lastCheckedAt": "2026-11-16T02:05:45Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "release",
+      "value": {
+        "status": "tba",
+        "rawText": "To be announced"
+      }
+    },
+    {
+      "id": "c_f54a33a469d58f0a",
+      "gameId": "g_000274",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5243700/",
+          "retrievedAt": "2026-11-16T02:05:48Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:118c2fbd28c7c636b0bd9d6921daaa51f9409ff961b55c769c0b95ff18046446"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:45Z",
+      "createdAt": "2026-11-16T02:05:45Z",
+      "updatedAt": "2026-11-16T02:05:45Z",
+      "lastCheckedAt": "2026-11-16T02:05:48Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_ed63b7292fb90605",
+      "gameId": "g_000274",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5243700/",
+          "retrievedAt": "2026-11-16T02:05:45Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2c98f7dcce2a997a0a3670d32b2dab0b8cf8c635eb924dcd84699a114dd4fa51"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:45Z",
+      "createdAt": "2026-11-16T02:05:45Z",
+      "updatedAt": "2026-11-16T02:05:45Z",
+      "lastCheckedAt": "2026-11-16T02:05:45Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_ba1f3841b3fa803b",
+      "gameId": "g_000274",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5243700/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:54:32Z",
+          "quote": "小惑星の間に自分だけの工場を築こう。手作業で採掘し、居住区を建設して、貨物ドローンに機械間の運搬を任せよう。最初の宇宙船を製造し、さらに遠くへ。一人称視点で宇宙サバイバルと自動化を楽しめるゲーム。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2c98f7dcce2a997a0a3670d32b2dab0b8cf8c635eb924dcd84699a114dd4fa51"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:54:32Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "summary",
+      "value": {
+        "ja": "小惑星帯を舞台にした一人称視点の宇宙サバイバル・自動化ゲーム。酸素と電力に気を配りながら手作業で採掘し、居住区や生産設備を築く。貨物ドローンに運搬を任せて生産ラインを組み、自作の偵察船で探索に出る。"
+      }
+    },
+    {
+      "id": "c_11e6f76d02177633",
+      "gameId": "g_000274",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5243700/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:54:32Z",
+          "quote": "Gather iron, copper, coal and ice while keeping an eye on your oxygen and suit energy.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2c98f7dcce2a997a0a3670d32b2dab0b8cf8c635eb924dcd84699a114dd4fa51"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:54:32Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "tag",
+      "value": {
+        "tagId": "survival"
+      }
+    },
+    {
+      "id": "c_3e4adca229c049ae",
+      "gameId": "g_000274",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5243700/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:54:32Z",
+          "quote": "Astrofactories is a single-player space survival and automation game played in first person.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2c98f7dcce2a997a0a3670d32b2dab0b8cf8c635eb924dcd84699a114dd4fa51"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:54:32Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "tag",
+      "value": {
+        "tagId": "sci-fi"
+      }
+    },
+    {
+      "id": "c_640e9cdda6f0a58d",
+      "gameId": "g_000274",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5243700/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:54:32Z",
+          "quote": "Build your factory among the asteroids.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2c98f7dcce2a997a0a3670d32b2dab0b8cf8c635eb924dcd84699a114dd4fa51"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:54:32Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "tag",
+      "value": {
+        "tagId": "space"
+      }
+    },
+    {
+      "id": "c_7c3c23ac7884002f",
+      "gameId": "g_000274",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5243700/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:54:32Z",
+          "quote": "Explore distinct regions, face their hazards and find rarer resources for new machines and upgrades.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2c98f7dcce2a997a0a3670d32b2dab0b8cf8c635eb924dcd84699a114dd4fa51"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:54:32Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_7e19296840c17e43",
+      "gameId": "g_000274",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5243700/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:54:32Z",
+          "quote": "Place a holographic blueprint and watch construction drones assemble your habitat.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2c98f7dcce2a997a0a3670d32b2dab0b8cf8c635eb924dcd84699a114dd4fa51"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:54:32Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "tag",
+      "value": {
+        "tagId": "base-building"
+      }
+    },
+    {
+      "id": "c_deb4fdd0453f84f2",
+      "gameId": "g_000274",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5243700/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:54:32Z",
+          "quote": "Smelters turn ore into ingots. Constructors make products such as plates and circuits.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2c98f7dcce2a997a0a3670d32b2dab0b8cf8c635eb924dcd84699a114dd4fa51"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:54:32Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "tag",
+      "value": {
+        "tagId": "crafting"
+      }
+    },
+    {
+      "id": "c_fe174ecfdcb25057",
+      "gameId": "g_000274",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5243700/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:54:32Z",
+          "quote": "Manufacture HULK cargo drones in a drone shipyard, then assign each one a pickup point and a destination.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2c98f7dcce2a997a0a3670d32b2dab0b8cf8c635eb924dcd84699a114dd4fa51"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:54:32Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "tag",
+      "value": {
+        "tagId": "automation"
+      }
+    },
+    {
+      "id": "c_3b0173f81e920551",
+      "gameId": "g_000274",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5243700/",
+          "retrievedAt": "2026-11-16T02:05:45Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2c98f7dcce2a997a0a3670d32b2dab0b8cf8c635eb924dcd84699a114dd4fa51"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:45Z",
+      "createdAt": "2026-11-16T02:05:45Z",
+      "updatedAt": "2026-11-16T02:05:45Z",
+      "lastCheckedAt": "2026-11-16T02:05:45Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5243700/"
+      }
+    },
+    {
+      "id": "c_3d16fc78df85c718",
+      "gameId": "g_000274",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5243700/",
+          "retrievedAt": "2026-11-16T02:05:45Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2c98f7dcce2a997a0a3670d32b2dab0b8cf8c635eb924dcd84699a114dd4fa51"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:45Z",
+      "createdAt": "2026-11-16T02:05:45Z",
+      "updatedAt": "2026-11-16T02:05:45Z",
+      "lastCheckedAt": "2026-11-16T02:05:45Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5243700/b96a1cbd81b317d3f1ee073b12a8e1723ac25978/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Astrofactories のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Space Drones"
+        }
+      }
+    }
+  ]
+}

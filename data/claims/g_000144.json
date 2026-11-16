@@ -26,7 +26,7 @@
       "adoptedAt": "2026-11-08T02:52:09Z",
       "createdAt": "2026-11-08T02:52:09Z",
       "updatedAt": "2026-11-08T02:52:09Z",
-      "lastCheckedAt": "2026-11-08T02:52:09Z",
+      "lastCheckedAt": "2026-11-16T02:08:05Z",
       "createdBy": "system",
       "createdByRun": "42438991793",
       "field": "release",
@@ -175,7 +175,7 @@
       "adoptedAt": "2026-11-08T02:52:09Z",
       "createdAt": "2026-11-08T02:52:09Z",
       "updatedAt": "2026-11-08T02:52:09Z",
-      "lastCheckedAt": "2026-11-08T02:52:12Z",
+      "lastCheckedAt": "2026-11-16T02:08:08Z",
       "createdBy": "system",
       "createdByRun": "42438991793",
       "field": "japaneseSupport",
@@ -206,7 +206,7 @@
       "adoptedAt": "2026-11-08T02:52:09Z",
       "createdAt": "2026-11-08T02:52:09Z",
       "updatedAt": "2026-11-08T02:52:09Z",
-      "lastCheckedAt": "2026-11-08T02:52:09Z",
+      "lastCheckedAt": "2026-11-16T02:08:05Z",
       "createdBy": "system",
       "createdByRun": "42438991793",
       "field": "playerModes",
@@ -508,7 +508,7 @@
       "adoptedAt": "2026-11-08T02:52:09Z",
       "createdAt": "2026-11-08T02:52:09Z",
       "updatedAt": "2026-11-08T02:52:09Z",
-      "lastCheckedAt": "2026-11-08T02:52:09Z",
+      "lastCheckedAt": "2026-11-16T02:08:05Z",
       "createdBy": "system",
       "createdByRun": "42438991793",
       "field": "storeLink",
@@ -562,11 +562,12 @@
         }
       ],
       "asOf": "2026-11-08",
-      "status": "adopted",
-      "statusReason": "highest-rank",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersededBy": "c_689319960ef2f418",
       "adoptedAt": "2026-11-08T02:52:09Z",
       "createdAt": "2026-11-08T02:52:09Z",
-      "updatedAt": "2026-11-08T02:52:09Z",
+      "updatedAt": "2026-11-16T02:08:05Z",
       "lastCheckedAt": "2026-11-08T02:52:09Z",
       "createdBy": "system",
       "createdByRun": "42438991793",
@@ -876,6 +877,46 @@
           "basis": "other-permitted",
           "credit": "IGDB",
           "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_689319960ef2f418",
+      "gameId": "g_000144",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1203620/",
+          "retrievedAt": "2026-11-16T02:08:05Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bcd49fac2dcb5e22c759335556fe8dcc96e7128509c9e006b354a4ced9ff582f"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_f61f09eb6f7ffb50"
+      ],
+      "adoptedAt": "2026-11-16T02:08:05Z",
+      "createdAt": "2026-11-16T02:08:05Z",
+      "updatedAt": "2026-11-16T02:08:05Z",
+      "lastCheckedAt": "2026-11-16T02:08:05Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1203620/731368301f231d622bd0b1e34afd2afcd86a1dcf/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Enshrouded~霧の王国~ のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Keen Games GmbH"
         }
       }
     }

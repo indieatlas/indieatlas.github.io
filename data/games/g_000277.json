@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000277",
+  "status": "published",
+  "title": {
+    "display": "No;Heaven",
+    "original": "No;Heaven",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5567050
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000394"
+  ],
+  "publisherIds": [
+    "dev_000394"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5567050/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-16T01:55:10Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:78571dd153123c8b6d41df052a915c094156886a2d344d51493b4041044d142a"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-16T02:05:12Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5567050/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T01:55:10Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:78571dd153123c8b6d41df052a915c094156886a2d344d51493b4041044d142a"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5567050/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T01:55:10Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:78571dd153123c8b6d41df052a915c094156886a2d344d51493b4041044d142a"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5567050/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T01:55:10Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:78571dd153123c8b6d41df052a915c094156886a2d344d51493b4041044d142a"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5567050/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T01:55:10Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:78571dd153123c8b6d41df052a915c094156886a2d344d51493b4041044d142a"
+      }
+    }
+  ],
+  "createdAt": "2026-11-16T02:05:12Z",
+  "addedAt": "2026-11-16",
+  "updatedAt": "2026-11-16T02:05:12Z",
+  "createdByRun": "43788280314"
+}

@@ -76,13 +76,29 @@
       "basis": "fact",
       "evidence": [
         {
+          "kind": "official",
+          "url": "https://bombanana.leftostudio.com/",
+          "retrievedAt": "2026-11-16T01:50:14Z",
+          "quote": "RELEASE DATE:2 Sep, 2026",
+          "originKey": "official:leftostudio.com",
+          "fetchHash": "sha256:86ddc85d1156cb69c48fa475178e19218ff0bdb7375f3d5c0600b3e1cfe0565e"
+        },
+        {
           "kind": "store",
           "url": "https://store.steampowered.com/app/4656000/",
           "sourceId": "steam-store",
-          "retrievedAt": "2026-11-09T01:20:03Z",
+          "retrievedAt": "2026-11-16T01:50:26Z",
           "locator": "steam:appdetails.release",
           "originKey": "store:steam",
-          "fetchHash": "sha256:6eab9436e30d62ae66fba50c3d8a73c95ce8d9e31e13057d1542cfff994f1d6f"
+          "fetchHash": "sha256:aeb5f1d80ba06a6bb0fbfd18e05cdd9be1713636e851550fb6f8b4ce3a244f3d"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4656000/",
+          "retrievedAt": "2026-11-16T02:06:08Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:aeb5f1d80ba06a6bb0fbfd18e05cdd9be1713636e851550fb6f8b4ce3a244f3d"
         }
       ],
       "asOf": "2026-11-08",
@@ -91,7 +107,7 @@
       "adoptedAt": "2026-11-07T19:01:54Z",
       "createdAt": "2026-11-07T19:01:54Z",
       "updatedAt": "2026-11-07T19:01:54Z",
-      "lastCheckedAt": "2026-11-09T01:20:03Z",
+      "lastCheckedAt": "2026-11-16T02:06:08Z",
       "createdBy": "system",
       "createdByRun": "42402321312",
       "field": "release",
@@ -118,7 +134,7 @@
         {
           "kind": "official",
           "url": "https://bombanana.leftostudio.com/",
-          "retrievedAt": "2026-11-09T01:19:50Z",
+          "retrievedAt": "2026-11-16T01:50:14Z",
           "quote": "RELEASE DATE:2 Sep, 2026",
           "originKey": "official:leftostudio.com",
           "fetchHash": "sha256:86ddc85d1156cb69c48fa475178e19218ff0bdb7375f3d5c0600b3e1cfe0565e"
@@ -127,10 +143,18 @@
           "kind": "store",
           "url": "https://store.steampowered.com/app/4656000/",
           "sourceId": "steam-store",
-          "retrievedAt": "2026-11-09T01:20:03Z",
+          "retrievedAt": "2026-11-16T01:50:26Z",
           "locator": "steam:appdetails.release",
           "originKey": "store:steam",
-          "fetchHash": "sha256:6eab9436e30d62ae66fba50c3d8a73c95ce8d9e31e13057d1542cfff994f1d6f"
+          "fetchHash": "sha256:aeb5f1d80ba06a6bb0fbfd18e05cdd9be1713636e851550fb6f8b4ce3a244f3d"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4656000/",
+          "retrievedAt": "2026-11-16T02:06:08Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:aeb5f1d80ba06a6bb0fbfd18e05cdd9be1713636e851550fb6f8b4ce3a244f3d"
         }
       ],
       "asOf": "2026-11-08",
@@ -139,7 +163,7 @@
       "adoptedAt": "2026-11-07T19:01:54Z",
       "createdAt": "2026-11-07T19:01:54Z",
       "updatedAt": "2026-11-07T19:01:54Z",
-      "lastCheckedAt": "2026-11-09T01:20:03Z",
+      "lastCheckedAt": "2026-11-16T02:06:08Z",
       "createdBy": "system",
       "createdByRun": "42402321312",
       "field": "release",
@@ -180,11 +204,12 @@
         }
       ],
       "asOf": "2026-11-09",
-      "status": "adopted",
-      "statusReason": "highest-rank",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersededBy": "c_4683ad3f82a21ac0",
       "adoptedAt": "2026-11-09T01:03:15Z",
       "createdAt": "2026-11-09T01:03:15Z",
-      "updatedAt": "2026-11-09T01:03:15Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
       "lastCheckedAt": "2026-11-09T01:20:15Z",
       "createdBy": "system",
       "createdByRun": "42543439932",
@@ -198,6 +223,48 @@
           "day": 13
         },
         "rawText": "Nov 13, 2026"
+      }
+    },
+    {
+      "id": "c_4683ad3f82a21ac0",
+      "gameId": "g_000130",
+      "scope": {
+        "platform": "ps5",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.playstation.com/ja-jp/concept/10020779",
+          "retrievedAt": "2026-11-16T01:50:32Z",
+          "quote": "プラットフォーム:PS5発売日:2026/11/13",
+          "originKey": "store:playstation-store",
+          "fetchHash": "sha256:ce06f8e2650f19a50b2772e8e4b75c789471df1976368046c2d6efaaa5e84970"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_b5d943eff08797b7"
+      ],
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:50:32Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 13
+        },
+        "rawText": "2026/11/13"
       }
     },
     {
@@ -218,11 +285,12 @@
         }
       ],
       "asOf": "2026-11-09",
-      "status": "adopted",
-      "statusReason": "highest-rank",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersededBy": "c_a6378fe7ce913507",
       "adoptedAt": "2026-11-09T01:03:15Z",
       "createdAt": "2026-11-09T01:03:15Z",
-      "updatedAt": "2026-11-09T01:03:15Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
       "lastCheckedAt": "2026-11-09T01:03:15Z",
       "createdBy": "system",
       "createdByRun": "42543439932",
@@ -236,6 +304,49 @@
           "day": 13
         },
         "rawText": "Nov 13, 2026"
+      }
+    },
+    {
+      "id": "c_a6378fe7ce913507",
+      "gameId": "g_000130",
+      "scope": {
+        "platform": "xbox-series",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://www.xbox.com/ja-JP/games/store/bombanana/9p80x661l0qt",
+          "publishedAt": "2026-11-13T00:00:00Z",
+          "retrievedAt": "2026-11-16T01:50:36Z",
+          "quote": "リリース日11/13/2026",
+          "originKey": "store:microsoft-store",
+          "fetchHash": "sha256:67e4f210b21a92013aa5c24300b63a0e3bd60f2e880000c6d35cb5c4bcb57adb"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_62ee17d608c55452"
+      ],
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:50:36Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 13
+        },
+        "rawText": "11/13/2026"
       }
     },
     {
@@ -259,7 +370,7 @@
       "adoptedAt": "2026-11-07T19:01:54Z",
       "createdAt": "2026-11-07T19:01:54Z",
       "updatedAt": "2026-11-07T19:01:54Z",
-      "lastCheckedAt": "2026-11-07T19:01:57Z",
+      "lastCheckedAt": "2026-11-16T02:06:11Z",
       "createdBy": "system",
       "createdByRun": "42402321312",
       "field": "japaneseSupport",
@@ -290,7 +401,7 @@
       "adoptedAt": "2026-11-07T19:01:54Z",
       "createdAt": "2026-11-07T19:01:54Z",
       "updatedAt": "2026-11-07T19:01:54Z",
-      "lastCheckedAt": "2026-11-07T19:01:54Z",
+      "lastCheckedAt": "2026-11-16T02:06:08Z",
       "createdBy": "system",
       "createdByRun": "42402321312",
       "field": "playerModes",
@@ -531,7 +642,7 @@
       "adoptedAt": "2026-11-07T19:01:54Z",
       "createdAt": "2026-11-07T19:01:54Z",
       "updatedAt": "2026-11-07T19:01:54Z",
-      "lastCheckedAt": "2026-11-07T19:01:54Z",
+      "lastCheckedAt": "2026-11-16T02:06:08Z",
       "createdBy": "system",
       "createdByRun": "42402321312",
       "field": "storeLink",
@@ -619,7 +730,7 @@
       "adoptedAt": "2026-11-07T19:01:54Z",
       "createdAt": "2026-11-07T19:01:54Z",
       "updatedAt": "2026-11-07T19:01:54Z",
-      "lastCheckedAt": "2026-11-07T19:01:54Z",
+      "lastCheckedAt": "2026-11-16T02:06:08Z",
       "createdBy": "system",
       "createdByRun": "42402321312",
       "field": "image",

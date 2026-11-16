@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000277",
+  "claims": [
+    {
+      "id": "c_2636aee0d1f815cc",
+      "gameId": "g_000277",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5567050/",
+          "retrievedAt": "2026-11-16T02:05:59Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:78571dd153123c8b6d41df052a915c094156886a2d344d51493b4041044d142a"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:59Z",
+      "createdAt": "2026-11-16T02:05:59Z",
+      "updatedAt": "2026-11-16T02:05:59Z",
+      "lastCheckedAt": "2026-11-16T02:05:59Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "quarter",
+          "year": 2027,
+          "quarter": 4
+        },
+        "rawText": "Q4 2027"
+      }
+    },
+    {
+      "id": "c_39112f0c13b8b3a2",
+      "gameId": "g_000277",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5567050/",
+          "retrievedAt": "2026-11-16T02:06:02Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:63f5c6addadd0a5560e89b6bd7d2f74c6629280b8d87253476210c408adc48c9"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:59Z",
+      "createdAt": "2026-11-16T02:05:59Z",
+      "updatedAt": "2026-11-16T02:05:59Z",
+      "lastCheckedAt": "2026-11-16T02:06:02Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_c91a6236862732c4",
+      "gameId": "g_000277",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5567050/",
+          "retrievedAt": "2026-11-16T02:05:59Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:78571dd153123c8b6d41df052a915c094156886a2d344d51493b4041044d142a"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:59Z",
+      "createdAt": "2026-11-16T02:05:59Z",
+      "updatedAt": "2026-11-16T02:05:59Z",
+      "lastCheckedAt": "2026-11-16T02:05:59Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_82812912d50580ab",
+      "gameId": "g_000277",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5567050/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:55:10Z",
+          "quote": "『No;Heaven』は、復讐をテーマにした短編シングルプレイヤーFPSです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:78571dd153123c8b6d41df052a915c094156886a2d344d51493b4041044d142a"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:55:10Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "summary",
+      "value": {
+        "ja": "愛する者を失った女性が、銃を手に復讐へと踏み出す短編シングルプレイFPS。敵から武器や弾薬を奪い、スローモーションやスライディングを駆使して、廃工場や港湾地区を舞台にしたステージを突破していく。"
+      }
+    },
+    {
+      "id": "c_5aba246f7b37c5da",
+      "gameId": "g_000277",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5567050/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:55:10Z",
+          "quote": "多彩なアクション： スローモーションやスライディングを活用し、銃撃戦を切り抜けましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:78571dd153123c8b6d41df052a915c094156886a2d344d51493b4041044d142a"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:55:10Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_5c5cb4ebaa18b44f",
+      "gameId": "g_000277",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5567050/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:55:10Z",
+          "quote": "『No;Heaven』は、復讐をテーマにした短編シングルプレイヤーFPSです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:78571dd153123c8b6d41df052a915c094156886a2d344d51493b4041044d142a"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:55:10Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "tag",
+      "value": {
+        "tagId": "shooter"
+      }
+    },
+    {
+      "id": "c_6b21f66480fe191a",
+      "gameId": "g_000277",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5567050/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:55:10Z",
+          "quote": "愛する者を奪われ、すべてを失ったひとりの女性が、銃を手に取ります。彼女の復讐の行く末を見届けてください。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:78571dd153123c8b6d41df052a915c094156886a2d344d51493b4041044d142a"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:55:10Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_aad9bdde2d48a6e5",
+      "gameId": "g_000277",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5567050/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:55:10Z",
+          "quote": "アニメ調のキャラクターと、2000年代初頭のゲームを思わせる荒々しいローポリゴン表現が特徴です。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:78571dd153123c8b6d41df052a915c094156886a2d344d51493b4041044d142a"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:55:10Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "tag",
+      "value": {
+        "tagId": "low-poly"
+      }
+    },
+    {
+      "id": "c_bdc837a0503e8f8b",
+      "gameId": "g_000277",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5567050/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:55:10Z",
+          "quote": "1ステージ約5〜15分。 死亡すると、そのステージの最初からやり直しになります。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:78571dd153123c8b6d41df052a915c094156886a2d344d51493b4041044d142a"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:55:10Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "tag",
+      "value": {
+        "tagId": "short-session"
+      }
+    },
+    {
+      "id": "c_fed1a27b3f815f20",
+      "gameId": "g_000277",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.gamespark.jp/article/2026/11/15/174883.html",
+          "sourceId": "gamespark",
+          "articleId": "a_8a6a7136862c7f3e",
+          "publishedAt": "2026-11-14T23:00:03Z",
+          "retrievedAt": "2026-11-16T01:55:04Z",
+          "quote": "1ステージあたりのプレイ時間は約5～15分と短時間で遊べる設計ですが、死亡するとステージの最初からやり直しになる緊張感のあるルールが採用されています。",
+          "originKey": "media:gamespark.jp",
+          "fetchHash": "sha256:e16ed8784f18f06b800ab414b006379170d3ffc84244a3c4921fec551a31ea40"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:55:04Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "tag",
+      "value": {
+        "tagId": "tense"
+      }
+    },
+    {
+      "id": "c_4c6f00e93a87e021",
+      "gameId": "g_000277",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5567050/",
+          "retrievedAt": "2026-11-16T02:05:59Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:78571dd153123c8b6d41df052a915c094156886a2d344d51493b4041044d142a"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:59Z",
+      "createdAt": "2026-11-16T02:05:59Z",
+      "updatedAt": "2026-11-16T02:05:59Z",
+      "lastCheckedAt": "2026-11-16T02:05:59Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5567050/"
+      }
+    },
+    {
+      "id": "c_4ab9910be4838b33",
+      "gameId": "g_000277",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5567050/",
+          "retrievedAt": "2026-11-16T02:05:59Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:78571dd153123c8b6d41df052a915c094156886a2d344d51493b4041044d142a"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:59Z",
+      "createdAt": "2026-11-16T02:05:59Z",
+      "updatedAt": "2026-11-16T02:05:59Z",
+      "lastCheckedAt": "2026-11-16T02:05:59Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5567050/8471d77cec757e0efd888b2ee882823549ac40de/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "No;Heaven のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "marufuji"
+        }
+      }
+    }
+  ]
+}

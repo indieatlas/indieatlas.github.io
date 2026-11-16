@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000278",
+  "status": "candidate",
+  "title": {
+    "display": "迷家 mygohome",
+    "original": "迷家 mygohome",
+    "originalLang": "ja"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4809140
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5083160",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5083160",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5083160",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5264240",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000395"
+  ],
+  "publisherIds": [
+    "dev_000395"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4809140/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-16T01:56:05Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:dd299fb7b4fa107e4bf0cbdddaac28c50ea483b5a69a8c750618124e4c07c6d6"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-16T02:05:12Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4809140/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T01:56:05Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dd299fb7b4fa107e4bf0cbdddaac28c50ea483b5a69a8c750618124e4c07c6d6"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4809140/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T01:56:05Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dd299fb7b4fa107e4bf0cbdddaac28c50ea483b5a69a8c750618124e4c07c6d6"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4809140/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T01:56:05Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dd299fb7b4fa107e4bf0cbdddaac28c50ea483b5a69a8c750618124e4c07c6d6"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4809140/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T01:56:05Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dd299fb7b4fa107e4bf0cbdddaac28c50ea483b5a69a8c750618124e4c07c6d6"
+      }
+    }
+  ],
+  "createdAt": "2026-11-16T02:05:12Z",
+  "updatedAt": "2026-11-16T02:06:03Z",
+  "createdByRun": "43788280314"
+}

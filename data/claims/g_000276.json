@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000276",
+  "claims": [
+    {
+      "id": "c_dfec4caadfb62cb4",
+      "gameId": "g_000276",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4269060/",
+          "retrievedAt": "2026-11-16T02:05:54Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8890c200a658948994574f00676ed206694231676d73ec65cf3862fc7f27722"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:54Z",
+      "createdAt": "2026-11-16T02:05:54Z",
+      "updatedAt": "2026-11-16T02:05:54Z",
+      "lastCheckedAt": "2026-11-16T02:05:54Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "release",
+      "value": {
+        "status": "tba",
+        "rawText": "To be announced"
+      }
+    },
+    {
+      "id": "c_1af31ad6c46903b0",
+      "gameId": "g_000276",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4269060/",
+          "retrievedAt": "2026-11-16T02:05:57Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9d0aa6528d23ae26f1d4d55694c4aa3c16a0a22a59b1ebbba98e45fbd9407ffc"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:54Z",
+      "createdAt": "2026-11-16T02:05:54Z",
+      "updatedAt": "2026-11-16T02:05:54Z",
+      "lastCheckedAt": "2026-11-16T02:05:57Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_4952f26cb4f10cc5",
+      "gameId": "g_000276",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4269060/",
+          "retrievedAt": "2026-11-16T02:05:54Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8890c200a658948994574f00676ed206694231676d73ec65cf3862fc7f27722"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:54Z",
+      "createdAt": "2026-11-16T02:05:54Z",
+      "updatedAt": "2026-11-16T02:05:54Z",
+      "lastCheckedAt": "2026-11-16T02:05:54Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_8020395498a0a11d",
+      "gameId": "g_000276",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4269060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:55:04Z",
+          "quote": "This version is just like the original Super Meat Boy game but with new art, music, cutscenes, levels, secrets and unlockables...new EVERYTHING.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8890c200a658948994574f00676ed206694231676d73ec65cf3862fc7f27722"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:55:04Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "summary",
+      "value": {
+        "ja": "2010年に発売された高難度プラットフォーマー『Super Meat Boy』を、新しいアートや音楽、カットシーン、レベル、秘密、アンロック要素を加えて作り直した作品。300以上のステージを収録する。"
+      }
+    },
+    {
+      "id": "c_0a126229f22078e7",
+      "gameId": "g_000276",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4269060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:55:04Z",
+          "quote": "Super Meat Boy Again + is a tough as nails platformer originally released in 2010.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8890c200a658948994574f00676ed206694231676d73ec65cf3862fc7f27722"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:55:04Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "tag",
+      "value": {
+        "tagId": "platformer"
+      }
+    },
+    {
+      "id": "c_903546d5a13703fe",
+      "gameId": "g_000276",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4269060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:55:04Z",
+          "quote": "It is held as a gold standard in difficult but fair platforming.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8890c200a658948994574f00676ed206694231676d73ec65cf3862fc7f27722"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:55:04Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "tag",
+      "value": {
+        "tagId": "difficult"
+      }
+    },
+    {
+      "id": "c_ace50b3eb89390ba",
+      "gameId": "g_000276",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4269060/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:55:04Z",
+          "quote": "300+ fun but challenging levels",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8890c200a658948994574f00676ed206694231676d73ec65cf3862fc7f27722"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:55:04Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_9cc95a6d355afc6a",
+      "gameId": "g_000276",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4269060/",
+          "retrievedAt": "2026-11-16T02:05:54Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8890c200a658948994574f00676ed206694231676d73ec65cf3862fc7f27722"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:54Z",
+      "createdAt": "2026-11-16T02:05:54Z",
+      "updatedAt": "2026-11-16T02:05:54Z",
+      "lastCheckedAt": "2026-11-16T02:05:54Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4269060/"
+      }
+    },
+    {
+      "id": "c_f32e56c080a6afc9",
+      "gameId": "g_000276",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4269060/",
+          "retrievedAt": "2026-11-16T02:05:54Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8890c200a658948994574f00676ed206694231676d73ec65cf3862fc7f27722"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:54Z",
+      "createdAt": "2026-11-16T02:05:54Z",
+      "updatedAt": "2026-11-16T02:05:54Z",
+      "lastCheckedAt": "2026-11-16T02:05:54Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4269060/a473773b47c75db9c86509268bee908223ac565c/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Super Meat Boy Again+ のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Team Meat"
+        }
+      }
+    }
+  ]
+}

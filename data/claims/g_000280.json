@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000280",
+  "claims": [
+    {
+      "id": "c_1ed48d6b6237f166",
+      "gameId": "g_000280",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/526870/",
+          "retrievedAt": "2026-11-16T02:05:18Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f422fd82d3febe0a571df7f40669fd2f40ec62a9f201e168d06b46615b142c51"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:18Z",
+      "createdAt": "2026-11-16T02:05:18Z",
+      "updatedAt": "2026-11-16T02:05:18Z",
+      "lastCheckedAt": "2026-11-16T02:05:18Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2024,
+          "month": 9,
+          "day": 10
+        },
+        "rawText": "10 Sep, 2024"
+      }
+    },
+    {
+      "id": "c_130f4de82b9d1d88",
+      "gameId": "g_000280",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/526870/",
+          "retrievedAt": "2026-11-16T02:05:21Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c7b7ff24749507007b4476cf2fcef2eecfaf42659426a1829d968e4a20f9239b"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:18Z",
+      "createdAt": "2026-11-16T02:05:18Z",
+      "updatedAt": "2026-11-16T02:05:18Z",
+      "lastCheckedAt": "2026-11-16T02:05:21Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_ee8e1270249b9dca",
+      "gameId": "g_000280",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/526870/",
+          "retrievedAt": "2026-11-16T02:05:18Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f422fd82d3febe0a571df7f40669fd2f40ec62a9f201e168d06b46615b142c51"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:18Z",
+      "createdAt": "2026-11-16T02:05:18Z",
+      "updatedAt": "2026-11-16T02:05:18Z",
+      "lastCheckedAt": "2026-11-16T02:05:18Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_701397998cd64899",
+      "gameId": "g_000280",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/526870/",
+          "retrievedAt": "2026-11-16T02:05:18Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f422fd82d3febe0a571df7f40669fd2f40ec62a9f201e168d06b46615b142c51"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:18Z",
+      "createdAt": "2026-11-16T02:05:18Z",
+      "updatedAt": "2026-11-16T02:05:18Z",
+      "lastCheckedAt": "2026-11-16T02:05:18Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/526870/"
+      }
+    },
+    {
+      "id": "c_b1ee16d6547a60dc",
+      "gameId": "g_000280",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/526870/",
+          "retrievedAt": "2026-11-16T02:05:18Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f422fd82d3febe0a571df7f40669fd2f40ec62a9f201e168d06b46615b142c51"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:18Z",
+      "createdAt": "2026-11-16T02:05:18Z",
+      "updatedAt": "2026-11-16T02:05:18Z",
+      "lastCheckedAt": "2026-11-16T02:05:18Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/526870/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Satisfactory のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Coffee Stain Publishing"
+        }
+      }
+    }
+  ]
+}

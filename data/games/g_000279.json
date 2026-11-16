@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000279",
+  "status": "candidate",
+  "title": {
+    "display": "Tavern Master",
+    "original": "Tavern Master",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1525700
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1703370",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "3261130",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000396"
+  ],
+  "publisherIds": [
+    "dev_000396"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1525700/",
+            "retrievedAt": "2026-11-16T02:05:14Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:05f167c85ca0d21c0e11fdcc49f2e57c364818400d428903c53da442c2dd3f4e"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-16T02:05:14Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1525700/",
+        "retrievedAt": "2026-11-16T02:05:14Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:05f167c85ca0d21c0e11fdcc49f2e57c364818400d428903c53da442c2dd3f4e"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1525700/",
+        "retrievedAt": "2026-11-16T02:05:14Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:05f167c85ca0d21c0e11fdcc49f2e57c364818400d428903c53da442c2dd3f4e"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1525700/",
+        "retrievedAt": "2026-11-16T02:05:14Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:05f167c85ca0d21c0e11fdcc49f2e57c364818400d428903c53da442c2dd3f4e"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1525700/",
+        "retrievedAt": "2026-11-16T02:05:14Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:05f167c85ca0d21c0e11fdcc49f2e57c364818400d428903c53da442c2dd3f4e"
+      }
+    }
+  ],
+  "createdAt": "2026-11-16T02:05:14Z",
+  "updatedAt": "2026-11-16T02:05:14Z",
+  "createdByRun": "43788280314"
+}

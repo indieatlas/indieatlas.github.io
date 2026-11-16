@@ -3,6 +3,7 @@
   "id": "ev_bd7316e8bd414adb",
   "status": "scheduled",
   "name": "The Game Awards 2026",
+  "nameEn": "The Game Awards 2026",
   "kind": "awards",
   "format": "hybrid",
   "start": {
@@ -17,7 +18,7 @@
     "country": "US"
   },
   "url": "https://thegameawards.com/",
-  "summary": "その年のゲームを表彰する年末恒例の授賞式。ロサンゼルスの会場から各プラットフォームで生配信され、インディー部門も設けられている。",
+  "summary": "その年のゲームを表彰する年末の授賞式。2026年は12月10日にロサンゼルスのPeacock Theaterで開催され、各プラットフォームで生配信される。インディー部門も設けられている。",
   "image": {
     "path": "media/events/ev_bd7316e8bd414adb.webp",
     "width": 720,
@@ -31,13 +32,24 @@
     {
       "kind": "official",
       "url": "https://thegameawards.com/",
-      "retrievedAt": "2026-10-27T17:09:03Z",
-      "quote": "TGA Returns December 10, 2026",
-      "originKey": "official:thegameawards.com"
+      "retrievedAt": "2026-11-16T01:50:44Z",
+      "quote": "DECEMBER 10Peacock Theater, Los Angeles",
+      "originKey": "official:thegameawards.com",
+      "fetchHash": "sha256:3b6df129e556cb3d908e566cee02adea18e5bf3c57effc5b96a9991029213151"
+    },
+    {
+      "kind": "official",
+      "url": "https://thegameawards.com/news/tga-returns-december-10-2026",
+      "publishedAt": "2026-08-10",
+      "retrievedAt": "2026-11-16T01:50:55Z",
+      "quote": "The Game Awards 2026 will take place on Thursday, December 10, streaming live from Peacock Theater in Los Angeles.",
+      "originKey": "official:thegameawards.com",
+      "fetchHash": "sha256:c8ddb48ef50fa94239ae4cfb2a49b30996ca79b493da58e4d771a5aa1c6ad862"
     }
   ],
+  "recheckAfter": "2026-12-03",
   "createdAt": "2026-10-27T17:09:03Z",
-  "updatedAt": "2026-10-27T17:10:04Z",
+  "updatedAt": "2026-11-16T02:05:12Z",
   "createdBy": "agent",
   "createdByRun": "local-events"
 }

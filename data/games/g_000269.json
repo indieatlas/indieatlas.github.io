@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000269",
+  "status": "published",
+  "title": {
+    "display": "ミカクテイ事件の観測者-Demons'Timeline-",
+    "original": "Demons' Timeline",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "ミカクテイ事件の観測者",
+      "lang": "ja",
+      "kind": "abbreviation"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 4198660
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4481360",
+      "kind": "demo",
+      "title": "ミカクテイ事件の観測者-Demons'Timeline- Demo"
+    },
+    {
+      "store": "steam",
+      "id": "4511430",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000386"
+  ],
+  "publisherIds": [
+    "dev_000386"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4198660/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-16T01:51:43Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:c4abe7be1027ba2ee82caeab3fd8b31561f388a1f222c141533233254377abbe"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-16T02:05:12Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "associatedApps",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4481360/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T01:52:04Z",
+        "locator": "steam:appdetails.type",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:503153c4861c9389db2e62656b3734ba9d6a793163ee3a6bd589775e47717b48"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4198660/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T01:51:43Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c4abe7be1027ba2ee82caeab3fd8b31561f388a1f222c141533233254377abbe"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4198660/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T01:51:43Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c4abe7be1027ba2ee82caeab3fd8b31561f388a1f222c141533233254377abbe"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4198660/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T01:51:43Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c4abe7be1027ba2ee82caeab3fd8b31561f388a1f222c141533233254377abbe"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4198660/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-16T01:51:43Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c4abe7be1027ba2ee82caeab3fd8b31561f388a1f222c141533233254377abbe"
+      }
+    }
+  ],
+  "createdAt": "2026-11-16T02:05:12Z",
+  "addedAt": "2026-11-16",
+  "updatedAt": "2026-11-16T02:05:12Z",
+  "createdByRun": "43788280314"
+}

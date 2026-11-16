@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000273",
+  "claims": [
+    {
+      "id": "c_619095f827462185",
+      "gameId": "g_000273",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5462360/",
+          "retrievedAt": "2026-11-16T02:05:41Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7d890b8b7e6f28e0b170a4731e097d01733ce16d86b3657d88f783a0d33ceb3f"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:41Z",
+      "createdAt": "2026-11-16T02:05:41Z",
+      "updatedAt": "2026-11-16T02:05:41Z",
+      "lastCheckedAt": "2026-11-16T02:05:41Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 12
+        },
+        "rawText": "12 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_fda11f3dc46f34e5",
+      "gameId": "g_000273",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5462360/",
+          "retrievedAt": "2026-11-16T02:05:44Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:498aef2b8ec74b5aa365d40e89aab03f4eb7f99167a5c7d4c5bd5580c9f3f376"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:41Z",
+      "createdAt": "2026-11-16T02:05:41Z",
+      "updatedAt": "2026-11-16T02:05:41Z",
+      "lastCheckedAt": "2026-11-16T02:05:44Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_8068cf9138a18303",
+      "gameId": "g_000273",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5462360/",
+          "retrievedAt": "2026-11-16T02:05:41Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7d890b8b7e6f28e0b170a4731e097d01733ce16d86b3657d88f783a0d33ceb3f"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:41Z",
+      "createdAt": "2026-11-16T02:05:41Z",
+      "updatedAt": "2026-11-16T02:05:41Z",
+      "lastCheckedAt": "2026-11-16T02:05:41Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_7648f193f6b859c8",
+      "gameId": "g_000273",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5462360/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:53:44Z",
+          "quote": "牛丼店勤務10年近くの経験者が作った、一人称の牛丼店シミュレーター。洗米・炊飯・肉の仕込み・盛り付け・IH・レンジ・フライヤー・会計・洗い物まで、現場どおりの手順で働こう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7d890b8b7e6f28e0b170a4731e097d01733ce16d86b3657d88f783a0d33ceb3f"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:53:44Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "summary",
+      "value": {
+        "ja": "牛丼店「うし丼！」の店長となり、洗米から炊飯、肉の仕込み、盛り付け、会計、洗い物までを現場どおりの手順でこなす一人称視点の店舗経営シミュレーション。最大4人のオンライン協力で昼のピークを乗り切る。"
+      }
+    },
+    {
+      "id": "c_1a5dd567aeeea1e8",
+      "gameId": "g_000273",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5462360/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:53:44Z",
+          "quote": "牛丼の細かい指定（並・大盛・特盛、つゆだく・つゆ抜き、ねぎだく・ねぎ抜き、トッピング）と、IH・レンジ・フライヤーの設備",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7d890b8b7e6f28e0b170a4731e097d01733ce16d86b3657d88f783a0d33ceb3f"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:53:44Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "tag",
+      "value": {
+        "tagId": "food"
+      }
+    },
+    {
+      "id": "c_76c56d4833bec4d5",
+      "gameId": "g_000273",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5462360/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:53:44Z",
+          "quote": "警告のピピピ、赤い帯の秒読み、「米切れのため臨時休業」の張り紙まで、笑える大失敗がこのゲームの名物です。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7d890b8b7e6f28e0b170a4731e097d01733ce16d86b3657d88f783a0d33ceb3f"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:53:44Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_8aaee377133dcfbf",
+      "gameId": "g_000273",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5462360/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:53:44Z",
+          "quote": "牛丼店勤務10年近くの経験者が作った、一人称の牛丼店シミュレーター。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7d890b8b7e6f28e0b170a4731e097d01733ce16d86b3657d88f783a0d33ceb3f"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:53:44Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_d6b7f1a0a2d78898",
+      "gameId": "g_000273",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5462360/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-16T01:53:44Z",
+          "quote": "1〜4人のオンライン協力。近接ボイスと呼びかけで声をかけ合う。ひとり（ワンオペ）でも最後まで遊べる",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7d890b8b7e6f28e0b170a4731e097d01733ce16d86b3657d88f783a0d33ceb3f"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:12Z",
+      "createdAt": "2026-11-16T02:05:12Z",
+      "updatedAt": "2026-11-16T02:05:12Z",
+      "lastCheckedAt": "2026-11-16T01:53:44Z",
+      "createdBy": "llm",
+      "createdByRun": "43788280314",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_311ded011b85bb39",
+      "gameId": "g_000273",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5462360/",
+          "retrievedAt": "2026-11-16T02:05:41Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7d890b8b7e6f28e0b170a4731e097d01733ce16d86b3657d88f783a0d33ceb3f"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:41Z",
+      "createdAt": "2026-11-16T02:05:41Z",
+      "updatedAt": "2026-11-16T02:05:41Z",
+      "lastCheckedAt": "2026-11-16T02:05:41Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5462360/"
+      }
+    },
+    {
+      "id": "c_2e3955c6f621a93f",
+      "gameId": "g_000273",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5462360/",
+          "retrievedAt": "2026-11-16T02:05:41Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7d890b8b7e6f28e0b170a4731e097d01733ce16d86b3657d88f783a0d33ceb3f"
+        }
+      ],
+      "asOf": "2026-11-16",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-16T02:05:41Z",
+      "createdAt": "2026-11-16T02:05:41Z",
+      "updatedAt": "2026-11-16T02:05:41Z",
+      "lastCheckedAt": "2026-11-16T02:05:41Z",
+      "createdBy": "system",
+      "createdByRun": "43788280314",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5462360/409435c744d6eb71a7ef6f2375a8520da0c18b3a/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "牛丼店シミュレーター のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "ほわいとゲームズ"
+        }
+      }
+    }
+  ]
+}
