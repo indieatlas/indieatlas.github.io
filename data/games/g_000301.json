@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000301",
+  "status": "candidate",
+  "title": {
+    "display": "Jyoka -城下-",
+    "original": "Jyoka -Castle town-",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "Jyoka -城下-",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 5318580
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000427"
+  ],
+  "publisherIds": [
+    "dev_000427"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5318580/",
+            "retrievedAt": "2026-11-17T05:22:43Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:16e42569d51bdc6f70dad75753e23f2f7f29d76fb322d98e6ea4be94e5ff6f7e"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-17T05:22:43Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5318580/",
+        "retrievedAt": "2026-11-17T05:22:43Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:16e42569d51bdc6f70dad75753e23f2f7f29d76fb322d98e6ea4be94e5ff6f7e"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5318580/",
+        "retrievedAt": "2026-11-17T05:22:43Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:16e42569d51bdc6f70dad75753e23f2f7f29d76fb322d98e6ea4be94e5ff6f7e"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5318580/",
+        "retrievedAt": "2026-11-17T05:22:43Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:16e42569d51bdc6f70dad75753e23f2f7f29d76fb322d98e6ea4be94e5ff6f7e"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5318580/",
+        "retrievedAt": "2026-11-17T05:22:43Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:16e42569d51bdc6f70dad75753e23f2f7f29d76fb322d98e6ea4be94e5ff6f7e"
+      }
+    }
+  ],
+  "createdAt": "2026-11-17T05:22:43Z",
+  "updatedAt": "2026-11-17T05:22:43Z",
+  "createdByRun": "44021724916"
+}

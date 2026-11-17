@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000302",
+  "claims": [
+    {
+      "id": "c_8beefcbf48690a85",
+      "gameId": "g_000302",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/499170/",
+          "retrievedAt": "2026-11-17T05:22:47Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:09ca0cd5f7d982bded55f87aab2c0c76d59996ad5ab65549ec50f894ff7bbb83"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:47Z",
+      "createdAt": "2026-11-17T05:22:47Z",
+      "updatedAt": "2026-11-17T05:22:47Z",
+      "lastCheckedAt": "2026-11-17T05:22:47Z",
+      "createdBy": "system",
+      "createdByRun": "44021724916",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 10,
+          "day": 8
+        },
+        "rawText": "8 Oct, 2026"
+      }
+    },
+    {
+      "id": "c_c4ed2229b96ea509",
+      "gameId": "g_000302",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/499170/",
+          "retrievedAt": "2026-11-17T05:22:51Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:c5afc4350626f3d5ced2b03691d189aa746a034dcec22a958ec4e5dfda423055"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:47Z",
+      "createdAt": "2026-11-17T05:22:47Z",
+      "updatedAt": "2026-11-17T05:22:47Z",
+      "lastCheckedAt": "2026-11-17T05:22:51Z",
+      "createdBy": "system",
+      "createdByRun": "44021724916",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_131b5d0ad661e8f6",
+      "gameId": "g_000302",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/499170/",
+          "retrievedAt": "2026-11-17T05:22:47Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:09ca0cd5f7d982bded55f87aab2c0c76d59996ad5ab65549ec50f894ff7bbb83"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:47Z",
+      "createdAt": "2026-11-17T05:22:47Z",
+      "updatedAt": "2026-11-17T05:22:47Z",
+      "lastCheckedAt": "2026-11-17T05:22:47Z",
+      "createdBy": "system",
+      "createdByRun": "44021724916",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_8c422fbd78ed148e",
+      "gameId": "g_000302",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/499170/",
+          "retrievedAt": "2026-11-17T05:22:47Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:09ca0cd5f7d982bded55f87aab2c0c76d59996ad5ab65549ec50f894ff7bbb83"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:47Z",
+      "createdAt": "2026-11-17T05:22:47Z",
+      "updatedAt": "2026-11-17T05:22:47Z",
+      "lastCheckedAt": "2026-11-17T05:22:47Z",
+      "createdBy": "system",
+      "createdByRun": "44021724916",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/499170/"
+      }
+    },
+    {
+      "id": "c_9e0bc249a787ed87",
+      "gameId": "g_000302",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/499170/",
+          "retrievedAt": "2026-11-17T05:22:47Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:09ca0cd5f7d982bded55f87aab2c0c76d59996ad5ab65549ec50f894ff7bbb83"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:47Z",
+      "createdAt": "2026-11-17T05:22:47Z",
+      "updatedAt": "2026-11-17T05:22:47Z",
+      "lastCheckedAt": "2026-11-17T05:22:47Z",
+      "createdBy": "system",
+      "createdByRun": "44021724916",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/499170/deda420d9e42288f4734a068c707f4c156203969/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Order of the Sinking Star のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Arc Games"
+        }
+      }
+    }
+  ]
+}

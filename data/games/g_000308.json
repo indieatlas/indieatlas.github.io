@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000308",
+  "status": "candidate",
+  "title": {
+    "display": "Overcooked! 2",
+    "original": "Overcooked! 2",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 728880
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1013300",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "1017510",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "1067770",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "1138400",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "858240",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "909720",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "http://www.ghosttowngames.com/overcooked-2/",
+  "developerIds": [
+    "dev_000436",
+    "dev_000093"
+  ],
+  "publisherIds": [
+    "dev_000093"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/728880/",
+            "retrievedAt": "2026-11-17T05:23:14Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:f0f869144dcab87f26d01424a5fd807f94252ad1a0aba3f58103f68a5f5bdab1"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-17T05:23:14Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/728880/",
+        "retrievedAt": "2026-11-17T05:23:14Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f0f869144dcab87f26d01424a5fd807f94252ad1a0aba3f58103f68a5f5bdab1"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/728880/",
+        "retrievedAt": "2026-11-17T05:23:14Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f0f869144dcab87f26d01424a5fd807f94252ad1a0aba3f58103f68a5f5bdab1"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/728880/",
+        "retrievedAt": "2026-11-17T05:23:14Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f0f869144dcab87f26d01424a5fd807f94252ad1a0aba3f58103f68a5f5bdab1"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/728880/",
+        "retrievedAt": "2026-11-17T05:23:14Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f0f869144dcab87f26d01424a5fd807f94252ad1a0aba3f58103f68a5f5bdab1"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/728880/",
+        "retrievedAt": "2026-11-17T05:23:14Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f0f869144dcab87f26d01424a5fd807f94252ad1a0aba3f58103f68a5f5bdab1"
+      }
+    }
+  ],
+  "createdAt": "2026-11-17T05:23:14Z",
+  "updatedAt": "2026-11-17T05:23:14Z",
+  "createdByRun": "44021724916"
+}

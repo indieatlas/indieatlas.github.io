@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000294",
+  "status": "published",
+  "title": {
+    "display": "モンスター宿屋",
+    "original": "Monsterest",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "モンスター宿屋 Monsterest",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 2895410
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3516880",
+      "kind": "demo"
+    }
+  ],
+  "officialUrl": "https://www.sile.to/",
+  "developerIds": [
+    "dev_000419"
+  ],
+  "publisherIds": [
+    "dev_000419"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/2895410/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-17T05:13:09Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:7bf55cab0ace0a8b4aef07918591ac98b89c96175ffeba26b9a857b07ea0840f"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-17T05:22:41Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2895410/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-17T05:13:09Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7bf55cab0ace0a8b4aef07918591ac98b89c96175ffeba26b9a857b07ea0840f"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2895410/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-17T05:13:09Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7bf55cab0ace0a8b4aef07918591ac98b89c96175ffeba26b9a857b07ea0840f"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "official",
+        "url": "https://www.sile.to/",
+        "retrievedAt": "2026-11-17T05:13:24Z",
+        "quote": "Making Monsterest, a monster-friendly inn management RPG.",
+        "originKey": "official:sile.to",
+        "fetchHash": "sha256:9d1444307a7d547c1b5422239560aa1fe6e5e1ffedf2dfb7b24ba76e391485e0"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2895410/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-17T05:13:09Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7bf55cab0ace0a8b4aef07918591ac98b89c96175ffeba26b9a857b07ea0840f"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "media",
+        "url": "https://news.denfaminicogamer.jp/news/261116r",
+        "sourceId": "denfaminicogamer",
+        "publishedAt": "2026-11-16T08:24:54Z",
+        "retrievedAt": "2026-11-17T05:13:03Z",
+        "quote": "モンスター客をもてなす宿屋経営ゲーム『モンスター宿屋』を、2027年1～3月にSteamで早期アクセス配信すると発表した",
+        "originKey": "media:denfaminicogamer.jp",
+        "fetchHash": "sha256:9767735d8437566f9cf3c84e6912a4efd4a70851ea3efb302b45e9fbca9d1495"
+      }
+    }
+  ],
+  "createdAt": "2026-11-17T05:22:41Z",
+  "addedAt": "2026-11-17",
+  "updatedAt": "2026-11-17T05:22:41Z",
+  "createdByRun": "44021724916"
+}

@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000299",
+  "status": "candidate",
+  "title": {
+    "display": "Royal Institute of Magic",
+    "original": "Royal Institute of Magic",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "RIM",
+      "kind": "abbreviation"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 4487350
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000425"
+  ],
+  "publisherIds": [
+    "dev_000425"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4487350/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-17T05:16:39Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:7f727abfd3911bca584ca63f6468edf85c990dbd2377e46b6d854cf974b754fc"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-17T05:22:41Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4487350/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-17T05:16:39Z",
+        "quote": "『RIM』は、魔法学校を舞台にしたマルチプレイヤーゲームです。",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7f727abfd3911bca584ca63f6468edf85c990dbd2377e46b6d854cf974b754fc"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4487350/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-17T05:16:39Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7f727abfd3911bca584ca63f6468edf85c990dbd2377e46b6d854cf974b754fc"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4487350/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-17T05:16:39Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7f727abfd3911bca584ca63f6468edf85c990dbd2377e46b6d854cf974b754fc"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4487350/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-17T05:16:39Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7f727abfd3911bca584ca63f6468edf85c990dbd2377e46b6d854cf974b754fc"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4487350/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-17T05:16:39Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:7f727abfd3911bca584ca63f6468edf85c990dbd2377e46b6d854cf974b754fc"
+      }
+    }
+  ],
+  "createdAt": "2026-11-17T05:22:41Z",
+  "updatedAt": "2026-11-17T05:22:41Z",
+  "createdByRun": "44021724916"
+}

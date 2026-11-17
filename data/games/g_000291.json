@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000291",
+  "status": "published",
+  "title": {
+    "display": "Odd Realm",
+    "original": "Odd Realm",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 688060
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "2551960",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000416"
+  ],
+  "publisherIds": [
+    "dev_000416"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/688060/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-17T05:12:27Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:e8c081b92ee03c0b68e92831eea399a421cd460d47f7eb17ee12cf83ea631c43"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-17T05:22:41Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/688060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-17T05:12:27Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e8c081b92ee03c0b68e92831eea399a421cd460d47f7eb17ee12cf83ea631c43"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/688060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-17T05:12:27Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e8c081b92ee03c0b68e92831eea399a421cd460d47f7eb17ee12cf83ea631c43"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/688060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-17T05:12:27Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e8c081b92ee03c0b68e92831eea399a421cd460d47f7eb17ee12cf83ea631c43"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/688060/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-17T05:12:27Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e8c081b92ee03c0b68e92831eea399a421cd460d47f7eb17ee12cf83ea631c43"
+      }
+    }
+  ],
+  "createdAt": "2026-11-17T05:22:41Z",
+  "addedAt": "2026-11-17",
+  "updatedAt": "2026-11-17T05:22:41Z",
+  "createdByRun": "44021724916"
+}

@@ -55,10 +55,10 @@
           "kind": "store",
           "url": "https://store.steampowered.com/app/2638080/",
           "sourceId": "steam-store",
-          "retrievedAt": "2026-11-11T03:00:13Z",
+          "retrievedAt": "2026-11-17T05:08:18Z",
           "locator": "steam:appdetails.release_date",
           "originKey": "store:steam",
-          "fetchHash": "sha256:957ffe21aec78a32ca45fe6e20f640f76bb7a4590e43c6c702795ceab1fc779d"
+          "fetchHash": "sha256:07dafee961b30a0233c3ceb2ee28e11f27fc340558400a28d203e2a6b411baff"
         }
       ],
       "asOf": "2026-11-11",
@@ -70,7 +70,7 @@
       "adoptedAt": "2026-11-11T03:07:21Z",
       "createdAt": "2026-11-11T03:07:21Z",
       "updatedAt": "2026-11-11T03:07:21Z",
-      "lastCheckedAt": "2026-11-11T03:08:31Z",
+      "lastCheckedAt": "2026-11-17T05:08:18Z",
       "createdBy": "llm",
       "createdByRun": "42948722984",
       "field": "release",
@@ -83,6 +83,80 @@
           "day": 9
         },
         "rawText": "9 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_e979c03d9145f507",
+      "gameId": "g_000185",
+      "scope": {
+        "platform": "pc",
+        "region": "jp"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.4gamer.net/games/784/G078437/20261114004/",
+          "sourceId": "4gamer",
+          "publishedAt": "2026-11-14T07:00:00Z",
+          "retrievedAt": "2026-11-17T05:08:17Z",
+          "quote": "「勇者パーティはぜんめつしました。」は，2026年11月10日に発売された「高湿度・激重感情」RPG。",
+          "originKey": "media:4gamer.net",
+          "fetchHash": "sha256:6c1dc82a52721ee6ff00e93655608d3e3c6fb264778364cafbbead0eda868a9d"
+        },
+        {
+          "kind": "media",
+          "url": "https://news.denfaminicogamer.jp/news/2611092g",
+          "sourceId": "denfaminicogamer",
+          "articleId": "a_6e5d4628b5c80732",
+          "publishedAt": "2026-11-09T11:36:03Z",
+          "retrievedAt": "2026-11-17T05:08:54Z",
+          "quote": "発売は11月10日を予定しており、リリースは日本時間17時ごろを予定している。",
+          "originKey": "media:denfaminicogamer.jp",
+          "fetchHash": "sha256:045e798e4f5235e658d4f0ff1eea86aefe2dee7fab47ea451613b5192ebccc24"
+        },
+        {
+          "kind": "media",
+          "url": "https://news.denfaminicogamer.jp/news/2611132c",
+          "sourceId": "denfaminicogamer",
+          "articleId": "a_96ab548382a12c2e",
+          "publishedAt": "2026-11-13T07:22:25Z",
+          "retrievedAt": "2026-11-17T05:09:25Z",
+          "quote": "11月10日にSteamで発売されたRPG『勇者パーティはぜんめつしました。』が、発売から3日足らずでユーザーレビューの評価「圧倒的に好評」を獲得した。",
+          "originKey": "media:denfaminicogamer.jp",
+          "fetchHash": "sha256:797a35cfbe344ae32e3feb89b5256f989f7c62e7e25d872622a8be674f392614"
+        },
+        {
+          "kind": "media",
+          "url": "https://game.watch.impress.co.jp/docs/review/rev1/2153481.html",
+          "sourceId": "game-watch",
+          "articleId": "a_4b6193e6ef76b024",
+          "publishedAt": "2026-11-10T08:00:00Z",
+          "retrievedAt": "2026-11-17T05:09:59Z",
+          "quote": "「勇者パーティはぜんめつしました。」が、2026年11月10日に発売された。価格は1,980円。",
+          "originKey": "media:impress.co.jp",
+          "fetchHash": "sha256:4b0be456c2c8399cd688a2e69826c7c80f1d87bb778598a8d875193cb7f44643"
+        }
+      ],
+      "asOf": "2026-11-14",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:09:59Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 10
+        },
+        "rawText": "2026年11月10日"
       }
     },
     {

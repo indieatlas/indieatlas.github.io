@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000307",
+  "status": "candidate",
+  "title": {
+    "display": "ヒア・カムズ・ザ・ホード",
+    "original": "Here Comes the Horde",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "ヒア・カムズ・ザ・ホード",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 5066010
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5322720",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5322720",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "https://polishedgames.com/games/here-comes-the-horde/",
+  "developerIds": [
+    "dev_000435"
+  ],
+  "publisherIds": [
+    "dev_000435"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5066010/",
+            "retrievedAt": "2026-11-17T05:23:10Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:c6b411d8f6512b83aa0ba6ac218aa8c038456042e3cafb2b8b78ed8d9042f681"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-17T05:23:10Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5066010/",
+        "retrievedAt": "2026-11-17T05:23:10Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c6b411d8f6512b83aa0ba6ac218aa8c038456042e3cafb2b8b78ed8d9042f681"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5066010/",
+        "retrievedAt": "2026-11-17T05:23:10Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c6b411d8f6512b83aa0ba6ac218aa8c038456042e3cafb2b8b78ed8d9042f681"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5066010/",
+        "retrievedAt": "2026-11-17T05:23:10Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c6b411d8f6512b83aa0ba6ac218aa8c038456042e3cafb2b8b78ed8d9042f681"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5066010/",
+        "retrievedAt": "2026-11-17T05:23:10Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c6b411d8f6512b83aa0ba6ac218aa8c038456042e3cafb2b8b78ed8d9042f681"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5066010/",
+        "retrievedAt": "2026-11-17T05:23:10Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c6b411d8f6512b83aa0ba6ac218aa8c038456042e3cafb2b8b78ed8d9042f681"
+      }
+    }
+  ],
+  "createdAt": "2026-11-17T05:23:10Z",
+  "updatedAt": "2026-11-17T05:23:10Z",
+  "createdByRun": "44021724916"
+}

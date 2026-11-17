@@ -1,0 +1,483 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000292",
+  "claims": [
+    {
+      "id": "c_07e633958b2eb5a7",
+      "gameId": "g_000292",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1868140/",
+          "retrievedAt": "2026-11-17T05:23:23Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b9f6c253a7c96d74b1bb10dee86377bf22e74b6069ca526200659121569fcbe0"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:23:23Z",
+      "createdAt": "2026-11-17T05:23:23Z",
+      "updatedAt": "2026-11-17T05:23:23Z",
+      "lastCheckedAt": "2026-11-17T05:23:23Z",
+      "createdBy": "system",
+      "createdByRun": "44021724916",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2023,
+          "month": 6,
+          "day": 28
+        },
+        "rawText": "28 Jun, 2023"
+      }
+    },
+    {
+      "id": "c_6e73cfd319850a8a",
+      "gameId": "g_000292",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1868140/",
+          "retrievedAt": "2026-11-17T05:23:23Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b9f6c253a7c96d74b1bb10dee86377bf22e74b6069ca526200659121569fcbe0"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:23:23Z",
+      "createdAt": "2026-11-17T05:23:23Z",
+      "updatedAt": "2026-11-17T05:23:23Z",
+      "lastCheckedAt": "2026-11-17T05:23:23Z",
+      "createdBy": "system",
+      "createdByRun": "44021724916",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2023,
+          "month": 6,
+          "day": 28
+        },
+        "rawText": "28 Jun, 2023"
+      }
+    },
+    {
+      "id": "c_5d2b9429e4b13b90",
+      "gameId": "g_000292",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1868140/",
+          "retrievedAt": "2026-11-17T05:23:27Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f7f9a857fc41da4f6de035298b7502bccfb1b81b483c8c85bc7fd5c2a1641b6c"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:23:23Z",
+      "createdAt": "2026-11-17T05:23:23Z",
+      "updatedAt": "2026-11-17T05:23:23Z",
+      "lastCheckedAt": "2026-11-17T05:23:27Z",
+      "createdBy": "system",
+      "createdByRun": "44021724916",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_2352e953d996cffd",
+      "gameId": "g_000292",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1868140/",
+          "retrievedAt": "2026-11-17T05:23:23Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b9f6c253a7c96d74b1bb10dee86377bf22e74b6069ca526200659121569fcbe0"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:23:23Z",
+      "createdAt": "2026-11-17T05:23:23Z",
+      "updatedAt": "2026-11-17T05:23:23Z",
+      "lastCheckedAt": "2026-11-17T05:23:23Z",
+      "createdBy": "system",
+      "createdByRun": "44021724916",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_3a068986c0702c26",
+      "gameId": "g_000292",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1868140/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:12:52Z",
+          "quote": "DAVE THE DIVER is a casual, singleplayer adventure RPG featuring deep-sea exploration and fishing during the day and sushi restaurant management at night.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b9f6c253a7c96d74b1bb10dee86377bf22e74b6069ca526200659121569fcbe0"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:12:52Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "summary",
+      "value": {
+        "ja": "昼は海に潜って魚を獲り、夜は寿司屋を経営する海洋アドベンチャー。ブルーホールの謎を追い、装備を強化しながら深海の危険な生物と立ち向かう。"
+      }
+    },
+    {
+      "id": "c_02fc879bf3fd906e",
+      "gameId": "g_000292",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1868140/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:12:52Z",
+          "quote": "A combination of pixel and 3D graphics provides a stunning art style",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b9f6c253a7c96d74b1bb10dee86377bf22e74b6069ca526200659121569fcbe0"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:12:52Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "tag",
+      "value": {
+        "tagId": "pixel-art"
+      }
+    },
+    {
+      "id": "c_07a6280131b9e0af",
+      "gameId": "g_000292",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1868140/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:12:52Z",
+          "quote": "Explore and unravel the mysteries in the depths of the Blue Hole by day and run a successful exotic sushi restaurant by night.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b9f6c253a7c96d74b1bb10dee86377bf22e74b6069ca526200659121569fcbe0"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:12:52Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_0f6a86a669a59b4b",
+      "gameId": "g_000292",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1868140/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:12:52Z",
+          "quote": "sushi restaurant management at night",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b9f6c253a7c96d74b1bb10dee86377bf22e74b6069ca526200659121569fcbe0"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:12:52Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_3878154fb1f0cd0b",
+      "gameId": "g_000292",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1868140/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:12:52Z",
+          "quote": "This oceanic adventure is set in the real marine environment of a Blue Hole filled with over 200 kinds of sea creatures.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b9f6c253a7c96d74b1bb10dee86377bf22e74b6069ca526200659121569fcbe0"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:12:52Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "tag",
+      "value": {
+        "tagId": "ocean"
+      }
+    },
+    {
+      "id": "c_9deb2d1899bdc061",
+      "gameId": "g_000292",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1868140/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:12:52Z",
+          "quote": "Join Dave and his quirky friends as they seek to uncover the secrets of the mysterious Blue Hole.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b9f6c253a7c96d74b1bb10dee86377bf22e74b6069ca526200659121569fcbe0"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:12:52Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_a52a308fe72d799c",
+      "gameId": "g_000292",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1868140/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:12:52Z",
+          "quote": "use a harpoon and other weapons to catch fish and various creatures",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b9f6c253a7c96d74b1bb10dee86377bf22e74b6069ca526200659121569fcbe0"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:12:52Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "tag",
+      "value": {
+        "tagId": "fishing"
+      }
+    },
+    {
+      "id": "c_e393a871c3274df0",
+      "gameId": "g_000292",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1868140/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:12:52Z",
+          "quote": "Upgrade and forge equipment with collected resources and sushi restaurant profits to prepare for the dangers that lurk in the unknown.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b9f6c253a7c96d74b1bb10dee86377bf22e74b6069ca526200659121569fcbe0"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:12:52Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "tag",
+      "value": {
+        "tagId": "crafting"
+      }
+    },
+    {
+      "id": "c_fc3c719222ec20ca",
+      "gameId": "g_000292",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1868140/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:12:52Z",
+          "quote": "An adventure, RPG, management hybrid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b9f6c253a7c96d74b1bb10dee86377bf22e74b6069ca526200659121569fcbe0"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:12:52Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_93e0d342d6854d86",
+      "gameId": "g_000292",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1868140/",
+          "retrievedAt": "2026-11-17T05:23:23Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b9f6c253a7c96d74b1bb10dee86377bf22e74b6069ca526200659121569fcbe0"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:23:23Z",
+      "createdAt": "2026-11-17T05:23:23Z",
+      "updatedAt": "2026-11-17T05:23:23Z",
+      "lastCheckedAt": "2026-11-17T05:23:23Z",
+      "createdBy": "system",
+      "createdByRun": "44021724916",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1868140/"
+      }
+    },
+    {
+      "id": "c_61346b5fad712b4c",
+      "gameId": "g_000292",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1868140/",
+          "retrievedAt": "2026-11-17T05:23:23Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b9f6c253a7c96d74b1bb10dee86377bf22e74b6069ca526200659121569fcbe0"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:23:23Z",
+      "createdAt": "2026-11-17T05:23:23Z",
+      "updatedAt": "2026-11-17T05:23:23Z",
+      "lastCheckedAt": "2026-11-17T05:23:23Z",
+      "createdBy": "system",
+      "createdByRun": "44021724916",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1868140/81bdb3bce15d27ca1b4554a642d91096e89be229/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "デイヴ・ザ・ダイバー のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "MINTROCKET"
+        }
+      }
+    }
+  ]
+}

@@ -33,9 +33,33 @@
             "originKey": "store:steam"
           }
         ]
+      },
+      {
+        "code": "independent-publisher",
+        "note": "開発はTECOPARK、販売はPICO PARK Inc.で大手パブリッシャーは関与しない。PICO PARK シリーズはストア上でインディー作品として紹介されている。",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4304060/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-17T05:08:31Z",
+            "quote": "Sonic dashes into the world of the hit indie game, PICO PARK!",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:dd81d000db487998c3b33ec5b33a57b95abc0e2bf71dd07ac3a95ad3e0a9a8d0"
+          },
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4304060/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-17T05:08:31Z",
+            "locator": "steam:appdetails.publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:dd81d000db487998c3b33ec5b33a57b95abc0e2bf71dd07ac3a95ad3e0a9a8d0"
+          }
+        ]
       }
     ],
-    "assessedAt": "2026-11-16T03:07:29Z"
+    "assessedAt": "2026-11-17T05:22:41Z"
   },
   "identityEvidence": [
     {
@@ -95,6 +119,6 @@
   ],
   "createdAt": "2026-11-13T03:46:06Z",
   "addedAt": "2026-11-15",
-  "updatedAt": "2026-11-16T03:07:29Z",
+  "updatedAt": "2026-11-17T05:22:41Z",
   "createdByRun": "43359055786"
 }

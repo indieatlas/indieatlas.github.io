@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000305",
+  "status": "candidate",
+  "title": {
+    "display": "just volleyball",
+    "original": "just volleyball",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5037200
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5037230",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000433"
+  ],
+  "publisherIds": [
+    "dev_000433"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5037200/",
+            "retrievedAt": "2026-11-17T05:23:01Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:624a838f8aab11dbe19ce2ee734d7a224aa886fed8590d8f0463388023f9743a"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-17T05:23:01Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5037200/",
+        "retrievedAt": "2026-11-17T05:23:01Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:624a838f8aab11dbe19ce2ee734d7a224aa886fed8590d8f0463388023f9743a"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5037200/",
+        "retrievedAt": "2026-11-17T05:23:01Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:624a838f8aab11dbe19ce2ee734d7a224aa886fed8590d8f0463388023f9743a"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5037200/",
+        "retrievedAt": "2026-11-17T05:23:01Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:624a838f8aab11dbe19ce2ee734d7a224aa886fed8590d8f0463388023f9743a"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5037200/",
+        "retrievedAt": "2026-11-17T05:23:01Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:624a838f8aab11dbe19ce2ee734d7a224aa886fed8590d8f0463388023f9743a"
+      }
+    }
+  ],
+  "createdAt": "2026-11-17T05:23:01Z",
+  "updatedAt": "2026-11-17T05:23:01Z",
+  "createdByRun": "44021724916"
+}

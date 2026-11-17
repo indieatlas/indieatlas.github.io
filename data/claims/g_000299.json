@@ -1,0 +1,417 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000299",
+  "claims": [
+    {
+      "id": "c_e4d081c6d42a6299",
+      "gameId": "g_000299",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4487350/",
+          "retrievedAt": "2026-11-17T05:23:55Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7f727abfd3911bca584ca63f6468edf85c990dbd2377e46b6d854cf974b754fc"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:23:55Z",
+      "createdAt": "2026-11-17T05:23:55Z",
+      "updatedAt": "2026-11-17T05:23:55Z",
+      "lastCheckedAt": "2026-11-17T05:23:55Z",
+      "createdBy": "system",
+      "createdByRun": "44021724916",
+      "field": "release",
+      "value": {
+        "status": "tba",
+        "rawText": "Coming soon"
+      }
+    },
+    {
+      "id": "c_5b5a691054a7560b",
+      "gameId": "g_000299",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4487350/",
+          "retrievedAt": "2026-11-17T05:23:58Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d7a0e67e614e754071539d4477486238123068a86e42f6a7f31bb0588985daa7"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:23:55Z",
+      "createdAt": "2026-11-17T05:23:55Z",
+      "updatedAt": "2026-11-17T05:23:55Z",
+      "lastCheckedAt": "2026-11-17T05:23:58Z",
+      "createdBy": "system",
+      "createdByRun": "44021724916",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_1b412119d6f8d47c",
+      "gameId": "g_000299",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4487350/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:16:39Z",
+          "locator": "steam:appdetails.playerModes",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7f727abfd3911bca584ca63f6468edf85c990dbd2377e46b6d854cf974b754fc"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:16:39Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "online-coop",
+          "online-pvp"
+        ],
+        "minPlayers": 1,
+        "maxPlayers": 4
+      }
+    },
+    {
+      "id": "c_cd1d84bfc36d9f58",
+      "gameId": "g_000299",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4487350/",
+          "retrievedAt": "2026-11-17T05:23:55Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7f727abfd3911bca584ca63f6468edf85c990dbd2377e46b6d854cf974b754fc"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:23:55Z",
+      "createdAt": "2026-11-17T05:23:55Z",
+      "updatedAt": "2026-11-17T05:23:55Z",
+      "lastCheckedAt": "2026-11-17T05:23:55Z",
+      "createdBy": "system",
+      "createdByRun": "44021724916",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "online-coop",
+          "online-pvp"
+        ]
+      }
+    },
+    {
+      "id": "c_50de6c550f6d2747",
+      "gameId": "g_000299",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4487350/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:16:39Z",
+          "quote": "『RIM』は、魔法学校を舞台にしたマルチプレイヤーゲームです。4人1組のチームで魔法の授業に挑み、ポイントを競い合いましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7f727abfd3911bca584ca63f6468edf85c990dbd2377e46b6d854cf974b754fc"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:16:39Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "summary",
+      "value": {
+        "ja": "魔法学校を舞台にした4人チーム制のマルチプレイヤーゲーム。戦闘魔術や錬金術などの授業でポイントを競い、課外活動や学院に隠された秘密の探索で他のチームより優位に立つ。成績上位のチームだけが次のゲームデイへ進める。"
+      }
+    },
+    {
+      "id": "c_1edf3006b9af2f7a",
+      "gameId": "g_000299",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4487350/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:16:39Z",
+          "quote": "戦闘魔術： 他の魔女や魔法使いから身を守るための呪文を学びます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7f727abfd3911bca584ca63f6468edf85c990dbd2377e46b6d854cf974b754fc"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:16:39Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "tag",
+      "value": {
+        "tagId": "fantasy"
+      }
+    },
+    {
+      "id": "c_20bd041754515fb2",
+      "gameId": "g_000299",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4487350/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:16:39Z",
+          "quote": "『RIM』は、魔法学校を舞台にしたマルチプレイヤーゲームです。4人1組のチームで魔法の授業に挑み、ポイントを競い合いましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7f727abfd3911bca584ca63f6468edf85c990dbd2377e46b6d854cf974b754fc"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:16:39Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "tag",
+      "value": {
+        "tagId": "school"
+      }
+    },
+    {
+      "id": "c_35acf553a60f90e4",
+      "gameId": "g_000299",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4487350/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:16:39Z",
+          "quote": "各授業で新しい魔法のスキルを習得し、そのスキルを実践してチームのポイントを獲得しましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7f727abfd3911bca584ca63f6468edf85c990dbd2377e46b6d854cf974b754fc"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:16:39Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_40a42376f654783b",
+      "gameId": "g_000299",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4487350/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:16:39Z",
+          "quote": "それぞれの呪文には独自の効果があり、他のプレイヤーやモンスターを倒すには、異なる呪文を組み合わせる必要があります。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7f727abfd3911bca584ca63f6468edf85c990dbd2377e46b6d854cf974b754fc"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:16:39Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_c21e9588e52e2c3a",
+      "gameId": "g_000299",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4487350/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:16:39Z",
+          "quote": "『RIM』は、魔法学校を舞台にしたマルチプレイヤーゲームです。4人1組のチームで魔法の授業に挑み、ポイントを競い合いましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7f727abfd3911bca584ca63f6468edf85c990dbd2377e46b6d854cf974b754fc"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:16:39Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "tag",
+      "value": {
+        "tagId": "magic"
+      }
+    },
+    {
+      "id": "c_fccad999e20f67f4",
+      "gameId": "g_000299",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4487350/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:16:39Z",
+          "quote": "最大4人のチームでプレイし、魔法の授業やクラブ活動で他のチームと競い合い、チームのポイントを稼ぎましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7f727abfd3911bca584ca63f6468edf85c990dbd2377e46b6d854cf974b754fc"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:16:39Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_97a8df55e80d3a16",
+      "gameId": "g_000299",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4487350/",
+          "retrievedAt": "2026-11-17T05:23:55Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7f727abfd3911bca584ca63f6468edf85c990dbd2377e46b6d854cf974b754fc"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:23:55Z",
+      "createdAt": "2026-11-17T05:23:55Z",
+      "updatedAt": "2026-11-17T05:23:55Z",
+      "lastCheckedAt": "2026-11-17T05:23:55Z",
+      "createdBy": "system",
+      "createdByRun": "44021724916",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4487350/"
+      }
+    },
+    {
+      "id": "c_96cd0be34ae8ab78",
+      "gameId": "g_000299",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4487350/",
+          "retrievedAt": "2026-11-17T05:23:55Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:7f727abfd3911bca584ca63f6468edf85c990dbd2377e46b6d854cf974b754fc"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:23:55Z",
+      "createdAt": "2026-11-17T05:23:55Z",
+      "updatedAt": "2026-11-17T05:23:55Z",
+      "lastCheckedAt": "2026-11-17T05:23:55Z",
+      "createdBy": "system",
+      "createdByRun": "44021724916",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4487350/1f94c82155244a07fd8824dfa40f5ba69990c0bf/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Royal Institute of Magic のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Ether GmbH"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000295",
+  "claims": [
+    {
+      "id": "c_82a14b3b8460db91",
+      "gameId": "g_000295",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2321960/",
+          "retrievedAt": "2026-11-17T05:23:37Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:919f09c1e8367f5a7fb23da3c9f8bfe1452e1cf85459563701787ec11fb155cb"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:23:37Z",
+      "createdAt": "2026-11-17T05:23:37Z",
+      "updatedAt": "2026-11-17T05:23:37Z",
+      "lastCheckedAt": "2026-11-17T05:23:37Z",
+      "createdBy": "system",
+      "createdByRun": "44021724916",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 16
+        },
+        "rawText": "16 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_2b1d498f241babb2",
+      "gameId": "g_000295",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2321960/",
+          "retrievedAt": "2026-11-17T05:23:40Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:8f87cc5cc0dd6c5a0a0ebf2f6751015b9bbd707a335baa06ffba38c467bb9728"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:23:37Z",
+      "createdAt": "2026-11-17T05:23:37Z",
+      "updatedAt": "2026-11-17T05:23:37Z",
+      "lastCheckedAt": "2026-11-17T05:23:40Z",
+      "createdBy": "system",
+      "createdByRun": "44021724916",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_2a4691ab90a07ab0",
+      "gameId": "g_000295",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2321960/",
+          "retrievedAt": "2026-11-17T05:23:37Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:919f09c1e8367f5a7fb23da3c9f8bfe1452e1cf85459563701787ec11fb155cb"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:23:37Z",
+      "createdAt": "2026-11-17T05:23:37Z",
+      "updatedAt": "2026-11-17T05:23:37Z",
+      "lastCheckedAt": "2026-11-17T05:23:37Z",
+      "createdBy": "system",
+      "createdByRun": "44021724916",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "online-coop",
+          "mmo"
+        ]
+      }
+    },
+    {
+      "id": "c_d3e9aff6ee550400",
+      "gameId": "g_000295",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2321960/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:14:30Z",
+          "quote": "『コージーグローブ』の制作陣が贈る最新作！パステルカラーの雲の間をグライダーで飛び、迷子になった精霊を助けながら、高くそびえる山頂に自分だけの理想の家をデザインできるマルチプレイヤーライフシム。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:919f09c1e8367f5a7fb23da3c9f8bfe1452e1cf85459563701787ec11fb155cb"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:14:30Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "summary",
+      "value": {
+        "ja": "『コージーグローブ』の制作陣による、雲の上を舞台にしたマルチプレイヤーライフシム。グライダーで飛び回り、迷子の精霊を助けながら山頂に自分だけの家を築き、ほかのプレイヤーとたき火を囲んだり釣りを楽しんだりできる。"
+      }
+    },
+    {
+      "id": "c_066528d8500643a4",
+      "gameId": "g_000295",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2321960/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:14:30Z",
+          "quote": "あたたかいキャンプファイヤーを囲んで見知らぬ誰かと友達になったり、並んでのんびり空を飛び、雲海を泳ぐ魚を釣って思い出を分かち合ったり。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:919f09c1e8367f5a7fb23da3c9f8bfe1452e1cf85459563701787ec11fb155cb"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:14:30Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "tag",
+      "value": {
+        "tagId": "fishing"
+      }
+    },
+    {
+      "id": "c_6eb21ae3c495ee57",
+      "gameId": "g_000295",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2321960/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:14:30Z",
+          "quote": "雲の上に広がる、ときに嵐が吹き荒れる世界を舞台にした、ちょっぴり不思議なマルチプレイヤーゲーム『クロスランド』へようこそ。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:919f09c1e8367f5a7fb23da3c9f8bfe1452e1cf85459563701787ec11fb155cb"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:14:30Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_86b8b324491df5b5",
+      "gameId": "g_000295",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2321960/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:14:30Z",
+          "quote": "あたたかいキャンプファイヤーを囲んで見知らぬ誰かと友達になったり、並んでのんびり空を飛び、雲海を泳ぐ魚を釣って思い出を分かち合ったり。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:919f09c1e8367f5a7fb23da3c9f8bfe1452e1cf85459563701787ec11fb155cb"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:14:30Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_d326ff14979ec2ca",
+      "gameId": "g_000295",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2321960/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:14:30Z",
+          "quote": "家を建てたり、精霊たちを助けたり、他のプレイヤーとばったり出会ったり――ここはすべてマイペースで自由に楽しめる空間。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:919f09c1e8367f5a7fb23da3c9f8bfe1452e1cf85459563701787ec11fb155cb"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:14:30Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "tag",
+      "value": {
+        "tagId": "base-building"
+      }
+    },
+    {
+      "id": "c_db41f8035aa696a6",
+      "gameId": "g_000295",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2321960/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:14:30Z",
+          "quote": "居心地のいいコテージから本格的なお城まで、友達を招待したくなる最高の空間をデザインしましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:919f09c1e8367f5a7fb23da3c9f8bfe1452e1cf85459563701787ec11fb155cb"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:14:30Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_de25d8b6e9ac0da5",
+      "gameId": "g_000295",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2321960/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-17T05:14:30Z",
+          "quote": "パステルカラーの雲の間をグライダーで飛び、迷子になった精霊を助けながら、高くそびえる山頂に自分だけの理想の家をデザインできるマルチプレイヤーライフシム。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:919f09c1e8367f5a7fb23da3c9f8bfe1452e1cf85459563701787ec11fb155cb"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:22:41Z",
+      "createdAt": "2026-11-17T05:22:41Z",
+      "updatedAt": "2026-11-17T05:22:41Z",
+      "lastCheckedAt": "2026-11-17T05:14:30Z",
+      "createdBy": "llm",
+      "createdByRun": "44021724916",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_e0b9ec71dcae45e9",
+      "gameId": "g_000295",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2321960/",
+          "retrievedAt": "2026-11-17T05:23:37Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:919f09c1e8367f5a7fb23da3c9f8bfe1452e1cf85459563701787ec11fb155cb"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:23:37Z",
+      "createdAt": "2026-11-17T05:23:37Z",
+      "updatedAt": "2026-11-17T05:23:37Z",
+      "lastCheckedAt": "2026-11-17T05:23:37Z",
+      "createdBy": "system",
+      "createdByRun": "44021724916",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2321960/"
+      }
+    },
+    {
+      "id": "c_1da08ee756e726d2",
+      "gameId": "g_000295",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2321960/",
+          "retrievedAt": "2026-11-17T05:23:37Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:919f09c1e8367f5a7fb23da3c9f8bfe1452e1cf85459563701787ec11fb155cb"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-17T05:23:37Z",
+      "createdAt": "2026-11-17T05:23:37Z",
+      "updatedAt": "2026-11-17T05:23:37Z",
+      "lastCheckedAt": "2026-11-17T05:23:37Z",
+      "createdBy": "system",
+      "createdByRun": "44021724916",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2321960/ef5229ee7c51162c7233296443ef0520408387cd/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "クロスランド せいれいたちとつむぐせかい のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Spry Fox"
+        }
+      }
+    }
+  ]
+}
