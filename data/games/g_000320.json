@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000320",
+  "status": "candidate",
+  "title": {
+    "display": "ガルバテイン：冒険者ギルド事務所",
+    "original": "Galvatein : Adventurers' Guild",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "ガルバテイン：冒険者ギルド事務所",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 3208930
+  },
+  "associatedApps": [],
+  "officialUrl": "https://www.startwithgravity.net/kr/gameinfo/GC_GAG",
+  "developerIds": [
+    "dev_000450"
+  ],
+  "publisherIds": [
+    "dev_000451"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-top-seller",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/search/?filter=topsellers&category1=998&tags=492&cc=jp",
+            "retrievedAt": "2026-11-18T04:42:19Z",
+            "locator": "steam:search.topsellers.tags=492",
+            "originKey": "store:steam"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-18T04:42:19Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3208930/",
+        "retrievedAt": "2026-11-18T04:42:25Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3e6890a3786ca96afd0fb72d684d0b0a6e54dd4bdf0504955bf41169abd4e7d3"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3208930/",
+        "retrievedAt": "2026-11-18T04:42:25Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3e6890a3786ca96afd0fb72d684d0b0a6e54dd4bdf0504955bf41169abd4e7d3"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3208930/",
+        "retrievedAt": "2026-11-18T04:42:25Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3e6890a3786ca96afd0fb72d684d0b0a6e54dd4bdf0504955bf41169abd4e7d3"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3208930/",
+        "retrievedAt": "2026-11-18T04:42:25Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3e6890a3786ca96afd0fb72d684d0b0a6e54dd4bdf0504955bf41169abd4e7d3"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3208930/",
+        "retrievedAt": "2026-11-18T04:42:25Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3e6890a3786ca96afd0fb72d684d0b0a6e54dd4bdf0504955bf41169abd4e7d3"
+      }
+    }
+  ],
+  "createdAt": "2026-11-18T04:42:25Z",
+  "updatedAt": "2026-11-18T04:42:19Z",
+  "createdByRun": "44237601973"
+}

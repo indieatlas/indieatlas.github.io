@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000316",
+  "status": "candidate",
+  "title": {
+    "display": "Six Bullets",
+    "original": "Six Bullets",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4547320
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000445"
+  ],
+  "publisherIds": [
+    "dev_000445"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4547320/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-18T04:38:19Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:11d14b8dac9ff01551e985b9fa4549237afbe8cf0ed84b9d17169d73f0139ad9"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-18T04:42:19Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4547320/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:38:19Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:11d14b8dac9ff01551e985b9fa4549237afbe8cf0ed84b9d17169d73f0139ad9"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4547320/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:38:19Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:11d14b8dac9ff01551e985b9fa4549237afbe8cf0ed84b9d17169d73f0139ad9"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4547320/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:38:19Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:11d14b8dac9ff01551e985b9fa4549237afbe8cf0ed84b9d17169d73f0139ad9"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4547320/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:38:19Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:11d14b8dac9ff01551e985b9fa4549237afbe8cf0ed84b9d17169d73f0139ad9"
+      }
+    }
+  ],
+  "createdAt": "2026-11-18T04:42:19Z",
+  "updatedAt": "2026-11-18T04:42:19Z",
+  "createdByRun": "44237601973"
+}

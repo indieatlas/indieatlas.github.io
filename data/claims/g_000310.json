@@ -1,0 +1,423 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000310",
+  "claims": [
+    {
+      "id": "c_4b0d8e111e443ee2",
+      "gameId": "g_000310",
+      "scope": {
+        "platform": "linux",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4171850/",
+          "retrievedAt": "2026-11-18T04:42:34Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8a0f35f08fbf4e678fac08e13a2c56745aa7a342ba6459d57e864a217bb8b45"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:34Z",
+      "createdAt": "2026-11-18T04:42:34Z",
+      "updatedAt": "2026-11-18T04:42:34Z",
+      "lastCheckedAt": "2026-11-18T04:42:34Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 16
+        },
+        "rawText": "16 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_192be2e052a4f7a0",
+      "gameId": "g_000310",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4171850/",
+          "retrievedAt": "2026-11-18T04:42:34Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8a0f35f08fbf4e678fac08e13a2c56745aa7a342ba6459d57e864a217bb8b45"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:34Z",
+      "createdAt": "2026-11-18T04:42:34Z",
+      "updatedAt": "2026-11-18T04:42:34Z",
+      "lastCheckedAt": "2026-11-18T04:42:34Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 16
+        },
+        "rawText": "16 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_ba68deffd06e547e",
+      "gameId": "g_000310",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4171850/",
+          "retrievedAt": "2026-11-18T04:42:37Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:0e4e14258f3e9b23d983bf28113c590531952a9831d2f82975191d782332d6d0"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:34Z",
+      "createdAt": "2026-11-18T04:42:34Z",
+      "updatedAt": "2026-11-18T04:42:34Z",
+      "lastCheckedAt": "2026-11-18T04:42:37Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_557ea4dfc9422ec9",
+      "gameId": "g_000310",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4171850/",
+          "retrievedAt": "2026-11-18T04:42:34Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8a0f35f08fbf4e678fac08e13a2c56745aa7a342ba6459d57e864a217bb8b45"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:34Z",
+      "createdAt": "2026-11-18T04:42:34Z",
+      "updatedAt": "2026-11-18T04:42:34Z",
+      "lastCheckedAt": "2026-11-18T04:42:34Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_c4753911cc0876ad",
+      "gameId": "g_000310",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4171850/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:34:33Z",
+          "quote": "森の中でピクニックを楽しんでもう帰る時間だ。しかし周囲の植物たちは、あなたを正しい道へと帰さず、屈辱を与えようと待ち構えている。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d8d8bd9f6b3521f0db67af3c0dc5198db75bda36dc9fcdafd84cf5b6df58e50f"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:34:33Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "summary",
+      "value": {
+        "ja": "森の中でピクニックを終えて帰ろうとする主人公に、森じゅうの木々が初見殺しの罠を仕掛けてくるアクションアドベンチャー。突然倒れてきたり追いかけてきたりと、予想を裏切る仕掛けを避けながら道を進む。"
+      }
+    },
+    {
+      "id": "c_12c81ca04c47d586",
+      "gameId": "g_000310",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4171850/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:34:33Z",
+          "quote": "This is a rage game focused on traps and gags.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d8d8bd9f6b3521f0db67af3c0dc5198db75bda36dc9fcdafd84cf5b6df58e50f"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:34:33Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_332e1a6dd41d0987",
+      "gameId": "g_000310",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4171850/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:34:33Z",
+          "quote": "After a picnic in the woods, it's time to go home. But the nearby flora is determined to take you off course and make your life miserable.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d8d8bd9f6b3521f0db67af3c0dc5198db75bda36dc9fcdafd84cf5b6df58e50f"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:34:33Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_803c8f1f686407e1",
+      "gameId": "g_000310",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4171850/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:34:33Z",
+          "quote": "Hike through the worst forest full of the most horrible trees.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d8d8bd9f6b3521f0db67af3c0dc5198db75bda36dc9fcdafd84cf5b6df58e50f"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:34:33Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "tag",
+      "value": {
+        "tagId": "nature"
+      }
+    },
+    {
+      "id": "c_878020167ef482a6",
+      "gameId": "g_000310",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4171850/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:34:33Z",
+          "quote": "These trees are unfair, mean, and merciless. They will use your expectations against you to humiliate you.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d8d8bd9f6b3521f0db67af3c0dc5198db75bda36dc9fcdafd84cf5b6df58e50f"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:34:33Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_a8f82b8d422922ab",
+      "gameId": "g_000310",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4171850/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:34:33Z",
+          "quote": "Try to avoid the traps, inevitably die from them, and try again.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d8d8bd9f6b3521f0db67af3c0dc5198db75bda36dc9fcdafd84cf5b6df58e50f"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:34:33Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "tag",
+      "value": {
+        "tagId": "difficult"
+      }
+    },
+    {
+      "id": "c_df9ff3a9da12b3cd",
+      "gameId": "g_000310",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4171850/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:34:33Z",
+          "quote": "Get lost in several biomes as your journey goes terribly off course",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:d8d8bd9f6b3521f0db67af3c0dc5198db75bda36dc9fcdafd84cf5b6df58e50f"
+        }
+      ],
+      "asOf": "2026-11-17",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:34:33Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_3724cc8149bed575",
+      "gameId": "g_000310",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4171850/",
+          "retrievedAt": "2026-11-18T04:42:34Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8a0f35f08fbf4e678fac08e13a2c56745aa7a342ba6459d57e864a217bb8b45"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:34Z",
+      "createdAt": "2026-11-18T04:42:34Z",
+      "updatedAt": "2026-11-18T04:42:34Z",
+      "lastCheckedAt": "2026-11-18T04:42:34Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4171850/"
+      }
+    },
+    {
+      "id": "c_6cf215305eedff6f",
+      "gameId": "g_000310",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4171850/",
+          "retrievedAt": "2026-11-18T04:42:34Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8a0f35f08fbf4e678fac08e13a2c56745aa7a342ba6459d57e864a217bb8b45"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:34Z",
+      "createdAt": "2026-11-18T04:42:34Z",
+      "updatedAt": "2026-11-18T04:42:34Z",
+      "lastCheckedAt": "2026-11-18T04:42:34Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4171850/4550c09c2fa41435b7b695f31460bea297d4ce15/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Trees Hate You のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Tykenn"
+        }
+      }
+    }
+  ]
+}

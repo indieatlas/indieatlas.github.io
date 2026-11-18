@@ -1,0 +1,424 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000309",
+  "claims": [
+    {
+      "id": "c_8e0d7460517536f6",
+      "gameId": "g_000309",
+      "scope": {
+        "platform": "linux",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/362890/",
+          "retrievedAt": "2026-11-18T04:42:30Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99fad77f5ca87445f57a5056fb47605b0f0210db5ff3a8c6f1c9b4bd75647b51"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:30Z",
+      "createdAt": "2026-11-18T04:42:30Z",
+      "updatedAt": "2026-11-18T04:42:30Z",
+      "lastCheckedAt": "2026-11-18T04:42:30Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2020,
+          "month": 3,
+          "day": 6
+        },
+        "rawText": "6 Mar, 2020"
+      }
+    },
+    {
+      "id": "c_d8cc9cc6df2e1201",
+      "gameId": "g_000309",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/362890/",
+          "retrievedAt": "2026-11-18T04:42:30Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99fad77f5ca87445f57a5056fb47605b0f0210db5ff3a8c6f1c9b4bd75647b51"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:30Z",
+      "createdAt": "2026-11-18T04:42:30Z",
+      "updatedAt": "2026-11-18T04:42:30Z",
+      "lastCheckedAt": "2026-11-18T04:42:30Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2020,
+          "month": 3,
+          "day": 6
+        },
+        "rawText": "6 Mar, 2020"
+      }
+    },
+    {
+      "id": "c_708807b8a26a950d",
+      "gameId": "g_000309",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/362890/",
+          "retrievedAt": "2026-11-18T04:42:33Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6e262e906460902b016caafc525c06e76fb98cc2255ac550a849e910b894bb9a"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:30Z",
+      "createdAt": "2026-11-18T04:42:30Z",
+      "updatedAt": "2026-11-18T04:42:30Z",
+      "lastCheckedAt": "2026-11-18T04:42:33Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_08c08cdf6a396561",
+      "gameId": "g_000309",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/362890/",
+          "retrievedAt": "2026-11-18T04:42:30Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99fad77f5ca87445f57a5056fb47605b0f0210db5ff3a8c6f1c9b4bd75647b51"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:30Z",
+      "createdAt": "2026-11-18T04:42:30Z",
+      "updatedAt": "2026-11-18T04:42:30Z",
+      "lastCheckedAt": "2026-11-18T04:42:30Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-pvp"
+        ]
+      }
+    },
+    {
+      "id": "c_82a6df8844750742",
+      "gameId": "g_000309",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/362890/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:34:22Z",
+          "quote": "Relive Half-Life with this fan-made reimagining of Valve's classic story-driven FPS.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99fad77f5ca87445f57a5056fb47605b0f0210db5ff3a8c6f1c9b4bd75647b51"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:34:22Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "summary",
+      "value": {
+        "ja": "Valveの『Half-Life』をファンが独自に再構築したFPS。ブラック・メサ研究所の理論物理学者ゴードン・フリーマンとなり、異次元から押し寄せるエイリアンや軍の掃討部隊と戦い、拡張されたXenを含む全19章のキャンペーンを進む。"
+      }
+    },
+    {
+      "id": "c_4c379ecace78b0e5",
+      "gameId": "g_000309",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/362890/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:34:22Z",
+          "quote": "Wield an arsenal of military hardware, scientific prototypes, and the iconic crowbar through incredibly detailed environments",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99fad77f5ca87445f57a5056fb47605b0f0210db5ff3a8c6f1c9b4bd75647b51"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:34:22Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "tag",
+      "value": {
+        "tagId": "shooter"
+      }
+    },
+    {
+      "id": "c_735179b6763965c8",
+      "gameId": "g_000309",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/362890/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:34:22Z",
+          "quote": "you must fight your way through an interdimensional alien invasion, and a bloodthirsty military clean-up crew in order to save the science team… and the world!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99fad77f5ca87445f57a5056fb47605b0f0210db5ff3a8c6f1c9b4bd75647b51"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:34:22Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "tag",
+      "value": {
+        "tagId": "sci-fi"
+      }
+    },
+    {
+      "id": "c_74abca244e720565",
+      "gameId": "g_000309",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/362890/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:34:22Z",
+          "quote": "A completely reimagined and refined single player campaign, including all new and expanded Xen levels",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99fad77f5ca87445f57a5056fb47605b0f0210db5ff3a8c6f1c9b4bd75647b51"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:34:22Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_7e3079818a6cc9ce",
+      "gameId": "g_000309",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/362890/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:34:22Z",
+          "quote": "19 chapters of fighting through top-secret labs, running atop harsh desert landscapes, sneaking into abandoned railways, and leaping across dimensions",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99fad77f5ca87445f57a5056fb47605b0f0210db5ff3a8c6f1c9b4bd75647b51"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:34:22Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_96d8eecd6fc8520f",
+      "gameId": "g_000309",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/362890/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:34:22Z",
+          "quote": "A completely reimagined and refined single player campaign, including all new and expanded Xen levels",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99fad77f5ca87445f57a5056fb47605b0f0210db5ff3a8c6f1c9b4bd75647b51"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:34:22Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_c1ce728c86f668e4",
+      "gameId": "g_000309",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/362890/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:34:22Z",
+          "quote": "Relive Half-Life with this fan-made reimagining of Valve's classic story-driven FPS.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99fad77f5ca87445f57a5056fb47605b0f0210db5ff3a8c6f1c9b4bd75647b51"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:34:22Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_bd29c7738f36b232",
+      "gameId": "g_000309",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/362890/",
+          "retrievedAt": "2026-11-18T04:42:30Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99fad77f5ca87445f57a5056fb47605b0f0210db5ff3a8c6f1c9b4bd75647b51"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:30Z",
+      "createdAt": "2026-11-18T04:42:30Z",
+      "updatedAt": "2026-11-18T04:42:30Z",
+      "lastCheckedAt": "2026-11-18T04:42:30Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/362890/"
+      }
+    },
+    {
+      "id": "c_197f78625b07466d",
+      "gameId": "g_000309",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/362890/",
+          "retrievedAt": "2026-11-18T04:42:30Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:99fad77f5ca87445f57a5056fb47605b0f0210db5ff3a8c6f1c9b4bd75647b51"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:30Z",
+      "createdAt": "2026-11-18T04:42:30Z",
+      "updatedAt": "2026-11-18T04:42:30Z",
+      "lastCheckedAt": "2026-11-18T04:42:30Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/362890/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Black Mesa のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Crowbar Collective"
+        }
+      }
+    }
+  ]
+}

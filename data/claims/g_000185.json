@@ -55,10 +55,10 @@
           "kind": "store",
           "url": "https://store.steampowered.com/app/2638080/",
           "sourceId": "steam-store",
-          "retrievedAt": "2026-11-17T05:08:18Z",
-          "locator": "steam:appdetails.release_date",
+          "retrievedAt": "2026-11-18T04:32:39Z",
+          "locator": "steam:appdetails.release",
           "originKey": "store:steam",
-          "fetchHash": "sha256:07dafee961b30a0233c3ceb2ee28e11f27fc340558400a28d203e2a6b411baff"
+          "fetchHash": "sha256:5fdde66f5e34760c69ea140b90434f48964279244373f6754a1c80c1284c27fe"
         }
       ],
       "asOf": "2026-11-11",
@@ -70,7 +70,7 @@
       "adoptedAt": "2026-11-11T03:07:21Z",
       "createdAt": "2026-11-11T03:07:21Z",
       "updatedAt": "2026-11-11T03:07:21Z",
-      "lastCheckedAt": "2026-11-17T05:08:18Z",
+      "lastCheckedAt": "2026-11-18T04:32:39Z",
       "createdBy": "llm",
       "createdByRun": "42948722984",
       "field": "release",
@@ -94,16 +94,6 @@
       },
       "basis": "reported",
       "evidence": [
-        {
-          "kind": "media",
-          "url": "https://www.4gamer.net/games/784/G078437/20261114004/",
-          "sourceId": "4gamer",
-          "publishedAt": "2026-11-14T07:00:00Z",
-          "retrievedAt": "2026-11-17T05:08:17Z",
-          "quote": "「勇者パーティはぜんめつしました。」は，2026年11月10日に発売された「高湿度・激重感情」RPG。",
-          "originKey": "media:4gamer.net",
-          "fetchHash": "sha256:6c1dc82a52721ee6ff00e93655608d3e3c6fb264778364cafbbead0eda868a9d"
-        },
         {
           "kind": "media",
           "url": "https://news.denfaminicogamer.jp/news/2611092g",
@@ -136,6 +126,16 @@
           "quote": "「勇者パーティはぜんめつしました。」が、2026年11月10日に発売された。価格は1,980円。",
           "originKey": "media:impress.co.jp",
           "fetchHash": "sha256:4b0be456c2c8399cd688a2e69826c7c80f1d87bb778598a8d875193cb7f44643"
+        },
+        {
+          "kind": "media",
+          "url": "https://www.4gamer.net/games/784/G078437/20261114004/",
+          "sourceId": "4gamer",
+          "publishedAt": "2026-11-14T07:00:00Z",
+          "retrievedAt": "2026-11-18T04:33:11Z",
+          "quote": "「勇者パーティはぜんめつしました。」は，2026年11月10日に発売された「高湿度・激重感情」RPG。",
+          "originKey": "media:4gamer.net",
+          "fetchHash": "sha256:ea355d43473840775cdd4e35365d58cef9d7cb18274b2f1cef19485617baffe2"
         }
       ],
       "asOf": "2026-11-14",
@@ -144,7 +144,7 @@
       "adoptedAt": "2026-11-17T05:22:41Z",
       "createdAt": "2026-11-17T05:22:41Z",
       "updatedAt": "2026-11-17T05:22:41Z",
-      "lastCheckedAt": "2026-11-17T05:09:59Z",
+      "lastCheckedAt": "2026-11-18T04:33:11Z",
       "createdBy": "llm",
       "createdByRun": "44021724916",
       "field": "release",

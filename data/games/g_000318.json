@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000318",
+  "status": "candidate",
+  "title": {
+    "display": "G-MODEアーカイブス+ ドルアーガの迷宮",
+    "original": "G-MODEアーカイブス+ ドルアーガの迷宮",
+    "originalLang": "ja"
+  },
+  "aliases": [
+    {
+      "value": "G-MODE Archives+ THE LABYRINTH OF DRUAGA",
+      "lang": "en",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 5256430
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000447",
+    "dev_000448"
+  ],
+  "publisherIds": [
+    "dev_000447"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5256430/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-18T04:38:03Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:21f8fa779d50e22e208e57d4a87d0b6b4b4d33270a58fd927f76294eb7e5d9c4"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-18T04:42:19Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5256430/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:38:03Z",
+        "quote": "G-MODE Archives+ THE LABYRINTH OF DRUAGA",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:21f8fa779d50e22e208e57d4a87d0b6b4b4d33270a58fd927f76294eb7e5d9c4"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5256430/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:38:03Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:21f8fa779d50e22e208e57d4a87d0b6b4b4d33270a58fd927f76294eb7e5d9c4"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5256430/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:38:03Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:21f8fa779d50e22e208e57d4a87d0b6b4b4d33270a58fd927f76294eb7e5d9c4"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5256430/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:38:03Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:21f8fa779d50e22e208e57d4a87d0b6b4b4d33270a58fd927f76294eb7e5d9c4"
+      }
+    }
+  ],
+  "createdAt": "2026-11-18T04:42:19Z",
+  "updatedAt": "2026-11-18T04:42:19Z",
+  "createdByRun": "44237601973"
+}

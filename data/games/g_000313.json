@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000313",
+  "status": "candidate",
+  "title": {
+    "display": "Project Rabbit",
+    "original": "Project Rabbit",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4683260
+  },
+  "associatedApps": [],
+  "officialUrl": "https://www.nova-flare.com/",
+  "developerIds": [
+    "dev_000442"
+  ],
+  "publisherIds": [
+    "dev_000442"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4683260/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-18T04:36:16Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:21d6beb40588be1d43bb81a3df134d2da6d739ace2406b13b67cfec3cac6f390"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-18T04:42:19Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4683260/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:36:16Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:21d6beb40588be1d43bb81a3df134d2da6d739ace2406b13b67cfec3cac6f390"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4683260/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:36:16Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:21d6beb40588be1d43bb81a3df134d2da6d739ace2406b13b67cfec3cac6f390"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4683260/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:36:16Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:21d6beb40588be1d43bb81a3df134d2da6d739ace2406b13b67cfec3cac6f390"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4683260/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:36:16Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:21d6beb40588be1d43bb81a3df134d2da6d739ace2406b13b67cfec3cac6f390"
+      }
+    }
+  ],
+  "createdAt": "2026-11-18T04:42:19Z",
+  "updatedAt": "2026-11-18T04:42:19Z",
+  "createdByRun": "44237601973"
+}

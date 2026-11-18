@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000311",
+  "claims": [
+    {
+      "id": "c_32b473272af69c3e",
+      "gameId": "g_000311",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5125240/",
+          "retrievedAt": "2026-11-18T04:42:39Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8a86e7bccf4400cf6426ed313819393fb758839ed103f9c5bd19dd341dd4e41"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:39Z",
+      "createdAt": "2026-11-18T04:42:39Z",
+      "updatedAt": "2026-11-18T04:42:39Z",
+      "lastCheckedAt": "2026-11-18T04:42:39Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "year",
+          "year": 2027
+        },
+        "rawText": "2027"
+      }
+    },
+    {
+      "id": "c_c2921c9d66f05278",
+      "gameId": "g_000311",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5125240/",
+          "retrievedAt": "2026-11-18T04:42:42Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:759c54f6ca24c5f6c93b88b1f0cef57e2a6e508ef622fdf9697664ff41b61490"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:39Z",
+      "createdAt": "2026-11-18T04:42:39Z",
+      "updatedAt": "2026-11-18T04:42:39Z",
+      "lastCheckedAt": "2026-11-18T04:42:42Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_0dc92b068105520e",
+      "gameId": "g_000311",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5125240/",
+          "retrievedAt": "2026-11-18T04:42:39Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8a86e7bccf4400cf6426ed313819393fb758839ed103f9c5bd19dd341dd4e41"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:39Z",
+      "createdAt": "2026-11-18T04:42:39Z",
+      "updatedAt": "2026-11-18T04:42:39Z",
+      "lastCheckedAt": "2026-11-18T04:42:39Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_0e1cc0eee6d97748",
+      "gameId": "g_000311",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5125240/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:35:14Z",
+          "quote": "Human Forge is a game where you create humans and put them on air to make money. Draw a face, mix traits to create a human, then put them on the show.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8a86e7bccf4400cf6426ed313819393fb758839ed103f9c5bd19dd341dd4e41"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:35:14Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "summary",
+      "value": {
+        "ja": "自分で描いた顔と血清の配合から人間を作り、その人間を番組に出演させて稼ぐローグライト。3日ごとに神が上納金を取り立てに来る。"
+      }
+    },
+    {
+      "id": "c_0c1dcb6c4a6fe231",
+      "gameId": "g_000311",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5125240/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:35:14Z",
+          "quote": "Human Forgeは、人間を作って放送に出し、お金を稼ぐゲームです。顔を描き、特徴を混ぜて人間を作ったら番組に出演させましょう。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8a86e7bccf4400cf6426ed313819393fb758839ed103f9c5bd19dd341dd4e41"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:35:14Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_2719ed2a53581a68",
+      "gameId": "g_000311",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5125240/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:35:14Z",
+          "quote": "Want to earn even more? Maximize your profits with synergy items. Prove your skills and become the greatest human maker of all.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8a86e7bccf4400cf6426ed313819393fb758839ed103f9c5bd19dd341dd4e41"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:35:14Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "tag",
+      "value": {
+        "tagId": "strategy"
+      }
+    },
+    {
+      "id": "c_9281c61acd06282d",
+      "gameId": "g_000311",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.4gamer.net/games/058/G105881/20261117009/",
+          "sourceId": "4gamer",
+          "articleId": "a_8f3a083862361dc6",
+          "publishedAt": "2026-11-17T04:06:05Z",
+          "retrievedAt": "2026-11-18T04:35:05Z",
+          "quote": "本作は，自分で作った人間を番組に出演させて稼ぐローグライトゲームだ。",
+          "originKey": "media:4gamer.net",
+          "fetchHash": "sha256:86f7413b9950729c2290bd7677fa52f21d8a9795fea9e2e9881dead8c03ac517"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:35:05Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_ac60497f0d640097",
+      "gameId": "g_000311",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5125240/",
+          "retrievedAt": "2026-11-18T04:42:39Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8a86e7bccf4400cf6426ed313819393fb758839ed103f9c5bd19dd341dd4e41"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:39Z",
+      "createdAt": "2026-11-18T04:42:39Z",
+      "updatedAt": "2026-11-18T04:42:39Z",
+      "lastCheckedAt": "2026-11-18T04:42:39Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5125240/"
+      }
+    },
+    {
+      "id": "c_c25a7a39f877dfaa",
+      "gameId": "g_000311",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5125240/",
+          "retrievedAt": "2026-11-18T04:42:39Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8a86e7bccf4400cf6426ed313819393fb758839ed103f9c5bd19dd341dd4e41"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:39Z",
+      "createdAt": "2026-11-18T04:42:39Z",
+      "updatedAt": "2026-11-18T04:42:39Z",
+      "lastCheckedAt": "2026-11-18T04:42:39Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5125240/e91c15088ef962961b46c3ab80cc841e48468dce/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Human Forge のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Jebi Studio"
+        }
+      }
+    }
+  ]
+}

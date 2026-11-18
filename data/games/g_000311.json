@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000311",
+  "status": "candidate",
+  "title": {
+    "display": "Human Forge",
+    "original": "Human Forge",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5125240
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000439"
+  ],
+  "publisherIds": [
+    "dev_000439"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5125240/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-18T04:35:14Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:b8a86e7bccf4400cf6426ed313819393fb758839ed103f9c5bd19dd341dd4e41"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-18T04:42:19Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5125240/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:35:14Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b8a86e7bccf4400cf6426ed313819393fb758839ed103f9c5bd19dd341dd4e41"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5125240/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:35:14Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b8a86e7bccf4400cf6426ed313819393fb758839ed103f9c5bd19dd341dd4e41"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5125240/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:35:14Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b8a86e7bccf4400cf6426ed313819393fb758839ed103f9c5bd19dd341dd4e41"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5125240/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:35:14Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b8a86e7bccf4400cf6426ed313819393fb758839ed103f9c5bd19dd341dd4e41"
+      }
+    }
+  ],
+  "createdAt": "2026-11-18T04:42:19Z",
+  "updatedAt": "2026-11-18T04:42:19Z",
+  "createdByRun": "44237601973"
+}

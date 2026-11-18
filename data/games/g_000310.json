@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000310",
+  "status": "published",
+  "title": {
+    "display": "Trees Hate You",
+    "original": "Trees Hate You",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4171850
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4307190",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5364210",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5378320",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000438"
+  ],
+  "publisherIds": [
+    "dev_000438"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4171850/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-18T04:34:33Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:d8d8bd9f6b3521f0db67af3c0dc5198db75bda36dc9fcdafd84cf5b6df58e50f"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-18T04:42:19Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4171850/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:34:33Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d8d8bd9f6b3521f0db67af3c0dc5198db75bda36dc9fcdafd84cf5b6df58e50f"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4171850/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:34:33Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d8d8bd9f6b3521f0db67af3c0dc5198db75bda36dc9fcdafd84cf5b6df58e50f"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4171850/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:34:33Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d8d8bd9f6b3521f0db67af3c0dc5198db75bda36dc9fcdafd84cf5b6df58e50f"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4171850/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:34:33Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:d8d8bd9f6b3521f0db67af3c0dc5198db75bda36dc9fcdafd84cf5b6df58e50f"
+      }
+    }
+  ],
+  "createdAt": "2026-11-18T04:42:19Z",
+  "addedAt": "2026-11-18",
+  "updatedAt": "2026-11-18T04:42:19Z",
+  "createdByRun": "44237601973"
+}

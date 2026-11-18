@@ -1,0 +1,395 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000318",
+  "claims": [
+    {
+      "id": "c_c74c92268e9ca157",
+      "gameId": "g_000318",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5256430/",
+          "retrievedAt": "2026-11-18T04:43:10Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:21f8fa779d50e22e208e57d4a87d0b6b4b4d33270a58fd927f76294eb7e5d9c4"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:43:10Z",
+      "createdAt": "2026-11-18T04:43:10Z",
+      "updatedAt": "2026-11-18T04:43:10Z",
+      "lastCheckedAt": "2026-11-18T04:43:10Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 12,
+          "day": 1
+        },
+        "rawText": "1 Dec, 2026"
+      }
+    },
+    {
+      "id": "c_931c2f3839eec1c2",
+      "gameId": "g_000318",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5256430/",
+          "retrievedAt": "2026-11-18T04:43:13Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3a2b7b36df64bf1ee4d98a8da334ea0b25d103ecbba66d03df574335fbd97603"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:43:10Z",
+      "createdAt": "2026-11-18T04:43:10Z",
+      "updatedAt": "2026-11-18T04:43:10Z",
+      "lastCheckedAt": "2026-11-18T04:43:13Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_e11d9726f6cbd6da",
+      "gameId": "g_000318",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5256430/",
+          "retrievedAt": "2026-11-18T04:43:10Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:21f8fa779d50e22e208e57d4a87d0b6b4b4d33270a58fd927f76294eb7e5d9c4"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:43:10Z",
+      "createdAt": "2026-11-18T04:43:10Z",
+      "updatedAt": "2026-11-18T04:43:10Z",
+      "lastCheckedAt": "2026-11-18T04:43:10Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_579b3e2a4d2f15b1",
+      "gameId": "g_000318",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5256430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:38:03Z",
+          "quote": "本作は2011年に発売された、フィーチャーフォンアプリオリジナルの続編です。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:21f8fa779d50e22e208e57d4a87d0b6b4b4d33270a58fd927f76294eb7e5d9c4"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5256430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:38:03Z",
+          "quote": "地下60階の迷宮に囚われたカイを救いに向かう「救出編」と、カイと共に地下迷宮から地上を目指す「脱出編」がプレイできます！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:21f8fa779d50e22e208e57d4a87d0b6b4b4d33270a58fd927f76294eb7e5d9c4"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:38:03Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "summary",
+      "value": {
+        "ja": "『ドルアーガの塔』の続編として2011年にフィーチャーフォン向けに配信されたアクションRPGの復刻版。地下60階の迷宮に囚われたカイを救う「救出編」と、カイと共に地上を目指す「脱出編」を収録し、無敵モードとノート公開機能も搭載する。"
+      }
+    },
+    {
+      "id": "c_3c3986f483f8e943",
+      "gameId": "g_000318",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5256430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:38:03Z",
+          "quote": "本作は2011年に発売された、フィーチャーフォンアプリオリジナルの続編です。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:21f8fa779d50e22e208e57d4a87d0b6b4b4d33270a58fd927f76294eb7e5d9c4"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:38:03Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "tag",
+      "value": {
+        "tagId": "retro"
+      }
+    },
+    {
+      "id": "c_57adf100259310d0",
+      "gameId": "g_000318",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5256430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:38:03Z",
+          "quote": "斬新なゲーム性と理不尽なまでの高難易度で当時の話題をさらった『ドルアーガの塔』。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:21f8fa779d50e22e208e57d4a87d0b6b4b4d33270a58fd927f76294eb7e5d9c4"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:38:03Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "tag",
+      "value": {
+        "tagId": "difficult"
+      }
+    },
+    {
+      "id": "c_59fbddc285b680eb",
+      "gameId": "g_000318",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5256430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:38:03Z",
+          "quote": "地下60階の迷宮に囚われたカイを救いに向かう「救出編」と、カイと共に地下迷宮から地上を目指す「脱出編」がプレイできます！",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:21f8fa779d50e22e208e57d4a87d0b6b4b4d33270a58fd927f76294eb7e5d9c4"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:38:03Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_9943d44022ed52d0",
+      "gameId": "g_000318",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5256430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:38:03Z",
+          "quote": "舞台は、主を失い崩れたドルアーガの塔の地下から新たに見つかった地下迷宮です。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:21f8fa779d50e22e208e57d4a87d0b6b4b4d33270a58fd927f76294eb7e5d9c4"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:38:03Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "tag",
+      "value": {
+        "tagId": "underground"
+      }
+    },
+    {
+      "id": "c_aa87a7b2a8b6196a",
+      "gameId": "g_000318",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5256430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-18T04:38:03Z",
+          "quote": "階層によって異なる謎を解き宝を手に入れ、無事カイのもとにたどり着くことができるでしょうか。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:21f8fa779d50e22e208e57d4a87d0b6b4b4d33270a58fd927f76294eb7e5d9c4"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:38:03Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_ff76c9dcef206de3",
+      "gameId": "g_000318",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://automaton-media.com/articles/newsjp/20261118-479725/",
+          "sourceId": "automaton",
+          "articleId": "a_0825d798d257bb73",
+          "publishedAt": "2026-11-18T03:00:02Z",
+          "retrievedAt": "2026-11-18T04:37:50Z",
+          "quote": "ジー・モードは11月18日、アクションRPG『G-MODEアーカイブス+ ドルアーガの迷宮』を発表した。",
+          "originKey": "media:automaton-media.com",
+          "fetchHash": "sha256:e6de83840948e0b3d85d2cbe757dbb99989bc91ca71bed10c3da85edf163d1f5"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:42:19Z",
+      "createdAt": "2026-11-18T04:42:19Z",
+      "updatedAt": "2026-11-18T04:42:19Z",
+      "lastCheckedAt": "2026-11-18T04:37:50Z",
+      "createdBy": "llm",
+      "createdByRun": "44237601973",
+      "field": "tag",
+      "value": {
+        "tagId": "action-rpg"
+      }
+    },
+    {
+      "id": "c_c8d3f2eb7f3f13ba",
+      "gameId": "g_000318",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5256430/",
+          "retrievedAt": "2026-11-18T04:43:10Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:21f8fa779d50e22e208e57d4a87d0b6b4b4d33270a58fd927f76294eb7e5d9c4"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:43:10Z",
+      "createdAt": "2026-11-18T04:43:10Z",
+      "updatedAt": "2026-11-18T04:43:10Z",
+      "lastCheckedAt": "2026-11-18T04:43:10Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5256430/"
+      }
+    },
+    {
+      "id": "c_5f0c6b08f5dd66e9",
+      "gameId": "g_000318",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5256430/",
+          "retrievedAt": "2026-11-18T04:43:10Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:21f8fa779d50e22e208e57d4a87d0b6b4b4d33270a58fd927f76294eb7e5d9c4"
+        }
+      ],
+      "asOf": "2026-11-18",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-18T04:43:10Z",
+      "createdAt": "2026-11-18T04:43:10Z",
+      "updatedAt": "2026-11-18T04:43:10Z",
+      "lastCheckedAt": "2026-11-18T04:43:10Z",
+      "createdBy": "system",
+      "createdByRun": "44237601973",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5256430/cc246f4b13378414f0b8b62488d82113e9779e0d/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "G-MODEアーカイブス+ ドルアーガの迷宮 のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "G-MODE"
+        }
+      }
+    }
+  ]
+}

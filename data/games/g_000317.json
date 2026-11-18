@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000317",
+  "status": "candidate",
+  "title": {
+    "display": "Kicked Out",
+    "original": "Kicked Out",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5599050
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000446"
+  ],
+  "publisherIds": [
+    "dev_000446"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5599050/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-18T04:38:58Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:dc4dfdbf5a9963995cb35fcd4790f3de867b882e22b4e3631235e54e0c236106"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-18T04:42:19Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5599050/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:38:58Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dc4dfdbf5a9963995cb35fcd4790f3de867b882e22b4e3631235e54e0c236106"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5599050/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:38:58Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dc4dfdbf5a9963995cb35fcd4790f3de867b882e22b4e3631235e54e0c236106"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5599050/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:38:58Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dc4dfdbf5a9963995cb35fcd4790f3de867b882e22b4e3631235e54e0c236106"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5599050/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:38:58Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:dc4dfdbf5a9963995cb35fcd4790f3de867b882e22b4e3631235e54e0c236106"
+      }
+    }
+  ],
+  "createdAt": "2026-11-18T04:42:19Z",
+  "updatedAt": "2026-11-18T04:42:19Z",
+  "createdByRun": "44237601973"
+}

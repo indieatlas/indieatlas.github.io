@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000315",
+  "status": "candidate",
+  "title": {
+    "display": "ハコニワデンキ",
+    "original": "ハコニワデンキ Hakoniwa Electric",
+    "originalLang": "ja"
+  },
+  "aliases": [
+    {
+      "value": "Hakoniwa Electric",
+      "lang": "en",
+      "kind": "romanization"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 4422260
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4569870",
+      "kind": "demo",
+      "title": "ハコニワデンキ Hakoniwa Electric Demo"
+    }
+  ],
+  "officialUrl": "https://zzz-anettai.com/hakoniwaelectric",
+  "developerIds": [
+    "dev_000444"
+  ],
+  "publisherIds": [
+    "dev_000444"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4422260/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-18T04:36:25Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:f28834430ff02352f08f2d37913747ec13976fd172492ff4a94eccacc66fb62d"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-18T04:42:19Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "associatedApps",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4569870/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:37:03Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:e43f152c19b6e14fc947b16d3313f46f5bbfac08b800ea414c7c3878063559d8"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4422260/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:36:25Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f28834430ff02352f08f2d37913747ec13976fd172492ff4a94eccacc66fb62d"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4422260/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:36:25Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f28834430ff02352f08f2d37913747ec13976fd172492ff4a94eccacc66fb62d"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "official",
+        "url": "https://zzz-anettai.com/hakoniwaelectric",
+        "retrievedAt": "2026-11-18T04:36:37Z",
+        "quote": "発売日2026年12月1日開発元亜寝帯 ー ANETTAI対応プラットフォームSteam価格600円(税込)",
+        "originKey": "official:zzz-anettai.com",
+        "fetchHash": "sha256:030ff96988f1caf1317d9cff1c1c1f9f731b1b045caedc68d2896383f8a46033"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4422260/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:36:25Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f28834430ff02352f08f2d37913747ec13976fd172492ff4a94eccacc66fb62d"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4422260/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:36:25Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:f28834430ff02352f08f2d37913747ec13976fd172492ff4a94eccacc66fb62d"
+      }
+    }
+  ],
+  "createdAt": "2026-11-18T04:42:19Z",
+  "updatedAt": "2026-11-18T04:42:19Z",
+  "createdByRun": "44237601973"
+}

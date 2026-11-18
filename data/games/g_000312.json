@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000312",
+  "status": "candidate",
+  "title": {
+    "display": "Clicky Islands",
+    "original": "Clicky Islands",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "クリッキーアイランド",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 4178790
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4401470",
+      "kind": "demo"
+    }
+  ],
+  "developerIds": [
+    "dev_000440"
+  ],
+  "publisherIds": [
+    "dev_000440",
+    "dev_000441"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "http://www.gamespark.jp/article/2026/11/17/174976.html",
+            "articleId": "a_33d1d04ffa723af0",
+            "publishedAt": "2026-11-17T10:00:02Z",
+            "retrievedAt": "2026-11-18T04:35:42Z",
+            "locator": "article.games",
+            "originKey": "media:gamespark.jp"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-18T04:42:19Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4178790/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:35:47Z",
+        "quote": "Clicky Islands / クリッキーアイランド",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a896119cfd23cc523bc1b72cae3de29f5495a9b4e5bb7981b159b964f3c766a5"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4178790/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:35:47Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a896119cfd23cc523bc1b72cae3de29f5495a9b4e5bb7981b159b964f3c766a5"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4178790/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:35:47Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a896119cfd23cc523bc1b72cae3de29f5495a9b4e5bb7981b159b964f3c766a5"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4178790/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:35:47Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a896119cfd23cc523bc1b72cae3de29f5495a9b4e5bb7981b159b964f3c766a5"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4178790/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:35:47Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:a896119cfd23cc523bc1b72cae3de29f5495a9b4e5bb7981b159b964f3c766a5"
+      }
+    }
+  ],
+  "createdAt": "2026-11-18T04:42:19Z",
+  "updatedAt": "2026-11-18T04:42:19Z",
+  "createdByRun": "44237601973"
+}

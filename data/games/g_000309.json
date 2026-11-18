@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000309",
+  "status": "published",
+  "title": {
+    "display": "Black Mesa",
+    "original": "Black Mesa",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 362890
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000437"
+  ],
+  "publisherIds": [
+    "dev_000437"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/362890/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-18T04:34:22Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:99fad77f5ca87445f57a5056fb47605b0f0210db5ff3a8c6f1c9b4bd75647b51"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-18T04:42:19Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/362890/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:34:22Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:99fad77f5ca87445f57a5056fb47605b0f0210db5ff3a8c6f1c9b4bd75647b51"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/362890/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:34:22Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:99fad77f5ca87445f57a5056fb47605b0f0210db5ff3a8c6f1c9b4bd75647b51"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/362890/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-18T04:34:22Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:99fad77f5ca87445f57a5056fb47605b0f0210db5ff3a8c6f1c9b4bd75647b51"
+      }
+    }
+  ],
+  "createdAt": "2026-11-18T04:42:19Z",
+  "addedAt": "2026-11-18",
+  "updatedAt": "2026-11-18T04:42:19Z",
+  "createdByRun": "44237601973"
+}
