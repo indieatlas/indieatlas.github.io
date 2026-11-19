@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000325",
+  "status": "candidate",
+  "title": {
+    "display": "IIIIIIlI",
+    "original": "IIIIIIlI",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "アイアイアイアイアイアイエルアイ",
+      "lang": "ja",
+      "kind": "reading"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 4134620
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4665360",
+      "kind": "demo"
+    }
+  ],
+  "developerIds": [
+    "dev_000459"
+  ],
+  "publisherIds": [
+    "dev_000459"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4134620/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-19T04:20:45Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:3de58f02b3e31bb6430fafa0389fa1ab55f84b5c2994f3bdeb5ba401a1afbe64"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-19T04:35:08Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "media",
+        "url": "https://www.4gamer.net/games/000/G100032/20261117038/",
+        "sourceId": "4gamer",
+        "publishedAt": "2026-11-17T09:17:03Z",
+        "retrievedAt": "2026-11-19T04:20:41Z",
+        "quote": "個人開発者のSalted Hoya氏は本日（2026年11月17日），開発中のお絵かき缶蹴りアクション「IIIIIIlI」（アイアイアイアイアイアイエルアイ）を，12月1日に正式リリースすると発表した。",
+        "originKey": "media:4gamer.net",
+        "fetchHash": "sha256:98eccc2cd0947fcfadb7da0d88ff79eb149ab08e808bbc8dbd5ba611ae32e84f"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4134620/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-19T04:20:45Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3de58f02b3e31bb6430fafa0389fa1ab55f84b5c2994f3bdeb5ba401a1afbe64"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4134620/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-19T04:20:45Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3de58f02b3e31bb6430fafa0389fa1ab55f84b5c2994f3bdeb5ba401a1afbe64"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4134620/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-19T04:20:45Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3de58f02b3e31bb6430fafa0389fa1ab55f84b5c2994f3bdeb5ba401a1afbe64"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4134620/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-19T04:20:45Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3de58f02b3e31bb6430fafa0389fa1ab55f84b5c2994f3bdeb5ba401a1afbe64"
+      }
+    }
+  ],
+  "createdAt": "2026-11-19T04:35:08Z",
+  "updatedAt": "2026-11-19T04:35:37Z",
+  "createdByRun": "44456949224"
+}

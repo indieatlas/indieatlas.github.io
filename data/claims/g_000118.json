@@ -26,13 +26,117 @@
       "adoptedAt": "2026-11-07T19:02:21Z",
       "createdAt": "2026-11-07T19:02:21Z",
       "updatedAt": "2026-11-07T19:02:21Z",
-      "lastCheckedAt": "2026-11-07T19:02:21Z",
+      "lastCheckedAt": "2026-11-19T04:37:25Z",
       "createdBy": "system",
       "createdByRun": "42402321312",
       "field": "release",
       "value": {
         "status": "tba",
         "rawText": "Coming soon"
+      }
+    },
+    {
+      "id": "c_0904ff9951bd0165",
+      "gameId": "g_000118",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.4gamer.net/games/982/G098281/20261109017/",
+          "sourceId": "4gamer",
+          "articleId": "a_7e14729836d7de94",
+          "publishedAt": "2026-11-17T04:58:07Z",
+          "retrievedAt": "2026-11-19T04:24:03Z",
+          "quote": "本作が2028年にPCとNintendo Switch 2向けに発売されることが発表され",
+          "originKey": "media:4gamer.net",
+          "fetchHash": "sha256:febd35b979cc67f7ee6dfbf7731286246f2b15cd0c8a49749a9a1e401aa2c134"
+        },
+        {
+          "kind": "media",
+          "url": "https://automaton-media.com/articles/newsjp/20261107-478030/",
+          "sourceId": "automaton",
+          "articleId": "a_6e0b183bf0bc39d7",
+          "publishedAt": "2026-11-07T06:55:29Z",
+          "retrievedAt": "2026-11-19T04:24:14Z",
+          "quote": "同作はNintendo Switch 2/PC（Steam）向けに2028年リリース予定。",
+          "originKey": "media:automaton-media.com",
+          "fetchHash": "sha256:2c73e0f15932e3607ff0f14af3eb4d005a8ae88e92787bf3936541a13a4e60d0"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "candidate",
+      "statusReason": "outranked",
+      "supersedes": [
+        "c_000dbe07d64b4c96"
+      ],
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:24:14Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "year",
+          "year": 2028
+        },
+        "rawText": "2028年"
+      }
+    },
+    {
+      "id": "c_c3fb7cb24d594e2a",
+      "gameId": "g_000118",
+      "scope": {
+        "platform": "switch2",
+        "region": "global"
+      },
+      "basis": "reported",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.4gamer.net/games/982/G098281/20261109017/",
+          "sourceId": "4gamer",
+          "articleId": "a_7e14729836d7de94",
+          "publishedAt": "2026-11-17T04:58:07Z",
+          "retrievedAt": "2026-11-19T04:24:03Z",
+          "quote": "本作が2028年にPCとNintendo Switch 2向けに発売されることが発表され",
+          "originKey": "media:4gamer.net",
+          "fetchHash": "sha256:febd35b979cc67f7ee6dfbf7731286246f2b15cd0c8a49749a9a1e401aa2c134"
+        },
+        {
+          "kind": "media",
+          "url": "https://automaton-media.com/articles/newsjp/20261107-478030/",
+          "sourceId": "automaton",
+          "articleId": "a_6e0b183bf0bc39d7",
+          "publishedAt": "2026-11-07T06:55:29Z",
+          "retrievedAt": "2026-11-19T04:24:14Z",
+          "quote": "同作はNintendo Switch 2/PC（Steam）向けに2028年リリース予定。",
+          "originKey": "media:automaton-media.com",
+          "fetchHash": "sha256:2c73e0f15932e3607ff0f14af3eb4d005a8ae88e92787bf3936541a13a4e60d0"
+        }
+      ],
+      "asOf": "2026-11-07",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:24:14Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "year",
+          "year": 2028
+        },
+        "rawText": "2028年"
       }
     },
     {
@@ -56,7 +160,7 @@
       "adoptedAt": "2026-11-07T19:02:21Z",
       "createdAt": "2026-11-07T19:02:21Z",
       "updatedAt": "2026-11-07T19:02:21Z",
-      "lastCheckedAt": "2026-11-07T19:02:24Z",
+      "lastCheckedAt": "2026-11-19T04:37:28Z",
       "createdBy": "system",
       "createdByRun": "42402321312",
       "field": "japaneseSupport",
@@ -87,7 +191,7 @@
       "adoptedAt": "2026-11-07T19:02:21Z",
       "createdAt": "2026-11-07T19:02:21Z",
       "updatedAt": "2026-11-07T19:02:21Z",
-      "lastCheckedAt": "2026-11-07T19:02:21Z",
+      "lastCheckedAt": "2026-11-19T04:37:25Z",
       "createdBy": "system",
       "createdByRun": "42402321312",
       "field": "playerModes",
@@ -277,7 +381,7 @@
       "adoptedAt": "2026-11-07T19:02:21Z",
       "createdAt": "2026-11-07T19:02:21Z",
       "updatedAt": "2026-11-07T19:02:21Z",
-      "lastCheckedAt": "2026-11-07T19:02:21Z",
+      "lastCheckedAt": "2026-11-19T04:37:25Z",
       "createdBy": "system",
       "createdByRun": "42402321312",
       "field": "storeLink",
@@ -307,7 +411,7 @@
       "adoptedAt": "2026-11-07T19:02:21Z",
       "createdAt": "2026-11-07T19:02:21Z",
       "updatedAt": "2026-11-07T19:02:21Z",
-      "lastCheckedAt": "2026-11-07T19:02:21Z",
+      "lastCheckedAt": "2026-11-19T04:37:25Z",
       "createdBy": "system",
       "createdByRun": "42402321312",
       "field": "image",

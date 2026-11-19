@@ -1,0 +1,408 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000328",
+  "claims": [
+    {
+      "id": "c_33edc90b6b4a7c35",
+      "gameId": "g_000328",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3959120/",
+          "retrievedAt": "2026-11-19T04:35:51Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9d7442b6e0d278b540cf42c3205ae72ccecf1b970cbf7f08641bee05e2eefa07"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:51Z",
+      "createdAt": "2026-11-19T04:35:51Z",
+      "updatedAt": "2026-11-19T04:35:51Z",
+      "lastCheckedAt": "2026-11-19T04:35:51Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "release",
+      "value": {
+        "status": "tba",
+        "rawText": "To be announced"
+      }
+    },
+    {
+      "id": "c_a161ad42f23ab8b5",
+      "gameId": "g_000328",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3959120/",
+          "retrievedAt": "2026-11-19T04:35:54Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f2cceb4fff78f775c08d5c42c50212d57715bcc521917f5b93aeddbd48663300"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:51Z",
+      "createdAt": "2026-11-19T04:35:51Z",
+      "updatedAt": "2026-11-19T04:35:51Z",
+      "lastCheckedAt": "2026-11-19T04:35:54Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_3fb672eadbfe67b9",
+      "gameId": "g_000328",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3959120/",
+          "retrievedAt": "2026-11-19T04:35:51Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9d7442b6e0d278b540cf42c3205ae72ccecf1b970cbf7f08641bee05e2eefa07"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:51Z",
+      "createdAt": "2026-11-19T04:35:51Z",
+      "updatedAt": "2026-11-19T04:35:51Z",
+      "lastCheckedAt": "2026-11-19T04:35:51Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_e38a4ea30a1cf7e8",
+      "gameId": "g_000328",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3959120/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:21:52Z",
+          "quote": "MMIXXV_The Holy Mountain is a first-person narrative adventure with light puzzle and interactive elements.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9d7442b6e0d278b540cf42c3205ae72ccecf1b970cbf7f08641bee05e2eefa07"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:21:52Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "summary",
+      "value": {
+        "ja": "文明が崩壊した2075年を舞台にした一人称視点のナラティブアドベンチャー。罪を洗い流す洗濯機シミュレーター「聖なる山」の内部に入り、隠された真実を探る。"
+      }
+    },
+    {
+      "id": "c_25970b171516cc03",
+      "gameId": "g_000328",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3959120/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:21:52Z",
+          "quote": "As a participant chosen by chance, you will step inside the Mountain and gradually uncover the hidden truths behind it.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9d7442b6e0d278b540cf42c3205ae72ccecf1b970cbf7f08641bee05e2eefa07"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:21:52Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_29a751d02b4b1e9b",
+      "gameId": "g_000328",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3959120/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:21:52Z",
+          "quote": "MMIXXV_The Holy Mountain is a first-person narrative adventure with light puzzle and interactive elements.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9d7442b6e0d278b540cf42c3205ae72ccecf1b970cbf7f08641bee05e2eefa07"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:21:52Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_2a5728349becd883",
+      "gameId": "g_000328",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3959120/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:21:52Z",
+          "quote": "Rumor says in 2075, humanity rebuilt the system using old-era tech.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9d7442b6e0d278b540cf42c3205ae72ccecf1b970cbf7f08641bee05e2eefa07"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:21:52Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "sci-fi"
+      }
+    },
+    {
+      "id": "c_3703491d8b3f85fa",
+      "gameId": "g_000328",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3959120/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:21:52Z",
+          "quote": "Average playtime: 1.5 – 3 hours",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9d7442b6e0d278b540cf42c3205ae72ccecf1b970cbf7f08641bee05e2eefa07"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:21:52Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "short-session"
+      }
+    },
+    {
+      "id": "c_666a927d2eec94a0",
+      "gameId": "g_000328",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3959120/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:21:52Z",
+          "quote": "Light puzzles and interactive mechanics",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9d7442b6e0d278b540cf42c3205ae72ccecf1b970cbf7f08641bee05e2eefa07"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:21:52Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "puzzle"
+      }
+    },
+    {
+      "id": "c_7a389a10d03a753e",
+      "gameId": "g_000328",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3959120/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:21:52Z",
+          "quote": "A scheming politician sparked war—the world ended in 2025.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9d7442b6e0d278b540cf42c3205ae72ccecf1b970cbf7f08641bee05e2eefa07"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:21:52Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "post-apocalyptic"
+      }
+    },
+    {
+      "id": "c_d7641a66510d7b3c",
+      "gameId": "g_000328",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3959120/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:21:52Z",
+          "quote": "Immersive first-person storytelling",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9d7442b6e0d278b540cf42c3205ae72ccecf1b970cbf7f08641bee05e2eefa07"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:21:52Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_e54451220d4f71e7",
+      "gameId": "g_000328",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3959120/",
+          "retrievedAt": "2026-11-19T04:35:51Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9d7442b6e0d278b540cf42c3205ae72ccecf1b970cbf7f08641bee05e2eefa07"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:51Z",
+      "createdAt": "2026-11-19T04:35:51Z",
+      "updatedAt": "2026-11-19T04:35:51Z",
+      "lastCheckedAt": "2026-11-19T04:35:51Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3959120/"
+      }
+    },
+    {
+      "id": "c_ec4b70011d87e99c",
+      "gameId": "g_000328",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3959120/",
+          "retrievedAt": "2026-11-19T04:35:51Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9d7442b6e0d278b540cf42c3205ae72ccecf1b970cbf7f08641bee05e2eefa07"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:51Z",
+      "createdAt": "2026-11-19T04:35:51Z",
+      "updatedAt": "2026-11-19T04:35:51Z",
+      "lastCheckedAt": "2026-11-19T04:35:51Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3959120/4a794c2a8b1d000440f4bdea343274d584a5f955/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "MMIXXV_The Holy Mountain のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Gooodmon"
+        }
+      }
+    }
+  ]
+}

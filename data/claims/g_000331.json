@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000331",
+  "claims": [
+    {
+      "id": "c_e5cde9fbc09b41d5",
+      "gameId": "g_000331",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5110520/",
+          "retrievedAt": "2026-11-19T04:35:10Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:21c142245737a6061d1b0432ac474a94ef1e8ce38f6b4aa03f2965c76a4c2c6e"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:10Z",
+      "createdAt": "2026-11-19T04:35:10Z",
+      "updatedAt": "2026-11-19T04:35:10Z",
+      "lastCheckedAt": "2026-11-19T04:35:10Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "release",
+      "value": {
+        "status": "early-access",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 18
+        },
+        "rawText": "18 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_9f6dad95ddbe9e7a",
+      "gameId": "g_000331",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5110520/",
+          "retrievedAt": "2026-11-19T04:35:13Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:efe9e34043ba723c3c8808ab1d26b429c45e2ac9794a6bf250089325dd68970a"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:10Z",
+      "createdAt": "2026-11-19T04:35:10Z",
+      "updatedAt": "2026-11-19T04:35:10Z",
+      "lastCheckedAt": "2026-11-19T04:35:13Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_7d8ad87c507d36e7",
+      "gameId": "g_000331",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5110520/",
+          "retrievedAt": "2026-11-19T04:35:10Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:21c142245737a6061d1b0432ac474a94ef1e8ce38f6b4aa03f2965c76a4c2c6e"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:10Z",
+      "createdAt": "2026-11-19T04:35:10Z",
+      "updatedAt": "2026-11-19T04:35:10Z",
+      "lastCheckedAt": "2026-11-19T04:35:10Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_0acd7d0e398578f5",
+      "gameId": "g_000331",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5110520/",
+          "retrievedAt": "2026-11-19T04:35:10Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:21c142245737a6061d1b0432ac474a94ef1e8ce38f6b4aa03f2965c76a4c2c6e"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:10Z",
+      "createdAt": "2026-11-19T04:35:10Z",
+      "updatedAt": "2026-11-19T04:35:10Z",
+      "lastCheckedAt": "2026-11-19T04:35:10Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5110520/"
+      }
+    },
+    {
+      "id": "c_eaea14ef9c65383c",
+      "gameId": "g_000331",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5110520/",
+          "retrievedAt": "2026-11-19T04:35:10Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:21c142245737a6061d1b0432ac474a94ef1e8ce38f6b4aa03f2965c76a4c2c6e"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:10Z",
+      "createdAt": "2026-11-19T04:35:10Z",
+      "updatedAt": "2026-11-19T04:35:10Z",
+      "lastCheckedAt": "2026-11-19T04:35:10Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5110520/fe134a4580ff12cbfdb0570e8f5507af98b8cfee/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "モンスター娘サバイバル&クラフト2040 のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Ludorea games"
+        }
+      }
+    }
+  ]
+}

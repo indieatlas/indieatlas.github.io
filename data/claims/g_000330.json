@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000330",
+  "claims": [
+    {
+      "id": "c_e4928fbe4f9d1036",
+      "gameId": "g_000330",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3812600/",
+          "retrievedAt": "2026-11-19T04:36:00Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cf7f43fa136c4fe6a974dcc94c3f4fcb8b39ef66e4e24c75918199f9c0f3af16"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:36:00Z",
+      "createdAt": "2026-11-19T04:36:00Z",
+      "updatedAt": "2026-11-19T04:36:00Z",
+      "lastCheckedAt": "2026-11-19T04:36:00Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 8,
+          "day": 6
+        },
+        "rawText": "6 Aug, 2026"
+      }
+    },
+    {
+      "id": "c_9cffb24ee8d64d6a",
+      "gameId": "g_000330",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3812600/",
+          "retrievedAt": "2026-11-19T04:36:00Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cf7f43fa136c4fe6a974dcc94c3f4fcb8b39ef66e4e24c75918199f9c0f3af16"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:36:00Z",
+      "createdAt": "2026-11-19T04:36:00Z",
+      "updatedAt": "2026-11-19T04:36:00Z",
+      "lastCheckedAt": "2026-11-19T04:36:00Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 8,
+          "day": 6
+        },
+        "rawText": "6 Aug, 2026"
+      }
+    },
+    {
+      "id": "c_74c14cbf44d0f9aa",
+      "gameId": "g_000330",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3812600/",
+          "retrievedAt": "2026-11-19T04:36:03Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2ba3c750ef12fc1cddeaf348eeb965fff24a0a1c9ffc3762225e5973919bcf56"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:36:00Z",
+      "createdAt": "2026-11-19T04:36:00Z",
+      "updatedAt": "2026-11-19T04:36:00Z",
+      "lastCheckedAt": "2026-11-19T04:36:03Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_0629677d120a01bb",
+      "gameId": "g_000330",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3812600/",
+          "retrievedAt": "2026-11-19T04:36:00Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cf7f43fa136c4fe6a974dcc94c3f4fcb8b39ef66e4e24c75918199f9c0f3af16"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:36:00Z",
+      "createdAt": "2026-11-19T04:36:00Z",
+      "updatedAt": "2026-11-19T04:36:00Z",
+      "lastCheckedAt": "2026-11-19T04:36:00Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_cbcf719f8a28c09d",
+      "gameId": "g_000330",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3812600/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:22:44Z",
+          "quote": "時代は2000年代半ばの東京。あなたは電子機器修理屋を経営しています。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cf7f43fa136c4fe6a974dcc94c3f4fcb8b39ef66e4e24c75918199f9c0f3af16"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:22:44Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "summary",
+      "value": {
+        "ja": "2000年代半ばの東京を舞台に、電子機器修理屋を営む店主となる経営シミュレーション。ゲーム機や携帯電話などのY2K時代の機器を分解・清掃・部品交換して修理し、訪れる客との会話から分岐する物語を追う。"
+      }
+    },
+    {
+      "id": "c_1ba4582d54b5a878",
+      "gameId": "g_000330",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3812600/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:22:44Z",
+          "quote": "このゲームは2000年代半ばの日本の都会ならではの雰囲気を生み出すため、愛情と敬意を込めて作られています。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cf7f43fa136c4fe6a974dcc94c3f4fcb8b39ef66e4e24c75918199f9c0f3af16"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:22:44Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "japan"
+      }
+    },
+    {
+      "id": "c_544e1968c04c1f05",
+      "gameId": "g_000330",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3812600/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:22:44Z",
+          "quote": "自分の小さなお店を経営しながら、リラックスしたひと時をお過ごしください。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cf7f43fa136c4fe6a974dcc94c3f4fcb8b39ef66e4e24c75918199f9c0f3af16"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:22:44Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_7773536a32082678",
+      "gameId": "g_000330",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3812600/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:22:44Z",
+          "quote": "訪れるお客さんと交流を深めていくと、選択によってストーリーが分岐し、マルチエンディングを迎えることができます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cf7f43fa136c4fe6a974dcc94c3f4fcb8b39ef66e4e24c75918199f9c0f3af16"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:22:44Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_d91304381d724abd",
+      "gameId": "g_000330",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3812600/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:22:44Z",
+          "quote": "あなたは電子機器修理屋の店主として、Atariのゲーム機などを始めとしたY2K時代の懐かしい機器を修理していくことになります。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cf7f43fa136c4fe6a974dcc94c3f4fcb8b39ef66e4e24c75918199f9c0f3af16"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:22:44Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_b0c10b5ee376fadc",
+      "gameId": "g_000330",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3812600/",
+          "retrievedAt": "2026-11-19T04:36:00Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cf7f43fa136c4fe6a974dcc94c3f4fcb8b39ef66e4e24c75918199f9c0f3af16"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:36:00Z",
+      "createdAt": "2026-11-19T04:36:00Z",
+      "updatedAt": "2026-11-19T04:36:00Z",
+      "lastCheckedAt": "2026-11-19T04:36:00Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/3812600/"
+      }
+    },
+    {
+      "id": "c_8b144b75c400b59a",
+      "gameId": "g_000330",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/3812600/",
+          "retrievedAt": "2026-11-19T04:36:00Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:cf7f43fa136c4fe6a974dcc94c3f4fcb8b39ef66e4e24c75918199f9c0f3af16"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:36:00Z",
+      "createdAt": "2026-11-19T04:36:00Z",
+      "updatedAt": "2026-11-19T04:36:00Z",
+      "lastCheckedAt": "2026-11-19T04:36:00Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3812600/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "リ・ストーリー: 思い出修理屋 のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "tinyBuild"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000328",
+  "status": "candidate",
+  "title": {
+    "display": "MMIXXV_The Holy Mountain",
+    "original": "MMIXXV_The Holy Mountain",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 3959120
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000462"
+  ],
+  "publisherIds": [
+    "dev_000463"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.4gamer.net/games/059/G105913/20261117047/",
+            "articleId": "a_f4d340ae698e9212",
+            "publishedAt": "2026-11-17T10:47:43Z",
+            "retrievedAt": "2026-11-19T04:21:43Z",
+            "locator": "article.games",
+            "originKey": "media:4gamer.net"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-19T04:35:08Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3959120/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-19T04:21:52Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9d7442b6e0d278b540cf42c3205ae72ccecf1b970cbf7f08641bee05e2eefa07"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3959120/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-19T04:21:52Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9d7442b6e0d278b540cf42c3205ae72ccecf1b970cbf7f08641bee05e2eefa07"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3959120/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-19T04:21:52Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9d7442b6e0d278b540cf42c3205ae72ccecf1b970cbf7f08641bee05e2eefa07"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3959120/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-19T04:21:52Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9d7442b6e0d278b540cf42c3205ae72ccecf1b970cbf7f08641bee05e2eefa07"
+      }
+    }
+  ],
+  "createdAt": "2026-11-19T04:35:08Z",
+  "updatedAt": "2026-11-19T04:35:08Z",
+  "createdByRun": "44456949224"
+}

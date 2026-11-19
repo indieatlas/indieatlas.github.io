@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000327",
+  "claims": [
+    {
+      "id": "c_43ff681a808b674b",
+      "gameId": "g_000327",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5595490/",
+          "retrievedAt": "2026-11-19T04:35:46Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f7f1b1c266dab447e4fdfea7434a6ec6d92e7147d81d6cc7c1f2babf90525abb"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:46Z",
+      "createdAt": "2026-11-19T04:35:46Z",
+      "updatedAt": "2026-11-19T04:35:46Z",
+      "lastCheckedAt": "2026-11-19T04:35:46Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "release",
+      "value": {
+        "status": "tba",
+        "rawText": "To be announced"
+      }
+    },
+    {
+      "id": "c_a1c20b45cd33bd44",
+      "gameId": "g_000327",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5595490/",
+          "retrievedAt": "2026-11-19T04:35:49Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:67e843a50f1285ac201fd4ba560e2c47fc1ba0e8986ffb53e7fda8562f7a74b6"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:46Z",
+      "createdAt": "2026-11-19T04:35:46Z",
+      "updatedAt": "2026-11-19T04:35:46Z",
+      "lastCheckedAt": "2026-11-19T04:35:49Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_e14b78b36904d411",
+      "gameId": "g_000327",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5595490/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:21:49Z",
+          "quote": "Play the whole campaign solo or in online co-op with up to four officers.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f7f1b1c266dab447e4fdfea7434a6ec6d92e7147d81d6cc7c1f2babf90525abb"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:21:49Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ],
+        "minPlayers": 1,
+        "maxPlayers": 4
+      }
+    },
+    {
+      "id": "c_83479ce7e905c294",
+      "gameId": "g_000327",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5595490/",
+          "retrievedAt": "2026-11-19T04:35:46Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f7f1b1c266dab447e4fdfea7434a6ec6d92e7147d81d6cc7c1f2babf90525abb"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:46Z",
+      "createdAt": "2026-11-19T04:35:46Z",
+      "updatedAt": "2026-11-19T04:35:46Z",
+      "lastCheckedAt": "2026-11-19T04:35:46Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_47657177d884c159",
+      "gameId": "g_000327",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5595490/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:21:49Z",
+          "quote": "Run the worst police station on TV in this physics co-op comedy for 1–4 players.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f7f1b1c266dab447e4fdfea7434a6ec6d92e7147d81d6cc7c1f2babf90525abb"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:21:49Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "summary",
+      "value": {
+        "ja": "リアリティ番組の取材を受け入れた警察署を舞台にした、1〜4人用の物理演算協力コメディ。手錠や指紋採取、取り調べを手作業でこなし、署長が求める事件の解決と視聴者が求める見応えの両立を目指す。"
+      }
+    },
+    {
+      "id": "c_577faf07fee3faf3",
+      "gameId": "g_000327",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5595490/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:21:49Z",
+          "quote": "Run the worst police station on TV in this physics co-op comedy for 1–4 players.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f7f1b1c266dab447e4fdfea7434a6ec6d92e7147d81d6cc7c1f2babf90525abb"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:21:49Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_b0d3b36ac102a5b9",
+      "gameId": "g_000327",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5595490/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:21:49Z",
+          "quote": "Run the worst police station on TV in this physics co-op comedy for 1–4 players.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f7f1b1c266dab447e4fdfea7434a6ec6d92e7147d81d6cc7c1f2babf90525abb"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:21:49Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_d92db6da11e56ff9",
+      "gameId": "g_000327",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5595490/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:21:49Z",
+          "quote": "All of it runs on physics, so the suspect squirms, the stamp misses and your partner trips over the tripod.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f7f1b1c266dab447e4fdfea7434a6ec6d92e7147d81d6cc7c1f2babf90525abb"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:21:49Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "physics"
+      }
+    },
+    {
+      "id": "c_f9ef731392ec8b5e",
+      "gameId": "g_000327",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5595490/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:21:49Z",
+          "quote": "Tasers, megaphones, banana peels, flying tackles and one very patient cameraman",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f7f1b1c266dab447e4fdfea7434a6ec6d92e7147d81d6cc7c1f2babf90525abb"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:21:49Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_a1672243e2e87dda",
+      "gameId": "g_000327",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5595490/",
+          "retrievedAt": "2026-11-19T04:35:46Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f7f1b1c266dab447e4fdfea7434a6ec6d92e7147d81d6cc7c1f2babf90525abb"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:46Z",
+      "createdAt": "2026-11-19T04:35:46Z",
+      "updatedAt": "2026-11-19T04:35:46Z",
+      "lastCheckedAt": "2026-11-19T04:35:46Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5595490/"
+      }
+    },
+    {
+      "id": "c_5c61a04d4f20c7d1",
+      "gameId": "g_000327",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5595490/",
+          "retrievedAt": "2026-11-19T04:35:46Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f7f1b1c266dab447e4fdfea7434a6ec6d92e7147d81d6cc7c1f2babf90525abb"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:46Z",
+      "createdAt": "2026-11-19T04:35:46Z",
+      "updatedAt": "2026-11-19T04:35:46Z",
+      "lastCheckedAt": "2026-11-19T04:35:46Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5595490/146106b55effb20eae138d335711cbe560878aac/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Bad Cops のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Frostember Studios"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000330",
+  "status": "candidate",
+  "title": {
+    "display": "リ・ストーリー: 思い出修理屋",
+    "original": "ReStory: Chill Electronics Repairs",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "ReStory",
+      "lang": "en",
+      "kind": "abbreviation"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 3812600
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5020360",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5034500",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "5598790",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000465"
+  ],
+  "publisherIds": [
+    "dev_000294"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "independent-publisher",
+        "note": "パブリッシャーのtinyBuildは自社がインディー開発者出身で、インディー開発者と組みインディー作品のパブリッシングを行うと説明している",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.tinybuild.com/about",
+            "retrievedAt": "2026-11-19T04:23:28Z",
+            "quote": "Since August 2013, we have partnered up with dozens of indie developers, acting as a publishing partner",
+            "originKey": "media:tinybuild.com",
+            "fetchHash": "sha256:27439d21c83e1639d50d2e0ec6ae6b833167d4f0ff72a47cde415d4c2475782a"
+          }
+        ]
+      },
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://news.denfaminicogamer.jp/news/2611182o",
+            "articleId": "a_329ddeea286ce80c",
+            "publishedAt": "2026-11-18T09:03:49Z",
+            "retrievedAt": "2026-11-19T04:22:33Z",
+            "locator": "article.games",
+            "originKey": "media:denfaminicogamer.jp"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-19T04:35:08Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3812600/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-19T04:22:44Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:cf7f43fa136c4fe6a974dcc94c3f4fcb8b39ef66e4e24c75918199f9c0f3af16"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3812600/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-19T04:22:44Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:cf7f43fa136c4fe6a974dcc94c3f4fcb8b39ef66e4e24c75918199f9c0f3af16"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3812600/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-19T04:22:44Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:cf7f43fa136c4fe6a974dcc94c3f4fcb8b39ef66e4e24c75918199f9c0f3af16"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3812600/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-19T04:22:44Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:cf7f43fa136c4fe6a974dcc94c3f4fcb8b39ef66e4e24c75918199f9c0f3af16"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3812600/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-19T04:22:44Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:cf7f43fa136c4fe6a974dcc94c3f4fcb8b39ef66e4e24c75918199f9c0f3af16"
+      }
+    }
+  ],
+  "createdAt": "2026-11-19T04:35:08Z",
+  "updatedAt": "2026-11-19T04:35:08Z",
+  "createdByRun": "44456949224"
+}

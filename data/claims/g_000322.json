@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000322",
+  "claims": [
+    {
+      "id": "c_b855039771c47f1b",
+      "gameId": "g_000322",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5175310/",
+          "retrievedAt": "2026-11-19T04:35:24Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f352949b3a61330deb589091672c2aea85011f20520c78a2254f43f140f83f65"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:24Z",
+      "createdAt": "2026-11-19T04:35:24Z",
+      "updatedAt": "2026-11-19T04:35:24Z",
+      "lastCheckedAt": "2026-11-19T04:35:24Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 9
+        },
+        "rawText": "9 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_83ea9ff6850ccb7b",
+      "gameId": "g_000322",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5175310/",
+          "retrievedAt": "2026-11-19T04:35:27Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ab4491a07187a0da8d9a0f9d9490870f8ff4a29f47e262478791face6ce703c0"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:24Z",
+      "createdAt": "2026-11-19T04:35:24Z",
+      "updatedAt": "2026-11-19T04:35:24Z",
+      "lastCheckedAt": "2026-11-19T04:35:27Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_fbfb24a43eada702",
+      "gameId": "g_000322",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5175310/",
+          "retrievedAt": "2026-11-19T04:35:24Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f352949b3a61330deb589091672c2aea85011f20520c78a2254f43f140f83f65"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:24Z",
+      "createdAt": "2026-11-19T04:35:24Z",
+      "updatedAt": "2026-11-19T04:35:24Z",
+      "lastCheckedAt": "2026-11-19T04:35:24Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "online-coop",
+          "online-pvp"
+        ]
+      }
+    },
+    {
+      "id": "c_f172348fac969674",
+      "gameId": "g_000322",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5175310/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:18:53Z",
+          "quote": "One player takes on the role of the strict teacher, while the other seven play as mischievous students.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f352949b3a61330deb589091672c2aea85011f20520c78a2254f43f140f83f65"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:18:53Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "summary",
+      "value": {
+        "ja": "1人の教師と最大7人の生徒に分かれて遊ぶ非対称型パーティーゲーム。生徒は数十人のNPC生徒に紛れてイタズラを進め、教師は違和感を見抜いて全員を捕まえる。"
+      }
+    },
+    {
+      "id": "c_5205b4c68a1fa655",
+      "gameId": "g_000322",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5175310/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:18:53Z",
+          "quote": "Worst Class Ever is an asymmetric party game set in a chaotic classroom, supporting up to 8 players!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f352949b3a61330deb589091672c2aea85011f20520c78a2254f43f140f83f65"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:18:53Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "school"
+      }
+    },
+    {
+      "id": "c_7d2b552ab926a2b0",
+      "gameId": "g_000322",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5175310/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:18:53Z",
+          "quote": "Every match is a ridiculous, high-energy showdown between teacher and students.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f352949b3a61330deb589091672c2aea85011f20520c78a2254f43f140f83f65"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:18:53Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_c3e2189e2b3f541e",
+      "gameId": "g_000322",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5175310/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:18:53Z",
+          "quote": "The troublemakers must blend in among dozens of NPC classmates and secretly pull off pranks like gobbling snacks, passing notes, and playing on their phones",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f352949b3a61330deb589091672c2aea85011f20520c78a2254f43f140f83f65"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:18:53Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_ef714d62511aac08",
+      "gameId": "g_000322",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5175310/",
+          "retrievedAt": "2026-11-19T04:35:24Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f352949b3a61330deb589091672c2aea85011f20520c78a2254f43f140f83f65"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:24Z",
+      "createdAt": "2026-11-19T04:35:24Z",
+      "updatedAt": "2026-11-19T04:35:24Z",
+      "lastCheckedAt": "2026-11-19T04:35:24Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5175310/"
+      }
+    },
+    {
+      "id": "c_2659f5bc34e78b42",
+      "gameId": "g_000322",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5175310/",
+          "retrievedAt": "2026-11-19T04:35:24Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f352949b3a61330deb589091672c2aea85011f20520c78a2254f43f140f83f65"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:24Z",
+      "createdAt": "2026-11-19T04:35:24Z",
+      "updatedAt": "2026-11-19T04:35:24Z",
+      "lastCheckedAt": "2026-11-19T04:35:24Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5175310/a53c176293212f69941c443bf595238853135ae3/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Worst Class Ever のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "2P Games"
+        }
+      }
+    }
+  ]
+}

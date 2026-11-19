@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000325",
+  "claims": [
+    {
+      "id": "c_285ec644692089ca",
+      "gameId": "g_000325",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4134620/",
+          "retrievedAt": "2026-11-19T04:35:37Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3de58f02b3e31bb6430fafa0389fa1ab55f84b5c2994f3bdeb5ba401a1afbe64"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:37Z",
+      "createdAt": "2026-11-19T04:35:37Z",
+      "updatedAt": "2026-11-19T04:35:37Z",
+      "lastCheckedAt": "2026-11-19T04:35:37Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 12,
+          "day": 1
+        },
+        "rawText": "1 Dec, 2026"
+      }
+    },
+    {
+      "id": "c_dd1b2d30b32d607d",
+      "gameId": "g_000325",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4134620/",
+          "retrievedAt": "2026-11-19T04:35:40Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:49db11240712adb61a97fd3d42beafde6b0321e7bfc0e861f6cbc514b05f3c85"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:37Z",
+      "createdAt": "2026-11-19T04:35:37Z",
+      "updatedAt": "2026-11-19T04:35:37Z",
+      "lastCheckedAt": "2026-11-19T04:35:40Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_d1cc816fa0dd7857",
+      "gameId": "g_000325",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4134620/",
+          "retrievedAt": "2026-11-19T04:35:37Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3de58f02b3e31bb6430fafa0389fa1ab55f84b5c2994f3bdeb5ba401a1afbe64"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:37Z",
+      "createdAt": "2026-11-19T04:35:37Z",
+      "updatedAt": "2026-11-19T04:35:37Z",
+      "lastCheckedAt": "2026-11-19T04:35:37Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "local-coop",
+          "online-coop",
+          "online-pvp"
+        ]
+      }
+    },
+    {
+      "id": "c_5cc820aa5afa6a1a",
+      "gameId": "g_000325",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4134620/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:20:45Z",
+          "quote": "数分間の緊張感ある展開で繰り広げられる知略の応酬。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3de58f02b3e31bb6430fafa0389fa1ab55f84b5c2994f3bdeb5ba401a1afbe64"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:20:45Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "tense"
+      }
+    },
+    {
+      "id": "c_836cab4bfcdf1ec7",
+      "gameId": "g_000325",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4134620/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:20:45Z",
+          "quote": "1台のPCから2人で、同じオンラインマッチに一緒に参加できます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3de58f02b3e31bb6430fafa0389fa1ab55f84b5c2994f3bdeb5ba401a1afbe64"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:20:45Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_850859f145040844",
+      "gameId": "g_000325",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4134620/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:20:45Z",
+          "quote": "ドット絵のステージで繰り広げられる、お絵かき×缶蹴りの非対称対戦アクション。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3de58f02b3e31bb6430fafa0389fa1ab55f84b5c2994f3bdeb5ba401a1afbe64"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:20:45Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_bbb8e47187a6591a",
+      "gameId": "g_000325",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4134620/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:20:45Z",
+          "quote": "スタイリッシュなドット絵とエフェクトが織りなす演出",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3de58f02b3e31bb6430fafa0389fa1ab55f84b5c2994f3bdeb5ba401a1afbe64"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:20:45Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "pixel-art"
+      }
+    },
+    {
+      "id": "c_d723cd3093e7b485",
+      "gameId": "g_000325",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4134620/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-19T04:20:45Z",
+          "quote": "数分で決着するハイスピードな読み合い。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3de58f02b3e31bb6430fafa0389fa1ab55f84b5c2994f3bdeb5ba401a1afbe64"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:08Z",
+      "createdAt": "2026-11-19T04:35:08Z",
+      "updatedAt": "2026-11-19T04:35:08Z",
+      "lastCheckedAt": "2026-11-19T04:20:45Z",
+      "createdBy": "llm",
+      "createdByRun": "44456949224",
+      "field": "tag",
+      "value": {
+        "tagId": "short-session"
+      }
+    },
+    {
+      "id": "c_8977ea2de1cfa4f7",
+      "gameId": "g_000325",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4134620/",
+          "retrievedAt": "2026-11-19T04:35:37Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3de58f02b3e31bb6430fafa0389fa1ab55f84b5c2994f3bdeb5ba401a1afbe64"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:37Z",
+      "createdAt": "2026-11-19T04:35:37Z",
+      "updatedAt": "2026-11-19T04:35:37Z",
+      "lastCheckedAt": "2026-11-19T04:35:37Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4134620/"
+      }
+    },
+    {
+      "id": "c_aa88d176a57ec5e1",
+      "gameId": "g_000325",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4134620/",
+          "retrievedAt": "2026-11-19T04:35:37Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:3de58f02b3e31bb6430fafa0389fa1ab55f84b5c2994f3bdeb5ba401a1afbe64"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-19T04:35:37Z",
+      "createdAt": "2026-11-19T04:35:37Z",
+      "updatedAt": "2026-11-19T04:35:37Z",
+      "lastCheckedAt": "2026-11-19T04:35:37Z",
+      "createdBy": "system",
+      "createdByRun": "44456949224",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4134620/24ad450d68367a330b16f21116fbe982d54acad3/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "IIIIIIlI のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Salted Hoya"
+        }
+      }
+    }
+  ]
+}

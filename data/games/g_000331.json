@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000331",
+  "status": "candidate",
+  "title": {
+    "display": "モンスター娘サバイバル&クラフト2040",
+    "original": "Monster Girls Survival & Craft 2040",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "モンスター娘サバイバル&クラフト2040",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 5110520
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5264440",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5264440",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000466"
+  ],
+  "publisherIds": [
+    "dev_000466"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5110520/",
+            "retrievedAt": "2026-11-19T04:35:10Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:21c142245737a6061d1b0432ac474a94ef1e8ce38f6b4aa03f2965c76a4c2c6e"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-19T04:35:10Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5110520/",
+        "retrievedAt": "2026-11-19T04:35:10Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:21c142245737a6061d1b0432ac474a94ef1e8ce38f6b4aa03f2965c76a4c2c6e"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5110520/",
+        "retrievedAt": "2026-11-19T04:35:10Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:21c142245737a6061d1b0432ac474a94ef1e8ce38f6b4aa03f2965c76a4c2c6e"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5110520/",
+        "retrievedAt": "2026-11-19T04:35:10Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:21c142245737a6061d1b0432ac474a94ef1e8ce38f6b4aa03f2965c76a4c2c6e"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5110520/",
+        "retrievedAt": "2026-11-19T04:35:10Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:21c142245737a6061d1b0432ac474a94ef1e8ce38f6b4aa03f2965c76a4c2c6e"
+      }
+    }
+  ],
+  "createdAt": "2026-11-19T04:35:10Z",
+  "updatedAt": "2026-11-19T04:35:10Z",
+  "createdByRun": "44456949224"
+}
