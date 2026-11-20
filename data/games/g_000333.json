@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000333",
+  "status": "published",
+  "title": {
+    "display": "Black Flame Tactics",
+    "original": "Black Flame Tactics",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 3382760
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000468"
+  ],
+  "publisherIds": [
+    "dev_000468"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "note": "開発元と販売元がともに Emberfish Games。",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/3382760/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-20T04:05:33Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:5943a2bc952d201ffc0e935dc4916d6f50cf9ee282e2e69cb043a66b2f31db0f"
+          },
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/3382760/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-20T04:05:33Z",
+            "locator": "steam:appdetails.publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:5943a2bc952d201ffc0e935dc4916d6f50cf9ee282e2e69cb043a66b2f31db0f"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-20T04:18:43Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3382760/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:05:33Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5943a2bc952d201ffc0e935dc4916d6f50cf9ee282e2e69cb043a66b2f31db0f"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3382760/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:05:33Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5943a2bc952d201ffc0e935dc4916d6f50cf9ee282e2e69cb043a66b2f31db0f"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3382760/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:05:33Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5943a2bc952d201ffc0e935dc4916d6f50cf9ee282e2e69cb043a66b2f31db0f"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3382760/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:05:33Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:5943a2bc952d201ffc0e935dc4916d6f50cf9ee282e2e69cb043a66b2f31db0f"
+      }
+    }
+  ],
+  "createdAt": "2026-11-20T04:18:43Z",
+  "addedAt": "2026-11-20",
+  "updatedAt": "2026-11-20T04:18:43Z",
+  "createdByRun": "44671468763"
+}

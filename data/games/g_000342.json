@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000342",
+  "status": "candidate",
+  "title": {
+    "display": "カーネル・ハーツ",
+    "original": "Kernel Hearts",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "Kernel Hearts",
+      "lang": "en",
+      "kind": "romanization"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 2902170
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000478"
+  ],
+  "publisherIds": [
+    "dev_000479"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.gamesradar.com/games/dev-says-their-steam-sales-were-148-times-larger-than-on-the-epic-games-store-but-another-studio-says-epic-saved-them-a-fortune-that-would-have-gone-into-valves-pockets/",
+            "articleId": "a_549b31e23781661a",
+            "publishedAt": "2026-11-19T15:22:03Z",
+            "retrievedAt": "2026-11-20T04:09:00Z",
+            "locator": "article.games",
+            "originKey": "media:gamesradar.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-20T04:18:43Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2902170/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:09:16Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ed42a689d946a8c1d8b5ee0aa0d9a3a41b247c5d831afcf3c3a910c0b74860d2"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2902170/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:09:16Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ed42a689d946a8c1d8b5ee0aa0d9a3a41b247c5d831afcf3c3a910c0b74860d2"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2902170/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:09:16Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ed42a689d946a8c1d8b5ee0aa0d9a3a41b247c5d831afcf3c3a910c0b74860d2"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/2902170/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:09:16Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ed42a689d946a8c1d8b5ee0aa0d9a3a41b247c5d831afcf3c3a910c0b74860d2"
+      }
+    }
+  ],
+  "createdAt": "2026-11-20T04:18:43Z",
+  "updatedAt": "2026-11-20T04:18:43Z",
+  "createdByRun": "44671468763"
+}

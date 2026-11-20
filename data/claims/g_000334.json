@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000334",
+  "claims": [
+    {
+      "id": "c_58be31243dacf16b",
+      "gameId": "g_000334",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4483900/",
+          "retrievedAt": "2026-11-20T04:18:54Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4a16cab43c205448ae86104aa3c181594b4c5e3e474a3b7bd424110f7da6dc54"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:54Z",
+      "createdAt": "2026-11-20T04:18:54Z",
+      "updatedAt": "2026-11-20T04:18:54Z",
+      "lastCheckedAt": "2026-11-20T04:18:54Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 16
+        },
+        "rawText": "16 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_3cd9d12054f09022",
+      "gameId": "g_000334",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4483900/",
+          "retrievedAt": "2026-11-20T04:18:57Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9ca84490065971519e8be94ee1fb769a824255104f4da0ef84f2363982f74d87"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:54Z",
+      "createdAt": "2026-11-20T04:18:54Z",
+      "updatedAt": "2026-11-20T04:18:54Z",
+      "lastCheckedAt": "2026-11-20T04:18:57Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_38dd998bd2c4fd82",
+      "gameId": "g_000334",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4483900/",
+          "retrievedAt": "2026-11-20T04:18:54Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4a16cab43c205448ae86104aa3c181594b4c5e3e474a3b7bd424110f7da6dc54"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:54Z",
+      "createdAt": "2026-11-20T04:18:54Z",
+      "updatedAt": "2026-11-20T04:18:54Z",
+      "lastCheckedAt": "2026-11-20T04:18:54Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_3a8522a6b1c1bf07",
+      "gameId": "g_000334",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4483900/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:04:58Z",
+          "quote": "Build an impossible tower. Defend it against endless sieges. Watch it crumble, then rebuild stronger.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4a16cab43c205448ae86104aa3c181594b4c5e3e474a3b7bd424110f7da6dc54"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:04:58Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "summary",
+      "value": {
+        "ja": "ブロックを積み重ねて塔を建て、押し寄せる敵の波から守り抜くタワーディフェンス。塔が崩れるたびに新たな素材や武器、パークを解放し、次の襲撃に備えてより強い設計を組み直す。"
+      }
+    },
+    {
+      "id": "c_2ef5916c47e8bc11",
+      "gameId": "g_000334",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4483900/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:04:58Z",
+          "quote": "Build an impossible tower. Defend it against endless sieges.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4a16cab43c205448ae86104aa3c181594b4c5e3e474a3b7bd424110f7da6dc54"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:04:58Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "base-building"
+      }
+    },
+    {
+      "id": "c_553550d04b75cf96",
+      "gameId": "g_000334",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.gamingonlinux.com/2026/11/the-tower-must-fall-review-build-up-a-ridiculous-tower-with-incremental-upgrades/",
+          "sourceId": "gamingonlinux",
+          "articleId": "a_57f72a9fa68c872b",
+          "publishedAt": "2026-11-19T12:37:26Z",
+          "retrievedAt": "2026-11-20T04:04:54Z",
+          "quote": "You are responsible for the entire tower design, but the combat is completely automatic.",
+          "originKey": "media:gamingonlinux.com",
+          "fetchHash": "sha256:b02f3a15497da74c47b71032e2f5fc00a7caaf80dbf75d149bc2ca5eb23a9252"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:04:54Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "auto-battle"
+      }
+    },
+    {
+      "id": "c_791c3e22e828b056",
+      "gameId": "g_000334",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4483900/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:04:58Z",
+          "quote": "The bigger your toolbox grows, the more strategic your engineering needs to become.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4a16cab43c205448ae86104aa3c181594b4c5e3e474a3b7bd424110f7da6dc54"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:04:58Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "strategy"
+      }
+    },
+    {
+      "id": "c_857625987cdd6ffd",
+      "gameId": "g_000334",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "media",
+          "url": "https://www.gamingonlinux.com/2026/11/the-tower-must-fall-review-build-up-a-ridiculous-tower-with-incremental-upgrades/",
+          "sourceId": "gamingonlinux",
+          "articleId": "a_57f72a9fa68c872b",
+          "publishedAt": "2026-11-19T12:37:26Z",
+          "retrievedAt": "2026-11-20T04:04:54Z",
+          "quote": "A great game for coffee breaks, lunches and whenever you have a quick spot free to dive in for another few waves.",
+          "originKey": "media:gamingonlinux.com",
+          "fetchHash": "sha256:b02f3a15497da74c47b71032e2f5fc00a7caaf80dbf75d149bc2ca5eb23a9252"
+        }
+      ],
+      "asOf": "2026-11-19",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:04:54Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "short-session"
+      }
+    },
+    {
+      "id": "c_8ea593df1385154c",
+      "gameId": "g_000334",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4483900/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:04:58Z",
+          "quote": "Stack modular tower pieces to create strange and unstable defences.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4a16cab43c205448ae86104aa3c181594b4c5e3e474a3b7bd424110f7da6dc54"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:04:58Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "tile-placement"
+      }
+    },
+    {
+      "id": "c_29c93c4bf82369ee",
+      "gameId": "g_000334",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4483900/",
+          "retrievedAt": "2026-11-20T04:18:54Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4a16cab43c205448ae86104aa3c181594b4c5e3e474a3b7bd424110f7da6dc54"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:54Z",
+      "createdAt": "2026-11-20T04:18:54Z",
+      "updatedAt": "2026-11-20T04:18:54Z",
+      "lastCheckedAt": "2026-11-20T04:18:54Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4483900/"
+      }
+    },
+    {
+      "id": "c_b3b086b5125fcbc5",
+      "gameId": "g_000334",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4483900/",
+          "retrievedAt": "2026-11-20T04:18:54Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:4a16cab43c205448ae86104aa3c181594b4c5e3e474a3b7bd424110f7da6dc54"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:54Z",
+      "createdAt": "2026-11-20T04:18:54Z",
+      "updatedAt": "2026-11-20T04:18:54Z",
+      "lastCheckedAt": "2026-11-20T04:18:54Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4483900/d2d61fc55263f7ebb82869c93440c99ae29546ac/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "The Tower Must Fall のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Caketown Interactive"
+        }
+      }
+    }
+  ]
+}

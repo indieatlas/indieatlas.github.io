@@ -1,0 +1,446 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000336",
+  "claims": [
+    {
+      "id": "c_bf2bf8f99d8d3e6d",
+      "gameId": "g_000336",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5089250/",
+          "retrievedAt": "2026-11-20T04:19:03Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bf5cfe1518ae53dace46bfd082ee7921fda199553685dbf0f09019bfe46429cf"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:19:03Z",
+      "createdAt": "2026-11-20T04:19:03Z",
+      "updatedAt": "2026-11-20T04:19:03Z",
+      "lastCheckedAt": "2026-11-20T04:19:03Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "release",
+      "value": {
+        "status": "tba",
+        "rawText": "Coming soon"
+      }
+    },
+    {
+      "id": "c_0c9de3a444fe138c",
+      "gameId": "g_000336",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5089250/",
+          "retrievedAt": "2026-11-20T04:19:06Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:963e8686baf059fa9ff5337c7b04efd1eea97513c1cc36ddbd76aa64908be04b"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:19:03Z",
+      "createdAt": "2026-11-20T04:19:03Z",
+      "updatedAt": "2026-11-20T04:19:03Z",
+      "lastCheckedAt": "2026-11-20T04:19:06Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_d3ba78e6c9e33770",
+      "gameId": "g_000336",
+      "scope": {
+        "platform": "pc"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5089250/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:06:58Z",
+          "quote": "Ghost Transmission is a technohorror survival game for 1–4 players.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bf5cfe1518ae53dace46bfd082ee7921fda199553685dbf0f09019bfe46429cf"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:06:58Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ],
+        "minPlayers": 1,
+        "maxPlayers": 4
+      }
+    },
+    {
+      "id": "c_a00ddc2a37063d3a",
+      "gameId": "g_000336",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5089250/",
+          "retrievedAt": "2026-11-20T04:19:03Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bf5cfe1518ae53dace46bfd082ee7921fda199553685dbf0f09019bfe46429cf"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:19:03Z",
+      "createdAt": "2026-11-20T04:19:03Z",
+      "updatedAt": "2026-11-20T04:19:03Z",
+      "lastCheckedAt": "2026-11-20T04:19:03Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_a1aa6d4e314a6eb8",
+      "gameId": "g_000336",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5089250/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:06:58Z",
+          "quote": "Ghost Transmission is a technohorror survival game for 1–4 players. Investigate haunted locations, gather evidence, and seal the entity before it gets inside you.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bf5cfe1518ae53dace46bfd082ee7921fda199553685dbf0f09019bfe46429cf"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:06:58Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "summary",
+      "value": {
+        "ja": "霊の憑依を防ぎながら心霊スポットを調査する、1〜4人協力プレイのテクノホラー・サバイバル。証拠を集めて霊を特定し、正しい封印の儀式を完了させる。憑依されたプレイヤーは霊に操られ、調査を妨害する。"
+      }
+    },
+    {
+      "id": "c_65b44d1923626705",
+      "gameId": "g_000336",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5089250/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:06:58Z",
+          "quote": "Investigate haunted locations, gather evidence, and seal the entity before it gets inside you.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bf5cfe1518ae53dace46bfd082ee7921fda199553685dbf0f09019bfe46429cf"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:06:58Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "exploration"
+      }
+    },
+    {
+      "id": "c_9e677f9d84a384a1",
+      "gameId": "g_000336",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5089250/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:06:58Z",
+          "quote": "Immersive Horror Fully diegetic experience: no floating UI, HUD, or nameplates.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bf5cfe1518ae53dace46bfd082ee7921fda199553685dbf0f09019bfe46429cf"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:06:58Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "dark"
+      }
+    },
+    {
+      "id": "c_aab223d14999c761",
+      "gameId": "g_000336",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5089250/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:06:58Z",
+          "quote": "The Sealing Ritual Gather evidence to determine the correct ritual required to seal the ghost. The wrong ritual will enrage the ghost.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bf5cfe1518ae53dace46bfd082ee7921fda199553685dbf0f09019bfe46429cf"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:06:58Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_ad3b847b6e26c643",
+      "gameId": "g_000336",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5089250/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:06:58Z",
+          "quote": "Ghost Transmission is a technohorror survival game for 1–4 players.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bf5cfe1518ae53dace46bfd082ee7921fda199553685dbf0f09019bfe46429cf"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:06:58Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "horror"
+      }
+    },
+    {
+      "id": "c_cdb6858c9752157f",
+      "gameId": "g_000336",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5089250/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:06:58Z",
+          "quote": "Proximity voice chat : your voice carries in the dark but beware, the ghost is listening.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bf5cfe1518ae53dace46bfd082ee7921fda199553685dbf0f09019bfe46429cf"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:06:58Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "tense"
+      }
+    },
+    {
+      "id": "c_cffad810671e27a6",
+      "gameId": "g_000336",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5089250/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:06:58Z",
+          "quote": "1–4 player survival technohorror. Gather evidence, identify the entity, and complete the sealing ritual before the ghost gets inside you.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bf5cfe1518ae53dace46bfd082ee7921fda199553685dbf0f09019bfe46429cf"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:06:58Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "survival"
+      }
+    },
+    {
+      "id": "c_f97a085bb38dafb9",
+      "gameId": "g_000336",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5089250/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:06:58Z",
+          "quote": "Investigate Alone or Together Teamwork: trust your instruments or your teammates, but not both.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bf5cfe1518ae53dace46bfd082ee7921fda199553685dbf0f09019bfe46429cf"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:06:58Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_62e7a1a13f2c3a45",
+      "gameId": "g_000336",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5089250/",
+          "retrievedAt": "2026-11-20T04:19:03Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bf5cfe1518ae53dace46bfd082ee7921fda199553685dbf0f09019bfe46429cf"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:19:03Z",
+      "createdAt": "2026-11-20T04:19:03Z",
+      "updatedAt": "2026-11-20T04:19:03Z",
+      "lastCheckedAt": "2026-11-20T04:19:03Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5089250/"
+      }
+    },
+    {
+      "id": "c_209e71a099c26414",
+      "gameId": "g_000336",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5089250/",
+          "retrievedAt": "2026-11-20T04:19:03Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:bf5cfe1518ae53dace46bfd082ee7921fda199553685dbf0f09019bfe46429cf"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:19:03Z",
+      "createdAt": "2026-11-20T04:19:03Z",
+      "updatedAt": "2026-11-20T04:19:03Z",
+      "lastCheckedAt": "2026-11-20T04:19:03Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5089250/d515c5402a9eeca8dce6d2e8b18bace1dc99780e/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Ghost Transmission のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Mad Mechs Inc."
+        }
+      }
+    }
+  ]
+}

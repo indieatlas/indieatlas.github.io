@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000335",
+  "claims": [
+    {
+      "id": "c_a06f5518d40899b5",
+      "gameId": "g_000335",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5488380/",
+          "retrievedAt": "2026-11-20T04:18:58Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2fe97f92872eb6369ebe2e140bdf7e191ef9bab327fc08d7f2401d25b2e759da"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:58Z",
+      "createdAt": "2026-11-20T04:18:58Z",
+      "updatedAt": "2026-11-20T04:18:58Z",
+      "lastCheckedAt": "2026-11-20T04:18:58Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "year",
+          "year": 2026
+        },
+        "rawText": "2026"
+      }
+    },
+    {
+      "id": "c_5fdfe6e74d8c0c16",
+      "gameId": "g_000335",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5488380/",
+          "retrievedAt": "2026-11-20T04:19:01Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:033a55f8800b8e174b2734b243a44dc59074377d76639957c943ed0e7195a6d3"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:58Z",
+      "createdAt": "2026-11-20T04:18:58Z",
+      "updatedAt": "2026-11-20T04:18:58Z",
+      "lastCheckedAt": "2026-11-20T04:19:01Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_4d866449bbc2062e",
+      "gameId": "g_000335",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5488380/",
+          "retrievedAt": "2026-11-20T04:18:58Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2fe97f92872eb6369ebe2e140bdf7e191ef9bab327fc08d7f2401d25b2e759da"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:58Z",
+      "createdAt": "2026-11-20T04:18:58Z",
+      "updatedAt": "2026-11-20T04:18:58Z",
+      "lastCheckedAt": "2026-11-20T04:18:58Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_c0c7cfe51e84e1ef",
+      "gameId": "g_000335",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5488380/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:06:39Z",
+          "quote": "『トレインプラス西日本』を Unreal Engine 5 で作り直した、本格派の電車運転ゲーム。関西の大動脈をモデルにした全長 55.5 km・26 駅の架空の複々線を、207系・221系・223系・227系・321系の 5 形式で運転。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2fe97f92872eb6369ebe2e140bdf7e191ef9bab327fc08d7f2401d25b2e759da"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:06:39Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "summary",
+      "value": {
+        "ja": "『トレインプラス西日本』をUnreal Engine 5で作り直した本格派の電車運転ゲーム。関西の大動脈をモデルにした架空の複々線55.5km・26駅を5形式の車両で運転し、信号やATS、勾配、カントまで再現する。"
+      }
+    },
+    {
+      "id": "c_3dbb67630c7c2616",
+      "gameId": "g_000335",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5488380/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:06:39Z",
+          "quote": "カードを集めて、デッキを組む",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2fe97f92872eb6369ebe2e140bdf7e191ef9bab327fc08d7f2401d25b2e759da"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:06:39Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "deck-building"
+      }
+    },
+    {
+      "id": "c_68d862b46a89e564",
+      "gameId": "g_000335",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5488380/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:06:39Z",
+          "quote": "本格派の電車運転ゲーム",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2fe97f92872eb6369ebe2e140bdf7e191ef9bab327fc08d7f2401d25b2e759da"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:06:39Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "simulation"
+      }
+    },
+    {
+      "id": "c_d3e532faa209f1fd",
+      "gameId": "g_000335",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5488380/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:06:39Z",
+          "quote": "関西の大動脈をモデルにした架空の複々線",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2fe97f92872eb6369ebe2e140bdf7e191ef9bab327fc08d7f2401d25b2e759da"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:06:39Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "japan"
+      }
+    },
+    {
+      "id": "c_47c51ed5a05148e6",
+      "gameId": "g_000335",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5488380/",
+          "retrievedAt": "2026-11-20T04:18:58Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2fe97f92872eb6369ebe2e140bdf7e191ef9bab327fc08d7f2401d25b2e759da"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:58Z",
+      "createdAt": "2026-11-20T04:18:58Z",
+      "updatedAt": "2026-11-20T04:18:58Z",
+      "lastCheckedAt": "2026-11-20T04:18:58Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5488380/"
+      }
+    },
+    {
+      "id": "c_1a8e1a10653bd256",
+      "gameId": "g_000335",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5488380/",
+          "retrievedAt": "2026-11-20T04:18:58Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:2fe97f92872eb6369ebe2e140bdf7e191ef9bab327fc08d7f2401d25b2e759da"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:58Z",
+      "createdAt": "2026-11-20T04:18:58Z",
+      "updatedAt": "2026-11-20T04:18:58Z",
+      "lastCheckedAt": "2026-11-20T04:18:58Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5488380/db3902219be82b5943a8a6b27a056c24b2da589f/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Train Plus Pro 2027 | トレインプラスプロ2027 のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "SHINISE GAMES"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000342",
+  "claims": [
+    {
+      "id": "c_441940add6937a49",
+      "gameId": "g_000342",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2902170/",
+          "retrievedAt": "2026-11-20T04:19:25Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ed42a689d946a8c1d8b5ee0aa0d9a3a41b247c5d831afcf3c3a910c0b74860d2"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:19:25Z",
+      "createdAt": "2026-11-20T04:19:25Z",
+      "updatedAt": "2026-11-20T04:19:25Z",
+      "lastCheckedAt": "2026-11-20T04:19:25Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 9,
+          "day": 17
+        },
+        "rawText": "17 Sep, 2026"
+      }
+    },
+    {
+      "id": "c_55b4e2c43a094d8a",
+      "gameId": "g_000342",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2902170/",
+          "retrievedAt": "2026-11-20T04:19:28Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:e7ca420e058b3f9b4dcc2fd86ddb00b38d9e134a4acd02d83fc517eb641b0638"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:19:25Z",
+      "createdAt": "2026-11-20T04:19:25Z",
+      "updatedAt": "2026-11-20T04:19:25Z",
+      "lastCheckedAt": "2026-11-20T04:19:28Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_77fc5eab8920e4e7",
+      "gameId": "g_000342",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2902170/",
+          "retrievedAt": "2026-11-20T04:19:25Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ed42a689d946a8c1d8b5ee0aa0d9a3a41b247c5d831afcf3c3a910c0b74860d2"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:19:25Z",
+      "createdAt": "2026-11-20T04:19:25Z",
+      "updatedAt": "2026-11-20T04:19:25Z",
+      "lastCheckedAt": "2026-11-20T04:19:25Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop"
+        ]
+      }
+    },
+    {
+      "id": "c_d3fda54c52548b38",
+      "gameId": "g_000342",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2902170/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:09:16Z",
+          "quote": "Kernel Hearts is a Multiplayer Co-Op Roguelike Action RPG about four magical girls and their attempt to save a world that's drowning in ashes",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ed42a689d946a8c1d8b5ee0aa0d9a3a41b247c5d831afcf3c3a910c0b74860d2"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:09:16Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "summary",
+      "value": {
+        "ja": "4人の魔法少女を率いてバベルの塔を登る、最大4人協力プレイのローグライクアクションRPG。攻撃や呪文を組み合わせ、変身して神に挑む。"
+      }
+    },
+    {
+      "id": "c_0868eba9f5f18d0e",
+      "gameId": "g_000342",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2902170/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:09:16Z",
+          "quote": "Harness the strength of the tower to dispel the Heavenly Curse from yourself, unleashing a devastating attack on nearby foes and attaining your true form for a short period.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ed42a689d946a8c1d8b5ee0aa0d9a3a41b247c5d831afcf3c3a910c0b74860d2"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:09:16Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "magic"
+      }
+    },
+    {
+      "id": "c_1becb9bca5d0095b",
+      "gameId": "g_000342",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2902170/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:09:16Z",
+          "quote": "Mix and match your attacks, spells, and movement with unique powers during each run to unleash devastating combos on the enemies you encounter.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ed42a689d946a8c1d8b5ee0aa0d9a3a41b247c5d831afcf3c3a910c0b74860d2"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:09:16Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_962d0089b1510af1",
+      "gameId": "g_000342",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2902170/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:09:16Z",
+          "quote": "Kernel Hearts is a unique blend of action RPG and roguelike elements with multiplayer co-op.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ed42a689d946a8c1d8b5ee0aa0d9a3a41b247c5d831afcf3c3a910c0b74860d2"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:09:16Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "roguelike"
+      }
+    },
+    {
+      "id": "c_ecadb6870550a9dd",
+      "gameId": "g_000342",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2902170/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:09:16Z",
+          "quote": "Kernel Hearts is a Multiplayer Co-Op Roguelike Action RPG about four magical girls and their attempt to save a world that's drowning in ashes",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ed42a689d946a8c1d8b5ee0aa0d9a3a41b247c5d831afcf3c3a910c0b74860d2"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:09:16Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "action-rpg"
+      }
+    },
+    {
+      "id": "c_f546192d16435f4a",
+      "gameId": "g_000342",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2902170/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:09:16Z",
+          "quote": "Punch biblical monsters in the face with up to four friends. Each level culminates in an intense boss fight against the domain's guardian",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ed42a689d946a8c1d8b5ee0aa0d9a3a41b247c5d831afcf3c3a910c0b74860d2"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:09:16Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_fee5fae424afe67a",
+      "gameId": "g_000342",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2902170/",
+          "retrievedAt": "2026-11-20T04:19:25Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ed42a689d946a8c1d8b5ee0aa0d9a3a41b247c5d831afcf3c3a910c0b74860d2"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:19:25Z",
+      "createdAt": "2026-11-20T04:19:25Z",
+      "updatedAt": "2026-11-20T04:19:25Z",
+      "lastCheckedAt": "2026-11-20T04:19:25Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/2902170/"
+      }
+    },
+    {
+      "id": "c_10937c8df89d3508",
+      "gameId": "g_000342",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/2902170/",
+          "retrievedAt": "2026-11-20T04:19:25Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:ed42a689d946a8c1d8b5ee0aa0d9a3a41b247c5d831afcf3c3a910c0b74860d2"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:19:25Z",
+      "createdAt": "2026-11-20T04:19:25Z",
+      "updatedAt": "2026-11-20T04:19:25Z",
+      "lastCheckedAt": "2026-11-20T04:19:25Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2902170/09df5ddeda45059fede495764d25af1f82db5595/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "カーネル・ハーツ のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Whitethorn Games"
+        }
+      }
+    }
+  ]
+}

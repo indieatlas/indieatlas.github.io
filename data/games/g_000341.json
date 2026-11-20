@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000341",
+  "status": "candidate",
+  "title": {
+    "display": "Tiny Terraces",
+    "original": "Tiny Terraces",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 3136330
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3289470",
+      "kind": "demo"
+    }
+  ],
+  "developerIds": [
+    "dev_000477"
+  ],
+  "publisherIds": [
+    "dev_000477"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/3136330/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-20T04:09:10Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:64fcefda272c0dc972f953e699d32c542eb2f6e71d6d7492680ebeb55da3a8b5"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-20T04:18:43Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3136330/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:09:10Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:64fcefda272c0dc972f953e699d32c542eb2f6e71d6d7492680ebeb55da3a8b5"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3136330/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:09:10Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:64fcefda272c0dc972f953e699d32c542eb2f6e71d6d7492680ebeb55da3a8b5"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3136330/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:09:10Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:64fcefda272c0dc972f953e699d32c542eb2f6e71d6d7492680ebeb55da3a8b5"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3136330/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:09:10Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:64fcefda272c0dc972f953e699d32c542eb2f6e71d6d7492680ebeb55da3a8b5"
+      }
+    }
+  ],
+  "createdAt": "2026-11-20T04:18:43Z",
+  "updatedAt": "2026-11-20T04:19:21Z",
+  "createdByRun": "44671468763"
+}

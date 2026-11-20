@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000334",
+  "status": "published",
+  "title": {
+    "display": "The Tower Must Fall",
+    "original": "The Tower Must Fall",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4483900
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4487250",
+      "kind": "demo"
+    }
+  ],
+  "developerIds": [
+    "dev_000469"
+  ],
+  "publisherIds": [
+    "dev_000470"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "independent-publisher",
+        "note": "販売元Caketown Interactiveは外部投資家を持たない独立系の小規模パブリッシャーと公式サイトで説明している",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://caketowninteractive.com/",
+            "publishedAt": "2026-04-27T08:01:29Z",
+            "retrievedAt": "2026-11-20T04:05:24Z",
+            "quote": "Truly independent with no external investors. No one owns us, and by extension you.",
+            "originKey": "media:caketowninteractive.com",
+            "fetchHash": "sha256:31b55e03bd685c7e4a09ffd867967b22ca88cb58dfa01e0f9158e2bf93a1b49a"
+          }
+        ]
+      },
+      {
+        "code": "indie-coverage",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.gamingonlinux.com/2026/11/the-tower-must-fall-review-build-up-a-ridiculous-tower-with-incremental-upgrades/",
+            "articleId": "a_57f72a9fa68c872b",
+            "publishedAt": "2026-11-19T12:37:26Z",
+            "retrievedAt": "2026-11-20T04:04:54Z",
+            "locator": "article.games",
+            "originKey": "media:gamingonlinux.com"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-20T04:18:43Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4483900/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:04:58Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4a16cab43c205448ae86104aa3c181594b4c5e3e474a3b7bd424110f7da6dc54"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4483900/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:04:58Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4a16cab43c205448ae86104aa3c181594b4c5e3e474a3b7bd424110f7da6dc54"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4483900/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:04:58Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4a16cab43c205448ae86104aa3c181594b4c5e3e474a3b7bd424110f7da6dc54"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4483900/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:04:58Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4a16cab43c205448ae86104aa3c181594b4c5e3e474a3b7bd424110f7da6dc54"
+      }
+    }
+  ],
+  "createdAt": "2026-11-20T04:18:43Z",
+  "addedAt": "2026-11-20",
+  "updatedAt": "2026-11-20T04:18:43Z",
+  "createdByRun": "44671468763"
+}

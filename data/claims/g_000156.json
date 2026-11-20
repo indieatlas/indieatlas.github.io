@@ -26,7 +26,7 @@
       "adoptedAt": "2026-11-09T01:38:52Z",
       "createdAt": "2026-11-09T01:38:52Z",
       "updatedAt": "2026-11-09T01:38:52Z",
-      "lastCheckedAt": "2026-11-09T01:38:52Z",
+      "lastCheckedAt": "2026-11-20T04:21:31Z",
       "createdBy": "system",
       "createdByRun": "42544889895",
       "field": "release",
@@ -61,7 +61,7 @@
       "adoptedAt": "2026-11-09T01:38:52Z",
       "createdAt": "2026-11-09T01:38:52Z",
       "updatedAt": "2026-11-09T01:38:52Z",
-      "lastCheckedAt": "2026-11-09T01:38:55Z",
+      "lastCheckedAt": "2026-11-20T04:21:34Z",
       "createdBy": "system",
       "createdByRun": "42544889895",
       "field": "japaneseSupport",
@@ -92,7 +92,7 @@
       "adoptedAt": "2026-11-09T01:38:52Z",
       "createdAt": "2026-11-09T01:38:52Z",
       "updatedAt": "2026-11-09T01:38:52Z",
-      "lastCheckedAt": "2026-11-09T01:38:52Z",
+      "lastCheckedAt": "2026-11-20T04:21:31Z",
       "createdBy": "system",
       "createdByRun": "42544889895",
       "field": "playerModes",
@@ -303,7 +303,7 @@
       "adoptedAt": "2026-11-09T01:38:52Z",
       "createdAt": "2026-11-09T01:38:52Z",
       "updatedAt": "2026-11-09T01:38:52Z",
-      "lastCheckedAt": "2026-11-09T01:38:52Z",
+      "lastCheckedAt": "2026-11-20T04:21:31Z",
       "createdBy": "system",
       "createdByRun": "42544889895",
       "field": "storeLink",
@@ -328,11 +328,12 @@
         }
       ],
       "asOf": "2026-11-09",
-      "status": "adopted",
-      "statusReason": "highest-rank",
+      "status": "superseded",
+      "statusReason": "newer-source",
+      "supersededBy": "c_a422e925630de514",
       "adoptedAt": "2026-11-09T01:38:52Z",
       "createdAt": "2026-11-09T01:38:52Z",
-      "updatedAt": "2026-11-09T01:38:52Z",
+      "updatedAt": "2026-11-20T04:21:31Z",
       "lastCheckedAt": "2026-11-09T01:38:52Z",
       "createdBy": "system",
       "createdByRun": "42544889895",
@@ -531,6 +532,46 @@
           "basis": "other-permitted",
           "credit": "IGDB",
           "note": "IGDB の API が配信する画像。出典として IGDB を表示する"
+        }
+      }
+    },
+    {
+      "id": "c_a422e925630de514",
+      "gameId": "g_000156",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5129150/",
+          "retrievedAt": "2026-11-20T04:21:31Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:22e1d904c1a5b388bbdac1ebf3a0a21f4ef636b0ecb86e3d0d5e56c5e5f27937"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "newer-source",
+      "supersedes": [
+        "c_63bd0b30a0dd6201"
+      ],
+      "adoptedAt": "2026-11-20T04:21:31Z",
+      "createdAt": "2026-11-20T04:21:31Z",
+      "updatedAt": "2026-11-20T04:21:31Z",
+      "lastCheckedAt": "2026-11-20T04:21:31Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5129150/772ab0b5bb03c24929bb858b3976fea7707f1319/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "因習村ときめきトランプゲーム のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "作っちゃうおじさん/TUKUCHAU-OJISAN"
         }
       }
     }

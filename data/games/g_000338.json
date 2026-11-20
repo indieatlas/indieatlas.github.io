@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000338",
+  "status": "published",
+  "title": {
+    "display": "THE FIRST ZOMBIE",
+    "original": "THE FIRST ZOMBIE",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5099420
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000474"
+  ],
+  "publisherIds": [
+    "dev_000474"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5099420/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-20T04:07:50Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:4dd969629d3f186468ff80a944c25a62acf28afb31b7dfb1c7f46877cbdcb927"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-20T04:18:43Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5099420/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:07:50Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4dd969629d3f186468ff80a944c25a62acf28afb31b7dfb1c7f46877cbdcb927"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5099420/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:07:50Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4dd969629d3f186468ff80a944c25a62acf28afb31b7dfb1c7f46877cbdcb927"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5099420/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:07:50Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4dd969629d3f186468ff80a944c25a62acf28afb31b7dfb1c7f46877cbdcb927"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5099420/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:07:50Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:4dd969629d3f186468ff80a944c25a62acf28afb31b7dfb1c7f46877cbdcb927"
+      }
+    }
+  ],
+  "createdAt": "2026-11-20T04:18:43Z",
+  "addedAt": "2026-11-20",
+  "updatedAt": "2026-11-20T04:18:43Z",
+  "createdByRun": "44671468763"
+}

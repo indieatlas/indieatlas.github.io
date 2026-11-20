@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000336",
+  "status": "published",
+  "title": {
+    "display": "Ghost Transmission",
+    "original": "Ghost Transmission",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5089250
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5171610",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000472"
+  ],
+  "publisherIds": [
+    "dev_000472"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5089250/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-20T04:06:58Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:bf5cfe1518ae53dace46bfd082ee7921fda199553685dbf0f09019bfe46429cf"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-20T04:18:43Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5089250/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:06:58Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bf5cfe1518ae53dace46bfd082ee7921fda199553685dbf0f09019bfe46429cf"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5089250/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:06:58Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bf5cfe1518ae53dace46bfd082ee7921fda199553685dbf0f09019bfe46429cf"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5089250/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:06:58Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bf5cfe1518ae53dace46bfd082ee7921fda199553685dbf0f09019bfe46429cf"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5089250/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-20T04:06:58Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:bf5cfe1518ae53dace46bfd082ee7921fda199553685dbf0f09019bfe46429cf"
+      }
+    }
+  ],
+  "createdAt": "2026-11-20T04:18:43Z",
+  "addedAt": "2026-11-20",
+  "updatedAt": "2026-11-20T04:18:43Z",
+  "createdByRun": "44671468763"
+}

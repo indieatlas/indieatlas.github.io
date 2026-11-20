@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000343",
+  "status": "candidate",
+  "title": {
+    "display": "Resequence: The Orchard",
+    "original": "Resequence: The Orchard",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 4102120
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4846720",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "4846720",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000480"
+  ],
+  "publisherIds": [
+    "dev_000480"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/4102120/",
+            "retrievedAt": "2026-11-20T04:18:45Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:99cc4c0416d65159127c0c7a909aac34e05d2a1cff8d350cfb09f80ea3662026"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-20T04:18:45Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4102120/",
+        "retrievedAt": "2026-11-20T04:18:45Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:99cc4c0416d65159127c0c7a909aac34e05d2a1cff8d350cfb09f80ea3662026"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4102120/",
+        "retrievedAt": "2026-11-20T04:18:45Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:99cc4c0416d65159127c0c7a909aac34e05d2a1cff8d350cfb09f80ea3662026"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4102120/",
+        "retrievedAt": "2026-11-20T04:18:45Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:99cc4c0416d65159127c0c7a909aac34e05d2a1cff8d350cfb09f80ea3662026"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4102120/",
+        "retrievedAt": "2026-11-20T04:18:45Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:99cc4c0416d65159127c0c7a909aac34e05d2a1cff8d350cfb09f80ea3662026"
+      }
+    }
+  ],
+  "createdAt": "2026-11-20T04:18:45Z",
+  "updatedAt": "2026-11-20T04:18:45Z",
+  "createdByRun": "44671468763"
+}

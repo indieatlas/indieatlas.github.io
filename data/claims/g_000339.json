@@ -1,0 +1,423 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000339",
+  "claims": [
+    {
+      "id": "c_068a89eba67d05dc",
+      "gameId": "g_000339",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4523120/",
+          "retrievedAt": "2026-11-20T04:19:16Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8c5fe4031c0efb26ddcac91621e6fee3c3f9b868befce6108d06cce672aa8d8"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:19:16Z",
+      "createdAt": "2026-11-20T04:19:16Z",
+      "updatedAt": "2026-11-20T04:19:16Z",
+      "lastCheckedAt": "2026-11-20T04:19:16Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 19
+        },
+        "rawText": "19 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_5a204223c596d7ce",
+      "gameId": "g_000339",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4523120/",
+          "retrievedAt": "2026-11-20T04:19:19Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:6cc7d27e7b9f206806dfba6ddeab0b024e813442294691877841f539a69cc23a"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:19:16Z",
+      "createdAt": "2026-11-20T04:19:16Z",
+      "updatedAt": "2026-11-20T04:19:16Z",
+      "lastCheckedAt": "2026-11-20T04:19:19Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_28930ab3721e55d1",
+      "gameId": "g_000339",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4523120/",
+          "retrievedAt": "2026-11-20T04:19:16Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8c5fe4031c0efb26ddcac91621e6fee3c3f9b868befce6108d06cce672aa8d8"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:19:16Z",
+      "createdAt": "2026-11-20T04:19:16Z",
+      "updatedAt": "2026-11-20T04:19:16Z",
+      "lastCheckedAt": "2026-11-20T04:19:16Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_08a922cecc1eb53b",
+      "gameId": "g_000339",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4523120/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:08:33Z",
+          "quote": "Adventure across four revamped worlds full of naughty baddies and menacing boss fiights while collecting delicious onions to keep Volvy at extreme levels of awesome!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8c5fe4031c0efb26ddcac91621e6fee3c3f9b868befce6108d06cce672aa8d8"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4523120/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:08:33Z",
+          "quote": "Use your oversized appendage to hover, grind, burrow, and smash through every enemy, obstacle, and secret passage.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8c5fe4031c0efb26ddcac91621e6fee3c3f9b868befce6108d06cce672aa8d8"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:08:33Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "summary",
+      "value": {
+        "ja": "史上最も有名なゲームキャラとされるボルビーを操り、巨大な手を振り回して4つの世界を駆け抜けるアクションゲーム。手をプロペラのように回して谷を越え、レールを滑り、地面を掘り進む。オニオンを食べると筋肉質な姿に変身する。"
+      }
+    },
+    {
+      "id": "c_4cb8f13c5e05d04c",
+      "gameId": "g_000339",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4523120/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:08:33Z",
+          "quote": "Volvy's Adventure: Reslimed is a spectacular remaster of the original remake of the unreleased action-platformer starring the most famous video game mascot of all time.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8c5fe4031c0efb26ddcac91621e6fee3c3f9b868befce6108d06cce672aa8d8"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:08:33Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "platformer"
+      }
+    },
+    {
+      "id": "c_6bc9dc6f6c5002f7",
+      "gameId": "g_000339",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4523120/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:08:33Z",
+          "quote": "Adventure across four revamped worlds full of naughty baddies and menacing boss fiights while collecting delicious onions to keep Volvy at extreme levels of awesome!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8c5fe4031c0efb26ddcac91621e6fee3c3f9b868befce6108d06cce672aa8d8"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:08:33Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "food"
+      }
+    },
+    {
+      "id": "c_ac8bcd7faeec59ea",
+      "gameId": "g_000339",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4523120/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:08:33Z",
+          "quote": "オリジナル版『Volvy's Adventure』、そして過去の再リリース版を参考に、アートは細部に至るまで１ピクセルずつ丹念に描き直し、再デザイン。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8c5fe4031c0efb26ddcac91621e6fee3c3f9b868befce6108d06cce672aa8d8"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:08:33Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "pixel-art"
+      }
+    },
+    {
+      "id": "c_b9c8c8bbab2ae13d",
+      "gameId": "g_000339",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4523120/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:08:33Z",
+          "quote": "Use your oversized appendage to hover, grind, burrow, and smash through every enemy, obstacle, and secret passage.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8c5fe4031c0efb26ddcac91621e6fee3c3f9b868befce6108d06cce672aa8d8"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:08:33Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "action"
+      }
+    },
+    {
+      "id": "c_ca0914a039906f73",
+      "gameId": "g_000339",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4523120/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:08:33Z",
+          "quote": "Enjoy redesigned minigames between each level that no longer encourage children to smoke cigarettes!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8c5fe4031c0efb26ddcac91621e6fee3c3f9b868befce6108d06cce672aa8d8"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:08:33Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "humorous"
+      }
+    },
+    {
+      "id": "c_d5d5a7ccf93e1ec8",
+      "gameId": "g_000339",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4523120/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:08:33Z",
+          "quote": "There's some sort of story too. Basically some warlocks released some slime and Volvy is stopping them. Also, they kidnapped his friends.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8c5fe4031c0efb26ddcac91621e6fee3c3f9b868befce6108d06cce672aa8d8"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:08:33Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "magic"
+      }
+    },
+    {
+      "id": "c_fd9c6712fe70163b",
+      "gameId": "g_000339",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4523120/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-20T04:08:33Z",
+          "quote": "Adventure across four revamped worlds full of naughty baddies and menacing boss fiights while collecting delicious onions to keep Volvy at extreme levels of awesome!",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8c5fe4031c0efb26ddcac91621e6fee3c3f9b868befce6108d06cce672aa8d8"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:18:43Z",
+      "createdAt": "2026-11-20T04:18:43Z",
+      "updatedAt": "2026-11-20T04:18:43Z",
+      "lastCheckedAt": "2026-11-20T04:08:33Z",
+      "createdBy": "llm",
+      "createdByRun": "44671468763",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_36ff4ec5d51ae60e",
+      "gameId": "g_000339",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4523120/",
+          "retrievedAt": "2026-11-20T04:19:16Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8c5fe4031c0efb26ddcac91621e6fee3c3f9b868befce6108d06cce672aa8d8"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:19:16Z",
+      "createdAt": "2026-11-20T04:19:16Z",
+      "updatedAt": "2026-11-20T04:19:16Z",
+      "lastCheckedAt": "2026-11-20T04:19:16Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/4523120/"
+      }
+    },
+    {
+      "id": "c_e7b863919011e509",
+      "gameId": "g_000339",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/4523120/",
+          "retrievedAt": "2026-11-20T04:19:16Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:f8c5fe4031c0efb26ddcac91621e6fee3c3f9b868befce6108d06cce672aa8d8"
+        }
+      ],
+      "asOf": "2026-11-20",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-20T04:19:16Z",
+      "createdAt": "2026-11-20T04:19:16Z",
+      "updatedAt": "2026-11-20T04:19:16Z",
+      "lastCheckedAt": "2026-11-20T04:19:16Z",
+      "createdBy": "system",
+      "createdByRun": "44671468763",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4523120/bd01ad0f41f47272b6f1459de015d2494b24a422/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Volvy’s Adventure: Reslimed のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Devolver Digital"
+        }
+      }
+    }
+  ]
+}
