@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000352",
+  "status": "candidate",
+  "title": {
+    "display": "散るプラネット",
+    "original": "Chill Planet",
+    "originalLang": "en"
+  },
+  "aliases": [
+    {
+      "value": "散るプラネット(Chill Planet)",
+      "lang": "ja",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 4069400
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000493"
+  ],
+  "publisherIds": [
+    "dev_000494"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-showcase",
+        "note": "台湾のインディーゲーム展示会「2026 G-EIGHT」へ出展する5タイトルのひとつ",
+        "evidence": [
+          {
+            "kind": "media",
+            "url": "https://www.gamespark.jp/article/2026/11/20/175112.html",
+            "sourceId": "gamespark",
+            "publishedAt": "2026-11-20T04:30:02Z",
+            "retrievedAt": "2026-11-21T04:09:29Z",
+            "quote": "台湾で開催されるインディーゲーム展示会「2026 G-EIGHT」へ出展すると発表しました。",
+            "originKey": "media:gamespark.jp",
+            "fetchHash": "sha256:da2d4da380847750158fda5aeea606115cb6395489724001ba0e4827a257f230"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-21T04:20:35Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4069400/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:10:02Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ed7dafa6e1518deb1c6782033c2364f657bf58feebff10153fd28f41941f79f8"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4069400/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:10:02Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ed7dafa6e1518deb1c6782033c2364f657bf58feebff10153fd28f41941f79f8"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4069400/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:10:02Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ed7dafa6e1518deb1c6782033c2364f657bf58feebff10153fd28f41941f79f8"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4069400/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:10:02Z",
+        "quote": "散るプラネット(Chill Planet)",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ed7dafa6e1518deb1c6782033c2364f657bf58feebff10153fd28f41941f79f8"
+      }
+    }
+  ],
+  "createdAt": "2026-11-21T04:20:35Z",
+  "updatedAt": "2026-11-21T04:20:35Z",
+  "createdByRun": "44863890736"
+}

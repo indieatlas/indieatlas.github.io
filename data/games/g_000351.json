@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000351",
+  "status": "published",
+  "title": {
+    "display": "Solbrand",
+    "original": "Solbrand",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 3772990
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "4826310",
+      "kind": "demo"
+    }
+  ],
+  "officialUrl": "https://www.deadpeopledreaming.com",
+  "developerIds": [
+    "dev_000492"
+  ],
+  "publisherIds": [
+    "dev_000492"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/3772990/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-21T04:07:04Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:cc0d380672f25b32e39499a4308b86f7e55344af278a30de1ebac7db60281fd6"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-21T04:20:35Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3772990/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:07:04Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:cc0d380672f25b32e39499a4308b86f7e55344af278a30de1ebac7db60281fd6"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3772990/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:07:04Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:cc0d380672f25b32e39499a4308b86f7e55344af278a30de1ebac7db60281fd6"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3772990/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:07:04Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:cc0d380672f25b32e39499a4308b86f7e55344af278a30de1ebac7db60281fd6"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3772990/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:07:04Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:cc0d380672f25b32e39499a4308b86f7e55344af278a30de1ebac7db60281fd6"
+      }
+    }
+  ],
+  "createdAt": "2026-11-21T04:20:35Z",
+  "addedAt": "2026-11-21",
+  "updatedAt": "2026-11-21T04:20:35Z",
+  "createdByRun": "44863890736"
+}

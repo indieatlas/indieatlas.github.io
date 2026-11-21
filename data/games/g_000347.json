@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000347",
+  "status": "published",
+  "title": {
+    "display": "The Binding of Isaac: Rebirth",
+    "original": "The Binding of Isaac: Rebirth",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 250900
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1426300",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "322660",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "3353470",
+      "kind": "dlc",
+      "title": "The Binding of Isaac: Repentance+"
+    },
+    {
+      "store": "steam",
+      "id": "401920",
+      "kind": "dlc"
+    },
+    {
+      "store": "steam",
+      "id": "570660",
+      "kind": "dlc"
+    }
+  ],
+  "officialUrl": "http://www.bindingofisaac.com",
+  "developerIds": [
+    "dev_000484",
+    "dev_000485"
+  ],
+  "publisherIds": [
+    "dev_000484"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/250900/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-21T04:05:40Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:41109223d4e6c39d6dc1f53a81db0b15f64db12b73f256887e3c8401c70f9966"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-21T04:20:35Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "associatedApps",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3353470/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:05:30Z",
+        "locator": "steam:appdetails.fullgameAppId",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:641603ad0b2c43168606c0e476bd48fc967afdb72f1f829728fe8ab57becaa21"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/250900/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:05:40Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:41109223d4e6c39d6dc1f53a81db0b15f64db12b73f256887e3c8401c70f9966"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/250900/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:05:40Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:41109223d4e6c39d6dc1f53a81db0b15f64db12b73f256887e3c8401c70f9966"
+      }
+    },
+    {
+      "field": "officialUrl",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/250900/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:05:40Z",
+        "locator": "steam:appdetails.website",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:41109223d4e6c39d6dc1f53a81db0b15f64db12b73f256887e3c8401c70f9966"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/250900/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:05:40Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:41109223d4e6c39d6dc1f53a81db0b15f64db12b73f256887e3c8401c70f9966"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/250900/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:05:40Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:41109223d4e6c39d6dc1f53a81db0b15f64db12b73f256887e3c8401c70f9966"
+      }
+    }
+  ],
+  "createdAt": "2026-11-21T04:20:35Z",
+  "addedAt": "2026-11-21",
+  "updatedAt": "2026-11-21T04:20:35Z",
+  "createdByRun": "44863890736"
+}

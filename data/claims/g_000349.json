@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000349",
+  "claims": [
+    {
+      "id": "c_44a150ed54e8799b",
+      "gameId": "g_000349",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5132020/",
+          "retrievedAt": "2026-11-21T04:21:04Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8a365b9c1ab90b4da9ec28278195b35c40d4fe0f4c2aa9cd60c678dbf8c0afb"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:21:04Z",
+      "createdAt": "2026-11-21T04:21:04Z",
+      "updatedAt": "2026-11-21T04:21:04Z",
+      "lastCheckedAt": "2026-11-21T04:21:04Z",
+      "createdBy": "system",
+      "createdByRun": "44863890736",
+      "field": "release",
+      "value": {
+        "status": "upcoming",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 12,
+          "day": 4
+        },
+        "rawText": "4 Dec, 2026"
+      }
+    },
+    {
+      "id": "c_278894b4ae09146a",
+      "gameId": "g_000349",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5132020/",
+          "retrievedAt": "2026-11-21T04:21:07Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b2559fc6f2e4a1e0fcc50aaad3559bd81e23bb8c320208640fcd0e7aa2407956"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:21:04Z",
+      "createdAt": "2026-11-21T04:21:04Z",
+      "updatedAt": "2026-11-21T04:21:04Z",
+      "lastCheckedAt": "2026-11-21T04:21:07Z",
+      "createdBy": "system",
+      "createdByRun": "44863890736",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "no",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_0eaca7693fc667d4",
+      "gameId": "g_000349",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5132020/",
+          "retrievedAt": "2026-11-21T04:21:04Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8a365b9c1ab90b4da9ec28278195b35c40d4fe0f4c2aa9cd60c678dbf8c0afb"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:21:04Z",
+      "createdAt": "2026-11-21T04:21:04Z",
+      "updatedAt": "2026-11-21T04:21:04Z",
+      "lastCheckedAt": "2026-11-21T04:21:04Z",
+      "createdBy": "system",
+      "createdByRun": "44863890736",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single",
+          "online-coop",
+          "online-pvp"
+        ]
+      }
+    },
+    {
+      "id": "c_0613e5f720bc9270",
+      "gameId": "g_000349",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5132020/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-21T04:06:15Z",
+          "quote": "インターネット4は、最大8人でブラウザを同時に操作し、インターネットをみんなで遊べるツールです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8a365b9c1ab90b4da9ec28278195b35c40d4fe0f4c2aa9cd60c678dbf8c0afb"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:35Z",
+      "createdAt": "2026-11-21T04:20:35Z",
+      "updatedAt": "2026-11-21T04:20:35Z",
+      "lastCheckedAt": "2026-11-21T04:06:15Z",
+      "createdBy": "llm",
+      "createdByRun": "44863890736",
+      "field": "summary",
+      "value": {
+        "ja": "最大8人でひとつのブラウザを同時に操作し、動画や配信の視聴、画面分割でのウェブ巡り、お絵かきを楽しめるマルチプレイ対応ツール。Wikipediaを使ったミニゲームや、のんびり釣りも収録する。"
+      }
+    },
+    {
+      "id": "c_017c5914e20f265c",
+      "gameId": "g_000349",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5132020/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-21T04:06:15Z",
+          "quote": "使い方はあなたたち次第。インターネットのあらゆるコンテンツが、新しい遊びのきっかけになります。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8a365b9c1ab90b4da9ec28278195b35c40d4fe0f4c2aa9cd60c678dbf8c0afb"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:35Z",
+      "createdAt": "2026-11-21T04:20:35Z",
+      "updatedAt": "2026-11-21T04:20:35Z",
+      "lastCheckedAt": "2026-11-21T04:06:15Z",
+      "createdBy": "llm",
+      "createdByRun": "44863890736",
+      "field": "tag",
+      "value": {
+        "tagId": "sandbox"
+      }
+    },
+    {
+      "id": "c_0849e3dc84432121",
+      "gameId": "g_000349",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5132020/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-21T04:06:15Z",
+          "quote": "雑談しながら気ままに竿を垂らして、何が釣れるか眺める。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8a365b9c1ab90b4da9ec28278195b35c40d4fe0f4c2aa9cd60c678dbf8c0afb"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:35Z",
+      "createdAt": "2026-11-21T04:20:35Z",
+      "updatedAt": "2026-11-21T04:20:35Z",
+      "lastCheckedAt": "2026-11-21T04:06:15Z",
+      "createdBy": "llm",
+      "createdByRun": "44863890736",
+      "field": "tag",
+      "value": {
+        "tagId": "fishing"
+      }
+    },
+    {
+      "id": "c_115cb91f2ded4648",
+      "gameId": "g_000349",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5132020/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-21T04:06:15Z",
+          "quote": "そんなゆるい時間も、インターネット4の遊び方のひとつです。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8a365b9c1ab90b4da9ec28278195b35c40d4fe0f4c2aa9cd60c678dbf8c0afb"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:35Z",
+      "createdAt": "2026-11-21T04:20:35Z",
+      "updatedAt": "2026-11-21T04:20:35Z",
+      "lastCheckedAt": "2026-11-21T04:06:15Z",
+      "createdBy": "llm",
+      "createdByRun": "44863890736",
+      "field": "tag",
+      "value": {
+        "tagId": "cozy"
+      }
+    },
+    {
+      "id": "c_205299155b9d31cb",
+      "gameId": "g_000349",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5132020/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-21T04:06:15Z",
+          "quote": "最大8人で集まり、ひとつのブラウザをみんなで同時に操作できます。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8a365b9c1ab90b4da9ec28278195b35c40d4fe0f4c2aa9cd60c678dbf8c0afb"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:35Z",
+      "createdAt": "2026-11-21T04:20:35Z",
+      "updatedAt": "2026-11-21T04:20:35Z",
+      "lastCheckedAt": "2026-11-21T04:06:15Z",
+      "createdBy": "llm",
+      "createdByRun": "44863890736",
+      "field": "tag",
+      "value": {
+        "tagId": "co-op-focused"
+      }
+    },
+    {
+      "id": "c_efbfa7f2b524a39a",
+      "gameId": "g_000349",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5132020/",
+          "retrievedAt": "2026-11-21T04:21:04Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8a365b9c1ab90b4da9ec28278195b35c40d4fe0f4c2aa9cd60c678dbf8c0afb"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:21:04Z",
+      "createdAt": "2026-11-21T04:21:04Z",
+      "updatedAt": "2026-11-21T04:21:04Z",
+      "lastCheckedAt": "2026-11-21T04:21:04Z",
+      "createdBy": "system",
+      "createdByRun": "44863890736",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/5132020/"
+      }
+    },
+    {
+      "id": "c_7be9e9272e6ea850",
+      "gameId": "g_000349",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/5132020/",
+          "retrievedAt": "2026-11-21T04:21:04Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:b8a365b9c1ab90b4da9ec28278195b35c40d4fe0f4c2aa9cd60c678dbf8c0afb"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:21:04Z",
+      "createdAt": "2026-11-21T04:21:04Z",
+      "updatedAt": "2026-11-21T04:21:04Z",
+      "lastCheckedAt": "2026-11-21T04:21:04Z",
+      "createdBy": "system",
+      "createdByRun": "44863890736",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/5132020/2d7ccc2628fe084f9925b528b4e104e923e9f053/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "インターネット4 のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "BrokenHDD"
+        }
+      }
+    }
+  ]
+}

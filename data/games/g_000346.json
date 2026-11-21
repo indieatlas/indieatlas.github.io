@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000346",
+  "status": "published",
+  "title": {
+    "display": "アケノヨスガ - Twilight Loop -",
+    "original": "アケノヨスガ - Twilight Loop -",
+    "originalLang": "ja"
+  },
+  "aliases": [
+    {
+      "value": "Ake no Yosuga - Twilight Loop",
+      "lang": "en",
+      "kind": "romanization"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 1123990
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5269710",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5269710",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000482",
+    "dev_000483"
+  ],
+  "publisherIds": [
+    "dev_000482",
+    "dev_000483"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1123990/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-21T04:05:24Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:9afed8cf0f93db47ad9f751f22df83b9d0d39337927a482c3965697891265ed8"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-21T04:20:35Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1123990/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:05:24Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9afed8cf0f93db47ad9f751f22df83b9d0d39337927a482c3965697891265ed8"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1123990/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:05:24Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9afed8cf0f93db47ad9f751f22df83b9d0d39337927a482c3965697891265ed8"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1123990/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:05:24Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9afed8cf0f93db47ad9f751f22df83b9d0d39337927a482c3965697891265ed8"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1123990/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:05:24Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9afed8cf0f93db47ad9f751f22df83b9d0d39337927a482c3965697891265ed8"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1123990/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:05:24Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9afed8cf0f93db47ad9f751f22df83b9d0d39337927a482c3965697891265ed8"
+      }
+    }
+  ],
+  "createdAt": "2026-11-21T04:20:35Z",
+  "addedAt": "2026-11-21",
+  "updatedAt": "2026-11-21T04:20:35Z",
+  "createdByRun": "44863890736"
+}

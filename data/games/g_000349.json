@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000349",
+  "status": "published",
+  "title": {
+    "display": "インターネット4",
+    "original": "INTERNET4",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5132020
+  },
+  "associatedApps": [],
+  "developerIds": [
+    "dev_000487",
+    "dev_000488"
+  ],
+  "publisherIds": [
+    "dev_000487"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "note": "開発元のBrokenHDDがそのままパブリッシャーとして販売している",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5132020/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-21T04:06:15Z",
+            "locator": "steam:appdetails.publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:b8a365b9c1ab90b4da9ec28278195b35c40d4fe0f4c2aa9cd60c678dbf8c0afb"
+          },
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5132020/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-21T04:06:15Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:b8a365b9c1ab90b4da9ec28278195b35c40d4fe0f4c2aa9cd60c678dbf8c0afb"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-21T04:20:35Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5132020/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:06:15Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b8a365b9c1ab90b4da9ec28278195b35c40d4fe0f4c2aa9cd60c678dbf8c0afb"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5132020/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:06:15Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b8a365b9c1ab90b4da9ec28278195b35c40d4fe0f4c2aa9cd60c678dbf8c0afb"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5132020/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:06:15Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b8a365b9c1ab90b4da9ec28278195b35c40d4fe0f4c2aa9cd60c678dbf8c0afb"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5132020/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:06:15Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:b8a365b9c1ab90b4da9ec28278195b35c40d4fe0f4c2aa9cd60c678dbf8c0afb"
+      }
+    }
+  ],
+  "createdAt": "2026-11-21T04:20:35Z",
+  "addedAt": "2026-11-21",
+  "updatedAt": "2026-11-21T04:20:35Z",
+  "createdByRun": "44863890736"
+}

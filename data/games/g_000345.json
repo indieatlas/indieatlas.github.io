@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000345",
+  "status": "published",
+  "title": {
+    "display": "トロイメライの月あかり",
+    "original": "トロイメライの月あかり",
+    "originalLang": "ja"
+  },
+  "aliases": [
+    {
+      "value": "Reverie in the Moonlight",
+      "lang": "en",
+      "kind": "localized"
+    }
+  ],
+  "externalIds": {
+    "steamAppId": 3480790
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "3641960",
+      "kind": "demo",
+      "title": "トロイメライの月あかり 体験版"
+    },
+    {
+      "store": "steam",
+      "id": "4096980",
+      "kind": "soundtrack",
+      "title": "トロイメライの月あかり オリジナルサウンドトラック"
+    }
+  ],
+  "developerIds": [
+    "dev_000067"
+  ],
+  "publisherIds": [
+    "dev_000067"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/3480790/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-21T04:04:14Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:ba4f3e172bf2949ad4ce68f3287ea46b20c743af1a5ac07d19aa284b8e8da607"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-21T04:20:35Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "aliases",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3480790/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:04:14Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ba4f3e172bf2949ad4ce68f3287ea46b20c743af1a5ac07d19aa284b8e8da607"
+      }
+    },
+    {
+      "field": "associatedApps",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3641960/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:04:36Z",
+        "locator": "steam:appdetails.type",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:801ddae189657e16325b1b742d0a24cef26ea33ec4861b03c7175e5472a8e32c"
+      }
+    },
+    {
+      "field": "associatedApps",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/4096980/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:04:42Z",
+        "locator": "steam:appdetails.type",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:3efc91804af132974dbb50176aae0e63235beea751d55df1df4f5e1afc40e71c"
+      }
+    },
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3480790/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:04:14Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ba4f3e172bf2949ad4ce68f3287ea46b20c743af1a5ac07d19aa284b8e8da607"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3480790/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:04:14Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ba4f3e172bf2949ad4ce68f3287ea46b20c743af1a5ac07d19aa284b8e8da607"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3480790/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:04:14Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:ba4f3e172bf2949ad4ce68f3287ea46b20c743af1a5ac07d19aa284b8e8da607"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "media",
+        "url": "https://www.4gamer.net/games/059/G105987/20261119035/",
+        "sourceId": "4gamer",
+        "publishedAt": "2026-11-19T10:44:12Z",
+        "retrievedAt": "2026-11-21T04:04:06Z",
+        "quote": "room6は本日（2026年11月19日），追いかけっこアクション「トロイメライの月あかり」のNintendo Switch 2 EditionとNintendo Switch版を発売した。",
+        "originKey": "media:4gamer.net",
+        "fetchHash": "sha256:d20fff5a51859cdbc557b1bc7d63c05ec2d4a0104785cf5eea69fbddc4ab90e1"
+      }
+    }
+  ],
+  "createdAt": "2026-11-21T04:20:35Z",
+  "addedAt": "2026-11-21",
+  "updatedAt": "2026-11-21T04:20:35Z",
+  "createdByRun": "44863890736"
+}

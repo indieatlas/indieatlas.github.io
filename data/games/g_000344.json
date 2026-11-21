@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000344",
+  "status": "published",
+  "title": {
+    "display": "SuperWEIRD：ヘンテコ遠征隊",
+    "original": "SuperWEIRD: Automation Roguelite",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 3818770
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5352860",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000481"
+  ],
+  "publisherIds": [
+    "dev_000481"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/3818770/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-21T04:04:05Z",
+            "locator": "steam:appdetails.developers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:c4112ad35959f7aa129ee27b1db91f662532196c59df4bf28abb925a014babf0"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-21T04:20:35Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3818770/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:04:05Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c4112ad35959f7aa129ee27b1db91f662532196c59df4bf28abb925a014babf0"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3818770/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:04:05Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c4112ad35959f7aa129ee27b1db91f662532196c59df4bf28abb925a014babf0"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3818770/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:04:05Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c4112ad35959f7aa129ee27b1db91f662532196c59df4bf28abb925a014babf0"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/3818770/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:04:05Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:c4112ad35959f7aa129ee27b1db91f662532196c59df4bf28abb925a014babf0"
+      }
+    }
+  ],
+  "createdAt": "2026-11-21T04:20:35Z",
+  "addedAt": "2026-11-21",
+  "updatedAt": "2026-11-21T04:20:35Z",
+  "createdByRun": "44863890736"
+}

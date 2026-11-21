@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000350",
+  "status": "published",
+  "title": {
+    "display": "Before Your Eyes",
+    "original": "Before Your Eyes",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 1082430
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "1762140",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000489",
+    "dev_000490"
+  ],
+  "publisherIds": [
+    "dev_000491"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "indie-showcase",
+        "note": "初期版がインディーゲームの祭典IndiecadeとIGFで受賞している",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/1082430/",
+            "sourceId": "steam-store",
+            "retrievedAt": "2026-11-21T04:06:58Z",
+            "quote": "received the Game Developers Choice award at Indiecade and the Student Award at the Independent Game Awards (IGF)",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:9a354d4e64aa89b5a2e0df64b9ff3c4e7db121e3a6c46f1a2ca3510e86252065"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-21T04:20:35Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1082430/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:06:58Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9a354d4e64aa89b5a2e0df64b9ff3c4e7db121e3a6c46f1a2ca3510e86252065"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1082430/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:06:58Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9a354d4e64aa89b5a2e0df64b9ff3c4e7db121e3a6c46f1a2ca3510e86252065"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1082430/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:06:58Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9a354d4e64aa89b5a2e0df64b9ff3c4e7db121e3a6c46f1a2ca3510e86252065"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/1082430/",
+        "sourceId": "steam-store",
+        "retrievedAt": "2026-11-21T04:06:58Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:9a354d4e64aa89b5a2e0df64b9ff3c4e7db121e3a6c46f1a2ca3510e86252065"
+      }
+    }
+  ],
+  "createdAt": "2026-11-21T04:20:35Z",
+  "addedAt": "2026-11-21",
+  "updatedAt": "2026-11-21T04:20:35Z",
+  "createdByRun": "44863890736"
+}

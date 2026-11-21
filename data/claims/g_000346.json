@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000346",
+  "claims": [
+    {
+      "id": "c_85f1f8500823073f",
+      "gameId": "g_000346",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1123990/",
+          "retrievedAt": "2026-11-21T04:20:51Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9afed8cf0f93db47ad9f751f22df83b9d0d39337927a482c3965697891265ed8"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:51Z",
+      "createdAt": "2026-11-21T04:20:51Z",
+      "updatedAt": "2026-11-21T04:20:51Z",
+      "lastCheckedAt": "2026-11-21T04:20:51Z",
+      "createdBy": "system",
+      "createdByRun": "44863890736",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2026,
+          "month": 11,
+          "day": 18
+        },
+        "rawText": "18 Nov, 2026"
+      }
+    },
+    {
+      "id": "c_ece17a07a9595122",
+      "gameId": "g_000346",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1123990/",
+          "retrievedAt": "2026-11-21T04:20:54Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:52353a6f06831bba051c916a402781ecbe8fb104a84d49adb856308d02f29c6f"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:51Z",
+      "createdAt": "2026-11-21T04:20:51Z",
+      "updatedAt": "2026-11-21T04:20:51Z",
+      "lastCheckedAt": "2026-11-21T04:20:54Z",
+      "createdBy": "system",
+      "createdByRun": "44863890736",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "yes"
+      }
+    },
+    {
+      "id": "c_a315bba6f7357335",
+      "gameId": "g_000346",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1123990/",
+          "retrievedAt": "2026-11-21T04:20:51Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9afed8cf0f93db47ad9f751f22df83b9d0d39337927a482c3965697891265ed8"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:51Z",
+      "createdAt": "2026-11-21T04:20:51Z",
+      "updatedAt": "2026-11-21T04:20:51Z",
+      "lastCheckedAt": "2026-11-21T04:20:51Z",
+      "createdBy": "system",
+      "createdByRun": "44863890736",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_d482fc0ef58124d0",
+      "gameId": "g_000346",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1123990/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-21T04:05:24Z",
+          "quote": "毎日17時になると、少女・茜は必ず死ぬ。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9afed8cf0f93db47ad9f751f22df83b9d0d39337927a482c3965697891265ed8"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:35Z",
+      "createdAt": "2026-11-21T04:20:35Z",
+      "updatedAt": "2026-11-21T04:20:35Z",
+      "lastCheckedAt": "2026-11-21T04:05:24Z",
+      "createdBy": "llm",
+      "createdByRun": "44863890736",
+      "field": "summary",
+      "value": {
+        "ja": "毎日17時に少女・茜が死ぬ一日を、主人公・慶太が何度も繰り返して救おうとするループ型・心理ホラーアドベンチャー。選択によって会話と演出が変わり、伏線が重なって二人に隠された真実へ収束する。マルチエンディングを採用。"
+      }
+    },
+    {
+      "id": "c_897935d7fb28ef26",
+      "gameId": "g_000346",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1123990/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-21T04:05:24Z",
+          "quote": "・伏線が重なり、真相へ収束していくストーリー",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9afed8cf0f93db47ad9f751f22df83b9d0d39337927a482c3965697891265ed8"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:35Z",
+      "createdAt": "2026-11-21T04:20:35Z",
+      "updatedAt": "2026-11-21T04:20:35Z",
+      "lastCheckedAt": "2026-11-21T04:05:24Z",
+      "createdBy": "llm",
+      "createdByRun": "44863890736",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_8de2a75cbbe0546e",
+      "gameId": "g_000346",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1123990/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-21T04:05:24Z",
+          "quote": "・死と自己犠牲、歪んだ愛を描く心理ホラー",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9afed8cf0f93db47ad9f751f22df83b9d0d39337927a482c3965697891265ed8"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:35Z",
+      "createdAt": "2026-11-21T04:20:35Z",
+      "updatedAt": "2026-11-21T04:20:35Z",
+      "lastCheckedAt": "2026-11-21T04:05:24Z",
+      "createdBy": "llm",
+      "createdByRun": "44863890736",
+      "field": "tag",
+      "value": {
+        "tagId": "horror"
+      }
+    },
+    {
+      "id": "c_9b89e2a4b5253f7c",
+      "gameId": "g_000346",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1123990/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-21T04:05:24Z",
+          "quote": "ループ型・心理ホラーADV です。 毎日17時になると、少女・茜は必ず死ぬ。",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9afed8cf0f93db47ad9f751f22df83b9d0d39337927a482c3965697891265ed8"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:35Z",
+      "createdAt": "2026-11-21T04:20:35Z",
+      "updatedAt": "2026-11-21T04:20:35Z",
+      "lastCheckedAt": "2026-11-21T04:05:24Z",
+      "createdBy": "llm",
+      "createdByRun": "44863890736",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_a6ba82237972a69a",
+      "gameId": "g_000346",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1123990/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-21T04:05:24Z",
+          "quote": "・死と自己犠牲、歪んだ愛を描く心理ホラー",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9afed8cf0f93db47ad9f751f22df83b9d0d39337927a482c3965697891265ed8"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:35Z",
+      "createdAt": "2026-11-21T04:20:35Z",
+      "updatedAt": "2026-11-21T04:20:35Z",
+      "lastCheckedAt": "2026-11-21T04:05:24Z",
+      "createdBy": "llm",
+      "createdByRun": "44863890736",
+      "field": "tag",
+      "value": {
+        "tagId": "dark"
+      }
+    },
+    {
+      "id": "c_e1d5ff140cf13cf2",
+      "gameId": "g_000346",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1123990/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-21T04:05:24Z",
+          "quote": "・死と自己犠牲、歪んだ愛を描く心理ホラー",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9afed8cf0f93db47ad9f751f22df83b9d0d39337927a482c3965697891265ed8"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:35Z",
+      "createdAt": "2026-11-21T04:20:35Z",
+      "updatedAt": "2026-11-21T04:20:35Z",
+      "lastCheckedAt": "2026-11-21T04:05:24Z",
+      "createdBy": "llm",
+      "createdByRun": "44863890736",
+      "field": "tag",
+      "value": {
+        "tagId": "emotional"
+      }
+    },
+    {
+      "id": "c_e5220588c4d016c5",
+      "gameId": "g_000346",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1123990/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-21T04:05:24Z",
+          "quote": "・伏線が重なり、真相へ収束していくストーリー",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9afed8cf0f93db47ad9f751f22df83b9d0d39337927a482c3965697891265ed8"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:35Z",
+      "createdAt": "2026-11-21T04:20:35Z",
+      "updatedAt": "2026-11-21T04:20:35Z",
+      "lastCheckedAt": "2026-11-21T04:05:24Z",
+      "createdBy": "llm",
+      "createdByRun": "44863890736",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_4adf6106a3e27f02",
+      "gameId": "g_000346",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1123990/",
+          "retrievedAt": "2026-11-21T04:20:51Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9afed8cf0f93db47ad9f751f22df83b9d0d39337927a482c3965697891265ed8"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:51Z",
+      "createdAt": "2026-11-21T04:20:51Z",
+      "updatedAt": "2026-11-21T04:20:51Z",
+      "lastCheckedAt": "2026-11-21T04:20:51Z",
+      "createdBy": "system",
+      "createdByRun": "44863890736",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1123990/"
+      }
+    },
+    {
+      "id": "c_b7322e35a940a78c",
+      "gameId": "g_000346",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1123990/",
+          "retrievedAt": "2026-11-21T04:20:51Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9afed8cf0f93db47ad9f751f22df83b9d0d39337927a482c3965697891265ed8"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:51Z",
+      "createdAt": "2026-11-21T04:20:51Z",
+      "updatedAt": "2026-11-21T04:20:51Z",
+      "lastCheckedAt": "2026-11-21T04:20:51Z",
+      "createdBy": "system",
+      "createdByRun": "44863890736",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1123990/1708a5783a1f9b45c401d86f66dce3c107350c07/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "アケノヨスガ - Twilight Loop - のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "CHARON"
+        }
+      }
+    }
+  ]
+}

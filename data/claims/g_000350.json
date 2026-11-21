@@ -1,0 +1,402 @@
+{
+  "schemaVersion": 1,
+  "gameId": "g_000350",
+  "claims": [
+    {
+      "id": "c_1a62d45f701031d5",
+      "gameId": "g_000350",
+      "scope": {
+        "platform": "mac",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1082430/",
+          "retrievedAt": "2026-11-21T04:21:09Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9a354d4e64aa89b5a2e0df64b9ff3c4e7db121e3a6c46f1a2ca3510e86252065"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:21:09Z",
+      "createdAt": "2026-11-21T04:21:09Z",
+      "updatedAt": "2026-11-21T04:21:09Z",
+      "lastCheckedAt": "2026-11-21T04:21:09Z",
+      "createdBy": "system",
+      "createdByRun": "44863890736",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2021,
+          "month": 4,
+          "day": 8
+        },
+        "rawText": "8 Apr, 2021"
+      }
+    },
+    {
+      "id": "c_94954daa4202cead",
+      "gameId": "g_000350",
+      "scope": {
+        "platform": "pc",
+        "region": "global"
+      },
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1082430/",
+          "retrievedAt": "2026-11-21T04:21:09Z",
+          "locator": "steam:appdetails.release_date",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9a354d4e64aa89b5a2e0df64b9ff3c4e7db121e3a6c46f1a2ca3510e86252065"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:21:09Z",
+      "createdAt": "2026-11-21T04:21:09Z",
+      "updatedAt": "2026-11-21T04:21:09Z",
+      "lastCheckedAt": "2026-11-21T04:21:09Z",
+      "createdBy": "system",
+      "createdByRun": "44863890736",
+      "field": "release",
+      "value": {
+        "status": "released",
+        "date": {
+          "precision": "day",
+          "year": 2021,
+          "month": 4,
+          "day": 8
+        },
+        "rawText": "8 Apr, 2021"
+      }
+    },
+    {
+      "id": "c_2108ccb6fad23ad1",
+      "gameId": "g_000350",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1082430/",
+          "retrievedAt": "2026-11-21T04:21:12Z",
+          "locator": "steam:store.language_table",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:62f720c7620ab4335e6840bc168dabaa2570032ca848aa4eb3868a81e208a6b7"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:21:09Z",
+      "createdAt": "2026-11-21T04:21:09Z",
+      "updatedAt": "2026-11-21T04:21:09Z",
+      "lastCheckedAt": "2026-11-21T04:21:12Z",
+      "createdBy": "system",
+      "createdByRun": "44863890736",
+      "field": "japaneseSupport",
+      "value": {
+        "interface": "yes",
+        "subtitles": "yes",
+        "audio": "no"
+      }
+    },
+    {
+      "id": "c_b3f783ef9757053e",
+      "gameId": "g_000350",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1082430/",
+          "retrievedAt": "2026-11-21T04:21:09Z",
+          "locator": "steam:appdetails.categories",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9a354d4e64aa89b5a2e0df64b9ff3c4e7db121e3a6c46f1a2ca3510e86252065"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:21:09Z",
+      "createdAt": "2026-11-21T04:21:09Z",
+      "updatedAt": "2026-11-21T04:21:09Z",
+      "lastCheckedAt": "2026-11-21T04:21:09Z",
+      "createdBy": "system",
+      "createdByRun": "44863890736",
+      "field": "playerModes",
+      "value": {
+        "modes": [
+          "single"
+        ]
+      }
+    },
+    {
+      "id": "c_c46b361298e03f39",
+      "gameId": "g_000350",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1082430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-21T04:06:58Z",
+          "quote": "The story begins after your death, aboard the ship of a mythical Ferryman tasked with shepherding souls to the afterlife.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9a354d4e64aa89b5a2e0df64b9ff3c4e7db121e3a6c46f1a2ca3510e86252065"
+        },
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1082430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-21T04:06:58Z",
+          "quote": "The game uses your webcam to immerse you in this story in a way you've never experienced before.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9a354d4e64aa89b5a2e0df64b9ff3c4e7db121e3a6c46f1a2ca3510e86252065"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:35Z",
+      "createdAt": "2026-11-21T04:20:35Z",
+      "updatedAt": "2026-11-21T04:20:35Z",
+      "lastCheckedAt": "2026-11-21T04:06:58Z",
+      "createdBy": "llm",
+      "createdByRun": "44863890736",
+      "field": "summary",
+      "value": {
+        "ja": "亡くなった主人公の魂が、死後の世界へ向かう船の上で自らの人生を振り返る一人称視点の物語アドベンチャー。ウェブカメラが実際のまばたきを検知し、まばたきのたびに記憶の場面が切り替わっていく。家族や初恋、画家として歩んだ道をたどる。"
+      }
+    },
+    {
+      "id": "c_58dd0e8b20abc8dc",
+      "gameId": "g_000350",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1082430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-21T04:06:58Z",
+          "quote": "Before Your Eyes deals with themes of death, illness and grief",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9a354d4e64aa89b5a2e0df64b9ff3c4e7db121e3a6c46f1a2ca3510e86252065"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:35Z",
+      "createdAt": "2026-11-21T04:20:35Z",
+      "updatedAt": "2026-11-21T04:20:35Z",
+      "lastCheckedAt": "2026-11-21T04:06:58Z",
+      "createdBy": "llm",
+      "createdByRun": "44863890736",
+      "field": "tag",
+      "value": {
+        "tagId": "death"
+      }
+    },
+    {
+      "id": "c_6ef22f6ad233f6d1",
+      "gameId": "g_000350",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1082430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-21T04:06:58Z",
+          "quote": "Before Your Eyes is a deeply emotional and relatable journey—one about the impossible expectations we place on ourselves and the regrets we carry with us.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9a354d4e64aa89b5a2e0df64b9ff3c4e7db121e3a6c46f1a2ca3510e86252065"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:35Z",
+      "createdAt": "2026-11-21T04:20:35Z",
+      "updatedAt": "2026-11-21T04:20:35Z",
+      "lastCheckedAt": "2026-11-21T04:06:58Z",
+      "createdBy": "llm",
+      "createdByRun": "44863890736",
+      "field": "tag",
+      "value": {
+        "tagId": "story-rich"
+      }
+    },
+    {
+      "id": "c_a64e28a266398633",
+      "gameId": "g_000350",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1082430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-21T04:06:58Z",
+          "quote": "Before Your Eyes is a deeply emotional and relatable journey—one about the impossible expectations we place on ourselves and the regrets we carry with us.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9a354d4e64aa89b5a2e0df64b9ff3c4e7db121e3a6c46f1a2ca3510e86252065"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:35Z",
+      "createdAt": "2026-11-21T04:20:35Z",
+      "updatedAt": "2026-11-21T04:20:35Z",
+      "lastCheckedAt": "2026-11-21T04:06:58Z",
+      "createdBy": "llm",
+      "createdByRun": "44863890736",
+      "field": "tag",
+      "value": {
+        "tagId": "emotional"
+      }
+    },
+    {
+      "id": "c_cb830768f0ed6fce",
+      "gameId": "g_000350",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1082430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-21T04:06:58Z",
+          "quote": "So he will force you deeper into the dark recesses of your most repressed memories, ultimately revealing a heartbreaking truth.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9a354d4e64aa89b5a2e0df64b9ff3c4e7db121e3a6c46f1a2ca3510e86252065"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:35Z",
+      "createdAt": "2026-11-21T04:20:35Z",
+      "updatedAt": "2026-11-21T04:20:35Z",
+      "lastCheckedAt": "2026-11-21T04:06:58Z",
+      "createdBy": "llm",
+      "createdByRun": "44863890736",
+      "field": "tag",
+      "value": {
+        "tagId": "mysterious"
+      }
+    },
+    {
+      "id": "c_d6d0c15df506bd2a",
+      "gameId": "g_000350",
+      "scope": {},
+      "basis": "editorial",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1082430/",
+          "sourceId": "steam-store",
+          "retrievedAt": "2026-11-21T04:06:58Z",
+          "quote": "Embark on an emotional first-person narrative adventure where you control the story—and affect its outcomes—with your real-life blinks.",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9a354d4e64aa89b5a2e0df64b9ff3c4e7db121e3a6c46f1a2ca3510e86252065"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:20:35Z",
+      "createdAt": "2026-11-21T04:20:35Z",
+      "updatedAt": "2026-11-21T04:20:35Z",
+      "lastCheckedAt": "2026-11-21T04:06:58Z",
+      "createdBy": "llm",
+      "createdByRun": "44863890736",
+      "field": "tag",
+      "value": {
+        "tagId": "adventure"
+      }
+    },
+    {
+      "id": "c_a52285e330295518",
+      "gameId": "g_000350",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1082430/",
+          "retrievedAt": "2026-11-21T04:21:09Z",
+          "locator": "steam:appdetails.steam_appid",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9a354d4e64aa89b5a2e0df64b9ff3c4e7db121e3a6c46f1a2ca3510e86252065"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:21:09Z",
+      "createdAt": "2026-11-21T04:21:09Z",
+      "updatedAt": "2026-11-21T04:21:09Z",
+      "lastCheckedAt": "2026-11-21T04:21:09Z",
+      "createdBy": "system",
+      "createdByRun": "44863890736",
+      "field": "storeLink",
+      "value": {
+        "store": "steam",
+        "url": "https://store.steampowered.com/app/1082430/"
+      }
+    },
+    {
+      "id": "c_f176449ff7f19106",
+      "gameId": "g_000350",
+      "scope": {},
+      "basis": "fact",
+      "evidence": [
+        {
+          "kind": "store",
+          "url": "https://store.steampowered.com/app/1082430/",
+          "retrievedAt": "2026-11-21T04:21:09Z",
+          "locator": "steam:appdetails.header_image",
+          "originKey": "store:steam",
+          "fetchHash": "sha256:9a354d4e64aa89b5a2e0df64b9ff3c4e7db121e3a6c46f1a2ca3510e86252065"
+        }
+      ],
+      "asOf": "2026-11-21",
+      "status": "adopted",
+      "statusReason": "highest-rank",
+      "adoptedAt": "2026-11-21T04:21:09Z",
+      "createdAt": "2026-11-21T04:21:09Z",
+      "updatedAt": "2026-11-21T04:21:09Z",
+      "lastCheckedAt": "2026-11-21T04:21:09Z",
+      "createdBy": "system",
+      "createdByRun": "44863890736",
+      "field": "image",
+      "value": {
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1082430/header.jpg",
+        "role": "header",
+        "width": 460,
+        "height": 215,
+        "alt": "Before Your Eyes のヘッダー画像",
+        "usage": {
+          "basis": "store-asset",
+          "credit": "Skybound Games"
+        }
+      }
+    }
+  ]
+}

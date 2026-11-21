@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "g_000354",
+  "status": "candidate",
+  "title": {
+    "display": "IT THINKS! - Build Your Own GPU",
+    "original": "IT THINKS! - Build Your Own GPU",
+    "originalLang": "en"
+  },
+  "aliases": [],
+  "externalIds": {
+    "steamAppId": 5196330
+  },
+  "associatedApps": [
+    {
+      "store": "steam",
+      "id": "5198250",
+      "kind": "demo"
+    },
+    {
+      "store": "steam",
+      "id": "5198250",
+      "kind": "dlc"
+    }
+  ],
+  "developerIds": [
+    "dev_000496"
+  ],
+  "publisherIds": [
+    "dev_000496"
+  ],
+  "indie": {
+    "assessment": "indie",
+    "reasons": [
+      {
+        "code": "self-published",
+        "evidence": [
+          {
+            "kind": "store",
+            "url": "https://store.steampowered.com/app/5196330/",
+            "retrievedAt": "2026-11-21T04:20:37Z",
+            "locator": "steam:appdetails.developers,publishers",
+            "originKey": "store:steam",
+            "fetchHash": "sha256:76ab1d8bb88dbcbe394e9d625c1894e21027edecae438d67453d693c0e15780a"
+          }
+        ]
+      }
+    ],
+    "assessedAt": "2026-11-21T04:20:37Z"
+  },
+  "identityEvidence": [
+    {
+      "field": "developers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5196330/",
+        "retrievedAt": "2026-11-21T04:20:37Z",
+        "locator": "steam:appdetails.developers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:76ab1d8bb88dbcbe394e9d625c1894e21027edecae438d67453d693c0e15780a"
+      }
+    },
+    {
+      "field": "externalIds",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5196330/",
+        "retrievedAt": "2026-11-21T04:20:37Z",
+        "locator": "steam:appdetails.steam_appid",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:76ab1d8bb88dbcbe394e9d625c1894e21027edecae438d67453d693c0e15780a"
+      }
+    },
+    {
+      "field": "publishers",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5196330/",
+        "retrievedAt": "2026-11-21T04:20:37Z",
+        "locator": "steam:appdetails.publishers",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:76ab1d8bb88dbcbe394e9d625c1894e21027edecae438d67453d693c0e15780a"
+      }
+    },
+    {
+      "field": "title",
+      "evidence": {
+        "kind": "store",
+        "url": "https://store.steampowered.com/app/5196330/",
+        "retrievedAt": "2026-11-21T04:20:37Z",
+        "locator": "steam:appdetails.name",
+        "originKey": "store:steam",
+        "fetchHash": "sha256:76ab1d8bb88dbcbe394e9d625c1894e21027edecae438d67453d693c0e15780a"
+      }
+    }
+  ],
+  "createdAt": "2026-11-21T04:20:37Z",
+  "updatedAt": "2026-11-21T04:20:37Z",
+  "createdByRun": "44863890736"
+}
