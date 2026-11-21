@@ -1,5 +1,4 @@
 ---
-import ArticleCardGrid from '../components/ArticleCardGrid.astro';
 import CollectionCard from '../components/CollectionCard.astro';
 import DailyPick from '../components/DailyPick.astro';
 import GameGrid from '../components/GameGrid.astro';
@@ -33,10 +32,10 @@ const picks = getPicks()
   .filter((p) => p.game);
 const pickedArticles = new Set(picks.flatMap((p) => p.articles.map((a) => a.id)));
 
-// 記事のカード: 先頭の枠とピックアップに出していない新しい記事（横長のカードを2列で10行）
+// 記事: 先頭の枠とピックアップに出していない新しい記事12件。先頭と同じ枠で4列3行に並べる
 const moreNews = homeNews(0, 60)
   .rest.filter((a) => !shownNews.has(a.id) && !pickedArticles.has(a.id))
-  .slice(0, 20);
+  .slice(0, 12);
 
 // イベント: 会場のイベントを先に4件。長い期間の催し（running）はいつ見ても先頭に残るので出さない。
 // 終わったばかりで感想や記事のある会場のイベントと、オンラインのイベント3件を小さく添える
@@ -92,7 +91,7 @@ const collections = [...featured, ...rest].slice(0, 4);
     {moreNews.length > 0 && (
       <section class="section" aria-labelledby="news-h">
         <SectionHeading id="news-h" title="記事" linkPath={paths.articles()} />
-        <ArticleCardGrid articles={moreNews} layout="row" />
+        <NewsMosaic featured={moreNews} lead={false} />
       </section>
     )}
 
@@ -153,11 +152,6 @@ const collections = [...featured, ...rest].slice(0, 4);
   .home :global(.game-grid) {
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: var(--space-4);
-  }
-  .home :global(.article-item) {
-    grid-template-columns: 8rem minmax(0, 1fr);
-    gap: var(--space-3);
-    padding: var(--space-3) 0;
   }
   /* 5列に収まらない幅では、1行のまま横にスクロールする */
   @media (max-width: 1100px) {

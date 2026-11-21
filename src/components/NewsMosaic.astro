@@ -2,15 +2,19 @@
 import type { SiteArticle } from '../../schema/site-data.ts';
 import NewsTile from './NewsTile.astro';
 
-// ホームの先頭。大きく見せる記事を1件と、その横と下に並べる記事。切り替えずに一度に見せる
+// 画像の上に見出しを重ねた記事の枠を4列に並べる。切り替えずに一度に見せる
+// lead のとき（ホームの先頭）は、最初の1件を大きく見せて、その横と下にほかの記事を並べる
 interface Props {
   featured: SiteArticle[];
+  lead?: boolean;
 }
-const { featured } = Astro.props;
-const [lead, ...rest] = featured;
+const { featured, lead: hasLead = true } = Astro.props;
+const lead = hasLead ? featured[0] : undefined;
+const rest = hasLead ? featured.slice(1) : featured;
+const Root = hasLead ? 'section' : 'div';
 ---
 
-<section class="news-mosaic" aria-label="注目の記事">
+<Root class:list={['news-mosaic', !hasLead && 'news-mosaic--plain']} aria-label={hasLead ? '注目の記事' : undefined}>
   {lead && (
     <div class="news-mosaic__lead">
       <NewsTile article={lead} size="lg" eager />
@@ -18,10 +22,10 @@ const [lead, ...rest] = featured;
   )}
   {rest.map((a, i) => (
     <div class="news-mosaic__item">
-      <NewsTile article={a} size="sm" eager={i < 4} />
+      <NewsTile article={a} size="sm" eager={hasLead && i < 4} />
     </div>
   ))}
-</section>
+</Root>
 
 <style>
   /* 4列。大きな記事が左の2列と2行を占め、右に4件、下の行に4件を並べる */
@@ -31,6 +35,10 @@ const [lead, ...rest] = featured;
     grid-auto-rows: clamp(9.5rem, 13vw, 12rem);
     gap: 6px;
     margin-top: var(--space-4);
+  }
+  /* 見出しの下に置くときは、見出しとの間を空けすぎない */
+  .news-mosaic--plain {
+    margin-top: 0;
   }
   .news-mosaic__lead {
     grid-column: span 2;
