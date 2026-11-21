@@ -4,11 +4,12 @@ import EventLine from '../../components/EventLine.astro';
 import EventRow from '../../components/EventRow.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getEvents } from '../../lib/data.ts';
-import { EVENT_REGIONS, isVenueEvent } from '../../lib/events.ts';
+import { EVENT_REGIONS, isLongEvent, isVenueEvent } from '../../lib/events.ts';
 import { paths, url } from '../../lib/urls.ts';
 
-// 会場で開くイベントを大きく、オンラインのイベント（配信、ストアのフェスとセール）は1行ずつ小さく並べる
-const events = getEvents();
+// 会場で開くイベントを大きく、オンラインのイベント（配信、ストアのフェスとセール）は1行ずつ小さく並べる。
+// 1か月以上続くイベントは日程の一覧に馴染まないので出さない
+const events = getEvents().filter((e) => !isLongEvent(e));
 const venue = events.filter(isVenueEvent);
 const online = events.filter((e) => !isVenueEvent(e));
 const upcoming = venue.filter((e) => e.phase !== 'past');

@@ -61,3 +61,15 @@ export const REPORT_PLATFORM_LABELS: Record<SiteEvent['reports'][number]['platfo
   'hatena-blog': 'はてなブログ',
   blog: 'ブログ',
 };
+
+/**
+ * 1か月以上続く催し（常設に近い展示など）。終わりの日が決まっているものだけを見る。
+ * 開始の月しか分からない催しは、日付の幅が月いっぱいに広がるだけなので長いとはみなさない
+ */
+export function isLongEvent(e: Pick<SiteEvent, 'end' | 'startKey' | 'endKey'>): boolean {
+  if (!e.end) return false;
+  const [y, m, d] = e.startKey.split('-').map(Number);
+  // 開始から1か月後の前日まで続けば1か月（10/16〜11/15 は1か月）
+  const monthLater = new Date(Date.UTC(y!, m!, d! - 1)).toISOString().slice(0, 10);
+  return e.endKey >= monthLater;
+}
