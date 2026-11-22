@@ -1,0 +1,35 @@
+name: 情報の訂正・掲載停止の依頼
+description: 掲載している作品の情報の誤りや、掲載の停止を知らせる
+title: '[訂正] '
+labels: [correction]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: 対象のページの URL
+      placeholder: https://…/games/g_000001/
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 依頼の種類
+      options:
+        - 情報の誤り
+        - 掲載の停止
+        - その他
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 内容
+      description: 誤っている項目と正しい内容を書いてください。根拠となる公式の情報があれば URL を添えてください。
+    validations:
+      required: true
+  - type: checkboxes
+    id: developer
+    attributes:
+      label: ご関係
+      options:
+        - label: この作品の開発者またはパブリッシャーです
